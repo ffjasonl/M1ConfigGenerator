@@ -10,7 +10,6 @@ namespace M1ConfigGenerator
     {
         private char cardLetter = 'Z';
 
-        private string configPath = @"M1_DcDriver_Config\Src\M1_Dimmer\DeviceConfigs\";
         private string configName = "DevAddrZ.h";
         private string progVerRev = "1v2d.1";
 
@@ -69,8 +68,26 @@ namespace M1ConfigGenerator
             "" // base driver instance, do not default
         };
 
+        public string[] cardChGroup0Names = { "GROUP_INDEX0_CHNL_Z0 ", "GROUP_INDEX0_CHNL_Z1 ", "GROUP_INDEX0_CHNL_Z2 ", "GROUP_INDEX0_CHNL_Z3 ", "GROUP_INDEX0_CHNL_Z4 ", "GROUP_INDEX0_CHNL_Z5 ", "GROUP_INDEX0_CHNL_Z6 ", "GROUP_INDEX0_CHNL_Z7 ", 
+                                              "GROUP_INDEX0_CHNL_Z8 ", "GROUP_INDEX0_CHNL_Z9 ", "GROUP_INDEX0_CHNL_Z10", "GROUP_INDEX0_CHNL_Z11", "GROUP_INDEX0_CHNL_Z12", "GROUP_INDEX0_CHNL_Z13", "GROUP_INDEX0_CHNL_Z14", "GROUP_INDEX0_CHNL_Z15" };
+        public string[] cardChGroup0Values = { "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP" };
 
-        // Setters and Getters
+        public string[] cardChGroup1Names = { "GROUP_INDEX1_CHNL_Z0 ", "GROUP_INDEX1_CHNL_Z1 ", "GROUP_INDEX1_CHNL_Z2 ", "GROUP_INDEX1_CHNL_Z3 ", "GROUP_INDEX1_CHNL_Z4 ", "GROUP_INDEX1_CHNL_Z5 ", "GROUP_INDEX1_CHNL_Z6 ", "GROUP_INDEX1_CHNL_Z7 ", 
+                                              "GROUP_INDEX1_CHNL_Z8 ", "GROUP_INDEX1_CHNL_Z9 ", "GROUP_INDEX1_CHNL_Z10", "GROUP_INDEX1_CHNL_Z11", "GROUP_INDEX1_CHNL_Z12", "GROUP_INDEX1_CHNL_Z13", "GROUP_INDEX1_CHNL_Z14", "GROUP_INDEX1_CHNL_Z15" };
+        public string[] cardChGroup1Values = { "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP" };
+
+        public string[] cardChGroup2Names = { "GROUP_INDEX2_CHNL_Z0 ", "GROUP_INDEX2_CHNL_Z1 ", "GROUP_INDEX2_CHNL_Z2 ", "GROUP_INDEX2_CHNL_Z3 ", "GROUP_INDEX2_CHNL_Z4 ", "GROUP_INDEX2_CHNL_Z5 ", "GROUP_INDEX2_CHNL_Z6 ", "GROUP_INDEX2_CHNL_Z7 ", 
+                                              "GROUP_INDEX2_CHNL_Z8 ", "GROUP_INDEX2_CHNL_Z9 ", "GROUP_INDEX2_CHNL_Z10", "GROUP_INDEX2_CHNL_Z11", "GROUP_INDEX2_CHNL_Z12", "GROUP_INDEX2_CHNL_Z13", "GROUP_INDEX2_CHNL_Z14", "GROUP_INDEX2_CHNL_Z15" };
+        public string[] cardChGroup2Values = { "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP" };
+
+        public string[] cardChGroup3Names = { "GROUP_INDEX3_CHNL_Z0 ", "GROUP_INDEX3_CHNL_Z1 ", "GROUP_INDEX3_CHNL_Z2 ", "GROUP_INDEX3_CHNL_Z3 ", "GROUP_INDEX3_CHNL_Z4 ", "GROUP_INDEX3_CHNL_Z5 ", "GROUP_INDEX3_CHNL_Z6 ", "GROUP_INDEX3_CHNL_Z7 ", 
+                                              "GROUP_INDEX3_CHNL_Z8 ", "GROUP_INDEX3_CHNL_Z9 ", "GROUP_INDEX3_CHNL_Z10", "GROUP_INDEX3_CHNL_Z11", "GROUP_INDEX3_CHNL_Z12", "GROUP_INDEX3_CHNL_Z13", "GROUP_INDEX3_CHNL_Z14", "GROUP_INDEX3_CHNL_Z15" };
+        public string[] cardChGroup3Values = { "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP" };
+
+        public string GetConfigName()
+        {
+            return configName;
+        }
         public string GetVerRev()
         {
             return progVerRev;
@@ -95,10 +112,6 @@ namespace M1ConfigGenerator
         public void ChangeConfigName()
         {
             configName = configName.Replace('Z', cardLetter);
-        }
-        public string GetConfigPath()
-        {
-            return configPath + configName;
         }
         public string GetDevAddr()
         {
@@ -146,5 +159,105 @@ namespace M1ConfigGenerator
         {
             m1ParameterValues[ENABLE_FORCE_CMDS] = enabled ? "TRUE" : "FALSE";
         }
+        public void SetGroup0(bool[] argArray, int argInt)
+        {
+            bool[] newArray = argArray;
+            if (argArray.Length > 1)
+            {
+                newArray = newArray.Skip(1).ToArray();
+            }
+
+            if (argArray[0] == true)
+            {
+                switch (argArray.Length)
+                {
+                    case 4:
+                        cardChGroup0Values[argInt] = "MASTER_GROUP_1";
+                        SetGroup1(newArray, argInt);
+                        break;
+                    case 3:
+                        cardChGroup0Values[argInt] = "MASTER_GROUP_2";
+                        SetGroup1(newArray, argInt);
+                        break;
+                    case 2:
+                        cardChGroup0Values[argInt] = "MASTER_GROUP_3";
+                        SetGroup1(newArray, argInt);
+                        break;
+                    case 1:
+                        cardChGroup0Values[argInt] = "MASTER_GROUP_4";
+                        break;
+                }
+            }
+            else if (argArray.Length > 1)
+            {
+                SetGroup0(newArray, argInt);
+            }
+        }
+        public void SetGroup1(bool[] argArray, int argInt)
+        {
+            bool[] newArray = argArray;
+            if (argArray.Length > 1)
+            {
+                newArray = newArray.Skip(1).ToArray();
+            }
+
+            if (argArray[0] == true)
+            {
+                switch (argArray.Length)
+                {
+                    case 3:
+                        cardChGroup1Values[argInt] = "MASTER_GROUP_2";
+                        SetGroup2(newArray, argInt);
+                        break;
+                    case 2:
+                        cardChGroup1Values[argInt] = "MASTER_GROUP_3";
+                        SetGroup2(newArray, argInt);
+                        break;
+                    case 1:
+                        cardChGroup1Values[argInt] = "MASTER_GROUP_4";
+                        break;
+                }
+            }
+            else if (argArray.Length > 1)
+            {
+                SetGroup1(newArray, argInt);
+            }
+        }
+        public void SetGroup2(bool[] argArray, int argInt)
+        {
+            bool[] newArray = argArray;
+            if (argArray.Length > 1)
+            {
+                newArray = newArray.Skip(1).ToArray();
+
+                if (argArray[0] == true)
+                {
+                    cardChGroup2Values[argInt] = "MASTER_GROUP_3";
+
+                    SetGroup3(newArray, argInt);
+                }
+                else if (argArray[1] == true)
+                {
+                    cardChGroup2Values[argInt] = "MASTER_GROUP_4";
+                }
+                else
+                {
+                    SetGroup3(newArray, argInt);
+                }
+            }
+            else if (argArray[0] == true)
+            {
+                cardChGroup2Values[argInt] = "MASTER_GROUP_4";
+            }
+
+        }
+        public void SetGroup3(bool[] argArray, int argInt)
+        {
+            if (argArray[0] == true)
+            {
+                cardChGroup3Values[argInt] = "MASTER_GROUP_4";
+            }
+        }
+
     }
 }

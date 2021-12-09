@@ -18,7 +18,7 @@ namespace M1ConfigGenerator
             ChangeConfigName();
             // general
             ChangeAddress(m1ParameterNames);
-            // dimmer-specific
+            // card-specific
             ChangeAddress(dimmerParameterNames);
             // channels
             ChangeAddress(dimmerChLockNames);
@@ -35,18 +35,18 @@ namespace M1ConfigGenerator
             ChangeAddress(dimmerChUndercurrentAmpsNames);
             ChangeAddress(dimmerChOvercurrentTimeNames);
             ChangeAddress(dimmerChMeasCurTimeNames);
-            ChangeAddress(dimmerChGroup0Names);
-            ChangeAddress(dimmerChGroup1Names);
-            ChangeAddress(dimmerChGroup2Names);
-            ChangeAddress(dimmerChGroup3Names);
+            ChangeAddress(cardChGroup0Names);
+            ChangeAddress(cardChGroup1Names);
+            ChangeAddress(cardChGroup2Names);
+            ChangeAddress(cardChGroup3Names);
             SetNodeCfg();
         }
 
         // DimmerCard MyDimmerCard { get; set; } // ??
 
-        public void CreateFile()
+        public void CreateDimmerFile()
         {
-            using (StreamWriter sw = File.AppendText(@GetConfigPath()))
+            using (StreamWriter sw = File.CreateText(@GetConfigPath() + GetConfigName()))
             {
                 DateTime currentDateTime = DateTime.Now;
                 sw.WriteLine(commentBox);
@@ -79,14 +79,14 @@ namespace M1ConfigGenerator
                     }
                 }
 
-                // dimmer specific
+                // card specific
                 for (int i = 0; i < 2; i++)
                 {
                     sw.WriteLine("#define " + dimmerParameterNames[i] + tabs[4] + dimmerParameterValues[i]);
                 }
                 sw.WriteLine("");
 
-                // dimmer channels
+                // card channels
                 for (int i = 0; i < 12; i++)
                 {
                     sw.WriteLine("// ### CHANNEL " + Convert.ToString(i) + " ###");
@@ -106,15 +106,19 @@ namespace M1ConfigGenerator
                     sw.WriteLine("#define " + dimmerChOvercurrentTimeNames[i] + tabs[4] + dimmerChOvercurrentTimeValues[i]);
                     sw.WriteLine("#define " + dimmerChMeasCurTimeNames[i] + tabs[4] + dimmerChMeasCurTimeValues[i]);
                     sw.WriteLine("");
-                    sw.WriteLine("#define " + dimmerChGroup0Names[i] + tabs[5] + dimmerChGroup0Values[i]);
-                    sw.WriteLine("#define " + dimmerChGroup1Names[i] + tabs[5] + dimmerChGroup1Values[i]);
-                    sw.WriteLine("#define " + dimmerChGroup2Names[i] + tabs[5] + dimmerChGroup2Values[i]);
-                    sw.WriteLine("#define " + dimmerChGroup3Names[i] + tabs[5] + dimmerChGroup3Values[i]);
+                    sw.WriteLine("#define " + cardChGroup0Names[i] + tabs[5] + cardChGroup0Values[i]);
+                    sw.WriteLine("#define " + cardChGroup1Names[i] + tabs[5] + cardChGroup1Values[i]);
+                    sw.WriteLine("#define " + cardChGroup2Names[i] + tabs[5] + cardChGroup2Values[i]);
+                    sw.WriteLine("#define " + cardChGroup3Names[i] + tabs[5] + cardChGroup3Values[i]);
                     sw.WriteLine("");
                 }
             }
         }
-        
+
+        public string GetConfigPath()
+        {
+            return configPath;
+        }
         public void SetOCAmps(int argInt, string argString)
         {
             dimmerChOvercurrentAmpsValues[argInt] = argString;
@@ -125,112 +129,7 @@ namespace M1ConfigGenerator
             dimmerChOvercurrentTimeValues[argInt] = argString;
         }
 
-        public void SetGroups(bool[] argArray, int argInt)
-        {
-            for (int i = 0; i < argArray.Length; i++)
-            {
-
-            }
-        }
-        public void SetGroup0(bool[] argArray, int argInt)
-        {
-            bool[] newArray = argArray;
-            if (argArray.Length > 1)
-            {
-                newArray = newArray.Skip(1).ToArray();
-            }
-
-            if (argArray[0] == true)
-            {
-                switch (argArray.Length)
-                {
-                    case 4:
-                        dimmerChGroup0Values[argInt] = "MASTER_GROUP_1";
-                        SetGroup1(newArray, argInt);
-                        break;
-                    case 3:
-                        dimmerChGroup0Values[argInt] = "MASTER_GROUP_2";
-                        SetGroup1(newArray, argInt);
-                        break;
-                    case 2:
-                        dimmerChGroup0Values[argInt] = "MASTER_GROUP_3";
-                        SetGroup1(newArray, argInt);
-                        break;
-                    case 1:
-                        dimmerChGroup0Values[argInt] = "MASTER_GROUP_4";
-                        break;
-                }
-            }
-            else if (argArray.Length > 1)
-            {
-                SetGroup0(newArray, argInt);
-            }
-        }
-        public void SetGroup1(bool[] argArray, int argInt)
-        {
-            bool[] newArray = argArray;
-            if (argArray.Length > 1)
-            {
-                newArray = newArray.Skip(1).ToArray();
-            }
-
-            if (argArray[0] == true)
-            {
-                switch (argArray.Length)
-                {
-                    case 3:
-                        dimmerChGroup1Values[argInt] = "MASTER_GROUP_2";
-                        SetGroup2(newArray, argInt);
-                        break;
-                    case 2:
-                        dimmerChGroup1Values[argInt] = "MASTER_GROUP_3";
-                        SetGroup2(newArray, argInt);
-                        break;
-                    case 1:
-                        dimmerChGroup1Values[argInt] = "MASTER_GROUP_4";
-                        break;
-                }
-            }
-            else if (argArray.Length > 1)
-            {
-                SetGroup1(newArray, argInt);
-            }
-        }
-        public void SetGroup2(bool[] argArray, int argInt)
-        {
-            bool[] newArray = argArray;
-            if (argArray.Length > 1)
-            {
-                newArray = newArray.Skip(1).ToArray();
-
-                if (argArray[0] == true)
-                {
-                    dimmerChGroup2Values[argInt] = "MASTER_GROUP_3";
-
-                    SetGroup3(newArray, argInt);
-                }
-                else if (argArray[1] == true)
-                {
-                    dimmerChGroup2Values[argInt] = "MASTER_GROUP_4";
-                }
-                else
-                {
-                    SetGroup3(newArray, argInt);
-                }
-            }
-            else if (argArray[0] == true)
-            {
-                dimmerChGroup2Values[argInt] = "MASTER_GROUP_4";
-            }
-
-        }
-        public void SetGroup3(bool[] argArray, int argInt)
-        {
-            if (argArray[0] == true)
-            {
-                dimmerChGroup3Values[argInt] = "MASTER_GROUP_4";
-            }
-        }
+        private string configPath = @"M1_DcDriver_Config\Src\M1_Dimmer\DeviceConfigs\";
 
         public string[] dimmerParameterNames =
         {
@@ -299,21 +198,5 @@ namespace M1ConfigGenerator
         public string[] dimmerChMeasCurTimeNames = { "MEAS_CUR_TCONST_CHNL_Z0 ", "MEAS_CUR_TCONST_CHNL_Z1 ", "MEAS_CUR_TCONST_CHNL_Z2 ", "MEAS_CUR_TCONST_CHNL_Z3 ", "MEAS_CUR_TCONST_CHNL_Z4 ", "MEAS_CUR_TCONST_CHNL_Z5 ",
                                                 "MEAS_CUR_TCONST_CHNL_Z6 ", "MEAS_CUR_TCONST_CHNL_Z7 ", "MEAS_CUR_TCONST_CHNL_Z8 ", "MEAS_CUR_TCONST_CHNL_Z9 ", "MEAS_CUR_TCONST_CHNL_Z10", "MEAS_CUR_TCONST_CHNL_Z11" };
         public string[] dimmerChMeasCurTimeValues = { "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8" };
-        //
-        public string[] dimmerChGroup0Names = { "GROUP_INDEX0_CHNL_Z0 ", "GROUP_INDEX0_CHNL_Z1 ", "GROUP_INDEX0_CHNL_Z2 ", "GROUP_INDEX0_CHNL_Z3 ", "GROUP_INDEX0_CHNL_Z4 ", "GROUP_INDEX0_CHNL_Z5 ",
-                                                "GROUP_INDEX0_CHNL_Z6 ", "GROUP_INDEX0_CHNL_Z7 ", "GROUP_INDEX0_CHNL_Z8 ", "GROUP_INDEX0_CHNL_Z9 ", "GROUP_INDEX0_CHNL_Z10", "GROUP_INDEX0_CHNL_Z11" };
-        public string[] dimmerChGroup0Values = { "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP" };
-        //
-        public string[] dimmerChGroup1Names = { "GROUP_INDEX1_CHNL_Z0 ", "GROUP_INDEX1_CHNL_Z1 ", "GROUP_INDEX1_CHNL_Z2 ", "GROUP_INDEX1_CHNL_Z3 ", "GROUP_INDEX1_CHNL_Z4 ", "GROUP_INDEX1_CHNL_Z5 ",
-                                                "GROUP_INDEX1_CHNL_Z6 ", "GROUP_INDEX1_CHNL_Z7 ", "GROUP_INDEX1_CHNL_Z8 ", "GROUP_INDEX1_CHNL_Z9 ", "GROUP_INDEX1_CHNL_Z10", "GROUP_INDEX1_CHNL_Z11" };
-        public string[] dimmerChGroup1Values = { "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP" };
-        //
-        public string[] dimmerChGroup2Names = { "GROUP_INDEX2_CHNL_Z0 ", "GROUP_INDEX2_CHNL_Z1 ", "GROUP_INDEX2_CHNL_Z2 ", "GROUP_INDEX2_CHNL_Z3 ", "GROUP_INDEX2_CHNL_Z4 ", "GROUP_INDEX2_CHNL_Z5 ",
-                                                "GROUP_INDEX2_CHNL_Z6 ", "GROUP_INDEX2_CHNL_Z7 ", "GROUP_INDEX2_CHNL_Z8 ", "GROUP_INDEX2_CHNL_Z9 ", "GROUP_INDEX2_CHNL_Z10", "GROUP_INDEX2_CHNL_Z11" };
-        public string[] dimmerChGroup2Values = { "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP" };
-        //
-        public string[] dimmerChGroup3Names = { "GROUP_INDEX3_CHNL_Z0 ", "GROUP_INDEX3_CHNL_Z1 ", "GROUP_INDEX3_CHNL_Z2 ", "GROUP_INDEX3_CHNL_Z3 ", "GROUP_INDEX3_CHNL_Z4 ", "GROUP_INDEX3_CHNL_Z5 ",
-                                                "GROUP_INDEX3_CHNL_Z6 ", "GROUP_INDEX3_CHNL_Z7 ", "GROUP_INDEX3_CHNL_Z8 ", "GROUP_INDEX3_CHNL_Z9 ", "GROUP_INDEX3_CHNL_Z10", "GROUP_INDEX3_CHNL_Z11" };
-        public string[] dimmerChGroup3Values = { "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP" };
     }
 }

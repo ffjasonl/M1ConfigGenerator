@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuxCard.cs" />
+    <Compile Include="BreakerCard.cs" />
     <Compile Include="DimmerCard.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

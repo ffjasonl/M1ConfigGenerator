@@ -112,7 +112,7 @@ namespace M1ConfigGenerator
                     sw.WriteLine("#define " + cardChGroup3Names[i] + tabs[5] + cardChGroup3Values[i]);
                     sw.WriteLine("");
                     sw.WriteLine("#define " + lcChOvercurrentAmpsNames[i] + tabs[5] + "CONVERT_AMPS_TO_ADC(" + lcChOvercurrentAmpsValues[i] + ")");
-                    sw.WriteLine("#define " + lcChUndercurrentAmpsNames[i] + tabs[5] + "CONVERT_AMPS_TO_ADC(" + lcChUndercurrentAmpsValues[i] + ")");
+                    sw.WriteLine("#define " + lcChUndercurrentAmpsNames[i] + tabs[5] + lcChUndercurrentAmpsValues[i]);
                     sw.WriteLine("#define " + lcChOvercurrentTimeNames[i] + tabs[3] + lcChOvercurrentTimeValues[i]);
                     sw.WriteLine("#define " + lcChMeasCurTimeNames[i] + tabs[3] + lcChMeasCurTimeValues[i]);
                     sw.WriteLine("");
@@ -139,6 +139,37 @@ namespace M1ConfigGenerator
         public void SetOCTime(int argInt, string argString)
         {
             lcChOvercurrentTimeValues[argInt] = argString;
+        }
+
+        public void SetModeAndPairingLC(int argIndex, string argMode, bool argStartup)
+        {
+            if (argMode == "Ground")
+            {
+                lcChModeValues[argIndex] = "DRVR_TYPE_LOW_SIDE";
+
+                if (argStartup == true)
+                {
+                    lcChDirectionValues[argIndex] = "DRVR_STATE_LOW";
+                }
+            }
+            else if (argMode == "RP UP")
+            {
+                lcChModeValues[argIndex] = "DRVR_TYPE_H_BRIDGE";
+                lcChPairedValues[argIndex] = "PAIRED_TO_CHNL" + Convert.ToString(argIndex + 1);
+            }
+            else if (argMode == "RP DN")
+            {
+                lcChModeValues[argIndex] = "DRVR_TYPE_SLAVE";
+                lcChPairedValues[argIndex] = "PAIRED_TO_CHNL" + Convert.ToString(argIndex - 1);
+            }
+            else // 12V+
+            {
+                if (argStartup == true)
+                {
+                    lcChDirectionValues[argIndex] = "DRVR_STATE_HIGH";
+                }
+
+            }
         }
 
         public void SetQuickPair(bool argBool, int argInt)
@@ -189,59 +220,59 @@ namespace M1ConfigGenerator
         public string[] lcChPairedValues = { "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE" };
         //
         public string[] lcChPwmEnableNames = { "PWM_ENABLE_CHNL_Z0 ", "PWM_ENABLE_CHNL_Z1 ", "PWM_ENABLE_CHNL_Z2 ", "PWM_ENABLE_CHNL_Z3 ", "PWM_ENABLE_CHNL_Z4 ", "PWM_ENABLE_CHNL_Z5 ", "PWM_ENABLE_CHNL_Z6 ", "PWM_ENABLE_CHNL_Z7 ", 
-                                               "PWM_ENABLE_CHNL_Z8 ", "PWM_ENABLE_CHNL_Z9 ", "PWM_ENABLE_CHNL_Z10", "PWM_ENABLE_CHNL_Z11", "PWM_ENABLE_CHNL_Z12 ", "PWM_ENABLE_CHNL_Z13 ", "PWM_ENABLE_CHNL_Z14", "PWM_ENABLE_CHNL_Z15" };
+                                               "PWM_ENABLE_CHNL_Z8 ", "PWM_ENABLE_CHNL_Z9 ", "PWM_ENABLE_CHNL_Z10", "PWM_ENABLE_CHNL_Z11", "PWM_ENABLE_CHNL_Z12", "PWM_ENABLE_CHNL_Z13", "PWM_ENABLE_CHNL_Z14", "PWM_ENABLE_CHNL_Z15" };
         public string[] lcChPwmEnableValues = { "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE" };
         //
         public string[] lcChPwmFreqNames = { "PWM_FREQ_CHNL_Z0 ", "PWM_FREQ_CHNL_Z1 ", "PWM_FREQ_CHNL_Z2 ", "PWM_FREQ_CHNL_Z3 ", "PWM_FREQ_CHNL_Z4 ", "PWM_FREQ_CHNL_Z5 ", "PWM_FREQ_CHNL_Z6 ", "PWM_FREQ_CHNL_Z7 ", 
-                                             "PWM_FREQ_CHNL_Z8 ", "PWM_FREQ_CHNL_Z9 ", "PWM_FREQ_CHNL_Z10", "PWM_FREQ_CHNL_Z11", "PWM_FREQ_CHNL_Z12 ", "PWM_FREQ_CHNL_Z13 ", "PWM_FREQ_CHNL_Z14", "PWM_FREQ_CHNL_Z15" };
+                                             "PWM_FREQ_CHNL_Z8 ", "PWM_FREQ_CHNL_Z9 ", "PWM_FREQ_CHNL_Z10", "PWM_FREQ_CHNL_Z11", "PWM_FREQ_CHNL_Z12", "PWM_FREQ_CHNL_Z13", "PWM_FREQ_CHNL_Z14", "PWM_FREQ_CHNL_Z15" };
         public string[] lcChPwmFreqValues = { "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ", "TLE_FREQ_200HZ" };
         //
         public string[] lcChTimeoutNames = { "CMD_TIMEOUT_CHNL_Z0 ", "CMD_TIMEOUT_CHNL_Z1 ", "CMD_TIMEOUT_CHNL_Z2 ", "CMD_TIMEOUT_CHNL_Z3 ", "CMD_TIMEOUT_CHNL_Z4 ", "CMD_TIMEOUT_CHNL_Z5 ", "CMD_TIMEOUT_CHNL_Z6 ", "CMD_TIMEOUT_CHNL_Z7 ", 
-                                             "CMD_TIMEOUT_CHNL_Z8 ", "CMD_TIMEOUT_CHNL_Z9 ", "CMD_TIMEOUT_CHNL_Z10", "CMD_TIMEOUT_CHNL_Z11", "CMD_TIMEOUT_CHNL_Z12 ", "CMD_TIMEOUT_CHNL_Z13 ", "CMD_TIMEOUT_CHNL_Z14", "CMD_TIMEOUT_CHNL_Z15" };
+                                             "CMD_TIMEOUT_CHNL_Z8 ", "CMD_TIMEOUT_CHNL_Z9 ", "CMD_TIMEOUT_CHNL_Z10", "CMD_TIMEOUT_CHNL_Z11", "CMD_TIMEOUT_CHNL_Z12", "CMD_TIMEOUT_CHNL_Z13", "CMD_TIMEOUT_CHNL_Z14", "CMD_TIMEOUT_CHNL_Z15" };
         public string[] lcChTimeoutValues = { "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED" };
         //
         public string[] lcChTimeoutTimeNames = { "CMD_TIMEOUT_MS_CHNL_Z0 ", "CMD_TIMEOUT_MS_CHNL_Z1 ", "CMD_TIMEOUT_MS_CHNL_Z2 ", "CMD_TIMEOUT_MS_CHNL_Z3 ", "CMD_TIMEOUT_MS_CHNL_Z4 ", "CMD_TIMEOUT_MS_CHNL_Z5 ", "CMD_TIMEOUT_MS_CHNL_Z6 ", "CMD_TIMEOUT_MS_CHNL_Z7 ", 
-                                                 "CMD_TIMEOUT_MS_CHNL_Z8 ", "CMD_TIMEOUT_MS_CHNL_Z9 ", "CMD_TIMEOUT_MS_CHNL_Z10", "CMD_TIMEOUT_MS_CHNL_Z11", "CMD_TIMEOUT_MS_CHNL_Z12 ", "CMD_TIMEOUT_MS_CHNL_Z13 ", "CMD_TIMEOUT_MS_CHNL_Z14", "CMD_TIMEOUT_MS_CHNL_Z15" };
+                                                 "CMD_TIMEOUT_MS_CHNL_Z8 ", "CMD_TIMEOUT_MS_CHNL_Z9 ", "CMD_TIMEOUT_MS_CHNL_Z10", "CMD_TIMEOUT_MS_CHNL_Z11", "CMD_TIMEOUT_MS_CHNL_Z12", "CMD_TIMEOUT_MS_CHNL_Z13", "CMD_TIMEOUT_MS_CHNL_Z14", "CMD_TIMEOUT_MS_CHNL_Z15" };
         public string[] lcChTimeoutTimeValues = { "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF" };
         //
         public string[] lcChMaxOnNames = { "MAX_ON_SEC_CHNL_Z0 ", "MAX_ON_SEC_CHNL_Z1 ", "MAX_ON_SEC_CHNL_Z2 ", "MAX_ON_SEC_CHNL_Z3 ", "MAX_ON_SEC_CHNL_Z4 ", "MAX_ON_SEC_CHNL_Z5 ", "MAX_ON_SEC_CHNL_Z6 ", "MAX_ON_SEC_CHNL_Z7 ", 
-                                           "MAX_ON_SEC_CHNL_Z8 ", "MAX_ON_SEC_CHNL_Z9 ", "MAX_ON_SEC_CHNL_Z10", "MAX_ON_SEC_CHNL_Z11", "MAX_ON_SEC_CHNL_Z12 ", "MAX_ON_SEC_CHNL_Z13 ", "MAX_ON_SEC_CHNL_Z14", "MAX_ON_SEC_CHNL_Z15" };
+                                           "MAX_ON_SEC_CHNL_Z8 ", "MAX_ON_SEC_CHNL_Z9 ", "MAX_ON_SEC_CHNL_Z10", "MAX_ON_SEC_CHNL_Z11", "MAX_ON_SEC_CHNL_Z12", "MAX_ON_SEC_CHNL_Z13", "MAX_ON_SEC_CHNL_Z14", "MAX_ON_SEC_CHNL_Z15" };
         public string[] lcChMaxOnValues = { "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF" };
         //
         public string[] lcChMaxDurRecoveryTimeNames = { "MAX_DUR_RECOVERY_CHNL_Z0 ", "MAX_DUR_RECOVERY_CHNL_Z1 ", "MAX_DUR_RECOVERY_CHNL_Z2 ", "MAX_DUR_RECOVERY_CHNL_Z3 ", "MAX_DUR_RECOVERY_CHNL_Z4 ", "MAX_DUR_RECOVERY_CHNL_Z5 ", "MAX_DUR_RECOVERY_CHNL_Z6 ", "MAX_DUR_RECOVERY_CHNL_Z7 ", 
-                                                        "MAX_DUR_RECOVERY_CHNL_Z8 ", "MAX_DUR_RECOVERY_CHNL_Z9 ", "MAX_DUR_RECOVERY_CHNL_Z10", "MAX_DUR_RECOVERY_CHNL_Z11", "MAX_DUR_RECOVERY_CHNL_Z12 ", "MAX_DUR_RECOVERY_CHNL_Z13 ", "MAX_DUR_RECOVERY_CHNL_Z14", "MAX_DUR_RECOVERY_CHNL_Z15" };
+                                                        "MAX_DUR_RECOVERY_CHNL_Z8 ", "MAX_DUR_RECOVERY_CHNL_Z9 ", "MAX_DUR_RECOVERY_CHNL_Z10", "MAX_DUR_RECOVERY_CHNL_Z11", "MAX_DUR_RECOVERY_CHNL_Z12", "MAX_DUR_RECOVERY_CHNL_Z13", "MAX_DUR_RECOVERY_CHNL_Z14", "MAX_DUR_RECOVERY_CHNL_Z15" };
         public string[] lcChMaxDurRecoveryTimeValues = { "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5" };
         //
-        public string[] lcChOvercurrentAmpsNames = { "OC_ADC_THRES_CHNL_Z0 ", "OC_ADC_THRES_CHNL_Z1 ", "OC_ADC_THRES_CHNL_Z2 ", "OC_ADC_THRES_CHNL_Z3 ", "OC_ADC_THRES_CHNL_Z4 ", "OC_ADC_THRES_CHNL_Z5 ", "OC_ADC_THRES_CHNL_Z6 ", "OC_ADC_THRES_CHNL_Z7 ", 
-                                                     "OC_ADC_THRES_CHNL_Z8 ", "OC_ADC_THRES_CHNL_Z9 ", "OC_ADC_THRES_CHNL_Z10", "OC_ADC_THRES_CHNL_Z11", "OC_ADC_THRES_CHNL_Z12 ", "OC_ADC_THRES_CHNL_Z13 ", "OC_ADC_THRES_CHNL_Z14", "OC_ADC_THRES_CHNL_Z15" };
-        public string[] lcChOvercurrentAmpsValues = { "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2" };
+        public string[] lcChOvercurrentAmpsNames = { "OC_ADC_THRESH_CHNL_Z0 ", "OC_ADC_THRESH_CHNL_Z1 ", "OC_ADC_THRESH_CHNL_Z2 ", "OC_ADC_THRESH_CHNL_Z3 ", "OC_ADC_THRESH_CHNL_Z4 ", "OC_ADC_THRESH_CHNL_Z5 ", "OC_ADC_THRESH_CHNL_Z6 ", "OC_ADC_THRESH_CHNL_Z7 ", 
+                                                     "OC_ADC_THRESH_CHNL_Z8 ", "OC_ADC_THRESH_CHNL_Z9 ", "OC_ADC_THRESH_CHNL_Z10", "OC_ADC_THRESH_CHNL_Z11", "OC_ADC_THRESH_CHNL_Z12", "OC_ADC_THRESH_CHNL_Z13", "OC_ADC_THRESH_CHNL_Z14", "OC_ADC_THRESH_CHNL_Z15" };
+        public string[] lcChOvercurrentAmpsValues = { "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF" };
         //
-        public string[] lcChUndercurrentAmpsNames = { "UC_ADC_THRES_CHNL_Z0 ", "UC_ADC_THRES_CHNL_Z1 ", "UC_ADC_THRES_CHNL_Z2 ", "UC_ADC_THRES_CHNL_Z3 ", "UC_ADC_THRES_CHNL_Z4 ", "UC_ADC_THRES_CHNL_Z5 ", "UC_ADC_THRES_CHNL_Z6 ", "UC_ADC_THRES_CHNL_Z7 ", 
-                                                      "UC_ADC_THRES_CHNL_Z8 ", "UC_ADC_THRES_CHNL_Z9 ", "UC_ADC_THRES_CHNL_Z10", "UC_ADC_THRES_CHNL_Z11", "UC_ADC_THRES_CHNL_Z12 ", "UC_ADC_THRES_CHNL_Z13 ", "UC_ADC_THRES_CHNL_Z14", "UC_ADC_THRES_CHNL_Z15" };
-        public string[] lcChUndercurrentAmpsValues = { "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1" };
+        public string[] lcChUndercurrentAmpsNames = { "UC_ADC_THRESH_CHNL_Z0 ", "UC_ADC_THRESH_CHNL_Z1 ", "UC_ADC_THRESH_CHNL_Z2 ", "UC_ADC_THRESH_CHNL_Z3 ", "UC_ADC_THRESH_CHNL_Z4 ", "UC_ADC_THRESH_CHNL_Z5 ", "UC_ADC_THRESH_CHNL_Z6 ", "UC_ADC_THRESH_CHNL_Z7 ", 
+                                                      "UC_ADC_THRESH_CHNL_Z8 ", "UC_ADC_THRESH_CHNL_Z9 ", "UC_ADC_THRESH_CHNL_Z10", "UC_ADC_THRESH_CHNL_Z11", "UC_ADC_THRESH_CHNL_Z12", "UC_ADC_THRESH_CHNL_Z13", "UC_ADC_THRESH_CHNL_Z14", "UC_ADC_THRESH_CHNL_Z15" };
+        public string[] lcChUndercurrentAmpsValues = { "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" };
         //
         public string[] lcChOvercurrentTimeNames = { "FAULT_CUR_TIME_CONST_CHNL_Z0 ", "FAULT_CUR_TIME_CONST_CHNL_Z1 ", "FAULT_CUR_TIME_CONST_CHNL_Z2 ", "FAULT_CUR_TIME_CONST_CHNL_Z3 ", "FAULT_CUR_TIME_CONST_CHNL_Z4 ", "FAULT_CUR_TIME_CONST_CHNL_Z5 ", "FAULT_CUR_TIME_CONST_CHNL_Z6 ", "FAULT_CUR_TIME_CONST_CHNL_Z7 ",
-                                                     "FAULT_CUR_TIME_CONST_CHNL_Z8 ", "FAULT_CUR_TIME_CONST_CHNL_Z9 ", "FAULT_CUR_TIME_CONST_CHNL_Z10", "FAULT_CUR_TIME_CONST_CHNL_Z11", "FAULT_CUR_TIME_CONST_CHNL_Z12 ", "FAULT_CUR_TIME_CONST_CHNL_Z13 ", "FAULT_CUR_TIME_CONST_CHNL_Z14", "FAULT_CUR_TIME_CONST_CHNL_Z15" };
+                                                     "FAULT_CUR_TIME_CONST_CHNL_Z8 ", "FAULT_CUR_TIME_CONST_CHNL_Z9 ", "FAULT_CUR_TIME_CONST_CHNL_Z10", "FAULT_CUR_TIME_CONST_CHNL_Z11", "FAULT_CUR_TIME_CONST_CHNL_Z12", "FAULT_CUR_TIME_CONST_CHNL_Z13", "FAULT_CUR_TIME_CONST_CHNL_Z14", "FAULT_CUR_TIME_CONST_CHNL_Z15" };
         public string[] lcChOvercurrentTimeValues = { "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6" };
         //
         public string[] lcChMeasCurTimeNames = { "MEAS_CUR_TIME_CONST_CHNL_Z0 ", "MEAS_CUR_TIME_CONST_CHNL_Z1 ", "MEAS_CUR_TIME_CONST_CHNL_Z2 ", "MEAS_CUR_TIME_CONST_CHNL_Z3 ", "MEAS_CUR_TIME_CONST_CHNL_Z4 ", "MEAS_CUR_TIME_CONST_CHNL_Z5 ", "MEAS_CUR_TIME_CONST_CHNL_Z6 ", "MEAS_CUR_TIME_CONST_CHNL_Z7 ",
-                                                 "MEAS_CUR_TIME_CONST_CHNL_Z8 ", "MEAS_CUR_TIME_CONST_CHNL_Z9 ", "MEAS_CUR_TIME_CONST_CHNL_Z10", "MEAS_CUR_TIME_CONST_CHNL_Z11", "MEAS_CUR_TIME_CONST_CHNL_Z12 ", "MEAS_CUR_TIME_CONST_CHNL_Z13 ", "MEAS_CUR_TIME_CONST_CHNL_Z14", "MEAS_CUR_TIME_CONST_CHNL_Z15" };
+                                                 "MEAS_CUR_TIME_CONST_CHNL_Z8 ", "MEAS_CUR_TIME_CONST_CHNL_Z9 ", "MEAS_CUR_TIME_CONST_CHNL_Z10", "MEAS_CUR_TIME_CONST_CHNL_Z11", "MEAS_CUR_TIME_CONST_CHNL_Z12", "MEAS_CUR_TIME_CONST_CHNL_Z13", "MEAS_CUR_TIME_CONST_CHNL_Z14", "MEAS_CUR_TIME_CONST_CHNL_Z15" };
         public string[] lcChMeasCurTimeValues = { "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8" };
         //
         public string[] lcChOverrideReverseNames = { "OVERRIDE_REVERSE_INPUT_CHNL_Z0 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z1 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z2 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z3 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z4 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z5 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z6 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z7 ",
-                                                     "OVERRIDE_REVERSE_INPUT_CHNL_Z8 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z9 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z10", "OVERRIDE_REVERSE_INPUT_CHNL_Z11", "OVERRIDE_REVERSE_INPUT_CHNL_Z12 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z13 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z14", "OVERRIDE_REVERSE_INPUT_CHNL_Z15" };
+                                                     "OVERRIDE_REVERSE_INPUT_CHNL_Z8 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z9 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z10", "OVERRIDE_REVERSE_INPUT_CHNL_Z11", "OVERRIDE_REVERSE_INPUT_CHNL_Z12", "OVERRIDE_REVERSE_INPUT_CHNL_Z13", "OVERRIDE_REVERSE_INPUT_CHNL_Z14", "OVERRIDE_REVERSE_INPUT_CHNL_Z15" };
         public string[] lcChOverrideReverseValues = { "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE" };
         //
         public string[] lcChOverrideForwardNames = { "OVERRIDE_FORWARD_INPUT_CHNL_Z0 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z1 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z2 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z3 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z4 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z5 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z6 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z7 ",
-                                                     "OVERRIDE_FORWARD_INPUT_CHNL_Z8 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z9 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z10", "OVERRIDE_FORWARD_INPUT_CHNL_Z11", "OVERRIDE_FORWARD_INPUT_CHNL_Z12 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z13 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z14", "OVERRIDE_FORWARD_INPUT_CHNL_Z15" };
+                                                     "OVERRIDE_FORWARD_INPUT_CHNL_Z8 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z9 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z10", "OVERRIDE_FORWARD_INPUT_CHNL_Z11", "OVERRIDE_FORWARD_INPUT_CHNL_Z12", "OVERRIDE_FORWARD_INPUT_CHNL_Z13", "OVERRIDE_FORWARD_INPUT_CHNL_Z14", "OVERRIDE_FORWARD_INPUT_CHNL_Z15" };
         public string[] lcChOverrideForwardValues = { "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE" };
         //
         public string[] lcChIGNNames = { "IGN_SAFETY_EN_CHNL_Z0 ", "IGN_SAFETY_EN_CHNL_Z1 ", "IGN_SAFETY_EN_CHNL_Z2 ", "IGN_SAFETY_EN_CHNL_Z3 ", "IGN_SAFETY_EN_CHNL_Z4 ", "IGN_SAFETY_EN_CHNL_Z5 ", "IGN_SAFETY_EN_CHNL_Z6 ", "IGN_SAFETY_EN_CHNL_Z7 ",
-                                         "IGN_SAFETY_EN_CHNL_Z8 ", "IGN_SAFETY_EN_CHNL_Z9 ", "IGN_SAFETY_EN_CHNL_Z10", "IGN_SAFETY_EN_CHNL_Z11", "IGN_SAFETY_EN_CHNL_Z12 ", "IGN_SAFETY_EN_CHNL_Z13 ", "IGN_SAFETY_EN_CHNL_Z14", "IGN_SAFETY_EN_CHNL_Z15" };
+                                         "IGN_SAFETY_EN_CHNL_Z8 ", "IGN_SAFETY_EN_CHNL_Z9 ", "IGN_SAFETY_EN_CHNL_Z10", "IGN_SAFETY_EN_CHNL_Z11", "IGN_SAFETY_EN_CHNL_Z12", "IGN_SAFETY_EN_CHNL_Z13", "IGN_SAFETY_EN_CHNL_Z14", "IGN_SAFETY_EN_CHNL_Z15" };
         public string[] lcChIGNValues = { "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED" };
         //
         public string[] lcChParkNames = { "PARK_SAFETY_EN_CHNL_Z0 ", "PARK_SAFETY_EN_CHNL_Z1 ", "PARK_SAFETY_EN_CHNL_Z2 ", "PARK_SAFETY_EN_CHNL_Z3 ", "PARK_SAFETY_EN_CHNL_Z4 ", "PARK_SAFETY_EN_CHNL_Z5 ", "PARK_SAFETY_EN_CHNL_Z6 ", "PARK_SAFETY_EN_CHNL_Z7 ",
-                                              "PARK_SAFETY_EN_CHNL_Z8 ", "PARK_SAFETY_EN_CHNL_Z9 ", "PARK_SAFETY_EN_CHNL_Z10", "PARK_SAFETY_EN_CHNL_Z11", "PARK_SAFETY_EN_CHNL_Z12 ", "PARK_SAFETY_EN_CHNL_Z13 ", "PARK_SAFETY_EN_CHNL_Z14", "PARK_SAFETY_EN_CHNL_Z15" };
+                                              "PARK_SAFETY_EN_CHNL_Z8 ", "PARK_SAFETY_EN_CHNL_Z9 ", "PARK_SAFETY_EN_CHNL_Z10", "PARK_SAFETY_EN_CHNL_Z11", "PARK_SAFETY_EN_CHNL_Z12", "PARK_SAFETY_EN_CHNL_Z13", "PARK_SAFETY_EN_CHNL_Z14", "PARK_SAFETY_EN_CHNL_Z15" };
         public string[] lcChParkValues = { "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED" };
     }
 }

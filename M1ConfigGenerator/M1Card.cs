@@ -11,7 +11,7 @@ namespace M1ConfigGenerator
         private char cardLetter = 'Z';
 
         private string configName = "DevAddrZ.h";
-        private string progVerRev = "1v2d.1";
+        private string progVerRev = "1v2d.0BETA";
 
         public const int DEVICE_HEADER_CONFIGURATION_VERSION    = 0;
         public const int DEV_ADDR                               = 1;
@@ -57,7 +57,7 @@ namespace M1ConfigGenerator
             "", // config rev
             "", // config node (will be auto-filled with parametername[1] value
             "", // config type
-            "FALSE", // DC Driver
+            "TRUE", // DC Driver; enabled by default for overcurrent reset and possibly other overrides
             "FALSE", // DC Dimmer
             "TRUE", // enable DC Load command; using this status is standard, so must always be true
             "FALSE", // DC Motor
@@ -133,7 +133,7 @@ namespace M1ConfigGenerator
         }
         public void SetCfgType(string configtype)
         {
-            m1ParameterValues[DEV_ADDR_CFG_TYPE] = configtype;
+            m1ParameterValues[DEV_ADDR_CFG_TYPE] = "0x" + configtype;
         }
         public void SetBaseIndex(string index)
         {

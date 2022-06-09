@@ -37,14 +37,11 @@ namespace M1ConfigGenerator
             this.btnMenuDimmer = new System.Windows.Forms.Button();
             this.btnMenuBreaker = new System.Windows.Forms.Button();
             this.btnMenuAux = new System.Windows.Forms.Button();
-            this.btnMenuLoad = new System.Windows.Forms.Button();
             this.btnMenuNew = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
             this.tabControlMain = new M1ConfigGenerator.TablessControl();
             this.tabMainBlank = new System.Windows.Forms.TabPage();
             this.tabMainStart = new System.Windows.Forms.TabPage();
-            this.label29 = new System.Windows.Forms.Label();
-            this.cmbStartSetup = new System.Windows.Forms.ComboBox();
             this.btnStartClose = new System.Windows.Forms.Button();
             this.cmbStartSlide = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -156,7 +153,6 @@ namespace M1ConfigGenerator
             this.tbxAux1CfgType = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.chkAux1DCMotor = new System.Windows.Forms.CheckBox();
-            this.chkAux1DCDriver = new System.Windows.Forms.CheckBox();
             this.chkAux1DCDimmer = new System.Windows.Forms.CheckBox();
             this.chkAux1Force = new System.Windows.Forms.CheckBox();
             this.label35 = new System.Windows.Forms.Label();
@@ -247,13 +243,16 @@ namespace M1ConfigGenerator
             this.tbxAux2CfgType = new System.Windows.Forms.TextBox();
             this.label146 = new System.Windows.Forms.Label();
             this.chkAux2DCMotor = new System.Windows.Forms.CheckBox();
-            this.chkAux2DCDriver = new System.Windows.Forms.CheckBox();
             this.chkAux2DCDimmer = new System.Windows.Forms.CheckBox();
             this.chkAux2Force = new System.Windows.Forms.CheckBox();
             this.label147 = new System.Windows.Forms.Label();
             this.tbxAux2BaseIndex = new System.Windows.Forms.TextBox();
+            this.tabAuxGenerated = new System.Windows.Forms.TabPage();
+            this.label276 = new System.Windows.Forms.Label();
+            this.tbxAuxGenerated = new System.Windows.Forms.TextBox();
             this.tabMainBreaker = new System.Windows.Forms.TabPage();
             this.panelBreaker = new System.Windows.Forms.Panel();
+            this.btnBreakerGenerate = new System.Windows.Forms.Button();
             this.btnBreakerCard6 = new System.Windows.Forms.Button();
             this.btnBreakerCard5 = new System.Windows.Forms.Button();
             this.btnBreakerCard4 = new System.Windows.Forms.Button();
@@ -263,25 +262,276 @@ namespace M1ConfigGenerator
             this.tabControlBreaker = new M1ConfigGenerator.TablessControl();
             this.tabBreakerBlank = new System.Windows.Forms.TabPage();
             this.tabBreaker1 = new System.Windows.Forms.TabPage();
-            this.comboBox35 = new System.Windows.Forms.ComboBox();
+            this.chkBreaker1MatchVIN = new System.Windows.Forms.CheckBox();
+            this.cmbBreaker1Interrupt11 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1Interrupt10 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1Interrupt09 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1Interrupt08 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1Interrupt07 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1Interrupt06 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1Interrupt05 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1Interrupt04 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1Interrupt03 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1Interrupt02 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1Interrupt01 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1Interrupt00 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1InterruptVIN = new System.Windows.Forms.ComboBox();
+            this.label289 = new System.Windows.Forms.Label();
+            this.cmbBreaker1OCTime11 = new System.Windows.Forms.ComboBox();
+            this.label288 = new System.Windows.Forms.Label();
+            this.cmbBreaker1OCTimeVIN = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCTime00 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCTime01 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCTime02 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCTime10 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCTime03 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCTime09 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCTime04 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCTime08 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCTime05 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCTime07 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCTime06 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCAmpsVIN = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCAmps11 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCAmps10 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCAmps09 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCAmps08 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCAmps07 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCAmps06 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCAmps05 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCAmps04 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCAmps03 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCAmps02 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCAmps01 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1OCAmps00 = new System.Windows.Forms.ComboBox();
+            this.label287 = new System.Windows.Forms.Label();
+            this.label273 = new System.Windows.Forms.Label();
+            this.label260 = new System.Windows.Forms.Label();
+            this.tbxBreaker1BaseIndex = new System.Windows.Forms.TextBox();
+            this.lblBreaker1Ch00 = new System.Windows.Forms.Label();
+            this.lblBreaker1Ch01 = new System.Windows.Forms.Label();
+            this.lblBreaker1Ch04 = new System.Windows.Forms.Label();
+            this.lblBreaker1Ch02 = new System.Windows.Forms.Label();
+            this.lblBreaker1Ch05 = new System.Windows.Forms.Label();
+            this.lblBreaker1Ch03 = new System.Windows.Forms.Label();
+            this.lblBreaker1Ch06 = new System.Windows.Forms.Label();
+            this.lblBreaker1Ch11 = new System.Windows.Forms.Label();
+            this.lblBreaker1Ch07 = new System.Windows.Forms.Label();
+            this.lblBreaker1Ch10 = new System.Windows.Forms.Label();
+            this.lblBreaker1Ch08 = new System.Windows.Forms.Label();
+            this.lblBreaker1Ch09 = new System.Windows.Forms.Label();
+            this.cmbBreaker1PanelNum = new System.Windows.Forms.ComboBox();
             this.label252 = new System.Windows.Forms.Label();
-            this.comboBox36 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker1CardNum = new System.Windows.Forms.ComboBox();
             this.label253 = new System.Windows.Forms.Label();
             this.label254 = new System.Windows.Forms.Label();
-            this.textBox62 = new System.Windows.Forms.TextBox();
+            this.tbxBreaker1CfgRev = new System.Windows.Forms.TextBox();
             this.label255 = new System.Windows.Forms.Label();
-            this.textBox63 = new System.Windows.Forms.TextBox();
+            this.tbxBreaker1CfgType = new System.Windows.Forms.TextBox();
             this.tabBreaker2 = new System.Windows.Forms.TabPage();
-            this.comboBox37 = new System.Windows.Forms.ComboBox();
+            this.chkBreaker2MatchVIN = new System.Windows.Forms.CheckBox();
+            this.cmbBreaker2Interrupt11 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2Interrupt10 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2Interrupt09 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2Interrupt08 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2Interrupt07 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2Interrupt06 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2Interrupt05 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2Interrupt04 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2Interrupt03 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2Interrupt02 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2Interrupt01 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2Interrupt00 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2InterruptVIN = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCTime11 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCTime00 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCTime01 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCTime02 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCTime10 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCTime03 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCTime09 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCTime04 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCTime08 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCTime05 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCTime07 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCTime06 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCAmps11 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCAmps10 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCAmps09 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCAmps08 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCAmps07 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCAmps06 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCAmps05 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCAmps04 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCAmps03 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCAmps02 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCAmps01 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCAmps00 = new System.Windows.Forms.ComboBox();
+            this.lblBreaker2Ch00 = new System.Windows.Forms.Label();
+            this.lblBreaker2Ch01 = new System.Windows.Forms.Label();
+            this.lblBreaker2Ch04 = new System.Windows.Forms.Label();
+            this.lblBreaker2Ch02 = new System.Windows.Forms.Label();
+            this.lblBreaker2Ch05 = new System.Windows.Forms.Label();
+            this.lblBreaker2Ch03 = new System.Windows.Forms.Label();
+            this.lblBreaker2Ch06 = new System.Windows.Forms.Label();
+            this.lblBreaker2Ch11 = new System.Windows.Forms.Label();
+            this.lblBreaker2Ch07 = new System.Windows.Forms.Label();
+            this.lblBreaker2Ch10 = new System.Windows.Forms.Label();
+            this.lblBreaker2Ch08 = new System.Windows.Forms.Label();
+            this.lblBreaker2Ch09 = new System.Windows.Forms.Label();
+            this.label290 = new System.Windows.Forms.Label();
+            this.label291 = new System.Windows.Forms.Label();
+            this.cmbBreaker2OCTimeVIN = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2OCAmpsVIN = new System.Windows.Forms.ComboBox();
+            this.label292 = new System.Windows.Forms.Label();
+            this.label293 = new System.Windows.Forms.Label();
+            this.label300 = new System.Windows.Forms.Label();
+            this.tbxBreaker2BaseIndex = new System.Windows.Forms.TextBox();
+            this.cmbBreaker2PanelNum = new System.Windows.Forms.ComboBox();
             this.label256 = new System.Windows.Forms.Label();
-            this.comboBox38 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker2CardNum = new System.Windows.Forms.ComboBox();
             this.label257 = new System.Windows.Forms.Label();
             this.label258 = new System.Windows.Forms.Label();
-            this.textBox65 = new System.Windows.Forms.TextBox();
+            this.tbxBreaker2CfgRev = new System.Windows.Forms.TextBox();
             this.label259 = new System.Windows.Forms.Label();
-            this.textBox66 = new System.Windows.Forms.TextBox();
+            this.tbxBreaker2CfgType = new System.Windows.Forms.TextBox();
             this.tabBreaker3 = new System.Windows.Forms.TabPage();
+            this.chkBreaker3MatchVIN = new System.Windows.Forms.CheckBox();
+            this.cmbBreaker3Interrupt11 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3Interrupt10 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3Interrupt09 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3Interrupt08 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3Interrupt07 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3Interrupt06 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3Interrupt05 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3Interrupt04 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3Interrupt03 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3Interrupt02 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3Interrupt01 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3Interrupt00 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3InterruptVIN = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCTime11 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCTime00 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCTime01 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCTime02 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCTime10 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCTime03 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCTime09 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCTime04 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCTime08 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCTime05 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCTime07 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCTime06 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCAmps11 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCAmps10 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCAmps09 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCAmps08 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCAmps07 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCAmps06 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCAmps05 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCAmps04 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCAmps03 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCAmps02 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCAmps01 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCAmps00 = new System.Windows.Forms.ComboBox();
+            this.lblBreaker3Ch00 = new System.Windows.Forms.Label();
+            this.lblBreaker3Ch01 = new System.Windows.Forms.Label();
+            this.lblBreaker3Ch04 = new System.Windows.Forms.Label();
+            this.lblBreaker3Ch02 = new System.Windows.Forms.Label();
+            this.lblBreaker3Ch05 = new System.Windows.Forms.Label();
+            this.lblBreaker3Ch03 = new System.Windows.Forms.Label();
+            this.lblBreaker3Ch06 = new System.Windows.Forms.Label();
+            this.lblBreaker3Ch11 = new System.Windows.Forms.Label();
+            this.lblBreaker3Ch07 = new System.Windows.Forms.Label();
+            this.lblBreaker3Ch10 = new System.Windows.Forms.Label();
+            this.lblBreaker3Ch08 = new System.Windows.Forms.Label();
+            this.lblBreaker3Ch09 = new System.Windows.Forms.Label();
+            this.label313 = new System.Windows.Forms.Label();
+            this.label314 = new System.Windows.Forms.Label();
+            this.cmbBreaker3OCTimeVIN = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker3OCAmpsVIN = new System.Windows.Forms.ComboBox();
+            this.label315 = new System.Windows.Forms.Label();
+            this.label316 = new System.Windows.Forms.Label();
+            this.label317 = new System.Windows.Forms.Label();
+            this.tbxBreaker3BaseIndex = new System.Windows.Forms.TextBox();
+            this.cmbBreaker3PanelNum = new System.Windows.Forms.ComboBox();
+            this.label330 = new System.Windows.Forms.Label();
+            this.cmbBreaker3CardNum = new System.Windows.Forms.ComboBox();
+            this.label331 = new System.Windows.Forms.Label();
+            this.label332 = new System.Windows.Forms.Label();
+            this.tbxBreaker3CfgRev = new System.Windows.Forms.TextBox();
+            this.label333 = new System.Windows.Forms.Label();
+            this.tbxBreaker3CfgType = new System.Windows.Forms.TextBox();
             this.tabBreaker4 = new System.Windows.Forms.TabPage();
+            this.chkBreaker4MatchVIN = new System.Windows.Forms.CheckBox();
+            this.cmbBreaker4Interrupt11 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4Interrupt10 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4Interrupt09 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4Interrupt08 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4Interrupt07 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4Interrupt06 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4Interrupt05 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4Interrupt04 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4Interrupt03 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4Interrupt02 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4Interrupt01 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4Interrupt00 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4InterruptVIN = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCTime11 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCTime00 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCTime01 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCTime02 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCTime10 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCTime03 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCTime09 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCTime04 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCTime08 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCTime05 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCTime07 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCTime06 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCAmps11 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCAmps10 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCAmps09 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCAmps08 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCAmps07 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCAmps06 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCAmps05 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCAmps04 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCAmps03 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCAmps02 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCAmps01 = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCAmps00 = new System.Windows.Forms.ComboBox();
+            this.lblBreaker4Ch00 = new System.Windows.Forms.Label();
+            this.lblBreaker4Ch01 = new System.Windows.Forms.Label();
+            this.lblBreaker4Ch04 = new System.Windows.Forms.Label();
+            this.lblBreaker4Ch02 = new System.Windows.Forms.Label();
+            this.lblBreaker4Ch05 = new System.Windows.Forms.Label();
+            this.lblBreaker4Ch03 = new System.Windows.Forms.Label();
+            this.lblBreaker4Ch06 = new System.Windows.Forms.Label();
+            this.lblBreaker4Ch11 = new System.Windows.Forms.Label();
+            this.lblBreaker4Ch07 = new System.Windows.Forms.Label();
+            this.lblBreaker4Ch10 = new System.Windows.Forms.Label();
+            this.lblBreaker4Ch08 = new System.Windows.Forms.Label();
+            this.lblBreaker4Ch09 = new System.Windows.Forms.Label();
+            this.label334 = new System.Windows.Forms.Label();
+            this.label335 = new System.Windows.Forms.Label();
+            this.cmbBreaker4OCTimeVIN = new System.Windows.Forms.ComboBox();
+            this.cmbBreaker4OCAmpsVIN = new System.Windows.Forms.ComboBox();
+            this.label336 = new System.Windows.Forms.Label();
+            this.label337 = new System.Windows.Forms.Label();
+            this.label338 = new System.Windows.Forms.Label();
+            this.tbxBreaker4BaseIndex = new System.Windows.Forms.TextBox();
+            this.cmbBreaker4PanelNum = new System.Windows.Forms.ComboBox();
+            this.label351 = new System.Windows.Forms.Label();
+            this.cmbBreaker4CardNum = new System.Windows.Forms.ComboBox();
+            this.label352 = new System.Windows.Forms.Label();
+            this.label353 = new System.Windows.Forms.Label();
+            this.tbxBreaker4CfgRev = new System.Windows.Forms.TextBox();
+            this.label354 = new System.Windows.Forms.Label();
+            this.tbxBreaker4CfgType = new System.Windows.Forms.TextBox();
+            this.tabBreakerGenerated = new System.Windows.Forms.TabPage();
+            this.label277 = new System.Windows.Forms.Label();
+            this.tbxBreakerGenerated = new System.Windows.Forms.TextBox();
             this.tabMainDimmer = new System.Windows.Forms.TabPage();
             this.btnDimmerGenerate = new System.Windows.Forms.Button();
             this.tabControlDimmer = new M1ConfigGenerator.TablessControl();
@@ -451,7 +701,6 @@ namespace M1ConfigGenerator
             this.chkDimmer1MG3Ch00 = new System.Windows.Forms.CheckBox();
             this.chkDimmer1MG1Ch10 = new System.Windows.Forms.CheckBox();
             this.cmbDimmer1OCTime01 = new System.Windows.Forms.ComboBox();
-            this.chkDimmer1DCDriver = new System.Windows.Forms.CheckBox();
             this.chkDimmer1MG4Ch00 = new System.Windows.Forms.CheckBox();
             this.chkDimmer1MG4Ch09 = new System.Windows.Forms.CheckBox();
             this.cmbDimmer1OCTime00 = new System.Windows.Forms.ComboBox();
@@ -558,7 +807,6 @@ namespace M1ConfigGenerator
             this.cmbDimmer2OCTime01 = new System.Windows.Forms.ComboBox();
             this.chkDimmer2MG1Ch10 = new System.Windows.Forms.CheckBox();
             this.chkDimmer2MG4Ch00 = new System.Windows.Forms.CheckBox();
-            this.chkDimmer2DCDriver = new System.Windows.Forms.CheckBox();
             this.cmbDimmer2OCTime00 = new System.Windows.Forms.ComboBox();
             this.chkDimmer2MG4Ch09 = new System.Windows.Forms.CheckBox();
             this.chkDimmer2MG1Ch01 = new System.Windows.Forms.CheckBox();
@@ -664,7 +912,6 @@ namespace M1ConfigGenerator
             this.cmbDimmer3OCTime01 = new System.Windows.Forms.ComboBox();
             this.chkDimmer3MG1Ch10 = new System.Windows.Forms.CheckBox();
             this.chkDimmer3MG4Ch00 = new System.Windows.Forms.CheckBox();
-            this.chkDimmer3DCDriver = new System.Windows.Forms.CheckBox();
             this.cmbDimmer3OCTime00 = new System.Windows.Forms.ComboBox();
             this.chkDimmer3MG4Ch09 = new System.Windows.Forms.CheckBox();
             this.chkDimmer3MG1Ch01 = new System.Windows.Forms.CheckBox();
@@ -756,7 +1003,6 @@ namespace M1ConfigGenerator
             this.chkDimmer4MG1Ch10 = new System.Windows.Forms.CheckBox();
             this.label97 = new System.Windows.Forms.Label();
             this.chkDimmer4MG4Ch09 = new System.Windows.Forms.CheckBox();
-            this.chkDimmer4DCDriver = new System.Windows.Forms.CheckBox();
             this.chkDimmer4MG3Ch09 = new System.Windows.Forms.CheckBox();
             this.chkDimmer4DCMotor = new System.Windows.Forms.CheckBox();
             this.chkDimmer4MG2Ch09 = new System.Windows.Forms.CheckBox();
@@ -862,7 +1108,6 @@ namespace M1ConfigGenerator
             this.chkDimmer5MG1Ch10 = new System.Windows.Forms.CheckBox();
             this.label121 = new System.Windows.Forms.Label();
             this.chkDimmer5MG4Ch09 = new System.Windows.Forms.CheckBox();
-            this.chkDimmer5DCDriver = new System.Windows.Forms.CheckBox();
             this.chkDimmer5MG3Ch09 = new System.Windows.Forms.CheckBox();
             this.chkDimmer5DCMotor = new System.Windows.Forms.CheckBox();
             this.chkDimmer5MG2Ch09 = new System.Windows.Forms.CheckBox();
@@ -968,7 +1213,6 @@ namespace M1ConfigGenerator
             this.chkDimmer6MG1Ch10 = new System.Windows.Forms.CheckBox();
             this.label61 = new System.Windows.Forms.Label();
             this.chkDimmer6MG4Ch09 = new System.Windows.Forms.CheckBox();
-            this.chkDimmer6DCDriver = new System.Windows.Forms.CheckBox();
             this.chkDimmer6MG3Ch09 = new System.Windows.Forms.CheckBox();
             this.chkDimmer6DCMotor = new System.Windows.Forms.CheckBox();
             this.chkDimmer6MG2Ch09 = new System.Windows.Forms.CheckBox();
@@ -1055,6 +1299,9 @@ namespace M1ConfigGenerator
             this.cmbDimmer6OCTime06 = new System.Windows.Forms.ComboBox();
             this.cmbDimmer6OCTime08 = new System.Windows.Forms.ComboBox();
             this.cmbDimmer6OCTime07 = new System.Windows.Forms.ComboBox();
+            this.tabDimmerGenerated = new System.Windows.Forms.TabPage();
+            this.label29 = new System.Windows.Forms.Label();
+            this.tbxDimmerGenerated = new System.Windows.Forms.TextBox();
             this.btnDimmerCard6 = new System.Windows.Forms.Button();
             this.btnDimmerCard5 = new System.Windows.Forms.Button();
             this.btnDimmerCard1 = new System.Windows.Forms.Button();
@@ -1073,6 +1320,19 @@ namespace M1ConfigGenerator
             this.tabControlHC = new M1ConfigGenerator.TablessControl();
             this.tabHCBlank = new System.Windows.Forms.TabPage();
             this.tabHC1 = new System.Windows.Forms.TabPage();
+            this.chkHC1Startup11 = new System.Windows.Forms.CheckBox();
+            this.chkHC1Startup10 = new System.Windows.Forms.CheckBox();
+            this.chkHC1Startup09 = new System.Windows.Forms.CheckBox();
+            this.chkHC1Startup08 = new System.Windows.Forms.CheckBox();
+            this.chkHC1Startup07 = new System.Windows.Forms.CheckBox();
+            this.label301 = new System.Windows.Forms.Label();
+            this.chkHC1Startup06 = new System.Windows.Forms.CheckBox();
+            this.chkHC1Startup05 = new System.Windows.Forms.CheckBox();
+            this.chkHC1Startup04 = new System.Windows.Forms.CheckBox();
+            this.chkHC1Startup03 = new System.Windows.Forms.CheckBox();
+            this.chkHC1Startup02 = new System.Windows.Forms.CheckBox();
+            this.chkHC1Startup01 = new System.Windows.Forms.CheckBox();
+            this.chkHC1Startup00 = new System.Windows.Forms.CheckBox();
             this.cmbHC1Mode11 = new System.Windows.Forms.ComboBox();
             this.cmbHC1Mode10 = new System.Windows.Forms.ComboBox();
             this.cmbHC1Mode09 = new System.Windows.Forms.ComboBox();
@@ -1188,12 +1448,24 @@ namespace M1ConfigGenerator
             this.tbxHC1CfgType = new System.Windows.Forms.TextBox();
             this.label110 = new System.Windows.Forms.Label();
             this.chkHC1DCDimmer = new System.Windows.Forms.CheckBox();
-            this.chkHC1DCDriver = new System.Windows.Forms.CheckBox();
             this.chkHC1DCMotor = new System.Windows.Forms.CheckBox();
             this.chkHC1Force = new System.Windows.Forms.CheckBox();
             this.label111 = new System.Windows.Forms.Label();
             this.tbxHC1BaseIndex = new System.Windows.Forms.TextBox();
             this.tabHC2 = new System.Windows.Forms.TabPage();
+            this.chkHC2Startup11 = new System.Windows.Forms.CheckBox();
+            this.chkHC2Startup10 = new System.Windows.Forms.CheckBox();
+            this.chkHC2Startup09 = new System.Windows.Forms.CheckBox();
+            this.chkHC2Startup08 = new System.Windows.Forms.CheckBox();
+            this.chkHC2Startup07 = new System.Windows.Forms.CheckBox();
+            this.label302 = new System.Windows.Forms.Label();
+            this.chkHC2Startup06 = new System.Windows.Forms.CheckBox();
+            this.chkHC2Startup05 = new System.Windows.Forms.CheckBox();
+            this.chkHC2Startup04 = new System.Windows.Forms.CheckBox();
+            this.chkHC2Startup03 = new System.Windows.Forms.CheckBox();
+            this.chkHC2Startup02 = new System.Windows.Forms.CheckBox();
+            this.chkHC2Startup01 = new System.Windows.Forms.CheckBox();
+            this.chkHC2Startup00 = new System.Windows.Forms.CheckBox();
             this.cmbHC2Mode11 = new System.Windows.Forms.ComboBox();
             this.cmbHC2Mode10 = new System.Windows.Forms.ComboBox();
             this.cmbHC2Mode09 = new System.Windows.Forms.ComboBox();
@@ -1309,12 +1581,24 @@ namespace M1ConfigGenerator
             this.tbxHC2CfgType = new System.Windows.Forms.TextBox();
             this.label166 = new System.Windows.Forms.Label();
             this.chkHC2DCDimmer = new System.Windows.Forms.CheckBox();
-            this.chkHC2DCDriver = new System.Windows.Forms.CheckBox();
             this.chkHC2DCMotor = new System.Windows.Forms.CheckBox();
             this.chkHC2Force = new System.Windows.Forms.CheckBox();
             this.label167 = new System.Windows.Forms.Label();
             this.tbxHC2BaseIndex = new System.Windows.Forms.TextBox();
             this.tabHC3 = new System.Windows.Forms.TabPage();
+            this.chkHC3Startup11 = new System.Windows.Forms.CheckBox();
+            this.chkHC3Startup10 = new System.Windows.Forms.CheckBox();
+            this.chkHC3Startup09 = new System.Windows.Forms.CheckBox();
+            this.chkHC3Startup08 = new System.Windows.Forms.CheckBox();
+            this.chkHC3Startup07 = new System.Windows.Forms.CheckBox();
+            this.label303 = new System.Windows.Forms.Label();
+            this.chkHC3Startup06 = new System.Windows.Forms.CheckBox();
+            this.chkHC3Startup05 = new System.Windows.Forms.CheckBox();
+            this.chkHC3Startup04 = new System.Windows.Forms.CheckBox();
+            this.chkHC3Startup03 = new System.Windows.Forms.CheckBox();
+            this.chkHC3Startup02 = new System.Windows.Forms.CheckBox();
+            this.chkHC3Startup01 = new System.Windows.Forms.CheckBox();
+            this.chkHC3Startup00 = new System.Windows.Forms.CheckBox();
             this.cmbHC3Mode11 = new System.Windows.Forms.ComboBox();
             this.cmbHC3Mode10 = new System.Windows.Forms.ComboBox();
             this.cmbHC3Mode09 = new System.Windows.Forms.ComboBox();
@@ -1430,12 +1714,24 @@ namespace M1ConfigGenerator
             this.tbxHC3CfgType = new System.Windows.Forms.TextBox();
             this.label172 = new System.Windows.Forms.Label();
             this.chkHC3DCDimmer = new System.Windows.Forms.CheckBox();
-            this.chkHC3DCDriver = new System.Windows.Forms.CheckBox();
             this.chkHC3DCMotor = new System.Windows.Forms.CheckBox();
             this.chkHC3Force = new System.Windows.Forms.CheckBox();
             this.label173 = new System.Windows.Forms.Label();
             this.tbxHC3BaseIndex = new System.Windows.Forms.TextBox();
             this.tabHC4 = new System.Windows.Forms.TabPage();
+            this.chkHC4Startup11 = new System.Windows.Forms.CheckBox();
+            this.chkHC4Startup10 = new System.Windows.Forms.CheckBox();
+            this.chkHC4Startup09 = new System.Windows.Forms.CheckBox();
+            this.chkHC4Startup08 = new System.Windows.Forms.CheckBox();
+            this.chkHC4Startup07 = new System.Windows.Forms.CheckBox();
+            this.label304 = new System.Windows.Forms.Label();
+            this.chkHC4Startup06 = new System.Windows.Forms.CheckBox();
+            this.chkHC4Startup05 = new System.Windows.Forms.CheckBox();
+            this.chkHC4Startup04 = new System.Windows.Forms.CheckBox();
+            this.chkHC4Startup03 = new System.Windows.Forms.CheckBox();
+            this.chkHC4Startup02 = new System.Windows.Forms.CheckBox();
+            this.chkHC4Startup01 = new System.Windows.Forms.CheckBox();
+            this.chkHC4Startup00 = new System.Windows.Forms.CheckBox();
             this.cmbHC4Mode11 = new System.Windows.Forms.ComboBox();
             this.cmbHC4Mode10 = new System.Windows.Forms.ComboBox();
             this.cmbHC4Mode09 = new System.Windows.Forms.ComboBox();
@@ -1551,17 +1847,286 @@ namespace M1ConfigGenerator
             this.tbxHC4CfgType = new System.Windows.Forms.TextBox();
             this.label190 = new System.Windows.Forms.Label();
             this.chkHC4DCDimmer = new System.Windows.Forms.CheckBox();
-            this.chkHC4DCDriver = new System.Windows.Forms.CheckBox();
             this.chkHC4DCMotor = new System.Windows.Forms.CheckBox();
             this.chkHC4Force = new System.Windows.Forms.CheckBox();
             this.label191 = new System.Windows.Forms.Label();
             this.tbxHC4BaseIndex = new System.Windows.Forms.TextBox();
+            this.tabHC5 = new System.Windows.Forms.TabPage();
+            this.chkHC5Startup11 = new System.Windows.Forms.CheckBox();
+            this.chkHC5Startup10 = new System.Windows.Forms.CheckBox();
+            this.chkHC5Startup09 = new System.Windows.Forms.CheckBox();
+            this.chkHC5Startup08 = new System.Windows.Forms.CheckBox();
+            this.chkHC5Startup07 = new System.Windows.Forms.CheckBox();
+            this.label305 = new System.Windows.Forms.Label();
+            this.chkHC5Startup06 = new System.Windows.Forms.CheckBox();
+            this.chkHC5Startup05 = new System.Windows.Forms.CheckBox();
+            this.chkHC5Startup04 = new System.Windows.Forms.CheckBox();
+            this.chkHC5Startup03 = new System.Windows.Forms.CheckBox();
+            this.chkHC5Startup02 = new System.Windows.Forms.CheckBox();
+            this.chkHC5Startup01 = new System.Windows.Forms.CheckBox();
+            this.chkHC5Startup00 = new System.Windows.Forms.CheckBox();
+            this.cmbHC5Mode11 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5Mode10 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5Mode09 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5Mode08 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5Mode07 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5Mode06 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5Mode05 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5Mode04 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5Mode03 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5Mode02 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5Mode01 = new System.Windows.Forms.ComboBox();
+            this.label261 = new System.Windows.Forms.Label();
+            this.cmbHC5Mode00 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCAmps11 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCAmps10 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCAmps09 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCAmps08 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCAmps07 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCAmps06 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCAmps05 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCAmps04 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCAmps03 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCAmps02 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCAmps01 = new System.Windows.Forms.ComboBox();
+            this.chkHC5MG4Ch11 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG3Ch11 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG2Ch11 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG1Ch11 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG4Ch10 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG3Ch10 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG2Ch10 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG1Ch10 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG4Ch09 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG3Ch09 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG2Ch09 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG1Ch09 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG4Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG3Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG2Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG1Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG4Ch07 = new System.Windows.Forms.CheckBox();
+            this.label262 = new System.Windows.Forms.Label();
+            this.chkHC5MG3Ch07 = new System.Windows.Forms.CheckBox();
+            this.label263 = new System.Windows.Forms.Label();
+            this.chkHC5MG2Ch07 = new System.Windows.Forms.CheckBox();
+            this.label264 = new System.Windows.Forms.Label();
+            this.chkHC5MG1Ch07 = new System.Windows.Forms.CheckBox();
+            this.label265 = new System.Windows.Forms.Label();
+            this.chkHC5MG4Ch06 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG3Ch06 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG2Ch06 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG1Ch06 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG4Ch05 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG3Ch05 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG2Ch05 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG1Ch05 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG4Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG3Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG2Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG1Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG4Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG3Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG2Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG1Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG4Ch02 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG3Ch02 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG2Ch02 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG1Ch02 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG4Ch01 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG3Ch01 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG2Ch01 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG1Ch01 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG4Ch00 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG3Ch00 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG2Ch00 = new System.Windows.Forms.CheckBox();
+            this.chkHC5MG1Ch00 = new System.Windows.Forms.CheckBox();
+            this.label266 = new System.Windows.Forms.Label();
+            this.cmbHC5OCTime00 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCTime01 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCTime02 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCTime03 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCTime11 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCTime04 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCTime10 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCTime05 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCTime09 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCTime06 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCTime08 = new System.Windows.Forms.ComboBox();
+            this.cmbHC5OCTime07 = new System.Windows.Forms.ComboBox();
+            this.label267 = new System.Windows.Forms.Label();
+            this.cmbHC5OCAmps00 = new System.Windows.Forms.ComboBox();
+            this.lblHC5Ch00 = new System.Windows.Forms.Label();
+            this.lblHC5Ch01 = new System.Windows.Forms.Label();
+            this.lblHC5Ch02 = new System.Windows.Forms.Label();
+            this.lblHC5Ch03 = new System.Windows.Forms.Label();
+            this.lblHC5Ch11 = new System.Windows.Forms.Label();
+            this.lblHC5Ch10 = new System.Windows.Forms.Label();
+            this.lblHC5Ch09 = new System.Windows.Forms.Label();
+            this.lblHC5Ch08 = new System.Windows.Forms.Label();
+            this.lblHC5Ch07 = new System.Windows.Forms.Label();
+            this.lblHC5Ch06 = new System.Windows.Forms.Label();
+            this.lblHC5Ch05 = new System.Windows.Forms.Label();
+            this.lblHC5Ch04 = new System.Windows.Forms.Label();
+            this.chkHC5RGB = new System.Windows.Forms.CheckBox();
+            this.chkHC5Shade = new System.Windows.Forms.CheckBox();
+            this.cmbHC5PanelNum = new System.Windows.Forms.ComboBox();
+            this.label281 = new System.Windows.Forms.Label();
+            this.cmbHC5CardNum = new System.Windows.Forms.ComboBox();
+            this.label282 = new System.Windows.Forms.Label();
+            this.label283 = new System.Windows.Forms.Label();
+            this.tbxHC5CfgRev = new System.Windows.Forms.TextBox();
+            this.label284 = new System.Windows.Forms.Label();
+            this.tbxHC5CfgType = new System.Windows.Forms.TextBox();
+            this.label285 = new System.Windows.Forms.Label();
+            this.chkHC5DCDimmer = new System.Windows.Forms.CheckBox();
+            this.chkHC5DCMotor = new System.Windows.Forms.CheckBox();
+            this.chkHC5Force = new System.Windows.Forms.CheckBox();
+            this.label286 = new System.Windows.Forms.Label();
+            this.tbxHC5BaseIndex = new System.Windows.Forms.TextBox();
+            this.tabHC6 = new System.Windows.Forms.TabPage();
+            this.chkHC6Startup11 = new System.Windows.Forms.CheckBox();
+            this.chkHC6Startup10 = new System.Windows.Forms.CheckBox();
+            this.chkHC6Startup09 = new System.Windows.Forms.CheckBox();
+            this.chkHC6Startup08 = new System.Windows.Forms.CheckBox();
+            this.chkHC6Startup07 = new System.Windows.Forms.CheckBox();
+            this.label306 = new System.Windows.Forms.Label();
+            this.chkHC6Startup06 = new System.Windows.Forms.CheckBox();
+            this.chkHC6Startup05 = new System.Windows.Forms.CheckBox();
+            this.chkHC6Startup04 = new System.Windows.Forms.CheckBox();
+            this.chkHC6Startup03 = new System.Windows.Forms.CheckBox();
+            this.chkHC6Startup02 = new System.Windows.Forms.CheckBox();
+            this.chkHC6Startup01 = new System.Windows.Forms.CheckBox();
+            this.chkHC6Startup00 = new System.Windows.Forms.CheckBox();
+            this.cmbHC6Mode11 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6Mode10 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6Mode09 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6Mode08 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6Mode07 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6Mode06 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6Mode05 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6Mode04 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6Mode03 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6Mode02 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6Mode01 = new System.Windows.Forms.ComboBox();
+            this.label268 = new System.Windows.Forms.Label();
+            this.cmbHC6Mode00 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCAmps11 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCAmps10 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCAmps09 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCAmps08 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCAmps07 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCAmps06 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCAmps05 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCAmps04 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCAmps03 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCAmps02 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCAmps01 = new System.Windows.Forms.ComboBox();
+            this.chkHC6MG4Ch11 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG3Ch11 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG2Ch11 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG1Ch11 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG4Ch10 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG3Ch10 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG2Ch10 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG1Ch10 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG4Ch09 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG3Ch09 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG2Ch09 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG1Ch09 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG4Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG3Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG2Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG1Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG4Ch07 = new System.Windows.Forms.CheckBox();
+            this.label269 = new System.Windows.Forms.Label();
+            this.chkHC6MG3Ch07 = new System.Windows.Forms.CheckBox();
+            this.label270 = new System.Windows.Forms.Label();
+            this.chkHC6MG2Ch07 = new System.Windows.Forms.CheckBox();
+            this.label271 = new System.Windows.Forms.Label();
+            this.chkHC6MG1Ch07 = new System.Windows.Forms.CheckBox();
+            this.label272 = new System.Windows.Forms.Label();
+            this.chkHC6MG4Ch06 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG3Ch06 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG2Ch06 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG1Ch06 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG4Ch05 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG3Ch05 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG2Ch05 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG1Ch05 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG4Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG3Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG2Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG1Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG4Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG3Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG2Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG1Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG4Ch02 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG3Ch02 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG2Ch02 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG1Ch02 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG4Ch01 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG3Ch01 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG2Ch01 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG1Ch01 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG4Ch00 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG3Ch00 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG2Ch00 = new System.Windows.Forms.CheckBox();
+            this.chkHC6MG1Ch00 = new System.Windows.Forms.CheckBox();
+            this.label274 = new System.Windows.Forms.Label();
+            this.cmbHC6OCTime00 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCTime01 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCTime02 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCTime03 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCTime11 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCTime04 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCTime10 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCTime05 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCTime09 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCTime06 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCTime08 = new System.Windows.Forms.ComboBox();
+            this.cmbHC6OCTime07 = new System.Windows.Forms.ComboBox();
+            this.label275 = new System.Windows.Forms.Label();
+            this.cmbHC6OCAmps00 = new System.Windows.Forms.ComboBox();
+            this.lblHC6Ch00 = new System.Windows.Forms.Label();
+            this.lblHC6Ch01 = new System.Windows.Forms.Label();
+            this.lblHC6Ch02 = new System.Windows.Forms.Label();
+            this.lblHC6Ch03 = new System.Windows.Forms.Label();
+            this.lblHC6Ch11 = new System.Windows.Forms.Label();
+            this.lblHC6Ch10 = new System.Windows.Forms.Label();
+            this.lblHC6Ch09 = new System.Windows.Forms.Label();
+            this.lblHC6Ch08 = new System.Windows.Forms.Label();
+            this.lblHC6Ch07 = new System.Windows.Forms.Label();
+            this.lblHC6Ch06 = new System.Windows.Forms.Label();
+            this.lblHC6Ch05 = new System.Windows.Forms.Label();
+            this.lblHC6Ch04 = new System.Windows.Forms.Label();
+            this.chkHC6RGB = new System.Windows.Forms.CheckBox();
+            this.chkHC6Shade = new System.Windows.Forms.CheckBox();
+            this.cmbHC6PanelNum = new System.Windows.Forms.ComboBox();
+            this.label294 = new System.Windows.Forms.Label();
+            this.cmbHC6CardNum = new System.Windows.Forms.ComboBox();
+            this.label295 = new System.Windows.Forms.Label();
+            this.label296 = new System.Windows.Forms.Label();
+            this.tbxHC6CfgRev = new System.Windows.Forms.TextBox();
+            this.label297 = new System.Windows.Forms.Label();
+            this.tbxHC6CfgType = new System.Windows.Forms.TextBox();
+            this.label298 = new System.Windows.Forms.Label();
+            this.chkHC6DCDimmer = new System.Windows.Forms.CheckBox();
+            this.chkHC6DCMotor = new System.Windows.Forms.CheckBox();
+            this.chkHC6Force = new System.Windows.Forms.CheckBox();
+            this.label299 = new System.Windows.Forms.Label();
+            this.tbxHC6BaseIndex = new System.Windows.Forms.TextBox();
+            this.tabHCGenerated = new System.Windows.Forms.TabPage();
+            this.label278 = new System.Windows.Forms.Label();
+            this.tbxHCGenerated = new System.Windows.Forms.TextBox();
             this.tabMainLC = new System.Windows.Forms.TabPage();
             this.btnLCGenerate = new System.Windows.Forms.Button();
             this.btnLCCard6 = new System.Windows.Forms.Button();
             this.tabControlLC = new M1ConfigGenerator.TablessControl();
             this.tabLCBlank = new System.Windows.Forms.TabPage();
             this.tabLC1 = new System.Windows.Forms.TabPage();
+            this.chkLC1Standalone = new System.Windows.Forms.CheckBox();
             this.chkLC1MG4Ch15 = new System.Windows.Forms.CheckBox();
             this.chkLC1MG3Ch15 = new System.Windows.Forms.CheckBox();
             this.chkLC1MG2Ch15 = new System.Windows.Forms.CheckBox();
@@ -1593,15 +2158,23 @@ namespace M1ConfigGenerator
             this.chkLC1DCDimmer = new System.Windows.Forms.CheckBox();
             this.tabControlLC1QF = new M1ConfigGenerator.TablessControl();
             this.tabLC1Quick = new System.Windows.Forms.TabPage();
-            this.chkLC1QuickPair1415 = new System.Windows.Forms.CheckBox();
-            this.chkLC1QuickPair1213 = new System.Windows.Forms.CheckBox();
-            this.chkLC1QuickPair1011 = new System.Windows.Forms.CheckBox();
-            this.chkLC1QuickPair0809 = new System.Windows.Forms.CheckBox();
-            this.chkLC1QuickPair0607 = new System.Windows.Forms.CheckBox();
-            this.chkLC1QuickPair0405 = new System.Windows.Forms.CheckBox();
-            this.chkLC1QuickPair0203 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1Mode15 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode14 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode13 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode12 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode11 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode10 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode09 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode08 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode07 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode06 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode05 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode04 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode03 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode02 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode01 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode00 = new System.Windows.Forms.ComboBox();
             this.label210 = new System.Windows.Forms.Label();
-            this.chkLC1QuickPair0001 = new System.Windows.Forms.CheckBox();
             this.tabLC1Full = new System.Windows.Forms.TabPage();
             this.comboBox129 = new System.Windows.Forms.ComboBox();
             this.textBox61 = new System.Windows.Forms.TextBox();
@@ -1791,7 +2364,6 @@ namespace M1ConfigGenerator
             this.chkLC1MG1Ch10 = new System.Windows.Forms.CheckBox();
             this.label229 = new System.Windows.Forms.Label();
             this.chkLC1MG4Ch09 = new System.Windows.Forms.CheckBox();
-            this.chkLC1DCDriver = new System.Windows.Forms.CheckBox();
             this.chkLC1MG3Ch09 = new System.Windows.Forms.CheckBox();
             this.chkLC1DCMotor = new System.Windows.Forms.CheckBox();
             this.chkLC1MG2Ch09 = new System.Windows.Forms.CheckBox();
@@ -1879,6 +2451,7 @@ namespace M1ConfigGenerator
             this.cmbLC1OCTime08 = new System.Windows.Forms.ComboBox();
             this.cmbLC1OCTime07 = new System.Windows.Forms.ComboBox();
             this.tabLC2 = new System.Windows.Forms.TabPage();
+            this.chkLC2Standalone = new System.Windows.Forms.CheckBox();
             this.lblLC2Ch15 = new System.Windows.Forms.Label();
             this.lblLC2Ch14 = new System.Windows.Forms.Label();
             this.lblLC2Ch13 = new System.Windows.Forms.Label();
@@ -1987,15 +2560,23 @@ namespace M1ConfigGenerator
             this.cmbLC2OCTime07 = new System.Windows.Forms.ComboBox();
             this.tabControlLC2QF = new M1ConfigGenerator.TablessControl();
             this.tabLC2Quick = new System.Windows.Forms.TabPage();
-            this.chkLC2QuickPair1415 = new System.Windows.Forms.CheckBox();
-            this.chkLC2QuickPair1213 = new System.Windows.Forms.CheckBox();
-            this.chkLC2QuickPair1011 = new System.Windows.Forms.CheckBox();
-            this.chkLC2QuickPair0809 = new System.Windows.Forms.CheckBox();
-            this.chkLC2QuickPair0607 = new System.Windows.Forms.CheckBox();
-            this.chkLC2QuickPair0405 = new System.Windows.Forms.CheckBox();
-            this.chkLC2QuickPair0203 = new System.Windows.Forms.CheckBox();
+            this.cmbLC2Mode15 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode14 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode13 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode12 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode11 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode10 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode09 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode08 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode07 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode06 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode05 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode04 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode03 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode02 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode01 = new System.Windows.Forms.ComboBox();
+            this.cmbLC2Mode00 = new System.Windows.Forms.ComboBox();
             this.label211 = new System.Windows.Forms.Label();
-            this.chkLC2QuickPair0001 = new System.Windows.Forms.CheckBox();
             this.tabLC2Full = new System.Windows.Forms.TabPage();
             this.chkLC2DCDimmer = new System.Windows.Forms.CheckBox();
             this.chkLC2Force = new System.Windows.Forms.CheckBox();
@@ -2004,7 +2585,6 @@ namespace M1ConfigGenerator
             this.cmbLC2CardNum = new System.Windows.Forms.ComboBox();
             this.chkLC2DCMotor = new System.Windows.Forms.CheckBox();
             this.label88 = new System.Windows.Forms.Label();
-            this.chkLC2DCDriver = new System.Windows.Forms.CheckBox();
             this.label87 = new System.Windows.Forms.Label();
             this.cmbLC2PanelNum = new System.Windows.Forms.ComboBox();
             this.tbxLC2CfgRev = new System.Windows.Forms.TextBox();
@@ -2026,11 +2606,11 @@ namespace M1ConfigGenerator
             this.lblLC2Ch05 = new System.Windows.Forms.Label();
             this.lblLC2Ch04 = new System.Windows.Forms.Label();
             this.tabLC3 = new System.Windows.Forms.TabPage();
+            this.chkLC3Standalone = new System.Windows.Forms.CheckBox();
             this.chkLC3DCDimmer = new System.Windows.Forms.CheckBox();
             this.chkLC3Force = new System.Windows.Forms.CheckBox();
             this.chkLC3Shade = new System.Windows.Forms.CheckBox();
             this.chkLC3DCMotor = new System.Windows.Forms.CheckBox();
-            this.chkLC3DCDriver = new System.Windows.Forms.CheckBox();
             this.lblLC3Ch15 = new System.Windows.Forms.Label();
             this.lblLC3Ch14 = new System.Windows.Forms.Label();
             this.lblLC3Ch13 = new System.Windows.Forms.Label();
@@ -2061,15 +2641,23 @@ namespace M1ConfigGenerator
             this.cmbLC3OCTime12 = new System.Windows.Forms.ComboBox();
             this.tabControlLC3QF = new M1ConfigGenerator.TablessControl();
             this.tabLC3Quick = new System.Windows.Forms.TabPage();
-            this.chkLC3QuickPair1415 = new System.Windows.Forms.CheckBox();
-            this.chkLC3QuickPair1213 = new System.Windows.Forms.CheckBox();
-            this.chkLC3QuickPair1011 = new System.Windows.Forms.CheckBox();
-            this.chkLC3QuickPair0809 = new System.Windows.Forms.CheckBox();
-            this.chkLC3QuickPair0607 = new System.Windows.Forms.CheckBox();
-            this.chkLC3QuickPair0405 = new System.Windows.Forms.CheckBox();
-            this.chkLC3QuickPair0203 = new System.Windows.Forms.CheckBox();
+            this.cmbLC3Mode15 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode14 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode13 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode12 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode11 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode10 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode09 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode08 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode07 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode06 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode05 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode04 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode03 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode02 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode01 = new System.Windows.Forms.ComboBox();
+            this.cmbLC3Mode00 = new System.Windows.Forms.ComboBox();
             this.label212 = new System.Windows.Forms.Label();
-            this.chkLC3QuickPair0001 = new System.Windows.Forms.CheckBox();
             this.tabLC3Full = new System.Windows.Forms.TabPage();
             this.cmbLC3PanelNum = new System.Windows.Forms.ComboBox();
             this.chkLC3MG4Ch11 = new System.Windows.Forms.CheckBox();
@@ -2173,11 +2761,10 @@ namespace M1ConfigGenerator
             this.cmbLC3OCTime08 = new System.Windows.Forms.ComboBox();
             this.cmbLC3OCTime07 = new System.Windows.Forms.ComboBox();
             this.tabLC4 = new System.Windows.Forms.TabPage();
+            this.chkLC4Standalone = new System.Windows.Forms.CheckBox();
             this.chkLC4DCDimmer = new System.Windows.Forms.CheckBox();
             this.chkLC4Force = new System.Windows.Forms.CheckBox();
             this.chkLC4Shade = new System.Windows.Forms.CheckBox();
-            this.chkLC4DCMotor = new System.Windows.Forms.CheckBox();
-            this.chkLC4DCDriver = new System.Windows.Forms.CheckBox();
             this.lblLC4Ch15 = new System.Windows.Forms.Label();
             this.lblLC4Ch14 = new System.Windows.Forms.Label();
             this.lblLC4Ch13 = new System.Windows.Forms.Label();
@@ -2208,15 +2795,23 @@ namespace M1ConfigGenerator
             this.cmbLC4OCTime12 = new System.Windows.Forms.ComboBox();
             this.tabControlLC4QF = new M1ConfigGenerator.TablessControl();
             this.tabLC4Quick = new System.Windows.Forms.TabPage();
-            this.chkLC4QuickPair1415 = new System.Windows.Forms.CheckBox();
-            this.chkLC4QuickPair1213 = new System.Windows.Forms.CheckBox();
-            this.chkLC4QuickPair1011 = new System.Windows.Forms.CheckBox();
-            this.chkLC4QuickPair0809 = new System.Windows.Forms.CheckBox();
-            this.chkLC4QuickPair0607 = new System.Windows.Forms.CheckBox();
-            this.chkLC4QuickPair0405 = new System.Windows.Forms.CheckBox();
-            this.chkLC4QuickPair0203 = new System.Windows.Forms.CheckBox();
+            this.cmbLC4Mode15 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode14 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode13 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode12 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode11 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode10 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode09 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode08 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode07 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode06 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode05 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode04 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode03 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode02 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode01 = new System.Windows.Forms.ComboBox();
+            this.cmbLC4Mode00 = new System.Windows.Forms.ComboBox();
             this.label213 = new System.Windows.Forms.Label();
-            this.chkLC4QuickPair0001 = new System.Windows.Forms.CheckBox();
             this.tabLC4Full = new System.Windows.Forms.TabPage();
             this.cmbLC4PanelNum = new System.Windows.Forms.ComboBox();
             this.chkLC4MG4Ch11 = new System.Windows.Forms.CheckBox();
@@ -2320,11 +2915,11 @@ namespace M1ConfigGenerator
             this.cmbLC4OCTime08 = new System.Windows.Forms.ComboBox();
             this.cmbLC4OCTime07 = new System.Windows.Forms.ComboBox();
             this.tabLC5 = new System.Windows.Forms.TabPage();
+            this.chkLC5Standalone = new System.Windows.Forms.CheckBox();
             this.chkLC5DCDimmer = new System.Windows.Forms.CheckBox();
             this.chkLC5Force = new System.Windows.Forms.CheckBox();
             this.chkLC5Shade = new System.Windows.Forms.CheckBox();
             this.chkLC5DCMotor = new System.Windows.Forms.CheckBox();
-            this.chkLC5DCDriver = new System.Windows.Forms.CheckBox();
             this.lblLC5Ch15 = new System.Windows.Forms.Label();
             this.lblLC5Ch14 = new System.Windows.Forms.Label();
             this.lblLC5Ch13 = new System.Windows.Forms.Label();
@@ -2355,15 +2950,23 @@ namespace M1ConfigGenerator
             this.cmbLC5OCTime12 = new System.Windows.Forms.ComboBox();
             this.tabControlLC5QF = new M1ConfigGenerator.TablessControl();
             this.tabLC5Quick = new System.Windows.Forms.TabPage();
-            this.chkLC5QuickPair1415 = new System.Windows.Forms.CheckBox();
-            this.chkLC5QuickPair1213 = new System.Windows.Forms.CheckBox();
-            this.chkLC5QuickPair1011 = new System.Windows.Forms.CheckBox();
-            this.chkLC5QuickPair0809 = new System.Windows.Forms.CheckBox();
-            this.chkLC5QuickPair0607 = new System.Windows.Forms.CheckBox();
-            this.chkLC5QuickPair0405 = new System.Windows.Forms.CheckBox();
-            this.chkLC5QuickPair0203 = new System.Windows.Forms.CheckBox();
+            this.cmbLC5Mode15 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode14 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode13 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode12 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode11 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode10 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode09 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode08 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode07 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode06 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode05 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode04 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode03 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode02 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode01 = new System.Windows.Forms.ComboBox();
+            this.cmbLC5Mode00 = new System.Windows.Forms.ComboBox();
             this.label214 = new System.Windows.Forms.Label();
-            this.chkLC5QuickPair0001 = new System.Windows.Forms.CheckBox();
             this.tabLC5Full = new System.Windows.Forms.TabPage();
             this.cmbLC5PanelNum = new System.Windows.Forms.ComboBox();
             this.chkLC5MG4Ch11 = new System.Windows.Forms.CheckBox();
@@ -2467,11 +3070,11 @@ namespace M1ConfigGenerator
             this.cmbLC5OCTime08 = new System.Windows.Forms.ComboBox();
             this.cmbLC5OCTime07 = new System.Windows.Forms.ComboBox();
             this.tabLC6 = new System.Windows.Forms.TabPage();
+            this.chkLC6Standalone = new System.Windows.Forms.CheckBox();
             this.chkLC6DCDimmer = new System.Windows.Forms.CheckBox();
             this.chkLC6Force = new System.Windows.Forms.CheckBox();
             this.chkLC6Shade = new System.Windows.Forms.CheckBox();
             this.chkLC6DCMotor = new System.Windows.Forms.CheckBox();
-            this.chkLC6DCDriver = new System.Windows.Forms.CheckBox();
             this.lblLC6Ch15 = new System.Windows.Forms.Label();
             this.lblLC6Ch14 = new System.Windows.Forms.Label();
             this.lblLC6Ch13 = new System.Windows.Forms.Label();
@@ -2502,15 +3105,23 @@ namespace M1ConfigGenerator
             this.cmbLC6OCTime12 = new System.Windows.Forms.ComboBox();
             this.tabControlLC6QF = new M1ConfigGenerator.TablessControl();
             this.tabLC6Quick = new System.Windows.Forms.TabPage();
-            this.chkLC6QuickPair1415 = new System.Windows.Forms.CheckBox();
-            this.chkLC6QuickPair1213 = new System.Windows.Forms.CheckBox();
-            this.chkLC6QuickPair1011 = new System.Windows.Forms.CheckBox();
-            this.chkLC6QuickPair0809 = new System.Windows.Forms.CheckBox();
-            this.chkLC6QuickPair0607 = new System.Windows.Forms.CheckBox();
-            this.chkLC6QuickPair0405 = new System.Windows.Forms.CheckBox();
-            this.chkLC6QuickPair0203 = new System.Windows.Forms.CheckBox();
+            this.cmbLC6Mode15 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode14 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode13 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode12 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode11 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode10 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode09 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode08 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode07 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode06 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode05 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode04 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode03 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode02 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode01 = new System.Windows.Forms.ComboBox();
+            this.cmbLC6Mode00 = new System.Windows.Forms.ComboBox();
             this.label215 = new System.Windows.Forms.Label();
-            this.chkLC6QuickPair0001 = new System.Windows.Forms.CheckBox();
             this.tabLC6Full = new System.Windows.Forms.TabPage();
             this.cmbLC6PanelNum = new System.Windows.Forms.ComboBox();
             this.chkLC6MG4Ch11 = new System.Windows.Forms.CheckBox();
@@ -2613,6 +3224,9 @@ namespace M1ConfigGenerator
             this.cmbLC6OCTime06 = new System.Windows.Forms.ComboBox();
             this.cmbLC6OCTime08 = new System.Windows.Forms.ComboBox();
             this.cmbLC6OCTime07 = new System.Windows.Forms.ComboBox();
+            this.tabLCGenerated = new System.Windows.Forms.TabPage();
+            this.label279 = new System.Windows.Forms.Label();
+            this.tbxLCGenerated = new System.Windows.Forms.TextBox();
             this.btnLCCard5 = new System.Windows.Forms.Button();
             this.btnLCCard1 = new System.Windows.Forms.Button();
             this.btnLCCard4 = new System.Windows.Forms.Button();
@@ -2620,6 +3234,7 @@ namespace M1ConfigGenerator
             this.btnLCCard3 = new System.Windows.Forms.Button();
             this.tabMainSlide = new System.Windows.Forms.TabPage();
             this.panelSlide = new System.Windows.Forms.Panel();
+            this.btnSlideGenerate = new System.Windows.Forms.Button();
             this.btnSlideCard6 = new System.Windows.Forms.Button();
             this.btnSlideCard5 = new System.Windows.Forms.Button();
             this.btnSlideCard4 = new System.Windows.Forms.Button();
@@ -2630,6 +3245,10 @@ namespace M1ConfigGenerator
             this.tabSlideBlank = new System.Windows.Forms.TabPage();
             this.tabSlide1 = new System.Windows.Forms.TabPage();
             this.tabSlide2 = new System.Windows.Forms.TabPage();
+            this.tabSlideGenerated = new System.Windows.Forms.TabPage();
+            this.label280 = new System.Windows.Forms.Label();
+            this.tbxSlideGenerated = new System.Windows.Forms.TextBox();
+            this.chkLC4DCMotor = new System.Windows.Forms.CheckBox();
             this.panelMenu.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
@@ -2643,11 +3262,15 @@ namespace M1ConfigGenerator
             this.tabAux2.SuspendLayout();
             this.tabControlAux2QF.SuspendLayout();
             this.tabAux2Quick.SuspendLayout();
+            this.tabAuxGenerated.SuspendLayout();
             this.tabMainBreaker.SuspendLayout();
             this.panelBreaker.SuspendLayout();
             this.tabControlBreaker.SuspendLayout();
             this.tabBreaker1.SuspendLayout();
             this.tabBreaker2.SuspendLayout();
+            this.tabBreaker3.SuspendLayout();
+            this.tabBreaker4.SuspendLayout();
+            this.tabBreakerGenerated.SuspendLayout();
             this.tabMainDimmer.SuspendLayout();
             this.tabControlDimmer.SuspendLayout();
             this.tabDimmer1.SuspendLayout();
@@ -2658,6 +3281,7 @@ namespace M1ConfigGenerator
             this.tabDimmer4.SuspendLayout();
             this.tabDimmer5.SuspendLayout();
             this.tabDimmer6.SuspendLayout();
+            this.tabDimmerGenerated.SuspendLayout();
             this.tabMainHC.SuspendLayout();
             this.panelHC.SuspendLayout();
             this.tabControlHC.SuspendLayout();
@@ -2665,6 +3289,9 @@ namespace M1ConfigGenerator
             this.tabHC2.SuspendLayout();
             this.tabHC3.SuspendLayout();
             this.tabHC4.SuspendLayout();
+            this.tabHC5.SuspendLayout();
+            this.tabHC6.SuspendLayout();
+            this.tabHCGenerated.SuspendLayout();
             this.tabMainLC.SuspendLayout();
             this.tabControlLC.SuspendLayout();
             this.tabLC1.SuspendLayout();
@@ -2686,9 +3313,11 @@ namespace M1ConfigGenerator
             this.tabLC6.SuspendLayout();
             this.tabControlLC6QF.SuspendLayout();
             this.tabLC6Quick.SuspendLayout();
+            this.tabLCGenerated.SuspendLayout();
             this.tabMainSlide.SuspendLayout();
             this.panelSlide.SuspendLayout();
             this.tabControlSlide.SuspendLayout();
+            this.tabSlideGenerated.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -2700,7 +3329,6 @@ namespace M1ConfigGenerator
             this.panelMenu.Controls.Add(this.btnMenuDimmer);
             this.panelMenu.Controls.Add(this.btnMenuBreaker);
             this.panelMenu.Controls.Add(this.btnMenuAux);
-            this.panelMenu.Controls.Add(this.btnMenuLoad);
             this.panelMenu.Controls.Add(this.btnMenuNew);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -2716,7 +3344,7 @@ namespace M1ConfigGenerator
             this.btnMenuSlide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuSlide.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuSlide.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMenuSlide.Location = new System.Drawing.Point(0, 420);
+            this.btnMenuSlide.Location = new System.Drawing.Point(0, 360);
             this.btnMenuSlide.Name = "btnMenuSlide";
             this.btnMenuSlide.Size = new System.Drawing.Size(200, 60);
             this.btnMenuSlide.TabIndex = 7;
@@ -2733,7 +3361,7 @@ namespace M1ConfigGenerator
             this.btnMenuLC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuLC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuLC.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMenuLC.Location = new System.Drawing.Point(0, 360);
+            this.btnMenuLC.Location = new System.Drawing.Point(0, 300);
             this.btnMenuLC.Name = "btnMenuLC";
             this.btnMenuLC.Size = new System.Drawing.Size(200, 60);
             this.btnMenuLC.TabIndex = 6;
@@ -2750,7 +3378,7 @@ namespace M1ConfigGenerator
             this.btnMenuHC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuHC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuHC.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMenuHC.Location = new System.Drawing.Point(0, 300);
+            this.btnMenuHC.Location = new System.Drawing.Point(0, 240);
             this.btnMenuHC.Name = "btnMenuHC";
             this.btnMenuHC.Size = new System.Drawing.Size(200, 60);
             this.btnMenuHC.TabIndex = 5;
@@ -2767,7 +3395,7 @@ namespace M1ConfigGenerator
             this.btnMenuDimmer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuDimmer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuDimmer.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMenuDimmer.Location = new System.Drawing.Point(0, 240);
+            this.btnMenuDimmer.Location = new System.Drawing.Point(0, 180);
             this.btnMenuDimmer.Name = "btnMenuDimmer";
             this.btnMenuDimmer.Size = new System.Drawing.Size(200, 60);
             this.btnMenuDimmer.TabIndex = 4;
@@ -2784,7 +3412,7 @@ namespace M1ConfigGenerator
             this.btnMenuBreaker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuBreaker.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuBreaker.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMenuBreaker.Location = new System.Drawing.Point(0, 180);
+            this.btnMenuBreaker.Location = new System.Drawing.Point(0, 120);
             this.btnMenuBreaker.Name = "btnMenuBreaker";
             this.btnMenuBreaker.Size = new System.Drawing.Size(200, 60);
             this.btnMenuBreaker.TabIndex = 3;
@@ -2801,7 +3429,7 @@ namespace M1ConfigGenerator
             this.btnMenuAux.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuAux.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuAux.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMenuAux.Location = new System.Drawing.Point(0, 120);
+            this.btnMenuAux.Location = new System.Drawing.Point(0, 60);
             this.btnMenuAux.Name = "btnMenuAux";
             this.btnMenuAux.Size = new System.Drawing.Size(200, 60);
             this.btnMenuAux.TabIndex = 2;
@@ -2809,24 +3437,6 @@ namespace M1ConfigGenerator
             this.btnMenuAux.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenuAux.UseVisualStyleBackColor = false;
             this.btnMenuAux.Click += new System.EventHandler(this.btnMenuAux_Click);
-            // 
-            // btnMenuLoad
-            // 
-            this.btnMenuLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btnMenuLoad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMenuLoad.FlatAppearance.BorderSize = 0;
-            this.btnMenuLoad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btnMenuLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuLoad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuLoad.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMenuLoad.Location = new System.Drawing.Point(0, 60);
-            this.btnMenuLoad.Name = "btnMenuLoad";
-            this.btnMenuLoad.Size = new System.Drawing.Size(200, 60);
-            this.btnMenuLoad.TabIndex = 1;
-            this.btnMenuLoad.Text = "  Load Project";
-            this.btnMenuLoad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuLoad.UseVisualStyleBackColor = false;
-            this.btnMenuLoad.Click += new System.EventHandler(this.btnMenuLoad_Click);
             // 
             // btnMenuNew
             // 
@@ -2888,8 +3498,6 @@ namespace M1ConfigGenerator
             // tabMainStart
             // 
             this.tabMainStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabMainStart.Controls.Add(this.label29);
-            this.tabMainStart.Controls.Add(this.cmbStartSetup);
             this.tabMainStart.Controls.Add(this.btnStartClose);
             this.tabMainStart.Controls.Add(this.cmbStartSlide);
             this.tabMainStart.Controls.Add(this.label1);
@@ -2910,29 +3518,6 @@ namespace M1ConfigGenerator
             this.tabMainStart.Size = new System.Drawing.Size(1380, 825);
             this.tabMainStart.TabIndex = 1;
             this.tabMainStart.Text = "Start";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.SystemColors.Control;
-            this.label29.Location = new System.Drawing.Point(103, 374);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(215, 21);
-            this.label29.TabIndex = 18;
-            this.label29.Text = "Quick Setup or Full Control";
-            // 
-            // cmbStartSetup
-            // 
-            this.cmbStartSetup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbStartSetup.FormattingEnabled = true;
-            this.cmbStartSetup.Items.AddRange(new object[] {
-            "Quick",
-            "Full"});
-            this.cmbStartSetup.Location = new System.Drawing.Point(376, 376);
-            this.cmbStartSetup.Name = "cmbStartSetup";
-            this.cmbStartSetup.Size = new System.Drawing.Size(53, 21);
-            this.cmbStartSetup.TabIndex = 17;
             // 
             // btnStartClose
             // 
@@ -3011,7 +3596,9 @@ namespace M1ConfigGenerator
             "1",
             "2",
             "3",
-            "4"});
+            "4",
+            "5",
+            "6"});
             this.cmbStartHC.Location = new System.Drawing.Point(376, 213);
             this.cmbStartHC.Name = "cmbStartHC";
             this.cmbStartHC.Size = new System.Drawing.Size(53, 23);
@@ -3268,6 +3855,7 @@ namespace M1ConfigGenerator
             this.tabControlAux.Controls.Add(this.tabAuxBlank);
             this.tabControlAux.Controls.Add(this.tabAux1);
             this.tabControlAux.Controls.Add(this.tabAux2);
+            this.tabControlAux.Controls.Add(this.tabAuxGenerated);
             this.tabControlAux.Location = new System.Drawing.Point(0, 70);
             this.tabControlAux.Name = "tabControlAux";
             this.tabControlAux.SelectedIndex = 0;
@@ -3363,7 +3951,6 @@ namespace M1ConfigGenerator
             this.tabAux1.Controls.Add(this.tbxAux1CfgType);
             this.tabAux1.Controls.Add(this.label34);
             this.tabAux1.Controls.Add(this.chkAux1DCMotor);
-            this.tabAux1.Controls.Add(this.chkAux1DCDriver);
             this.tabAux1.Controls.Add(this.chkAux1DCDimmer);
             this.tabAux1.Controls.Add(this.chkAux1Force);
             this.tabAux1.Controls.Add(this.label35);
@@ -4092,7 +4679,7 @@ namespace M1ConfigGenerator
             this.chkAux1Shade.AutoSize = true;
             this.chkAux1Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAux1Shade.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkAux1Shade.Location = new System.Drawing.Point(470, 70);
+            this.chkAux1Shade.Location = new System.Drawing.Point(371, 70);
             this.chkAux1Shade.Name = "chkAux1Shade";
             this.chkAux1Shade.Size = new System.Drawing.Size(63, 21);
             this.chkAux1Shade.TabIndex = 8;
@@ -4220,18 +4807,6 @@ namespace M1ConfigGenerator
             this.chkAux1DCMotor.Text = "DC Motor";
             this.chkAux1DCMotor.UseVisualStyleBackColor = true;
             // 
-            // chkAux1DCDriver
-            // 
-            this.chkAux1DCDriver.AutoSize = true;
-            this.chkAux1DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAux1DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkAux1DCDriver.Location = new System.Drawing.Point(371, 70);
-            this.chkAux1DCDriver.Name = "chkAux1DCDriver";
-            this.chkAux1DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkAux1DCDriver.TabIndex = 7;
-            this.chkAux1DCDriver.Text = "DC Driver";
-            this.chkAux1DCDriver.UseVisualStyleBackColor = true;
-            // 
             // chkAux1DCDimmer
             // 
             this.chkAux1DCDimmer.AutoSize = true;
@@ -4249,7 +4824,7 @@ namespace M1ConfigGenerator
             this.chkAux1Force.AutoSize = true;
             this.chkAux1Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAux1Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkAux1Force.Location = new System.Drawing.Point(549, 70);
+            this.chkAux1Force.Location = new System.Drawing.Point(452, 70);
             this.chkAux1Force.Name = "chkAux1Force";
             this.chkAux1Force.Size = new System.Drawing.Size(129, 21);
             this.chkAux1Force.TabIndex = 9;
@@ -4354,7 +4929,6 @@ namespace M1ConfigGenerator
             this.tabAux2.Controls.Add(this.tbxAux2CfgType);
             this.tabAux2.Controls.Add(this.label146);
             this.tabAux2.Controls.Add(this.chkAux2DCMotor);
-            this.tabAux2.Controls.Add(this.chkAux2DCDriver);
             this.tabAux2.Controls.Add(this.chkAux2DCDimmer);
             this.tabAux2.Controls.Add(this.chkAux2Force);
             this.tabAux2.Controls.Add(this.label147);
@@ -5082,7 +5656,7 @@ namespace M1ConfigGenerator
             this.chkAux2Shade.AutoSize = true;
             this.chkAux2Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAux2Shade.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkAux2Shade.Location = new System.Drawing.Point(470, 70);
+            this.chkAux2Shade.Location = new System.Drawing.Point(371, 70);
             this.chkAux2Shade.Name = "chkAux2Shade";
             this.chkAux2Shade.Size = new System.Drawing.Size(63, 21);
             this.chkAux2Shade.TabIndex = 8;
@@ -5210,18 +5784,6 @@ namespace M1ConfigGenerator
             this.chkAux2DCMotor.Text = "DC Motor";
             this.chkAux2DCMotor.UseVisualStyleBackColor = true;
             // 
-            // chkAux2DCDriver
-            // 
-            this.chkAux2DCDriver.AutoSize = true;
-            this.chkAux2DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAux2DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkAux2DCDriver.Location = new System.Drawing.Point(371, 70);
-            this.chkAux2DCDriver.Name = "chkAux2DCDriver";
-            this.chkAux2DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkAux2DCDriver.TabIndex = 7;
-            this.chkAux2DCDriver.Text = "DC Driver";
-            this.chkAux2DCDriver.UseVisualStyleBackColor = true;
-            // 
             // chkAux2DCDimmer
             // 
             this.chkAux2DCDimmer.AutoSize = true;
@@ -5239,7 +5801,7 @@ namespace M1ConfigGenerator
             this.chkAux2Force.AutoSize = true;
             this.chkAux2Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAux2Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkAux2Force.Location = new System.Drawing.Point(549, 70);
+            this.chkAux2Force.Location = new System.Drawing.Point(452, 70);
             this.chkAux2Force.Name = "chkAux2Force";
             this.chkAux2Force.Size = new System.Drawing.Size(129, 21);
             this.chkAux2Force.TabIndex = 9;
@@ -5265,6 +5827,41 @@ namespace M1ConfigGenerator
             this.tbxAux2BaseIndex.TabIndex = 10;
             this.tbxAux2BaseIndex.TextChanged += new System.EventHandler(this.tbxAux2BaseIndex_TextChanged);
             // 
+            // tabAuxGenerated
+            // 
+            this.tabAuxGenerated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabAuxGenerated.Controls.Add(this.label276);
+            this.tabAuxGenerated.Controls.Add(this.tbxAuxGenerated);
+            this.tabAuxGenerated.Location = new System.Drawing.Point(4, 22);
+            this.tabAuxGenerated.Name = "tabAuxGenerated";
+            this.tabAuxGenerated.Size = new System.Drawing.Size(1376, 733);
+            this.tabAuxGenerated.TabIndex = 3;
+            this.tabAuxGenerated.Text = "Generated";
+            // 
+            // label276
+            // 
+            this.label276.AutoSize = true;
+            this.label276.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label276.ForeColor = System.Drawing.SystemColors.Control;
+            this.label276.Location = new System.Drawing.Point(5, 26);
+            this.label276.Name = "label276";
+            this.label276.Size = new System.Drawing.Size(289, 21);
+            this.label276.TabIndex = 3;
+            this.label276.Text = "These files are now present in the folder:";
+            // 
+            // tbxAuxGenerated
+            // 
+            this.tbxAuxGenerated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tbxAuxGenerated.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxAuxGenerated.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxAuxGenerated.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbxAuxGenerated.Location = new System.Drawing.Point(9, 50);
+            this.tbxAuxGenerated.Multiline = true;
+            this.tbxAuxGenerated.Name = "tbxAuxGenerated";
+            this.tbxAuxGenerated.ReadOnly = true;
+            this.tbxAuxGenerated.Size = new System.Drawing.Size(600, 200);
+            this.tbxAuxGenerated.TabIndex = 2;
+            // 
             // tabMainBreaker
             // 
             this.tabMainBreaker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -5278,6 +5875,7 @@ namespace M1ConfigGenerator
             // 
             // panelBreaker
             // 
+            this.panelBreaker.Controls.Add(this.btnBreakerGenerate);
             this.panelBreaker.Controls.Add(this.btnBreakerCard6);
             this.panelBreaker.Controls.Add(this.btnBreakerCard5);
             this.panelBreaker.Controls.Add(this.btnBreakerCard4);
@@ -5289,6 +5887,22 @@ namespace M1ConfigGenerator
             this.panelBreaker.Name = "panelBreaker";
             this.panelBreaker.Size = new System.Drawing.Size(1380, 70);
             this.panelBreaker.TabIndex = 19;
+            // 
+            // btnBreakerGenerate
+            // 
+            this.btnBreakerGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnBreakerGenerate.FlatAppearance.BorderSize = 0;
+            this.btnBreakerGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBreakerGenerate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBreakerGenerate.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnBreakerGenerate.Location = new System.Drawing.Point(700, 14);
+            this.btnBreakerGenerate.Name = "btnBreakerGenerate";
+            this.btnBreakerGenerate.Size = new System.Drawing.Size(100, 40);
+            this.btnBreakerGenerate.TabIndex = 113;
+            this.btnBreakerGenerate.Text = "Generate";
+            this.btnBreakerGenerate.UseVisualStyleBackColor = false;
+            this.btnBreakerGenerate.Visible = false;
+            this.btnBreakerGenerate.Click += new System.EventHandler(this.btnBreakerGenerate_Click);
             // 
             // btnBreakerCard6
             // 
@@ -5393,6 +6007,7 @@ namespace M1ConfigGenerator
             this.tabControlBreaker.Controls.Add(this.tabBreaker2);
             this.tabControlBreaker.Controls.Add(this.tabBreaker3);
             this.tabControlBreaker.Controls.Add(this.tabBreaker4);
+            this.tabControlBreaker.Controls.Add(this.tabBreakerGenerated);
             this.tabControlBreaker.Location = new System.Drawing.Point(0, 70);
             this.tabControlBreaker.Name = "tabControlBreaker";
             this.tabControlBreaker.SelectedIndex = 0;
@@ -5412,14 +6027,72 @@ namespace M1ConfigGenerator
             // tabBreaker1
             // 
             this.tabBreaker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabBreaker1.Controls.Add(this.comboBox35);
+            this.tabBreaker1.Controls.Add(this.chkBreaker1MatchVIN);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt11);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt10);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt09);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt08);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt07);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt06);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt05);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt04);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt03);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt02);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt01);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt00);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1InterruptVIN);
+            this.tabBreaker1.Controls.Add(this.label289);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCTime11);
+            this.tabBreaker1.Controls.Add(this.label288);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCTimeVIN);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCTime00);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCTime01);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCTime02);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCTime10);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCTime03);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCTime09);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCTime04);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCTime08);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCTime05);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCTime07);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCTime06);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCAmpsVIN);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCAmps11);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCAmps10);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCAmps09);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCAmps08);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCAmps07);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCAmps06);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCAmps05);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCAmps04);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCAmps03);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCAmps02);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCAmps01);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1OCAmps00);
+            this.tabBreaker1.Controls.Add(this.label287);
+            this.tabBreaker1.Controls.Add(this.label273);
+            this.tabBreaker1.Controls.Add(this.label260);
+            this.tabBreaker1.Controls.Add(this.tbxBreaker1BaseIndex);
+            this.tabBreaker1.Controls.Add(this.lblBreaker1Ch00);
+            this.tabBreaker1.Controls.Add(this.lblBreaker1Ch01);
+            this.tabBreaker1.Controls.Add(this.lblBreaker1Ch04);
+            this.tabBreaker1.Controls.Add(this.lblBreaker1Ch02);
+            this.tabBreaker1.Controls.Add(this.lblBreaker1Ch05);
+            this.tabBreaker1.Controls.Add(this.lblBreaker1Ch03);
+            this.tabBreaker1.Controls.Add(this.lblBreaker1Ch06);
+            this.tabBreaker1.Controls.Add(this.lblBreaker1Ch11);
+            this.tabBreaker1.Controls.Add(this.lblBreaker1Ch07);
+            this.tabBreaker1.Controls.Add(this.lblBreaker1Ch10);
+            this.tabBreaker1.Controls.Add(this.lblBreaker1Ch08);
+            this.tabBreaker1.Controls.Add(this.lblBreaker1Ch09);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1PanelNum);
             this.tabBreaker1.Controls.Add(this.label252);
-            this.tabBreaker1.Controls.Add(this.comboBox36);
+            this.tabBreaker1.Controls.Add(this.cmbBreaker1CardNum);
             this.tabBreaker1.Controls.Add(this.label253);
             this.tabBreaker1.Controls.Add(this.label254);
-            this.tabBreaker1.Controls.Add(this.textBox62);
+            this.tabBreaker1.Controls.Add(this.tbxBreaker1CfgRev);
             this.tabBreaker1.Controls.Add(this.label255);
-            this.tabBreaker1.Controls.Add(this.textBox63);
+            this.tabBreaker1.Controls.Add(this.tbxBreaker1CfgType);
             this.tabBreaker1.Location = new System.Drawing.Point(4, 22);
             this.tabBreaker1.Name = "tabBreaker1";
             this.tabBreaker1.Padding = new System.Windows.Forms.Padding(3);
@@ -5427,21 +6100,1112 @@ namespace M1ConfigGenerator
             this.tabBreaker1.TabIndex = 1;
             this.tabBreaker1.Text = "Breaker 1";
             // 
-            // comboBox35
+            // chkBreaker1MatchVIN
             // 
-            this.comboBox35.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox35.FormattingEnabled = true;
-            this.comboBox35.Items.AddRange(new object[] {
+            this.chkBreaker1MatchVIN.AutoSize = true;
+            this.chkBreaker1MatchVIN.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkBreaker1MatchVIN.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkBreaker1MatchVIN.Location = new System.Drawing.Point(246, 198);
+            this.chkBreaker1MatchVIN.Name = "chkBreaker1MatchVIN";
+            this.chkBreaker1MatchVIN.Size = new System.Drawing.Size(143, 17);
+            this.chkBreaker1MatchVIN.TabIndex = 33;
+            this.chkBreaker1MatchVIN.Text = "All channels match VIN";
+            this.chkBreaker1MatchVIN.UseVisualStyleBackColor = true;
+            this.chkBreaker1MatchVIN.CheckStateChanged += new System.EventHandler(this.chkBreaker1MatchVIN_CheckStateChanged);
+            // 
+            // cmbBreaker1Interrupt11
+            // 
+            this.cmbBreaker1Interrupt11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1Interrupt11.FormattingEnabled = true;
+            this.cmbBreaker1Interrupt11.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker1Interrupt11.Location = new System.Drawing.Point(1182, 196);
+            this.cmbBreaker1Interrupt11.Name = "cmbBreaker1Interrupt11";
+            this.cmbBreaker1Interrupt11.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker1Interrupt11.TabIndex = 45;
+            // 
+            // cmbBreaker1Interrupt10
+            // 
+            this.cmbBreaker1Interrupt10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1Interrupt10.FormattingEnabled = true;
+            this.cmbBreaker1Interrupt10.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker1Interrupt10.Location = new System.Drawing.Point(1110, 196);
+            this.cmbBreaker1Interrupt10.Name = "cmbBreaker1Interrupt10";
+            this.cmbBreaker1Interrupt10.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker1Interrupt10.TabIndex = 44;
+            // 
+            // cmbBreaker1Interrupt09
+            // 
+            this.cmbBreaker1Interrupt09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1Interrupt09.FormattingEnabled = true;
+            this.cmbBreaker1Interrupt09.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker1Interrupt09.Location = new System.Drawing.Point(1038, 196);
+            this.cmbBreaker1Interrupt09.Name = "cmbBreaker1Interrupt09";
+            this.cmbBreaker1Interrupt09.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker1Interrupt09.TabIndex = 43;
+            // 
+            // cmbBreaker1Interrupt08
+            // 
+            this.cmbBreaker1Interrupt08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1Interrupt08.FormattingEnabled = true;
+            this.cmbBreaker1Interrupt08.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker1Interrupt08.Location = new System.Drawing.Point(966, 196);
+            this.cmbBreaker1Interrupt08.Name = "cmbBreaker1Interrupt08";
+            this.cmbBreaker1Interrupt08.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker1Interrupt08.TabIndex = 42;
+            // 
+            // cmbBreaker1Interrupt07
+            // 
+            this.cmbBreaker1Interrupt07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1Interrupt07.FormattingEnabled = true;
+            this.cmbBreaker1Interrupt07.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker1Interrupt07.Location = new System.Drawing.Point(894, 196);
+            this.cmbBreaker1Interrupt07.Name = "cmbBreaker1Interrupt07";
+            this.cmbBreaker1Interrupt07.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker1Interrupt07.TabIndex = 41;
+            // 
+            // cmbBreaker1Interrupt06
+            // 
+            this.cmbBreaker1Interrupt06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1Interrupt06.FormattingEnabled = true;
+            this.cmbBreaker1Interrupt06.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker1Interrupt06.Location = new System.Drawing.Point(822, 196);
+            this.cmbBreaker1Interrupt06.Name = "cmbBreaker1Interrupt06";
+            this.cmbBreaker1Interrupt06.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker1Interrupt06.TabIndex = 40;
+            // 
+            // cmbBreaker1Interrupt05
+            // 
+            this.cmbBreaker1Interrupt05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1Interrupt05.FormattingEnabled = true;
+            this.cmbBreaker1Interrupt05.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker1Interrupt05.Location = new System.Drawing.Point(750, 196);
+            this.cmbBreaker1Interrupt05.Name = "cmbBreaker1Interrupt05";
+            this.cmbBreaker1Interrupt05.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker1Interrupt05.TabIndex = 39;
+            // 
+            // cmbBreaker1Interrupt04
+            // 
+            this.cmbBreaker1Interrupt04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1Interrupt04.FormattingEnabled = true;
+            this.cmbBreaker1Interrupt04.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker1Interrupt04.Location = new System.Drawing.Point(678, 196);
+            this.cmbBreaker1Interrupt04.Name = "cmbBreaker1Interrupt04";
+            this.cmbBreaker1Interrupt04.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker1Interrupt04.TabIndex = 38;
+            // 
+            // cmbBreaker1Interrupt03
+            // 
+            this.cmbBreaker1Interrupt03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1Interrupt03.FormattingEnabled = true;
+            this.cmbBreaker1Interrupt03.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker1Interrupt03.Location = new System.Drawing.Point(606, 196);
+            this.cmbBreaker1Interrupt03.Name = "cmbBreaker1Interrupt03";
+            this.cmbBreaker1Interrupt03.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker1Interrupt03.TabIndex = 37;
+            // 
+            // cmbBreaker1Interrupt02
+            // 
+            this.cmbBreaker1Interrupt02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1Interrupt02.FormattingEnabled = true;
+            this.cmbBreaker1Interrupt02.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker1Interrupt02.Location = new System.Drawing.Point(534, 196);
+            this.cmbBreaker1Interrupt02.Name = "cmbBreaker1Interrupt02";
+            this.cmbBreaker1Interrupt02.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker1Interrupt02.TabIndex = 36;
+            // 
+            // cmbBreaker1Interrupt01
+            // 
+            this.cmbBreaker1Interrupt01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1Interrupt01.FormattingEnabled = true;
+            this.cmbBreaker1Interrupt01.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker1Interrupt01.Location = new System.Drawing.Point(462, 196);
+            this.cmbBreaker1Interrupt01.Name = "cmbBreaker1Interrupt01";
+            this.cmbBreaker1Interrupt01.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker1Interrupt01.TabIndex = 35;
+            // 
+            // cmbBreaker1Interrupt00
+            // 
+            this.cmbBreaker1Interrupt00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1Interrupt00.FormattingEnabled = true;
+            this.cmbBreaker1Interrupt00.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker1Interrupt00.Location = new System.Drawing.Point(390, 196);
+            this.cmbBreaker1Interrupt00.Name = "cmbBreaker1Interrupt00";
+            this.cmbBreaker1Interrupt00.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker1Interrupt00.TabIndex = 34;
+            // 
+            // cmbBreaker1InterruptVIN
+            // 
+            this.cmbBreaker1InterruptVIN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1InterruptVIN.FormattingEnabled = true;
+            this.cmbBreaker1InterruptVIN.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker1InterruptVIN.Location = new System.Drawing.Point(189, 196);
+            this.cmbBreaker1InterruptVIN.Name = "cmbBreaker1InterruptVIN";
+            this.cmbBreaker1InterruptVIN.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker1InterruptVIN.TabIndex = 32;
+            // 
+            // label289
+            // 
+            this.label289.AutoSize = true;
+            this.label289.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label289.ForeColor = System.Drawing.SystemColors.Control;
+            this.label289.Location = new System.Drawing.Point(3, 198);
+            this.label289.Name = "label289";
+            this.label289.Size = new System.Drawing.Size(99, 17);
+            this.label289.TabIndex = 133;
+            this.label289.Text = "Interrupt Group";
+            // 
+            // cmbBreaker1OCTime11
+            // 
+            this.cmbBreaker1OCTime11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCTime11.FormattingEnabled = true;
+            this.cmbBreaker1OCTime11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker1OCTime11.Location = new System.Drawing.Point(1187, 166);
+            this.cmbBreaker1OCTime11.Name = "cmbBreaker1OCTime11";
+            this.cmbBreaker1OCTime11.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCTime11.TabIndex = 31;
+            // 
+            // label288
+            // 
+            this.label288.AutoSize = true;
+            this.label288.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label288.ForeColor = System.Drawing.SystemColors.Control;
+            this.label288.Location = new System.Drawing.Point(3, 168);
+            this.label288.Name = "label288";
+            this.label288.Size = new System.Drawing.Size(164, 17);
+            this.label288.TabIndex = 132;
+            this.label288.Text = "Overcurrent Time Constant";
+            // 
+            // cmbBreaker1OCTimeVIN
+            // 
+            this.cmbBreaker1OCTimeVIN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCTimeVIN.FormattingEnabled = true;
+            this.cmbBreaker1OCTimeVIN.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker1OCTimeVIN.Location = new System.Drawing.Point(194, 166);
+            this.cmbBreaker1OCTimeVIN.Name = "cmbBreaker1OCTimeVIN";
+            this.cmbBreaker1OCTimeVIN.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCTimeVIN.TabIndex = 19;
+            // 
+            // cmbBreaker1OCTime00
+            // 
+            this.cmbBreaker1OCTime00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCTime00.FormattingEnabled = true;
+            this.cmbBreaker1OCTime00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker1OCTime00.Location = new System.Drawing.Point(395, 166);
+            this.cmbBreaker1OCTime00.Name = "cmbBreaker1OCTime00";
+            this.cmbBreaker1OCTime00.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCTime00.TabIndex = 20;
+            // 
+            // cmbBreaker1OCTime01
+            // 
+            this.cmbBreaker1OCTime01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCTime01.FormattingEnabled = true;
+            this.cmbBreaker1OCTime01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker1OCTime01.Location = new System.Drawing.Point(467, 166);
+            this.cmbBreaker1OCTime01.Name = "cmbBreaker1OCTime01";
+            this.cmbBreaker1OCTime01.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCTime01.TabIndex = 21;
+            // 
+            // cmbBreaker1OCTime02
+            // 
+            this.cmbBreaker1OCTime02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCTime02.FormattingEnabled = true;
+            this.cmbBreaker1OCTime02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker1OCTime02.Location = new System.Drawing.Point(539, 166);
+            this.cmbBreaker1OCTime02.Name = "cmbBreaker1OCTime02";
+            this.cmbBreaker1OCTime02.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCTime02.TabIndex = 22;
+            // 
+            // cmbBreaker1OCTime10
+            // 
+            this.cmbBreaker1OCTime10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCTime10.FormattingEnabled = true;
+            this.cmbBreaker1OCTime10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker1OCTime10.Location = new System.Drawing.Point(1115, 166);
+            this.cmbBreaker1OCTime10.Name = "cmbBreaker1OCTime10";
+            this.cmbBreaker1OCTime10.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCTime10.TabIndex = 30;
+            // 
+            // cmbBreaker1OCTime03
+            // 
+            this.cmbBreaker1OCTime03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCTime03.FormattingEnabled = true;
+            this.cmbBreaker1OCTime03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker1OCTime03.Location = new System.Drawing.Point(611, 166);
+            this.cmbBreaker1OCTime03.Name = "cmbBreaker1OCTime03";
+            this.cmbBreaker1OCTime03.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCTime03.TabIndex = 23;
+            // 
+            // cmbBreaker1OCTime09
+            // 
+            this.cmbBreaker1OCTime09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCTime09.FormattingEnabled = true;
+            this.cmbBreaker1OCTime09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker1OCTime09.Location = new System.Drawing.Point(1043, 166);
+            this.cmbBreaker1OCTime09.Name = "cmbBreaker1OCTime09";
+            this.cmbBreaker1OCTime09.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCTime09.TabIndex = 29;
+            // 
+            // cmbBreaker1OCTime04
+            // 
+            this.cmbBreaker1OCTime04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCTime04.FormattingEnabled = true;
+            this.cmbBreaker1OCTime04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker1OCTime04.Location = new System.Drawing.Point(683, 166);
+            this.cmbBreaker1OCTime04.Name = "cmbBreaker1OCTime04";
+            this.cmbBreaker1OCTime04.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCTime04.TabIndex = 24;
+            // 
+            // cmbBreaker1OCTime08
+            // 
+            this.cmbBreaker1OCTime08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCTime08.FormattingEnabled = true;
+            this.cmbBreaker1OCTime08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker1OCTime08.Location = new System.Drawing.Point(971, 166);
+            this.cmbBreaker1OCTime08.Name = "cmbBreaker1OCTime08";
+            this.cmbBreaker1OCTime08.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCTime08.TabIndex = 28;
+            // 
+            // cmbBreaker1OCTime05
+            // 
+            this.cmbBreaker1OCTime05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCTime05.FormattingEnabled = true;
+            this.cmbBreaker1OCTime05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker1OCTime05.Location = new System.Drawing.Point(755, 166);
+            this.cmbBreaker1OCTime05.Name = "cmbBreaker1OCTime05";
+            this.cmbBreaker1OCTime05.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCTime05.TabIndex = 25;
+            // 
+            // cmbBreaker1OCTime07
+            // 
+            this.cmbBreaker1OCTime07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCTime07.FormattingEnabled = true;
+            this.cmbBreaker1OCTime07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker1OCTime07.Location = new System.Drawing.Point(899, 166);
+            this.cmbBreaker1OCTime07.Name = "cmbBreaker1OCTime07";
+            this.cmbBreaker1OCTime07.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCTime07.TabIndex = 27;
+            // 
+            // cmbBreaker1OCTime06
+            // 
+            this.cmbBreaker1OCTime06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCTime06.FormattingEnabled = true;
+            this.cmbBreaker1OCTime06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker1OCTime06.Location = new System.Drawing.Point(827, 166);
+            this.cmbBreaker1OCTime06.Name = "cmbBreaker1OCTime06";
+            this.cmbBreaker1OCTime06.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCTime06.TabIndex = 26;
+            // 
+            // cmbBreaker1OCAmpsVIN
+            // 
+            this.cmbBreaker1OCAmpsVIN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCAmpsVIN.FormattingEnabled = true;
+            this.cmbBreaker1OCAmpsVIN.Items.AddRange(new object[] {
+            "60"});
+            this.cmbBreaker1OCAmpsVIN.Location = new System.Drawing.Point(194, 136);
+            this.cmbBreaker1OCAmpsVIN.Name = "cmbBreaker1OCAmpsVIN";
+            this.cmbBreaker1OCAmpsVIN.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCAmpsVIN.TabIndex = 6;
+            // 
+            // cmbBreaker1OCAmps11
+            // 
+            this.cmbBreaker1OCAmps11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCAmps11.FormattingEnabled = true;
+            this.cmbBreaker1OCAmps11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker1OCAmps11.Location = new System.Drawing.Point(1187, 136);
+            this.cmbBreaker1OCAmps11.Name = "cmbBreaker1OCAmps11";
+            this.cmbBreaker1OCAmps11.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCAmps11.TabIndex = 18;
+            // 
+            // cmbBreaker1OCAmps10
+            // 
+            this.cmbBreaker1OCAmps10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCAmps10.FormattingEnabled = true;
+            this.cmbBreaker1OCAmps10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker1OCAmps10.Location = new System.Drawing.Point(1115, 136);
+            this.cmbBreaker1OCAmps10.Name = "cmbBreaker1OCAmps10";
+            this.cmbBreaker1OCAmps10.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCAmps10.TabIndex = 17;
+            // 
+            // cmbBreaker1OCAmps09
+            // 
+            this.cmbBreaker1OCAmps09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCAmps09.FormattingEnabled = true;
+            this.cmbBreaker1OCAmps09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker1OCAmps09.Location = new System.Drawing.Point(1043, 136);
+            this.cmbBreaker1OCAmps09.Name = "cmbBreaker1OCAmps09";
+            this.cmbBreaker1OCAmps09.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCAmps09.TabIndex = 16;
+            // 
+            // cmbBreaker1OCAmps08
+            // 
+            this.cmbBreaker1OCAmps08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCAmps08.FormattingEnabled = true;
+            this.cmbBreaker1OCAmps08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker1OCAmps08.Location = new System.Drawing.Point(971, 136);
+            this.cmbBreaker1OCAmps08.Name = "cmbBreaker1OCAmps08";
+            this.cmbBreaker1OCAmps08.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCAmps08.TabIndex = 15;
+            // 
+            // cmbBreaker1OCAmps07
+            // 
+            this.cmbBreaker1OCAmps07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCAmps07.FormattingEnabled = true;
+            this.cmbBreaker1OCAmps07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker1OCAmps07.Location = new System.Drawing.Point(899, 136);
+            this.cmbBreaker1OCAmps07.Name = "cmbBreaker1OCAmps07";
+            this.cmbBreaker1OCAmps07.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCAmps07.TabIndex = 14;
+            // 
+            // cmbBreaker1OCAmps06
+            // 
+            this.cmbBreaker1OCAmps06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCAmps06.FormattingEnabled = true;
+            this.cmbBreaker1OCAmps06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker1OCAmps06.Location = new System.Drawing.Point(827, 136);
+            this.cmbBreaker1OCAmps06.Name = "cmbBreaker1OCAmps06";
+            this.cmbBreaker1OCAmps06.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCAmps06.TabIndex = 13;
+            // 
+            // cmbBreaker1OCAmps05
+            // 
+            this.cmbBreaker1OCAmps05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCAmps05.FormattingEnabled = true;
+            this.cmbBreaker1OCAmps05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker1OCAmps05.Location = new System.Drawing.Point(755, 136);
+            this.cmbBreaker1OCAmps05.Name = "cmbBreaker1OCAmps05";
+            this.cmbBreaker1OCAmps05.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCAmps05.TabIndex = 12;
+            // 
+            // cmbBreaker1OCAmps04
+            // 
+            this.cmbBreaker1OCAmps04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCAmps04.FormattingEnabled = true;
+            this.cmbBreaker1OCAmps04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker1OCAmps04.Location = new System.Drawing.Point(683, 136);
+            this.cmbBreaker1OCAmps04.Name = "cmbBreaker1OCAmps04";
+            this.cmbBreaker1OCAmps04.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCAmps04.TabIndex = 11;
+            // 
+            // cmbBreaker1OCAmps03
+            // 
+            this.cmbBreaker1OCAmps03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCAmps03.FormattingEnabled = true;
+            this.cmbBreaker1OCAmps03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker1OCAmps03.Location = new System.Drawing.Point(611, 136);
+            this.cmbBreaker1OCAmps03.Name = "cmbBreaker1OCAmps03";
+            this.cmbBreaker1OCAmps03.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCAmps03.TabIndex = 10;
+            // 
+            // cmbBreaker1OCAmps02
+            // 
+            this.cmbBreaker1OCAmps02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCAmps02.FormattingEnabled = true;
+            this.cmbBreaker1OCAmps02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker1OCAmps02.Location = new System.Drawing.Point(539, 136);
+            this.cmbBreaker1OCAmps02.Name = "cmbBreaker1OCAmps02";
+            this.cmbBreaker1OCAmps02.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCAmps02.TabIndex = 9;
+            // 
+            // cmbBreaker1OCAmps01
+            // 
+            this.cmbBreaker1OCAmps01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCAmps01.FormattingEnabled = true;
+            this.cmbBreaker1OCAmps01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker1OCAmps01.Location = new System.Drawing.Point(467, 136);
+            this.cmbBreaker1OCAmps01.Name = "cmbBreaker1OCAmps01";
+            this.cmbBreaker1OCAmps01.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCAmps01.TabIndex = 8;
+            // 
+            // cmbBreaker1OCAmps00
+            // 
+            this.cmbBreaker1OCAmps00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1OCAmps00.FormattingEnabled = true;
+            this.cmbBreaker1OCAmps00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker1OCAmps00.Location = new System.Drawing.Point(395, 136);
+            this.cmbBreaker1OCAmps00.Name = "cmbBreaker1OCAmps00";
+            this.cmbBreaker1OCAmps00.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1OCAmps00.TabIndex = 7;
+            // 
+            // label287
+            // 
+            this.label287.AutoSize = true;
+            this.label287.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label287.ForeColor = System.Drawing.SystemColors.Control;
+            this.label287.Location = new System.Drawing.Point(3, 138);
+            this.label287.Name = "label287";
+            this.label287.Size = new System.Drawing.Size(114, 17);
+            this.label287.TabIndex = 119;
+            this.label287.Text = "Overcurrent Amps";
+            // 
+            // label273
+            // 
+            this.label273.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label273.ForeColor = System.Drawing.SystemColors.Control;
+            this.label273.Location = new System.Drawing.Point(194, 108);
+            this.label273.Name = "label273";
+            this.label273.Size = new System.Drawing.Size(40, 20);
+            this.label273.TabIndex = 118;
+            this.label273.Text = "VIN";
+            this.label273.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label260
+            // 
+            this.label260.AutoSize = true;
+            this.label260.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label260.ForeColor = System.Drawing.SystemColors.Control;
+            this.label260.Location = new System.Drawing.Point(3, 71);
+            this.label260.Name = "label260";
+            this.label260.Size = new System.Drawing.Size(139, 17);
+            this.label260.TabIndex = 104;
+            this.label260.Text = "Base Channel Instance:";
+            // 
+            // tbxBreaker1BaseIndex
+            // 
+            this.tbxBreaker1BaseIndex.Location = new System.Drawing.Point(148, 68);
+            this.tbxBreaker1BaseIndex.Name = "tbxBreaker1BaseIndex";
+            this.tbxBreaker1BaseIndex.Size = new System.Drawing.Size(32, 20);
+            this.tbxBreaker1BaseIndex.TabIndex = 5;
+            this.tbxBreaker1BaseIndex.TextChanged += new System.EventHandler(this.tbxBreaker1BaseIndex_TextChanged);
+            // 
+            // lblBreaker1Ch00
+            // 
+            this.lblBreaker1Ch00.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker1Ch00.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker1Ch00.Location = new System.Drawing.Point(395, 108);
+            this.lblBreaker1Ch00.Name = "lblBreaker1Ch00";
+            this.lblBreaker1Ch00.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker1Ch00.TabIndex = 106;
+            this.lblBreaker1Ch00.Text = "0";
+            this.lblBreaker1Ch00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker1Ch01
+            // 
+            this.lblBreaker1Ch01.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker1Ch01.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker1Ch01.Location = new System.Drawing.Point(467, 108);
+            this.lblBreaker1Ch01.Name = "lblBreaker1Ch01";
+            this.lblBreaker1Ch01.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker1Ch01.TabIndex = 107;
+            this.lblBreaker1Ch01.Text = "1";
+            this.lblBreaker1Ch01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker1Ch04
+            // 
+            this.lblBreaker1Ch04.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker1Ch04.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker1Ch04.Location = new System.Drawing.Point(683, 108);
+            this.lblBreaker1Ch04.Name = "lblBreaker1Ch04";
+            this.lblBreaker1Ch04.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker1Ch04.TabIndex = 117;
+            this.lblBreaker1Ch04.Text = "4";
+            this.lblBreaker1Ch04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker1Ch02
+            // 
+            this.lblBreaker1Ch02.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker1Ch02.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker1Ch02.Location = new System.Drawing.Point(539, 108);
+            this.lblBreaker1Ch02.Name = "lblBreaker1Ch02";
+            this.lblBreaker1Ch02.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker1Ch02.TabIndex = 108;
+            this.lblBreaker1Ch02.Text = "2";
+            this.lblBreaker1Ch02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker1Ch05
+            // 
+            this.lblBreaker1Ch05.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker1Ch05.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker1Ch05.Location = new System.Drawing.Point(755, 108);
+            this.lblBreaker1Ch05.Name = "lblBreaker1Ch05";
+            this.lblBreaker1Ch05.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker1Ch05.TabIndex = 116;
+            this.lblBreaker1Ch05.Text = "5";
+            this.lblBreaker1Ch05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker1Ch03
+            // 
+            this.lblBreaker1Ch03.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker1Ch03.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker1Ch03.Location = new System.Drawing.Point(611, 107);
+            this.lblBreaker1Ch03.Name = "lblBreaker1Ch03";
+            this.lblBreaker1Ch03.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker1Ch03.TabIndex = 109;
+            this.lblBreaker1Ch03.Text = "3";
+            this.lblBreaker1Ch03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker1Ch06
+            // 
+            this.lblBreaker1Ch06.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker1Ch06.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker1Ch06.Location = new System.Drawing.Point(827, 108);
+            this.lblBreaker1Ch06.Name = "lblBreaker1Ch06";
+            this.lblBreaker1Ch06.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker1Ch06.TabIndex = 115;
+            this.lblBreaker1Ch06.Text = "6";
+            this.lblBreaker1Ch06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker1Ch11
+            // 
+            this.lblBreaker1Ch11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker1Ch11.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker1Ch11.Location = new System.Drawing.Point(1187, 108);
+            this.lblBreaker1Ch11.Name = "lblBreaker1Ch11";
+            this.lblBreaker1Ch11.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker1Ch11.TabIndex = 110;
+            this.lblBreaker1Ch11.Text = "11";
+            this.lblBreaker1Ch11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker1Ch07
+            // 
+            this.lblBreaker1Ch07.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker1Ch07.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker1Ch07.Location = new System.Drawing.Point(899, 108);
+            this.lblBreaker1Ch07.Name = "lblBreaker1Ch07";
+            this.lblBreaker1Ch07.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker1Ch07.TabIndex = 114;
+            this.lblBreaker1Ch07.Text = "7";
+            this.lblBreaker1Ch07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker1Ch10
+            // 
+            this.lblBreaker1Ch10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker1Ch10.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker1Ch10.Location = new System.Drawing.Point(1115, 108);
+            this.lblBreaker1Ch10.Name = "lblBreaker1Ch10";
+            this.lblBreaker1Ch10.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker1Ch10.TabIndex = 111;
+            this.lblBreaker1Ch10.Text = "10";
+            this.lblBreaker1Ch10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker1Ch08
+            // 
+            this.lblBreaker1Ch08.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker1Ch08.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker1Ch08.Location = new System.Drawing.Point(971, 108);
+            this.lblBreaker1Ch08.Name = "lblBreaker1Ch08";
+            this.lblBreaker1Ch08.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker1Ch08.TabIndex = 113;
+            this.lblBreaker1Ch08.Text = "8";
+            this.lblBreaker1Ch08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker1Ch09
+            // 
+            this.lblBreaker1Ch09.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker1Ch09.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker1Ch09.Location = new System.Drawing.Point(1043, 108);
+            this.lblBreaker1Ch09.Name = "lblBreaker1Ch09";
+            this.lblBreaker1Ch09.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker1Ch09.TabIndex = 112;
+            this.lblBreaker1Ch09.Text = "9";
+            this.lblBreaker1Ch09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbBreaker1PanelNum
+            // 
+            this.cmbBreaker1PanelNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1PanelNum.FormattingEnabled = true;
+            this.cmbBreaker1PanelNum.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4",
             "5",
             "6"});
-            this.comboBox35.Location = new System.Drawing.Point(260, 25);
-            this.comboBox35.Name = "comboBox35";
-            this.comboBox35.Size = new System.Drawing.Size(40, 21);
-            this.comboBox35.TabIndex = 97;
+            this.cmbBreaker1PanelNum.Location = new System.Drawing.Point(260, 25);
+            this.cmbBreaker1PanelNum.Name = "cmbBreaker1PanelNum";
+            this.cmbBreaker1PanelNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1PanelNum.TabIndex = 2;
+            this.cmbBreaker1PanelNum.SelectedIndexChanged += new System.EventHandler(this.cmbBreaker1PanelNum_SelectedIndexChanged);
             // 
             // label252
             // 
@@ -5454,11 +7218,11 @@ namespace M1ConfigGenerator
             this.label252.TabIndex = 100;
             this.label252.Text = "Card # in Panel:";
             // 
-            // comboBox36
+            // cmbBreaker1CardNum
             // 
-            this.comboBox36.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox36.FormattingEnabled = true;
-            this.comboBox36.Items.AddRange(new object[] {
+            this.cmbBreaker1CardNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker1CardNum.FormattingEnabled = true;
+            this.cmbBreaker1CardNum.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -5467,10 +7231,11 @@ namespace M1ConfigGenerator
             "6",
             "7",
             "8"});
-            this.comboBox36.Location = new System.Drawing.Point(109, 25);
-            this.comboBox36.Name = "comboBox36";
-            this.comboBox36.Size = new System.Drawing.Size(40, 21);
-            this.comboBox36.TabIndex = 96;
+            this.cmbBreaker1CardNum.Location = new System.Drawing.Point(109, 25);
+            this.cmbBreaker1CardNum.Name = "cmbBreaker1CardNum";
+            this.cmbBreaker1CardNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1CardNum.TabIndex = 1;
+            this.cmbBreaker1CardNum.SelectedIndexChanged += new System.EventHandler(this.cmbBreaker1CardNum_SelectedIndexChanged);
             // 
             // label253
             // 
@@ -5494,13 +7259,13 @@ namespace M1ConfigGenerator
             this.label254.TabIndex = 102;
             this.label254.Text = "Config Rev:";
             // 
-            // textBox62
+            // tbxBreaker1CfgRev
             // 
-            this.textBox62.Location = new System.Drawing.Point(419, 25);
-            this.textBox62.Name = "textBox62";
-            this.textBox62.Size = new System.Drawing.Size(32, 20);
-            this.textBox62.TabIndex = 98;
-            this.textBox62.Text = "1";
+            this.tbxBreaker1CfgRev.Location = new System.Drawing.Point(419, 25);
+            this.tbxBreaker1CfgRev.Name = "tbxBreaker1CfgRev";
+            this.tbxBreaker1CfgRev.Size = new System.Drawing.Size(32, 20);
+            this.tbxBreaker1CfgRev.TabIndex = 3;
+            this.tbxBreaker1CfgRev.Text = "1";
             // 
             // label255
             // 
@@ -5514,47 +7279,1196 @@ namespace M1ConfigGenerator
             this.label255.TabIndex = 103;
             this.label255.Text = "Config Type:  0x";
             // 
-            // textBox63
+            // tbxBreaker1CfgType
             // 
-            this.textBox63.Location = new System.Drawing.Point(616, 26);
-            this.textBox63.MaxLength = 4;
-            this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(48, 20);
-            this.textBox63.TabIndex = 99;
-            this.textBox63.Text = "0";
+            this.tbxBreaker1CfgType.Location = new System.Drawing.Point(616, 26);
+            this.tbxBreaker1CfgType.MaxLength = 4;
+            this.tbxBreaker1CfgType.Name = "tbxBreaker1CfgType";
+            this.tbxBreaker1CfgType.Size = new System.Drawing.Size(48, 20);
+            this.tbxBreaker1CfgType.TabIndex = 4;
+            this.tbxBreaker1CfgType.Text = "0";
             // 
             // tabBreaker2
             // 
             this.tabBreaker2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabBreaker2.Controls.Add(this.comboBox37);
+            this.tabBreaker2.Controls.Add(this.chkBreaker2MatchVIN);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2Interrupt11);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2Interrupt10);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2Interrupt09);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2Interrupt08);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2Interrupt07);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2Interrupt06);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2Interrupt05);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2Interrupt04);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2Interrupt03);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2Interrupt02);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2Interrupt01);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2Interrupt00);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2InterruptVIN);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCTime11);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCTime00);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCTime01);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCTime02);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCTime10);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCTime03);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCTime09);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCTime04);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCTime08);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCTime05);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCTime07);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCTime06);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCAmps11);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCAmps10);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCAmps09);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCAmps08);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCAmps07);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCAmps06);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCAmps05);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCAmps04);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCAmps03);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCAmps02);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCAmps01);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCAmps00);
+            this.tabBreaker2.Controls.Add(this.lblBreaker2Ch00);
+            this.tabBreaker2.Controls.Add(this.lblBreaker2Ch01);
+            this.tabBreaker2.Controls.Add(this.lblBreaker2Ch04);
+            this.tabBreaker2.Controls.Add(this.lblBreaker2Ch02);
+            this.tabBreaker2.Controls.Add(this.lblBreaker2Ch05);
+            this.tabBreaker2.Controls.Add(this.lblBreaker2Ch03);
+            this.tabBreaker2.Controls.Add(this.lblBreaker2Ch06);
+            this.tabBreaker2.Controls.Add(this.lblBreaker2Ch11);
+            this.tabBreaker2.Controls.Add(this.lblBreaker2Ch07);
+            this.tabBreaker2.Controls.Add(this.lblBreaker2Ch10);
+            this.tabBreaker2.Controls.Add(this.lblBreaker2Ch08);
+            this.tabBreaker2.Controls.Add(this.lblBreaker2Ch09);
+            this.tabBreaker2.Controls.Add(this.label290);
+            this.tabBreaker2.Controls.Add(this.label291);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCTimeVIN);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2OCAmpsVIN);
+            this.tabBreaker2.Controls.Add(this.label292);
+            this.tabBreaker2.Controls.Add(this.label293);
+            this.tabBreaker2.Controls.Add(this.label300);
+            this.tabBreaker2.Controls.Add(this.tbxBreaker2BaseIndex);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2PanelNum);
             this.tabBreaker2.Controls.Add(this.label256);
-            this.tabBreaker2.Controls.Add(this.comboBox38);
+            this.tabBreaker2.Controls.Add(this.cmbBreaker2CardNum);
             this.tabBreaker2.Controls.Add(this.label257);
             this.tabBreaker2.Controls.Add(this.label258);
-            this.tabBreaker2.Controls.Add(this.textBox65);
+            this.tabBreaker2.Controls.Add(this.tbxBreaker2CfgRev);
             this.tabBreaker2.Controls.Add(this.label259);
-            this.tabBreaker2.Controls.Add(this.textBox66);
+            this.tabBreaker2.Controls.Add(this.tbxBreaker2CfgType);
             this.tabBreaker2.Location = new System.Drawing.Point(4, 22);
             this.tabBreaker2.Name = "tabBreaker2";
             this.tabBreaker2.Size = new System.Drawing.Size(1376, 736);
             this.tabBreaker2.TabIndex = 2;
             this.tabBreaker2.Text = "Breaker 2";
             // 
-            // comboBox37
+            // chkBreaker2MatchVIN
             // 
-            this.comboBox37.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox37.FormattingEnabled = true;
-            this.comboBox37.Items.AddRange(new object[] {
+            this.chkBreaker2MatchVIN.AutoSize = true;
+            this.chkBreaker2MatchVIN.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkBreaker2MatchVIN.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkBreaker2MatchVIN.Location = new System.Drawing.Point(246, 198);
+            this.chkBreaker2MatchVIN.Name = "chkBreaker2MatchVIN";
+            this.chkBreaker2MatchVIN.Size = new System.Drawing.Size(143, 17);
+            this.chkBreaker2MatchVIN.TabIndex = 217;
+            this.chkBreaker2MatchVIN.Text = "All channels match VIN";
+            this.chkBreaker2MatchVIN.UseVisualStyleBackColor = true;
+            this.chkBreaker2MatchVIN.CheckStateChanged += new System.EventHandler(this.chkBreaker2MatchVIN_CheckStateChanged);
+            // 
+            // cmbBreaker2Interrupt11
+            // 
+            this.cmbBreaker2Interrupt11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2Interrupt11.FormattingEnabled = true;
+            this.cmbBreaker2Interrupt11.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker2Interrupt11.Location = new System.Drawing.Point(1182, 196);
+            this.cmbBreaker2Interrupt11.Name = "cmbBreaker2Interrupt11";
+            this.cmbBreaker2Interrupt11.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker2Interrupt11.TabIndex = 229;
+            // 
+            // cmbBreaker2Interrupt10
+            // 
+            this.cmbBreaker2Interrupt10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2Interrupt10.FormattingEnabled = true;
+            this.cmbBreaker2Interrupt10.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker2Interrupt10.Location = new System.Drawing.Point(1110, 196);
+            this.cmbBreaker2Interrupt10.Name = "cmbBreaker2Interrupt10";
+            this.cmbBreaker2Interrupt10.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker2Interrupt10.TabIndex = 228;
+            // 
+            // cmbBreaker2Interrupt09
+            // 
+            this.cmbBreaker2Interrupt09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2Interrupt09.FormattingEnabled = true;
+            this.cmbBreaker2Interrupt09.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker2Interrupt09.Location = new System.Drawing.Point(1038, 196);
+            this.cmbBreaker2Interrupt09.Name = "cmbBreaker2Interrupt09";
+            this.cmbBreaker2Interrupt09.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker2Interrupt09.TabIndex = 227;
+            // 
+            // cmbBreaker2Interrupt08
+            // 
+            this.cmbBreaker2Interrupt08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2Interrupt08.FormattingEnabled = true;
+            this.cmbBreaker2Interrupt08.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker2Interrupt08.Location = new System.Drawing.Point(966, 196);
+            this.cmbBreaker2Interrupt08.Name = "cmbBreaker2Interrupt08";
+            this.cmbBreaker2Interrupt08.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker2Interrupt08.TabIndex = 226;
+            // 
+            // cmbBreaker2Interrupt07
+            // 
+            this.cmbBreaker2Interrupt07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2Interrupt07.FormattingEnabled = true;
+            this.cmbBreaker2Interrupt07.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker2Interrupt07.Location = new System.Drawing.Point(894, 196);
+            this.cmbBreaker2Interrupt07.Name = "cmbBreaker2Interrupt07";
+            this.cmbBreaker2Interrupt07.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker2Interrupt07.TabIndex = 225;
+            // 
+            // cmbBreaker2Interrupt06
+            // 
+            this.cmbBreaker2Interrupt06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2Interrupt06.FormattingEnabled = true;
+            this.cmbBreaker2Interrupt06.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker2Interrupt06.Location = new System.Drawing.Point(822, 196);
+            this.cmbBreaker2Interrupt06.Name = "cmbBreaker2Interrupt06";
+            this.cmbBreaker2Interrupt06.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker2Interrupt06.TabIndex = 224;
+            // 
+            // cmbBreaker2Interrupt05
+            // 
+            this.cmbBreaker2Interrupt05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2Interrupt05.FormattingEnabled = true;
+            this.cmbBreaker2Interrupt05.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker2Interrupt05.Location = new System.Drawing.Point(750, 196);
+            this.cmbBreaker2Interrupt05.Name = "cmbBreaker2Interrupt05";
+            this.cmbBreaker2Interrupt05.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker2Interrupt05.TabIndex = 223;
+            // 
+            // cmbBreaker2Interrupt04
+            // 
+            this.cmbBreaker2Interrupt04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2Interrupt04.FormattingEnabled = true;
+            this.cmbBreaker2Interrupt04.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker2Interrupt04.Location = new System.Drawing.Point(678, 196);
+            this.cmbBreaker2Interrupt04.Name = "cmbBreaker2Interrupt04";
+            this.cmbBreaker2Interrupt04.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker2Interrupt04.TabIndex = 222;
+            // 
+            // cmbBreaker2Interrupt03
+            // 
+            this.cmbBreaker2Interrupt03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2Interrupt03.FormattingEnabled = true;
+            this.cmbBreaker2Interrupt03.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker2Interrupt03.Location = new System.Drawing.Point(606, 196);
+            this.cmbBreaker2Interrupt03.Name = "cmbBreaker2Interrupt03";
+            this.cmbBreaker2Interrupt03.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker2Interrupt03.TabIndex = 221;
+            // 
+            // cmbBreaker2Interrupt02
+            // 
+            this.cmbBreaker2Interrupt02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2Interrupt02.FormattingEnabled = true;
+            this.cmbBreaker2Interrupt02.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker2Interrupt02.Location = new System.Drawing.Point(534, 196);
+            this.cmbBreaker2Interrupt02.Name = "cmbBreaker2Interrupt02";
+            this.cmbBreaker2Interrupt02.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker2Interrupt02.TabIndex = 220;
+            // 
+            // cmbBreaker2Interrupt01
+            // 
+            this.cmbBreaker2Interrupt01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2Interrupt01.FormattingEnabled = true;
+            this.cmbBreaker2Interrupt01.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker2Interrupt01.Location = new System.Drawing.Point(462, 196);
+            this.cmbBreaker2Interrupt01.Name = "cmbBreaker2Interrupt01";
+            this.cmbBreaker2Interrupt01.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker2Interrupt01.TabIndex = 219;
+            // 
+            // cmbBreaker2Interrupt00
+            // 
+            this.cmbBreaker2Interrupt00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2Interrupt00.FormattingEnabled = true;
+            this.cmbBreaker2Interrupt00.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker2Interrupt00.Location = new System.Drawing.Point(390, 196);
+            this.cmbBreaker2Interrupt00.Name = "cmbBreaker2Interrupt00";
+            this.cmbBreaker2Interrupt00.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker2Interrupt00.TabIndex = 218;
+            // 
+            // cmbBreaker2InterruptVIN
+            // 
+            this.cmbBreaker2InterruptVIN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2InterruptVIN.FormattingEnabled = true;
+            this.cmbBreaker2InterruptVIN.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker2InterruptVIN.Location = new System.Drawing.Point(189, 196);
+            this.cmbBreaker2InterruptVIN.Name = "cmbBreaker2InterruptVIN";
+            this.cmbBreaker2InterruptVIN.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker2InterruptVIN.TabIndex = 216;
+            // 
+            // cmbBreaker2OCTime11
+            // 
+            this.cmbBreaker2OCTime11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCTime11.FormattingEnabled = true;
+            this.cmbBreaker2OCTime11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker2OCTime11.Location = new System.Drawing.Point(1187, 166);
+            this.cmbBreaker2OCTime11.Name = "cmbBreaker2OCTime11";
+            this.cmbBreaker2OCTime11.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCTime11.TabIndex = 215;
+            // 
+            // cmbBreaker2OCTime00
+            // 
+            this.cmbBreaker2OCTime00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCTime00.FormattingEnabled = true;
+            this.cmbBreaker2OCTime00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker2OCTime00.Location = new System.Drawing.Point(395, 166);
+            this.cmbBreaker2OCTime00.Name = "cmbBreaker2OCTime00";
+            this.cmbBreaker2OCTime00.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCTime00.TabIndex = 204;
+            // 
+            // cmbBreaker2OCTime01
+            // 
+            this.cmbBreaker2OCTime01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCTime01.FormattingEnabled = true;
+            this.cmbBreaker2OCTime01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker2OCTime01.Location = new System.Drawing.Point(467, 166);
+            this.cmbBreaker2OCTime01.Name = "cmbBreaker2OCTime01";
+            this.cmbBreaker2OCTime01.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCTime01.TabIndex = 205;
+            // 
+            // cmbBreaker2OCTime02
+            // 
+            this.cmbBreaker2OCTime02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCTime02.FormattingEnabled = true;
+            this.cmbBreaker2OCTime02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker2OCTime02.Location = new System.Drawing.Point(539, 166);
+            this.cmbBreaker2OCTime02.Name = "cmbBreaker2OCTime02";
+            this.cmbBreaker2OCTime02.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCTime02.TabIndex = 206;
+            // 
+            // cmbBreaker2OCTime10
+            // 
+            this.cmbBreaker2OCTime10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCTime10.FormattingEnabled = true;
+            this.cmbBreaker2OCTime10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker2OCTime10.Location = new System.Drawing.Point(1115, 166);
+            this.cmbBreaker2OCTime10.Name = "cmbBreaker2OCTime10";
+            this.cmbBreaker2OCTime10.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCTime10.TabIndex = 214;
+            // 
+            // cmbBreaker2OCTime03
+            // 
+            this.cmbBreaker2OCTime03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCTime03.FormattingEnabled = true;
+            this.cmbBreaker2OCTime03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker2OCTime03.Location = new System.Drawing.Point(611, 166);
+            this.cmbBreaker2OCTime03.Name = "cmbBreaker2OCTime03";
+            this.cmbBreaker2OCTime03.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCTime03.TabIndex = 207;
+            // 
+            // cmbBreaker2OCTime09
+            // 
+            this.cmbBreaker2OCTime09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCTime09.FormattingEnabled = true;
+            this.cmbBreaker2OCTime09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker2OCTime09.Location = new System.Drawing.Point(1043, 166);
+            this.cmbBreaker2OCTime09.Name = "cmbBreaker2OCTime09";
+            this.cmbBreaker2OCTime09.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCTime09.TabIndex = 213;
+            // 
+            // cmbBreaker2OCTime04
+            // 
+            this.cmbBreaker2OCTime04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCTime04.FormattingEnabled = true;
+            this.cmbBreaker2OCTime04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker2OCTime04.Location = new System.Drawing.Point(683, 166);
+            this.cmbBreaker2OCTime04.Name = "cmbBreaker2OCTime04";
+            this.cmbBreaker2OCTime04.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCTime04.TabIndex = 208;
+            // 
+            // cmbBreaker2OCTime08
+            // 
+            this.cmbBreaker2OCTime08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCTime08.FormattingEnabled = true;
+            this.cmbBreaker2OCTime08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker2OCTime08.Location = new System.Drawing.Point(971, 166);
+            this.cmbBreaker2OCTime08.Name = "cmbBreaker2OCTime08";
+            this.cmbBreaker2OCTime08.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCTime08.TabIndex = 212;
+            // 
+            // cmbBreaker2OCTime05
+            // 
+            this.cmbBreaker2OCTime05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCTime05.FormattingEnabled = true;
+            this.cmbBreaker2OCTime05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker2OCTime05.Location = new System.Drawing.Point(755, 166);
+            this.cmbBreaker2OCTime05.Name = "cmbBreaker2OCTime05";
+            this.cmbBreaker2OCTime05.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCTime05.TabIndex = 209;
+            // 
+            // cmbBreaker2OCTime07
+            // 
+            this.cmbBreaker2OCTime07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCTime07.FormattingEnabled = true;
+            this.cmbBreaker2OCTime07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker2OCTime07.Location = new System.Drawing.Point(899, 166);
+            this.cmbBreaker2OCTime07.Name = "cmbBreaker2OCTime07";
+            this.cmbBreaker2OCTime07.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCTime07.TabIndex = 211;
+            // 
+            // cmbBreaker2OCTime06
+            // 
+            this.cmbBreaker2OCTime06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCTime06.FormattingEnabled = true;
+            this.cmbBreaker2OCTime06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker2OCTime06.Location = new System.Drawing.Point(827, 166);
+            this.cmbBreaker2OCTime06.Name = "cmbBreaker2OCTime06";
+            this.cmbBreaker2OCTime06.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCTime06.TabIndex = 210;
+            // 
+            // cmbBreaker2OCAmps11
+            // 
+            this.cmbBreaker2OCAmps11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCAmps11.FormattingEnabled = true;
+            this.cmbBreaker2OCAmps11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker2OCAmps11.Location = new System.Drawing.Point(1187, 136);
+            this.cmbBreaker2OCAmps11.Name = "cmbBreaker2OCAmps11";
+            this.cmbBreaker2OCAmps11.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCAmps11.TabIndex = 203;
+            // 
+            // cmbBreaker2OCAmps10
+            // 
+            this.cmbBreaker2OCAmps10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCAmps10.FormattingEnabled = true;
+            this.cmbBreaker2OCAmps10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker2OCAmps10.Location = new System.Drawing.Point(1115, 136);
+            this.cmbBreaker2OCAmps10.Name = "cmbBreaker2OCAmps10";
+            this.cmbBreaker2OCAmps10.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCAmps10.TabIndex = 202;
+            // 
+            // cmbBreaker2OCAmps09
+            // 
+            this.cmbBreaker2OCAmps09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCAmps09.FormattingEnabled = true;
+            this.cmbBreaker2OCAmps09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker2OCAmps09.Location = new System.Drawing.Point(1043, 136);
+            this.cmbBreaker2OCAmps09.Name = "cmbBreaker2OCAmps09";
+            this.cmbBreaker2OCAmps09.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCAmps09.TabIndex = 201;
+            // 
+            // cmbBreaker2OCAmps08
+            // 
+            this.cmbBreaker2OCAmps08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCAmps08.FormattingEnabled = true;
+            this.cmbBreaker2OCAmps08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker2OCAmps08.Location = new System.Drawing.Point(971, 136);
+            this.cmbBreaker2OCAmps08.Name = "cmbBreaker2OCAmps08";
+            this.cmbBreaker2OCAmps08.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCAmps08.TabIndex = 200;
+            // 
+            // cmbBreaker2OCAmps07
+            // 
+            this.cmbBreaker2OCAmps07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCAmps07.FormattingEnabled = true;
+            this.cmbBreaker2OCAmps07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker2OCAmps07.Location = new System.Drawing.Point(899, 136);
+            this.cmbBreaker2OCAmps07.Name = "cmbBreaker2OCAmps07";
+            this.cmbBreaker2OCAmps07.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCAmps07.TabIndex = 199;
+            // 
+            // cmbBreaker2OCAmps06
+            // 
+            this.cmbBreaker2OCAmps06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCAmps06.FormattingEnabled = true;
+            this.cmbBreaker2OCAmps06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker2OCAmps06.Location = new System.Drawing.Point(827, 136);
+            this.cmbBreaker2OCAmps06.Name = "cmbBreaker2OCAmps06";
+            this.cmbBreaker2OCAmps06.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCAmps06.TabIndex = 198;
+            // 
+            // cmbBreaker2OCAmps05
+            // 
+            this.cmbBreaker2OCAmps05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCAmps05.FormattingEnabled = true;
+            this.cmbBreaker2OCAmps05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker2OCAmps05.Location = new System.Drawing.Point(755, 136);
+            this.cmbBreaker2OCAmps05.Name = "cmbBreaker2OCAmps05";
+            this.cmbBreaker2OCAmps05.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCAmps05.TabIndex = 197;
+            // 
+            // cmbBreaker2OCAmps04
+            // 
+            this.cmbBreaker2OCAmps04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCAmps04.FormattingEnabled = true;
+            this.cmbBreaker2OCAmps04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker2OCAmps04.Location = new System.Drawing.Point(683, 136);
+            this.cmbBreaker2OCAmps04.Name = "cmbBreaker2OCAmps04";
+            this.cmbBreaker2OCAmps04.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCAmps04.TabIndex = 196;
+            // 
+            // cmbBreaker2OCAmps03
+            // 
+            this.cmbBreaker2OCAmps03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCAmps03.FormattingEnabled = true;
+            this.cmbBreaker2OCAmps03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker2OCAmps03.Location = new System.Drawing.Point(611, 136);
+            this.cmbBreaker2OCAmps03.Name = "cmbBreaker2OCAmps03";
+            this.cmbBreaker2OCAmps03.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCAmps03.TabIndex = 195;
+            // 
+            // cmbBreaker2OCAmps02
+            // 
+            this.cmbBreaker2OCAmps02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCAmps02.FormattingEnabled = true;
+            this.cmbBreaker2OCAmps02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker2OCAmps02.Location = new System.Drawing.Point(539, 136);
+            this.cmbBreaker2OCAmps02.Name = "cmbBreaker2OCAmps02";
+            this.cmbBreaker2OCAmps02.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCAmps02.TabIndex = 194;
+            // 
+            // cmbBreaker2OCAmps01
+            // 
+            this.cmbBreaker2OCAmps01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCAmps01.FormattingEnabled = true;
+            this.cmbBreaker2OCAmps01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker2OCAmps01.Location = new System.Drawing.Point(467, 136);
+            this.cmbBreaker2OCAmps01.Name = "cmbBreaker2OCAmps01";
+            this.cmbBreaker2OCAmps01.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCAmps01.TabIndex = 193;
+            // 
+            // cmbBreaker2OCAmps00
+            // 
+            this.cmbBreaker2OCAmps00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCAmps00.FormattingEnabled = true;
+            this.cmbBreaker2OCAmps00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker2OCAmps00.Location = new System.Drawing.Point(395, 136);
+            this.cmbBreaker2OCAmps00.Name = "cmbBreaker2OCAmps00";
+            this.cmbBreaker2OCAmps00.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCAmps00.TabIndex = 192;
+            // 
+            // lblBreaker2Ch00
+            // 
+            this.lblBreaker2Ch00.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker2Ch00.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker2Ch00.Location = new System.Drawing.Point(395, 108);
+            this.lblBreaker2Ch00.Name = "lblBreaker2Ch00";
+            this.lblBreaker2Ch00.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker2Ch00.TabIndex = 230;
+            this.lblBreaker2Ch00.Text = "0";
+            this.lblBreaker2Ch00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker2Ch01
+            // 
+            this.lblBreaker2Ch01.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker2Ch01.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker2Ch01.Location = new System.Drawing.Point(467, 108);
+            this.lblBreaker2Ch01.Name = "lblBreaker2Ch01";
+            this.lblBreaker2Ch01.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker2Ch01.TabIndex = 231;
+            this.lblBreaker2Ch01.Text = "1";
+            this.lblBreaker2Ch01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker2Ch04
+            // 
+            this.lblBreaker2Ch04.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker2Ch04.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker2Ch04.Location = new System.Drawing.Point(683, 108);
+            this.lblBreaker2Ch04.Name = "lblBreaker2Ch04";
+            this.lblBreaker2Ch04.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker2Ch04.TabIndex = 241;
+            this.lblBreaker2Ch04.Text = "4";
+            this.lblBreaker2Ch04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker2Ch02
+            // 
+            this.lblBreaker2Ch02.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker2Ch02.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker2Ch02.Location = new System.Drawing.Point(539, 108);
+            this.lblBreaker2Ch02.Name = "lblBreaker2Ch02";
+            this.lblBreaker2Ch02.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker2Ch02.TabIndex = 232;
+            this.lblBreaker2Ch02.Text = "2";
+            this.lblBreaker2Ch02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker2Ch05
+            // 
+            this.lblBreaker2Ch05.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker2Ch05.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker2Ch05.Location = new System.Drawing.Point(755, 108);
+            this.lblBreaker2Ch05.Name = "lblBreaker2Ch05";
+            this.lblBreaker2Ch05.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker2Ch05.TabIndex = 240;
+            this.lblBreaker2Ch05.Text = "5";
+            this.lblBreaker2Ch05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker2Ch03
+            // 
+            this.lblBreaker2Ch03.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker2Ch03.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker2Ch03.Location = new System.Drawing.Point(611, 107);
+            this.lblBreaker2Ch03.Name = "lblBreaker2Ch03";
+            this.lblBreaker2Ch03.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker2Ch03.TabIndex = 233;
+            this.lblBreaker2Ch03.Text = "3";
+            this.lblBreaker2Ch03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker2Ch06
+            // 
+            this.lblBreaker2Ch06.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker2Ch06.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker2Ch06.Location = new System.Drawing.Point(827, 108);
+            this.lblBreaker2Ch06.Name = "lblBreaker2Ch06";
+            this.lblBreaker2Ch06.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker2Ch06.TabIndex = 239;
+            this.lblBreaker2Ch06.Text = "6";
+            this.lblBreaker2Ch06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker2Ch11
+            // 
+            this.lblBreaker2Ch11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker2Ch11.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker2Ch11.Location = new System.Drawing.Point(1187, 108);
+            this.lblBreaker2Ch11.Name = "lblBreaker2Ch11";
+            this.lblBreaker2Ch11.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker2Ch11.TabIndex = 234;
+            this.lblBreaker2Ch11.Text = "11";
+            this.lblBreaker2Ch11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker2Ch07
+            // 
+            this.lblBreaker2Ch07.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker2Ch07.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker2Ch07.Location = new System.Drawing.Point(899, 108);
+            this.lblBreaker2Ch07.Name = "lblBreaker2Ch07";
+            this.lblBreaker2Ch07.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker2Ch07.TabIndex = 238;
+            this.lblBreaker2Ch07.Text = "7";
+            this.lblBreaker2Ch07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker2Ch10
+            // 
+            this.lblBreaker2Ch10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker2Ch10.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker2Ch10.Location = new System.Drawing.Point(1115, 108);
+            this.lblBreaker2Ch10.Name = "lblBreaker2Ch10";
+            this.lblBreaker2Ch10.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker2Ch10.TabIndex = 235;
+            this.lblBreaker2Ch10.Text = "10";
+            this.lblBreaker2Ch10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker2Ch08
+            // 
+            this.lblBreaker2Ch08.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker2Ch08.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker2Ch08.Location = new System.Drawing.Point(971, 108);
+            this.lblBreaker2Ch08.Name = "lblBreaker2Ch08";
+            this.lblBreaker2Ch08.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker2Ch08.TabIndex = 237;
+            this.lblBreaker2Ch08.Text = "8";
+            this.lblBreaker2Ch08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker2Ch09
+            // 
+            this.lblBreaker2Ch09.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker2Ch09.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker2Ch09.Location = new System.Drawing.Point(1043, 108);
+            this.lblBreaker2Ch09.Name = "lblBreaker2Ch09";
+            this.lblBreaker2Ch09.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker2Ch09.TabIndex = 236;
+            this.lblBreaker2Ch09.Text = "9";
+            this.lblBreaker2Ch09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label290
+            // 
+            this.label290.AutoSize = true;
+            this.label290.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label290.ForeColor = System.Drawing.SystemColors.Control;
+            this.label290.Location = new System.Drawing.Point(3, 198);
+            this.label290.Name = "label290";
+            this.label290.Size = new System.Drawing.Size(99, 17);
+            this.label290.TabIndex = 191;
+            this.label290.Text = "Interrupt Group";
+            // 
+            // label291
+            // 
+            this.label291.AutoSize = true;
+            this.label291.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label291.ForeColor = System.Drawing.SystemColors.Control;
+            this.label291.Location = new System.Drawing.Point(3, 168);
+            this.label291.Name = "label291";
+            this.label291.Size = new System.Drawing.Size(164, 17);
+            this.label291.TabIndex = 190;
+            this.label291.Text = "Overcurrent Time Constant";
+            // 
+            // cmbBreaker2OCTimeVIN
+            // 
+            this.cmbBreaker2OCTimeVIN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCTimeVIN.FormattingEnabled = true;
+            this.cmbBreaker2OCTimeVIN.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker2OCTimeVIN.Location = new System.Drawing.Point(194, 166);
+            this.cmbBreaker2OCTimeVIN.Name = "cmbBreaker2OCTimeVIN";
+            this.cmbBreaker2OCTimeVIN.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCTimeVIN.TabIndex = 148;
+            // 
+            // cmbBreaker2OCAmpsVIN
+            // 
+            this.cmbBreaker2OCAmpsVIN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2OCAmpsVIN.FormattingEnabled = true;
+            this.cmbBreaker2OCAmpsVIN.Items.AddRange(new object[] {
+            "60"});
+            this.cmbBreaker2OCAmpsVIN.Location = new System.Drawing.Point(194, 136);
+            this.cmbBreaker2OCAmpsVIN.Name = "cmbBreaker2OCAmpsVIN";
+            this.cmbBreaker2OCAmpsVIN.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2OCAmpsVIN.TabIndex = 135;
+            // 
+            // label292
+            // 
+            this.label292.AutoSize = true;
+            this.label292.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label292.ForeColor = System.Drawing.SystemColors.Control;
+            this.label292.Location = new System.Drawing.Point(3, 138);
+            this.label292.Name = "label292";
+            this.label292.Size = new System.Drawing.Size(114, 17);
+            this.label292.TabIndex = 189;
+            this.label292.Text = "Overcurrent Amps";
+            // 
+            // label293
+            // 
+            this.label293.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label293.ForeColor = System.Drawing.SystemColors.Control;
+            this.label293.Location = new System.Drawing.Point(194, 108);
+            this.label293.Name = "label293";
+            this.label293.Size = new System.Drawing.Size(40, 20);
+            this.label293.TabIndex = 188;
+            this.label293.Text = "VIN";
+            this.label293.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label300
+            // 
+            this.label300.AutoSize = true;
+            this.label300.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label300.ForeColor = System.Drawing.SystemColors.Control;
+            this.label300.Location = new System.Drawing.Point(3, 71);
+            this.label300.Name = "label300";
+            this.label300.Size = new System.Drawing.Size(139, 17);
+            this.label300.TabIndex = 175;
+            this.label300.Text = "Base Channel Instance:";
+            // 
+            // tbxBreaker2BaseIndex
+            // 
+            this.tbxBreaker2BaseIndex.Location = new System.Drawing.Point(148, 68);
+            this.tbxBreaker2BaseIndex.Name = "tbxBreaker2BaseIndex";
+            this.tbxBreaker2BaseIndex.Size = new System.Drawing.Size(32, 20);
+            this.tbxBreaker2BaseIndex.TabIndex = 134;
+            this.tbxBreaker2BaseIndex.TextChanged += new System.EventHandler(this.tbxBreaker2BaseIndex_TextChanged);
+            // 
+            // cmbBreaker2PanelNum
+            // 
+            this.cmbBreaker2PanelNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2PanelNum.FormattingEnabled = true;
+            this.cmbBreaker2PanelNum.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4",
             "5",
             "6"});
-            this.comboBox37.Location = new System.Drawing.Point(260, 25);
-            this.comboBox37.Name = "comboBox37";
-            this.comboBox37.Size = new System.Drawing.Size(40, 21);
-            this.comboBox37.TabIndex = 97;
+            this.cmbBreaker2PanelNum.Location = new System.Drawing.Point(260, 25);
+            this.cmbBreaker2PanelNum.Name = "cmbBreaker2PanelNum";
+            this.cmbBreaker2PanelNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2PanelNum.TabIndex = 97;
+            this.cmbBreaker2PanelNum.SelectedIndexChanged += new System.EventHandler(this.cmbBreaker2PanelNum_SelectedIndexChanged);
             // 
             // label256
             // 
@@ -5567,11 +8481,11 @@ namespace M1ConfigGenerator
             this.label256.TabIndex = 100;
             this.label256.Text = "Card # in Panel:";
             // 
-            // comboBox38
+            // cmbBreaker2CardNum
             // 
-            this.comboBox38.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox38.FormattingEnabled = true;
-            this.comboBox38.Items.AddRange(new object[] {
+            this.cmbBreaker2CardNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker2CardNum.FormattingEnabled = true;
+            this.cmbBreaker2CardNum.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -5580,10 +8494,11 @@ namespace M1ConfigGenerator
             "6",
             "7",
             "8"});
-            this.comboBox38.Location = new System.Drawing.Point(109, 25);
-            this.comboBox38.Name = "comboBox38";
-            this.comboBox38.Size = new System.Drawing.Size(40, 21);
-            this.comboBox38.TabIndex = 96;
+            this.cmbBreaker2CardNum.Location = new System.Drawing.Point(109, 25);
+            this.cmbBreaker2CardNum.Name = "cmbBreaker2CardNum";
+            this.cmbBreaker2CardNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker2CardNum.TabIndex = 1;
+            this.cmbBreaker2CardNum.SelectedIndexChanged += new System.EventHandler(this.cmbBreaker2CardNum_SelectedIndexChanged);
             // 
             // label257
             // 
@@ -5607,13 +8522,13 @@ namespace M1ConfigGenerator
             this.label258.TabIndex = 102;
             this.label258.Text = "Config Rev:";
             // 
-            // textBox65
+            // tbxBreaker2CfgRev
             // 
-            this.textBox65.Location = new System.Drawing.Point(419, 25);
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(32, 20);
-            this.textBox65.TabIndex = 98;
-            this.textBox65.Text = "1";
+            this.tbxBreaker2CfgRev.Location = new System.Drawing.Point(419, 25);
+            this.tbxBreaker2CfgRev.Name = "tbxBreaker2CfgRev";
+            this.tbxBreaker2CfgRev.Size = new System.Drawing.Size(32, 20);
+            this.tbxBreaker2CfgRev.TabIndex = 98;
+            this.tbxBreaker2CfgRev.Text = "1";
             // 
             // label259
             // 
@@ -5627,32 +8542,2575 @@ namespace M1ConfigGenerator
             this.label259.TabIndex = 103;
             this.label259.Text = "Config Type:  0x";
             // 
-            // textBox66
+            // tbxBreaker2CfgType
             // 
-            this.textBox66.Location = new System.Drawing.Point(616, 26);
-            this.textBox66.MaxLength = 4;
-            this.textBox66.Name = "textBox66";
-            this.textBox66.Size = new System.Drawing.Size(48, 20);
-            this.textBox66.TabIndex = 99;
-            this.textBox66.Text = "0";
+            this.tbxBreaker2CfgType.Location = new System.Drawing.Point(616, 26);
+            this.tbxBreaker2CfgType.MaxLength = 4;
+            this.tbxBreaker2CfgType.Name = "tbxBreaker2CfgType";
+            this.tbxBreaker2CfgType.Size = new System.Drawing.Size(48, 20);
+            this.tbxBreaker2CfgType.TabIndex = 99;
+            this.tbxBreaker2CfgType.Text = "0";
             // 
             // tabBreaker3
             // 
             this.tabBreaker3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabBreaker3.Controls.Add(this.chkBreaker3MatchVIN);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3Interrupt11);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3Interrupt10);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3Interrupt09);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3Interrupt08);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3Interrupt07);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3Interrupt06);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3Interrupt05);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3Interrupt04);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3Interrupt03);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3Interrupt02);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3Interrupt01);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3Interrupt00);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3InterruptVIN);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCTime11);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCTime00);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCTime01);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCTime02);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCTime10);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCTime03);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCTime09);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCTime04);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCTime08);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCTime05);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCTime07);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCTime06);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCAmps11);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCAmps10);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCAmps09);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCAmps08);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCAmps07);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCAmps06);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCAmps05);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCAmps04);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCAmps03);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCAmps02);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCAmps01);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCAmps00);
+            this.tabBreaker3.Controls.Add(this.lblBreaker3Ch00);
+            this.tabBreaker3.Controls.Add(this.lblBreaker3Ch01);
+            this.tabBreaker3.Controls.Add(this.lblBreaker3Ch04);
+            this.tabBreaker3.Controls.Add(this.lblBreaker3Ch02);
+            this.tabBreaker3.Controls.Add(this.lblBreaker3Ch05);
+            this.tabBreaker3.Controls.Add(this.lblBreaker3Ch03);
+            this.tabBreaker3.Controls.Add(this.lblBreaker3Ch06);
+            this.tabBreaker3.Controls.Add(this.lblBreaker3Ch11);
+            this.tabBreaker3.Controls.Add(this.lblBreaker3Ch07);
+            this.tabBreaker3.Controls.Add(this.lblBreaker3Ch10);
+            this.tabBreaker3.Controls.Add(this.lblBreaker3Ch08);
+            this.tabBreaker3.Controls.Add(this.lblBreaker3Ch09);
+            this.tabBreaker3.Controls.Add(this.label313);
+            this.tabBreaker3.Controls.Add(this.label314);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCTimeVIN);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3OCAmpsVIN);
+            this.tabBreaker3.Controls.Add(this.label315);
+            this.tabBreaker3.Controls.Add(this.label316);
+            this.tabBreaker3.Controls.Add(this.label317);
+            this.tabBreaker3.Controls.Add(this.tbxBreaker3BaseIndex);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3PanelNum);
+            this.tabBreaker3.Controls.Add(this.label330);
+            this.tabBreaker3.Controls.Add(this.cmbBreaker3CardNum);
+            this.tabBreaker3.Controls.Add(this.label331);
+            this.tabBreaker3.Controls.Add(this.label332);
+            this.tabBreaker3.Controls.Add(this.tbxBreaker3CfgRev);
+            this.tabBreaker3.Controls.Add(this.label333);
+            this.tabBreaker3.Controls.Add(this.tbxBreaker3CfgType);
             this.tabBreaker3.Location = new System.Drawing.Point(4, 22);
             this.tabBreaker3.Name = "tabBreaker3";
             this.tabBreaker3.Size = new System.Drawing.Size(1376, 736);
             this.tabBreaker3.TabIndex = 3;
             this.tabBreaker3.Text = "Breaker 3";
             // 
+            // chkBreaker3MatchVIN
+            // 
+            this.chkBreaker3MatchVIN.AutoSize = true;
+            this.chkBreaker3MatchVIN.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkBreaker3MatchVIN.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkBreaker3MatchVIN.Location = new System.Drawing.Point(246, 198);
+            this.chkBreaker3MatchVIN.Name = "chkBreaker3MatchVIN";
+            this.chkBreaker3MatchVIN.Size = new System.Drawing.Size(143, 17);
+            this.chkBreaker3MatchVIN.TabIndex = 283;
+            this.chkBreaker3MatchVIN.Text = "All channels match VIN";
+            this.chkBreaker3MatchVIN.UseVisualStyleBackColor = true;
+            this.chkBreaker3MatchVIN.CheckStateChanged += new System.EventHandler(this.chkBreaker3MatchVIN_CheckStateChanged);
+            // 
+            // cmbBreaker3Interrupt11
+            // 
+            this.cmbBreaker3Interrupt11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3Interrupt11.FormattingEnabled = true;
+            this.cmbBreaker3Interrupt11.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker3Interrupt11.Location = new System.Drawing.Point(1182, 196);
+            this.cmbBreaker3Interrupt11.Name = "cmbBreaker3Interrupt11";
+            this.cmbBreaker3Interrupt11.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker3Interrupt11.TabIndex = 295;
+            // 
+            // cmbBreaker3Interrupt10
+            // 
+            this.cmbBreaker3Interrupt10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3Interrupt10.FormattingEnabled = true;
+            this.cmbBreaker3Interrupt10.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker3Interrupt10.Location = new System.Drawing.Point(1110, 196);
+            this.cmbBreaker3Interrupt10.Name = "cmbBreaker3Interrupt10";
+            this.cmbBreaker3Interrupt10.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker3Interrupt10.TabIndex = 294;
+            // 
+            // cmbBreaker3Interrupt09
+            // 
+            this.cmbBreaker3Interrupt09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3Interrupt09.FormattingEnabled = true;
+            this.cmbBreaker3Interrupt09.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker3Interrupt09.Location = new System.Drawing.Point(1038, 196);
+            this.cmbBreaker3Interrupt09.Name = "cmbBreaker3Interrupt09";
+            this.cmbBreaker3Interrupt09.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker3Interrupt09.TabIndex = 293;
+            // 
+            // cmbBreaker3Interrupt08
+            // 
+            this.cmbBreaker3Interrupt08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3Interrupt08.FormattingEnabled = true;
+            this.cmbBreaker3Interrupt08.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker3Interrupt08.Location = new System.Drawing.Point(966, 196);
+            this.cmbBreaker3Interrupt08.Name = "cmbBreaker3Interrupt08";
+            this.cmbBreaker3Interrupt08.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker3Interrupt08.TabIndex = 292;
+            // 
+            // cmbBreaker3Interrupt07
+            // 
+            this.cmbBreaker3Interrupt07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3Interrupt07.FormattingEnabled = true;
+            this.cmbBreaker3Interrupt07.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker3Interrupt07.Location = new System.Drawing.Point(894, 196);
+            this.cmbBreaker3Interrupt07.Name = "cmbBreaker3Interrupt07";
+            this.cmbBreaker3Interrupt07.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker3Interrupt07.TabIndex = 291;
+            // 
+            // cmbBreaker3Interrupt06
+            // 
+            this.cmbBreaker3Interrupt06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3Interrupt06.FormattingEnabled = true;
+            this.cmbBreaker3Interrupt06.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker3Interrupt06.Location = new System.Drawing.Point(822, 196);
+            this.cmbBreaker3Interrupt06.Name = "cmbBreaker3Interrupt06";
+            this.cmbBreaker3Interrupt06.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker3Interrupt06.TabIndex = 290;
+            // 
+            // cmbBreaker3Interrupt05
+            // 
+            this.cmbBreaker3Interrupt05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3Interrupt05.FormattingEnabled = true;
+            this.cmbBreaker3Interrupt05.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker3Interrupt05.Location = new System.Drawing.Point(750, 196);
+            this.cmbBreaker3Interrupt05.Name = "cmbBreaker3Interrupt05";
+            this.cmbBreaker3Interrupt05.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker3Interrupt05.TabIndex = 289;
+            // 
+            // cmbBreaker3Interrupt04
+            // 
+            this.cmbBreaker3Interrupt04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3Interrupt04.FormattingEnabled = true;
+            this.cmbBreaker3Interrupt04.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker3Interrupt04.Location = new System.Drawing.Point(678, 196);
+            this.cmbBreaker3Interrupt04.Name = "cmbBreaker3Interrupt04";
+            this.cmbBreaker3Interrupt04.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker3Interrupt04.TabIndex = 288;
+            // 
+            // cmbBreaker3Interrupt03
+            // 
+            this.cmbBreaker3Interrupt03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3Interrupt03.FormattingEnabled = true;
+            this.cmbBreaker3Interrupt03.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker3Interrupt03.Location = new System.Drawing.Point(606, 196);
+            this.cmbBreaker3Interrupt03.Name = "cmbBreaker3Interrupt03";
+            this.cmbBreaker3Interrupt03.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker3Interrupt03.TabIndex = 287;
+            // 
+            // cmbBreaker3Interrupt02
+            // 
+            this.cmbBreaker3Interrupt02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3Interrupt02.FormattingEnabled = true;
+            this.cmbBreaker3Interrupt02.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker3Interrupt02.Location = new System.Drawing.Point(534, 196);
+            this.cmbBreaker3Interrupt02.Name = "cmbBreaker3Interrupt02";
+            this.cmbBreaker3Interrupt02.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker3Interrupt02.TabIndex = 286;
+            // 
+            // cmbBreaker3Interrupt01
+            // 
+            this.cmbBreaker3Interrupt01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3Interrupt01.FormattingEnabled = true;
+            this.cmbBreaker3Interrupt01.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker3Interrupt01.Location = new System.Drawing.Point(462, 196);
+            this.cmbBreaker3Interrupt01.Name = "cmbBreaker3Interrupt01";
+            this.cmbBreaker3Interrupt01.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker3Interrupt01.TabIndex = 285;
+            // 
+            // cmbBreaker3Interrupt00
+            // 
+            this.cmbBreaker3Interrupt00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3Interrupt00.FormattingEnabled = true;
+            this.cmbBreaker3Interrupt00.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker3Interrupt00.Location = new System.Drawing.Point(390, 196);
+            this.cmbBreaker3Interrupt00.Name = "cmbBreaker3Interrupt00";
+            this.cmbBreaker3Interrupt00.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker3Interrupt00.TabIndex = 284;
+            // 
+            // cmbBreaker3InterruptVIN
+            // 
+            this.cmbBreaker3InterruptVIN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3InterruptVIN.FormattingEnabled = true;
+            this.cmbBreaker3InterruptVIN.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker3InterruptVIN.Location = new System.Drawing.Point(189, 196);
+            this.cmbBreaker3InterruptVIN.Name = "cmbBreaker3InterruptVIN";
+            this.cmbBreaker3InterruptVIN.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker3InterruptVIN.TabIndex = 282;
+            // 
+            // cmbBreaker3OCTime11
+            // 
+            this.cmbBreaker3OCTime11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCTime11.FormattingEnabled = true;
+            this.cmbBreaker3OCTime11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker3OCTime11.Location = new System.Drawing.Point(1187, 166);
+            this.cmbBreaker3OCTime11.Name = "cmbBreaker3OCTime11";
+            this.cmbBreaker3OCTime11.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCTime11.TabIndex = 281;
+            // 
+            // cmbBreaker3OCTime00
+            // 
+            this.cmbBreaker3OCTime00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCTime00.FormattingEnabled = true;
+            this.cmbBreaker3OCTime00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker3OCTime00.Location = new System.Drawing.Point(395, 166);
+            this.cmbBreaker3OCTime00.Name = "cmbBreaker3OCTime00";
+            this.cmbBreaker3OCTime00.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCTime00.TabIndex = 270;
+            // 
+            // cmbBreaker3OCTime01
+            // 
+            this.cmbBreaker3OCTime01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCTime01.FormattingEnabled = true;
+            this.cmbBreaker3OCTime01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker3OCTime01.Location = new System.Drawing.Point(467, 166);
+            this.cmbBreaker3OCTime01.Name = "cmbBreaker3OCTime01";
+            this.cmbBreaker3OCTime01.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCTime01.TabIndex = 271;
+            // 
+            // cmbBreaker3OCTime02
+            // 
+            this.cmbBreaker3OCTime02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCTime02.FormattingEnabled = true;
+            this.cmbBreaker3OCTime02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker3OCTime02.Location = new System.Drawing.Point(539, 166);
+            this.cmbBreaker3OCTime02.Name = "cmbBreaker3OCTime02";
+            this.cmbBreaker3OCTime02.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCTime02.TabIndex = 272;
+            // 
+            // cmbBreaker3OCTime10
+            // 
+            this.cmbBreaker3OCTime10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCTime10.FormattingEnabled = true;
+            this.cmbBreaker3OCTime10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker3OCTime10.Location = new System.Drawing.Point(1115, 166);
+            this.cmbBreaker3OCTime10.Name = "cmbBreaker3OCTime10";
+            this.cmbBreaker3OCTime10.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCTime10.TabIndex = 280;
+            // 
+            // cmbBreaker3OCTime03
+            // 
+            this.cmbBreaker3OCTime03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCTime03.FormattingEnabled = true;
+            this.cmbBreaker3OCTime03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker3OCTime03.Location = new System.Drawing.Point(611, 166);
+            this.cmbBreaker3OCTime03.Name = "cmbBreaker3OCTime03";
+            this.cmbBreaker3OCTime03.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCTime03.TabIndex = 273;
+            // 
+            // cmbBreaker3OCTime09
+            // 
+            this.cmbBreaker3OCTime09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCTime09.FormattingEnabled = true;
+            this.cmbBreaker3OCTime09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker3OCTime09.Location = new System.Drawing.Point(1043, 166);
+            this.cmbBreaker3OCTime09.Name = "cmbBreaker3OCTime09";
+            this.cmbBreaker3OCTime09.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCTime09.TabIndex = 279;
+            // 
+            // cmbBreaker3OCTime04
+            // 
+            this.cmbBreaker3OCTime04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCTime04.FormattingEnabled = true;
+            this.cmbBreaker3OCTime04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker3OCTime04.Location = new System.Drawing.Point(683, 166);
+            this.cmbBreaker3OCTime04.Name = "cmbBreaker3OCTime04";
+            this.cmbBreaker3OCTime04.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCTime04.TabIndex = 274;
+            // 
+            // cmbBreaker3OCTime08
+            // 
+            this.cmbBreaker3OCTime08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCTime08.FormattingEnabled = true;
+            this.cmbBreaker3OCTime08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker3OCTime08.Location = new System.Drawing.Point(971, 166);
+            this.cmbBreaker3OCTime08.Name = "cmbBreaker3OCTime08";
+            this.cmbBreaker3OCTime08.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCTime08.TabIndex = 278;
+            // 
+            // cmbBreaker3OCTime05
+            // 
+            this.cmbBreaker3OCTime05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCTime05.FormattingEnabled = true;
+            this.cmbBreaker3OCTime05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker3OCTime05.Location = new System.Drawing.Point(755, 166);
+            this.cmbBreaker3OCTime05.Name = "cmbBreaker3OCTime05";
+            this.cmbBreaker3OCTime05.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCTime05.TabIndex = 275;
+            // 
+            // cmbBreaker3OCTime07
+            // 
+            this.cmbBreaker3OCTime07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCTime07.FormattingEnabled = true;
+            this.cmbBreaker3OCTime07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker3OCTime07.Location = new System.Drawing.Point(899, 166);
+            this.cmbBreaker3OCTime07.Name = "cmbBreaker3OCTime07";
+            this.cmbBreaker3OCTime07.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCTime07.TabIndex = 277;
+            // 
+            // cmbBreaker3OCTime06
+            // 
+            this.cmbBreaker3OCTime06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCTime06.FormattingEnabled = true;
+            this.cmbBreaker3OCTime06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker3OCTime06.Location = new System.Drawing.Point(827, 166);
+            this.cmbBreaker3OCTime06.Name = "cmbBreaker3OCTime06";
+            this.cmbBreaker3OCTime06.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCTime06.TabIndex = 276;
+            // 
+            // cmbBreaker3OCAmps11
+            // 
+            this.cmbBreaker3OCAmps11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCAmps11.FormattingEnabled = true;
+            this.cmbBreaker3OCAmps11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker3OCAmps11.Location = new System.Drawing.Point(1187, 136);
+            this.cmbBreaker3OCAmps11.Name = "cmbBreaker3OCAmps11";
+            this.cmbBreaker3OCAmps11.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCAmps11.TabIndex = 269;
+            // 
+            // cmbBreaker3OCAmps10
+            // 
+            this.cmbBreaker3OCAmps10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCAmps10.FormattingEnabled = true;
+            this.cmbBreaker3OCAmps10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker3OCAmps10.Location = new System.Drawing.Point(1115, 136);
+            this.cmbBreaker3OCAmps10.Name = "cmbBreaker3OCAmps10";
+            this.cmbBreaker3OCAmps10.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCAmps10.TabIndex = 268;
+            // 
+            // cmbBreaker3OCAmps09
+            // 
+            this.cmbBreaker3OCAmps09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCAmps09.FormattingEnabled = true;
+            this.cmbBreaker3OCAmps09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker3OCAmps09.Location = new System.Drawing.Point(1043, 136);
+            this.cmbBreaker3OCAmps09.Name = "cmbBreaker3OCAmps09";
+            this.cmbBreaker3OCAmps09.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCAmps09.TabIndex = 267;
+            // 
+            // cmbBreaker3OCAmps08
+            // 
+            this.cmbBreaker3OCAmps08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCAmps08.FormattingEnabled = true;
+            this.cmbBreaker3OCAmps08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker3OCAmps08.Location = new System.Drawing.Point(971, 136);
+            this.cmbBreaker3OCAmps08.Name = "cmbBreaker3OCAmps08";
+            this.cmbBreaker3OCAmps08.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCAmps08.TabIndex = 266;
+            // 
+            // cmbBreaker3OCAmps07
+            // 
+            this.cmbBreaker3OCAmps07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCAmps07.FormattingEnabled = true;
+            this.cmbBreaker3OCAmps07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker3OCAmps07.Location = new System.Drawing.Point(899, 136);
+            this.cmbBreaker3OCAmps07.Name = "cmbBreaker3OCAmps07";
+            this.cmbBreaker3OCAmps07.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCAmps07.TabIndex = 265;
+            // 
+            // cmbBreaker3OCAmps06
+            // 
+            this.cmbBreaker3OCAmps06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCAmps06.FormattingEnabled = true;
+            this.cmbBreaker3OCAmps06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker3OCAmps06.Location = new System.Drawing.Point(827, 136);
+            this.cmbBreaker3OCAmps06.Name = "cmbBreaker3OCAmps06";
+            this.cmbBreaker3OCAmps06.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCAmps06.TabIndex = 264;
+            // 
+            // cmbBreaker3OCAmps05
+            // 
+            this.cmbBreaker3OCAmps05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCAmps05.FormattingEnabled = true;
+            this.cmbBreaker3OCAmps05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker3OCAmps05.Location = new System.Drawing.Point(755, 136);
+            this.cmbBreaker3OCAmps05.Name = "cmbBreaker3OCAmps05";
+            this.cmbBreaker3OCAmps05.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCAmps05.TabIndex = 263;
+            // 
+            // cmbBreaker3OCAmps04
+            // 
+            this.cmbBreaker3OCAmps04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCAmps04.FormattingEnabled = true;
+            this.cmbBreaker3OCAmps04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker3OCAmps04.Location = new System.Drawing.Point(683, 136);
+            this.cmbBreaker3OCAmps04.Name = "cmbBreaker3OCAmps04";
+            this.cmbBreaker3OCAmps04.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCAmps04.TabIndex = 262;
+            // 
+            // cmbBreaker3OCAmps03
+            // 
+            this.cmbBreaker3OCAmps03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCAmps03.FormattingEnabled = true;
+            this.cmbBreaker3OCAmps03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker3OCAmps03.Location = new System.Drawing.Point(611, 136);
+            this.cmbBreaker3OCAmps03.Name = "cmbBreaker3OCAmps03";
+            this.cmbBreaker3OCAmps03.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCAmps03.TabIndex = 261;
+            // 
+            // cmbBreaker3OCAmps02
+            // 
+            this.cmbBreaker3OCAmps02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCAmps02.FormattingEnabled = true;
+            this.cmbBreaker3OCAmps02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker3OCAmps02.Location = new System.Drawing.Point(539, 136);
+            this.cmbBreaker3OCAmps02.Name = "cmbBreaker3OCAmps02";
+            this.cmbBreaker3OCAmps02.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCAmps02.TabIndex = 260;
+            // 
+            // cmbBreaker3OCAmps01
+            // 
+            this.cmbBreaker3OCAmps01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCAmps01.FormattingEnabled = true;
+            this.cmbBreaker3OCAmps01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker3OCAmps01.Location = new System.Drawing.Point(467, 136);
+            this.cmbBreaker3OCAmps01.Name = "cmbBreaker3OCAmps01";
+            this.cmbBreaker3OCAmps01.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCAmps01.TabIndex = 259;
+            // 
+            // cmbBreaker3OCAmps00
+            // 
+            this.cmbBreaker3OCAmps00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCAmps00.FormattingEnabled = true;
+            this.cmbBreaker3OCAmps00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker3OCAmps00.Location = new System.Drawing.Point(395, 136);
+            this.cmbBreaker3OCAmps00.Name = "cmbBreaker3OCAmps00";
+            this.cmbBreaker3OCAmps00.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCAmps00.TabIndex = 258;
+            // 
+            // lblBreaker3Ch00
+            // 
+            this.lblBreaker3Ch00.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker3Ch00.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker3Ch00.Location = new System.Drawing.Point(395, 108);
+            this.lblBreaker3Ch00.Name = "lblBreaker3Ch00";
+            this.lblBreaker3Ch00.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker3Ch00.TabIndex = 296;
+            this.lblBreaker3Ch00.Text = "0";
+            this.lblBreaker3Ch00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker3Ch01
+            // 
+            this.lblBreaker3Ch01.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker3Ch01.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker3Ch01.Location = new System.Drawing.Point(467, 108);
+            this.lblBreaker3Ch01.Name = "lblBreaker3Ch01";
+            this.lblBreaker3Ch01.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker3Ch01.TabIndex = 297;
+            this.lblBreaker3Ch01.Text = "1";
+            this.lblBreaker3Ch01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker3Ch04
+            // 
+            this.lblBreaker3Ch04.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker3Ch04.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker3Ch04.Location = new System.Drawing.Point(683, 108);
+            this.lblBreaker3Ch04.Name = "lblBreaker3Ch04";
+            this.lblBreaker3Ch04.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker3Ch04.TabIndex = 307;
+            this.lblBreaker3Ch04.Text = "4";
+            this.lblBreaker3Ch04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker3Ch02
+            // 
+            this.lblBreaker3Ch02.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker3Ch02.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker3Ch02.Location = new System.Drawing.Point(539, 108);
+            this.lblBreaker3Ch02.Name = "lblBreaker3Ch02";
+            this.lblBreaker3Ch02.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker3Ch02.TabIndex = 298;
+            this.lblBreaker3Ch02.Text = "2";
+            this.lblBreaker3Ch02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker3Ch05
+            // 
+            this.lblBreaker3Ch05.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker3Ch05.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker3Ch05.Location = new System.Drawing.Point(755, 108);
+            this.lblBreaker3Ch05.Name = "lblBreaker3Ch05";
+            this.lblBreaker3Ch05.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker3Ch05.TabIndex = 306;
+            this.lblBreaker3Ch05.Text = "5";
+            this.lblBreaker3Ch05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker3Ch03
+            // 
+            this.lblBreaker3Ch03.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker3Ch03.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker3Ch03.Location = new System.Drawing.Point(611, 107);
+            this.lblBreaker3Ch03.Name = "lblBreaker3Ch03";
+            this.lblBreaker3Ch03.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker3Ch03.TabIndex = 299;
+            this.lblBreaker3Ch03.Text = "3";
+            this.lblBreaker3Ch03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker3Ch06
+            // 
+            this.lblBreaker3Ch06.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker3Ch06.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker3Ch06.Location = new System.Drawing.Point(827, 108);
+            this.lblBreaker3Ch06.Name = "lblBreaker3Ch06";
+            this.lblBreaker3Ch06.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker3Ch06.TabIndex = 305;
+            this.lblBreaker3Ch06.Text = "6";
+            this.lblBreaker3Ch06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker3Ch11
+            // 
+            this.lblBreaker3Ch11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker3Ch11.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker3Ch11.Location = new System.Drawing.Point(1187, 108);
+            this.lblBreaker3Ch11.Name = "lblBreaker3Ch11";
+            this.lblBreaker3Ch11.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker3Ch11.TabIndex = 300;
+            this.lblBreaker3Ch11.Text = "11";
+            this.lblBreaker3Ch11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker3Ch07
+            // 
+            this.lblBreaker3Ch07.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker3Ch07.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker3Ch07.Location = new System.Drawing.Point(899, 108);
+            this.lblBreaker3Ch07.Name = "lblBreaker3Ch07";
+            this.lblBreaker3Ch07.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker3Ch07.TabIndex = 304;
+            this.lblBreaker3Ch07.Text = "7";
+            this.lblBreaker3Ch07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker3Ch10
+            // 
+            this.lblBreaker3Ch10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker3Ch10.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker3Ch10.Location = new System.Drawing.Point(1115, 108);
+            this.lblBreaker3Ch10.Name = "lblBreaker3Ch10";
+            this.lblBreaker3Ch10.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker3Ch10.TabIndex = 301;
+            this.lblBreaker3Ch10.Text = "10";
+            this.lblBreaker3Ch10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker3Ch08
+            // 
+            this.lblBreaker3Ch08.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker3Ch08.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker3Ch08.Location = new System.Drawing.Point(971, 108);
+            this.lblBreaker3Ch08.Name = "lblBreaker3Ch08";
+            this.lblBreaker3Ch08.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker3Ch08.TabIndex = 303;
+            this.lblBreaker3Ch08.Text = "8";
+            this.lblBreaker3Ch08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker3Ch09
+            // 
+            this.lblBreaker3Ch09.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker3Ch09.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker3Ch09.Location = new System.Drawing.Point(1043, 108);
+            this.lblBreaker3Ch09.Name = "lblBreaker3Ch09";
+            this.lblBreaker3Ch09.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker3Ch09.TabIndex = 302;
+            this.lblBreaker3Ch09.Text = "9";
+            this.lblBreaker3Ch09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label313
+            // 
+            this.label313.AutoSize = true;
+            this.label313.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label313.ForeColor = System.Drawing.SystemColors.Control;
+            this.label313.Location = new System.Drawing.Point(3, 198);
+            this.label313.Name = "label313";
+            this.label313.Size = new System.Drawing.Size(99, 17);
+            this.label313.TabIndex = 257;
+            this.label313.Text = "Interrupt Group";
+            // 
+            // label314
+            // 
+            this.label314.AutoSize = true;
+            this.label314.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label314.ForeColor = System.Drawing.SystemColors.Control;
+            this.label314.Location = new System.Drawing.Point(3, 168);
+            this.label314.Name = "label314";
+            this.label314.Size = new System.Drawing.Size(164, 17);
+            this.label314.TabIndex = 256;
+            this.label314.Text = "Overcurrent Time Constant";
+            // 
+            // cmbBreaker3OCTimeVIN
+            // 
+            this.cmbBreaker3OCTimeVIN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCTimeVIN.FormattingEnabled = true;
+            this.cmbBreaker3OCTimeVIN.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker3OCTimeVIN.Location = new System.Drawing.Point(194, 166);
+            this.cmbBreaker3OCTimeVIN.Name = "cmbBreaker3OCTimeVIN";
+            this.cmbBreaker3OCTimeVIN.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCTimeVIN.TabIndex = 214;
+            // 
+            // cmbBreaker3OCAmpsVIN
+            // 
+            this.cmbBreaker3OCAmpsVIN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3OCAmpsVIN.FormattingEnabled = true;
+            this.cmbBreaker3OCAmpsVIN.Items.AddRange(new object[] {
+            "60"});
+            this.cmbBreaker3OCAmpsVIN.Location = new System.Drawing.Point(194, 136);
+            this.cmbBreaker3OCAmpsVIN.Name = "cmbBreaker3OCAmpsVIN";
+            this.cmbBreaker3OCAmpsVIN.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3OCAmpsVIN.TabIndex = 201;
+            // 
+            // label315
+            // 
+            this.label315.AutoSize = true;
+            this.label315.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label315.ForeColor = System.Drawing.SystemColors.Control;
+            this.label315.Location = new System.Drawing.Point(3, 138);
+            this.label315.Name = "label315";
+            this.label315.Size = new System.Drawing.Size(114, 17);
+            this.label315.TabIndex = 255;
+            this.label315.Text = "Overcurrent Amps";
+            // 
+            // label316
+            // 
+            this.label316.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label316.ForeColor = System.Drawing.SystemColors.Control;
+            this.label316.Location = new System.Drawing.Point(194, 108);
+            this.label316.Name = "label316";
+            this.label316.Size = new System.Drawing.Size(40, 20);
+            this.label316.TabIndex = 254;
+            this.label316.Text = "VIN";
+            this.label316.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label317
+            // 
+            this.label317.AutoSize = true;
+            this.label317.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label317.ForeColor = System.Drawing.SystemColors.Control;
+            this.label317.Location = new System.Drawing.Point(3, 71);
+            this.label317.Name = "label317";
+            this.label317.Size = new System.Drawing.Size(139, 17);
+            this.label317.TabIndex = 241;
+            this.label317.Text = "Base Channel Instance:";
+            // 
+            // tbxBreaker3BaseIndex
+            // 
+            this.tbxBreaker3BaseIndex.Location = new System.Drawing.Point(148, 68);
+            this.tbxBreaker3BaseIndex.Name = "tbxBreaker3BaseIndex";
+            this.tbxBreaker3BaseIndex.Size = new System.Drawing.Size(32, 20);
+            this.tbxBreaker3BaseIndex.TabIndex = 200;
+            this.tbxBreaker3BaseIndex.TextChanged += new System.EventHandler(this.tbxBreaker3BaseIndex_TextChanged);
+            // 
+            // cmbBreaker3PanelNum
+            // 
+            this.cmbBreaker3PanelNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3PanelNum.FormattingEnabled = true;
+            this.cmbBreaker3PanelNum.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.cmbBreaker3PanelNum.Location = new System.Drawing.Point(260, 25);
+            this.cmbBreaker3PanelNum.Name = "cmbBreaker3PanelNum";
+            this.cmbBreaker3PanelNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3PanelNum.TabIndex = 193;
+            this.cmbBreaker3PanelNum.SelectedIndexChanged += new System.EventHandler(this.cmbBreaker3PanelNum_SelectedIndexChanged);
+            // 
+            // label330
+            // 
+            this.label330.AutoSize = true;
+            this.label330.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label330.ForeColor = System.Drawing.SystemColors.Control;
+            this.label330.Location = new System.Drawing.Point(3, 27);
+            this.label330.Name = "label330";
+            this.label330.Size = new System.Drawing.Size(100, 17);
+            this.label330.TabIndex = 196;
+            this.label330.Text = "Card # in Panel:";
+            // 
+            // cmbBreaker3CardNum
+            // 
+            this.cmbBreaker3CardNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker3CardNum.FormattingEnabled = true;
+            this.cmbBreaker3CardNum.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.cmbBreaker3CardNum.Location = new System.Drawing.Point(109, 25);
+            this.cmbBreaker3CardNum.Name = "cmbBreaker3CardNum";
+            this.cmbBreaker3CardNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker3CardNum.TabIndex = 192;
+            this.cmbBreaker3CardNum.SelectedIndexChanged += new System.EventHandler(this.cmbBreaker3CardNum_SelectedIndexChanged);
+            // 
+            // label331
+            // 
+            this.label331.AutoSize = true;
+            this.label331.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label331.ForeColor = System.Drawing.SystemColors.Control;
+            this.label331.Location = new System.Drawing.Point(200, 27);
+            this.label331.Name = "label331";
+            this.label331.Size = new System.Drawing.Size(54, 17);
+            this.label331.TabIndex = 197;
+            this.label331.Text = "Panel #:";
+            // 
+            // label332
+            // 
+            this.label332.AutoSize = true;
+            this.label332.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label332.ForeColor = System.Drawing.SystemColors.Control;
+            this.label332.Location = new System.Drawing.Point(339, 27);
+            this.label332.Name = "label332";
+            this.label332.Size = new System.Drawing.Size(74, 17);
+            this.label332.TabIndex = 198;
+            this.label332.Text = "Config Rev:";
+            // 
+            // tbxBreaker3CfgRev
+            // 
+            this.tbxBreaker3CfgRev.Location = new System.Drawing.Point(419, 25);
+            this.tbxBreaker3CfgRev.Name = "tbxBreaker3CfgRev";
+            this.tbxBreaker3CfgRev.Size = new System.Drawing.Size(32, 20);
+            this.tbxBreaker3CfgRev.TabIndex = 194;
+            this.tbxBreaker3CfgRev.Text = "1";
+            // 
+            // label333
+            // 
+            this.label333.AutoSize = true;
+            this.label333.BackColor = System.Drawing.Color.Transparent;
+            this.label333.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label333.ForeColor = System.Drawing.SystemColors.Control;
+            this.label333.Location = new System.Drawing.Point(509, 27);
+            this.label333.Name = "label333";
+            this.label333.Size = new System.Drawing.Size(101, 17);
+            this.label333.TabIndex = 199;
+            this.label333.Text = "Config Type:  0x";
+            // 
+            // tbxBreaker3CfgType
+            // 
+            this.tbxBreaker3CfgType.Location = new System.Drawing.Point(616, 26);
+            this.tbxBreaker3CfgType.MaxLength = 4;
+            this.tbxBreaker3CfgType.Name = "tbxBreaker3CfgType";
+            this.tbxBreaker3CfgType.Size = new System.Drawing.Size(48, 20);
+            this.tbxBreaker3CfgType.TabIndex = 195;
+            this.tbxBreaker3CfgType.Text = "0";
+            // 
             // tabBreaker4
             // 
             this.tabBreaker4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabBreaker4.Controls.Add(this.chkBreaker4MatchVIN);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4Interrupt11);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4Interrupt10);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4Interrupt09);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4Interrupt08);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4Interrupt07);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4Interrupt06);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4Interrupt05);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4Interrupt04);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4Interrupt03);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4Interrupt02);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4Interrupt01);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4Interrupt00);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4InterruptVIN);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCTime11);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCTime00);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCTime01);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCTime02);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCTime10);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCTime03);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCTime09);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCTime04);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCTime08);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCTime05);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCTime07);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCTime06);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCAmps11);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCAmps10);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCAmps09);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCAmps08);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCAmps07);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCAmps06);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCAmps05);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCAmps04);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCAmps03);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCAmps02);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCAmps01);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCAmps00);
+            this.tabBreaker4.Controls.Add(this.lblBreaker4Ch00);
+            this.tabBreaker4.Controls.Add(this.lblBreaker4Ch01);
+            this.tabBreaker4.Controls.Add(this.lblBreaker4Ch04);
+            this.tabBreaker4.Controls.Add(this.lblBreaker4Ch02);
+            this.tabBreaker4.Controls.Add(this.lblBreaker4Ch05);
+            this.tabBreaker4.Controls.Add(this.lblBreaker4Ch03);
+            this.tabBreaker4.Controls.Add(this.lblBreaker4Ch06);
+            this.tabBreaker4.Controls.Add(this.lblBreaker4Ch11);
+            this.tabBreaker4.Controls.Add(this.lblBreaker4Ch07);
+            this.tabBreaker4.Controls.Add(this.lblBreaker4Ch10);
+            this.tabBreaker4.Controls.Add(this.lblBreaker4Ch08);
+            this.tabBreaker4.Controls.Add(this.lblBreaker4Ch09);
+            this.tabBreaker4.Controls.Add(this.label334);
+            this.tabBreaker4.Controls.Add(this.label335);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCTimeVIN);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4OCAmpsVIN);
+            this.tabBreaker4.Controls.Add(this.label336);
+            this.tabBreaker4.Controls.Add(this.label337);
+            this.tabBreaker4.Controls.Add(this.label338);
+            this.tabBreaker4.Controls.Add(this.tbxBreaker4BaseIndex);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4PanelNum);
+            this.tabBreaker4.Controls.Add(this.label351);
+            this.tabBreaker4.Controls.Add(this.cmbBreaker4CardNum);
+            this.tabBreaker4.Controls.Add(this.label352);
+            this.tabBreaker4.Controls.Add(this.label353);
+            this.tabBreaker4.Controls.Add(this.tbxBreaker4CfgRev);
+            this.tabBreaker4.Controls.Add(this.label354);
+            this.tabBreaker4.Controls.Add(this.tbxBreaker4CfgType);
             this.tabBreaker4.Location = new System.Drawing.Point(4, 22);
             this.tabBreaker4.Name = "tabBreaker4";
             this.tabBreaker4.Size = new System.Drawing.Size(1376, 736);
             this.tabBreaker4.TabIndex = 4;
             this.tabBreaker4.Text = "Breaker 4";
+            // 
+            // chkBreaker4MatchVIN
+            // 
+            this.chkBreaker4MatchVIN.AutoSize = true;
+            this.chkBreaker4MatchVIN.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkBreaker4MatchVIN.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkBreaker4MatchVIN.Location = new System.Drawing.Point(246, 198);
+            this.chkBreaker4MatchVIN.Name = "chkBreaker4MatchVIN";
+            this.chkBreaker4MatchVIN.Size = new System.Drawing.Size(143, 17);
+            this.chkBreaker4MatchVIN.TabIndex = 283;
+            this.chkBreaker4MatchVIN.Text = "All channels match VIN";
+            this.chkBreaker4MatchVIN.UseVisualStyleBackColor = true;
+            this.chkBreaker4MatchVIN.CheckStateChanged += new System.EventHandler(this.chkBreaker4MatchVIN_CheckStateChanged);
+            // 
+            // cmbBreaker4Interrupt11
+            // 
+            this.cmbBreaker4Interrupt11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4Interrupt11.FormattingEnabled = true;
+            this.cmbBreaker4Interrupt11.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker4Interrupt11.Location = new System.Drawing.Point(1182, 196);
+            this.cmbBreaker4Interrupt11.Name = "cmbBreaker4Interrupt11";
+            this.cmbBreaker4Interrupt11.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker4Interrupt11.TabIndex = 295;
+            // 
+            // cmbBreaker4Interrupt10
+            // 
+            this.cmbBreaker4Interrupt10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4Interrupt10.FormattingEnabled = true;
+            this.cmbBreaker4Interrupt10.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker4Interrupt10.Location = new System.Drawing.Point(1110, 196);
+            this.cmbBreaker4Interrupt10.Name = "cmbBreaker4Interrupt10";
+            this.cmbBreaker4Interrupt10.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker4Interrupt10.TabIndex = 294;
+            // 
+            // cmbBreaker4Interrupt09
+            // 
+            this.cmbBreaker4Interrupt09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4Interrupt09.FormattingEnabled = true;
+            this.cmbBreaker4Interrupt09.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker4Interrupt09.Location = new System.Drawing.Point(1038, 196);
+            this.cmbBreaker4Interrupt09.Name = "cmbBreaker4Interrupt09";
+            this.cmbBreaker4Interrupt09.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker4Interrupt09.TabIndex = 293;
+            // 
+            // cmbBreaker4Interrupt08
+            // 
+            this.cmbBreaker4Interrupt08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4Interrupt08.FormattingEnabled = true;
+            this.cmbBreaker4Interrupt08.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker4Interrupt08.Location = new System.Drawing.Point(966, 196);
+            this.cmbBreaker4Interrupt08.Name = "cmbBreaker4Interrupt08";
+            this.cmbBreaker4Interrupt08.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker4Interrupt08.TabIndex = 292;
+            // 
+            // cmbBreaker4Interrupt07
+            // 
+            this.cmbBreaker4Interrupt07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4Interrupt07.FormattingEnabled = true;
+            this.cmbBreaker4Interrupt07.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker4Interrupt07.Location = new System.Drawing.Point(894, 196);
+            this.cmbBreaker4Interrupt07.Name = "cmbBreaker4Interrupt07";
+            this.cmbBreaker4Interrupt07.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker4Interrupt07.TabIndex = 291;
+            // 
+            // cmbBreaker4Interrupt06
+            // 
+            this.cmbBreaker4Interrupt06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4Interrupt06.FormattingEnabled = true;
+            this.cmbBreaker4Interrupt06.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker4Interrupt06.Location = new System.Drawing.Point(822, 196);
+            this.cmbBreaker4Interrupt06.Name = "cmbBreaker4Interrupt06";
+            this.cmbBreaker4Interrupt06.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker4Interrupt06.TabIndex = 290;
+            // 
+            // cmbBreaker4Interrupt05
+            // 
+            this.cmbBreaker4Interrupt05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4Interrupt05.FormattingEnabled = true;
+            this.cmbBreaker4Interrupt05.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker4Interrupt05.Location = new System.Drawing.Point(750, 196);
+            this.cmbBreaker4Interrupt05.Name = "cmbBreaker4Interrupt05";
+            this.cmbBreaker4Interrupt05.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker4Interrupt05.TabIndex = 289;
+            // 
+            // cmbBreaker4Interrupt04
+            // 
+            this.cmbBreaker4Interrupt04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4Interrupt04.FormattingEnabled = true;
+            this.cmbBreaker4Interrupt04.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker4Interrupt04.Location = new System.Drawing.Point(678, 196);
+            this.cmbBreaker4Interrupt04.Name = "cmbBreaker4Interrupt04";
+            this.cmbBreaker4Interrupt04.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker4Interrupt04.TabIndex = 288;
+            // 
+            // cmbBreaker4Interrupt03
+            // 
+            this.cmbBreaker4Interrupt03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4Interrupt03.FormattingEnabled = true;
+            this.cmbBreaker4Interrupt03.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker4Interrupt03.Location = new System.Drawing.Point(606, 196);
+            this.cmbBreaker4Interrupt03.Name = "cmbBreaker4Interrupt03";
+            this.cmbBreaker4Interrupt03.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker4Interrupt03.TabIndex = 287;
+            // 
+            // cmbBreaker4Interrupt02
+            // 
+            this.cmbBreaker4Interrupt02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4Interrupt02.FormattingEnabled = true;
+            this.cmbBreaker4Interrupt02.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker4Interrupt02.Location = new System.Drawing.Point(534, 196);
+            this.cmbBreaker4Interrupt02.Name = "cmbBreaker4Interrupt02";
+            this.cmbBreaker4Interrupt02.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker4Interrupt02.TabIndex = 286;
+            // 
+            // cmbBreaker4Interrupt01
+            // 
+            this.cmbBreaker4Interrupt01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4Interrupt01.FormattingEnabled = true;
+            this.cmbBreaker4Interrupt01.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker4Interrupt01.Location = new System.Drawing.Point(462, 196);
+            this.cmbBreaker4Interrupt01.Name = "cmbBreaker4Interrupt01";
+            this.cmbBreaker4Interrupt01.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker4Interrupt01.TabIndex = 285;
+            // 
+            // cmbBreaker4Interrupt00
+            // 
+            this.cmbBreaker4Interrupt00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4Interrupt00.FormattingEnabled = true;
+            this.cmbBreaker4Interrupt00.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker4Interrupt00.Location = new System.Drawing.Point(390, 196);
+            this.cmbBreaker4Interrupt00.Name = "cmbBreaker4Interrupt00";
+            this.cmbBreaker4Interrupt00.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker4Interrupt00.TabIndex = 284;
+            // 
+            // cmbBreaker4InterruptVIN
+            // 
+            this.cmbBreaker4InterruptVIN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4InterruptVIN.FormattingEnabled = true;
+            this.cmbBreaker4InterruptVIN.Items.AddRange(new object[] {
+            "None",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.cmbBreaker4InterruptVIN.Location = new System.Drawing.Point(189, 196);
+            this.cmbBreaker4InterruptVIN.Name = "cmbBreaker4InterruptVIN";
+            this.cmbBreaker4InterruptVIN.Size = new System.Drawing.Size(50, 21);
+            this.cmbBreaker4InterruptVIN.TabIndex = 282;
+            // 
+            // cmbBreaker4OCTime11
+            // 
+            this.cmbBreaker4OCTime11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCTime11.FormattingEnabled = true;
+            this.cmbBreaker4OCTime11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker4OCTime11.Location = new System.Drawing.Point(1187, 166);
+            this.cmbBreaker4OCTime11.Name = "cmbBreaker4OCTime11";
+            this.cmbBreaker4OCTime11.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCTime11.TabIndex = 281;
+            // 
+            // cmbBreaker4OCTime00
+            // 
+            this.cmbBreaker4OCTime00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCTime00.FormattingEnabled = true;
+            this.cmbBreaker4OCTime00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker4OCTime00.Location = new System.Drawing.Point(395, 166);
+            this.cmbBreaker4OCTime00.Name = "cmbBreaker4OCTime00";
+            this.cmbBreaker4OCTime00.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCTime00.TabIndex = 270;
+            // 
+            // cmbBreaker4OCTime01
+            // 
+            this.cmbBreaker4OCTime01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCTime01.FormattingEnabled = true;
+            this.cmbBreaker4OCTime01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker4OCTime01.Location = new System.Drawing.Point(467, 166);
+            this.cmbBreaker4OCTime01.Name = "cmbBreaker4OCTime01";
+            this.cmbBreaker4OCTime01.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCTime01.TabIndex = 271;
+            // 
+            // cmbBreaker4OCTime02
+            // 
+            this.cmbBreaker4OCTime02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCTime02.FormattingEnabled = true;
+            this.cmbBreaker4OCTime02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker4OCTime02.Location = new System.Drawing.Point(539, 166);
+            this.cmbBreaker4OCTime02.Name = "cmbBreaker4OCTime02";
+            this.cmbBreaker4OCTime02.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCTime02.TabIndex = 272;
+            // 
+            // cmbBreaker4OCTime10
+            // 
+            this.cmbBreaker4OCTime10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCTime10.FormattingEnabled = true;
+            this.cmbBreaker4OCTime10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker4OCTime10.Location = new System.Drawing.Point(1115, 166);
+            this.cmbBreaker4OCTime10.Name = "cmbBreaker4OCTime10";
+            this.cmbBreaker4OCTime10.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCTime10.TabIndex = 280;
+            // 
+            // cmbBreaker4OCTime03
+            // 
+            this.cmbBreaker4OCTime03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCTime03.FormattingEnabled = true;
+            this.cmbBreaker4OCTime03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker4OCTime03.Location = new System.Drawing.Point(611, 166);
+            this.cmbBreaker4OCTime03.Name = "cmbBreaker4OCTime03";
+            this.cmbBreaker4OCTime03.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCTime03.TabIndex = 273;
+            // 
+            // cmbBreaker4OCTime09
+            // 
+            this.cmbBreaker4OCTime09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCTime09.FormattingEnabled = true;
+            this.cmbBreaker4OCTime09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker4OCTime09.Location = new System.Drawing.Point(1043, 166);
+            this.cmbBreaker4OCTime09.Name = "cmbBreaker4OCTime09";
+            this.cmbBreaker4OCTime09.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCTime09.TabIndex = 279;
+            // 
+            // cmbBreaker4OCTime04
+            // 
+            this.cmbBreaker4OCTime04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCTime04.FormattingEnabled = true;
+            this.cmbBreaker4OCTime04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker4OCTime04.Location = new System.Drawing.Point(683, 166);
+            this.cmbBreaker4OCTime04.Name = "cmbBreaker4OCTime04";
+            this.cmbBreaker4OCTime04.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCTime04.TabIndex = 274;
+            // 
+            // cmbBreaker4OCTime08
+            // 
+            this.cmbBreaker4OCTime08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCTime08.FormattingEnabled = true;
+            this.cmbBreaker4OCTime08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker4OCTime08.Location = new System.Drawing.Point(971, 166);
+            this.cmbBreaker4OCTime08.Name = "cmbBreaker4OCTime08";
+            this.cmbBreaker4OCTime08.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCTime08.TabIndex = 278;
+            // 
+            // cmbBreaker4OCTime05
+            // 
+            this.cmbBreaker4OCTime05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCTime05.FormattingEnabled = true;
+            this.cmbBreaker4OCTime05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker4OCTime05.Location = new System.Drawing.Point(755, 166);
+            this.cmbBreaker4OCTime05.Name = "cmbBreaker4OCTime05";
+            this.cmbBreaker4OCTime05.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCTime05.TabIndex = 275;
+            // 
+            // cmbBreaker4OCTime07
+            // 
+            this.cmbBreaker4OCTime07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCTime07.FormattingEnabled = true;
+            this.cmbBreaker4OCTime07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker4OCTime07.Location = new System.Drawing.Point(899, 166);
+            this.cmbBreaker4OCTime07.Name = "cmbBreaker4OCTime07";
+            this.cmbBreaker4OCTime07.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCTime07.TabIndex = 277;
+            // 
+            // cmbBreaker4OCTime06
+            // 
+            this.cmbBreaker4OCTime06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCTime06.FormattingEnabled = true;
+            this.cmbBreaker4OCTime06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker4OCTime06.Location = new System.Drawing.Point(827, 166);
+            this.cmbBreaker4OCTime06.Name = "cmbBreaker4OCTime06";
+            this.cmbBreaker4OCTime06.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCTime06.TabIndex = 276;
+            // 
+            // cmbBreaker4OCAmps11
+            // 
+            this.cmbBreaker4OCAmps11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCAmps11.FormattingEnabled = true;
+            this.cmbBreaker4OCAmps11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker4OCAmps11.Location = new System.Drawing.Point(1187, 136);
+            this.cmbBreaker4OCAmps11.Name = "cmbBreaker4OCAmps11";
+            this.cmbBreaker4OCAmps11.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCAmps11.TabIndex = 269;
+            // 
+            // cmbBreaker4OCAmps10
+            // 
+            this.cmbBreaker4OCAmps10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCAmps10.FormattingEnabled = true;
+            this.cmbBreaker4OCAmps10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker4OCAmps10.Location = new System.Drawing.Point(1115, 136);
+            this.cmbBreaker4OCAmps10.Name = "cmbBreaker4OCAmps10";
+            this.cmbBreaker4OCAmps10.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCAmps10.TabIndex = 268;
+            // 
+            // cmbBreaker4OCAmps09
+            // 
+            this.cmbBreaker4OCAmps09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCAmps09.FormattingEnabled = true;
+            this.cmbBreaker4OCAmps09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker4OCAmps09.Location = new System.Drawing.Point(1043, 136);
+            this.cmbBreaker4OCAmps09.Name = "cmbBreaker4OCAmps09";
+            this.cmbBreaker4OCAmps09.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCAmps09.TabIndex = 267;
+            // 
+            // cmbBreaker4OCAmps08
+            // 
+            this.cmbBreaker4OCAmps08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCAmps08.FormattingEnabled = true;
+            this.cmbBreaker4OCAmps08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker4OCAmps08.Location = new System.Drawing.Point(971, 136);
+            this.cmbBreaker4OCAmps08.Name = "cmbBreaker4OCAmps08";
+            this.cmbBreaker4OCAmps08.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCAmps08.TabIndex = 266;
+            // 
+            // cmbBreaker4OCAmps07
+            // 
+            this.cmbBreaker4OCAmps07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCAmps07.FormattingEnabled = true;
+            this.cmbBreaker4OCAmps07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker4OCAmps07.Location = new System.Drawing.Point(899, 136);
+            this.cmbBreaker4OCAmps07.Name = "cmbBreaker4OCAmps07";
+            this.cmbBreaker4OCAmps07.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCAmps07.TabIndex = 265;
+            // 
+            // cmbBreaker4OCAmps06
+            // 
+            this.cmbBreaker4OCAmps06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCAmps06.FormattingEnabled = true;
+            this.cmbBreaker4OCAmps06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker4OCAmps06.Location = new System.Drawing.Point(827, 136);
+            this.cmbBreaker4OCAmps06.Name = "cmbBreaker4OCAmps06";
+            this.cmbBreaker4OCAmps06.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCAmps06.TabIndex = 264;
+            // 
+            // cmbBreaker4OCAmps05
+            // 
+            this.cmbBreaker4OCAmps05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCAmps05.FormattingEnabled = true;
+            this.cmbBreaker4OCAmps05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker4OCAmps05.Location = new System.Drawing.Point(755, 136);
+            this.cmbBreaker4OCAmps05.Name = "cmbBreaker4OCAmps05";
+            this.cmbBreaker4OCAmps05.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCAmps05.TabIndex = 263;
+            // 
+            // cmbBreaker4OCAmps04
+            // 
+            this.cmbBreaker4OCAmps04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCAmps04.FormattingEnabled = true;
+            this.cmbBreaker4OCAmps04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker4OCAmps04.Location = new System.Drawing.Point(683, 136);
+            this.cmbBreaker4OCAmps04.Name = "cmbBreaker4OCAmps04";
+            this.cmbBreaker4OCAmps04.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCAmps04.TabIndex = 262;
+            // 
+            // cmbBreaker4OCAmps03
+            // 
+            this.cmbBreaker4OCAmps03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCAmps03.FormattingEnabled = true;
+            this.cmbBreaker4OCAmps03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker4OCAmps03.Location = new System.Drawing.Point(611, 136);
+            this.cmbBreaker4OCAmps03.Name = "cmbBreaker4OCAmps03";
+            this.cmbBreaker4OCAmps03.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCAmps03.TabIndex = 261;
+            // 
+            // cmbBreaker4OCAmps02
+            // 
+            this.cmbBreaker4OCAmps02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCAmps02.FormattingEnabled = true;
+            this.cmbBreaker4OCAmps02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker4OCAmps02.Location = new System.Drawing.Point(539, 136);
+            this.cmbBreaker4OCAmps02.Name = "cmbBreaker4OCAmps02";
+            this.cmbBreaker4OCAmps02.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCAmps02.TabIndex = 260;
+            // 
+            // cmbBreaker4OCAmps01
+            // 
+            this.cmbBreaker4OCAmps01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCAmps01.FormattingEnabled = true;
+            this.cmbBreaker4OCAmps01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker4OCAmps01.Location = new System.Drawing.Point(467, 136);
+            this.cmbBreaker4OCAmps01.Name = "cmbBreaker4OCAmps01";
+            this.cmbBreaker4OCAmps01.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCAmps01.TabIndex = 259;
+            // 
+            // cmbBreaker4OCAmps00
+            // 
+            this.cmbBreaker4OCAmps00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCAmps00.FormattingEnabled = true;
+            this.cmbBreaker4OCAmps00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbBreaker4OCAmps00.Location = new System.Drawing.Point(395, 136);
+            this.cmbBreaker4OCAmps00.Name = "cmbBreaker4OCAmps00";
+            this.cmbBreaker4OCAmps00.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCAmps00.TabIndex = 258;
+            // 
+            // lblBreaker4Ch00
+            // 
+            this.lblBreaker4Ch00.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker4Ch00.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker4Ch00.Location = new System.Drawing.Point(395, 108);
+            this.lblBreaker4Ch00.Name = "lblBreaker4Ch00";
+            this.lblBreaker4Ch00.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker4Ch00.TabIndex = 296;
+            this.lblBreaker4Ch00.Text = "0";
+            this.lblBreaker4Ch00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker4Ch01
+            // 
+            this.lblBreaker4Ch01.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker4Ch01.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker4Ch01.Location = new System.Drawing.Point(467, 108);
+            this.lblBreaker4Ch01.Name = "lblBreaker4Ch01";
+            this.lblBreaker4Ch01.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker4Ch01.TabIndex = 297;
+            this.lblBreaker4Ch01.Text = "1";
+            this.lblBreaker4Ch01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker4Ch04
+            // 
+            this.lblBreaker4Ch04.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker4Ch04.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker4Ch04.Location = new System.Drawing.Point(683, 108);
+            this.lblBreaker4Ch04.Name = "lblBreaker4Ch04";
+            this.lblBreaker4Ch04.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker4Ch04.TabIndex = 307;
+            this.lblBreaker4Ch04.Text = "4";
+            this.lblBreaker4Ch04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker4Ch02
+            // 
+            this.lblBreaker4Ch02.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker4Ch02.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker4Ch02.Location = new System.Drawing.Point(539, 108);
+            this.lblBreaker4Ch02.Name = "lblBreaker4Ch02";
+            this.lblBreaker4Ch02.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker4Ch02.TabIndex = 298;
+            this.lblBreaker4Ch02.Text = "2";
+            this.lblBreaker4Ch02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker4Ch05
+            // 
+            this.lblBreaker4Ch05.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker4Ch05.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker4Ch05.Location = new System.Drawing.Point(755, 108);
+            this.lblBreaker4Ch05.Name = "lblBreaker4Ch05";
+            this.lblBreaker4Ch05.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker4Ch05.TabIndex = 306;
+            this.lblBreaker4Ch05.Text = "5";
+            this.lblBreaker4Ch05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker4Ch03
+            // 
+            this.lblBreaker4Ch03.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker4Ch03.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker4Ch03.Location = new System.Drawing.Point(611, 107);
+            this.lblBreaker4Ch03.Name = "lblBreaker4Ch03";
+            this.lblBreaker4Ch03.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker4Ch03.TabIndex = 299;
+            this.lblBreaker4Ch03.Text = "3";
+            this.lblBreaker4Ch03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker4Ch06
+            // 
+            this.lblBreaker4Ch06.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker4Ch06.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker4Ch06.Location = new System.Drawing.Point(827, 108);
+            this.lblBreaker4Ch06.Name = "lblBreaker4Ch06";
+            this.lblBreaker4Ch06.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker4Ch06.TabIndex = 305;
+            this.lblBreaker4Ch06.Text = "6";
+            this.lblBreaker4Ch06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker4Ch11
+            // 
+            this.lblBreaker4Ch11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker4Ch11.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker4Ch11.Location = new System.Drawing.Point(1187, 108);
+            this.lblBreaker4Ch11.Name = "lblBreaker4Ch11";
+            this.lblBreaker4Ch11.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker4Ch11.TabIndex = 300;
+            this.lblBreaker4Ch11.Text = "11";
+            this.lblBreaker4Ch11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker4Ch07
+            // 
+            this.lblBreaker4Ch07.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker4Ch07.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker4Ch07.Location = new System.Drawing.Point(899, 108);
+            this.lblBreaker4Ch07.Name = "lblBreaker4Ch07";
+            this.lblBreaker4Ch07.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker4Ch07.TabIndex = 304;
+            this.lblBreaker4Ch07.Text = "7";
+            this.lblBreaker4Ch07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker4Ch10
+            // 
+            this.lblBreaker4Ch10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker4Ch10.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker4Ch10.Location = new System.Drawing.Point(1115, 108);
+            this.lblBreaker4Ch10.Name = "lblBreaker4Ch10";
+            this.lblBreaker4Ch10.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker4Ch10.TabIndex = 301;
+            this.lblBreaker4Ch10.Text = "10";
+            this.lblBreaker4Ch10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker4Ch08
+            // 
+            this.lblBreaker4Ch08.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker4Ch08.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker4Ch08.Location = new System.Drawing.Point(971, 108);
+            this.lblBreaker4Ch08.Name = "lblBreaker4Ch08";
+            this.lblBreaker4Ch08.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker4Ch08.TabIndex = 303;
+            this.lblBreaker4Ch08.Text = "8";
+            this.lblBreaker4Ch08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBreaker4Ch09
+            // 
+            this.lblBreaker4Ch09.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBreaker4Ch09.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBreaker4Ch09.Location = new System.Drawing.Point(1043, 108);
+            this.lblBreaker4Ch09.Name = "lblBreaker4Ch09";
+            this.lblBreaker4Ch09.Size = new System.Drawing.Size(40, 20);
+            this.lblBreaker4Ch09.TabIndex = 302;
+            this.lblBreaker4Ch09.Text = "9";
+            this.lblBreaker4Ch09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label334
+            // 
+            this.label334.AutoSize = true;
+            this.label334.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label334.ForeColor = System.Drawing.SystemColors.Control;
+            this.label334.Location = new System.Drawing.Point(3, 198);
+            this.label334.Name = "label334";
+            this.label334.Size = new System.Drawing.Size(99, 17);
+            this.label334.TabIndex = 257;
+            this.label334.Text = "Interrupt Group";
+            // 
+            // label335
+            // 
+            this.label335.AutoSize = true;
+            this.label335.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label335.ForeColor = System.Drawing.SystemColors.Control;
+            this.label335.Location = new System.Drawing.Point(3, 168);
+            this.label335.Name = "label335";
+            this.label335.Size = new System.Drawing.Size(164, 17);
+            this.label335.TabIndex = 256;
+            this.label335.Text = "Overcurrent Time Constant";
+            // 
+            // cmbBreaker4OCTimeVIN
+            // 
+            this.cmbBreaker4OCTimeVIN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCTimeVIN.FormattingEnabled = true;
+            this.cmbBreaker4OCTimeVIN.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbBreaker4OCTimeVIN.Location = new System.Drawing.Point(194, 166);
+            this.cmbBreaker4OCTimeVIN.Name = "cmbBreaker4OCTimeVIN";
+            this.cmbBreaker4OCTimeVIN.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCTimeVIN.TabIndex = 214;
+            // 
+            // cmbBreaker4OCAmpsVIN
+            // 
+            this.cmbBreaker4OCAmpsVIN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4OCAmpsVIN.FormattingEnabled = true;
+            this.cmbBreaker4OCAmpsVIN.Items.AddRange(new object[] {
+            "60"});
+            this.cmbBreaker4OCAmpsVIN.Location = new System.Drawing.Point(194, 136);
+            this.cmbBreaker4OCAmpsVIN.Name = "cmbBreaker4OCAmpsVIN";
+            this.cmbBreaker4OCAmpsVIN.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4OCAmpsVIN.TabIndex = 201;
+            // 
+            // label336
+            // 
+            this.label336.AutoSize = true;
+            this.label336.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label336.ForeColor = System.Drawing.SystemColors.Control;
+            this.label336.Location = new System.Drawing.Point(3, 138);
+            this.label336.Name = "label336";
+            this.label336.Size = new System.Drawing.Size(114, 17);
+            this.label336.TabIndex = 255;
+            this.label336.Text = "Overcurrent Amps";
+            // 
+            // label337
+            // 
+            this.label337.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label337.ForeColor = System.Drawing.SystemColors.Control;
+            this.label337.Location = new System.Drawing.Point(194, 108);
+            this.label337.Name = "label337";
+            this.label337.Size = new System.Drawing.Size(40, 20);
+            this.label337.TabIndex = 254;
+            this.label337.Text = "VIN";
+            this.label337.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label338
+            // 
+            this.label338.AutoSize = true;
+            this.label338.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label338.ForeColor = System.Drawing.SystemColors.Control;
+            this.label338.Location = new System.Drawing.Point(3, 71);
+            this.label338.Name = "label338";
+            this.label338.Size = new System.Drawing.Size(139, 17);
+            this.label338.TabIndex = 241;
+            this.label338.Text = "Base Channel Instance:";
+            // 
+            // tbxBreaker4BaseIndex
+            // 
+            this.tbxBreaker4BaseIndex.Location = new System.Drawing.Point(148, 68);
+            this.tbxBreaker4BaseIndex.Name = "tbxBreaker4BaseIndex";
+            this.tbxBreaker4BaseIndex.Size = new System.Drawing.Size(32, 20);
+            this.tbxBreaker4BaseIndex.TabIndex = 200;
+            this.tbxBreaker4BaseIndex.TextChanged += new System.EventHandler(this.tbxBreaker4BaseIndex_TextChanged);
+            // 
+            // cmbBreaker4PanelNum
+            // 
+            this.cmbBreaker4PanelNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4PanelNum.FormattingEnabled = true;
+            this.cmbBreaker4PanelNum.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.cmbBreaker4PanelNum.Location = new System.Drawing.Point(260, 25);
+            this.cmbBreaker4PanelNum.Name = "cmbBreaker4PanelNum";
+            this.cmbBreaker4PanelNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4PanelNum.TabIndex = 193;
+            this.cmbBreaker4PanelNum.SelectedIndexChanged += new System.EventHandler(this.cmbBreaker4PanelNum_SelectedIndexChanged);
+            // 
+            // label351
+            // 
+            this.label351.AutoSize = true;
+            this.label351.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label351.ForeColor = System.Drawing.SystemColors.Control;
+            this.label351.Location = new System.Drawing.Point(3, 27);
+            this.label351.Name = "label351";
+            this.label351.Size = new System.Drawing.Size(100, 17);
+            this.label351.TabIndex = 196;
+            this.label351.Text = "Card # in Panel:";
+            // 
+            // cmbBreaker4CardNum
+            // 
+            this.cmbBreaker4CardNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreaker4CardNum.FormattingEnabled = true;
+            this.cmbBreaker4CardNum.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.cmbBreaker4CardNum.Location = new System.Drawing.Point(109, 25);
+            this.cmbBreaker4CardNum.Name = "cmbBreaker4CardNum";
+            this.cmbBreaker4CardNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker4CardNum.TabIndex = 192;
+            this.cmbBreaker4CardNum.SelectedIndexChanged += new System.EventHandler(this.cmbBreaker4CardNum_SelectedIndexChanged);
+            // 
+            // label352
+            // 
+            this.label352.AutoSize = true;
+            this.label352.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label352.ForeColor = System.Drawing.SystemColors.Control;
+            this.label352.Location = new System.Drawing.Point(200, 27);
+            this.label352.Name = "label352";
+            this.label352.Size = new System.Drawing.Size(54, 17);
+            this.label352.TabIndex = 197;
+            this.label352.Text = "Panel #:";
+            // 
+            // label353
+            // 
+            this.label353.AutoSize = true;
+            this.label353.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label353.ForeColor = System.Drawing.SystemColors.Control;
+            this.label353.Location = new System.Drawing.Point(339, 27);
+            this.label353.Name = "label353";
+            this.label353.Size = new System.Drawing.Size(74, 17);
+            this.label353.TabIndex = 198;
+            this.label353.Text = "Config Rev:";
+            // 
+            // tbxBreaker4CfgRev
+            // 
+            this.tbxBreaker4CfgRev.Location = new System.Drawing.Point(419, 25);
+            this.tbxBreaker4CfgRev.Name = "tbxBreaker4CfgRev";
+            this.tbxBreaker4CfgRev.Size = new System.Drawing.Size(32, 20);
+            this.tbxBreaker4CfgRev.TabIndex = 194;
+            this.tbxBreaker4CfgRev.Text = "1";
+            // 
+            // label354
+            // 
+            this.label354.AutoSize = true;
+            this.label354.BackColor = System.Drawing.Color.Transparent;
+            this.label354.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label354.ForeColor = System.Drawing.SystemColors.Control;
+            this.label354.Location = new System.Drawing.Point(509, 27);
+            this.label354.Name = "label354";
+            this.label354.Size = new System.Drawing.Size(101, 17);
+            this.label354.TabIndex = 199;
+            this.label354.Text = "Config Type:  0x";
+            // 
+            // tbxBreaker4CfgType
+            // 
+            this.tbxBreaker4CfgType.Location = new System.Drawing.Point(616, 26);
+            this.tbxBreaker4CfgType.MaxLength = 4;
+            this.tbxBreaker4CfgType.Name = "tbxBreaker4CfgType";
+            this.tbxBreaker4CfgType.Size = new System.Drawing.Size(48, 20);
+            this.tbxBreaker4CfgType.TabIndex = 195;
+            this.tbxBreaker4CfgType.Text = "0";
+            // 
+            // tabBreakerGenerated
+            // 
+            this.tabBreakerGenerated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabBreakerGenerated.Controls.Add(this.label277);
+            this.tabBreakerGenerated.Controls.Add(this.tbxBreakerGenerated);
+            this.tabBreakerGenerated.Location = new System.Drawing.Point(4, 22);
+            this.tabBreakerGenerated.Name = "tabBreakerGenerated";
+            this.tabBreakerGenerated.Size = new System.Drawing.Size(1376, 736);
+            this.tabBreakerGenerated.TabIndex = 5;
+            this.tabBreakerGenerated.Text = "Generated";
+            // 
+            // label277
+            // 
+            this.label277.AutoSize = true;
+            this.label277.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label277.ForeColor = System.Drawing.SystemColors.Control;
+            this.label277.Location = new System.Drawing.Point(5, 26);
+            this.label277.Name = "label277";
+            this.label277.Size = new System.Drawing.Size(289, 21);
+            this.label277.TabIndex = 3;
+            this.label277.Text = "These files are now present in the folder:";
+            // 
+            // tbxBreakerGenerated
+            // 
+            this.tbxBreakerGenerated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tbxBreakerGenerated.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxBreakerGenerated.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxBreakerGenerated.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbxBreakerGenerated.Location = new System.Drawing.Point(9, 50);
+            this.tbxBreakerGenerated.Multiline = true;
+            this.tbxBreakerGenerated.Name = "tbxBreakerGenerated";
+            this.tbxBreakerGenerated.ReadOnly = true;
+            this.tbxBreakerGenerated.Size = new System.Drawing.Size(600, 200);
+            this.tbxBreakerGenerated.TabIndex = 2;
             // 
             // tabMainDimmer
             // 
@@ -5696,6 +11154,7 @@ namespace M1ConfigGenerator
             this.tabControlDimmer.Controls.Add(this.tabDimmer4);
             this.tabControlDimmer.Controls.Add(this.tabDimmer5);
             this.tabControlDimmer.Controls.Add(this.tabDimmer6);
+            this.tabControlDimmer.Controls.Add(this.tabDimmerGenerated);
             this.tabControlDimmer.Location = new System.Drawing.Point(0, 70);
             this.tabControlDimmer.Name = "tabControlDimmer";
             this.tabControlDimmer.SelectedIndex = 0;
@@ -5747,7 +11206,6 @@ namespace M1ConfigGenerator
             this.tabDimmer1.Controls.Add(this.chkDimmer1MG3Ch00);
             this.tabDimmer1.Controls.Add(this.chkDimmer1MG1Ch10);
             this.tabDimmer1.Controls.Add(this.cmbDimmer1OCTime01);
-            this.tabDimmer1.Controls.Add(this.chkDimmer1DCDriver);
             this.tabDimmer1.Controls.Add(this.chkDimmer1MG4Ch00);
             this.tabDimmer1.Controls.Add(this.chkDimmer1MG4Ch09);
             this.tabDimmer1.Controls.Add(this.cmbDimmer1OCTime00);
@@ -7705,18 +13163,6 @@ namespace M1ConfigGenerator
             this.cmbDimmer1OCTime01.Size = new System.Drawing.Size(40, 21);
             this.cmbDimmer1OCTime01.TabIndex = 48;
             // 
-            // chkDimmer1DCDriver
-            // 
-            this.chkDimmer1DCDriver.AutoSize = true;
-            this.chkDimmer1DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDimmer1DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer1DCDriver.Location = new System.Drawing.Point(160, 70);
-            this.chkDimmer1DCDriver.Name = "chkDimmer1DCDriver";
-            this.chkDimmer1DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkDimmer1DCDriver.TabIndex = 9;
-            this.chkDimmer1DCDriver.Text = "DC Driver";
-            this.chkDimmer1DCDriver.UseVisualStyleBackColor = true;
-            // 
             // chkDimmer1MG4Ch00
             // 
             this.chkDimmer1MG4Ch00.AutoSize = true;
@@ -7757,7 +13203,7 @@ namespace M1ConfigGenerator
             this.chkDimmer1DCMotor.AutoSize = true;
             this.chkDimmer1DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer1DCMotor.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer1DCMotor.Location = new System.Drawing.Point(273, 70);
+            this.chkDimmer1DCMotor.Location = new System.Drawing.Point(160, 70);
             this.chkDimmer1DCMotor.Name = "chkDimmer1DCMotor";
             this.chkDimmer1DCMotor.Size = new System.Drawing.Size(85, 21);
             this.chkDimmer1DCMotor.TabIndex = 11;
@@ -7809,7 +13255,7 @@ namespace M1ConfigGenerator
             this.chkDimmer1Shade.AutoSize = true;
             this.chkDimmer1Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer1Shade.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer1Shade.Location = new System.Drawing.Point(395, 70);
+            this.chkDimmer1Shade.Location = new System.Drawing.Point(282, 70);
             this.chkDimmer1Shade.Name = "chkDimmer1Shade";
             this.chkDimmer1Shade.Size = new System.Drawing.Size(63, 21);
             this.chkDimmer1Shade.TabIndex = 12;
@@ -7861,7 +13307,7 @@ namespace M1ConfigGenerator
             this.chkDimmer1Force.AutoSize = true;
             this.chkDimmer1Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer1Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer1Force.Location = new System.Drawing.Point(505, 70);
+            this.chkDimmer1Force.Location = new System.Drawing.Point(392, 70);
             this.chkDimmer1Force.Name = "chkDimmer1Force";
             this.chkDimmer1Force.Size = new System.Drawing.Size(129, 21);
             this.chkDimmer1Force.TabIndex = 13;
@@ -8620,7 +14066,6 @@ namespace M1ConfigGenerator
             this.tabDimmer2.Controls.Add(this.cmbDimmer2OCTime01);
             this.tabDimmer2.Controls.Add(this.chkDimmer2MG1Ch10);
             this.tabDimmer2.Controls.Add(this.chkDimmer2MG4Ch00);
-            this.tabDimmer2.Controls.Add(this.chkDimmer2DCDriver);
             this.tabDimmer2.Controls.Add(this.cmbDimmer2OCTime00);
             this.tabDimmer2.Controls.Add(this.chkDimmer2MG4Ch09);
             this.tabDimmer2.Controls.Add(this.chkDimmer2MG1Ch01);
@@ -9101,18 +14546,6 @@ namespace M1ConfigGenerator
             this.chkDimmer2MG4Ch00.TabIndex = 62;
             this.chkDimmer2MG4Ch00.UseVisualStyleBackColor = true;
             // 
-            // chkDimmer2DCDriver
-            // 
-            this.chkDimmer2DCDriver.AutoSize = true;
-            this.chkDimmer2DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDimmer2DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer2DCDriver.Location = new System.Drawing.Point(160, 70);
-            this.chkDimmer2DCDriver.Name = "chkDimmer2DCDriver";
-            this.chkDimmer2DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkDimmer2DCDriver.TabIndex = 9;
-            this.chkDimmer2DCDriver.Text = "DC Driver";
-            this.chkDimmer2DCDriver.UseVisualStyleBackColor = true;
-            // 
             // cmbDimmer2OCTime00
             // 
             this.cmbDimmer2OCTime00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -9153,7 +14586,7 @@ namespace M1ConfigGenerator
             this.chkDimmer2DCMotor.AutoSize = true;
             this.chkDimmer2DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer2DCMotor.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer2DCMotor.Location = new System.Drawing.Point(273, 70);
+            this.chkDimmer2DCMotor.Location = new System.Drawing.Point(160, 70);
             this.chkDimmer2DCMotor.Name = "chkDimmer2DCMotor";
             this.chkDimmer2DCMotor.Size = new System.Drawing.Size(85, 21);
             this.chkDimmer2DCMotor.TabIndex = 11;
@@ -9205,7 +14638,7 @@ namespace M1ConfigGenerator
             this.chkDimmer2Shade.AutoSize = true;
             this.chkDimmer2Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer2Shade.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer2Shade.Location = new System.Drawing.Point(395, 70);
+            this.chkDimmer2Shade.Location = new System.Drawing.Point(282, 70);
             this.chkDimmer2Shade.Name = "chkDimmer2Shade";
             this.chkDimmer2Shade.Size = new System.Drawing.Size(63, 21);
             this.chkDimmer2Shade.TabIndex = 12;
@@ -9257,7 +14690,7 @@ namespace M1ConfigGenerator
             this.chkDimmer2Force.AutoSize = true;
             this.chkDimmer2Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer2Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer2Force.Location = new System.Drawing.Point(505, 70);
+            this.chkDimmer2Force.Location = new System.Drawing.Point(392, 70);
             this.chkDimmer2Force.Name = "chkDimmer2Force";
             this.chkDimmer2Force.Size = new System.Drawing.Size(129, 21);
             this.chkDimmer2Force.TabIndex = 13;
@@ -10006,7 +15439,6 @@ namespace M1ConfigGenerator
             this.tabDimmer3.Controls.Add(this.cmbDimmer3OCTime01);
             this.tabDimmer3.Controls.Add(this.chkDimmer3MG1Ch10);
             this.tabDimmer3.Controls.Add(this.chkDimmer3MG4Ch00);
-            this.tabDimmer3.Controls.Add(this.chkDimmer3DCDriver);
             this.tabDimmer3.Controls.Add(this.cmbDimmer3OCTime00);
             this.tabDimmer3.Controls.Add(this.chkDimmer3MG4Ch09);
             this.tabDimmer3.Controls.Add(this.chkDimmer3MG1Ch01);
@@ -10487,18 +15919,6 @@ namespace M1ConfigGenerator
             this.chkDimmer3MG4Ch00.TabIndex = 62;
             this.chkDimmer3MG4Ch00.UseVisualStyleBackColor = true;
             // 
-            // chkDimmer3DCDriver
-            // 
-            this.chkDimmer3DCDriver.AutoSize = true;
-            this.chkDimmer3DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDimmer3DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer3DCDriver.Location = new System.Drawing.Point(160, 70);
-            this.chkDimmer3DCDriver.Name = "chkDimmer3DCDriver";
-            this.chkDimmer3DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkDimmer3DCDriver.TabIndex = 9;
-            this.chkDimmer3DCDriver.Text = "DC Driver";
-            this.chkDimmer3DCDriver.UseVisualStyleBackColor = true;
-            // 
             // cmbDimmer3OCTime00
             // 
             this.cmbDimmer3OCTime00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -10539,7 +15959,7 @@ namespace M1ConfigGenerator
             this.chkDimmer3DCMotor.AutoSize = true;
             this.chkDimmer3DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer3DCMotor.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer3DCMotor.Location = new System.Drawing.Point(273, 70);
+            this.chkDimmer3DCMotor.Location = new System.Drawing.Point(160, 70);
             this.chkDimmer3DCMotor.Name = "chkDimmer3DCMotor";
             this.chkDimmer3DCMotor.Size = new System.Drawing.Size(85, 21);
             this.chkDimmer3DCMotor.TabIndex = 11;
@@ -10591,7 +16011,7 @@ namespace M1ConfigGenerator
             this.chkDimmer3Shade.AutoSize = true;
             this.chkDimmer3Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer3Shade.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer3Shade.Location = new System.Drawing.Point(395, 70);
+            this.chkDimmer3Shade.Location = new System.Drawing.Point(282, 70);
             this.chkDimmer3Shade.Name = "chkDimmer3Shade";
             this.chkDimmer3Shade.Size = new System.Drawing.Size(63, 21);
             this.chkDimmer3Shade.TabIndex = 12;
@@ -10643,7 +16063,7 @@ namespace M1ConfigGenerator
             this.chkDimmer3Force.AutoSize = true;
             this.chkDimmer3Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer3Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer3Force.Location = new System.Drawing.Point(505, 70);
+            this.chkDimmer3Force.Location = new System.Drawing.Point(392, 70);
             this.chkDimmer3Force.Name = "chkDimmer3Force";
             this.chkDimmer3Force.Size = new System.Drawing.Size(129, 21);
             this.chkDimmer3Force.TabIndex = 13;
@@ -11378,7 +16798,6 @@ namespace M1ConfigGenerator
             this.tabDimmer4.Controls.Add(this.chkDimmer4MG1Ch10);
             this.tabDimmer4.Controls.Add(this.label97);
             this.tabDimmer4.Controls.Add(this.chkDimmer4MG4Ch09);
-            this.tabDimmer4.Controls.Add(this.chkDimmer4DCDriver);
             this.tabDimmer4.Controls.Add(this.chkDimmer4MG3Ch09);
             this.tabDimmer4.Controls.Add(this.chkDimmer4DCMotor);
             this.tabDimmer4.Controls.Add(this.chkDimmer4MG2Ch09);
@@ -11660,18 +17079,6 @@ namespace M1ConfigGenerator
             this.chkDimmer4MG4Ch09.TabIndex = 98;
             this.chkDimmer4MG4Ch09.UseVisualStyleBackColor = true;
             // 
-            // chkDimmer4DCDriver
-            // 
-            this.chkDimmer4DCDriver.AutoSize = true;
-            this.chkDimmer4DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDimmer4DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer4DCDriver.Location = new System.Drawing.Point(160, 70);
-            this.chkDimmer4DCDriver.Name = "chkDimmer4DCDriver";
-            this.chkDimmer4DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkDimmer4DCDriver.TabIndex = 9;
-            this.chkDimmer4DCDriver.Text = "DC Driver";
-            this.chkDimmer4DCDriver.UseVisualStyleBackColor = true;
-            // 
             // chkDimmer4MG3Ch09
             // 
             this.chkDimmer4MG3Ch09.AutoSize = true;
@@ -11686,7 +17093,7 @@ namespace M1ConfigGenerator
             this.chkDimmer4DCMotor.AutoSize = true;
             this.chkDimmer4DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer4DCMotor.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer4DCMotor.Location = new System.Drawing.Point(273, 70);
+            this.chkDimmer4DCMotor.Location = new System.Drawing.Point(160, 70);
             this.chkDimmer4DCMotor.Name = "chkDimmer4DCMotor";
             this.chkDimmer4DCMotor.Size = new System.Drawing.Size(85, 21);
             this.chkDimmer4DCMotor.TabIndex = 11;
@@ -11707,7 +17114,7 @@ namespace M1ConfigGenerator
             this.chkDimmer4Shade.AutoSize = true;
             this.chkDimmer4Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer4Shade.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer4Shade.Location = new System.Drawing.Point(395, 70);
+            this.chkDimmer4Shade.Location = new System.Drawing.Point(282, 70);
             this.chkDimmer4Shade.Name = "chkDimmer4Shade";
             this.chkDimmer4Shade.Size = new System.Drawing.Size(63, 21);
             this.chkDimmer4Shade.TabIndex = 12;
@@ -11728,7 +17135,7 @@ namespace M1ConfigGenerator
             this.chkDimmer4Force.AutoSize = true;
             this.chkDimmer4Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer4Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer4Force.Location = new System.Drawing.Point(505, 70);
+            this.chkDimmer4Force.Location = new System.Drawing.Point(392, 70);
             this.chkDimmer4Force.Name = "chkDimmer4Force";
             this.chkDimmer4Force.Size = new System.Drawing.Size(129, 21);
             this.chkDimmer4Force.TabIndex = 13;
@@ -12765,7 +18172,6 @@ namespace M1ConfigGenerator
             this.tabDimmer5.Controls.Add(this.chkDimmer5MG1Ch10);
             this.tabDimmer5.Controls.Add(this.label121);
             this.tabDimmer5.Controls.Add(this.chkDimmer5MG4Ch09);
-            this.tabDimmer5.Controls.Add(this.chkDimmer5DCDriver);
             this.tabDimmer5.Controls.Add(this.chkDimmer5MG3Ch09);
             this.tabDimmer5.Controls.Add(this.chkDimmer5DCMotor);
             this.tabDimmer5.Controls.Add(this.chkDimmer5MG2Ch09);
@@ -13047,18 +18453,6 @@ namespace M1ConfigGenerator
             this.chkDimmer5MG4Ch09.TabIndex = 98;
             this.chkDimmer5MG4Ch09.UseVisualStyleBackColor = true;
             // 
-            // chkDimmer5DCDriver
-            // 
-            this.chkDimmer5DCDriver.AutoSize = true;
-            this.chkDimmer5DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDimmer5DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer5DCDriver.Location = new System.Drawing.Point(160, 70);
-            this.chkDimmer5DCDriver.Name = "chkDimmer5DCDriver";
-            this.chkDimmer5DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkDimmer5DCDriver.TabIndex = 9;
-            this.chkDimmer5DCDriver.Text = "DC Driver";
-            this.chkDimmer5DCDriver.UseVisualStyleBackColor = true;
-            // 
             // chkDimmer5MG3Ch09
             // 
             this.chkDimmer5MG3Ch09.AutoSize = true;
@@ -13073,7 +18467,7 @@ namespace M1ConfigGenerator
             this.chkDimmer5DCMotor.AutoSize = true;
             this.chkDimmer5DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer5DCMotor.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer5DCMotor.Location = new System.Drawing.Point(273, 70);
+            this.chkDimmer5DCMotor.Location = new System.Drawing.Point(160, 70);
             this.chkDimmer5DCMotor.Name = "chkDimmer5DCMotor";
             this.chkDimmer5DCMotor.Size = new System.Drawing.Size(85, 21);
             this.chkDimmer5DCMotor.TabIndex = 11;
@@ -13094,7 +18488,7 @@ namespace M1ConfigGenerator
             this.chkDimmer5Shade.AutoSize = true;
             this.chkDimmer5Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer5Shade.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer5Shade.Location = new System.Drawing.Point(395, 70);
+            this.chkDimmer5Shade.Location = new System.Drawing.Point(282, 70);
             this.chkDimmer5Shade.Name = "chkDimmer5Shade";
             this.chkDimmer5Shade.Size = new System.Drawing.Size(63, 21);
             this.chkDimmer5Shade.TabIndex = 12;
@@ -13115,7 +18509,7 @@ namespace M1ConfigGenerator
             this.chkDimmer5Force.AutoSize = true;
             this.chkDimmer5Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer5Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer5Force.Location = new System.Drawing.Point(505, 70);
+            this.chkDimmer5Force.Location = new System.Drawing.Point(392, 70);
             this.chkDimmer5Force.Name = "chkDimmer5Force";
             this.chkDimmer5Force.Size = new System.Drawing.Size(129, 21);
             this.chkDimmer5Force.TabIndex = 13;
@@ -14152,7 +19546,6 @@ namespace M1ConfigGenerator
             this.tabDimmer6.Controls.Add(this.chkDimmer6MG1Ch10);
             this.tabDimmer6.Controls.Add(this.label61);
             this.tabDimmer6.Controls.Add(this.chkDimmer6MG4Ch09);
-            this.tabDimmer6.Controls.Add(this.chkDimmer6DCDriver);
             this.tabDimmer6.Controls.Add(this.chkDimmer6MG3Ch09);
             this.tabDimmer6.Controls.Add(this.chkDimmer6DCMotor);
             this.tabDimmer6.Controls.Add(this.chkDimmer6MG2Ch09);
@@ -14434,18 +19827,6 @@ namespace M1ConfigGenerator
             this.chkDimmer6MG4Ch09.TabIndex = 98;
             this.chkDimmer6MG4Ch09.UseVisualStyleBackColor = true;
             // 
-            // chkDimmer6DCDriver
-            // 
-            this.chkDimmer6DCDriver.AutoSize = true;
-            this.chkDimmer6DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDimmer6DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer6DCDriver.Location = new System.Drawing.Point(160, 70);
-            this.chkDimmer6DCDriver.Name = "chkDimmer6DCDriver";
-            this.chkDimmer6DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkDimmer6DCDriver.TabIndex = 9;
-            this.chkDimmer6DCDriver.Text = "DC Driver";
-            this.chkDimmer6DCDriver.UseVisualStyleBackColor = true;
-            // 
             // chkDimmer6MG3Ch09
             // 
             this.chkDimmer6MG3Ch09.AutoSize = true;
@@ -14460,7 +19841,7 @@ namespace M1ConfigGenerator
             this.chkDimmer6DCMotor.AutoSize = true;
             this.chkDimmer6DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer6DCMotor.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer6DCMotor.Location = new System.Drawing.Point(273, 70);
+            this.chkDimmer6DCMotor.Location = new System.Drawing.Point(160, 70);
             this.chkDimmer6DCMotor.Name = "chkDimmer6DCMotor";
             this.chkDimmer6DCMotor.Size = new System.Drawing.Size(85, 21);
             this.chkDimmer6DCMotor.TabIndex = 11;
@@ -14481,7 +19862,7 @@ namespace M1ConfigGenerator
             this.chkDimmer6Shade.AutoSize = true;
             this.chkDimmer6Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer6Shade.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer6Shade.Location = new System.Drawing.Point(395, 70);
+            this.chkDimmer6Shade.Location = new System.Drawing.Point(282, 70);
             this.chkDimmer6Shade.Name = "chkDimmer6Shade";
             this.chkDimmer6Shade.Size = new System.Drawing.Size(63, 21);
             this.chkDimmer6Shade.TabIndex = 12;
@@ -14502,7 +19883,7 @@ namespace M1ConfigGenerator
             this.chkDimmer6Force.AutoSize = true;
             this.chkDimmer6Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDimmer6Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer6Force.Location = new System.Drawing.Point(505, 70);
+            this.chkDimmer6Force.Location = new System.Drawing.Point(392, 70);
             this.chkDimmer6Force.Name = "chkDimmer6Force";
             this.chkDimmer6Force.Size = new System.Drawing.Size(129, 21);
             this.chkDimmer6Force.TabIndex = 13;
@@ -15518,6 +20899,41 @@ namespace M1ConfigGenerator
             this.cmbDimmer6OCTime07.Size = new System.Drawing.Size(40, 21);
             this.cmbDimmer6OCTime07.TabIndex = 54;
             // 
+            // tabDimmerGenerated
+            // 
+            this.tabDimmerGenerated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabDimmerGenerated.Controls.Add(this.label29);
+            this.tabDimmerGenerated.Controls.Add(this.tbxDimmerGenerated);
+            this.tabDimmerGenerated.Location = new System.Drawing.Point(4, 22);
+            this.tabDimmerGenerated.Name = "tabDimmerGenerated";
+            this.tabDimmerGenerated.Size = new System.Drawing.Size(1376, 733);
+            this.tabDimmerGenerated.TabIndex = 7;
+            this.tabDimmerGenerated.Text = "Generated";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.SystemColors.Control;
+            this.label29.Location = new System.Drawing.Point(5, 26);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(289, 21);
+            this.label29.TabIndex = 1;
+            this.label29.Text = "These files are now present in the folder:";
+            // 
+            // tbxDimmerGenerated
+            // 
+            this.tbxDimmerGenerated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tbxDimmerGenerated.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxDimmerGenerated.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxDimmerGenerated.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbxDimmerGenerated.Location = new System.Drawing.Point(9, 50);
+            this.tbxDimmerGenerated.Multiline = true;
+            this.tbxDimmerGenerated.Name = "tbxDimmerGenerated";
+            this.tbxDimmerGenerated.ReadOnly = true;
+            this.tbxDimmerGenerated.Size = new System.Drawing.Size(600, 200);
+            this.tbxDimmerGenerated.TabIndex = 0;
+            // 
             // btnDimmerCard6
             // 
             this.btnDimmerCard6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
@@ -15759,6 +21175,9 @@ namespace M1ConfigGenerator
             this.tabControlHC.Controls.Add(this.tabHC2);
             this.tabControlHC.Controls.Add(this.tabHC3);
             this.tabControlHC.Controls.Add(this.tabHC4);
+            this.tabControlHC.Controls.Add(this.tabHC5);
+            this.tabControlHC.Controls.Add(this.tabHC6);
+            this.tabControlHC.Controls.Add(this.tabHCGenerated);
             this.tabControlHC.Location = new System.Drawing.Point(0, 70);
             this.tabControlHC.Name = "tabControlHC";
             this.tabControlHC.SelectedIndex = 0;
@@ -15778,6 +21197,19 @@ namespace M1ConfigGenerator
             // tabHC1
             // 
             this.tabHC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabHC1.Controls.Add(this.chkHC1Startup11);
+            this.tabHC1.Controls.Add(this.chkHC1Startup10);
+            this.tabHC1.Controls.Add(this.chkHC1Startup09);
+            this.tabHC1.Controls.Add(this.chkHC1Startup08);
+            this.tabHC1.Controls.Add(this.chkHC1Startup07);
+            this.tabHC1.Controls.Add(this.label301);
+            this.tabHC1.Controls.Add(this.chkHC1Startup06);
+            this.tabHC1.Controls.Add(this.chkHC1Startup05);
+            this.tabHC1.Controls.Add(this.chkHC1Startup04);
+            this.tabHC1.Controls.Add(this.chkHC1Startup03);
+            this.tabHC1.Controls.Add(this.chkHC1Startup02);
+            this.tabHC1.Controls.Add(this.chkHC1Startup01);
+            this.tabHC1.Controls.Add(this.chkHC1Startup00);
             this.tabHC1.Controls.Add(this.cmbHC1Mode11);
             this.tabHC1.Controls.Add(this.cmbHC1Mode10);
             this.tabHC1.Controls.Add(this.cmbHC1Mode09);
@@ -15893,7 +21325,6 @@ namespace M1ConfigGenerator
             this.tabHC1.Controls.Add(this.tbxHC1CfgType);
             this.tabHC1.Controls.Add(this.label110);
             this.tabHC1.Controls.Add(this.chkHC1DCDimmer);
-            this.tabHC1.Controls.Add(this.chkHC1DCDriver);
             this.tabHC1.Controls.Add(this.chkHC1DCMotor);
             this.tabHC1.Controls.Add(this.chkHC1Force);
             this.tabHC1.Controls.Add(this.label111);
@@ -15905,6 +21336,125 @@ namespace M1ConfigGenerator
             this.tabHC1.TabIndex = 1;
             this.tabHC1.Text = "HC 1";
             // 
+            // chkHC1Startup11
+            // 
+            this.chkHC1Startup11.AutoSize = true;
+            this.chkHC1Startup11.Location = new System.Drawing.Point(998, 395);
+            this.chkHC1Startup11.Name = "chkHC1Startup11";
+            this.chkHC1Startup11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Startup11.TabIndex = 179;
+            this.chkHC1Startup11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC1Startup10
+            // 
+            this.chkHC1Startup10.AutoSize = true;
+            this.chkHC1Startup10.Location = new System.Drawing.Point(926, 395);
+            this.chkHC1Startup10.Name = "chkHC1Startup10";
+            this.chkHC1Startup10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Startup10.TabIndex = 178;
+            this.chkHC1Startup10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC1Startup09
+            // 
+            this.chkHC1Startup09.AutoSize = true;
+            this.chkHC1Startup09.Location = new System.Drawing.Point(854, 395);
+            this.chkHC1Startup09.Name = "chkHC1Startup09";
+            this.chkHC1Startup09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Startup09.TabIndex = 177;
+            this.chkHC1Startup09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC1Startup08
+            // 
+            this.chkHC1Startup08.AutoSize = true;
+            this.chkHC1Startup08.Location = new System.Drawing.Point(782, 395);
+            this.chkHC1Startup08.Name = "chkHC1Startup08";
+            this.chkHC1Startup08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Startup08.TabIndex = 176;
+            this.chkHC1Startup08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC1Startup07
+            // 
+            this.chkHC1Startup07.AutoSize = true;
+            this.chkHC1Startup07.Location = new System.Drawing.Point(710, 395);
+            this.chkHC1Startup07.Name = "chkHC1Startup07";
+            this.chkHC1Startup07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Startup07.TabIndex = 175;
+            this.chkHC1Startup07.UseVisualStyleBackColor = true;
+            // 
+            // label301
+            // 
+            this.label301.AutoSize = true;
+            this.label301.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label301.ForeColor = System.Drawing.SystemColors.Control;
+            this.label301.Location = new System.Drawing.Point(3, 392);
+            this.label301.Name = "label301";
+            this.label301.Size = new System.Drawing.Size(86, 17);
+            this.label301.TabIndex = 180;
+            this.label301.Text = "On at Startup";
+            // 
+            // chkHC1Startup06
+            // 
+            this.chkHC1Startup06.AutoSize = true;
+            this.chkHC1Startup06.Location = new System.Drawing.Point(638, 395);
+            this.chkHC1Startup06.Name = "chkHC1Startup06";
+            this.chkHC1Startup06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Startup06.TabIndex = 174;
+            this.chkHC1Startup06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC1Startup05
+            // 
+            this.chkHC1Startup05.AutoSize = true;
+            this.chkHC1Startup05.Location = new System.Drawing.Point(566, 395);
+            this.chkHC1Startup05.Name = "chkHC1Startup05";
+            this.chkHC1Startup05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Startup05.TabIndex = 173;
+            this.chkHC1Startup05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC1Startup04
+            // 
+            this.chkHC1Startup04.AutoSize = true;
+            this.chkHC1Startup04.Location = new System.Drawing.Point(494, 395);
+            this.chkHC1Startup04.Name = "chkHC1Startup04";
+            this.chkHC1Startup04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Startup04.TabIndex = 172;
+            this.chkHC1Startup04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC1Startup03
+            // 
+            this.chkHC1Startup03.AutoSize = true;
+            this.chkHC1Startup03.Location = new System.Drawing.Point(422, 395);
+            this.chkHC1Startup03.Name = "chkHC1Startup03";
+            this.chkHC1Startup03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Startup03.TabIndex = 171;
+            this.chkHC1Startup03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC1Startup02
+            // 
+            this.chkHC1Startup02.AutoSize = true;
+            this.chkHC1Startup02.Location = new System.Drawing.Point(350, 395);
+            this.chkHC1Startup02.Name = "chkHC1Startup02";
+            this.chkHC1Startup02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Startup02.TabIndex = 170;
+            this.chkHC1Startup02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC1Startup01
+            // 
+            this.chkHC1Startup01.AutoSize = true;
+            this.chkHC1Startup01.Location = new System.Drawing.Point(278, 395);
+            this.chkHC1Startup01.Name = "chkHC1Startup01";
+            this.chkHC1Startup01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Startup01.TabIndex = 169;
+            this.chkHC1Startup01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC1Startup00
+            // 
+            this.chkHC1Startup00.AutoSize = true;
+            this.chkHC1Startup00.Location = new System.Drawing.Point(206, 395);
+            this.chkHC1Startup00.Name = "chkHC1Startup00";
+            this.chkHC1Startup00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Startup00.TabIndex = 168;
+            this.chkHC1Startup00.UseVisualStyleBackColor = true;
+            // 
             // cmbHC1Mode11
             // 
             this.cmbHC1Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -15912,13 +21462,14 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode11.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP B",
+            "RP DN",
             "RGB B",
             "RGB W"});
             this.cmbHC1Mode11.Location = new System.Drawing.Point(975, 360);
             this.cmbHC1Mode11.Name = "cmbHC1Mode11";
             this.cmbHC1Mode11.Size = new System.Drawing.Size(60, 21);
             this.cmbHC1Mode11.TabIndex = 95;
+            this.cmbHC1Mode11.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode11_SelectedIndexChanged);
             // 
             // cmbHC1Mode10
             // 
@@ -15927,8 +21478,8 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode10.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "GB R",
             "RGB G",
             "RGB B",
@@ -15937,6 +21488,7 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode10.Name = "cmbHC1Mode10";
             this.cmbHC1Mode10.Size = new System.Drawing.Size(60, 21);
             this.cmbHC1Mode10.TabIndex = 94;
+            this.cmbHC1Mode10.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode10_SelectedIndexChanged);
             // 
             // cmbHC1Mode09
             // 
@@ -15945,8 +21497,8 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode09.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB R",
             "RGB G",
             "RGB B",
@@ -15955,6 +21507,7 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode09.Name = "cmbHC1Mode09";
             this.cmbHC1Mode09.Size = new System.Drawing.Size(60, 21);
             this.cmbHC1Mode09.TabIndex = 93;
+            this.cmbHC1Mode09.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode09_SelectedIndexChanged);
             // 
             // cmbHC1Mode08
             // 
@@ -15963,8 +21516,8 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode08.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGB R",
             "RGB G",
@@ -15974,6 +21527,7 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode08.Name = "cmbHC1Mode08";
             this.cmbHC1Mode08.Size = new System.Drawing.Size(60, 21);
             this.cmbHC1Mode08.TabIndex = 92;
+            this.cmbHC1Mode08.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode08_SelectedIndexChanged);
             // 
             // cmbHC1Mode07
             // 
@@ -15982,8 +21536,8 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode07.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -15994,6 +21548,7 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode07.Name = "cmbHC1Mode07";
             this.cmbHC1Mode07.Size = new System.Drawing.Size(60, 21);
             this.cmbHC1Mode07.TabIndex = 91;
+            this.cmbHC1Mode07.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode07_SelectedIndexChanged);
             // 
             // cmbHC1Mode06
             // 
@@ -16002,8 +21557,8 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode06.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -16014,6 +21569,7 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode06.Name = "cmbHC1Mode06";
             this.cmbHC1Mode06.Size = new System.Drawing.Size(60, 21);
             this.cmbHC1Mode06.TabIndex = 90;
+            this.cmbHC1Mode06.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode06_SelectedIndexChanged);
             // 
             // cmbHC1Mode05
             // 
@@ -16022,8 +21578,8 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode05.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -16034,6 +21590,7 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode05.Name = "cmbHC1Mode05";
             this.cmbHC1Mode05.Size = new System.Drawing.Size(60, 21);
             this.cmbHC1Mode05.TabIndex = 89;
+            this.cmbHC1Mode05.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode05_SelectedIndexChanged);
             // 
             // cmbHC1Mode04
             // 
@@ -16042,8 +21599,8 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode04.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -16054,6 +21611,7 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode04.Name = "cmbHC1Mode04";
             this.cmbHC1Mode04.Size = new System.Drawing.Size(60, 21);
             this.cmbHC1Mode04.TabIndex = 88;
+            this.cmbHC1Mode04.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode04_SelectedIndexChanged);
             // 
             // cmbHC1Mode03
             // 
@@ -16062,8 +21620,8 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode03.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGB R",
             "RGB G",
@@ -16072,6 +21630,7 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode03.Name = "cmbHC1Mode03";
             this.cmbHC1Mode03.Size = new System.Drawing.Size(60, 21);
             this.cmbHC1Mode03.TabIndex = 87;
+            this.cmbHC1Mode03.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode03_SelectedIndexChanged);
             // 
             // cmbHC1Mode02
             // 
@@ -16080,8 +21639,8 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode02.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -16090,6 +21649,7 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode02.Name = "cmbHC1Mode02";
             this.cmbHC1Mode02.Size = new System.Drawing.Size(60, 21);
             this.cmbHC1Mode02.TabIndex = 86;
+            this.cmbHC1Mode02.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode02_SelectedIndexChanged);
             // 
             // cmbHC1Mode01
             // 
@@ -16098,8 +21658,8 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode01.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R"});
@@ -16107,6 +21667,7 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode01.Name = "cmbHC1Mode01";
             this.cmbHC1Mode01.Size = new System.Drawing.Size(60, 21);
             this.cmbHC1Mode01.TabIndex = 85;
+            this.cmbHC1Mode01.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode01_SelectedIndexChanged);
             // 
             // label148
             // 
@@ -16126,13 +21687,14 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode00.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
+            "RP UP",
             "RGB P",
             "RGBW P"});
             this.cmbHC1Mode00.Location = new System.Drawing.Point(183, 360);
             this.cmbHC1Mode00.Name = "cmbHC1Mode00";
             this.cmbHC1Mode00.Size = new System.Drawing.Size(60, 21);
             this.cmbHC1Mode00.TabIndex = 84;
+            this.cmbHC1Mode00.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode00_SelectedIndexChanged);
             // 
             // cmbHC1OCAmps11
             // 
@@ -17297,7 +22859,7 @@ namespace M1ConfigGenerator
             this.chkHC1Shade.AutoSize = true;
             this.chkHC1Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkHC1Shade.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHC1Shade.Location = new System.Drawing.Point(537, 70);
+            this.chkHC1Shade.Location = new System.Drawing.Point(438, 70);
             this.chkHC1Shade.Name = "chkHC1Shade";
             this.chkHC1Shade.Size = new System.Drawing.Size(63, 21);
             this.chkHC1Shade.TabIndex = 9;
@@ -17425,18 +22987,6 @@ namespace M1ConfigGenerator
             this.chkHC1DCDimmer.Text = "DC Dimmer";
             this.chkHC1DCDimmer.UseVisualStyleBackColor = true;
             // 
-            // chkHC1DCDriver
-            // 
-            this.chkHC1DCDriver.AutoSize = true;
-            this.chkHC1DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkHC1DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHC1DCDriver.Location = new System.Drawing.Point(438, 70);
-            this.chkHC1DCDriver.Name = "chkHC1DCDriver";
-            this.chkHC1DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkHC1DCDriver.TabIndex = 8;
-            this.chkHC1DCDriver.Text = "DC Driver";
-            this.chkHC1DCDriver.UseVisualStyleBackColor = true;
-            // 
             // chkHC1DCMotor
             // 
             this.chkHC1DCMotor.AutoSize = true;
@@ -17454,7 +23004,7 @@ namespace M1ConfigGenerator
             this.chkHC1Force.AutoSize = true;
             this.chkHC1Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkHC1Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHC1Force.Location = new System.Drawing.Point(616, 70);
+            this.chkHC1Force.Location = new System.Drawing.Point(517, 70);
             this.chkHC1Force.Name = "chkHC1Force";
             this.chkHC1Force.Size = new System.Drawing.Size(129, 21);
             this.chkHC1Force.TabIndex = 10;
@@ -17483,6 +23033,19 @@ namespace M1ConfigGenerator
             // tabHC2
             // 
             this.tabHC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabHC2.Controls.Add(this.chkHC2Startup11);
+            this.tabHC2.Controls.Add(this.chkHC2Startup10);
+            this.tabHC2.Controls.Add(this.chkHC2Startup09);
+            this.tabHC2.Controls.Add(this.chkHC2Startup08);
+            this.tabHC2.Controls.Add(this.chkHC2Startup07);
+            this.tabHC2.Controls.Add(this.label302);
+            this.tabHC2.Controls.Add(this.chkHC2Startup06);
+            this.tabHC2.Controls.Add(this.chkHC2Startup05);
+            this.tabHC2.Controls.Add(this.chkHC2Startup04);
+            this.tabHC2.Controls.Add(this.chkHC2Startup03);
+            this.tabHC2.Controls.Add(this.chkHC2Startup02);
+            this.tabHC2.Controls.Add(this.chkHC2Startup01);
+            this.tabHC2.Controls.Add(this.chkHC2Startup00);
             this.tabHC2.Controls.Add(this.cmbHC2Mode11);
             this.tabHC2.Controls.Add(this.cmbHC2Mode10);
             this.tabHC2.Controls.Add(this.cmbHC2Mode09);
@@ -17598,7 +23161,6 @@ namespace M1ConfigGenerator
             this.tabHC2.Controls.Add(this.tbxHC2CfgType);
             this.tabHC2.Controls.Add(this.label166);
             this.tabHC2.Controls.Add(this.chkHC2DCDimmer);
-            this.tabHC2.Controls.Add(this.chkHC2DCDriver);
             this.tabHC2.Controls.Add(this.chkHC2DCMotor);
             this.tabHC2.Controls.Add(this.chkHC2Force);
             this.tabHC2.Controls.Add(this.label167);
@@ -17609,6 +23171,125 @@ namespace M1ConfigGenerator
             this.tabHC2.TabIndex = 2;
             this.tabHC2.Text = "HC 2";
             // 
+            // chkHC2Startup11
+            // 
+            this.chkHC2Startup11.AutoSize = true;
+            this.chkHC2Startup11.Location = new System.Drawing.Point(998, 395);
+            this.chkHC2Startup11.Name = "chkHC2Startup11";
+            this.chkHC2Startup11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC2Startup11.TabIndex = 282;
+            this.chkHC2Startup11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC2Startup10
+            // 
+            this.chkHC2Startup10.AutoSize = true;
+            this.chkHC2Startup10.Location = new System.Drawing.Point(926, 395);
+            this.chkHC2Startup10.Name = "chkHC2Startup10";
+            this.chkHC2Startup10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC2Startup10.TabIndex = 281;
+            this.chkHC2Startup10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC2Startup09
+            // 
+            this.chkHC2Startup09.AutoSize = true;
+            this.chkHC2Startup09.Location = new System.Drawing.Point(854, 395);
+            this.chkHC2Startup09.Name = "chkHC2Startup09";
+            this.chkHC2Startup09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC2Startup09.TabIndex = 280;
+            this.chkHC2Startup09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC2Startup08
+            // 
+            this.chkHC2Startup08.AutoSize = true;
+            this.chkHC2Startup08.Location = new System.Drawing.Point(782, 395);
+            this.chkHC2Startup08.Name = "chkHC2Startup08";
+            this.chkHC2Startup08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC2Startup08.TabIndex = 279;
+            this.chkHC2Startup08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC2Startup07
+            // 
+            this.chkHC2Startup07.AutoSize = true;
+            this.chkHC2Startup07.Location = new System.Drawing.Point(710, 395);
+            this.chkHC2Startup07.Name = "chkHC2Startup07";
+            this.chkHC2Startup07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC2Startup07.TabIndex = 278;
+            this.chkHC2Startup07.UseVisualStyleBackColor = true;
+            // 
+            // label302
+            // 
+            this.label302.AutoSize = true;
+            this.label302.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label302.ForeColor = System.Drawing.SystemColors.Control;
+            this.label302.Location = new System.Drawing.Point(3, 392);
+            this.label302.Name = "label302";
+            this.label302.Size = new System.Drawing.Size(86, 17);
+            this.label302.TabIndex = 283;
+            this.label302.Text = "On at Startup";
+            // 
+            // chkHC2Startup06
+            // 
+            this.chkHC2Startup06.AutoSize = true;
+            this.chkHC2Startup06.Location = new System.Drawing.Point(638, 395);
+            this.chkHC2Startup06.Name = "chkHC2Startup06";
+            this.chkHC2Startup06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC2Startup06.TabIndex = 277;
+            this.chkHC2Startup06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC2Startup05
+            // 
+            this.chkHC2Startup05.AutoSize = true;
+            this.chkHC2Startup05.Location = new System.Drawing.Point(566, 395);
+            this.chkHC2Startup05.Name = "chkHC2Startup05";
+            this.chkHC2Startup05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC2Startup05.TabIndex = 276;
+            this.chkHC2Startup05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC2Startup04
+            // 
+            this.chkHC2Startup04.AutoSize = true;
+            this.chkHC2Startup04.Location = new System.Drawing.Point(494, 395);
+            this.chkHC2Startup04.Name = "chkHC2Startup04";
+            this.chkHC2Startup04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC2Startup04.TabIndex = 275;
+            this.chkHC2Startup04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC2Startup03
+            // 
+            this.chkHC2Startup03.AutoSize = true;
+            this.chkHC2Startup03.Location = new System.Drawing.Point(422, 395);
+            this.chkHC2Startup03.Name = "chkHC2Startup03";
+            this.chkHC2Startup03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC2Startup03.TabIndex = 274;
+            this.chkHC2Startup03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC2Startup02
+            // 
+            this.chkHC2Startup02.AutoSize = true;
+            this.chkHC2Startup02.Location = new System.Drawing.Point(350, 395);
+            this.chkHC2Startup02.Name = "chkHC2Startup02";
+            this.chkHC2Startup02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC2Startup02.TabIndex = 273;
+            this.chkHC2Startup02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC2Startup01
+            // 
+            this.chkHC2Startup01.AutoSize = true;
+            this.chkHC2Startup01.Location = new System.Drawing.Point(278, 395);
+            this.chkHC2Startup01.Name = "chkHC2Startup01";
+            this.chkHC2Startup01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC2Startup01.TabIndex = 272;
+            this.chkHC2Startup01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC2Startup00
+            // 
+            this.chkHC2Startup00.AutoSize = true;
+            this.chkHC2Startup00.Location = new System.Drawing.Point(206, 395);
+            this.chkHC2Startup00.Name = "chkHC2Startup00";
+            this.chkHC2Startup00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC2Startup00.TabIndex = 271;
+            this.chkHC2Startup00.UseVisualStyleBackColor = true;
+            // 
             // cmbHC2Mode11
             // 
             this.cmbHC2Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -17616,13 +23297,14 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode11.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP B",
+            "RP DN",
             "RGB B",
             "RGB W"});
             this.cmbHC2Mode11.Location = new System.Drawing.Point(975, 360);
             this.cmbHC2Mode11.Name = "cmbHC2Mode11";
             this.cmbHC2Mode11.Size = new System.Drawing.Size(60, 21);
             this.cmbHC2Mode11.TabIndex = 95;
+            this.cmbHC2Mode11.SelectedIndexChanged += new System.EventHandler(this.cmbHC2Mode11_SelectedIndexChanged);
             // 
             // cmbHC2Mode10
             // 
@@ -17631,8 +23313,8 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode10.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "GB R",
             "RGB G",
             "RGB B",
@@ -17641,6 +23323,7 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode10.Name = "cmbHC2Mode10";
             this.cmbHC2Mode10.Size = new System.Drawing.Size(60, 21);
             this.cmbHC2Mode10.TabIndex = 94;
+            this.cmbHC2Mode10.SelectedIndexChanged += new System.EventHandler(this.cmbHC2Mode10_SelectedIndexChanged);
             // 
             // cmbHC2Mode09
             // 
@@ -17649,8 +23332,8 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode09.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB R",
             "RGB G",
             "RGB B",
@@ -17659,6 +23342,7 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode09.Name = "cmbHC2Mode09";
             this.cmbHC2Mode09.Size = new System.Drawing.Size(60, 21);
             this.cmbHC2Mode09.TabIndex = 93;
+            this.cmbHC2Mode09.SelectedIndexChanged += new System.EventHandler(this.cmbHC2Mode09_SelectedIndexChanged);
             // 
             // cmbHC2Mode08
             // 
@@ -17667,8 +23351,8 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode08.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGB R",
             "RGB G",
@@ -17678,6 +23362,7 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode08.Name = "cmbHC2Mode08";
             this.cmbHC2Mode08.Size = new System.Drawing.Size(60, 21);
             this.cmbHC2Mode08.TabIndex = 92;
+            this.cmbHC2Mode08.SelectedIndexChanged += new System.EventHandler(this.cmbHC2Mode08_SelectedIndexChanged);
             // 
             // cmbHC2Mode07
             // 
@@ -17686,8 +23371,8 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode07.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -17698,6 +23383,7 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode07.Name = "cmbHC2Mode07";
             this.cmbHC2Mode07.Size = new System.Drawing.Size(60, 21);
             this.cmbHC2Mode07.TabIndex = 91;
+            this.cmbHC2Mode07.SelectedIndexChanged += new System.EventHandler(this.cmbHC2Mode07_SelectedIndexChanged);
             // 
             // cmbHC2Mode06
             // 
@@ -17706,8 +23392,8 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode06.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -17718,6 +23404,7 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode06.Name = "cmbHC2Mode06";
             this.cmbHC2Mode06.Size = new System.Drawing.Size(60, 21);
             this.cmbHC2Mode06.TabIndex = 90;
+            this.cmbHC2Mode06.SelectedIndexChanged += new System.EventHandler(this.cmbHC2Mode06_SelectedIndexChanged);
             // 
             // cmbHC2Mode05
             // 
@@ -17726,8 +23413,8 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode05.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -17738,6 +23425,7 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode05.Name = "cmbHC2Mode05";
             this.cmbHC2Mode05.Size = new System.Drawing.Size(60, 21);
             this.cmbHC2Mode05.TabIndex = 89;
+            this.cmbHC2Mode05.SelectedIndexChanged += new System.EventHandler(this.cmbHC2Mode05_SelectedIndexChanged);
             // 
             // cmbHC2Mode04
             // 
@@ -17746,8 +23434,8 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode04.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -17758,6 +23446,7 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode04.Name = "cmbHC2Mode04";
             this.cmbHC2Mode04.Size = new System.Drawing.Size(60, 21);
             this.cmbHC2Mode04.TabIndex = 88;
+            this.cmbHC2Mode04.SelectedIndexChanged += new System.EventHandler(this.cmbHC2Mode04_SelectedIndexChanged);
             // 
             // cmbHC2Mode03
             // 
@@ -17766,8 +23455,8 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode03.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -17777,6 +23466,7 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode03.Name = "cmbHC2Mode03";
             this.cmbHC2Mode03.Size = new System.Drawing.Size(60, 21);
             this.cmbHC2Mode03.TabIndex = 87;
+            this.cmbHC2Mode03.SelectedIndexChanged += new System.EventHandler(this.cmbHC2Mode03_SelectedIndexChanged);
             // 
             // cmbHC2Mode02
             // 
@@ -17785,8 +23475,8 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode02.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -17795,6 +23485,7 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode02.Name = "cmbHC2Mode02";
             this.cmbHC2Mode02.Size = new System.Drawing.Size(60, 21);
             this.cmbHC2Mode02.TabIndex = 86;
+            this.cmbHC2Mode02.SelectedIndexChanged += new System.EventHandler(this.cmbHC2Mode02_SelectedIndexChanged);
             // 
             // cmbHC2Mode01
             // 
@@ -17803,8 +23494,8 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode01.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R"});
@@ -17812,6 +23503,7 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode01.Name = "cmbHC2Mode01";
             this.cmbHC2Mode01.Size = new System.Drawing.Size(60, 21);
             this.cmbHC2Mode01.TabIndex = 85;
+            this.cmbHC2Mode01.SelectedIndexChanged += new System.EventHandler(this.cmbHC2Mode01_SelectedIndexChanged);
             // 
             // label149
             // 
@@ -17831,7 +23523,7 @@ namespace M1ConfigGenerator
             this.cmbHC2Mode00.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
+            "RP UP",
             "RGB P",
             "RGBW P"});
             this.cmbHC2Mode00.Location = new System.Drawing.Point(183, 360);
@@ -19002,7 +24694,7 @@ namespace M1ConfigGenerator
             this.chkHC2Shade.AutoSize = true;
             this.chkHC2Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkHC2Shade.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHC2Shade.Location = new System.Drawing.Point(537, 70);
+            this.chkHC2Shade.Location = new System.Drawing.Point(438, 70);
             this.chkHC2Shade.Name = "chkHC2Shade";
             this.chkHC2Shade.Size = new System.Drawing.Size(63, 21);
             this.chkHC2Shade.TabIndex = 9;
@@ -19130,18 +24822,6 @@ namespace M1ConfigGenerator
             this.chkHC2DCDimmer.Text = "DC Dimmer";
             this.chkHC2DCDimmer.UseVisualStyleBackColor = true;
             // 
-            // chkHC2DCDriver
-            // 
-            this.chkHC2DCDriver.AutoSize = true;
-            this.chkHC2DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkHC2DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHC2DCDriver.Location = new System.Drawing.Point(438, 70);
-            this.chkHC2DCDriver.Name = "chkHC2DCDriver";
-            this.chkHC2DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkHC2DCDriver.TabIndex = 8;
-            this.chkHC2DCDriver.Text = "DC Driver";
-            this.chkHC2DCDriver.UseVisualStyleBackColor = true;
-            // 
             // chkHC2DCMotor
             // 
             this.chkHC2DCMotor.AutoSize = true;
@@ -19159,7 +24839,7 @@ namespace M1ConfigGenerator
             this.chkHC2Force.AutoSize = true;
             this.chkHC2Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkHC2Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHC2Force.Location = new System.Drawing.Point(616, 70);
+            this.chkHC2Force.Location = new System.Drawing.Point(517, 70);
             this.chkHC2Force.Name = "chkHC2Force";
             this.chkHC2Force.Size = new System.Drawing.Size(129, 21);
             this.chkHC2Force.TabIndex = 10;
@@ -19188,6 +24868,19 @@ namespace M1ConfigGenerator
             // tabHC3
             // 
             this.tabHC3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabHC3.Controls.Add(this.chkHC3Startup11);
+            this.tabHC3.Controls.Add(this.chkHC3Startup10);
+            this.tabHC3.Controls.Add(this.chkHC3Startup09);
+            this.tabHC3.Controls.Add(this.chkHC3Startup08);
+            this.tabHC3.Controls.Add(this.chkHC3Startup07);
+            this.tabHC3.Controls.Add(this.label303);
+            this.tabHC3.Controls.Add(this.chkHC3Startup06);
+            this.tabHC3.Controls.Add(this.chkHC3Startup05);
+            this.tabHC3.Controls.Add(this.chkHC3Startup04);
+            this.tabHC3.Controls.Add(this.chkHC3Startup03);
+            this.tabHC3.Controls.Add(this.chkHC3Startup02);
+            this.tabHC3.Controls.Add(this.chkHC3Startup01);
+            this.tabHC3.Controls.Add(this.chkHC3Startup00);
             this.tabHC3.Controls.Add(this.cmbHC3Mode11);
             this.tabHC3.Controls.Add(this.cmbHC3Mode10);
             this.tabHC3.Controls.Add(this.cmbHC3Mode09);
@@ -19303,7 +24996,6 @@ namespace M1ConfigGenerator
             this.tabHC3.Controls.Add(this.tbxHC3CfgType);
             this.tabHC3.Controls.Add(this.label172);
             this.tabHC3.Controls.Add(this.chkHC3DCDimmer);
-            this.tabHC3.Controls.Add(this.chkHC3DCDriver);
             this.tabHC3.Controls.Add(this.chkHC3DCMotor);
             this.tabHC3.Controls.Add(this.chkHC3Force);
             this.tabHC3.Controls.Add(this.label173);
@@ -19314,6 +25006,125 @@ namespace M1ConfigGenerator
             this.tabHC3.TabIndex = 3;
             this.tabHC3.Text = "HC 3";
             // 
+            // chkHC3Startup11
+            // 
+            this.chkHC3Startup11.AutoSize = true;
+            this.chkHC3Startup11.Location = new System.Drawing.Point(998, 395);
+            this.chkHC3Startup11.Name = "chkHC3Startup11";
+            this.chkHC3Startup11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC3Startup11.TabIndex = 385;
+            this.chkHC3Startup11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC3Startup10
+            // 
+            this.chkHC3Startup10.AutoSize = true;
+            this.chkHC3Startup10.Location = new System.Drawing.Point(926, 395);
+            this.chkHC3Startup10.Name = "chkHC3Startup10";
+            this.chkHC3Startup10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC3Startup10.TabIndex = 384;
+            this.chkHC3Startup10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC3Startup09
+            // 
+            this.chkHC3Startup09.AutoSize = true;
+            this.chkHC3Startup09.Location = new System.Drawing.Point(854, 395);
+            this.chkHC3Startup09.Name = "chkHC3Startup09";
+            this.chkHC3Startup09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC3Startup09.TabIndex = 383;
+            this.chkHC3Startup09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC3Startup08
+            // 
+            this.chkHC3Startup08.AutoSize = true;
+            this.chkHC3Startup08.Location = new System.Drawing.Point(782, 395);
+            this.chkHC3Startup08.Name = "chkHC3Startup08";
+            this.chkHC3Startup08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC3Startup08.TabIndex = 382;
+            this.chkHC3Startup08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC3Startup07
+            // 
+            this.chkHC3Startup07.AutoSize = true;
+            this.chkHC3Startup07.Location = new System.Drawing.Point(710, 395);
+            this.chkHC3Startup07.Name = "chkHC3Startup07";
+            this.chkHC3Startup07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC3Startup07.TabIndex = 381;
+            this.chkHC3Startup07.UseVisualStyleBackColor = true;
+            // 
+            // label303
+            // 
+            this.label303.AutoSize = true;
+            this.label303.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label303.ForeColor = System.Drawing.SystemColors.Control;
+            this.label303.Location = new System.Drawing.Point(3, 392);
+            this.label303.Name = "label303";
+            this.label303.Size = new System.Drawing.Size(86, 17);
+            this.label303.TabIndex = 386;
+            this.label303.Text = "On at Startup";
+            // 
+            // chkHC3Startup06
+            // 
+            this.chkHC3Startup06.AutoSize = true;
+            this.chkHC3Startup06.Location = new System.Drawing.Point(638, 395);
+            this.chkHC3Startup06.Name = "chkHC3Startup06";
+            this.chkHC3Startup06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC3Startup06.TabIndex = 380;
+            this.chkHC3Startup06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC3Startup05
+            // 
+            this.chkHC3Startup05.AutoSize = true;
+            this.chkHC3Startup05.Location = new System.Drawing.Point(566, 395);
+            this.chkHC3Startup05.Name = "chkHC3Startup05";
+            this.chkHC3Startup05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC3Startup05.TabIndex = 379;
+            this.chkHC3Startup05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC3Startup04
+            // 
+            this.chkHC3Startup04.AutoSize = true;
+            this.chkHC3Startup04.Location = new System.Drawing.Point(494, 395);
+            this.chkHC3Startup04.Name = "chkHC3Startup04";
+            this.chkHC3Startup04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC3Startup04.TabIndex = 378;
+            this.chkHC3Startup04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC3Startup03
+            // 
+            this.chkHC3Startup03.AutoSize = true;
+            this.chkHC3Startup03.Location = new System.Drawing.Point(422, 395);
+            this.chkHC3Startup03.Name = "chkHC3Startup03";
+            this.chkHC3Startup03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC3Startup03.TabIndex = 377;
+            this.chkHC3Startup03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC3Startup02
+            // 
+            this.chkHC3Startup02.AutoSize = true;
+            this.chkHC3Startup02.Location = new System.Drawing.Point(350, 395);
+            this.chkHC3Startup02.Name = "chkHC3Startup02";
+            this.chkHC3Startup02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC3Startup02.TabIndex = 376;
+            this.chkHC3Startup02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC3Startup01
+            // 
+            this.chkHC3Startup01.AutoSize = true;
+            this.chkHC3Startup01.Location = new System.Drawing.Point(278, 395);
+            this.chkHC3Startup01.Name = "chkHC3Startup01";
+            this.chkHC3Startup01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC3Startup01.TabIndex = 375;
+            this.chkHC3Startup01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC3Startup00
+            // 
+            this.chkHC3Startup00.AutoSize = true;
+            this.chkHC3Startup00.Location = new System.Drawing.Point(206, 395);
+            this.chkHC3Startup00.Name = "chkHC3Startup00";
+            this.chkHC3Startup00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC3Startup00.TabIndex = 374;
+            this.chkHC3Startup00.UseVisualStyleBackColor = true;
+            // 
             // cmbHC3Mode11
             // 
             this.cmbHC3Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -19321,7 +25132,7 @@ namespace M1ConfigGenerator
             this.cmbHC3Mode11.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP B",
+            "RP DN",
             "RGB B",
             "RGB W"});
             this.cmbHC3Mode11.Location = new System.Drawing.Point(975, 360);
@@ -19336,8 +25147,8 @@ namespace M1ConfigGenerator
             this.cmbHC3Mode10.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "GB R",
             "RGB G",
             "RGB B",
@@ -19354,8 +25165,8 @@ namespace M1ConfigGenerator
             this.cmbHC3Mode09.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB R",
             "RGB G",
             "RGB B",
@@ -19372,8 +25183,8 @@ namespace M1ConfigGenerator
             this.cmbHC3Mode08.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGB R",
             "RGB G",
@@ -19391,8 +25202,8 @@ namespace M1ConfigGenerator
             this.cmbHC3Mode07.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -19411,8 +25222,8 @@ namespace M1ConfigGenerator
             this.cmbHC3Mode06.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -19431,8 +25242,8 @@ namespace M1ConfigGenerator
             this.cmbHC3Mode05.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -19451,8 +25262,8 @@ namespace M1ConfigGenerator
             this.cmbHC3Mode04.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -19471,8 +25282,8 @@ namespace M1ConfigGenerator
             this.cmbHC3Mode03.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -19490,8 +25301,8 @@ namespace M1ConfigGenerator
             this.cmbHC3Mode02.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -19508,8 +25319,8 @@ namespace M1ConfigGenerator
             this.cmbHC3Mode01.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R"});
@@ -19536,7 +25347,7 @@ namespace M1ConfigGenerator
             this.cmbHC3Mode00.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
+            "RP UP",
             "RGB P",
             "RGBW P"});
             this.cmbHC3Mode00.Location = new System.Drawing.Point(183, 360);
@@ -20707,7 +26518,7 @@ namespace M1ConfigGenerator
             this.chkHC3Shade.AutoSize = true;
             this.chkHC3Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkHC3Shade.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHC3Shade.Location = new System.Drawing.Point(537, 70);
+            this.chkHC3Shade.Location = new System.Drawing.Point(438, 70);
             this.chkHC3Shade.Name = "chkHC3Shade";
             this.chkHC3Shade.Size = new System.Drawing.Size(63, 21);
             this.chkHC3Shade.TabIndex = 9;
@@ -20835,18 +26646,6 @@ namespace M1ConfigGenerator
             this.chkHC3DCDimmer.Text = "DC Dimmer";
             this.chkHC3DCDimmer.UseVisualStyleBackColor = true;
             // 
-            // chkHC3DCDriver
-            // 
-            this.chkHC3DCDriver.AutoSize = true;
-            this.chkHC3DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkHC3DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHC3DCDriver.Location = new System.Drawing.Point(438, 70);
-            this.chkHC3DCDriver.Name = "chkHC3DCDriver";
-            this.chkHC3DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkHC3DCDriver.TabIndex = 8;
-            this.chkHC3DCDriver.Text = "DC Driver";
-            this.chkHC3DCDriver.UseVisualStyleBackColor = true;
-            // 
             // chkHC3DCMotor
             // 
             this.chkHC3DCMotor.AutoSize = true;
@@ -20864,7 +26663,7 @@ namespace M1ConfigGenerator
             this.chkHC3Force.AutoSize = true;
             this.chkHC3Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkHC3Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHC3Force.Location = new System.Drawing.Point(616, 70);
+            this.chkHC3Force.Location = new System.Drawing.Point(517, 70);
             this.chkHC3Force.Name = "chkHC3Force";
             this.chkHC3Force.Size = new System.Drawing.Size(129, 21);
             this.chkHC3Force.TabIndex = 10;
@@ -20893,6 +26692,19 @@ namespace M1ConfigGenerator
             // tabHC4
             // 
             this.tabHC4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabHC4.Controls.Add(this.chkHC4Startup11);
+            this.tabHC4.Controls.Add(this.chkHC4Startup10);
+            this.tabHC4.Controls.Add(this.chkHC4Startup09);
+            this.tabHC4.Controls.Add(this.chkHC4Startup08);
+            this.tabHC4.Controls.Add(this.chkHC4Startup07);
+            this.tabHC4.Controls.Add(this.label304);
+            this.tabHC4.Controls.Add(this.chkHC4Startup06);
+            this.tabHC4.Controls.Add(this.chkHC4Startup05);
+            this.tabHC4.Controls.Add(this.chkHC4Startup04);
+            this.tabHC4.Controls.Add(this.chkHC4Startup03);
+            this.tabHC4.Controls.Add(this.chkHC4Startup02);
+            this.tabHC4.Controls.Add(this.chkHC4Startup01);
+            this.tabHC4.Controls.Add(this.chkHC4Startup00);
             this.tabHC4.Controls.Add(this.cmbHC4Mode11);
             this.tabHC4.Controls.Add(this.cmbHC4Mode10);
             this.tabHC4.Controls.Add(this.cmbHC4Mode09);
@@ -21008,7 +26820,6 @@ namespace M1ConfigGenerator
             this.tabHC4.Controls.Add(this.tbxHC4CfgType);
             this.tabHC4.Controls.Add(this.label190);
             this.tabHC4.Controls.Add(this.chkHC4DCDimmer);
-            this.tabHC4.Controls.Add(this.chkHC4DCDriver);
             this.tabHC4.Controls.Add(this.chkHC4DCMotor);
             this.tabHC4.Controls.Add(this.chkHC4Force);
             this.tabHC4.Controls.Add(this.label191);
@@ -21019,6 +26830,125 @@ namespace M1ConfigGenerator
             this.tabHC4.TabIndex = 4;
             this.tabHC4.Text = "HC 4";
             // 
+            // chkHC4Startup11
+            // 
+            this.chkHC4Startup11.AutoSize = true;
+            this.chkHC4Startup11.Location = new System.Drawing.Point(998, 395);
+            this.chkHC4Startup11.Name = "chkHC4Startup11";
+            this.chkHC4Startup11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC4Startup11.TabIndex = 488;
+            this.chkHC4Startup11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC4Startup10
+            // 
+            this.chkHC4Startup10.AutoSize = true;
+            this.chkHC4Startup10.Location = new System.Drawing.Point(926, 395);
+            this.chkHC4Startup10.Name = "chkHC4Startup10";
+            this.chkHC4Startup10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC4Startup10.TabIndex = 487;
+            this.chkHC4Startup10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC4Startup09
+            // 
+            this.chkHC4Startup09.AutoSize = true;
+            this.chkHC4Startup09.Location = new System.Drawing.Point(854, 395);
+            this.chkHC4Startup09.Name = "chkHC4Startup09";
+            this.chkHC4Startup09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC4Startup09.TabIndex = 486;
+            this.chkHC4Startup09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC4Startup08
+            // 
+            this.chkHC4Startup08.AutoSize = true;
+            this.chkHC4Startup08.Location = new System.Drawing.Point(782, 395);
+            this.chkHC4Startup08.Name = "chkHC4Startup08";
+            this.chkHC4Startup08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC4Startup08.TabIndex = 485;
+            this.chkHC4Startup08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC4Startup07
+            // 
+            this.chkHC4Startup07.AutoSize = true;
+            this.chkHC4Startup07.Location = new System.Drawing.Point(710, 395);
+            this.chkHC4Startup07.Name = "chkHC4Startup07";
+            this.chkHC4Startup07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC4Startup07.TabIndex = 484;
+            this.chkHC4Startup07.UseVisualStyleBackColor = true;
+            // 
+            // label304
+            // 
+            this.label304.AutoSize = true;
+            this.label304.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label304.ForeColor = System.Drawing.SystemColors.Control;
+            this.label304.Location = new System.Drawing.Point(3, 392);
+            this.label304.Name = "label304";
+            this.label304.Size = new System.Drawing.Size(86, 17);
+            this.label304.TabIndex = 489;
+            this.label304.Text = "On at Startup";
+            // 
+            // chkHC4Startup06
+            // 
+            this.chkHC4Startup06.AutoSize = true;
+            this.chkHC4Startup06.Location = new System.Drawing.Point(638, 395);
+            this.chkHC4Startup06.Name = "chkHC4Startup06";
+            this.chkHC4Startup06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC4Startup06.TabIndex = 483;
+            this.chkHC4Startup06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC4Startup05
+            // 
+            this.chkHC4Startup05.AutoSize = true;
+            this.chkHC4Startup05.Location = new System.Drawing.Point(566, 395);
+            this.chkHC4Startup05.Name = "chkHC4Startup05";
+            this.chkHC4Startup05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC4Startup05.TabIndex = 482;
+            this.chkHC4Startup05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC4Startup04
+            // 
+            this.chkHC4Startup04.AutoSize = true;
+            this.chkHC4Startup04.Location = new System.Drawing.Point(494, 395);
+            this.chkHC4Startup04.Name = "chkHC4Startup04";
+            this.chkHC4Startup04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC4Startup04.TabIndex = 481;
+            this.chkHC4Startup04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC4Startup03
+            // 
+            this.chkHC4Startup03.AutoSize = true;
+            this.chkHC4Startup03.Location = new System.Drawing.Point(422, 395);
+            this.chkHC4Startup03.Name = "chkHC4Startup03";
+            this.chkHC4Startup03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC4Startup03.TabIndex = 480;
+            this.chkHC4Startup03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC4Startup02
+            // 
+            this.chkHC4Startup02.AutoSize = true;
+            this.chkHC4Startup02.Location = new System.Drawing.Point(350, 395);
+            this.chkHC4Startup02.Name = "chkHC4Startup02";
+            this.chkHC4Startup02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC4Startup02.TabIndex = 479;
+            this.chkHC4Startup02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC4Startup01
+            // 
+            this.chkHC4Startup01.AutoSize = true;
+            this.chkHC4Startup01.Location = new System.Drawing.Point(278, 395);
+            this.chkHC4Startup01.Name = "chkHC4Startup01";
+            this.chkHC4Startup01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC4Startup01.TabIndex = 478;
+            this.chkHC4Startup01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC4Startup00
+            // 
+            this.chkHC4Startup00.AutoSize = true;
+            this.chkHC4Startup00.Location = new System.Drawing.Point(206, 395);
+            this.chkHC4Startup00.Name = "chkHC4Startup00";
+            this.chkHC4Startup00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC4Startup00.TabIndex = 477;
+            this.chkHC4Startup00.UseVisualStyleBackColor = true;
+            // 
             // cmbHC4Mode11
             // 
             this.cmbHC4Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -21026,7 +26956,7 @@ namespace M1ConfigGenerator
             this.cmbHC4Mode11.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP B",
+            "RP DN",
             "RGB B",
             "RGB W"});
             this.cmbHC4Mode11.Location = new System.Drawing.Point(975, 360);
@@ -21041,8 +26971,8 @@ namespace M1ConfigGenerator
             this.cmbHC4Mode10.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "GB R",
             "RGB G",
             "RGB B",
@@ -21059,8 +26989,8 @@ namespace M1ConfigGenerator
             this.cmbHC4Mode09.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB R",
             "RGB G",
             "RGB B",
@@ -21077,8 +27007,8 @@ namespace M1ConfigGenerator
             this.cmbHC4Mode08.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGB R",
             "RGB G",
@@ -21096,8 +27026,8 @@ namespace M1ConfigGenerator
             this.cmbHC4Mode07.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -21116,8 +27046,8 @@ namespace M1ConfigGenerator
             this.cmbHC4Mode06.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -21136,8 +27066,8 @@ namespace M1ConfigGenerator
             this.cmbHC4Mode05.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -21156,8 +27086,8 @@ namespace M1ConfigGenerator
             this.cmbHC4Mode04.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -21176,8 +27106,8 @@ namespace M1ConfigGenerator
             this.cmbHC4Mode03.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -21195,8 +27125,8 @@ namespace M1ConfigGenerator
             this.cmbHC4Mode02.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R",
@@ -21213,8 +27143,8 @@ namespace M1ConfigGenerator
             this.cmbHC4Mode01.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
-            "RP B",
+            "RP UP",
+            "RP DN",
             "RGB P",
             "RGBW P",
             "RGB R"});
@@ -21241,7 +27171,7 @@ namespace M1ConfigGenerator
             this.cmbHC4Mode00.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP A",
+            "RP UP",
             "RGB P",
             "RGBW P"});
             this.cmbHC4Mode00.Location = new System.Drawing.Point(183, 360);
@@ -22412,7 +28342,7 @@ namespace M1ConfigGenerator
             this.chkHC4Shade.AutoSize = true;
             this.chkHC4Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkHC4Shade.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHC4Shade.Location = new System.Drawing.Point(537, 70);
+            this.chkHC4Shade.Location = new System.Drawing.Point(438, 70);
             this.chkHC4Shade.Name = "chkHC4Shade";
             this.chkHC4Shade.Size = new System.Drawing.Size(63, 21);
             this.chkHC4Shade.TabIndex = 9;
@@ -22540,18 +28470,6 @@ namespace M1ConfigGenerator
             this.chkHC4DCDimmer.Text = "DC Dimmer";
             this.chkHC4DCDimmer.UseVisualStyleBackColor = true;
             // 
-            // chkHC4DCDriver
-            // 
-            this.chkHC4DCDriver.AutoSize = true;
-            this.chkHC4DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkHC4DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHC4DCDriver.Location = new System.Drawing.Point(438, 70);
-            this.chkHC4DCDriver.Name = "chkHC4DCDriver";
-            this.chkHC4DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkHC4DCDriver.TabIndex = 8;
-            this.chkHC4DCDriver.Text = "DC Driver";
-            this.chkHC4DCDriver.UseVisualStyleBackColor = true;
-            // 
             // chkHC4DCMotor
             // 
             this.chkHC4DCMotor.AutoSize = true;
@@ -22569,7 +28487,7 @@ namespace M1ConfigGenerator
             this.chkHC4Force.AutoSize = true;
             this.chkHC4Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkHC4Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHC4Force.Location = new System.Drawing.Point(616, 70);
+            this.chkHC4Force.Location = new System.Drawing.Point(517, 70);
             this.chkHC4Force.Name = "chkHC4Force";
             this.chkHC4Force.Size = new System.Drawing.Size(129, 21);
             this.chkHC4Force.TabIndex = 10;
@@ -22594,6 +28512,3687 @@ namespace M1ConfigGenerator
             this.tbxHC4BaseIndex.Size = new System.Drawing.Size(32, 20);
             this.tbxHC4BaseIndex.TabIndex = 11;
             this.tbxHC4BaseIndex.TextChanged += new System.EventHandler(this.tbxHC4BaseIndex_TextChanged);
+            // 
+            // tabHC5
+            // 
+            this.tabHC5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabHC5.Controls.Add(this.chkHC5Startup11);
+            this.tabHC5.Controls.Add(this.chkHC5Startup10);
+            this.tabHC5.Controls.Add(this.chkHC5Startup09);
+            this.tabHC5.Controls.Add(this.chkHC5Startup08);
+            this.tabHC5.Controls.Add(this.chkHC5Startup07);
+            this.tabHC5.Controls.Add(this.label305);
+            this.tabHC5.Controls.Add(this.chkHC5Startup06);
+            this.tabHC5.Controls.Add(this.chkHC5Startup05);
+            this.tabHC5.Controls.Add(this.chkHC5Startup04);
+            this.tabHC5.Controls.Add(this.chkHC5Startup03);
+            this.tabHC5.Controls.Add(this.chkHC5Startup02);
+            this.tabHC5.Controls.Add(this.chkHC5Startup01);
+            this.tabHC5.Controls.Add(this.chkHC5Startup00);
+            this.tabHC5.Controls.Add(this.cmbHC5Mode11);
+            this.tabHC5.Controls.Add(this.cmbHC5Mode10);
+            this.tabHC5.Controls.Add(this.cmbHC5Mode09);
+            this.tabHC5.Controls.Add(this.cmbHC5Mode08);
+            this.tabHC5.Controls.Add(this.cmbHC5Mode07);
+            this.tabHC5.Controls.Add(this.cmbHC5Mode06);
+            this.tabHC5.Controls.Add(this.cmbHC5Mode05);
+            this.tabHC5.Controls.Add(this.cmbHC5Mode04);
+            this.tabHC5.Controls.Add(this.cmbHC5Mode03);
+            this.tabHC5.Controls.Add(this.cmbHC5Mode02);
+            this.tabHC5.Controls.Add(this.cmbHC5Mode01);
+            this.tabHC5.Controls.Add(this.label261);
+            this.tabHC5.Controls.Add(this.cmbHC5Mode00);
+            this.tabHC5.Controls.Add(this.cmbHC5OCAmps11);
+            this.tabHC5.Controls.Add(this.cmbHC5OCAmps10);
+            this.tabHC5.Controls.Add(this.cmbHC5OCAmps09);
+            this.tabHC5.Controls.Add(this.cmbHC5OCAmps08);
+            this.tabHC5.Controls.Add(this.cmbHC5OCAmps07);
+            this.tabHC5.Controls.Add(this.cmbHC5OCAmps06);
+            this.tabHC5.Controls.Add(this.cmbHC5OCAmps05);
+            this.tabHC5.Controls.Add(this.cmbHC5OCAmps04);
+            this.tabHC5.Controls.Add(this.cmbHC5OCAmps03);
+            this.tabHC5.Controls.Add(this.cmbHC5OCAmps02);
+            this.tabHC5.Controls.Add(this.cmbHC5OCAmps01);
+            this.tabHC5.Controls.Add(this.chkHC5MG4Ch11);
+            this.tabHC5.Controls.Add(this.chkHC5MG3Ch11);
+            this.tabHC5.Controls.Add(this.chkHC5MG2Ch11);
+            this.tabHC5.Controls.Add(this.chkHC5MG1Ch11);
+            this.tabHC5.Controls.Add(this.chkHC5MG4Ch10);
+            this.tabHC5.Controls.Add(this.chkHC5MG3Ch10);
+            this.tabHC5.Controls.Add(this.chkHC5MG2Ch10);
+            this.tabHC5.Controls.Add(this.chkHC5MG1Ch10);
+            this.tabHC5.Controls.Add(this.chkHC5MG4Ch09);
+            this.tabHC5.Controls.Add(this.chkHC5MG3Ch09);
+            this.tabHC5.Controls.Add(this.chkHC5MG2Ch09);
+            this.tabHC5.Controls.Add(this.chkHC5MG1Ch09);
+            this.tabHC5.Controls.Add(this.chkHC5MG4Ch08);
+            this.tabHC5.Controls.Add(this.chkHC5MG3Ch08);
+            this.tabHC5.Controls.Add(this.chkHC5MG2Ch08);
+            this.tabHC5.Controls.Add(this.chkHC5MG1Ch08);
+            this.tabHC5.Controls.Add(this.chkHC5MG4Ch07);
+            this.tabHC5.Controls.Add(this.label262);
+            this.tabHC5.Controls.Add(this.chkHC5MG3Ch07);
+            this.tabHC5.Controls.Add(this.label263);
+            this.tabHC5.Controls.Add(this.chkHC5MG2Ch07);
+            this.tabHC5.Controls.Add(this.label264);
+            this.tabHC5.Controls.Add(this.chkHC5MG1Ch07);
+            this.tabHC5.Controls.Add(this.label265);
+            this.tabHC5.Controls.Add(this.chkHC5MG4Ch06);
+            this.tabHC5.Controls.Add(this.chkHC5MG3Ch06);
+            this.tabHC5.Controls.Add(this.chkHC5MG2Ch06);
+            this.tabHC5.Controls.Add(this.chkHC5MG1Ch06);
+            this.tabHC5.Controls.Add(this.chkHC5MG4Ch05);
+            this.tabHC5.Controls.Add(this.chkHC5MG3Ch05);
+            this.tabHC5.Controls.Add(this.chkHC5MG2Ch05);
+            this.tabHC5.Controls.Add(this.chkHC5MG1Ch05);
+            this.tabHC5.Controls.Add(this.chkHC5MG4Ch04);
+            this.tabHC5.Controls.Add(this.chkHC5MG3Ch04);
+            this.tabHC5.Controls.Add(this.chkHC5MG2Ch04);
+            this.tabHC5.Controls.Add(this.chkHC5MG1Ch04);
+            this.tabHC5.Controls.Add(this.chkHC5MG4Ch03);
+            this.tabHC5.Controls.Add(this.chkHC5MG3Ch03);
+            this.tabHC5.Controls.Add(this.chkHC5MG2Ch03);
+            this.tabHC5.Controls.Add(this.chkHC5MG1Ch03);
+            this.tabHC5.Controls.Add(this.chkHC5MG4Ch02);
+            this.tabHC5.Controls.Add(this.chkHC5MG3Ch02);
+            this.tabHC5.Controls.Add(this.chkHC5MG2Ch02);
+            this.tabHC5.Controls.Add(this.chkHC5MG1Ch02);
+            this.tabHC5.Controls.Add(this.chkHC5MG4Ch01);
+            this.tabHC5.Controls.Add(this.chkHC5MG3Ch01);
+            this.tabHC5.Controls.Add(this.chkHC5MG2Ch01);
+            this.tabHC5.Controls.Add(this.chkHC5MG1Ch01);
+            this.tabHC5.Controls.Add(this.chkHC5MG4Ch00);
+            this.tabHC5.Controls.Add(this.chkHC5MG3Ch00);
+            this.tabHC5.Controls.Add(this.chkHC5MG2Ch00);
+            this.tabHC5.Controls.Add(this.chkHC5MG1Ch00);
+            this.tabHC5.Controls.Add(this.label266);
+            this.tabHC5.Controls.Add(this.cmbHC5OCTime00);
+            this.tabHC5.Controls.Add(this.cmbHC5OCTime01);
+            this.tabHC5.Controls.Add(this.cmbHC5OCTime02);
+            this.tabHC5.Controls.Add(this.cmbHC5OCTime03);
+            this.tabHC5.Controls.Add(this.cmbHC5OCTime11);
+            this.tabHC5.Controls.Add(this.cmbHC5OCTime04);
+            this.tabHC5.Controls.Add(this.cmbHC5OCTime10);
+            this.tabHC5.Controls.Add(this.cmbHC5OCTime05);
+            this.tabHC5.Controls.Add(this.cmbHC5OCTime09);
+            this.tabHC5.Controls.Add(this.cmbHC5OCTime06);
+            this.tabHC5.Controls.Add(this.cmbHC5OCTime08);
+            this.tabHC5.Controls.Add(this.cmbHC5OCTime07);
+            this.tabHC5.Controls.Add(this.label267);
+            this.tabHC5.Controls.Add(this.cmbHC5OCAmps00);
+            this.tabHC5.Controls.Add(this.lblHC5Ch00);
+            this.tabHC5.Controls.Add(this.lblHC5Ch01);
+            this.tabHC5.Controls.Add(this.lblHC5Ch02);
+            this.tabHC5.Controls.Add(this.lblHC5Ch03);
+            this.tabHC5.Controls.Add(this.lblHC5Ch11);
+            this.tabHC5.Controls.Add(this.lblHC5Ch10);
+            this.tabHC5.Controls.Add(this.lblHC5Ch09);
+            this.tabHC5.Controls.Add(this.lblHC5Ch08);
+            this.tabHC5.Controls.Add(this.lblHC5Ch07);
+            this.tabHC5.Controls.Add(this.lblHC5Ch06);
+            this.tabHC5.Controls.Add(this.lblHC5Ch05);
+            this.tabHC5.Controls.Add(this.lblHC5Ch04);
+            this.tabHC5.Controls.Add(this.chkHC5RGB);
+            this.tabHC5.Controls.Add(this.chkHC5Shade);
+            this.tabHC5.Controls.Add(this.cmbHC5PanelNum);
+            this.tabHC5.Controls.Add(this.label281);
+            this.tabHC5.Controls.Add(this.cmbHC5CardNum);
+            this.tabHC5.Controls.Add(this.label282);
+            this.tabHC5.Controls.Add(this.label283);
+            this.tabHC5.Controls.Add(this.tbxHC5CfgRev);
+            this.tabHC5.Controls.Add(this.label284);
+            this.tabHC5.Controls.Add(this.tbxHC5CfgType);
+            this.tabHC5.Controls.Add(this.label285);
+            this.tabHC5.Controls.Add(this.chkHC5DCDimmer);
+            this.tabHC5.Controls.Add(this.chkHC5DCMotor);
+            this.tabHC5.Controls.Add(this.chkHC5Force);
+            this.tabHC5.Controls.Add(this.label286);
+            this.tabHC5.Controls.Add(this.tbxHC5BaseIndex);
+            this.tabHC5.Location = new System.Drawing.Point(4, 22);
+            this.tabHC5.Name = "tabHC5";
+            this.tabHC5.Size = new System.Drawing.Size(1376, 733);
+            this.tabHC5.TabIndex = 6;
+            this.tabHC5.Text = "HC 5";
+            // 
+            // chkHC5Startup11
+            // 
+            this.chkHC5Startup11.AutoSize = true;
+            this.chkHC5Startup11.Location = new System.Drawing.Point(998, 395);
+            this.chkHC5Startup11.Name = "chkHC5Startup11";
+            this.chkHC5Startup11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5Startup11.TabIndex = 299;
+            this.chkHC5Startup11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5Startup10
+            // 
+            this.chkHC5Startup10.AutoSize = true;
+            this.chkHC5Startup10.Location = new System.Drawing.Point(926, 395);
+            this.chkHC5Startup10.Name = "chkHC5Startup10";
+            this.chkHC5Startup10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5Startup10.TabIndex = 298;
+            this.chkHC5Startup10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5Startup09
+            // 
+            this.chkHC5Startup09.AutoSize = true;
+            this.chkHC5Startup09.Location = new System.Drawing.Point(854, 395);
+            this.chkHC5Startup09.Name = "chkHC5Startup09";
+            this.chkHC5Startup09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5Startup09.TabIndex = 297;
+            this.chkHC5Startup09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5Startup08
+            // 
+            this.chkHC5Startup08.AutoSize = true;
+            this.chkHC5Startup08.Location = new System.Drawing.Point(782, 395);
+            this.chkHC5Startup08.Name = "chkHC5Startup08";
+            this.chkHC5Startup08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5Startup08.TabIndex = 296;
+            this.chkHC5Startup08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5Startup07
+            // 
+            this.chkHC5Startup07.AutoSize = true;
+            this.chkHC5Startup07.Location = new System.Drawing.Point(710, 395);
+            this.chkHC5Startup07.Name = "chkHC5Startup07";
+            this.chkHC5Startup07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5Startup07.TabIndex = 295;
+            this.chkHC5Startup07.UseVisualStyleBackColor = true;
+            // 
+            // label305
+            // 
+            this.label305.AutoSize = true;
+            this.label305.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label305.ForeColor = System.Drawing.SystemColors.Control;
+            this.label305.Location = new System.Drawing.Point(3, 392);
+            this.label305.Name = "label305";
+            this.label305.Size = new System.Drawing.Size(86, 17);
+            this.label305.TabIndex = 300;
+            this.label305.Text = "On at Startup";
+            // 
+            // chkHC5Startup06
+            // 
+            this.chkHC5Startup06.AutoSize = true;
+            this.chkHC5Startup06.Location = new System.Drawing.Point(638, 395);
+            this.chkHC5Startup06.Name = "chkHC5Startup06";
+            this.chkHC5Startup06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5Startup06.TabIndex = 294;
+            this.chkHC5Startup06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5Startup05
+            // 
+            this.chkHC5Startup05.AutoSize = true;
+            this.chkHC5Startup05.Location = new System.Drawing.Point(566, 395);
+            this.chkHC5Startup05.Name = "chkHC5Startup05";
+            this.chkHC5Startup05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5Startup05.TabIndex = 293;
+            this.chkHC5Startup05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5Startup04
+            // 
+            this.chkHC5Startup04.AutoSize = true;
+            this.chkHC5Startup04.Location = new System.Drawing.Point(494, 395);
+            this.chkHC5Startup04.Name = "chkHC5Startup04";
+            this.chkHC5Startup04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5Startup04.TabIndex = 292;
+            this.chkHC5Startup04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5Startup03
+            // 
+            this.chkHC5Startup03.AutoSize = true;
+            this.chkHC5Startup03.Location = new System.Drawing.Point(422, 395);
+            this.chkHC5Startup03.Name = "chkHC5Startup03";
+            this.chkHC5Startup03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5Startup03.TabIndex = 291;
+            this.chkHC5Startup03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5Startup02
+            // 
+            this.chkHC5Startup02.AutoSize = true;
+            this.chkHC5Startup02.Location = new System.Drawing.Point(350, 395);
+            this.chkHC5Startup02.Name = "chkHC5Startup02";
+            this.chkHC5Startup02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5Startup02.TabIndex = 290;
+            this.chkHC5Startup02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5Startup01
+            // 
+            this.chkHC5Startup01.AutoSize = true;
+            this.chkHC5Startup01.Location = new System.Drawing.Point(278, 395);
+            this.chkHC5Startup01.Name = "chkHC5Startup01";
+            this.chkHC5Startup01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5Startup01.TabIndex = 289;
+            this.chkHC5Startup01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5Startup00
+            // 
+            this.chkHC5Startup00.AutoSize = true;
+            this.chkHC5Startup00.Location = new System.Drawing.Point(206, 395);
+            this.chkHC5Startup00.Name = "chkHC5Startup00";
+            this.chkHC5Startup00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5Startup00.TabIndex = 288;
+            this.chkHC5Startup00.UseVisualStyleBackColor = true;
+            // 
+            // cmbHC5Mode11
+            // 
+            this.cmbHC5Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5Mode11.FormattingEnabled = true;
+            this.cmbHC5Mode11.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP DN",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC5Mode11.Location = new System.Drawing.Point(975, 360);
+            this.cmbHC5Mode11.Name = "cmbHC5Mode11";
+            this.cmbHC5Mode11.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC5Mode11.TabIndex = 95;
+            // 
+            // cmbHC5Mode10
+            // 
+            this.cmbHC5Mode10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5Mode10.FormattingEnabled = true;
+            this.cmbHC5Mode10.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "GB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC5Mode10.Location = new System.Drawing.Point(903, 360);
+            this.cmbHC5Mode10.Name = "cmbHC5Mode10";
+            this.cmbHC5Mode10.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC5Mode10.TabIndex = 94;
+            // 
+            // cmbHC5Mode09
+            // 
+            this.cmbHC5Mode09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5Mode09.FormattingEnabled = true;
+            this.cmbHC5Mode09.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC5Mode09.Location = new System.Drawing.Point(831, 360);
+            this.cmbHC5Mode09.Name = "cmbHC5Mode09";
+            this.cmbHC5Mode09.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC5Mode09.TabIndex = 93;
+            // 
+            // cmbHC5Mode08
+            // 
+            this.cmbHC5Mode08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5Mode08.FormattingEnabled = true;
+            this.cmbHC5Mode08.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC5Mode08.Location = new System.Drawing.Point(759, 360);
+            this.cmbHC5Mode08.Name = "cmbHC5Mode08";
+            this.cmbHC5Mode08.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC5Mode08.TabIndex = 92;
+            // 
+            // cmbHC5Mode07
+            // 
+            this.cmbHC5Mode07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5Mode07.FormattingEnabled = true;
+            this.cmbHC5Mode07.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGBW P",
+            "RGB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC5Mode07.Location = new System.Drawing.Point(687, 360);
+            this.cmbHC5Mode07.Name = "cmbHC5Mode07";
+            this.cmbHC5Mode07.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC5Mode07.TabIndex = 91;
+            // 
+            // cmbHC5Mode06
+            // 
+            this.cmbHC5Mode06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5Mode06.FormattingEnabled = true;
+            this.cmbHC5Mode06.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGBW P",
+            "RGB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC5Mode06.Location = new System.Drawing.Point(615, 360);
+            this.cmbHC5Mode06.Name = "cmbHC5Mode06";
+            this.cmbHC5Mode06.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC5Mode06.TabIndex = 90;
+            // 
+            // cmbHC5Mode05
+            // 
+            this.cmbHC5Mode05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5Mode05.FormattingEnabled = true;
+            this.cmbHC5Mode05.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGBW P",
+            "RGB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC5Mode05.Location = new System.Drawing.Point(543, 360);
+            this.cmbHC5Mode05.Name = "cmbHC5Mode05";
+            this.cmbHC5Mode05.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC5Mode05.TabIndex = 89;
+            // 
+            // cmbHC5Mode04
+            // 
+            this.cmbHC5Mode04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5Mode04.FormattingEnabled = true;
+            this.cmbHC5Mode04.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGBW P",
+            "RGB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC5Mode04.Location = new System.Drawing.Point(471, 360);
+            this.cmbHC5Mode04.Name = "cmbHC5Mode04";
+            this.cmbHC5Mode04.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC5Mode04.TabIndex = 88;
+            // 
+            // cmbHC5Mode03
+            // 
+            this.cmbHC5Mode03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5Mode03.FormattingEnabled = true;
+            this.cmbHC5Mode03.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGB R",
+            "RGB G",
+            "RGB B"});
+            this.cmbHC5Mode03.Location = new System.Drawing.Point(399, 360);
+            this.cmbHC5Mode03.Name = "cmbHC5Mode03";
+            this.cmbHC5Mode03.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC5Mode03.TabIndex = 87;
+            // 
+            // cmbHC5Mode02
+            // 
+            this.cmbHC5Mode02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5Mode02.FormattingEnabled = true;
+            this.cmbHC5Mode02.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGBW P",
+            "RGB R",
+            "RGB G"});
+            this.cmbHC5Mode02.Location = new System.Drawing.Point(327, 360);
+            this.cmbHC5Mode02.Name = "cmbHC5Mode02";
+            this.cmbHC5Mode02.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC5Mode02.TabIndex = 86;
+            // 
+            // cmbHC5Mode01
+            // 
+            this.cmbHC5Mode01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5Mode01.FormattingEnabled = true;
+            this.cmbHC5Mode01.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGBW P",
+            "RGB R"});
+            this.cmbHC5Mode01.Location = new System.Drawing.Point(255, 360);
+            this.cmbHC5Mode01.Name = "cmbHC5Mode01";
+            this.cmbHC5Mode01.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC5Mode01.TabIndex = 85;
+            // 
+            // label261
+            // 
+            this.label261.AutoSize = true;
+            this.label261.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label261.ForeColor = System.Drawing.SystemColors.Control;
+            this.label261.Location = new System.Drawing.Point(3, 362);
+            this.label261.Name = "label261";
+            this.label261.Size = new System.Drawing.Size(126, 17);
+            this.label261.TabIndex = 287;
+            this.label261.Text = "Mode (Output Type)";
+            // 
+            // cmbHC5Mode00
+            // 
+            this.cmbHC5Mode00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5Mode00.FormattingEnabled = true;
+            this.cmbHC5Mode00.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RGB P",
+            "RGBW P"});
+            this.cmbHC5Mode00.Location = new System.Drawing.Point(183, 360);
+            this.cmbHC5Mode00.Name = "cmbHC5Mode00";
+            this.cmbHC5Mode00.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC5Mode00.TabIndex = 84;
+            // 
+            // cmbHC5OCAmps11
+            // 
+            this.cmbHC5OCAmps11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCAmps11.FormattingEnabled = true;
+            this.cmbHC5OCAmps11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC5OCAmps11.Location = new System.Drawing.Point(986, 182);
+            this.cmbHC5OCAmps11.Name = "cmbHC5OCAmps11";
+            this.cmbHC5OCAmps11.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCAmps11.TabIndex = 23;
+            // 
+            // cmbHC5OCAmps10
+            // 
+            this.cmbHC5OCAmps10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCAmps10.FormattingEnabled = true;
+            this.cmbHC5OCAmps10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC5OCAmps10.Location = new System.Drawing.Point(914, 182);
+            this.cmbHC5OCAmps10.Name = "cmbHC5OCAmps10";
+            this.cmbHC5OCAmps10.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCAmps10.TabIndex = 22;
+            // 
+            // cmbHC5OCAmps09
+            // 
+            this.cmbHC5OCAmps09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCAmps09.FormattingEnabled = true;
+            this.cmbHC5OCAmps09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC5OCAmps09.Location = new System.Drawing.Point(842, 182);
+            this.cmbHC5OCAmps09.Name = "cmbHC5OCAmps09";
+            this.cmbHC5OCAmps09.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCAmps09.TabIndex = 21;
+            // 
+            // cmbHC5OCAmps08
+            // 
+            this.cmbHC5OCAmps08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCAmps08.FormattingEnabled = true;
+            this.cmbHC5OCAmps08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC5OCAmps08.Location = new System.Drawing.Point(770, 182);
+            this.cmbHC5OCAmps08.Name = "cmbHC5OCAmps08";
+            this.cmbHC5OCAmps08.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCAmps08.TabIndex = 20;
+            // 
+            // cmbHC5OCAmps07
+            // 
+            this.cmbHC5OCAmps07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCAmps07.FormattingEnabled = true;
+            this.cmbHC5OCAmps07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC5OCAmps07.Location = new System.Drawing.Point(698, 182);
+            this.cmbHC5OCAmps07.Name = "cmbHC5OCAmps07";
+            this.cmbHC5OCAmps07.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCAmps07.TabIndex = 19;
+            // 
+            // cmbHC5OCAmps06
+            // 
+            this.cmbHC5OCAmps06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCAmps06.FormattingEnabled = true;
+            this.cmbHC5OCAmps06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC5OCAmps06.Location = new System.Drawing.Point(626, 182);
+            this.cmbHC5OCAmps06.Name = "cmbHC5OCAmps06";
+            this.cmbHC5OCAmps06.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCAmps06.TabIndex = 18;
+            // 
+            // cmbHC5OCAmps05
+            // 
+            this.cmbHC5OCAmps05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCAmps05.FormattingEnabled = true;
+            this.cmbHC5OCAmps05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC5OCAmps05.Location = new System.Drawing.Point(554, 182);
+            this.cmbHC5OCAmps05.Name = "cmbHC5OCAmps05";
+            this.cmbHC5OCAmps05.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCAmps05.TabIndex = 17;
+            // 
+            // cmbHC5OCAmps04
+            // 
+            this.cmbHC5OCAmps04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCAmps04.FormattingEnabled = true;
+            this.cmbHC5OCAmps04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC5OCAmps04.Location = new System.Drawing.Point(482, 182);
+            this.cmbHC5OCAmps04.Name = "cmbHC5OCAmps04";
+            this.cmbHC5OCAmps04.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCAmps04.TabIndex = 16;
+            // 
+            // cmbHC5OCAmps03
+            // 
+            this.cmbHC5OCAmps03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCAmps03.FormattingEnabled = true;
+            this.cmbHC5OCAmps03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC5OCAmps03.Location = new System.Drawing.Point(410, 180);
+            this.cmbHC5OCAmps03.Name = "cmbHC5OCAmps03";
+            this.cmbHC5OCAmps03.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCAmps03.TabIndex = 15;
+            // 
+            // cmbHC5OCAmps02
+            // 
+            this.cmbHC5OCAmps02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCAmps02.FormattingEnabled = true;
+            this.cmbHC5OCAmps02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC5OCAmps02.Location = new System.Drawing.Point(338, 180);
+            this.cmbHC5OCAmps02.Name = "cmbHC5OCAmps02";
+            this.cmbHC5OCAmps02.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCAmps02.TabIndex = 14;
+            // 
+            // cmbHC5OCAmps01
+            // 
+            this.cmbHC5OCAmps01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCAmps01.FormattingEnabled = true;
+            this.cmbHC5OCAmps01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC5OCAmps01.Location = new System.Drawing.Point(266, 180);
+            this.cmbHC5OCAmps01.Name = "cmbHC5OCAmps01";
+            this.cmbHC5OCAmps01.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCAmps01.TabIndex = 13;
+            // 
+            // chkHC5MG4Ch11
+            // 
+            this.chkHC5MG4Ch11.AutoSize = true;
+            this.chkHC5MG4Ch11.Location = new System.Drawing.Point(998, 335);
+            this.chkHC5MG4Ch11.Name = "chkHC5MG4Ch11";
+            this.chkHC5MG4Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG4Ch11.TabIndex = 83;
+            this.chkHC5MG4Ch11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG3Ch11
+            // 
+            this.chkHC5MG3Ch11.AutoSize = true;
+            this.chkHC5MG3Ch11.Location = new System.Drawing.Point(998, 305);
+            this.chkHC5MG3Ch11.Name = "chkHC5MG3Ch11";
+            this.chkHC5MG3Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG3Ch11.TabIndex = 71;
+            this.chkHC5MG3Ch11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG2Ch11
+            // 
+            this.chkHC5MG2Ch11.AutoSize = true;
+            this.chkHC5MG2Ch11.Location = new System.Drawing.Point(998, 275);
+            this.chkHC5MG2Ch11.Name = "chkHC5MG2Ch11";
+            this.chkHC5MG2Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG2Ch11.TabIndex = 59;
+            this.chkHC5MG2Ch11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG1Ch11
+            // 
+            this.chkHC5MG1Ch11.AutoSize = true;
+            this.chkHC5MG1Ch11.Location = new System.Drawing.Point(998, 245);
+            this.chkHC5MG1Ch11.Name = "chkHC5MG1Ch11";
+            this.chkHC5MG1Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG1Ch11.TabIndex = 47;
+            this.chkHC5MG1Ch11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG4Ch10
+            // 
+            this.chkHC5MG4Ch10.AutoSize = true;
+            this.chkHC5MG4Ch10.Location = new System.Drawing.Point(926, 335);
+            this.chkHC5MG4Ch10.Name = "chkHC5MG4Ch10";
+            this.chkHC5MG4Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG4Ch10.TabIndex = 82;
+            this.chkHC5MG4Ch10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG3Ch10
+            // 
+            this.chkHC5MG3Ch10.AutoSize = true;
+            this.chkHC5MG3Ch10.Location = new System.Drawing.Point(926, 305);
+            this.chkHC5MG3Ch10.Name = "chkHC5MG3Ch10";
+            this.chkHC5MG3Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG3Ch10.TabIndex = 70;
+            this.chkHC5MG3Ch10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG2Ch10
+            // 
+            this.chkHC5MG2Ch10.AutoSize = true;
+            this.chkHC5MG2Ch10.Location = new System.Drawing.Point(926, 275);
+            this.chkHC5MG2Ch10.Name = "chkHC5MG2Ch10";
+            this.chkHC5MG2Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG2Ch10.TabIndex = 58;
+            this.chkHC5MG2Ch10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG1Ch10
+            // 
+            this.chkHC5MG1Ch10.AutoSize = true;
+            this.chkHC5MG1Ch10.Location = new System.Drawing.Point(926, 245);
+            this.chkHC5MG1Ch10.Name = "chkHC5MG1Ch10";
+            this.chkHC5MG1Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG1Ch10.TabIndex = 46;
+            this.chkHC5MG1Ch10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG4Ch09
+            // 
+            this.chkHC5MG4Ch09.AutoSize = true;
+            this.chkHC5MG4Ch09.Location = new System.Drawing.Point(854, 335);
+            this.chkHC5MG4Ch09.Name = "chkHC5MG4Ch09";
+            this.chkHC5MG4Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG4Ch09.TabIndex = 81;
+            this.chkHC5MG4Ch09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG3Ch09
+            // 
+            this.chkHC5MG3Ch09.AutoSize = true;
+            this.chkHC5MG3Ch09.Location = new System.Drawing.Point(854, 305);
+            this.chkHC5MG3Ch09.Name = "chkHC5MG3Ch09";
+            this.chkHC5MG3Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG3Ch09.TabIndex = 69;
+            this.chkHC5MG3Ch09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG2Ch09
+            // 
+            this.chkHC5MG2Ch09.AutoSize = true;
+            this.chkHC5MG2Ch09.Location = new System.Drawing.Point(854, 275);
+            this.chkHC5MG2Ch09.Name = "chkHC5MG2Ch09";
+            this.chkHC5MG2Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG2Ch09.TabIndex = 57;
+            this.chkHC5MG2Ch09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG1Ch09
+            // 
+            this.chkHC5MG1Ch09.AutoSize = true;
+            this.chkHC5MG1Ch09.Location = new System.Drawing.Point(854, 245);
+            this.chkHC5MG1Ch09.Name = "chkHC5MG1Ch09";
+            this.chkHC5MG1Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG1Ch09.TabIndex = 45;
+            this.chkHC5MG1Ch09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG4Ch08
+            // 
+            this.chkHC5MG4Ch08.AutoSize = true;
+            this.chkHC5MG4Ch08.Location = new System.Drawing.Point(782, 335);
+            this.chkHC5MG4Ch08.Name = "chkHC5MG4Ch08";
+            this.chkHC5MG4Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG4Ch08.TabIndex = 80;
+            this.chkHC5MG4Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG3Ch08
+            // 
+            this.chkHC5MG3Ch08.AutoSize = true;
+            this.chkHC5MG3Ch08.Location = new System.Drawing.Point(782, 305);
+            this.chkHC5MG3Ch08.Name = "chkHC5MG3Ch08";
+            this.chkHC5MG3Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG3Ch08.TabIndex = 68;
+            this.chkHC5MG3Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG2Ch08
+            // 
+            this.chkHC5MG2Ch08.AutoSize = true;
+            this.chkHC5MG2Ch08.Location = new System.Drawing.Point(782, 275);
+            this.chkHC5MG2Ch08.Name = "chkHC5MG2Ch08";
+            this.chkHC5MG2Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG2Ch08.TabIndex = 56;
+            this.chkHC5MG2Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG1Ch08
+            // 
+            this.chkHC5MG1Ch08.AutoSize = true;
+            this.chkHC5MG1Ch08.Location = new System.Drawing.Point(782, 245);
+            this.chkHC5MG1Ch08.Name = "chkHC5MG1Ch08";
+            this.chkHC5MG1Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG1Ch08.TabIndex = 44;
+            this.chkHC5MG1Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG4Ch07
+            // 
+            this.chkHC5MG4Ch07.AutoSize = true;
+            this.chkHC5MG4Ch07.Location = new System.Drawing.Point(710, 335);
+            this.chkHC5MG4Ch07.Name = "chkHC5MG4Ch07";
+            this.chkHC5MG4Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG4Ch07.TabIndex = 79;
+            this.chkHC5MG4Ch07.UseVisualStyleBackColor = true;
+            // 
+            // label262
+            // 
+            this.label262.AutoSize = true;
+            this.label262.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label262.ForeColor = System.Drawing.SystemColors.Control;
+            this.label262.Location = new System.Drawing.Point(3, 242);
+            this.label262.Name = "label262";
+            this.label262.Size = new System.Drawing.Size(135, 17);
+            this.label262.TabIndex = 283;
+            this.label262.Text = "Include with Group 7E";
+            // 
+            // chkHC5MG3Ch07
+            // 
+            this.chkHC5MG3Ch07.AutoSize = true;
+            this.chkHC5MG3Ch07.Location = new System.Drawing.Point(710, 305);
+            this.chkHC5MG3Ch07.Name = "chkHC5MG3Ch07";
+            this.chkHC5MG3Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG3Ch07.TabIndex = 67;
+            this.chkHC5MG3Ch07.UseVisualStyleBackColor = true;
+            // 
+            // label263
+            // 
+            this.label263.AutoSize = true;
+            this.label263.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label263.ForeColor = System.Drawing.SystemColors.Control;
+            this.label263.Location = new System.Drawing.Point(3, 272);
+            this.label263.Name = "label263";
+            this.label263.Size = new System.Drawing.Size(137, 17);
+            this.label263.TabIndex = 284;
+            this.label263.Text = "Include with Group 7D";
+            // 
+            // chkHC5MG2Ch07
+            // 
+            this.chkHC5MG2Ch07.AutoSize = true;
+            this.chkHC5MG2Ch07.Location = new System.Drawing.Point(710, 275);
+            this.chkHC5MG2Ch07.Name = "chkHC5MG2Ch07";
+            this.chkHC5MG2Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG2Ch07.TabIndex = 55;
+            this.chkHC5MG2Ch07.UseVisualStyleBackColor = true;
+            // 
+            // label264
+            // 
+            this.label264.AutoSize = true;
+            this.label264.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label264.ForeColor = System.Drawing.SystemColors.Control;
+            this.label264.Location = new System.Drawing.Point(3, 302);
+            this.label264.Name = "label264";
+            this.label264.Size = new System.Drawing.Size(135, 17);
+            this.label264.TabIndex = 285;
+            this.label264.Text = "Include with Group 7B";
+            // 
+            // chkHC5MG1Ch07
+            // 
+            this.chkHC5MG1Ch07.AutoSize = true;
+            this.chkHC5MG1Ch07.Location = new System.Drawing.Point(710, 245);
+            this.chkHC5MG1Ch07.Name = "chkHC5MG1Ch07";
+            this.chkHC5MG1Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG1Ch07.TabIndex = 43;
+            this.chkHC5MG1Ch07.UseVisualStyleBackColor = true;
+            // 
+            // label265
+            // 
+            this.label265.AutoSize = true;
+            this.label265.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label265.ForeColor = System.Drawing.SystemColors.Control;
+            this.label265.Location = new System.Drawing.Point(3, 332);
+            this.label265.Name = "label265";
+            this.label265.Size = new System.Drawing.Size(135, 17);
+            this.label265.TabIndex = 286;
+            this.label265.Text = "Include with Group 77";
+            // 
+            // chkHC5MG4Ch06
+            // 
+            this.chkHC5MG4Ch06.AutoSize = true;
+            this.chkHC5MG4Ch06.Location = new System.Drawing.Point(638, 335);
+            this.chkHC5MG4Ch06.Name = "chkHC5MG4Ch06";
+            this.chkHC5MG4Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG4Ch06.TabIndex = 78;
+            this.chkHC5MG4Ch06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG3Ch06
+            // 
+            this.chkHC5MG3Ch06.AutoSize = true;
+            this.chkHC5MG3Ch06.Location = new System.Drawing.Point(638, 305);
+            this.chkHC5MG3Ch06.Name = "chkHC5MG3Ch06";
+            this.chkHC5MG3Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG3Ch06.TabIndex = 66;
+            this.chkHC5MG3Ch06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG2Ch06
+            // 
+            this.chkHC5MG2Ch06.AutoSize = true;
+            this.chkHC5MG2Ch06.Location = new System.Drawing.Point(638, 275);
+            this.chkHC5MG2Ch06.Name = "chkHC5MG2Ch06";
+            this.chkHC5MG2Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG2Ch06.TabIndex = 54;
+            this.chkHC5MG2Ch06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG1Ch06
+            // 
+            this.chkHC5MG1Ch06.AutoSize = true;
+            this.chkHC5MG1Ch06.Location = new System.Drawing.Point(638, 245);
+            this.chkHC5MG1Ch06.Name = "chkHC5MG1Ch06";
+            this.chkHC5MG1Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG1Ch06.TabIndex = 42;
+            this.chkHC5MG1Ch06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG4Ch05
+            // 
+            this.chkHC5MG4Ch05.AutoSize = true;
+            this.chkHC5MG4Ch05.Location = new System.Drawing.Point(566, 335);
+            this.chkHC5MG4Ch05.Name = "chkHC5MG4Ch05";
+            this.chkHC5MG4Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG4Ch05.TabIndex = 77;
+            this.chkHC5MG4Ch05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG3Ch05
+            // 
+            this.chkHC5MG3Ch05.AutoSize = true;
+            this.chkHC5MG3Ch05.Location = new System.Drawing.Point(566, 305);
+            this.chkHC5MG3Ch05.Name = "chkHC5MG3Ch05";
+            this.chkHC5MG3Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG3Ch05.TabIndex = 65;
+            this.chkHC5MG3Ch05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG2Ch05
+            // 
+            this.chkHC5MG2Ch05.AutoSize = true;
+            this.chkHC5MG2Ch05.Location = new System.Drawing.Point(566, 275);
+            this.chkHC5MG2Ch05.Name = "chkHC5MG2Ch05";
+            this.chkHC5MG2Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG2Ch05.TabIndex = 53;
+            this.chkHC5MG2Ch05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG1Ch05
+            // 
+            this.chkHC5MG1Ch05.AutoSize = true;
+            this.chkHC5MG1Ch05.Location = new System.Drawing.Point(566, 245);
+            this.chkHC5MG1Ch05.Name = "chkHC5MG1Ch05";
+            this.chkHC5MG1Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG1Ch05.TabIndex = 41;
+            this.chkHC5MG1Ch05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG4Ch04
+            // 
+            this.chkHC5MG4Ch04.AutoSize = true;
+            this.chkHC5MG4Ch04.Location = new System.Drawing.Point(494, 335);
+            this.chkHC5MG4Ch04.Name = "chkHC5MG4Ch04";
+            this.chkHC5MG4Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG4Ch04.TabIndex = 76;
+            this.chkHC5MG4Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG3Ch04
+            // 
+            this.chkHC5MG3Ch04.AutoSize = true;
+            this.chkHC5MG3Ch04.Location = new System.Drawing.Point(494, 305);
+            this.chkHC5MG3Ch04.Name = "chkHC5MG3Ch04";
+            this.chkHC5MG3Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG3Ch04.TabIndex = 64;
+            this.chkHC5MG3Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG2Ch04
+            // 
+            this.chkHC5MG2Ch04.AutoSize = true;
+            this.chkHC5MG2Ch04.Location = new System.Drawing.Point(494, 275);
+            this.chkHC5MG2Ch04.Name = "chkHC5MG2Ch04";
+            this.chkHC5MG2Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG2Ch04.TabIndex = 52;
+            this.chkHC5MG2Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG1Ch04
+            // 
+            this.chkHC5MG1Ch04.AutoSize = true;
+            this.chkHC5MG1Ch04.Location = new System.Drawing.Point(494, 245);
+            this.chkHC5MG1Ch04.Name = "chkHC5MG1Ch04";
+            this.chkHC5MG1Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG1Ch04.TabIndex = 40;
+            this.chkHC5MG1Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG4Ch03
+            // 
+            this.chkHC5MG4Ch03.AutoSize = true;
+            this.chkHC5MG4Ch03.Location = new System.Drawing.Point(422, 335);
+            this.chkHC5MG4Ch03.Name = "chkHC5MG4Ch03";
+            this.chkHC5MG4Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG4Ch03.TabIndex = 75;
+            this.chkHC5MG4Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG3Ch03
+            // 
+            this.chkHC5MG3Ch03.AutoSize = true;
+            this.chkHC5MG3Ch03.Location = new System.Drawing.Point(422, 305);
+            this.chkHC5MG3Ch03.Name = "chkHC5MG3Ch03";
+            this.chkHC5MG3Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG3Ch03.TabIndex = 63;
+            this.chkHC5MG3Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG2Ch03
+            // 
+            this.chkHC5MG2Ch03.AutoSize = true;
+            this.chkHC5MG2Ch03.Location = new System.Drawing.Point(422, 275);
+            this.chkHC5MG2Ch03.Name = "chkHC5MG2Ch03";
+            this.chkHC5MG2Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG2Ch03.TabIndex = 51;
+            this.chkHC5MG2Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG1Ch03
+            // 
+            this.chkHC5MG1Ch03.AutoSize = true;
+            this.chkHC5MG1Ch03.Location = new System.Drawing.Point(422, 245);
+            this.chkHC5MG1Ch03.Name = "chkHC5MG1Ch03";
+            this.chkHC5MG1Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG1Ch03.TabIndex = 39;
+            this.chkHC5MG1Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG4Ch02
+            // 
+            this.chkHC5MG4Ch02.AutoSize = true;
+            this.chkHC5MG4Ch02.Location = new System.Drawing.Point(350, 335);
+            this.chkHC5MG4Ch02.Name = "chkHC5MG4Ch02";
+            this.chkHC5MG4Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG4Ch02.TabIndex = 74;
+            this.chkHC5MG4Ch02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG3Ch02
+            // 
+            this.chkHC5MG3Ch02.AutoSize = true;
+            this.chkHC5MG3Ch02.Location = new System.Drawing.Point(350, 305);
+            this.chkHC5MG3Ch02.Name = "chkHC5MG3Ch02";
+            this.chkHC5MG3Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG3Ch02.TabIndex = 62;
+            this.chkHC5MG3Ch02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG2Ch02
+            // 
+            this.chkHC5MG2Ch02.AutoSize = true;
+            this.chkHC5MG2Ch02.Location = new System.Drawing.Point(350, 275);
+            this.chkHC5MG2Ch02.Name = "chkHC5MG2Ch02";
+            this.chkHC5MG2Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG2Ch02.TabIndex = 50;
+            this.chkHC5MG2Ch02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG1Ch02
+            // 
+            this.chkHC5MG1Ch02.AutoSize = true;
+            this.chkHC5MG1Ch02.Location = new System.Drawing.Point(350, 245);
+            this.chkHC5MG1Ch02.Name = "chkHC5MG1Ch02";
+            this.chkHC5MG1Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG1Ch02.TabIndex = 38;
+            this.chkHC5MG1Ch02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG4Ch01
+            // 
+            this.chkHC5MG4Ch01.AutoSize = true;
+            this.chkHC5MG4Ch01.Location = new System.Drawing.Point(278, 335);
+            this.chkHC5MG4Ch01.Name = "chkHC5MG4Ch01";
+            this.chkHC5MG4Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG4Ch01.TabIndex = 73;
+            this.chkHC5MG4Ch01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG3Ch01
+            // 
+            this.chkHC5MG3Ch01.AutoSize = true;
+            this.chkHC5MG3Ch01.Location = new System.Drawing.Point(278, 305);
+            this.chkHC5MG3Ch01.Name = "chkHC5MG3Ch01";
+            this.chkHC5MG3Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG3Ch01.TabIndex = 61;
+            this.chkHC5MG3Ch01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG2Ch01
+            // 
+            this.chkHC5MG2Ch01.AutoSize = true;
+            this.chkHC5MG2Ch01.Location = new System.Drawing.Point(278, 275);
+            this.chkHC5MG2Ch01.Name = "chkHC5MG2Ch01";
+            this.chkHC5MG2Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG2Ch01.TabIndex = 49;
+            this.chkHC5MG2Ch01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG1Ch01
+            // 
+            this.chkHC5MG1Ch01.AutoSize = true;
+            this.chkHC5MG1Ch01.Location = new System.Drawing.Point(278, 245);
+            this.chkHC5MG1Ch01.Name = "chkHC5MG1Ch01";
+            this.chkHC5MG1Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG1Ch01.TabIndex = 37;
+            this.chkHC5MG1Ch01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG4Ch00
+            // 
+            this.chkHC5MG4Ch00.AutoSize = true;
+            this.chkHC5MG4Ch00.Location = new System.Drawing.Point(206, 335);
+            this.chkHC5MG4Ch00.Name = "chkHC5MG4Ch00";
+            this.chkHC5MG4Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG4Ch00.TabIndex = 72;
+            this.chkHC5MG4Ch00.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG3Ch00
+            // 
+            this.chkHC5MG3Ch00.AutoSize = true;
+            this.chkHC5MG3Ch00.Location = new System.Drawing.Point(206, 305);
+            this.chkHC5MG3Ch00.Name = "chkHC5MG3Ch00";
+            this.chkHC5MG3Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG3Ch00.TabIndex = 60;
+            this.chkHC5MG3Ch00.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG2Ch00
+            // 
+            this.chkHC5MG2Ch00.AutoSize = true;
+            this.chkHC5MG2Ch00.Location = new System.Drawing.Point(206, 275);
+            this.chkHC5MG2Ch00.Name = "chkHC5MG2Ch00";
+            this.chkHC5MG2Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG2Ch00.TabIndex = 48;
+            this.chkHC5MG2Ch00.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5MG1Ch00
+            // 
+            this.chkHC5MG1Ch00.AutoSize = true;
+            this.chkHC5MG1Ch00.Location = new System.Drawing.Point(206, 245);
+            this.chkHC5MG1Ch00.Name = "chkHC5MG1Ch00";
+            this.chkHC5MG1Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC5MG1Ch00.TabIndex = 36;
+            this.chkHC5MG1Ch00.UseVisualStyleBackColor = true;
+            // 
+            // label266
+            // 
+            this.label266.AutoSize = true;
+            this.label266.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label266.ForeColor = System.Drawing.SystemColors.Control;
+            this.label266.Location = new System.Drawing.Point(3, 212);
+            this.label266.Name = "label266";
+            this.label266.Size = new System.Drawing.Size(164, 17);
+            this.label266.TabIndex = 248;
+            this.label266.Text = "Overcurrent Time Constant";
+            // 
+            // cmbHC5OCTime00
+            // 
+            this.cmbHC5OCTime00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCTime00.FormattingEnabled = true;
+            this.cmbHC5OCTime00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC5OCTime00.Location = new System.Drawing.Point(194, 210);
+            this.cmbHC5OCTime00.Name = "cmbHC5OCTime00";
+            this.cmbHC5OCTime00.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCTime00.TabIndex = 24;
+            // 
+            // cmbHC5OCTime01
+            // 
+            this.cmbHC5OCTime01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCTime01.FormattingEnabled = true;
+            this.cmbHC5OCTime01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC5OCTime01.Location = new System.Drawing.Point(266, 210);
+            this.cmbHC5OCTime01.Name = "cmbHC5OCTime01";
+            this.cmbHC5OCTime01.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCTime01.TabIndex = 25;
+            // 
+            // cmbHC5OCTime02
+            // 
+            this.cmbHC5OCTime02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCTime02.FormattingEnabled = true;
+            this.cmbHC5OCTime02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC5OCTime02.Location = new System.Drawing.Point(338, 210);
+            this.cmbHC5OCTime02.Name = "cmbHC5OCTime02";
+            this.cmbHC5OCTime02.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCTime02.TabIndex = 26;
+            // 
+            // cmbHC5OCTime03
+            // 
+            this.cmbHC5OCTime03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCTime03.FormattingEnabled = true;
+            this.cmbHC5OCTime03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC5OCTime03.Location = new System.Drawing.Point(410, 210);
+            this.cmbHC5OCTime03.Name = "cmbHC5OCTime03";
+            this.cmbHC5OCTime03.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCTime03.TabIndex = 27;
+            // 
+            // cmbHC5OCTime11
+            // 
+            this.cmbHC5OCTime11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCTime11.FormattingEnabled = true;
+            this.cmbHC5OCTime11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC5OCTime11.Location = new System.Drawing.Point(986, 210);
+            this.cmbHC5OCTime11.Name = "cmbHC5OCTime11";
+            this.cmbHC5OCTime11.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCTime11.TabIndex = 35;
+            // 
+            // cmbHC5OCTime04
+            // 
+            this.cmbHC5OCTime04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCTime04.FormattingEnabled = true;
+            this.cmbHC5OCTime04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC5OCTime04.Location = new System.Drawing.Point(482, 210);
+            this.cmbHC5OCTime04.Name = "cmbHC5OCTime04";
+            this.cmbHC5OCTime04.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCTime04.TabIndex = 28;
+            // 
+            // cmbHC5OCTime10
+            // 
+            this.cmbHC5OCTime10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCTime10.FormattingEnabled = true;
+            this.cmbHC5OCTime10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC5OCTime10.Location = new System.Drawing.Point(914, 210);
+            this.cmbHC5OCTime10.Name = "cmbHC5OCTime10";
+            this.cmbHC5OCTime10.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCTime10.TabIndex = 34;
+            // 
+            // cmbHC5OCTime05
+            // 
+            this.cmbHC5OCTime05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCTime05.FormattingEnabled = true;
+            this.cmbHC5OCTime05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC5OCTime05.Location = new System.Drawing.Point(554, 210);
+            this.cmbHC5OCTime05.Name = "cmbHC5OCTime05";
+            this.cmbHC5OCTime05.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCTime05.TabIndex = 29;
+            // 
+            // cmbHC5OCTime09
+            // 
+            this.cmbHC5OCTime09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCTime09.FormattingEnabled = true;
+            this.cmbHC5OCTime09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC5OCTime09.Location = new System.Drawing.Point(842, 210);
+            this.cmbHC5OCTime09.Name = "cmbHC5OCTime09";
+            this.cmbHC5OCTime09.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCTime09.TabIndex = 33;
+            // 
+            // cmbHC5OCTime06
+            // 
+            this.cmbHC5OCTime06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCTime06.FormattingEnabled = true;
+            this.cmbHC5OCTime06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC5OCTime06.Location = new System.Drawing.Point(626, 210);
+            this.cmbHC5OCTime06.Name = "cmbHC5OCTime06";
+            this.cmbHC5OCTime06.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCTime06.TabIndex = 30;
+            // 
+            // cmbHC5OCTime08
+            // 
+            this.cmbHC5OCTime08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCTime08.FormattingEnabled = true;
+            this.cmbHC5OCTime08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC5OCTime08.Location = new System.Drawing.Point(770, 210);
+            this.cmbHC5OCTime08.Name = "cmbHC5OCTime08";
+            this.cmbHC5OCTime08.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCTime08.TabIndex = 32;
+            // 
+            // cmbHC5OCTime07
+            // 
+            this.cmbHC5OCTime07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCTime07.FormattingEnabled = true;
+            this.cmbHC5OCTime07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC5OCTime07.Location = new System.Drawing.Point(698, 210);
+            this.cmbHC5OCTime07.Name = "cmbHC5OCTime07";
+            this.cmbHC5OCTime07.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCTime07.TabIndex = 31;
+            // 
+            // label267
+            // 
+            this.label267.AutoSize = true;
+            this.label267.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label267.ForeColor = System.Drawing.SystemColors.Control;
+            this.label267.Location = new System.Drawing.Point(3, 182);
+            this.label267.Name = "label267";
+            this.label267.Size = new System.Drawing.Size(114, 17);
+            this.label267.TabIndex = 246;
+            this.label267.Text = "Overcurrent Amps";
+            // 
+            // cmbHC5OCAmps00
+            // 
+            this.cmbHC5OCAmps00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5OCAmps00.FormattingEnabled = true;
+            this.cmbHC5OCAmps00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC5OCAmps00.Location = new System.Drawing.Point(194, 180);
+            this.cmbHC5OCAmps00.Name = "cmbHC5OCAmps00";
+            this.cmbHC5OCAmps00.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5OCAmps00.TabIndex = 12;
+            // 
+            // lblHC5Ch00
+            // 
+            this.lblHC5Ch00.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC5Ch00.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC5Ch00.Location = new System.Drawing.Point(194, 152);
+            this.lblHC5Ch00.Name = "lblHC5Ch00";
+            this.lblHC5Ch00.Size = new System.Drawing.Size(40, 20);
+            this.lblHC5Ch00.TabIndex = 221;
+            this.lblHC5Ch00.Text = "0";
+            this.lblHC5Ch00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC5Ch01
+            // 
+            this.lblHC5Ch01.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC5Ch01.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC5Ch01.Location = new System.Drawing.Point(266, 152);
+            this.lblHC5Ch01.Name = "lblHC5Ch01";
+            this.lblHC5Ch01.Size = new System.Drawing.Size(40, 20);
+            this.lblHC5Ch01.TabIndex = 222;
+            this.lblHC5Ch01.Text = "1";
+            this.lblHC5Ch01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC5Ch02
+            // 
+            this.lblHC5Ch02.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC5Ch02.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC5Ch02.Location = new System.Drawing.Point(338, 152);
+            this.lblHC5Ch02.Name = "lblHC5Ch02";
+            this.lblHC5Ch02.Size = new System.Drawing.Size(40, 20);
+            this.lblHC5Ch02.TabIndex = 224;
+            this.lblHC5Ch02.Text = "2";
+            this.lblHC5Ch02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC5Ch03
+            // 
+            this.lblHC5Ch03.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC5Ch03.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC5Ch03.Location = new System.Drawing.Point(410, 151);
+            this.lblHC5Ch03.Name = "lblHC5Ch03";
+            this.lblHC5Ch03.Size = new System.Drawing.Size(40, 20);
+            this.lblHC5Ch03.TabIndex = 227;
+            this.lblHC5Ch03.Text = "3";
+            this.lblHC5Ch03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC5Ch11
+            // 
+            this.lblHC5Ch11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC5Ch11.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC5Ch11.Location = new System.Drawing.Point(986, 152);
+            this.lblHC5Ch11.Name = "lblHC5Ch11";
+            this.lblHC5Ch11.Size = new System.Drawing.Size(40, 20);
+            this.lblHC5Ch11.TabIndex = 229;
+            this.lblHC5Ch11.Text = "11";
+            this.lblHC5Ch11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC5Ch10
+            // 
+            this.lblHC5Ch10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC5Ch10.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC5Ch10.Location = new System.Drawing.Point(914, 152);
+            this.lblHC5Ch10.Name = "lblHC5Ch10";
+            this.lblHC5Ch10.Size = new System.Drawing.Size(40, 20);
+            this.lblHC5Ch10.TabIndex = 231;
+            this.lblHC5Ch10.Text = "10";
+            this.lblHC5Ch10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC5Ch09
+            // 
+            this.lblHC5Ch09.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC5Ch09.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC5Ch09.Location = new System.Drawing.Point(842, 152);
+            this.lblHC5Ch09.Name = "lblHC5Ch09";
+            this.lblHC5Ch09.Size = new System.Drawing.Size(40, 20);
+            this.lblHC5Ch09.TabIndex = 233;
+            this.lblHC5Ch09.Text = "9";
+            this.lblHC5Ch09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC5Ch08
+            // 
+            this.lblHC5Ch08.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC5Ch08.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC5Ch08.Location = new System.Drawing.Point(770, 152);
+            this.lblHC5Ch08.Name = "lblHC5Ch08";
+            this.lblHC5Ch08.Size = new System.Drawing.Size(40, 20);
+            this.lblHC5Ch08.TabIndex = 234;
+            this.lblHC5Ch08.Text = "8";
+            this.lblHC5Ch08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC5Ch07
+            // 
+            this.lblHC5Ch07.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC5Ch07.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC5Ch07.Location = new System.Drawing.Point(698, 152);
+            this.lblHC5Ch07.Name = "lblHC5Ch07";
+            this.lblHC5Ch07.Size = new System.Drawing.Size(40, 20);
+            this.lblHC5Ch07.TabIndex = 237;
+            this.lblHC5Ch07.Text = "7";
+            this.lblHC5Ch07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC5Ch06
+            // 
+            this.lblHC5Ch06.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC5Ch06.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC5Ch06.Location = new System.Drawing.Point(626, 152);
+            this.lblHC5Ch06.Name = "lblHC5Ch06";
+            this.lblHC5Ch06.Size = new System.Drawing.Size(40, 20);
+            this.lblHC5Ch06.TabIndex = 239;
+            this.lblHC5Ch06.Text = "6";
+            this.lblHC5Ch06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC5Ch05
+            // 
+            this.lblHC5Ch05.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC5Ch05.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC5Ch05.Location = new System.Drawing.Point(554, 152);
+            this.lblHC5Ch05.Name = "lblHC5Ch05";
+            this.lblHC5Ch05.Size = new System.Drawing.Size(40, 20);
+            this.lblHC5Ch05.TabIndex = 240;
+            this.lblHC5Ch05.Text = "5";
+            this.lblHC5Ch05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC5Ch04
+            // 
+            this.lblHC5Ch04.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC5Ch04.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC5Ch04.Location = new System.Drawing.Point(482, 152);
+            this.lblHC5Ch04.Name = "lblHC5Ch04";
+            this.lblHC5Ch04.Size = new System.Drawing.Size(40, 20);
+            this.lblHC5Ch04.TabIndex = 243;
+            this.lblHC5Ch04.Text = "4";
+            this.lblHC5Ch04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // chkHC5RGB
+            // 
+            this.chkHC5RGB.AutoSize = true;
+            this.chkHC5RGB.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHC5RGB.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHC5RGB.Location = new System.Drawing.Point(261, 70);
+            this.chkHC5RGB.Name = "chkHC5RGB";
+            this.chkHC5RGB.Size = new System.Drawing.Size(51, 21);
+            this.chkHC5RGB.TabIndex = 6;
+            this.chkHC5RGB.Text = "RGB";
+            this.chkHC5RGB.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5Shade
+            // 
+            this.chkHC5Shade.AutoSize = true;
+            this.chkHC5Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHC5Shade.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHC5Shade.Location = new System.Drawing.Point(438, 70);
+            this.chkHC5Shade.Name = "chkHC5Shade";
+            this.chkHC5Shade.Size = new System.Drawing.Size(63, 21);
+            this.chkHC5Shade.TabIndex = 9;
+            this.chkHC5Shade.Text = "Shade";
+            this.chkHC5Shade.UseVisualStyleBackColor = true;
+            // 
+            // cmbHC5PanelNum
+            // 
+            this.cmbHC5PanelNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5PanelNum.FormattingEnabled = true;
+            this.cmbHC5PanelNum.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.cmbHC5PanelNum.Location = new System.Drawing.Point(260, 25);
+            this.cmbHC5PanelNum.Name = "cmbHC5PanelNum";
+            this.cmbHC5PanelNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5PanelNum.TabIndex = 2;
+            this.cmbHC5PanelNum.SelectedIndexChanged += new System.EventHandler(this.cmbHC5PanelNum_SelectedIndexChanged);
+            // 
+            // label281
+            // 
+            this.label281.AutoSize = true;
+            this.label281.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label281.ForeColor = System.Drawing.SystemColors.Control;
+            this.label281.Location = new System.Drawing.Point(3, 27);
+            this.label281.Name = "label281";
+            this.label281.Size = new System.Drawing.Size(100, 17);
+            this.label281.TabIndex = 208;
+            this.label281.Text = "Card # in Panel:";
+            // 
+            // cmbHC5CardNum
+            // 
+            this.cmbHC5CardNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC5CardNum.FormattingEnabled = true;
+            this.cmbHC5CardNum.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.cmbHC5CardNum.Location = new System.Drawing.Point(109, 25);
+            this.cmbHC5CardNum.Name = "cmbHC5CardNum";
+            this.cmbHC5CardNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC5CardNum.TabIndex = 1;
+            this.cmbHC5CardNum.SelectedIndexChanged += new System.EventHandler(this.cmbHC5CardNum_SelectedIndexChanged);
+            // 
+            // label282
+            // 
+            this.label282.AutoSize = true;
+            this.label282.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label282.ForeColor = System.Drawing.SystemColors.Control;
+            this.label282.Location = new System.Drawing.Point(200, 27);
+            this.label282.Name = "label282";
+            this.label282.Size = new System.Drawing.Size(54, 17);
+            this.label282.TabIndex = 210;
+            this.label282.Text = "Panel #:";
+            // 
+            // label283
+            // 
+            this.label283.AutoSize = true;
+            this.label283.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label283.ForeColor = System.Drawing.SystemColors.Control;
+            this.label283.Location = new System.Drawing.Point(339, 27);
+            this.label283.Name = "label283";
+            this.label283.Size = new System.Drawing.Size(74, 17);
+            this.label283.TabIndex = 212;
+            this.label283.Text = "Config Rev:";
+            // 
+            // tbxHC5CfgRev
+            // 
+            this.tbxHC5CfgRev.Location = new System.Drawing.Point(419, 25);
+            this.tbxHC5CfgRev.Name = "tbxHC5CfgRev";
+            this.tbxHC5CfgRev.Size = new System.Drawing.Size(32, 20);
+            this.tbxHC5CfgRev.TabIndex = 3;
+            this.tbxHC5CfgRev.Text = "1";
+            // 
+            // label284
+            // 
+            this.label284.AutoSize = true;
+            this.label284.BackColor = System.Drawing.Color.Transparent;
+            this.label284.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label284.ForeColor = System.Drawing.SystemColors.Control;
+            this.label284.Location = new System.Drawing.Point(509, 27);
+            this.label284.Name = "label284";
+            this.label284.Size = new System.Drawing.Size(101, 17);
+            this.label284.TabIndex = 215;
+            this.label284.Text = "Config Type:  0x";
+            // 
+            // tbxHC5CfgType
+            // 
+            this.tbxHC5CfgType.Location = new System.Drawing.Point(616, 26);
+            this.tbxHC5CfgType.MaxLength = 4;
+            this.tbxHC5CfgType.Name = "tbxHC5CfgType";
+            this.tbxHC5CfgType.Size = new System.Drawing.Size(48, 20);
+            this.tbxHC5CfgType.TabIndex = 4;
+            this.tbxHC5CfgType.Text = "0";
+            // 
+            // label285
+            // 
+            this.label285.AutoSize = true;
+            this.label285.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label285.ForeColor = System.Drawing.SystemColors.Control;
+            this.label285.Location = new System.Drawing.Point(3, 71);
+            this.label285.Name = "label285";
+            this.label285.Size = new System.Drawing.Size(151, 17);
+            this.label285.TabIndex = 216;
+            this.label285.Text = "Enable Command Types:";
+            // 
+            // chkHC5DCDimmer
+            // 
+            this.chkHC5DCDimmer.AutoSize = true;
+            this.chkHC5DCDimmer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHC5DCDimmer.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHC5DCDimmer.Location = new System.Drawing.Point(328, 70);
+            this.chkHC5DCDimmer.Name = "chkHC5DCDimmer";
+            this.chkHC5DCDimmer.Size = new System.Drawing.Size(94, 21);
+            this.chkHC5DCDimmer.TabIndex = 7;
+            this.chkHC5DCDimmer.Text = "DC Dimmer";
+            this.chkHC5DCDimmer.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5DCMotor
+            // 
+            this.chkHC5DCMotor.AutoSize = true;
+            this.chkHC5DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHC5DCMotor.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHC5DCMotor.Location = new System.Drawing.Point(160, 70);
+            this.chkHC5DCMotor.Name = "chkHC5DCMotor";
+            this.chkHC5DCMotor.Size = new System.Drawing.Size(85, 21);
+            this.chkHC5DCMotor.TabIndex = 5;
+            this.chkHC5DCMotor.Text = "DC Motor";
+            this.chkHC5DCMotor.UseVisualStyleBackColor = true;
+            // 
+            // chkHC5Force
+            // 
+            this.chkHC5Force.AutoSize = true;
+            this.chkHC5Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHC5Force.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHC5Force.Location = new System.Drawing.Point(517, 70);
+            this.chkHC5Force.Name = "chkHC5Force";
+            this.chkHC5Force.Size = new System.Drawing.Size(129, 21);
+            this.chkHC5Force.TabIndex = 10;
+            this.chkHC5Force.Text = "Force Commands";
+            this.chkHC5Force.UseVisualStyleBackColor = true;
+            // 
+            // label286
+            // 
+            this.label286.AutoSize = true;
+            this.label286.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label286.ForeColor = System.Drawing.SystemColors.Control;
+            this.label286.Location = new System.Drawing.Point(3, 115);
+            this.label286.Name = "label286";
+            this.label286.Size = new System.Drawing.Size(139, 17);
+            this.label286.TabIndex = 219;
+            this.label286.Text = "Base Channel Instance:";
+            // 
+            // tbxHC5BaseIndex
+            // 
+            this.tbxHC5BaseIndex.Location = new System.Drawing.Point(148, 112);
+            this.tbxHC5BaseIndex.Name = "tbxHC5BaseIndex";
+            this.tbxHC5BaseIndex.Size = new System.Drawing.Size(32, 20);
+            this.tbxHC5BaseIndex.TabIndex = 11;
+            this.tbxHC5BaseIndex.TextChanged += new System.EventHandler(this.tbxHC5BaseIndex_TextChanged);
+            // 
+            // tabHC6
+            // 
+            this.tabHC6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabHC6.Controls.Add(this.chkHC6Startup11);
+            this.tabHC6.Controls.Add(this.chkHC6Startup10);
+            this.tabHC6.Controls.Add(this.chkHC6Startup09);
+            this.tabHC6.Controls.Add(this.chkHC6Startup08);
+            this.tabHC6.Controls.Add(this.chkHC6Startup07);
+            this.tabHC6.Controls.Add(this.label306);
+            this.tabHC6.Controls.Add(this.chkHC6Startup06);
+            this.tabHC6.Controls.Add(this.chkHC6Startup05);
+            this.tabHC6.Controls.Add(this.chkHC6Startup04);
+            this.tabHC6.Controls.Add(this.chkHC6Startup03);
+            this.tabHC6.Controls.Add(this.chkHC6Startup02);
+            this.tabHC6.Controls.Add(this.chkHC6Startup01);
+            this.tabHC6.Controls.Add(this.chkHC6Startup00);
+            this.tabHC6.Controls.Add(this.cmbHC6Mode11);
+            this.tabHC6.Controls.Add(this.cmbHC6Mode10);
+            this.tabHC6.Controls.Add(this.cmbHC6Mode09);
+            this.tabHC6.Controls.Add(this.cmbHC6Mode08);
+            this.tabHC6.Controls.Add(this.cmbHC6Mode07);
+            this.tabHC6.Controls.Add(this.cmbHC6Mode06);
+            this.tabHC6.Controls.Add(this.cmbHC6Mode05);
+            this.tabHC6.Controls.Add(this.cmbHC6Mode04);
+            this.tabHC6.Controls.Add(this.cmbHC6Mode03);
+            this.tabHC6.Controls.Add(this.cmbHC6Mode02);
+            this.tabHC6.Controls.Add(this.cmbHC6Mode01);
+            this.tabHC6.Controls.Add(this.label268);
+            this.tabHC6.Controls.Add(this.cmbHC6Mode00);
+            this.tabHC6.Controls.Add(this.cmbHC6OCAmps11);
+            this.tabHC6.Controls.Add(this.cmbHC6OCAmps10);
+            this.tabHC6.Controls.Add(this.cmbHC6OCAmps09);
+            this.tabHC6.Controls.Add(this.cmbHC6OCAmps08);
+            this.tabHC6.Controls.Add(this.cmbHC6OCAmps07);
+            this.tabHC6.Controls.Add(this.cmbHC6OCAmps06);
+            this.tabHC6.Controls.Add(this.cmbHC6OCAmps05);
+            this.tabHC6.Controls.Add(this.cmbHC6OCAmps04);
+            this.tabHC6.Controls.Add(this.cmbHC6OCAmps03);
+            this.tabHC6.Controls.Add(this.cmbHC6OCAmps02);
+            this.tabHC6.Controls.Add(this.cmbHC6OCAmps01);
+            this.tabHC6.Controls.Add(this.chkHC6MG4Ch11);
+            this.tabHC6.Controls.Add(this.chkHC6MG3Ch11);
+            this.tabHC6.Controls.Add(this.chkHC6MG2Ch11);
+            this.tabHC6.Controls.Add(this.chkHC6MG1Ch11);
+            this.tabHC6.Controls.Add(this.chkHC6MG4Ch10);
+            this.tabHC6.Controls.Add(this.chkHC6MG3Ch10);
+            this.tabHC6.Controls.Add(this.chkHC6MG2Ch10);
+            this.tabHC6.Controls.Add(this.chkHC6MG1Ch10);
+            this.tabHC6.Controls.Add(this.chkHC6MG4Ch09);
+            this.tabHC6.Controls.Add(this.chkHC6MG3Ch09);
+            this.tabHC6.Controls.Add(this.chkHC6MG2Ch09);
+            this.tabHC6.Controls.Add(this.chkHC6MG1Ch09);
+            this.tabHC6.Controls.Add(this.chkHC6MG4Ch08);
+            this.tabHC6.Controls.Add(this.chkHC6MG3Ch08);
+            this.tabHC6.Controls.Add(this.chkHC6MG2Ch08);
+            this.tabHC6.Controls.Add(this.chkHC6MG1Ch08);
+            this.tabHC6.Controls.Add(this.chkHC6MG4Ch07);
+            this.tabHC6.Controls.Add(this.label269);
+            this.tabHC6.Controls.Add(this.chkHC6MG3Ch07);
+            this.tabHC6.Controls.Add(this.label270);
+            this.tabHC6.Controls.Add(this.chkHC6MG2Ch07);
+            this.tabHC6.Controls.Add(this.label271);
+            this.tabHC6.Controls.Add(this.chkHC6MG1Ch07);
+            this.tabHC6.Controls.Add(this.label272);
+            this.tabHC6.Controls.Add(this.chkHC6MG4Ch06);
+            this.tabHC6.Controls.Add(this.chkHC6MG3Ch06);
+            this.tabHC6.Controls.Add(this.chkHC6MG2Ch06);
+            this.tabHC6.Controls.Add(this.chkHC6MG1Ch06);
+            this.tabHC6.Controls.Add(this.chkHC6MG4Ch05);
+            this.tabHC6.Controls.Add(this.chkHC6MG3Ch05);
+            this.tabHC6.Controls.Add(this.chkHC6MG2Ch05);
+            this.tabHC6.Controls.Add(this.chkHC6MG1Ch05);
+            this.tabHC6.Controls.Add(this.chkHC6MG4Ch04);
+            this.tabHC6.Controls.Add(this.chkHC6MG3Ch04);
+            this.tabHC6.Controls.Add(this.chkHC6MG2Ch04);
+            this.tabHC6.Controls.Add(this.chkHC6MG1Ch04);
+            this.tabHC6.Controls.Add(this.chkHC6MG4Ch03);
+            this.tabHC6.Controls.Add(this.chkHC6MG3Ch03);
+            this.tabHC6.Controls.Add(this.chkHC6MG2Ch03);
+            this.tabHC6.Controls.Add(this.chkHC6MG1Ch03);
+            this.tabHC6.Controls.Add(this.chkHC6MG4Ch02);
+            this.tabHC6.Controls.Add(this.chkHC6MG3Ch02);
+            this.tabHC6.Controls.Add(this.chkHC6MG2Ch02);
+            this.tabHC6.Controls.Add(this.chkHC6MG1Ch02);
+            this.tabHC6.Controls.Add(this.chkHC6MG4Ch01);
+            this.tabHC6.Controls.Add(this.chkHC6MG3Ch01);
+            this.tabHC6.Controls.Add(this.chkHC6MG2Ch01);
+            this.tabHC6.Controls.Add(this.chkHC6MG1Ch01);
+            this.tabHC6.Controls.Add(this.chkHC6MG4Ch00);
+            this.tabHC6.Controls.Add(this.chkHC6MG3Ch00);
+            this.tabHC6.Controls.Add(this.chkHC6MG2Ch00);
+            this.tabHC6.Controls.Add(this.chkHC6MG1Ch00);
+            this.tabHC6.Controls.Add(this.label274);
+            this.tabHC6.Controls.Add(this.cmbHC6OCTime00);
+            this.tabHC6.Controls.Add(this.cmbHC6OCTime01);
+            this.tabHC6.Controls.Add(this.cmbHC6OCTime02);
+            this.tabHC6.Controls.Add(this.cmbHC6OCTime03);
+            this.tabHC6.Controls.Add(this.cmbHC6OCTime11);
+            this.tabHC6.Controls.Add(this.cmbHC6OCTime04);
+            this.tabHC6.Controls.Add(this.cmbHC6OCTime10);
+            this.tabHC6.Controls.Add(this.cmbHC6OCTime05);
+            this.tabHC6.Controls.Add(this.cmbHC6OCTime09);
+            this.tabHC6.Controls.Add(this.cmbHC6OCTime06);
+            this.tabHC6.Controls.Add(this.cmbHC6OCTime08);
+            this.tabHC6.Controls.Add(this.cmbHC6OCTime07);
+            this.tabHC6.Controls.Add(this.label275);
+            this.tabHC6.Controls.Add(this.cmbHC6OCAmps00);
+            this.tabHC6.Controls.Add(this.lblHC6Ch00);
+            this.tabHC6.Controls.Add(this.lblHC6Ch01);
+            this.tabHC6.Controls.Add(this.lblHC6Ch02);
+            this.tabHC6.Controls.Add(this.lblHC6Ch03);
+            this.tabHC6.Controls.Add(this.lblHC6Ch11);
+            this.tabHC6.Controls.Add(this.lblHC6Ch10);
+            this.tabHC6.Controls.Add(this.lblHC6Ch09);
+            this.tabHC6.Controls.Add(this.lblHC6Ch08);
+            this.tabHC6.Controls.Add(this.lblHC6Ch07);
+            this.tabHC6.Controls.Add(this.lblHC6Ch06);
+            this.tabHC6.Controls.Add(this.lblHC6Ch05);
+            this.tabHC6.Controls.Add(this.lblHC6Ch04);
+            this.tabHC6.Controls.Add(this.chkHC6RGB);
+            this.tabHC6.Controls.Add(this.chkHC6Shade);
+            this.tabHC6.Controls.Add(this.cmbHC6PanelNum);
+            this.tabHC6.Controls.Add(this.label294);
+            this.tabHC6.Controls.Add(this.cmbHC6CardNum);
+            this.tabHC6.Controls.Add(this.label295);
+            this.tabHC6.Controls.Add(this.label296);
+            this.tabHC6.Controls.Add(this.tbxHC6CfgRev);
+            this.tabHC6.Controls.Add(this.label297);
+            this.tabHC6.Controls.Add(this.tbxHC6CfgType);
+            this.tabHC6.Controls.Add(this.label298);
+            this.tabHC6.Controls.Add(this.chkHC6DCDimmer);
+            this.tabHC6.Controls.Add(this.chkHC6DCMotor);
+            this.tabHC6.Controls.Add(this.chkHC6Force);
+            this.tabHC6.Controls.Add(this.label299);
+            this.tabHC6.Controls.Add(this.tbxHC6BaseIndex);
+            this.tabHC6.Location = new System.Drawing.Point(4, 22);
+            this.tabHC6.Name = "tabHC6";
+            this.tabHC6.Size = new System.Drawing.Size(1376, 733);
+            this.tabHC6.TabIndex = 7;
+            this.tabHC6.Text = "HC 6";
+            // 
+            // chkHC6Startup11
+            // 
+            this.chkHC6Startup11.AutoSize = true;
+            this.chkHC6Startup11.Location = new System.Drawing.Point(998, 395);
+            this.chkHC6Startup11.Name = "chkHC6Startup11";
+            this.chkHC6Startup11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6Startup11.TabIndex = 419;
+            this.chkHC6Startup11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6Startup10
+            // 
+            this.chkHC6Startup10.AutoSize = true;
+            this.chkHC6Startup10.Location = new System.Drawing.Point(926, 395);
+            this.chkHC6Startup10.Name = "chkHC6Startup10";
+            this.chkHC6Startup10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6Startup10.TabIndex = 418;
+            this.chkHC6Startup10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6Startup09
+            // 
+            this.chkHC6Startup09.AutoSize = true;
+            this.chkHC6Startup09.Location = new System.Drawing.Point(854, 395);
+            this.chkHC6Startup09.Name = "chkHC6Startup09";
+            this.chkHC6Startup09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6Startup09.TabIndex = 417;
+            this.chkHC6Startup09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6Startup08
+            // 
+            this.chkHC6Startup08.AutoSize = true;
+            this.chkHC6Startup08.Location = new System.Drawing.Point(782, 395);
+            this.chkHC6Startup08.Name = "chkHC6Startup08";
+            this.chkHC6Startup08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6Startup08.TabIndex = 416;
+            this.chkHC6Startup08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6Startup07
+            // 
+            this.chkHC6Startup07.AutoSize = true;
+            this.chkHC6Startup07.Location = new System.Drawing.Point(710, 395);
+            this.chkHC6Startup07.Name = "chkHC6Startup07";
+            this.chkHC6Startup07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6Startup07.TabIndex = 415;
+            this.chkHC6Startup07.UseVisualStyleBackColor = true;
+            // 
+            // label306
+            // 
+            this.label306.AutoSize = true;
+            this.label306.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label306.ForeColor = System.Drawing.SystemColors.Control;
+            this.label306.Location = new System.Drawing.Point(3, 392);
+            this.label306.Name = "label306";
+            this.label306.Size = new System.Drawing.Size(86, 17);
+            this.label306.TabIndex = 420;
+            this.label306.Text = "On at Startup";
+            // 
+            // chkHC6Startup06
+            // 
+            this.chkHC6Startup06.AutoSize = true;
+            this.chkHC6Startup06.Location = new System.Drawing.Point(638, 395);
+            this.chkHC6Startup06.Name = "chkHC6Startup06";
+            this.chkHC6Startup06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6Startup06.TabIndex = 414;
+            this.chkHC6Startup06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6Startup05
+            // 
+            this.chkHC6Startup05.AutoSize = true;
+            this.chkHC6Startup05.Location = new System.Drawing.Point(566, 395);
+            this.chkHC6Startup05.Name = "chkHC6Startup05";
+            this.chkHC6Startup05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6Startup05.TabIndex = 413;
+            this.chkHC6Startup05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6Startup04
+            // 
+            this.chkHC6Startup04.AutoSize = true;
+            this.chkHC6Startup04.Location = new System.Drawing.Point(494, 395);
+            this.chkHC6Startup04.Name = "chkHC6Startup04";
+            this.chkHC6Startup04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6Startup04.TabIndex = 412;
+            this.chkHC6Startup04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6Startup03
+            // 
+            this.chkHC6Startup03.AutoSize = true;
+            this.chkHC6Startup03.Location = new System.Drawing.Point(422, 395);
+            this.chkHC6Startup03.Name = "chkHC6Startup03";
+            this.chkHC6Startup03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6Startup03.TabIndex = 411;
+            this.chkHC6Startup03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6Startup02
+            // 
+            this.chkHC6Startup02.AutoSize = true;
+            this.chkHC6Startup02.Location = new System.Drawing.Point(350, 395);
+            this.chkHC6Startup02.Name = "chkHC6Startup02";
+            this.chkHC6Startup02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6Startup02.TabIndex = 410;
+            this.chkHC6Startup02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6Startup01
+            // 
+            this.chkHC6Startup01.AutoSize = true;
+            this.chkHC6Startup01.Location = new System.Drawing.Point(278, 395);
+            this.chkHC6Startup01.Name = "chkHC6Startup01";
+            this.chkHC6Startup01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6Startup01.TabIndex = 409;
+            this.chkHC6Startup01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6Startup00
+            // 
+            this.chkHC6Startup00.AutoSize = true;
+            this.chkHC6Startup00.Location = new System.Drawing.Point(206, 395);
+            this.chkHC6Startup00.Name = "chkHC6Startup00";
+            this.chkHC6Startup00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6Startup00.TabIndex = 408;
+            this.chkHC6Startup00.UseVisualStyleBackColor = true;
+            // 
+            // cmbHC6Mode11
+            // 
+            this.cmbHC6Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6Mode11.FormattingEnabled = true;
+            this.cmbHC6Mode11.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP DN",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC6Mode11.Location = new System.Drawing.Point(975, 360);
+            this.cmbHC6Mode11.Name = "cmbHC6Mode11";
+            this.cmbHC6Mode11.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC6Mode11.TabIndex = 95;
+            // 
+            // cmbHC6Mode10
+            // 
+            this.cmbHC6Mode10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6Mode10.FormattingEnabled = true;
+            this.cmbHC6Mode10.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "GB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC6Mode10.Location = new System.Drawing.Point(903, 360);
+            this.cmbHC6Mode10.Name = "cmbHC6Mode10";
+            this.cmbHC6Mode10.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC6Mode10.TabIndex = 94;
+            // 
+            // cmbHC6Mode09
+            // 
+            this.cmbHC6Mode09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6Mode09.FormattingEnabled = true;
+            this.cmbHC6Mode09.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC6Mode09.Location = new System.Drawing.Point(831, 360);
+            this.cmbHC6Mode09.Name = "cmbHC6Mode09";
+            this.cmbHC6Mode09.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC6Mode09.TabIndex = 93;
+            // 
+            // cmbHC6Mode08
+            // 
+            this.cmbHC6Mode08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6Mode08.FormattingEnabled = true;
+            this.cmbHC6Mode08.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC6Mode08.Location = new System.Drawing.Point(759, 360);
+            this.cmbHC6Mode08.Name = "cmbHC6Mode08";
+            this.cmbHC6Mode08.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC6Mode08.TabIndex = 92;
+            // 
+            // cmbHC6Mode07
+            // 
+            this.cmbHC6Mode07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6Mode07.FormattingEnabled = true;
+            this.cmbHC6Mode07.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGBW P",
+            "RGB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC6Mode07.Location = new System.Drawing.Point(687, 360);
+            this.cmbHC6Mode07.Name = "cmbHC6Mode07";
+            this.cmbHC6Mode07.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC6Mode07.TabIndex = 91;
+            // 
+            // cmbHC6Mode06
+            // 
+            this.cmbHC6Mode06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6Mode06.FormattingEnabled = true;
+            this.cmbHC6Mode06.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGBW P",
+            "RGB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC6Mode06.Location = new System.Drawing.Point(615, 360);
+            this.cmbHC6Mode06.Name = "cmbHC6Mode06";
+            this.cmbHC6Mode06.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC6Mode06.TabIndex = 90;
+            // 
+            // cmbHC6Mode05
+            // 
+            this.cmbHC6Mode05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6Mode05.FormattingEnabled = true;
+            this.cmbHC6Mode05.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGBW P",
+            "RGB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC6Mode05.Location = new System.Drawing.Point(543, 360);
+            this.cmbHC6Mode05.Name = "cmbHC6Mode05";
+            this.cmbHC6Mode05.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC6Mode05.TabIndex = 89;
+            // 
+            // cmbHC6Mode04
+            // 
+            this.cmbHC6Mode04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6Mode04.FormattingEnabled = true;
+            this.cmbHC6Mode04.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGBW P",
+            "RGB R",
+            "RGB G",
+            "RGB B",
+            "RGB W"});
+            this.cmbHC6Mode04.Location = new System.Drawing.Point(471, 360);
+            this.cmbHC6Mode04.Name = "cmbHC6Mode04";
+            this.cmbHC6Mode04.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC6Mode04.TabIndex = 88;
+            // 
+            // cmbHC6Mode03
+            // 
+            this.cmbHC6Mode03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6Mode03.FormattingEnabled = true;
+            this.cmbHC6Mode03.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGB R",
+            "RGB G",
+            "RGB B"});
+            this.cmbHC6Mode03.Location = new System.Drawing.Point(399, 360);
+            this.cmbHC6Mode03.Name = "cmbHC6Mode03";
+            this.cmbHC6Mode03.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC6Mode03.TabIndex = 87;
+            // 
+            // cmbHC6Mode02
+            // 
+            this.cmbHC6Mode02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6Mode02.FormattingEnabled = true;
+            this.cmbHC6Mode02.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGBW P",
+            "RGB R",
+            "RGB G"});
+            this.cmbHC6Mode02.Location = new System.Drawing.Point(327, 360);
+            this.cmbHC6Mode02.Name = "cmbHC6Mode02";
+            this.cmbHC6Mode02.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC6Mode02.TabIndex = 86;
+            // 
+            // cmbHC6Mode01
+            // 
+            this.cmbHC6Mode01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6Mode01.FormattingEnabled = true;
+            this.cmbHC6Mode01.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN",
+            "RGB P",
+            "RGBW P",
+            "RGB R"});
+            this.cmbHC6Mode01.Location = new System.Drawing.Point(255, 360);
+            this.cmbHC6Mode01.Name = "cmbHC6Mode01";
+            this.cmbHC6Mode01.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC6Mode01.TabIndex = 85;
+            // 
+            // label268
+            // 
+            this.label268.AutoSize = true;
+            this.label268.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label268.ForeColor = System.Drawing.SystemColors.Control;
+            this.label268.Location = new System.Drawing.Point(3, 362);
+            this.label268.Name = "label268";
+            this.label268.Size = new System.Drawing.Size(126, 17);
+            this.label268.TabIndex = 407;
+            this.label268.Text = "Mode (Output Type)";
+            // 
+            // cmbHC6Mode00
+            // 
+            this.cmbHC6Mode00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6Mode00.FormattingEnabled = true;
+            this.cmbHC6Mode00.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RGB P",
+            "RGBW P"});
+            this.cmbHC6Mode00.Location = new System.Drawing.Point(183, 360);
+            this.cmbHC6Mode00.Name = "cmbHC6Mode00";
+            this.cmbHC6Mode00.Size = new System.Drawing.Size(60, 21);
+            this.cmbHC6Mode00.TabIndex = 84;
+            // 
+            // cmbHC6OCAmps11
+            // 
+            this.cmbHC6OCAmps11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCAmps11.FormattingEnabled = true;
+            this.cmbHC6OCAmps11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC6OCAmps11.Location = new System.Drawing.Point(986, 182);
+            this.cmbHC6OCAmps11.Name = "cmbHC6OCAmps11";
+            this.cmbHC6OCAmps11.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCAmps11.TabIndex = 23;
+            // 
+            // cmbHC6OCAmps10
+            // 
+            this.cmbHC6OCAmps10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCAmps10.FormattingEnabled = true;
+            this.cmbHC6OCAmps10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC6OCAmps10.Location = new System.Drawing.Point(914, 182);
+            this.cmbHC6OCAmps10.Name = "cmbHC6OCAmps10";
+            this.cmbHC6OCAmps10.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCAmps10.TabIndex = 22;
+            // 
+            // cmbHC6OCAmps09
+            // 
+            this.cmbHC6OCAmps09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCAmps09.FormattingEnabled = true;
+            this.cmbHC6OCAmps09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC6OCAmps09.Location = new System.Drawing.Point(842, 182);
+            this.cmbHC6OCAmps09.Name = "cmbHC6OCAmps09";
+            this.cmbHC6OCAmps09.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCAmps09.TabIndex = 21;
+            // 
+            // cmbHC6OCAmps08
+            // 
+            this.cmbHC6OCAmps08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCAmps08.FormattingEnabled = true;
+            this.cmbHC6OCAmps08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC6OCAmps08.Location = new System.Drawing.Point(770, 182);
+            this.cmbHC6OCAmps08.Name = "cmbHC6OCAmps08";
+            this.cmbHC6OCAmps08.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCAmps08.TabIndex = 20;
+            // 
+            // cmbHC6OCAmps07
+            // 
+            this.cmbHC6OCAmps07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCAmps07.FormattingEnabled = true;
+            this.cmbHC6OCAmps07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC6OCAmps07.Location = new System.Drawing.Point(698, 182);
+            this.cmbHC6OCAmps07.Name = "cmbHC6OCAmps07";
+            this.cmbHC6OCAmps07.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCAmps07.TabIndex = 19;
+            // 
+            // cmbHC6OCAmps06
+            // 
+            this.cmbHC6OCAmps06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCAmps06.FormattingEnabled = true;
+            this.cmbHC6OCAmps06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC6OCAmps06.Location = new System.Drawing.Point(626, 182);
+            this.cmbHC6OCAmps06.Name = "cmbHC6OCAmps06";
+            this.cmbHC6OCAmps06.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCAmps06.TabIndex = 18;
+            // 
+            // cmbHC6OCAmps05
+            // 
+            this.cmbHC6OCAmps05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCAmps05.FormattingEnabled = true;
+            this.cmbHC6OCAmps05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC6OCAmps05.Location = new System.Drawing.Point(554, 182);
+            this.cmbHC6OCAmps05.Name = "cmbHC6OCAmps05";
+            this.cmbHC6OCAmps05.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCAmps05.TabIndex = 17;
+            // 
+            // cmbHC6OCAmps04
+            // 
+            this.cmbHC6OCAmps04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCAmps04.FormattingEnabled = true;
+            this.cmbHC6OCAmps04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC6OCAmps04.Location = new System.Drawing.Point(482, 182);
+            this.cmbHC6OCAmps04.Name = "cmbHC6OCAmps04";
+            this.cmbHC6OCAmps04.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCAmps04.TabIndex = 16;
+            // 
+            // cmbHC6OCAmps03
+            // 
+            this.cmbHC6OCAmps03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCAmps03.FormattingEnabled = true;
+            this.cmbHC6OCAmps03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC6OCAmps03.Location = new System.Drawing.Point(410, 180);
+            this.cmbHC6OCAmps03.Name = "cmbHC6OCAmps03";
+            this.cmbHC6OCAmps03.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCAmps03.TabIndex = 15;
+            // 
+            // cmbHC6OCAmps02
+            // 
+            this.cmbHC6OCAmps02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCAmps02.FormattingEnabled = true;
+            this.cmbHC6OCAmps02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC6OCAmps02.Location = new System.Drawing.Point(338, 180);
+            this.cmbHC6OCAmps02.Name = "cmbHC6OCAmps02";
+            this.cmbHC6OCAmps02.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCAmps02.TabIndex = 14;
+            // 
+            // cmbHC6OCAmps01
+            // 
+            this.cmbHC6OCAmps01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCAmps01.FormattingEnabled = true;
+            this.cmbHC6OCAmps01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC6OCAmps01.Location = new System.Drawing.Point(266, 180);
+            this.cmbHC6OCAmps01.Name = "cmbHC6OCAmps01";
+            this.cmbHC6OCAmps01.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCAmps01.TabIndex = 13;
+            // 
+            // chkHC6MG4Ch11
+            // 
+            this.chkHC6MG4Ch11.AutoSize = true;
+            this.chkHC6MG4Ch11.Location = new System.Drawing.Point(998, 335);
+            this.chkHC6MG4Ch11.Name = "chkHC6MG4Ch11";
+            this.chkHC6MG4Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG4Ch11.TabIndex = 83;
+            this.chkHC6MG4Ch11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG3Ch11
+            // 
+            this.chkHC6MG3Ch11.AutoSize = true;
+            this.chkHC6MG3Ch11.Location = new System.Drawing.Point(998, 305);
+            this.chkHC6MG3Ch11.Name = "chkHC6MG3Ch11";
+            this.chkHC6MG3Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG3Ch11.TabIndex = 71;
+            this.chkHC6MG3Ch11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG2Ch11
+            // 
+            this.chkHC6MG2Ch11.AutoSize = true;
+            this.chkHC6MG2Ch11.Location = new System.Drawing.Point(998, 275);
+            this.chkHC6MG2Ch11.Name = "chkHC6MG2Ch11";
+            this.chkHC6MG2Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG2Ch11.TabIndex = 59;
+            this.chkHC6MG2Ch11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG1Ch11
+            // 
+            this.chkHC6MG1Ch11.AutoSize = true;
+            this.chkHC6MG1Ch11.Location = new System.Drawing.Point(998, 245);
+            this.chkHC6MG1Ch11.Name = "chkHC6MG1Ch11";
+            this.chkHC6MG1Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG1Ch11.TabIndex = 47;
+            this.chkHC6MG1Ch11.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG4Ch10
+            // 
+            this.chkHC6MG4Ch10.AutoSize = true;
+            this.chkHC6MG4Ch10.Location = new System.Drawing.Point(926, 335);
+            this.chkHC6MG4Ch10.Name = "chkHC6MG4Ch10";
+            this.chkHC6MG4Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG4Ch10.TabIndex = 82;
+            this.chkHC6MG4Ch10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG3Ch10
+            // 
+            this.chkHC6MG3Ch10.AutoSize = true;
+            this.chkHC6MG3Ch10.Location = new System.Drawing.Point(926, 305);
+            this.chkHC6MG3Ch10.Name = "chkHC6MG3Ch10";
+            this.chkHC6MG3Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG3Ch10.TabIndex = 70;
+            this.chkHC6MG3Ch10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG2Ch10
+            // 
+            this.chkHC6MG2Ch10.AutoSize = true;
+            this.chkHC6MG2Ch10.Location = new System.Drawing.Point(926, 275);
+            this.chkHC6MG2Ch10.Name = "chkHC6MG2Ch10";
+            this.chkHC6MG2Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG2Ch10.TabIndex = 58;
+            this.chkHC6MG2Ch10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG1Ch10
+            // 
+            this.chkHC6MG1Ch10.AutoSize = true;
+            this.chkHC6MG1Ch10.Location = new System.Drawing.Point(926, 245);
+            this.chkHC6MG1Ch10.Name = "chkHC6MG1Ch10";
+            this.chkHC6MG1Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG1Ch10.TabIndex = 46;
+            this.chkHC6MG1Ch10.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG4Ch09
+            // 
+            this.chkHC6MG4Ch09.AutoSize = true;
+            this.chkHC6MG4Ch09.Location = new System.Drawing.Point(854, 335);
+            this.chkHC6MG4Ch09.Name = "chkHC6MG4Ch09";
+            this.chkHC6MG4Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG4Ch09.TabIndex = 81;
+            this.chkHC6MG4Ch09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG3Ch09
+            // 
+            this.chkHC6MG3Ch09.AutoSize = true;
+            this.chkHC6MG3Ch09.Location = new System.Drawing.Point(854, 305);
+            this.chkHC6MG3Ch09.Name = "chkHC6MG3Ch09";
+            this.chkHC6MG3Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG3Ch09.TabIndex = 69;
+            this.chkHC6MG3Ch09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG2Ch09
+            // 
+            this.chkHC6MG2Ch09.AutoSize = true;
+            this.chkHC6MG2Ch09.Location = new System.Drawing.Point(854, 275);
+            this.chkHC6MG2Ch09.Name = "chkHC6MG2Ch09";
+            this.chkHC6MG2Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG2Ch09.TabIndex = 57;
+            this.chkHC6MG2Ch09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG1Ch09
+            // 
+            this.chkHC6MG1Ch09.AutoSize = true;
+            this.chkHC6MG1Ch09.Location = new System.Drawing.Point(854, 245);
+            this.chkHC6MG1Ch09.Name = "chkHC6MG1Ch09";
+            this.chkHC6MG1Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG1Ch09.TabIndex = 45;
+            this.chkHC6MG1Ch09.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG4Ch08
+            // 
+            this.chkHC6MG4Ch08.AutoSize = true;
+            this.chkHC6MG4Ch08.Location = new System.Drawing.Point(782, 335);
+            this.chkHC6MG4Ch08.Name = "chkHC6MG4Ch08";
+            this.chkHC6MG4Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG4Ch08.TabIndex = 80;
+            this.chkHC6MG4Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG3Ch08
+            // 
+            this.chkHC6MG3Ch08.AutoSize = true;
+            this.chkHC6MG3Ch08.Location = new System.Drawing.Point(782, 305);
+            this.chkHC6MG3Ch08.Name = "chkHC6MG3Ch08";
+            this.chkHC6MG3Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG3Ch08.TabIndex = 68;
+            this.chkHC6MG3Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG2Ch08
+            // 
+            this.chkHC6MG2Ch08.AutoSize = true;
+            this.chkHC6MG2Ch08.Location = new System.Drawing.Point(782, 275);
+            this.chkHC6MG2Ch08.Name = "chkHC6MG2Ch08";
+            this.chkHC6MG2Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG2Ch08.TabIndex = 56;
+            this.chkHC6MG2Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG1Ch08
+            // 
+            this.chkHC6MG1Ch08.AutoSize = true;
+            this.chkHC6MG1Ch08.Location = new System.Drawing.Point(782, 245);
+            this.chkHC6MG1Ch08.Name = "chkHC6MG1Ch08";
+            this.chkHC6MG1Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG1Ch08.TabIndex = 44;
+            this.chkHC6MG1Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG4Ch07
+            // 
+            this.chkHC6MG4Ch07.AutoSize = true;
+            this.chkHC6MG4Ch07.Location = new System.Drawing.Point(710, 335);
+            this.chkHC6MG4Ch07.Name = "chkHC6MG4Ch07";
+            this.chkHC6MG4Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG4Ch07.TabIndex = 79;
+            this.chkHC6MG4Ch07.UseVisualStyleBackColor = true;
+            // 
+            // label269
+            // 
+            this.label269.AutoSize = true;
+            this.label269.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label269.ForeColor = System.Drawing.SystemColors.Control;
+            this.label269.Location = new System.Drawing.Point(3, 242);
+            this.label269.Name = "label269";
+            this.label269.Size = new System.Drawing.Size(135, 17);
+            this.label269.TabIndex = 403;
+            this.label269.Text = "Include with Group 7E";
+            // 
+            // chkHC6MG3Ch07
+            // 
+            this.chkHC6MG3Ch07.AutoSize = true;
+            this.chkHC6MG3Ch07.Location = new System.Drawing.Point(710, 305);
+            this.chkHC6MG3Ch07.Name = "chkHC6MG3Ch07";
+            this.chkHC6MG3Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG3Ch07.TabIndex = 67;
+            this.chkHC6MG3Ch07.UseVisualStyleBackColor = true;
+            // 
+            // label270
+            // 
+            this.label270.AutoSize = true;
+            this.label270.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label270.ForeColor = System.Drawing.SystemColors.Control;
+            this.label270.Location = new System.Drawing.Point(3, 272);
+            this.label270.Name = "label270";
+            this.label270.Size = new System.Drawing.Size(137, 17);
+            this.label270.TabIndex = 404;
+            this.label270.Text = "Include with Group 7D";
+            // 
+            // chkHC6MG2Ch07
+            // 
+            this.chkHC6MG2Ch07.AutoSize = true;
+            this.chkHC6MG2Ch07.Location = new System.Drawing.Point(710, 275);
+            this.chkHC6MG2Ch07.Name = "chkHC6MG2Ch07";
+            this.chkHC6MG2Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG2Ch07.TabIndex = 55;
+            this.chkHC6MG2Ch07.UseVisualStyleBackColor = true;
+            // 
+            // label271
+            // 
+            this.label271.AutoSize = true;
+            this.label271.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label271.ForeColor = System.Drawing.SystemColors.Control;
+            this.label271.Location = new System.Drawing.Point(3, 302);
+            this.label271.Name = "label271";
+            this.label271.Size = new System.Drawing.Size(135, 17);
+            this.label271.TabIndex = 405;
+            this.label271.Text = "Include with Group 7B";
+            // 
+            // chkHC6MG1Ch07
+            // 
+            this.chkHC6MG1Ch07.AutoSize = true;
+            this.chkHC6MG1Ch07.Location = new System.Drawing.Point(710, 245);
+            this.chkHC6MG1Ch07.Name = "chkHC6MG1Ch07";
+            this.chkHC6MG1Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG1Ch07.TabIndex = 43;
+            this.chkHC6MG1Ch07.UseVisualStyleBackColor = true;
+            // 
+            // label272
+            // 
+            this.label272.AutoSize = true;
+            this.label272.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label272.ForeColor = System.Drawing.SystemColors.Control;
+            this.label272.Location = new System.Drawing.Point(3, 332);
+            this.label272.Name = "label272";
+            this.label272.Size = new System.Drawing.Size(135, 17);
+            this.label272.TabIndex = 406;
+            this.label272.Text = "Include with Group 77";
+            // 
+            // chkHC6MG4Ch06
+            // 
+            this.chkHC6MG4Ch06.AutoSize = true;
+            this.chkHC6MG4Ch06.Location = new System.Drawing.Point(638, 335);
+            this.chkHC6MG4Ch06.Name = "chkHC6MG4Ch06";
+            this.chkHC6MG4Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG4Ch06.TabIndex = 78;
+            this.chkHC6MG4Ch06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG3Ch06
+            // 
+            this.chkHC6MG3Ch06.AutoSize = true;
+            this.chkHC6MG3Ch06.Location = new System.Drawing.Point(638, 305);
+            this.chkHC6MG3Ch06.Name = "chkHC6MG3Ch06";
+            this.chkHC6MG3Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG3Ch06.TabIndex = 66;
+            this.chkHC6MG3Ch06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG2Ch06
+            // 
+            this.chkHC6MG2Ch06.AutoSize = true;
+            this.chkHC6MG2Ch06.Location = new System.Drawing.Point(638, 275);
+            this.chkHC6MG2Ch06.Name = "chkHC6MG2Ch06";
+            this.chkHC6MG2Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG2Ch06.TabIndex = 54;
+            this.chkHC6MG2Ch06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG1Ch06
+            // 
+            this.chkHC6MG1Ch06.AutoSize = true;
+            this.chkHC6MG1Ch06.Location = new System.Drawing.Point(638, 245);
+            this.chkHC6MG1Ch06.Name = "chkHC6MG1Ch06";
+            this.chkHC6MG1Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG1Ch06.TabIndex = 42;
+            this.chkHC6MG1Ch06.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG4Ch05
+            // 
+            this.chkHC6MG4Ch05.AutoSize = true;
+            this.chkHC6MG4Ch05.Location = new System.Drawing.Point(566, 335);
+            this.chkHC6MG4Ch05.Name = "chkHC6MG4Ch05";
+            this.chkHC6MG4Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG4Ch05.TabIndex = 77;
+            this.chkHC6MG4Ch05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG3Ch05
+            // 
+            this.chkHC6MG3Ch05.AutoSize = true;
+            this.chkHC6MG3Ch05.Location = new System.Drawing.Point(566, 305);
+            this.chkHC6MG3Ch05.Name = "chkHC6MG3Ch05";
+            this.chkHC6MG3Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG3Ch05.TabIndex = 65;
+            this.chkHC6MG3Ch05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG2Ch05
+            // 
+            this.chkHC6MG2Ch05.AutoSize = true;
+            this.chkHC6MG2Ch05.Location = new System.Drawing.Point(566, 275);
+            this.chkHC6MG2Ch05.Name = "chkHC6MG2Ch05";
+            this.chkHC6MG2Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG2Ch05.TabIndex = 53;
+            this.chkHC6MG2Ch05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG1Ch05
+            // 
+            this.chkHC6MG1Ch05.AutoSize = true;
+            this.chkHC6MG1Ch05.Location = new System.Drawing.Point(566, 245);
+            this.chkHC6MG1Ch05.Name = "chkHC6MG1Ch05";
+            this.chkHC6MG1Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG1Ch05.TabIndex = 41;
+            this.chkHC6MG1Ch05.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG4Ch04
+            // 
+            this.chkHC6MG4Ch04.AutoSize = true;
+            this.chkHC6MG4Ch04.Location = new System.Drawing.Point(494, 335);
+            this.chkHC6MG4Ch04.Name = "chkHC6MG4Ch04";
+            this.chkHC6MG4Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG4Ch04.TabIndex = 76;
+            this.chkHC6MG4Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG3Ch04
+            // 
+            this.chkHC6MG3Ch04.AutoSize = true;
+            this.chkHC6MG3Ch04.Location = new System.Drawing.Point(494, 305);
+            this.chkHC6MG3Ch04.Name = "chkHC6MG3Ch04";
+            this.chkHC6MG3Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG3Ch04.TabIndex = 64;
+            this.chkHC6MG3Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG2Ch04
+            // 
+            this.chkHC6MG2Ch04.AutoSize = true;
+            this.chkHC6MG2Ch04.Location = new System.Drawing.Point(494, 275);
+            this.chkHC6MG2Ch04.Name = "chkHC6MG2Ch04";
+            this.chkHC6MG2Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG2Ch04.TabIndex = 52;
+            this.chkHC6MG2Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG1Ch04
+            // 
+            this.chkHC6MG1Ch04.AutoSize = true;
+            this.chkHC6MG1Ch04.Location = new System.Drawing.Point(494, 245);
+            this.chkHC6MG1Ch04.Name = "chkHC6MG1Ch04";
+            this.chkHC6MG1Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG1Ch04.TabIndex = 40;
+            this.chkHC6MG1Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG4Ch03
+            // 
+            this.chkHC6MG4Ch03.AutoSize = true;
+            this.chkHC6MG4Ch03.Location = new System.Drawing.Point(422, 335);
+            this.chkHC6MG4Ch03.Name = "chkHC6MG4Ch03";
+            this.chkHC6MG4Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG4Ch03.TabIndex = 75;
+            this.chkHC6MG4Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG3Ch03
+            // 
+            this.chkHC6MG3Ch03.AutoSize = true;
+            this.chkHC6MG3Ch03.Location = new System.Drawing.Point(422, 305);
+            this.chkHC6MG3Ch03.Name = "chkHC6MG3Ch03";
+            this.chkHC6MG3Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG3Ch03.TabIndex = 63;
+            this.chkHC6MG3Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG2Ch03
+            // 
+            this.chkHC6MG2Ch03.AutoSize = true;
+            this.chkHC6MG2Ch03.Location = new System.Drawing.Point(422, 275);
+            this.chkHC6MG2Ch03.Name = "chkHC6MG2Ch03";
+            this.chkHC6MG2Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG2Ch03.TabIndex = 51;
+            this.chkHC6MG2Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG1Ch03
+            // 
+            this.chkHC6MG1Ch03.AutoSize = true;
+            this.chkHC6MG1Ch03.Location = new System.Drawing.Point(422, 245);
+            this.chkHC6MG1Ch03.Name = "chkHC6MG1Ch03";
+            this.chkHC6MG1Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG1Ch03.TabIndex = 39;
+            this.chkHC6MG1Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG4Ch02
+            // 
+            this.chkHC6MG4Ch02.AutoSize = true;
+            this.chkHC6MG4Ch02.Location = new System.Drawing.Point(350, 335);
+            this.chkHC6MG4Ch02.Name = "chkHC6MG4Ch02";
+            this.chkHC6MG4Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG4Ch02.TabIndex = 74;
+            this.chkHC6MG4Ch02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG3Ch02
+            // 
+            this.chkHC6MG3Ch02.AutoSize = true;
+            this.chkHC6MG3Ch02.Location = new System.Drawing.Point(350, 305);
+            this.chkHC6MG3Ch02.Name = "chkHC6MG3Ch02";
+            this.chkHC6MG3Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG3Ch02.TabIndex = 62;
+            this.chkHC6MG3Ch02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG2Ch02
+            // 
+            this.chkHC6MG2Ch02.AutoSize = true;
+            this.chkHC6MG2Ch02.Location = new System.Drawing.Point(350, 275);
+            this.chkHC6MG2Ch02.Name = "chkHC6MG2Ch02";
+            this.chkHC6MG2Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG2Ch02.TabIndex = 50;
+            this.chkHC6MG2Ch02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG1Ch02
+            // 
+            this.chkHC6MG1Ch02.AutoSize = true;
+            this.chkHC6MG1Ch02.Location = new System.Drawing.Point(350, 245);
+            this.chkHC6MG1Ch02.Name = "chkHC6MG1Ch02";
+            this.chkHC6MG1Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG1Ch02.TabIndex = 38;
+            this.chkHC6MG1Ch02.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG4Ch01
+            // 
+            this.chkHC6MG4Ch01.AutoSize = true;
+            this.chkHC6MG4Ch01.Location = new System.Drawing.Point(278, 335);
+            this.chkHC6MG4Ch01.Name = "chkHC6MG4Ch01";
+            this.chkHC6MG4Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG4Ch01.TabIndex = 73;
+            this.chkHC6MG4Ch01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG3Ch01
+            // 
+            this.chkHC6MG3Ch01.AutoSize = true;
+            this.chkHC6MG3Ch01.Location = new System.Drawing.Point(278, 305);
+            this.chkHC6MG3Ch01.Name = "chkHC6MG3Ch01";
+            this.chkHC6MG3Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG3Ch01.TabIndex = 61;
+            this.chkHC6MG3Ch01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG2Ch01
+            // 
+            this.chkHC6MG2Ch01.AutoSize = true;
+            this.chkHC6MG2Ch01.Location = new System.Drawing.Point(278, 275);
+            this.chkHC6MG2Ch01.Name = "chkHC6MG2Ch01";
+            this.chkHC6MG2Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG2Ch01.TabIndex = 49;
+            this.chkHC6MG2Ch01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG1Ch01
+            // 
+            this.chkHC6MG1Ch01.AutoSize = true;
+            this.chkHC6MG1Ch01.Location = new System.Drawing.Point(278, 245);
+            this.chkHC6MG1Ch01.Name = "chkHC6MG1Ch01";
+            this.chkHC6MG1Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG1Ch01.TabIndex = 37;
+            this.chkHC6MG1Ch01.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG4Ch00
+            // 
+            this.chkHC6MG4Ch00.AutoSize = true;
+            this.chkHC6MG4Ch00.Location = new System.Drawing.Point(206, 335);
+            this.chkHC6MG4Ch00.Name = "chkHC6MG4Ch00";
+            this.chkHC6MG4Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG4Ch00.TabIndex = 72;
+            this.chkHC6MG4Ch00.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG3Ch00
+            // 
+            this.chkHC6MG3Ch00.AutoSize = true;
+            this.chkHC6MG3Ch00.Location = new System.Drawing.Point(206, 305);
+            this.chkHC6MG3Ch00.Name = "chkHC6MG3Ch00";
+            this.chkHC6MG3Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG3Ch00.TabIndex = 60;
+            this.chkHC6MG3Ch00.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG2Ch00
+            // 
+            this.chkHC6MG2Ch00.AutoSize = true;
+            this.chkHC6MG2Ch00.Location = new System.Drawing.Point(206, 275);
+            this.chkHC6MG2Ch00.Name = "chkHC6MG2Ch00";
+            this.chkHC6MG2Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG2Ch00.TabIndex = 48;
+            this.chkHC6MG2Ch00.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6MG1Ch00
+            // 
+            this.chkHC6MG1Ch00.AutoSize = true;
+            this.chkHC6MG1Ch00.Location = new System.Drawing.Point(206, 245);
+            this.chkHC6MG1Ch00.Name = "chkHC6MG1Ch00";
+            this.chkHC6MG1Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC6MG1Ch00.TabIndex = 36;
+            this.chkHC6MG1Ch00.UseVisualStyleBackColor = true;
+            // 
+            // label274
+            // 
+            this.label274.AutoSize = true;
+            this.label274.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label274.ForeColor = System.Drawing.SystemColors.Control;
+            this.label274.Location = new System.Drawing.Point(3, 212);
+            this.label274.Name = "label274";
+            this.label274.Size = new System.Drawing.Size(164, 17);
+            this.label274.TabIndex = 402;
+            this.label274.Text = "Overcurrent Time Constant";
+            // 
+            // cmbHC6OCTime00
+            // 
+            this.cmbHC6OCTime00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCTime00.FormattingEnabled = true;
+            this.cmbHC6OCTime00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC6OCTime00.Location = new System.Drawing.Point(194, 210);
+            this.cmbHC6OCTime00.Name = "cmbHC6OCTime00";
+            this.cmbHC6OCTime00.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCTime00.TabIndex = 24;
+            // 
+            // cmbHC6OCTime01
+            // 
+            this.cmbHC6OCTime01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCTime01.FormattingEnabled = true;
+            this.cmbHC6OCTime01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC6OCTime01.Location = new System.Drawing.Point(266, 210);
+            this.cmbHC6OCTime01.Name = "cmbHC6OCTime01";
+            this.cmbHC6OCTime01.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCTime01.TabIndex = 25;
+            // 
+            // cmbHC6OCTime02
+            // 
+            this.cmbHC6OCTime02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCTime02.FormattingEnabled = true;
+            this.cmbHC6OCTime02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC6OCTime02.Location = new System.Drawing.Point(338, 210);
+            this.cmbHC6OCTime02.Name = "cmbHC6OCTime02";
+            this.cmbHC6OCTime02.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCTime02.TabIndex = 26;
+            // 
+            // cmbHC6OCTime03
+            // 
+            this.cmbHC6OCTime03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCTime03.FormattingEnabled = true;
+            this.cmbHC6OCTime03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC6OCTime03.Location = new System.Drawing.Point(410, 210);
+            this.cmbHC6OCTime03.Name = "cmbHC6OCTime03";
+            this.cmbHC6OCTime03.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCTime03.TabIndex = 27;
+            // 
+            // cmbHC6OCTime11
+            // 
+            this.cmbHC6OCTime11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCTime11.FormattingEnabled = true;
+            this.cmbHC6OCTime11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC6OCTime11.Location = new System.Drawing.Point(986, 210);
+            this.cmbHC6OCTime11.Name = "cmbHC6OCTime11";
+            this.cmbHC6OCTime11.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCTime11.TabIndex = 35;
+            // 
+            // cmbHC6OCTime04
+            // 
+            this.cmbHC6OCTime04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCTime04.FormattingEnabled = true;
+            this.cmbHC6OCTime04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC6OCTime04.Location = new System.Drawing.Point(482, 210);
+            this.cmbHC6OCTime04.Name = "cmbHC6OCTime04";
+            this.cmbHC6OCTime04.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCTime04.TabIndex = 28;
+            // 
+            // cmbHC6OCTime10
+            // 
+            this.cmbHC6OCTime10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCTime10.FormattingEnabled = true;
+            this.cmbHC6OCTime10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC6OCTime10.Location = new System.Drawing.Point(914, 210);
+            this.cmbHC6OCTime10.Name = "cmbHC6OCTime10";
+            this.cmbHC6OCTime10.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCTime10.TabIndex = 34;
+            // 
+            // cmbHC6OCTime05
+            // 
+            this.cmbHC6OCTime05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCTime05.FormattingEnabled = true;
+            this.cmbHC6OCTime05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC6OCTime05.Location = new System.Drawing.Point(554, 210);
+            this.cmbHC6OCTime05.Name = "cmbHC6OCTime05";
+            this.cmbHC6OCTime05.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCTime05.TabIndex = 29;
+            // 
+            // cmbHC6OCTime09
+            // 
+            this.cmbHC6OCTime09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCTime09.FormattingEnabled = true;
+            this.cmbHC6OCTime09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC6OCTime09.Location = new System.Drawing.Point(842, 210);
+            this.cmbHC6OCTime09.Name = "cmbHC6OCTime09";
+            this.cmbHC6OCTime09.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCTime09.TabIndex = 33;
+            // 
+            // cmbHC6OCTime06
+            // 
+            this.cmbHC6OCTime06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCTime06.FormattingEnabled = true;
+            this.cmbHC6OCTime06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC6OCTime06.Location = new System.Drawing.Point(626, 210);
+            this.cmbHC6OCTime06.Name = "cmbHC6OCTime06";
+            this.cmbHC6OCTime06.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCTime06.TabIndex = 30;
+            // 
+            // cmbHC6OCTime08
+            // 
+            this.cmbHC6OCTime08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCTime08.FormattingEnabled = true;
+            this.cmbHC6OCTime08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC6OCTime08.Location = new System.Drawing.Point(770, 210);
+            this.cmbHC6OCTime08.Name = "cmbHC6OCTime08";
+            this.cmbHC6OCTime08.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCTime08.TabIndex = 32;
+            // 
+            // cmbHC6OCTime07
+            // 
+            this.cmbHC6OCTime07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCTime07.FormattingEnabled = true;
+            this.cmbHC6OCTime07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbHC6OCTime07.Location = new System.Drawing.Point(698, 210);
+            this.cmbHC6OCTime07.Name = "cmbHC6OCTime07";
+            this.cmbHC6OCTime07.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCTime07.TabIndex = 31;
+            // 
+            // label275
+            // 
+            this.label275.AutoSize = true;
+            this.label275.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label275.ForeColor = System.Drawing.SystemColors.Control;
+            this.label275.Location = new System.Drawing.Point(3, 182);
+            this.label275.Name = "label275";
+            this.label275.Size = new System.Drawing.Size(114, 17);
+            this.label275.TabIndex = 401;
+            this.label275.Text = "Overcurrent Amps";
+            // 
+            // cmbHC6OCAmps00
+            // 
+            this.cmbHC6OCAmps00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6OCAmps00.FormattingEnabled = true;
+            this.cmbHC6OCAmps00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC6OCAmps00.Location = new System.Drawing.Point(194, 180);
+            this.cmbHC6OCAmps00.Name = "cmbHC6OCAmps00";
+            this.cmbHC6OCAmps00.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6OCAmps00.TabIndex = 12;
+            // 
+            // lblHC6Ch00
+            // 
+            this.lblHC6Ch00.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC6Ch00.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC6Ch00.Location = new System.Drawing.Point(194, 152);
+            this.lblHC6Ch00.Name = "lblHC6Ch00";
+            this.lblHC6Ch00.Size = new System.Drawing.Size(40, 20);
+            this.lblHC6Ch00.TabIndex = 389;
+            this.lblHC6Ch00.Text = "0";
+            this.lblHC6Ch00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC6Ch01
+            // 
+            this.lblHC6Ch01.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC6Ch01.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC6Ch01.Location = new System.Drawing.Point(266, 152);
+            this.lblHC6Ch01.Name = "lblHC6Ch01";
+            this.lblHC6Ch01.Size = new System.Drawing.Size(40, 20);
+            this.lblHC6Ch01.TabIndex = 390;
+            this.lblHC6Ch01.Text = "1";
+            this.lblHC6Ch01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC6Ch02
+            // 
+            this.lblHC6Ch02.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC6Ch02.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC6Ch02.Location = new System.Drawing.Point(338, 152);
+            this.lblHC6Ch02.Name = "lblHC6Ch02";
+            this.lblHC6Ch02.Size = new System.Drawing.Size(40, 20);
+            this.lblHC6Ch02.TabIndex = 391;
+            this.lblHC6Ch02.Text = "2";
+            this.lblHC6Ch02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC6Ch03
+            // 
+            this.lblHC6Ch03.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC6Ch03.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC6Ch03.Location = new System.Drawing.Point(410, 151);
+            this.lblHC6Ch03.Name = "lblHC6Ch03";
+            this.lblHC6Ch03.Size = new System.Drawing.Size(40, 20);
+            this.lblHC6Ch03.TabIndex = 392;
+            this.lblHC6Ch03.Text = "3";
+            this.lblHC6Ch03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC6Ch11
+            // 
+            this.lblHC6Ch11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC6Ch11.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC6Ch11.Location = new System.Drawing.Point(986, 152);
+            this.lblHC6Ch11.Name = "lblHC6Ch11";
+            this.lblHC6Ch11.Size = new System.Drawing.Size(40, 20);
+            this.lblHC6Ch11.TabIndex = 393;
+            this.lblHC6Ch11.Text = "11";
+            this.lblHC6Ch11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC6Ch10
+            // 
+            this.lblHC6Ch10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC6Ch10.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC6Ch10.Location = new System.Drawing.Point(914, 152);
+            this.lblHC6Ch10.Name = "lblHC6Ch10";
+            this.lblHC6Ch10.Size = new System.Drawing.Size(40, 20);
+            this.lblHC6Ch10.TabIndex = 394;
+            this.lblHC6Ch10.Text = "10";
+            this.lblHC6Ch10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC6Ch09
+            // 
+            this.lblHC6Ch09.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC6Ch09.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC6Ch09.Location = new System.Drawing.Point(842, 152);
+            this.lblHC6Ch09.Name = "lblHC6Ch09";
+            this.lblHC6Ch09.Size = new System.Drawing.Size(40, 20);
+            this.lblHC6Ch09.TabIndex = 395;
+            this.lblHC6Ch09.Text = "9";
+            this.lblHC6Ch09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC6Ch08
+            // 
+            this.lblHC6Ch08.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC6Ch08.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC6Ch08.Location = new System.Drawing.Point(770, 152);
+            this.lblHC6Ch08.Name = "lblHC6Ch08";
+            this.lblHC6Ch08.Size = new System.Drawing.Size(40, 20);
+            this.lblHC6Ch08.TabIndex = 396;
+            this.lblHC6Ch08.Text = "8";
+            this.lblHC6Ch08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC6Ch07
+            // 
+            this.lblHC6Ch07.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC6Ch07.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC6Ch07.Location = new System.Drawing.Point(698, 152);
+            this.lblHC6Ch07.Name = "lblHC6Ch07";
+            this.lblHC6Ch07.Size = new System.Drawing.Size(40, 20);
+            this.lblHC6Ch07.TabIndex = 397;
+            this.lblHC6Ch07.Text = "7";
+            this.lblHC6Ch07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC6Ch06
+            // 
+            this.lblHC6Ch06.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC6Ch06.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC6Ch06.Location = new System.Drawing.Point(626, 152);
+            this.lblHC6Ch06.Name = "lblHC6Ch06";
+            this.lblHC6Ch06.Size = new System.Drawing.Size(40, 20);
+            this.lblHC6Ch06.TabIndex = 398;
+            this.lblHC6Ch06.Text = "6";
+            this.lblHC6Ch06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC6Ch05
+            // 
+            this.lblHC6Ch05.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC6Ch05.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC6Ch05.Location = new System.Drawing.Point(554, 152);
+            this.lblHC6Ch05.Name = "lblHC6Ch05";
+            this.lblHC6Ch05.Size = new System.Drawing.Size(40, 20);
+            this.lblHC6Ch05.TabIndex = 399;
+            this.lblHC6Ch05.Text = "5";
+            this.lblHC6Ch05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHC6Ch04
+            // 
+            this.lblHC6Ch04.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC6Ch04.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHC6Ch04.Location = new System.Drawing.Point(482, 152);
+            this.lblHC6Ch04.Name = "lblHC6Ch04";
+            this.lblHC6Ch04.Size = new System.Drawing.Size(40, 20);
+            this.lblHC6Ch04.TabIndex = 400;
+            this.lblHC6Ch04.Text = "4";
+            this.lblHC6Ch04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // chkHC6RGB
+            // 
+            this.chkHC6RGB.AutoSize = true;
+            this.chkHC6RGB.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHC6RGB.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHC6RGB.Location = new System.Drawing.Point(261, 70);
+            this.chkHC6RGB.Name = "chkHC6RGB";
+            this.chkHC6RGB.Size = new System.Drawing.Size(51, 21);
+            this.chkHC6RGB.TabIndex = 6;
+            this.chkHC6RGB.Text = "RGB";
+            this.chkHC6RGB.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6Shade
+            // 
+            this.chkHC6Shade.AutoSize = true;
+            this.chkHC6Shade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHC6Shade.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHC6Shade.Location = new System.Drawing.Point(438, 70);
+            this.chkHC6Shade.Name = "chkHC6Shade";
+            this.chkHC6Shade.Size = new System.Drawing.Size(63, 21);
+            this.chkHC6Shade.TabIndex = 9;
+            this.chkHC6Shade.Text = "Shade";
+            this.chkHC6Shade.UseVisualStyleBackColor = true;
+            // 
+            // cmbHC6PanelNum
+            // 
+            this.cmbHC6PanelNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6PanelNum.FormattingEnabled = true;
+            this.cmbHC6PanelNum.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.cmbHC6PanelNum.Location = new System.Drawing.Point(260, 25);
+            this.cmbHC6PanelNum.Name = "cmbHC6PanelNum";
+            this.cmbHC6PanelNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6PanelNum.TabIndex = 2;
+            this.cmbHC6PanelNum.SelectedIndexChanged += new System.EventHandler(this.cmbHC6PanelNum_SelectedIndexChanged);
+            // 
+            // label294
+            // 
+            this.label294.AutoSize = true;
+            this.label294.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label294.ForeColor = System.Drawing.SystemColors.Control;
+            this.label294.Location = new System.Drawing.Point(3, 27);
+            this.label294.Name = "label294";
+            this.label294.Size = new System.Drawing.Size(100, 17);
+            this.label294.TabIndex = 383;
+            this.label294.Text = "Card # in Panel:";
+            // 
+            // cmbHC6CardNum
+            // 
+            this.cmbHC6CardNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC6CardNum.FormattingEnabled = true;
+            this.cmbHC6CardNum.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.cmbHC6CardNum.Location = new System.Drawing.Point(109, 25);
+            this.cmbHC6CardNum.Name = "cmbHC6CardNum";
+            this.cmbHC6CardNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbHC6CardNum.TabIndex = 1;
+            this.cmbHC6CardNum.SelectedIndexChanged += new System.EventHandler(this.cmbHC6CardNum_SelectedIndexChanged);
+            // 
+            // label295
+            // 
+            this.label295.AutoSize = true;
+            this.label295.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label295.ForeColor = System.Drawing.SystemColors.Control;
+            this.label295.Location = new System.Drawing.Point(200, 27);
+            this.label295.Name = "label295";
+            this.label295.Size = new System.Drawing.Size(54, 17);
+            this.label295.TabIndex = 384;
+            this.label295.Text = "Panel #:";
+            // 
+            // label296
+            // 
+            this.label296.AutoSize = true;
+            this.label296.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label296.ForeColor = System.Drawing.SystemColors.Control;
+            this.label296.Location = new System.Drawing.Point(339, 27);
+            this.label296.Name = "label296";
+            this.label296.Size = new System.Drawing.Size(74, 17);
+            this.label296.TabIndex = 385;
+            this.label296.Text = "Config Rev:";
+            // 
+            // tbxHC6CfgRev
+            // 
+            this.tbxHC6CfgRev.Location = new System.Drawing.Point(419, 25);
+            this.tbxHC6CfgRev.Name = "tbxHC6CfgRev";
+            this.tbxHC6CfgRev.Size = new System.Drawing.Size(32, 20);
+            this.tbxHC6CfgRev.TabIndex = 3;
+            this.tbxHC6CfgRev.Text = "1";
+            // 
+            // label297
+            // 
+            this.label297.AutoSize = true;
+            this.label297.BackColor = System.Drawing.Color.Transparent;
+            this.label297.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label297.ForeColor = System.Drawing.SystemColors.Control;
+            this.label297.Location = new System.Drawing.Point(509, 27);
+            this.label297.Name = "label297";
+            this.label297.Size = new System.Drawing.Size(101, 17);
+            this.label297.TabIndex = 386;
+            this.label297.Text = "Config Type:  0x";
+            // 
+            // tbxHC6CfgType
+            // 
+            this.tbxHC6CfgType.Location = new System.Drawing.Point(616, 26);
+            this.tbxHC6CfgType.MaxLength = 4;
+            this.tbxHC6CfgType.Name = "tbxHC6CfgType";
+            this.tbxHC6CfgType.Size = new System.Drawing.Size(48, 20);
+            this.tbxHC6CfgType.TabIndex = 4;
+            this.tbxHC6CfgType.Text = "0";
+            // 
+            // label298
+            // 
+            this.label298.AutoSize = true;
+            this.label298.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label298.ForeColor = System.Drawing.SystemColors.Control;
+            this.label298.Location = new System.Drawing.Point(3, 71);
+            this.label298.Name = "label298";
+            this.label298.Size = new System.Drawing.Size(151, 17);
+            this.label298.TabIndex = 387;
+            this.label298.Text = "Enable Command Types:";
+            // 
+            // chkHC6DCDimmer
+            // 
+            this.chkHC6DCDimmer.AutoSize = true;
+            this.chkHC6DCDimmer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHC6DCDimmer.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHC6DCDimmer.Location = new System.Drawing.Point(328, 70);
+            this.chkHC6DCDimmer.Name = "chkHC6DCDimmer";
+            this.chkHC6DCDimmer.Size = new System.Drawing.Size(94, 21);
+            this.chkHC6DCDimmer.TabIndex = 7;
+            this.chkHC6DCDimmer.Text = "DC Dimmer";
+            this.chkHC6DCDimmer.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6DCMotor
+            // 
+            this.chkHC6DCMotor.AutoSize = true;
+            this.chkHC6DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHC6DCMotor.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHC6DCMotor.Location = new System.Drawing.Point(160, 70);
+            this.chkHC6DCMotor.Name = "chkHC6DCMotor";
+            this.chkHC6DCMotor.Size = new System.Drawing.Size(85, 21);
+            this.chkHC6DCMotor.TabIndex = 5;
+            this.chkHC6DCMotor.Text = "DC Motor";
+            this.chkHC6DCMotor.UseVisualStyleBackColor = true;
+            // 
+            // chkHC6Force
+            // 
+            this.chkHC6Force.AutoSize = true;
+            this.chkHC6Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHC6Force.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHC6Force.Location = new System.Drawing.Point(517, 70);
+            this.chkHC6Force.Name = "chkHC6Force";
+            this.chkHC6Force.Size = new System.Drawing.Size(129, 21);
+            this.chkHC6Force.TabIndex = 10;
+            this.chkHC6Force.Text = "Force Commands";
+            this.chkHC6Force.UseVisualStyleBackColor = true;
+            // 
+            // label299
+            // 
+            this.label299.AutoSize = true;
+            this.label299.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label299.ForeColor = System.Drawing.SystemColors.Control;
+            this.label299.Location = new System.Drawing.Point(3, 115);
+            this.label299.Name = "label299";
+            this.label299.Size = new System.Drawing.Size(139, 17);
+            this.label299.TabIndex = 388;
+            this.label299.Text = "Base Channel Instance:";
+            // 
+            // tbxHC6BaseIndex
+            // 
+            this.tbxHC6BaseIndex.Location = new System.Drawing.Point(148, 112);
+            this.tbxHC6BaseIndex.Name = "tbxHC6BaseIndex";
+            this.tbxHC6BaseIndex.Size = new System.Drawing.Size(32, 20);
+            this.tbxHC6BaseIndex.TabIndex = 11;
+            this.tbxHC6BaseIndex.TextChanged += new System.EventHandler(this.tbxHC6BaseIndex_TextChanged);
+            // 
+            // tabHCGenerated
+            // 
+            this.tabHCGenerated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabHCGenerated.Controls.Add(this.label278);
+            this.tabHCGenerated.Controls.Add(this.tbxHCGenerated);
+            this.tabHCGenerated.Location = new System.Drawing.Point(4, 22);
+            this.tabHCGenerated.Name = "tabHCGenerated";
+            this.tabHCGenerated.Size = new System.Drawing.Size(1376, 733);
+            this.tabHCGenerated.TabIndex = 5;
+            this.tabHCGenerated.Text = "Generated";
+            // 
+            // label278
+            // 
+            this.label278.AutoSize = true;
+            this.label278.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label278.ForeColor = System.Drawing.SystemColors.Control;
+            this.label278.Location = new System.Drawing.Point(5, 26);
+            this.label278.Name = "label278";
+            this.label278.Size = new System.Drawing.Size(289, 21);
+            this.label278.TabIndex = 3;
+            this.label278.Text = "These files are now present in the folder:";
+            // 
+            // tbxHCGenerated
+            // 
+            this.tbxHCGenerated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tbxHCGenerated.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxHCGenerated.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxHCGenerated.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbxHCGenerated.Location = new System.Drawing.Point(9, 50);
+            this.tbxHCGenerated.Multiline = true;
+            this.tbxHCGenerated.Name = "tbxHCGenerated";
+            this.tbxHCGenerated.ReadOnly = true;
+            this.tbxHCGenerated.Size = new System.Drawing.Size(600, 200);
+            this.tbxHCGenerated.TabIndex = 2;
             // 
             // tabMainLC
             // 
@@ -22656,6 +32255,7 @@ namespace M1ConfigGenerator
             this.tabControlLC.Controls.Add(this.tabLC4);
             this.tabControlLC.Controls.Add(this.tabLC5);
             this.tabControlLC.Controls.Add(this.tabLC6);
+            this.tabControlLC.Controls.Add(this.tabLCGenerated);
             this.tabControlLC.Location = new System.Drawing.Point(0, 70);
             this.tabControlLC.Name = "tabControlLC";
             this.tabControlLC.SelectedIndex = 0;
@@ -22675,6 +32275,7 @@ namespace M1ConfigGenerator
             // tabLC1
             // 
             this.tabLC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabLC1.Controls.Add(this.chkLC1Standalone);
             this.tabLC1.Controls.Add(this.chkLC1MG4Ch15);
             this.tabLC1.Controls.Add(this.chkLC1MG3Ch15);
             this.tabLC1.Controls.Add(this.chkLC1MG2Ch15);
@@ -22723,7 +32324,6 @@ namespace M1ConfigGenerator
             this.tabLC1.Controls.Add(this.chkLC1MG1Ch10);
             this.tabLC1.Controls.Add(this.label229);
             this.tabLC1.Controls.Add(this.chkLC1MG4Ch09);
-            this.tabLC1.Controls.Add(this.chkLC1DCDriver);
             this.tabLC1.Controls.Add(this.chkLC1MG3Ch09);
             this.tabLC1.Controls.Add(this.chkLC1DCMotor);
             this.tabLC1.Controls.Add(this.chkLC1MG2Ch09);
@@ -22816,6 +32416,19 @@ namespace M1ConfigGenerator
             this.tabLC1.Size = new System.Drawing.Size(1376, 733);
             this.tabLC1.TabIndex = 1;
             this.tabLC1.Text = "LC 1";
+            // 
+            // chkLC1Standalone
+            // 
+            this.chkLC1Standalone.AutoSize = true;
+            this.chkLC1Standalone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLC1Standalone.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkLC1Standalone.Location = new System.Drawing.Point(746, 26);
+            this.chkLC1Standalone.Name = "chkLC1Standalone";
+            this.chkLC1Standalone.Size = new System.Drawing.Size(164, 21);
+            this.chkLC1Standalone.TabIndex = 111;
+            this.chkLC1Standalone.Text = "Standalone Shade Card";
+            this.chkLC1Standalone.UseVisualStyleBackColor = true;
+            this.chkLC1Standalone.CheckedChanged += new System.EventHandler(this.chkLC1Standalone_CheckedChanged);
             // 
             // chkLC1MG4Ch15
             // 
@@ -23126,7 +32739,7 @@ namespace M1ConfigGenerator
             this.chkLC1DCDimmer.AutoSize = true;
             this.chkLC1DCDimmer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC1DCDimmer.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC1DCDimmer.Location = new System.Drawing.Point(474, 70);
+            this.chkLC1DCDimmer.Location = new System.Drawing.Point(361, 70);
             this.chkLC1DCDimmer.Name = "chkLC1DCDimmer";
             this.chkLC1DCDimmer.Size = new System.Drawing.Size(94, 21);
             this.chkLC1DCDimmer.TabIndex = 8;
@@ -23146,15 +32759,23 @@ namespace M1ConfigGenerator
             // tabLC1Quick
             // 
             this.tabLC1Quick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabLC1Quick.Controls.Add(this.chkLC1QuickPair1415);
-            this.tabLC1Quick.Controls.Add(this.chkLC1QuickPair1213);
-            this.tabLC1Quick.Controls.Add(this.chkLC1QuickPair1011);
-            this.tabLC1Quick.Controls.Add(this.chkLC1QuickPair0809);
-            this.tabLC1Quick.Controls.Add(this.chkLC1QuickPair0607);
-            this.tabLC1Quick.Controls.Add(this.chkLC1QuickPair0405);
-            this.tabLC1Quick.Controls.Add(this.chkLC1QuickPair0203);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode15);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode14);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode13);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode12);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode11);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode10);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode09);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode08);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode07);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode06);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode05);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode04);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode03);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode02);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode01);
+            this.tabLC1Quick.Controls.Add(this.cmbLC1Mode00);
             this.tabLC1Quick.Controls.Add(this.label210);
-            this.tabLC1Quick.Controls.Add(this.chkLC1QuickPair0001);
             this.tabLC1Quick.Location = new System.Drawing.Point(4, 22);
             this.tabLC1Quick.Name = "tabLC1Quick";
             this.tabLC1Quick.Padding = new System.Windows.Forms.Padding(3);
@@ -23162,75 +32783,227 @@ namespace M1ConfigGenerator
             this.tabLC1Quick.TabIndex = 0;
             this.tabLC1Quick.Text = "LC 1 Quick";
             // 
-            // chkLC1QuickPair1415
+            // cmbLC1Mode15
             // 
-            this.chkLC1QuickPair1415.AutoSize = true;
-            this.chkLC1QuickPair1415.Location = new System.Drawing.Point(1214, 6);
-            this.chkLC1QuickPair1415.Name = "chkLC1QuickPair1415";
-            this.chkLC1QuickPair1415.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1QuickPair1415.TabIndex = 114;
-            this.chkLC1QuickPair1415.UseVisualStyleBackColor = true;
-            this.chkLC1QuickPair1415.CheckStateChanged += new System.EventHandler(this.chkLC1QuickPair1415_CheckStateChanged);
+            this.cmbLC1Mode15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode15.FormattingEnabled = true;
+            this.cmbLC1Mode15.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP DN"});
+            this.cmbLC1Mode15.Location = new System.Drawing.Point(1262, 3);
+            this.cmbLC1Mode15.Name = "cmbLC1Mode15";
+            this.cmbLC1Mode15.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode15.TabIndex = 151;
             // 
-            // chkLC1QuickPair1213
+            // cmbLC1Mode14
             // 
-            this.chkLC1QuickPair1213.AutoSize = true;
-            this.chkLC1QuickPair1213.Location = new System.Drawing.Point(1070, 6);
-            this.chkLC1QuickPair1213.Name = "chkLC1QuickPair1213";
-            this.chkLC1QuickPair1213.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1QuickPair1213.TabIndex = 113;
-            this.chkLC1QuickPair1213.UseVisualStyleBackColor = true;
-            this.chkLC1QuickPair1213.CheckStateChanged += new System.EventHandler(this.chkLC1QuickPair1213_CheckStateChanged);
+            this.cmbLC1Mode14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode14.FormattingEnabled = true;
+            this.cmbLC1Mode14.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode14.Location = new System.Drawing.Point(1190, 3);
+            this.cmbLC1Mode14.Name = "cmbLC1Mode14";
+            this.cmbLC1Mode14.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode14.TabIndex = 150;
             // 
-            // chkLC1QuickPair1011
+            // cmbLC1Mode13
             // 
-            this.chkLC1QuickPair1011.AutoSize = true;
-            this.chkLC1QuickPair1011.Location = new System.Drawing.Point(926, 6);
-            this.chkLC1QuickPair1011.Name = "chkLC1QuickPair1011";
-            this.chkLC1QuickPair1011.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1QuickPair1011.TabIndex = 112;
-            this.chkLC1QuickPair1011.UseVisualStyleBackColor = true;
-            this.chkLC1QuickPair1011.CheckStateChanged += new System.EventHandler(this.chkLC1QuickPair1011_CheckStateChanged);
+            this.cmbLC1Mode13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode13.FormattingEnabled = true;
+            this.cmbLC1Mode13.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode13.Location = new System.Drawing.Point(1118, 3);
+            this.cmbLC1Mode13.Name = "cmbLC1Mode13";
+            this.cmbLC1Mode13.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode13.TabIndex = 149;
             // 
-            // chkLC1QuickPair0809
+            // cmbLC1Mode12
             // 
-            this.chkLC1QuickPair0809.AutoSize = true;
-            this.chkLC1QuickPair0809.Location = new System.Drawing.Point(782, 6);
-            this.chkLC1QuickPair0809.Name = "chkLC1QuickPair0809";
-            this.chkLC1QuickPair0809.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1QuickPair0809.TabIndex = 111;
-            this.chkLC1QuickPair0809.UseVisualStyleBackColor = true;
-            this.chkLC1QuickPair0809.CheckStateChanged += new System.EventHandler(this.chkLC1QuickPair0809_CheckStateChanged);
+            this.cmbLC1Mode12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode12.FormattingEnabled = true;
+            this.cmbLC1Mode12.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode12.Location = new System.Drawing.Point(1046, 3);
+            this.cmbLC1Mode12.Name = "cmbLC1Mode12";
+            this.cmbLC1Mode12.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode12.TabIndex = 148;
             // 
-            // chkLC1QuickPair0607
+            // cmbLC1Mode11
             // 
-            this.chkLC1QuickPair0607.AutoSize = true;
-            this.chkLC1QuickPair0607.Location = new System.Drawing.Point(638, 6);
-            this.chkLC1QuickPair0607.Name = "chkLC1QuickPair0607";
-            this.chkLC1QuickPair0607.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1QuickPair0607.TabIndex = 110;
-            this.chkLC1QuickPair0607.UseVisualStyleBackColor = true;
-            this.chkLC1QuickPair0607.CheckStateChanged += new System.EventHandler(this.chkLC1QuickPair0607_CheckStateChanged);
+            this.cmbLC1Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode11.FormattingEnabled = true;
+            this.cmbLC1Mode11.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode11.Location = new System.Drawing.Point(974, 3);
+            this.cmbLC1Mode11.Name = "cmbLC1Mode11";
+            this.cmbLC1Mode11.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode11.TabIndex = 147;
             // 
-            // chkLC1QuickPair0405
+            // cmbLC1Mode10
             // 
-            this.chkLC1QuickPair0405.AutoSize = true;
-            this.chkLC1QuickPair0405.Location = new System.Drawing.Point(494, 6);
-            this.chkLC1QuickPair0405.Name = "chkLC1QuickPair0405";
-            this.chkLC1QuickPair0405.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1QuickPair0405.TabIndex = 109;
-            this.chkLC1QuickPair0405.UseVisualStyleBackColor = true;
-            this.chkLC1QuickPair0405.CheckStateChanged += new System.EventHandler(this.chkLC1QuickPair0405_CheckStateChanged);
+            this.cmbLC1Mode10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode10.FormattingEnabled = true;
+            this.cmbLC1Mode10.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode10.Location = new System.Drawing.Point(902, 3);
+            this.cmbLC1Mode10.Name = "cmbLC1Mode10";
+            this.cmbLC1Mode10.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode10.TabIndex = 146;
             // 
-            // chkLC1QuickPair0203
+            // cmbLC1Mode09
             // 
-            this.chkLC1QuickPair0203.AutoSize = true;
-            this.chkLC1QuickPair0203.Location = new System.Drawing.Point(350, 6);
-            this.chkLC1QuickPair0203.Name = "chkLC1QuickPair0203";
-            this.chkLC1QuickPair0203.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1QuickPair0203.TabIndex = 108;
-            this.chkLC1QuickPair0203.UseVisualStyleBackColor = true;
-            this.chkLC1QuickPair0203.CheckStateChanged += new System.EventHandler(this.chkLC1QuickPair0203_CheckStateChanged);
+            this.cmbLC1Mode09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode09.FormattingEnabled = true;
+            this.cmbLC1Mode09.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode09.Location = new System.Drawing.Point(830, 3);
+            this.cmbLC1Mode09.Name = "cmbLC1Mode09";
+            this.cmbLC1Mode09.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode09.TabIndex = 145;
+            // 
+            // cmbLC1Mode08
+            // 
+            this.cmbLC1Mode08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode08.FormattingEnabled = true;
+            this.cmbLC1Mode08.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode08.Location = new System.Drawing.Point(758, 3);
+            this.cmbLC1Mode08.Name = "cmbLC1Mode08";
+            this.cmbLC1Mode08.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode08.TabIndex = 144;
+            // 
+            // cmbLC1Mode07
+            // 
+            this.cmbLC1Mode07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode07.FormattingEnabled = true;
+            this.cmbLC1Mode07.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode07.Location = new System.Drawing.Point(686, 3);
+            this.cmbLC1Mode07.Name = "cmbLC1Mode07";
+            this.cmbLC1Mode07.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode07.TabIndex = 143;
+            // 
+            // cmbLC1Mode06
+            // 
+            this.cmbLC1Mode06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode06.FormattingEnabled = true;
+            this.cmbLC1Mode06.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode06.Location = new System.Drawing.Point(614, 3);
+            this.cmbLC1Mode06.Name = "cmbLC1Mode06";
+            this.cmbLC1Mode06.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode06.TabIndex = 142;
+            // 
+            // cmbLC1Mode05
+            // 
+            this.cmbLC1Mode05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode05.FormattingEnabled = true;
+            this.cmbLC1Mode05.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode05.Location = new System.Drawing.Point(542, 3);
+            this.cmbLC1Mode05.Name = "cmbLC1Mode05";
+            this.cmbLC1Mode05.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode05.TabIndex = 141;
+            // 
+            // cmbLC1Mode04
+            // 
+            this.cmbLC1Mode04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode04.FormattingEnabled = true;
+            this.cmbLC1Mode04.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode04.Location = new System.Drawing.Point(471, 3);
+            this.cmbLC1Mode04.Name = "cmbLC1Mode04";
+            this.cmbLC1Mode04.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode04.TabIndex = 140;
+            // 
+            // cmbLC1Mode03
+            // 
+            this.cmbLC1Mode03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode03.FormattingEnabled = true;
+            this.cmbLC1Mode03.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode03.Location = new System.Drawing.Point(399, 3);
+            this.cmbLC1Mode03.Name = "cmbLC1Mode03";
+            this.cmbLC1Mode03.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode03.TabIndex = 139;
+            // 
+            // cmbLC1Mode02
+            // 
+            this.cmbLC1Mode02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode02.FormattingEnabled = true;
+            this.cmbLC1Mode02.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode02.Location = new System.Drawing.Point(327, 3);
+            this.cmbLC1Mode02.Name = "cmbLC1Mode02";
+            this.cmbLC1Mode02.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode02.TabIndex = 138;
+            // 
+            // cmbLC1Mode01
+            // 
+            this.cmbLC1Mode01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode01.FormattingEnabled = true;
+            this.cmbLC1Mode01.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC1Mode01.Location = new System.Drawing.Point(255, 3);
+            this.cmbLC1Mode01.Name = "cmbLC1Mode01";
+            this.cmbLC1Mode01.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode01.TabIndex = 137;
+            // 
+            // cmbLC1Mode00
+            // 
+            this.cmbLC1Mode00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1Mode00.FormattingEnabled = true;
+            this.cmbLC1Mode00.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP"});
+            this.cmbLC1Mode00.Location = new System.Drawing.Point(183, 3);
+            this.cmbLC1Mode00.Name = "cmbLC1Mode00";
+            this.cmbLC1Mode00.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode00.TabIndex = 136;
             // 
             // label210
             // 
@@ -23239,21 +33012,9 @@ namespace M1ConfigGenerator
             this.label210.ForeColor = System.Drawing.SystemColors.Control;
             this.label210.Location = new System.Drawing.Point(3, 3);
             this.label210.Name = "label210";
-            this.label210.Size = new System.Drawing.Size(165, 17);
+            this.label210.Size = new System.Drawing.Size(126, 17);
             this.label210.TabIndex = 135;
-            this.label210.Text = "Pair with Next Channel (RP)";
-            // 
-            // chkLC1QuickPair0001
-            // 
-            this.chkLC1QuickPair0001.AutoSize = true;
-            this.chkLC1QuickPair0001.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC1QuickPair0001.ForeColor = System.Drawing.Color.Red;
-            this.chkLC1QuickPair0001.Location = new System.Drawing.Point(206, 6);
-            this.chkLC1QuickPair0001.Name = "chkLC1QuickPair0001";
-            this.chkLC1QuickPair0001.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1QuickPair0001.TabIndex = 107;
-            this.chkLC1QuickPair0001.UseVisualStyleBackColor = true;
-            this.chkLC1QuickPair0001.CheckStateChanged += new System.EventHandler(this.chkLC1QuickPair0001_CheckStateChanged);
+            this.label210.Text = "Mode (Output Type)";
             // 
             // tabLC1Full
             // 
@@ -25171,7 +34932,9 @@ namespace M1ConfigGenerator
             "3",
             "4",
             "5",
-            "6"});
+            "6",
+            "7",
+            "8"});
             this.cmbLC1PanelNum.Location = new System.Drawing.Point(260, 25);
             this.cmbLC1PanelNum.Name = "cmbLC1PanelNum";
             this.cmbLC1PanelNum.Size = new System.Drawing.Size(40, 21);
@@ -25351,18 +35114,6 @@ namespace M1ConfigGenerator
             this.chkLC1MG4Ch09.TabIndex = 100;
             this.chkLC1MG4Ch09.UseVisualStyleBackColor = true;
             // 
-            // chkLC1DCDriver
-            // 
-            this.chkLC1DCDriver.AutoSize = true;
-            this.chkLC1DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC1DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC1DCDriver.Location = new System.Drawing.Point(247, 70);
-            this.chkLC1DCDriver.Name = "chkLC1DCDriver";
-            this.chkLC1DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkLC1DCDriver.TabIndex = 6;
-            this.chkLC1DCDriver.Text = "DC Driver";
-            this.chkLC1DCDriver.UseVisualStyleBackColor = true;
-            // 
             // chkLC1MG3Ch09
             // 
             this.chkLC1MG3Ch09.AutoSize = true;
@@ -25377,7 +35128,7 @@ namespace M1ConfigGenerator
             this.chkLC1DCMotor.AutoSize = true;
             this.chkLC1DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC1DCMotor.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC1DCMotor.Location = new System.Drawing.Point(360, 70);
+            this.chkLC1DCMotor.Location = new System.Drawing.Point(247, 70);
             this.chkLC1DCMotor.Name = "chkLC1DCMotor";
             this.chkLC1DCMotor.Size = new System.Drawing.Size(85, 21);
             this.chkLC1DCMotor.TabIndex = 7;
@@ -25419,7 +35170,7 @@ namespace M1ConfigGenerator
             this.chkLC1Force.AutoSize = true;
             this.chkLC1Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC1Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC1Force.Location = new System.Drawing.Point(592, 70);
+            this.chkLC1Force.Location = new System.Drawing.Point(479, 70);
             this.chkLC1Force.Name = "chkLC1Force";
             this.chkLC1Force.Size = new System.Drawing.Size(129, 21);
             this.chkLC1Force.TabIndex = 9;
@@ -26318,6 +36069,7 @@ namespace M1ConfigGenerator
             // tabLC2
             // 
             this.tabLC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabLC2.Controls.Add(this.chkLC2Standalone);
             this.tabLC2.Controls.Add(this.lblLC2Ch15);
             this.tabLC2.Controls.Add(this.lblLC2Ch14);
             this.tabLC2.Controls.Add(this.lblLC2Ch13);
@@ -26432,7 +36184,6 @@ namespace M1ConfigGenerator
             this.tabLC2.Controls.Add(this.cmbLC2CardNum);
             this.tabLC2.Controls.Add(this.chkLC2DCMotor);
             this.tabLC2.Controls.Add(this.label88);
-            this.tabLC2.Controls.Add(this.chkLC2DCDriver);
             this.tabLC2.Controls.Add(this.label87);
             this.tabLC2.Controls.Add(this.cmbLC2PanelNum);
             this.tabLC2.Controls.Add(this.tbxLC2CfgRev);
@@ -26458,6 +36209,19 @@ namespace M1ConfigGenerator
             this.tabLC2.Size = new System.Drawing.Size(1376, 733);
             this.tabLC2.TabIndex = 2;
             this.tabLC2.Text = "LC 2";
+            // 
+            // chkLC2Standalone
+            // 
+            this.chkLC2Standalone.AutoSize = true;
+            this.chkLC2Standalone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLC2Standalone.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkLC2Standalone.Location = new System.Drawing.Point(746, 26);
+            this.chkLC2Standalone.Name = "chkLC2Standalone";
+            this.chkLC2Standalone.Size = new System.Drawing.Size(164, 21);
+            this.chkLC2Standalone.TabIndex = 220;
+            this.chkLC2Standalone.Text = "Standalone Shade Card";
+            this.chkLC2Standalone.UseVisualStyleBackColor = true;
+            this.chkLC2Standalone.CheckedChanged += new System.EventHandler(this.chkLC2Standalone_CheckedChanged);
             // 
             // lblLC2Ch15
             // 
@@ -27622,15 +37386,23 @@ namespace M1ConfigGenerator
             // tabLC2Quick
             // 
             this.tabLC2Quick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabLC2Quick.Controls.Add(this.chkLC2QuickPair1415);
-            this.tabLC2Quick.Controls.Add(this.chkLC2QuickPair1213);
-            this.tabLC2Quick.Controls.Add(this.chkLC2QuickPair1011);
-            this.tabLC2Quick.Controls.Add(this.chkLC2QuickPair0809);
-            this.tabLC2Quick.Controls.Add(this.chkLC2QuickPair0607);
-            this.tabLC2Quick.Controls.Add(this.chkLC2QuickPair0405);
-            this.tabLC2Quick.Controls.Add(this.chkLC2QuickPair0203);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode15);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode14);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode13);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode12);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode11);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode10);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode09);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode08);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode07);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode06);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode05);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode04);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode03);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode02);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode01);
+            this.tabLC2Quick.Controls.Add(this.cmbLC2Mode00);
             this.tabLC2Quick.Controls.Add(this.label211);
-            this.tabLC2Quick.Controls.Add(this.chkLC2QuickPair0001);
             this.tabLC2Quick.Location = new System.Drawing.Point(4, 22);
             this.tabLC2Quick.Name = "tabLC2Quick";
             this.tabLC2Quick.Padding = new System.Windows.Forms.Padding(3);
@@ -27638,68 +37410,227 @@ namespace M1ConfigGenerator
             this.tabLC2Quick.TabIndex = 0;
             this.tabLC2Quick.Text = "LC 2 Quick";
             // 
-            // chkLC2QuickPair1415
+            // cmbLC2Mode15
             // 
-            this.chkLC2QuickPair1415.AutoSize = true;
-            this.chkLC2QuickPair1415.Location = new System.Drawing.Point(1214, 6);
-            this.chkLC2QuickPair1415.Name = "chkLC2QuickPair1415";
-            this.chkLC2QuickPair1415.Size = new System.Drawing.Size(15, 14);
-            this.chkLC2QuickPair1415.TabIndex = 114;
-            this.chkLC2QuickPair1415.UseVisualStyleBackColor = true;
+            this.cmbLC2Mode15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode15.FormattingEnabled = true;
+            this.cmbLC2Mode15.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP DN"});
+            this.cmbLC2Mode15.Location = new System.Drawing.Point(1262, 3);
+            this.cmbLC2Mode15.Name = "cmbLC2Mode15";
+            this.cmbLC2Mode15.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode15.TabIndex = 167;
             // 
-            // chkLC2QuickPair1213
+            // cmbLC2Mode14
             // 
-            this.chkLC2QuickPair1213.AutoSize = true;
-            this.chkLC2QuickPair1213.Location = new System.Drawing.Point(1070, 6);
-            this.chkLC2QuickPair1213.Name = "chkLC2QuickPair1213";
-            this.chkLC2QuickPair1213.Size = new System.Drawing.Size(15, 14);
-            this.chkLC2QuickPair1213.TabIndex = 113;
-            this.chkLC2QuickPair1213.UseVisualStyleBackColor = true;
+            this.cmbLC2Mode14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode14.FormattingEnabled = true;
+            this.cmbLC2Mode14.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode14.Location = new System.Drawing.Point(1190, 3);
+            this.cmbLC2Mode14.Name = "cmbLC2Mode14";
+            this.cmbLC2Mode14.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode14.TabIndex = 166;
             // 
-            // chkLC2QuickPair1011
+            // cmbLC2Mode13
             // 
-            this.chkLC2QuickPair1011.AutoSize = true;
-            this.chkLC2QuickPair1011.Location = new System.Drawing.Point(926, 6);
-            this.chkLC2QuickPair1011.Name = "chkLC2QuickPair1011";
-            this.chkLC2QuickPair1011.Size = new System.Drawing.Size(15, 14);
-            this.chkLC2QuickPair1011.TabIndex = 112;
-            this.chkLC2QuickPair1011.UseVisualStyleBackColor = true;
+            this.cmbLC2Mode13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode13.FormattingEnabled = true;
+            this.cmbLC2Mode13.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode13.Location = new System.Drawing.Point(1118, 3);
+            this.cmbLC2Mode13.Name = "cmbLC2Mode13";
+            this.cmbLC2Mode13.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode13.TabIndex = 165;
             // 
-            // chkLC2QuickPair0809
+            // cmbLC2Mode12
             // 
-            this.chkLC2QuickPair0809.AutoSize = true;
-            this.chkLC2QuickPair0809.Location = new System.Drawing.Point(782, 6);
-            this.chkLC2QuickPair0809.Name = "chkLC2QuickPair0809";
-            this.chkLC2QuickPair0809.Size = new System.Drawing.Size(15, 14);
-            this.chkLC2QuickPair0809.TabIndex = 111;
-            this.chkLC2QuickPair0809.UseVisualStyleBackColor = true;
+            this.cmbLC2Mode12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode12.FormattingEnabled = true;
+            this.cmbLC2Mode12.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode12.Location = new System.Drawing.Point(1046, 3);
+            this.cmbLC2Mode12.Name = "cmbLC2Mode12";
+            this.cmbLC2Mode12.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode12.TabIndex = 164;
             // 
-            // chkLC2QuickPair0607
+            // cmbLC2Mode11
             // 
-            this.chkLC2QuickPair0607.AutoSize = true;
-            this.chkLC2QuickPair0607.Location = new System.Drawing.Point(638, 6);
-            this.chkLC2QuickPair0607.Name = "chkLC2QuickPair0607";
-            this.chkLC2QuickPair0607.Size = new System.Drawing.Size(15, 14);
-            this.chkLC2QuickPair0607.TabIndex = 110;
-            this.chkLC2QuickPair0607.UseVisualStyleBackColor = true;
+            this.cmbLC2Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode11.FormattingEnabled = true;
+            this.cmbLC2Mode11.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode11.Location = new System.Drawing.Point(974, 3);
+            this.cmbLC2Mode11.Name = "cmbLC2Mode11";
+            this.cmbLC2Mode11.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode11.TabIndex = 163;
             // 
-            // chkLC2QuickPair0405
+            // cmbLC2Mode10
             // 
-            this.chkLC2QuickPair0405.AutoSize = true;
-            this.chkLC2QuickPair0405.Location = new System.Drawing.Point(494, 6);
-            this.chkLC2QuickPair0405.Name = "chkLC2QuickPair0405";
-            this.chkLC2QuickPair0405.Size = new System.Drawing.Size(15, 14);
-            this.chkLC2QuickPair0405.TabIndex = 109;
-            this.chkLC2QuickPair0405.UseVisualStyleBackColor = true;
+            this.cmbLC2Mode10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode10.FormattingEnabled = true;
+            this.cmbLC2Mode10.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode10.Location = new System.Drawing.Point(902, 3);
+            this.cmbLC2Mode10.Name = "cmbLC2Mode10";
+            this.cmbLC2Mode10.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode10.TabIndex = 162;
             // 
-            // chkLC2QuickPair0203
+            // cmbLC2Mode09
             // 
-            this.chkLC2QuickPair0203.AutoSize = true;
-            this.chkLC2QuickPair0203.Location = new System.Drawing.Point(350, 6);
-            this.chkLC2QuickPair0203.Name = "chkLC2QuickPair0203";
-            this.chkLC2QuickPair0203.Size = new System.Drawing.Size(15, 14);
-            this.chkLC2QuickPair0203.TabIndex = 108;
-            this.chkLC2QuickPair0203.UseVisualStyleBackColor = true;
+            this.cmbLC2Mode09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode09.FormattingEnabled = true;
+            this.cmbLC2Mode09.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode09.Location = new System.Drawing.Point(830, 3);
+            this.cmbLC2Mode09.Name = "cmbLC2Mode09";
+            this.cmbLC2Mode09.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode09.TabIndex = 161;
+            // 
+            // cmbLC2Mode08
+            // 
+            this.cmbLC2Mode08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode08.FormattingEnabled = true;
+            this.cmbLC2Mode08.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode08.Location = new System.Drawing.Point(758, 3);
+            this.cmbLC2Mode08.Name = "cmbLC2Mode08";
+            this.cmbLC2Mode08.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode08.TabIndex = 160;
+            // 
+            // cmbLC2Mode07
+            // 
+            this.cmbLC2Mode07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode07.FormattingEnabled = true;
+            this.cmbLC2Mode07.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode07.Location = new System.Drawing.Point(686, 3);
+            this.cmbLC2Mode07.Name = "cmbLC2Mode07";
+            this.cmbLC2Mode07.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode07.TabIndex = 159;
+            // 
+            // cmbLC2Mode06
+            // 
+            this.cmbLC2Mode06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode06.FormattingEnabled = true;
+            this.cmbLC2Mode06.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode06.Location = new System.Drawing.Point(614, 3);
+            this.cmbLC2Mode06.Name = "cmbLC2Mode06";
+            this.cmbLC2Mode06.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode06.TabIndex = 158;
+            // 
+            // cmbLC2Mode05
+            // 
+            this.cmbLC2Mode05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode05.FormattingEnabled = true;
+            this.cmbLC2Mode05.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode05.Location = new System.Drawing.Point(542, 3);
+            this.cmbLC2Mode05.Name = "cmbLC2Mode05";
+            this.cmbLC2Mode05.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode05.TabIndex = 157;
+            // 
+            // cmbLC2Mode04
+            // 
+            this.cmbLC2Mode04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode04.FormattingEnabled = true;
+            this.cmbLC2Mode04.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode04.Location = new System.Drawing.Point(471, 3);
+            this.cmbLC2Mode04.Name = "cmbLC2Mode04";
+            this.cmbLC2Mode04.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode04.TabIndex = 156;
+            // 
+            // cmbLC2Mode03
+            // 
+            this.cmbLC2Mode03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode03.FormattingEnabled = true;
+            this.cmbLC2Mode03.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode03.Location = new System.Drawing.Point(399, 3);
+            this.cmbLC2Mode03.Name = "cmbLC2Mode03";
+            this.cmbLC2Mode03.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode03.TabIndex = 155;
+            // 
+            // cmbLC2Mode02
+            // 
+            this.cmbLC2Mode02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode02.FormattingEnabled = true;
+            this.cmbLC2Mode02.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode02.Location = new System.Drawing.Point(327, 3);
+            this.cmbLC2Mode02.Name = "cmbLC2Mode02";
+            this.cmbLC2Mode02.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode02.TabIndex = 154;
+            // 
+            // cmbLC2Mode01
+            // 
+            this.cmbLC2Mode01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode01.FormattingEnabled = true;
+            this.cmbLC2Mode01.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC2Mode01.Location = new System.Drawing.Point(255, 3);
+            this.cmbLC2Mode01.Name = "cmbLC2Mode01";
+            this.cmbLC2Mode01.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode01.TabIndex = 153;
+            // 
+            // cmbLC2Mode00
+            // 
+            this.cmbLC2Mode00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC2Mode00.FormattingEnabled = true;
+            this.cmbLC2Mode00.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP"});
+            this.cmbLC2Mode00.Location = new System.Drawing.Point(183, 3);
+            this.cmbLC2Mode00.Name = "cmbLC2Mode00";
+            this.cmbLC2Mode00.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC2Mode00.TabIndex = 152;
             // 
             // label211
             // 
@@ -27708,20 +37639,9 @@ namespace M1ConfigGenerator
             this.label211.ForeColor = System.Drawing.SystemColors.Control;
             this.label211.Location = new System.Drawing.Point(3, 3);
             this.label211.Name = "label211";
-            this.label211.Size = new System.Drawing.Size(165, 17);
+            this.label211.Size = new System.Drawing.Size(126, 17);
             this.label211.TabIndex = 135;
-            this.label211.Text = "Pair with Next Channel (RP)";
-            // 
-            // chkLC2QuickPair0001
-            // 
-            this.chkLC2QuickPair0001.AutoSize = true;
-            this.chkLC2QuickPair0001.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC2QuickPair0001.ForeColor = System.Drawing.Color.Red;
-            this.chkLC2QuickPair0001.Location = new System.Drawing.Point(206, 6);
-            this.chkLC2QuickPair0001.Name = "chkLC2QuickPair0001";
-            this.chkLC2QuickPair0001.Size = new System.Drawing.Size(15, 14);
-            this.chkLC2QuickPair0001.TabIndex = 107;
-            this.chkLC2QuickPair0001.UseVisualStyleBackColor = true;
+            this.label211.Text = "Mode (Output Type)";
             // 
             // tabLC2Full
             // 
@@ -27738,7 +37658,7 @@ namespace M1ConfigGenerator
             this.chkLC2DCDimmer.AutoSize = true;
             this.chkLC2DCDimmer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC2DCDimmer.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC2DCDimmer.Location = new System.Drawing.Point(474, 70);
+            this.chkLC2DCDimmer.Location = new System.Drawing.Point(361, 70);
             this.chkLC2DCDimmer.Name = "chkLC2DCDimmer";
             this.chkLC2DCDimmer.Size = new System.Drawing.Size(94, 21);
             this.chkLC2DCDimmer.TabIndex = 8;
@@ -27750,7 +37670,7 @@ namespace M1ConfigGenerator
             this.chkLC2Force.AutoSize = true;
             this.chkLC2Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC2Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC2Force.Location = new System.Drawing.Point(592, 70);
+            this.chkLC2Force.Location = new System.Drawing.Point(479, 70);
             this.chkLC2Force.Name = "chkLC2Force";
             this.chkLC2Force.Size = new System.Drawing.Size(129, 21);
             this.chkLC2Force.TabIndex = 9;
@@ -27804,7 +37724,7 @@ namespace M1ConfigGenerator
             this.chkLC2DCMotor.AutoSize = true;
             this.chkLC2DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC2DCMotor.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC2DCMotor.Location = new System.Drawing.Point(360, 70);
+            this.chkLC2DCMotor.Location = new System.Drawing.Point(247, 70);
             this.chkLC2DCMotor.Name = "chkLC2DCMotor";
             this.chkLC2DCMotor.Size = new System.Drawing.Size(85, 21);
             this.chkLC2DCMotor.TabIndex = 7;
@@ -27821,18 +37741,6 @@ namespace M1ConfigGenerator
             this.label88.Size = new System.Drawing.Size(54, 17);
             this.label88.TabIndex = 2;
             this.label88.Text = "Panel #:";
-            // 
-            // chkLC2DCDriver
-            // 
-            this.chkLC2DCDriver.AutoSize = true;
-            this.chkLC2DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC2DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC2DCDriver.Location = new System.Drawing.Point(247, 70);
-            this.chkLC2DCDriver.Name = "chkLC2DCDriver";
-            this.chkLC2DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkLC2DCDriver.TabIndex = 6;
-            this.chkLC2DCDriver.Text = "DC Driver";
-            this.chkLC2DCDriver.UseVisualStyleBackColor = true;
             // 
             // label87
             // 
@@ -27855,7 +37763,9 @@ namespace M1ConfigGenerator
             "3",
             "4",
             "5",
-            "6"});
+            "6",
+            "7",
+            "8"});
             this.cmbLC2PanelNum.Location = new System.Drawing.Point(260, 25);
             this.cmbLC2PanelNum.Name = "cmbLC2PanelNum";
             this.cmbLC2PanelNum.Size = new System.Drawing.Size(40, 21);
@@ -28056,11 +37966,11 @@ namespace M1ConfigGenerator
             // tabLC3
             // 
             this.tabLC3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabLC3.Controls.Add(this.chkLC3Standalone);
             this.tabLC3.Controls.Add(this.chkLC3DCDimmer);
             this.tabLC3.Controls.Add(this.chkLC3Force);
             this.tabLC3.Controls.Add(this.chkLC3Shade);
             this.tabLC3.Controls.Add(this.chkLC3DCMotor);
-            this.tabLC3.Controls.Add(this.chkLC3DCDriver);
             this.tabLC3.Controls.Add(this.lblLC3Ch15);
             this.tabLC3.Controls.Add(this.lblLC3Ch14);
             this.tabLC3.Controls.Add(this.lblLC3Ch13);
@@ -28197,12 +38107,25 @@ namespace M1ConfigGenerator
             this.tabLC3.TabIndex = 3;
             this.tabLC3.Text = "LC 3";
             // 
+            // chkLC3Standalone
+            // 
+            this.chkLC3Standalone.AutoSize = true;
+            this.chkLC3Standalone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLC3Standalone.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkLC3Standalone.Location = new System.Drawing.Point(746, 26);
+            this.chkLC3Standalone.Name = "chkLC3Standalone";
+            this.chkLC3Standalone.Size = new System.Drawing.Size(164, 21);
+            this.chkLC3Standalone.TabIndex = 248;
+            this.chkLC3Standalone.Text = "Standalone Shade Card";
+            this.chkLC3Standalone.UseVisualStyleBackColor = true;
+            this.chkLC3Standalone.CheckedChanged += new System.EventHandler(this.chkLC3Standalone_CheckedChanged);
+            // 
             // chkLC3DCDimmer
             // 
             this.chkLC3DCDimmer.AutoSize = true;
             this.chkLC3DCDimmer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC3DCDimmer.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC3DCDimmer.Location = new System.Drawing.Point(474, 70);
+            this.chkLC3DCDimmer.Location = new System.Drawing.Point(361, 70);
             this.chkLC3DCDimmer.Name = "chkLC3DCDimmer";
             this.chkLC3DCDimmer.Size = new System.Drawing.Size(94, 21);
             this.chkLC3DCDimmer.TabIndex = 8;
@@ -28214,7 +38137,7 @@ namespace M1ConfigGenerator
             this.chkLC3Force.AutoSize = true;
             this.chkLC3Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC3Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC3Force.Location = new System.Drawing.Point(592, 70);
+            this.chkLC3Force.Location = new System.Drawing.Point(479, 70);
             this.chkLC3Force.Name = "chkLC3Force";
             this.chkLC3Force.Size = new System.Drawing.Size(129, 21);
             this.chkLC3Force.TabIndex = 9;
@@ -28238,24 +38161,12 @@ namespace M1ConfigGenerator
             this.chkLC3DCMotor.AutoSize = true;
             this.chkLC3DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC3DCMotor.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC3DCMotor.Location = new System.Drawing.Point(360, 70);
+            this.chkLC3DCMotor.Location = new System.Drawing.Point(247, 70);
             this.chkLC3DCMotor.Name = "chkLC3DCMotor";
             this.chkLC3DCMotor.Size = new System.Drawing.Size(85, 21);
             this.chkLC3DCMotor.TabIndex = 7;
             this.chkLC3DCMotor.Text = "DC Motor";
             this.chkLC3DCMotor.UseVisualStyleBackColor = true;
-            // 
-            // chkLC3DCDriver
-            // 
-            this.chkLC3DCDriver.AutoSize = true;
-            this.chkLC3DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC3DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC3DCDriver.Location = new System.Drawing.Point(247, 70);
-            this.chkLC3DCDriver.Name = "chkLC3DCDriver";
-            this.chkLC3DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkLC3DCDriver.TabIndex = 6;
-            this.chkLC3DCDriver.Text = "DC Driver";
-            this.chkLC3DCDriver.UseVisualStyleBackColor = true;
             // 
             // lblLC3Ch15
             // 
@@ -28574,15 +38485,23 @@ namespace M1ConfigGenerator
             // tabLC3Quick
             // 
             this.tabLC3Quick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabLC3Quick.Controls.Add(this.chkLC3QuickPair1415);
-            this.tabLC3Quick.Controls.Add(this.chkLC3QuickPair1213);
-            this.tabLC3Quick.Controls.Add(this.chkLC3QuickPair1011);
-            this.tabLC3Quick.Controls.Add(this.chkLC3QuickPair0809);
-            this.tabLC3Quick.Controls.Add(this.chkLC3QuickPair0607);
-            this.tabLC3Quick.Controls.Add(this.chkLC3QuickPair0405);
-            this.tabLC3Quick.Controls.Add(this.chkLC3QuickPair0203);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode15);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode14);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode13);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode12);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode11);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode10);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode09);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode08);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode07);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode06);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode05);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode04);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode03);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode02);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode01);
+            this.tabLC3Quick.Controls.Add(this.cmbLC3Mode00);
             this.tabLC3Quick.Controls.Add(this.label212);
-            this.tabLC3Quick.Controls.Add(this.chkLC3QuickPair0001);
             this.tabLC3Quick.Location = new System.Drawing.Point(4, 22);
             this.tabLC3Quick.Name = "tabLC3Quick";
             this.tabLC3Quick.Padding = new System.Windows.Forms.Padding(3);
@@ -28590,68 +38509,227 @@ namespace M1ConfigGenerator
             this.tabLC3Quick.TabIndex = 0;
             this.tabLC3Quick.Text = "LC 3 Quick";
             // 
-            // chkLC3QuickPair1415
+            // cmbLC3Mode15
             // 
-            this.chkLC3QuickPair1415.AutoSize = true;
-            this.chkLC3QuickPair1415.Location = new System.Drawing.Point(1214, 6);
-            this.chkLC3QuickPair1415.Name = "chkLC3QuickPair1415";
-            this.chkLC3QuickPair1415.Size = new System.Drawing.Size(15, 14);
-            this.chkLC3QuickPair1415.TabIndex = 114;
-            this.chkLC3QuickPair1415.UseVisualStyleBackColor = true;
+            this.cmbLC3Mode15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode15.FormattingEnabled = true;
+            this.cmbLC3Mode15.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP DN"});
+            this.cmbLC3Mode15.Location = new System.Drawing.Point(1262, 3);
+            this.cmbLC3Mode15.Name = "cmbLC3Mode15";
+            this.cmbLC3Mode15.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode15.TabIndex = 183;
             // 
-            // chkLC3QuickPair1213
+            // cmbLC3Mode14
             // 
-            this.chkLC3QuickPair1213.AutoSize = true;
-            this.chkLC3QuickPair1213.Location = new System.Drawing.Point(1070, 6);
-            this.chkLC3QuickPair1213.Name = "chkLC3QuickPair1213";
-            this.chkLC3QuickPair1213.Size = new System.Drawing.Size(15, 14);
-            this.chkLC3QuickPair1213.TabIndex = 113;
-            this.chkLC3QuickPair1213.UseVisualStyleBackColor = true;
+            this.cmbLC3Mode14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode14.FormattingEnabled = true;
+            this.cmbLC3Mode14.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode14.Location = new System.Drawing.Point(1190, 3);
+            this.cmbLC3Mode14.Name = "cmbLC3Mode14";
+            this.cmbLC3Mode14.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode14.TabIndex = 182;
             // 
-            // chkLC3QuickPair1011
+            // cmbLC3Mode13
             // 
-            this.chkLC3QuickPair1011.AutoSize = true;
-            this.chkLC3QuickPair1011.Location = new System.Drawing.Point(926, 6);
-            this.chkLC3QuickPair1011.Name = "chkLC3QuickPair1011";
-            this.chkLC3QuickPair1011.Size = new System.Drawing.Size(15, 14);
-            this.chkLC3QuickPair1011.TabIndex = 112;
-            this.chkLC3QuickPair1011.UseVisualStyleBackColor = true;
+            this.cmbLC3Mode13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode13.FormattingEnabled = true;
+            this.cmbLC3Mode13.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode13.Location = new System.Drawing.Point(1118, 3);
+            this.cmbLC3Mode13.Name = "cmbLC3Mode13";
+            this.cmbLC3Mode13.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode13.TabIndex = 181;
             // 
-            // chkLC3QuickPair0809
+            // cmbLC3Mode12
             // 
-            this.chkLC3QuickPair0809.AutoSize = true;
-            this.chkLC3QuickPair0809.Location = new System.Drawing.Point(782, 6);
-            this.chkLC3QuickPair0809.Name = "chkLC3QuickPair0809";
-            this.chkLC3QuickPair0809.Size = new System.Drawing.Size(15, 14);
-            this.chkLC3QuickPair0809.TabIndex = 111;
-            this.chkLC3QuickPair0809.UseVisualStyleBackColor = true;
+            this.cmbLC3Mode12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode12.FormattingEnabled = true;
+            this.cmbLC3Mode12.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode12.Location = new System.Drawing.Point(1046, 3);
+            this.cmbLC3Mode12.Name = "cmbLC3Mode12";
+            this.cmbLC3Mode12.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode12.TabIndex = 180;
             // 
-            // chkLC3QuickPair0607
+            // cmbLC3Mode11
             // 
-            this.chkLC3QuickPair0607.AutoSize = true;
-            this.chkLC3QuickPair0607.Location = new System.Drawing.Point(638, 6);
-            this.chkLC3QuickPair0607.Name = "chkLC3QuickPair0607";
-            this.chkLC3QuickPair0607.Size = new System.Drawing.Size(15, 14);
-            this.chkLC3QuickPair0607.TabIndex = 110;
-            this.chkLC3QuickPair0607.UseVisualStyleBackColor = true;
+            this.cmbLC3Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode11.FormattingEnabled = true;
+            this.cmbLC3Mode11.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode11.Location = new System.Drawing.Point(974, 3);
+            this.cmbLC3Mode11.Name = "cmbLC3Mode11";
+            this.cmbLC3Mode11.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode11.TabIndex = 179;
             // 
-            // chkLC3QuickPair0405
+            // cmbLC3Mode10
             // 
-            this.chkLC3QuickPair0405.AutoSize = true;
-            this.chkLC3QuickPair0405.Location = new System.Drawing.Point(494, 6);
-            this.chkLC3QuickPair0405.Name = "chkLC3QuickPair0405";
-            this.chkLC3QuickPair0405.Size = new System.Drawing.Size(15, 14);
-            this.chkLC3QuickPair0405.TabIndex = 109;
-            this.chkLC3QuickPair0405.UseVisualStyleBackColor = true;
+            this.cmbLC3Mode10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode10.FormattingEnabled = true;
+            this.cmbLC3Mode10.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode10.Location = new System.Drawing.Point(902, 3);
+            this.cmbLC3Mode10.Name = "cmbLC3Mode10";
+            this.cmbLC3Mode10.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode10.TabIndex = 178;
             // 
-            // chkLC3QuickPair0203
+            // cmbLC3Mode09
             // 
-            this.chkLC3QuickPair0203.AutoSize = true;
-            this.chkLC3QuickPair0203.Location = new System.Drawing.Point(350, 6);
-            this.chkLC3QuickPair0203.Name = "chkLC3QuickPair0203";
-            this.chkLC3QuickPair0203.Size = new System.Drawing.Size(15, 14);
-            this.chkLC3QuickPair0203.TabIndex = 108;
-            this.chkLC3QuickPair0203.UseVisualStyleBackColor = true;
+            this.cmbLC3Mode09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode09.FormattingEnabled = true;
+            this.cmbLC3Mode09.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode09.Location = new System.Drawing.Point(830, 3);
+            this.cmbLC3Mode09.Name = "cmbLC3Mode09";
+            this.cmbLC3Mode09.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode09.TabIndex = 177;
+            // 
+            // cmbLC3Mode08
+            // 
+            this.cmbLC3Mode08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode08.FormattingEnabled = true;
+            this.cmbLC3Mode08.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode08.Location = new System.Drawing.Point(758, 3);
+            this.cmbLC3Mode08.Name = "cmbLC3Mode08";
+            this.cmbLC3Mode08.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode08.TabIndex = 176;
+            // 
+            // cmbLC3Mode07
+            // 
+            this.cmbLC3Mode07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode07.FormattingEnabled = true;
+            this.cmbLC3Mode07.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode07.Location = new System.Drawing.Point(686, 3);
+            this.cmbLC3Mode07.Name = "cmbLC3Mode07";
+            this.cmbLC3Mode07.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode07.TabIndex = 175;
+            // 
+            // cmbLC3Mode06
+            // 
+            this.cmbLC3Mode06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode06.FormattingEnabled = true;
+            this.cmbLC3Mode06.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode06.Location = new System.Drawing.Point(614, 3);
+            this.cmbLC3Mode06.Name = "cmbLC3Mode06";
+            this.cmbLC3Mode06.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode06.TabIndex = 174;
+            // 
+            // cmbLC3Mode05
+            // 
+            this.cmbLC3Mode05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode05.FormattingEnabled = true;
+            this.cmbLC3Mode05.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode05.Location = new System.Drawing.Point(542, 3);
+            this.cmbLC3Mode05.Name = "cmbLC3Mode05";
+            this.cmbLC3Mode05.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode05.TabIndex = 173;
+            // 
+            // cmbLC3Mode04
+            // 
+            this.cmbLC3Mode04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode04.FormattingEnabled = true;
+            this.cmbLC3Mode04.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode04.Location = new System.Drawing.Point(471, 3);
+            this.cmbLC3Mode04.Name = "cmbLC3Mode04";
+            this.cmbLC3Mode04.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode04.TabIndex = 172;
+            // 
+            // cmbLC3Mode03
+            // 
+            this.cmbLC3Mode03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode03.FormattingEnabled = true;
+            this.cmbLC3Mode03.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode03.Location = new System.Drawing.Point(399, 3);
+            this.cmbLC3Mode03.Name = "cmbLC3Mode03";
+            this.cmbLC3Mode03.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode03.TabIndex = 171;
+            // 
+            // cmbLC3Mode02
+            // 
+            this.cmbLC3Mode02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode02.FormattingEnabled = true;
+            this.cmbLC3Mode02.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode02.Location = new System.Drawing.Point(327, 3);
+            this.cmbLC3Mode02.Name = "cmbLC3Mode02";
+            this.cmbLC3Mode02.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode02.TabIndex = 170;
+            // 
+            // cmbLC3Mode01
+            // 
+            this.cmbLC3Mode01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode01.FormattingEnabled = true;
+            this.cmbLC3Mode01.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC3Mode01.Location = new System.Drawing.Point(255, 3);
+            this.cmbLC3Mode01.Name = "cmbLC3Mode01";
+            this.cmbLC3Mode01.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode01.TabIndex = 169;
+            // 
+            // cmbLC3Mode00
+            // 
+            this.cmbLC3Mode00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC3Mode00.FormattingEnabled = true;
+            this.cmbLC3Mode00.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP"});
+            this.cmbLC3Mode00.Location = new System.Drawing.Point(183, 3);
+            this.cmbLC3Mode00.Name = "cmbLC3Mode00";
+            this.cmbLC3Mode00.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC3Mode00.TabIndex = 168;
             // 
             // label212
             // 
@@ -28660,20 +38738,9 @@ namespace M1ConfigGenerator
             this.label212.ForeColor = System.Drawing.SystemColors.Control;
             this.label212.Location = new System.Drawing.Point(3, 3);
             this.label212.Name = "label212";
-            this.label212.Size = new System.Drawing.Size(165, 17);
+            this.label212.Size = new System.Drawing.Size(126, 17);
             this.label212.TabIndex = 135;
-            this.label212.Text = "Pair with Next Channel (RP)";
-            // 
-            // chkLC3QuickPair0001
-            // 
-            this.chkLC3QuickPair0001.AutoSize = true;
-            this.chkLC3QuickPair0001.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC3QuickPair0001.ForeColor = System.Drawing.Color.Red;
-            this.chkLC3QuickPair0001.Location = new System.Drawing.Point(206, 6);
-            this.chkLC3QuickPair0001.Name = "chkLC3QuickPair0001";
-            this.chkLC3QuickPair0001.Size = new System.Drawing.Size(15, 14);
-            this.chkLC3QuickPair0001.TabIndex = 107;
-            this.chkLC3QuickPair0001.UseVisualStyleBackColor = true;
+            this.label212.Text = "Mode (Output Type)";
             // 
             // tabLC3Full
             // 
@@ -28695,7 +38762,9 @@ namespace M1ConfigGenerator
             "3",
             "4",
             "5",
-            "6"});
+            "6",
+            "7",
+            "8"});
             this.cmbLC3PanelNum.Location = new System.Drawing.Point(260, 25);
             this.cmbLC3PanelNum.Name = "cmbLC3PanelNum";
             this.cmbLC3PanelNum.Size = new System.Drawing.Size(40, 21);
@@ -29794,11 +39863,11 @@ namespace M1ConfigGenerator
             // tabLC4
             // 
             this.tabLC4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabLC4.Controls.Add(this.chkLC4Standalone);
             this.tabLC4.Controls.Add(this.chkLC4DCDimmer);
             this.tabLC4.Controls.Add(this.chkLC4Force);
             this.tabLC4.Controls.Add(this.chkLC4Shade);
             this.tabLC4.Controls.Add(this.chkLC4DCMotor);
-            this.tabLC4.Controls.Add(this.chkLC4DCDriver);
             this.tabLC4.Controls.Add(this.lblLC4Ch15);
             this.tabLC4.Controls.Add(this.lblLC4Ch14);
             this.tabLC4.Controls.Add(this.lblLC4Ch13);
@@ -29935,12 +40004,25 @@ namespace M1ConfigGenerator
             this.tabLC4.TabIndex = 4;
             this.tabLC4.Text = "LC 4";
             // 
+            // chkLC4Standalone
+            // 
+            this.chkLC4Standalone.AutoSize = true;
+            this.chkLC4Standalone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLC4Standalone.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkLC4Standalone.Location = new System.Drawing.Point(746, 26);
+            this.chkLC4Standalone.Name = "chkLC4Standalone";
+            this.chkLC4Standalone.Size = new System.Drawing.Size(164, 21);
+            this.chkLC4Standalone.TabIndex = 248;
+            this.chkLC4Standalone.Text = "Standalone Shade Card";
+            this.chkLC4Standalone.UseVisualStyleBackColor = true;
+            this.chkLC4Standalone.CheckedChanged += new System.EventHandler(this.chkLC4Standalone_CheckedChanged);
+            // 
             // chkLC4DCDimmer
             // 
             this.chkLC4DCDimmer.AutoSize = true;
             this.chkLC4DCDimmer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC4DCDimmer.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC4DCDimmer.Location = new System.Drawing.Point(474, 70);
+            this.chkLC4DCDimmer.Location = new System.Drawing.Point(361, 70);
             this.chkLC4DCDimmer.Name = "chkLC4DCDimmer";
             this.chkLC4DCDimmer.Size = new System.Drawing.Size(94, 21);
             this.chkLC4DCDimmer.TabIndex = 8;
@@ -29952,7 +40034,7 @@ namespace M1ConfigGenerator
             this.chkLC4Force.AutoSize = true;
             this.chkLC4Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC4Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC4Force.Location = new System.Drawing.Point(592, 70);
+            this.chkLC4Force.Location = new System.Drawing.Point(479, 70);
             this.chkLC4Force.Name = "chkLC4Force";
             this.chkLC4Force.Size = new System.Drawing.Size(129, 21);
             this.chkLC4Force.TabIndex = 9;
@@ -29970,30 +40052,6 @@ namespace M1ConfigGenerator
             this.chkLC4Shade.TabIndex = 5;
             this.chkLC4Shade.Text = "Shade";
             this.chkLC4Shade.UseVisualStyleBackColor = true;
-            // 
-            // chkLC4DCMotor
-            // 
-            this.chkLC4DCMotor.AutoSize = true;
-            this.chkLC4DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC4DCMotor.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC4DCMotor.Location = new System.Drawing.Point(360, 70);
-            this.chkLC4DCMotor.Name = "chkLC4DCMotor";
-            this.chkLC4DCMotor.Size = new System.Drawing.Size(85, 21);
-            this.chkLC4DCMotor.TabIndex = 7;
-            this.chkLC4DCMotor.Text = "DC Motor";
-            this.chkLC4DCMotor.UseVisualStyleBackColor = true;
-            // 
-            // chkLC4DCDriver
-            // 
-            this.chkLC4DCDriver.AutoSize = true;
-            this.chkLC4DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC4DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC4DCDriver.Location = new System.Drawing.Point(247, 70);
-            this.chkLC4DCDriver.Name = "chkLC4DCDriver";
-            this.chkLC4DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkLC4DCDriver.TabIndex = 6;
-            this.chkLC4DCDriver.Text = "DC Driver";
-            this.chkLC4DCDriver.UseVisualStyleBackColor = true;
             // 
             // lblLC4Ch15
             // 
@@ -30312,15 +40370,23 @@ namespace M1ConfigGenerator
             // tabLC4Quick
             // 
             this.tabLC4Quick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabLC4Quick.Controls.Add(this.chkLC4QuickPair1415);
-            this.tabLC4Quick.Controls.Add(this.chkLC4QuickPair1213);
-            this.tabLC4Quick.Controls.Add(this.chkLC4QuickPair1011);
-            this.tabLC4Quick.Controls.Add(this.chkLC4QuickPair0809);
-            this.tabLC4Quick.Controls.Add(this.chkLC4QuickPair0607);
-            this.tabLC4Quick.Controls.Add(this.chkLC4QuickPair0405);
-            this.tabLC4Quick.Controls.Add(this.chkLC4QuickPair0203);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode15);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode14);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode13);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode12);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode11);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode10);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode09);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode08);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode07);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode06);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode05);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode04);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode03);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode02);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode01);
+            this.tabLC4Quick.Controls.Add(this.cmbLC4Mode00);
             this.tabLC4Quick.Controls.Add(this.label213);
-            this.tabLC4Quick.Controls.Add(this.chkLC4QuickPair0001);
             this.tabLC4Quick.Location = new System.Drawing.Point(4, 22);
             this.tabLC4Quick.Name = "tabLC4Quick";
             this.tabLC4Quick.Padding = new System.Windows.Forms.Padding(3);
@@ -30328,68 +40394,227 @@ namespace M1ConfigGenerator
             this.tabLC4Quick.TabIndex = 0;
             this.tabLC4Quick.Text = "LC 4 Quick";
             // 
-            // chkLC4QuickPair1415
+            // cmbLC4Mode15
             // 
-            this.chkLC4QuickPair1415.AutoSize = true;
-            this.chkLC4QuickPair1415.Location = new System.Drawing.Point(1214, 6);
-            this.chkLC4QuickPair1415.Name = "chkLC4QuickPair1415";
-            this.chkLC4QuickPair1415.Size = new System.Drawing.Size(15, 14);
-            this.chkLC4QuickPair1415.TabIndex = 114;
-            this.chkLC4QuickPair1415.UseVisualStyleBackColor = true;
+            this.cmbLC4Mode15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode15.FormattingEnabled = true;
+            this.cmbLC4Mode15.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP DN"});
+            this.cmbLC4Mode15.Location = new System.Drawing.Point(1262, 3);
+            this.cmbLC4Mode15.Name = "cmbLC4Mode15";
+            this.cmbLC4Mode15.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode15.TabIndex = 199;
             // 
-            // chkLC4QuickPair1213
+            // cmbLC4Mode14
             // 
-            this.chkLC4QuickPair1213.AutoSize = true;
-            this.chkLC4QuickPair1213.Location = new System.Drawing.Point(1070, 6);
-            this.chkLC4QuickPair1213.Name = "chkLC4QuickPair1213";
-            this.chkLC4QuickPair1213.Size = new System.Drawing.Size(15, 14);
-            this.chkLC4QuickPair1213.TabIndex = 113;
-            this.chkLC4QuickPair1213.UseVisualStyleBackColor = true;
+            this.cmbLC4Mode14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode14.FormattingEnabled = true;
+            this.cmbLC4Mode14.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode14.Location = new System.Drawing.Point(1190, 3);
+            this.cmbLC4Mode14.Name = "cmbLC4Mode14";
+            this.cmbLC4Mode14.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode14.TabIndex = 198;
             // 
-            // chkLC4QuickPair1011
+            // cmbLC4Mode13
             // 
-            this.chkLC4QuickPair1011.AutoSize = true;
-            this.chkLC4QuickPair1011.Location = new System.Drawing.Point(926, 6);
-            this.chkLC4QuickPair1011.Name = "chkLC4QuickPair1011";
-            this.chkLC4QuickPair1011.Size = new System.Drawing.Size(15, 14);
-            this.chkLC4QuickPair1011.TabIndex = 112;
-            this.chkLC4QuickPair1011.UseVisualStyleBackColor = true;
+            this.cmbLC4Mode13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode13.FormattingEnabled = true;
+            this.cmbLC4Mode13.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode13.Location = new System.Drawing.Point(1118, 3);
+            this.cmbLC4Mode13.Name = "cmbLC4Mode13";
+            this.cmbLC4Mode13.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode13.TabIndex = 197;
             // 
-            // chkLC4QuickPair0809
+            // cmbLC4Mode12
             // 
-            this.chkLC4QuickPair0809.AutoSize = true;
-            this.chkLC4QuickPair0809.Location = new System.Drawing.Point(782, 6);
-            this.chkLC4QuickPair0809.Name = "chkLC4QuickPair0809";
-            this.chkLC4QuickPair0809.Size = new System.Drawing.Size(15, 14);
-            this.chkLC4QuickPair0809.TabIndex = 111;
-            this.chkLC4QuickPair0809.UseVisualStyleBackColor = true;
+            this.cmbLC4Mode12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode12.FormattingEnabled = true;
+            this.cmbLC4Mode12.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode12.Location = new System.Drawing.Point(1046, 3);
+            this.cmbLC4Mode12.Name = "cmbLC4Mode12";
+            this.cmbLC4Mode12.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode12.TabIndex = 196;
             // 
-            // chkLC4QuickPair0607
+            // cmbLC4Mode11
             // 
-            this.chkLC4QuickPair0607.AutoSize = true;
-            this.chkLC4QuickPair0607.Location = new System.Drawing.Point(638, 6);
-            this.chkLC4QuickPair0607.Name = "chkLC4QuickPair0607";
-            this.chkLC4QuickPair0607.Size = new System.Drawing.Size(15, 14);
-            this.chkLC4QuickPair0607.TabIndex = 110;
-            this.chkLC4QuickPair0607.UseVisualStyleBackColor = true;
+            this.cmbLC4Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode11.FormattingEnabled = true;
+            this.cmbLC4Mode11.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode11.Location = new System.Drawing.Point(974, 3);
+            this.cmbLC4Mode11.Name = "cmbLC4Mode11";
+            this.cmbLC4Mode11.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode11.TabIndex = 195;
             // 
-            // chkLC4QuickPair0405
+            // cmbLC4Mode10
             // 
-            this.chkLC4QuickPair0405.AutoSize = true;
-            this.chkLC4QuickPair0405.Location = new System.Drawing.Point(494, 6);
-            this.chkLC4QuickPair0405.Name = "chkLC4QuickPair0405";
-            this.chkLC4QuickPair0405.Size = new System.Drawing.Size(15, 14);
-            this.chkLC4QuickPair0405.TabIndex = 109;
-            this.chkLC4QuickPair0405.UseVisualStyleBackColor = true;
+            this.cmbLC4Mode10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode10.FormattingEnabled = true;
+            this.cmbLC4Mode10.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode10.Location = new System.Drawing.Point(902, 3);
+            this.cmbLC4Mode10.Name = "cmbLC4Mode10";
+            this.cmbLC4Mode10.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode10.TabIndex = 194;
             // 
-            // chkLC4QuickPair0203
+            // cmbLC4Mode09
             // 
-            this.chkLC4QuickPair0203.AutoSize = true;
-            this.chkLC4QuickPair0203.Location = new System.Drawing.Point(350, 6);
-            this.chkLC4QuickPair0203.Name = "chkLC4QuickPair0203";
-            this.chkLC4QuickPair0203.Size = new System.Drawing.Size(15, 14);
-            this.chkLC4QuickPair0203.TabIndex = 108;
-            this.chkLC4QuickPair0203.UseVisualStyleBackColor = true;
+            this.cmbLC4Mode09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode09.FormattingEnabled = true;
+            this.cmbLC4Mode09.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode09.Location = new System.Drawing.Point(830, 3);
+            this.cmbLC4Mode09.Name = "cmbLC4Mode09";
+            this.cmbLC4Mode09.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode09.TabIndex = 193;
+            // 
+            // cmbLC4Mode08
+            // 
+            this.cmbLC4Mode08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode08.FormattingEnabled = true;
+            this.cmbLC4Mode08.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode08.Location = new System.Drawing.Point(758, 3);
+            this.cmbLC4Mode08.Name = "cmbLC4Mode08";
+            this.cmbLC4Mode08.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode08.TabIndex = 192;
+            // 
+            // cmbLC4Mode07
+            // 
+            this.cmbLC4Mode07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode07.FormattingEnabled = true;
+            this.cmbLC4Mode07.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode07.Location = new System.Drawing.Point(686, 3);
+            this.cmbLC4Mode07.Name = "cmbLC4Mode07";
+            this.cmbLC4Mode07.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode07.TabIndex = 191;
+            // 
+            // cmbLC4Mode06
+            // 
+            this.cmbLC4Mode06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode06.FormattingEnabled = true;
+            this.cmbLC4Mode06.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode06.Location = new System.Drawing.Point(614, 3);
+            this.cmbLC4Mode06.Name = "cmbLC4Mode06";
+            this.cmbLC4Mode06.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode06.TabIndex = 190;
+            // 
+            // cmbLC4Mode05
+            // 
+            this.cmbLC4Mode05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode05.FormattingEnabled = true;
+            this.cmbLC4Mode05.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode05.Location = new System.Drawing.Point(542, 3);
+            this.cmbLC4Mode05.Name = "cmbLC4Mode05";
+            this.cmbLC4Mode05.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode05.TabIndex = 189;
+            // 
+            // cmbLC4Mode04
+            // 
+            this.cmbLC4Mode04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode04.FormattingEnabled = true;
+            this.cmbLC4Mode04.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode04.Location = new System.Drawing.Point(471, 3);
+            this.cmbLC4Mode04.Name = "cmbLC4Mode04";
+            this.cmbLC4Mode04.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode04.TabIndex = 188;
+            // 
+            // cmbLC4Mode03
+            // 
+            this.cmbLC4Mode03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode03.FormattingEnabled = true;
+            this.cmbLC4Mode03.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode03.Location = new System.Drawing.Point(399, 3);
+            this.cmbLC4Mode03.Name = "cmbLC4Mode03";
+            this.cmbLC4Mode03.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode03.TabIndex = 187;
+            // 
+            // cmbLC4Mode02
+            // 
+            this.cmbLC4Mode02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode02.FormattingEnabled = true;
+            this.cmbLC4Mode02.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode02.Location = new System.Drawing.Point(327, 3);
+            this.cmbLC4Mode02.Name = "cmbLC4Mode02";
+            this.cmbLC4Mode02.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode02.TabIndex = 186;
+            // 
+            // cmbLC4Mode01
+            // 
+            this.cmbLC4Mode01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode01.FormattingEnabled = true;
+            this.cmbLC4Mode01.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC4Mode01.Location = new System.Drawing.Point(255, 3);
+            this.cmbLC4Mode01.Name = "cmbLC4Mode01";
+            this.cmbLC4Mode01.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode01.TabIndex = 185;
+            // 
+            // cmbLC4Mode00
+            // 
+            this.cmbLC4Mode00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC4Mode00.FormattingEnabled = true;
+            this.cmbLC4Mode00.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP"});
+            this.cmbLC4Mode00.Location = new System.Drawing.Point(183, 3);
+            this.cmbLC4Mode00.Name = "cmbLC4Mode00";
+            this.cmbLC4Mode00.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC4Mode00.TabIndex = 184;
             // 
             // label213
             // 
@@ -30398,20 +40623,9 @@ namespace M1ConfigGenerator
             this.label213.ForeColor = System.Drawing.SystemColors.Control;
             this.label213.Location = new System.Drawing.Point(3, 3);
             this.label213.Name = "label213";
-            this.label213.Size = new System.Drawing.Size(165, 17);
+            this.label213.Size = new System.Drawing.Size(126, 17);
             this.label213.TabIndex = 135;
-            this.label213.Text = "Pair with Next Channel (RP)";
-            // 
-            // chkLC4QuickPair0001
-            // 
-            this.chkLC4QuickPair0001.AutoSize = true;
-            this.chkLC4QuickPair0001.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC4QuickPair0001.ForeColor = System.Drawing.Color.Red;
-            this.chkLC4QuickPair0001.Location = new System.Drawing.Point(206, 6);
-            this.chkLC4QuickPair0001.Name = "chkLC4QuickPair0001";
-            this.chkLC4QuickPair0001.Size = new System.Drawing.Size(15, 14);
-            this.chkLC4QuickPair0001.TabIndex = 107;
-            this.chkLC4QuickPair0001.UseVisualStyleBackColor = true;
+            this.label213.Text = "Mode (Output Type)";
             // 
             // tabLC4Full
             // 
@@ -30433,7 +40647,9 @@ namespace M1ConfigGenerator
             "3",
             "4",
             "5",
-            "6"});
+            "6",
+            "7",
+            "8"});
             this.cmbLC4PanelNum.Location = new System.Drawing.Point(260, 25);
             this.cmbLC4PanelNum.Name = "cmbLC4PanelNum";
             this.cmbLC4PanelNum.Size = new System.Drawing.Size(40, 21);
@@ -31532,11 +41748,11 @@ namespace M1ConfigGenerator
             // tabLC5
             // 
             this.tabLC5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabLC5.Controls.Add(this.chkLC5Standalone);
             this.tabLC5.Controls.Add(this.chkLC5DCDimmer);
             this.tabLC5.Controls.Add(this.chkLC5Force);
             this.tabLC5.Controls.Add(this.chkLC5Shade);
             this.tabLC5.Controls.Add(this.chkLC5DCMotor);
-            this.tabLC5.Controls.Add(this.chkLC5DCDriver);
             this.tabLC5.Controls.Add(this.lblLC5Ch15);
             this.tabLC5.Controls.Add(this.lblLC5Ch14);
             this.tabLC5.Controls.Add(this.lblLC5Ch13);
@@ -31673,12 +41889,25 @@ namespace M1ConfigGenerator
             this.tabLC5.TabIndex = 5;
             this.tabLC5.Text = "LC 5";
             // 
+            // chkLC5Standalone
+            // 
+            this.chkLC5Standalone.AutoSize = true;
+            this.chkLC5Standalone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLC5Standalone.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkLC5Standalone.Location = new System.Drawing.Point(746, 26);
+            this.chkLC5Standalone.Name = "chkLC5Standalone";
+            this.chkLC5Standalone.Size = new System.Drawing.Size(164, 21);
+            this.chkLC5Standalone.TabIndex = 248;
+            this.chkLC5Standalone.Text = "Standalone Shade Card";
+            this.chkLC5Standalone.UseVisualStyleBackColor = true;
+            this.chkLC5Standalone.CheckedChanged += new System.EventHandler(this.chkLC5Standalone_CheckedChanged);
+            // 
             // chkLC5DCDimmer
             // 
             this.chkLC5DCDimmer.AutoSize = true;
             this.chkLC5DCDimmer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC5DCDimmer.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC5DCDimmer.Location = new System.Drawing.Point(474, 70);
+            this.chkLC5DCDimmer.Location = new System.Drawing.Point(361, 70);
             this.chkLC5DCDimmer.Name = "chkLC5DCDimmer";
             this.chkLC5DCDimmer.Size = new System.Drawing.Size(94, 21);
             this.chkLC5DCDimmer.TabIndex = 8;
@@ -31690,7 +41919,7 @@ namespace M1ConfigGenerator
             this.chkLC5Force.AutoSize = true;
             this.chkLC5Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC5Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC5Force.Location = new System.Drawing.Point(592, 70);
+            this.chkLC5Force.Location = new System.Drawing.Point(479, 70);
             this.chkLC5Force.Name = "chkLC5Force";
             this.chkLC5Force.Size = new System.Drawing.Size(129, 21);
             this.chkLC5Force.TabIndex = 9;
@@ -31714,24 +41943,12 @@ namespace M1ConfigGenerator
             this.chkLC5DCMotor.AutoSize = true;
             this.chkLC5DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC5DCMotor.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC5DCMotor.Location = new System.Drawing.Point(360, 70);
+            this.chkLC5DCMotor.Location = new System.Drawing.Point(247, 70);
             this.chkLC5DCMotor.Name = "chkLC5DCMotor";
             this.chkLC5DCMotor.Size = new System.Drawing.Size(85, 21);
             this.chkLC5DCMotor.TabIndex = 7;
             this.chkLC5DCMotor.Text = "DC Motor";
             this.chkLC5DCMotor.UseVisualStyleBackColor = true;
-            // 
-            // chkLC5DCDriver
-            // 
-            this.chkLC5DCDriver.AutoSize = true;
-            this.chkLC5DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC5DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC5DCDriver.Location = new System.Drawing.Point(247, 70);
-            this.chkLC5DCDriver.Name = "chkLC5DCDriver";
-            this.chkLC5DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkLC5DCDriver.TabIndex = 6;
-            this.chkLC5DCDriver.Text = "DC Driver";
-            this.chkLC5DCDriver.UseVisualStyleBackColor = true;
             // 
             // lblLC5Ch15
             // 
@@ -32050,15 +42267,23 @@ namespace M1ConfigGenerator
             // tabLC5Quick
             // 
             this.tabLC5Quick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabLC5Quick.Controls.Add(this.chkLC5QuickPair1415);
-            this.tabLC5Quick.Controls.Add(this.chkLC5QuickPair1213);
-            this.tabLC5Quick.Controls.Add(this.chkLC5QuickPair1011);
-            this.tabLC5Quick.Controls.Add(this.chkLC5QuickPair0809);
-            this.tabLC5Quick.Controls.Add(this.chkLC5QuickPair0607);
-            this.tabLC5Quick.Controls.Add(this.chkLC5QuickPair0405);
-            this.tabLC5Quick.Controls.Add(this.chkLC5QuickPair0203);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode15);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode14);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode13);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode12);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode11);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode10);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode09);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode08);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode07);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode06);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode05);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode04);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode03);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode02);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode01);
+            this.tabLC5Quick.Controls.Add(this.cmbLC5Mode00);
             this.tabLC5Quick.Controls.Add(this.label214);
-            this.tabLC5Quick.Controls.Add(this.chkLC5QuickPair0001);
             this.tabLC5Quick.Location = new System.Drawing.Point(4, 22);
             this.tabLC5Quick.Name = "tabLC5Quick";
             this.tabLC5Quick.Padding = new System.Windows.Forms.Padding(3);
@@ -32066,68 +42291,227 @@ namespace M1ConfigGenerator
             this.tabLC5Quick.TabIndex = 0;
             this.tabLC5Quick.Text = "LC 5 Quick";
             // 
-            // chkLC5QuickPair1415
+            // cmbLC5Mode15
             // 
-            this.chkLC5QuickPair1415.AutoSize = true;
-            this.chkLC5QuickPair1415.Location = new System.Drawing.Point(1214, 6);
-            this.chkLC5QuickPair1415.Name = "chkLC5QuickPair1415";
-            this.chkLC5QuickPair1415.Size = new System.Drawing.Size(15, 14);
-            this.chkLC5QuickPair1415.TabIndex = 114;
-            this.chkLC5QuickPair1415.UseVisualStyleBackColor = true;
+            this.cmbLC5Mode15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode15.FormattingEnabled = true;
+            this.cmbLC5Mode15.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP DN"});
+            this.cmbLC5Mode15.Location = new System.Drawing.Point(1262, 3);
+            this.cmbLC5Mode15.Name = "cmbLC5Mode15";
+            this.cmbLC5Mode15.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode15.TabIndex = 215;
             // 
-            // chkLC5QuickPair1213
+            // cmbLC5Mode14
             // 
-            this.chkLC5QuickPair1213.AutoSize = true;
-            this.chkLC5QuickPair1213.Location = new System.Drawing.Point(1070, 6);
-            this.chkLC5QuickPair1213.Name = "chkLC5QuickPair1213";
-            this.chkLC5QuickPair1213.Size = new System.Drawing.Size(15, 14);
-            this.chkLC5QuickPair1213.TabIndex = 113;
-            this.chkLC5QuickPair1213.UseVisualStyleBackColor = true;
+            this.cmbLC5Mode14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode14.FormattingEnabled = true;
+            this.cmbLC5Mode14.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode14.Location = new System.Drawing.Point(1190, 3);
+            this.cmbLC5Mode14.Name = "cmbLC5Mode14";
+            this.cmbLC5Mode14.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode14.TabIndex = 214;
             // 
-            // chkLC5QuickPair1011
+            // cmbLC5Mode13
             // 
-            this.chkLC5QuickPair1011.AutoSize = true;
-            this.chkLC5QuickPair1011.Location = new System.Drawing.Point(926, 6);
-            this.chkLC5QuickPair1011.Name = "chkLC5QuickPair1011";
-            this.chkLC5QuickPair1011.Size = new System.Drawing.Size(15, 14);
-            this.chkLC5QuickPair1011.TabIndex = 112;
-            this.chkLC5QuickPair1011.UseVisualStyleBackColor = true;
+            this.cmbLC5Mode13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode13.FormattingEnabled = true;
+            this.cmbLC5Mode13.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode13.Location = new System.Drawing.Point(1118, 3);
+            this.cmbLC5Mode13.Name = "cmbLC5Mode13";
+            this.cmbLC5Mode13.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode13.TabIndex = 213;
             // 
-            // chkLC5QuickPair0809
+            // cmbLC5Mode12
             // 
-            this.chkLC5QuickPair0809.AutoSize = true;
-            this.chkLC5QuickPair0809.Location = new System.Drawing.Point(782, 6);
-            this.chkLC5QuickPair0809.Name = "chkLC5QuickPair0809";
-            this.chkLC5QuickPair0809.Size = new System.Drawing.Size(15, 14);
-            this.chkLC5QuickPair0809.TabIndex = 111;
-            this.chkLC5QuickPair0809.UseVisualStyleBackColor = true;
+            this.cmbLC5Mode12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode12.FormattingEnabled = true;
+            this.cmbLC5Mode12.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode12.Location = new System.Drawing.Point(1046, 3);
+            this.cmbLC5Mode12.Name = "cmbLC5Mode12";
+            this.cmbLC5Mode12.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode12.TabIndex = 212;
             // 
-            // chkLC5QuickPair0607
+            // cmbLC5Mode11
             // 
-            this.chkLC5QuickPair0607.AutoSize = true;
-            this.chkLC5QuickPair0607.Location = new System.Drawing.Point(638, 6);
-            this.chkLC5QuickPair0607.Name = "chkLC5QuickPair0607";
-            this.chkLC5QuickPair0607.Size = new System.Drawing.Size(15, 14);
-            this.chkLC5QuickPair0607.TabIndex = 110;
-            this.chkLC5QuickPair0607.UseVisualStyleBackColor = true;
+            this.cmbLC5Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode11.FormattingEnabled = true;
+            this.cmbLC5Mode11.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode11.Location = new System.Drawing.Point(974, 3);
+            this.cmbLC5Mode11.Name = "cmbLC5Mode11";
+            this.cmbLC5Mode11.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode11.TabIndex = 211;
             // 
-            // chkLC5QuickPair0405
+            // cmbLC5Mode10
             // 
-            this.chkLC5QuickPair0405.AutoSize = true;
-            this.chkLC5QuickPair0405.Location = new System.Drawing.Point(494, 6);
-            this.chkLC5QuickPair0405.Name = "chkLC5QuickPair0405";
-            this.chkLC5QuickPair0405.Size = new System.Drawing.Size(15, 14);
-            this.chkLC5QuickPair0405.TabIndex = 109;
-            this.chkLC5QuickPair0405.UseVisualStyleBackColor = true;
+            this.cmbLC5Mode10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode10.FormattingEnabled = true;
+            this.cmbLC5Mode10.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode10.Location = new System.Drawing.Point(902, 3);
+            this.cmbLC5Mode10.Name = "cmbLC5Mode10";
+            this.cmbLC5Mode10.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode10.TabIndex = 210;
             // 
-            // chkLC5QuickPair0203
+            // cmbLC5Mode09
             // 
-            this.chkLC5QuickPair0203.AutoSize = true;
-            this.chkLC5QuickPair0203.Location = new System.Drawing.Point(350, 6);
-            this.chkLC5QuickPair0203.Name = "chkLC5QuickPair0203";
-            this.chkLC5QuickPair0203.Size = new System.Drawing.Size(15, 14);
-            this.chkLC5QuickPair0203.TabIndex = 108;
-            this.chkLC5QuickPair0203.UseVisualStyleBackColor = true;
+            this.cmbLC5Mode09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode09.FormattingEnabled = true;
+            this.cmbLC5Mode09.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode09.Location = new System.Drawing.Point(830, 3);
+            this.cmbLC5Mode09.Name = "cmbLC5Mode09";
+            this.cmbLC5Mode09.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode09.TabIndex = 209;
+            // 
+            // cmbLC5Mode08
+            // 
+            this.cmbLC5Mode08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode08.FormattingEnabled = true;
+            this.cmbLC5Mode08.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode08.Location = new System.Drawing.Point(758, 3);
+            this.cmbLC5Mode08.Name = "cmbLC5Mode08";
+            this.cmbLC5Mode08.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode08.TabIndex = 208;
+            // 
+            // cmbLC5Mode07
+            // 
+            this.cmbLC5Mode07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode07.FormattingEnabled = true;
+            this.cmbLC5Mode07.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode07.Location = new System.Drawing.Point(686, 3);
+            this.cmbLC5Mode07.Name = "cmbLC5Mode07";
+            this.cmbLC5Mode07.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode07.TabIndex = 207;
+            // 
+            // cmbLC5Mode06
+            // 
+            this.cmbLC5Mode06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode06.FormattingEnabled = true;
+            this.cmbLC5Mode06.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode06.Location = new System.Drawing.Point(614, 3);
+            this.cmbLC5Mode06.Name = "cmbLC5Mode06";
+            this.cmbLC5Mode06.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode06.TabIndex = 206;
+            // 
+            // cmbLC5Mode05
+            // 
+            this.cmbLC5Mode05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode05.FormattingEnabled = true;
+            this.cmbLC5Mode05.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode05.Location = new System.Drawing.Point(542, 3);
+            this.cmbLC5Mode05.Name = "cmbLC5Mode05";
+            this.cmbLC5Mode05.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode05.TabIndex = 205;
+            // 
+            // cmbLC5Mode04
+            // 
+            this.cmbLC5Mode04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode04.FormattingEnabled = true;
+            this.cmbLC5Mode04.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode04.Location = new System.Drawing.Point(471, 3);
+            this.cmbLC5Mode04.Name = "cmbLC5Mode04";
+            this.cmbLC5Mode04.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode04.TabIndex = 204;
+            // 
+            // cmbLC5Mode03
+            // 
+            this.cmbLC5Mode03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode03.FormattingEnabled = true;
+            this.cmbLC5Mode03.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode03.Location = new System.Drawing.Point(399, 3);
+            this.cmbLC5Mode03.Name = "cmbLC5Mode03";
+            this.cmbLC5Mode03.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode03.TabIndex = 203;
+            // 
+            // cmbLC5Mode02
+            // 
+            this.cmbLC5Mode02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode02.FormattingEnabled = true;
+            this.cmbLC5Mode02.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode02.Location = new System.Drawing.Point(327, 3);
+            this.cmbLC5Mode02.Name = "cmbLC5Mode02";
+            this.cmbLC5Mode02.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode02.TabIndex = 202;
+            // 
+            // cmbLC5Mode01
+            // 
+            this.cmbLC5Mode01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode01.FormattingEnabled = true;
+            this.cmbLC5Mode01.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC5Mode01.Location = new System.Drawing.Point(255, 3);
+            this.cmbLC5Mode01.Name = "cmbLC5Mode01";
+            this.cmbLC5Mode01.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode01.TabIndex = 201;
+            // 
+            // cmbLC5Mode00
+            // 
+            this.cmbLC5Mode00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC5Mode00.FormattingEnabled = true;
+            this.cmbLC5Mode00.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP"});
+            this.cmbLC5Mode00.Location = new System.Drawing.Point(183, 3);
+            this.cmbLC5Mode00.Name = "cmbLC5Mode00";
+            this.cmbLC5Mode00.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC5Mode00.TabIndex = 200;
             // 
             // label214
             // 
@@ -32136,20 +42520,9 @@ namespace M1ConfigGenerator
             this.label214.ForeColor = System.Drawing.SystemColors.Control;
             this.label214.Location = new System.Drawing.Point(3, 3);
             this.label214.Name = "label214";
-            this.label214.Size = new System.Drawing.Size(165, 17);
+            this.label214.Size = new System.Drawing.Size(126, 17);
             this.label214.TabIndex = 135;
-            this.label214.Text = "Pair with Next Channel (RP)";
-            // 
-            // chkLC5QuickPair0001
-            // 
-            this.chkLC5QuickPair0001.AutoSize = true;
-            this.chkLC5QuickPair0001.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC5QuickPair0001.ForeColor = System.Drawing.Color.Red;
-            this.chkLC5QuickPair0001.Location = new System.Drawing.Point(206, 6);
-            this.chkLC5QuickPair0001.Name = "chkLC5QuickPair0001";
-            this.chkLC5QuickPair0001.Size = new System.Drawing.Size(15, 14);
-            this.chkLC5QuickPair0001.TabIndex = 107;
-            this.chkLC5QuickPair0001.UseVisualStyleBackColor = true;
+            this.label214.Text = "Mode (Output Type)";
             // 
             // tabLC5Full
             // 
@@ -32171,7 +42544,9 @@ namespace M1ConfigGenerator
             "3",
             "4",
             "5",
-            "6"});
+            "6",
+            "7",
+            "8"});
             this.cmbLC5PanelNum.Location = new System.Drawing.Point(260, 25);
             this.cmbLC5PanelNum.Name = "cmbLC5PanelNum";
             this.cmbLC5PanelNum.Size = new System.Drawing.Size(40, 21);
@@ -33270,11 +43645,11 @@ namespace M1ConfigGenerator
             // tabLC6
             // 
             this.tabLC6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabLC6.Controls.Add(this.chkLC6Standalone);
             this.tabLC6.Controls.Add(this.chkLC6DCDimmer);
             this.tabLC6.Controls.Add(this.chkLC6Force);
             this.tabLC6.Controls.Add(this.chkLC6Shade);
             this.tabLC6.Controls.Add(this.chkLC6DCMotor);
-            this.tabLC6.Controls.Add(this.chkLC6DCDriver);
             this.tabLC6.Controls.Add(this.lblLC6Ch15);
             this.tabLC6.Controls.Add(this.lblLC6Ch14);
             this.tabLC6.Controls.Add(this.lblLC6Ch13);
@@ -33411,12 +43786,25 @@ namespace M1ConfigGenerator
             this.tabLC6.TabIndex = 6;
             this.tabLC6.Text = "LC 6";
             // 
+            // chkLC6Standalone
+            // 
+            this.chkLC6Standalone.AutoSize = true;
+            this.chkLC6Standalone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLC6Standalone.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkLC6Standalone.Location = new System.Drawing.Point(746, 26);
+            this.chkLC6Standalone.Name = "chkLC6Standalone";
+            this.chkLC6Standalone.Size = new System.Drawing.Size(164, 21);
+            this.chkLC6Standalone.TabIndex = 248;
+            this.chkLC6Standalone.Text = "Standalone Shade Card";
+            this.chkLC6Standalone.UseVisualStyleBackColor = true;
+            this.chkLC6Standalone.CheckedChanged += new System.EventHandler(this.chkLC6Standalone_CheckedChanged);
+            // 
             // chkLC6DCDimmer
             // 
             this.chkLC6DCDimmer.AutoSize = true;
             this.chkLC6DCDimmer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC6DCDimmer.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC6DCDimmer.Location = new System.Drawing.Point(474, 70);
+            this.chkLC6DCDimmer.Location = new System.Drawing.Point(361, 70);
             this.chkLC6DCDimmer.Name = "chkLC6DCDimmer";
             this.chkLC6DCDimmer.Size = new System.Drawing.Size(94, 21);
             this.chkLC6DCDimmer.TabIndex = 8;
@@ -33428,7 +43816,7 @@ namespace M1ConfigGenerator
             this.chkLC6Force.AutoSize = true;
             this.chkLC6Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC6Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC6Force.Location = new System.Drawing.Point(592, 70);
+            this.chkLC6Force.Location = new System.Drawing.Point(479, 70);
             this.chkLC6Force.Name = "chkLC6Force";
             this.chkLC6Force.Size = new System.Drawing.Size(129, 21);
             this.chkLC6Force.TabIndex = 9;
@@ -33452,24 +43840,12 @@ namespace M1ConfigGenerator
             this.chkLC6DCMotor.AutoSize = true;
             this.chkLC6DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC6DCMotor.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC6DCMotor.Location = new System.Drawing.Point(360, 70);
+            this.chkLC6DCMotor.Location = new System.Drawing.Point(247, 70);
             this.chkLC6DCMotor.Name = "chkLC6DCMotor";
             this.chkLC6DCMotor.Size = new System.Drawing.Size(85, 21);
             this.chkLC6DCMotor.TabIndex = 7;
             this.chkLC6DCMotor.Text = "DC Motor";
             this.chkLC6DCMotor.UseVisualStyleBackColor = true;
-            // 
-            // chkLC6DCDriver
-            // 
-            this.chkLC6DCDriver.AutoSize = true;
-            this.chkLC6DCDriver.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC6DCDriver.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC6DCDriver.Location = new System.Drawing.Point(247, 70);
-            this.chkLC6DCDriver.Name = "chkLC6DCDriver";
-            this.chkLC6DCDriver.Size = new System.Drawing.Size(83, 21);
-            this.chkLC6DCDriver.TabIndex = 6;
-            this.chkLC6DCDriver.Text = "DC Driver";
-            this.chkLC6DCDriver.UseVisualStyleBackColor = true;
             // 
             // lblLC6Ch15
             // 
@@ -33788,15 +44164,23 @@ namespace M1ConfigGenerator
             // tabLC6Quick
             // 
             this.tabLC6Quick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabLC6Quick.Controls.Add(this.chkLC6QuickPair1415);
-            this.tabLC6Quick.Controls.Add(this.chkLC6QuickPair1213);
-            this.tabLC6Quick.Controls.Add(this.chkLC6QuickPair1011);
-            this.tabLC6Quick.Controls.Add(this.chkLC6QuickPair0809);
-            this.tabLC6Quick.Controls.Add(this.chkLC6QuickPair0607);
-            this.tabLC6Quick.Controls.Add(this.chkLC6QuickPair0405);
-            this.tabLC6Quick.Controls.Add(this.chkLC6QuickPair0203);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode15);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode14);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode13);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode12);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode11);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode10);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode09);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode08);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode07);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode06);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode05);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode04);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode03);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode02);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode01);
+            this.tabLC6Quick.Controls.Add(this.cmbLC6Mode00);
             this.tabLC6Quick.Controls.Add(this.label215);
-            this.tabLC6Quick.Controls.Add(this.chkLC6QuickPair0001);
             this.tabLC6Quick.Location = new System.Drawing.Point(4, 22);
             this.tabLC6Quick.Name = "tabLC6Quick";
             this.tabLC6Quick.Padding = new System.Windows.Forms.Padding(3);
@@ -33804,68 +44188,227 @@ namespace M1ConfigGenerator
             this.tabLC6Quick.TabIndex = 0;
             this.tabLC6Quick.Text = "LC 6 Quick";
             // 
-            // chkLC6QuickPair1415
+            // cmbLC6Mode15
             // 
-            this.chkLC6QuickPair1415.AutoSize = true;
-            this.chkLC6QuickPair1415.Location = new System.Drawing.Point(1214, 6);
-            this.chkLC6QuickPair1415.Name = "chkLC6QuickPair1415";
-            this.chkLC6QuickPair1415.Size = new System.Drawing.Size(15, 14);
-            this.chkLC6QuickPair1415.TabIndex = 114;
-            this.chkLC6QuickPair1415.UseVisualStyleBackColor = true;
+            this.cmbLC6Mode15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode15.FormattingEnabled = true;
+            this.cmbLC6Mode15.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP DN"});
+            this.cmbLC6Mode15.Location = new System.Drawing.Point(1262, 3);
+            this.cmbLC6Mode15.Name = "cmbLC6Mode15";
+            this.cmbLC6Mode15.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode15.TabIndex = 231;
             // 
-            // chkLC6QuickPair1213
+            // cmbLC6Mode14
             // 
-            this.chkLC6QuickPair1213.AutoSize = true;
-            this.chkLC6QuickPair1213.Location = new System.Drawing.Point(1070, 6);
-            this.chkLC6QuickPair1213.Name = "chkLC6QuickPair1213";
-            this.chkLC6QuickPair1213.Size = new System.Drawing.Size(15, 14);
-            this.chkLC6QuickPair1213.TabIndex = 113;
-            this.chkLC6QuickPair1213.UseVisualStyleBackColor = true;
+            this.cmbLC6Mode14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode14.FormattingEnabled = true;
+            this.cmbLC6Mode14.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode14.Location = new System.Drawing.Point(1190, 3);
+            this.cmbLC6Mode14.Name = "cmbLC6Mode14";
+            this.cmbLC6Mode14.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode14.TabIndex = 230;
             // 
-            // chkLC6QuickPair1011
+            // cmbLC6Mode13
             // 
-            this.chkLC6QuickPair1011.AutoSize = true;
-            this.chkLC6QuickPair1011.Location = new System.Drawing.Point(926, 6);
-            this.chkLC6QuickPair1011.Name = "chkLC6QuickPair1011";
-            this.chkLC6QuickPair1011.Size = new System.Drawing.Size(15, 14);
-            this.chkLC6QuickPair1011.TabIndex = 112;
-            this.chkLC6QuickPair1011.UseVisualStyleBackColor = true;
+            this.cmbLC6Mode13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode13.FormattingEnabled = true;
+            this.cmbLC6Mode13.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode13.Location = new System.Drawing.Point(1118, 3);
+            this.cmbLC6Mode13.Name = "cmbLC6Mode13";
+            this.cmbLC6Mode13.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode13.TabIndex = 229;
             // 
-            // chkLC6QuickPair0809
+            // cmbLC6Mode12
             // 
-            this.chkLC6QuickPair0809.AutoSize = true;
-            this.chkLC6QuickPair0809.Location = new System.Drawing.Point(782, 6);
-            this.chkLC6QuickPair0809.Name = "chkLC6QuickPair0809";
-            this.chkLC6QuickPair0809.Size = new System.Drawing.Size(15, 14);
-            this.chkLC6QuickPair0809.TabIndex = 111;
-            this.chkLC6QuickPair0809.UseVisualStyleBackColor = true;
+            this.cmbLC6Mode12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode12.FormattingEnabled = true;
+            this.cmbLC6Mode12.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode12.Location = new System.Drawing.Point(1046, 3);
+            this.cmbLC6Mode12.Name = "cmbLC6Mode12";
+            this.cmbLC6Mode12.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode12.TabIndex = 228;
             // 
-            // chkLC6QuickPair0607
+            // cmbLC6Mode11
             // 
-            this.chkLC6QuickPair0607.AutoSize = true;
-            this.chkLC6QuickPair0607.Location = new System.Drawing.Point(638, 6);
-            this.chkLC6QuickPair0607.Name = "chkLC6QuickPair0607";
-            this.chkLC6QuickPair0607.Size = new System.Drawing.Size(15, 14);
-            this.chkLC6QuickPair0607.TabIndex = 110;
-            this.chkLC6QuickPair0607.UseVisualStyleBackColor = true;
+            this.cmbLC6Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode11.FormattingEnabled = true;
+            this.cmbLC6Mode11.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode11.Location = new System.Drawing.Point(974, 3);
+            this.cmbLC6Mode11.Name = "cmbLC6Mode11";
+            this.cmbLC6Mode11.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode11.TabIndex = 227;
             // 
-            // chkLC6QuickPair0405
+            // cmbLC6Mode10
             // 
-            this.chkLC6QuickPair0405.AutoSize = true;
-            this.chkLC6QuickPair0405.Location = new System.Drawing.Point(494, 6);
-            this.chkLC6QuickPair0405.Name = "chkLC6QuickPair0405";
-            this.chkLC6QuickPair0405.Size = new System.Drawing.Size(15, 14);
-            this.chkLC6QuickPair0405.TabIndex = 109;
-            this.chkLC6QuickPair0405.UseVisualStyleBackColor = true;
+            this.cmbLC6Mode10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode10.FormattingEnabled = true;
+            this.cmbLC6Mode10.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode10.Location = new System.Drawing.Point(902, 3);
+            this.cmbLC6Mode10.Name = "cmbLC6Mode10";
+            this.cmbLC6Mode10.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode10.TabIndex = 226;
             // 
-            // chkLC6QuickPair0203
+            // cmbLC6Mode09
             // 
-            this.chkLC6QuickPair0203.AutoSize = true;
-            this.chkLC6QuickPair0203.Location = new System.Drawing.Point(350, 6);
-            this.chkLC6QuickPair0203.Name = "chkLC6QuickPair0203";
-            this.chkLC6QuickPair0203.Size = new System.Drawing.Size(15, 14);
-            this.chkLC6QuickPair0203.TabIndex = 108;
-            this.chkLC6QuickPair0203.UseVisualStyleBackColor = true;
+            this.cmbLC6Mode09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode09.FormattingEnabled = true;
+            this.cmbLC6Mode09.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode09.Location = new System.Drawing.Point(830, 3);
+            this.cmbLC6Mode09.Name = "cmbLC6Mode09";
+            this.cmbLC6Mode09.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode09.TabIndex = 225;
+            // 
+            // cmbLC6Mode08
+            // 
+            this.cmbLC6Mode08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode08.FormattingEnabled = true;
+            this.cmbLC6Mode08.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode08.Location = new System.Drawing.Point(758, 3);
+            this.cmbLC6Mode08.Name = "cmbLC6Mode08";
+            this.cmbLC6Mode08.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode08.TabIndex = 224;
+            // 
+            // cmbLC6Mode07
+            // 
+            this.cmbLC6Mode07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode07.FormattingEnabled = true;
+            this.cmbLC6Mode07.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode07.Location = new System.Drawing.Point(686, 3);
+            this.cmbLC6Mode07.Name = "cmbLC6Mode07";
+            this.cmbLC6Mode07.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode07.TabIndex = 223;
+            // 
+            // cmbLC6Mode06
+            // 
+            this.cmbLC6Mode06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode06.FormattingEnabled = true;
+            this.cmbLC6Mode06.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode06.Location = new System.Drawing.Point(614, 3);
+            this.cmbLC6Mode06.Name = "cmbLC6Mode06";
+            this.cmbLC6Mode06.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode06.TabIndex = 222;
+            // 
+            // cmbLC6Mode05
+            // 
+            this.cmbLC6Mode05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode05.FormattingEnabled = true;
+            this.cmbLC6Mode05.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode05.Location = new System.Drawing.Point(542, 3);
+            this.cmbLC6Mode05.Name = "cmbLC6Mode05";
+            this.cmbLC6Mode05.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode05.TabIndex = 221;
+            // 
+            // cmbLC6Mode04
+            // 
+            this.cmbLC6Mode04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode04.FormattingEnabled = true;
+            this.cmbLC6Mode04.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode04.Location = new System.Drawing.Point(471, 3);
+            this.cmbLC6Mode04.Name = "cmbLC6Mode04";
+            this.cmbLC6Mode04.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode04.TabIndex = 220;
+            // 
+            // cmbLC6Mode03
+            // 
+            this.cmbLC6Mode03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode03.FormattingEnabled = true;
+            this.cmbLC6Mode03.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode03.Location = new System.Drawing.Point(399, 3);
+            this.cmbLC6Mode03.Name = "cmbLC6Mode03";
+            this.cmbLC6Mode03.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode03.TabIndex = 219;
+            // 
+            // cmbLC6Mode02
+            // 
+            this.cmbLC6Mode02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode02.FormattingEnabled = true;
+            this.cmbLC6Mode02.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode02.Location = new System.Drawing.Point(327, 3);
+            this.cmbLC6Mode02.Name = "cmbLC6Mode02";
+            this.cmbLC6Mode02.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode02.TabIndex = 218;
+            // 
+            // cmbLC6Mode01
+            // 
+            this.cmbLC6Mode01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode01.FormattingEnabled = true;
+            this.cmbLC6Mode01.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbLC6Mode01.Location = new System.Drawing.Point(255, 3);
+            this.cmbLC6Mode01.Name = "cmbLC6Mode01";
+            this.cmbLC6Mode01.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode01.TabIndex = 217;
+            // 
+            // cmbLC6Mode00
+            // 
+            this.cmbLC6Mode00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC6Mode00.FormattingEnabled = true;
+            this.cmbLC6Mode00.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP"});
+            this.cmbLC6Mode00.Location = new System.Drawing.Point(183, 3);
+            this.cmbLC6Mode00.Name = "cmbLC6Mode00";
+            this.cmbLC6Mode00.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC6Mode00.TabIndex = 216;
             // 
             // label215
             // 
@@ -33874,20 +44417,9 @@ namespace M1ConfigGenerator
             this.label215.ForeColor = System.Drawing.SystemColors.Control;
             this.label215.Location = new System.Drawing.Point(3, 3);
             this.label215.Name = "label215";
-            this.label215.Size = new System.Drawing.Size(165, 17);
+            this.label215.Size = new System.Drawing.Size(126, 17);
             this.label215.TabIndex = 135;
-            this.label215.Text = "Pair with Next Channel (RP)";
-            // 
-            // chkLC6QuickPair0001
-            // 
-            this.chkLC6QuickPair0001.AutoSize = true;
-            this.chkLC6QuickPair0001.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC6QuickPair0001.ForeColor = System.Drawing.Color.Red;
-            this.chkLC6QuickPair0001.Location = new System.Drawing.Point(206, 6);
-            this.chkLC6QuickPair0001.Name = "chkLC6QuickPair0001";
-            this.chkLC6QuickPair0001.Size = new System.Drawing.Size(15, 14);
-            this.chkLC6QuickPair0001.TabIndex = 107;
-            this.chkLC6QuickPair0001.UseVisualStyleBackColor = true;
+            this.label215.Text = "Mode (Output Type)";
             // 
             // tabLC6Full
             // 
@@ -33909,7 +44441,9 @@ namespace M1ConfigGenerator
             "3",
             "4",
             "5",
-            "6"});
+            "6",
+            "7",
+            "8"});
             this.cmbLC6PanelNum.Location = new System.Drawing.Point(260, 25);
             this.cmbLC6PanelNum.Name = "cmbLC6PanelNum";
             this.cmbLC6PanelNum.Size = new System.Drawing.Size(40, 21);
@@ -35004,6 +45538,41 @@ namespace M1ConfigGenerator
             this.cmbLC6OCTime07.Size = new System.Drawing.Size(40, 21);
             this.cmbLC6OCTime07.TabIndex = 34;
             // 
+            // tabLCGenerated
+            // 
+            this.tabLCGenerated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabLCGenerated.Controls.Add(this.label279);
+            this.tabLCGenerated.Controls.Add(this.tbxLCGenerated);
+            this.tabLCGenerated.Location = new System.Drawing.Point(4, 22);
+            this.tabLCGenerated.Name = "tabLCGenerated";
+            this.tabLCGenerated.Size = new System.Drawing.Size(1376, 733);
+            this.tabLCGenerated.TabIndex = 7;
+            this.tabLCGenerated.Text = "Generated";
+            // 
+            // label279
+            // 
+            this.label279.AutoSize = true;
+            this.label279.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label279.ForeColor = System.Drawing.SystemColors.Control;
+            this.label279.Location = new System.Drawing.Point(5, 26);
+            this.label279.Name = "label279";
+            this.label279.Size = new System.Drawing.Size(289, 21);
+            this.label279.TabIndex = 5;
+            this.label279.Text = "These files are now present in the folder:";
+            // 
+            // tbxLCGenerated
+            // 
+            this.tbxLCGenerated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tbxLCGenerated.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxLCGenerated.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxLCGenerated.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbxLCGenerated.Location = new System.Drawing.Point(9, 50);
+            this.tbxLCGenerated.Multiline = true;
+            this.tbxLCGenerated.Name = "tbxLCGenerated";
+            this.tbxLCGenerated.ReadOnly = true;
+            this.tbxLCGenerated.Size = new System.Drawing.Size(600, 200);
+            this.tbxLCGenerated.TabIndex = 4;
+            // 
             // btnLCCard5
             // 
             this.btnLCCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
@@ -35097,6 +45666,7 @@ namespace M1ConfigGenerator
             // 
             // panelSlide
             // 
+            this.panelSlide.Controls.Add(this.btnSlideGenerate);
             this.panelSlide.Controls.Add(this.btnSlideCard6);
             this.panelSlide.Controls.Add(this.btnSlideCard5);
             this.panelSlide.Controls.Add(this.btnSlideCard4);
@@ -35108,6 +45678,22 @@ namespace M1ConfigGenerator
             this.panelSlide.Name = "panelSlide";
             this.panelSlide.Size = new System.Drawing.Size(1380, 70);
             this.panelSlide.TabIndex = 22;
+            // 
+            // btnSlideGenerate
+            // 
+            this.btnSlideGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnSlideGenerate.FlatAppearance.BorderSize = 0;
+            this.btnSlideGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSlideGenerate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSlideGenerate.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnSlideGenerate.Location = new System.Drawing.Point(700, 14);
+            this.btnSlideGenerate.Name = "btnSlideGenerate";
+            this.btnSlideGenerate.Size = new System.Drawing.Size(100, 40);
+            this.btnSlideGenerate.TabIndex = 6;
+            this.btnSlideGenerate.Text = "Generate";
+            this.btnSlideGenerate.UseVisualStyleBackColor = false;
+            this.btnSlideGenerate.Visible = false;
+            this.btnSlideGenerate.Click += new System.EventHandler(this.btnSlideGenerate_Click);
             // 
             // btnSlideCard6
             // 
@@ -35210,10 +45796,11 @@ namespace M1ConfigGenerator
             this.tabControlSlide.Controls.Add(this.tabSlideBlank);
             this.tabControlSlide.Controls.Add(this.tabSlide1);
             this.tabControlSlide.Controls.Add(this.tabSlide2);
+            this.tabControlSlide.Controls.Add(this.tabSlideGenerated);
             this.tabControlSlide.Location = new System.Drawing.Point(0, 70);
             this.tabControlSlide.Name = "tabControlSlide";
             this.tabControlSlide.SelectedIndex = 0;
-            this.tabControlSlide.Size = new System.Drawing.Size(1253, 595);
+            this.tabControlSlide.Size = new System.Drawing.Size(1384, 759);
             this.tabControlSlide.TabIndex = 1;
             // 
             // tabSlideBlank
@@ -35222,7 +45809,7 @@ namespace M1ConfigGenerator
             this.tabSlideBlank.Location = new System.Drawing.Point(4, 22);
             this.tabSlideBlank.Name = "tabSlideBlank";
             this.tabSlideBlank.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSlideBlank.Size = new System.Drawing.Size(1245, 569);
+            this.tabSlideBlank.Size = new System.Drawing.Size(1376, 733);
             this.tabSlideBlank.TabIndex = 0;
             this.tabSlideBlank.Text = "Blank";
             // 
@@ -35232,7 +45819,7 @@ namespace M1ConfigGenerator
             this.tabSlide1.Location = new System.Drawing.Point(4, 22);
             this.tabSlide1.Name = "tabSlide1";
             this.tabSlide1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSlide1.Size = new System.Drawing.Size(1245, 569);
+            this.tabSlide1.Size = new System.Drawing.Size(1376, 733);
             this.tabSlide1.TabIndex = 1;
             this.tabSlide1.Text = "Slide 1";
             // 
@@ -35241,9 +45828,56 @@ namespace M1ConfigGenerator
             this.tabSlide2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.tabSlide2.Location = new System.Drawing.Point(4, 22);
             this.tabSlide2.Name = "tabSlide2";
-            this.tabSlide2.Size = new System.Drawing.Size(1245, 569);
+            this.tabSlide2.Size = new System.Drawing.Size(1376, 733);
             this.tabSlide2.TabIndex = 2;
             this.tabSlide2.Text = "Slide 2";
+            // 
+            // tabSlideGenerated
+            // 
+            this.tabSlideGenerated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabSlideGenerated.Controls.Add(this.label280);
+            this.tabSlideGenerated.Controls.Add(this.tbxSlideGenerated);
+            this.tabSlideGenerated.Location = new System.Drawing.Point(4, 22);
+            this.tabSlideGenerated.Name = "tabSlideGenerated";
+            this.tabSlideGenerated.Size = new System.Drawing.Size(1376, 733);
+            this.tabSlideGenerated.TabIndex = 3;
+            this.tabSlideGenerated.Text = "Generated";
+            // 
+            // label280
+            // 
+            this.label280.AutoSize = true;
+            this.label280.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label280.ForeColor = System.Drawing.SystemColors.Control;
+            this.label280.Location = new System.Drawing.Point(5, 26);
+            this.label280.Name = "label280";
+            this.label280.Size = new System.Drawing.Size(289, 21);
+            this.label280.TabIndex = 5;
+            this.label280.Text = "These files are now present in the folder:";
+            // 
+            // tbxSlideGenerated
+            // 
+            this.tbxSlideGenerated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tbxSlideGenerated.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbxSlideGenerated.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxSlideGenerated.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbxSlideGenerated.Location = new System.Drawing.Point(9, 50);
+            this.tbxSlideGenerated.Multiline = true;
+            this.tbxSlideGenerated.Name = "tbxSlideGenerated";
+            this.tbxSlideGenerated.ReadOnly = true;
+            this.tbxSlideGenerated.Size = new System.Drawing.Size(600, 200);
+            this.tbxSlideGenerated.TabIndex = 4;
+            // 
+            // chkLC4DCMotor
+            // 
+            this.chkLC4DCMotor.AutoSize = true;
+            this.chkLC4DCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLC4DCMotor.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkLC4DCMotor.Location = new System.Drawing.Point(247, 70);
+            this.chkLC4DCMotor.Name = "chkLC4DCMotor";
+            this.chkLC4DCMotor.Size = new System.Drawing.Size(85, 21);
+            this.chkLC4DCMotor.TabIndex = 7;
+            this.chkLC4DCMotor.Text = "DC Motor";
+            this.chkLC4DCMotor.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -35277,6 +45911,8 @@ namespace M1ConfigGenerator
             this.tabControlAux2QF.ResumeLayout(false);
             this.tabAux2Quick.ResumeLayout(false);
             this.tabAux2Quick.PerformLayout();
+            this.tabAuxGenerated.ResumeLayout(false);
+            this.tabAuxGenerated.PerformLayout();
             this.tabMainBreaker.ResumeLayout(false);
             this.panelBreaker.ResumeLayout(false);
             this.tabControlBreaker.ResumeLayout(false);
@@ -35284,6 +45920,12 @@ namespace M1ConfigGenerator
             this.tabBreaker1.PerformLayout();
             this.tabBreaker2.ResumeLayout(false);
             this.tabBreaker2.PerformLayout();
+            this.tabBreaker3.ResumeLayout(false);
+            this.tabBreaker3.PerformLayout();
+            this.tabBreaker4.ResumeLayout(false);
+            this.tabBreaker4.PerformLayout();
+            this.tabBreakerGenerated.ResumeLayout(false);
+            this.tabBreakerGenerated.PerformLayout();
             this.tabMainDimmer.ResumeLayout(false);
             this.tabControlDimmer.ResumeLayout(false);
             this.tabDimmer1.ResumeLayout(false);
@@ -35301,6 +45943,8 @@ namespace M1ConfigGenerator
             this.tabDimmer5.PerformLayout();
             this.tabDimmer6.ResumeLayout(false);
             this.tabDimmer6.PerformLayout();
+            this.tabDimmerGenerated.ResumeLayout(false);
+            this.tabDimmerGenerated.PerformLayout();
             this.tabMainHC.ResumeLayout(false);
             this.panelHC.ResumeLayout(false);
             this.tabControlHC.ResumeLayout(false);
@@ -35312,6 +45956,12 @@ namespace M1ConfigGenerator
             this.tabHC3.PerformLayout();
             this.tabHC4.ResumeLayout(false);
             this.tabHC4.PerformLayout();
+            this.tabHC5.ResumeLayout(false);
+            this.tabHC5.PerformLayout();
+            this.tabHC6.ResumeLayout(false);
+            this.tabHC6.PerformLayout();
+            this.tabHCGenerated.ResumeLayout(false);
+            this.tabHCGenerated.PerformLayout();
             this.tabMainLC.ResumeLayout(false);
             this.tabControlLC.ResumeLayout(false);
             this.tabLC1.ResumeLayout(false);
@@ -35346,9 +45996,13 @@ namespace M1ConfigGenerator
             this.tabControlLC6QF.ResumeLayout(false);
             this.tabLC6Quick.ResumeLayout(false);
             this.tabLC6Quick.PerformLayout();
+            this.tabLCGenerated.ResumeLayout(false);
+            this.tabLCGenerated.PerformLayout();
             this.tabMainSlide.ResumeLayout(false);
             this.panelSlide.ResumeLayout(false);
             this.tabControlSlide.ResumeLayout(false);
+            this.tabSlideGenerated.ResumeLayout(false);
+            this.tabSlideGenerated.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -35362,7 +46016,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Button btnMenuDimmer;
         private System.Windows.Forms.Button btnMenuBreaker;
         private System.Windows.Forms.Button btnMenuAux;
-        private System.Windows.Forms.Button btnMenuLoad;
         private System.Windows.Forms.Button btnMenuNew;
         private System.Windows.Forms.ComboBox cmbStartSlide;
         private System.Windows.Forms.ComboBox cmbStartLC;
@@ -35419,7 +46072,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cmbDimmer1CardNum;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox chkDimmer1DCDriver;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.CheckBox chkDimmer1MG4Ch07;
         private System.Windows.Forms.CheckBox chkDimmer1MG3Ch07;
@@ -35646,8 +46298,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox chkDimmer1Lock01;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.ComboBox cmbStartSetup;
         private System.Windows.Forms.CheckBox chkDimmer2MG4Ch11;
         private System.Windows.Forms.CheckBox chkDimmer2MG3Ch11;
         private System.Windows.Forms.CheckBox chkDimmer2MG2Ch11;
@@ -35743,7 +46393,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox chkDimmer2Force;
         private System.Windows.Forms.CheckBox chkDimmer2Shade;
         private System.Windows.Forms.CheckBox chkDimmer2DCMotor;
-        private System.Windows.Forms.CheckBox chkDimmer2DCDriver;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.TextBox tbxDimmer2CfgType;
         private System.Windows.Forms.Label label50;
@@ -35847,7 +46496,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox chkDimmer4Force;
         private System.Windows.Forms.CheckBox chkDimmer4Shade;
         private System.Windows.Forms.CheckBox chkDimmer4DCMotor;
-        private System.Windows.Forms.CheckBox chkDimmer4DCDriver;
         private System.Windows.Forms.Label label97;
         private System.Windows.Forms.TextBox tbxDimmer4CfgType;
         private System.Windows.Forms.Label label98;
@@ -35951,7 +46599,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox chkDimmer3Force;
         private System.Windows.Forms.CheckBox chkDimmer3Shade;
         private System.Windows.Forms.CheckBox chkDimmer3DCMotor;
-        private System.Windows.Forms.CheckBox chkDimmer3DCDriver;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.TextBox tbxDimmer3CfgType;
         private System.Windows.Forms.Label label74;
@@ -36055,7 +46702,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox chkDimmer5Force;
         private System.Windows.Forms.CheckBox chkDimmer5Shade;
         private System.Windows.Forms.CheckBox chkDimmer5DCMotor;
-        private System.Windows.Forms.CheckBox chkDimmer5DCDriver;
         private System.Windows.Forms.Label label121;
         private System.Windows.Forms.TextBox tbxDimmer5CfgType;
         private System.Windows.Forms.Label label122;
@@ -36159,7 +46805,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox chkDimmer6Force;
         private System.Windows.Forms.CheckBox chkDimmer6Shade;
         private System.Windows.Forms.CheckBox chkDimmer6DCMotor;
-        private System.Windows.Forms.CheckBox chkDimmer6DCDriver;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.TextBox tbxDimmer6CfgType;
         private System.Windows.Forms.Label label62;
@@ -36687,7 +47332,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox chkLC1Force;
         private System.Windows.Forms.CheckBox chkLC1Shade;
         private System.Windows.Forms.CheckBox chkLC1DCMotor;
-        private System.Windows.Forms.CheckBox chkLC1DCDriver;
         private System.Windows.Forms.Label label229;
         private System.Windows.Forms.TextBox tbxLC1CfgType;
         private System.Windows.Forms.Label label230;
@@ -36837,7 +47481,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox chkLC2Force;
         private System.Windows.Forms.CheckBox chkLC2Shade;
         private System.Windows.Forms.CheckBox chkLC2DCMotor;
-        private System.Windows.Forms.CheckBox chkLC2DCDriver;
         private System.Windows.Forms.Panel panelMain;
         private TablessControl tabControlMain;
         private System.Windows.Forms.TabPage tabMainBlank;
@@ -36958,74 +47601,26 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox checkBox306;
         private System.Windows.Forms.CheckBox checkBox307;
         private System.Windows.Forms.CheckBox checkBox308;
-        private System.Windows.Forms.CheckBox chkLC1QuickPair1415;
-        private System.Windows.Forms.CheckBox chkLC1QuickPair1213;
-        private System.Windows.Forms.CheckBox chkLC1QuickPair1011;
-        private System.Windows.Forms.CheckBox chkLC1QuickPair0809;
-        private System.Windows.Forms.CheckBox chkLC1QuickPair0607;
-        private System.Windows.Forms.CheckBox chkLC1QuickPair0405;
-        private System.Windows.Forms.CheckBox chkLC1QuickPair0203;
         private System.Windows.Forms.Label label210;
-        private System.Windows.Forms.CheckBox chkLC1QuickPair0001;
         private TablessControl tabControlLC2QF;
         private System.Windows.Forms.TabPage tabLC2Quick;
-        private System.Windows.Forms.CheckBox chkLC2QuickPair1415;
-        private System.Windows.Forms.CheckBox chkLC2QuickPair1213;
-        private System.Windows.Forms.CheckBox chkLC2QuickPair1011;
-        private System.Windows.Forms.CheckBox chkLC2QuickPair0809;
-        private System.Windows.Forms.CheckBox chkLC2QuickPair0607;
-        private System.Windows.Forms.CheckBox chkLC2QuickPair0405;
-        private System.Windows.Forms.CheckBox chkLC2QuickPair0203;
         private System.Windows.Forms.Label label211;
-        private System.Windows.Forms.CheckBox chkLC2QuickPair0001;
         private System.Windows.Forms.TabPage tabLC2Full;
         private TablessControl tabControlLC3QF;
         private System.Windows.Forms.TabPage tabLC3Quick;
-        private System.Windows.Forms.CheckBox chkLC3QuickPair1415;
-        private System.Windows.Forms.CheckBox chkLC3QuickPair1213;
-        private System.Windows.Forms.CheckBox chkLC3QuickPair1011;
-        private System.Windows.Forms.CheckBox chkLC3QuickPair0809;
-        private System.Windows.Forms.CheckBox chkLC3QuickPair0607;
-        private System.Windows.Forms.CheckBox chkLC3QuickPair0405;
-        private System.Windows.Forms.CheckBox chkLC3QuickPair0203;
         private System.Windows.Forms.Label label212;
-        private System.Windows.Forms.CheckBox chkLC3QuickPair0001;
         private System.Windows.Forms.TabPage tabLC3Full;
         private TablessControl tabControlLC4QF;
         private System.Windows.Forms.TabPage tabLC4Quick;
-        private System.Windows.Forms.CheckBox chkLC4QuickPair1415;
-        private System.Windows.Forms.CheckBox chkLC4QuickPair1213;
-        private System.Windows.Forms.CheckBox chkLC4QuickPair1011;
-        private System.Windows.Forms.CheckBox chkLC4QuickPair0809;
-        private System.Windows.Forms.CheckBox chkLC4QuickPair0607;
-        private System.Windows.Forms.CheckBox chkLC4QuickPair0405;
-        private System.Windows.Forms.CheckBox chkLC4QuickPair0203;
         private System.Windows.Forms.Label label213;
-        private System.Windows.Forms.CheckBox chkLC4QuickPair0001;
         private System.Windows.Forms.TabPage tabLC4Full;
         private TablessControl tabControlLC5QF;
         private System.Windows.Forms.TabPage tabLC5Quick;
-        private System.Windows.Forms.CheckBox chkLC5QuickPair1415;
-        private System.Windows.Forms.CheckBox chkLC5QuickPair1213;
-        private System.Windows.Forms.CheckBox chkLC5QuickPair1011;
-        private System.Windows.Forms.CheckBox chkLC5QuickPair0809;
-        private System.Windows.Forms.CheckBox chkLC5QuickPair0607;
-        private System.Windows.Forms.CheckBox chkLC5QuickPair0405;
-        private System.Windows.Forms.CheckBox chkLC5QuickPair0203;
         private System.Windows.Forms.Label label214;
-        private System.Windows.Forms.CheckBox chkLC5QuickPair0001;
         private System.Windows.Forms.TabPage tabLC5Full;
         private TablessControl tabControlLC6QF;
         private System.Windows.Forms.TabPage tabLC6Quick;
-        private System.Windows.Forms.CheckBox chkLC6QuickPair1415;
-        private System.Windows.Forms.CheckBox chkLC6QuickPair1213;
-        private System.Windows.Forms.CheckBox chkLC6QuickPair1011;
-        private System.Windows.Forms.CheckBox chkLC6QuickPair0809;
-        private System.Windows.Forms.CheckBox chkLC6QuickPair0607;
-        private System.Windows.Forms.CheckBox chkLC6QuickPair0405;
-        private System.Windows.Forms.CheckBox chkLC6QuickPair0203;
         private System.Windows.Forms.Label label215;
-        private System.Windows.Forms.CheckBox chkLC6QuickPair0001;
         private System.Windows.Forms.TabPage tabLC6Full;
         private System.Windows.Forms.CheckBox chkLC2MG4Ch15;
         private System.Windows.Forms.CheckBox chkLC2MG3Ch15;
@@ -37261,22 +47856,17 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox chkLC3Force;
         private System.Windows.Forms.CheckBox chkLC3Shade;
         private System.Windows.Forms.CheckBox chkLC3DCMotor;
-        private System.Windows.Forms.CheckBox chkLC3DCDriver;
         private System.Windows.Forms.CheckBox chkLC4DCDimmer;
         private System.Windows.Forms.CheckBox chkLC4Force;
         private System.Windows.Forms.CheckBox chkLC4Shade;
-        private System.Windows.Forms.CheckBox chkLC4DCMotor;
-        private System.Windows.Forms.CheckBox chkLC4DCDriver;
         private System.Windows.Forms.CheckBox chkLC5DCDimmer;
         private System.Windows.Forms.CheckBox chkLC5Force;
         private System.Windows.Forms.CheckBox chkLC5Shade;
         private System.Windows.Forms.CheckBox chkLC5DCMotor;
-        private System.Windows.Forms.CheckBox chkLC5DCDriver;
         private System.Windows.Forms.CheckBox chkLC6DCDimmer;
         private System.Windows.Forms.CheckBox chkLC6Force;
         private System.Windows.Forms.CheckBox chkLC6Shade;
         private System.Windows.Forms.CheckBox chkLC6DCMotor;
-        private System.Windows.Forms.CheckBox chkLC6DCDriver;
         private System.Windows.Forms.CheckBox chkAux1Shade;
         private System.Windows.Forms.ComboBox cmbAux1PanelNum;
         private System.Windows.Forms.Label label30;
@@ -37288,7 +47878,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxAux1CfgType;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.CheckBox chkAux1DCMotor;
-        private System.Windows.Forms.CheckBox chkAux1DCDriver;
         private System.Windows.Forms.CheckBox chkAux1DCDimmer;
         private System.Windows.Forms.CheckBox chkAux1Force;
         private System.Windows.Forms.Label label35;
@@ -37452,7 +48041,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxAux2CfgType;
         private System.Windows.Forms.Label label146;
         private System.Windows.Forms.CheckBox chkAux2DCMotor;
-        private System.Windows.Forms.CheckBox chkAux2DCDriver;
         private System.Windows.Forms.CheckBox chkAux2DCDimmer;
         private System.Windows.Forms.CheckBox chkAux2Force;
         private System.Windows.Forms.Label label147;
@@ -37470,7 +48058,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxHC1CfgType;
         private System.Windows.Forms.Label label110;
         private System.Windows.Forms.CheckBox chkHC1DCDimmer;
-        private System.Windows.Forms.CheckBox chkHC1DCDriver;
         private System.Windows.Forms.CheckBox chkHC1DCMotor;
         private System.Windows.Forms.CheckBox chkHC1Force;
         private System.Windows.Forms.Label label111;
@@ -37590,7 +48177,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxHC2CfgType;
         private System.Windows.Forms.Label label166;
         private System.Windows.Forms.CheckBox chkHC2DCDimmer;
-        private System.Windows.Forms.CheckBox chkHC2DCDriver;
         private System.Windows.Forms.CheckBox chkHC2DCMotor;
         private System.Windows.Forms.CheckBox chkHC2Force;
         private System.Windows.Forms.Label label167;
@@ -37607,7 +48193,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxHC3CfgType;
         private System.Windows.Forms.Label label172;
         private System.Windows.Forms.CheckBox chkHC3DCDimmer;
-        private System.Windows.Forms.CheckBox chkHC3DCDriver;
         private System.Windows.Forms.CheckBox chkHC3DCMotor;
         private System.Windows.Forms.CheckBox chkHC3Force;
         private System.Windows.Forms.Label label173;
@@ -37624,7 +48209,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxHC4CfgType;
         private System.Windows.Forms.Label label190;
         private System.Windows.Forms.CheckBox chkHC4DCDimmer;
-        private System.Windows.Forms.CheckBox chkHC4DCDriver;
         private System.Windows.Forms.CheckBox chkHC4DCMotor;
         private System.Windows.Forms.CheckBox chkHC4Force;
         private System.Windows.Forms.Label label191;
@@ -37939,22 +48523,711 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label lblHC4Ch06;
         private System.Windows.Forms.Label lblHC4Ch05;
         private System.Windows.Forms.Label lblHC4Ch04;
-        private System.Windows.Forms.ComboBox comboBox35;
+        private System.Windows.Forms.ComboBox cmbBreaker1PanelNum;
         private System.Windows.Forms.Label label252;
-        private System.Windows.Forms.ComboBox comboBox36;
+        private System.Windows.Forms.ComboBox cmbBreaker1CardNum;
         private System.Windows.Forms.Label label253;
         private System.Windows.Forms.Label label254;
-        private System.Windows.Forms.TextBox textBox62;
+        private System.Windows.Forms.TextBox tbxBreaker1CfgRev;
         private System.Windows.Forms.Label label255;
-        private System.Windows.Forms.TextBox textBox63;
-        private System.Windows.Forms.ComboBox comboBox37;
+        private System.Windows.Forms.TextBox tbxBreaker1CfgType;
+        private System.Windows.Forms.ComboBox cmbBreaker2PanelNum;
         private System.Windows.Forms.Label label256;
-        private System.Windows.Forms.ComboBox comboBox38;
+        private System.Windows.Forms.ComboBox cmbBreaker2CardNum;
         private System.Windows.Forms.Label label257;
         private System.Windows.Forms.Label label258;
-        private System.Windows.Forms.TextBox textBox65;
+        private System.Windows.Forms.TextBox tbxBreaker2CfgRev;
         private System.Windows.Forms.Label label259;
-        private System.Windows.Forms.TextBox textBox66;
+        private System.Windows.Forms.TextBox tbxBreaker2CfgType;
+        private System.Windows.Forms.TabPage tabAuxGenerated;
+        private System.Windows.Forms.TabPage tabBreakerGenerated;
+        private System.Windows.Forms.TabPage tabDimmerGenerated;
+        private System.Windows.Forms.TabPage tabHCGenerated;
+        private System.Windows.Forms.TabPage tabLCGenerated;
+        private System.Windows.Forms.TabPage tabSlideGenerated;
+        private System.Windows.Forms.TextBox tbxDimmerGenerated;
+        private System.Windows.Forms.Button btnBreakerGenerate;
+        private System.Windows.Forms.Label label273;
+        private System.Windows.Forms.Label label260;
+        private System.Windows.Forms.TextBox tbxBreaker1BaseIndex;
+        private System.Windows.Forms.Label lblBreaker1Ch00;
+        private System.Windows.Forms.Label lblBreaker1Ch01;
+        private System.Windows.Forms.Label lblBreaker1Ch04;
+        private System.Windows.Forms.Label lblBreaker1Ch02;
+        private System.Windows.Forms.Label lblBreaker1Ch05;
+        private System.Windows.Forms.Label lblBreaker1Ch03;
+        private System.Windows.Forms.Label lblBreaker1Ch06;
+        private System.Windows.Forms.Label lblBreaker1Ch11;
+        private System.Windows.Forms.Label lblBreaker1Ch07;
+        private System.Windows.Forms.Label lblBreaker1Ch10;
+        private System.Windows.Forms.Label lblBreaker1Ch08;
+        private System.Windows.Forms.Label lblBreaker1Ch09;
+        private System.Windows.Forms.TabPage tabHC5;
+        private System.Windows.Forms.ComboBox cmbHC5Mode11;
+        private System.Windows.Forms.ComboBox cmbHC5Mode10;
+        private System.Windows.Forms.ComboBox cmbHC5Mode09;
+        private System.Windows.Forms.ComboBox cmbHC5Mode08;
+        private System.Windows.Forms.ComboBox cmbHC5Mode07;
+        private System.Windows.Forms.ComboBox cmbHC5Mode06;
+        private System.Windows.Forms.ComboBox cmbHC5Mode05;
+        private System.Windows.Forms.ComboBox cmbHC5Mode04;
+        private System.Windows.Forms.ComboBox cmbHC5Mode03;
+        private System.Windows.Forms.ComboBox cmbHC5Mode02;
+        private System.Windows.Forms.ComboBox cmbHC5Mode01;
+        private System.Windows.Forms.Label label261;
+        private System.Windows.Forms.ComboBox cmbHC5Mode00;
+        private System.Windows.Forms.ComboBox cmbHC5OCAmps11;
+        private System.Windows.Forms.ComboBox cmbHC5OCAmps10;
+        private System.Windows.Forms.ComboBox cmbHC5OCAmps09;
+        private System.Windows.Forms.ComboBox cmbHC5OCAmps08;
+        private System.Windows.Forms.ComboBox cmbHC5OCAmps07;
+        private System.Windows.Forms.ComboBox cmbHC5OCAmps06;
+        private System.Windows.Forms.ComboBox cmbHC5OCAmps05;
+        private System.Windows.Forms.ComboBox cmbHC5OCAmps04;
+        private System.Windows.Forms.ComboBox cmbHC5OCAmps03;
+        private System.Windows.Forms.ComboBox cmbHC5OCAmps02;
+        private System.Windows.Forms.ComboBox cmbHC5OCAmps01;
+        private System.Windows.Forms.CheckBox chkHC5MG4Ch11;
+        private System.Windows.Forms.CheckBox chkHC5MG3Ch11;
+        private System.Windows.Forms.CheckBox chkHC5MG2Ch11;
+        private System.Windows.Forms.CheckBox chkHC5MG1Ch11;
+        private System.Windows.Forms.CheckBox chkHC5MG4Ch10;
+        private System.Windows.Forms.CheckBox chkHC5MG3Ch10;
+        private System.Windows.Forms.CheckBox chkHC5MG2Ch10;
+        private System.Windows.Forms.CheckBox chkHC5MG1Ch10;
+        private System.Windows.Forms.CheckBox chkHC5MG4Ch09;
+        private System.Windows.Forms.CheckBox chkHC5MG3Ch09;
+        private System.Windows.Forms.CheckBox chkHC5MG2Ch09;
+        private System.Windows.Forms.CheckBox chkHC5MG1Ch09;
+        private System.Windows.Forms.CheckBox chkHC5MG4Ch08;
+        private System.Windows.Forms.CheckBox chkHC5MG3Ch08;
+        private System.Windows.Forms.CheckBox chkHC5MG2Ch08;
+        private System.Windows.Forms.CheckBox chkHC5MG1Ch08;
+        private System.Windows.Forms.CheckBox chkHC5MG4Ch07;
+        private System.Windows.Forms.Label label262;
+        private System.Windows.Forms.CheckBox chkHC5MG3Ch07;
+        private System.Windows.Forms.Label label263;
+        private System.Windows.Forms.CheckBox chkHC5MG2Ch07;
+        private System.Windows.Forms.Label label264;
+        private System.Windows.Forms.CheckBox chkHC5MG1Ch07;
+        private System.Windows.Forms.Label label265;
+        private System.Windows.Forms.CheckBox chkHC5MG4Ch06;
+        private System.Windows.Forms.CheckBox chkHC5MG3Ch06;
+        private System.Windows.Forms.CheckBox chkHC5MG2Ch06;
+        private System.Windows.Forms.CheckBox chkHC5MG1Ch06;
+        private System.Windows.Forms.CheckBox chkHC5MG4Ch05;
+        private System.Windows.Forms.CheckBox chkHC5MG3Ch05;
+        private System.Windows.Forms.CheckBox chkHC5MG2Ch05;
+        private System.Windows.Forms.CheckBox chkHC5MG1Ch05;
+        private System.Windows.Forms.CheckBox chkHC5MG4Ch04;
+        private System.Windows.Forms.CheckBox chkHC5MG3Ch04;
+        private System.Windows.Forms.CheckBox chkHC5MG2Ch04;
+        private System.Windows.Forms.CheckBox chkHC5MG1Ch04;
+        private System.Windows.Forms.CheckBox chkHC5MG4Ch03;
+        private System.Windows.Forms.CheckBox chkHC5MG3Ch03;
+        private System.Windows.Forms.CheckBox chkHC5MG2Ch03;
+        private System.Windows.Forms.CheckBox chkHC5MG1Ch03;
+        private System.Windows.Forms.CheckBox chkHC5MG4Ch02;
+        private System.Windows.Forms.CheckBox chkHC5MG3Ch02;
+        private System.Windows.Forms.CheckBox chkHC5MG2Ch02;
+        private System.Windows.Forms.CheckBox chkHC5MG1Ch02;
+        private System.Windows.Forms.CheckBox chkHC5MG4Ch01;
+        private System.Windows.Forms.CheckBox chkHC5MG3Ch01;
+        private System.Windows.Forms.CheckBox chkHC5MG2Ch01;
+        private System.Windows.Forms.CheckBox chkHC5MG1Ch01;
+        private System.Windows.Forms.CheckBox chkHC5MG4Ch00;
+        private System.Windows.Forms.CheckBox chkHC5MG3Ch00;
+        private System.Windows.Forms.CheckBox chkHC5MG2Ch00;
+        private System.Windows.Forms.CheckBox chkHC5MG1Ch00;
+        private System.Windows.Forms.Label label266;
+        private System.Windows.Forms.ComboBox cmbHC5OCTime00;
+        private System.Windows.Forms.ComboBox cmbHC5OCTime01;
+        private System.Windows.Forms.ComboBox cmbHC5OCTime02;
+        private System.Windows.Forms.ComboBox cmbHC5OCTime03;
+        private System.Windows.Forms.ComboBox cmbHC5OCTime11;
+        private System.Windows.Forms.ComboBox cmbHC5OCTime04;
+        private System.Windows.Forms.ComboBox cmbHC5OCTime10;
+        private System.Windows.Forms.ComboBox cmbHC5OCTime05;
+        private System.Windows.Forms.ComboBox cmbHC5OCTime09;
+        private System.Windows.Forms.ComboBox cmbHC5OCTime06;
+        private System.Windows.Forms.ComboBox cmbHC5OCTime08;
+        private System.Windows.Forms.ComboBox cmbHC5OCTime07;
+        private System.Windows.Forms.Label label267;
+        private System.Windows.Forms.ComboBox cmbHC5OCAmps00;
+        private System.Windows.Forms.Label lblHC5Ch00;
+        private System.Windows.Forms.Label lblHC5Ch01;
+        private System.Windows.Forms.Label lblHC5Ch02;
+        private System.Windows.Forms.Label lblHC5Ch03;
+        private System.Windows.Forms.Label lblHC5Ch11;
+        private System.Windows.Forms.Label lblHC5Ch10;
+        private System.Windows.Forms.Label lblHC5Ch09;
+        private System.Windows.Forms.Label lblHC5Ch08;
+        private System.Windows.Forms.Label lblHC5Ch07;
+        private System.Windows.Forms.Label lblHC5Ch06;
+        private System.Windows.Forms.Label lblHC5Ch05;
+        private System.Windows.Forms.Label lblHC5Ch04;
+        private System.Windows.Forms.CheckBox chkHC5RGB;
+        private System.Windows.Forms.CheckBox chkHC5Shade;
+        private System.Windows.Forms.ComboBox cmbHC5PanelNum;
+        private System.Windows.Forms.Label label281;
+        private System.Windows.Forms.ComboBox cmbHC5CardNum;
+        private System.Windows.Forms.Label label282;
+        private System.Windows.Forms.Label label283;
+        private System.Windows.Forms.TextBox tbxHC5CfgRev;
+        private System.Windows.Forms.Label label284;
+        private System.Windows.Forms.TextBox tbxHC5CfgType;
+        private System.Windows.Forms.Label label285;
+        private System.Windows.Forms.CheckBox chkHC5DCDimmer;
+        private System.Windows.Forms.CheckBox chkHC5DCMotor;
+        private System.Windows.Forms.CheckBox chkHC5Force;
+        private System.Windows.Forms.Label label286;
+        private System.Windows.Forms.TextBox tbxHC5BaseIndex;
+        private System.Windows.Forms.TabPage tabHC6;
+        private System.Windows.Forms.ComboBox cmbHC6Mode11;
+        private System.Windows.Forms.ComboBox cmbHC6Mode10;
+        private System.Windows.Forms.ComboBox cmbHC6Mode09;
+        private System.Windows.Forms.ComboBox cmbHC6Mode08;
+        private System.Windows.Forms.ComboBox cmbHC6Mode07;
+        private System.Windows.Forms.ComboBox cmbHC6Mode06;
+        private System.Windows.Forms.ComboBox cmbHC6Mode05;
+        private System.Windows.Forms.ComboBox cmbHC6Mode04;
+        private System.Windows.Forms.ComboBox cmbHC6Mode03;
+        private System.Windows.Forms.ComboBox cmbHC6Mode02;
+        private System.Windows.Forms.ComboBox cmbHC6Mode01;
+        private System.Windows.Forms.Label label268;
+        private System.Windows.Forms.ComboBox cmbHC6Mode00;
+        private System.Windows.Forms.ComboBox cmbHC6OCAmps11;
+        private System.Windows.Forms.ComboBox cmbHC6OCAmps10;
+        private System.Windows.Forms.ComboBox cmbHC6OCAmps09;
+        private System.Windows.Forms.ComboBox cmbHC6OCAmps08;
+        private System.Windows.Forms.ComboBox cmbHC6OCAmps07;
+        private System.Windows.Forms.ComboBox cmbHC6OCAmps06;
+        private System.Windows.Forms.ComboBox cmbHC6OCAmps05;
+        private System.Windows.Forms.ComboBox cmbHC6OCAmps04;
+        private System.Windows.Forms.ComboBox cmbHC6OCAmps03;
+        private System.Windows.Forms.ComboBox cmbHC6OCAmps02;
+        private System.Windows.Forms.ComboBox cmbHC6OCAmps01;
+        private System.Windows.Forms.CheckBox chkHC6MG4Ch11;
+        private System.Windows.Forms.CheckBox chkHC6MG3Ch11;
+        private System.Windows.Forms.CheckBox chkHC6MG2Ch11;
+        private System.Windows.Forms.CheckBox chkHC6MG1Ch11;
+        private System.Windows.Forms.CheckBox chkHC6MG4Ch10;
+        private System.Windows.Forms.CheckBox chkHC6MG3Ch10;
+        private System.Windows.Forms.CheckBox chkHC6MG2Ch10;
+        private System.Windows.Forms.CheckBox chkHC6MG1Ch10;
+        private System.Windows.Forms.CheckBox chkHC6MG4Ch09;
+        private System.Windows.Forms.CheckBox chkHC6MG3Ch09;
+        private System.Windows.Forms.CheckBox chkHC6MG2Ch09;
+        private System.Windows.Forms.CheckBox chkHC6MG1Ch09;
+        private System.Windows.Forms.CheckBox chkHC6MG4Ch08;
+        private System.Windows.Forms.CheckBox chkHC6MG3Ch08;
+        private System.Windows.Forms.CheckBox chkHC6MG2Ch08;
+        private System.Windows.Forms.CheckBox chkHC6MG1Ch08;
+        private System.Windows.Forms.CheckBox chkHC6MG4Ch07;
+        private System.Windows.Forms.Label label269;
+        private System.Windows.Forms.CheckBox chkHC6MG3Ch07;
+        private System.Windows.Forms.Label label270;
+        private System.Windows.Forms.CheckBox chkHC6MG2Ch07;
+        private System.Windows.Forms.Label label271;
+        private System.Windows.Forms.CheckBox chkHC6MG1Ch07;
+        private System.Windows.Forms.Label label272;
+        private System.Windows.Forms.CheckBox chkHC6MG4Ch06;
+        private System.Windows.Forms.CheckBox chkHC6MG3Ch06;
+        private System.Windows.Forms.CheckBox chkHC6MG2Ch06;
+        private System.Windows.Forms.CheckBox chkHC6MG1Ch06;
+        private System.Windows.Forms.CheckBox chkHC6MG4Ch05;
+        private System.Windows.Forms.CheckBox chkHC6MG3Ch05;
+        private System.Windows.Forms.CheckBox chkHC6MG2Ch05;
+        private System.Windows.Forms.CheckBox chkHC6MG1Ch05;
+        private System.Windows.Forms.CheckBox chkHC6MG4Ch04;
+        private System.Windows.Forms.CheckBox chkHC6MG3Ch04;
+        private System.Windows.Forms.CheckBox chkHC6MG2Ch04;
+        private System.Windows.Forms.CheckBox chkHC6MG1Ch04;
+        private System.Windows.Forms.CheckBox chkHC6MG4Ch03;
+        private System.Windows.Forms.CheckBox chkHC6MG3Ch03;
+        private System.Windows.Forms.CheckBox chkHC6MG2Ch03;
+        private System.Windows.Forms.CheckBox chkHC6MG1Ch03;
+        private System.Windows.Forms.CheckBox chkHC6MG4Ch02;
+        private System.Windows.Forms.CheckBox chkHC6MG3Ch02;
+        private System.Windows.Forms.CheckBox chkHC6MG2Ch02;
+        private System.Windows.Forms.CheckBox chkHC6MG1Ch02;
+        private System.Windows.Forms.CheckBox chkHC6MG4Ch01;
+        private System.Windows.Forms.CheckBox chkHC6MG3Ch01;
+        private System.Windows.Forms.CheckBox chkHC6MG2Ch01;
+        private System.Windows.Forms.CheckBox chkHC6MG1Ch01;
+        private System.Windows.Forms.CheckBox chkHC6MG4Ch00;
+        private System.Windows.Forms.CheckBox chkHC6MG3Ch00;
+        private System.Windows.Forms.CheckBox chkHC6MG2Ch00;
+        private System.Windows.Forms.CheckBox chkHC6MG1Ch00;
+        private System.Windows.Forms.Label label274;
+        private System.Windows.Forms.ComboBox cmbHC6OCTime00;
+        private System.Windows.Forms.ComboBox cmbHC6OCTime01;
+        private System.Windows.Forms.ComboBox cmbHC6OCTime02;
+        private System.Windows.Forms.ComboBox cmbHC6OCTime03;
+        private System.Windows.Forms.ComboBox cmbHC6OCTime11;
+        private System.Windows.Forms.ComboBox cmbHC6OCTime04;
+        private System.Windows.Forms.ComboBox cmbHC6OCTime10;
+        private System.Windows.Forms.ComboBox cmbHC6OCTime05;
+        private System.Windows.Forms.ComboBox cmbHC6OCTime09;
+        private System.Windows.Forms.ComboBox cmbHC6OCTime06;
+        private System.Windows.Forms.ComboBox cmbHC6OCTime08;
+        private System.Windows.Forms.ComboBox cmbHC6OCTime07;
+        private System.Windows.Forms.Label label275;
+        private System.Windows.Forms.ComboBox cmbHC6OCAmps00;
+        private System.Windows.Forms.Label lblHC6Ch00;
+        private System.Windows.Forms.Label lblHC6Ch01;
+        private System.Windows.Forms.Label lblHC6Ch02;
+        private System.Windows.Forms.Label lblHC6Ch03;
+        private System.Windows.Forms.Label lblHC6Ch11;
+        private System.Windows.Forms.Label lblHC6Ch10;
+        private System.Windows.Forms.Label lblHC6Ch09;
+        private System.Windows.Forms.Label lblHC6Ch08;
+        private System.Windows.Forms.Label lblHC6Ch07;
+        private System.Windows.Forms.Label lblHC6Ch06;
+        private System.Windows.Forms.Label lblHC6Ch05;
+        private System.Windows.Forms.Label lblHC6Ch04;
+        private System.Windows.Forms.CheckBox chkHC6RGB;
+        private System.Windows.Forms.CheckBox chkHC6Shade;
+        private System.Windows.Forms.ComboBox cmbHC6PanelNum;
+        private System.Windows.Forms.Label label294;
+        private System.Windows.Forms.ComboBox cmbHC6CardNum;
+        private System.Windows.Forms.Label label295;
+        private System.Windows.Forms.Label label296;
+        private System.Windows.Forms.TextBox tbxHC6CfgRev;
+        private System.Windows.Forms.Label label297;
+        private System.Windows.Forms.TextBox tbxHC6CfgType;
+        private System.Windows.Forms.Label label298;
+        private System.Windows.Forms.CheckBox chkHC6DCDimmer;
+        private System.Windows.Forms.CheckBox chkHC6DCMotor;
+        private System.Windows.Forms.CheckBox chkHC6Force;
+        private System.Windows.Forms.Label label299;
+        private System.Windows.Forms.TextBox tbxHC6BaseIndex;
+        private System.Windows.Forms.Label label276;
+        private System.Windows.Forms.TextBox tbxAuxGenerated;
+        private System.Windows.Forms.Label label277;
+        private System.Windows.Forms.TextBox tbxBreakerGenerated;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label278;
+        private System.Windows.Forms.TextBox tbxHCGenerated;
+        private System.Windows.Forms.Label label279;
+        private System.Windows.Forms.TextBox tbxLCGenerated;
+        private System.Windows.Forms.Label label280;
+        private System.Windows.Forms.TextBox tbxSlideGenerated;
+        private System.Windows.Forms.Button btnSlideGenerate;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCAmps00;
+        private System.Windows.Forms.Label label287;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCAmpsVIN;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCAmps11;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCAmps10;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCAmps09;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCAmps08;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCAmps07;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCAmps06;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCAmps05;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCAmps04;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCAmps03;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCAmps02;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCAmps01;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCTime11;
+        private System.Windows.Forms.Label label288;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCTimeVIN;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCTime00;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCTime01;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCTime02;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCTime10;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCTime03;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCTime09;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCTime04;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCTime08;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCTime05;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCTime07;
+        private System.Windows.Forms.ComboBox cmbBreaker1OCTime06;
+        private System.Windows.Forms.CheckBox chkBreaker1MatchVIN;
+        private System.Windows.Forms.ComboBox cmbBreaker1Interrupt11;
+        private System.Windows.Forms.ComboBox cmbBreaker1Interrupt10;
+        private System.Windows.Forms.ComboBox cmbBreaker1Interrupt09;
+        private System.Windows.Forms.ComboBox cmbBreaker1Interrupt08;
+        private System.Windows.Forms.ComboBox cmbBreaker1Interrupt07;
+        private System.Windows.Forms.ComboBox cmbBreaker1Interrupt06;
+        private System.Windows.Forms.ComboBox cmbBreaker1Interrupt05;
+        private System.Windows.Forms.ComboBox cmbBreaker1Interrupt04;
+        private System.Windows.Forms.ComboBox cmbBreaker1Interrupt03;
+        private System.Windows.Forms.ComboBox cmbBreaker1Interrupt02;
+        private System.Windows.Forms.ComboBox cmbBreaker1Interrupt01;
+        private System.Windows.Forms.ComboBox cmbBreaker1Interrupt00;
+        private System.Windows.Forms.ComboBox cmbBreaker1InterruptVIN;
+        private System.Windows.Forms.Label label289;
+        private System.Windows.Forms.Label label290;
+        private System.Windows.Forms.Label label291;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCTimeVIN;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCAmpsVIN;
+        private System.Windows.Forms.Label label292;
+        private System.Windows.Forms.Label label293;
+        private System.Windows.Forms.Label label300;
+        private System.Windows.Forms.TextBox tbxBreaker2BaseIndex;
+        private System.Windows.Forms.Label label313;
+        private System.Windows.Forms.Label label314;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCTimeVIN;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCAmpsVIN;
+        private System.Windows.Forms.Label label315;
+        private System.Windows.Forms.Label label316;
+        private System.Windows.Forms.Label label317;
+        private System.Windows.Forms.TextBox tbxBreaker3BaseIndex;
+        private System.Windows.Forms.ComboBox cmbBreaker3PanelNum;
+        private System.Windows.Forms.Label label330;
+        private System.Windows.Forms.ComboBox cmbBreaker3CardNum;
+        private System.Windows.Forms.Label label331;
+        private System.Windows.Forms.Label label332;
+        private System.Windows.Forms.TextBox tbxBreaker3CfgRev;
+        private System.Windows.Forms.Label label333;
+        private System.Windows.Forms.TextBox tbxBreaker3CfgType;
+        private System.Windows.Forms.Label label334;
+        private System.Windows.Forms.Label label335;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCTimeVIN;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCAmpsVIN;
+        private System.Windows.Forms.Label label336;
+        private System.Windows.Forms.Label label337;
+        private System.Windows.Forms.Label label338;
+        private System.Windows.Forms.TextBox tbxBreaker4BaseIndex;
+        private System.Windows.Forms.ComboBox cmbBreaker4PanelNum;
+        private System.Windows.Forms.Label label351;
+        private System.Windows.Forms.ComboBox cmbBreaker4CardNum;
+        private System.Windows.Forms.Label label352;
+        private System.Windows.Forms.Label label353;
+        private System.Windows.Forms.TextBox tbxBreaker4CfgRev;
+        private System.Windows.Forms.Label label354;
+        private System.Windows.Forms.TextBox tbxBreaker4CfgType;
+        private System.Windows.Forms.CheckBox chkBreaker2MatchVIN;
+        private System.Windows.Forms.ComboBox cmbBreaker2Interrupt11;
+        private System.Windows.Forms.ComboBox cmbBreaker2Interrupt10;
+        private System.Windows.Forms.ComboBox cmbBreaker2Interrupt09;
+        private System.Windows.Forms.ComboBox cmbBreaker2Interrupt08;
+        private System.Windows.Forms.ComboBox cmbBreaker2Interrupt07;
+        private System.Windows.Forms.ComboBox cmbBreaker2Interrupt06;
+        private System.Windows.Forms.ComboBox cmbBreaker2Interrupt05;
+        private System.Windows.Forms.ComboBox cmbBreaker2Interrupt04;
+        private System.Windows.Forms.ComboBox cmbBreaker2Interrupt03;
+        private System.Windows.Forms.ComboBox cmbBreaker2Interrupt02;
+        private System.Windows.Forms.ComboBox cmbBreaker2Interrupt01;
+        private System.Windows.Forms.ComboBox cmbBreaker2Interrupt00;
+        private System.Windows.Forms.ComboBox cmbBreaker2InterruptVIN;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCTime11;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCTime00;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCTime01;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCTime02;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCTime10;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCTime03;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCTime09;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCTime04;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCTime08;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCTime05;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCTime07;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCTime06;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCAmps11;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCAmps10;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCAmps09;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCAmps08;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCAmps07;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCAmps06;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCAmps05;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCAmps04;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCAmps03;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCAmps02;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCAmps01;
+        private System.Windows.Forms.ComboBox cmbBreaker2OCAmps00;
+        private System.Windows.Forms.Label lblBreaker2Ch00;
+        private System.Windows.Forms.Label lblBreaker2Ch01;
+        private System.Windows.Forms.Label lblBreaker2Ch04;
+        private System.Windows.Forms.Label lblBreaker2Ch02;
+        private System.Windows.Forms.Label lblBreaker2Ch05;
+        private System.Windows.Forms.Label lblBreaker2Ch03;
+        private System.Windows.Forms.Label lblBreaker2Ch06;
+        private System.Windows.Forms.Label lblBreaker2Ch11;
+        private System.Windows.Forms.Label lblBreaker2Ch07;
+        private System.Windows.Forms.Label lblBreaker2Ch10;
+        private System.Windows.Forms.Label lblBreaker2Ch08;
+        private System.Windows.Forms.Label lblBreaker2Ch09;
+        private System.Windows.Forms.CheckBox chkBreaker3MatchVIN;
+        private System.Windows.Forms.ComboBox cmbBreaker3Interrupt11;
+        private System.Windows.Forms.ComboBox cmbBreaker3Interrupt10;
+        private System.Windows.Forms.ComboBox cmbBreaker3Interrupt09;
+        private System.Windows.Forms.ComboBox cmbBreaker3Interrupt08;
+        private System.Windows.Forms.ComboBox cmbBreaker3Interrupt07;
+        private System.Windows.Forms.ComboBox cmbBreaker3Interrupt06;
+        private System.Windows.Forms.ComboBox cmbBreaker3Interrupt05;
+        private System.Windows.Forms.ComboBox cmbBreaker3Interrupt04;
+        private System.Windows.Forms.ComboBox cmbBreaker3Interrupt03;
+        private System.Windows.Forms.ComboBox cmbBreaker3Interrupt02;
+        private System.Windows.Forms.ComboBox cmbBreaker3Interrupt01;
+        private System.Windows.Forms.ComboBox cmbBreaker3Interrupt00;
+        private System.Windows.Forms.ComboBox cmbBreaker3InterruptVIN;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCTime11;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCTime00;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCTime01;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCTime02;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCTime10;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCTime03;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCTime09;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCTime04;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCTime08;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCTime05;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCTime07;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCTime06;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCAmps11;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCAmps10;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCAmps09;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCAmps08;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCAmps07;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCAmps06;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCAmps05;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCAmps04;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCAmps03;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCAmps02;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCAmps01;
+        private System.Windows.Forms.ComboBox cmbBreaker3OCAmps00;
+        private System.Windows.Forms.Label lblBreaker3Ch00;
+        private System.Windows.Forms.Label lblBreaker3Ch01;
+        private System.Windows.Forms.Label lblBreaker3Ch04;
+        private System.Windows.Forms.Label lblBreaker3Ch02;
+        private System.Windows.Forms.Label lblBreaker3Ch05;
+        private System.Windows.Forms.Label lblBreaker3Ch03;
+        private System.Windows.Forms.Label lblBreaker3Ch06;
+        private System.Windows.Forms.Label lblBreaker3Ch11;
+        private System.Windows.Forms.Label lblBreaker3Ch07;
+        private System.Windows.Forms.Label lblBreaker3Ch10;
+        private System.Windows.Forms.Label lblBreaker3Ch08;
+        private System.Windows.Forms.Label lblBreaker3Ch09;
+        private System.Windows.Forms.CheckBox chkBreaker4MatchVIN;
+        private System.Windows.Forms.ComboBox cmbBreaker4Interrupt11;
+        private System.Windows.Forms.ComboBox cmbBreaker4Interrupt10;
+        private System.Windows.Forms.ComboBox cmbBreaker4Interrupt09;
+        private System.Windows.Forms.ComboBox cmbBreaker4Interrupt08;
+        private System.Windows.Forms.ComboBox cmbBreaker4Interrupt07;
+        private System.Windows.Forms.ComboBox cmbBreaker4Interrupt06;
+        private System.Windows.Forms.ComboBox cmbBreaker4Interrupt05;
+        private System.Windows.Forms.ComboBox cmbBreaker4Interrupt04;
+        private System.Windows.Forms.ComboBox cmbBreaker4Interrupt03;
+        private System.Windows.Forms.ComboBox cmbBreaker4Interrupt02;
+        private System.Windows.Forms.ComboBox cmbBreaker4Interrupt01;
+        private System.Windows.Forms.ComboBox cmbBreaker4Interrupt00;
+        private System.Windows.Forms.ComboBox cmbBreaker4InterruptVIN;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCTime11;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCTime00;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCTime01;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCTime02;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCTime10;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCTime03;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCTime09;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCTime04;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCTime08;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCTime05;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCTime07;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCTime06;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCAmps11;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCAmps10;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCAmps09;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCAmps08;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCAmps07;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCAmps06;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCAmps05;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCAmps04;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCAmps03;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCAmps02;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCAmps01;
+        private System.Windows.Forms.ComboBox cmbBreaker4OCAmps00;
+        private System.Windows.Forms.Label lblBreaker4Ch00;
+        private System.Windows.Forms.Label lblBreaker4Ch01;
+        private System.Windows.Forms.Label lblBreaker4Ch04;
+        private System.Windows.Forms.Label lblBreaker4Ch02;
+        private System.Windows.Forms.Label lblBreaker4Ch05;
+        private System.Windows.Forms.Label lblBreaker4Ch03;
+        private System.Windows.Forms.Label lblBreaker4Ch06;
+        private System.Windows.Forms.Label lblBreaker4Ch11;
+        private System.Windows.Forms.Label lblBreaker4Ch07;
+        private System.Windows.Forms.Label lblBreaker4Ch10;
+        private System.Windows.Forms.Label lblBreaker4Ch08;
+        private System.Windows.Forms.Label lblBreaker4Ch09;
+        private System.Windows.Forms.CheckBox chkHC1Startup11;
+        private System.Windows.Forms.CheckBox chkHC1Startup10;
+        private System.Windows.Forms.CheckBox chkHC1Startup09;
+        private System.Windows.Forms.CheckBox chkHC1Startup08;
+        private System.Windows.Forms.CheckBox chkHC1Startup07;
+        private System.Windows.Forms.Label label301;
+        private System.Windows.Forms.CheckBox chkHC1Startup06;
+        private System.Windows.Forms.CheckBox chkHC1Startup05;
+        private System.Windows.Forms.CheckBox chkHC1Startup04;
+        private System.Windows.Forms.CheckBox chkHC1Startup03;
+        private System.Windows.Forms.CheckBox chkHC1Startup02;
+        private System.Windows.Forms.CheckBox chkHC1Startup01;
+        private System.Windows.Forms.CheckBox chkHC1Startup00;
+        private System.Windows.Forms.CheckBox chkHC2Startup11;
+        private System.Windows.Forms.CheckBox chkHC2Startup10;
+        private System.Windows.Forms.CheckBox chkHC2Startup09;
+        private System.Windows.Forms.CheckBox chkHC2Startup08;
+        private System.Windows.Forms.CheckBox chkHC2Startup07;
+        private System.Windows.Forms.Label label302;
+        private System.Windows.Forms.CheckBox chkHC2Startup06;
+        private System.Windows.Forms.CheckBox chkHC2Startup05;
+        private System.Windows.Forms.CheckBox chkHC2Startup04;
+        private System.Windows.Forms.CheckBox chkHC2Startup03;
+        private System.Windows.Forms.CheckBox chkHC2Startup02;
+        private System.Windows.Forms.CheckBox chkHC2Startup01;
+        private System.Windows.Forms.CheckBox chkHC2Startup00;
+        private System.Windows.Forms.CheckBox chkHC3Startup11;
+        private System.Windows.Forms.CheckBox chkHC3Startup10;
+        private System.Windows.Forms.CheckBox chkHC3Startup09;
+        private System.Windows.Forms.CheckBox chkHC3Startup08;
+        private System.Windows.Forms.CheckBox chkHC3Startup07;
+        private System.Windows.Forms.Label label303;
+        private System.Windows.Forms.CheckBox chkHC3Startup06;
+        private System.Windows.Forms.CheckBox chkHC3Startup05;
+        private System.Windows.Forms.CheckBox chkHC3Startup04;
+        private System.Windows.Forms.CheckBox chkHC3Startup03;
+        private System.Windows.Forms.CheckBox chkHC3Startup02;
+        private System.Windows.Forms.CheckBox chkHC3Startup01;
+        private System.Windows.Forms.CheckBox chkHC3Startup00;
+        private System.Windows.Forms.CheckBox chkHC4Startup11;
+        private System.Windows.Forms.CheckBox chkHC4Startup10;
+        private System.Windows.Forms.CheckBox chkHC4Startup09;
+        private System.Windows.Forms.CheckBox chkHC4Startup08;
+        private System.Windows.Forms.CheckBox chkHC4Startup07;
+        private System.Windows.Forms.Label label304;
+        private System.Windows.Forms.CheckBox chkHC4Startup06;
+        private System.Windows.Forms.CheckBox chkHC4Startup05;
+        private System.Windows.Forms.CheckBox chkHC4Startup04;
+        private System.Windows.Forms.CheckBox chkHC4Startup03;
+        private System.Windows.Forms.CheckBox chkHC4Startup02;
+        private System.Windows.Forms.CheckBox chkHC4Startup01;
+        private System.Windows.Forms.CheckBox chkHC4Startup00;
+        private System.Windows.Forms.CheckBox chkHC5Startup11;
+        private System.Windows.Forms.CheckBox chkHC5Startup10;
+        private System.Windows.Forms.CheckBox chkHC5Startup09;
+        private System.Windows.Forms.CheckBox chkHC5Startup08;
+        private System.Windows.Forms.CheckBox chkHC5Startup07;
+        private System.Windows.Forms.Label label305;
+        private System.Windows.Forms.CheckBox chkHC5Startup06;
+        private System.Windows.Forms.CheckBox chkHC5Startup05;
+        private System.Windows.Forms.CheckBox chkHC5Startup04;
+        private System.Windows.Forms.CheckBox chkHC5Startup03;
+        private System.Windows.Forms.CheckBox chkHC5Startup02;
+        private System.Windows.Forms.CheckBox chkHC5Startup01;
+        private System.Windows.Forms.CheckBox chkHC5Startup00;
+        private System.Windows.Forms.CheckBox chkHC6Startup11;
+        private System.Windows.Forms.CheckBox chkHC6Startup10;
+        private System.Windows.Forms.CheckBox chkHC6Startup09;
+        private System.Windows.Forms.CheckBox chkHC6Startup08;
+        private System.Windows.Forms.CheckBox chkHC6Startup07;
+        private System.Windows.Forms.Label label306;
+        private System.Windows.Forms.CheckBox chkHC6Startup06;
+        private System.Windows.Forms.CheckBox chkHC6Startup05;
+        private System.Windows.Forms.CheckBox chkHC6Startup04;
+        private System.Windows.Forms.CheckBox chkHC6Startup03;
+        private System.Windows.Forms.CheckBox chkHC6Startup02;
+        private System.Windows.Forms.CheckBox chkHC6Startup01;
+        private System.Windows.Forms.CheckBox chkHC6Startup00;
+        private System.Windows.Forms.CheckBox chkLC1Standalone;
+        private System.Windows.Forms.CheckBox chkLC2Standalone;
+        private System.Windows.Forms.CheckBox chkLC3Standalone;
+        private System.Windows.Forms.CheckBox chkLC4Standalone;
+        private System.Windows.Forms.CheckBox chkLC5Standalone;
+        private System.Windows.Forms.CheckBox chkLC6Standalone;
+        private System.Windows.Forms.ComboBox cmbLC1Mode01;
+        private System.Windows.Forms.ComboBox cmbLC1Mode00;
+        private System.Windows.Forms.ComboBox cmbLC1Mode13;
+        private System.Windows.Forms.ComboBox cmbLC1Mode12;
+        private System.Windows.Forms.ComboBox cmbLC1Mode11;
+        private System.Windows.Forms.ComboBox cmbLC1Mode10;
+        private System.Windows.Forms.ComboBox cmbLC1Mode09;
+        private System.Windows.Forms.ComboBox cmbLC1Mode08;
+        private System.Windows.Forms.ComboBox cmbLC1Mode07;
+        private System.Windows.Forms.ComboBox cmbLC1Mode06;
+        private System.Windows.Forms.ComboBox cmbLC1Mode05;
+        private System.Windows.Forms.ComboBox cmbLC1Mode04;
+        private System.Windows.Forms.ComboBox cmbLC1Mode03;
+        private System.Windows.Forms.ComboBox cmbLC1Mode02;
+        private System.Windows.Forms.ComboBox cmbLC1Mode14;
+        private System.Windows.Forms.ComboBox cmbLC1Mode15;
+        private System.Windows.Forms.ComboBox cmbLC2Mode15;
+        private System.Windows.Forms.ComboBox cmbLC2Mode14;
+        private System.Windows.Forms.ComboBox cmbLC2Mode13;
+        private System.Windows.Forms.ComboBox cmbLC2Mode12;
+        private System.Windows.Forms.ComboBox cmbLC2Mode11;
+        private System.Windows.Forms.ComboBox cmbLC2Mode10;
+        private System.Windows.Forms.ComboBox cmbLC2Mode09;
+        private System.Windows.Forms.ComboBox cmbLC2Mode08;
+        private System.Windows.Forms.ComboBox cmbLC2Mode07;
+        private System.Windows.Forms.ComboBox cmbLC2Mode06;
+        private System.Windows.Forms.ComboBox cmbLC2Mode05;
+        private System.Windows.Forms.ComboBox cmbLC2Mode04;
+        private System.Windows.Forms.ComboBox cmbLC2Mode03;
+        private System.Windows.Forms.ComboBox cmbLC2Mode02;
+        private System.Windows.Forms.ComboBox cmbLC2Mode01;
+        private System.Windows.Forms.ComboBox cmbLC2Mode00;
+        private System.Windows.Forms.ComboBox cmbLC3Mode15;
+        private System.Windows.Forms.ComboBox cmbLC3Mode14;
+        private System.Windows.Forms.ComboBox cmbLC3Mode13;
+        private System.Windows.Forms.ComboBox cmbLC3Mode12;
+        private System.Windows.Forms.ComboBox cmbLC3Mode11;
+        private System.Windows.Forms.ComboBox cmbLC3Mode10;
+        private System.Windows.Forms.ComboBox cmbLC3Mode09;
+        private System.Windows.Forms.ComboBox cmbLC3Mode08;
+        private System.Windows.Forms.ComboBox cmbLC3Mode07;
+        private System.Windows.Forms.ComboBox cmbLC3Mode06;
+        private System.Windows.Forms.ComboBox cmbLC3Mode05;
+        private System.Windows.Forms.ComboBox cmbLC3Mode04;
+        private System.Windows.Forms.ComboBox cmbLC3Mode03;
+        private System.Windows.Forms.ComboBox cmbLC3Mode02;
+        private System.Windows.Forms.ComboBox cmbLC3Mode01;
+        private System.Windows.Forms.ComboBox cmbLC3Mode00;
+        private System.Windows.Forms.ComboBox cmbLC4Mode15;
+        private System.Windows.Forms.ComboBox cmbLC4Mode14;
+        private System.Windows.Forms.ComboBox cmbLC4Mode13;
+        private System.Windows.Forms.ComboBox cmbLC4Mode12;
+        private System.Windows.Forms.ComboBox cmbLC4Mode11;
+        private System.Windows.Forms.ComboBox cmbLC4Mode10;
+        private System.Windows.Forms.ComboBox cmbLC4Mode09;
+        private System.Windows.Forms.ComboBox cmbLC4Mode08;
+        private System.Windows.Forms.ComboBox cmbLC4Mode07;
+        private System.Windows.Forms.ComboBox cmbLC4Mode06;
+        private System.Windows.Forms.ComboBox cmbLC4Mode05;
+        private System.Windows.Forms.ComboBox cmbLC4Mode04;
+        private System.Windows.Forms.ComboBox cmbLC4Mode03;
+        private System.Windows.Forms.ComboBox cmbLC4Mode02;
+        private System.Windows.Forms.ComboBox cmbLC4Mode01;
+        private System.Windows.Forms.ComboBox cmbLC4Mode00;
+        private System.Windows.Forms.ComboBox cmbLC5Mode15;
+        private System.Windows.Forms.ComboBox cmbLC5Mode14;
+        private System.Windows.Forms.ComboBox cmbLC5Mode13;
+        private System.Windows.Forms.ComboBox cmbLC5Mode12;
+        private System.Windows.Forms.ComboBox cmbLC5Mode11;
+        private System.Windows.Forms.ComboBox cmbLC5Mode10;
+        private System.Windows.Forms.ComboBox cmbLC5Mode09;
+        private System.Windows.Forms.ComboBox cmbLC5Mode08;
+        private System.Windows.Forms.ComboBox cmbLC5Mode07;
+        private System.Windows.Forms.ComboBox cmbLC5Mode06;
+        private System.Windows.Forms.ComboBox cmbLC5Mode05;
+        private System.Windows.Forms.ComboBox cmbLC5Mode04;
+        private System.Windows.Forms.ComboBox cmbLC5Mode03;
+        private System.Windows.Forms.ComboBox cmbLC5Mode02;
+        private System.Windows.Forms.ComboBox cmbLC5Mode01;
+        private System.Windows.Forms.ComboBox cmbLC5Mode00;
+        private System.Windows.Forms.ComboBox cmbLC6Mode15;
+        private System.Windows.Forms.ComboBox cmbLC6Mode14;
+        private System.Windows.Forms.ComboBox cmbLC6Mode13;
+        private System.Windows.Forms.ComboBox cmbLC6Mode12;
+        private System.Windows.Forms.ComboBox cmbLC6Mode11;
+        private System.Windows.Forms.ComboBox cmbLC6Mode10;
+        private System.Windows.Forms.ComboBox cmbLC6Mode09;
+        private System.Windows.Forms.ComboBox cmbLC6Mode08;
+        private System.Windows.Forms.ComboBox cmbLC6Mode07;
+        private System.Windows.Forms.ComboBox cmbLC6Mode06;
+        private System.Windows.Forms.ComboBox cmbLC6Mode05;
+        private System.Windows.Forms.ComboBox cmbLC6Mode04;
+        private System.Windows.Forms.ComboBox cmbLC6Mode03;
+        private System.Windows.Forms.ComboBox cmbLC6Mode02;
+        private System.Windows.Forms.ComboBox cmbLC6Mode01;
+        private System.Windows.Forms.ComboBox cmbLC6Mode00;
+        private System.Windows.Forms.CheckBox chkLC4DCMotor;
     }
 }
 

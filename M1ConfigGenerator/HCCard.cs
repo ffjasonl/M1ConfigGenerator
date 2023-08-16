@@ -151,6 +151,62 @@ namespace M1ConfigGenerator
             hcChOvercurrentTimeValues[argIndex] = argConstant;
         }
 
+        public void SetPWMDuty(int argInt, string argString)
+        {
+            hcChPwmDutyValues[argInt] = argString;
+        }
+        
+        public void SetPWMEnable(int argInt, bool argBool)
+        {
+            hcChPwmEnableValues[argInt] = argBool ? "TRUE" : "FALSE";
+        }
+
+        public void SetDirection(int argInt, string argString)
+        {
+            hcChDirectionValues[argInt] = argString;
+        }
+
+        public void SetDeadTime(int argInt, string argString)
+        {
+            hcChDeadtimeValues[argInt]=argString;
+        }
+
+        public void SetPaired(int argInt, string argString)
+        {
+            hcChPairedValues[argInt]= argString;
+        }
+
+        public void SetTimeout(int argInt, bool argBool)
+        {
+            hcChTimeoutValues[argInt] = argBool ? "TRUE" : "FALSE";
+        }
+
+        public void SetTimeoutTime(int argInt, string argString)
+        {
+            hcChTimeoutTimeValues[argInt]= argString;
+        }
+
+        public void SetMaxOn(int argInt, string argString)
+        {
+            hcChMaxOnValues[argInt] = argString;
+        }
+
+        public void SetMaxDurRec(int argInt, string argString)
+        {
+            hcChMaxDurRecoveryTimeValues[argInt] = argString;
+        }
+
+        public void SetUndAmp(int argInt, string argString)
+        {
+            hcChUndercurrentAmpsValues[argInt] = argString;
+        }
+
+        public void SetMeasCurTime(int argInt, string argString)
+        {
+            hcChMeasCurTimeValues[argInt] = argString;
+        }
+        
+
         public void SetModeAndPairing(int argIndex, string argMode, bool argStartup)
         {
             if (argMode == "Ground")

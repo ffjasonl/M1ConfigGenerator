@@ -94,6 +94,40 @@ namespace M1ConfigGenerator
             return configPath;
         }
 
+        public void SetDirection(int argInt, string argString)
+        {
+            auxChDirectionValues[argInt] = argString;
+        }
+
+        public void SetDeadTime(int argInt, string argString)
+        {
+            auxChDeadtimeValues[argInt] = argString;
+        }
+
+        public void SetPaired(int argInt, string argString)
+        {
+            auxChPairedValues[argInt] = argString;
+        }
+
+        public void SetTimeout(int argInt, bool argBool)
+        {
+            auxChTimeoutValues[argInt] = argBool ? "TRUE" : "FALSE";
+        }
+
+        public void SetTimeoutTime(int argInt, string argString)
+        {
+            auxChTimeoutTimeValues[argInt] = argString;
+        }
+
+        public void SetMaxOn(int argInt, string argString)
+        {
+            auxChMaxOnValues[argInt] = argString;
+        }
+
+        public void SetMaxDurRec(int argInt, string argString)
+        {
+            auxChMaxDurRecoveryTimeValues[argInt] = argString;
+        }
         public void SetQuickPair(bool argBool, int argInt)
         {
             if (argBool == true)

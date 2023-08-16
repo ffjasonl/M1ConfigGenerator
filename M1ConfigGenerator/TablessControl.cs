@@ -18,5 +18,10 @@ namespace M1ConfigGenerator
             else
                 base.WndProc(ref m);
         }
+
+        public static implicit operator TablessControl(bool v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

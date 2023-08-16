@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace M1ConfigGenerator
 {
     public partial class Form1 : Form
@@ -28,7 +29,21 @@ namespace M1ConfigGenerator
         bool[][] aux2Groups;
         bool[] aux1QuickPair; bool[] aux2QuickPair;
         bool[][] auxQuickPairGroups;
-
+        ComboBox[] Aux1Direction; ComboBox[] Aux2Direction;
+        ComboBox[][] auxDirections;
+        ComboBox[] Aux1DeadTime; ComboBox[] Aux2DeadTime;
+        ComboBox[][] auxDeadTimes;
+        ComboBox[] Aux1Paired; ComboBox[] Aux2Paired; 
+        ComboBox[][] auxPairedTimes;
+        CheckBox[] Aux1Timeout; CheckBox[] Aux2Timeout;
+        CheckBox[][] auxTimeouts;
+        TextBox[] Aux1TimeoutTime; TextBox[] Aux2TimeoutTime;
+        TextBox[][] auxTimeoutTimes;
+        TextBox[] Aux1MaxOn; TextBox[] Aux2MaxOn;
+        TextBox[][] auxMaxOns;
+        TextBox[] Aux1MaxDurRec; TextBox[] Aux2MaxDurRec;
+        TextBox[][] auxMaxDurRecs;
+        
         List<BreakerCard> breakerObjects = new List<BreakerCard>();
         ComboBox[] breakerCardNum;
         ComboBox[] breakerPanelNum;
@@ -44,6 +59,20 @@ namespace M1ConfigGenerator
         ComboBox[][] breakerOCTime;
         ComboBox[] breaker1Interrupt; ComboBox[] breaker2Interrupt; ComboBox[] breaker3Interrupt; ComboBox[] breaker4Interrupt;
         ComboBox[][] breakerInterrupts;
+        ComboBox[] breaker1Direction; ComboBox[] breaker2Direction; ComboBox[] breaker3Direction; ComboBox[] breaker4Direction;
+        ComboBox[][] breakerDirections;
+        TextBox[] breaker1Undercurrent; TextBox[] breaker2Undercurrent; TextBox[] breaker3Undercurrent; TextBox[] breaker4Undercurrent;
+        TextBox[][] breakerUndercurrents;
+        ComboBox[] breaker1MeasCurRec; ComboBox[] breaker2MeasCurRec; ComboBox[] breaker3MeasCurRec; ComboBox[] breaker4MeasCurRec;
+        ComboBox[][] breakerMeasCurRecs;
+        ComboBox[] breaker1Mode; ComboBox[] breaker2Mode; ComboBox[] breaker3Mode; ComboBox[] breaker4Mode;
+        ComboBox[][] breakerModes;
+        ComboBox[] breaker1Paired; ComboBox[] breaker2Paired; ComboBox[] breaker3Paired; ComboBox[] breaker4Paired;
+        ComboBox[][] breakerPairedTimes;
+        ComboBox[] breaker1IGN; ComboBox[] breaker2IGN; ComboBox[] breaker3IGN; ComboBox[] breaker4IGN;
+        ComboBox[][] breakerIGNs;
+        ComboBox[] breaker1Park; ComboBox[] breaker2Park; ComboBox[] breaker3Park; ComboBox[] breaker4Park;
+        ComboBox[][] breakerParks;
 
         List<DimmerCard> dimmerObjects = new List<DimmerCard>();
         ComboBox[] dimCardNum;
@@ -56,24 +85,49 @@ namespace M1ConfigGenerator
         ComboBox[][] dimmerOCAmps;
         ComboBox[] dim1OCTime; ComboBox[] dim2OCTime; ComboBox[] dim3OCTime; ComboBox[] dim4OCTime; ComboBox[] dim5OCTime; ComboBox[] dim6OCTime;
         ComboBox[][] dimmerOCTime;
-        bool[] dim1Group00; bool[] dim1Group01; bool[] dim1Group02; bool[] dim1Group03; bool[] dim1Group04; bool[] dim1Group05; 
+        bool[] dim1Group00; bool[] dim1Group01; bool[] dim1Group02; bool[] dim1Group03; bool[] dim1Group04; bool[] dim1Group05;
         bool[] dim1Group06; bool[] dim1Group07; bool[] dim1Group08; bool[] dim1Group09; bool[] dim1Group10; bool[] dim1Group11;
         bool[][] dim1Groups;
-        bool[] dim2Group00; bool[] dim2Group01; bool[] dim2Group02; bool[] dim2Group03; bool[] dim2Group04; bool[] dim2Group05; 
+        bool[] dim2Group00; bool[] dim2Group01; bool[] dim2Group02; bool[] dim2Group03; bool[] dim2Group04; bool[] dim2Group05;
         bool[] dim2Group06; bool[] dim2Group07; bool[] dim2Group08; bool[] dim2Group09; bool[] dim2Group10; bool[] dim2Group11;
         bool[][] dim2Groups;
-        bool[] dim3Group00; bool[] dim3Group01; bool[] dim3Group02; bool[] dim3Group03; bool[] dim3Group04; bool[] dim3Group05; 
+        bool[] dim3Group00; bool[] dim3Group01; bool[] dim3Group02; bool[] dim3Group03; bool[] dim3Group04; bool[] dim3Group05;
         bool[] dim3Group06; bool[] dim3Group07; bool[] dim3Group08; bool[] dim3Group09; bool[] dim3Group10; bool[] dim3Group11;
         bool[][] dim3Groups;
-        bool[] dim4Group00; bool[] dim4Group01; bool[] dim4Group02; bool[] dim4Group03; bool[] dim4Group04; bool[] dim4Group05; 
+        bool[] dim4Group00; bool[] dim4Group01; bool[] dim4Group02; bool[] dim4Group03; bool[] dim4Group04; bool[] dim4Group05;
         bool[] dim4Group06; bool[] dim4Group07; bool[] dim4Group08; bool[] dim4Group09; bool[] dim4Group10; bool[] dim4Group11;
         bool[][] dim4Groups;
-        bool[] dim5Group00; bool[] dim5Group01; bool[] dim5Group02; bool[] dim5Group03; bool[] dim5Group04; bool[] dim5Group05; 
+        bool[] dim5Group00; bool[] dim5Group01; bool[] dim5Group02; bool[] dim5Group03; bool[] dim5Group04; bool[] dim5Group05;
         bool[] dim5Group06; bool[] dim5Group07; bool[] dim5Group08; bool[] dim5Group09; bool[] dim5Group10; bool[] dim5Group11;
         bool[][] dim5Groups;
-        bool[] dim6Group00; bool[] dim6Group01; bool[] dim6Group02; bool[] dim6Group03; bool[] dim6Group04; bool[] dim6Group05; 
+        bool[] dim6Group00; bool[] dim6Group01; bool[] dim6Group02; bool[] dim6Group03; bool[] dim6Group04; bool[] dim6Group05;
         bool[] dim6Group06; bool[] dim6Group07; bool[] dim6Group08; bool[] dim6Group09; bool[] dim6Group10; bool[] dim6Group11;
         bool[][] dim6Groups;
+        CheckBox[] Dimmer1Lock; CheckBox[] Dimmer2Lock; CheckBox[] Dimmer3Lock; CheckBox[] Dimmer4Lock; CheckBox[] Dimmer5Lock; CheckBox[] Dimmer6Lock;
+        CheckBox[][] dimmerLocks;
+        ComboBox[] Dimmer1PWMFreq; ComboBox[] Dimmer2PWMFreq; ComboBox[] Dimmer3PWMFreq; ComboBox[] Dimmer4PWMFreq; ComboBox[] Dimmer5PWMFreq; ComboBox[] Dimmer6PWMFreq;
+        ComboBox[][] dimmerPWMFreq;
+        TextBox[] Dimmer1PWMDuty; TextBox[] Dimmer2PWMDuty; TextBox[] Dimmer3PWMDuty; TextBox[] Dimmer4PWMDuty; TextBox[] Dimmer5PWMDuty; TextBox[] Dimmer6PWMDuty;
+        TextBox[][] dimmerPWMDuties;
+        CheckBox[] Dimmer1PWMEnable; CheckBox[] Dimmer2PWMEnable; CheckBox[] Dimmer3PWMEnable; CheckBox[] Dimmer4PWMEnable; CheckBox[] Dimmer5PWMEnable; CheckBox[] Dimmer6PWMEnable;
+        CheckBox[][] dimmerPWMEnables;
+        CheckBox[] Dimmer1Override; CheckBox[] Dimmer2Override; CheckBox[] Dimmer3Override; CheckBox[] Dimmer4Override; CheckBox[] Dimmer5Override; CheckBox[] Dimmer6Override;
+        CheckBox[][] dimmerOverrides;
+        ComboBox[] Dimmer1Direction; ComboBox[] Dimmer2Direction; ComboBox[] Dimmer3Direction; ComboBox[] Dimmer4Direction; ComboBox[] Dimmer5Direction; ComboBox[] Dimmer6Direction;
+        ComboBox[][] dimmerDirections;
+        CheckBox[] Dimmer1Timeout; CheckBox[] Dimmer2Timeout; CheckBox[] Dimmer3Timeout; CheckBox[] Dimmer4Timeout; CheckBox[] Dimmer5Timeout; CheckBox[] Dimmer6Timeout;
+        CheckBox[][] dimmerTimeouts;
+        TextBox[] Dimmer1TimeoutTime; TextBox[] Dimmer2TimeoutTime; TextBox[] Dimmer3TimeoutTime; TextBox[] Dimmer4TimeoutTime; TextBox[] Dimmer5TimeoutTime; TextBox[] Dimmer6TimeoutTime;
+        TextBox[][] dimmerTimeoutTimes;
+        TextBox[] Dimmer1MaxOn; TextBox[] Dimmer2MaxOn; TextBox[] Dimmer3MaxOn; TextBox[] Dimmer4MaxOn; TextBox[] Dimmer5MaxOn; TextBox[] Dimmer6MaxOn;
+        TextBox[][] dimmerMaxOns;
+        TextBox[] Dimmer1MaxDurRec; TextBox[] Dimmer2MaxDurRec; TextBox[] Dimmer3MaxDurRec; TextBox[] Dimmer4MaxDurRec; TextBox[] Dimmer5MaxDurRec; TextBox[] Dimmer6MaxDurRec;
+        TextBox[][] dimmerMaxDurRecs;
+        TextBox[] Dimmer1UCAmps; TextBox[] Dimmer2UCAmps; TextBox[] Dimmer3UCAmps; TextBox[] Dimmer4UCAmps; TextBox[] Dimmer5UCAmps; TextBox[] Dimmer6UCAmps;
+        TextBox[][] dimmerUCAmps;
+        ComboBox[] Dimmer1MeasCurTime; ComboBox[] Dimmer2MeasCurTime; ComboBox[] Dimmer3MeasCurTime; ComboBox[] Dimmer4MeasCurTime; ComboBox[] Dimmer5MeasCurTime; ComboBox[] Dimmer6MeasCurTime;
+        ComboBox[][] dimmerMeasCurTimes;
+
 
         List<HCCard> hcObjects = new List<HCCard>();
         ComboBox[] hcCardNum;
@@ -102,6 +156,28 @@ namespace M1ConfigGenerator
         ComboBox[][] hcModes;
         bool[] hc1Startup; bool[] hc2Startup; bool[] hc3Startup; bool[] hc4Startup; bool[] hc5Startup; bool[] hc6Startup;
         bool[][] hcStartup;
+        TextBox[] HC1PWMDuty; TextBox[] HC2PWMDuty; TextBox[] HC3PWMDuty; TextBox[] HC4PWMDuty; TextBox[] HC5PWMDuty; TextBox[] HC6PWMDuty;
+        TextBox[][] hcPWMDuties;
+        CheckBox[] HC1PWMEnable; CheckBox[] HC2PWMEnable; CheckBox[] HC3PWMEnable; CheckBox[] HC4PWMEnable; CheckBox[] HC5PWMEnable; CheckBox[] HC6PWMEnable;
+        CheckBox[][] hcPWMEnables;
+        ComboBox[] HC1Direction; ComboBox[] HC2Direction; ComboBox[] HC3Direction; ComboBox[] HC4Direction; ComboBox[] HC5Direction; ComboBox[] HC6Direction;
+        ComboBox[][] hcDirections;
+        ComboBox[] HC1DeadTime; ComboBox[] HC2DeadTime; ComboBox[] HC3DeadTime; ComboBox[] HC4DeadTime; ComboBox[] HC5DeadTime; ComboBox[] HC6DeadTime;
+        ComboBox[][] hcDeadTimes;
+        ComboBox[] HC1Paired; ComboBox[] HC2Paired; ComboBox[] HC3Paired; ComboBox[] HC4Paired; ComboBox[] HC5Paired; ComboBox[] HC6Paired; 
+        ComboBox[][] hcPairedTimes;
+        CheckBox[] HC1Timeout; CheckBox[] HC2Timeout; CheckBox[] HC3Timeout; CheckBox[] HC4Timeout; CheckBox[] HC5Timeout; CheckBox[] HC6Timeout;
+        CheckBox[][] hcTimeouts;
+        TextBox[] HC1TimeoutTime; TextBox[] HC2TimeoutTime; TextBox[] HC3TimeoutTime; TextBox[] HC4TimeoutTime; TextBox[] HC5TimeoutTime; TextBox[] HC6TimeoutTime;
+        TextBox[][] hcTimeoutTimes;
+        TextBox[] HC1MaxOn; TextBox[] HC2MaxOn; TextBox[] HC3MaxOn; TextBox[] HC4MaxOn; TextBox[] HC5MaxOn; TextBox[] HC6MaxOn;
+        TextBox[][] hcMaxOns;
+        TextBox[] HC1MaxDurRec; TextBox[] HC2MaxDurRec; TextBox[] HC3MaxDurRec; TextBox[] HC4MaxDurRec; TextBox[] HC5MaxDurRec; TextBox[] HC6MaxDurRec;
+        TextBox[][] hcMaxDurRec;
+        TextBox[] HC1UndAmp; TextBox[] HC2UndAmp; TextBox[] HC3UndAmp; TextBox[] HC4UndAmp; TextBox[] HC5UndAmp; TextBox[] HC6UndAmp;
+        TextBox[][] hcUndAmps;
+        ComboBox[] HC1MeasCurTime; ComboBox[] HC2MeasCurTime; ComboBox[] HC3MeasCurTime; ComboBox[] HC4MeasCurTime; ComboBox[] HC5MeasCurTime; ComboBox[] HC6MeasCurTime;
+        ComboBox[][] hcMeasCurTimes;
 
         List<LCCard> lcObjects = new List<LCCard>();
         ComboBox[] lcCardNum;
@@ -114,26 +190,40 @@ namespace M1ConfigGenerator
         ComboBox[][] lcOCAmps;
         ComboBox[] lc1OCTime; ComboBox[] lc2OCTime; ComboBox[] lc3OCTime; ComboBox[] lc4OCTime; ComboBox[] lc5OCTime; ComboBox[] lc6OCTime;
         ComboBox[][] lcOCTime;
-        bool[] lc1Group00; bool[] lc1Group01; bool[] lc1Group02; bool[] lc1Group03; bool[] lc1Group04; bool[] lc1Group05; bool[] lc1Group06; bool[] lc1Group07; 
+        bool[] lc1Group00; bool[] lc1Group01; bool[] lc1Group02; bool[] lc1Group03; bool[] lc1Group04; bool[] lc1Group05; bool[] lc1Group06; bool[] lc1Group07;
         bool[] lc1Group08; bool[] lc1Group09; bool[] lc1Group10; bool[] lc1Group11; bool[] lc1Group12; bool[] lc1Group13; bool[] lc1Group14; bool[] lc1Group15;
         bool[][] lc1Groups;
-        bool[] lc2Group00; bool[] lc2Group01; bool[] lc2Group02; bool[] lc2Group03; bool[] lc2Group04; bool[] lc2Group05; bool[] lc2Group06; bool[] lc2Group07; 
+        bool[] lc2Group00; bool[] lc2Group01; bool[] lc2Group02; bool[] lc2Group03; bool[] lc2Group04; bool[] lc2Group05; bool[] lc2Group06; bool[] lc2Group07;
         bool[] lc2Group08; bool[] lc2Group09; bool[] lc2Group10; bool[] lc2Group11; bool[] lc2Group12; bool[] lc2Group13; bool[] lc2Group14; bool[] lc2Group15;
         bool[][] lc2Groups;
-        bool[] lc3Group00; bool[] lc3Group01; bool[] lc3Group02; bool[] lc3Group03; bool[] lc3Group04; bool[] lc3Group05; bool[] lc3Group06; bool[] lc3Group07; 
+        bool[] lc3Group00; bool[] lc3Group01; bool[] lc3Group02; bool[] lc3Group03; bool[] lc3Group04; bool[] lc3Group05; bool[] lc3Group06; bool[] lc3Group07;
         bool[] lc3Group08; bool[] lc3Group09; bool[] lc3Group10; bool[] lc3Group11; bool[] lc3Group12; bool[] lc3Group13; bool[] lc3Group14; bool[] lc3Group15;
         bool[][] lc3Groups;
-        bool[] lc4Group00; bool[] lc4Group01; bool[] lc4Group02; bool[] lc4Group03; bool[] lc4Group04; bool[] lc4Group05; bool[] lc4Group06; bool[] lc4Group07; 
+        bool[] lc4Group00; bool[] lc4Group01; bool[] lc4Group02; bool[] lc4Group03; bool[] lc4Group04; bool[] lc4Group05; bool[] lc4Group06; bool[] lc4Group07;
         bool[] lc4Group08; bool[] lc4Group09; bool[] lc4Group10; bool[] lc4Group11; bool[] lc4Group12; bool[] lc4Group13; bool[] lc4Group14; bool[] lc4Group15;
         bool[][] lc4Groups;
-        bool[] lc5Group00; bool[] lc5Group01; bool[] lc5Group02; bool[] lc5Group03; bool[] lc5Group04; bool[] lc5Group05; bool[] lc5Group06; bool[] lc5Group07; 
+        bool[] lc5Group00; bool[] lc5Group01; bool[] lc5Group02; bool[] lc5Group03; bool[] lc5Group04; bool[] lc5Group05; bool[] lc5Group06; bool[] lc5Group07;
         bool[] lc5Group08; bool[] lc5Group09; bool[] lc5Group10; bool[] lc5Group11; bool[] lc5Group12; bool[] lc5Group13; bool[] lc5Group14; bool[] lc5Group15;
         bool[][] lc5Groups;
-        bool[] lc6Group00; bool[] lc6Group01; bool[] lc6Group02; bool[] lc6Group03; bool[] lc6Group04; bool[] lc6Group05; bool[] lc6Group06; bool[] lc6Group07; 
+        bool[] lc6Group00; bool[] lc6Group01; bool[] lc6Group02; bool[] lc6Group03; bool[] lc6Group04; bool[] lc6Group05; bool[] lc6Group06; bool[] lc6Group07;
         bool[] lc6Group08; bool[] lc6Group09; bool[] lc6Group10; bool[] lc6Group11; bool[] lc6Group12; bool[] lc6Group13; bool[] lc6Group14; bool[] lc6Group15;
         bool[][] lc6Groups;
         ComboBox[] lc1Mode; ComboBox[] lc2Mode; ComboBox[] lc3Mode; ComboBox[] lc4Mode; ComboBox[] lc5Mode; ComboBox[] lc6Mode;
         ComboBox[][] lcModes;
+        CheckBox[] lc1Lock; CheckBox[] lc2Lock; CheckBox[] lc3Lock; CheckBox[] lc4Lock; CheckBox[] lc5Lock; CheckBox[] lc6Lock;
+        CheckBox[][] lcLocks;
+        ComboBox[] lc1Direction; ComboBox[] lc2Direction; ComboBox[] lc3Direction; ComboBox[] lc4Direction; ComboBox[] lc5Direction; ComboBox[] lc6Direction;
+        ComboBox[][] lcDirections;
+        TextBox[] lc1TimeoutTime; TextBox[] lc2TimeoutTime; TextBox[] lc3TimeoutTime; TextBox[] lc4TimeoutTime; TextBox[] lc5TimeoutTime; TextBox[] lc6TimeoutTime;
+        TextBox[][] lcTimeoutTimes;
+        TextBox[] lc1MaxOn; TextBox[] lc2MaxOn; TextBox[] lc3MaxOn; TextBox[] lc4MaxOn; TextBox[] lc5MaxOn; TextBox[] lc6MaxOn;
+        TextBox[][] lcMaxOns;
+        TextBox[] lc1MaxDurRecovery; TextBox[] lc2MaxDurRecovery; TextBox[] lc3MaxDurRecovery; TextBox[] lc4MaxDurRecovery; TextBox[] lc5MaxDurRecovery; TextBox[] lc6MaxDurRecovery;
+        TextBox[][] lcMaxDurRecoveries;
+        TextBox[] lc1UCAmp; TextBox[] lc2UCAmp; TextBox[] lc3UCAmp; TextBox[] lc4UCAmp; TextBox[] lc5UCAmp; TextBox[] lc6UCAmp;
+        TextBox[][] lcUCAmps;
+        ComboBox[] lc1MeasCurTime; ComboBox[] lc2MeasCurTime; ComboBox[] lc3MeasCurTime; ComboBox[] lc4MeasCurTime; ComboBox[] lc5MeasCurTime; ComboBox[] lc6MeasCurTime;
+        ComboBox[][] lcMeasCurTimes;
 
 
         public Form1()
@@ -147,8 +237,6 @@ namespace M1ConfigGenerator
             int[] DimmerColor = { 27, 161, 119 };
             int[] HCColor = { 24, 80, 135 };
             int[] LCColor = { 208, 110, 152 };
-            int[] SlideColor = { 178, 214, 241 };
-
             PopulateArrays();
         }
 
@@ -160,7 +248,6 @@ namespace M1ConfigGenerator
             btnMenuDimmer.Visible = false;
             btnMenuHC.Visible = false;
             btnMenuLC.Visible = false;
-            btnMenuSlide.Visible = false;
         }
 
         private void ShowNavButton(Button argButton, int aIndex)
@@ -217,12 +304,6 @@ namespace M1ConfigGenerator
             ShowLCNav(Convert.ToInt16(cmbStartLC.SelectedItem.ToString()));
         }
 
-        private void btnMenuSlide_Click(object sender, EventArgs e)
-        {
-            SetMenuColors(5);
-            tabControlMain.SelectedIndex = 7;
-            ShowSlideNav(Convert.ToInt16(cmbStartSlide.SelectedItem.ToString()));
-        }
 
 
         private void SetMenuColors(int ButtonNum)
@@ -232,9 +313,7 @@ namespace M1ConfigGenerator
             btnMenuDimmer.BackColor = Color.FromArgb(255, 20, 20, 20);
             btnMenuHC.BackColor = Color.FromArgb(255, 20, 20, 20);
             btnMenuLC.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnMenuSlide.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnMenuSlide.ForeColor = SystemColors.Control;
-
+;
             switch (ButtonNum)
             {
                 case 0:
@@ -256,11 +335,6 @@ namespace M1ConfigGenerator
                 case 4:
                     btnMenuLC.BackColor = Color.FromArgb(255, 208, 110, 152);
                     break;
-
-                case 5:
-                    btnMenuSlide.BackColor = Color.FromArgb(255, 178, 214, 241);
-                    btnMenuSlide.ForeColor = Color.FromArgb(255, 20, 20, 20);
-                    break;
             }
         }
 
@@ -276,7 +350,6 @@ namespace M1ConfigGenerator
             tabControlMain.SelectedIndex = 0;
             HideNavButtons();
             // for some reason, had to put these in opposite order so they appear correctly in nav bar
-            ShowNavButton(btnMenuSlide, cmbStartSlide.SelectedIndex);
             ShowNavButton(btnMenuLC, cmbStartLC.SelectedIndex);
             ShowNavButton(btnMenuHC, cmbStartHC.SelectedIndex);
             ShowNavButton(btnMenuDimmer, cmbStartDimmer.SelectedIndex);
@@ -317,7 +390,6 @@ namespace M1ConfigGenerator
             cmbStartDimmer.SelectedIndex = 0;
             cmbStartHC.SelectedIndex = 0;
             cmbStartLC.SelectedIndex = 0;
-            cmbStartSlide.SelectedIndex = 0;
         }
 
         private string ChangeChannelLabel(string argString, int argInt)
@@ -413,6 +485,13 @@ namespace M1ConfigGenerator
                 for (int channel = 0; channel < 12; channel++)
                 {
                     auxObjects[card].SetGroup0(auxGroups[card][channel], channel); // takes care of all 4 groups
+                    auxObjects[card].SetDirection(channel, auxDirections[card][channel].Text);
+                    auxObjects[card].SetDeadTime(channel, auxDeadTimes[card][channel].Text);
+                    auxObjects[card].SetPaired(channel, auxPairedTimes[card][channel].Text);
+                    auxObjects[card].SetTimeout(channel, auxTimeouts[card][channel].Checked);
+                    auxObjects[card].SetTimeoutTime(channel, auxTimeoutTimes[card][channel].Text);
+                    auxObjects[card].SetMaxOn(channel, auxMaxOns[card][channel].Text);
+                    auxObjects[card].SetMaxDurRec(channel, auxMaxDurRecs[card][channel].Text);
                 }
             }
 
@@ -476,12 +555,14 @@ namespace M1ConfigGenerator
         {
             AuxCardNavColor(btnAuxCard1);
             tabControlAux.SelectedIndex = 1;
+            tabControlAux1QF.SelectedIndex = 0;
         }
 
         private void btnAuxCard2_Click(object sender, EventArgs e)
         {
             AuxCardNavColor(btnAuxCard2);
             tabControlAux.SelectedIndex = 2;
+            tabControlAux1QF.SelectedIndex = 0;
         }
 
         private void btnAuxCard3_Click(object sender, EventArgs e)
@@ -710,13 +791,15 @@ namespace M1ConfigGenerator
         private void btnBreakerCard1_Click(object sender, EventArgs e)
         {
             BreakerCardNavColor(btnBreakerCard1);
-            tabControlBreaker.SelectedIndex = 1;
+            tabControlBreaker.SelectedIndex = 1;/*
+            tabControlBreaker1QF.SelectedIndex = 0;*/
         }
 
         private void btnBreakerCard2_Click(object sender, EventArgs e)
         {
             BreakerCardNavColor(btnBreakerCard2);
             tabControlBreaker.SelectedIndex = 2;
+            tablessControl4.SelectedIndex = 0;
         }
 
         private void btnBreakerCard3_Click(object sender, EventArgs e)
@@ -989,6 +1072,16 @@ namespace M1ConfigGenerator
                     dimmerObjects[card].SetOCAmps(channel, dimmerOCAmps[card][channel].Text);
                     dimmerObjects[card].SetOCTime(channel, dimmerOCTime[card][channel].Text);
                     dimmerObjects[card].SetGroup0(dimGroups[card][channel], channel); // takes care of all 4 groups
+                    dimmerObjects[card].SetLock(channel, dimmerLocks[card][channel].Checked);
+                    dimmerObjects[card].SetPWMFreq(channel, dimmerPWMFreq[card][channel].Text);
+                    dimmerObjects[card].SetPWMDuty(channel, dimmerPWMDuties[card][channel].Text);
+                    dimmerObjects[card].SetPWMEnable(channel, dimmerPWMEnables[card][channel].Checked);
+                    dimmerObjects[card].SetOverride(channel, dimmerOverrides[card][channel].Checked);
+                    dimmerObjects[card].SetTimeout(channel, dimmerTimeouts[card][channel].Checked);
+                    dimmerObjects[card].SetDirection(channel, dimmerDirections[card][channel].Text);
+                    dimmerObjects[card].SetTimeoutTime(channel, dimmerTimeoutTimes[card][channel].Text);
+                    dimmerObjects[card].SetMaxOn(channel, dimmerMaxOns[card][channel].Text);
+                    dimmerObjects[card].SetMaxDurRec(channel, dimmerMaxDurRecs[card][channel].Text);
                 }
             }
 
@@ -1074,12 +1167,14 @@ namespace M1ConfigGenerator
             tabControlDimmer.SelectedIndex = 1;
             if (cmbStartDimmer.Text == "Full") tabControlDimmer1QF.SelectedIndex = 1;
             else tabControlDimmer1QF.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = 0;
         }
 
         private void btnDimmerCard2_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(btnDimmerCard2);
             tabControlDimmer.SelectedIndex = 2;
+            tabControlDimmer2QF.SelectedIndex = 1;
         }
 
         private void btnDimmerCard3_Click(object sender, EventArgs e)
@@ -1421,6 +1516,17 @@ namespace M1ConfigGenerator
                     hcObjects[card].SetOCTime(channel, hcOCTime[card][channel].Text);
                     hcObjects[card].SetGroup0(hcGroups[card][channel], channel); // takes care of all 4 groups
                     hcObjects[card].SetModeAndPairing(channel, hcModes[card][channel].Text, hcStartup[card][channel]); // mode, pairing, and direction (startup)
+                    hcObjects[card].SetPWMDuty(channel, hcPWMDuties[card][channel].Text);
+                    hcObjects[card].SetPWMEnable(channel, hcPWMEnables[card][channel].Checked);
+                    hcObjects[card].SetDirection(channel, hcDirections[card][channel].Text);
+                    hcObjects[card].SetDeadTime(channel, hcDeadTimes[card][channel].Text);
+                    hcObjects[card].SetPaired(channel, hcPairedTimes[card][channel].Text);
+                    hcObjects[card].SetTimeout(channel, hcTimeouts[card][channel].Checked);
+                    hcObjects[card].SetTimeoutTime(channel, hcTimeoutTimes[card][channel].Text);
+                    hcObjects[card].SetMaxOn(channel, hcMaxOns[card][channel].Text);
+                    hcObjects[card].SetMaxDurRec(channel, hcMaxDurRec[card][channel].Text);
+                    hcObjects[card].SetUndAmp(channel, hcUndAmps[card][channel].Text);
+                    hcObjects[card].SetMeasCurTime(channel, hcMeasCurTimes[card][channel].Text);
                 }
             }
 
@@ -1504,12 +1610,14 @@ namespace M1ConfigGenerator
         {
             HCCardNavColor(btnHCCard1);
             tabControlHC.SelectedIndex = 1;
+            tabControlHC1QF. SelectedIndex = 0;
         }
 
         private void btnHCCard2_Click(object sender, EventArgs e)
         {
             HCCardNavColor(btnHCCard2);
             tabControlHC.SelectedIndex = 2;
+            tabControlHC2QF.SelectedIndex = 0;
         }
 
         private void btnHCCard3_Click(object sender, EventArgs e)
@@ -1868,7 +1976,13 @@ namespace M1ConfigGenerator
                         lcObjects[card].SetOCTime(channel, lcOCTime[card][channel].Text);
                     }
                     lcObjects[card].SetGroup0(lcGroups[card][channel], channel); // takes care of all 4 groups
-                    lcObjects[card].SetModeAndPairingLC(channel, lcModes[card][channel].Text, false);
+                    lcObjects[card].SetLock(lcLocks[card][channel].Checked, channel);
+                    lcObjects[card].SetDirection(lcDirections[card][channel].Text, channel);
+                    lcObjects[card].SetTimeoutTimes(lcTimeoutTimes[card][channel].Text, channel);
+                    lcObjects[card].SetMaxOn(lcMaxOns[card][channel].Text, channel);
+                    lcObjects[card].SetMaxDurRecovery(lcMaxDurRecoveries[card][channel].Text, channel);
+                    lcObjects[card].SetUCAmp(lcUCAmps[card][channel].Text, channel);
+                    lcObjects[card].SetMeasCurTime(lcMeasCurTimes[card][channel].Text, channel);
                 }
             }
 
@@ -1953,41 +2067,38 @@ namespace M1ConfigGenerator
             LCCardNavColor(btnLCCard1);
             tabControlLC.SelectedIndex = 1;
             tabControlLC1QF.SelectedIndex = 0;
+
         }
 
         private void btnLCCard2_Click(object sender, EventArgs e)
         {
             LCCardNavColor(btnLCCard2);
             tabControlLC.SelectedIndex = 2;
-            tabControlLC2QF.SelectedIndex = 0;
+            tabControlLC2QF.SelectedIndex = 0 ;
         }
 
         private void btnLCCard3_Click(object sender, EventArgs e)
         {
             LCCardNavColor(btnLCCard3);
             tabControlLC.SelectedIndex = 3;
-            tabControlLC3QF.SelectedIndex = 0;
         }
 
         private void btnLCCard4_Click(object sender, EventArgs e)
         {
             LCCardNavColor(btnLCCard4);
             tabControlLC.SelectedIndex = 4;
-            tabControlLC4QF.SelectedIndex = 0;
         }
 
         private void btnLCCard5_Click(object sender, EventArgs e)
         {
             LCCardNavColor(btnLCCard5);
             tabControlLC.SelectedIndex = 5;
-            tabControlLC5QF.SelectedIndex = 0;
         }
 
         private void btnLCCard6_Click(object sender, EventArgs e)
         {
             LCCardNavColor(btnLCCard6);
             tabControlLC.SelectedIndex = 6;
-            tabControlLC6QF.SelectedIndex = 0;
         }
 
         private void ShowLCNav(int argInt)
@@ -2293,73 +2404,7 @@ namespace M1ConfigGenerator
         // ######  ######## #### ########  ######## 
         //@Slide
 
-        private void btnSlideGenerate_Click(object sender, EventArgs e)
-        {
-            SlideCardNavColor(btnSlideGenerate);
-            tabControlSlide.SelectedIndex = 3;
-            string[] slideFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_SlideCard\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
-            tbxSlideGenerated.Lines = slideFiles;
-        }
-
-        private void btnSlideCard1_Click(object sender, EventArgs e)
-        {
-            SlideCardNavColor(btnSlideCard1);
-            tabControlSlide.SelectedIndex = 1;
-        }
-
-        private void btnSlideCard2_Click(object sender, EventArgs e)
-        {
-            SlideCardNavColor(btnSlideCard2);
-            tabControlSlide.SelectedIndex = 2;
-        }
-
-        private void btnSlideCard3_Click(object sender, EventArgs e)
-        {
-            SlideCardNavColor(btnSlideCard3);
-        }
-
-        private void btnSlideCard4_Click(object sender, EventArgs e)
-        {
-            SlideCardNavColor(btnSlideCard4);
-        }
-
-        private void btnSlideCard5_Click(object sender, EventArgs e)
-        {
-            SlideCardNavColor(btnSlideCard5);
-        }
-
-        private void btnSlideCard6_Click(object sender, EventArgs e)
-        {
-            SlideCardNavColor(btnSlideCard6);
-        }
-
-        private void ShowSlideNav(int argInt)
-        {
-            Button[] btnArray = { btnSlideCard1, btnSlideCard2, btnSlideCard3, btnSlideCard4, btnSlideCard5, btnSlideCard6 };
-
-            for (int i = 0; i < argInt; i++)
-            {
-                btnArray[i].Visible = true;
-            }
-        }
-
-        private void SlideCardNavColor(Button argButton)
-        {
-            btnSlideCard1.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnSlideCard1.ForeColor = SystemColors.Control;
-            btnSlideCard2.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnSlideCard2.ForeColor = SystemColors.Control;
-            btnSlideCard3.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnSlideCard3.ForeColor = SystemColors.Control;
-            btnSlideCard4.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnSlideCard4.ForeColor = SystemColors.Control;
-            btnSlideCard5.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnSlideCard5.ForeColor = SystemColors.Control;
-            btnSlideCard6.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnSlideCard6.ForeColor = SystemColors.Control;
-            argButton.BackColor = Color.FromArgb(255, 178, 214, 241);
-            argButton.ForeColor = Color.FromArgb(255, 20, 20, 20);
-        }
+        
 
         //@Load -----------------------------------------------------------------------Load
         private void SetSelectedIndex(ComboBox[] argComboBox, int argIndex)
@@ -2402,6 +2447,27 @@ namespace M1ConfigGenerator
             auxShade = new CheckBox[] { chkAux1Shade, chkAux2Shade };
             auxForce = new CheckBox[] { chkAux1Force, chkAux2Force };
             auxBaseInstance = new TextBox[] { tbxAux1BaseIndex, tbxAux2BaseIndex };
+            Aux1Direction = new ComboBox[] { cmbAux1DirectionCh00, cmbAux1DirectionCh01, cmbAux1DirectionCh02, cmbAux1DirectionCh03, cmbAux1DirectionCh04, cmbAux1DirectionCh05, cmbAux1DirectionCh06, cmbAux1DirectionCh07, cmbAux1DirectionCh08, cmbAux1DirectionCh09, cmbAux1DirectionCh10, cmbAux1DirectionCh11 };
+            Aux2Direction = new ComboBox[] { cmbAux2DirectionCh00, cmbAux2DirectionCh01, cmbAux2DirectionCh02, cmbAux2DirectionCh03, cmbAux2DirectionCh04, cmbAux2DirectionCh05, cmbAux2DirectionCh06, cmbAux2DirectionCh07, cmbAux2DirectionCh08, cmbAux2DirectionCh09, cmbAux2DirectionCh10, cmbAux2DirectionCh11 }; 
+            auxDirections = new ComboBox[][] { Aux1Direction, Aux2Direction };
+            Aux1DeadTime = new ComboBox[] { cmbAux1DeadTimeCh00, cmbAux1DeadTimeCh01, cmbAux1DeadTimeCh02, cmbAux1DeadTimeCh03, cmbAux1DeadTimeCh04, cmbAux1DeadTimeCh05, cmbAux1DeadTimeCh06, cmbAux1DeadTimeCh07, cmbAux1DeadTimeCh08, cmbAux1DeadTimeCh09, cmbAux1DeadTimeCh10, cmbAux1DeadTimeCh11 }; 
+            Aux2DeadTime = new ComboBox[] { cmbAux2DeadTimeCh00, cmbAux2DeadTimeCh01, cmbAux2DeadTimeCh02, cmbAux2DeadTimeCh03, cmbAux2DeadTimeCh04, cmbAux2DeadTimeCh05, cmbAux2DeadTimeCh06, cmbAux2DeadTimeCh07, cmbAux2DeadTimeCh08, cmbAux2DeadTimeCh09, cmbAux2DeadTimeCh10, cmbAux2DeadTimeCh11 };
+            auxDeadTimes = new ComboBox[][] { Aux1DeadTime, Aux2DeadTime };
+            Aux1Paired = new ComboBox[] { cmbAux1PairedCh00, cmbAux1PairedCh01, cmbAux1PairedCh02, cmbAux1PairedCh03, cmbAux1PairedCh04, cmbAux1PairedCh05, cmbAux1PairedCh06, cmbAux1PairedCh07, cmbAux1PairedCh08, cmbAux1PairedCh09, cmbAux1PairedCh10, cmbAux1PairedCh11 };
+            Aux2Paired = new ComboBox[] { cmbAux2PairedCh00, cmbAux2PairedCh01, cmbAux2PairedCh02, cmbAux2PairedCh03, cmbAux2PairedCh04, cmbAux2PairedCh05, cmbAux2PairedCh06, cmbAux2PairedCh07, cmbAux2PairedCh08, cmbAux2PairedCh09, cmbAux2PairedCh10, cmbAux2PairedCh11 };
+            auxPairedTimes = new ComboBox[][] { Aux1Paired, Aux2Paired };
+            Aux1Timeout = new CheckBox[] { chkAux1TimeoutCh00, chkAux1TimeoutCh01, chkAux1TimeoutCh02, chkAux1TimeoutCh03, chkAux1TimeoutCh04, chkAux1TimeoutCh05, chkAux1TimeoutCh06, chkAux1TimeoutCh07, chkAux1TimeoutCh08, chkAux1TimeoutCh09, chkAux1TimeoutCh10, chkAux1TimeoutCh11 };
+            Aux2Timeout = new CheckBox[] { chkAux2TimeoutCh00, chkAux2TimeoutCh01, chkAux2TimeoutCh02, chkAux2TimeoutCh03, chkAux2TimeoutCh04, chkAux2TimeoutCh05, chkAux2TimeoutCh06, chkAux2TimeoutCh07, chkAux2TimeoutCh08, chkAux2TimeoutCh09, chkAux2TimeoutCh10, chkAux2TimeoutCh11 };
+            auxTimeouts = new CheckBox[][] { Aux1Timeout, Aux2Timeout };
+            Aux1TimeoutTime = new TextBox[] { txtbAux1TimeoutTimeCh00, txtbAux1TimeoutTimeCh01, txtbAux1TimeoutTimeCh02, txtbAux1TimeoutTimeCh03, txtbAux1TimeoutTimeCh04, txtbAux1TimeoutTimeCh05, txtbAux1TimeoutTimeCh06, txtbAux1TimeoutTimeCh07, txtbAux1TimeoutTimeCh08, txtbAux1TimeoutTimeCh09, txtbAux1TimeoutTimeCh10, txtbAux1TimeoutTimeCh11 };
+            Aux2TimeoutTime = new TextBox[] { txtbAux2TimeoutTimeCh00, txtbAux2TimeoutTimeCh01, txtbAux2TimeoutTimeCh02, txtbAux2TimeoutTimeCh03, txtbAux2TimeoutTimeCh04, txtbAux2TimeoutTimeCh05, txtbAux2TimeoutTimeCh06, txtbAux2TimeoutTimeCh07, txtbAux2TimeoutTimeCh08, txtbAux2TimeoutTimeCh09, txtbAux2TimeoutTimeCh10, txtbAux2TimeoutTimeCh11 };
+            auxTimeoutTimes = new TextBox[][] { Aux1TimeoutTime, Aux2TimeoutTime }; 
+            Aux1MaxOn = new TextBox[] { txtbAux1MaxOnCh00, txtbAux1MaxOnCh01, txtbAux1MaxOnCh02, txtbAux1MaxOnCh03, txtbAux1MaxOnCh04, txtbAux1MaxOnCh05, txtbAux1MaxOnCh06, txtbAux1MaxOnCh07, txtbAux1MaxOnCh08, txtbAux1MaxOnCh09, txtbAux1MaxOnCh10, txtbAux1MaxOnCh11 };
+            Aux2MaxOn = new TextBox[] { txtbAux2MaxOnCh00, txtbAux2MaxOnCh01, txtbAux2MaxOnCh02, txtbAux2MaxOnCh03, txtbAux2MaxOnCh04, txtbAux2MaxOnCh05, txtbAux2MaxOnCh06, txtbAux2MaxOnCh07, txtbAux2MaxOnCh08, txtbAux2MaxOnCh09, txtbAux2MaxOnCh10, txtbAux2MaxOnCh11 };
+            auxMaxOns = new TextBox[][] { Aux1MaxOn, Aux2MaxOn };
+            Aux1MaxDurRec = new TextBox[] { txtbAux1MaxDurRecCh00, txtbAux1MaxDurRecCh01, txtbAux1MaxDurRecCh02, txtbAux1MaxDurRecCh03, txtbAux1MaxDurRecCh04, txtbAux1MaxDurRecCh05, txtbAux1MaxDurRecCh06, txtbAux1MaxDurRecCh07, txtbAux1MaxDurRecCh08, txtbAux1MaxDurRecCh09, txtbAux1MaxDurRecCh10, txtbAux1MaxDurRecCh11 };
+            Aux2MaxDurRec = new TextBox[] { txtbAux2MaxDurRecCh00, txtbAux2MaxDurRecCh01, txtbAux2MaxDurRecCh02, txtbAux2MaxDurRecCh03, txtbAux2MaxDurRecCh04, txtbAux2MaxDurRecCh05, txtbAux2MaxDurRecCh06, txtbAux2MaxDurRecCh07, txtbAux2MaxDurRecCh08, txtbAux2MaxDurRecCh09, txtbAux2MaxDurRecCh10, txtbAux2MaxDurRecCh11 };
+            auxMaxDurRecs = new TextBox[][] { Aux1MaxDurRec, Aux2MaxDurRec };
 
             breakerCardNum = new ComboBox[] { cmbBreaker1CardNum, cmbBreaker2CardNum, cmbBreaker3CardNum, cmbBreaker4CardNum };
             breakerPanelNum = new ComboBox[] { cmbBreaker1PanelNum, cmbBreaker2PanelNum, cmbBreaker3PanelNum, cmbBreaker4PanelNum };
@@ -2426,6 +2492,42 @@ namespace M1ConfigGenerator
             breaker3Interrupt = new ComboBox[] { cmbBreaker3Interrupt00, cmbBreaker3Interrupt01, cmbBreaker3Interrupt02, cmbBreaker3Interrupt03, cmbBreaker3Interrupt04, cmbBreaker3Interrupt05, cmbBreaker3Interrupt06, cmbBreaker3Interrupt07, cmbBreaker3Interrupt08, cmbBreaker3Interrupt09, cmbBreaker3Interrupt10, cmbBreaker3Interrupt11 };
             breaker4Interrupt = new ComboBox[] { cmbBreaker4Interrupt00, cmbBreaker4Interrupt01, cmbBreaker4Interrupt02, cmbBreaker4Interrupt03, cmbBreaker4Interrupt04, cmbBreaker4Interrupt05, cmbBreaker4Interrupt06, cmbBreaker4Interrupt07, cmbBreaker4Interrupt08, cmbBreaker4Interrupt09, cmbBreaker4Interrupt10, cmbBreaker4Interrupt11 };
             breakerInterrupts = new ComboBox[][] { breaker1Interrupt, breaker2Interrupt, breaker3Interrupt, breaker4Interrupt };
+            breaker1Direction = new ComboBox[] { cmbBreak1DirectionCh00, cmbBreak1DirectionCh01, cmbBreak1DirectionCh02, cmbBreak1DirectionCh03, cmbBreak1DirectionCh04, cmbBreak1DirectionCh05, cmbBreak1DirectionCh06, cmbBreak1DirectionCh07, cmbBreak1DirectionCh08, cmbBreak1DirectionCh09, cmbBreak1DirectionCh10, cmbBreak1DirectionCh11 };
+            breaker2Direction = new ComboBox[] { cmbBreak2DirectionCh00, cmbBreak2DirectionCh01, cmbBreak2DirectionCh02, cmbBreak2DirectionCh03, cmbBreak2DirectionCh04, cmbBreak2DirectionCh05, cmbBreak2DirectionCh06, cmbBreak2DirectionCh07, cmbBreak2DirectionCh08, cmbBreak2DirectionCh09, cmbBreak2DirectionCh10, cmbBreak2DirectionCh11 };
+            breaker3Direction = new ComboBox[] { cmbBreak3DirectionCh00, cmbBreak3DirectionCh01, cmbBreak3DirectionCh02, cmbBreak3DirectionCh03, cmbBreak3DirectionCh04, cmbBreak3DirectionCh05, cmbBreak3DirectionCh06, cmbBreak3DirectionCh07, cmbBreak3DirectionCh08, cmbBreak3DirectionCh09, cmbBreak3DirectionCh10, cmbBreak3DirectionCh11 };
+            breaker4Direction = new ComboBox[] { cmbBreak4DirectionCh00, cmbBreak4DirectionCh01, cmbBreak4DirectionCh02, cmbBreak4DirectionCh03, cmbBreak4DirectionCh04, cmbBreak4DirectionCh05, cmbBreak4DirectionCh06, cmbBreak4DirectionCh07, cmbBreak4DirectionCh08, cmbBreak4DirectionCh09, cmbBreak4DirectionCh10, cmbBreak4DirectionCh11 };
+            breakerDirections = new ComboBox[][] { breaker1Direction, breaker2Direction, breaker3Direction, breaker4Direction };
+            breaker1Undercurrent = new TextBox[] { txtbBreak1UCAmpsCh00, txtbBreak1UCAmpsCh01, txtbBreak1UCAmpsCh02, txtbBreak1UCAmpsCh03, txtbBreak1UCAmpsCh04, txtbBreak1UCAmpsCh05, txtbBreak1UCAmpsCh06, txtbBreak1UCAmpsCh07, txtbBreak1UCAmpsCh08, txtbBreak1UCAmpsCh09, txtbBreak1UCAmpsCh10, txtbBreak1UCAmpsCh11 };
+            breaker2Undercurrent = new TextBox[] { txtbBreak2UCAmpsCh00, txtbBreak2UCAmpsCh01, txtbBreak2UCAmpsCh02, txtbBreak2UCAmpsCh03, txtbBreak2UCAmpsCh04, txtbBreak2UCAmpsCh05, txtbBreak2UCAmpsCh06, txtbBreak2UCAmpsCh07, txtbBreak2UCAmpsCh08, txtbBreak2UCAmpsCh09, txtbBreak2UCAmpsCh10, txtbBreak2UCAmpsCh11 };
+            breaker3Undercurrent = new TextBox[] { txtbBreak3UCAmpsCh00, textBox111, txtbBreak3UCAmpsCh02, txtbBreak3UCAmpsCh03, txtbBreak3UCAmpsCh04, txtbBreak3UCAmpsCh05, txtbBreak3UCAmpsCh06, txtbBreak3UCAmpsCh07, txtbBreak3UCAmpsCh08, txtbBreak3UCAmpsCh09, txtbBreak3UCAmpsC10, txtbBreak3UCAmpsCh11 };
+            breaker4Undercurrent = new TextBox[] { txtbBreak4UCAmpsCh00, txtbBreak4UCAmpsCh01, txtbBreak4UCAmpsCh02, txtbBreak4UCAmpsCh03, txtbBreak4UCAmpsCh04, txtbBreak4UCAmpsCh05, txtbBreak4UCAmpsCh06, txtbBreak4UCAmpsCh07, txtbBreak4UCAmpsCh08, txtbBreak4UCAmpsCh09, txtbBreak4UCAmpsCh10, txtbBreak4UCAmpsCh11 };
+            breakerUndercurrents = new TextBox[][] { breaker1Undercurrent, breaker2Undercurrent, breaker3Undercurrent, breaker4Undercurrent };
+            breaker1MeasCurRec = new ComboBox[] { cmbBreak1MeasCurRecCh00, cmbBreak1MeasCurRecCh01, cmbBreak1MeasCurRecCh02, cmbBreak1MeasCurRecCh03, cmbBreak1MeasCurRecCh04, cmbBreak1MeasCurRecCh05, cmbBreak1MeasCurRecCh06, cmbBreak1MeasCurRecCh07, cmbBreak1MeasCurRecCh08, cmbBreak1MeasCurRecCh09, cmbBreak1MeasCurRecCh10, cmbBreak1MeasCurRecCh11 };
+            breaker2MeasCurRec = new ComboBox[] { cmbBreak2MeasCurRecCh00, cmbBreak2MeasCurRecCh01, cmbBreak2MeasCurRecCh02, cmbBreak2MeasCurRecCh03, cmbBreak2MeasCurRecCh04, cmbBreak2MeasCurRecCh05, cmbBreak2MeasCurRecCh06, cmbBreak2MeasCurRecCh07, cmbBreak2MeasCurRecCh08, cmbBreak2MeasCurRecCh09, cmbBreak2MeasCurRecCh10, cmbBreak2MeasCurRecCh11 };
+            breaker3MeasCurRec = new ComboBox[] { cmbBreak3MeasCurRecCh00, cmbBreak3MeasCurRecCh01, cmbBreak3MeasCurRecCh02, cmbBreak3MeasCurRecCh03, cmbBreak3MeasCurRecCh04, cmbBreak3MeasCurRecCh05, cmbBreak3MeasCurRecCh06, cmbBreak3MeasCurRecCh07, cmbBreak3MeasCurRecCh08, cmbBreak3MeasCurRecCh09, cmbBreak3MeasCurRecCh10, cmbBreak3MeasCurRecCh11 };
+            breaker4MeasCurRec = new ComboBox[] { cmbBreak4MeasCurRecCh00, cmbBreak4MeasCurRecCh01, cmbBreak4MeasCurRecCh02, cmbBreak4MeasCurRecCh03, cmbBreak4MeasCurRecCh04, cmbBreak4MeasCurRecCh05, cmbBreak4MeasCurRecCh06, cmbBreak4MeasCurRecCh07, cmbBreak4MeasCurRecCh08, cmbBreak4MeasCurRecCh09, cmbBreak4MeasCurRecCh10, cmbBreak4MeasCurRecCh11 };
+            breakerMeasCurRecs = new ComboBox[][] { breaker1MeasCurRec, breaker2MeasCurRec, breaker3MeasCurRec, breaker4MeasCurRec };
+            breaker1Mode = new ComboBox[] { cmbBreak1ModeCh00, cmbBreak1ModeCh01, cmbBreak1ModeCh02, cmbBreak1ModeCh03, cmbBreak1ModeCh04, cmbBreak1ModeCh05, cmbBreak1ModeCh06, cmbBreak1ModeCh07, cmbBreak1ModeCh08, cmbBreak1ModeCh09, cmbBreak1ModeCh10, cmbBreak1ModeCh11 };
+            breaker2Mode = new ComboBox[] { cmbBreak2ModeCh00, cmbBreak2ModeCh01, cmbBreak2ModeCh02, cmbBreak2ModeCh03, cmbBreak2ModeCh04, cmbBreak2ModeCh05, cmbBreak2ModeCh06, cmbBreak2ModeCh07, cmbBreak2ModeCh08, cmbBreak2ModeCh09, cmbBreak2ModeCh10, cmbBreak2ModeCh11 };
+            breaker3Mode = new ComboBox[] { cmbBreak3ModeCh00, cmbBreak3ModeCh01, cmbBreak3ModeCh02, cmbBreak3ModeCh03, cmbBreak3ModeCh04, cmbBreak3ModeCh05, cmbBreak3ModeCh06, cmbBreak3ModeCh07, cmbBreak3ModeCh08, cmbBreak3ModeCh09, cmbBreak3ModeCh10, cmbBreak3ModeCh11 };
+            breaker4Mode = new ComboBox[] { cmbBreak4ModeCh00, cmbBreak4ModeCh01, cmbBreak4ModeCh02, cmbBreak4ModeCh03, cmbBreak4ModeCh04, cmbBreak4ModeCh05, cmbBreak4ModeCh06, cmbBreak4ModeCh07, cmbBreak4ModeCh08, cmbBreak4ModeCh09, cmbBreak4ModeCh10, cmbBreak4ModeCh11 };
+            breakerModes = new ComboBox[][] { breaker1Mode, breaker2Mode, breaker3Mode, breaker4Mode };
+            breaker1Paired = new ComboBox[] { cmbBreak1PairedCh00, cmbBreak1PairedCh01, cmbBreak1PairedCh02, cmbBreak1PairedCh03, cmbBreak1PairedCh04, cmbBreak1PairedCh05, cmbBreak1PairedCh06, cmbBreak1PairedCh07, cmbBreak1PairedCh08, cmbBreak1PairedCh09, cmbBreak1PairedCh10, cmbBreak1PairedCh11 };
+            breaker2Paired = new ComboBox[] { cmbBreak2PairedCh00, cmbBreak2PairedCh01, cmbBreak2PairedCh02, cmbBreak2PairedCh03, cmbBreak2PairedCh04, cmbBreak2PairedCh05, cmbBreak2PairedCh06, cmbBreak2PairedCh07, cmbBreak2PairedCh08, cmbBreak2PairedCh09, cmbBreak2PairedCh10, cmbBreak2PairedCh11 };
+            breaker3Paired = new ComboBox[] { cmbBreak3PairedCh00, cmbBreak3PairedCh01, cmbBreak3PairedCh02, cmbBreak3PairedCh03, cmbBreak3PairedCh04, cmbBreak3PairedCh05, cmbBreak3PairedCh06, cmbBreak3PairedCh07, cmbBreak3PairedCh08, cmbBreak3PairedCh09, cmbBreak3PairedCh10, cmbBreak3PairedCh11 };
+            breaker4Paired = new ComboBox[] { cmbBreak4PairedCh00, cmbBreak4PairedCh01, cmbBreak4PairedCh02, cmbBreak4PairedCh03, cmbBreak4PairedCh04, cmbBreak4PairedCh05, cmbBreak4PairedCh06, cmbBreak4PairedCh07, cmbBreak4PairedCh08, cmbBreak4PairedCh09, cmbBreak4PairedCh10, cmbBreak4PairedCh11 };
+            breakerPairedTimes = new ComboBox[][] { breaker1Paired, breaker2Paired, breaker3Paired, breaker4Paired };
+            breaker1IGN = new ComboBox[] { cmbBreak1IGNCh00, cmbBreak1IGNCh01, cmbBreak1IGNCh02, cmbBreak1IGNCh03, cmbBreak1IGNCh04, cmbBreak1IGNCh05, cmbBreak1IGNCh06, cmbBreak1IGNCh07, cmbBreak1IGNCh08, cmbBreak1IGNCh09, cmbBreak1IGNCh10, cmbBreak1IGNCh11 }; 
+            breaker2IGN = new ComboBox[] { cmbBreak2IGNCh00, cmbBreak2IGNCh01, cmbBreak2IGNCh02, cmbBreak2IGNCh03, cmbBreak2IGNCh04, cmbBreak2IGNCh05, cmbBreak2IGNCh06, cmbBreak2IGNCh07, cmbBreak2IGNCh08, cmbBreak2IGNCh09, cmbBreak2IGNCh10, cmbBreak2IGNCh11 };
+            breaker3IGN = new ComboBox [] { cmbBreak3IGNCh00, cmbBreak3IGNCh01, cmbBreak3IGNCh02, cmbBreak3IGNCh03, cmbBreak3IGNCh04, cmbBreak3IGNCh05, cmbBreak3IGNCh06, cmbBreak3IGNCh07, cmbBreak3IGNCh08, cmbBreak3IGNCh09, cmbBreak3IGNCh10, cmbBreak3IGNCh11 };
+            breaker4IGN = new ComboBox[] { cmbBreak4IGNCh00, cmbBreak4IGNCh01, cmbBreak4IGNCh02, cmbBreak4IGNCh03, cmbBreak4IGNCh04, cmbBreak4IGNCh05, cmbBreak4IGNCh06, cmbBreak4IGNCh07, cmbBreak4IGNCh08, cmbBreak4IGNCh09, cmbBreak4IGNCh10, cmbBreak4IGNCh11 };
+            breakerIGNs = new ComboBox[][] { breaker1IGN, breaker2IGN, breaker3IGN, breaker4IGN };
+            breaker1Park = new ComboBox[] { cmbBreak1ParkCh00, cmbBreak1ParkCh01,  cmbBreak1ParkCh02, cmbBreak1ParkCh03, cmbBreak1ParkCh04, cmbBreak1ParkCh05, cmbBreak1ParkCh06, cmbBreak1ParkCh07, cmbBreak1ParkCh08, cmbBreak1ParkCh09, cmbBreak1ParkCh10, cmbBreak1ParkCh11 };
+            breaker2Park = new ComboBox[] { cmbBreak2ParkCh00, cmbBreak2ParkCh01, cmbBreak2ParkCh02, cmbBreak2ParkCh03, cmbBreak2ParkCh04, cmbBreak2ParkCh05, cmbBreak2ParkCh06, cmbBreak2ParkCh07, cmbBreak2ParkCh08, cmbBreak2ParkCh09, cmbBreak2ParkCh10, cmbBreak2ParkCh11 };
+            breaker3Park = new ComboBox[] { cmbBreak3ParkCh00, cmbBreak3ParkCh01, cmbBreak3ParkCh02, cmbBreak3ParkCh03, cmbBreak3ParkCh04, cmbBreak3ParkCh05, cmbBreak3ParkCh06, cmbBreak3ParkCh07, cmbBreak3ParkCh08, cmbBreak3ParkCh09, cmbBreak3ParkCh10, cmbBreak3ParkCh11 };
+            breaker4Park = new ComboBox [] { cmbBreak4ParkCh00, cmbBreak4ParkCh01, cmbBreak4ParkCh02, cmbBreak4ParkCh03, cmbBreak3ParkCh04, cmbBreak4ParkCh05, cmbBreak4ParkCh06, cmbBreak4ParkCh07, cmbBreak4ParkCh08, cmbBreak4ParkCh09, cmbBreak4ParkCh10, cmbBreak4ParkCh11 };
+            breakerParks = new ComboBox[][] { breaker1Park, breaker2Park, breaker3Park, breaker4Park };
+
             dimCardNum = new ComboBox[] { cmbDimmer1CardNum, cmbDimmer2CardNum, cmbDimmer3CardNum, cmbDimmer4CardNum, cmbDimmer5CardNum, cmbDimmer6CardNum };
             dimPanelNum = new ComboBox[] { cmbDimmer1PanelNum, cmbDimmer2PanelNum, cmbDimmer3PanelNum, cmbDimmer4PanelNum, cmbDimmer5PanelNum, cmbDimmer6PanelNum };
             dimConfigRev = new TextBox[] { tbxDimmer1CfgRev, tbxDimmer2CfgRev, tbxDimmer3CfgRev, tbxDimmer4CfgRev, tbxDimmer5CfgRev, tbxDimmer6CfgRev };
@@ -2448,6 +2550,90 @@ namespace M1ConfigGenerator
             dim5OCTime = new ComboBox[] { cmbDimmer5OCTime00, cmbDimmer5OCTime01, cmbDimmer5OCTime02, cmbDimmer5OCTime03, cmbDimmer5OCTime04, cmbDimmer5OCTime05, cmbDimmer5OCTime06, cmbDimmer5OCTime07, cmbDimmer5OCTime08, cmbDimmer5OCTime09, cmbDimmer5OCTime10, cmbDimmer5OCTime11 };
             dim6OCTime = new ComboBox[] { cmbDimmer6OCTime00, cmbDimmer6OCTime01, cmbDimmer6OCTime02, cmbDimmer6OCTime03, cmbDimmer6OCTime04, cmbDimmer6OCTime05, cmbDimmer6OCTime06, cmbDimmer6OCTime07, cmbDimmer6OCTime08, cmbDimmer6OCTime09, cmbDimmer6OCTime10, cmbDimmer6OCTime11 };
             dimmerOCTime = new ComboBox[][] { dim1OCTime, dim2OCTime, dim3OCTime, dim4OCTime, dim5OCTime, dim6OCTime };
+            Dimmer1Lock = new CheckBox[] { chkDimmer1Lock00, chkDimmer1Lock01, chkDimmer1Lock02, chkDimmer1Lock03, chkDimmer1Lock04, chkDimmer1Lock05, chkDimmer1Lock06, chkDimmer1Lock07, chkDimmer1Lock08, chkDimmer1Lock09, chkDimmer1Lock10, chkDimmer1Lock11};
+            Dimmer2Lock = new CheckBox[] { chkDimmer2Lock00, chkDimmer2Lock01, chkDimmer2Lock02, chkDimmer2Lock03, chkDimmer2Lock04, chkDimmer2Lock05, chkDimmer2Lock06, chkDimmer2Lock07, chkDimmer2Lock08, chkDimmer2Lock09, chkDimmer2Lock10, chkDimmer2Lock11};
+            Dimmer3Lock = new CheckBox[] { chkDimmer3Lock00, chkDimmer3Lock01, chkDimmer3Lock02, chkDimmer3Lock03, chkDimmer3Lock04, chkDimmer3Lock05, chkDimmer3Lock06, chkDimmer3Lock07, chkDimmer3Lock08, chkDimmer3Lock09, chkDimmer3Lock10, chkDimmer3Lock11}; 
+            Dimmer4Lock = new CheckBox[] { chkDimmer4Lock00, chkDimmer4Lock01, chkDimmer4Lock02, chkDimmer4Lock03, chkDimmer4Lock04, chkDimmer4Lock05, chkDimmer4Lock06, chkDimmer4Lock07, chkDimmer4Lock08, chkDimmer4Lock09, chkDimmer4Lock10, chkDimmer4Lock11};
+            Dimmer5Lock = new CheckBox[] { chkDimmer5Lock00, chkDimmer5Lock01, chkDimmer5Lock02, chkDimmer5Lock03, chkDimmer5Lock04, chkDimmer5Lock05, chkDimmer5Lock06, chkDimmer5Lock07, chkDimmer5Lock08, chkDimmer5Lock09, chkDimmer5Lock10, chkDimmer5Lock11};
+            Dimmer6Lock = new CheckBox[] { chkDimmer6Lock00, chkDimmer6Lock01, chkDimmer6Lock02, chkDimmer6Lock03, chkDimmer6Lock04, chkDimmer6Lock05, chkDimmer6Lock06, chkDimmer6Lock07, chkDimmer6Lock08, chkDimmer6Lock09, chkDimmer6Lock10, checkBox198 };
+            dimmerLocks = new CheckBox[][] { Dimmer1Lock, Dimmer2Lock, Dimmer3Lock, Dimmer4Lock, Dimmer5Lock, Dimmer6Lock };
+            Dimmer1PWMFreq = new ComboBox[] { cmbDimmer1PWMFreqCh00, cmbDimmer1PWMFreqCh01, cmbDimmer1PWMFreqCh02, cmbDimmer1PWMFreqCh03, cmbDimmer1PWMFreqCh04, cmbDimmer1PWMFreqCh04, cmbDimmer1PWMFreqCh05, cmbDimmer1PWMFreqCh06, cmbDimmer1PWMFreqCh07, cmbDimmer1PWMFreqCh08, cmbDimmer1PWMFreqCh09, cmbDimmer1PWMFreqCh10, cmbDimmer1PWMFreqCh11 };
+            Dimmer2PWMFreq = new ComboBox[] { cmbDimmer2PWMFreqCh00, cmbDimmer2PWMFreqCh01, cmbDimmer2PWMFreqCh02, cmbDimmer2PWMFreqCh03, cmbDimmer2PWMFreqCh04, cmbDimmer2PWMFreqCh05, cmbDimmer2PWMFreqCh06, cmbDimmer2PWMFreqCh07, cmbDimmer2PWMFreqCh08, cmbDimmer2PWMFreqCh09, cmbDimmer2PWMFreqCh10, cmbDimmer2PWMFreqCh11 };
+            Dimmer3PWMFreq = new ComboBox[] { cmbDimmer3PWMFreqCh00, cmbDimmer3PWMFreqCh01, cmbDimmer3PWMFreqCh02, cmbDimmer3PWMFreqCh03, cmbDimmer3PWMFreqCh04, cmbDimmer3PWMFreqCh05, cmbDimmer3PWMFreqCh06, cmbDimmer3PWMFreqCh07, cmbDimmer3PWMFreqCh08, cmbDimmer3PWMFreqCh09, cmbDimmer3PWMFreqCh10, cmbDimmer3PWMFreqCh11 };
+            Dimmer4PWMFreq = new ComboBox[] { cmbDimmer4PWMFreqCh00, cmbDimmer4PWMFreqCh01, cmbDimmer4PWMFreqCh02, cmbDimmer4PWMFreqCh03, cmbDimmer4PWMFreqCh04, cmbDimmer4PWMFreqCh05, cmbDimmer4PWMFreqCh06, cmbDimmer4PWMFreqCh07, cmbDimmer4PWMFreqCh08, cmbDimmer4PWMFreqCh09, cmbDimmer4PWMFreqCh10, cmbDimmer4PWMFreqCh11 };
+            Dimmer5PWMFreq = new ComboBox[] { cmbDimmer5PWMFreqCh00, cmbDimmer5PWMFreqCh01, cmbDimmer5PWMFreqCh02, cmbDimmer5PWMFreqCh03, cmbDimmer5PWMFreqCh04, cmbDimmer5PWMFreqCh05, cmbDimmer5PWMFreqCh06, cmbDimmer5PWMFreqCh07, cmbDimmer5PWMFreqCh08, cmbDimmer5PWMFreqCh09, cmbDimmer5PWMFreqCh10, cmbDimmer5PWMFreqCh11 };
+            Dimmer6PWMFreq = new ComboBox[] { cmbDimmer6PWMFreqCh00, cmbDimmer6PWMFreqCh01, cmbDimmer6PWMFreqCh02, cmbDimmer6PWMFreqCh03, cmbDimmer6PWMFreqCh04, cmbDimmer6PWMFreqCh05, cmbDimmer6PWMFreqCh06, cmbDimmer6PWMFreqCh07, cmbDimmer6PWMFreqCh08, cmbDimmer6PWMFreqCh09, cmbDimmer6PWMFreqCh10, cmbDimmer6PWMFreqCh11 };
+            dimmerPWMFreq = new ComboBox[][] { Dimmer1PWMFreq, Dimmer2PWMFreq, Dimmer3PWMFreq, Dimmer4PWMFreq, Dimmer4PWMFreq, Dimmer5PWMFreq, Dimmer6PWMFreq };
+            Dimmer1PWMDuty = new TextBox[] { txtbDimmer1PWMDutyCh00, txtbDimmer1PWMDutyCh01, txtbDimmer1PWMDutyCh02, txtbDimmer1PWMDutyCh03, txtbDimmer1PWMDutyCh04, txtbDimmer1PWMDutyCh05, txtbDimmer1PWMDutyCh06, txtbDimmer1PWMDutyCh07, txtbDimmer1PWMDutyCh08, txtbDimmer1PWMDutyCh09, txtbDimmer1PWMDutyCh10, txtbDimmer1PWMDutyCh11 };
+            Dimmer2PWMDuty = new TextBox[] { txtbDimmer2PWMDutyCh00, txtbDimmer2PWMDutyCh01, txtbDimmer2PWMDutyCh02, txtbDimmer2PWMDutyCh03, txtbDimmer2PWMDutyCh04, txtbDimmer2PWMDutyCh05, txtbDimmer2PWMDutyCh06, txtbDimmer2PWMDutyCh07, txtbDimmer2PWMDutyCh08, txtbDimmer2PWMDutyCh09, txtbDimmer2PWMDutyCh10, txtbDimmer2PWMDutyCh11 };
+            Dimmer3PWMDuty = new TextBox[] { txtbDimmer3PWMDutyCh00, txtbDimmer3PWMDutyCh01, txtbDimmer3PWMDutyCh02, txtbDimmer3PWMDutyCh03, txtbDimmer3PWMDutyCh04, txtbDimmer3PWMDutyCh05, txtbDimmer3PWMDutyCh06, txtbDimmer3PWMDutyCh07, txtbDimmer3PWMDutyCh08, txtbDimmer3PWMDutyCh09, txtbDimmer3PWMDutyCh10, txtbDimmer3PWMDutyCh11 };
+            Dimmer4PWMDuty = new TextBox[] { txtbDimmer4PWMDutyCh00, txtbDimmer4PWMDutyCh01, txtbDimmer4PWMDutyCh02, txtbDimmer4PWMDutyCh03, txtbDimmer4PWMDutyCh04, txtbDimmer4PWMDutyCh05, txtbDimmer4PWMDutyCh06, txtbDimmer4PWMDutyCh07, txtbDimmer4PWMDutyCh08, txtbDimmer4PWMDutyCh09, txtbDimmer4PWMDutyCh10, txtbDimmer4PWMDutyCh11 };
+            Dimmer5PWMDuty = new TextBox[] { txtbDimmer5PWMDutyCh00, txtbDimmer5PWMDutyCh01, txtbDimmer5PWMDutyCh02, txtbDimmer5PWMDutyCh03, txtbDimmer5PWMDutyCh04, txtbDimmer5PWMDutyCh05, txtbDimmer5PWMDutyCh06, txtbDimmer5PWMDutyCh07, txtbDimmer5PWMDutyCh08, txtbDimmer5PWMDutyCh09, txtbDimmer5PWMDutyCh10, txtbDimmer5PWMDutyCh11 };
+            Dimmer6PWMDuty = new TextBox[] { txtbDimmer6PWMDutyCh00, txtbDimmer6PWMDutyCh01, txtbDimmer6PWMDutyCh02, txtbDimmer6PWMDutyCh03, txtbDimmer6PWMDutyCh04, txtbDimmer6PWMDutyCh05, txtbDimmer6PWMDutyCh06, txtbDimmer6PWMDutyCh07, txtbDimmer6PWMDutyCh08, txtbDimmer6PWMDutyCh09, txtbDimmer6PWMDutyCh10, txtbDimmer6PWMDutyCh11 };
+            dimmerPWMDuties = new TextBox[][] { Dimmer1PWMDuty, Dimmer2PWMDuty, Dimmer3PWMDuty, Dimmer4PWMDuty, Dimmer5PWMDuty, Dimmer6PWMDuty };
+            Dimmer1PWMEnable = new CheckBox[] { chkDimmer1PWMEnableCh00, chkDimmer1PWMEnableCh01, chkDimmer1PWMEnableCh02, chkDimmer1PWMEnableCh03, chkDimmer1PWMEnableCh04, chkDimmer1PWMEnableCh05, chkDimmer1PWMEnableCh06, chkDimmer1PWMEnableCh07, chkDimmer1PWMEnableCh08, chkDimmer1PWMEnableCh09, chkDimmer1PWMEnableCh10, chkDimmer1PWMEnableCh11 };
+            Dimmer2PWMEnable = new CheckBox[] { chkDimmer2PWMEnableCh00, chkDimmer2PWMEnableCh01, chkDimmer2PWMEnableCh02, chkDimmer2PWMEnableCh03, chkDimmer2PWMEnableCh04, chkDimmer2PWMEnableCh05, chkDimmer2PWMEnableCh06, chkDimmer2PWMEnableCh07, chkDimmer2PWMEnableCh08, chkDimmer2PWMEnableCh09, chkDimmer2PWMEnableCh10, chkDimmer2PWMEnableCh11 };
+            Dimmer3PWMEnable = new CheckBox[] { chkDimmer3PWMEnableCh00, chkDimmer3PWMEnableCh01, chkDimmer3PWMEnableCh02, chkDimmer3PWMEnableCh03, chkDimmer3PWMEnableCh04, chkDimmer3PWMEnableCh05, chkDimmer3PWMEnableCh06, chkDimmer3PWMEnableCh07, chkDimmer3PWMEnableCh08, chkDimmer3PWMEnableCh09, chkDimmer3PWMEnableCh10, chkDimmer3PWMEnableCh11 };
+            Dimmer4PWMEnable = new CheckBox[] { chkDimmer4PWMEnableCh00, chkDimmer4PWMEnableCh01, chkDimmer4PWMEnableCh02, chkDimmer4PWMEnableCh03, chkDimmer4PWMEnableCh04, chkDimmer4PWMEnableCh05, chkDimmer4PWMEnableCh06, chkDimmer4PWMEnableCh07, chkDimmer4PWMEnableCh08, chkDimmer4PWMEnableCh09, chkDimmer4PWMEnableCh10, chkDimmer4PWMEnableCh11 };
+            Dimmer5PWMEnable = new CheckBox[] { chkDimmer5PWMEnableCh00, chkDimmer5PWMEnableCh01, chkDimmer5PWMEnableCh02, chkDimmer5PWMEnableCh03, chkDimmer5PWMEnableCh04, chkDimmer5PWMEnableCh05, chkDimmer5PWMEnableCh06, chkDimmer5PWMEnableCh07, chkDimmer5PWMEnableCh08, chkDimmer5PWMEnableCh09, chkDimmer5PWMEnableCh10, chkDimmer5PWMEnableCh11 };
+            Dimmer6PWMEnable = new CheckBox[] { chkDimmer6PWMEnableCh00, chkDimmer6PWMEnableCh01, chkDimmer6PWMEnableCh02, chkDimmer6PWMEnableCh03, chkDimmer6PWMEnableCh04, chkDimmer6PWMEnableCh05, chkDimmer6PWMEnableCh06, chkDimmer6PWMEnableCh07, chkDimmer6PWMEnableCh08, chkDimmer6PWMEnableCh09, chkDimmer6PWMEnableCh10, chkDimmer6PWMEnableCh11 };
+            dimmerPWMEnables = new CheckBox[][] { Dimmer1PWMEnable, Dimmer2PWMEnable, Dimmer3PWMEnable, Dimmer4PWMEnable, Dimmer5PWMEnable, Dimmer6PWMEnable };
+            Dimmer1Override = new CheckBox[] { chkDimmer1OverrideCh00, chkDimmer1OverrideCh01, chkDimmer1OverrideCh02, chkDimmer1OverrideCh03, chkDimmer1OverrideCh04, chkDimmer1OverrideCh05, chkDimmer1OverrideCh06, chkDimmer1OverrideCh07, chkDimmer1OverrideCh08, chkDimmer1OverrideCh09, chkDimmer1OverrideCh10, chkDimmer1OverrideCh11 };
+            Dimmer2Override = new CheckBox[] { chkDimmer2OverrideCh00, chkDimmer2OverrideCh01, chkDimmer2OverrideCh02, chkDimmer2OverrideCh03, chkDimmer2OverrideCh04, chkDimmer2OverrideCh05, chkDimmer2OverrideCh06, chkDimmer2OverrideCh07, chkDimmer2OverrideCh08, chkDimmer2OverrideCh09, chkDimmer2OverrideCh10, chkDimmer2OverrideCh11 };
+            Dimmer3Override = new CheckBox[] { chkDimmer3OverrideCh00, chkDimmer3OverrideCh01, chkDimmer3OverrideCh02, chkDimmer3OverrideCh03, chkDimmer3OverrideCh04, chkDimmer3OverrideCh05, chkDimmer3OverrideCh06, chkDimmer3OverrideCh07, chkDimmer3OverrideCh08, chkDimmer3OverrideCh09, chkDimmer6OverrideCh10, chkDimmer6OverrideCh11 };
+            Dimmer4Override = new CheckBox[] { chkDimmer4OverrideCh00, chkDimmer4OverrideCh01, chkDimmer4OverrideCh02, chkDimmer4OverrideCh03,  chkDimmer4OverrideCh04, chkDimmer4OverrideCh05, chkDimmer4OverrideCh06, chkDimmer4OverrideCh07, chkDimmer4OverrideCh08, chkDimmer4OverrideCh09, chkDimmer4OverrideCh10, chkDimmer4OverrideCh11 };
+            Dimmer5Override = new CheckBox[] { chkDimmer5OverrideCh00, chkDimmer5OverrideCh01, chkDimmer5OverrideCh02, chkDimmer5OverrideCh03, chkDimmer5OverrideCh04, chkDimmer5OverrideCh05, chkDimmer5OverrideCh06, chkDimmer5OverrideCh07, chkDimmer5OverrideCh08, chkDimmer5OverrideCh09, chkDimmer5OverrideCh10, chkDimmer5OverrideCh11 };
+            Dimmer6Override = new CheckBox[] { chkDimmer6OverrideCh00, chkDimmer6OverrideCh01, chkDimmer6OverrideCh02, chkDimmer6OverrideCh03, chkDimmer6OverrideCh04, chkDimmer6OverrideCh05, chkDimmer6OverrideCh06, chkDimmer6OverrideCh07, chkDimmer6OverrideCh08, chkDimmer6OverrideCh09, chkDimmer6OverrideCh10, chkDimmer6OverrideCh11 };
+            dimmerOverrides = new CheckBox[][] { Dimmer1Override, Dimmer2Override, Dimmer3Override, Dimmer4Override, Dimmer5Override, Dimmer6Override };
+            Dimmer1Direction = new ComboBox[] { cmbDimmer1DirectionCh00, cmbDimmer1DirectionCh01, cmbDimmer1DirectionCh02, cmbDimmer1DirectionCh03, cmbDimmer1DirectionCh04, cmbDimmer1DirectionCh05, cmbDimmer1DirectionCh06, cmbDimmer1DirectionCh07, cmbDimmer1DirectionCh08, cmbDimmer1DirectionCh09, cmbDimmer1DirectionCh10, cmbDimmer1DirectionCh11 };
+            Dimmer2Direction = new ComboBox[] { cmbDimmer2DirectionCh00, cmbDimmer2DirectionCh01, cmbDimmer2DirectionCh02, cmbDimmer2DirectionCh03, cmbDimmer2DirectionCh04, cmbDimmer2DirectionCh05, cmbDimmer2DirectionCh06, cmbDimmer2DirectionCh07, cmbDimmer2DirectionCh08, cmbDimmer2DirectionCh09, cmbDimmer2DirectionCh10, cmbDimmer2DirectionCh11 };
+            Dimmer3Direction = new ComboBox[] { cmbDimmer3DirectionCh00, cmbDimmer3DirectionCh01, cmbDimmer3DirectionCh02, cmbDimmer3DirectionCh03, cmbDimmer3DirectionCh04, cmbDimmer3DirectionCh05, cmbDimmer3DirectionCh06, cmbDimmer3DirectionCh07, cmbDimmer3DirectionCh08, cmbDimmer3DirectionCh09, cmbDimmer3DirectionCh10, cmbDimmer3DirectionCh11 };
+            Dimmer4Direction = new ComboBox[] { cmbDimmer4DirectionCh00, cmbDimmer4DirectionCh01, cmbDimmer4DirectionCh02, cmbDimmer4DirectionCh03, cmbDimmer4DirectionCh04, cmbDimmer4DirectionCh05, cmbDimmer4DirectionCh06, cmbDimmer4DirectionCh07, cmbDimmer4DirectionCh08, cmbDimmer4DirectionCh09, cmbDimmer4DirectionCh10, cmbDimmer4DirectionCh11 };
+            Dimmer5Direction = new ComboBox[] { cmbDimmer5DirectionCh00, cmbDimmer5DirectionCh01, cmbDimmer5DirectionCh02, cmbDimmer5DirectionCh03, cmbDimmer5DirectionCh04, cmbDimmer5DirectionCh05, cmbDimmer5DirectionCh06, cmbDimmer5DirectionCh07, cmbDimmer5DirectionCh08, cmbDimmer5DirectionCh09, cmbDimmer5DirectionCh10, cmbDimmer5DirectionCh11 };
+            Dimmer6Direction = new ComboBox[] { cmbDimmer6DirectionCh00, cmbDimmer6DirectionCh01, cmbDimmer6DirectionCh02, cmbDimmer6DirectionCh03, cmbDimmer6DirectionCh04, cmbDimmer6DirectionCh05, cmbDimmer6DirectionCh06, cmbDimmer6DirectionCh07, cmbDimmer6DirectionCh08, cmbDimmer6DirectionCh09, cmbDimmer6DirectionCh10, cmbDimmer6DirectionCh11 };
+            dimmerDirections = new ComboBox[][] { Dimmer1Direction, Dimmer2Direction, Dimmer3Direction, Dimmer4Direction, Dimmer5Direction, Dimmer6Direction };
+            Dimmer2Timeout = new CheckBox[] { chkDimmer2TimeoutCh00, chkDimmer2TimeoutCh01, chkDimmer2TimeoutCh02, chkDimmer2TimeoutCh03, chkDimmer2TimeoutCh04, chkDimmer2TimeoutCh05, chkDimmer2TimeoutCh06, chkDimmer2TimeoutCh07, chkDimmer2TimeoutCh08, chkDimmer2TimeoutCh09, chkDimmer2TimeoutCh10, chkDimmer2TimeoutCh11 };
+            Dimmer1Timeout = new CheckBox[] { chkDimmer1TimeoutCh00, chkDimmer1TimeoutCh01, chkDimmer1TimeoutCh02, chkDimmer1TimeoutCh03, chkDimmer1TimeoutCh04, chkDimmer1TimeoutCh05, chkDimmer1TimeoutCh06, chkDimmer1TimeoutCh07, chkDimmer1TimeoutCh08, chkDimmer1TimeoutCh09, chkDimmer1TimeoutCh10, chkDimmer1TimeoutCh11 };
+            Dimmer3Timeout = new CheckBox[] { chkDimmer3TimeoutCh00, chkDimmer3TimeoutCh01, chkDimmer3TimeoutCh02, chkDimmer3TimeoutCh03, chkDimmer3TimeoutCh04, chkDimmer3TimeoutCh05, chkDimmer3TimeoutCh06, chkDimmer3TimeoutCh07, chkDimmer3TimeoutCh08, chkDimmer3TimeoutCh09, chkDimmer3TimeoutCh10, chkDimmer3TimeoutCh11 };
+            Dimmer4Timeout = new CheckBox[] { chkDimmer4TimeoutCh00, chkDimmer4TimeoutCh01, chkDimmer4TimeoutCh02, chkDimmer4TimeoutCh03, chkDimmer4TimeoutCh04, chkDimmer4TimeoutCh05, chkDimmer4TimeoutCh06, chkDimmer4TimeoutCh07, chkDimmer4TimeoutCh08, chkDimmer4TimeoutCh09, chkDimmer4TimeoutCh10, chkDimmer4TimeoutCh11 };
+            Dimmer5Timeout = new CheckBox[] { chkDimmer5TimeoutCh00, chkDimmer5TimeoutCh01, chkDimmer5TimeoutCh02, chkDimmer5TimeoutCh03, chkDimmer5TimeoutCh04, chkDimmer5TimeoutCh05, chkDimmer5TimeoutCh06, chkDimmer5TimeoutCh07, chkDimmer5TimeoutCh08, chkDimmer5TimeoutCh09, chkDimmer5TimeoutCh10, chkDimmer5TimeoutCh11 };
+            Dimmer6Timeout = new CheckBox[] { chkDimmer6TimeoutCh00, chkDimmer6TimeoutCh01, chkDimmer6TimeoutCh02, chkDimmer6TimeoutCh03, chkDimmer6TimeoutCh04, chkDimmer6TimeoutCh05, chkDimmer6TimeoutCh06, chkDimmer6TimeoutCh07, chkDimmer6TimeoutCh08, chkDimmer6TimeoutCh09, chkDimmer6TimeoutCh10, chkHC1DCDimmer };
+            dimmerTimeouts = new CheckBox[][] { Dimmer1Timeout, Dimmer2Timeout, Dimmer3Timeout, Dimmer4Timeout, Dimmer5Timeout, Dimmer6Timeout };
+            Dimmer1TimeoutTime = new TextBox[] { txtbDimmer1TimeoutTimeCh00, txtbDimmer1TimeoutTimeCh01, txtbDimmer1TimeoutTimeCh02, txtbDimmer1TimeoutTimeCh03, txtbDimmer1TimeoutTimeCh04, txtbDimmer1TimeoutTimeCh05, txtbDimmer1TimeoutTimeCh06, txtbDimmer1TimeoutTimeCh07, txtbDimmer1TimeoutTimeCh08, txtbDimmer1TimeoutTimeCh09, txtbDimmer1TimeoutTimeCh10, txtbDimmer1TimeoutTimeCh11 };
+            Dimmer2TimeoutTime = new TextBox[] { txtbDimmer2TimeoutTimeCh00, txtbDimmer2TimeoutTimeCh01, txtbDimmer2TimeoutTimeCh02, txtbDimmer2TimeoutTimeCh03, txtbDimmer2TimeoutTimeCh04, txtbDimmer2TimeoutTimeCh05, txtbDimmer2TimeoutTimeCh06, txtbDimmer2TimeoutTimeCh07, txtbDimmer2TimeoutTimeCh08, txtbDimmer2TimeoutTimeCh09, txtbDimmer2TimeoutTimeCh10, txtbDimmer2TimeoutTimeCh11 };
+            Dimmer3TimeoutTime = new TextBox[] { txtbDimmer3TimeoutTimeCh00, txtbDimmer3TimeoutTimeCh01, txtbDimmer3TimeoutTimeCh02, txtbDimmer3TimeoutTimeCh03, txtbDimmer3TimeoutTimeCh04, txtbDimmer3TimeoutTimeCh05, txtbDimmer3TimeoutTimeCh06, txtbDimmer3TimeoutTimeCh07, txtbDimmer3TimeoutTimeCh08, txtbDimmer3TimeoutTimeCh09, txtbDimmer3TimeoutTimeCh10, txtbDimmer3TimeoutTimeCh11 };
+            Dimmer4TimeoutTime = new TextBox[] { txtbDimmer4TimeoutTimeCh00, txtbDimmer4TimeoutTimeCh01, txtbDimmer4TimeoutTimeCh02, txtbDimmer4TimeoutTimeCh03, txtbDimmer4TimeoutTimeCh04, txtbDimmer4TimeoutTimeCh05, txtbDimmer4TimeoutTimeCh06, txtbDimmer4TimeoutTimeCh07, txtbDimmer4TimeoutTimeCh08, txtbDimmer4TimeoutTimeCh09, txtbDimmer4TimeoutTimeCh10, txtbDimmer4TimeoutTimeCh11 };
+            Dimmer5TimeoutTime = new TextBox[] { txtbDimmer5TimeoutTimeCh00, txtbDimmer5TimeoutTimeCh01, txtbDimmer5TimeoutTimeCh02, txtbDimmer5TimeoutTimeCh03, txtbDimmer5TimeoutTimeCh04, txtbDimmer5TimeoutTimeCh05, txtbDimmer5TimeoutTimeCh06, txtbDimmer5TimeoutTimeCh07, txtbDimmer5TimeoutTimeCh08, txtbDimmer5TimeoutTimeCh09, txtbDimmer5TimeoutTimeCh10, txtbDimmer5TimeoutTimeCh11 };
+            Dimmer6TimeoutTime = new TextBox[] { txtbDimmer6TimeoutTimeCh00, txtbDimmer6TimeoutTimeCh01, txtbDimmer6TimeoutTimeCh02, txtbDimmer6TimeoutTimeCh03, txtbDimmer6TimeoutTimeCh04, txtbDimmer6TimeoutTimeCh05, txtbDimmer6TimeoutTimeCh06, txtbDimmer6TimeoutTimeCh07, txtbDimmer6TimeoutTimeCh08, txtbDimmer6TimeoutTimeCh09, txtbDimmer6TimeoutTimeCh10, txtbDimmer6TimeoutTimeCh11 };
+            dimmerTimeoutTimes = new TextBox[][] { Dimmer1TimeoutTime, Dimmer2TimeoutTime, Dimmer3TimeoutTime, Dimmer4TimeoutTime, Dimmer5TimeoutTime, Dimmer6TimeoutTime };
+            Dimmer1MaxOn = new TextBox[] { txtbDimmer1MaxOnCh00, txtbDimmer1MaxOnCh01, txtbDimmer1MaxOnCh02, txtbDimmer1MaxOnCh03, txtbDimmer1MaxOnCh04, txtbDimmer1MaxOnCh05, txtbDimmer1MaxOnCh06, txtbDimmer1MaxOnCh07, txtbDimmer1MaxOnCh08, txtbDimmer1MaxOnCh09, txtbDimmer1MaxOnCh10, txtbDimmer1MaxOnCh11 };
+            Dimmer2MaxOn = new TextBox[] { txtbDimmer2MaxOnCh00, txtbDimmer2MaxOnCh01, txtbDimmer2MaxOnCh02, txtbDimmer2MaxOnCh03, txtbDimmer2MaxOnCh04, txtbDimmer2MaxOnCh05, txtbDimmer2MaxOnCh06, txtbDimmer2MaxOnCh07, txtbDimmer2MaxOnCh08, txtbDimmer2MaxOnCh09, txtbDimmer2MaxOnCh10, txtbDimmer2MaxOnCh11 };
+            Dimmer3MaxOn = new TextBox[] { txtbDimmer3MaxOnCh00, txtbDimmer3MaxOnCh01, txtbDimmer3MaxOnCh02, txtbDimmer3MaxOnCh03, txtbDimmer3MaxOnCh04, txtbDimmer3MaxOnCh05, txtbDimmer3MaxOnCh06, txtbDimmer3MaxOnCh07, txtbDimmer3MaxOnCh08, txtbDimmer3MaxOnCh09, txtbDimmer3MaxOnCh10, txtbDimmer3MaxOnCh11 };
+            Dimmer4MaxOn = new TextBox[] { txtbDimmer4MaxOnCh00, txtbDimmer4MaxOnCh01, txtbDimmer4MaxOnCh02, txtbDimmer4MaxOnCh03, txtbDimmer4MaxOnCh04, txtbDimmer4MaxOnCh05, txtbDimmer4MaxOnCh06, txtbDimmer4MaxOnCh07, txtbDimmer4MaxOnCh08, txtbDimmer4MaxOnCh09, txtbDimmer4MaxOnCh10, txtbDimmer4MaxOnCh11 };
+            Dimmer5MaxOn = new TextBox[] { txtbDimmer5MaxOnCh00, txtbDimmer5MaxOnCh01, txtbDimmer5MaxOnCh02, txtbDimmer5MaxOnCh03, txtbDimmer5MaxOnCh04, txtbDimmer5MaxOnCh05, txtbDimmer5MaxOnCh06, txtbDimmer5MaxOnCh07, txtbDimmer5MaxOnCh08, txtbDimmer5MaxOnCh09, txtbDimmer5MaxOnCh10, txtbDimmer5MaxOnCh11 };
+            Dimmer6MaxOn = new TextBox[] { txtbDimmer6MaxOnCh00, txtbDimmer6MaxOnCh01, txtbDimmer6MaxOnCh02, txtbDimmer6MaxOnCh03, txtbDimmer6MaxOnCh04, txtbDimmer6MaxOnCh05, txtbDimmer6MaxOnCh06, txtbDimmer6MaxOnCh07, txtbDimmer6MaxOnCh08, txtbDimmer6MaxOnCh09, txtbDimmer6MaxOnCh10, txtbDimmer6MaxOnCh11 };
+            dimmerMaxOns = new TextBox[][] { Dimmer1MaxOn, Dimmer2MaxOn, Dimmer3MaxOn, Dimmer4MaxOn, Dimmer5MaxOn, Dimmer6MaxOn };
+            Dimmer1MaxDurRec = new TextBox[] { txtbDimmer1MaxDurRecCh00, txtbDimmer1MaxDurRecCh01, txtbDimmer1MaxDurRecCh02, txtbDimmer1MaxDurRecCh03, txtbDimmer1MaxDurRecCh04, txtbDimmer1MaxDurRecCh05, txtbDimmer1MaxDurRecCh06, txtbDimmer1MaxDurRecCh07, txtbDimmer1MaxDurRecCh08, txtbDimmer1MaxDurRecCh09, txtbDimmer1MaxDurRecCh10, txtbDimmer1MaxDurRecCh11 };
+            Dimmer2MaxDurRec = new TextBox[] { txtbDimmer2MaxDurRecCh00, txtbDimmer2MaxDurRecCh01, txtbDimmer2MaxDurRecCh02, txtbDimmer2MaxDurRecCh03, txtbDimmer2MaxDurRecCh04, txtbDimmer2MaxDurRecCh05, txtbDimmer2MaxDurRecCh06, txtbDimmer2MaxDurRecCh07, txtbDimmer2MaxDurRecCh08, txtbDimmer2MaxDurRecCh09, txtbDimmer2MaxDurRecCh10, txtbDimmer2MaxDurRecCh11 };
+            Dimmer3MaxDurRec = new TextBox[] { txtbDimmer3MaxDurRecCh00, txtbDimmer3MaxDurRecCh01, txtbDimmer3MaxDurRecCh02, txtbDimmer3MaxDurRecCh03, txtbDimmer3MaxDurRecCh04, txtbDimmer3MaxDurRecCh05, txtbDimmer3MaxDurRecCh06, txtbDimmer3MaxDurRecCh07, txtbDimmer3MaxDurRecCh08, txtbDimmer3MaxDurRecCh09, txtbDimmer3MaxDurRecCh10, txtbDimmer3MaxDurRecCh11 };
+            Dimmer4MaxDurRec = new TextBox[] { txtbDimmer4MaxDurRecCh00, txtbDimmer4MaxDurRecCh01, txtbDimmer4MaxDurRecCh02, txtbDimmer4MaxDurRecCh03, txtbDimmer4MaxDurRecCh04, txtbDimmer4MaxDurRecCh05, txtbDimmer4MaxDurRecCh06, txtbDimmer4MaxDurRecCh07, txtbDimmer4MaxDurRecCh08, txtbDimmer4MaxDurRecCh09, txtbDimmer4MaxDurRecCh10, txtbDimmer4MaxDurRecCh11 };
+            Dimmer5MaxDurRec = new TextBox[] { txtbDimmer5MaxDurRecCh00, txtbDimmer5MaxDurRecCh01, txtbDimmer5MaxDurRecCh02, txtbDimmer5MaxDurRecCh03, txtbDimmer5MaxDurRecCh04, txtbDimmer5MaxDurRecCh05, txtbDimmer5MaxDurRecCh06, txtbDimmer5MaxDurRecCh07, txtbDimmer5MaxDurRecCh08, txtbDimmer5MaxDurRecCh09, txtbDimmer5MaxDurRecCh10, txtbDimmer5MaxDurRecCh11 };
+            Dimmer6MaxDurRec = new TextBox[] { txtbDimmer6MaxDurRecCh00, txtbDimmer6MaxDurRecCh01, txtbDimmer6MaxDurRecCh02, txtbDimmer6MaxDurRecCh03, txtbDimmer6MaxDurRecCh04, txtbDimmer6MaxDurRecCh05, txtbDimmer6MaxDurRecCh06, txtbDimmer6MaxDurRecCh07, txtbDimmer6MaxDurRecCh08, txtbDimmer6MaxDurRecCh09, txtbDimmer6MaxDurRecCh10, txtbDimmer6MaxDurRecCh11 };
+            dimmerMaxDurRecs = new TextBox[][] { Dimmer1MaxDurRec, Dimmer2MaxDurRec, Dimmer3MaxDurRec, Dimmer4MaxDurRec, Dimmer5MaxDurRec, Dimmer6MaxDurRec };
+            Dimmer1UCAmps = new TextBox[] { txtbDimmer1UCAmpsCh00, txtbDimmer1UCAmpsCh01, txtbDimmer1UCAmpsCh02, txtbDimmer1UCAmpsCh03, txtbDimmer1UCAmpsCh04, txtbDimmer1UCAmpsCh05, txtbDimmer1UCAmpsCh06, txtbDimmer1UCAmpsCh07, txtbDimmer1UCAmpsCh08, txtbDimmer1UCAmpsCh09, txtbDimmer1UCAmpsCh10, txtbDimmer1UCAmpsCh11 };
+            Dimmer2UCAmps = new TextBox[] { txtbDimmer2UCAmpsCh00, txtbDimmer2UCAmpsCh01, txtbDimmer2UCAmpsCh02, txtbDimmer2UCAmpsCh03, txtbDimmer2UCAmpsCh04, txtbDimmer2UCAmpsCh05, txtbDimmer2UCAmpsCh06, txtbDimmer2UCAmpsCh07, txtbDimmer2UCAmpsCh08, txtbDimmer2UCAmpsCh09, txtbDimmer2UCAmpsCh10, txtbDimmer2UCAmpsCh11 };
+            Dimmer3UCAmps = new TextBox[] { txtbDimmer3UCAmpsCh00, txtbDimmer3UCAmpsCh01, txtbDimmer3UCAmpsCh02, txtbDimmer3UCAmpsCh03, txtbDimmer3UCAmpsCh04, txtbDimmer3UCAmpsCh05, txtbDimmer3UCAmpsCh06, txtbDimmer3UCAmpsCh07, txtbDimmer3UCAmpsCh08, txtbDimmer3UCAmpsCh09, txtbDimmer3UCAmpsCh10, txtbDimmer3UCAmpsCh11 };
+            Dimmer4UCAmps = new TextBox[] { txtbDimmer4UCAmpsCh00, txtbDimmer4UCAmpsCh01, txtbDimmer4UCAmpsCh02, txtbDimmer4UCAmpsCh03, txtbDimmer4UCAmpsCh04, txtbDimmer4UCAmpsCh05, txtbDimmer4UCAmpsCh06, txtbDimmer4UCAmpsCh07, txtbDimmer4UCAmpsCh08, txtbDimmer4UCAmpsCh09, txtbDimmer4UCAmpsCh10, txtbDimmer4UCAmpsCh11 };
+            Dimmer5UCAmps = new TextBox[] { txtbDimmer5UCAmpsCh00, txtbDimmer5UCAmpsCh01, txtbDimmer5UCAmpsCh02, txtbDimmer5UCAmpsCh03, txtbDimmer5UCAmpsCh04, txtbDimmer5UCAmpsCh05, txtbDimmer5UCAmpsCh06, txtbDimmer5UCAmpsCh07, txtbDimmer5UCAmpsCh08, txtbDimmer5UCAmpsCh09, txtbDimmer5UCAmpsCh10, txtbDimmer5UCAmpsCh11 };
+            Dimmer6UCAmps = new TextBox[] { txtbDimmer6UCAmpsCh00, txtbDimmer6UCAmpsCh01, txtbDimmer6UCAmpsCh02, txtbDimmer6UCAmpsCh03, txtbDimmer6UCAmpsCh04, txtbDimmer6UCAmpsCh05, txtbDimmer6UCAmpsCh06, txtbDimmer6UCAmpsCh07, txtbDimmer6UCAmpsCh08, txtbDimmer6UCAmpsCh09, txtbDimmer6UCAmpsCh10, txtbDimmer6UCAmpsCh11 };
+            dimmerUCAmps = new TextBox[][] { Dimmer1UCAmps, Dimmer2UCAmps, Dimmer3UCAmps, Dimmer4UCAmps, Dimmer5UCAmps, Dimmer6UCAmps };
+            Dimmer1MeasCurTime = new ComboBox[] { cmbDimmer1MeasCurTimeCh00, cmbDimmer1MeasCurTimeCh01, cmbDimmer1MeasCurTimeCh02, cmbDimmer1MeasCurTimeCh03, cmbDimmer1MeasCurTimeCh04, cmbDimmer1MeasCurTimeCh05, cmbDimmer1MeasCurTimeCh06, cmbDimmer1MeasCurTimeCh07, cmbDimmer1MeasCurTimeCh08, cmbDimmer1MeasCurTimeCh09, cmbDimmer1MeasCurTimeCh10, cmbDimmer1MeasCurTimeCh11 }; 
+            Dimmer2MeasCurTime = new ComboBox[] { cmbDimmer2MeasCurTimeCh00, cmbDimmer2MeasCurTimeCh01,cmbDimmer2MeasCurTimeCh02, cmbDimmer2MeasCurTimeCh03, cmbDimmer2MeasCurTimeCh04, cmbDimmer2MeasCurTimeCh05, cmbDimmer2MeasCurTimeCh06, cmbDimmer2MeasCurTimeCh07, cmbDimmer2MeasCurTimeCh08, cmbDimmer2MeasCurTimeCh09, cmbDimmer2MeasCurTimeCh10, cmbDimmer2MeasCurTimeCh11 };
+            Dimmer3MeasCurTime = new ComboBox[] { cmbDimmer3MeasCurTimeCh00, cmbDimmer3MeasCurTimeCh01,cmbDimmer3MeasCurTimeCh02, cmbDimmer3MeasCurTimeCh03, cmbDimmer3MeasCurTimeCh04, cmbDimmer3MeasCurTimeCh05, cmbDimmer3MeasCurTimeCh06, cmbDimmer3MeasCurTimeCh07, cmbDimmer3MeasCurTimeCh08, cmbDimmer3MeasCurTimeCh09, cmbDimmer3MeasCurTimeCh10, cmbDimmer3MeasCurTimeCh11 };
+            Dimmer4MeasCurTime = new ComboBox[] { cmbDimmer4MeasCurTimeCh00, cmbDimmer4MeasCurTimeCh01,cmbDimmer4MeasCurTimeCh02, cmbDimmer4MeasCurTimeCh03, cmbDimmer4MeasCurTimeCh04, cmbDimmer4MeasCurTimeCh05, cmbDimmer4MeasCurTimeCh06, cmbDimmer4MeasCurTimeCh07, cmbDimmer4MeasCurTimeCh08, cmbDimmer4MeasCurTimeCh09, cmbDimmer4MeasCurTimeCh10, cmbDimmer4MeasCurTimeCh11 };
+            Dimmer5MeasCurTime = new ComboBox[] { cmbDimmer5MeasCurTimeCh00, cmbDimmer5MeasCurTimeCh01,cmbDimmer5MeasCurTimeCh02, cmbDimmer5MeasCurTimeCh03, cmbDimmer5MeasCurTimeCh04, cmbDimmer5MeasCurTimeCh05, cmbDimmer5MeasCurTimeCh06, cmbDimmer5MeasCurTimeCh07, cmbDimmer5MeasCurTimeCh08, cmbDimmer5MeasCurTimeCh09, cmbDimmer5MeasCurTimeCh10, cmbDimmer5MeasCurTimeCh11 };
+            Dimmer6MeasCurTime = new ComboBox[] { cmbDimmer6MeasCurTimeCh00, cmbDimmer6MeasCurTimeCh01,cmbDimmer6MeasCurTimeCh02, cmbDimmer6MeasCurTimeCh03, cmbDimmer6MeasCurTimeCh04, cmbDimmer6MeasCurTimeCh05, cmbDimmer6MeasCurTimeCh06, cmbDimmer6MeasCurTimeCh07, cmbDimmer6MeasCurTimeCh08, cmbDimmer6MeasCurTimeCh09, cmbDimmer6MeasCurTimeCh10, cmbDimmer6MeasCurTimeCh11 };
+            dimmerMeasCurTimes = new ComboBox[][] { Dimmer1MeasCurTime, Dimmer2MeasCurTime, Dimmer3MeasCurTime, Dimmer4MeasCurTime, Dimmer5MeasCurTime, Dimmer6MeasCurTime };
 
             hcCardNum = new ComboBox[] { cmbHC1CardNum, cmbHC2CardNum, cmbHC3CardNum, cmbHC4CardNum, cmbHC5CardNum, cmbHC6CardNum };
             hcPanelNum = new ComboBox[] { cmbHC1PanelNum, cmbHC2PanelNum, cmbHC3PanelNum, cmbHC4PanelNum, cmbHC5PanelNum, cmbHC6PanelNum };
@@ -2480,6 +2666,83 @@ namespace M1ConfigGenerator
             hc5Mode = new ComboBox[] { cmbHC5Mode00, cmbHC5Mode01, cmbHC5Mode02, cmbHC5Mode03, cmbHC5Mode04, cmbHC5Mode05, cmbHC5Mode06, cmbHC5Mode07, cmbHC5Mode08, cmbHC5Mode09, cmbHC5Mode10, cmbHC5Mode11 };
             hc6Mode = new ComboBox[] { cmbHC6Mode00, cmbHC6Mode01, cmbHC6Mode02, cmbHC6Mode03, cmbHC6Mode04, cmbHC6Mode05, cmbHC6Mode06, cmbHC6Mode07, cmbHC6Mode08, cmbHC6Mode09, cmbHC6Mode10, cmbHC6Mode11 };
             hcModes = new ComboBox[][] { hc1Mode, hc2Mode, hc3Mode, hc4Mode, hc5Mode, hc6Mode };
+            HC1PWMDuty = new TextBox[] { txtbHC1PWMDutyCh00, txtbHC1PWMDutyCh01, txtbHC1PWMDutyCh02, txtbHC1PWMDutyCh03, txtbHC1PWMDutyCh04, txtbHC1PWMDutyCh05, txtbHC1PWMDutyCh06, txtbHC1PWMDutyCh07, txtbHC1PWMDutyCh08, txtbHC1PWMDutyCh09, txtbHC1PWMDutyCh10, txtbHC1PWMDutyCh11 };
+            HC2PWMDuty = new TextBox[] { txtbHC2PWMDutyCh00, txtbHC2PWMDutyCh01, txtbHC2PWMDutyCh02, txtbHC2PWMDutyCh03, txtbHC2PWMDutyCh04, txtbHC2PWMDutyCh05, txtbHC2PWMDutyCh06, txtbHC2PWMDutyCh07, txtbHC2PWMDutyCh08, txtbHC2PWMDutyCh09, txtbHC2PWMDutyCh10, txtbHC2PWMDutyCh11 };
+            HC3PWMDuty = new TextBox[] { txtbHC3PWMDutyCh00, txtbHC3PWMDutyCh01, txtbHC3PWMDutyCh02, txtbHC3PWMDutyCh03, txtbHC3PWMDutyCh04, txtbHC3PWMDutyCh05, txtbHC3PWMDutyCh06, txtbHC3PWMDutyCh07, txtbHC3PWMDutyCh08, txtbHC3PWMDutyCh09, txtbHC3PWMDutyCh10, txtbHC3PWMDutyCh11 };
+            HC4PWMDuty = new TextBox[] { txtbHC4PWMDutyCh00, txtbHC4PWMDutyCh01, txtbHC4PWMDutyCh02, txtbHC4PWMDutyCh03, txtbHC4PWMDutyCh04, txtbHC4PWMDutyCh05, txtbHC4PWMDutyCh06, txtbHC4PWMDutyCh07, txtbHC4PWMDutyCh08, txtbHC4PWMDutyCh09, txtbHC4PWMDutyCh10, txtbHC4PWMDutyCh11 };
+            HC5PWMDuty = new TextBox[] { txtbHC5PWMDutyCh00, txtbHC5PWMDutyCh01, txtbHC5PWMDutyCh02, txtbHC5PWMDutyCh03, txtbHC5PWMDutyCh04, txtbHC5PWMDutyCh05, txtbHC5PWMDutyCh06, txtbHC5PWMDutyCh07, txtbHC5PWMDutyCh08, txtbHC5PWMDutyCh09, txtbHC5PWMDutyCh10, txtbHC5PWMDutyCh11 };
+            HC6PWMDuty = new TextBox[] { txtbHC6PWMDutyCh00, txtbHC6PWMDutyCh01, txtbHC6PWMDutyCh02, txtbHC6PWMDutyCh03, txtbHC6PWMDutyCh04, txtbHC6PWMDutyCh05, txtbHC6PWMDutyCh06, txtbHC6PWMDutyCh07, txtbHC6PWMDutyCh08, txtbHC6PWMDutyCh09, txtbHC6PWMDutyCh10, txtbHC6PWMDutyCh11 };
+            hcPWMDuties = new TextBox[][] { HC1PWMDuty, HC2PWMDuty, HC3PWMDuty, HC4PWMDuty, HC5PWMDuty, HC6PWMDuty };
+            HC1PWMEnable = new CheckBox[] { chkHC1PWMEnableCh00, chkHC1PWMEnableCh01, chkHC1PWMEnableCh02, chkHC1PWMEnableCh03, chkHC1PWMEnableCh04, chkHC1PWMEnableCh05, chkHC1PWMEnableCh06, chkHC1PWMEnableCh07, chkHC1PWMEnableCh08, chkHC1PWMEnableCh09, chkHC1PWMEnableCh10, chkHC1PWMEnableCh11 };
+            HC2PWMEnable = new CheckBox[] { chkHC2PWMEnableCh00, chkHC2PWMEnableCh01, chkHC2PWMEnableCh02, chkHC2PWMEnableCh03, chkHC2PWMEnableCh04, chkHC2PWMEnableCh05, chkHC2PWMEnableCh06, chkHC2PWMEnableCh07, chkHC2PWMEnableCh08, chkHC2PWMEnableCh09, chkHC2PWMEnableCh10, chkHC2PWMEnableCh11 };
+            HC3PWMEnable = new CheckBox[] { chkHC3PWMEnableCh00, chkHC3PWMEnableCh01, chkHC3PWMEnableCh02, chkHC3PWMEnableCh03, chkHC3PWMEnableCh04, chkHC3PWMEnableCh05, chkHC3PWMEnableCh06, chkHC3PWMEnableCh07, chkHC3PWMEnableCh08, chkHC3PWMEnableCh09, chkHC3PWMEnableCh10, chkHC3PWMEnableCh11 };
+            HC4PWMEnable = new CheckBox[] { chkHC4PWMEnableCh00, chkHC4PWMEnableCh01, chkHC4PWMEnableCh02, chkHC4PWMEnableCh03, chkHC4PWMEnableCh04, chkHC4PWMEnableCh05, chkHC4PWMEnableCh06, chkHC4PWMEnableCh07, chkHC4PWMEnableCh08, chkHC4PWMEnableCh09, chkHC4PWMEnableCh10, chkHC4PWMEnableCh11 };
+            HC5PWMEnable = new CheckBox[] { chkHC5PWMEnableCh00, chkHC5PWMEnableCh01, chkHC5PWMEnableCh02, chkHC5PWMEnableCh03, chkHC5PWMEnableCh04, chkHC5PWMEnableCh05, chkHC5PWMEnableCh06, chkHC5PWMEnableCh07, chkHC5PWMEnableCh08, chkHC5PWMEnableCh09, chkHC5PWMEnableCh10, chkHC5PWMEnableCh11 };
+            HC6PWMEnable = new CheckBox[] { chkHC6PWMEnableCh00, chkHC6PWMEnableCh01, chkHC6PWMEnableCh02, chkHC6PWMEnableCh03, chkHC6PWMEnableCh04, chkHC6PWMEnableCh05, chkHC6PWMEnableCh06, chkHC6PWMEnableCh07, chkHC6PWMEnableCh08, chkHC6PWMEnableCh09, chkHC6PWMEnableCh10, chkHC6PWMEnableCh11 };
+            hcPWMEnables = new CheckBox[][] { HC1PWMEnable, HC2PWMEnable, HC3PWMEnable, HC4PWMEnable, HC5PWMEnable, HC6PWMEnable };
+            HC1Direction = new ComboBox[] { cmbHC1DirectionCh00, cmbHC1DirectionCh01, cmbHC1DirectionCh02, cmbHC1DirectionCh03, cmbHC1DirectionCh04, cmbHC1DirectionCh05, cmbHC1DirectionCh06, cmbHC1DirectionCh07, cmbHC1DirectionCh08, cmbHC1DirectionCh09, cmbHC1DirectionCh10, cmbHC1DirectionCh11 };
+            HC2Direction = new ComboBox[] { cmbHC2DirectionCh00, cmbHC2DirectionCh01, cmbHC2DirectionCh02, cmbHC2DirectionCh03, cmbHC2DirectionCh04, cmbHC2DirectionCh05, cmbHC2DirectionCh06, cmbHC2DirectionCh07, cmbHC2DirectionCh08, cmbHC2DirectionCh09, cmbHC2DirectionCh10, cmbHC2DirectionCh11 };
+            HC3Direction = new ComboBox[] { cmbHC3DirectionCh00, cmbHC3DirectionCh01, cmbHC3DirectionCh02, cmbHC3DirectionCh03, cmbHC3DirectionCh04, cmbHC3DirectionCh05, cmbHC3DirectionCh06, cmbHC3DirectionCh07, cmbHC3DirectionCh08, cmbHC3DirectionCh09, cmbHC3DirectionCh10, cmbHC3DirectionCh11 };
+            HC4Direction = new ComboBox[] { cmbHC4DirectionCh00, cmbHC4DirectionCh01, cmbHC4DirectionCh02, cmbHC4DirectionCh03, cmbHC4DirectionCh04, cmbHC4DirectionCh05, cmbHC4DirectionCh06, cmbHC4DirectionCh07, cmbHC4DirectionCh08, cmbHC4DirectionCh09, cmbHC4DirectionCh10, cmbHC4DirectionCh11 };
+            HC5Direction = new ComboBox[] { cmbHC5DirectionCh00, cmbHC5DirectionCh01, cmbHC5DirectionCh02, cmbHC5DirectionCh03, cmbHC5DirectionCh04, cmbHC5DirectionCh05, cmbHC5DirectionCh06, cmbHC5DirectionCh07, cmbHC5DirectionCh08, cmbHC5DirectionCh09, cmbHC5DirectionCh10, cmbHC5DirectionCh11 };
+            HC6Direction = new ComboBox[] { cmbHC6DirectionCh00, cmbHC6DirectionCh01, cmbHC6DirectionCh02, cmbHC6DirectionCh03, cmbHC6DirectionCh04, cmbHC6DirectionCh05, cmbHC6DirectionCh06, cmbHC6DirectionCh07, cmbHC6DirectionCh08, cmbHC6DirectionCh09, cmbHC6DirectionCh10, cmbHC6DirectionCh11 };
+            hcDirections = new ComboBox[][] { HC1Direction, HC2Direction, HC3Direction, HC4Direction, HC5Direction, HC6Direction }; 
+            HC1DeadTime = new ComboBox[] { cmbHC1DeadTimeCh00, cmbHC1DeadTimeCh01, cmbHC1DeadTimeCh02, cmbHC1DeadTimeCh03, cmbHC1DeadTimeCh04, cmbHC1DeadTimeCh05, cmbHC1DeadTimeCh06, cmbHC1DeadTimeCh07, cmbHC1DeadTimeCh08, cmbHC1DeadTimeCh09, cmbHC1DeadTimeCh10, cmbHC1DeadTimeCh11 }; 
+            HC2DeadTime = new ComboBox[] { cmbHC2DeadTimeCh00, cmbHC2DeadTimeCh01, cmbHC2DeadTimeCh02, cmbHC2DeadTimeCh03, cmbHC2DeadTimeCh04, cmbHC2DeadTimeCh05, cmbHC2DeadTimeCh06, cmbHC2DeadTimeCh07, cmbHC2DeadTimeCh08, cmbHC2DeadTimeCh09, cmbHC2DeadTimeCh10, cmbHC2DeadTimeCh11 };
+            HC3DeadTime = new ComboBox[] { cmbHC3DeadTimeCh00, cmbHC3DeadTimeCh01, cmbHC3DeadTimeCh02, cmbHC3DeadTimeCh03, cmbHC3DeadTimeCh04, cmbHC3DeadTimeCh05, cmbHC3DeadTimeCh06, cmbHC3DeadTimeCh07, cmbHC3DeadTimeCh08, cmbHC3DeadTimeCh09, cmbHC3DeadTimeCh10, cmbHC3DeadTimeCh11 };
+            HC4DeadTime = new ComboBox[] { cmbHC4DeadTimeCh00, cmbHC4DeadTimeCh01, cmbHC4DeadTimeCh02, cmbHC4DeadTimeCh03, cmbHC4DeadTimeCh04, cmbHC4DeadTimeCh05, cmbHC4DeadTimeCh06, cmbHC4DeadTimeCh07, cmbHC4DeadTimeCh08, cmbHC4DeadTimeCh09, cmbHC4DeadTimeCh10, cmbHC4DeadTimeCh11 };
+            HC5DeadTime = new ComboBox[] { cmbHC5DeadTimeCh00, cmbHC5DeadTimeCh01, cmbHC5DeadTimeCh02, cmbHC5DeadTimeCh03, cmbHC5DeadTimeCh04, cmbHC5DeadTimeCh05, cmbHC5DeadTimeCh06, cmbHC5DeadTimeCh07, cmbHC5DeadTimeCh08, cmbHC5DeadTimeCh09, cmbHC5DeadTimeCh10, cmbHC5DeadTimeCh11 };
+            HC6DeadTime = new ComboBox[] { cmbHC6DeadTimeCh00, cmbHC6DeadTimeCh01, cmbHC6DeadTimeCh02, cmbHC6DeadTimeCh03, cmbHC6DeadTimeCh04, cmbHC6DeadTimeCh05, cmbHC6DeadTimeCh06, cmbHC6DeadTimeCh07, cmbHC6DeadTimeCh08, cmbHC6DeadTimeCh09, cmbHC6DeadTimeCh10, cmbHC6DeadTimeCh11 };
+            hcDeadTimes = new ComboBox[][] { HC1DeadTime, HC2DeadTime, HC3DeadTime, HC4DeadTime, HC5DeadTime, HC6DeadTime };
+            HC1Paired = new ComboBox[] { cmbHC1PairedCh00, cmbHC1PairedCh01, cmbHC1PairedCh02, cmbHC1PairedCh03, cmbHC1PairedCh04, cmbHC1PairedCh05, cmbHC1PairedCh06, cmbHC1PairedCh07, cmbHC1PairedCh08, cmbHC1PairedCh09, cmbHC1PairedCh010, cmbHC1PairedCh11 };
+            HC2Paired = new ComboBox [] { cmbHC2PairedCh00, cmbHC2PairedCh01, cmbHC2PairedCh02, cmbHC2PairedCh03, cmbHC2PairedCh04, cmbHC2PairedCh05, cmbHC2PairedCh06, cmbHC2PairedCh07, cmbHC2PairedCh08, cmbHC2PairedCh09, cmbHC2PairedCh10, cmbHC2PairedCh11 };
+            HC3Paired = new ComboBox [] { cmbHC3PairedCh00, cmbHC3PairedCh01, cmbHC3PairedCh02, cmbHC3PairedCh03, cmbHC3PairedCh04, cmbHC3PairedCh05, cmbHC3PairedCh06, cmbHC3PairedCh07, cmbHC3PairedCh08, cmbHC3PairedCh09, cmbHC3PairedCh10, cmbHC3PairedCh11 };
+            HC4Paired = new ComboBox [] { cmbHC4PairedCh00, cmbHC4PairedCh01, cmbHC4PairedCh02, cmbHC4PairedCh03, cmbHC4PairedCh04, cmbHC4PairedCh05, cmbHC4PairedCh06, cmbHC4PairedCh07, cmbHC4PairedCh08, cmbHC4PairedCh09, cmbHC4PairedCh10, cmbHC4PairedCh11 };
+            HC5Paired = new ComboBox [] { cmbHC5PairedCh00, cmbHC5PairedCh01, cmbHC5PairedCh02, cmbHC5PairedCh02, cmbHC5PairedCh04, cmbHC5PairedCh05, cmbHC5PairedCh06, cmbHC5PairedCh07, cmbHC5PairedCh08, cmbHC5PairedCh09, cmbHC5PairedCh10, cmbHC5PairedCh11 };
+            HC6Paired = new ComboBox [] { cmbHC6PairedCh00, cmbHC6PairedCh01, cmbHC6PairedCh02, cmbHC6PairedCh03, cmbHC6PairedCh04, cmbHC6PairedCh05, cmbHC6PairedCh06, cmbHC6PairedCh07, cmbHC6PairedCh08, cmbHC6PairedCh09, cmbHC6PairedCh10, cmbHC6PairedCh11 };
+            hcPairedTimes = new ComboBox[][] { HC1Paired, HC2Paired, HC3Paired, HC4Paired, HC5Paired, HC6Paired };
+            HC1Timeout = new CheckBox[] { chkHC1TimeoutCh00, chkHC1TimeoutCh01, chkHC1TimeoutCh02, chkHC1TimeoutCh03, chkHC1TimeoutCh04, chkHC1TimeoutCh05, chkHC1TimeoutCh06, chkHC1TimeoutCh07, chkHC1TimeoutCh08, chkHC1TimeoutCh09, chkHC1TimeoutCh10, chkHC1TimeoutCh11 };
+            HC2Timeout = new CheckBox[] { chkHC2TimeoutCh00, chkHC2TimeoutCh02, chkHC2TimeoutCh02, chkHC2TimeoutCh03, chkHC2TimeoutCh04, chkHC2TimeoutCh05, chkHC2TimeoutCh06, chkHC2TimeoutCh07, chkHC2TimeoutCh08, chkHC2TimeoutCh09, chkHC2TimeoutCh10, chkHC2TimeoutCh11 };
+            HC3Timeout = new CheckBox[] { chkHC3TimeoutCh00, chkHC3TimeoutCh02, chkHC3TimeoutCh03, chkHC3TimeoutCh03, chkHC3TimeoutCh04, chkHC3TimeoutCh05, chkHC3TimeoutCh06, chkHC3TimeoutCh07, chkHC3TimeoutCh08, chkHC3TimeoutCh09, chkHC3TimeoutCh10, chkHC3TimeoutCh11 };
+            HC4Timeout = new CheckBox[] { chkHC4TimeoutCh00, chkHC4TimeoutCh02, chkHC4TimeoutCh04, chkHC4TimeoutCh03, chkHC4TimeoutCh04, chkHC4TimeoutCh05, chkHC4TimeoutCh06, chkHC4TimeoutCh07, chkHC4TimeoutCh08, chkHC4TimeoutCh09, chkHC4TimeoutCh10, chkHC4TimeoutCh11 };
+            HC5Timeout = new CheckBox[] { chkHC5TimeoutCh00, chkHC5TimeoutCh02, chkHC5TimeoutCh05, chkHC5TimeoutCh03, chkHC5TimeoutCh04, chkHC5TimeoutCh05, chkHC5TimeoutCh06, chkHC5TimeoutCh07, chkHC5TimeoutCh08, chkHC5TimeoutCh09, chkHC5TimeoutCh10, chkHC5TimeoutCh11 };
+            HC6Timeout = new CheckBox[] { chkHC6TimeoutCh00, chkHC6TimeoutCh02, chkHC6TimeoutCh06, chkHC6TimeoutCh03, chkHC6TimeoutCh04, chkHC6TimeoutCh05, chkHC6TimeoutCh06, chkHC6TimeoutCh07, chkHC6TimeoutCh08, chkHC6TimeoutCh09, chkHC6TimeoutCh10, chkHC6TimeoutCh11 };
+            hcTimeouts = new CheckBox[][] { HC1Timeout, HC2Timeout, HC3Timeout, HC4Timeout, HC5Timeout, HC6Timeout };
+            HC1TimeoutTime = new TextBox[] { txtbHC1TimeoutTimeCh00, txtbHC1TimeoutTimeCh01, txtbHC1TimeoutTimeCh02, txtbHC1TimeoutTimeCh03, txtbHC1TimeoutTimeCh04, txtbHC1TimeoutTimeCh05, txtbHC1TimeoutTimeCh06, txtbHC1TimeoutTimeCh07, txtbHC1TimeoutTimeCh08, txtbHC1TimeoutTimeCh09, txtbHC1TimeoutTimeCh10, txtbHC1TimeoutTimeCh11 };
+            HC2TimeoutTime = new TextBox[] { txtbHC2TimeoutTimeCh00, txtbHC2TimeoutTimeCh01, txtbHC2TimeoutTimeCh02, txtbHC2TimeoutTimeCh03, txtbHC2TimeoutTimeCh04, txtbHC2TimeoutTimeCh05, txtbHC2TimeoutTimeCh06, txtbHC2TimeoutTimeCh07, txtbHC2TimeoutTimeCh08, txtbHC2TimeoutTimeCh09, txtbHC2TimeoutTimeCh10, txtbHC2TimeoutTimeCh11 };
+            HC3TimeoutTime = new TextBox[] { txtbHC3TimeoutTimeCh00, txtbHC3TimeoutTimeCh01, txtbHC3TimeoutTimeCh02, txtbHC3TimeoutTimeCh03, txtbHC3TimeoutTimeCh04, txtbHC3TimeoutTimeCh05, txtbHC3TimeoutTimeCh06, txtbHC3TimeoutTimeCh07, txtbHC3TimeoutTimeCh08, txtbHC3TimeoutTimeCh09, txtbHC3TimeoutTimeCh10, txtbHC3TimeoutTimeCh11 };
+            HC4TimeoutTime = new TextBox[] { txtbHC4TimeoutTimeCh00, txtbHC4TimeoutTimeCh01, txtbHC4TimeoutTimeCh02, txtbHC4TimeoutTimeCh03, txtbHC4TimeoutTimeCh04, txtbHC4TimeoutTimeCh05, txtbHC4TimeoutTimeCh06, txtbHC4TimeoutTimeCh07, txtbHC4TimeoutTimeCh08, txtbHC4TimeoutTimeCh09, txtbHC4TimeoutTimeCh10, txtbHC4TimeoutTimeCh11 };
+            HC5TimeoutTime = new TextBox[] { txtbHC5TimeoutTimeCh00, txtbHC5TimeoutTimeCh01, txtbHC5TimeoutTimeCh02, txtbHC5TimeoutTimeCh03, txtbHC5TimeoutTimeCh04, txtbHC5TimeoutTimeCh05, txtbHC5TimeoutTimeCh06, txtbHC5TimeoutTimeCh07, txtbHC5TimeoutTimeCh08, txtbHC5TimeoutTimeCh09, txtbHC5TimeoutTimeCh10, txtbHC5TimeoutTimeCh11 };
+            HC6TimeoutTime = new TextBox[] { txtbHC6TimeoutTimeCh00, txtbHC6TimeoutTimeCh01, txtbHC6TimeoutTimeCh02, txtbHC6TimeoutTimeCh03, txtbHC6TimeoutTimeCh04, txtbHC6TimeoutTimeCh05, txtbHC6TimeoutTimeCh06, txtbHC6TimeoutTimeCh07, txtbHC6TimeoutTimeCh08, txtbHC6TimeoutTimeCh09, txtbHC6TimeoutTimeCh10, txtbHC6TimeoutTimeCh11 };
+            hcTimeoutTimes = new TextBox[][] { HC1TimeoutTime, HC2TimeoutTime, HC3TimeoutTime, HC4TimeoutTime, HC5TimeoutTime, HC6TimeoutTime };
+            HC1MaxOn = new TextBox[] { txtbHC1MaxOnCh00, txtbHC1MaxOnCh01, txtbHC1MaxOnCh02, txtbHC1MaxOnCh03, txtbHC1MaxOnCh04, txtbHC1MaxOnCh05, txtbHC1MaxOnCh06, txtbHC1MaxOnCh07, txtbHC1MaxOnCh08, txtbHC1MaxOnCh09, txtbHC1MaxOnCh10, txtbHC1MaxOnCh11 };
+            HC2MaxOn = new TextBox[] { txtbHC2MaxOnCh00, txtbHC2MaxOnCh01, txtbHC2MaxOnCh02, txtbHC2MaxOnCh03, txtbHC2MaxOnCh04, txtbHC2MaxOnCh05, txtbHC2MaxOnCh06, txtbHC2MaxOnCh07, txtbHC2MaxOnCh08, txtbHC2MaxOnCh09, txtbHC2MaxOnCh10, txtbHC2MaxOnCh11 };
+            HC3MaxOn = new TextBox[] { txtbHC3MaxOnCh00, txtbHC3MaxOnCh01, txtbHC3MaxOnCh02, txtbHC3MaxOnCh03, txtbHC3MaxOnCh04, txtbHC3MaxOnCh05, txtbHC3MaxOnCh06, txtbHC3MaxOnCh07, txtbHC3MaxOnCh08, txtbHC3MaxOnCh09, txtbHC3MaxOnCh10, txtbHC3MaxOnCh11 };
+            HC4MaxOn = new TextBox[] { txtbHC4MaxOnCh00, txtbHC4MaxOnCh01, txtbHC4MaxOnCh02, txtbHC4MaxOnCh03, txtbHC4MaxOnCh04, txtbHC4MaxOnCh05, txtbHC4MaxOnCh06, txtbHC4MaxOnCh07, txtbHC4MaxOnCh08, txtbHC4MaxOnCh09, txtbHC4MaxOnCh10, txtbHC4MaxOnCh11 };
+            HC5MaxOn = new TextBox[] { txtbHC5MaxOnCh00, txtbHC5MaxOnCh01, txtbHC5MaxOnCh02, txtbHC5MaxOnCh03, txtbHC5MaxOnCh04, txtbHC5MaxOnCh05, txtbHC5MaxOnCh06, txtbHC5MaxOnCh07, txtbHC5MaxOnCh08, txtbHC5MaxOnCh09, txtbHC5MaxOnCh10, txtbHC5MaxOnCh11 };
+            HC6MaxOn = new TextBox[] { txtbHC6MaxOnCh00, txtbHC6MaxOnCh01, txtbHC6MaxOnCh02, txtbHC6MaxOnCh03, txtbHC6MaxOnCh04, txtbHC6MaxOnCh05, txtbHC6MaxOnCh06, txtbHC6MaxOnCh07, txtbHC6MaxOnCh08, txtbHC6MaxOnCh09, txtbHC6MaxOnCh10, txtbHC6MaxOnCh11 };
+            hcMaxOns = new TextBox[][] { HC1MaxOn, HC2MaxOn, HC3MaxOn, HC4MaxOn, HC5MaxOn, HC6MaxOn };
+            HC1MaxDurRec = new TextBox[] { txtbHC1MaxDurRecCh00, txtbHC1MaxDurRecCh01, txtbHC1MaxDurRecCh02, txtbHC1MaxDurRecCh03, txtbHC1MaxDurRecCh04, txtbHC1MaxDurRecCh05, txtbHC1MaxDurRecCh06, txtbHC1MaxDurRecCh07, txtbHC1MaxDurRecCh08, txtbHC1MaxDurRecCh09, txtbHC1MaxDurRecCh10, txtbHC1MaxDurRecCh11 };
+            HC2MaxDurRec = new TextBox[] { txtbHC2MaxDurRecCh00, txtbHC2MaxDurRecCh01, txtbHC2MaxDurRecCh02, txtbHC2MaxDurRecCh03, txtbHC2MaxDurRecCh04, txtbHC2MaxDurRecCh05, txtbHC2MaxDurRecCh06, txtbHC2MaxDurRecCh07, txtbHC2MaxDurRecCh08, txtbHC2MaxDurRecCh09, txtbHC2MaxDurRecCh10, txtbHC2MaxDurRecCh11 };
+            HC3MaxDurRec = new TextBox[] { txtbHC3MaxDurRecCh00, txtbHC3MaxDurRecCh01, txtbHC3MaxDurRecCh02, txtbHC3MaxDurRecCh03, txtbHC3MaxDurRecCh04, txtbHC3MaxDurRecCh05, txtbHC3MaxDurRecCh06, txtbHC3MaxDurRecCh07, txtbHC3MaxDurRecCh08, txtbHC3MaxDurRecCh09, txtbHC3MaxDurRecCh10, txtbHC3MaxDurRecCh11 };
+            HC4MaxDurRec = new TextBox[] { txtbHC4MaxDurRecCh00, txtbHC4MaxDurRecCh01, txtbHC4MaxDurRecCh02, txtbHC4MaxDurRecCh03, txtbHC4MaxDurRecCh04, txtbHC4MaxDurRecCh05, txtbHC4MaxDurRecCh06, txtbHC4MaxDurRecCh07, txtbHC4MaxDurRecCh08, txtbHC4MaxDurRecCh09, txtbHC4MaxDurRecCh10, txtbHC4MaxDurRecCh11 };
+            HC5MaxDurRec = new TextBox[] { txtbHC5MaxDurRecCh00, txtbHC5MaxDurRecCh01, txtbHC5MaxDurRecCh02, txtbHC5MaxDurRecCh03, txtbHC5MaxDurRecCh04, txtbHC5MaxDurRecCh05, txtbHC5MaxDurRecCh06, txtbHC5MaxDurRecCh07, txtbHC5MaxDurRecCh08, txtbHC5MaxDurRecCh09, txtbHC5MaxDurRecCh10, txtbHC5MaxDurRecCh11 };
+            HC6MaxDurRec = new TextBox[] { txtbHC6MaxDurRecCh00, txtbHC6MaxDurRecCh01, txtbHC6MaxDurRecCh02, txtbHC6MaxDurRecCh03, txtbHC6MaxDurRecCh04, txtbHC6MaxDurRecCh05, txtbHC6MaxDurRecCh06, txtbHC6MaxDurRecCh07, txtbHC6MaxDurRecCh08, txtbHC6MaxDurRecCh09, txtbHC6MaxDurRecCh10, txtbHC6MaxDurRecCh11 };
+            hcMaxDurRec = new TextBox[][] { HC1MaxDurRec, HC2MaxDurRec, HC3MaxDurRec, HC4MaxDurRec, HC5MaxDurRec, HC6MaxDurRec };
+            HC1UndAmp = new TextBox[] { txtbHC1UndAmpCh00, txtbHC1UndAmpCh01, txtbHC1UndAmpCh02, txtbHC1UndAmpCh03, txtbHC1UndAmpCh04, txtbHC1UndAmpCh05, txtbHC1UndAmpCh06, txtbHC1UndAmpCh07, txtbHC1UndAmpCh08, txtbHC1UndAmpCh09, txtbHC1UndAmpCh10, txtbHC1UndAmpCh11 };
+            HC2UndAmp = new TextBox[] { txtbHC2UndAmpCh00, txtbHC2UndAmpCh01, txtbHC2UndAmpCh02, txtbHC2UndAmpCh03, txtbHC2UndAmpCh04, txtbHC2UndAmpCh05, txtbHC2UndAmpCh06, txtbHC2UndAmpCh07, txtbHC2UndAmpCh08, txtbHC2UndAmpCh09, txtbHC2UndAmpCh10, txtbHC2UndAmpCh11 };
+            HC3UndAmp = new TextBox[] { txtbHC3UndAmpCh00, txtbHC3UndAmpCh01, txtbHC3UndAmpCh03, txtbHC3UndAmpCh03, txtbHC3UndAmpCh04, txtbHC3UndAmpCh05, txtbHC3UndAmpCh06, txtbHC3UndAmpCh07, txtbHC3UndAmpCh08, txtbHC3UndAmpCh09, txtbHC3UndAmpCh10, txtbHC3UndAmpCh11 };
+            HC4UndAmp = new TextBox[] { txtbHC4UndAmpCh00, txtbHC4UndAmpCh01, txtbHC4UndAmpCh04, txtbHC4UndAmpCh03, txtbHC4UndAmpCh04, txtbHC4UndAmpCh05, txtbHC4UndAmpCh06, txtbHC4UndAmpCh07, txtbHC4UndAmpCh08, txtbHC4UndAmpCh09, txtbHC4UndAmpCh10, txtbHC4UndAmpCh11 };
+            HC5UndAmp = new TextBox[] { txtbHC5UndAmpCh00, txtbHC5UndAmpCh01, txtbHC5UndAmpCh05, txtbHC5UndAmpCh03, txtbHC5UndAmpCh04, txtbHC5UndAmpCh05, txtbHC5UndAmpCh06, txtbHC5UndAmpCh07, txtbHC5UndAmpCh08, txtbHC5UndAmpCh09, txtbHC5UndAmpCh10, txtbHC5UndAmpCh11 };
+            HC6UndAmp = new TextBox[] { txtbHC6UndAmpCh00, txtbHC6UndAmpCh01, txtbHC6UndAmpCh06, txtbHC6UndAmpCh03, txtbHC6UndAmpCh04, txtbHC6UndAmpCh05, txtbHC6UndAmpCh06, txtbHC6UndAmpCh07, txtbHC6UndAmpCh08, txtbHC6UndAmpCh09, txtbHC6UndAmpCh10, txtbHC6UndAmpCh11 };
+            hcUndAmps = new TextBox[][] { HC1UndAmp, HC2UndAmp, HC3UndAmp, HC4UndAmp, HC5UndAmp, HC6UndAmp };
+            HC1MeasCurTime = new ComboBox[] { cmbHC1MeasCurTimeCh00, cmbHC1MeasCurTimeCh01, cmbHC1MeasCurTimeCh02, cmbHC1MeasCurTimeCh03, cmbHC1MeasCurTimeCh04, cmbHC1MeasCurTimeCh05, cmbHC1MeasCurTimeCh06, cmbHC1MeasCurTimeCh07, cmbHC1MeasCurTimeCh08, cmbHC1MeasCurTimeCh09, cmbHC1MeasCurTimeCh10, cmbHC1MeasCurTimeCh11 };
+            HC2MeasCurTime = new ComboBox[] { cmbHC2MeasCurTimeCh00, cmbHC2MeasCurTimeCh01, cmbHC2MeasCurTimeCh02, cmbHC2MeasCurTimeCh03, cmbHC2MeasCurTimeCh04, cmbHC2MeasCurTimeCh05, cmbHC2MeasCurTimeCh06, cmbHC2MeasCurTimeCh07, cmbHC2MeasCurTimeCh08, cmbHC2MeasCurTimeCh09, cmbHC2MeasCurTimeCh10, cmbHC2MeasCurTimeCh11 };
+            HC3MeasCurTime = new ComboBox[] { cmbHC3MeasCurTimeCh00, cmbHC3MeasCurTimeCh01, cmbHC3MeasCurTimeCh02, cmbHC3MeasCurTimeCh03, cmbHC3MeasCurTimeCh04, cmbHC3MeasCurTimeCh05, cmbHC3MeasCurTimeCh06, cmbHC3MeasCurTimeCh07, cmbHC3MeasCurTimeCh08, cmbHC3MeasCurTimeCh09, cmbHC3MeasCurTimeCh10, cmbHC3MeasCurTimeCh11 };
+            HC4MeasCurTime = new ComboBox[] { cmbHC4MeasCurTimeCh00, cmbHC4MeasCurTimeCh01, cmbHC4MeasCurTimeCh02, cmbHC4MeasCurTimeCh03, cmbHC4MeasCurTimeCh04, cmbHC4MeasCurTimeCh05, cmbHC4MeasCurTimeCh06, cmbHC4MeasCurTimeCh07, cmbHC4MeasCurTimeCh08, cmbHC4MeasCurTimeCh09, cmbHC4MeasCurTimeCh10, cmbHC4MeasCurTimeCh11 };
+            HC5MeasCurTime = new ComboBox[] { cmbHC5MeasCurTimeCh00, cmbHC5MeasCurTimeCh01, cmbHC5MeasCurTimeCh02, cmbHC5MeasCurTimeCh03, cmbHC5MeasCurTimeCh04, cmbHC5MeasCurTimeCh05, cmbHC5MeasCurTimeCh06, cmbHC5MeasCurTimeCh07, cmbHC5MeasCurTimeCh08, cmbHC5MeasCurTimeCh09, cmbHC5MeasCurTimeCh10, cmbHC5MeasCurTimeCh11 };
+            HC6MeasCurTime = new ComboBox[] { cmbHC6MeasCurTimeCh00, cmbHC6MeasCurTimeCh01, cmbHC6MeasCurTimeCh02, cmbHC6MeasCurTimeCh03, cmbHC6MeasCurTimeCh04, cmbHC6MeasCurTimeCh05, cmbHC6MeasCurTimeCh06, cmbHC6MeasCurTimeCh07, cmbHC6MeasCurTimeCh08, cmbHC6MeasCurTimeCh09, cmbHC6MeasCurTimeCh10, cmbHC6MeasCurTimeCh11 };
+            hcMeasCurTimes = new ComboBox[][] { HC1MeasCurTime, HC2MeasCurTime, HC3MeasCurTime, HC4MeasCurTime, HC5MeasCurTime, HC6MeasCurTime };
 
             lcCardNum = new ComboBox[] { cmbLC1CardNum, cmbLC2CardNum, cmbLC3CardNum, cmbLC4CardNum, cmbLC5CardNum, cmbLC6CardNum };
             lcPanelNum = new ComboBox[] { cmbLC1PanelNum, cmbLC2PanelNum, cmbLC3PanelNum, cmbLC4PanelNum, cmbLC5PanelNum, cmbLC6PanelNum };
@@ -2512,6 +2775,56 @@ namespace M1ConfigGenerator
             lc5Mode = new ComboBox[] { cmbLC5Mode00, cmbLC5Mode01, cmbLC5Mode02, cmbLC5Mode03, cmbLC5Mode04, cmbLC5Mode05, cmbLC5Mode06, cmbLC5Mode07, cmbLC5Mode08, cmbLC5Mode09, cmbLC5Mode10, cmbLC5Mode11, cmbLC5Mode12, cmbLC5Mode13, cmbLC5Mode14, cmbLC5Mode15 };
             lc6Mode = new ComboBox[] { cmbLC6Mode00, cmbLC6Mode01, cmbLC6Mode02, cmbLC6Mode03, cmbLC6Mode04, cmbLC6Mode05, cmbLC6Mode06, cmbLC6Mode07, cmbLC6Mode08, cmbLC6Mode09, cmbLC6Mode10, cmbLC6Mode11, cmbLC6Mode12, cmbLC6Mode13, cmbLC6Mode14, cmbLC6Mode15 };
             lcModes = new ComboBox[][] { lc1Mode, lc2Mode, lc3Mode, lc4Mode, lc5Mode, lc6Mode };
+            lc1Lock = new CheckBox[] { chkLC1LockCh00, chkLC1LockCh01, chkLC1LockCh02, chkLC1LockCh03, chkLC1LockCh04, chkLC1LockCh05, chkLC1LockCh06, chkLC1LockCh07, chkLC1LockCh08, chkLC1LockCh09, chkLC1LockCh10, chkLC1LockCh11, chkLC1LockCh12, chkLC1LockCh13, chkLC1LockCh14, chkLC1LockCh15 };
+            lc2Lock = new CheckBox[] { chkLC2LockCh00, chkLC2LockCh01, chkLC2LockCh02, chkLC2LockCh03, chkLC2LockCh04, chkLC2LockCh05, chkLC2LockCh06, chkLC2LockCh07, chkLC2LockCh08, chkLC2LockCh09, chkLC2LockCh10, chkLC2LockCh11, chkLC2LockCh12, chkLC2LockCh13, chkLC2LockCh14, chkLC2LockCh15 };
+            lc3Lock = new CheckBox[] { chkLC3LockCh00, chkLC3LockCh01, chkLC3LockCh02, chkLC3LockCh03, chkLC3LockCh04, chkLC3LockCh05, chkLC3LockCh06, chkLC3LockCh07, chkLC3LockCh08, chkLC3LockCh09, chkLC3LockCh10, chkLC3LockCh11, chkLC3LockCh12, chkLC3LockCh13, chkLC3LockCh14, chkLC3LockCh15 };
+            lc4Lock = new CheckBox[] { chkLC4LockCh00, chkLC4LockCh01, chkLC4LockCh02, chkLC4LockCh03, chkLC4LockCh04, chkLC4LockCh05, chkLC4LockCh06, chkLC4LockCh07, chkLC4LockCh08, chkLC4LockCh09, chkLC4LockCh10, chkLC4LockCh11, chkLC4LockCh12, chkLC4LockCh13, chkLC4LockCh14, chkLC4LockCh15 };
+            lc5Lock = new CheckBox[] { chkLC5LockCh00, chkLC5LockCh01, chkLC5LockCh02, chkLC5LockCh03, chkLC5LockCh04, chkLC5LockCh05, chkLC5LockCh06, chkLC5LockCh07, chkLC5LockCh08, chkLC5LockCh09, chkLC5LockCh10, chkLC5LockCh11, chkLC5LockCh12, chkLC5LockCh13, chkLC5LockCh14, chkLC5LockCh15 };
+            lc6Lock = new CheckBox[] { chkLC6LockCh00, chkLC6LockCh01, chkLC6LockCh02, chkLC6LockCh03, chkLC6LockCh04, chkLC6LockCh05, chkLC6LockCh06, chkLC6LockCh07, chkLC6LockCh08, chkLC6LockCh09, chkLC6LockCh10, chkLC6LockCh11, chkLC6LockCh12, chkLC6LockCh13, chkLC6LockCh14, chkLC6LockCh15 };
+            lcLocks = new CheckBox[][] { lc1Lock, lc2Lock, lc3Lock, lc4Lock, lc5Lock, lc6Lock };
+            lc1Direction = new ComboBox[] { cmbLC1DirectionCh00, cmbLC1DirectionCh01, cmbLC1DirectionCh02, cmbLC1DirectionCh03, cmbLC1DirectionCh04, cmbLC1DirectionCh05, cmbLC1DirectionCh06, cmbLC1DirectionCh07, cmbLC1DirectionCh08, cmbLC1DirectionCh09, cmbLC1DirectionCh10, cmbLC1DirectionCh11, cmbLC1DirectionCh12, cmbLC1DirectionCh13, cmbLC1DirectionCh14, cmbLC1DirectionCh15 };
+            lc2Direction = new ComboBox[] { cmbLC2DirectionCh00, cmbLC2DirectionCh01, cmbLC2DirectionCh02, cmbLC2DirectionCh03, cmbLC2DirectionCh04, cmbLC2DirectionCh05, cmbLC2DirectionCh06, cmbLC2DirectionCh07, cmbLC2DirectionCh08, cmbLC2DirectionCh09, cmbLC2DirectionCh10, cmbLC2DirectionCh11, cmbLC2DirectionCh12, cmbLC2DirectionCh13, cmbLC2DirectionCh14, cmbLC2DirectionCh15 };
+            lc3Direction = new ComboBox[] { cmbLC3DirectionCh00, cmbLC3DirectionCh01, cmbLC3DirectionCh02, cmbLC3DirectionCh03, cmbLC3DirectionCh04, cmbLC3DirectionCh05, cmbLC3DirectionCh06, cmbLC3DirectionCh07, cmbLC3DirectionCh08, cmbLC3DirectionCh09, cmbLC3DirectionCh10, cmbLC3DirectionCh11, cmbLC3DirectionCh12, cmbLC3DirectionCh13, cmbLC3DirectionCh14, cmbLC3DirectionCh15 };
+            lc4Direction = new ComboBox[] { cmbLC4DirectionCh00, cmbLC4DirectionCh01, cmbLC4DirectionCh02, cmbLC4DirectionCh03, cmbLC4DirectionCh04, cmbLC4DirectionCh05, cmbLC4DirectionCh06, cmbLC4DirectionCh07, cmbLC4DirectionCh08, cmbLC4DirectionCh09, cmbLC4DirectionCh10, cmbLC4DirectionCh11, cmbLC4DirectionCh12, cmbLC4DirectionCh13, cmbLC4DirectionCh14, cmbLC4DirectionCh15 };
+            lc5Direction = new ComboBox[] { cmbLC5DirectionCh00, cmbLC5DirectionCh01, cmbLC5DirectionCh02, cmbLC5DirectionCh03, cmbLC5DirectionCh04, cmbLC5DirectionCh05, cmbLC5DirectionCh06, cmbLC5DirectionCh07, cmbLC5DirectionCh08, cmbLC5DirectionCh09, cmbLC5DirectionCh10, cmbLC5DirectionCh11, cmbLC5DirectionCh12, cmbLC5DirectionCh13, cmbLC5DirectionCh14, cmbLC5DirectionCh15 };
+            lc6Direction = new ComboBox[] { cmbLC6DirectionCh00, cmbLC6DirectionCh01, cmbLC6DirectionCh02, cmbLC6DirectionCh03, cmbLC6DirectionCh04, cmbLC6DirectionCh05, cmbLC6DirectionCh06, cmbLC6DirectionCh07, cmbLC6DirectionCh08, cmbLC6DirectionCh09, cmbLC6DirectionCh10, cmbLC6DirectionCh11, cmbLC6DirectionCh12, cmbLC6DirectionCh13, cmbLC6DirectionCh14, cmbLC6DirectionCh15 };
+            lcDirections = new ComboBox[][] { lc1Direction, lc2Direction, lc3Direction, lc4Direction, lc5Direction, lc6Direction };
+            lc1TimeoutTime = new TextBox[] { txtLC1TimoutTimeCh00, txtLC1TimoutTimeCh01, txtLC1TimoutTimeCh02, txtLC1TimoutTimeCh03, txtLC1TimoutTimeCh04, txtLC1TimoutTimeCh05, txtLC1TimoutTimeCh06, txtLC1TimoutTimeCh07, txtLC1TimoutTimeCh08, txtLC1TimoutTimeCh09, txtLC1TimoutTimeCh10, txtLC1TimoutTimeCh11, txtLC1TimoutTimeCh12, txtLC1TimoutTimeCh13, txtLC1TimoutTimeCh14, txtLC1TimoutTimeCh15 };
+            lc2TimeoutTime = new TextBox[] { txtLC2TimoutTimeCh00, txtLC2TimoutTimeCh01, txtLC2TimoutTimeCh02, txtLC2TimoutTimeCh03, txtLC2TimoutTimeCh04, txtLC2TimoutTimeCh05, txtLC2TimoutTimeCh06, txtLC2TimoutTimeCh07, txtLC2TimoutTimeCh08, txtLC2TimoutTimeCh09, txtLC2TimoutTimeCh10, txtLC2TimoutTimeCh11, txtLC2TimoutTimeCh12, txtLC2TimoutTimeCh13, txtLC2TimoutTimeCh14, txtLC2TimoutTimeCh15 };
+            lc3TimeoutTime = new TextBox[] { txtLC3TimoutTimeCh00, txtLC3TimoutTimeCh01, txtLC3TimoutTimeCh02, txtLC3TimoutTimeCh03, txtLC3TimoutTimeCh04, txtLC3TimoutTimeCh05, txtLC3TimoutTimeCh06, txtLC3TimoutTimeCh07, txtLC3TimoutTimeCh08, txtLC3TimoutTimeCh09, txtLC3TimoutTimeCh10, txtbLC3TimeoutTimeCh11, txtLC3TimoutTimeCh12, txtLC3TimoutTimeCh13, txtLC3TimoutTimeCh14, txtLC3TimoutTimeCh15 };
+            lc4TimeoutTime = new TextBox[] { txtLC4TimoutTimeCh00, txtLC4TimoutTimeCh01, txtLC4TimoutTimeCh02, txtLC4TimoutTimeCh03, txtLC4TimoutTimeCh04, txtLC4TimoutTimeCh05, txtLC4TimoutTimeCh06, txtLC4TimoutTimeCh07, txtLC4TimoutTimeCh08, txtLC4TimoutTimeCh09, txtLC4TimoutTimeCh10, txtLC4TimoutTimeCh11, txtLC4TimoutTimeCh12, txtLC4TimoutTimeCh13, txtLC4TimoutTimeCh14, txtLC4TimoutTimeCh15 };
+            lc5TimeoutTime = new TextBox[] { txtLC5TimoutTimeCh00, txtLC5TimoutTimeCh01, txtLC5TimoutTimeCh02, txtLC5TimoutTimeCh03, txtLC5TimoutTimeCh04, txtLC5TimoutTimeCh05, txtLC5TimoutTimeCh06, txtLC5TimoutTimeCh07, txtLC5TimoutTimeCh08, txtLC5TimoutTimeCh09, txtLC5TimoutTimeCh10, txtLC5TimoutTimeCh11, txtLC5TimoutTimeCh12, txtLC5TimoutTimeCh13, txtLC5TimoutTimeCh14, txtLC5TimoutTimeCh15 };
+            lc6TimeoutTime = new TextBox[] { txtLC6TimoutTimeCh00, txtLC6TimoutTimeCh01, txtLC6TimoutTimeCh02, txtLC6TimoutTimeCh03, txtLC6TimoutTimeCh04, txtLC6TimoutTimeCh05, txtLC6TimoutTimeCh06, txtLC6TimoutTimeCh07, txtLC6TimoutTimeCh08, txtLC6TimoutTimeCh09, txtLC6TimoutTimeCh10, txtLC6TimoutTimeCh11, txtLC6TimoutTimeCh12, txtLC6TimoutTimeCh13, txtLC6TimoutTimeCh14, txtLC6TimoutTimeCh15 };
+            lcTimeoutTimes = new TextBox[][] { lc1TimeoutTime, lc2TimeoutTime, lc3TimeoutTime, lc4TimeoutTime, lc5TimeoutTime, lc6TimeoutTime };
+            lc1MaxOn = new TextBox[] { txtbLC1MaxOnCh00, txtbLC1MaxOnCh01, txtbLC1MaxOnCh02, txtbLC1MaxOnCh03, txtbLC1MaxOnCh04, txtbLC1MaxOnCh05, txtbLC1MaxOnCh06, txtbLC1MaxOnCh07, txtbLC1MaxOnCh08, txtbLC1MaxOnCh09, txtbLC1MaxOnCh10, txtbLC1MaxOnCh11, txtbLC1MaxOnCh12, txtbLC1MaxOnCh13, txtbLC1MaxOnCh14, txtbLC1MaxOnCh15 };
+            lc2MaxOn = new TextBox[] { txtbLC2MaxOnCh00, txtbLC2MaxOnCh01, txtbLC2MaxOnCh02, txtbLC2MaxOnCh03, txtbLC2MaxOnCh04, txtbLC2MaxOnCh05, txtbLC2MaxOnCh06, txtbLC2MaxOnCh07, txtbLC2MaxOnCh08, txtbLC2MaxOnCh09, txtbLC2MaxOnCh10, txtbLC2MaxOnCh11, txtbLC2MaxOnCh12, txtbLC2MaxOnCh13, txtbLC2MaxOnCh14, txtbLC2MaxOnCh15 };
+            lc3MaxOn = new TextBox[] { txtbLC3MaxOnCh00, txtbLC3MaxOnCh01, txtbLC3MaxOnCh02, txtLC3MaxOnCh03, txtbLC3MaxOnCh04, txtbLC3MaxOnCh05, txtbLC3MaxOnCh06, txtbLC3MaxOnCh07, txtbLC3MaxOnCh08, txtbLC3MaxOnCh09, txtbLC3MaxOnCh10, txtLC3MaxOnCh11, txtLC3MaxOnCh12, txtLC3MaxOnCh13, txtLC3MaxOnCh14, txtLC3MaxOnCh15 };
+            lc4MaxOn = new TextBox[] { txtLC4MaxOnCh00, txtLC4MaxOnCh01, txtLC4MaxOnCh02, txtLC4MaxOnCh03, txtLC4MaxOnCh04, txtLC4MaxOnCh05, txtLC4MaxOnCh06, txtLC4MaxOnCh07, txtLC4MaxOnCh08, txtLC4MaxOnCh09, txtLC4MaxOnCh10, txtLC4MaxOnCh11, txtLC4MaxOnCh12, txtLC4MaxOnCh13, txtLC4MaxOnCh14, txtLC4MaxOnCh15 };
+            lc5MaxOn = new TextBox[] { txtLC5MaxOnCh00, txtLC5MaxOnCh01, txtLC5MaxOnCh02, txtLC5MaxOnCh03, txtLC5MaxOnCh04, txtLC5MaxOnCh05, txtLC5MaxOnCh06, txtLC5MaxOnCh07, txtLC5MaxOnCh08, txtLC5MaxOnCh09, txtLC5MaxOnCh10, txtLC5MaxOnCh11, txtLC5MaxOnCh12, txtLC5MaxOnCh13, txtLC5MaxOnCh14, txtLC5MaxOnCh15 };
+            lc6MaxOn = new TextBox[] { txtLC6MaxOnCh00, txtLC6MaxOnCh01, txtLC6MaxOnCh02, txtLC3MaxOnCh03, txtLC6MaxOnCh04, txtLC6MaxOnCh05, txtLC6MaxOnCh06, txtLC6MaxOnCh07, txtLC6MaxOnCh08, txtLC6MaxOnCh09, txtLC6MaxOnCh10, txtLC6MaxOnCh11, txtLC6MaxOnCh12, txtLC6MaxOnCh13, txtLC6MaxOnCh14, txtLC6MaxOnCh15 };
+            lcMaxOns = new TextBox[][] { lc1MaxOn, lc2MaxOn, lc3MaxOn, lc4MaxOn, lc5MaxOn, lc6MaxOn }; 
+            lc1MaxDurRecovery = new TextBox[] { txtbLC1MaxDurRecoveryCh00, txtbLC1MaxDurRecoveryCh01, txtbLC1MaxDurRecoveryCh02, txtbLC1MaxDurRecoveryCh03, txtbLC1MaxDurRecoveryCh04, txtbLC1MaxDurRecoveryCh05, txtbLC1MaxDurRecoveryCh06, txtbLC1MaxDurRecoveryCh07, txtbLC1MaxDurRecoveryCh08, txtbLC1MaxDurRecoveryCh09, txtbLC1MaxDurRecoveryCh10, txtbLC1MaxDurRecoveryCh11, txtbLC1MaxDurRecoveryCh12, txtbLC1MaxDurRecoveryCh13, txtbLC1MaxDurRecoveryCh14, txtbLC1MaxDurRecoveryCh15 };
+            lc2MaxDurRecovery = new TextBox[] { txtbLC2MaxDurRecoveryCh00, txtbLC2MaxDurRecoveryCh01, txtbLC2MaxDurRecoveryCh02, txtbLC2MaxDurRecoveryCh03, txtbLC2MaxDurRecoveryCh04, txtbLC2MaxDurRecoveryCh05, txtbLC2MaxDurRecoveryCh06, txtbLC2MaxDurRecoveryCh07, txtbLC2MaxDurRecoveryCh08, txtbLC2MaxDurRecoveryCh09, txtbLC2MaxDurRecoveryCh10, txtbLC2MaxDurRecoveryCh11, txtbLC2MaxDurRecoveryCh12, txtbLC2MaxDurRecoveryCh13, txtbLC2MaxDurRecoveryCh14, txtbLC2MaxDurRecoveryCh15 };
+            lc3MaxDurRecovery = new TextBox[] { txtbLC3MaxDurRecoveryCh00, txtbLC3MaxDurRecoveryCh01, txtbLC3MaxDurRecoveryCh02, txtbLC3MaxDurRecoveryCh03, txtbLC3MaxDurRecoveryCh04, txtbLC3MaxDurRecoveryCh05, txtbLC3MaxDurRecoveryCh06, txtbLC3MaxDurRecoveryCh07, txtbLC3MaxDurRecoveryCh08, txtbLC3MaxDurRecoveryCh09, txtbLC3MaxDurRecoveryCh10, txtbLC3MaxDurRecoveryCh11, txtbLC3MaxDurRecoveryCh12, txtbLC3MaxDurRecoveryCh13, txtbLC3MaxDurRecoveryCh14, txtbLC3MaxDurRecoveryCh15 };
+            lc4MaxDurRecovery = new TextBox[] { txtbLC4MaxDurRecoveryCh00, txtbLC4MaxDurRecoveryCh01, txtbLC4MaxDurRecoveryCh02, txtbLC4MaxDurRecoveryCh03, txtbLC4MaxDurRecoveryCh04, txtbLC4MaxDurRecoveryCh05, txtbLC4MaxDurRecoveryCh06, txtbLC4MaxDurRecoveryCh07, txtbLC4MaxDurRecoveryCh08, txtbLC4MaxDurRecoveryCh09, txtbLC4MaxDurRecoveryCh10, txtbLC4MaxDurRecoveryCh11, txtbLC4MaxDurRecoveryCh12, txtbLC4MaxDurRecoveryCh13, txtbLC4MaxDurRecoveryCh14, txtbLC4MaxDurRecoveryCh15 };
+            lc5MaxDurRecovery = new TextBox[] { txtbLC5MaxDurRecoveryCh00, txtbLC5MaxDurRecoveryCh01, txtbLC5MaxDurRecoveryCh02, txtbLC5MaxDurRecoveryCh03, txtbLC5MaxDurRecoveryCh04, txtbLC5MaxDurRecoveryCh05, txtbLC5MaxDurRecoveryCh06, txtbLC5MaxDurRecoveryCh07, txtbLC5MaxDurRecoveryCh08, txtbLC5MaxDurRecoveryCh09, txtbLC5MaxDurRecoveryCh10, txtbLC5MaxDurRecoveryCh11, txtbLC5MaxDurRecoveryCh12, txtbLC5MaxDurRecoveryCh13, txtbLC5MaxDurRecoveryCh14, txtbLC5MaxDurRecoveryCh15 };
+            lc6MaxDurRecovery = new TextBox[] { txtbLC6MaxDurRecoveryCh00, txtbLC6MaxDurRecoveryCh01, txtbLC6MaxDurRecoveryCh02, txtbLC6MaxDurRecoveryCh03, txtbLC6MaxDurRecoveryCh04, txtbLC6MaxDurRecoveryCh05, txtbLC6MaxDurRecoveryCh06, txtbLC6MaxDurRecoveryCh07, txtbLC6MaxDurRecoveryCh08, txtbLC6MaxDurRecoveryCh09, txtbLC6MaxDurRecoveryCh10, txtbLC6MaxDurRecoveryCh11, txtbLC6MaxDurRecoveryCh12, txtbLC6MaxDurRecoveryCh13, txtbLC6MaxDurRecoveryCh14, txtbLC6MaxDurRecoveryCh15 };
+            lcMaxDurRecoveries = new TextBox[][] { lc1MaxDurRecovery, lc2MaxDurRecovery, lc3MaxDurRecovery, lc4MaxDurRecovery, lc5MaxDurRecovery, lc6MaxDurRecovery };
+            lc1UCAmp = new TextBox[] { txtbLC1UndercurrentAmpsCh00, txtbLC1UndercurrentAmpsCh01, txtbLC1UndercurrentAmpsCh02, txtbLC1UndercurrentAmpsCh03, txtbLC1UndercurrentAmpsCh04, txtbLC1UndercurrentAmpsCh05, txtbLC1UndercurrentAmpsCh06, txtbLC1UndercurrentAmpsCh07, txtbLC1UndercurrentAmpsCh08, txtbLC1UndercurrentAmpsCh09, txtbLC1UndercurrentAmpsCh10, txtbLC1UndercurrentAmpsCh11, txtbLC1UndercurrentAmpsCh12, txtbLC1UndercurrentAmpsCh13, txtbLC1UndercurrentAmpsCh14, txtbLC1UndercurrentAmpsCh15 };
+            lc2UCAmp = new TextBox[] { txtbLC2UndercurrentAmpsCh00, txtbLC2UndercurrentAmpsCh01, txtbLC2UndercurrentAmpsCh02, txtbLC2UndercurrentAmpsCh03, txtbLC2UndercurrentAmpsCh04, txtbLC2UndercurrentAmpsCh05, txtbLC2UndercurrentAmpsCh06, txtbLC2UndercurrentAmpsCh07, txtbLC2UndercurrentAmpsCh08, txtbLC2UndercurrentAmpsCh09, txtbLC2UndercurrentAmpsCh10, txtbLC2UndercurrentAmpsCh11, txtbLC2UndercurrentAmpsCh12, txtbLC2UndercurrentAmpsCh13, txtbLC2UndercurrentAmpsCh14, txtbLC2UndercurrentAmpsCh15 };
+            lc3UCAmp = new TextBox[] { txtbLC3UndercurrentAmpsCh00, txtbLC3UndercurrentAmpsCh01, txtbLC3UndercurrentAmpsCh02, txtbLC3UndercurrentAmpsCh03, txtbLC3UndercurrentAmpsCh04, txtbLC3UndercurrentAmpsCh05, txtbLC3UndercurrentAmpsCh06, txtbLC3UndercurrentAmpsCh07, txtbLC3UndercurrentAmpsCh08, txtbLC3UndercurrentAmpsCh09, txtbLC3UndercurrentAmpsCh10, txtbLC3UndercurrentAmpsCh11, txtbLC3UndercurrentAmpsCh12, txtbLC3UndercurrentAmpsCh13, txtbLC3UndercurrentAmpsCh14, txtbLC3UndercurrentAmpsCh15 };
+            lc4UCAmp = new TextBox[] { txtbLC4UndercurrentAmpsCh00, txtbLC4UndercurrentAmpsCh01, txtbLC4UndercurrentAmpsCh02, txtbLC4UndercurrentAmpsCh03, txtbLC4UndercurrentAmpsCh04, txtbLC4UndercurrentAmpsCh05, txtbLC4UndercurrentAmpsCh06, txtbLC4UndercurrentAmpsCh07, txtbLC4UndercurrentAmpsCh08, txtbLC4UndercurrentAmpsCh09, txtbLC4UndercurrentAmpsCh10, txtbLC4UndercurrentAmpsCh11, txtbLC4UndercurrentAmpsCh12, txtbLC4UndercurrentAmpsCh13, txtbLC4UndercurrentAmpsCh14, txtbLC4UndercurrentAmpsCh15 };
+            lc5UCAmp = new TextBox[] { txtbLC5UndercurrentAmpsCh00, txtbLC5UndercurrentAmpsCh01, txtbLC5UndercurrentAmpsCh02, txtbLC5UndercurrentAmpsCh03, txtbLC5UndercurrentAmpsCh04, txtbLC5UndercurrentAmpsCh05, txtbLC5UndercurrentAmpsCh06, txtbLC5UndercurrentAmpsCh07, txtbLC5UndercurrentAmpsCh08, txtbLC5UndercurrentAmpsCh09, txtbLC5UndercurrentAmpsCh10, txtbLC5UndercurrentAmpsCh11, txtbLC5UndercurrentAmpsCh12, txtbLC5UndercurrentAmpsCh13, txtbLC5UndercurrentAmpsCh14, txtbLC5UndercurrentAmpsCh15 };
+            lc6UCAmp = new TextBox[] { txtbLC6UndercurrentAmpsCh00, txtbLC6UndercurrentAmpsCh01, txtbLC6UndercurrentAmpsCh02, txtbLC6UndercurrentAmpsCh03, txtbLC6UndercurrentAmpsCh04, txtbLC6UndercurrentAmpsCh05, txtbLC6UndercurrentAmpsCh06, txtbLC6UndercurrentAmpsCh07, txtbLC6UndercurrentAmpsCh08, txtbLC6UndercurrentAmpsCh09, txtbLC6UndercurrentAmpsCh10, txtbLC6UndercurrentAmpsCh11, txtbLC6UndercurrentAmpsCh12, txtbLC6UndercurrentAmpsCh13, txtbLC6UndercurrentAmpsCh14, txtbLC6UndercurrentAmpsCh15 };
+            lcUCAmps = new TextBox[][] { lc1UCAmp, lc2UCAmp, lc3UCAmp, lc4UCAmp, lc5UCAmp, lc6UCAmp };
+            lc1MeasCurTime = new ComboBox[] { cmbLC1MeasCurTimeCh00, cmbLC1MeasCurTimeCh01, cmbLC1MeasCurTimeCh02, cmbLC1MeasCurTimeCh03, cmbLC1MeasCurTimeCh04, cmbLC1MeasCurTimeCh05, cmbLC1MeasCurTimeCh06, cmbLC1MeasCurTimeCh07, cmbLC1MeasCurTimeCh08, cmbLC1MeasCurTimeCh09, cmbLC1MeasCurTimeCh10, cmbLC1MeasCurTimeCh11, cmbLC1MeasCurTimeCh12, cmbLC1MeasCurTimeCh13, cmbLC1MeasCurTimeCh14, cmbLC1MeasCurTimeCh15 };
+            lc2MeasCurTime = new ComboBox[] { cmbLC2MeasCurTimeCh00, cmbLC2MeasCurTimeCh01, cmbLC2MeasCurTimeCh02, cmbLC2MeasCurTimeCh03, cmbLC2MeasCurTimeCh04, cmbLC2MeasCurTimeCh05, cmbLC2MeasCurTimeCh06, cmbLC2MeasCurTimeCh07, cmbLC2MeasCurTimeCh08, cmbLC2MeasCurTimeCh09, cmbLC2MeasCurTimeCh10, cmbLC2MeasCurTimeCh11, cmbLC2MeasCurTimeCh12, cmbLC2MeasCurTimeCh13, cmbLC2MeasCurTimeCh14, cmbLC2MeasCurTimeCh15 };
+            lc3MeasCurTime = new ComboBox[] { cmbLC3MeasCurTimeCh00, cmbLC3MeasCurTimeCh01, cmbLC3MeasCurTimeCh02, cmbLC3MeasCurTimeCh03, cmbLC3MeasCurTimeCh04, cmbLC3MeasCurTimeCh05, cmbLC3MeasCurTimeCh06, cmbLC3MeasCurTimeCh07, cmbLC3MeasCurTimeCh08, cmbLC3MeasCurTimeCh09, cmbLC3MeasCurTimeCh10, cmbLC3MeasCurTimeCh11, cmbLC3MeasCurTimeCh12, cmbLC3MeasCurTimeCh13, cmbLC3MeasCurTimeCh14, cmbLC3MeasCurTimeCh15 };
+            lc4MeasCurTime = new ComboBox[] { cmbLC4MeasCurTimeCh00, cmbLC4MeasCurTimeCh01, cmbLC4MeasCurTimeCh02, cmbLC4MeasCurTimeCh03, cmbLC4MeasCurTimeCh04, cmbLC4MeasCurTimeCh05, cmbLC4MeasCurTimeCh06, cmbLC4MeasCurTimeCh07, cmbLC4MeasCurTimeCh08, cmbLC4MeasCurTimeCh09, cmbLC4MeasCurTimeCh10, cmbLC4MeasCurTimeCh11, cmbLC4MeasCurTimeCh12, cmbLC4MeasCurTimeCh13, cmbLC4MeasCurTimeCh14, cmbLC4MeasCurTimeCh15 };
+            lc5MeasCurTime = new ComboBox[] { cmbLC5MeasCurTimeCh00, cmbLC5MeasCurTimeCh01, cmbLC5MeasCurTimeCh02, cmbLC5MeasCurTimeCh03, cmbLC5MeasCurTimeCh04, cmbLC5MeasCurTimeCh05, cmbLC5MeasCurTimeCh06, cmbLC5MeasCurTimeCh07, cmbLC5MeasCurTimeCh08, cmbLC5MeasCurTimeCh09, cmbLC5MeasCurTimeCh10, cmbLC5MeasCurTimeCh11, cmbLC5MeasCurTimeCh12, cmbLC5MeasCurTimeCh13, cmbLC5MeasCurTimeCh14, cmbLC5MeasCurTimeCh15 };
+            lc6MeasCurTime = new ComboBox[] { cmbLC6MeasCurTimeCh00, cmbLC6MeasCurTimeCh01, cmbLC6MeasCurTimeCh02, cmbLC6MeasCurTimeCh03, cmbLC6MeasCurTimeCh04, cmbLC6MeasCurTimeCh05, cmbLC6MeasCurTimeCh06, cmbLC6MeasCurTimeCh07, cmbLC6MeasCurTimeCh08, cmbLC6MeasCurTimeCh09, cmbLC6MeasCurTimeCh10, cmbLC6MeasCurTimeCh11, cmbLC6MeasCurTimeCh12, cmbLC6MeasCurTimeCh13, cmbLC6MeasCurTimeCh14, cmbLC6MeasCurTimeCh15 };
+            lcMeasCurTimes = new ComboBox[][] { lc1MeasCurTime, lc2MeasCurTime, lc3MeasCurTime, lc4MeasCurTime, lc5MeasCurTime, lc6MeasCurTime };
+
         }
 
         private void cmbHC1Mode00_SelectedIndexChanged(object sender, EventArgs e)
@@ -2556,111 +2869,305 @@ namespace M1ConfigGenerator
             //    lblHC1Ch05.Visible = true;
             //}
         }
+        private void ckbTabVisAux1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(ckbTabVisAux1.Checked == true)
+            {
+                this.tabControlAux1QF.SelectedIndex = 1;
+            } else
+            {
+                this.tabControlAux1QF.SelectedIndex = 0;
+            }
+        }
 
-        private void cmbHC1Mode02_SelectedIndexChanged(object sender, EventArgs e)
+        private void ckbTabVisAux2_CheckedChanged(object sender, EventArgs e)
+        {
+            if(ckbTabVisAux2.Checked == true)
+            {
+                this.tabControlAux2QF.SelectedIndex = 1;
+            } else
+            {
+                this.tabControlAux2QF.SelectedIndex = 0;
+            }
+        }
+
+        private void ckbTabVisBreaker1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(ckbTabVisBreaker1.Checked == true)
+            {
+                this.tablessControl3.SelectedIndex = 1;
+            } else
+            {
+                this.tablessControl3.SelectedIndex = 0;
+            }
+        }
+
+        private void ckbTabVisBreaker2_CheckedChanged(object sender, EventArgs e)
+        {
+            if(ckbTabVisBreaker2.Checked == true)
+            {
+                this.tablessControl4.SelectedIndex = 1;
+            } else
+            {
+                this.tablessControl4.SelectedIndex = 0;
+            }
+        }
+
+        private void ckbTabVisDimmer1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(ckbTabVisDimmer1.Checked == true)
+            {
+                this.tabControlDimmer1QF.SelectedIndex = 1;
+            } else
+            {
+                this.tabControlDimmer1QF.SelectedIndex = 0;
+            }
+        }
+
+        private void ckbTabVisDimmer2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckbTabVisDimmer2.Checked == true)
+            {
+                this.tabControlDimmer2QF.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tabControlDimmer2QF.SelectedIndex = 0;
+            }
+        }
+
+        private void ckbTabVisHC1_CheckedChanged(object sender, EventArgs e)
+        {
+            if( ckbTabVisHC1.Checked == true)
+            {
+                this.tabControlHC1QF.SelectedIndex = 1;
+            } else
+            {
+                this.tabControlHC1QF.SelectedIndex = 0;
+            }
+        }
+
+        private void ckbTabVisHC2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckbTabVisHC2.Checked == true)
+            {
+                this.tabControlHC2QF.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tabControlHC2QF.SelectedIndex = 0;
+            }
+        }
+
+        private void ckbTabVisLC2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckbTabVisLC2.Checked == true)
+            {
+                this.tabControlLC2QF.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tabControlLC2QF.SelectedIndex = 0;
+            }
+        }
+
+        private void checkBox2_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if(checkBox2.Checked == true)
+            {
+                this.tabControlLC1QF.SelectedIndex = 1;
+            } else
+            {
+                this.tabControlLC1QF.SelectedIndex = 0;
+            }
+        }
+
+        private void checkBox514_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox514.Checked == true)
+            {
+                this.tablessControl1.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tablessControl1.SelectedIndex = 0;
+            }
+        }
+
+        private void checkBox10_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void cmbHC1Mode03_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void cmbHC1Mode04_SelectedIndexChanged(object sender, EventArgs e)
+        private void tabLC3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void cmbHC1Mode05_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox522_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void cmbHC1Mode06_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox515_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox515.Checked == true)
+            {
+                this.tablessControl2.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tablessControl2.SelectedIndex = 0;
+            }
         }
 
-        private void cmbHC1Mode07_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox516_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox516.Checked == true)
+            {
+                this.tablessControl5.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tablessControl5.SelectedIndex = 0;
+            }
         }
 
-        private void cmbHC1Mode08_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox517_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox517.Checked == true)
+            {
+                this.tablessControl6.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tablessControl6.SelectedIndex = 0;
+            }
         }
 
-        private void cmbHC1Mode09_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox518_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox518.Checked == true)
+            {
+                this.tablessControl7.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tablessControl7.SelectedIndex = 0;
+            }
         }
 
-        private void cmbHC1Mode10_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox519_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox519.Checked == true)
+            {
+                this.tablessControl8.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tablessControl8.SelectedIndex = 0;
+            }
         }
 
-        private void cmbHC1Mode11_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox520_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox520.Checked == true)
+            {
+                this.tabControl1.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tabControl1.SelectedIndex = 0;
+            }
         }
 
-        private void cmbHC2Mode01_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox521_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox521.Checked == true)
+            {
+                this.tabControl2.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tabControl2.SelectedIndex = 0;
+            }
         }
 
-        private void cmbHC2Mode02_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox522_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox522.Checked == true)
+            {
+                this.tabControl3.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tabControl3.SelectedIndex = 0;
+            }
         }
 
-        private void cmbHC2Mode03_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox523_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox523.Checked == true)
+            {
+                this.tabControl4.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tabControl4.SelectedIndex = 0;
+            }
         }
 
-        private void cmbHC2Mode04_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox524_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox524.Checked == true)
+            {
+                this.tablessControl9.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tablessControl9.SelectedIndex = 0;
+            }
         }
 
-        private void cmbHC2Mode05_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox525_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox525.Checked == true)
+            {
+                this.tablessControl10.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tablessControl10.SelectedIndex = 0;
+            }
         }
 
-        private void cmbHC2Mode06_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox526_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox526.Checked == true)
+            {
+                this.tablessControl11.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tablessControl11.SelectedIndex = 0;
+            }
         }
 
-        private void cmbHC2Mode07_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox527_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox527.Checked == true)
+            {
+                this.tablessControl12.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tablessControl12.SelectedIndex = 0;
+            }
         }
-
-        private void cmbHC2Mode08_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbHC2Mode09_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbHC2Mode10_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbHC2Mode11_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

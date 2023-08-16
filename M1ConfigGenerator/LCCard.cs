@@ -11,6 +11,7 @@ namespace M1ConfigGenerator
     {
         public LCCard(int argInt)
         {
+            
             //SetTestString(argInt);
 
             SetCardLetter(Convert.ToString(argInt));
@@ -168,10 +169,41 @@ namespace M1ConfigGenerator
                 {
                     lcChDirectionValues[argIndex] = "DRVR_STATE_HIGH";
                 }
-
             }
         }
 
+        public void SetLock(bool argBool, int argInt)
+        {
+            lcChLockValues[argInt] = argBool ? "TRUE" : "FALSE";
+        }
+        public void SetAllowOver(bool argBool, int argInt)
+        {
+            lcChLockValues[argInt] = argBool ? "TRUE" : "FALSE";
+        }
+        public void SetDirection(string argString, int argInt)
+        {
+            lcChDirectionValues[argInt] = argString;
+        }
+        public void SetTimeoutTimes(string argString, int argInt)
+        {
+            lcChTimeoutTimeValues[argInt] = argString;
+        }
+        public void SetMaxOn(string argString, int argInt)
+        {
+            lcChMaxOnValues[argInt] = argString;
+        }
+        public void SetMaxDurRecovery(string argString, int argInt)
+        {
+            lcChMaxDurRecoveryTimeValues[argInt] = argString;
+        }
+        public void SetUCAmp(string argString, int argInt)
+        {
+            lcChUndercurrentAmpsValues[argInt] = argString;
+        }
+        public void SetMeasCurTime(string argString, int argInt)
+        {
+            lcChMeasCurTimeValues[argInt] = argString;
+        }
         public void SetQuickPair(bool argBool, int argInt)
         {
             if (argBool == true)
@@ -190,13 +222,13 @@ namespace M1ConfigGenerator
         public string[] lcParameterNames =
         {
             "DEVICE_CURRENT_LIMIT_Z     ",
-            "DEVICE_OVRCUR_SHUTDN_MSEC_Z"
+            "DEVICE_OVRCUR_SHUTDN_MSEC_Z",
         };
 
         public string[] lcParameterValues =
         {
             "17", // overall current limit
-            "2000" // device overcurrent shutdown time
+            "2000", // device overcurrent shutdown time
         };
 
         public string[] lcChLockNames = { "LOCK_CHNL_Z0 ", "LOCK_CHNL_Z1 ", "LOCK_CHNL_Z2 ", "LOCK_CHNL_Z3 ", "LOCK_CHNL_Z4 ", "LOCK_CHNL_Z5 ", "LOCK_CHNL_Z6 ", "LOCK_CHNL_Z7 ", 
@@ -274,5 +306,7 @@ namespace M1ConfigGenerator
         public string[] lcChParkNames = { "PARK_SAFETY_EN_CHNL_Z0 ", "PARK_SAFETY_EN_CHNL_Z1 ", "PARK_SAFETY_EN_CHNL_Z2 ", "PARK_SAFETY_EN_CHNL_Z3 ", "PARK_SAFETY_EN_CHNL_Z4 ", "PARK_SAFETY_EN_CHNL_Z5 ", "PARK_SAFETY_EN_CHNL_Z6 ", "PARK_SAFETY_EN_CHNL_Z7 ",
                                               "PARK_SAFETY_EN_CHNL_Z8 ", "PARK_SAFETY_EN_CHNL_Z9 ", "PARK_SAFETY_EN_CHNL_Z10", "PARK_SAFETY_EN_CHNL_Z11", "PARK_SAFETY_EN_CHNL_Z12", "PARK_SAFETY_EN_CHNL_Z13", "PARK_SAFETY_EN_CHNL_Z14", "PARK_SAFETY_EN_CHNL_Z15" };
         public string[] lcChParkValues = { "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED" };
-    }
+        
+    }   
+    
 }

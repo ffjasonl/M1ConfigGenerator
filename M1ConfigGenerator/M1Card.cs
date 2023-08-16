@@ -47,7 +47,7 @@ namespace M1ConfigGenerator
             "ENABLE_FORCE_CMDS_ADDR_Z           ", // 10
             "DSA_ADDR_Z                         ", // 11
             "DRIVER_DEVICE_INSTANCE_ADDR_Z      ", // 12
-            "BASE_DRIVER_INDEX_ADDR_Z           "  // 13
+            "BASE_DRIVER_INDEX_ADDR_Z           ", // 13
         };
 
         public string[] m1ParameterValues =
@@ -65,7 +65,7 @@ namespace M1ConfigGenerator
             "FALSE", // force commands
             "0x92", // set to DC Load DSA; using this status is standard so defaults to 0x92
             "0xFF", // driver device instance
-            "" // base driver instance, do not default
+            "", // base driver instance, do not default
         };
 
         public string[] cardChGroup0Names = { "GROUP_INDEX0_CHNL_Z0 ", "GROUP_INDEX0_CHNL_Z1 ", "GROUP_INDEX0_CHNL_Z2 ", "GROUP_INDEX0_CHNL_Z3 ", "GROUP_INDEX0_CHNL_Z4 ", "GROUP_INDEX0_CHNL_Z5 ", "GROUP_INDEX0_CHNL_Z6 ", "GROUP_INDEX0_CHNL_Z7 ", 
@@ -155,6 +155,7 @@ namespace M1ConfigGenerator
         {
             m1ParameterValues[ENABLE_WINDOW_SHADE_CMD] = enabled ? "TRUE" : "FALSE";
         }
+        
         public void SetForce(bool enabled)
         {
             m1ParameterValues[ENABLE_FORCE_CMDS] = enabled ? "TRUE" : "FALSE";

@@ -129,6 +129,56 @@ namespace M1ConfigGenerator
             dimmerChOvercurrentTimeValues[argInt] = argString;
         }
 
+        public  void SetLock(int argInt, bool argBool)
+        {
+            dimmerChLockValues[argInt] = argBool ? "True" : "False";
+        }
+
+        public void SetPWMFreq(int argInt, string argString)
+        {
+            dimmerChPwmDutyValues[argInt] = argString;
+        }
+
+        public void SetPWMDuty(int argInt, string argString)
+        {
+            dimmerChPwmDutyValues[argInt] = argString;
+        }
+
+        public void SetPWMEnable(int argInt, bool argBool)
+        {
+            dimmerChPwmEnableValues[argInt] = argBool ? "True" : "False";
+        }
+
+        public void SetOverride(int argInt, bool argBool)
+        {
+            dimmerChOverrideValues[argInt] = argBool ? "True" : "False";
+        }
+
+        public void SetDirection(int argInt, string argString)
+        {
+            dimmerChDirectionValues[argInt] = argString;
+        }
+
+        public void SetTimeout(int argInt, bool argBool)
+        {
+            dimmerChTimeoutValues[argInt] = argBool ? "True" : "False";
+        }
+
+        public void SetTimeoutTime(int argInt, string argString)
+        {
+            dimmerChTimeoutTimeValues[argInt] = argString;
+        }
+
+        public void SetMaxOn(int argInt, string argString)
+        {
+            dimmerChMaxOnValues[argInt] = argString;
+        }
+
+        public void SetMaxDurRec(int argInt, string argString)
+        {
+            dimmerChMaxDurRecoveryTimeValues[argInt] = argString;
+        }
+
         private string configPath = @"M1_DcDriver_Config\Src\M1_Dimmer\DeviceConfigs\";
 
         public string[] dimmerParameterNames =

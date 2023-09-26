@@ -3030,11 +3030,11 @@ namespace M1ConfigGenerator
         {
             if (checkBox516.Checked == true)
             {
-                this.tablessControl5.SelectedIndex = 1;
+                this.tabControlDimmer3QF.SelectedIndex = 1;
             }
             else
             {
-                this.tablessControl5.SelectedIndex = 0;
+                this.tabControlDimmer3QF.SelectedIndex = 0;
             }
         }
 
@@ -3042,11 +3042,11 @@ namespace M1ConfigGenerator
         {
             if (checkBox517.Checked == true)
             {
-                this.tablessControl6.SelectedIndex = 1;
+                this.tabControlDimmer4QF.SelectedIndex = 1;
             }
             else
             {
-                this.tablessControl6.SelectedIndex = 0;
+                this.tabControlDimmer4QF.SelectedIndex = 0;
             }
         }
 
@@ -3054,11 +3054,11 @@ namespace M1ConfigGenerator
         {
             if (checkBox518.Checked == true)
             {
-                this.tablessControl7.SelectedIndex = 1;
+                this.tabControlDimmer5QF.SelectedIndex = 1;
             }
             else
             {
-                this.tablessControl7.SelectedIndex = 0;
+                this.tabControlDimmer5QF.SelectedIndex = 0;
             }
         }
 
@@ -3066,11 +3066,11 @@ namespace M1ConfigGenerator
         {
             if (checkBox519.Checked == true)
             {
-                this.tablessControl8.SelectedIndex = 1;
+                this.tabControlDimmer6QF.SelectedIndex = 1;
             }
             else
             {
-                this.tablessControl8.SelectedIndex = 0;
+                this.tabControlDimmer6QF.SelectedIndex = 0;
             }
         }
 

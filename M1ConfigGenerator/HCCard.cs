@@ -207,16 +207,16 @@ namespace M1ConfigGenerator
         }
         
 
-        public void SetModeAndPairing(int argIndex, string argMode, bool argStartup)
+        public void SetModeAndPairing(int argIndex, string argMode, string argStartup)
         {
             if (argMode == "Ground")
             {
                 hcChModeValues[argIndex] = "DRVR_TYPE_LOW_SIDE";
 
-                if (argStartup == true)
-                {
-                    hcChDirectionValues[argIndex] = "DRVR_STATE_LOW";
-                }
+                //if (argStartup == true)
+                //{
+                //    hcChDirectionValues[argIndex] = "DRVR_STATE_LOW";
+                //}
             }
             else if (argMode == "RP UP")
             {
@@ -258,11 +258,10 @@ namespace M1ConfigGenerator
             }
             else // 12V+
             {
-                if (argStartup == true)
-                {
-                    hcChDirectionValues[argIndex] = "DRVR_STATE_HIGH";
-                }
-
+                //if (argStartup == true)
+                //{
+                //    hcChDirectionValues[argIndex] = "DRVR_STATE_HIGH";
+                //}
             }
         }
 

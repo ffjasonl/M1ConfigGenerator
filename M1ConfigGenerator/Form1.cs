@@ -154,8 +154,8 @@ namespace M1ConfigGenerator
         bool[][] hc6Groups;
         ComboBox[] hc1Mode; ComboBox[] hc2Mode; ComboBox[] hc3Mode; ComboBox[] hc4Mode; ComboBox[] hc5Mode; ComboBox[] hc6Mode;
         ComboBox[][] hcModes;
-        bool[] hc1Startup; bool[] hc2Startup; bool[] hc3Startup; bool[] hc4Startup; bool[] hc5Startup; bool[] hc6Startup;
-        bool[][] hcStartup;
+        ComboBox[] hc1Startup; ComboBox[] hc2Startup; ComboBox[] hc3Startup; ComboBox[] hc4Startup; ComboBox[] hc5Startup; ComboBox[] hc6Startup;
+        ComboBox[][] hcStartup;
         TextBox[] HC1PWMDuty; TextBox[] HC2PWMDuty; TextBox[] HC3PWMDuty; TextBox[] HC4PWMDuty; TextBox[] HC5PWMDuty; TextBox[] HC6PWMDuty;
         TextBox[][] hcPWMDuties;
         CheckBox[] HC1PWMEnable; CheckBox[] HC2PWMEnable; CheckBox[] HC3PWMEnable; CheckBox[] HC4PWMEnable; CheckBox[] HC5PWMEnable; CheckBox[] HC6PWMEnable;
@@ -1481,6 +1481,14 @@ namespace M1ConfigGenerator
             hc6Group11 = new bool[] { chkHC6MG1Ch11.Checked, chkHC6MG2Ch11.Checked, chkHC6MG3Ch11.Checked, chkHC6MG4Ch11.Checked };
             hc6Groups = new bool[][] { hc6Group00, hc6Group01, hc6Group02, hc6Group03, hc6Group04, hc6Group05, hc6Group06, hc6Group07, hc6Group08, hc6Group09, hc6Group10, hc6Group11 };
 
+            //hc1Startup = new bool[] { chkHC1Startup00.Checked, chkHC1Startup01.Checked, chkHC1Startup02.Checked, chkHC1Startup03.Checked, chkHC1Startup04.Checked, chkHC1Startup05.Checked, chkHC1Startup06.Checked, chkHC1Startup07.Checked, chkHC1Startup08.Checked, chkHC1Startup09.Checked, chkHC1Startup10.Checked, chkHC1Startup11.Checked };
+            //hc2Startup = new bool[] { chkHC2Startup00.Checked, chkHC2Startup01.Checked, chkHC2Startup02.Checked, chkHC2Startup03.Checked, chkHC2Startup04.Checked, chkHC2Startup05.Checked, chkHC2Startup06.Checked, chkHC2Startup07.Checked, chkHC2Startup08.Checked, chkHC2Startup09.Checked, chkHC2Startup10.Checked, chkHC2Startup11.Checked };
+            //hc3Startup = new bool[] { chkHC3Startup00.Checked, chkHC3Startup01.Checked, chkHC3Startup02.Checked, chkHC3Startup03.Checked, chkHC3Startup04.Checked, chkHC3Startup05.Checked, chkHC3Startup06.Checked, chkHC3Startup07.Checked, chkHC3Startup08.Checked, chkHC3Startup09.Checked, chkHC3Startup10.Checked, chkHC3Startup11.Checked };
+            //hc4Startup = new bool[] { chkHC4Startup00.Checked, chkHC4Startup01.Checked, chkHC4Startup02.Checked, chkHC4Startup03.Checked, chkHC4Startup04.Checked, chkHC4Startup05.Checked, chkHC4Startup06.Checked, chkHC4Startup07.Checked, chkHC4Startup08.Checked, chkHC4Startup09.Checked, chkHC4Startup10.Checked, chkHC4Startup11.Checked };
+            //hc5Startup = new bool[] { chkHC5Startup00.Checked, chkHC5Startup01.Checked, chkHC5Startup02.Checked, chkHC5Startup03.Checked, chkHC5Startup04.Checked, chkHC5Startup05.Checked, chkHC5Startup06.Checked, chkHC5Startup07.Checked, chkHC5Startup08.Checked, chkHC5Startup09.Checked, chkHC5Startup10.Checked, chkHC5Startup11.Checked };
+            //hc6Startup = new bool[] { chkHC6Startup00.Checked, chkHC6Startup01.Checked, chkHC6Startup02.Checked, chkHC6Startup03.Checked, chkHC6Startup04.Checked, chkHC6Startup05.Checked, chkHC6Startup06.Checked, chkHC6Startup07.Checked, chkHC6Startup08.Checked, chkHC6Startup09.Checked, chkHC6Startup10.Checked, chkHC6Startup11.Checked };
+            //hcStartup = new bool[][] { hc1Startup, hc2Startup, hc3Startup, hc4Startup, hc5Startup, hc6Startup };
+
             // needed to make a list of multidimensional arrays to pass to the group allocation function
             List<bool[][]> hcGroups = new List<bool[][]>();
             hcGroups.Add(hc1Groups);
@@ -1490,13 +1498,6 @@ namespace M1ConfigGenerator
             hcGroups.Add(hc5Groups);
             hcGroups.Add(hc6Groups);
 
-            hc1Startup = new bool[] { chkHC1Startup00.Checked, chkHC1Startup01.Checked, chkHC1Startup02.Checked, chkHC1Startup03.Checked, chkHC1Startup04.Checked, chkHC1Startup05.Checked, chkHC1Startup06.Checked, chkHC1Startup07.Checked, chkHC1Startup08.Checked, chkHC1Startup09.Checked, chkHC1Startup10.Checked, chkHC1Startup11.Checked };
-            hc2Startup = new bool[] { chkHC2Startup00.Checked, chkHC2Startup01.Checked, chkHC2Startup02.Checked, chkHC2Startup03.Checked, chkHC2Startup04.Checked, chkHC2Startup05.Checked, chkHC2Startup06.Checked, chkHC2Startup07.Checked, chkHC2Startup08.Checked, chkHC2Startup09.Checked, chkHC2Startup10.Checked, chkHC2Startup11.Checked };
-            hc3Startup = new bool[] { chkHC3Startup00.Checked, chkHC3Startup01.Checked, chkHC3Startup02.Checked, chkHC3Startup03.Checked, chkHC3Startup04.Checked, chkHC3Startup05.Checked, chkHC3Startup06.Checked, chkHC3Startup07.Checked, chkHC3Startup08.Checked, chkHC3Startup09.Checked, chkHC3Startup10.Checked, chkHC3Startup11.Checked };
-            hc4Startup = new bool[] { chkHC4Startup00.Checked, chkHC4Startup01.Checked, chkHC4Startup02.Checked, chkHC4Startup03.Checked, chkHC4Startup04.Checked, chkHC4Startup05.Checked, chkHC4Startup06.Checked, chkHC4Startup07.Checked, chkHC4Startup08.Checked, chkHC4Startup09.Checked, chkHC4Startup10.Checked, chkHC4Startup11.Checked };
-            hc5Startup = new bool[] { chkHC5Startup00.Checked, chkHC5Startup01.Checked, chkHC5Startup02.Checked, chkHC5Startup03.Checked, chkHC5Startup04.Checked, chkHC5Startup05.Checked, chkHC5Startup06.Checked, chkHC5Startup07.Checked, chkHC5Startup08.Checked, chkHC5Startup09.Checked, chkHC5Startup10.Checked, chkHC5Startup11.Checked };
-            hc6Startup = new bool[] { chkHC6Startup00.Checked, chkHC6Startup01.Checked, chkHC6Startup02.Checked, chkHC6Startup03.Checked, chkHC6Startup04.Checked, chkHC6Startup05.Checked, chkHC6Startup06.Checked, chkHC6Startup07.Checked, chkHC6Startup08.Checked, chkHC6Startup09.Checked, chkHC6Startup10.Checked, chkHC6Startup11.Checked };
-            hcStartup = new bool[][] { hc1Startup, hc2Startup, hc3Startup, hc4Startup, hc5Startup, hc6Startup };
 
             // HC cards
             for (int card = 0; card < Convert.ToInt16(cmbStartHC.Text); card++)
@@ -1515,7 +1516,7 @@ namespace M1ConfigGenerator
                     hcObjects[card].SetOCAmps(channel, hcOCAmps[card][channel].Text);
                     hcObjects[card].SetOCTime(channel, hcOCTime[card][channel].Text);
                     hcObjects[card].SetGroup0(hcGroups[card][channel], channel); // takes care of all 4 groups
-                    hcObjects[card].SetModeAndPairing(channel, hcModes[card][channel].Text, hcStartup[card][channel]); // mode, pairing, and direction (startup)
+                    hcObjects[card].SetModeAndPairing(channel, hcModes[card][channel].Text, hcStartup[card][channel].Text); // mode, pairing, and direction (startup)
                     hcObjects[card].SetPWMDuty(channel, hcPWMDuties[card][channel].Text);
                     hcObjects[card].SetPWMEnable(channel, hcPWMEnables[card][channel].Checked);
                     hcObjects[card].SetDirection(channel, hcDirections[card][channel].Text);

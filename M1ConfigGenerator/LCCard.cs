@@ -11,54 +11,54 @@ namespace M1ConfigGenerator
     {
         public LCCard(int argInt)
         {
-            
+
             //SetTestString(argInt);
 
-            SetCardLetter(Convert.ToString(argInt));
-            ChangeConfigName();
+            M1_SetCardLetter(Convert.ToString(argInt));
+            M1_ChangeConfigName();
             // general
-            ChangeAddress(m1ParameterNames);
+            M1_ChangeAddress(m1ParameterNames);
             // card-specific
-            ChangeAddress(lcParameterNames);
+            M1_ChangeAddress(lcParameterNames);
             // channels
-            ChangeAddress(lcChLockNames);
-            ChangeAddress(lcChDirectionNames);
-            ChangeAddress(lcChModeNames);
-            ChangeAddress(lcChDeadtimeNames);
-            ChangeAddress(lcChPairedNames);
-            ChangeAddress(lcChPwmEnableNames);
-            ChangeAddress(lcChPwmFreqNames);
-            ChangeAddress(lcChTimeoutNames);
-            ChangeAddress(lcChTimeoutTimeNames);
-            ChangeAddress(lcChMaxOnNames);
-            ChangeAddress(lcChMaxDurRecoveryTimeNames);
-            ChangeAddress(cardChGroup0Names);
-            ChangeAddress(cardChGroup1Names);
-            ChangeAddress(cardChGroup2Names);
-            ChangeAddress(cardChGroup3Names);
-            ChangeAddress(lcChOvercurrentAmpsNames);
-            ChangeAddress(lcChUndercurrentAmpsNames);
-            ChangeAddress(lcChOvercurrentTimeNames);
-            ChangeAddress(lcChMeasCurTimeNames);
-            ChangeAddress(lcChOverrideReverseNames);
-            ChangeAddress(lcChOverrideForwardNames);
-            ChangeAddress(lcChIGNNames);
-            ChangeAddress(lcChParkNames);
-            SetNodeCfg();
+            M1_ChangeAddress(lcChLockNames);
+            M1_ChangeAddress(lcChDirectionNames);
+            M1_ChangeAddress(lcChModeNames);
+            M1_ChangeAddress(lcChDeadtimeNames);
+            M1_ChangeAddress(lcChPairedNames);
+            M1_ChangeAddress(lcChPwmEnableNames);
+            M1_ChangeAddress(lcChPwmFreqNames);
+            M1_ChangeAddress(lcChTimeoutNames);
+            M1_ChangeAddress(lcChTimeoutTimeNames);
+            M1_ChangeAddress(lcChMaxOnNames);
+            M1_ChangeAddress(lcChMaxDurRecoveryTimeNames);
+            M1_ChangeAddress(cardChGroup0Names);
+            M1_ChangeAddress(cardChGroup1Names);
+            M1_ChangeAddress(cardChGroup2Names);
+            M1_ChangeAddress(cardChGroup3Names);
+            M1_ChangeAddress(lcChOvercurrentAmpsNames);
+            M1_ChangeAddress(lcChUndercurrentAmpsNames);
+            M1_ChangeAddress(lcChOvercurrentTimeNames);
+            M1_ChangeAddress(lcChMeasCurTimeNames);
+            M1_ChangeAddress(lcChOverrideReverseNames);
+            M1_ChangeAddress(lcChOverrideForwardNames);
+            M1_ChangeAddress(lcChIGNNames);
+            M1_ChangeAddress(lcChParkNames);
+            M1_SetNodeCfg();
         }
 
         public void CreateLCFile()
         {
-            using (StreamWriter sw = File.CreateText(@GetConfigPath() + GetConfigName()))
+            using (StreamWriter sw = File.CreateText(@GetConfigPath() + M1_GetConfigName()))
             {
                 DateTime currentDateTime = DateTime.Now;
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);
                 sw.WriteLine("//");
-                sw.WriteLine("//  DEVICE ADDRESS " + GetCardLetter() + " CONFIG");
+                sw.WriteLine("//  DEVICE ADDRESS " + M1_GetCardLetter() + " CONFIG");
                 sw.WriteLine("//");
-                sw.WriteLine("//  This file was auto-generated using the Firefly M1 Config Generator version " + GetVerRev() + " on " + currentDateTime);
+                sw.WriteLine("//  This file was auto-generated using the Firefly M1 Config Generator version " + M1_GetVerRev() + " on " + currentDateTime);
                 sw.WriteLine("//");
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);

@@ -478,17 +478,17 @@ namespace M1ConfigGenerator
             // Aux cards
             for (int card = 0; card < Convert.ToInt16(cmbStartAux.Text); card++)
             {
-                auxObjects[card].SetDevAddr(auxCardNum[card].SelectedIndex, auxPanelNum[card].SelectedIndex);
-                auxObjects[card].SetCfgRev(auxConfigRev[card].Text);
-                auxObjects[card].SetCfgType(auxConfigType[card].Text);
-                auxObjects[card].SetDCDimmer(true); // hard coding for aux card
-                auxObjects[card].SetDCMotor(auxDCMotor[card].Checked);
-                auxObjects[card].SetShade(auxShade[card].Checked);
-                auxObjects[card].SetForce(auxForce[card].Checked);
-                auxObjects[card].SetBaseIndex(auxBaseInstance[card].Text);
+                auxObjects[card].M1_SetDevAddr(auxCardNum[card].SelectedIndex, auxPanelNum[card].SelectedIndex);
+                auxObjects[card].M1_SetCfgRev(auxConfigRev[card].Text);
+                auxObjects[card].M1_SetCfgType(auxConfigType[card].Text);
+                auxObjects[card].M1_SetDCDimmer(true); // hard coding for aux card
+                auxObjects[card].M1_SetDCMotor(auxDCMotor[card].Checked);
+                auxObjects[card].M1_SetShade(auxShade[card].Checked);
+                auxObjects[card].M1_SetForce(auxForce[card].Checked);
+                auxObjects[card].M1_SetBaseIndex(auxBaseInstance[card].Text);
                 for (int channel = 0; channel < 12; channel++)
                 {
-                    auxObjects[card].SetGroup0(auxGroups[card][channel], channel); // takes care of all 4 groups
+                    auxObjects[card].M1_SetGroup0(auxGroups[card][channel], channel); // takes care of all 4 groups
                     auxObjects[card].SetDirection(channel, auxDirections[card][channel].Text);
                     auxObjects[card].SetDeadTime(channel, auxDeadTimes[card][channel].Text);
                     auxObjects[card].SetPaired(channel, auxPairedTimes[card][channel].Text);
@@ -677,12 +677,12 @@ namespace M1ConfigGenerator
         {
             for (int card = 0; card < Convert.ToInt16(cmbStartBreaker.Text); card++)
             {
-                breakerObjects[card].SetDevAddr(breakerCardNum[card].SelectedIndex, breakerPanelNum[card].SelectedIndex);
-                breakerObjects[card].SetCfgRev(breakerConfigRev[card].Text);
-                breakerObjects[card].SetCfgType(breakerConfigType[card].Text);
-                breakerObjects[card].SetDCDriver(true); // hard-coded because these commands are needed for overcurrent reset
-                breakerObjects[card].SetForce(true); // hard-coded in case we want to use the interrupt commands (I think)
-                breakerObjects[card].SetBaseIndex(breakerBaseInstance[card].Text);
+                breakerObjects[card].M1_SetDevAddr(breakerCardNum[card].SelectedIndex, breakerPanelNum[card].SelectedIndex);
+                breakerObjects[card].M1_SetCfgRev(breakerConfigRev[card].Text);
+                breakerObjects[card].M1_SetCfgType(breakerConfigType[card].Text);
+                breakerObjects[card].M1_SetDCDriver(true); // hard-coded because these commands are needed for overcurrent reset
+                breakerObjects[card].M1_SetForce(true); // hard-coded in case we want to use the interrupt commands (I think)
+                breakerObjects[card].M1_SetBaseIndex(breakerBaseInstance[card].Text);
                 breakerObjects[card].SetVINOCAmps(breakerVINOCAmps[card].Text);
                 breakerObjects[card].SetVINOCTime(breakerVINOCTime[card].Text);
                 breakerObjects[card].SetVINInterrupt(breakerVINInterrupt[card].Text);
@@ -1063,19 +1063,19 @@ namespace M1ConfigGenerator
             // Dimmer cards
             for (int card = 0; card < Convert.ToInt16(cmbStartDimmer.Text); card++)
             {
-                dimmerObjects[card].SetDevAddr(dimCardNum[card].SelectedIndex, dimPanelNum[card].SelectedIndex);
-                dimmerObjects[card].SetCfgRev(dimConfigRev[card].Text);
-                dimmerObjects[card].SetCfgType(dimConfigType[card].Text);
-                dimmerObjects[card].SetDCDimmer(true); // hard coding for dimmer card
-                dimmerObjects[card].SetDCMotor(dimDCMotor[card].Checked);
-                dimmerObjects[card].SetShade(dimShade[card].Checked);
-                dimmerObjects[card].SetForce(dimForce[card].Checked);
-                dimmerObjects[card].SetBaseIndex(dimBaseInstance[card].Text);
+                dimmerObjects[card].M1_SetDevAddr(dimCardNum[card].SelectedIndex, dimPanelNum[card].SelectedIndex);
+                dimmerObjects[card].M1_SetCfgRev(dimConfigRev[card].Text);
+                dimmerObjects[card].M1_SetCfgType(dimConfigType[card].Text);
+                dimmerObjects[card].M1_SetDCDimmer(true); // hard coding for dimmer card
+                dimmerObjects[card].M1_SetDCMotor(dimDCMotor[card].Checked);
+                dimmerObjects[card].M1_SetShade(dimShade[card].Checked);
+                dimmerObjects[card].M1_SetForce(dimForce[card].Checked);
+                dimmerObjects[card].M1_SetBaseIndex(dimBaseInstance[card].Text);
                 for (int channel = 0; channel < 12; channel++)
                 {
                     dimmerObjects[card].SetOCAmps(channel, dimmerOCAmps[card][channel].Text);
                     dimmerObjects[card].SetOCTime(channel, dimmerOCTime[card][channel].Text);
-                    dimmerObjects[card].SetGroup0(dimGroups[card][channel], channel); // takes care of all 4 groups
+                    dimmerObjects[card].M1_SetGroup0(dimGroups[card][channel], channel); // takes care of all 4 groups
                     dimmerObjects[card].SetLock(channel, dimmerLocks[card][channel].Checked);
                     dimmerObjects[card].SetPWMFreq(channel, dimmerPWMFreq[card][channel].Text);
                     dimmerObjects[card].SetPWMDuty(channel, dimmerPWMDuties[card][channel].Text);
@@ -1506,33 +1506,33 @@ namespace M1ConfigGenerator
             // HC cards
             for (int card = 0; card < Convert.ToInt16(cmbStartHC.Text); card++)
             {
-                hcObjects[card].SetDevAddr(hcCardNum[card].SelectedIndex, hcPanelNum[card].SelectedIndex);
-                hcObjects[card].SetCfgRev(hcConfigRev[card].Text);
-                hcObjects[card].SetCfgType(hcConfigType[card].Text);
-                hcObjects[card].SetDCDimmer(hcDCDimmer[card].Checked);
-                hcObjects[card].SetRGB(hcRGB[card].Checked);
-                hcObjects[card].SetDCMotor(hcDCMotor[card].Checked);
-                hcObjects[card].SetShade(hcShade[card].Checked);
-                hcObjects[card].SetForce(hcForce[card].Checked);
-                hcObjects[card].SetBaseIndex(hcBaseInstance[card].Text);
+                hcObjects[card].M1_SetDevAddr(hcCardNum[card].SelectedIndex, hcPanelNum[card].SelectedIndex);
+                hcObjects[card].M1_SetCfgRev(hcConfigRev[card].Text);
+                hcObjects[card].M1_SetCfgType(hcConfigType[card].Text);
+                hcObjects[card].M1_SetDCDimmer(hcDCDimmer[card].Checked);
+                hcObjects[card].HC_SetRGB(hcRGB[card].Checked);
+                hcObjects[card].M1_SetDCMotor(hcDCMotor[card].Checked);
+                hcObjects[card].M1_SetShade(hcShade[card].Checked);
+                hcObjects[card].M1_SetForce(hcForce[card].Checked);
+                hcObjects[card].M1_SetBaseIndex(hcBaseInstance[card].Text);
                 for (int channel = 0; channel < 12; channel++)
                 {
-                    hcObjects[card].SetLock(channel, hcLock[card][channel].Checked);
-                    hcObjects[card].SetPWMDuty(channel, hcPWMDuties[card][channel].Text);
-                    hcObjects[card].SetPWMEnable(channel, hcPWMEnables[card][channel].Checked);
-                    hcObjects[card].SetDirection(channel, hcDirections[card][channel].Text);
-                    hcObjects[card].SetMode(channel, hcModeParam[card][channel].Text);
-                    hcObjects[card].SetDeadTime(channel, hcDeadTimes[card][channel].Text);
-                    hcObjects[card].SetPaired(channel, hcPaired[card][channel].Text);
-                    hcObjects[card].SetTimeout(channel, hcTimeouts[card][channel].Checked);
-                    hcObjects[card].SetTimeoutTime(channel, hcTimeoutTimes[card][channel].Text);
-                    hcObjects[card].SetMaxOn(channel, hcMaxOns[card][channel].Text);
-                    hcObjects[card].SetMaxDurRec(channel, hcMaxDurRec[card][channel].Text);
-                    hcObjects[card].SetGroup0(hcGroups[card][channel], channel); // takes care of all 4 groups
-                    hcObjects[card].SetOCAmps(channel, hcOCAmps[card][channel].Text);
-                    hcObjects[card].SetUndAmp(channel, hcUndAmps[card][channel].Text);
-                    hcObjects[card].SetOCTime(channel, hcOCTime[card][channel].Text);
-                    hcObjects[card].SetMeasCurTime(channel, hcMeasCurTimes[card][channel].Text);
+                    hcObjects[card].HC_SetLock(channel, hcLock[0][channel].Checked);
+                    hcObjects[card].HC_SetPWMDuty(channel, hcPWMDuties[card][channel].Text);
+                    hcObjects[card].HC_SetPWMEnable(channel, hcPWMEnables[card][channel].Checked);
+                    hcObjects[card].HC_SetDirection(channel, hcDirections[card][channel].Text);
+                    hcObjects[card].HC_SetMode(channel, hcModeParam[card][channel].Text);
+                    hcObjects[card].HC_SetDeadTime(channel, hcDeadTimes[card][channel].Text);
+                    hcObjects[card].HC_SetPaired(channel, hcPaired[card][channel].Text);
+                    hcObjects[card].HC_SetTimeout(channel, hcTimeouts[card][channel].Checked);
+                    hcObjects[card].HC_SetTimeoutTime(channel, hcTimeoutTimes[card][channel].Text);
+                    hcObjects[card].HC_SetMaxOn(channel, hcMaxOns[card][channel].Text);
+                    hcObjects[card].HC_SetMaxDurRec(channel, hcMaxDurRec[card][channel].Text);
+                    hcObjects[card].M1_SetGroup0(hcGroups[card][channel], channel); // takes care of all 4 groups
+                    hcObjects[card].HC_SetOCAmps(channel, hcOCAmps[card][channel].Text);
+                    hcObjects[card].HC_SetUndAmp(channel, hcUndAmps[card][channel].Text);
+                    hcObjects[card].HC_SetOCTime(channel, hcOCTime[card][channel].Text);
+                    hcObjects[card].HC_SetMeasCurTime(channel, hcMeasCurTimes[card][channel].Text);
                 }
             }
 
@@ -2659,14 +2659,14 @@ namespace M1ConfigGenerator
             // LC cards
             for (int card = 0; card < Convert.ToInt16(cmbStartLC.Text); card++)
             {
-                lcObjects[card].SetDevAddr(lcCardNum[card].SelectedIndex, lcPanelNum[card].SelectedIndex);
-                lcObjects[card].SetCfgRev(lcConfigRev[card].Text);
-                lcObjects[card].SetCfgType(lcConfigType[card].Text);
-                lcObjects[card].SetDCDimmer(lcDCDimmer[card].Checked);
-                lcObjects[card].SetDCMotor(lcDCMotor[card].Checked);
-                lcObjects[card].SetShade(lcShade[card].Checked);
-                lcObjects[card].SetForce(lcForce[card].Checked);
-                lcObjects[card].SetBaseIndex(lcBaseInstance[card].Text);
+                lcObjects[card].M1_SetDevAddr(lcCardNum[card].SelectedIndex, lcPanelNum[card].SelectedIndex);
+                lcObjects[card].M1_SetCfgRev(lcConfigRev[card].Text);
+                lcObjects[card].M1_SetCfgType(lcConfigType[card].Text);
+                lcObjects[card].M1_SetDCDimmer(lcDCDimmer[card].Checked);
+                lcObjects[card].M1_SetDCMotor(lcDCMotor[card].Checked);
+                lcObjects[card].M1_SetShade(lcShade[card].Checked);
+                lcObjects[card].M1_SetForce(lcForce[card].Checked);
+                lcObjects[card].M1_SetBaseIndex(lcBaseInstance[card].Text);
                 for (int channel = 0; channel < 16; channel++)
                 {
                     if (lcStandalone[card].Checked == false) // only set overcurrent parameters if it's not a standalone card
@@ -2674,7 +2674,7 @@ namespace M1ConfigGenerator
                         lcObjects[card].SetOCAmps(channel, lcOCAmps[card][channel].Text);
                         lcObjects[card].SetOCTime(channel, lcOCTime[card][channel].Text);
                     }
-                    lcObjects[card].SetGroup0(lcGroups[card][channel], channel); // takes care of all 4 groups
+                    lcObjects[card].M1_SetGroup0(lcGroups[card][channel], channel); // takes care of all 4 groups
                     lcObjects[card].SetLock(lcLocks[card][channel].Checked, channel);
                     lcObjects[card].SetDirection(lcDirections[card][channel].Text, channel);
                     lcObjects[card].SetTimeoutTimes(lcTimeoutTimes[card][channel].Text, channel);
@@ -3371,6 +3371,9 @@ namespace M1ConfigGenerator
             hc6Mode = new ComboBox[] { cmbHC6Mode00, cmbHC6Mode01, cmbHC6Mode02, cmbHC6Mode03, cmbHC6Mode04, cmbHC6Mode05, cmbHC6Mode06, cmbHC6Mode07, cmbHC6Mode08, cmbHC6Mode09, cmbHC6Mode10, cmbHC6Mode11 };
             hcModes = new ComboBox[][] { hc1Mode, hc2Mode, hc3Mode, hc4Mode, hc5Mode, hc6Mode };
             hc1Startup = new ComboBox[] { cmbHC1Startup00, cmbHC1Startup01, cmbHC1Startup02, cmbHC1Startup03, cmbHC1Startup04, cmbHC1Startup05, cmbHC1Startup06, cmbHC1Startup07, cmbHC1Startup08, cmbHC1Startup09, cmbHC1Startup10, cmbHC1Startup11 };
+            hcStartup = new ComboBox[][] { hc1Startup };
+            hc1Lock = new CheckBox[] { chkHC1Lock00, chkHC1Lock01, chkHC1Lock02, chkHC1Lock03, chkHC1Lock04, chkHC1Lock05, chkHC1Lock06, chkHC1Lock07, chkHC1Lock08, chkHC1Lock09, chkHC1Lock10, chkHC1Lock11 };
+            hcLock = new CheckBox[][] { hc1Lock };
             HC1PWMDuty = new TextBox[] { txtbHC1PWMDutyCh00, txtbHC1PWMDutyCh01, txtbHC1PWMDutyCh02, txtbHC1PWMDutyCh03, txtbHC1PWMDutyCh04, txtbHC1PWMDutyCh05, txtbHC1PWMDutyCh06, txtbHC1PWMDutyCh07, txtbHC1PWMDutyCh08, txtbHC1PWMDutyCh09, txtbHC1PWMDutyCh10, txtbHC1PWMDutyCh11 };
             HC2PWMDuty = new TextBox[] { txtbHC2PWMDutyCh00, txtbHC2PWMDutyCh01, txtbHC2PWMDutyCh02, txtbHC2PWMDutyCh03, txtbHC2PWMDutyCh04, txtbHC2PWMDutyCh05, txtbHC2PWMDutyCh06, txtbHC2PWMDutyCh07, txtbHC2PWMDutyCh08, txtbHC2PWMDutyCh09, txtbHC2PWMDutyCh10, txtbHC2PWMDutyCh11 };
             HC3PWMDuty = new TextBox[] { txtbHC3PWMDutyCh00, txtbHC3PWMDutyCh01, txtbHC3PWMDutyCh02, txtbHC3PWMDutyCh03, txtbHC3PWMDutyCh04, txtbHC3PWMDutyCh05, txtbHC3PWMDutyCh06, txtbHC3PWMDutyCh07, txtbHC3PWMDutyCh08, txtbHC3PWMDutyCh09, txtbHC3PWMDutyCh10, txtbHC3PWMDutyCh11 };

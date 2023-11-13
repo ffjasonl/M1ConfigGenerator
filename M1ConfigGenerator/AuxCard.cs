@@ -13,38 +13,38 @@ namespace M1ConfigGenerator
         {
             //SetTestString(argInt);
 
-            SetCardLetter(Convert.ToString(argInt));
-            ChangeConfigName();
+            M1_SetCardLetter(Convert.ToString(argInt));
+            M1_ChangeConfigName();
             // general
-            ChangeAddress(m1ParameterNames);
+            M1_ChangeAddress(m1ParameterNames);
             // channels
-            ChangeAddress(auxChLockNames);
-            ChangeAddress(auxChDirectionNames);
-            ChangeAddress(auxChDeadtimeNames);
-            ChangeAddress(auxChPairedNames);
-            ChangeAddress(auxChTimeoutNames);
-            ChangeAddress(auxChTimeoutTimeNames);
-            ChangeAddress(auxChMaxOnNames);
-            ChangeAddress(auxChMaxDurRecoveryTimeNames);
-            ChangeAddress(cardChGroup0Names);
-            ChangeAddress(cardChGroup1Names);
-            ChangeAddress(cardChGroup2Names);
-            ChangeAddress(cardChGroup3Names);
-            SetNodeCfg();
+            M1_ChangeAddress(auxChLockNames);
+            M1_ChangeAddress(auxChDirectionNames);
+            M1_ChangeAddress(auxChDeadtimeNames);
+            M1_ChangeAddress(auxChPairedNames);
+            M1_ChangeAddress(auxChTimeoutNames);
+            M1_ChangeAddress(auxChTimeoutTimeNames);
+            M1_ChangeAddress(auxChMaxOnNames);
+            M1_ChangeAddress(auxChMaxDurRecoveryTimeNames);
+            M1_ChangeAddress(cardChGroup0Names);
+            M1_ChangeAddress(cardChGroup1Names);
+            M1_ChangeAddress(cardChGroup2Names);
+            M1_ChangeAddress(cardChGroup3Names);
+            M1_SetNodeCfg();
         }
 
         public void CreateAuxFile()
         {
-            using (StreamWriter sw = File.CreateText(@GetConfigPath() + GetConfigName()))
+            using (StreamWriter sw = File.CreateText(@GetConfigPath() + M1_GetConfigName()))
             {
                 DateTime currentDateTime = DateTime.Now;
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);
                 sw.WriteLine("//");
-                sw.WriteLine("//  DEVICE ADDRESS " + GetCardLetter() + " CONFIG");
+                sw.WriteLine("//  DEVICE ADDRESS " + M1_GetCardLetter() + " CONFIG");
                 sw.WriteLine("//");
-                sw.WriteLine("//  This file was auto-generated using the Firefly M1 Config Generator version " + GetVerRev() + " on " + currentDateTime);
+                sw.WriteLine("//  This file was auto-generated using the Firefly M1 Config Generator version " + M1_GetVerRev() + " on " + currentDateTime);
                 sw.WriteLine("//");
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);

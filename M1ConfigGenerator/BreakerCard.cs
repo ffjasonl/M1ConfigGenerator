@@ -11,41 +11,41 @@ namespace M1ConfigGenerator
     {
         public BreakerCard(int argInt)
         {
-            SetCardLetter(Convert.ToString(argInt));
-            ChangeConfigName();
+            M1_SetCardLetter(Convert.ToString(argInt));
+            M1_ChangeConfigName();
             // general
-            ChangeAddress(m1ParameterNames);
+            M1_ChangeAddress(m1ParameterNames);
             // card-specific
-            ChangeAddress(vinParameterNames);
+            M1_ChangeAddress(vinParameterNames);
             // channels
-            ChangeAddress(breakerChDirectionNames);
-            ChangeAddress(breakerChOvercurrentAmpsNames);
-            ChangeAddress(breakerChUndercurrentAmpsNames);
-            ChangeAddress(breakerChOvercurrentTimeNames);
-            ChangeAddress(breakerChMeasCurTimeNames);
-            ChangeAddress(breakerChModeNames);
-            ChangeAddress(breakerChPairedNames);
-            ChangeAddress(breakerChIGNNames);
-            ChangeAddress(breakerChParkNames);
-            ChangeAddress(cardChGroup0Names);
-            ChangeAddress(cardChGroup1Names);
-            ChangeAddress(cardChGroup2Names);
-            ChangeAddress(cardChGroup3Names);
-            SetNodeCfg();
+            M1_ChangeAddress(breakerChDirectionNames);
+            M1_ChangeAddress(breakerChOvercurrentAmpsNames);
+            M1_ChangeAddress(breakerChUndercurrentAmpsNames);
+            M1_ChangeAddress(breakerChOvercurrentTimeNames);
+            M1_ChangeAddress(breakerChMeasCurTimeNames);
+            M1_ChangeAddress(breakerChModeNames);
+            M1_ChangeAddress(breakerChPairedNames);
+            M1_ChangeAddress(breakerChIGNNames);
+            M1_ChangeAddress(breakerChParkNames);
+            M1_ChangeAddress(cardChGroup0Names);
+            M1_ChangeAddress(cardChGroup1Names);
+            M1_ChangeAddress(cardChGroup2Names);
+            M1_ChangeAddress(cardChGroup3Names);
+            M1_SetNodeCfg();
         }
 
         public void CreateBreakerFile()
         {
-            using (StreamWriter sw = File.CreateText(@GetConfigPath() + GetConfigName()))
+            using (StreamWriter sw = File.CreateText(@GetConfigPath() + M1_GetConfigName()))
             {
                 DateTime currentDateTime = DateTime.Now;
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);
                 sw.WriteLine("//");
-                sw.WriteLine("//  DEVICE ADDRESS " + GetCardLetter() + " CONFIG");
+                sw.WriteLine("//  DEVICE ADDRESS " + M1_GetCardLetter() + " CONFIG");
                 sw.WriteLine("//");
-                sw.WriteLine("//  This file was auto-generated using the Firefly M1 Config Generator version " + GetVerRev() + " on " + currentDateTime);
+                sw.WriteLine("//  This file was auto-generated using the Firefly M1 Config Generator version " + M1_GetVerRev() + " on " + currentDateTime);
                 sw.WriteLine("//");
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);

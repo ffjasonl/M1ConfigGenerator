@@ -84,83 +84,83 @@ namespace M1ConfigGenerator
                                               "GROUP_INDEX3_CHNL_Z8 ", "GROUP_INDEX3_CHNL_Z9 ", "GROUP_INDEX3_CHNL_Z10", "GROUP_INDEX3_CHNL_Z11", "GROUP_INDEX3_CHNL_Z12", "GROUP_INDEX3_CHNL_Z13", "GROUP_INDEX3_CHNL_Z14", "GROUP_INDEX3_CHNL_Z15" };
         public string[] cardChGroup3Values = { "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP" };
 
-        public string GetConfigName()
+        public string M1_GetConfigName()
         {
             return configName;
         }
-        public string GetVerRev()
+        public string M1_GetVerRev()
         {
             return progVerRev;
         }
-        public char GetCardLetter()
+        public char M1_GetCardLetter()
         {
             return cardLetter;
         }
-        public void SetCardLetter(string argString)
+        public void M1_SetCardLetter(string argString)
         {
             byte[] asciiValue = Encoding.ASCII.GetBytes(argString); // changes string to array of ASCII value numbers
             char character = (char)(asciiValue[0] += 16); // this changes '1' to 'A', '2' to 'B', etc.
             cardLetter = character;
         }
-        public void ChangeAddress(string[] argStringArray)
+        public void M1_ChangeAddress(string[] argStringArray)
         {
             for (int i = 0; i < argStringArray.Length; i++)
             {
                 argStringArray[i] = argStringArray[i].Replace('Z', cardLetter);
             }
         }
-        public void ChangeConfigName()
+        public void M1_ChangeConfigName()
         {
             configName = configName.Replace('Z', cardLetter);
         }
-        public string GetDevAddr()
+        public string M1_GetDevAddr()
         {
             return m1ParameterNames[DEV_ADDR];
         }
-        public void SetDevAddr(int cardIndex, int panelIndex)
+        public void M1_SetDevAddr(int cardIndex, int panelIndex)
         {
             string trueCard = Convert.ToString(cardIndex);
             string truePanel = Convert.ToString(panelIndex);
             m1ParameterValues[DEV_ADDR] = "(" + trueCard + " + (" + truePanel + " << 3))";
         }
-        public void SetCfgRev(string revision)
+        public void M1_SetCfgRev(string revision)
         {
             m1ParameterValues[DEV_ADDR_CFG_REV] = revision;
         }
-        public void SetNodeCfg()
+        public void M1_SetNodeCfg()
         {
-            m1ParameterValues[DEV_ADDR_NODE_CFG] = GetDevAddr();
+            m1ParameterValues[DEV_ADDR_NODE_CFG] = M1_GetDevAddr();
         }
-        public void SetCfgType(string configtype)
+        public void M1_SetCfgType(string configtype)
         {
             m1ParameterValues[DEV_ADDR_CFG_TYPE] = "0x" + configtype;
         }
-        public void SetBaseIndex(string index)
+        public void M1_SetBaseIndex(string index)
         {
             m1ParameterValues[BASE_DRIVER_INDEX] = index;
         }
-        public void SetDCDriver(bool enabled)
+        public void M1_SetDCDriver(bool enabled)
         {
             m1ParameterValues[ENABLE_DC_COMP_DRVR_CMD] = enabled ? "TRUE" : "FALSE";
         }
-        public void SetDCDimmer(bool enabled)
+        public void M1_SetDCDimmer(bool enabled)
         {
             m1ParameterValues[ENABLE_DC_DIMMER_CMD] = enabled ? "TRUE" : "FALSE";
         }
-        public void SetDCMotor(bool enabled)
+        public void M1_SetDCMotor(bool enabled)
         {
             m1ParameterValues[ENABLE_DC_MOTOR_CMD] = enabled ? "TRUE" : "FALSE";
         }
-        public void SetShade(bool enabled)
+        public void M1_SetShade(bool enabled)
         {
             m1ParameterValues[ENABLE_WINDOW_SHADE_CMD] = enabled ? "TRUE" : "FALSE";
         }
         
-        public void SetForce(bool enabled)
+        public void M1_SetForce(bool enabled)
         {
             m1ParameterValues[ENABLE_FORCE_CMDS] = enabled ? "TRUE" : "FALSE";
         }
-        public void SetGroup0(bool[] argArray, int argInt)
+        public void M1_SetGroup0(bool[] argArray, int argInt)
         {
             bool[] newArray = argArray;
             if (argArray.Length > 1)
@@ -174,15 +174,15 @@ namespace M1ConfigGenerator
                 {
                     case 4:
                         cardChGroup0Values[argInt] = "MASTER_GROUP_1";
-                        SetGroup1(newArray, argInt);
+                        M1_SetGroup1(newArray, argInt);
                         break;
                     case 3:
                         cardChGroup0Values[argInt] = "MASTER_GROUP_2";
-                        SetGroup1(newArray, argInt);
+                        M1_SetGroup1(newArray, argInt);
                         break;
                     case 2:
                         cardChGroup0Values[argInt] = "MASTER_GROUP_3";
-                        SetGroup1(newArray, argInt);
+                        M1_SetGroup1(newArray, argInt);
                         break;
                     case 1:
                         cardChGroup0Values[argInt] = "MASTER_GROUP_4";
@@ -191,10 +191,10 @@ namespace M1ConfigGenerator
             }
             else if (argArray.Length > 1)
             {
-                SetGroup0(newArray, argInt);
+                M1_SetGroup0(newArray, argInt);
             }
         }
-        public void SetGroup1(bool[] argArray, int argInt)
+        public void M1_SetGroup1(bool[] argArray, int argInt)
         {
             bool[] newArray = argArray;
             if (argArray.Length > 1)
@@ -208,11 +208,11 @@ namespace M1ConfigGenerator
                 {
                     case 3:
                         cardChGroup1Values[argInt] = "MASTER_GROUP_2";
-                        SetGroup2(newArray, argInt);
+                        M1_SetGroup2(newArray, argInt);
                         break;
                     case 2:
                         cardChGroup1Values[argInt] = "MASTER_GROUP_3";
-                        SetGroup2(newArray, argInt);
+                        M1_SetGroup2(newArray, argInt);
                         break;
                     case 1:
                         cardChGroup1Values[argInt] = "MASTER_GROUP_4";
@@ -221,10 +221,10 @@ namespace M1ConfigGenerator
             }
             else if (argArray.Length > 1)
             {
-                SetGroup1(newArray, argInt);
+                M1_SetGroup1(newArray, argInt);
             }
         }
-        public void SetGroup2(bool[] argArray, int argInt)
+        public void M1_SetGroup2(bool[] argArray, int argInt)
         {
             bool[] newArray = argArray;
             if (argArray.Length > 1)
@@ -235,7 +235,7 @@ namespace M1ConfigGenerator
                 {
                     cardChGroup2Values[argInt] = "MASTER_GROUP_3";
 
-                    SetGroup3(newArray, argInt);
+                    M1_SetGroup3(newArray, argInt);
                 }
                 else if (argArray[1] == true)
                 {
@@ -243,7 +243,7 @@ namespace M1ConfigGenerator
                 }
                 else
                 {
-                    SetGroup3(newArray, argInt);
+                    M1_SetGroup3(newArray, argInt);
                 }
             }
             else if (argArray[0] == true)
@@ -252,7 +252,7 @@ namespace M1ConfigGenerator
             }
 
         }
-        public void SetGroup3(bool[] argArray, int argInt)
+        public void M1_SetGroup3(bool[] argArray, int argInt)
         {
             if (argArray[0] == true)
             {

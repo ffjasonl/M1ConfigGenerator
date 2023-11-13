@@ -11,50 +11,50 @@ namespace M1ConfigGenerator
     {
         public HCCard(int argInt)
         {
-            SetCardLetter(Convert.ToString(argInt));
-            ChangeConfigName();
+            M1_SetCardLetter(Convert.ToString(argInt));
+            M1_ChangeConfigName();
             // general
-            ChangeAddress(m1ParameterNames);
-            ChangeAddress(hcRGBName);
+            M1_ChangeAddress(m1ParameterNames);
+            M1_ChangeAddress(hcRGBName);
             // card-specific
-            ChangeAddress(hcParameterNames);
+            M1_ChangeAddress(hcParameterNames);
             // channels
-            ChangeAddress(hcChLockNames);
-            ChangeAddress(hcChPwmDutyNames);
-            ChangeAddress(hcChDirectionNames);
-            ChangeAddress(hcChModeNames);
-            ChangeAddress(hcChDeadtimeNames);
-            ChangeAddress(hcChPairedNames);
-            ChangeAddress(hcChPwmEnableNames);
-            ChangeAddress(hcChTimeoutNames);
-            ChangeAddress(hcChTimeoutTimeNames);
-            ChangeAddress(hcChMaxOnNames);
-            ChangeAddress(hcChMaxDurRecoveryTimeNames);
-            ChangeAddress(cardChGroup0Names);
-            ChangeAddress(cardChGroup1Names);
-            ChangeAddress(cardChGroup2Names);
-            ChangeAddress(cardChGroup3Names);
-            ChangeAddress(hcChOvercurrentAmpsNames);
-            ChangeAddress(hcChUndercurrentAmpsNames);
-            ChangeAddress(hcChOvercurrentTimeNames);
-            ChangeAddress(hcChMeasCurTimeNames);
-            ChangeAddress(hcChOverrideReverseNames);
-            ChangeAddress(hcChOverrideForwardNames);
-            SetNodeCfg();
+            M1_ChangeAddress(hcChLockNames);
+            M1_ChangeAddress(hcChPwmDutyNames);
+            M1_ChangeAddress(hcChDirectionNames);
+            M1_ChangeAddress(hcChModeNames);
+            M1_ChangeAddress(hcChDeadtimeNames);
+            M1_ChangeAddress(hcChPairedNames);
+            M1_ChangeAddress(hcChPwmEnableNames);
+            M1_ChangeAddress(hcChTimeoutNames);
+            M1_ChangeAddress(hcChTimeoutTimeNames);
+            M1_ChangeAddress(hcChMaxOnNames);
+            M1_ChangeAddress(hcChMaxDurRecoveryTimeNames);
+            M1_ChangeAddress(cardChGroup0Names);
+            M1_ChangeAddress(cardChGroup1Names);
+            M1_ChangeAddress(cardChGroup2Names);
+            M1_ChangeAddress(cardChGroup3Names);
+            M1_ChangeAddress(hcChOvercurrentAmpsNames);
+            M1_ChangeAddress(hcChUndercurrentAmpsNames);
+            M1_ChangeAddress(hcChOvercurrentTimeNames);
+            M1_ChangeAddress(hcChMeasCurTimeNames);
+            M1_ChangeAddress(hcChOverrideReverseNames);
+            M1_ChangeAddress(hcChOverrideForwardNames);
+            M1_SetNodeCfg();
         }
 
         public void CreateHCFile()
         {
-            using (StreamWriter sw = File.CreateText(@GetConfigPath() + GetConfigName()))
+            using (StreamWriter sw = File.CreateText(@HC_GetConfigPath() + M1_GetConfigName()))
             {
                 DateTime currentDateTime = DateTime.Now;
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);
                 sw.WriteLine("//");
-                sw.WriteLine("//  DEVICE ADDRESS " + GetCardLetter() + " CONFIG");
+                sw.WriteLine("//  DEVICE ADDRESS " + M1_GetCardLetter() + " CONFIG");
                 sw.WriteLine("//");
-                sw.WriteLine("//  This file was auto-generated using the Firefly M1 Config Generator version " + GetVerRev() + " on " + currentDateTime);
+                sw.WriteLine("//  This file was auto-generated using the Firefly M1 Config Generator version " + M1_GetVerRev() + " on " + currentDateTime);
                 sw.WriteLine("//");
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);
@@ -132,95 +132,99 @@ namespace M1ConfigGenerator
             }
         }
 
-        public string GetConfigPath()
+        public string HC_GetConfigPath()
         {
             return configPath;
         }
 
-        public void SetRGB(bool enabled)
+        public void HC_SetRGB(bool enabled)
         {
             hcRGBValue[0] = enabled ? "TRUE" : "FALSE";
         }
-        public void SetOCAmps(int argIndex, string argAmps)
-        {
-            hcChOvercurrentAmpsValues[argIndex] = argAmps;
-        }
 
-        public void SetOCTime(int argIndex, string argConstant)
-        {
-            hcChOvercurrentTimeValues[argIndex] = argConstant;
-        }
-
-        public void SetLock(int argInt, bool argBool)
+        public void HC_SetLock(int argInt, bool argBool)
         {
             hcChLockValues[argInt] = argBool ? "TRUE" : "FALSE";
         }
 
-        public void SetPWMDuty(int argInt, string argString)
+        public void HC_SetPWMDuty(int argInt, string argString)
         {
             hcChPwmDutyValues[argInt] = argString;
         }
         
-        public void SetPWMEnable(int argInt, bool argBool)
+        public void HC_SetPWMEnable(int argInt, bool argBool)
         {
             hcChPwmEnableValues[argInt] = argBool ? "TRUE" : "FALSE";
         }
 
-        public void SetDirection(int argInt, string argString)
+        public void HC_SetDirection(int argInt, string argString)
         {
-            hcChDirectionValues[argInt] = argString;
+            hcChDirectionValues[argInt] = "DRVR_STATE_" + argString.ToUpper();
         }
 
-        public void SetMode(int argInt, string argString)
+        public void HC_SetMode(int argInt, string argString)
         {
-            hcChModeValues[argInt] = argString;
+            if (argString == "High" || argString == "Low") { hcChModeValues[argInt] = "DRVR_TYPE_" + argString.ToUpper() + "_SIDE"; }
+            else if (argString == "Half Br") { hcChModeValues[argInt] = "DRVR_TYPE_HALF_BRIDGE"; }
+            else if (argString == "H Br") { hcChModeValues[argInt] = "DRVR_TYPE_H_BRIDGE"; }
+            else { hcChModeValues[argInt] = "DRVR_TYPE_" + argString.ToUpper(); }
         }
 
-        public void SetDeadTime(int argInt, string argString)
+        public void HC_SetDeadTime(int argInt, string argString)
         {
             hcChDeadtimeValues[argInt] = argString;
         }
 
-        public void SetPaired(int argInt, string argString)
+        public void HC_SetPaired(int argInt, string argString)
         {
-            hcChPairedValues[argInt]= argString;
+            if (argString == "None") { hcChPairedValues[argInt] = "NO_SLAVE"; }
+            else { hcChPairedValues[argInt] = "PAIRED_TO_CHNL_" + argString.ToUpper(); }
         }
 
-        public void SetTimeout(int argInt, bool argBool)
+        public void HC_SetTimeout(int argInt, bool argBool)
         {
-            hcChTimeoutValues[argInt] = argBool ? "TRUE" : "FALSE";
+            hcChTimeoutValues[argInt] = argBool ? "DRVR_TIMEOUT_ENABLED" : "DRVR_TIMEOUT_DISABLED";
         }
 
-        public void SetTimeoutTime(int argInt, string argString)
+        public void HC_SetTimeoutTime(int argInt, string argString)
         {
-            hcChTimeoutTimeValues[argInt]= argString;
+            hcChTimeoutTimeValues[argInt]= "0x" + argString;
         }
 
-        public void SetMaxOn(int argInt, string argString)
+        public void HC_SetMaxOn(int argInt, string argString)
         {
-            hcChMaxOnValues[argInt] = argString;
+            hcChMaxOnValues[argInt] = "0x" + argString;
         }
 
-        public void SetMaxDurRec(int argInt, string argString)
+        public void HC_SetOCAmps(int argIndex, string argAmps)
+        {
+            // Values array only stores number, HC_CONVERT_AMPS_TO_ADC formatting added in print function
+            hcChOvercurrentAmpsValues[argIndex] = argAmps; 
+        }
+
+        public void HC_SetMaxDurRec(int argInt, string argString)
         {
             hcChMaxDurRecoveryTimeValues[argInt] = argString;
         }
 
-        public void SetUndAmp(int argInt, string argString)
+        public void HC_SetUndAmp(int argInt, string argString)
         {
+            // Values array only stores number, HC_CONVERT_AMPS_TO_ADC formatting added in print function
             hcChUndercurrentAmpsValues[argInt] = argString;
         }
 
-        public void SetMeasCurTime(int argInt, string argString)
+        public void HC_SetOCTime(int argIndex, string argString)
+        {
+            hcChOvercurrentTimeValues[argIndex] = argString;
+        }
+
+        public void HC_SetMeasCurTime(int argInt, string argString)
         {
             hcChMeasCurTimeValues[argInt] = argString;
         }
-        
-        private void EnablePWM(int argIndex)
-        {
-            hcChPwmEnableValues[argIndex] = "TRUE";
-        }
 
+        // No setters for forward or reverse override at this time
+        
         private string configPath = @"M1_DcDriver_Config\Src\M1_HC_Bridge\DeviceConfigs\";
 
         public string[] hcRGBName = { "ENABLE_DC_DIMMER_RGB_CMD_ADDR_Z" };
@@ -242,49 +246,49 @@ namespace M1ConfigGenerator
         };
 
         public string[] hcChLockNames = { "LOCK_CHNL_Z0 ", "LOCK_CHNL_Z1 ", "LOCK_CHNL_Z2 ", "LOCK_CHNL_Z3 ", "LOCK_CHNL_Z4 ", "LOCK_CHNL_Z5 ", "LOCK_CHNL_Z6 ", "LOCK_CHNL_Z7 ", "LOCK_CHNL_Z8 ", "LOCK_CHNL_Z9 ", "LOCK_CHNL_Z10", "LOCK_CHNL_Z11" };
-        public string[] hcChLockValues = { "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE" };
+        public string[] hcChLockValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChPwmDutyNames = { "PWM_DUTY_CHNL_Z0 ", "PWM_DUTY_CHNL_Z1 ", "PWM_DUTY_CHNL_Z2 ", "PWM_DUTY_CHNL_Z3 ", "PWM_DUTY_CHNL_Z4 ", "PWM_DUTY_CHNL_Z5 ", "PWM_DUTY_CHNL_Z6 ", "PWM_DUTY_CHNL_Z7 ", "PWM_DUTY_CHNL_Z8 ", "PWM_DUTY_CHNL_Z9 ", "PWM_DUTY_CHNL_Z10", "PWM_DUTY_CHNL_Z11" };
-        public string[] hcChPwmDutyValues = { "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" };
+        public string[] hcChPwmDutyValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChPwmEnableNames = { "PWM_ENABLE_CHNL_Z0 ", "PWM_ENABLE_CHNL_Z1 ", "PWM_ENABLE_CHNL_Z2 ", "PWM_ENABLE_CHNL_Z3 ", "PWM_ENABLE_CHNL_Z4 ", "PWM_ENABLE_CHNL_Z5 ", "PWM_ENABLE_CHNL_Z6 ", "PWM_ENABLE_CHNL_Z7 ", "PWM_ENABLE_CHNL_Z8 ", "PWM_ENABLE_CHNL_Z9 ", "PWM_ENABLE_CHNL_Z10", "PWM_ENABLE_CHNL_Z11", "PWM_ENABLE_CHNL_Z12 ", "PWM_ENABLE_CHNL_Z13 ", "PWM_ENABLE_CHNL_Z14", "PWM_ENABLE_CHNL_Z15" };
-        public string[] hcChPwmEnableValues = { "TRUE", "TRUE", "TRUE", "TRUE", "TRUE", "TRUE", "TRUE", "TRUE", "TRUE", "TRUE", "TRUE", "TRUE", "TRUE", "TRUE", "TRUE", "TRUE" };
+        public string[] hcChPwmEnableValues = { "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChDirectionNames = { "DIRECTION_CHNL_Z0 ", "DIRECTION_CHNL_Z1 ", "DIRECTION_CHNL_Z2 ", "DIRECTION_CHNL_Z3 ", "DIRECTION_CHNL_Z4 ", "DIRECTION_CHNL_Z5 ", "DIRECTION_CHNL_Z6 ", "DIRECTION_CHNL_Z7 ", "DIRECTION_CHNL_Z8 ", "DIRECTION_CHNL_Z9 ", "DIRECTION_CHNL_Z10", "DIRECTION_CHNL_Z11" };
-        public string[] hcChDirectionValues = { "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF" };
+        public string[] hcChDirectionValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChModeNames = { "MODE_CHNL_Z0", "MODE_CHNL_Z1", "MODE_CHNL_Z2", "MODE_CHNL_Z3", "MODE_CHNL_Z4", "MODE_CHNL_Z5", "MODE_CHNL_Z6", "MODE_CHNL_Z7", "MODE_CHNL_Z8", "MODE_CHNL_Z9", "MODE_CHNL_Z10", "MODE_CHNL_Z11" };
-        public string[] hcChModeValues = { "DRVR_TYPE_HIGH_SIDE", "DRVR_TYPE_HIGH_SIDE", "DRVR_TYPE_HIGH_SIDE", "DRVR_TYPE_HIGH_SIDE", "DRVR_TYPE_HIGH_SIDE", "DRVR_TYPE_HIGH_SIDE", "DRVR_TYPE_HIGH_SIDE", "DRVR_TYPE_HIGH_SIDE", "DRVR_TYPE_HIGH_SIDE", "DRVR_TYPE_HIGH_SIDE", "DRVR_TYPE_HIGH_SIDE", "DRVR_TYPE_HIGH_SIDE" };
+        public string[] hcChModeValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChDeadtimeNames = { "DEADTIME_CHNL_Z0", "DEADTIME_CHNL_Z1", "DEADTIME_CHNL_Z2", "DEADTIME_CHNL_Z3", "DEADTIME_CHNL_Z4", "DEADTIME_CHNL_Z5", "DEADTIME_CHNL_Z6", "DEADTIME_CHNL_Z7", "DEADTIME_CHNL_Z8", "DEADTIME_CHNL_Z9", "DEADTIME_CHNL_Z10", "DEADTIME_CHNL_Z11" };
-        public string[] hcChDeadtimeValues = { "500", "500", "500", "500", "500", "500", "500", "500", "500", "500", "500", "500" };
+        public string[] hcChDeadtimeValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChPairedNames = { "PAIRED_INDEX_CHNL_Z0", "PAIRED_INDEX_CHNL_Z1", "PAIRED_INDEX_CHNL_Z2", "PAIRED_INDEX_CHNL_Z3", "PAIRED_INDEX_CHNL_Z4", "PAIRED_INDEX_CHNL_Z5", "PAIRED_INDEX_CHNL_Z6", "PAIRED_INDEX_CHNL_Z7", "PAIRED_INDEX_CHNL_Z8", "PAIRED_INDEX_CHNL_Z9", "PAIRED_INDEX_CHNL_Z10", "PAIRED_INDEX_CHNL_Z11" };
-        public string[] hcChPairedValues = { "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE" };
+        public string[] hcChPairedValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChTimeoutNames = { "CMD_TIMEOUT_CHNL_Z0 ", "CMD_TIMEOUT_CHNL_Z1 ", "CMD_TIMEOUT_CHNL_Z2 ", "CMD_TIMEOUT_CHNL_Z3 ", "CMD_TIMEOUT_CHNL_Z4 ", "CMD_TIMEOUT_CHNL_Z5 ", "CMD_TIMEOUT_CHNL_Z6 ", "CMD_TIMEOUT_CHNL_Z7 ", "CMD_TIMEOUT_CHNL_Z8 ", "CMD_TIMEOUT_CHNL_Z9 ", "CMD_TIMEOUT_CHNL_Z10", "CMD_TIMEOUT_CHNL_Z11" };
-        public string[] hcChTimeoutValues = { "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED", "DRVR_TIMEOUT_DISABLED" };
+        public string[] hcChTimeoutValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChTimeoutTimeNames = { "CMD_TIMEOUT_MS_CHNL_Z0 ", "CMD_TIMEOUT_MS_CHNL_Z1 ", "CMD_TIMEOUT_MS_CHNL_Z2 ", "CMD_TIMEOUT_MS_CHNL_Z3 ", "CMD_TIMEOUT_MS_CHNL_Z4 ", "CMD_TIMEOUT_MS_CHNL_Z5 ", "CMD_TIMEOUT_MS_CHNL_Z6 ", "CMD_TIMEOUT_MS_CHNL_Z7 ", "CMD_TIMEOUT_MS_CHNL_Z8 ", "CMD_TIMEOUT_MS_CHNL_Z9 ", "CMD_TIMEOUT_MS_CHNL_Z10", "CMD_TIMEOUT_MS_CHNL_Z11" };
-        public string[] hcChTimeoutTimeValues = { "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF" };
+        public string[] hcChTimeoutTimeValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChMaxOnNames = { "MAX_ON_SEC_CHNL_Z0 ", "MAX_ON_SEC_CHNL_Z1 ", "MAX_ON_SEC_CHNL_Z2 ", "MAX_ON_SEC_CHNL_Z3 ", "MAX_ON_SEC_CHNL_Z4 ", "MAX_ON_SEC_CHNL_Z5 ", "MAX_ON_SEC_CHNL_Z6 ", "MAX_ON_SEC_CHNL_Z7 ", "MAX_ON_SEC_CHNL_Z8 ", "MAX_ON_SEC_CHNL_Z9 ", "MAX_ON_SEC_CHNL_Z10", "MAX_ON_SEC_CHNL_Z11" };
-        public string[] hcChMaxOnValues = { "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", };
+        public string[] hcChMaxOnValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChMaxDurRecoveryTimeNames = { "MAX_DUR_RECOVERY_CHNL_Z0 ", "MAX_DUR_RECOVERY_CHNL_Z1 ", "MAX_DUR_RECOVERY_CHNL_Z2 ", "MAX_DUR_RECOVERY_CHNL_Z3 ", "MAX_DUR_RECOVERY_CHNL_Z4 ", "MAX_DUR_RECOVERY_CHNL_Z5 ", "MAX_DUR_RECOVERY_CHNL_Z6 ", "MAX_DUR_RECOVERY_CHNL_Z7 ", "MAX_DUR_RECOVERY_CHNL_Z8 ", "MAX_DUR_RECOVERY_CHNL_Z9 ", "MAX_DUR_RECOVERY_CHNL_Z10", "MAX_DUR_RECOVERY_CHNL_Z11" };
-        public string[] hcChMaxDurRecoveryTimeValues = { "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5" };
-        //
+        public string[] hcChMaxDurRecoveryTimeValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
+
         public string[] hcChOvercurrentAmpsNames = { "OC_ADC_THRESH_CHNL_Z0 ", "OC_ADC_THRESH_CHNL_Z1 ", "OC_ADC_THRESH_CHNL_Z2 ", "OC_ADC_THRESH_CHNL_Z3 ", "OC_ADC_THRESH_CHNL_Z4 ", "OC_ADC_THRESH_CHNL_Z5 ", "OC_ADC_THRESH_CHNL_Z6 ", "OC_ADC_THRESH_CHNL_Z7 ", "OC_ADC_THRESH_CHNL_Z8 ", "OC_ADC_THRESH_CHNL_Z9 ", "OC_ADC_THRESH_CHNL_Z10", "OC_ADC_THRESH_CHNL_Z11" };
-        public string[] hcChOvercurrentAmpsValues = { "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10" };
+        public string[] hcChOvercurrentAmpsValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChUndercurrentAmpsNames = { "UC_ADC_THRESH_CHNL_Z0 ", "UC_ADC_THRESH_CHNL_Z1 ", "UC_ADC_THRESH_CHNL_Z2 ", "UC_ADC_THRESH_CHNL_Z3 ", "UC_ADC_THRESH_CHNL_Z4 ", "UC_ADC_THRESH_CHNL_Z5 ", "UC_ADC_THRESH_CHNL_Z6 ", "UC_ADC_THRESH_CHNL_Z7 ", "UC_ADC_THRESH_CHNL_Z8 ", "UC_ADC_THRESH_CHNL_Z9 ", "UC_ADC_THRESH_CHNL_Z10", "UC_ADC_THRESH_CHNL_Z11" };
-        public string[] hcChUndercurrentAmpsValues = { "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1" };
+        public string[] hcChUndercurrentAmpsValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChOvercurrentTimeNames = { "FAULT_CUR_TIME_CONST_CHNL_Z0 ", "FAULT_CUR_TIME_CONST_CHNL_Z1 ", "FAULT_CUR_TIME_CONST_CHNL_Z2 ", "FAULT_CUR_TIME_CONST_CHNL_Z3 ", "FAULT_CUR_TIME_CONST_CHNL_Z4 ", "FAULT_CUR_TIME_CONST_CHNL_Z5 ", "FAULT_CUR_TIME_CONST_CHNL_Z6 ", "FAULT_CUR_TIME_CONST_CHNL_Z7 ", "FAULT_CUR_TIME_CONST_CHNL_Z8 ", "FAULT_CUR_TIME_CONST_CHNL_Z9 ", "FAULT_CUR_TIME_CONST_CHNL_Z10", "FAULT_CUR_TIME_CONST_CHNL_Z11" };
-        public string[] hcChOvercurrentTimeValues = { "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6" };
+        public string[] hcChOvercurrentTimeValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChMeasCurTimeNames = { "MEAS_CUR_TIME_CONST_CHNL_Z0 ", "MEAS_CUR_TIME_CONST_CHNL_Z1 ", "MEAS_CUR_TIME_CONST_CHNL_Z2 ", "MEAS_CUR_TIME_CONST_CHNL_Z3 ", "MEAS_CUR_TIME_CONST_CHNL_Z4 ", "MEAS_CUR_TIME_CONST_CHNL_Z5 ", "MEAS_CUR_TIME_CONST_CHNL_Z6 ", "MEAS_CUR_TIME_CONST_CHNL_Z7 ", "MEAS_CUR_TIME_CONST_CHNL_Z8 ", "MEAS_CUR_TIME_CONST_CHNL_Z9 ", "MEAS_CUR_TIME_CONST_CHNL_Z10", "MEAS_CUR_TIME_CONST_CHNL_Z11" };
-        public string[] hcChMeasCurTimeValues = { "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8" };
+        public string[] hcChMeasCurTimeValues = { "", "", "", "", "", "", "", "", "", "", "", "" };
         //
         public string[] hcChOverrideReverseNames = { "OVERRIDE_REVERSE_INPUT_CHNL_Z0 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z1 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z2 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z3 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z4 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z5 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z6 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z7 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z8 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z9 ", "OVERRIDE_REVERSE_INPUT_CHNL_Z10", "OVERRIDE_REVERSE_INPUT_CHNL_Z11" };
         public string[] hcChOverrideReverseValues = { "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE" };

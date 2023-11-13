@@ -14,48 +14,48 @@ namespace M1ConfigGenerator
         {
             //SetTestString(argInt);
 
-            SetCardLetter(Convert.ToString(argInt));
-            ChangeConfigName();
+            M1_SetCardLetter(Convert.ToString(argInt));
+            M1_ChangeConfigName();
             // general
-            ChangeAddress(m1ParameterNames);
+            M1_ChangeAddress(m1ParameterNames);
             // card-specific
-            ChangeAddress(dimmerParameterNames);
+            M1_ChangeAddress(dimmerParameterNames);
             // channels
-            ChangeAddress(dimmerChLockNames);
-            ChangeAddress(dimmerChPwmFreqNames);
-            ChangeAddress(dimmerChPwmDutyNames);
-            ChangeAddress(dimmerChPwmEnableNames);
-            ChangeAddress(dimmerChOverrideNames);
-            ChangeAddress(dimmerChDirectionNames);
-            ChangeAddress(dimmerChTimeoutNames);
-            ChangeAddress(dimmerChTimeoutTimeNames);
-            ChangeAddress(dimmerChMaxOnNames);
-            ChangeAddress(dimmerChMaxDurRecoveryTimeNames);
-            ChangeAddress(dimmerChOvercurrentAmpsNames);
-            ChangeAddress(dimmerChUndercurrentAmpsNames);
-            ChangeAddress(dimmerChOvercurrentTimeNames);
-            ChangeAddress(dimmerChMeasCurTimeNames);
-            ChangeAddress(cardChGroup0Names);
-            ChangeAddress(cardChGroup1Names);
-            ChangeAddress(cardChGroup2Names);
-            ChangeAddress(cardChGroup3Names);
-            SetNodeCfg();
+            M1_ChangeAddress(dimmerChLockNames);
+            M1_ChangeAddress(dimmerChPwmFreqNames);
+            M1_ChangeAddress(dimmerChPwmDutyNames);
+            M1_ChangeAddress(dimmerChPwmEnableNames);
+            M1_ChangeAddress(dimmerChOverrideNames);
+            M1_ChangeAddress(dimmerChDirectionNames);
+            M1_ChangeAddress(dimmerChTimeoutNames);
+            M1_ChangeAddress(dimmerChTimeoutTimeNames);
+            M1_ChangeAddress(dimmerChMaxOnNames);
+            M1_ChangeAddress(dimmerChMaxDurRecoveryTimeNames);
+            M1_ChangeAddress(dimmerChOvercurrentAmpsNames);
+            M1_ChangeAddress(dimmerChUndercurrentAmpsNames);
+            M1_ChangeAddress(dimmerChOvercurrentTimeNames);
+            M1_ChangeAddress(dimmerChMeasCurTimeNames);
+            M1_ChangeAddress(cardChGroup0Names);
+            M1_ChangeAddress(cardChGroup1Names);
+            M1_ChangeAddress(cardChGroup2Names);
+            M1_ChangeAddress(cardChGroup3Names);
+            M1_SetNodeCfg();
         }
 
         // DimmerCard MyDimmerCard { get; set; } // ??
 
         public void CreateDimmerFile()
         {
-            using (StreamWriter sw = File.CreateText(@GetConfigPath() + GetConfigName()))
+            using (StreamWriter sw = File.CreateText(@GetConfigPath() + M1_GetConfigName()))
             {
                 DateTime currentDateTime = DateTime.Now;
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);
                 sw.WriteLine("//");
-                sw.WriteLine("//  DEVICE ADDRESS " + GetCardLetter() + " CONFIG");
+                sw.WriteLine("//  DEVICE ADDRESS " + M1_GetCardLetter() + " CONFIG");
                 sw.WriteLine("//");
-                sw.WriteLine("//  This file was auto-generated using the Firefly M1 Config Generator version " + GetVerRev() + " on " + currentDateTime);
+                sw.WriteLine("//  This file was auto-generated using the Firefly M1 Config Generator version " + M1_GetVerRev() + " on " + currentDateTime);
                 sw.WriteLine("//");
                 sw.WriteLine(commentBox);
                 sw.WriteLine(commentBox);

@@ -151,6 +151,11 @@ namespace M1ConfigGenerator
             hcChOvercurrentTimeValues[argIndex] = argConstant;
         }
 
+        public void SetLock(int argInt, bool argBool)
+        {
+            hcChLockValues[argInt] = argBool ? "TRUE" : "FALSE";
+        }
+
         public void SetPWMDuty(int argInt, string argString)
         {
             hcChPwmDutyValues[argInt] = argString;
@@ -166,9 +171,14 @@ namespace M1ConfigGenerator
             hcChDirectionValues[argInt] = argString;
         }
 
+        public void SetMode(int argInt, string argString)
+        {
+            hcChModeValues[argInt] = argString;
+        }
+
         public void SetDeadTime(int argInt, string argString)
         {
-            hcChDeadtimeValues[argInt]=argString;
+            hcChDeadtimeValues[argInt] = argString;
         }
 
         public void SetPaired(int argInt, string argString)
@@ -206,65 +216,6 @@ namespace M1ConfigGenerator
             hcChMeasCurTimeValues[argInt] = argString;
         }
         
-
-        public void SetModeAndPairing(int argIndex, string argMode, string argStartup)
-        {
-            if (argMode == "Ground")
-            {
-                hcChModeValues[argIndex] = "DRVR_TYPE_LOW_SIDE";
-
-                //if (argStartup == true)
-                //{
-                //    hcChDirectionValues[argIndex] = "DRVR_STATE_LOW";
-                //}
-            }
-            else if (argMode == "RP UP")
-            {
-                hcChModeValues[argIndex] = "DRVR_TYPE_H_BRIDGE";
-                hcChPairedValues[argIndex] = "PAIRED_TO_CHNL" + Convert.ToString(argIndex + 1);
-            }
-            else if (argMode == "RP DN")
-            {
-                hcChModeValues[argIndex] = "DRVR_TYPE_SLAVE";
-                hcChPairedValues[argIndex] = "PAIRED_TO_CHNL" + Convert.ToString(argIndex - 1);
-            }
-            else if (argMode == "RGB P")
-            {
-                hcChModeValues[argIndex] = "DRVR_TYPE_RGB";
-            }
-            else if (argMode == "RGBW P")
-            {
-                hcChModeValues[argIndex] = "DRVR_TYPE_RGBW";
-            }
-            else if (argMode == "RGB R")
-            {
-                hcChModeValues[argIndex] = "DRVR_TYPE_SLAVE";
-                hcChPairedValues[argIndex] = "PAIRED_TO_CHNL" + Convert.ToString(argIndex - 1);
-            }
-            else if (argMode == "RGB G")
-            {
-                hcChModeValues[argIndex] = "DRVR_TYPE_SLAVE";
-                hcChPairedValues[argIndex] = "PAIRED_TO_CHNL" + Convert.ToString(argIndex - 2);
-            }
-            else if (argMode == "RGB B")
-            {
-                hcChModeValues[argIndex] = "DRVR_TYPE_SLAVE";
-                hcChPairedValues[argIndex] = "PAIRED_TO_CHNL" + Convert.ToString(argIndex - 3);
-            }
-            else if (argMode == "RGB W")
-            {
-                hcChModeValues[argIndex] = "DRVR_TYPE_SLAVE";
-                hcChPairedValues[argIndex] = "PAIRED_TO_CHNL" + Convert.ToString(argIndex - 4);
-            }
-            else // 12V+
-            {
-                //if (argStartup == true)
-                //{
-                //    hcChDirectionValues[argIndex] = "DRVR_STATE_HIGH";
-                //}
-            }
-        }
-
         private void EnablePWM(int argIndex)
         {
             hcChPwmEnableValues[argIndex] = "TRUE";

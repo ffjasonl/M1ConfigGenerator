@@ -33,7 +33,7 @@ namespace M1ConfigGenerator
         ComboBox[][] auxDirections;
         ComboBox[] Aux1DeadTime; ComboBox[] Aux2DeadTime;
         ComboBox[][] auxDeadTimes;
-        ComboBox[] Aux1Paired; ComboBox[] Aux2Paired; 
+        ComboBox[] Aux1Paired; ComboBox[] Aux2Paired;
         ComboBox[][] auxPairedTimes;
         CheckBox[] Aux1Timeout; CheckBox[] Aux2Timeout;
         CheckBox[][] auxTimeouts;
@@ -136,8 +136,9 @@ namespace M1ConfigGenerator
         TextBox[] hcConfigType;
         CheckBox[] hcDCDimmer; CheckBox[] hcDCMotor; CheckBox[] hcShade; CheckBox[] hcForce; CheckBox[] hcRGB;
         TextBox[] hcBaseInstance;
-        ComboBox[] hc1OCAmps; ComboBox[] hc2OCAmps; ComboBox[] hc3OCAmps; ComboBox[] hc4OCAmps; ComboBox[] hc5OCAmps; ComboBox[] hc6OCAmps;
-        ComboBox[][] hcOCAmps;
+        ComboBox[] hc1OCAmpsQuick; ComboBox[] hc2OCAmpsQuick; ComboBox[] hc3OCAmpsQuick; ComboBox[] hc4OCAmpsQuick; ComboBox[] hc5OCAmpsQuick; ComboBox[] hc6OCAmpsQuick;
+        TextBox[] hc1OCAmps; TextBox[] hc2OCAmps; TextBox[] hc3OCAmps; TextBox[] hc4OCAmps; TextBox[] hc5OCAmps; TextBox[] hc6OCAmps;
+        TextBox[][] hcOCAmps;
         ComboBox[] hc1OCTime; ComboBox[] hc2OCTime; ComboBox[] hc3OCTime; ComboBox[] hc4OCTime; ComboBox[] hc5OCTime; ComboBox[] hc6OCTime;
         ComboBox[][] hcOCTime;
         bool[] hc1Group00; bool[] hc1Group01; bool[] hc1Group02; bool[] hc1Group03; bool[] hc1Group04; bool[] hc1Group05; bool[] hc1Group06; bool[] hc1Group07; bool[] hc1Group08; bool[] hc1Group09; bool[] hc1Group10; bool[] hc1Group11;
@@ -3127,7 +3128,7 @@ namespace M1ConfigGenerator
             SetSelectedIndex(breaker1Interrupt, 1); SetSelectedIndex(breaker2Interrupt, 2); SetSelectedIndex(breaker3Interrupt, 3); SetSelectedIndex(breaker4Interrupt, 4);
             SetSelectedIndex(dim1OCAmps, 3); SetSelectedIndex(dim2OCAmps, 3); SetSelectedIndex(dim3OCAmps, 3); SetSelectedIndex(dim4OCAmps, 3); SetSelectedIndex(dim5OCAmps, 3); SetSelectedIndex(dim6OCAmps, 3);
             SetSelectedIndex(dim1OCTime, 1); SetSelectedIndex(dim2OCTime, 1); SetSelectedIndex(dim3OCTime, 1); SetSelectedIndex(dim4OCTime, 1); SetSelectedIndex(dim5OCTime, 1); SetSelectedIndex(dim6OCTime, 1); 
-            SetSelectedIndex(hc1OCAmps, 5); SetSelectedIndex(hc2OCAmps, 5); SetSelectedIndex(hc3OCAmps, 5); SetSelectedIndex(hc4OCAmps, 5); SetSelectedIndex(hc5OCAmps, 5); SetSelectedIndex(hc6OCAmps, 5);
+            SetSelectedIndex(hc1OCAmpsQuick, 5); SetSelectedIndex(hc2OCAmpsQuick, 5); SetSelectedIndex(hc3OCAmpsQuick, 5); SetSelectedIndex(hc4OCAmpsQuick, 5); SetSelectedIndex(hc5OCAmpsQuick, 5); SetSelectedIndex(hc6OCAmpsQuick, 5);
             SetSelectedIndex(hc1OCTime, 1); SetSelectedIndex(hc2OCTime, 1); SetSelectedIndex(hc3OCTime, 1); SetSelectedIndex(hc4OCTime, 1); SetSelectedIndex(hc5OCTime, 1); SetSelectedIndex(hc6OCTime, 1);
             SetSelectedIndex(hc1Mode, 0); SetSelectedIndex(hc2Mode, 0); SetSelectedIndex(hc3Mode, 0); SetSelectedIndex(hc4Mode, 0); SetSelectedIndex(hc5Mode, 0); SetSelectedIndex(hc6Mode, 0);
             SetSelectedIndex(hc1Startup, 0);
@@ -3349,13 +3350,14 @@ namespace M1ConfigGenerator
             hcShade = new CheckBox[] { chkHC1Shade, chkHC2Shade, chkHC3Shade, chkHC4Shade, chkHC5Shade, chkHC6Shade };
             hcForce = new CheckBox[] { chkHC1Force, chkHC2Force, chkHC3Force, chkHC4Force, chkHC5Force, chkHC6Force };
             hcBaseInstance = new TextBox[] { tbxHC1BaseIndex, tbxHC2BaseIndex, tbxHC3BaseIndex, tbxHC4BaseIndex, tbxHC5BaseIndex, tbxHC6BaseIndex };
-            hc1OCAmps = new ComboBox[] { cmbHC1OCAmps00, cmbHC1OCAmps01, cmbHC1OCAmps02, cmbHC1OCAmps03, cmbHC1OCAmps04, cmbHC1OCAmps05, cmbHC1OCAmps06, cmbHC1OCAmps07, cmbHC1OCAmps08, cmbHC1OCAmps09, cmbHC1OCAmps10, cmbHC1OCAmps11 };
-            hc2OCAmps = new ComboBox[] { cmbHC2OCAmps00, cmbHC2OCAmps01, cmbHC2OCAmps02, cmbHC2OCAmps03, cmbHC2OCAmps04, cmbHC2OCAmps05, cmbHC2OCAmps06, cmbHC2OCAmps07, cmbHC2OCAmps08, cmbHC2OCAmps09, cmbHC2OCAmps10, cmbHC2OCAmps11 };
-            hc3OCAmps = new ComboBox[] { cmbHC3OCAmps00, cmbHC3OCAmps01, cmbHC3OCAmps02, cmbHC3OCAmps03, cmbHC3OCAmps04, cmbHC3OCAmps05, cmbHC3OCAmps06, cmbHC3OCAmps07, cmbHC3OCAmps08, cmbHC3OCAmps09, cmbHC3OCAmps10, cmbHC3OCAmps11 };
-            hc4OCAmps = new ComboBox[] { cmbHC4OCAmps00, cmbHC4OCAmps01, cmbHC4OCAmps02, cmbHC4OCAmps03, cmbHC4OCAmps04, cmbHC4OCAmps05, cmbHC4OCAmps06, cmbHC4OCAmps07, cmbHC4OCAmps08, cmbHC4OCAmps09, cmbHC4OCAmps10, cmbHC4OCAmps11 };
-            hc5OCAmps = new ComboBox[] { cmbHC5OCAmps00, cmbHC5OCAmps01, cmbHC5OCAmps02, cmbHC5OCAmps03, cmbHC5OCAmps04, cmbHC5OCAmps05, cmbHC5OCAmps06, cmbHC5OCAmps07, cmbHC5OCAmps08, cmbHC5OCAmps09, cmbHC5OCAmps10, cmbHC5OCAmps11 };
-            hc6OCAmps = new ComboBox[] { cmbHC6OCAmps00, cmbHC6OCAmps01, cmbHC6OCAmps02, cmbHC6OCAmps03, cmbHC6OCAmps04, cmbHC6OCAmps05, cmbHC6OCAmps06, cmbHC6OCAmps07, cmbHC6OCAmps08, cmbHC6OCAmps09, cmbHC6OCAmps10, cmbHC6OCAmps11 };
-            hcOCAmps = new ComboBox[][] { hc1OCAmps, hc2OCAmps, hc3OCAmps, hc4OCAmps, hc5OCAmps, hc6OCAmps };
+            hc1OCAmpsQuick = new ComboBox[] { cmbHC1OCAmps00, cmbHC1OCAmps01, cmbHC1OCAmps02, cmbHC1OCAmps03, cmbHC1OCAmps04, cmbHC1OCAmps05, cmbHC1OCAmps06, cmbHC1OCAmps07, cmbHC1OCAmps08, cmbHC1OCAmps09, cmbHC1OCAmps10, cmbHC1OCAmps11 };
+            hc2OCAmpsQuick = new ComboBox[] { cmbHC2OCAmps00, cmbHC2OCAmps01, cmbHC2OCAmps02, cmbHC2OCAmps03, cmbHC2OCAmps04, cmbHC2OCAmps05, cmbHC2OCAmps06, cmbHC2OCAmps07, cmbHC2OCAmps08, cmbHC2OCAmps09, cmbHC2OCAmps10, cmbHC2OCAmps11 };
+            hc3OCAmpsQuick = new ComboBox[] { cmbHC3OCAmps00, cmbHC3OCAmps01, cmbHC3OCAmps02, cmbHC3OCAmps03, cmbHC3OCAmps04, cmbHC3OCAmps05, cmbHC3OCAmps06, cmbHC3OCAmps07, cmbHC3OCAmps08, cmbHC3OCAmps09, cmbHC3OCAmps10, cmbHC3OCAmps11 };
+            hc4OCAmpsQuick = new ComboBox[] { cmbHC4OCAmps00, cmbHC4OCAmps01, cmbHC4OCAmps02, cmbHC4OCAmps03, cmbHC4OCAmps04, cmbHC4OCAmps05, cmbHC4OCAmps06, cmbHC4OCAmps07, cmbHC4OCAmps08, cmbHC4OCAmps09, cmbHC4OCAmps10, cmbHC4OCAmps11 };
+            hc5OCAmpsQuick = new ComboBox[] { cmbHC5OCAmps00, cmbHC5OCAmps01, cmbHC5OCAmps02, cmbHC5OCAmps03, cmbHC5OCAmps04, cmbHC5OCAmps05, cmbHC5OCAmps06, cmbHC5OCAmps07, cmbHC5OCAmps08, cmbHC5OCAmps09, cmbHC5OCAmps10, cmbHC5OCAmps11 };
+            hc6OCAmpsQuick = new ComboBox[] { cmbHC6OCAmps00, cmbHC6OCAmps01, cmbHC6OCAmps02, cmbHC6OCAmps03, cmbHC6OCAmps04, cmbHC6OCAmps05, cmbHC6OCAmps06, cmbHC6OCAmps07, cmbHC6OCAmps08, cmbHC6OCAmps09, cmbHC6OCAmps10, cmbHC6OCAmps11 };
+            hc1OCAmps = new TextBox[] { tbxHC1OCAmpsParamCh00, tbxHC1OCAmpsParamCh01, tbxHC1OCAmpsParamCh02, tbxHC1OCAmpsParamCh03, tbxHC1OCAmpsParamCh04, tbxHC1OCAmpsParamCh05, tbxHC1OCAmpsParamCh06, tbxHC1OCAmpsParamCh07, tbxHC1OCAmpsParamCh08, tbxHC1OCAmpsParamCh09, tbxHC1OCAmpsParamCh10, tbxHC1OCAmpsParamCh11 };
+            hcOCAmps = new TextBox[][] { hc1OCAmps };
             hc1OCTime = new ComboBox[] { cmbHC1OCTime00, cmbHC1OCTime01, cmbHC1OCTime02, cmbHC1OCTime03, cmbHC1OCTime04, cmbHC1OCTime05, cmbHC1OCTime06, cmbHC1OCTime07, cmbHC1OCTime08, cmbHC1OCTime09, cmbHC1OCTime10, cmbHC1OCTime11 };
             hc2OCTime = new ComboBox[] { cmbHC2OCTime00, cmbHC2OCTime01, cmbHC2OCTime02, cmbHC2OCTime03, cmbHC2OCTime04, cmbHC2OCTime05, cmbHC2OCTime06, cmbHC2OCTime07, cmbHC2OCTime08, cmbHC2OCTime09, cmbHC2OCTime10, cmbHC2OCTime11 };
             hc3OCTime = new ComboBox[] { cmbHC3OCTime00, cmbHC3OCTime01, cmbHC3OCTime02, cmbHC3OCTime03, cmbHC3OCTime04, cmbHC3OCTime05, cmbHC3OCTime06, cmbHC3OCTime07, cmbHC3OCTime08, cmbHC3OCTime09, cmbHC3OCTime10, cmbHC3OCTime11 };
@@ -3845,5 +3847,64 @@ namespace M1ConfigGenerator
             }
         }
 
+        private void cmbHC1OCAmps00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC1OCAmpsParamCh00.Text = cmbHC1OCAmps00.Text;
+        }
+
+        private void cmbHC1OCAmps01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC1OCAmpsParamCh01.Text = cmbHC1OCAmps01.Text;
+        }
+
+        private void cmbHC1OCAmps02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC1OCAmpsParamCh02.Text = cmbHC1OCAmps02.Text;
+        }
+
+        private void cmbHC1OCAmps03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC1OCAmpsParamCh03.Text = cmbHC1OCAmps03.Text;
+        }
+
+        private void cmbHC1OCAmps04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC1OCAmpsParamCh04.Text = cmbHC1OCAmps04.Text;
+        }
+
+        private void cmbHC1OCAmps05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC1OCAmpsParamCh05.Text = cmbHC1OCAmps05.Text;
+        }
+
+        private void cmbHC1OCAmps06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC1OCAmpsParamCh06.Text = cmbHC1OCAmps06.Text;
+        }
+
+        private void cmbHC1OCAmps07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC1OCAmpsParamCh07.Text = cmbHC1OCAmps07.Text;
+        }
+
+        private void cmbHC1OCAmps08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC1OCAmpsParamCh08.Text = cmbHC1OCAmps08.Text;
+        }
+
+        private void cmbHC1OCAmps09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC1OCAmpsParamCh09.Text = cmbHC1OCAmps09.Text;
+        }
+
+        private void cmbHC1OCAmps10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC1OCAmpsParamCh10.Text = cmbHC1OCAmps10.Text;
+        }
+
+        private void cmbHC1OCAmps11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC1OCAmpsParamCh11.Text = cmbHC1OCAmps11.Text;
+        }
     }
 }

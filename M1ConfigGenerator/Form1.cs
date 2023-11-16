@@ -348,6 +348,14 @@ namespace M1ConfigGenerator
         {
             HideNavButtons();
             ResetStartTab();
+            //auxObjects.RemoveAll(CardExists);
+        }
+
+        // trying to figure out some way to delete existing cards, this didn't work
+        private static bool CardExists(AuxCard argAuxCard)
+        {
+            bool cardExists = argAuxCard != null;
+            return cardExists;
         }
 
         private void btnStartCreate_Click(object sender, EventArgs e)
@@ -386,6 +394,16 @@ namespace M1ConfigGenerator
             {
                 lcObjects.Add(new LCCard(i + 1));
             }
+
+            foreach (TextBox t in auxConfigType) { t.Text = tbxStartCfgType.Text; }
+
+            foreach (TextBox t in breakerConfigType) { t.Text = tbxStartCfgType.Text; }
+
+            foreach (TextBox t in dimConfigType) { t.Text = tbxStartCfgType.Text; }
+
+            foreach (TextBox t in hcConfigType) { t.Text = tbxStartCfgType.Text; }
+
+            foreach (TextBox t in lcConfigType) { t.Text = tbxStartCfgType.Text; }
         }
 
         private void ResetStartTab()

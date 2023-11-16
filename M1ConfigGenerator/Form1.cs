@@ -3906,5 +3906,10 @@ namespace M1ConfigGenerator
         {
             tbxHC1OCAmpsParamCh11.Text = cmbHC1OCAmps11.Text;
         }
+
+        private void test_function(object sender, EventArgs e)
+        {
+
+        }
     }
 }

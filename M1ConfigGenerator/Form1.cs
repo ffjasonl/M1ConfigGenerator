@@ -1912,51 +1912,51 @@ namespace M1ConfigGenerator
             }
         }
 
-        private void checkBox520_CheckedChanged(object sender, EventArgs e)
+        private void chkTabVisHC3_CheckedChanged(object sender, EventArgs e)
         {
             if (chkTabVisHC3.Checked == true)
             {
-                this.tabControl1.SelectedIndex = 1;
+                this.tabControlHC3QF.SelectedIndex = 1;
             }
             else
             {
-                this.tabControl1.SelectedIndex = 0;
+                this.tabControlHC3QF.SelectedIndex = 0;
             }
         }
 
-        private void checkBox521_CheckedChanged(object sender, EventArgs e)
+        private void chkTabVisHC4_CheckedChanged(object sender, EventArgs e)
         {
             if (chkTabVisHC4.Checked == true)
             {
-                this.tabControl2.SelectedIndex = 1;
+                this.tabControlHC4QF.SelectedIndex = 1;
             }
             else
             {
-                this.tabControl2.SelectedIndex = 0;
+                this.tabControlHC4QF.SelectedIndex = 0;
             }
         }
 
-        private void checkBox522_CheckedChanged(object sender, EventArgs e)
+        private void chkTabVisHC5_CheckedChanged(object sender, EventArgs e)
         {
             if (chkTabVisHC5.Checked == true)
             {
-                this.tabControl3.SelectedIndex = 1;
+                this.tabControlHC5QF.SelectedIndex = 1;
             }
             else
             {
-                this.tabControl3.SelectedIndex = 0;
+                this.tabControlHC5QF.SelectedIndex = 0;
             }
         }
 
-        private void checkBox523_CheckedChanged(object sender, EventArgs e)
+        private void chkTabVisHC6_CheckedChanged(object sender, EventArgs e)
         {
             if (chkTabVisHC6.Checked == true)
             {
-                this.tabControl4.SelectedIndex = 1;
+                this.tabControlHC6QF.SelectedIndex = 1;
             }
             else
             {
-                this.tabControl4.SelectedIndex = 0;
+                this.tabControlHC6QF.SelectedIndex = 0;
             }
         }
 
@@ -2081,6 +2081,246 @@ namespace M1ConfigGenerator
             tbxHC2OCAmpsParamCh11.Text = cmbHC2OCAmps11.Text;
         }
 
+        private void cmbHC3OCAmps00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC3OCAmpsParamCh00.Text = cmbHC3OCAmps00.Text;
+        }
+
+        private void cmbHC3OCAmps01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC3OCAmpsParamCh01.Text = cmbHC3OCAmps01.Text;
+        }
+
+        private void cmbHC3OCAmps02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC3OCAmpsParamCh02.Text = cmbHC3OCAmps02.Text;
+        }
+
+        private void cmbHC3OCAmps03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC3OCAmpsParamCh03.Text = cmbHC3OCAmps03.Text;
+        }
+
+        private void cmbHC3OCAmps04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC3OCAmpsParamCh04.Text = cmbHC3OCAmps04.Text;
+        }
+
+        private void cmbHC3OCAmps05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC3OCAmpsParamCh05.Text = cmbHC3OCAmps05.Text;
+        }
+
+        private void cmbHC3OCAmps06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC3OCAmpsParamCh06.Text = cmbHC3OCAmps06.Text;
+        }
+
+        private void cmbHC3OCAmps07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC3OCAmpsParamCh07.Text = cmbHC3OCAmps07.Text;
+        }
+
+        private void cmbHC3OCAmps08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC3OCAmpsParamCh08.Text = cmbHC3OCAmps08.Text;
+        }
+
+        private void cmbHC3OCAmps09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC3OCAmpsParamCh09.Text = cmbHC3OCAmps09.Text;
+        }
+
+        private void cmbHC3OCAmps10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC3OCAmpsParamCh10.Text = cmbHC3OCAmps10.Text;
+        }
+
+        private void cmbHC3OCAmps11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC3OCAmpsParamCh11.Text = cmbHC3OCAmps11.Text;
+        }
+
+        private void cmbHC4OCAmps00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC4OCAmpsParamCh00.Text = cmbHC4OCAmps00.Text;
+        }
+
+        private void cmbHC4OCAmps01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC4OCAmpsParamCh01.Text = cmbHC4OCAmps01.Text;
+        }
+
+        private void cmbHC4OCAmps02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC4OCAmpsParamCh02.Text = cmbHC4OCAmps02.Text;
+        }
+
+        private void cmbHC4OCAmps03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC4OCAmpsParamCh03.Text = cmbHC4OCAmps03.Text;
+        }
+
+        private void cmbHC4OCAmps04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC4OCAmpsParamCh04.Text = cmbHC4OCAmps04.Text;
+        }
+
+        private void cmbHC4OCAmps05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC4OCAmpsParamCh05.Text = cmbHC4OCAmps05.Text;
+        }
+
+        private void cmbHC4OCAmps06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC4OCAmpsParamCh06.Text = cmbHC4OCAmps06.Text;
+        }
+
+        private void cmbHC4OCAmps07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC4OCAmpsParamCh07.Text = cmbHC4OCAmps07.Text;
+        }
+
+        private void cmbHC4OCAmps08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC4OCAmpsParamCh08.Text = cmbHC4OCAmps08.Text;
+        }
+
+        private void cmbHC4OCAmps09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC4OCAmpsParamCh09.Text = cmbHC4OCAmps09.Text;
+        }
+
+        private void cmbHC4OCAmps10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC4OCAmpsParamCh10.Text = cmbHC4OCAmps10.Text;
+        }
+
+        private void cmbHC4OCAmps11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC4OCAmpsParamCh11.Text = cmbHC4OCAmps11.Text;
+        }
+
+        private void cmbHC5OCAmps00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC5OCAmpsParamCh00.Text = cmbHC5OCAmps00.Text;
+        }
+
+        private void cmbHC5OCAmps01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC5OCAmpsParamCh01.Text = cmbHC5OCAmps01.Text;
+        }
+
+        private void cmbHC5OCAmps02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC5OCAmpsParamCh02.Text = cmbHC5OCAmps02.Text;
+        }
+
+        private void cmbHC5OCAmps03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC5OCAmpsParamCh03.Text = cmbHC5OCAmps03.Text;
+        }
+
+        private void cmbHC5OCAmps04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC5OCAmpsParamCh04.Text = cmbHC5OCAmps04.Text;
+        }
+
+        private void cmbHC5OCAmps05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC5OCAmpsParamCh05.Text = cmbHC5OCAmps05.Text;
+        }
+
+        private void cmbHC5OCAmps06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC5OCAmpsParamCh06.Text = cmbHC5OCAmps06.Text;
+        }
+
+        private void cmbHC5OCAmps07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC5OCAmpsParamCh07.Text = cmbHC5OCAmps07.Text;
+        }
+
+        private void cmbHC5OCAmps08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC5OCAmpsParamCh08.Text = cmbHC5OCAmps08.Text;
+        }
+
+        private void cmbHC5OCAmps09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC5OCAmpsParamCh09.Text = cmbHC5OCAmps09.Text;
+        }
+
+        private void cmbHC5OCAmps10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC5OCAmpsParamCh10.Text = cmbHC5OCAmps10.Text;
+        }
+
+        private void cmbHC5OCAmps11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC5OCAmpsParamCh11.Text = cmbHC5OCAmps11.Text;
+        }
+
+        private void cmbHC6OCAmps00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC6OCAmpsParamCh00.Text = cmbHC6OCAmps00.Text;
+        }
+
+        private void cmbHC6OCAmps01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC6OCAmpsParamCh01.Text = cmbHC6OCAmps01.Text;
+        }
+
+        private void cmbHC6OCAmps02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC6OCAmpsParamCh02.Text = cmbHC6OCAmps02.Text;
+        }
+
+        private void cmbHC6OCAmps03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC6OCAmpsParamCh03.Text = cmbHC6OCAmps03.Text;
+        }
+
+        private void cmbHC6OCAmps04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC6OCAmpsParamCh04.Text = cmbHC6OCAmps04.Text;
+        }
+
+        private void cmbHC6OCAmps05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC6OCAmpsParamCh05.Text = cmbHC6OCAmps05.Text;
+        }
+
+        private void cmbHC6OCAmps06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC6OCAmpsParamCh06.Text = cmbHC6OCAmps06.Text;
+        }
+
+        private void cmbHC6OCAmps07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC6OCAmpsParamCh07.Text = cmbHC6OCAmps07.Text;
+        }
+
+        private void cmbHC6OCAmps08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC6OCAmpsParamCh08.Text = cmbHC6OCAmps08.Text;
+        }
+
+        private void cmbHC6OCAmps09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC6OCAmpsParamCh09.Text = cmbHC6OCAmps09.Text;
+        }
+
+        private void cmbHC6OCAmps10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC6OCAmpsParamCh10.Text = cmbHC6OCAmps10.Text;
+        }
+
+        private void cmbHC6OCAmps11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbxHC6OCAmpsParamCh11.Text = cmbHC6OCAmps11.Text;
+        }
+
         // Quick Mode events
         private void cmbHC1Mode00_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -2102,6 +2342,9 @@ namespace M1ConfigGenerator
                 cmbHC1DeadTimeCh00.Text = "500";
                 cmbHC1PairedCh00.Text = "1";
             }
+
+            if (cmbHC1Startup00.Text == "High" || cmbHC1Startup00.Text == "Low") { cmbHC1DirectionCh00.Text = cmbHC1ModeParamCh00.Text; }
+            if (cmbHC1DirectionCh00.Text != "Off" && (cmbHC1ModeParamCh00.Text == "High" || cmbHC1ModeParamCh00.Text == "Low")) { cmbHC1DirectionCh00.Text = cmbHC1ModeParamCh00.Text; }
         }
 
         private void cmbHC1Mode01_SelectedIndexChanged(object sender, EventArgs e)
@@ -2130,6 +2373,9 @@ namespace M1ConfigGenerator
                 cmbHC1DeadTimeCh01.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh01.Text = "0";
             }
+
+            if (cmbHC1Startup01.Text == "High" || cmbHC1Startup01.Text == "Low") { cmbHC1DirectionCh01.Text = cmbHC1ModeParamCh01.Text; }
+            if (cmbHC1DirectionCh01.Text != "Off" && (cmbHC1ModeParamCh01.Text == "High" || cmbHC1ModeParamCh01.Text == "Low")) { cmbHC1DirectionCh01.Text = cmbHC1ModeParamCh01.Text; }
         }
 
         private void cmbHC1Mode02_SelectedIndexChanged(object sender, EventArgs e)
@@ -2158,6 +2404,9 @@ namespace M1ConfigGenerator
                 cmbHC1DeadTimeCh02.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh02.Text = "1";
             }
+
+            if (cmbHC1Startup02.Text == "High" || cmbHC1Startup02.Text == "Low") { cmbHC1DirectionCh02.Text = cmbHC1ModeParamCh02.Text; }
+            if (cmbHC1DirectionCh02.Text != "Off" && (cmbHC1ModeParamCh02.Text == "High" || cmbHC1ModeParamCh02.Text == "Low")) { cmbHC1DirectionCh02.Text = cmbHC1ModeParamCh02.Text; }
         }
 
         private void cmbHC1Mode03_SelectedIndexChanged(object sender, EventArgs e)
@@ -2186,6 +2435,9 @@ namespace M1ConfigGenerator
                 cmbHC1DeadTimeCh03.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh03.Text = "2";
             }
+
+            if (cmbHC1Startup03.Text == "High" || cmbHC1Startup03.Text == "Low") { cmbHC1DirectionCh03.Text = cmbHC1ModeParamCh03.Text; }
+            if (cmbHC1DirectionCh03.Text != "Off" && (cmbHC1ModeParamCh03.Text == "High" || cmbHC1ModeParamCh03.Text == "Low")) { cmbHC1DirectionCh03.Text = cmbHC1ModeParamCh03.Text; }
         }
 
         private void cmbHC1Mode04_SelectedIndexChanged(object sender, EventArgs e)
@@ -2214,6 +2466,9 @@ namespace M1ConfigGenerator
                 cmbHC1DeadTimeCh04.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh04.Text = "3";
             }
+
+            if (cmbHC1Startup04.Text == "High" || cmbHC1Startup04.Text == "Low") { cmbHC1DirectionCh04.Text = cmbHC1ModeParamCh04.Text; }
+            if (cmbHC1DirectionCh04.Text != "Off" && (cmbHC1ModeParamCh04.Text == "High" || cmbHC1ModeParamCh04.Text == "Low")) { cmbHC1DirectionCh04.Text = cmbHC1ModeParamCh04.Text; }
         }
 
         private void cmbHC1Mode05_SelectedIndexChanged(object sender, EventArgs e)
@@ -2242,6 +2497,9 @@ namespace M1ConfigGenerator
                 cmbHC1DeadTimeCh05.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh05.Text = "4";
             }
+
+            if (cmbHC1Startup05.Text == "High" || cmbHC1Startup05.Text == "Low") { cmbHC1DirectionCh05.Text = cmbHC1ModeParamCh05.Text; }
+            if (cmbHC1DirectionCh05.Text != "Off" && (cmbHC1ModeParamCh05.Text == "High" || cmbHC1ModeParamCh05.Text == "Low")) { cmbHC1DirectionCh05.Text = cmbHC1ModeParamCh05.Text; }
         }
 
         private void cmbHC1Mode06_SelectedIndexChanged(object sender, EventArgs e)
@@ -2270,6 +2528,9 @@ namespace M1ConfigGenerator
                 cmbHC1DeadTimeCh06.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh06.Text = "5";
             }
+
+            if (cmbHC1Startup06.Text == "High" || cmbHC1Startup06.Text == "Low") { cmbHC1DirectionCh06.Text = cmbHC1ModeParamCh06.Text; }
+            if (cmbHC1DirectionCh06.Text != "Off" && (cmbHC1ModeParamCh06.Text == "High" || cmbHC1ModeParamCh06.Text == "Low")) { cmbHC1DirectionCh06.Text = cmbHC1ModeParamCh06.Text; }
         }
 
         private void cmbHC1Mode07_SelectedIndexChanged(object sender, EventArgs e)
@@ -2298,6 +2559,9 @@ namespace M1ConfigGenerator
                 cmbHC1DeadTimeCh07.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh07.Text = "6";
             }
+
+            if (cmbHC1Startup07.Text == "High" || cmbHC1Startup07.Text == "Low") { cmbHC1DirectionCh07.Text = cmbHC1ModeParamCh07.Text; }
+            if (cmbHC1DirectionCh07.Text != "Off" && (cmbHC1ModeParamCh07.Text == "High" || cmbHC1ModeParamCh07.Text == "Low")) { cmbHC1DirectionCh07.Text = cmbHC1ModeParamCh07.Text; }
         }
 
         private void cmbHC1Mode08_SelectedIndexChanged(object sender, EventArgs e)
@@ -2326,6 +2590,9 @@ namespace M1ConfigGenerator
                 cmbHC1DeadTimeCh08.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh08.Text = "7";
             }
+
+            if (cmbHC1Startup08.Text == "High" || cmbHC1Startup08.Text == "Low") { cmbHC1DirectionCh08.Text = cmbHC1ModeParamCh08.Text; }
+            if (cmbHC1DirectionCh08.Text != "Off" && (cmbHC1ModeParamCh08.Text == "High" || cmbHC1ModeParamCh08.Text == "Low")) { cmbHC1DirectionCh08.Text = cmbHC1ModeParamCh08.Text; }
         }
 
         private void cmbHC1Mode09_SelectedIndexChanged(object sender, EventArgs e)
@@ -2354,6 +2621,9 @@ namespace M1ConfigGenerator
                 cmbHC1DeadTimeCh09.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh09.Text = "8";
             }
+
+            if (cmbHC1Startup09.Text == "High" || cmbHC1Startup09.Text == "Low") { cmbHC1DirectionCh09.Text = cmbHC1ModeParamCh09.Text; }
+            if (cmbHC1DirectionCh09.Text != "Off" && (cmbHC1ModeParamCh09.Text == "High" || cmbHC1ModeParamCh09.Text == "Low")) { cmbHC1DirectionCh09.Text = cmbHC1ModeParamCh09.Text; }
         }
 
         private void cmbHC1Mode10_SelectedIndexChanged(object sender, EventArgs e)
@@ -2382,6 +2652,9 @@ namespace M1ConfigGenerator
                 cmbHC1DeadTimeCh10.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh10.Text = "9";
             }
+
+            if (cmbHC1Startup10.Text == "High" || cmbHC1Startup10.Text == "Low") { cmbHC1DirectionCh10.Text = cmbHC1ModeParamCh10.Text; }
+            if (cmbHC1DirectionCh10.Text != "Off" && (cmbHC1ModeParamCh10.Text == "High" || cmbHC1ModeParamCh10.Text == "Low")) { cmbHC1DirectionCh10.Text = cmbHC1ModeParamCh10.Text; }
         }
 
         private void cmbHC1Mode11_SelectedIndexChanged(object sender, EventArgs e)
@@ -2404,8 +2677,10 @@ namespace M1ConfigGenerator
                 cmbHC1DeadTimeCh11.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh11.Text = "10";
             }
-        }
 
+            if (cmbHC1Startup11.Text == "High" || cmbHC1Startup11.Text == "Low") { cmbHC1DirectionCh11.Text = cmbHC1ModeParamCh11.Text; }
+            if (cmbHC1DirectionCh11.Text != "Off" && (cmbHC1ModeParamCh11.Text == "High" || cmbHC1ModeParamCh11.Text == "Low")) { cmbHC1DirectionCh11.Text = cmbHC1ModeParamCh11.Text; }
+        }
         private void cmbHC2Mode00_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbHC2Mode00.Text == "12V+")
@@ -2426,6 +2701,9 @@ namespace M1ConfigGenerator
                 cmbHC2DeadTimeCh00.Text = "500";
                 cmbHC2PairedCh00.Text = "1";
             }
+
+            if (cmbHC2Startup00.Text == "High" || cmbHC2Startup00.Text == "Low") { cmbHC2DirectionCh00.Text = cmbHC2ModeParamCh00.Text; }
+            if (cmbHC2DirectionCh00.Text != "Off" && (cmbHC2ModeParamCh00.Text == "High" || cmbHC2ModeParamCh00.Text == "Low")) { cmbHC2DirectionCh00.Text = cmbHC2ModeParamCh00.Text; }
         }
 
         private void cmbHC2Mode01_SelectedIndexChanged(object sender, EventArgs e)
@@ -2454,6 +2732,9 @@ namespace M1ConfigGenerator
                 cmbHC2DeadTimeCh01.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh01.Text = "0";
             }
+
+            if (cmbHC2Startup01.Text == "High" || cmbHC2Startup01.Text == "Low") { cmbHC2DirectionCh01.Text = cmbHC2ModeParamCh01.Text; }
+            if (cmbHC2DirectionCh01.Text != "Off" && (cmbHC2ModeParamCh01.Text == "High" || cmbHC2ModeParamCh01.Text == "Low")) { cmbHC2DirectionCh01.Text = cmbHC2ModeParamCh01.Text; }
         }
 
         private void cmbHC2Mode02_SelectedIndexChanged(object sender, EventArgs e)
@@ -2482,6 +2763,9 @@ namespace M1ConfigGenerator
                 cmbHC2DeadTimeCh02.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh02.Text = "1";
             }
+
+            if (cmbHC2Startup02.Text == "High" || cmbHC2Startup02.Text == "Low") { cmbHC2DirectionCh02.Text = cmbHC2ModeParamCh02.Text; }
+            if (cmbHC2DirectionCh02.Text != "Off" && (cmbHC2ModeParamCh02.Text == "High" || cmbHC2ModeParamCh02.Text == "Low")) { cmbHC2DirectionCh02.Text = cmbHC2ModeParamCh02.Text; }
         }
 
         private void cmbHC2Mode03_SelectedIndexChanged(object sender, EventArgs e)
@@ -2510,6 +2794,9 @@ namespace M1ConfigGenerator
                 cmbHC2DeadTimeCh03.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh03.Text = "2";
             }
+
+            if (cmbHC2Startup03.Text == "High" || cmbHC2Startup03.Text == "Low") { cmbHC2DirectionCh03.Text = cmbHC2ModeParamCh03.Text; }
+            if (cmbHC2DirectionCh03.Text != "Off" && (cmbHC2ModeParamCh03.Text == "High" || cmbHC2ModeParamCh03.Text == "Low")) { cmbHC2DirectionCh03.Text = cmbHC2ModeParamCh03.Text; }
         }
 
         private void cmbHC2Mode04_SelectedIndexChanged(object sender, EventArgs e)
@@ -2538,6 +2825,9 @@ namespace M1ConfigGenerator
                 cmbHC2DeadTimeCh04.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh04.Text = "3";
             }
+
+            if (cmbHC2Startup04.Text == "High" || cmbHC2Startup04.Text == "Low") { cmbHC2DirectionCh04.Text = cmbHC2ModeParamCh04.Text; }
+            if (cmbHC2DirectionCh04.Text != "Off" && (cmbHC2ModeParamCh04.Text == "High" || cmbHC2ModeParamCh04.Text == "Low")) { cmbHC2DirectionCh04.Text = cmbHC2ModeParamCh04.Text; }
         }
 
         private void cmbHC2Mode05_SelectedIndexChanged(object sender, EventArgs e)
@@ -2566,6 +2856,9 @@ namespace M1ConfigGenerator
                 cmbHC2DeadTimeCh05.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh05.Text = "4";
             }
+
+            if (cmbHC2Startup05.Text == "High" || cmbHC2Startup05.Text == "Low") { cmbHC2DirectionCh05.Text = cmbHC2ModeParamCh05.Text; }
+            if (cmbHC2DirectionCh05.Text != "Off" && (cmbHC2ModeParamCh05.Text == "High" || cmbHC2ModeParamCh05.Text == "Low")) { cmbHC2DirectionCh05.Text = cmbHC2ModeParamCh05.Text; }
         }
 
         private void cmbHC2Mode06_SelectedIndexChanged(object sender, EventArgs e)
@@ -2594,6 +2887,9 @@ namespace M1ConfigGenerator
                 cmbHC2DeadTimeCh06.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh06.Text = "5";
             }
+
+            if (cmbHC2Startup06.Text == "High" || cmbHC2Startup06.Text == "Low") { cmbHC2DirectionCh06.Text = cmbHC2ModeParamCh06.Text; }
+            if (cmbHC2DirectionCh06.Text != "Off" && (cmbHC2ModeParamCh06.Text == "High" || cmbHC2ModeParamCh06.Text == "Low")) { cmbHC2DirectionCh06.Text = cmbHC2ModeParamCh06.Text; }
         }
 
         private void cmbHC2Mode07_SelectedIndexChanged(object sender, EventArgs e)
@@ -2622,6 +2918,9 @@ namespace M1ConfigGenerator
                 cmbHC2DeadTimeCh07.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh07.Text = "6";
             }
+
+            if (cmbHC2Startup07.Text == "High" || cmbHC2Startup07.Text == "Low") { cmbHC2DirectionCh07.Text = cmbHC2ModeParamCh07.Text; }
+            if (cmbHC2DirectionCh07.Text != "Off" && (cmbHC2ModeParamCh07.Text == "High" || cmbHC2ModeParamCh07.Text == "Low")) { cmbHC2DirectionCh07.Text = cmbHC2ModeParamCh07.Text; }
         }
 
         private void cmbHC2Mode08_SelectedIndexChanged(object sender, EventArgs e)
@@ -2650,6 +2949,9 @@ namespace M1ConfigGenerator
                 cmbHC2DeadTimeCh08.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh08.Text = "7";
             }
+
+            if (cmbHC2Startup08.Text == "High" || cmbHC2Startup08.Text == "Low") { cmbHC2DirectionCh08.Text = cmbHC2ModeParamCh08.Text; }
+            if (cmbHC2DirectionCh08.Text != "Off" && (cmbHC2ModeParamCh08.Text == "High" || cmbHC2ModeParamCh08.Text == "Low")) { cmbHC2DirectionCh08.Text = cmbHC2ModeParamCh08.Text; }
         }
 
         private void cmbHC2Mode09_SelectedIndexChanged(object sender, EventArgs e)
@@ -2678,6 +2980,9 @@ namespace M1ConfigGenerator
                 cmbHC2DeadTimeCh09.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh09.Text = "8";
             }
+
+            if (cmbHC2Startup09.Text == "High" || cmbHC2Startup09.Text == "Low") { cmbHC2DirectionCh09.Text = cmbHC2ModeParamCh09.Text; }
+            if (cmbHC2DirectionCh09.Text != "Off" && (cmbHC2ModeParamCh09.Text == "High" || cmbHC2ModeParamCh09.Text == "Low")) { cmbHC2DirectionCh09.Text = cmbHC2ModeParamCh09.Text; }
         }
 
         private void cmbHC2Mode10_SelectedIndexChanged(object sender, EventArgs e)
@@ -2706,6 +3011,9 @@ namespace M1ConfigGenerator
                 cmbHC2DeadTimeCh10.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh10.Text = "9";
             }
+
+            if (cmbHC2Startup10.Text == "High" || cmbHC2Startup10.Text == "Low") { cmbHC2DirectionCh10.Text = cmbHC2ModeParamCh10.Text; }
+            if (cmbHC2DirectionCh10.Text != "Off" && (cmbHC2ModeParamCh10.Text == "High" || cmbHC2ModeParamCh10.Text == "Low")) { cmbHC2DirectionCh10.Text = cmbHC2ModeParamCh10.Text; }
         }
 
         private void cmbHC2Mode11_SelectedIndexChanged(object sender, EventArgs e)
@@ -2722,12 +3030,1451 @@ namespace M1ConfigGenerator
                 cmbHC2DeadTimeCh11.Text = "0";
                 cmbHC2PairedCh11.Text = "None";
             }
-             else if (cmbHC2Mode11.Text == "RP DN")
+            else if (cmbHC2Mode11.Text == "RP DN")
             {
                 cmbHC2ModeParamCh11.Text = "Slave";
                 cmbHC2DeadTimeCh11.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh11.Text = "10";
             }
+
+            if (cmbHC2Startup11.Text == "High" || cmbHC2Startup11.Text == "Low") { cmbHC2DirectionCh11.Text = cmbHC2ModeParamCh11.Text; }
+            if (cmbHC2DirectionCh11.Text != "Off" && (cmbHC2ModeParamCh11.Text == "High" || cmbHC2ModeParamCh11.Text == "Low")) { cmbHC2DirectionCh11.Text = cmbHC2ModeParamCh11.Text; }
+        }
+        private void cmbHC3Mode00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Mode00.Text == "12V+")
+            {
+                cmbHC3ModeParamCh00.Text = "High";
+                cmbHC3DeadTimeCh00.Text = "0";
+                cmbHC3PairedCh00.Text = "None";
+            }
+            else if (cmbHC3Mode00.Text == "Ground")
+            {
+                cmbHC3ModeParamCh00.Text = "Low";
+                cmbHC3DeadTimeCh00.Text = "0";
+                cmbHC3PairedCh00.Text = "None";
+            }
+            else if (cmbHC3Mode00.Text == "RP UP")
+            {
+                cmbHC3ModeParamCh00.Text = "H Br";
+                cmbHC3DeadTimeCh00.Text = "500";
+                cmbHC3PairedCh00.Text = "1";
+            }
+
+            if (cmbHC3Startup00.Text == "High" || cmbHC3Startup00.Text == "Low") { cmbHC3DirectionCh00.Text = cmbHC3ModeParamCh00.Text; }
+            if (cmbHC3DirectionCh00.Text != "Off" && (cmbHC3ModeParamCh00.Text == "High" || cmbHC3ModeParamCh00.Text == "Low")) { cmbHC3DirectionCh00.Text = cmbHC3ModeParamCh00.Text; }
+        }
+
+        private void cmbHC3Mode01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Mode01.Text == "12V+")
+            {
+                cmbHC3ModeParamCh01.Text = "High";
+                cmbHC3DeadTimeCh01.Text = "0";
+                cmbHC3PairedCh01.Text = "None";
+            }
+            else if (cmbHC3Mode01.Text == "Ground")
+            {
+                cmbHC3ModeParamCh01.Text = "Low";
+                cmbHC3DeadTimeCh01.Text = "0";
+                cmbHC3PairedCh01.Text = "None";
+            }
+            else if (cmbHC3Mode01.Text == "RP UP")
+            {
+                cmbHC3ModeParamCh01.Text = "H Br";
+                cmbHC3DeadTimeCh01.Text = "500";
+                cmbHC3PairedCh01.Text = "2";
+            }
+            else if (cmbHC3Mode01.Text == "RP DN")
+            {
+                cmbHC3ModeParamCh01.Text = "Slave";
+                cmbHC3DeadTimeCh01.Text = "500"; // probably not needed, just in case
+                cmbHC3PairedCh01.Text = "0";
+            }
+
+            if (cmbHC3Startup01.Text == "High" || cmbHC3Startup01.Text == "Low") { cmbHC3DirectionCh01.Text = cmbHC3ModeParamCh01.Text; }
+            if (cmbHC3DirectionCh01.Text != "Off" && (cmbHC3ModeParamCh01.Text == "High" || cmbHC3ModeParamCh01.Text == "Low")) { cmbHC3DirectionCh01.Text = cmbHC3ModeParamCh01.Text; }
+        }
+
+        private void cmbHC3Mode02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Mode02.Text == "12V+")
+            {
+                cmbHC3ModeParamCh02.Text = "High";
+                cmbHC3DeadTimeCh02.Text = "0";
+                cmbHC3PairedCh02.Text = "None";
+            }
+            else if (cmbHC3Mode02.Text == "Ground")
+            {
+                cmbHC3ModeParamCh02.Text = "Low";
+                cmbHC3DeadTimeCh02.Text = "0";
+                cmbHC3PairedCh02.Text = "None";
+            }
+            else if (cmbHC3Mode02.Text == "RP UP")
+            {
+                cmbHC3ModeParamCh02.Text = "H Br";
+                cmbHC3DeadTimeCh02.Text = "500";
+                cmbHC3PairedCh02.Text = "3";
+            }
+            else if (cmbHC3Mode02.Text == "RP DN")
+            {
+                cmbHC3ModeParamCh02.Text = "Slave";
+                cmbHC3DeadTimeCh02.Text = "500"; // probably not needed, just in case
+                cmbHC3PairedCh02.Text = "1";
+            }
+
+            if (cmbHC3Startup02.Text == "High" || cmbHC3Startup02.Text == "Low") { cmbHC3DirectionCh02.Text = cmbHC3ModeParamCh02.Text; }
+            if (cmbHC3DirectionCh02.Text != "Off" && (cmbHC3ModeParamCh02.Text == "High" || cmbHC3ModeParamCh02.Text == "Low")) { cmbHC3DirectionCh02.Text = cmbHC3ModeParamCh02.Text; }
+        }
+
+        private void cmbHC3Mode03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Mode03.Text == "12V+")
+            {
+                cmbHC3ModeParamCh03.Text = "High";
+                cmbHC3DeadTimeCh03.Text = "0";
+                cmbHC3PairedCh03.Text = "None";
+            }
+            else if (cmbHC3Mode03.Text == "Ground")
+            {
+                cmbHC3ModeParamCh03.Text = "Low";
+                cmbHC3DeadTimeCh03.Text = "0";
+                cmbHC3PairedCh03.Text = "None";
+            }
+            else if (cmbHC3Mode03.Text == "RP UP")
+            {
+                cmbHC3ModeParamCh03.Text = "H Br";
+                cmbHC3DeadTimeCh03.Text = "500";
+                cmbHC3PairedCh03.Text = "4";
+            }
+            else if (cmbHC3Mode03.Text == "RP DN")
+            {
+                cmbHC3ModeParamCh03.Text = "Slave";
+                cmbHC3DeadTimeCh03.Text = "500"; // probably not needed, just in case
+                cmbHC3PairedCh03.Text = "2";
+            }
+
+            if (cmbHC3Startup03.Text == "High" || cmbHC3Startup03.Text == "Low") { cmbHC3DirectionCh03.Text = cmbHC3ModeParamCh03.Text; }
+            if (cmbHC3DirectionCh03.Text != "Off" && (cmbHC3ModeParamCh03.Text == "High" || cmbHC3ModeParamCh03.Text == "Low")) { cmbHC3DirectionCh03.Text = cmbHC3ModeParamCh03.Text; }
+        }
+
+        private void cmbHC3Mode04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Mode04.Text == "12V+")
+            {
+                cmbHC3ModeParamCh04.Text = "High";
+                cmbHC3DeadTimeCh04.Text = "0";
+                cmbHC3PairedCh04.Text = "None";
+            }
+            else if (cmbHC3Mode04.Text == "Ground")
+            {
+                cmbHC3ModeParamCh04.Text = "Low";
+                cmbHC3DeadTimeCh04.Text = "0";
+                cmbHC3PairedCh04.Text = "None";
+            }
+            else if (cmbHC3Mode04.Text == "RP UP")
+            {
+                cmbHC3ModeParamCh04.Text = "H Br";
+                cmbHC3DeadTimeCh04.Text = "500";
+                cmbHC3PairedCh04.Text = "5";
+            }
+            else if (cmbHC3Mode04.Text == "RP DN")
+            {
+                cmbHC3ModeParamCh04.Text = "Slave";
+                cmbHC3DeadTimeCh04.Text = "500"; // probably not needed, just in case
+                cmbHC3PairedCh04.Text = "3";
+            }
+
+            if (cmbHC3Startup04.Text == "High" || cmbHC3Startup04.Text == "Low") { cmbHC3DirectionCh04.Text = cmbHC3ModeParamCh04.Text; }
+            if (cmbHC3DirectionCh04.Text != "Off" && (cmbHC3ModeParamCh04.Text == "High" || cmbHC3ModeParamCh04.Text == "Low")) { cmbHC3DirectionCh04.Text = cmbHC3ModeParamCh04.Text; }
+        }
+
+        private void cmbHC3Mode05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Mode05.Text == "12V+")
+            {
+                cmbHC3ModeParamCh05.Text = "High";
+                cmbHC3DeadTimeCh05.Text = "0";
+                cmbHC3PairedCh05.Text = "None";
+            }
+            else if (cmbHC3Mode05.Text == "Ground")
+            {
+                cmbHC3ModeParamCh05.Text = "Low";
+                cmbHC3DeadTimeCh05.Text = "0";
+                cmbHC3PairedCh05.Text = "None";
+            }
+            else if (cmbHC3Mode05.Text == "RP UP")
+            {
+                cmbHC3ModeParamCh05.Text = "H Br";
+                cmbHC3DeadTimeCh05.Text = "500";
+                cmbHC3PairedCh05.Text = "6";
+            }
+            else if (cmbHC3Mode05.Text == "RP DN")
+            {
+                cmbHC3ModeParamCh05.Text = "Slave";
+                cmbHC3DeadTimeCh05.Text = "500"; // probably not needed, just in case
+                cmbHC3PairedCh05.Text = "4";
+            }
+
+            if (cmbHC3Startup05.Text == "High" || cmbHC3Startup05.Text == "Low") { cmbHC3DirectionCh05.Text = cmbHC3ModeParamCh05.Text; }
+            if (cmbHC3DirectionCh05.Text != "Off" && (cmbHC3ModeParamCh05.Text == "High" || cmbHC3ModeParamCh05.Text == "Low")) { cmbHC3DirectionCh05.Text = cmbHC3ModeParamCh05.Text; }
+        }
+
+        private void cmbHC3Mode06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Mode06.Text == "12V+")
+            {
+                cmbHC3ModeParamCh06.Text = "High";
+                cmbHC3DeadTimeCh06.Text = "0";
+                cmbHC3PairedCh06.Text = "None";
+            }
+            else if (cmbHC3Mode06.Text == "Ground")
+            {
+                cmbHC3ModeParamCh06.Text = "Low";
+                cmbHC3DeadTimeCh06.Text = "0";
+                cmbHC3PairedCh06.Text = "None";
+            }
+            else if (cmbHC3Mode06.Text == "RP UP")
+            {
+                cmbHC3ModeParamCh06.Text = "H Br";
+                cmbHC3DeadTimeCh06.Text = "500";
+                cmbHC3PairedCh06.Text = "7";
+            }
+            else if (cmbHC3Mode06.Text == "RP DN")
+            {
+                cmbHC3ModeParamCh06.Text = "Slave";
+                cmbHC3DeadTimeCh06.Text = "500"; // probably not needed, just in case
+                cmbHC3PairedCh06.Text = "5";
+            }
+
+            if (cmbHC3Startup06.Text == "High" || cmbHC3Startup06.Text == "Low") { cmbHC3DirectionCh06.Text = cmbHC3ModeParamCh06.Text; }
+            if (cmbHC3DirectionCh06.Text != "Off" && (cmbHC3ModeParamCh06.Text == "High" || cmbHC3ModeParamCh06.Text == "Low")) { cmbHC3DirectionCh06.Text = cmbHC3ModeParamCh06.Text; }
+        }
+
+        private void cmbHC3Mode07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Mode07.Text == "12V+")
+            {
+                cmbHC3ModeParamCh07.Text = "High";
+                cmbHC3DeadTimeCh07.Text = "0";
+                cmbHC3PairedCh07.Text = "None";
+            }
+            else if (cmbHC3Mode07.Text == "Ground")
+            {
+                cmbHC3ModeParamCh07.Text = "Low";
+                cmbHC3DeadTimeCh07.Text = "0";
+                cmbHC3PairedCh07.Text = "None";
+            }
+            else if (cmbHC3Mode07.Text == "RP UP")
+            {
+                cmbHC3ModeParamCh07.Text = "H Br";
+                cmbHC3DeadTimeCh07.Text = "500";
+                cmbHC3PairedCh07.Text = "8";
+            }
+            else if (cmbHC3Mode07.Text == "RP DN")
+            {
+                cmbHC3ModeParamCh07.Text = "Slave";
+                cmbHC3DeadTimeCh07.Text = "500"; // probably not needed, just in case
+                cmbHC3PairedCh07.Text = "6";
+            }
+
+            if (cmbHC3Startup07.Text == "High" || cmbHC3Startup07.Text == "Low") { cmbHC3DirectionCh07.Text = cmbHC3ModeParamCh07.Text; }
+            if (cmbHC3DirectionCh07.Text != "Off" && (cmbHC3ModeParamCh07.Text == "High" || cmbHC3ModeParamCh07.Text == "Low")) { cmbHC3DirectionCh07.Text = cmbHC3ModeParamCh07.Text; }
+        }
+
+        private void cmbHC3Mode08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Mode08.Text == "12V+")
+            {
+                cmbHC3ModeParamCh08.Text = "High";
+                cmbHC3DeadTimeCh08.Text = "0";
+                cmbHC3PairedCh08.Text = "None";
+            }
+            else if (cmbHC3Mode08.Text == "Ground")
+            {
+                cmbHC3ModeParamCh08.Text = "Low";
+                cmbHC3DeadTimeCh08.Text = "0";
+                cmbHC3PairedCh08.Text = "None";
+            }
+            else if (cmbHC3Mode08.Text == "RP UP")
+            {
+                cmbHC3ModeParamCh08.Text = "H Br";
+                cmbHC3DeadTimeCh08.Text = "500";
+                cmbHC3PairedCh08.Text = "9";
+            }
+            else if (cmbHC3Mode08.Text == "RP DN")
+            {
+                cmbHC3ModeParamCh08.Text = "Slave";
+                cmbHC3DeadTimeCh08.Text = "500"; // probably not needed, just in case
+                cmbHC3PairedCh08.Text = "7";
+            }
+
+            if (cmbHC3Startup08.Text == "High" || cmbHC3Startup08.Text == "Low") { cmbHC3DirectionCh08.Text = cmbHC3ModeParamCh08.Text; }
+            if (cmbHC3DirectionCh08.Text != "Off" && (cmbHC3ModeParamCh08.Text == "High" || cmbHC3ModeParamCh08.Text == "Low")) { cmbHC3DirectionCh08.Text = cmbHC3ModeParamCh08.Text; }
+        }
+
+        private void cmbHC3Mode09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Mode09.Text == "12V+")
+            {
+                cmbHC3ModeParamCh09.Text = "High";
+                cmbHC3DeadTimeCh09.Text = "0";
+                cmbHC3PairedCh09.Text = "None";
+            }
+            else if (cmbHC3Mode09.Text == "Ground")
+            {
+                cmbHC3ModeParamCh09.Text = "Low";
+                cmbHC3DeadTimeCh09.Text = "0";
+                cmbHC3PairedCh09.Text = "None";
+            }
+            else if (cmbHC3Mode09.Text == "RP UP")
+            {
+                cmbHC3ModeParamCh09.Text = "H Br";
+                cmbHC3DeadTimeCh09.Text = "500";
+                cmbHC3PairedCh09.Text = "10";
+            }
+            else if (cmbHC3Mode09.Text == "RP DN")
+            {
+                cmbHC3ModeParamCh09.Text = "Slave";
+                cmbHC3DeadTimeCh09.Text = "500"; // probably not needed, just in case
+                cmbHC3PairedCh09.Text = "8";
+            }
+
+            if (cmbHC3Startup09.Text == "High" || cmbHC3Startup09.Text == "Low") { cmbHC3DirectionCh09.Text = cmbHC3ModeParamCh09.Text; }
+            if (cmbHC3DirectionCh09.Text != "Off" && (cmbHC3ModeParamCh09.Text == "High" || cmbHC3ModeParamCh09.Text == "Low")) { cmbHC3DirectionCh09.Text = cmbHC3ModeParamCh09.Text; }
+        }
+
+        private void cmbHC3Mode10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Mode10.Text == "12V+")
+            {
+                cmbHC3ModeParamCh10.Text = "High";
+                cmbHC3DeadTimeCh10.Text = "0";
+                cmbHC3PairedCh10.Text = "None";
+            }
+            else if (cmbHC3Mode10.Text == "Ground")
+            {
+                cmbHC3ModeParamCh10.Text = "Low";
+                cmbHC3DeadTimeCh10.Text = "0";
+                cmbHC3PairedCh10.Text = "None";
+            }
+            else if (cmbHC3Mode10.Text == "RP UP")
+            {
+                cmbHC3ModeParamCh10.Text = "H Br";
+                cmbHC3DeadTimeCh10.Text = "500";
+                cmbHC3PairedCh10.Text = "11";
+            }
+            else if (cmbHC3Mode10.Text == "RP DN")
+            {
+                cmbHC3ModeParamCh10.Text = "Slave";
+                cmbHC3DeadTimeCh10.Text = "500"; // probably not needed, just in case
+                cmbHC3PairedCh10.Text = "9";
+            }
+
+            if (cmbHC3Startup10.Text == "High" || cmbHC3Startup10.Text == "Low") { cmbHC3DirectionCh10.Text = cmbHC3ModeParamCh10.Text; }
+            if (cmbHC3DirectionCh10.Text != "Off" && (cmbHC3ModeParamCh10.Text == "High" || cmbHC3ModeParamCh10.Text == "Low")) { cmbHC3DirectionCh10.Text = cmbHC3ModeParamCh10.Text; }
+        }
+
+        private void cmbHC3Mode11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Mode11.Text == "12V+")
+            {
+                cmbHC3ModeParamCh11.Text = "High";
+                cmbHC3DeadTimeCh11.Text = "0";
+                cmbHC3PairedCh11.Text = "None";
+            }
+            else if (cmbHC3Mode11.Text == "Ground")
+            {
+                cmbHC3ModeParamCh11.Text = "Low";
+                cmbHC3DeadTimeCh11.Text = "0";
+                cmbHC3PairedCh11.Text = "None";
+            }
+            else if (cmbHC3Mode11.Text == "RP DN")
+            {
+                cmbHC3ModeParamCh11.Text = "Slave";
+                cmbHC3DeadTimeCh11.Text = "500"; // probably not needed, just in case
+                cmbHC3PairedCh11.Text = "10";
+            }
+
+            if (cmbHC3Startup11.Text == "High" || cmbHC3Startup11.Text == "Low") { cmbHC3DirectionCh11.Text = cmbHC3ModeParamCh11.Text; }
+            if (cmbHC3DirectionCh11.Text != "Off" && (cmbHC3ModeParamCh11.Text == "High" || cmbHC3ModeParamCh11.Text == "Low")) { cmbHC3DirectionCh11.Text = cmbHC3ModeParamCh11.Text; }
+        }
+        private void cmbHC4Mode00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Mode00.Text == "12V+")
+            {
+                cmbHC4ModeParamCh00.Text = "High";
+                cmbHC4DeadTimeCh00.Text = "0";
+                cmbHC4PairedCh00.Text = "None";
+            }
+            else if (cmbHC4Mode00.Text == "Ground")
+            {
+                cmbHC4ModeParamCh00.Text = "Low";
+                cmbHC4DeadTimeCh00.Text = "0";
+                cmbHC4PairedCh00.Text = "None";
+            }
+            else if (cmbHC4Mode00.Text == "RP UP")
+            {
+                cmbHC4ModeParamCh00.Text = "H Br";
+                cmbHC4DeadTimeCh00.Text = "500";
+                cmbHC4PairedCh00.Text = "1";
+            }
+
+            if (cmbHC4Startup00.Text == "High" || cmbHC4Startup00.Text == "Low") { cmbHC4DirectionCh00.Text = cmbHC4ModeParamCh00.Text; }
+            if (cmbHC4DirectionCh00.Text != "Off" && (cmbHC4ModeParamCh00.Text == "High" || cmbHC4ModeParamCh00.Text == "Low")) { cmbHC4DirectionCh00.Text = cmbHC4ModeParamCh00.Text; }
+        }
+
+        private void cmbHC4Mode01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Mode01.Text == "12V+")
+            {
+                cmbHC4ModeParamCh01.Text = "High";
+                cmbHC4DeadTimeCh01.Text = "0";
+                cmbHC4PairedCh01.Text = "None";
+            }
+            else if (cmbHC4Mode01.Text == "Ground")
+            {
+                cmbHC4ModeParamCh01.Text = "Low";
+                cmbHC4DeadTimeCh01.Text = "0";
+                cmbHC4PairedCh01.Text = "None";
+            }
+            else if (cmbHC4Mode01.Text == "RP UP")
+            {
+                cmbHC4ModeParamCh01.Text = "H Br";
+                cmbHC4DeadTimeCh01.Text = "500";
+                cmbHC4PairedCh01.Text = "2";
+            }
+            else if (cmbHC4Mode01.Text == "RP DN")
+            {
+                cmbHC4ModeParamCh01.Text = "Slave";
+                cmbHC4DeadTimeCh01.Text = "500"; // probably not needed, just in case
+                cmbHC4PairedCh01.Text = "0";
+            }
+
+            if (cmbHC4Startup01.Text == "High" || cmbHC4Startup01.Text == "Low") { cmbHC4DirectionCh01.Text = cmbHC4ModeParamCh01.Text; }
+            if (cmbHC4DirectionCh01.Text != "Off" && (cmbHC4ModeParamCh01.Text == "High" || cmbHC4ModeParamCh01.Text == "Low")) { cmbHC4DirectionCh01.Text = cmbHC4ModeParamCh01.Text; }
+        }
+
+        private void cmbHC4Mode02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Mode02.Text == "12V+")
+            {
+                cmbHC4ModeParamCh02.Text = "High";
+                cmbHC4DeadTimeCh02.Text = "0";
+                cmbHC4PairedCh02.Text = "None";
+            }
+            else if (cmbHC4Mode02.Text == "Ground")
+            {
+                cmbHC4ModeParamCh02.Text = "Low";
+                cmbHC4DeadTimeCh02.Text = "0";
+                cmbHC4PairedCh02.Text = "None";
+            }
+            else if (cmbHC4Mode02.Text == "RP UP")
+            {
+                cmbHC4ModeParamCh02.Text = "H Br";
+                cmbHC4DeadTimeCh02.Text = "500";
+                cmbHC4PairedCh02.Text = "3";
+            }
+            else if (cmbHC4Mode02.Text == "RP DN")
+            {
+                cmbHC4ModeParamCh02.Text = "Slave";
+                cmbHC4DeadTimeCh02.Text = "500"; // probably not needed, just in case
+                cmbHC4PairedCh02.Text = "1";
+            }
+
+            if (cmbHC4Startup02.Text == "High" || cmbHC4Startup02.Text == "Low") { cmbHC4DirectionCh02.Text = cmbHC4ModeParamCh02.Text; }
+            if (cmbHC4DirectionCh02.Text != "Off" && (cmbHC4ModeParamCh02.Text == "High" || cmbHC4ModeParamCh02.Text == "Low")) { cmbHC4DirectionCh02.Text = cmbHC4ModeParamCh02.Text; }
+        }
+
+        private void cmbHC4Mode03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Mode03.Text == "12V+")
+            {
+                cmbHC4ModeParamCh03.Text = "High";
+                cmbHC4DeadTimeCh03.Text = "0";
+                cmbHC4PairedCh03.Text = "None";
+            }
+            else if (cmbHC4Mode03.Text == "Ground")
+            {
+                cmbHC4ModeParamCh03.Text = "Low";
+                cmbHC4DeadTimeCh03.Text = "0";
+                cmbHC4PairedCh03.Text = "None";
+            }
+            else if (cmbHC4Mode03.Text == "RP UP")
+            {
+                cmbHC4ModeParamCh03.Text = "H Br";
+                cmbHC4DeadTimeCh03.Text = "500";
+                cmbHC4PairedCh03.Text = "4";
+            }
+            else if (cmbHC4Mode03.Text == "RP DN")
+            {
+                cmbHC4ModeParamCh03.Text = "Slave";
+                cmbHC4DeadTimeCh03.Text = "500"; // probably not needed, just in case
+                cmbHC4PairedCh03.Text = "2";
+            }
+
+            if (cmbHC4Startup03.Text == "High" || cmbHC4Startup03.Text == "Low") { cmbHC4DirectionCh03.Text = cmbHC4ModeParamCh03.Text; }
+            if (cmbHC4DirectionCh03.Text != "Off" && (cmbHC4ModeParamCh03.Text == "High" || cmbHC4ModeParamCh03.Text == "Low")) { cmbHC4DirectionCh03.Text = cmbHC4ModeParamCh03.Text; }
+        }
+
+        private void cmbHC4Mode04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Mode04.Text == "12V+")
+            {
+                cmbHC4ModeParamCh04.Text = "High";
+                cmbHC4DeadTimeCh04.Text = "0";
+                cmbHC4PairedCh04.Text = "None";
+            }
+            else if (cmbHC4Mode04.Text == "Ground")
+            {
+                cmbHC4ModeParamCh04.Text = "Low";
+                cmbHC4DeadTimeCh04.Text = "0";
+                cmbHC4PairedCh04.Text = "None";
+            }
+            else if (cmbHC4Mode04.Text == "RP UP")
+            {
+                cmbHC4ModeParamCh04.Text = "H Br";
+                cmbHC4DeadTimeCh04.Text = "500";
+                cmbHC4PairedCh04.Text = "5";
+            }
+            else if (cmbHC4Mode04.Text == "RP DN")
+            {
+                cmbHC4ModeParamCh04.Text = "Slave";
+                cmbHC4DeadTimeCh04.Text = "500"; // probably not needed, just in case
+                cmbHC4PairedCh04.Text = "3";
+            }
+
+            if (cmbHC4Startup04.Text == "High" || cmbHC4Startup04.Text == "Low") { cmbHC4DirectionCh04.Text = cmbHC4ModeParamCh04.Text; }
+            if (cmbHC4DirectionCh04.Text != "Off" && (cmbHC4ModeParamCh04.Text == "High" || cmbHC4ModeParamCh04.Text == "Low")) { cmbHC4DirectionCh04.Text = cmbHC4ModeParamCh04.Text; }
+        }
+
+        private void cmbHC4Mode05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Mode05.Text == "12V+")
+            {
+                cmbHC4ModeParamCh05.Text = "High";
+                cmbHC4DeadTimeCh05.Text = "0";
+                cmbHC4PairedCh05.Text = "None";
+            }
+            else if (cmbHC4Mode05.Text == "Ground")
+            {
+                cmbHC4ModeParamCh05.Text = "Low";
+                cmbHC4DeadTimeCh05.Text = "0";
+                cmbHC4PairedCh05.Text = "None";
+            }
+            else if (cmbHC4Mode05.Text == "RP UP")
+            {
+                cmbHC4ModeParamCh05.Text = "H Br";
+                cmbHC4DeadTimeCh05.Text = "500";
+                cmbHC4PairedCh05.Text = "6";
+            }
+            else if (cmbHC4Mode05.Text == "RP DN")
+            {
+                cmbHC4ModeParamCh05.Text = "Slave";
+                cmbHC4DeadTimeCh05.Text = "500"; // probably not needed, just in case
+                cmbHC4PairedCh05.Text = "4";
+            }
+
+            if (cmbHC4Startup05.Text == "High" || cmbHC4Startup05.Text == "Low") { cmbHC4DirectionCh05.Text = cmbHC4ModeParamCh05.Text; }
+            if (cmbHC4DirectionCh05.Text != "Off" && (cmbHC4ModeParamCh05.Text == "High" || cmbHC4ModeParamCh05.Text == "Low")) { cmbHC4DirectionCh05.Text = cmbHC4ModeParamCh05.Text; }
+        }
+
+        private void cmbHC4Mode06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Mode06.Text == "12V+")
+            {
+                cmbHC4ModeParamCh06.Text = "High";
+                cmbHC4DeadTimeCh06.Text = "0";
+                cmbHC4PairedCh06.Text = "None";
+            }
+            else if (cmbHC4Mode06.Text == "Ground")
+            {
+                cmbHC4ModeParamCh06.Text = "Low";
+                cmbHC4DeadTimeCh06.Text = "0";
+                cmbHC4PairedCh06.Text = "None";
+            }
+            else if (cmbHC4Mode06.Text == "RP UP")
+            {
+                cmbHC4ModeParamCh06.Text = "H Br";
+                cmbHC4DeadTimeCh06.Text = "500";
+                cmbHC4PairedCh06.Text = "7";
+            }
+            else if (cmbHC4Mode06.Text == "RP DN")
+            {
+                cmbHC4ModeParamCh06.Text = "Slave";
+                cmbHC4DeadTimeCh06.Text = "500"; // probably not needed, just in case
+                cmbHC4PairedCh06.Text = "5";
+            }
+
+            if (cmbHC4Startup06.Text == "High" || cmbHC4Startup06.Text == "Low") { cmbHC4DirectionCh06.Text = cmbHC4ModeParamCh06.Text; }
+            if (cmbHC4DirectionCh06.Text != "Off" && (cmbHC4ModeParamCh06.Text == "High" || cmbHC4ModeParamCh06.Text == "Low")) { cmbHC4DirectionCh06.Text = cmbHC4ModeParamCh06.Text; }
+        }
+
+        private void cmbHC4Mode07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Mode07.Text == "12V+")
+            {
+                cmbHC4ModeParamCh07.Text = "High";
+                cmbHC4DeadTimeCh07.Text = "0";
+                cmbHC4PairedCh07.Text = "None";
+            }
+            else if (cmbHC4Mode07.Text == "Ground")
+            {
+                cmbHC4ModeParamCh07.Text = "Low";
+                cmbHC4DeadTimeCh07.Text = "0";
+                cmbHC4PairedCh07.Text = "None";
+            }
+            else if (cmbHC4Mode07.Text == "RP UP")
+            {
+                cmbHC4ModeParamCh07.Text = "H Br";
+                cmbHC4DeadTimeCh07.Text = "500";
+                cmbHC4PairedCh07.Text = "8";
+            }
+            else if (cmbHC4Mode07.Text == "RP DN")
+            {
+                cmbHC4ModeParamCh07.Text = "Slave";
+                cmbHC4DeadTimeCh07.Text = "500"; // probably not needed, just in case
+                cmbHC4PairedCh07.Text = "6";
+            }
+
+            if (cmbHC4Startup07.Text == "High" || cmbHC4Startup07.Text == "Low") { cmbHC4DirectionCh07.Text = cmbHC4ModeParamCh07.Text; }
+            if (cmbHC4DirectionCh07.Text != "Off" && (cmbHC4ModeParamCh07.Text == "High" || cmbHC4ModeParamCh07.Text == "Low")) { cmbHC4DirectionCh07.Text = cmbHC4ModeParamCh07.Text; }
+        }
+
+        private void cmbHC4Mode08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Mode08.Text == "12V+")
+            {
+                cmbHC4ModeParamCh08.Text = "High";
+                cmbHC4DeadTimeCh08.Text = "0";
+                cmbHC4PairedCh08.Text = "None";
+            }
+            else if (cmbHC4Mode08.Text == "Ground")
+            {
+                cmbHC4ModeParamCh08.Text = "Low";
+                cmbHC4DeadTimeCh08.Text = "0";
+                cmbHC4PairedCh08.Text = "None";
+            }
+            else if (cmbHC4Mode08.Text == "RP UP")
+            {
+                cmbHC4ModeParamCh08.Text = "H Br";
+                cmbHC4DeadTimeCh08.Text = "500";
+                cmbHC4PairedCh08.Text = "9";
+            }
+            else if (cmbHC4Mode08.Text == "RP DN")
+            {
+                cmbHC4ModeParamCh08.Text = "Slave";
+                cmbHC4DeadTimeCh08.Text = "500"; // probably not needed, just in case
+                cmbHC4PairedCh08.Text = "7";
+            }
+
+            if (cmbHC4Startup08.Text == "High" || cmbHC4Startup08.Text == "Low") { cmbHC4DirectionCh08.Text = cmbHC4ModeParamCh08.Text; }
+            if (cmbHC4DirectionCh08.Text != "Off" && (cmbHC4ModeParamCh08.Text == "High" || cmbHC4ModeParamCh08.Text == "Low")) { cmbHC4DirectionCh08.Text = cmbHC4ModeParamCh08.Text; }
+        }
+
+        private void cmbHC4Mode09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Mode09.Text == "12V+")
+            {
+                cmbHC4ModeParamCh09.Text = "High";
+                cmbHC4DeadTimeCh09.Text = "0";
+                cmbHC4PairedCh09.Text = "None";
+            }
+            else if (cmbHC4Mode09.Text == "Ground")
+            {
+                cmbHC4ModeParamCh09.Text = "Low";
+                cmbHC4DeadTimeCh09.Text = "0";
+                cmbHC4PairedCh09.Text = "None";
+            }
+            else if (cmbHC4Mode09.Text == "RP UP")
+            {
+                cmbHC4ModeParamCh09.Text = "H Br";
+                cmbHC4DeadTimeCh09.Text = "500";
+                cmbHC4PairedCh09.Text = "10";
+            }
+            else if (cmbHC4Mode09.Text == "RP DN")
+            {
+                cmbHC4ModeParamCh09.Text = "Slave";
+                cmbHC4DeadTimeCh09.Text = "500"; // probably not needed, just in case
+                cmbHC4PairedCh09.Text = "8";
+            }
+
+            if (cmbHC4Startup09.Text == "High" || cmbHC4Startup09.Text == "Low") { cmbHC4DirectionCh09.Text = cmbHC4ModeParamCh09.Text; }
+            if (cmbHC4DirectionCh09.Text != "Off" && (cmbHC4ModeParamCh09.Text == "High" || cmbHC4ModeParamCh09.Text == "Low")) { cmbHC4DirectionCh09.Text = cmbHC4ModeParamCh09.Text; }
+        }
+
+        private void cmbHC4Mode10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Mode10.Text == "12V+")
+            {
+                cmbHC4ModeParamCh10.Text = "High";
+                cmbHC4DeadTimeCh10.Text = "0";
+                cmbHC4PairedCh10.Text = "None";
+            }
+            else if (cmbHC4Mode10.Text == "Ground")
+            {
+                cmbHC4ModeParamCh10.Text = "Low";
+                cmbHC4DeadTimeCh10.Text = "0";
+                cmbHC4PairedCh10.Text = "None";
+            }
+            else if (cmbHC4Mode10.Text == "RP UP")
+            {
+                cmbHC4ModeParamCh10.Text = "H Br";
+                cmbHC4DeadTimeCh10.Text = "500";
+                cmbHC4PairedCh10.Text = "11";
+            }
+            else if (cmbHC4Mode10.Text == "RP DN")
+            {
+                cmbHC4ModeParamCh10.Text = "Slave";
+                cmbHC4DeadTimeCh10.Text = "500"; // probably not needed, just in case
+                cmbHC4PairedCh10.Text = "9";
+            }
+
+            if (cmbHC4Startup10.Text == "High" || cmbHC4Startup10.Text == "Low") { cmbHC4DirectionCh10.Text = cmbHC4ModeParamCh10.Text; }
+            if (cmbHC4DirectionCh10.Text != "Off" && (cmbHC4ModeParamCh10.Text == "High" || cmbHC4ModeParamCh10.Text == "Low")) { cmbHC4DirectionCh10.Text = cmbHC4ModeParamCh10.Text; }
+        }
+
+        private void cmbHC4Mode11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Mode11.Text == "12V+")
+            {
+                cmbHC4ModeParamCh11.Text = "High";
+                cmbHC4DeadTimeCh11.Text = "0";
+                cmbHC4PairedCh11.Text = "None";
+            }
+            else if (cmbHC4Mode11.Text == "Ground")
+            {
+                cmbHC4ModeParamCh11.Text = "Low";
+                cmbHC4DeadTimeCh11.Text = "0";
+                cmbHC4PairedCh11.Text = "None";
+            }
+            else if (cmbHC4Mode11.Text == "RP DN")
+            {
+                cmbHC4ModeParamCh11.Text = "Slave";
+                cmbHC4DeadTimeCh11.Text = "500"; // probably not needed, just in case
+                cmbHC4PairedCh11.Text = "10";
+            }
+
+            if (cmbHC4Startup11.Text == "High" || cmbHC4Startup11.Text == "Low") { cmbHC4DirectionCh11.Text = cmbHC4ModeParamCh11.Text; }
+            if (cmbHC4DirectionCh11.Text != "Off" && (cmbHC4ModeParamCh11.Text == "High" || cmbHC4ModeParamCh11.Text == "Low")) { cmbHC4DirectionCh11.Text = cmbHC4ModeParamCh11.Text; }
+        }
+        private void cmbHC5Mode00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Mode00.Text == "12V+")
+            {
+                cmbHC5ModeParamCh00.Text = "High";
+                cmbHC5DeadTimeCh00.Text = "0";
+                cmbHC5PairedCh00.Text = "None";
+            }
+            else if (cmbHC5Mode00.Text == "Ground")
+            {
+                cmbHC5ModeParamCh00.Text = "Low";
+                cmbHC5DeadTimeCh00.Text = "0";
+                cmbHC5PairedCh00.Text = "None";
+            }
+            else if (cmbHC5Mode00.Text == "RP UP")
+            {
+                cmbHC5ModeParamCh00.Text = "H Br";
+                cmbHC5DeadTimeCh00.Text = "500";
+                cmbHC5PairedCh00.Text = "1";
+            }
+
+            if (cmbHC5Startup00.Text == "High" || cmbHC5Startup00.Text == "Low") { cmbHC5DirectionCh00.Text = cmbHC5ModeParamCh00.Text; }
+            if (cmbHC5DirectionCh00.Text != "Off" && (cmbHC5ModeParamCh00.Text == "High" || cmbHC5ModeParamCh00.Text == "Low")) { cmbHC5DirectionCh00.Text = cmbHC5ModeParamCh00.Text; }
+        }
+
+        private void cmbHC5Mode01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Mode01.Text == "12V+")
+            {
+                cmbHC5ModeParamCh01.Text = "High";
+                cmbHC5DeadTimeCh01.Text = "0";
+                cmbHC5PairedCh01.Text = "None";
+            }
+            else if (cmbHC5Mode01.Text == "Ground")
+            {
+                cmbHC5ModeParamCh01.Text = "Low";
+                cmbHC5DeadTimeCh01.Text = "0";
+                cmbHC5PairedCh01.Text = "None";
+            }
+            else if (cmbHC5Mode01.Text == "RP UP")
+            {
+                cmbHC5ModeParamCh01.Text = "H Br";
+                cmbHC5DeadTimeCh01.Text = "500";
+                cmbHC5PairedCh01.Text = "2";
+            }
+            else if (cmbHC5Mode01.Text == "RP DN")
+            {
+                cmbHC5ModeParamCh01.Text = "Slave";
+                cmbHC5DeadTimeCh01.Text = "500"; // probably not needed, just in case
+                cmbHC5PairedCh01.Text = "0";
+            }
+
+            if (cmbHC5Startup01.Text == "High" || cmbHC5Startup01.Text == "Low") { cmbHC5DirectionCh01.Text = cmbHC5ModeParamCh01.Text; }
+            if (cmbHC5DirectionCh01.Text != "Off" && (cmbHC5ModeParamCh01.Text == "High" || cmbHC5ModeParamCh01.Text == "Low")) { cmbHC5DirectionCh01.Text = cmbHC5ModeParamCh01.Text; }
+        }
+
+        private void cmbHC5Mode02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Mode02.Text == "12V+")
+            {
+                cmbHC5ModeParamCh02.Text = "High";
+                cmbHC5DeadTimeCh02.Text = "0";
+                cmbHC5PairedCh02.Text = "None";
+            }
+            else if (cmbHC5Mode02.Text == "Ground")
+            {
+                cmbHC5ModeParamCh02.Text = "Low";
+                cmbHC5DeadTimeCh02.Text = "0";
+                cmbHC5PairedCh02.Text = "None";
+            }
+            else if (cmbHC5Mode02.Text == "RP UP")
+            {
+                cmbHC5ModeParamCh02.Text = "H Br";
+                cmbHC5DeadTimeCh02.Text = "500";
+                cmbHC5PairedCh02.Text = "3";
+            }
+            else if (cmbHC5Mode02.Text == "RP DN")
+            {
+                cmbHC5ModeParamCh02.Text = "Slave";
+                cmbHC5DeadTimeCh02.Text = "500"; // probably not needed, just in case
+                cmbHC5PairedCh02.Text = "1";
+            }
+
+            if (cmbHC5Startup02.Text == "High" || cmbHC5Startup02.Text == "Low") { cmbHC5DirectionCh02.Text = cmbHC5ModeParamCh02.Text; }
+            if (cmbHC5DirectionCh02.Text != "Off" && (cmbHC5ModeParamCh02.Text == "High" || cmbHC5ModeParamCh02.Text == "Low")) { cmbHC5DirectionCh02.Text = cmbHC5ModeParamCh02.Text; }
+        }
+
+        private void cmbHC5Mode03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Mode03.Text == "12V+")
+            {
+                cmbHC5ModeParamCh03.Text = "High";
+                cmbHC5DeadTimeCh03.Text = "0";
+                cmbHC5PairedCh03.Text = "None";
+            }
+            else if (cmbHC5Mode03.Text == "Ground")
+            {
+                cmbHC5ModeParamCh03.Text = "Low";
+                cmbHC5DeadTimeCh03.Text = "0";
+                cmbHC5PairedCh03.Text = "None";
+            }
+            else if (cmbHC5Mode03.Text == "RP UP")
+            {
+                cmbHC5ModeParamCh03.Text = "H Br";
+                cmbHC5DeadTimeCh03.Text = "500";
+                cmbHC5PairedCh03.Text = "4";
+            }
+            else if (cmbHC5Mode03.Text == "RP DN")
+            {
+                cmbHC5ModeParamCh03.Text = "Slave";
+                cmbHC5DeadTimeCh03.Text = "500"; // probably not needed, just in case
+                cmbHC5PairedCh03.Text = "2";
+            }
+
+            if (cmbHC5Startup03.Text == "High" || cmbHC5Startup03.Text == "Low") { cmbHC5DirectionCh03.Text = cmbHC5ModeParamCh03.Text; }
+            if (cmbHC5DirectionCh03.Text != "Off" && (cmbHC5ModeParamCh03.Text == "High" || cmbHC5ModeParamCh03.Text == "Low")) { cmbHC5DirectionCh03.Text = cmbHC5ModeParamCh03.Text; }
+        }
+
+        private void cmbHC5Mode04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Mode04.Text == "12V+")
+            {
+                cmbHC5ModeParamCh04.Text = "High";
+                cmbHC5DeadTimeCh04.Text = "0";
+                cmbHC5PairedCh04.Text = "None";
+            }
+            else if (cmbHC5Mode04.Text == "Ground")
+            {
+                cmbHC5ModeParamCh04.Text = "Low";
+                cmbHC5DeadTimeCh04.Text = "0";
+                cmbHC5PairedCh04.Text = "None";
+            }
+            else if (cmbHC5Mode04.Text == "RP UP")
+            {
+                cmbHC5ModeParamCh04.Text = "H Br";
+                cmbHC5DeadTimeCh04.Text = "500";
+                cmbHC5PairedCh04.Text = "5";
+            }
+            else if (cmbHC5Mode04.Text == "RP DN")
+            {
+                cmbHC5ModeParamCh04.Text = "Slave";
+                cmbHC5DeadTimeCh04.Text = "500"; // probably not needed, just in case
+                cmbHC5PairedCh04.Text = "3";
+            }
+
+            if (cmbHC5Startup04.Text == "High" || cmbHC5Startup04.Text == "Low") { cmbHC5DirectionCh04.Text = cmbHC5ModeParamCh04.Text; }
+            if (cmbHC5DirectionCh04.Text != "Off" && (cmbHC5ModeParamCh04.Text == "High" || cmbHC5ModeParamCh04.Text == "Low")) { cmbHC5DirectionCh04.Text = cmbHC5ModeParamCh04.Text; }
+        }
+
+        private void cmbHC5Mode05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Mode05.Text == "12V+")
+            {
+                cmbHC5ModeParamCh05.Text = "High";
+                cmbHC5DeadTimeCh05.Text = "0";
+                cmbHC5PairedCh05.Text = "None";
+            }
+            else if (cmbHC5Mode05.Text == "Ground")
+            {
+                cmbHC5ModeParamCh05.Text = "Low";
+                cmbHC5DeadTimeCh05.Text = "0";
+                cmbHC5PairedCh05.Text = "None";
+            }
+            else if (cmbHC5Mode05.Text == "RP UP")
+            {
+                cmbHC5ModeParamCh05.Text = "H Br";
+                cmbHC5DeadTimeCh05.Text = "500";
+                cmbHC5PairedCh05.Text = "6";
+            }
+            else if (cmbHC5Mode05.Text == "RP DN")
+            {
+                cmbHC5ModeParamCh05.Text = "Slave";
+                cmbHC5DeadTimeCh05.Text = "500"; // probably not needed, just in case
+                cmbHC5PairedCh05.Text = "4";
+            }
+
+            if (cmbHC5Startup05.Text == "High" || cmbHC5Startup05.Text == "Low") { cmbHC5DirectionCh05.Text = cmbHC5ModeParamCh05.Text; }
+            if (cmbHC5DirectionCh05.Text != "Off" && (cmbHC5ModeParamCh05.Text == "High" || cmbHC5ModeParamCh05.Text == "Low")) { cmbHC5DirectionCh05.Text = cmbHC5ModeParamCh05.Text; }
+        }
+
+        private void cmbHC5Mode06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Mode06.Text == "12V+")
+            {
+                cmbHC5ModeParamCh06.Text = "High";
+                cmbHC5DeadTimeCh06.Text = "0";
+                cmbHC5PairedCh06.Text = "None";
+            }
+            else if (cmbHC5Mode06.Text == "Ground")
+            {
+                cmbHC5ModeParamCh06.Text = "Low";
+                cmbHC5DeadTimeCh06.Text = "0";
+                cmbHC5PairedCh06.Text = "None";
+            }
+            else if (cmbHC5Mode06.Text == "RP UP")
+            {
+                cmbHC5ModeParamCh06.Text = "H Br";
+                cmbHC5DeadTimeCh06.Text = "500";
+                cmbHC5PairedCh06.Text = "7";
+            }
+            else if (cmbHC5Mode06.Text == "RP DN")
+            {
+                cmbHC5ModeParamCh06.Text = "Slave";
+                cmbHC5DeadTimeCh06.Text = "500"; // probably not needed, just in case
+                cmbHC5PairedCh06.Text = "5";
+            }
+
+            if (cmbHC5Startup06.Text == "High" || cmbHC5Startup06.Text == "Low") { cmbHC5DirectionCh06.Text = cmbHC5ModeParamCh06.Text; }
+            if (cmbHC5DirectionCh06.Text != "Off" && (cmbHC5ModeParamCh06.Text == "High" || cmbHC5ModeParamCh06.Text == "Low")) { cmbHC5DirectionCh06.Text = cmbHC5ModeParamCh06.Text; }
+        }
+
+        private void cmbHC5Mode07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Mode07.Text == "12V+")
+            {
+                cmbHC5ModeParamCh07.Text = "High";
+                cmbHC5DeadTimeCh07.Text = "0";
+                cmbHC5PairedCh07.Text = "None";
+            }
+            else if (cmbHC5Mode07.Text == "Ground")
+            {
+                cmbHC5ModeParamCh07.Text = "Low";
+                cmbHC5DeadTimeCh07.Text = "0";
+                cmbHC5PairedCh07.Text = "None";
+            }
+            else if (cmbHC5Mode07.Text == "RP UP")
+            {
+                cmbHC5ModeParamCh07.Text = "H Br";
+                cmbHC5DeadTimeCh07.Text = "500";
+                cmbHC5PairedCh07.Text = "8";
+            }
+            else if (cmbHC5Mode07.Text == "RP DN")
+            {
+                cmbHC5ModeParamCh07.Text = "Slave";
+                cmbHC5DeadTimeCh07.Text = "500"; // probably not needed, just in case
+                cmbHC5PairedCh07.Text = "6";
+            }
+
+            if (cmbHC5Startup07.Text == "High" || cmbHC5Startup07.Text == "Low") { cmbHC5DirectionCh07.Text = cmbHC5ModeParamCh07.Text; }
+            if (cmbHC5DirectionCh07.Text != "Off" && (cmbHC5ModeParamCh07.Text == "High" || cmbHC5ModeParamCh07.Text == "Low")) { cmbHC5DirectionCh07.Text = cmbHC5ModeParamCh07.Text; }
+        }
+
+        private void cmbHC5Mode08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Mode08.Text == "12V+")
+            {
+                cmbHC5ModeParamCh08.Text = "High";
+                cmbHC5DeadTimeCh08.Text = "0";
+                cmbHC5PairedCh08.Text = "None";
+            }
+            else if (cmbHC5Mode08.Text == "Ground")
+            {
+                cmbHC5ModeParamCh08.Text = "Low";
+                cmbHC5DeadTimeCh08.Text = "0";
+                cmbHC5PairedCh08.Text = "None";
+            }
+            else if (cmbHC5Mode08.Text == "RP UP")
+            {
+                cmbHC5ModeParamCh08.Text = "H Br";
+                cmbHC5DeadTimeCh08.Text = "500";
+                cmbHC5PairedCh08.Text = "9";
+            }
+            else if (cmbHC5Mode08.Text == "RP DN")
+            {
+                cmbHC5ModeParamCh08.Text = "Slave";
+                cmbHC5DeadTimeCh08.Text = "500"; // probably not needed, just in case
+                cmbHC5PairedCh08.Text = "7";
+            }
+
+            if (cmbHC5Startup08.Text == "High" || cmbHC5Startup08.Text == "Low") { cmbHC5DirectionCh08.Text = cmbHC5ModeParamCh08.Text; }
+            if (cmbHC5DirectionCh08.Text != "Off" && (cmbHC5ModeParamCh08.Text == "High" || cmbHC5ModeParamCh08.Text == "Low")) { cmbHC5DirectionCh08.Text = cmbHC5ModeParamCh08.Text; }
+        }
+
+        private void cmbHC5Mode09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Mode09.Text == "12V+")
+            {
+                cmbHC5ModeParamCh09.Text = "High";
+                cmbHC5DeadTimeCh09.Text = "0";
+                cmbHC5PairedCh09.Text = "None";
+            }
+            else if (cmbHC5Mode09.Text == "Ground")
+            {
+                cmbHC5ModeParamCh09.Text = "Low";
+                cmbHC5DeadTimeCh09.Text = "0";
+                cmbHC5PairedCh09.Text = "None";
+            }
+            else if (cmbHC5Mode09.Text == "RP UP")
+            {
+                cmbHC5ModeParamCh09.Text = "H Br";
+                cmbHC5DeadTimeCh09.Text = "500";
+                cmbHC5PairedCh09.Text = "10";
+            }
+            else if (cmbHC5Mode09.Text == "RP DN")
+            {
+                cmbHC5ModeParamCh09.Text = "Slave";
+                cmbHC5DeadTimeCh09.Text = "500"; // probably not needed, just in case
+                cmbHC5PairedCh09.Text = "8";
+            }
+
+            if (cmbHC5Startup09.Text == "High" || cmbHC5Startup09.Text == "Low") { cmbHC5DirectionCh09.Text = cmbHC5ModeParamCh09.Text; }
+            if (cmbHC5DirectionCh09.Text != "Off" && (cmbHC5ModeParamCh09.Text == "High" || cmbHC5ModeParamCh09.Text == "Low")) { cmbHC5DirectionCh09.Text = cmbHC5ModeParamCh09.Text; }
+        }
+
+        private void cmbHC5Mode10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Mode10.Text == "12V+")
+            {
+                cmbHC5ModeParamCh10.Text = "High";
+                cmbHC5DeadTimeCh10.Text = "0";
+                cmbHC5PairedCh10.Text = "None";
+            }
+            else if (cmbHC5Mode10.Text == "Ground")
+            {
+                cmbHC5ModeParamCh10.Text = "Low";
+                cmbHC5DeadTimeCh10.Text = "0";
+                cmbHC5PairedCh10.Text = "None";
+            }
+            else if (cmbHC5Mode10.Text == "RP UP")
+            {
+                cmbHC5ModeParamCh10.Text = "H Br";
+                cmbHC5DeadTimeCh10.Text = "500";
+                cmbHC5PairedCh10.Text = "11";
+            }
+            else if (cmbHC5Mode10.Text == "RP DN")
+            {
+                cmbHC5ModeParamCh10.Text = "Slave";
+                cmbHC5DeadTimeCh10.Text = "500"; // probably not needed, just in case
+                cmbHC5PairedCh10.Text = "9";
+            }
+
+            if (cmbHC5Startup10.Text == "High" || cmbHC5Startup10.Text == "Low") { cmbHC5DirectionCh10.Text = cmbHC5ModeParamCh10.Text; }
+            if (cmbHC5DirectionCh10.Text != "Off" && (cmbHC5ModeParamCh10.Text == "High" || cmbHC5ModeParamCh10.Text == "Low")) { cmbHC5DirectionCh10.Text = cmbHC5ModeParamCh10.Text; }
+        }
+
+        private void cmbHC5Mode11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Mode11.Text == "12V+")
+            {
+                cmbHC5ModeParamCh11.Text = "High";
+                cmbHC5DeadTimeCh11.Text = "0";
+                cmbHC5PairedCh11.Text = "None";
+            }
+            else if (cmbHC5Mode11.Text == "Ground")
+            {
+                cmbHC5ModeParamCh11.Text = "Low";
+                cmbHC5DeadTimeCh11.Text = "0";
+                cmbHC5PairedCh11.Text = "None";
+            }
+            else if (cmbHC5Mode11.Text == "RP DN")
+            {
+                cmbHC5ModeParamCh11.Text = "Slave";
+                cmbHC5DeadTimeCh11.Text = "500"; // probably not needed, just in case
+                cmbHC5PairedCh11.Text = "10";
+            }
+
+            if (cmbHC5Startup11.Text == "High" || cmbHC5Startup11.Text == "Low") { cmbHC5DirectionCh11.Text = cmbHC5ModeParamCh11.Text; }
+            if (cmbHC5DirectionCh11.Text != "Off" && (cmbHC5ModeParamCh11.Text == "High" || cmbHC5ModeParamCh11.Text == "Low")) { cmbHC5DirectionCh11.Text = cmbHC5ModeParamCh11.Text; }
+        }
+        private void cmbHC6Mode00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Mode00.Text == "12V+")
+            {
+                cmbHC6ModeParamCh00.Text = "High";
+                cmbHC6DeadTimeCh00.Text = "0";
+                cmbHC6PairedCh00.Text = "None";
+            }
+            else if (cmbHC6Mode00.Text == "Ground")
+            {
+                cmbHC6ModeParamCh00.Text = "Low";
+                cmbHC6DeadTimeCh00.Text = "0";
+                cmbHC6PairedCh00.Text = "None";
+            }
+            else if (cmbHC6Mode00.Text == "RP UP")
+            {
+                cmbHC6ModeParamCh00.Text = "H Br";
+                cmbHC6DeadTimeCh00.Text = "500";
+                cmbHC6PairedCh00.Text = "1";
+            }
+
+            if (cmbHC6Startup00.Text == "High" || cmbHC6Startup00.Text == "Low") { cmbHC6DirectionCh00.Text = cmbHC6ModeParamCh00.Text; }
+            if (cmbHC6DirectionCh00.Text != "Off" && (cmbHC6ModeParamCh00.Text == "High" || cmbHC6ModeParamCh00.Text == "Low")) { cmbHC6DirectionCh00.Text = cmbHC6ModeParamCh00.Text; }
+        }
+
+        private void cmbHC6Mode01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Mode01.Text == "12V+")
+            {
+                cmbHC6ModeParamCh01.Text = "High";
+                cmbHC6DeadTimeCh01.Text = "0";
+                cmbHC6PairedCh01.Text = "None";
+            }
+            else if (cmbHC6Mode01.Text == "Ground")
+            {
+                cmbHC6ModeParamCh01.Text = "Low";
+                cmbHC6DeadTimeCh01.Text = "0";
+                cmbHC6PairedCh01.Text = "None";
+            }
+            else if (cmbHC6Mode01.Text == "RP UP")
+            {
+                cmbHC6ModeParamCh01.Text = "H Br";
+                cmbHC6DeadTimeCh01.Text = "500";
+                cmbHC6PairedCh01.Text = "2";
+            }
+            else if (cmbHC6Mode01.Text == "RP DN")
+            {
+                cmbHC6ModeParamCh01.Text = "Slave";
+                cmbHC6DeadTimeCh01.Text = "500"; // probably not needed, just in case
+                cmbHC6PairedCh01.Text = "0";
+            }
+
+            if (cmbHC6Startup01.Text == "High" || cmbHC6Startup01.Text == "Low") { cmbHC6DirectionCh01.Text = cmbHC6ModeParamCh01.Text; }
+            if (cmbHC6DirectionCh01.Text != "Off" && (cmbHC6ModeParamCh01.Text == "High" || cmbHC6ModeParamCh01.Text == "Low")) { cmbHC6DirectionCh01.Text = cmbHC6ModeParamCh01.Text; }
+        }
+
+        private void cmbHC6Mode02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Mode02.Text == "12V+")
+            {
+                cmbHC6ModeParamCh02.Text = "High";
+                cmbHC6DeadTimeCh02.Text = "0";
+                cmbHC6PairedCh02.Text = "None";
+            }
+            else if (cmbHC6Mode02.Text == "Ground")
+            {
+                cmbHC6ModeParamCh02.Text = "Low";
+                cmbHC6DeadTimeCh02.Text = "0";
+                cmbHC6PairedCh02.Text = "None";
+            }
+            else if (cmbHC6Mode02.Text == "RP UP")
+            {
+                cmbHC6ModeParamCh02.Text = "H Br";
+                cmbHC6DeadTimeCh02.Text = "500";
+                cmbHC6PairedCh02.Text = "3";
+            }
+            else if (cmbHC6Mode02.Text == "RP DN")
+            {
+                cmbHC6ModeParamCh02.Text = "Slave";
+                cmbHC6DeadTimeCh02.Text = "500"; // probably not needed, just in case
+                cmbHC6PairedCh02.Text = "1";
+            }
+
+            if (cmbHC6Startup02.Text == "High" || cmbHC6Startup02.Text == "Low") { cmbHC6DirectionCh02.Text = cmbHC6ModeParamCh02.Text; }
+            if (cmbHC6DirectionCh02.Text != "Off" && (cmbHC6ModeParamCh02.Text == "High" || cmbHC6ModeParamCh02.Text == "Low")) { cmbHC6DirectionCh02.Text = cmbHC6ModeParamCh02.Text; }
+        }
+
+        private void cmbHC6Mode03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Mode03.Text == "12V+")
+            {
+                cmbHC6ModeParamCh03.Text = "High";
+                cmbHC6DeadTimeCh03.Text = "0";
+                cmbHC6PairedCh03.Text = "None";
+            }
+            else if (cmbHC6Mode03.Text == "Ground")
+            {
+                cmbHC6ModeParamCh03.Text = "Low";
+                cmbHC6DeadTimeCh03.Text = "0";
+                cmbHC6PairedCh03.Text = "None";
+            }
+            else if (cmbHC6Mode03.Text == "RP UP")
+            {
+                cmbHC6ModeParamCh03.Text = "H Br";
+                cmbHC6DeadTimeCh03.Text = "500";
+                cmbHC6PairedCh03.Text = "4";
+            }
+            else if (cmbHC6Mode03.Text == "RP DN")
+            {
+                cmbHC6ModeParamCh03.Text = "Slave";
+                cmbHC6DeadTimeCh03.Text = "500"; // probably not needed, just in case
+                cmbHC6PairedCh03.Text = "2";
+            }
+
+            if (cmbHC6Startup03.Text == "High" || cmbHC6Startup03.Text == "Low") { cmbHC6DirectionCh03.Text = cmbHC6ModeParamCh03.Text; }
+            if (cmbHC6DirectionCh03.Text != "Off" && (cmbHC6ModeParamCh03.Text == "High" || cmbHC6ModeParamCh03.Text == "Low")) { cmbHC6DirectionCh03.Text = cmbHC6ModeParamCh03.Text; }
+        }
+
+        private void cmbHC6Mode04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Mode04.Text == "12V+")
+            {
+                cmbHC6ModeParamCh04.Text = "High";
+                cmbHC6DeadTimeCh04.Text = "0";
+                cmbHC6PairedCh04.Text = "None";
+            }
+            else if (cmbHC6Mode04.Text == "Ground")
+            {
+                cmbHC6ModeParamCh04.Text = "Low";
+                cmbHC6DeadTimeCh04.Text = "0";
+                cmbHC6PairedCh04.Text = "None";
+            }
+            else if (cmbHC6Mode04.Text == "RP UP")
+            {
+                cmbHC6ModeParamCh04.Text = "H Br";
+                cmbHC6DeadTimeCh04.Text = "500";
+                cmbHC6PairedCh04.Text = "5";
+            }
+            else if (cmbHC6Mode04.Text == "RP DN")
+            {
+                cmbHC6ModeParamCh04.Text = "Slave";
+                cmbHC6DeadTimeCh04.Text = "500"; // probably not needed, just in case
+                cmbHC6PairedCh04.Text = "3";
+            }
+
+            if (cmbHC6Startup04.Text == "High" || cmbHC6Startup04.Text == "Low") { cmbHC6DirectionCh04.Text = cmbHC6ModeParamCh04.Text; }
+            if (cmbHC6DirectionCh04.Text != "Off" && (cmbHC6ModeParamCh04.Text == "High" || cmbHC6ModeParamCh04.Text == "Low")) { cmbHC6DirectionCh04.Text = cmbHC6ModeParamCh04.Text; }
+        }
+
+        private void cmbHC6Mode05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Mode05.Text == "12V+")
+            {
+                cmbHC6ModeParamCh05.Text = "High";
+                cmbHC6DeadTimeCh05.Text = "0";
+                cmbHC6PairedCh05.Text = "None";
+            }
+            else if (cmbHC6Mode05.Text == "Ground")
+            {
+                cmbHC6ModeParamCh05.Text = "Low";
+                cmbHC6DeadTimeCh05.Text = "0";
+                cmbHC6PairedCh05.Text = "None";
+            }
+            else if (cmbHC6Mode05.Text == "RP UP")
+            {
+                cmbHC6ModeParamCh05.Text = "H Br";
+                cmbHC6DeadTimeCh05.Text = "500";
+                cmbHC6PairedCh05.Text = "6";
+            }
+            else if (cmbHC6Mode05.Text == "RP DN")
+            {
+                cmbHC6ModeParamCh05.Text = "Slave";
+                cmbHC6DeadTimeCh05.Text = "500"; // probably not needed, just in case
+                cmbHC6PairedCh05.Text = "4";
+            }
+
+            if (cmbHC6Startup05.Text == "High" || cmbHC6Startup05.Text == "Low") { cmbHC6DirectionCh05.Text = cmbHC6ModeParamCh05.Text; }
+            if (cmbHC6DirectionCh05.Text != "Off" && (cmbHC6ModeParamCh05.Text == "High" || cmbHC6ModeParamCh05.Text == "Low")) { cmbHC6DirectionCh05.Text = cmbHC6ModeParamCh05.Text; }
+        }
+
+        private void cmbHC6Mode06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Mode06.Text == "12V+")
+            {
+                cmbHC6ModeParamCh06.Text = "High";
+                cmbHC6DeadTimeCh06.Text = "0";
+                cmbHC6PairedCh06.Text = "None";
+            }
+            else if (cmbHC6Mode06.Text == "Ground")
+            {
+                cmbHC6ModeParamCh06.Text = "Low";
+                cmbHC6DeadTimeCh06.Text = "0";
+                cmbHC6PairedCh06.Text = "None";
+            }
+            else if (cmbHC6Mode06.Text == "RP UP")
+            {
+                cmbHC6ModeParamCh06.Text = "H Br";
+                cmbHC6DeadTimeCh06.Text = "500";
+                cmbHC6PairedCh06.Text = "7";
+            }
+            else if (cmbHC6Mode06.Text == "RP DN")
+            {
+                cmbHC6ModeParamCh06.Text = "Slave";
+                cmbHC6DeadTimeCh06.Text = "500"; // probably not needed, just in case
+                cmbHC6PairedCh06.Text = "5";
+            }
+
+            if (cmbHC6Startup06.Text == "High" || cmbHC6Startup06.Text == "Low") { cmbHC6DirectionCh06.Text = cmbHC6ModeParamCh06.Text; }
+            if (cmbHC6DirectionCh06.Text != "Off" && (cmbHC6ModeParamCh06.Text == "High" || cmbHC6ModeParamCh06.Text == "Low")) { cmbHC6DirectionCh06.Text = cmbHC6ModeParamCh06.Text; }
+        }
+
+        private void cmbHC6Mode07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Mode07.Text == "12V+")
+            {
+                cmbHC6ModeParamCh07.Text = "High";
+                cmbHC6DeadTimeCh07.Text = "0";
+                cmbHC6PairedCh07.Text = "None";
+            }
+            else if (cmbHC6Mode07.Text == "Ground")
+            {
+                cmbHC6ModeParamCh07.Text = "Low";
+                cmbHC6DeadTimeCh07.Text = "0";
+                cmbHC6PairedCh07.Text = "None";
+            }
+            else if (cmbHC6Mode07.Text == "RP UP")
+            {
+                cmbHC6ModeParamCh07.Text = "H Br";
+                cmbHC6DeadTimeCh07.Text = "500";
+                cmbHC6PairedCh07.Text = "8";
+            }
+            else if (cmbHC6Mode07.Text == "RP DN")
+            {
+                cmbHC6ModeParamCh07.Text = "Slave";
+                cmbHC6DeadTimeCh07.Text = "500"; // probably not needed, just in case
+                cmbHC6PairedCh07.Text = "6";
+            }
+
+            if (cmbHC6Startup07.Text == "High" || cmbHC6Startup07.Text == "Low") { cmbHC6DirectionCh07.Text = cmbHC6ModeParamCh07.Text; }
+            if (cmbHC6DirectionCh07.Text != "Off" && (cmbHC6ModeParamCh07.Text == "High" || cmbHC6ModeParamCh07.Text == "Low")) { cmbHC6DirectionCh07.Text = cmbHC6ModeParamCh07.Text; }
+        }
+
+        private void cmbHC6Mode08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Mode08.Text == "12V+")
+            {
+                cmbHC6ModeParamCh08.Text = "High";
+                cmbHC6DeadTimeCh08.Text = "0";
+                cmbHC6PairedCh08.Text = "None";
+            }
+            else if (cmbHC6Mode08.Text == "Ground")
+            {
+                cmbHC6ModeParamCh08.Text = "Low";
+                cmbHC6DeadTimeCh08.Text = "0";
+                cmbHC6PairedCh08.Text = "None";
+            }
+            else if (cmbHC6Mode08.Text == "RP UP")
+            {
+                cmbHC6ModeParamCh08.Text = "H Br";
+                cmbHC6DeadTimeCh08.Text = "500";
+                cmbHC6PairedCh08.Text = "9";
+            }
+            else if (cmbHC6Mode08.Text == "RP DN")
+            {
+                cmbHC6ModeParamCh08.Text = "Slave";
+                cmbHC6DeadTimeCh08.Text = "500"; // probably not needed, just in case
+                cmbHC6PairedCh08.Text = "7";
+            }
+
+            if (cmbHC6Startup08.Text == "High" || cmbHC6Startup08.Text == "Low") { cmbHC6DirectionCh08.Text = cmbHC6ModeParamCh08.Text; }
+            if (cmbHC6DirectionCh08.Text != "Off" && (cmbHC6ModeParamCh08.Text == "High" || cmbHC6ModeParamCh08.Text == "Low")) { cmbHC6DirectionCh08.Text = cmbHC6ModeParamCh08.Text; }
+        }
+
+        private void cmbHC6Mode09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Mode09.Text == "12V+")
+            {
+                cmbHC6ModeParamCh09.Text = "High";
+                cmbHC6DeadTimeCh09.Text = "0";
+                cmbHC6PairedCh09.Text = "None";
+            }
+            else if (cmbHC6Mode09.Text == "Ground")
+            {
+                cmbHC6ModeParamCh09.Text = "Low";
+                cmbHC6DeadTimeCh09.Text = "0";
+                cmbHC6PairedCh09.Text = "None";
+            }
+            else if (cmbHC6Mode09.Text == "RP UP")
+            {
+                cmbHC6ModeParamCh09.Text = "H Br";
+                cmbHC6DeadTimeCh09.Text = "500";
+                cmbHC6PairedCh09.Text = "10";
+            }
+            else if (cmbHC6Mode09.Text == "RP DN")
+            {
+                cmbHC6ModeParamCh09.Text = "Slave";
+                cmbHC6DeadTimeCh09.Text = "500"; // probably not needed, just in case
+                cmbHC6PairedCh09.Text = "8";
+            }
+
+            if (cmbHC6Startup09.Text == "High" || cmbHC6Startup09.Text == "Low") { cmbHC6DirectionCh09.Text = cmbHC6ModeParamCh09.Text; }
+            if (cmbHC6DirectionCh09.Text != "Off" && (cmbHC6ModeParamCh09.Text == "High" || cmbHC6ModeParamCh09.Text == "Low")) { cmbHC6DirectionCh09.Text = cmbHC6ModeParamCh09.Text; }
+        }
+
+        private void cmbHC6Mode10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Mode10.Text == "12V+")
+            {
+                cmbHC6ModeParamCh10.Text = "High";
+                cmbHC6DeadTimeCh10.Text = "0";
+                cmbHC6PairedCh10.Text = "None";
+            }
+            else if (cmbHC6Mode10.Text == "Ground")
+            {
+                cmbHC6ModeParamCh10.Text = "Low";
+                cmbHC6DeadTimeCh10.Text = "0";
+                cmbHC6PairedCh10.Text = "None";
+            }
+            else if (cmbHC6Mode10.Text == "RP UP")
+            {
+                cmbHC6ModeParamCh10.Text = "H Br";
+                cmbHC6DeadTimeCh10.Text = "500";
+                cmbHC6PairedCh10.Text = "11";
+            }
+            else if (cmbHC6Mode10.Text == "RP DN")
+            {
+                cmbHC6ModeParamCh10.Text = "Slave";
+                cmbHC6DeadTimeCh10.Text = "500"; // probably not needed, just in case
+                cmbHC6PairedCh10.Text = "9";
+            }
+
+            if (cmbHC6Startup10.Text == "High" || cmbHC6Startup10.Text == "Low") { cmbHC6DirectionCh10.Text = cmbHC6ModeParamCh10.Text; }
+            if (cmbHC6DirectionCh10.Text != "Off" && (cmbHC6ModeParamCh10.Text == "High" || cmbHC6ModeParamCh10.Text == "Low")) { cmbHC6DirectionCh10.Text = cmbHC6ModeParamCh10.Text; }
+        }
+
+        private void cmbHC6Mode11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Mode11.Text == "12V+")
+            {
+                cmbHC6ModeParamCh11.Text = "High";
+                cmbHC6DeadTimeCh11.Text = "0";
+                cmbHC6PairedCh11.Text = "None";
+            }
+            else if (cmbHC6Mode11.Text == "Ground")
+            {
+                cmbHC6ModeParamCh11.Text = "Low";
+                cmbHC6DeadTimeCh11.Text = "0";
+                cmbHC6PairedCh11.Text = "None";
+            }
+            else if (cmbHC6Mode11.Text == "RP DN")
+            {
+                cmbHC6ModeParamCh11.Text = "Slave";
+                cmbHC6DeadTimeCh11.Text = "500"; // probably not needed, just in case
+                cmbHC6PairedCh11.Text = "10";
+            }
+
+            if (cmbHC6Startup11.Text == "High" || cmbHC6Startup11.Text == "Low") { cmbHC6DirectionCh11.Text = cmbHC6ModeParamCh11.Text; }
+            if (cmbHC6DirectionCh11.Text != "Off" && (cmbHC6ModeParamCh11.Text == "High" || cmbHC6ModeParamCh11.Text == "Low")) { cmbHC6DirectionCh11.Text = cmbHC6ModeParamCh11.Text; }
         }
 
         // Quick Startup events
@@ -2737,13 +4484,13 @@ namespace M1ConfigGenerator
             {
                 chkHC1Lock00.Checked = false;
                 txtbHC1PWMDutyCh00.Text = "200";
-                cmbHC1DirectionCh00.Text = (cmbHC1Mode00.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh00.Text = (cmbHC1ModeParamCh00.Text == "Low" ? "Low" : "High");
             }
             else if (cmbHC1Startup00.Text == "Constant")
             {
                 chkHC1Lock00.Checked = true;
                 txtbHC1PWMDutyCh00.Text = "200";
-                cmbHC1DirectionCh00.Text = (cmbHC1Mode00.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh00.Text = (cmbHC1ModeParamCh00.Text == "Low" ? "Low" : "High");
             }
             else // off
             {
@@ -2759,13 +4506,13 @@ namespace M1ConfigGenerator
             {
                 chkHC1Lock01.Checked = false;
                 txtbHC1PWMDutyCh01.Text = "200";
-                cmbHC1DirectionCh01.Text = (cmbHC1Mode01.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh01.Text = (cmbHC1ModeParamCh01.Text == "Low" ? "Low" : "High");
             }
             else if (cmbHC1Startup01.Text == "Constant")
             {
                 chkHC1Lock01.Checked = true;
                 txtbHC1PWMDutyCh01.Text = "200";
-                cmbHC1DirectionCh01.Text = (cmbHC1Mode01.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh01.Text = (cmbHC1ModeParamCh01.Text == "Low" ? "Low" : "High");
             }
             else // off
             {
@@ -2781,13 +4528,13 @@ namespace M1ConfigGenerator
             {
                 chkHC1Lock02.Checked = false;
                 txtbHC1PWMDutyCh02.Text = "200";
-                cmbHC1DirectionCh02.Text = (cmbHC1Mode02.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh02.Text = (cmbHC1ModeParamCh02.Text == "Low" ? "Low" : "High");
             }
             else if (cmbHC1Startup02.Text == "Constant")
             {
                 chkHC1Lock02.Checked = true;
                 txtbHC1PWMDutyCh02.Text = "200";
-                cmbHC1DirectionCh02.Text = (cmbHC1Mode02.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh02.Text = (cmbHC1ModeParamCh02.Text == "Low" ? "Low" : "High");
             }
             else // off
             {
@@ -2803,13 +4550,13 @@ namespace M1ConfigGenerator
             {
                 chkHC1Lock03.Checked = false;
                 txtbHC1PWMDutyCh03.Text = "200";
-                cmbHC1DirectionCh03.Text = (cmbHC1Mode03.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh03.Text = (cmbHC1ModeParamCh03.Text == "Low" ? "Low" : "High");
             }
             else if (cmbHC1Startup03.Text == "Constant")
             {
                 chkHC1Lock03.Checked = true;
                 txtbHC1PWMDutyCh03.Text = "200";
-                cmbHC1DirectionCh03.Text = (cmbHC1Mode03.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh03.Text = (cmbHC1ModeParamCh03.Text == "Low" ? "Low" : "High");
             }
             else // off
             {
@@ -2825,13 +4572,13 @@ namespace M1ConfigGenerator
             {
                 chkHC1Lock04.Checked = false;
                 txtbHC1PWMDutyCh04.Text = "200";
-                cmbHC1DirectionCh04.Text = (cmbHC1Mode04.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh04.Text = (cmbHC1ModeParamCh04.Text == "Low" ? "Low" : "High");
             }
             else if (cmbHC1Startup04.Text == "Constant")
             {
                 chkHC1Lock04.Checked = true;
                 txtbHC1PWMDutyCh04.Text = "200";
-                cmbHC1DirectionCh04.Text = (cmbHC1Mode04.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh04.Text = (cmbHC1ModeParamCh04.Text == "Low" ? "Low" : "High");
             }
             else // off
             {
@@ -2847,13 +4594,13 @@ namespace M1ConfigGenerator
             {
                 chkHC1Lock05.Checked = false;
                 txtbHC1PWMDutyCh05.Text = "200";
-                cmbHC1DirectionCh05.Text = (cmbHC1Mode05.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh05.Text = (cmbHC1ModeParamCh05.Text == "Low" ? "Low" : "High");
             }
             else if (cmbHC1Startup05.Text == "Constant")
             {
                 chkHC1Lock05.Checked = true;
                 txtbHC1PWMDutyCh05.Text = "200";
-                cmbHC1DirectionCh05.Text = (cmbHC1Mode05.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh05.Text = (cmbHC1ModeParamCh05.Text == "Low" ? "Low" : "High");
             }
             else // off
             {
@@ -2869,13 +4616,13 @@ namespace M1ConfigGenerator
             {
                 chkHC1Lock06.Checked = false;
                 txtbHC1PWMDutyCh06.Text = "200";
-                cmbHC1DirectionCh06.Text = (cmbHC1Mode06.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh06.Text = (cmbHC1ModeParamCh06.Text == "Low" ? "Low" : "High");
             }
             else if (cmbHC1Startup06.Text == "Constant")
             {
                 chkHC1Lock06.Checked = true;
                 txtbHC1PWMDutyCh06.Text = "200";
-                cmbHC1DirectionCh06.Text = (cmbHC1Mode06.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh06.Text = (cmbHC1ModeParamCh06.Text == "Low" ? "Low" : "High");
             }
             else // off
             {
@@ -2891,13 +4638,13 @@ namespace M1ConfigGenerator
             {
                 chkHC1Lock07.Checked = false;
                 txtbHC1PWMDutyCh07.Text = "200";
-                cmbHC1DirectionCh07.Text = (cmbHC1Mode07.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh07.Text = (cmbHC1ModeParamCh07.Text == "Low" ? "Low" : "High");
             }
             else if (cmbHC1Startup07.Text == "Constant")
             {
                 chkHC1Lock07.Checked = true;
                 txtbHC1PWMDutyCh07.Text = "200";
-                cmbHC1DirectionCh07.Text = (cmbHC1Mode07.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh07.Text = (cmbHC1ModeParamCh07.Text == "Low" ? "Low" : "High");
             }
             else // off
             {
@@ -2913,13 +4660,13 @@ namespace M1ConfigGenerator
             {
                 chkHC1Lock08.Checked = false;
                 txtbHC1PWMDutyCh08.Text = "200";
-                cmbHC1DirectionCh08.Text = (cmbHC1Mode08.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh08.Text = (cmbHC1ModeParamCh08.Text == "Low" ? "Low" : "High");
             }
             else if (cmbHC1Startup08.Text == "Constant")
             {
                 chkHC1Lock08.Checked = true;
                 txtbHC1PWMDutyCh08.Text = "200";
-                cmbHC1DirectionCh08.Text = (cmbHC1Mode08.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh08.Text = (cmbHC1ModeParamCh08.Text == "Low" ? "Low" : "High");
             }
             else // off
             {
@@ -2935,13 +4682,13 @@ namespace M1ConfigGenerator
             {
                 chkHC1Lock09.Checked = false;
                 txtbHC1PWMDutyCh09.Text = "200";
-                cmbHC1DirectionCh09.Text = (cmbHC1Mode09.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh09.Text = (cmbHC1ModeParamCh09.Text == "Low" ? "Low" : "High");
             }
             else if (cmbHC1Startup09.Text == "Constant")
             {
                 chkHC1Lock09.Checked = true;
                 txtbHC1PWMDutyCh09.Text = "200";
-                cmbHC1DirectionCh09.Text = (cmbHC1Mode09.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh09.Text = (cmbHC1ModeParamCh09.Text == "Low" ? "Low" : "High");
             }
             else // off
             {
@@ -2957,13 +4704,13 @@ namespace M1ConfigGenerator
             {
                 chkHC1Lock10.Checked = false;
                 txtbHC1PWMDutyCh10.Text = "200";
-                cmbHC1DirectionCh10.Text = (cmbHC1Mode10.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh10.Text = (cmbHC1ModeParamCh10.Text == "Low" ? "Low" : "High");
             }
             else if (cmbHC1Startup10.Text == "Constant")
             {
                 chkHC1Lock10.Checked = true;
                 txtbHC1PWMDutyCh10.Text = "200";
-                cmbHC1DirectionCh10.Text = (cmbHC1Mode10.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh10.Text = (cmbHC1ModeParamCh10.Text == "Low" ? "Low" : "High");
             }
             else // off
             {
@@ -2979,19 +4726,1334 @@ namespace M1ConfigGenerator
             {
                 chkHC1Lock11.Checked = false;
                 txtbHC1PWMDutyCh11.Text = "200";
-                cmbHC1DirectionCh11.Text = (cmbHC1Mode11.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh11.Text = (cmbHC1ModeParamCh11.Text == "Low" ? "Low" : "High");
             }
             else if (cmbHC1Startup11.Text == "Constant")
             {
                 chkHC1Lock11.Checked = true;
                 txtbHC1PWMDutyCh11.Text = "200";
-                cmbHC1DirectionCh11.Text = (cmbHC1Mode11.Text == "Ground" ? "Low" : "High");
+                cmbHC1DirectionCh11.Text = (cmbHC1ModeParamCh11.Text == "Low" ? "Low" : "High");
             }
             else // off
             {
                 chkHC1Lock11.Checked = false;
                 txtbHC1PWMDutyCh11.Text = "0";
                 cmbHC1DirectionCh11.Text = "Off";
+            }
+        }
+        private void cmbHC2Startup00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2Startup00.Text == "Latch")
+            {
+                chkHC2Lock00.Checked = false;
+                txtbHC2PWMDutyCh00.Text = "200";
+                cmbHC2DirectionCh00.Text = (cmbHC2ModeParamCh00.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC2Startup00.Text == "Constant")
+            {
+                chkHC2Lock00.Checked = true;
+                txtbHC2PWMDutyCh00.Text = "200";
+                cmbHC2DirectionCh00.Text = (cmbHC2ModeParamCh00.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC2Lock00.Checked = false;
+                txtbHC2PWMDutyCh00.Text = "0";
+                cmbHC2DirectionCh00.Text = "Off";
+            }
+        }
+
+        private void cmbHC2Startup01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2Startup01.Text == "Latch")
+            {
+                chkHC2Lock01.Checked = false;
+                txtbHC2PWMDutyCh01.Text = "200";
+                cmbHC2DirectionCh01.Text = (cmbHC2ModeParamCh01.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC2Startup01.Text == "Constant")
+            {
+                chkHC2Lock01.Checked = true;
+                txtbHC2PWMDutyCh01.Text = "200";
+                cmbHC2DirectionCh01.Text = (cmbHC2ModeParamCh01.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC2Lock01.Checked = false;
+                txtbHC2PWMDutyCh01.Text = "0";
+                cmbHC2DirectionCh01.Text = "Off";
+            }
+        }
+
+        private void cmbHC2Startup02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2Startup02.Text == "Latch")
+            {
+                chkHC2Lock02.Checked = false;
+                txtbHC2PWMDutyCh02.Text = "200";
+                cmbHC2DirectionCh02.Text = (cmbHC2ModeParamCh02.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC2Startup02.Text == "Constant")
+            {
+                chkHC2Lock02.Checked = true;
+                txtbHC2PWMDutyCh02.Text = "200";
+                cmbHC2DirectionCh02.Text = (cmbHC2ModeParamCh02.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC2Lock02.Checked = false;
+                txtbHC2PWMDutyCh02.Text = "0";
+                cmbHC2DirectionCh02.Text = "Off";
+            }
+        }
+
+        private void cmbHC2Startup03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2Startup03.Text == "Latch")
+            {
+                chkHC2Lock03.Checked = false;
+                txtbHC2PWMDutyCh03.Text = "200";
+                cmbHC2DirectionCh03.Text = (cmbHC2ModeParamCh03.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC2Startup03.Text == "Constant")
+            {
+                chkHC2Lock03.Checked = true;
+                txtbHC2PWMDutyCh03.Text = "200";
+                cmbHC2DirectionCh03.Text = (cmbHC2ModeParamCh03.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC2Lock03.Checked = false;
+                txtbHC2PWMDutyCh03.Text = "0";
+                cmbHC2DirectionCh03.Text = "Off";
+            }
+        }
+
+        private void cmbHC2Startup04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2Startup04.Text == "Latch")
+            {
+                chkHC2Lock04.Checked = false;
+                txtbHC2PWMDutyCh04.Text = "200";
+                cmbHC2DirectionCh04.Text = (cmbHC2ModeParamCh04.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC2Startup04.Text == "Constant")
+            {
+                chkHC2Lock04.Checked = true;
+                txtbHC2PWMDutyCh04.Text = "200";
+                cmbHC2DirectionCh04.Text = (cmbHC2ModeParamCh04.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC2Lock04.Checked = false;
+                txtbHC2PWMDutyCh04.Text = "0";
+                cmbHC2DirectionCh04.Text = "Off";
+            }
+        }
+
+        private void cmbHC2Startup05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2Startup05.Text == "Latch")
+            {
+                chkHC2Lock05.Checked = false;
+                txtbHC2PWMDutyCh05.Text = "200";
+                cmbHC2DirectionCh05.Text = (cmbHC2ModeParamCh05.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC2Startup05.Text == "Constant")
+            {
+                chkHC2Lock05.Checked = true;
+                txtbHC2PWMDutyCh05.Text = "200";
+                cmbHC2DirectionCh05.Text = (cmbHC2ModeParamCh05.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC2Lock05.Checked = false;
+                txtbHC2PWMDutyCh05.Text = "0";
+                cmbHC2DirectionCh05.Text = "Off";
+            }
+        }
+
+        private void cmbHC2Startup06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2Startup06.Text == "Latch")
+            {
+                chkHC2Lock06.Checked = false;
+                txtbHC2PWMDutyCh06.Text = "200";
+                cmbHC2DirectionCh06.Text = (cmbHC2ModeParamCh06.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC2Startup06.Text == "Constant")
+            {
+                chkHC2Lock06.Checked = true;
+                txtbHC2PWMDutyCh06.Text = "200";
+                cmbHC2DirectionCh06.Text = (cmbHC2ModeParamCh06.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC2Lock06.Checked = false;
+                txtbHC2PWMDutyCh06.Text = "0";
+                cmbHC2DirectionCh06.Text = "Off";
+            }
+        }
+
+        private void cmbHC2Startup07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2Startup07.Text == "Latch")
+            {
+                chkHC2Lock07.Checked = false;
+                txtbHC2PWMDutyCh07.Text = "200";
+                cmbHC2DirectionCh07.Text = (cmbHC2ModeParamCh07.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC2Startup07.Text == "Constant")
+            {
+                chkHC2Lock07.Checked = true;
+                txtbHC2PWMDutyCh07.Text = "200";
+                cmbHC2DirectionCh07.Text = (cmbHC2ModeParamCh07.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC2Lock07.Checked = false;
+                txtbHC2PWMDutyCh07.Text = "0";
+                cmbHC2DirectionCh07.Text = "Off";
+            }
+        }
+
+        private void cmbHC2Startup08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2Startup08.Text == "Latch")
+            {
+                chkHC2Lock08.Checked = false;
+                txtbHC2PWMDutyCh08.Text = "200";
+                cmbHC2DirectionCh08.Text = (cmbHC2ModeParamCh08.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC2Startup08.Text == "Constant")
+            {
+                chkHC2Lock08.Checked = true;
+                txtbHC2PWMDutyCh08.Text = "200";
+                cmbHC2DirectionCh08.Text = (cmbHC2ModeParamCh08.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC2Lock08.Checked = false;
+                txtbHC2PWMDutyCh08.Text = "0";
+                cmbHC2DirectionCh08.Text = "Off";
+            }
+        }
+
+        private void cmbHC2Startup09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2Startup09.Text == "Latch")
+            {
+                chkHC2Lock09.Checked = false;
+                txtbHC2PWMDutyCh09.Text = "200";
+                cmbHC2DirectionCh09.Text = (cmbHC2ModeParamCh09.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC2Startup09.Text == "Constant")
+            {
+                chkHC2Lock09.Checked = true;
+                txtbHC2PWMDutyCh09.Text = "200";
+                cmbHC2DirectionCh09.Text = (cmbHC2ModeParamCh09.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC2Lock09.Checked = false;
+                txtbHC2PWMDutyCh09.Text = "0";
+                cmbHC2DirectionCh09.Text = "Off";
+            }
+        }
+
+        private void cmbHC2Startup10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2Startup10.Text == "Latch")
+            {
+                chkHC2Lock10.Checked = false;
+                txtbHC2PWMDutyCh10.Text = "200";
+                cmbHC2DirectionCh10.Text = (cmbHC2ModeParamCh10.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC2Startup10.Text == "Constant")
+            {
+                chkHC2Lock10.Checked = true;
+                txtbHC2PWMDutyCh10.Text = "200";
+                cmbHC2DirectionCh10.Text = (cmbHC2ModeParamCh10.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC2Lock10.Checked = false;
+                txtbHC2PWMDutyCh10.Text = "0";
+                cmbHC2DirectionCh10.Text = "Off";
+            }
+        }
+
+        private void cmbHC2Startup11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2Startup11.Text == "Latch")
+            {
+                chkHC2Lock11.Checked = false;
+                txtbHC2PWMDutyCh11.Text = "200";
+                cmbHC2DirectionCh11.Text = (cmbHC2ModeParamCh11.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC2Startup11.Text == "Constant")
+            {
+                chkHC2Lock11.Checked = true;
+                txtbHC2PWMDutyCh11.Text = "200";
+                cmbHC2DirectionCh11.Text = (cmbHC2ModeParamCh11.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC2Lock11.Checked = false;
+                txtbHC2PWMDutyCh11.Text = "0";
+                cmbHC2DirectionCh11.Text = "Off";
+            }
+        }
+        private void cmbHC3Startup00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Startup00.Text == "Latch")
+            {
+                chkHC3Lock00.Checked = false;
+                txtbHC3PWMDutyCh00.Text = "200";
+                cmbHC3DirectionCh00.Text = (cmbHC3ModeParamCh00.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC3Startup00.Text == "Constant")
+            {
+                chkHC3Lock00.Checked = true;
+                txtbHC3PWMDutyCh00.Text = "200";
+                cmbHC3DirectionCh00.Text = (cmbHC3ModeParamCh00.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC3Lock00.Checked = false;
+                txtbHC3PWMDutyCh00.Text = "0";
+                cmbHC3DirectionCh00.Text = "Off";
+            }
+        }
+
+        private void cmbHC3Startup01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Startup01.Text == "Latch")
+            {
+                chkHC3Lock01.Checked = false;
+                txtbHC3PWMDutyCh01.Text = "200";
+                cmbHC3DirectionCh01.Text = (cmbHC3ModeParamCh01.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC3Startup01.Text == "Constant")
+            {
+                chkHC3Lock01.Checked = true;
+                txtbHC3PWMDutyCh01.Text = "200";
+                cmbHC3DirectionCh01.Text = (cmbHC3ModeParamCh01.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC3Lock01.Checked = false;
+                txtbHC3PWMDutyCh01.Text = "0";
+                cmbHC3DirectionCh01.Text = "Off";
+            }
+        }
+
+        private void cmbHC3Startup02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Startup02.Text == "Latch")
+            {
+                chkHC3Lock02.Checked = false;
+                txtbHC3PWMDutyCh02.Text = "200";
+                cmbHC3DirectionCh02.Text = (cmbHC3ModeParamCh02.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC3Startup02.Text == "Constant")
+            {
+                chkHC3Lock02.Checked = true;
+                txtbHC3PWMDutyCh02.Text = "200";
+                cmbHC3DirectionCh02.Text = (cmbHC3ModeParamCh02.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC3Lock02.Checked = false;
+                txtbHC3PWMDutyCh02.Text = "0";
+                cmbHC3DirectionCh02.Text = "Off";
+            }
+        }
+
+        private void cmbHC3Startup03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Startup03.Text == "Latch")
+            {
+                chkHC3Lock03.Checked = false;
+                txtbHC3PWMDutyCh03.Text = "200";
+                cmbHC3DirectionCh03.Text = (cmbHC3ModeParamCh03.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC3Startup03.Text == "Constant")
+            {
+                chkHC3Lock03.Checked = true;
+                txtbHC3PWMDutyCh03.Text = "200";
+                cmbHC3DirectionCh03.Text = (cmbHC3ModeParamCh03.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC3Lock03.Checked = false;
+                txtbHC3PWMDutyCh03.Text = "0";
+                cmbHC3DirectionCh03.Text = "Off";
+            }
+        }
+
+        private void cmbHC3Startup04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Startup04.Text == "Latch")
+            {
+                chkHC3Lock04.Checked = false;
+                txtbHC3PWMDutyCh04.Text = "200";
+                cmbHC3DirectionCh04.Text = (cmbHC3ModeParamCh04.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC3Startup04.Text == "Constant")
+            {
+                chkHC3Lock04.Checked = true;
+                txtbHC3PWMDutyCh04.Text = "200";
+                cmbHC3DirectionCh04.Text = (cmbHC3ModeParamCh04.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC3Lock04.Checked = false;
+                txtbHC3PWMDutyCh04.Text = "0";
+                cmbHC3DirectionCh04.Text = "Off";
+            }
+        }
+
+        private void cmbHC3Startup05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Startup05.Text == "Latch")
+            {
+                chkHC3Lock05.Checked = false;
+                txtbHC3PWMDutyCh05.Text = "200";
+                cmbHC3DirectionCh05.Text = (cmbHC3ModeParamCh05.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC3Startup05.Text == "Constant")
+            {
+                chkHC3Lock05.Checked = true;
+                txtbHC3PWMDutyCh05.Text = "200";
+                cmbHC3DirectionCh05.Text = (cmbHC3ModeParamCh05.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC3Lock05.Checked = false;
+                txtbHC3PWMDutyCh05.Text = "0";
+                cmbHC3DirectionCh05.Text = "Off";
+            }
+        }
+
+        private void cmbHC3Startup06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Startup06.Text == "Latch")
+            {
+                chkHC3Lock06.Checked = false;
+                txtbHC3PWMDutyCh06.Text = "200";
+                cmbHC3DirectionCh06.Text = (cmbHC3ModeParamCh06.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC3Startup06.Text == "Constant")
+            {
+                chkHC3Lock06.Checked = true;
+                txtbHC3PWMDutyCh06.Text = "200";
+                cmbHC3DirectionCh06.Text = (cmbHC3ModeParamCh06.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC3Lock06.Checked = false;
+                txtbHC3PWMDutyCh06.Text = "0";
+                cmbHC3DirectionCh06.Text = "Off";
+            }
+        }
+
+        private void cmbHC3Startup07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Startup07.Text == "Latch")
+            {
+                chkHC3Lock07.Checked = false;
+                txtbHC3PWMDutyCh07.Text = "200";
+                cmbHC3DirectionCh07.Text = (cmbHC3ModeParamCh07.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC3Startup07.Text == "Constant")
+            {
+                chkHC3Lock07.Checked = true;
+                txtbHC3PWMDutyCh07.Text = "200";
+                cmbHC3DirectionCh07.Text = (cmbHC3ModeParamCh07.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC3Lock07.Checked = false;
+                txtbHC3PWMDutyCh07.Text = "0";
+                cmbHC3DirectionCh07.Text = "Off";
+            }
+        }
+
+        private void cmbHC3Startup08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Startup08.Text == "Latch")
+            {
+                chkHC3Lock08.Checked = false;
+                txtbHC3PWMDutyCh08.Text = "200";
+                cmbHC3DirectionCh08.Text = (cmbHC3ModeParamCh08.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC3Startup08.Text == "Constant")
+            {
+                chkHC3Lock08.Checked = true;
+                txtbHC3PWMDutyCh08.Text = "200";
+                cmbHC3DirectionCh08.Text = (cmbHC3ModeParamCh08.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC3Lock08.Checked = false;
+                txtbHC3PWMDutyCh08.Text = "0";
+                cmbHC3DirectionCh08.Text = "Off";
+            }
+        }
+
+        private void cmbHC3Startup09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Startup09.Text == "Latch")
+            {
+                chkHC3Lock09.Checked = false;
+                txtbHC3PWMDutyCh09.Text = "200";
+                cmbHC3DirectionCh09.Text = (cmbHC3ModeParamCh09.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC3Startup09.Text == "Constant")
+            {
+                chkHC3Lock09.Checked = true;
+                txtbHC3PWMDutyCh09.Text = "200";
+                cmbHC3DirectionCh09.Text = (cmbHC3ModeParamCh09.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC3Lock09.Checked = false;
+                txtbHC3PWMDutyCh09.Text = "0";
+                cmbHC3DirectionCh09.Text = "Off";
+            }
+        }
+
+        private void cmbHC3Startup10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Startup10.Text == "Latch")
+            {
+                chkHC3Lock10.Checked = false;
+                txtbHC3PWMDutyCh10.Text = "200";
+                cmbHC3DirectionCh10.Text = (cmbHC3ModeParamCh10.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC3Startup10.Text == "Constant")
+            {
+                chkHC3Lock10.Checked = true;
+                txtbHC3PWMDutyCh10.Text = "200";
+                cmbHC3DirectionCh10.Text = (cmbHC3ModeParamCh10.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC3Lock10.Checked = false;
+                txtbHC3PWMDutyCh10.Text = "0";
+                cmbHC3DirectionCh10.Text = "Off";
+            }
+        }
+
+        private void cmbHC3Startup11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3Startup11.Text == "Latch")
+            {
+                chkHC3Lock11.Checked = false;
+                txtbHC3PWMDutyCh11.Text = "200";
+                cmbHC3DirectionCh11.Text = (cmbHC3ModeParamCh11.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC3Startup11.Text == "Constant")
+            {
+                chkHC3Lock11.Checked = true;
+                txtbHC3PWMDutyCh11.Text = "200";
+                cmbHC3DirectionCh11.Text = (cmbHC3ModeParamCh11.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC3Lock11.Checked = false;
+                txtbHC3PWMDutyCh11.Text = "0";
+                cmbHC3DirectionCh11.Text = "Off";
+            }
+        }
+        private void cmbHC4Startup00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Startup00.Text == "Latch")
+            {
+                chkHC4Lock00.Checked = false;
+                txtbHC4PWMDutyCh00.Text = "200";
+                cmbHC4DirectionCh00.Text = (cmbHC4ModeParamCh00.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC4Startup00.Text == "Constant")
+            {
+                chkHC4Lock00.Checked = true;
+                txtbHC4PWMDutyCh00.Text = "200";
+                cmbHC4DirectionCh00.Text = (cmbHC4ModeParamCh00.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC4Lock00.Checked = false;
+                txtbHC4PWMDutyCh00.Text = "0";
+                cmbHC4DirectionCh00.Text = "Off";
+            }
+        }
+
+        private void cmbHC4Startup01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Startup01.Text == "Latch")
+            {
+                chkHC4Lock01.Checked = false;
+                txtbHC4PWMDutyCh01.Text = "200";
+                cmbHC4DirectionCh01.Text = (cmbHC4ModeParamCh01.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC4Startup01.Text == "Constant")
+            {
+                chkHC4Lock01.Checked = true;
+                txtbHC4PWMDutyCh01.Text = "200";
+                cmbHC4DirectionCh01.Text = (cmbHC4ModeParamCh01.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC4Lock01.Checked = false;
+                txtbHC4PWMDutyCh01.Text = "0";
+                cmbHC4DirectionCh01.Text = "Off";
+            }
+        }
+
+        private void cmbHC4Startup02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Startup02.Text == "Latch")
+            {
+                chkHC4Lock02.Checked = false;
+                txtbHC4PWMDutyCh02.Text = "200";
+                cmbHC4DirectionCh02.Text = (cmbHC4ModeParamCh02.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC4Startup02.Text == "Constant")
+            {
+                chkHC4Lock02.Checked = true;
+                txtbHC4PWMDutyCh02.Text = "200";
+                cmbHC4DirectionCh02.Text = (cmbHC4ModeParamCh02.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC4Lock02.Checked = false;
+                txtbHC4PWMDutyCh02.Text = "0";
+                cmbHC4DirectionCh02.Text = "Off";
+            }
+        }
+
+        private void cmbHC4Startup03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Startup03.Text == "Latch")
+            {
+                chkHC4Lock03.Checked = false;
+                txtbHC4PWMDutyCh03.Text = "200";
+                cmbHC4DirectionCh03.Text = (cmbHC4ModeParamCh03.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC4Startup03.Text == "Constant")
+            {
+                chkHC4Lock03.Checked = true;
+                txtbHC4PWMDutyCh03.Text = "200";
+                cmbHC4DirectionCh03.Text = (cmbHC4ModeParamCh03.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC4Lock03.Checked = false;
+                txtbHC4PWMDutyCh03.Text = "0";
+                cmbHC4DirectionCh03.Text = "Off";
+            }
+        }
+
+        private void cmbHC4Startup04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Startup04.Text == "Latch")
+            {
+                chkHC4Lock04.Checked = false;
+                txtbHC4PWMDutyCh04.Text = "200";
+                cmbHC4DirectionCh04.Text = (cmbHC4ModeParamCh04.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC4Startup04.Text == "Constant")
+            {
+                chkHC4Lock04.Checked = true;
+                txtbHC4PWMDutyCh04.Text = "200";
+                cmbHC4DirectionCh04.Text = (cmbHC4ModeParamCh04.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC4Lock04.Checked = false;
+                txtbHC4PWMDutyCh04.Text = "0";
+                cmbHC4DirectionCh04.Text = "Off";
+            }
+        }
+
+        private void cmbHC4Startup05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Startup05.Text == "Latch")
+            {
+                chkHC4Lock05.Checked = false;
+                txtbHC4PWMDutyCh05.Text = "200";
+                cmbHC4DirectionCh05.Text = (cmbHC4ModeParamCh05.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC4Startup05.Text == "Constant")
+            {
+                chkHC4Lock05.Checked = true;
+                txtbHC4PWMDutyCh05.Text = "200";
+                cmbHC4DirectionCh05.Text = (cmbHC4ModeParamCh05.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC4Lock05.Checked = false;
+                txtbHC4PWMDutyCh05.Text = "0";
+                cmbHC4DirectionCh05.Text = "Off";
+            }
+        }
+
+        private void cmbHC4Startup06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Startup06.Text == "Latch")
+            {
+                chkHC4Lock06.Checked = false;
+                txtbHC4PWMDutyCh06.Text = "200";
+                cmbHC4DirectionCh06.Text = (cmbHC4ModeParamCh06.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC4Startup06.Text == "Constant")
+            {
+                chkHC4Lock06.Checked = true;
+                txtbHC4PWMDutyCh06.Text = "200";
+                cmbHC4DirectionCh06.Text = (cmbHC4ModeParamCh06.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC4Lock06.Checked = false;
+                txtbHC4PWMDutyCh06.Text = "0";
+                cmbHC4DirectionCh06.Text = "Off";
+            }
+        }
+
+        private void cmbHC4Startup07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Startup07.Text == "Latch")
+            {
+                chkHC4Lock07.Checked = false;
+                txtbHC4PWMDutyCh07.Text = "200";
+                cmbHC4DirectionCh07.Text = (cmbHC4ModeParamCh07.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC4Startup07.Text == "Constant")
+            {
+                chkHC4Lock07.Checked = true;
+                txtbHC4PWMDutyCh07.Text = "200";
+                cmbHC4DirectionCh07.Text = (cmbHC4ModeParamCh07.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC4Lock07.Checked = false;
+                txtbHC4PWMDutyCh07.Text = "0";
+                cmbHC4DirectionCh07.Text = "Off";
+            }
+        }
+
+        private void cmbHC4Startup08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Startup08.Text == "Latch")
+            {
+                chkHC4Lock08.Checked = false;
+                txtbHC4PWMDutyCh08.Text = "200";
+                cmbHC4DirectionCh08.Text = (cmbHC4ModeParamCh08.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC4Startup08.Text == "Constant")
+            {
+                chkHC4Lock08.Checked = true;
+                txtbHC4PWMDutyCh08.Text = "200";
+                cmbHC4DirectionCh08.Text = (cmbHC4ModeParamCh08.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC4Lock08.Checked = false;
+                txtbHC4PWMDutyCh08.Text = "0";
+                cmbHC4DirectionCh08.Text = "Off";
+            }
+        }
+
+        private void cmbHC4Startup09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Startup09.Text == "Latch")
+            {
+                chkHC4Lock09.Checked = false;
+                txtbHC4PWMDutyCh09.Text = "200";
+                cmbHC4DirectionCh09.Text = (cmbHC4ModeParamCh09.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC4Startup09.Text == "Constant")
+            {
+                chkHC4Lock09.Checked = true;
+                txtbHC4PWMDutyCh09.Text = "200";
+                cmbHC4DirectionCh09.Text = (cmbHC4ModeParamCh09.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC4Lock09.Checked = false;
+                txtbHC4PWMDutyCh09.Text = "0";
+                cmbHC4DirectionCh09.Text = "Off";
+            }
+        }
+
+        private void cmbHC4Startup10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Startup10.Text == "Latch")
+            {
+                chkHC4Lock10.Checked = false;
+                txtbHC4PWMDutyCh10.Text = "200";
+                cmbHC4DirectionCh10.Text = (cmbHC4ModeParamCh10.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC4Startup10.Text == "Constant")
+            {
+                chkHC4Lock10.Checked = true;
+                txtbHC4PWMDutyCh10.Text = "200";
+                cmbHC4DirectionCh10.Text = (cmbHC4ModeParamCh10.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC4Lock10.Checked = false;
+                txtbHC4PWMDutyCh10.Text = "0";
+                cmbHC4DirectionCh10.Text = "Off";
+            }
+        }
+
+        private void cmbHC4Startup11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4Startup11.Text == "Latch")
+            {
+                chkHC4Lock11.Checked = false;
+                txtbHC4PWMDutyCh11.Text = "200";
+                cmbHC4DirectionCh11.Text = (cmbHC4ModeParamCh11.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC4Startup11.Text == "Constant")
+            {
+                chkHC4Lock11.Checked = true;
+                txtbHC4PWMDutyCh11.Text = "200";
+                cmbHC4DirectionCh11.Text = (cmbHC4ModeParamCh11.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC4Lock11.Checked = false;
+                txtbHC4PWMDutyCh11.Text = "0";
+                cmbHC4DirectionCh11.Text = "Off";
+            }
+        }
+        private void cmbHC5Startup00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Startup00.Text == "Latch")
+            {
+                chkHC5Lock00.Checked = false;
+                txtbHC5PWMDutyCh00.Text = "200";
+                cmbHC5DirectionCh00.Text = (cmbHC5ModeParamCh00.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC5Startup00.Text == "Constant")
+            {
+                chkHC5Lock00.Checked = true;
+                txtbHC5PWMDutyCh00.Text = "200";
+                cmbHC5DirectionCh00.Text = (cmbHC5ModeParamCh00.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC5Lock00.Checked = false;
+                txtbHC5PWMDutyCh00.Text = "0";
+                cmbHC5DirectionCh00.Text = "Off";
+            }
+        }
+
+        private void cmbHC5Startup01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Startup01.Text == "Latch")
+            {
+                chkHC5Lock01.Checked = false;
+                txtbHC5PWMDutyCh01.Text = "200";
+                cmbHC5DirectionCh01.Text = (cmbHC5ModeParamCh01.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC5Startup01.Text == "Constant")
+            {
+                chkHC5Lock01.Checked = true;
+                txtbHC5PWMDutyCh01.Text = "200";
+                cmbHC5DirectionCh01.Text = (cmbHC5ModeParamCh01.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC5Lock01.Checked = false;
+                txtbHC5PWMDutyCh01.Text = "0";
+                cmbHC5DirectionCh01.Text = "Off";
+            }
+        }
+
+        private void cmbHC5Startup02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Startup02.Text == "Latch")
+            {
+                chkHC5Lock02.Checked = false;
+                txtbHC5PWMDutyCh02.Text = "200";
+                cmbHC5DirectionCh02.Text = (cmbHC5ModeParamCh02.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC5Startup02.Text == "Constant")
+            {
+                chkHC5Lock02.Checked = true;
+                txtbHC5PWMDutyCh02.Text = "200";
+                cmbHC5DirectionCh02.Text = (cmbHC5ModeParamCh02.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC5Lock02.Checked = false;
+                txtbHC5PWMDutyCh02.Text = "0";
+                cmbHC5DirectionCh02.Text = "Off";
+            }
+        }
+
+        private void cmbHC5Startup03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Startup03.Text == "Latch")
+            {
+                chkHC5Lock03.Checked = false;
+                txtbHC5PWMDutyCh03.Text = "200";
+                cmbHC5DirectionCh03.Text = (cmbHC5ModeParamCh03.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC5Startup03.Text == "Constant")
+            {
+                chkHC5Lock03.Checked = true;
+                txtbHC5PWMDutyCh03.Text = "200";
+                cmbHC5DirectionCh03.Text = (cmbHC5ModeParamCh03.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC5Lock03.Checked = false;
+                txtbHC5PWMDutyCh03.Text = "0";
+                cmbHC5DirectionCh03.Text = "Off";
+            }
+        }
+
+        private void cmbHC5Startup04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Startup04.Text == "Latch")
+            {
+                chkHC5Lock04.Checked = false;
+                txtbHC5PWMDutyCh04.Text = "200";
+                cmbHC5DirectionCh04.Text = (cmbHC5ModeParamCh04.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC5Startup04.Text == "Constant")
+            {
+                chkHC5Lock04.Checked = true;
+                txtbHC5PWMDutyCh04.Text = "200";
+                cmbHC5DirectionCh04.Text = (cmbHC5ModeParamCh04.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC5Lock04.Checked = false;
+                txtbHC5PWMDutyCh04.Text = "0";
+                cmbHC5DirectionCh04.Text = "Off";
+            }
+        }
+
+        private void cmbHC5Startup05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Startup05.Text == "Latch")
+            {
+                chkHC5Lock05.Checked = false;
+                txtbHC5PWMDutyCh05.Text = "200";
+                cmbHC5DirectionCh05.Text = (cmbHC5ModeParamCh05.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC5Startup05.Text == "Constant")
+            {
+                chkHC5Lock05.Checked = true;
+                txtbHC5PWMDutyCh05.Text = "200";
+                cmbHC5DirectionCh05.Text = (cmbHC5ModeParamCh05.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC5Lock05.Checked = false;
+                txtbHC5PWMDutyCh05.Text = "0";
+                cmbHC5DirectionCh05.Text = "Off";
+            }
+        }
+
+        private void cmbHC5Startup06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Startup06.Text == "Latch")
+            {
+                chkHC5Lock06.Checked = false;
+                txtbHC5PWMDutyCh06.Text = "200";
+                cmbHC5DirectionCh06.Text = (cmbHC5ModeParamCh06.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC5Startup06.Text == "Constant")
+            {
+                chkHC5Lock06.Checked = true;
+                txtbHC5PWMDutyCh06.Text = "200";
+                cmbHC5DirectionCh06.Text = (cmbHC5ModeParamCh06.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC5Lock06.Checked = false;
+                txtbHC5PWMDutyCh06.Text = "0";
+                cmbHC5DirectionCh06.Text = "Off";
+            }
+        }
+
+        private void cmbHC5Startup07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Startup07.Text == "Latch")
+            {
+                chkHC5Lock07.Checked = false;
+                txtbHC5PWMDutyCh07.Text = "200";
+                cmbHC5DirectionCh07.Text = (cmbHC5ModeParamCh07.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC5Startup07.Text == "Constant")
+            {
+                chkHC5Lock07.Checked = true;
+                txtbHC5PWMDutyCh07.Text = "200";
+                cmbHC5DirectionCh07.Text = (cmbHC5ModeParamCh07.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC5Lock07.Checked = false;
+                txtbHC5PWMDutyCh07.Text = "0";
+                cmbHC5DirectionCh07.Text = "Off";
+            }
+        }
+
+        private void cmbHC5Startup08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Startup08.Text == "Latch")
+            {
+                chkHC5Lock08.Checked = false;
+                txtbHC5PWMDutyCh08.Text = "200";
+                cmbHC5DirectionCh08.Text = (cmbHC5ModeParamCh08.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC5Startup08.Text == "Constant")
+            {
+                chkHC5Lock08.Checked = true;
+                txtbHC5PWMDutyCh08.Text = "200";
+                cmbHC5DirectionCh08.Text = (cmbHC5ModeParamCh08.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC5Lock08.Checked = false;
+                txtbHC5PWMDutyCh08.Text = "0";
+                cmbHC5DirectionCh08.Text = "Off";
+            }
+        }
+
+        private void cmbHC5Startup09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Startup09.Text == "Latch")
+            {
+                chkHC5Lock09.Checked = false;
+                txtbHC5PWMDutyCh09.Text = "200";
+                cmbHC5DirectionCh09.Text = (cmbHC5ModeParamCh09.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC5Startup09.Text == "Constant")
+            {
+                chkHC5Lock09.Checked = true;
+                txtbHC5PWMDutyCh09.Text = "200";
+                cmbHC5DirectionCh09.Text = (cmbHC5ModeParamCh09.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC5Lock09.Checked = false;
+                txtbHC5PWMDutyCh09.Text = "0";
+                cmbHC5DirectionCh09.Text = "Off";
+            }
+        }
+
+        private void cmbHC5Startup10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Startup10.Text == "Latch")
+            {
+                chkHC5Lock10.Checked = false;
+                txtbHC5PWMDutyCh10.Text = "200";
+                cmbHC5DirectionCh10.Text = (cmbHC5ModeParamCh10.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC5Startup10.Text == "Constant")
+            {
+                chkHC5Lock10.Checked = true;
+                txtbHC5PWMDutyCh10.Text = "200";
+                cmbHC5DirectionCh10.Text = (cmbHC5ModeParamCh10.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC5Lock10.Checked = false;
+                txtbHC5PWMDutyCh10.Text = "0";
+                cmbHC5DirectionCh10.Text = "Off";
+            }
+        }
+
+        private void cmbHC5Startup11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5Startup11.Text == "Latch")
+            {
+                chkHC5Lock11.Checked = false;
+                txtbHC5PWMDutyCh11.Text = "200";
+                cmbHC5DirectionCh11.Text = (cmbHC5ModeParamCh11.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC5Startup11.Text == "Constant")
+            {
+                chkHC5Lock11.Checked = true;
+                txtbHC5PWMDutyCh11.Text = "200";
+                cmbHC5DirectionCh11.Text = (cmbHC5ModeParamCh11.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC5Lock11.Checked = false;
+                txtbHC5PWMDutyCh11.Text = "0";
+                cmbHC5DirectionCh11.Text = "Off";
+            }
+        }
+        private void cmbHC6Startup00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Startup00.Text == "Latch")
+            {
+                chkHC6Lock00.Checked = false;
+                txtbHC6PWMDutyCh00.Text = "200";
+                cmbHC6DirectionCh00.Text = (cmbHC6ModeParamCh00.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC6Startup00.Text == "Constant")
+            {
+                chkHC6Lock00.Checked = true;
+                txtbHC6PWMDutyCh00.Text = "200";
+                cmbHC6DirectionCh00.Text = (cmbHC6ModeParamCh00.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC6Lock00.Checked = false;
+                txtbHC6PWMDutyCh00.Text = "0";
+                cmbHC6DirectionCh00.Text = "Off";
+            }
+        }
+
+        private void cmbHC6Startup01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Startup01.Text == "Latch")
+            {
+                chkHC6Lock01.Checked = false;
+                txtbHC6PWMDutyCh01.Text = "200";
+                cmbHC6DirectionCh01.Text = (cmbHC6ModeParamCh01.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC6Startup01.Text == "Constant")
+            {
+                chkHC6Lock01.Checked = true;
+                txtbHC6PWMDutyCh01.Text = "200";
+                cmbHC6DirectionCh01.Text = (cmbHC6ModeParamCh01.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC6Lock01.Checked = false;
+                txtbHC6PWMDutyCh01.Text = "0";
+                cmbHC6DirectionCh01.Text = "Off";
+            }
+        }
+
+        private void cmbHC6Startup02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Startup02.Text == "Latch")
+            {
+                chkHC6Lock02.Checked = false;
+                txtbHC6PWMDutyCh02.Text = "200";
+                cmbHC6DirectionCh02.Text = (cmbHC6ModeParamCh02.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC6Startup02.Text == "Constant")
+            {
+                chkHC6Lock02.Checked = true;
+                txtbHC6PWMDutyCh02.Text = "200";
+                cmbHC6DirectionCh02.Text = (cmbHC6ModeParamCh02.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC6Lock02.Checked = false;
+                txtbHC6PWMDutyCh02.Text = "0";
+                cmbHC6DirectionCh02.Text = "Off";
+            }
+        }
+
+        private void cmbHC6Startup03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Startup03.Text == "Latch")
+            {
+                chkHC6Lock03.Checked = false;
+                txtbHC6PWMDutyCh03.Text = "200";
+                cmbHC6DirectionCh03.Text = (cmbHC6ModeParamCh03.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC6Startup03.Text == "Constant")
+            {
+                chkHC6Lock03.Checked = true;
+                txtbHC6PWMDutyCh03.Text = "200";
+                cmbHC6DirectionCh03.Text = (cmbHC6ModeParamCh03.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC6Lock03.Checked = false;
+                txtbHC6PWMDutyCh03.Text = "0";
+                cmbHC6DirectionCh03.Text = "Off";
+            }
+        }
+
+        private void cmbHC6Startup04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Startup04.Text == "Latch")
+            {
+                chkHC6Lock04.Checked = false;
+                txtbHC6PWMDutyCh04.Text = "200";
+                cmbHC6DirectionCh04.Text = (cmbHC6ModeParamCh04.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC6Startup04.Text == "Constant")
+            {
+                chkHC6Lock04.Checked = true;
+                txtbHC6PWMDutyCh04.Text = "200";
+                cmbHC6DirectionCh04.Text = (cmbHC6ModeParamCh04.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC6Lock04.Checked = false;
+                txtbHC6PWMDutyCh04.Text = "0";
+                cmbHC6DirectionCh04.Text = "Off";
+            }
+        }
+
+        private void cmbHC6Startup05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Startup05.Text == "Latch")
+            {
+                chkHC6Lock05.Checked = false;
+                txtbHC6PWMDutyCh05.Text = "200";
+                cmbHC6DirectionCh05.Text = (cmbHC6ModeParamCh05.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC6Startup05.Text == "Constant")
+            {
+                chkHC6Lock05.Checked = true;
+                txtbHC6PWMDutyCh05.Text = "200";
+                cmbHC6DirectionCh05.Text = (cmbHC6ModeParamCh05.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC6Lock05.Checked = false;
+                txtbHC6PWMDutyCh05.Text = "0";
+                cmbHC6DirectionCh05.Text = "Off";
+            }
+        }
+
+        private void cmbHC6Startup06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Startup06.Text == "Latch")
+            {
+                chkHC6Lock06.Checked = false;
+                txtbHC6PWMDutyCh06.Text = "200";
+                cmbHC6DirectionCh06.Text = (cmbHC6ModeParamCh06.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC6Startup06.Text == "Constant")
+            {
+                chkHC6Lock06.Checked = true;
+                txtbHC6PWMDutyCh06.Text = "200";
+                cmbHC6DirectionCh06.Text = (cmbHC6ModeParamCh06.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC6Lock06.Checked = false;
+                txtbHC6PWMDutyCh06.Text = "0";
+                cmbHC6DirectionCh06.Text = "Off";
+            }
+        }
+
+        private void cmbHC6Startup07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Startup07.Text == "Latch")
+            {
+                chkHC6Lock07.Checked = false;
+                txtbHC6PWMDutyCh07.Text = "200";
+                cmbHC6DirectionCh07.Text = (cmbHC6ModeParamCh07.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC6Startup07.Text == "Constant")
+            {
+                chkHC6Lock07.Checked = true;
+                txtbHC6PWMDutyCh07.Text = "200";
+                cmbHC6DirectionCh07.Text = (cmbHC6ModeParamCh07.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC6Lock07.Checked = false;
+                txtbHC6PWMDutyCh07.Text = "0";
+                cmbHC6DirectionCh07.Text = "Off";
+            }
+        }
+
+        private void cmbHC6Startup08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Startup08.Text == "Latch")
+            {
+                chkHC6Lock08.Checked = false;
+                txtbHC6PWMDutyCh08.Text = "200";
+                cmbHC6DirectionCh08.Text = (cmbHC6ModeParamCh08.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC6Startup08.Text == "Constant")
+            {
+                chkHC6Lock08.Checked = true;
+                txtbHC6PWMDutyCh08.Text = "200";
+                cmbHC6DirectionCh08.Text = (cmbHC6ModeParamCh08.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC6Lock08.Checked = false;
+                txtbHC6PWMDutyCh08.Text = "0";
+                cmbHC6DirectionCh08.Text = "Off";
+            }
+        }
+
+        private void cmbHC6Startup09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Startup09.Text == "Latch")
+            {
+                chkHC6Lock09.Checked = false;
+                txtbHC6PWMDutyCh09.Text = "200";
+                cmbHC6DirectionCh09.Text = (cmbHC6ModeParamCh09.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC6Startup09.Text == "Constant")
+            {
+                chkHC6Lock09.Checked = true;
+                txtbHC6PWMDutyCh09.Text = "200";
+                cmbHC6DirectionCh09.Text = (cmbHC6ModeParamCh09.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC6Lock09.Checked = false;
+                txtbHC6PWMDutyCh09.Text = "0";
+                cmbHC6DirectionCh09.Text = "Off";
+            }
+        }
+
+        private void cmbHC6Startup10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Startup10.Text == "Latch")
+            {
+                chkHC6Lock10.Checked = false;
+                txtbHC6PWMDutyCh10.Text = "200";
+                cmbHC6DirectionCh10.Text = (cmbHC6ModeParamCh10.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC6Startup10.Text == "Constant")
+            {
+                chkHC6Lock10.Checked = true;
+                txtbHC6PWMDutyCh10.Text = "200";
+                cmbHC6DirectionCh10.Text = (cmbHC6ModeParamCh10.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC6Lock10.Checked = false;
+                txtbHC6PWMDutyCh10.Text = "0";
+                cmbHC6DirectionCh10.Text = "Off";
+            }
+        }
+
+        private void cmbHC6Startup11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6Startup11.Text == "Latch")
+            {
+                chkHC6Lock11.Checked = false;
+                txtbHC6PWMDutyCh11.Text = "200";
+                cmbHC6DirectionCh11.Text = (cmbHC6ModeParamCh11.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHC6Startup11.Text == "Constant")
+            {
+                chkHC6Lock11.Checked = true;
+                txtbHC6PWMDutyCh11.Text = "200";
+                cmbHC6DirectionCh11.Text = (cmbHC6ModeParamCh11.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHC6Lock11.Checked = false;
+                txtbHC6PWMDutyCh11.Text = "0";
+                cmbHC6DirectionCh11.Text = "Off";
             }
         }
 
@@ -3068,6 +6130,367 @@ namespace M1ConfigGenerator
             if (cmbHC1ModeParamCh11.Text == "Slave") { lblHC1Ch11.Visible = false; }
             else { lblHC1Ch11.Visible = true; }
         }
+
+        private void cmbHC2ModeParamCh00_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2ModeParamCh00.Text == "Slave") { lblHC2Ch00.Visible = false; }
+            else { lblHC2Ch00.Visible = true; }
+        }
+
+        private void cmbHC2ModeParamCh01_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2ModeParamCh01.Text == "Slave") { lblHC2Ch01.Visible = false; }
+            else { lblHC2Ch01.Visible = true; }
+        }
+
+        private void cmbHC2ModeParamCh02_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2ModeParamCh02.Text == "Slave") { lblHC2Ch02.Visible = false; }
+            else { lblHC2Ch02.Visible = true; }
+        }
+
+        private void cmbHC2ModeParamCh03_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2ModeParamCh03.Text == "Slave") { lblHC2Ch03.Visible = false; }
+            else { lblHC2Ch03.Visible = true; }
+        }
+
+        private void cmbHC2ModeParamCh04_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2ModeParamCh04.Text == "Slave") { lblHC2Ch04.Visible = false; }
+            else { lblHC2Ch04.Visible = true; }
+        }
+
+        private void cmbHC2ModeParamCh05_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2ModeParamCh05.Text == "Slave") { lblHC2Ch05.Visible = false; }
+            else { lblHC2Ch05.Visible = true; }
+        }
+
+        private void cmbHC2ModeParamCh06_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2ModeParamCh06.Text == "Slave") { lblHC2Ch06.Visible = false; }
+            else { lblHC2Ch06.Visible = true; }
+        }
+
+        private void cmbHC2ModeParamCh07_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2ModeParamCh07.Text == "Slave") { lblHC2Ch07.Visible = false; }
+            else { lblHC2Ch07.Visible = true; }
+        }
+
+        private void cmbHC2ModeParamCh08_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2ModeParamCh08.Text == "Slave") { lblHC2Ch08.Visible = false; }
+            else { lblHC2Ch08.Visible = true; }
+        }
+
+        private void cmbHC2ModeParamCh09_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2ModeParamCh09.Text == "Slave") { lblHC2Ch09.Visible = false; }
+            else { lblHC2Ch09.Visible = true; }
+        }
+
+        private void cmbHC2ModeParamCh10_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2ModeParamCh10.Text == "Slave") { lblHC2Ch10.Visible = false; }
+            else { lblHC2Ch10.Visible = true; }
+        }
+
+        private void cmbHC2ModeParamCh11_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC2ModeParamCh11.Text == "Slave") { lblHC2Ch11.Visible = false; }
+            else { lblHC2Ch11.Visible = true; }
+        }
+
+        private void cmbHC3ModeParamCh00_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3ModeParamCh00.Text == "Slave") { lblHC3Ch00.Visible = false; }
+            else { lblHC3Ch00.Visible = true; }
+        }
+
+        private void cmbHC3ModeParamCh01_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3ModeParamCh01.Text == "Slave") { lblHC3Ch01.Visible = false; }
+            else { lblHC3Ch01.Visible = true; }
+        }
+
+        private void cmbHC3ModeParamCh02_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3ModeParamCh02.Text == "Slave") { lblHC3Ch02.Visible = false; }
+            else { lblHC3Ch02.Visible = true; }
+        }
+
+        private void cmbHC3ModeParamCh03_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3ModeParamCh03.Text == "Slave") { lblHC3Ch03.Visible = false; }
+            else { lblHC3Ch03.Visible = true; }
+        }
+
+        private void cmbHC3ModeParamCh04_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3ModeParamCh04.Text == "Slave") { lblHC3Ch04.Visible = false; }
+            else { lblHC3Ch04.Visible = true; }
+        }
+
+        private void cmbHC3ModeParamCh05_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3ModeParamCh05.Text == "Slave") { lblHC3Ch05.Visible = false; }
+            else { lblHC3Ch05.Visible = true; }
+        }
+
+        private void cmbHC3ModeParamCh06_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3ModeParamCh06.Text == "Slave") { lblHC3Ch06.Visible = false; }
+            else { lblHC3Ch06.Visible = true; }
+        }
+
+        private void cmbHC3ModeParamCh07_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3ModeParamCh07.Text == "Slave") { lblHC3Ch07.Visible = false; }
+            else { lblHC3Ch07.Visible = true; }
+        }
+
+        private void cmbHC3ModeParamCh08_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3ModeParamCh08.Text == "Slave") { lblHC3Ch08.Visible = false; }
+            else { lblHC3Ch08.Visible = true; }
+        }
+
+        private void cmbHC3ModeParamCh09_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3ModeParamCh09.Text == "Slave") { lblHC3Ch09.Visible = false; }
+            else { lblHC3Ch09.Visible = true; }
+        }
+
+        private void cmbHC3ModeParamCh10_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3ModeParamCh10.Text == "Slave") { lblHC3Ch10.Visible = false; }
+            else { lblHC3Ch10.Visible = true; }
+        }
+
+        private void cmbHC3ModeParamCh11_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC3ModeParamCh11.Text == "Slave") { lblHC3Ch11.Visible = false; }
+            else { lblHC3Ch11.Visible = true; }
+        }
+
+        private void cmbHC4ModeParamCh00_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4ModeParamCh00.Text == "Slave") { lblHC4Ch00.Visible = false; }
+            else { lblHC4Ch00.Visible = true; }
+        }
+
+        private void cmbHC4ModeParamCh01_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4ModeParamCh01.Text == "Slave") { lblHC4Ch01.Visible = false; }
+            else { lblHC4Ch01.Visible = true; }
+        }
+
+        private void cmbHC4ModeParamCh02_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4ModeParamCh02.Text == "Slave") { lblHC4Ch02.Visible = false; }
+            else { lblHC4Ch02.Visible = true; }
+        }
+
+        private void cmbHC4ModeParamCh03_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4ModeParamCh03.Text == "Slave") { lblHC4Ch03.Visible = false; }
+            else { lblHC4Ch03.Visible = true; }
+        }
+
+        private void cmbHC4ModeParamCh04_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4ModeParamCh04.Text == "Slave") { lblHC4Ch04.Visible = false; }
+            else { lblHC4Ch04.Visible = true; }
+        }
+
+        private void cmbHC4ModeParamCh05_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4ModeParamCh05.Text == "Slave") { lblHC4Ch05.Visible = false; }
+            else { lblHC4Ch05.Visible = true; }
+        }
+
+        private void cmbHC4ModeParamCh06_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4ModeParamCh06.Text == "Slave") { lblHC4Ch06.Visible = false; }
+            else { lblHC4Ch06.Visible = true; }
+        }
+
+        private void cmbHC4ModeParamCh07_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4ModeParamCh07.Text == "Slave") { lblHC4Ch07.Visible = false; }
+            else { lblHC4Ch07.Visible = true; }
+        }
+
+        private void cmbHC4ModeParamCh08_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4ModeParamCh08.Text == "Slave") { lblHC4Ch08.Visible = false; }
+            else { lblHC4Ch08.Visible = true; }
+        }
+
+        private void cmbHC4ModeParamCh09_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4ModeParamCh09.Text == "Slave") { lblHC4Ch09.Visible = false; }
+            else { lblHC4Ch09.Visible = true; }
+        }
+
+        private void cmbHC4ModeParamCh10_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4ModeParamCh10.Text == "Slave") { lblHC4Ch10.Visible = false; }
+            else { lblHC4Ch10.Visible = true; }
+        }
+
+        private void cmbHC4ModeParamCh11_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC4ModeParamCh11.Text == "Slave") { lblHC4Ch11.Visible = false; }
+            else { lblHC4Ch11.Visible = true; }
+        }
+
+        private void cmbHC5ModeParamCh00_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5ModeParamCh00.Text == "Slave") { lblHC5Ch00.Visible = false; }
+            else { lblHC5Ch00.Visible = true; }
+        }
+
+        private void cmbHC5ModeParamCh01_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5ModeParamCh01.Text == "Slave") { lblHC5Ch01.Visible = false; }
+            else { lblHC5Ch01.Visible = true; }
+        }
+
+        private void cmbHC5ModeParamCh02_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5ModeParamCh02.Text == "Slave") { lblHC5Ch02.Visible = false; }
+            else { lblHC5Ch02.Visible = true; }
+        }
+
+        private void cmbHC5ModeParamCh03_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5ModeParamCh03.Text == "Slave") { lblHC5Ch03.Visible = false; }
+            else { lblHC5Ch03.Visible = true; }
+        }
+
+        private void cmbHC5ModeParamCh04_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5ModeParamCh04.Text == "Slave") { lblHC5Ch04.Visible = false; }
+            else { lblHC5Ch04.Visible = true; }
+        }
+
+        private void cmbHC5ModeParamCh05_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5ModeParamCh05.Text == "Slave") { lblHC5Ch05.Visible = false; }
+            else { lblHC5Ch05.Visible = true; }
+        }
+
+        private void cmbHC5ModeParamCh06_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5ModeParamCh06.Text == "Slave") { lblHC5Ch06.Visible = false; }
+            else { lblHC5Ch06.Visible = true; }
+        }
+
+        private void cmbHC5ModeParamCh07_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5ModeParamCh07.Text == "Slave") { lblHC5Ch07.Visible = false; }
+            else { lblHC5Ch07.Visible = true; }
+        }
+
+        private void cmbHC5ModeParamCh08_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5ModeParamCh08.Text == "Slave") { lblHC5Ch08.Visible = false; }
+            else { lblHC5Ch08.Visible = true; }
+        }
+
+        private void cmbHC5ModeParamCh09_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5ModeParamCh09.Text == "Slave") { lblHC5Ch09.Visible = false; }
+            else { lblHC5Ch09.Visible = true; }
+        }
+
+        private void cmbHC5ModeParamCh10_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5ModeParamCh10.Text == "Slave") { lblHC5Ch10.Visible = false; }
+            else { lblHC5Ch10.Visible = true; }
+        }
+
+        private void cmbHC5ModeParamCh11_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC5ModeParamCh11.Text == "Slave") { lblHC5Ch11.Visible = false; }
+            else { lblHC5Ch11.Visible = true; }
+        }
+
+        private void cmbHC6ModeParamCh00_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6ModeParamCh00.Text == "Slave") { lblHC6Ch00.Visible = false; }
+            else { lblHC6Ch00.Visible = true; }
+        }
+
+        private void cmbHC6ModeParamCh01_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6ModeParamCh01.Text == "Slave") { lblHC6Ch01.Visible = false; }
+            else { lblHC6Ch01.Visible = true; }
+        }
+
+        private void cmbHC6ModeParamCh02_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6ModeParamCh02.Text == "Slave") { lblHC6Ch02.Visible = false; }
+            else { lblHC6Ch02.Visible = true; }
+        }
+
+        private void cmbHC6ModeParamCh03_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6ModeParamCh03.Text == "Slave") { lblHC6Ch03.Visible = false; }
+            else { lblHC6Ch03.Visible = true; }
+        }
+
+        private void cmbHC6ModeParamCh04_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6ModeParamCh04.Text == "Slave") { lblHC6Ch04.Visible = false; }
+            else { lblHC6Ch04.Visible = true; }
+        }
+
+        private void cmbHC6ModeParamCh05_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6ModeParamCh05.Text == "Slave") { lblHC6Ch05.Visible = false; }
+            else { lblHC6Ch05.Visible = true; }
+        }
+
+        private void cmbHC6ModeParamCh06_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6ModeParamCh06.Text == "Slave") { lblHC6Ch06.Visible = false; }
+            else { lblHC6Ch06.Visible = true; }
+        }
+
+        private void cmbHC6ModeParamCh07_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6ModeParamCh07.Text == "Slave") { lblHC6Ch07.Visible = false; }
+            else { lblHC6Ch07.Visible = true; }
+        }
+
+        private void cmbHC6ModeParamCh08_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6ModeParamCh08.Text == "Slave") { lblHC6Ch08.Visible = false; }
+            else { lblHC6Ch08.Visible = true; }
+        }
+
+        private void cmbHC6ModeParamCh09_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6ModeParamCh09.Text == "Slave") { lblHC6Ch09.Visible = false; }
+            else { lblHC6Ch09.Visible = true; }
+        }
+
+        private void cmbHC6ModeParamCh10_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6ModeParamCh10.Text == "Slave") { lblHC6Ch10.Visible = false; }
+            else { lblHC6Ch10.Visible = true; }
+        }
+
+        private void cmbHC6ModeParamCh11_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHC6ModeParamCh11.Text == "Slave") { lblHC6Ch11.Visible = false; }
+            else { lblHC6Ch11.Visible = true; }
+        }
+
 
 
 
@@ -3672,9 +7095,9 @@ namespace M1ConfigGenerator
             SetSelectedIndex(hc1OCAmpsQuick, 5); SetSelectedIndex(hc2OCAmpsQuick, 5); SetSelectedIndex(hc3OCAmpsQuick, 5); SetSelectedIndex(hc4OCAmpsQuick, 5); SetSelectedIndex(hc5OCAmpsQuick, 5); SetSelectedIndex(hc6OCAmpsQuick, 5);
             SetSelectedIndex(hc1OCTime, 1); SetSelectedIndex(hc2OCTime, 1); SetSelectedIndex(hc3OCTime, 1); SetSelectedIndex(hc4OCTime, 1); SetSelectedIndex(hc5OCTime, 1); SetSelectedIndex(hc6OCTime, 1);
             SetSelectedIndex(hc1Mode, 0); SetSelectedIndex(hc2Mode, 0); SetSelectedIndex(hc3Mode, 0); SetSelectedIndex(hc4Mode, 0); SetSelectedIndex(hc5Mode, 0); SetSelectedIndex(hc6Mode, 0);
-            SetSelectedIndex(hc1Startup, 0); SetSelectedIndex(hc2Startup, 0); // SetSelectedIndex(hc3Startup, 0); SetSelectedIndex(hc4Startup, 0); SetSelectedIndex(hc5Startup, 0); SetSelectedIndex(hc6Startup, 0);
-            SetSelectedIndex(HC1Direction, 0); SetSelectedIndex(HC2Direction, 0);
-            SetSelectedIndex(HC1ModeParam, 0); SetSelectedIndex(HC2ModeParam, 0); // SetSelectedIndex(HC3ModeParam, 0); SetSelectedIndex(HC4ModeParam, 0); SetSelectedIndex(HC5ModeParam, 0); SetSelectedIndex(HC6ModeParam, 0);
+            SetSelectedIndex(hc1Startup, 0); SetSelectedIndex(hc2Startup, 0); SetSelectedIndex(hc3Startup, 0); SetSelectedIndex(hc4Startup, 0); SetSelectedIndex(hc5Startup, 0); SetSelectedIndex(hc6Startup, 0);
+            SetSelectedIndex(HC1Direction, 0); SetSelectedIndex(HC2Direction, 0); SetSelectedIndex(HC3Direction, 0); SetSelectedIndex(HC4Direction, 0); SetSelectedIndex(HC5Direction, 0); SetSelectedIndex(HC6Direction, 0);
+            SetSelectedIndex(HC1ModeParam, 0); SetSelectedIndex(HC2ModeParam, 0); SetSelectedIndex(HC3ModeParam, 0); SetSelectedIndex(HC4ModeParam, 0); SetSelectedIndex(HC5ModeParam, 0); SetSelectedIndex(HC6ModeParam, 0);
             SetSelectedIndex(HC1DeadTime, 0); SetSelectedIndex(HC2DeadTime, 0); SetSelectedIndex(HC3DeadTime, 0); SetSelectedIndex(HC4DeadTime, 0); SetSelectedIndex(HC5DeadTime, 0); SetSelectedIndex(HC6DeadTime, 0);
             SetSelectedIndex(HC1Paired, 0); SetSelectedIndex(HC2Paired, 0); SetSelectedIndex(HC3Paired, 0); SetSelectedIndex(HC4Paired, 0); SetSelectedIndex(HC5Paired, 0); SetSelectedIndex(HC6Paired, 0);
             SetSelectedIndex(HC1MeasCurTime, 3); SetSelectedIndex(HC2MeasCurTime, 3); SetSelectedIndex(HC3MeasCurTime, 3); SetSelectedIndex(HC4MeasCurTime, 3); SetSelectedIndex(HC5MeasCurTime, 3); SetSelectedIndex(HC6MeasCurTime, 3);
@@ -3900,7 +7323,11 @@ namespace M1ConfigGenerator
             hc6OCAmpsQuick = new ComboBox[] { cmbHC6OCAmps00, cmbHC6OCAmps01, cmbHC6OCAmps02, cmbHC6OCAmps03, cmbHC6OCAmps04, cmbHC6OCAmps05, cmbHC6OCAmps06, cmbHC6OCAmps07, cmbHC6OCAmps08, cmbHC6OCAmps09, cmbHC6OCAmps10, cmbHC6OCAmps11 };
             hc1OCAmps = new TextBox[] { tbxHC1OCAmpsParamCh00, tbxHC1OCAmpsParamCh01, tbxHC1OCAmpsParamCh02, tbxHC1OCAmpsParamCh03, tbxHC1OCAmpsParamCh04, tbxHC1OCAmpsParamCh05, tbxHC1OCAmpsParamCh06, tbxHC1OCAmpsParamCh07, tbxHC1OCAmpsParamCh08, tbxHC1OCAmpsParamCh09, tbxHC1OCAmpsParamCh10, tbxHC1OCAmpsParamCh11 };
             hc2OCAmps = new TextBox[] { tbxHC2OCAmpsParamCh00, tbxHC2OCAmpsParamCh01, tbxHC2OCAmpsParamCh02, tbxHC2OCAmpsParamCh03, tbxHC2OCAmpsParamCh04, tbxHC2OCAmpsParamCh05, tbxHC2OCAmpsParamCh06, tbxHC2OCAmpsParamCh07, tbxHC2OCAmpsParamCh08, tbxHC2OCAmpsParamCh09, tbxHC2OCAmpsParamCh10, tbxHC2OCAmpsParamCh11 };
-            hcOCAmps = new TextBox[][] { hc1OCAmps, hc2OCAmps };
+            hc3OCAmps = new TextBox[] { tbxHC3OCAmpsParamCh00, tbxHC3OCAmpsParamCh01, tbxHC3OCAmpsParamCh02, tbxHC3OCAmpsParamCh03, tbxHC3OCAmpsParamCh04, tbxHC3OCAmpsParamCh05, tbxHC3OCAmpsParamCh06, tbxHC3OCAmpsParamCh07, tbxHC3OCAmpsParamCh08, tbxHC3OCAmpsParamCh09, tbxHC3OCAmpsParamCh10, tbxHC3OCAmpsParamCh11 };
+            hc4OCAmps = new TextBox[] { tbxHC4OCAmpsParamCh00, tbxHC4OCAmpsParamCh01, tbxHC4OCAmpsParamCh02, tbxHC4OCAmpsParamCh03, tbxHC4OCAmpsParamCh04, tbxHC4OCAmpsParamCh05, tbxHC4OCAmpsParamCh06, tbxHC4OCAmpsParamCh07, tbxHC4OCAmpsParamCh08, tbxHC4OCAmpsParamCh09, tbxHC4OCAmpsParamCh10, tbxHC4OCAmpsParamCh11 };
+            hc5OCAmps = new TextBox[] { tbxHC5OCAmpsParamCh00, tbxHC5OCAmpsParamCh01, tbxHC5OCAmpsParamCh02, tbxHC5OCAmpsParamCh03, tbxHC5OCAmpsParamCh04, tbxHC5OCAmpsParamCh05, tbxHC5OCAmpsParamCh06, tbxHC5OCAmpsParamCh07, tbxHC5OCAmpsParamCh08, tbxHC5OCAmpsParamCh09, tbxHC5OCAmpsParamCh10, tbxHC5OCAmpsParamCh11 };
+            hc6OCAmps = new TextBox[] { tbxHC6OCAmpsParamCh00, tbxHC6OCAmpsParamCh01, tbxHC6OCAmpsParamCh02, tbxHC6OCAmpsParamCh03, tbxHC6OCAmpsParamCh04, tbxHC6OCAmpsParamCh05, tbxHC6OCAmpsParamCh06, tbxHC6OCAmpsParamCh07, tbxHC6OCAmpsParamCh08, tbxHC6OCAmpsParamCh09, tbxHC6OCAmpsParamCh10, tbxHC6OCAmpsParamCh11 };
+            hcOCAmps = new TextBox[][] { hc1OCAmps, hc2OCAmps, hc3OCAmps, hc4OCAmps, hc5OCAmps, hc6OCAmps };
             hc1OCTime = new ComboBox[] { cmbHC1OCTime00, cmbHC1OCTime01, cmbHC1OCTime02, cmbHC1OCTime03, cmbHC1OCTime04, cmbHC1OCTime05, cmbHC1OCTime06, cmbHC1OCTime07, cmbHC1OCTime08, cmbHC1OCTime09, cmbHC1OCTime10, cmbHC1OCTime11 };
             hc2OCTime = new ComboBox[] { cmbHC2OCTime00, cmbHC2OCTime01, cmbHC2OCTime02, cmbHC2OCTime03, cmbHC2OCTime04, cmbHC2OCTime05, cmbHC2OCTime06, cmbHC2OCTime07, cmbHC2OCTime08, cmbHC2OCTime09, cmbHC2OCTime10, cmbHC2OCTime11 };
             hc3OCTime = new ComboBox[] { cmbHC3OCTime00, cmbHC3OCTime01, cmbHC3OCTime02, cmbHC3OCTime03, cmbHC3OCTime04, cmbHC3OCTime05, cmbHC3OCTime06, cmbHC3OCTime07, cmbHC3OCTime08, cmbHC3OCTime09, cmbHC3OCTime10, cmbHC3OCTime11 };
@@ -3917,10 +7344,18 @@ namespace M1ConfigGenerator
             hcModes = new ComboBox[][] { hc1Mode, hc2Mode, hc3Mode, hc4Mode, hc5Mode, hc6Mode };
             hc1Startup = new ComboBox[] { cmbHC1Startup00, cmbHC1Startup01, cmbHC1Startup02, cmbHC1Startup03, cmbHC1Startup04, cmbHC1Startup05, cmbHC1Startup06, cmbHC1Startup07, cmbHC1Startup08, cmbHC1Startup09, cmbHC1Startup10, cmbHC1Startup11 };
             hc2Startup = new ComboBox[] { cmbHC2Startup00, cmbHC2Startup01, cmbHC2Startup02, cmbHC2Startup03, cmbHC2Startup04, cmbHC2Startup05, cmbHC2Startup06, cmbHC2Startup07, cmbHC2Startup08, cmbHC2Startup09, cmbHC2Startup10, cmbHC2Startup11 };
-            hcStartup = new ComboBox[][] { hc1Startup, hc2Startup };
+            hc3Startup = new ComboBox[] { cmbHC3Startup00, cmbHC3Startup01, cmbHC3Startup02, cmbHC3Startup03, cmbHC3Startup04, cmbHC3Startup05, cmbHC3Startup06, cmbHC3Startup07, cmbHC3Startup08, cmbHC3Startup09, cmbHC3Startup10, cmbHC3Startup11 };
+            hc4Startup = new ComboBox[] { cmbHC4Startup00, cmbHC4Startup01, cmbHC4Startup02, cmbHC4Startup03, cmbHC4Startup04, cmbHC4Startup05, cmbHC4Startup06, cmbHC4Startup07, cmbHC4Startup08, cmbHC4Startup09, cmbHC4Startup10, cmbHC4Startup11 };
+            hc5Startup = new ComboBox[] { cmbHC5Startup00, cmbHC5Startup01, cmbHC5Startup02, cmbHC5Startup03, cmbHC5Startup04, cmbHC5Startup05, cmbHC5Startup06, cmbHC5Startup07, cmbHC5Startup08, cmbHC5Startup09, cmbHC5Startup10, cmbHC5Startup11 };
+            hc6Startup = new ComboBox[] { cmbHC6Startup00, cmbHC6Startup01, cmbHC6Startup02, cmbHC6Startup03, cmbHC6Startup04, cmbHC6Startup05, cmbHC6Startup06, cmbHC6Startup07, cmbHC6Startup08, cmbHC6Startup09, cmbHC6Startup10, cmbHC6Startup11 };
+            hcStartup = new ComboBox[][] { hc1Startup, hc2Startup, hc3Startup, hc4Startup, hc5Startup, hc6Startup };
             hc1Lock = new CheckBox[] { chkHC1Lock00, chkHC1Lock01, chkHC1Lock02, chkHC1Lock03, chkHC1Lock04, chkHC1Lock05, chkHC1Lock06, chkHC1Lock07, chkHC1Lock08, chkHC1Lock09, chkHC1Lock10, chkHC1Lock11 };
             hc2Lock = new CheckBox[] { chkHC2Lock00, chkHC2Lock01, chkHC2Lock02, chkHC2Lock03, chkHC2Lock04, chkHC2Lock05, chkHC2Lock06, chkHC2Lock07, chkHC2Lock08, chkHC2Lock09, chkHC2Lock10, chkHC2Lock11 };
-            hcLock = new CheckBox[][] { hc1Lock, hc2Lock };
+            hc3Lock = new CheckBox[] { chkHC3Lock00, chkHC3Lock01, chkHC3Lock02, chkHC3Lock03, chkHC3Lock04, chkHC3Lock05, chkHC3Lock06, chkHC3Lock07, chkHC3Lock08, chkHC3Lock09, chkHC3Lock10, chkHC3Lock11 };
+            hc4Lock = new CheckBox[] { chkHC4Lock00, chkHC4Lock01, chkHC4Lock02, chkHC4Lock03, chkHC4Lock04, chkHC4Lock05, chkHC4Lock06, chkHC4Lock07, chkHC4Lock08, chkHC4Lock09, chkHC4Lock10, chkHC4Lock11 };
+            hc5Lock = new CheckBox[] { chkHC5Lock00, chkHC5Lock01, chkHC5Lock02, chkHC5Lock03, chkHC5Lock04, chkHC5Lock05, chkHC5Lock06, chkHC5Lock07, chkHC5Lock08, chkHC5Lock09, chkHC5Lock10, chkHC5Lock11 };
+            hc6Lock = new CheckBox[] { chkHC6Lock00, chkHC6Lock01, chkHC6Lock02, chkHC6Lock03, chkHC6Lock04, chkHC6Lock05, chkHC6Lock06, chkHC6Lock07, chkHC6Lock08, chkHC6Lock09, chkHC6Lock10, chkHC6Lock11 };
+            hcLock = new CheckBox[][] { hc1Lock, hc2Lock, hc3Lock, hc4Lock, hc5Lock, hc6Lock };
             HC1PWMDuty = new TextBox[] { txtbHC1PWMDutyCh00, txtbHC1PWMDutyCh01, txtbHC1PWMDutyCh02, txtbHC1PWMDutyCh03, txtbHC1PWMDutyCh04, txtbHC1PWMDutyCh05, txtbHC1PWMDutyCh06, txtbHC1PWMDutyCh07, txtbHC1PWMDutyCh08, txtbHC1PWMDutyCh09, txtbHC1PWMDutyCh10, txtbHC1PWMDutyCh11 };
             HC2PWMDuty = new TextBox[] { txtbHC2PWMDutyCh00, txtbHC2PWMDutyCh01, txtbHC2PWMDutyCh02, txtbHC2PWMDutyCh03, txtbHC2PWMDutyCh04, txtbHC2PWMDutyCh05, txtbHC2PWMDutyCh06, txtbHC2PWMDutyCh07, txtbHC2PWMDutyCh08, txtbHC2PWMDutyCh09, txtbHC2PWMDutyCh10, txtbHC2PWMDutyCh11 };
             HC3PWMDuty = new TextBox[] { txtbHC3PWMDutyCh00, txtbHC3PWMDutyCh01, txtbHC3PWMDutyCh02, txtbHC3PWMDutyCh03, txtbHC3PWMDutyCh04, txtbHC3PWMDutyCh05, txtbHC3PWMDutyCh06, txtbHC3PWMDutyCh07, txtbHC3PWMDutyCh08, txtbHC3PWMDutyCh09, txtbHC3PWMDutyCh10, txtbHC3PWMDutyCh11 };
@@ -3944,7 +7379,11 @@ namespace M1ConfigGenerator
             hcDirections = new ComboBox[][] { HC1Direction, HC2Direction, HC3Direction, HC4Direction, HC5Direction, HC6Direction };
             HC1ModeParam = new ComboBox[] { cmbHC1ModeParamCh00, cmbHC1ModeParamCh01, cmbHC1ModeParamCh02, cmbHC1ModeParamCh03, cmbHC1ModeParamCh04, cmbHC1ModeParamCh05, cmbHC1ModeParamCh06, cmbHC1ModeParamCh07, cmbHC1ModeParamCh08, cmbHC1ModeParamCh09, cmbHC1ModeParamCh10, cmbHC1ModeParamCh11 };
             HC2ModeParam = new ComboBox[] { cmbHC2ModeParamCh00, cmbHC2ModeParamCh01, cmbHC2ModeParamCh02, cmbHC2ModeParamCh03, cmbHC2ModeParamCh04, cmbHC2ModeParamCh05, cmbHC2ModeParamCh06, cmbHC2ModeParamCh07, cmbHC2ModeParamCh08, cmbHC2ModeParamCh09, cmbHC2ModeParamCh10, cmbHC2ModeParamCh11 };
-            hcModeParam = new ComboBox[][] { HC1ModeParam, HC2ModeParam };
+            HC3ModeParam = new ComboBox[] { cmbHC3ModeParamCh00, cmbHC3ModeParamCh01, cmbHC3ModeParamCh02, cmbHC3ModeParamCh03, cmbHC3ModeParamCh04, cmbHC3ModeParamCh05, cmbHC3ModeParamCh06, cmbHC3ModeParamCh07, cmbHC3ModeParamCh08, cmbHC3ModeParamCh09, cmbHC3ModeParamCh10, cmbHC3ModeParamCh11 };
+            HC4ModeParam = new ComboBox[] { cmbHC4ModeParamCh00, cmbHC4ModeParamCh01, cmbHC4ModeParamCh02, cmbHC4ModeParamCh03, cmbHC4ModeParamCh04, cmbHC4ModeParamCh05, cmbHC4ModeParamCh06, cmbHC4ModeParamCh07, cmbHC4ModeParamCh08, cmbHC4ModeParamCh09, cmbHC4ModeParamCh10, cmbHC4ModeParamCh11 };
+            HC5ModeParam = new ComboBox[] { cmbHC5ModeParamCh00, cmbHC5ModeParamCh01, cmbHC5ModeParamCh02, cmbHC5ModeParamCh03, cmbHC5ModeParamCh04, cmbHC5ModeParamCh05, cmbHC5ModeParamCh06, cmbHC5ModeParamCh07, cmbHC5ModeParamCh08, cmbHC5ModeParamCh09, cmbHC5ModeParamCh10, cmbHC5ModeParamCh11 };
+            HC6ModeParam = new ComboBox[] { cmbHC6ModeParamCh00, cmbHC6ModeParamCh01, cmbHC6ModeParamCh02, cmbHC6ModeParamCh03, cmbHC6ModeParamCh04, cmbHC6ModeParamCh05, cmbHC6ModeParamCh06, cmbHC6ModeParamCh07, cmbHC6ModeParamCh08, cmbHC6ModeParamCh09, cmbHC6ModeParamCh10, cmbHC6ModeParamCh11 };
+            hcModeParam = new ComboBox[][] { HC1ModeParam, HC2ModeParam, HC3ModeParam, HC4ModeParam, HC5ModeParam, HC6ModeParam };
             HC1DeadTime = new ComboBox[] { cmbHC1DeadTimeCh00, cmbHC1DeadTimeCh01, cmbHC1DeadTimeCh02, cmbHC1DeadTimeCh03, cmbHC1DeadTimeCh04, cmbHC1DeadTimeCh05, cmbHC1DeadTimeCh06, cmbHC1DeadTimeCh07, cmbHC1DeadTimeCh08, cmbHC1DeadTimeCh09, cmbHC1DeadTimeCh10, cmbHC1DeadTimeCh11 }; 
             HC2DeadTime = new ComboBox[] { cmbHC2DeadTimeCh00, cmbHC2DeadTimeCh01, cmbHC2DeadTimeCh02, cmbHC2DeadTimeCh03, cmbHC2DeadTimeCh04, cmbHC2DeadTimeCh05, cmbHC2DeadTimeCh06, cmbHC2DeadTimeCh07, cmbHC2DeadTimeCh08, cmbHC2DeadTimeCh09, cmbHC2DeadTimeCh10, cmbHC2DeadTimeCh11 };
             HC3DeadTime = new ComboBox[] { cmbHC3DeadTimeCh00, cmbHC3DeadTimeCh01, cmbHC3DeadTimeCh02, cmbHC3DeadTimeCh03, cmbHC3DeadTimeCh04, cmbHC3DeadTimeCh05, cmbHC3DeadTimeCh06, cmbHC3DeadTimeCh07, cmbHC3DeadTimeCh08, cmbHC3DeadTimeCh09, cmbHC3DeadTimeCh10, cmbHC3DeadTimeCh11 };

@@ -134,6 +134,7 @@ namespace M1ConfigGenerator
         ComboBox[] hcCardNum;
         ComboBox[] hcPanelNum;
         TextBox[] hcConfigRev;
+        TextBox[] hcCardLetter;
         TextBox[] hcConfigType;
         CheckBox[] hcDCDimmer; CheckBox[] hcDCMotor; CheckBox[] hcShade; CheckBox[] hcForce; CheckBox[] hcRGB;
         TextBox[] hcBaseInstance;
@@ -444,6 +445,28 @@ namespace M1ConfigGenerator
             {
                 i.Visible = true;
             }
+        }
+
+        private void tbxStartCfgType_TextChanged(object sender, EventArgs e)
+        {
+            if (ValidateConfigType(tbxStartCfgType.Text)) { btnStartCreate.Visible = true; }
+            else { btnStartCreate.Visible = false; }
+        }
+
+        private bool ValidateConfigType(string argString)
+        {
+            byte[] asciiValue = Encoding.ASCII.GetBytes(argString.ToUpper());
+            int total = 0;
+            int characters = 0;
+
+            foreach (byte b in asciiValue)
+            {
+                if ((b >= 48 && b <= 57) || (b >= 65 && b <= 70)) { total += b; } // validates that only legitimate hexadecimal characters are being used
+                characters++;
+            }
+            label681.Text = Convert.ToString(total);
+
+            return ((characters == 4 && total >= 192 && total <= 280) ? true : false);
         }
 
 
@@ -1504,14 +1527,6 @@ namespace M1ConfigGenerator
             hc6Group10 = new bool[] { chkHC6MG1Ch10.Checked, chkHC6MG2Ch10.Checked, chkHC6MG3Ch10.Checked, chkHC6MG4Ch10.Checked };
             hc6Group11 = new bool[] { chkHC6MG1Ch11.Checked, chkHC6MG2Ch11.Checked, chkHC6MG3Ch11.Checked, chkHC6MG4Ch11.Checked };
             hc6Groups = new bool[][] { hc6Group00, hc6Group01, hc6Group02, hc6Group03, hc6Group04, hc6Group05, hc6Group06, hc6Group07, hc6Group08, hc6Group09, hc6Group10, hc6Group11 };
-
-            //hc1Startup = new bool[] { chkHC1Startup00.Checked, chkHC1Startup01.Checked, chkHC1Startup02.Checked, chkHC1Startup03.Checked, chkHC1Startup04.Checked, chkHC1Startup05.Checked, chkHC1Startup06.Checked, chkHC1Startup07.Checked, chkHC1Startup08.Checked, chkHC1Startup09.Checked, chkHC1Startup10.Checked, chkHC1Startup11.Checked };
-            //hc2Startup = new bool[] { chkHC2Startup00.Checked, chkHC2Startup01.Checked, chkHC2Startup02.Checked, chkHC2Startup03.Checked, chkHC2Startup04.Checked, chkHC2Startup05.Checked, chkHC2Startup06.Checked, chkHC2Startup07.Checked, chkHC2Startup08.Checked, chkHC2Startup09.Checked, chkHC2Startup10.Checked, chkHC2Startup11.Checked };
-            //hc3Startup = new bool[] { chkHC3Startup00.Checked, chkHC3Startup01.Checked, chkHC3Startup02.Checked, chkHC3Startup03.Checked, chkHC3Startup04.Checked, chkHC3Startup05.Checked, chkHC3Startup06.Checked, chkHC3Startup07.Checked, chkHC3Startup08.Checked, chkHC3Startup09.Checked, chkHC3Startup10.Checked, chkHC3Startup11.Checked };
-            //hc4Startup = new bool[] { chkHC4Startup00.Checked, chkHC4Startup01.Checked, chkHC4Startup02.Checked, chkHC4Startup03.Checked, chkHC4Startup04.Checked, chkHC4Startup05.Checked, chkHC4Startup06.Checked, chkHC4Startup07.Checked, chkHC4Startup08.Checked, chkHC4Startup09.Checked, chkHC4Startup10.Checked, chkHC4Startup11.Checked };
-            //hc5Startup = new bool[] { chkHC5Startup00.Checked, chkHC5Startup01.Checked, chkHC5Startup02.Checked, chkHC5Startup03.Checked, chkHC5Startup04.Checked, chkHC5Startup05.Checked, chkHC5Startup06.Checked, chkHC5Startup07.Checked, chkHC5Startup08.Checked, chkHC5Startup09.Checked, chkHC5Startup10.Checked, chkHC5Startup11.Checked };
-            //hc6Startup = new bool[] { chkHC6Startup00.Checked, chkHC6Startup01.Checked, chkHC6Startup02.Checked, chkHC6Startup03.Checked, chkHC6Startup04.Checked, chkHC6Startup05.Checked, chkHC6Startup06.Checked, chkHC6Startup07.Checked, chkHC6Startup08.Checked, chkHC6Startup09.Checked, chkHC6Startup10.Checked, chkHC6Startup11.Checked };
-            //hcStartup = new bool[][] { hc1Startup, hc2Startup, hc3Startup, hc4Startup, hc5Startup, hc6Startup };
 
             // needed to make a list of multidimensional arrays to pass to the group allocation function
             List<bool[][]> hcGroups = new List<bool[][]>();
@@ -7308,6 +7323,7 @@ namespace M1ConfigGenerator
             hcCardNum = new ComboBox[] { cmbHC1CardNum, cmbHC2CardNum, cmbHC3CardNum, cmbHC4CardNum, cmbHC5CardNum, cmbHC6CardNum };
             hcPanelNum = new ComboBox[] { cmbHC1PanelNum, cmbHC2PanelNum, cmbHC3PanelNum, cmbHC4PanelNum, cmbHC5PanelNum, cmbHC6PanelNum };
             hcConfigRev = new TextBox[] { tbxHC1CfgRev, tbxHC2CfgRev, tbxHC3CfgRev, tbxHC4CfgRev, tbxHC5CfgRev, tbxHC6CfgRev };
+            hcCardLetter = new TextBox[] { tbxHC1CardLetter, tbxHC2CardLetter, tbxHC3CardLetter, tbxHC4CardLetter, tbxHC5CardLetter, tbxHC6CardLetter };
             hcConfigType = new TextBox[] { tbxHC1CfgType, tbxHC2CfgType, tbxHC3CfgType, tbxHC4CfgType, tbxHC5CfgType, tbxHC6CfgType };
             hcDCDimmer = new CheckBox[] { chkHC1DCDimmer, chkHC2DCDimmer, chkHC3DCDimmer, chkHC4DCDimmer, chkHC5DCDimmer, chkHC6DCDimmer };
             hcRGB = new CheckBox[] { chkHC1RGB, chkHC2RGB, chkHC3RGB, chkHC4RGB, chkHC5RGB, chkHC6RGB };

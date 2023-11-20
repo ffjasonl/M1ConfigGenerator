@@ -464,9 +464,8 @@ namespace M1ConfigGenerator
                 if ((b >= 48 && b <= 57) || (b >= 65 && b <= 70)) { total += b; } // validates that only legitimate hexadecimal characters are being used
                 characters++;
             }
-            label681.Text = Convert.ToString(total);
 
-            return ((characters == 4 && total >= 192 && total <= 280) ? true : false);
+            return ((characters == 4 && total >= 192 && total < 280) ? true : false); // must be 4 digit hex number, but 0xFFFF is not valid
         }
 
 

@@ -1541,6 +1541,7 @@ namespace M1ConfigGenerator
             // HC cards
             for (int card = 0; card < Convert.ToInt16(cmbStartHC.Text); card++)
             {
+                hcObjects[card].M1_SetCardLetter(hcCardLetter[card].Text);
                 hcObjects[card].M1_SetDevAddr(hcCardNum[card].SelectedIndex, hcPanelNum[card].SelectedIndex);
                 hcObjects[card].M1_SetCfgRev(hcConfigRev[card].Text);
                 hcObjects[card].M1_SetCfgType(hcConfigType[card].Text);

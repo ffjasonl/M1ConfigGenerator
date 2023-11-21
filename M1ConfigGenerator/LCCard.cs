@@ -14,7 +14,7 @@ namespace M1ConfigGenerator
 
             //SetTestString(argInt);
 
-            M1_SetCardLetter(Convert.ToString(argInt));
+            M1_OldSetCardLetter(Convert.ToString(argInt));
             M1_ChangeConfigName();
             // general
             M1_ChangeAddress(m1ParameterNames);

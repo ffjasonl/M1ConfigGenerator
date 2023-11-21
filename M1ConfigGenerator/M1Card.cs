@@ -98,6 +98,10 @@ namespace M1ConfigGenerator
         }
         public void M1_SetCardLetter(string argString)
         {
+            cardLetter = argString[0];
+        }
+        public void M1_OldSetCardLetter(string argString)
+        {
             byte[] asciiValue = Encoding.ASCII.GetBytes(argString); // changes string to array of ASCII value numbers
             char character = (char)(asciiValue[0] += 16); // this changes '1' to 'A', '2' to 'B', etc.
             cardLetter = character;

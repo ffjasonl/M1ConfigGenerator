@@ -11,8 +11,11 @@ namespace M1ConfigGenerator
     {
         public HCCard(int argInt)
         {
-            M1_SetCardLetter(Convert.ToString(argInt));
-            M1_ChangeConfigName();
+            // M1_SetCardLetter(Convert.ToString(argInt));
+        }
+
+        public void HC_ChangeAddress()
+        {
             // general
             M1_ChangeAddress(m1ParameterNames);
             M1_ChangeAddress(hcRGBName);

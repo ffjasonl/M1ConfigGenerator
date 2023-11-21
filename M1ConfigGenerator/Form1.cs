@@ -1540,6 +1540,9 @@ namespace M1ConfigGenerator
             // HC cards
             for (int card = 0; card < Convert.ToInt16(cmbStartHC.Text); card++)
             {
+                hcObjects[card].M1_SetCardLetter(hcCardLetter[card].Text);
+                hcObjects[card].M1_ChangeConfigName();
+                hcObjects[card].HC_ChangeAddress();
                 hcObjects[card].M1_SetDevAddr(hcCardNum[card].SelectedIndex, hcPanelNum[card].SelectedIndex);
                 hcObjects[card].M1_SetCfgRev(hcConfigRev[card].Text);
                 hcObjects[card].M1_SetCfgType(hcConfigType[card].Text);
@@ -1571,22 +1574,20 @@ namespace M1ConfigGenerator
             }
 
             hcObjects.ForEach(hcObjects => hcObjects.CreateHCFile());
-            CreateHCReferenceFile();
+            CreateHCReferenceFile(hcCardLetter);
             HCCardNavColor(btnHCGenerate);
             tabControlHC.SelectedIndex = 7;
             string[] hcFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_HC_Bridge\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
             tbxHCGenerated.Lines = hcFiles;
         }
 
-        private void CreateHCReferenceFile()
+        private void CreateHCReferenceFile(TextBox[] argTextBox)
         {
-            string[] configNamesReference = { "DevAddrA.h", "DevAddrB.h", "DevAddrC.h", "DevAddrD.h", "DevAddrE.h", "DevAddrF.h" };
-
-            using (StreamWriter sw = File.CreateText(@"M1_DcDriver_Config\Src\M1_HC_Bridge\DeviceConfigs\DevAddrConfigs.h"))
+            using (StreamWriter sw = File.AppendText(@"M1_DcDriver_Config\Src\M1_HC_Bridge\DeviceConfigs\DevAddrConfigs.h"))
             {
                 for (int i = 0; i < Convert.ToInt16(cmbStartHC.Text); i++)
                 {
-                    sw.WriteLine("#include \"" + configNamesReference[i] + "\"");
+                    sw.WriteLine("#include \"DevAddr" + argTextBox[i].Text + ".h\"");
                 }
             }
         }

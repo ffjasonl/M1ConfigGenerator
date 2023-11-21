@@ -1800,6 +1800,176 @@ namespace M1ConfigGenerator
             }
         }
 
+        private void chkHC2DCDimmer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHC2DCDimmer.Checked == true)
+            {
+                chkHC2PWMEnableCh00.Checked = true;
+                chkHC2PWMEnableCh01.Checked = true;
+                chkHC2PWMEnableCh02.Checked = true;
+                chkHC2PWMEnableCh03.Checked = true;
+                chkHC2PWMEnableCh04.Checked = true;
+                chkHC2PWMEnableCh05.Checked = true;
+                chkHC2PWMEnableCh06.Checked = true;
+                chkHC2PWMEnableCh07.Checked = true;
+                chkHC2PWMEnableCh08.Checked = true;
+                chkHC2PWMEnableCh09.Checked = true;
+                chkHC2PWMEnableCh10.Checked = true;
+                chkHC2PWMEnableCh11.Checked = true;
+            }
+            else
+            {
+                chkHC2PWMEnableCh00.Checked = false;
+                chkHC2PWMEnableCh01.Checked = false;
+                chkHC2PWMEnableCh02.Checked = false;
+                chkHC2PWMEnableCh03.Checked = false;
+                chkHC2PWMEnableCh04.Checked = false;
+                chkHC2PWMEnableCh05.Checked = false;
+                chkHC2PWMEnableCh06.Checked = false;
+                chkHC2PWMEnableCh07.Checked = false;
+                chkHC2PWMEnableCh08.Checked = false;
+                chkHC2PWMEnableCh09.Checked = false;
+                chkHC2PWMEnableCh10.Checked = false;
+                chkHC2PWMEnableCh11.Checked = false;
+            }
+        }
+
+        private void chkHC3DCDimmer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHC3DCDimmer.Checked == true)
+            {
+                chkHC3PWMEnableCh00.Checked = true;
+                chkHC3PWMEnableCh01.Checked = true;
+                chkHC3PWMEnableCh02.Checked = true;
+                chkHC3PWMEnableCh03.Checked = true;
+                chkHC3PWMEnableCh04.Checked = true;
+                chkHC3PWMEnableCh05.Checked = true;
+                chkHC3PWMEnableCh06.Checked = true;
+                chkHC3PWMEnableCh07.Checked = true;
+                chkHC3PWMEnableCh08.Checked = true;
+                chkHC3PWMEnableCh09.Checked = true;
+                chkHC3PWMEnableCh10.Checked = true;
+                chkHC3PWMEnableCh11.Checked = true;
+            }
+            else
+            {
+                chkHC3PWMEnableCh00.Checked = false;
+                chkHC3PWMEnableCh01.Checked = false;
+                chkHC3PWMEnableCh02.Checked = false;
+                chkHC3PWMEnableCh03.Checked = false;
+                chkHC3PWMEnableCh04.Checked = false;
+                chkHC3PWMEnableCh05.Checked = false;
+                chkHC3PWMEnableCh06.Checked = false;
+                chkHC3PWMEnableCh07.Checked = false;
+                chkHC3PWMEnableCh08.Checked = false;
+                chkHC3PWMEnableCh09.Checked = false;
+                chkHC3PWMEnableCh10.Checked = false;
+                chkHC3PWMEnableCh11.Checked = false;
+            }
+        }
+
+        private void chkHC4DCDimmer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHC4DCDimmer.Checked == true)
+            {
+                chkHC4PWMEnableCh00.Checked = true;
+                chkHC4PWMEnableCh01.Checked = true;
+                chkHC4PWMEnableCh02.Checked = true;
+                chkHC4PWMEnableCh03.Checked = true;
+                chkHC4PWMEnableCh04.Checked = true;
+                chkHC4PWMEnableCh05.Checked = true;
+                chkHC4PWMEnableCh06.Checked = true;
+                chkHC4PWMEnableCh07.Checked = true;
+                chkHC4PWMEnableCh08.Checked = true;
+                chkHC4PWMEnableCh09.Checked = true;
+                chkHC4PWMEnableCh10.Checked = true;
+                chkHC4PWMEnableCh11.Checked = true;
+            }
+            else
+            {
+                chkHC4PWMEnableCh00.Checked = false;
+                chkHC4PWMEnableCh01.Checked = false;
+                chkHC4PWMEnableCh02.Checked = false;
+                chkHC4PWMEnableCh03.Checked = false;
+                chkHC4PWMEnableCh04.Checked = false;
+                chkHC4PWMEnableCh05.Checked = false;
+                chkHC4PWMEnableCh06.Checked = false;
+                chkHC4PWMEnableCh07.Checked = false;
+                chkHC4PWMEnableCh08.Checked = false;
+                chkHC4PWMEnableCh09.Checked = false;
+                chkHC4PWMEnableCh10.Checked = false;
+                chkHC4PWMEnableCh11.Checked = false;
+            }
+        }
+
+        private void chkHC5DCDimmer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHC5DCDimmer.Checked == true)
+            {
+                chkHC5PWMEnableCh00.Checked = true;
+                chkHC5PWMEnableCh01.Checked = true;
+                chkHC5PWMEnableCh02.Checked = true;
+                chkHC5PWMEnableCh03.Checked = true;
+                chkHC5PWMEnableCh04.Checked = true;
+                chkHC5PWMEnableCh05.Checked = true;
+                chkHC5PWMEnableCh06.Checked = true;
+                chkHC5PWMEnableCh07.Checked = true;
+                chkHC5PWMEnableCh08.Checked = true;
+                chkHC5PWMEnableCh09.Checked = true;
+                chkHC5PWMEnableCh10.Checked = true;
+                chkHC5PWMEnableCh11.Checked = true;
+            }
+            else
+            {
+                chkHC5PWMEnableCh00.Checked = false;
+                chkHC5PWMEnableCh01.Checked = false;
+                chkHC5PWMEnableCh02.Checked = false;
+                chkHC5PWMEnableCh03.Checked = false;
+                chkHC5PWMEnableCh04.Checked = false;
+                chkHC5PWMEnableCh05.Checked = false;
+                chkHC5PWMEnableCh06.Checked = false;
+                chkHC5PWMEnableCh07.Checked = false;
+                chkHC5PWMEnableCh08.Checked = false;
+                chkHC5PWMEnableCh09.Checked = false;
+                chkHC5PWMEnableCh10.Checked = false;
+                chkHC5PWMEnableCh11.Checked = false;
+            }
+        }
+
+        private void chkHC6DCDimmer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHC6DCDimmer.Checked == true)
+            {
+                chkHC6PWMEnableCh00.Checked = true;
+                chkHC6PWMEnableCh01.Checked = true;
+                chkHC6PWMEnableCh02.Checked = true;
+                chkHC6PWMEnableCh03.Checked = true;
+                chkHC6PWMEnableCh04.Checked = true;
+                chkHC6PWMEnableCh05.Checked = true;
+                chkHC6PWMEnableCh06.Checked = true;
+                chkHC6PWMEnableCh07.Checked = true;
+                chkHC6PWMEnableCh08.Checked = true;
+                chkHC6PWMEnableCh09.Checked = true;
+                chkHC6PWMEnableCh10.Checked = true;
+                chkHC6PWMEnableCh11.Checked = true;
+            }
+            else
+            {
+                chkHC6PWMEnableCh00.Checked = false;
+                chkHC6PWMEnableCh01.Checked = false;
+                chkHC6PWMEnableCh02.Checked = false;
+                chkHC6PWMEnableCh03.Checked = false;
+                chkHC6PWMEnableCh04.Checked = false;
+                chkHC6PWMEnableCh05.Checked = false;
+                chkHC6PWMEnableCh06.Checked = false;
+                chkHC6PWMEnableCh07.Checked = false;
+                chkHC6PWMEnableCh08.Checked = false;
+                chkHC6PWMEnableCh09.Checked = false;
+                chkHC6PWMEnableCh10.Checked = false;
+                chkHC6PWMEnableCh11.Checked = false;
+            }
+        }
+
         private void tbxHC1BaseIndex_TextChanged(object sender, EventArgs e)
         {
             lblHC1Ch00.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 0);

@@ -1542,7 +1542,7 @@ namespace M1ConfigGenerator
             {
                 hcObjects[card].M1_SetCardLetter(hcCardLetter[card].Text);
                 hcObjects[card].M1_ChangeConfigName();
-                hcObjects[card].HC_ChangeAddress();6
+                hcObjects[card].HC_ChangeAddress();
                 hcObjects[card].M1_SetDevAddr(hcCardNum[card].SelectedIndex, hcPanelNum[card].SelectedIndex);
                 hcObjects[card].M1_SetCfgRev(hcConfigRev[card].Text);
                 hcObjects[card].M1_SetCfgType(hcConfigType[card].Text);

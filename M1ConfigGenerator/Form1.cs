@@ -1801,6 +1801,176 @@ namespace M1ConfigGenerator
             }
         }
 
+        private void chkHC2DCDimmer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHC2DCDimmer.Checked == true)
+            {
+                chkHC2PWMEnableCh00.Checked = true;
+                chkHC2PWMEnableCh01.Checked = true;
+                chkHC2PWMEnableCh02.Checked = true;
+                chkHC2PWMEnableCh03.Checked = true;
+                chkHC2PWMEnableCh04.Checked = true;
+                chkHC2PWMEnableCh05.Checked = true;
+                chkHC2PWMEnableCh06.Checked = true;
+                chkHC2PWMEnableCh07.Checked = true;
+                chkHC2PWMEnableCh08.Checked = true;
+                chkHC2PWMEnableCh09.Checked = true;
+                chkHC2PWMEnableCh10.Checked = true;
+                chkHC2PWMEnableCh11.Checked = true;
+            }
+            else
+            {
+                chkHC2PWMEnableCh00.Checked = false;
+                chkHC2PWMEnableCh01.Checked = false;
+                chkHC2PWMEnableCh02.Checked = false;
+                chkHC2PWMEnableCh03.Checked = false;
+                chkHC2PWMEnableCh04.Checked = false;
+                chkHC2PWMEnableCh05.Checked = false;
+                chkHC2PWMEnableCh06.Checked = false;
+                chkHC2PWMEnableCh07.Checked = false;
+                chkHC2PWMEnableCh08.Checked = false;
+                chkHC2PWMEnableCh09.Checked = false;
+                chkHC2PWMEnableCh10.Checked = false;
+                chkHC2PWMEnableCh11.Checked = false;
+            }
+        }
+
+        private void chkHC3DCDimmer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHC3DCDimmer.Checked == true)
+            {
+                chkHC3PWMEnableCh00.Checked = true;
+                chkHC3PWMEnableCh01.Checked = true;
+                chkHC3PWMEnableCh02.Checked = true;
+                chkHC3PWMEnableCh03.Checked = true;
+                chkHC3PWMEnableCh04.Checked = true;
+                chkHC3PWMEnableCh05.Checked = true;
+                chkHC3PWMEnableCh06.Checked = true;
+                chkHC3PWMEnableCh07.Checked = true;
+                chkHC3PWMEnableCh08.Checked = true;
+                chkHC3PWMEnableCh09.Checked = true;
+                chkHC3PWMEnableCh10.Checked = true;
+                chkHC3PWMEnableCh11.Checked = true;
+            }
+            else
+            {
+                chkHC3PWMEnableCh00.Checked = false;
+                chkHC3PWMEnableCh01.Checked = false;
+                chkHC3PWMEnableCh02.Checked = false;
+                chkHC3PWMEnableCh03.Checked = false;
+                chkHC3PWMEnableCh04.Checked = false;
+                chkHC3PWMEnableCh05.Checked = false;
+                chkHC3PWMEnableCh06.Checked = false;
+                chkHC3PWMEnableCh07.Checked = false;
+                chkHC3PWMEnableCh08.Checked = false;
+                chkHC3PWMEnableCh09.Checked = false;
+                chkHC3PWMEnableCh10.Checked = false;
+                chkHC3PWMEnableCh11.Checked = false;
+            }
+        }
+
+        private void chkHC4DCDimmer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHC4DCDimmer.Checked == true)
+            {
+                chkHC4PWMEnableCh00.Checked = true;
+                chkHC4PWMEnableCh01.Checked = true;
+                chkHC4PWMEnableCh02.Checked = true;
+                chkHC4PWMEnableCh03.Checked = true;
+                chkHC4PWMEnableCh04.Checked = true;
+                chkHC4PWMEnableCh05.Checked = true;
+                chkHC4PWMEnableCh06.Checked = true;
+                chkHC4PWMEnableCh07.Checked = true;
+                chkHC4PWMEnableCh08.Checked = true;
+                chkHC4PWMEnableCh09.Checked = true;
+                chkHC4PWMEnableCh10.Checked = true;
+                chkHC4PWMEnableCh11.Checked = true;
+            }
+            else
+            {
+                chkHC4PWMEnableCh00.Checked = false;
+                chkHC4PWMEnableCh01.Checked = false;
+                chkHC4PWMEnableCh02.Checked = false;
+                chkHC4PWMEnableCh03.Checked = false;
+                chkHC4PWMEnableCh04.Checked = false;
+                chkHC4PWMEnableCh05.Checked = false;
+                chkHC4PWMEnableCh06.Checked = false;
+                chkHC4PWMEnableCh07.Checked = false;
+                chkHC4PWMEnableCh08.Checked = false;
+                chkHC4PWMEnableCh09.Checked = false;
+                chkHC4PWMEnableCh10.Checked = false;
+                chkHC4PWMEnableCh11.Checked = false;
+            }
+        }
+
+        private void chkHC5DCDimmer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHC5DCDimmer.Checked == true)
+            {
+                chkHC5PWMEnableCh00.Checked = true;
+                chkHC5PWMEnableCh01.Checked = true;
+                chkHC5PWMEnableCh02.Checked = true;
+                chkHC5PWMEnableCh03.Checked = true;
+                chkHC5PWMEnableCh04.Checked = true;
+                chkHC5PWMEnableCh05.Checked = true;
+                chkHC5PWMEnableCh06.Checked = true;
+                chkHC5PWMEnableCh07.Checked = true;
+                chkHC5PWMEnableCh08.Checked = true;
+                chkHC5PWMEnableCh09.Checked = true;
+                chkHC5PWMEnableCh10.Checked = true;
+                chkHC5PWMEnableCh11.Checked = true;
+            }
+            else
+            {
+                chkHC5PWMEnableCh00.Checked = false;
+                chkHC5PWMEnableCh01.Checked = false;
+                chkHC5PWMEnableCh02.Checked = false;
+                chkHC5PWMEnableCh03.Checked = false;
+                chkHC5PWMEnableCh04.Checked = false;
+                chkHC5PWMEnableCh05.Checked = false;
+                chkHC5PWMEnableCh06.Checked = false;
+                chkHC5PWMEnableCh07.Checked = false;
+                chkHC5PWMEnableCh08.Checked = false;
+                chkHC5PWMEnableCh09.Checked = false;
+                chkHC5PWMEnableCh10.Checked = false;
+                chkHC5PWMEnableCh11.Checked = false;
+            }
+        }
+
+        private void chkHC6DCDimmer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHC6DCDimmer.Checked == true)
+            {
+                chkHC6PWMEnableCh00.Checked = true;
+                chkHC6PWMEnableCh01.Checked = true;
+                chkHC6PWMEnableCh02.Checked = true;
+                chkHC6PWMEnableCh03.Checked = true;
+                chkHC6PWMEnableCh04.Checked = true;
+                chkHC6PWMEnableCh05.Checked = true;
+                chkHC6PWMEnableCh06.Checked = true;
+                chkHC6PWMEnableCh07.Checked = true;
+                chkHC6PWMEnableCh08.Checked = true;
+                chkHC6PWMEnableCh09.Checked = true;
+                chkHC6PWMEnableCh10.Checked = true;
+                chkHC6PWMEnableCh11.Checked = true;
+            }
+            else
+            {
+                chkHC6PWMEnableCh00.Checked = false;
+                chkHC6PWMEnableCh01.Checked = false;
+                chkHC6PWMEnableCh02.Checked = false;
+                chkHC6PWMEnableCh03.Checked = false;
+                chkHC6PWMEnableCh04.Checked = false;
+                chkHC6PWMEnableCh05.Checked = false;
+                chkHC6PWMEnableCh06.Checked = false;
+                chkHC6PWMEnableCh07.Checked = false;
+                chkHC6PWMEnableCh08.Checked = false;
+                chkHC6PWMEnableCh09.Checked = false;
+                chkHC6PWMEnableCh10.Checked = false;
+                chkHC6PWMEnableCh11.Checked = false;
+            }
+        }
+
         private void tbxHC1BaseIndex_TextChanged(object sender, EventArgs e)
         {
             lblHC1Ch00.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 0);
@@ -2356,6 +2526,7 @@ namespace M1ConfigGenerator
                 cmbHC1ModeParamCh00.Text = "H Br";
                 cmbHC1DeadTimeCh00.Text = "500";
                 cmbHC1PairedCh00.Text = "1";
+                chkHC1PWMEnableCh00.Checked = false;
             }
 
             if (cmbHC1Startup00.Text == "High" || cmbHC1Startup00.Text == "Low") { cmbHC1DirectionCh00.Text = cmbHC1ModeParamCh00.Text; }
@@ -2381,12 +2552,14 @@ namespace M1ConfigGenerator
                 cmbHC1ModeParamCh01.Text = "H Br";
                 cmbHC1DeadTimeCh01.Text = "500";
                 cmbHC1PairedCh01.Text = "2";
+                chkHC1PWMEnableCh01.Checked = false;
             }
             else if (cmbHC1Mode01.Text == "RP DN")
             {
                 cmbHC1ModeParamCh01.Text = "Slave";
                 cmbHC1DeadTimeCh01.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh01.Text = "0";
+                chkHC1PWMEnableCh01.Checked = false;
             }
 
             if (cmbHC1Startup01.Text == "High" || cmbHC1Startup01.Text == "Low") { cmbHC1DirectionCh01.Text = cmbHC1ModeParamCh01.Text; }
@@ -2412,12 +2585,14 @@ namespace M1ConfigGenerator
                 cmbHC1ModeParamCh02.Text = "H Br";
                 cmbHC1DeadTimeCh02.Text = "500";
                 cmbHC1PairedCh02.Text = "3";
+                chkHC1PWMEnableCh02.Checked = false;
             }
             else if (cmbHC1Mode02.Text == "RP DN")
             {
                 cmbHC1ModeParamCh02.Text = "Slave";
                 cmbHC1DeadTimeCh02.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh02.Text = "1";
+                chkHC1PWMEnableCh02.Checked = false;
             }
 
             if (cmbHC1Startup02.Text == "High" || cmbHC1Startup02.Text == "Low") { cmbHC1DirectionCh02.Text = cmbHC1ModeParamCh02.Text; }
@@ -2443,12 +2618,14 @@ namespace M1ConfigGenerator
                 cmbHC1ModeParamCh03.Text = "H Br";
                 cmbHC1DeadTimeCh03.Text = "500";
                 cmbHC1PairedCh03.Text = "4";
+                chkHC1PWMEnableCh03.Checked = false;
             }
             else if (cmbHC1Mode03.Text == "RP DN")
             {
                 cmbHC1ModeParamCh03.Text = "Slave";
                 cmbHC1DeadTimeCh03.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh03.Text = "2";
+                chkHC1PWMEnableCh03.Checked = false;
             }
 
             if (cmbHC1Startup03.Text == "High" || cmbHC1Startup03.Text == "Low") { cmbHC1DirectionCh03.Text = cmbHC1ModeParamCh03.Text; }
@@ -2474,12 +2651,14 @@ namespace M1ConfigGenerator
                 cmbHC1ModeParamCh04.Text = "H Br";
                 cmbHC1DeadTimeCh04.Text = "500";
                 cmbHC1PairedCh04.Text = "5";
+                chkHC1PWMEnableCh04.Checked = false;
             }
             else if (cmbHC1Mode04.Text == "RP DN")
             {
                 cmbHC1ModeParamCh04.Text = "Slave";
                 cmbHC1DeadTimeCh04.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh04.Text = "3";
+                chkHC1PWMEnableCh04.Checked = false;
             }
 
             if (cmbHC1Startup04.Text == "High" || cmbHC1Startup04.Text == "Low") { cmbHC1DirectionCh04.Text = cmbHC1ModeParamCh04.Text; }
@@ -2505,12 +2684,14 @@ namespace M1ConfigGenerator
                 cmbHC1ModeParamCh05.Text = "H Br";
                 cmbHC1DeadTimeCh05.Text = "500";
                 cmbHC1PairedCh05.Text = "6";
+                chkHC1PWMEnableCh05.Checked = false;
             }
             else if (cmbHC1Mode05.Text == "RP DN")
             {
                 cmbHC1ModeParamCh05.Text = "Slave";
                 cmbHC1DeadTimeCh05.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh05.Text = "4";
+                chkHC1PWMEnableCh05.Checked = false;
             }
 
             if (cmbHC1Startup05.Text == "High" || cmbHC1Startup05.Text == "Low") { cmbHC1DirectionCh05.Text = cmbHC1ModeParamCh05.Text; }
@@ -2536,12 +2717,14 @@ namespace M1ConfigGenerator
                 cmbHC1ModeParamCh06.Text = "H Br";
                 cmbHC1DeadTimeCh06.Text = "500";
                 cmbHC1PairedCh06.Text = "7";
+                chkHC1PWMEnableCh06.Checked = false;
             }
             else if (cmbHC1Mode06.Text == "RP DN")
             {
                 cmbHC1ModeParamCh06.Text = "Slave";
                 cmbHC1DeadTimeCh06.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh06.Text = "5";
+                chkHC1PWMEnableCh06.Checked = false;
             }
 
             if (cmbHC1Startup06.Text == "High" || cmbHC1Startup06.Text == "Low") { cmbHC1DirectionCh06.Text = cmbHC1ModeParamCh06.Text; }
@@ -2567,12 +2750,14 @@ namespace M1ConfigGenerator
                 cmbHC1ModeParamCh07.Text = "H Br";
                 cmbHC1DeadTimeCh07.Text = "500";
                 cmbHC1PairedCh07.Text = "8";
+                chkHC1PWMEnableCh07.Checked = false;
             }
             else if (cmbHC1Mode07.Text == "RP DN")
             {
                 cmbHC1ModeParamCh07.Text = "Slave";
                 cmbHC1DeadTimeCh07.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh07.Text = "6";
+                chkHC1PWMEnableCh07.Checked = false;
             }
 
             if (cmbHC1Startup07.Text == "High" || cmbHC1Startup07.Text == "Low") { cmbHC1DirectionCh07.Text = cmbHC1ModeParamCh07.Text; }
@@ -2598,12 +2783,14 @@ namespace M1ConfigGenerator
                 cmbHC1ModeParamCh08.Text = "H Br";
                 cmbHC1DeadTimeCh08.Text = "500";
                 cmbHC1PairedCh08.Text = "9";
+                chkHC1PWMEnableCh08.Checked = false;
             }
             else if (cmbHC1Mode08.Text == "RP DN")
             {
                 cmbHC1ModeParamCh08.Text = "Slave";
                 cmbHC1DeadTimeCh08.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh08.Text = "7";
+                chkHC1PWMEnableCh08.Checked = false;
             }
 
             if (cmbHC1Startup08.Text == "High" || cmbHC1Startup08.Text == "Low") { cmbHC1DirectionCh08.Text = cmbHC1ModeParamCh08.Text; }
@@ -2629,12 +2816,14 @@ namespace M1ConfigGenerator
                 cmbHC1ModeParamCh09.Text = "H Br";
                 cmbHC1DeadTimeCh09.Text = "500";
                 cmbHC1PairedCh09.Text = "10";
+                chkHC1PWMEnableCh09.Checked = false;
             }
             else if (cmbHC1Mode09.Text == "RP DN")
             {
                 cmbHC1ModeParamCh09.Text = "Slave";
                 cmbHC1DeadTimeCh09.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh09.Text = "8";
+                chkHC1PWMEnableCh09.Checked = false;
             }
 
             if (cmbHC1Startup09.Text == "High" || cmbHC1Startup09.Text == "Low") { cmbHC1DirectionCh09.Text = cmbHC1ModeParamCh09.Text; }
@@ -2660,12 +2849,14 @@ namespace M1ConfigGenerator
                 cmbHC1ModeParamCh10.Text = "H Br";
                 cmbHC1DeadTimeCh10.Text = "500";
                 cmbHC1PairedCh10.Text = "11";
+                chkHC1PWMEnableCh10.Checked = false;
             }
             else if (cmbHC1Mode10.Text == "RP DN")
             {
                 cmbHC1ModeParamCh10.Text = "Slave";
                 cmbHC1DeadTimeCh10.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh10.Text = "9";
+                chkHC1PWMEnableCh10.Checked = false;
             }
 
             if (cmbHC1Startup10.Text == "High" || cmbHC1Startup10.Text == "Low") { cmbHC1DirectionCh10.Text = cmbHC1ModeParamCh10.Text; }
@@ -2691,6 +2882,7 @@ namespace M1ConfigGenerator
                 cmbHC1ModeParamCh11.Text = "Slave";
                 cmbHC1DeadTimeCh11.Text = "500"; // probably not needed, just in case
                 cmbHC1PairedCh11.Text = "10";
+                chkHC1PWMEnableCh11.Checked = false;
             }
 
             if (cmbHC1Startup11.Text == "High" || cmbHC1Startup11.Text == "Low") { cmbHC1DirectionCh11.Text = cmbHC1ModeParamCh11.Text; }
@@ -2715,6 +2907,7 @@ namespace M1ConfigGenerator
                 cmbHC2ModeParamCh00.Text = "H Br";
                 cmbHC2DeadTimeCh00.Text = "500";
                 cmbHC2PairedCh00.Text = "1";
+                chkHC2PWMEnableCh00.Checked = false;
             }
 
             if (cmbHC2Startup00.Text == "High" || cmbHC2Startup00.Text == "Low") { cmbHC2DirectionCh00.Text = cmbHC2ModeParamCh00.Text; }
@@ -2740,12 +2933,14 @@ namespace M1ConfigGenerator
                 cmbHC2ModeParamCh01.Text = "H Br";
                 cmbHC2DeadTimeCh01.Text = "500";
                 cmbHC2PairedCh01.Text = "2";
+                chkHC2PWMEnableCh01.Checked = false;
             }
             else if (cmbHC2Mode01.Text == "RP DN")
             {
                 cmbHC2ModeParamCh01.Text = "Slave";
                 cmbHC2DeadTimeCh01.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh01.Text = "0";
+                chkHC2PWMEnableCh01.Checked = false;
             }
 
             if (cmbHC2Startup01.Text == "High" || cmbHC2Startup01.Text == "Low") { cmbHC2DirectionCh01.Text = cmbHC2ModeParamCh01.Text; }
@@ -2771,12 +2966,14 @@ namespace M1ConfigGenerator
                 cmbHC2ModeParamCh02.Text = "H Br";
                 cmbHC2DeadTimeCh02.Text = "500";
                 cmbHC2PairedCh02.Text = "3";
+                chkHC2PWMEnableCh02.Checked = false;
             }
             else if (cmbHC2Mode02.Text == "RP DN")
             {
                 cmbHC2ModeParamCh02.Text = "Slave";
                 cmbHC2DeadTimeCh02.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh02.Text = "1";
+                chkHC2PWMEnableCh02.Checked = false;
             }
 
             if (cmbHC2Startup02.Text == "High" || cmbHC2Startup02.Text == "Low") { cmbHC2DirectionCh02.Text = cmbHC2ModeParamCh02.Text; }
@@ -2802,12 +2999,14 @@ namespace M1ConfigGenerator
                 cmbHC2ModeParamCh03.Text = "H Br";
                 cmbHC2DeadTimeCh03.Text = "500";
                 cmbHC2PairedCh03.Text = "4";
+                chkHC2PWMEnableCh03.Checked = false;
             }
             else if (cmbHC2Mode03.Text == "RP DN")
             {
                 cmbHC2ModeParamCh03.Text = "Slave";
                 cmbHC2DeadTimeCh03.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh03.Text = "2";
+                chkHC2PWMEnableCh03.Checked = false;
             }
 
             if (cmbHC2Startup03.Text == "High" || cmbHC2Startup03.Text == "Low") { cmbHC2DirectionCh03.Text = cmbHC2ModeParamCh03.Text; }
@@ -2833,12 +3032,14 @@ namespace M1ConfigGenerator
                 cmbHC2ModeParamCh04.Text = "H Br";
                 cmbHC2DeadTimeCh04.Text = "500";
                 cmbHC2PairedCh04.Text = "5";
+                chkHC2PWMEnableCh04.Checked = false;
             }
             else if (cmbHC2Mode04.Text == "RP DN")
             {
                 cmbHC2ModeParamCh04.Text = "Slave";
                 cmbHC2DeadTimeCh04.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh04.Text = "3";
+                chkHC2PWMEnableCh04.Checked = false;
             }
 
             if (cmbHC2Startup04.Text == "High" || cmbHC2Startup04.Text == "Low") { cmbHC2DirectionCh04.Text = cmbHC2ModeParamCh04.Text; }
@@ -2864,12 +3065,14 @@ namespace M1ConfigGenerator
                 cmbHC2ModeParamCh05.Text = "H Br";
                 cmbHC2DeadTimeCh05.Text = "500";
                 cmbHC2PairedCh05.Text = "6";
+                chkHC2PWMEnableCh05.Checked = false;
             }
             else if (cmbHC2Mode05.Text == "RP DN")
             {
                 cmbHC2ModeParamCh05.Text = "Slave";
                 cmbHC2DeadTimeCh05.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh05.Text = "4";
+                chkHC2PWMEnableCh05.Checked = false;
             }
 
             if (cmbHC2Startup05.Text == "High" || cmbHC2Startup05.Text == "Low") { cmbHC2DirectionCh05.Text = cmbHC2ModeParamCh05.Text; }
@@ -2895,12 +3098,14 @@ namespace M1ConfigGenerator
                 cmbHC2ModeParamCh06.Text = "H Br";
                 cmbHC2DeadTimeCh06.Text = "500";
                 cmbHC2PairedCh06.Text = "7";
+                chkHC2PWMEnableCh06.Checked = false;
             }
             else if (cmbHC2Mode06.Text == "RP DN")
             {
                 cmbHC2ModeParamCh06.Text = "Slave";
                 cmbHC2DeadTimeCh06.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh06.Text = "5";
+                chkHC2PWMEnableCh06.Checked = false;
             }
 
             if (cmbHC2Startup06.Text == "High" || cmbHC2Startup06.Text == "Low") { cmbHC2DirectionCh06.Text = cmbHC2ModeParamCh06.Text; }
@@ -2926,12 +3131,14 @@ namespace M1ConfigGenerator
                 cmbHC2ModeParamCh07.Text = "H Br";
                 cmbHC2DeadTimeCh07.Text = "500";
                 cmbHC2PairedCh07.Text = "8";
+                chkHC2PWMEnableCh07.Checked = false;
             }
             else if (cmbHC2Mode07.Text == "RP DN")
             {
                 cmbHC2ModeParamCh07.Text = "Slave";
                 cmbHC2DeadTimeCh07.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh07.Text = "6";
+                chkHC2PWMEnableCh07.Checked = false;
             }
 
             if (cmbHC2Startup07.Text == "High" || cmbHC2Startup07.Text == "Low") { cmbHC2DirectionCh07.Text = cmbHC2ModeParamCh07.Text; }
@@ -2957,12 +3164,14 @@ namespace M1ConfigGenerator
                 cmbHC2ModeParamCh08.Text = "H Br";
                 cmbHC2DeadTimeCh08.Text = "500";
                 cmbHC2PairedCh08.Text = "9";
+                chkHC2PWMEnableCh08.Checked = false;
             }
             else if (cmbHC2Mode08.Text == "RP DN")
             {
                 cmbHC2ModeParamCh08.Text = "Slave";
                 cmbHC2DeadTimeCh08.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh08.Text = "7";
+                chkHC2PWMEnableCh08.Checked = false;
             }
 
             if (cmbHC2Startup08.Text == "High" || cmbHC2Startup08.Text == "Low") { cmbHC2DirectionCh08.Text = cmbHC2ModeParamCh08.Text; }
@@ -2988,12 +3197,14 @@ namespace M1ConfigGenerator
                 cmbHC2ModeParamCh09.Text = "H Br";
                 cmbHC2DeadTimeCh09.Text = "500";
                 cmbHC2PairedCh09.Text = "10";
+                chkHC2PWMEnableCh09.Checked = false;
             }
             else if (cmbHC2Mode09.Text == "RP DN")
             {
                 cmbHC2ModeParamCh09.Text = "Slave";
                 cmbHC2DeadTimeCh09.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh09.Text = "8";
+                chkHC2PWMEnableCh09.Checked = false;
             }
 
             if (cmbHC2Startup09.Text == "High" || cmbHC2Startup09.Text == "Low") { cmbHC2DirectionCh09.Text = cmbHC2ModeParamCh09.Text; }
@@ -3019,12 +3230,14 @@ namespace M1ConfigGenerator
                 cmbHC2ModeParamCh10.Text = "H Br";
                 cmbHC2DeadTimeCh10.Text = "500";
                 cmbHC2PairedCh10.Text = "11";
+                chkHC2PWMEnableCh10.Checked = false;
             }
             else if (cmbHC2Mode10.Text == "RP DN")
             {
                 cmbHC2ModeParamCh10.Text = "Slave";
                 cmbHC2DeadTimeCh10.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh10.Text = "9";
+                chkHC2PWMEnableCh10.Checked = false;
             }
 
             if (cmbHC2Startup10.Text == "High" || cmbHC2Startup10.Text == "Low") { cmbHC2DirectionCh10.Text = cmbHC2ModeParamCh10.Text; }
@@ -3050,6 +3263,7 @@ namespace M1ConfigGenerator
                 cmbHC2ModeParamCh11.Text = "Slave";
                 cmbHC2DeadTimeCh11.Text = "500"; // probably not needed, just in case
                 cmbHC2PairedCh11.Text = "10";
+                chkHC2PWMEnableCh11.Checked = false;
             }
 
             if (cmbHC2Startup11.Text == "High" || cmbHC2Startup11.Text == "Low") { cmbHC2DirectionCh11.Text = cmbHC2ModeParamCh11.Text; }
@@ -3074,6 +3288,7 @@ namespace M1ConfigGenerator
                 cmbHC3ModeParamCh00.Text = "H Br";
                 cmbHC3DeadTimeCh00.Text = "500";
                 cmbHC3PairedCh00.Text = "1";
+                chkHC3PWMEnableCh00.Checked = false;
             }
 
             if (cmbHC3Startup00.Text == "High" || cmbHC3Startup00.Text == "Low") { cmbHC3DirectionCh00.Text = cmbHC3ModeParamCh00.Text; }
@@ -3099,12 +3314,14 @@ namespace M1ConfigGenerator
                 cmbHC3ModeParamCh01.Text = "H Br";
                 cmbHC3DeadTimeCh01.Text = "500";
                 cmbHC3PairedCh01.Text = "2";
+                chkHC3PWMEnableCh01.Checked = false;
             }
             else if (cmbHC3Mode01.Text == "RP DN")
             {
                 cmbHC3ModeParamCh01.Text = "Slave";
                 cmbHC3DeadTimeCh01.Text = "500"; // probably not needed, just in case
                 cmbHC3PairedCh01.Text = "0";
+                chkHC3PWMEnableCh01.Checked = false;
             }
 
             if (cmbHC3Startup01.Text == "High" || cmbHC3Startup01.Text == "Low") { cmbHC3DirectionCh01.Text = cmbHC3ModeParamCh01.Text; }
@@ -3130,12 +3347,14 @@ namespace M1ConfigGenerator
                 cmbHC3ModeParamCh02.Text = "H Br";
                 cmbHC3DeadTimeCh02.Text = "500";
                 cmbHC3PairedCh02.Text = "3";
+                chkHC3PWMEnableCh02.Checked = false;
             }
             else if (cmbHC3Mode02.Text == "RP DN")
             {
                 cmbHC3ModeParamCh02.Text = "Slave";
                 cmbHC3DeadTimeCh02.Text = "500"; // probably not needed, just in case
                 cmbHC3PairedCh02.Text = "1";
+                chkHC3PWMEnableCh02.Checked = false;
             }
 
             if (cmbHC3Startup02.Text == "High" || cmbHC3Startup02.Text == "Low") { cmbHC3DirectionCh02.Text = cmbHC3ModeParamCh02.Text; }
@@ -3161,12 +3380,14 @@ namespace M1ConfigGenerator
                 cmbHC3ModeParamCh03.Text = "H Br";
                 cmbHC3DeadTimeCh03.Text = "500";
                 cmbHC3PairedCh03.Text = "4";
+                chkHC3PWMEnableCh03.Checked = false;
             }
             else if (cmbHC3Mode03.Text == "RP DN")
             {
                 cmbHC3ModeParamCh03.Text = "Slave";
                 cmbHC3DeadTimeCh03.Text = "500"; // probably not needed, just in case
                 cmbHC3PairedCh03.Text = "2";
+                chkHC3PWMEnableCh03.Checked = false;
             }
 
             if (cmbHC3Startup03.Text == "High" || cmbHC3Startup03.Text == "Low") { cmbHC3DirectionCh03.Text = cmbHC3ModeParamCh03.Text; }
@@ -3192,12 +3413,14 @@ namespace M1ConfigGenerator
                 cmbHC3ModeParamCh04.Text = "H Br";
                 cmbHC3DeadTimeCh04.Text = "500";
                 cmbHC3PairedCh04.Text = "5";
+                chkHC3PWMEnableCh04.Checked = false;
             }
             else if (cmbHC3Mode04.Text == "RP DN")
             {
                 cmbHC3ModeParamCh04.Text = "Slave";
                 cmbHC3DeadTimeCh04.Text = "500"; // probably not needed, just in case
                 cmbHC3PairedCh04.Text = "3";
+                chkHC3PWMEnableCh04.Checked = false;
             }
 
             if (cmbHC3Startup04.Text == "High" || cmbHC3Startup04.Text == "Low") { cmbHC3DirectionCh04.Text = cmbHC3ModeParamCh04.Text; }
@@ -3223,12 +3446,14 @@ namespace M1ConfigGenerator
                 cmbHC3ModeParamCh05.Text = "H Br";
                 cmbHC3DeadTimeCh05.Text = "500";
                 cmbHC3PairedCh05.Text = "6";
+                chkHC3PWMEnableCh05.Checked = false;
             }
             else if (cmbHC3Mode05.Text == "RP DN")
             {
                 cmbHC3ModeParamCh05.Text = "Slave";
                 cmbHC3DeadTimeCh05.Text = "500"; // probably not needed, just in case
                 cmbHC3PairedCh05.Text = "4";
+                chkHC3PWMEnableCh05.Checked = false;
             }
 
             if (cmbHC3Startup05.Text == "High" || cmbHC3Startup05.Text == "Low") { cmbHC3DirectionCh05.Text = cmbHC3ModeParamCh05.Text; }
@@ -3254,12 +3479,14 @@ namespace M1ConfigGenerator
                 cmbHC3ModeParamCh06.Text = "H Br";
                 cmbHC3DeadTimeCh06.Text = "500";
                 cmbHC3PairedCh06.Text = "7";
+                chkHC3PWMEnableCh06.Checked = false;
             }
             else if (cmbHC3Mode06.Text == "RP DN")
             {
                 cmbHC3ModeParamCh06.Text = "Slave";
                 cmbHC3DeadTimeCh06.Text = "500"; // probably not needed, just in case
                 cmbHC3PairedCh06.Text = "5";
+                chkHC3PWMEnableCh06.Checked = false;
             }
 
             if (cmbHC3Startup06.Text == "High" || cmbHC3Startup06.Text == "Low") { cmbHC3DirectionCh06.Text = cmbHC3ModeParamCh06.Text; }
@@ -3285,12 +3512,14 @@ namespace M1ConfigGenerator
                 cmbHC3ModeParamCh07.Text = "H Br";
                 cmbHC3DeadTimeCh07.Text = "500";
                 cmbHC3PairedCh07.Text = "8";
+                chkHC3PWMEnableCh07.Checked = false;
             }
             else if (cmbHC3Mode07.Text == "RP DN")
             {
                 cmbHC3ModeParamCh07.Text = "Slave";
                 cmbHC3DeadTimeCh07.Text = "500"; // probably not needed, just in case
                 cmbHC3PairedCh07.Text = "6";
+                chkHC3PWMEnableCh07.Checked = false;
             }
 
             if (cmbHC3Startup07.Text == "High" || cmbHC3Startup07.Text == "Low") { cmbHC3DirectionCh07.Text = cmbHC3ModeParamCh07.Text; }
@@ -3316,12 +3545,14 @@ namespace M1ConfigGenerator
                 cmbHC3ModeParamCh08.Text = "H Br";
                 cmbHC3DeadTimeCh08.Text = "500";
                 cmbHC3PairedCh08.Text = "9";
+                chkHC3PWMEnableCh08.Checked = false;
             }
             else if (cmbHC3Mode08.Text == "RP DN")
             {
                 cmbHC3ModeParamCh08.Text = "Slave";
                 cmbHC3DeadTimeCh08.Text = "500"; // probably not needed, just in case
                 cmbHC3PairedCh08.Text = "7";
+                chkHC3PWMEnableCh08.Checked = false;
             }
 
             if (cmbHC3Startup08.Text == "High" || cmbHC3Startup08.Text == "Low") { cmbHC3DirectionCh08.Text = cmbHC3ModeParamCh08.Text; }
@@ -3347,12 +3578,14 @@ namespace M1ConfigGenerator
                 cmbHC3ModeParamCh09.Text = "H Br";
                 cmbHC3DeadTimeCh09.Text = "500";
                 cmbHC3PairedCh09.Text = "10";
+                chkHC3PWMEnableCh09.Checked = false;
             }
             else if (cmbHC3Mode09.Text == "RP DN")
             {
                 cmbHC3ModeParamCh09.Text = "Slave";
                 cmbHC3DeadTimeCh09.Text = "500"; // probably not needed, just in case
                 cmbHC3PairedCh09.Text = "8";
+                chkHC3PWMEnableCh09.Checked = false;
             }
 
             if (cmbHC3Startup09.Text == "High" || cmbHC3Startup09.Text == "Low") { cmbHC3DirectionCh09.Text = cmbHC3ModeParamCh09.Text; }
@@ -3378,12 +3611,14 @@ namespace M1ConfigGenerator
                 cmbHC3ModeParamCh10.Text = "H Br";
                 cmbHC3DeadTimeCh10.Text = "500";
                 cmbHC3PairedCh10.Text = "11";
+                chkHC3PWMEnableCh10.Checked = false;
             }
             else if (cmbHC3Mode10.Text == "RP DN")
             {
                 cmbHC3ModeParamCh10.Text = "Slave";
                 cmbHC3DeadTimeCh10.Text = "500"; // probably not needed, just in case
                 cmbHC3PairedCh10.Text = "9";
+                chkHC3PWMEnableCh10.Checked = false;
             }
 
             if (cmbHC3Startup10.Text == "High" || cmbHC3Startup10.Text == "Low") { cmbHC3DirectionCh10.Text = cmbHC3ModeParamCh10.Text; }
@@ -3409,6 +3644,7 @@ namespace M1ConfigGenerator
                 cmbHC3ModeParamCh11.Text = "Slave";
                 cmbHC3DeadTimeCh11.Text = "500"; // probably not needed, just in case
                 cmbHC3PairedCh11.Text = "10";
+                chkHC3PWMEnableCh11.Checked = false;
             }
 
             if (cmbHC3Startup11.Text == "High" || cmbHC3Startup11.Text == "Low") { cmbHC3DirectionCh11.Text = cmbHC3ModeParamCh11.Text; }
@@ -3433,6 +3669,7 @@ namespace M1ConfigGenerator
                 cmbHC4ModeParamCh00.Text = "H Br";
                 cmbHC4DeadTimeCh00.Text = "500";
                 cmbHC4PairedCh00.Text = "1";
+                chkHC4PWMEnableCh00.Checked = false;
             }
 
             if (cmbHC4Startup00.Text == "High" || cmbHC4Startup00.Text == "Low") { cmbHC4DirectionCh00.Text = cmbHC4ModeParamCh00.Text; }
@@ -3458,12 +3695,14 @@ namespace M1ConfigGenerator
                 cmbHC4ModeParamCh01.Text = "H Br";
                 cmbHC4DeadTimeCh01.Text = "500";
                 cmbHC4PairedCh01.Text = "2";
+                chkHC4PWMEnableCh01.Checked = false;
             }
             else if (cmbHC4Mode01.Text == "RP DN")
             {
                 cmbHC4ModeParamCh01.Text = "Slave";
                 cmbHC4DeadTimeCh01.Text = "500"; // probably not needed, just in case
                 cmbHC4PairedCh01.Text = "0";
+                chkHC4PWMEnableCh01.Checked = false;
             }
 
             if (cmbHC4Startup01.Text == "High" || cmbHC4Startup01.Text == "Low") { cmbHC4DirectionCh01.Text = cmbHC4ModeParamCh01.Text; }
@@ -3489,12 +3728,14 @@ namespace M1ConfigGenerator
                 cmbHC4ModeParamCh02.Text = "H Br";
                 cmbHC4DeadTimeCh02.Text = "500";
                 cmbHC4PairedCh02.Text = "3";
+                chkHC4PWMEnableCh02.Checked = false;
             }
             else if (cmbHC4Mode02.Text == "RP DN")
             {
                 cmbHC4ModeParamCh02.Text = "Slave";
                 cmbHC4DeadTimeCh02.Text = "500"; // probably not needed, just in case
                 cmbHC4PairedCh02.Text = "1";
+                chkHC4PWMEnableCh02.Checked = false;
             }
 
             if (cmbHC4Startup02.Text == "High" || cmbHC4Startup02.Text == "Low") { cmbHC4DirectionCh02.Text = cmbHC4ModeParamCh02.Text; }
@@ -3520,12 +3761,14 @@ namespace M1ConfigGenerator
                 cmbHC4ModeParamCh03.Text = "H Br";
                 cmbHC4DeadTimeCh03.Text = "500";
                 cmbHC4PairedCh03.Text = "4";
+                chkHC4PWMEnableCh03.Checked = false;
             }
             else if (cmbHC4Mode03.Text == "RP DN")
             {
                 cmbHC4ModeParamCh03.Text = "Slave";
                 cmbHC4DeadTimeCh03.Text = "500"; // probably not needed, just in case
                 cmbHC4PairedCh03.Text = "2";
+                chkHC4PWMEnableCh03.Checked = false;
             }
 
             if (cmbHC4Startup03.Text == "High" || cmbHC4Startup03.Text == "Low") { cmbHC4DirectionCh03.Text = cmbHC4ModeParamCh03.Text; }
@@ -3551,12 +3794,14 @@ namespace M1ConfigGenerator
                 cmbHC4ModeParamCh04.Text = "H Br";
                 cmbHC4DeadTimeCh04.Text = "500";
                 cmbHC4PairedCh04.Text = "5";
+                chkHC4PWMEnableCh04.Checked = false;
             }
             else if (cmbHC4Mode04.Text == "RP DN")
             {
                 cmbHC4ModeParamCh04.Text = "Slave";
                 cmbHC4DeadTimeCh04.Text = "500"; // probably not needed, just in case
                 cmbHC4PairedCh04.Text = "3";
+                chkHC4PWMEnableCh04.Checked = false;
             }
 
             if (cmbHC4Startup04.Text == "High" || cmbHC4Startup04.Text == "Low") { cmbHC4DirectionCh04.Text = cmbHC4ModeParamCh04.Text; }
@@ -3582,12 +3827,14 @@ namespace M1ConfigGenerator
                 cmbHC4ModeParamCh05.Text = "H Br";
                 cmbHC4DeadTimeCh05.Text = "500";
                 cmbHC4PairedCh05.Text = "6";
+                chkHC4PWMEnableCh05.Checked = false;
             }
             else if (cmbHC4Mode05.Text == "RP DN")
             {
                 cmbHC4ModeParamCh05.Text = "Slave";
                 cmbHC4DeadTimeCh05.Text = "500"; // probably not needed, just in case
                 cmbHC4PairedCh05.Text = "4";
+                chkHC4PWMEnableCh05.Checked = false;
             }
 
             if (cmbHC4Startup05.Text == "High" || cmbHC4Startup05.Text == "Low") { cmbHC4DirectionCh05.Text = cmbHC4ModeParamCh05.Text; }
@@ -3613,12 +3860,14 @@ namespace M1ConfigGenerator
                 cmbHC4ModeParamCh06.Text = "H Br";
                 cmbHC4DeadTimeCh06.Text = "500";
                 cmbHC4PairedCh06.Text = "7";
+                chkHC4PWMEnableCh06.Checked = false;
             }
             else if (cmbHC4Mode06.Text == "RP DN")
             {
                 cmbHC4ModeParamCh06.Text = "Slave";
                 cmbHC4DeadTimeCh06.Text = "500"; // probably not needed, just in case
                 cmbHC4PairedCh06.Text = "5";
+                chkHC4PWMEnableCh06.Checked = false;
             }
 
             if (cmbHC4Startup06.Text == "High" || cmbHC4Startup06.Text == "Low") { cmbHC4DirectionCh06.Text = cmbHC4ModeParamCh06.Text; }
@@ -3644,12 +3893,14 @@ namespace M1ConfigGenerator
                 cmbHC4ModeParamCh07.Text = "H Br";
                 cmbHC4DeadTimeCh07.Text = "500";
                 cmbHC4PairedCh07.Text = "8";
+                chkHC4PWMEnableCh07.Checked = false;
             }
             else if (cmbHC4Mode07.Text == "RP DN")
             {
                 cmbHC4ModeParamCh07.Text = "Slave";
                 cmbHC4DeadTimeCh07.Text = "500"; // probably not needed, just in case
                 cmbHC4PairedCh07.Text = "6";
+                chkHC4PWMEnableCh07.Checked = false;
             }
 
             if (cmbHC4Startup07.Text == "High" || cmbHC4Startup07.Text == "Low") { cmbHC4DirectionCh07.Text = cmbHC4ModeParamCh07.Text; }
@@ -3675,12 +3926,14 @@ namespace M1ConfigGenerator
                 cmbHC4ModeParamCh08.Text = "H Br";
                 cmbHC4DeadTimeCh08.Text = "500";
                 cmbHC4PairedCh08.Text = "9";
+                chkHC4PWMEnableCh08.Checked = false;
             }
             else if (cmbHC4Mode08.Text == "RP DN")
             {
                 cmbHC4ModeParamCh08.Text = "Slave";
                 cmbHC4DeadTimeCh08.Text = "500"; // probably not needed, just in case
                 cmbHC4PairedCh08.Text = "7";
+                chkHC4PWMEnableCh08.Checked = false;
             }
 
             if (cmbHC4Startup08.Text == "High" || cmbHC4Startup08.Text == "Low") { cmbHC4DirectionCh08.Text = cmbHC4ModeParamCh08.Text; }
@@ -3706,12 +3959,14 @@ namespace M1ConfigGenerator
                 cmbHC4ModeParamCh09.Text = "H Br";
                 cmbHC4DeadTimeCh09.Text = "500";
                 cmbHC4PairedCh09.Text = "10";
+                chkHC4PWMEnableCh09.Checked = false;
             }
             else if (cmbHC4Mode09.Text == "RP DN")
             {
                 cmbHC4ModeParamCh09.Text = "Slave";
                 cmbHC4DeadTimeCh09.Text = "500"; // probably not needed, just in case
                 cmbHC4PairedCh09.Text = "8";
+                chkHC4PWMEnableCh09.Checked = false;
             }
 
             if (cmbHC4Startup09.Text == "High" || cmbHC4Startup09.Text == "Low") { cmbHC4DirectionCh09.Text = cmbHC4ModeParamCh09.Text; }
@@ -3737,12 +3992,14 @@ namespace M1ConfigGenerator
                 cmbHC4ModeParamCh10.Text = "H Br";
                 cmbHC4DeadTimeCh10.Text = "500";
                 cmbHC4PairedCh10.Text = "11";
+                chkHC4PWMEnableCh10.Checked = false;
             }
             else if (cmbHC4Mode10.Text == "RP DN")
             {
                 cmbHC4ModeParamCh10.Text = "Slave";
                 cmbHC4DeadTimeCh10.Text = "500"; // probably not needed, just in case
                 cmbHC4PairedCh10.Text = "9";
+                chkHC4PWMEnableCh10.Checked = false;
             }
 
             if (cmbHC4Startup10.Text == "High" || cmbHC4Startup10.Text == "Low") { cmbHC4DirectionCh10.Text = cmbHC4ModeParamCh10.Text; }
@@ -3768,6 +4025,7 @@ namespace M1ConfigGenerator
                 cmbHC4ModeParamCh11.Text = "Slave";
                 cmbHC4DeadTimeCh11.Text = "500"; // probably not needed, just in case
                 cmbHC4PairedCh11.Text = "10";
+                chkHC4PWMEnableCh11.Checked = false;
             }
 
             if (cmbHC4Startup11.Text == "High" || cmbHC4Startup11.Text == "Low") { cmbHC4DirectionCh11.Text = cmbHC4ModeParamCh11.Text; }
@@ -3792,6 +4050,7 @@ namespace M1ConfigGenerator
                 cmbHC5ModeParamCh00.Text = "H Br";
                 cmbHC5DeadTimeCh00.Text = "500";
                 cmbHC5PairedCh00.Text = "1";
+                chkHC5PWMEnableCh00.Checked = false;
             }
 
             if (cmbHC5Startup00.Text == "High" || cmbHC5Startup00.Text == "Low") { cmbHC5DirectionCh00.Text = cmbHC5ModeParamCh00.Text; }
@@ -3817,12 +4076,14 @@ namespace M1ConfigGenerator
                 cmbHC5ModeParamCh01.Text = "H Br";
                 cmbHC5DeadTimeCh01.Text = "500";
                 cmbHC5PairedCh01.Text = "2";
+                chkHC5PWMEnableCh01.Checked = false;
             }
             else if (cmbHC5Mode01.Text == "RP DN")
             {
                 cmbHC5ModeParamCh01.Text = "Slave";
                 cmbHC5DeadTimeCh01.Text = "500"; // probably not needed, just in case
                 cmbHC5PairedCh01.Text = "0";
+                chkHC5PWMEnableCh01.Checked = false;
             }
 
             if (cmbHC5Startup01.Text == "High" || cmbHC5Startup01.Text == "Low") { cmbHC5DirectionCh01.Text = cmbHC5ModeParamCh01.Text; }
@@ -3848,12 +4109,14 @@ namespace M1ConfigGenerator
                 cmbHC5ModeParamCh02.Text = "H Br";
                 cmbHC5DeadTimeCh02.Text = "500";
                 cmbHC5PairedCh02.Text = "3";
+                chkHC5PWMEnableCh02.Checked = false;
             }
             else if (cmbHC5Mode02.Text == "RP DN")
             {
                 cmbHC5ModeParamCh02.Text = "Slave";
                 cmbHC5DeadTimeCh02.Text = "500"; // probably not needed, just in case
                 cmbHC5PairedCh02.Text = "1";
+                chkHC5PWMEnableCh02.Checked = false;
             }
 
             if (cmbHC5Startup02.Text == "High" || cmbHC5Startup02.Text == "Low") { cmbHC5DirectionCh02.Text = cmbHC5ModeParamCh02.Text; }
@@ -3879,12 +4142,14 @@ namespace M1ConfigGenerator
                 cmbHC5ModeParamCh03.Text = "H Br";
                 cmbHC5DeadTimeCh03.Text = "500";
                 cmbHC5PairedCh03.Text = "4";
+                chkHC5PWMEnableCh03.Checked = false;
             }
             else if (cmbHC5Mode03.Text == "RP DN")
             {
                 cmbHC5ModeParamCh03.Text = "Slave";
                 cmbHC5DeadTimeCh03.Text = "500"; // probably not needed, just in case
                 cmbHC5PairedCh03.Text = "2";
+                chkHC5PWMEnableCh03.Checked = false;
             }
 
             if (cmbHC5Startup03.Text == "High" || cmbHC5Startup03.Text == "Low") { cmbHC5DirectionCh03.Text = cmbHC5ModeParamCh03.Text; }
@@ -3910,12 +4175,14 @@ namespace M1ConfigGenerator
                 cmbHC5ModeParamCh04.Text = "H Br";
                 cmbHC5DeadTimeCh04.Text = "500";
                 cmbHC5PairedCh04.Text = "5";
+                chkHC5PWMEnableCh04.Checked = false;
             }
             else if (cmbHC5Mode04.Text == "RP DN")
             {
                 cmbHC5ModeParamCh04.Text = "Slave";
                 cmbHC5DeadTimeCh04.Text = "500"; // probably not needed, just in case
                 cmbHC5PairedCh04.Text = "3";
+                chkHC5PWMEnableCh04.Checked = false;
             }
 
             if (cmbHC5Startup04.Text == "High" || cmbHC5Startup04.Text == "Low") { cmbHC5DirectionCh04.Text = cmbHC5ModeParamCh04.Text; }
@@ -3941,12 +4208,14 @@ namespace M1ConfigGenerator
                 cmbHC5ModeParamCh05.Text = "H Br";
                 cmbHC5DeadTimeCh05.Text = "500";
                 cmbHC5PairedCh05.Text = "6";
+                chkHC5PWMEnableCh05.Checked = false;
             }
             else if (cmbHC5Mode05.Text == "RP DN")
             {
                 cmbHC5ModeParamCh05.Text = "Slave";
                 cmbHC5DeadTimeCh05.Text = "500"; // probably not needed, just in case
                 cmbHC5PairedCh05.Text = "4";
+                chkHC5PWMEnableCh05.Checked = false;
             }
 
             if (cmbHC5Startup05.Text == "High" || cmbHC5Startup05.Text == "Low") { cmbHC5DirectionCh05.Text = cmbHC5ModeParamCh05.Text; }
@@ -3972,12 +4241,14 @@ namespace M1ConfigGenerator
                 cmbHC5ModeParamCh06.Text = "H Br";
                 cmbHC5DeadTimeCh06.Text = "500";
                 cmbHC5PairedCh06.Text = "7";
+                chkHC5PWMEnableCh06.Checked = false;
             }
             else if (cmbHC5Mode06.Text == "RP DN")
             {
                 cmbHC5ModeParamCh06.Text = "Slave";
                 cmbHC5DeadTimeCh06.Text = "500"; // probably not needed, just in case
                 cmbHC5PairedCh06.Text = "5";
+                chkHC5PWMEnableCh06.Checked = false;
             }
 
             if (cmbHC5Startup06.Text == "High" || cmbHC5Startup06.Text == "Low") { cmbHC5DirectionCh06.Text = cmbHC5ModeParamCh06.Text; }
@@ -4003,12 +4274,14 @@ namespace M1ConfigGenerator
                 cmbHC5ModeParamCh07.Text = "H Br";
                 cmbHC5DeadTimeCh07.Text = "500";
                 cmbHC5PairedCh07.Text = "8";
+                chkHC5PWMEnableCh07.Checked = false;
             }
             else if (cmbHC5Mode07.Text == "RP DN")
             {
                 cmbHC5ModeParamCh07.Text = "Slave";
                 cmbHC5DeadTimeCh07.Text = "500"; // probably not needed, just in case
                 cmbHC5PairedCh07.Text = "6";
+                chkHC5PWMEnableCh07.Checked = false;
             }
 
             if (cmbHC5Startup07.Text == "High" || cmbHC5Startup07.Text == "Low") { cmbHC5DirectionCh07.Text = cmbHC5ModeParamCh07.Text; }
@@ -4034,12 +4307,14 @@ namespace M1ConfigGenerator
                 cmbHC5ModeParamCh08.Text = "H Br";
                 cmbHC5DeadTimeCh08.Text = "500";
                 cmbHC5PairedCh08.Text = "9";
+                chkHC5PWMEnableCh08.Checked = false;
             }
             else if (cmbHC5Mode08.Text == "RP DN")
             {
                 cmbHC5ModeParamCh08.Text = "Slave";
                 cmbHC5DeadTimeCh08.Text = "500"; // probably not needed, just in case
                 cmbHC5PairedCh08.Text = "7";
+                chkHC5PWMEnableCh08.Checked = false;
             }
 
             if (cmbHC5Startup08.Text == "High" || cmbHC5Startup08.Text == "Low") { cmbHC5DirectionCh08.Text = cmbHC5ModeParamCh08.Text; }
@@ -4065,12 +4340,14 @@ namespace M1ConfigGenerator
                 cmbHC5ModeParamCh09.Text = "H Br";
                 cmbHC5DeadTimeCh09.Text = "500";
                 cmbHC5PairedCh09.Text = "10";
+                chkHC5PWMEnableCh09.Checked = false;
             }
             else if (cmbHC5Mode09.Text == "RP DN")
             {
                 cmbHC5ModeParamCh09.Text = "Slave";
                 cmbHC5DeadTimeCh09.Text = "500"; // probably not needed, just in case
                 cmbHC5PairedCh09.Text = "8";
+                chkHC5PWMEnableCh09.Checked = false;
             }
 
             if (cmbHC5Startup09.Text == "High" || cmbHC5Startup09.Text == "Low") { cmbHC5DirectionCh09.Text = cmbHC5ModeParamCh09.Text; }
@@ -4096,12 +4373,14 @@ namespace M1ConfigGenerator
                 cmbHC5ModeParamCh10.Text = "H Br";
                 cmbHC5DeadTimeCh10.Text = "500";
                 cmbHC5PairedCh10.Text = "11";
+                chkHC5PWMEnableCh10.Checked = false;
             }
             else if (cmbHC5Mode10.Text == "RP DN")
             {
                 cmbHC5ModeParamCh10.Text = "Slave";
                 cmbHC5DeadTimeCh10.Text = "500"; // probably not needed, just in case
                 cmbHC5PairedCh10.Text = "9";
+                chkHC5PWMEnableCh10.Checked = false;
             }
 
             if (cmbHC5Startup10.Text == "High" || cmbHC5Startup10.Text == "Low") { cmbHC5DirectionCh10.Text = cmbHC5ModeParamCh10.Text; }
@@ -4127,6 +4406,7 @@ namespace M1ConfigGenerator
                 cmbHC5ModeParamCh11.Text = "Slave";
                 cmbHC5DeadTimeCh11.Text = "500"; // probably not needed, just in case
                 cmbHC5PairedCh11.Text = "10";
+                chkHC5PWMEnableCh11.Checked = false;
             }
 
             if (cmbHC5Startup11.Text == "High" || cmbHC5Startup11.Text == "Low") { cmbHC5DirectionCh11.Text = cmbHC5ModeParamCh11.Text; }
@@ -4151,6 +4431,7 @@ namespace M1ConfigGenerator
                 cmbHC6ModeParamCh00.Text = "H Br";
                 cmbHC6DeadTimeCh00.Text = "500";
                 cmbHC6PairedCh00.Text = "1";
+                chkHC6PWMEnableCh00.Checked = false;
             }
 
             if (cmbHC6Startup00.Text == "High" || cmbHC6Startup00.Text == "Low") { cmbHC6DirectionCh00.Text = cmbHC6ModeParamCh00.Text; }
@@ -4176,12 +4457,14 @@ namespace M1ConfigGenerator
                 cmbHC6ModeParamCh01.Text = "H Br";
                 cmbHC6DeadTimeCh01.Text = "500";
                 cmbHC6PairedCh01.Text = "2";
+                chkHC6PWMEnableCh01.Checked = false;
             }
             else if (cmbHC6Mode01.Text == "RP DN")
             {
                 cmbHC6ModeParamCh01.Text = "Slave";
                 cmbHC6DeadTimeCh01.Text = "500"; // probably not needed, just in case
                 cmbHC6PairedCh01.Text = "0";
+                chkHC6PWMEnableCh01.Checked = false;
             }
 
             if (cmbHC6Startup01.Text == "High" || cmbHC6Startup01.Text == "Low") { cmbHC6DirectionCh01.Text = cmbHC6ModeParamCh01.Text; }
@@ -4207,12 +4490,14 @@ namespace M1ConfigGenerator
                 cmbHC6ModeParamCh02.Text = "H Br";
                 cmbHC6DeadTimeCh02.Text = "500";
                 cmbHC6PairedCh02.Text = "3";
+                chkHC6PWMEnableCh02.Checked = false;
             }
             else if (cmbHC6Mode02.Text == "RP DN")
             {
                 cmbHC6ModeParamCh02.Text = "Slave";
                 cmbHC6DeadTimeCh02.Text = "500"; // probably not needed, just in case
                 cmbHC6PairedCh02.Text = "1";
+                chkHC6PWMEnableCh02.Checked = false;
             }
 
             if (cmbHC6Startup02.Text == "High" || cmbHC6Startup02.Text == "Low") { cmbHC6DirectionCh02.Text = cmbHC6ModeParamCh02.Text; }
@@ -4238,12 +4523,14 @@ namespace M1ConfigGenerator
                 cmbHC6ModeParamCh03.Text = "H Br";
                 cmbHC6DeadTimeCh03.Text = "500";
                 cmbHC6PairedCh03.Text = "4";
+                chkHC6PWMEnableCh03.Checked = false;
             }
             else if (cmbHC6Mode03.Text == "RP DN")
             {
                 cmbHC6ModeParamCh03.Text = "Slave";
                 cmbHC6DeadTimeCh03.Text = "500"; // probably not needed, just in case
                 cmbHC6PairedCh03.Text = "2";
+                chkHC6PWMEnableCh03.Checked = false;
             }
 
             if (cmbHC6Startup03.Text == "High" || cmbHC6Startup03.Text == "Low") { cmbHC6DirectionCh03.Text = cmbHC6ModeParamCh03.Text; }
@@ -4269,12 +4556,14 @@ namespace M1ConfigGenerator
                 cmbHC6ModeParamCh04.Text = "H Br";
                 cmbHC6DeadTimeCh04.Text = "500";
                 cmbHC6PairedCh04.Text = "5";
+                chkHC6PWMEnableCh04.Checked = false;
             }
             else if (cmbHC6Mode04.Text == "RP DN")
             {
                 cmbHC6ModeParamCh04.Text = "Slave";
                 cmbHC6DeadTimeCh04.Text = "500"; // probably not needed, just in case
                 cmbHC6PairedCh04.Text = "3";
+                chkHC6PWMEnableCh04.Checked = false;
             }
 
             if (cmbHC6Startup04.Text == "High" || cmbHC6Startup04.Text == "Low") { cmbHC6DirectionCh04.Text = cmbHC6ModeParamCh04.Text; }
@@ -4300,12 +4589,14 @@ namespace M1ConfigGenerator
                 cmbHC6ModeParamCh05.Text = "H Br";
                 cmbHC6DeadTimeCh05.Text = "500";
                 cmbHC6PairedCh05.Text = "6";
+                chkHC6PWMEnableCh05.Checked = false;
             }
             else if (cmbHC6Mode05.Text == "RP DN")
             {
                 cmbHC6ModeParamCh05.Text = "Slave";
                 cmbHC6DeadTimeCh05.Text = "500"; // probably not needed, just in case
                 cmbHC6PairedCh05.Text = "4";
+                chkHC6PWMEnableCh05.Checked = false;
             }
 
             if (cmbHC6Startup05.Text == "High" || cmbHC6Startup05.Text == "Low") { cmbHC6DirectionCh05.Text = cmbHC6ModeParamCh05.Text; }
@@ -4331,12 +4622,14 @@ namespace M1ConfigGenerator
                 cmbHC6ModeParamCh06.Text = "H Br";
                 cmbHC6DeadTimeCh06.Text = "500";
                 cmbHC6PairedCh06.Text = "7";
+                chkHC6PWMEnableCh06.Checked = false;
             }
             else if (cmbHC6Mode06.Text == "RP DN")
             {
                 cmbHC6ModeParamCh06.Text = "Slave";
                 cmbHC6DeadTimeCh06.Text = "500"; // probably not needed, just in case
                 cmbHC6PairedCh06.Text = "5";
+                chkHC6PWMEnableCh06.Checked = false;
             }
 
             if (cmbHC6Startup06.Text == "High" || cmbHC6Startup06.Text == "Low") { cmbHC6DirectionCh06.Text = cmbHC6ModeParamCh06.Text; }
@@ -4362,12 +4655,14 @@ namespace M1ConfigGenerator
                 cmbHC6ModeParamCh07.Text = "H Br";
                 cmbHC6DeadTimeCh07.Text = "500";
                 cmbHC6PairedCh07.Text = "8";
+                chkHC6PWMEnableCh07.Checked = false;
             }
             else if (cmbHC6Mode07.Text == "RP DN")
             {
                 cmbHC6ModeParamCh07.Text = "Slave";
                 cmbHC6DeadTimeCh07.Text = "500"; // probably not needed, just in case
                 cmbHC6PairedCh07.Text = "6";
+                chkHC6PWMEnableCh07.Checked = false;
             }
 
             if (cmbHC6Startup07.Text == "High" || cmbHC6Startup07.Text == "Low") { cmbHC6DirectionCh07.Text = cmbHC6ModeParamCh07.Text; }
@@ -4393,12 +4688,14 @@ namespace M1ConfigGenerator
                 cmbHC6ModeParamCh08.Text = "H Br";
                 cmbHC6DeadTimeCh08.Text = "500";
                 cmbHC6PairedCh08.Text = "9";
+                chkHC6PWMEnableCh08.Checked = false;
             }
             else if (cmbHC6Mode08.Text == "RP DN")
             {
                 cmbHC6ModeParamCh08.Text = "Slave";
                 cmbHC6DeadTimeCh08.Text = "500"; // probably not needed, just in case
                 cmbHC6PairedCh08.Text = "7";
+                chkHC6PWMEnableCh08.Checked = false;
             }
 
             if (cmbHC6Startup08.Text == "High" || cmbHC6Startup08.Text == "Low") { cmbHC6DirectionCh08.Text = cmbHC6ModeParamCh08.Text; }
@@ -4424,12 +4721,14 @@ namespace M1ConfigGenerator
                 cmbHC6ModeParamCh09.Text = "H Br";
                 cmbHC6DeadTimeCh09.Text = "500";
                 cmbHC6PairedCh09.Text = "10";
+                chkHC6PWMEnableCh09.Checked = false;
             }
             else if (cmbHC6Mode09.Text == "RP DN")
             {
                 cmbHC6ModeParamCh09.Text = "Slave";
                 cmbHC6DeadTimeCh09.Text = "500"; // probably not needed, just in case
                 cmbHC6PairedCh09.Text = "8";
+                chkHC6PWMEnableCh09.Checked = false;
             }
 
             if (cmbHC6Startup09.Text == "High" || cmbHC6Startup09.Text == "Low") { cmbHC6DirectionCh09.Text = cmbHC6ModeParamCh09.Text; }
@@ -4455,12 +4754,14 @@ namespace M1ConfigGenerator
                 cmbHC6ModeParamCh10.Text = "H Br";
                 cmbHC6DeadTimeCh10.Text = "500";
                 cmbHC6PairedCh10.Text = "11";
+                chkHC6PWMEnableCh10.Checked = false;
             }
             else if (cmbHC6Mode10.Text == "RP DN")
             {
                 cmbHC6ModeParamCh10.Text = "Slave";
                 cmbHC6DeadTimeCh10.Text = "500"; // probably not needed, just in case
                 cmbHC6PairedCh10.Text = "9";
+                chkHC6PWMEnableCh10.Checked = false;
             }
 
             if (cmbHC6Startup10.Text == "High" || cmbHC6Startup10.Text == "Low") { cmbHC6DirectionCh10.Text = cmbHC6ModeParamCh10.Text; }
@@ -4486,6 +4787,7 @@ namespace M1ConfigGenerator
                 cmbHC6ModeParamCh11.Text = "Slave";
                 cmbHC6DeadTimeCh11.Text = "500"; // probably not needed, just in case
                 cmbHC6PairedCh11.Text = "10";
+                chkHC6PWMEnableCh11.Checked = false;
             }
 
             if (cmbHC6Startup11.Text == "High" || cmbHC6Startup11.Text == "Low") { cmbHC6DirectionCh11.Text = cmbHC6ModeParamCh11.Text; }

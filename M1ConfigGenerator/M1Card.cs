@@ -8,29 +8,42 @@ namespace M1ConfigGenerator
 {
     class M1Card
     {
-        private char cardLetter = 'Z';
-
-        private string configName = "DevAddrZ.h";
-        private string progVerRev = "1v2d.0BETA";
-
-        public const int DEVICE_HEADER_CONFIGURATION_VERSION    = 0;
-        public const int DEV_ADDR                               = 1;
-        public const int DEV_ADDR_CFG_REV                       = 2;
-        public const int DEV_ADDR_NODE_CFG                      = 3;
-        public const int DEV_ADDR_CFG_TYPE                      = 4;
-        public const int ENABLE_DC_COMP_DRVR_CMD                = 5;
-        public const int ENABLE_DC_DIMMER_CMD                   = 6;
-        public const int ENABLE_DC_LOAD_CMD                     = 7;
-        public const int ENABLE_DC_MOTOR_CMD                    = 8;
-        public const int ENABLE_WINDOW_SHADE_CMD                = 9;
-        public const int ENABLE_FORCE_CMDS                      = 10;
-        public const int DSA_ADDR                               = 11;
-        public const int DRIVER_DEVICE_INSTANCE                 = 12;
-        public const int BASE_DRIVER_INDEX                      = 13;
+        public const int DEVICE_HEADER_CONFIGURATION_VERSION = 0;
+        public const int DEV_ADDR = 1;
+        public const int DEV_ADDR_CFG_REV = 2;
+        public const int DEV_ADDR_NODE_CFG = 3;
+        public const int DEV_ADDR_CFG_TYPE = 4;
+        public const int ENABLE_DC_COMP_DRVR_CMD = 5;
+        public const int ENABLE_DC_DIMMER_CMD = 6;
+        public const int ENABLE_DC_LOAD_CMD = 7;
+        public const int ENABLE_DC_MOTOR_CMD = 8;
+        public const int ENABLE_WINDOW_SHADE_CMD = 9;
+        public const int ENABLE_FORCE_CMDS = 10;
+        public const int DSA_ADDR = 11;
+        public const int DRIVER_DEVICE_INSTANCE = 12;
+        public const int BASE_DRIVER_INDEX = 13;
 
         public string[] tabs = { "", "\t", "\t\t", "\t\t\t", "\t\t\t\t", "\t\t\t\t\t", "\t\t\t\t\t\t", "\t\t\t\t\t\t\t", "\t\t\t\t\t\t\t\t", "\t\t\t\t\t\t\t\t\t" };
 
         public string commentBox = "//****************************************************************************************************************************************";
+
+        /*
+        ########     ###    ########     ###    ##     ## ######## ######## ######## ########   ######  
+        ##     ##   ## ##   ##     ##   ## ##   ###   ### ##          ##    ##       ##     ## ##    ## 
+        ##     ##  ##   ##  ##     ##  ##   ##  #### #### ##          ##    ##       ##     ## ##       
+        ########  ##     ## ########  ##     ## ## ### ## ######      ##    ######   ########   ######  
+        ##        ######### ##   ##   ######### ##     ## ##          ##    ##       ##   ##         ## 
+        ##        ##     ## ##    ##  ##     ## ##     ## ##          ##    ##       ##    ##  ##    ## 
+        ##        ##     ## ##     ## ##     ## ##     ## ########    ##    ######## ##     ##  ######  
+        */
+
+        private char cardLetter = 'Z';
+
+        private string configName = "DevAddrZ.h";
+        private string progVerRev = "1.0.0";
+
+        private string cardNumber = "";
+        private string panelNumber = "";
 
         public string[] m1ParameterNames =
         {
@@ -84,28 +97,39 @@ namespace M1ConfigGenerator
                                               "GROUP_INDEX3_CHNL_Z8 ", "GROUP_INDEX3_CHNL_Z9 ", "GROUP_INDEX3_CHNL_Z10", "GROUP_INDEX3_CHNL_Z11", "GROUP_INDEX3_CHNL_Z12", "GROUP_INDEX3_CHNL_Z13", "GROUP_INDEX3_CHNL_Z14", "GROUP_INDEX3_CHNL_Z15" };
         public string[] cardChGroup3Values = { "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP" };
 
+        public void M1_ChangeConfigName()
+        {
+            configName = configName.Replace('Z', cardLetter);
+        }
+
         public string M1_GetConfigName()
         {
             return configName;
         }
+
+        // no set program version, it is hard-coded
         public string M1_GetVerRev()
         {
             return progVerRev;
         }
-        public char M1_GetCardLetter()
-        {
-            return cardLetter;
-        }
-        public void M1_SetCardLetter(string argString)
-        {
-            cardLetter = argString[0];
-        }
-        public void M1_OldSetCardLetter(string argString)
+
+        public void M1_SetCardLetterOnCreation(string argString)
         {
             byte[] asciiValue = Encoding.ASCII.GetBytes(argString); // changes string to array of ASCII value numbers
             char character = (char)(asciiValue[0] += 16); // this changes '1' to 'A', '2' to 'B', etc.
             cardLetter = character;
         }
+
+        public void M1_SetCardLetter(string argString)
+        {
+            cardLetter = argString[0];
+        }
+
+        public string M1_GetCardLetter()
+        {
+            return cardLetter.ToString();
+        }
+
         public void M1_ChangeAddress(string[] argStringArray)
         {
             for (int i = 0; i < argStringArray.Length; i++)
@@ -113,57 +137,123 @@ namespace M1ConfigGenerator
                 argStringArray[i] = argStringArray[i].Replace('Z', cardLetter);
             }
         }
-        public void M1_ChangeConfigName()
+
+        public void M1_SetCardNumber(string argString)
         {
-            configName = configName.Replace('Z', cardLetter);
+            cardNumber = argString;
+        }
+
+        public string M1_GetCardNumber()
+        {
+            return cardNumber;
+        }
+
+        public void M1_SetPanelNumber(string argString)
+        {
+            panelNumber = argString;
+        }
+
+        public string M1_GetPanelNumber()
+        {
+            return panelNumber;
+        }
+
+        public void M1_SetDevAddr()
+        {
+            m1ParameterValues[DEV_ADDR] = "(" + cardNumber + " + (" + panelNumber + " << 3))";
         }
         public string M1_GetDevAddr()
         {
             return m1ParameterNames[DEV_ADDR];
         }
-        public void M1_SetDevAddr(int cardIndex, int panelIndex)
-        {
-            string trueCard = Convert.ToString(cardIndex);
-            string truePanel = Convert.ToString(panelIndex);
-            m1ParameterValues[DEV_ADDR] = "(" + trueCard + " + (" + truePanel + " << 3))";
-        }
+
         public void M1_SetCfgRev(string revision)
         {
             m1ParameterValues[DEV_ADDR_CFG_REV] = revision;
         }
+
+        public string M1_GetCfgRev()
+        {
+            return m1ParameterValues[DEV_ADDR_CFG_REV];
+        }
+
         public void M1_SetNodeCfg()
         {
             m1ParameterValues[DEV_ADDR_NODE_CFG] = M1_GetDevAddr();
         }
+
+        public string M1_GetNodeCfg()
+        {
+            return m1ParameterValues[DEV_ADDR_NODE_CFG];
+        }
+
         public void M1_SetCfgType(string configtype)
         {
             m1ParameterValues[DEV_ADDR_CFG_TYPE] = "0x" + configtype;
         }
-        public void M1_SetBaseIndex(string index)
+
+        public string M1_GetCfgType()
         {
-            m1ParameterValues[BASE_DRIVER_INDEX] = index;
+            return m1ParameterValues[DEV_ADDR_CFG_TYPE];
         }
+
         public void M1_SetDCDriver(bool enabled)
         {
             m1ParameterValues[ENABLE_DC_COMP_DRVR_CMD] = enabled ? "TRUE" : "FALSE";
         }
+
+        // no get for DC Driver, all cards hard-coded to true
+
         public void M1_SetDCDimmer(bool enabled)
         {
             m1ParameterValues[ENABLE_DC_DIMMER_CMD] = enabled ? "TRUE" : "FALSE";
         }
+
+        public bool M1_GetDCDimmer()
+        {
+            return (m1ParameterValues[ENABLE_DC_DIMMER_CMD] == "TRUE" ? true : false);
+        }
+
         public void M1_SetDCMotor(bool enabled)
         {
             m1ParameterValues[ENABLE_DC_MOTOR_CMD] = enabled ? "TRUE" : "FALSE";
         }
+
+        public bool M1_GetDCMotor()
+        {
+            return (m1ParameterValues[ENABLE_DC_MOTOR_CMD] == "TRUE" ? true : false);
+        }
+
         public void M1_SetShade(bool enabled)
         {
             m1ParameterValues[ENABLE_WINDOW_SHADE_CMD] = enabled ? "TRUE" : "FALSE";
+        }
+
+        public bool M1_GetShade()
+        {
+            return (m1ParameterValues[ENABLE_WINDOW_SHADE_CMD] == "TRUE" ? true : false);
         }
         
         public void M1_SetForce(bool enabled)
         {
             m1ParameterValues[ENABLE_FORCE_CMDS] = enabled ? "TRUE" : "FALSE";
         }
+
+        public bool M1_GetForce()
+        {
+            return (m1ParameterValues[ENABLE_FORCE_CMDS] == "TRUE" ? true : false);
+        }
+
+        public void M1_SetBaseIndex(string index)
+        {
+            m1ParameterValues[BASE_DRIVER_INDEX] = index;
+        }
+
+        public string M1_GetBaseIndex()
+        {
+            return m1ParameterValues[BASE_DRIVER_INDEX];
+        }
+
         public void M1_SetGroup0(bool[] argArray, int argInt)
         {
             bool[] newArray = argArray;
@@ -264,5 +354,24 @@ namespace M1ConfigGenerator
             }
         }
 
+        public bool M1_GetGroup0(int argInt)
+        {
+            return (cardChGroup0Values[argInt] == "DISABLE_GROUP" ? false : true);
+        }
+
+        public bool M1_GetGroup1(int argInt)
+        {
+            return (cardChGroup1Values[argInt] == "DISABLE_GROUP" ? false : true);
+        }
+
+        public bool M1_GetGroup2(int argInt)
+        {
+            return (cardChGroup2Values[argInt] == "DISABLE_GROUP" ? false : true);
+        }
+
+        public bool M1_GetGroup3(int argInt)
+        {
+            return (cardChGroup3Values[argInt] == "DISABLE_GROUP" ? false : true);
+        }
     }
 }

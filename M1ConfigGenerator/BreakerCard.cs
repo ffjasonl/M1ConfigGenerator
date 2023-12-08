@@ -11,7 +11,7 @@ namespace M1ConfigGenerator
     {
         public BreakerCard(int argInt)
         {
-            M1_OldSetCardLetter(Convert.ToString(argInt));
+            M1_SetCardLetter(Convert.ToString(argInt));
             M1_ChangeConfigName();
             // general
             M1_ChangeAddress(m1ParameterNames);

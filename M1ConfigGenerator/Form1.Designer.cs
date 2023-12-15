@@ -38,9 +38,11 @@ namespace M1ConfigGenerator
             this.btnMenuAux = new System.Windows.Forms.Button();
             this.btnMenuNew = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.btnMenuHR = new System.Windows.Forms.Button();
             this.tabControlMain = new M1ConfigGenerator.TablessControl();
             this.tabMainBlank = new System.Windows.Forms.TabPage();
             this.tabMainStart = new System.Windows.Forms.TabPage();
+            this.cmbStartHR = new System.Windows.Forms.ComboBox();
             this.label566 = new System.Windows.Forms.Label();
             this.label564 = new System.Windows.Forms.Label();
             this.label565 = new System.Windows.Forms.Label();
@@ -59,6 +61,8 @@ namespace M1ConfigGenerator
             this.btnStartCreate = new System.Windows.Forms.Button();
             this.tabMainAux = new System.Windows.Forms.TabPage();
             this.panelAux = new System.Windows.Forms.Panel();
+            this.btnAuxCard8 = new System.Windows.Forms.Button();
+            this.btnAuxCard7 = new System.Windows.Forms.Button();
             this.btnAuxGenerate = new System.Windows.Forms.Button();
             this.btnAuxCard6 = new System.Windows.Forms.Button();
             this.btnAuxCard5 = new System.Windows.Forms.Button();
@@ -67,7 +71,6 @@ namespace M1ConfigGenerator
             this.btnAuxCard2 = new System.Windows.Forms.Button();
             this.btnAuxCard1 = new System.Windows.Forms.Button();
             this.tabControlAux = new M1ConfigGenerator.TablessControl();
-            this.tabAuxBlank = new System.Windows.Forms.TabPage();
             this.tabAux1 = new System.Windows.Forms.TabPage();
             this.ckbTabVisAux1 = new System.Windows.Forms.CheckBox();
             this.chkAux1QuickPair1011 = new System.Windows.Forms.CheckBox();
@@ -255,6 +258,8 @@ namespace M1ConfigGenerator
             this.tbxAuxGenerated = new System.Windows.Forms.TextBox();
             this.tabMainBreaker = new System.Windows.Forms.TabPage();
             this.panelBreaker = new System.Windows.Forms.Panel();
+            this.btnBreakerCard8 = new System.Windows.Forms.Button();
+            this.btnBreakerCard7 = new System.Windows.Forms.Button();
             this.btnBreakerGenerate = new System.Windows.Forms.Button();
             this.btnBreakerCard6 = new System.Windows.Forms.Button();
             this.btnBreakerCard5 = new System.Windows.Forms.Button();
@@ -263,7 +268,6 @@ namespace M1ConfigGenerator
             this.btnBreakerCard2 = new System.Windows.Forms.Button();
             this.btnBreakerCard1 = new System.Windows.Forms.Button();
             this.tabControlBreaker = new M1ConfigGenerator.TablessControl();
-            this.tabBreakerBlank = new System.Windows.Forms.TabPage();
             this.tabBreaker1 = new System.Windows.Forms.TabPage();
             this.ckbTabVisBreaker1 = new System.Windows.Forms.CheckBox();
             this.tablessControl3 = new M1ConfigGenerator.TablessControl();
@@ -431,9 +435,10 @@ namespace M1ConfigGenerator
             this.label277 = new System.Windows.Forms.Label();
             this.tbxBreakerGenerated = new System.Windows.Forms.TextBox();
             this.tabMainDimmer = new System.Windows.Forms.TabPage();
+            this.btnDimmerCard8 = new System.Windows.Forms.Button();
+            this.btnDimmerCard7 = new System.Windows.Forms.Button();
             this.btnDimmerGenerate = new System.Windows.Forms.Button();
             this.tabControlDimmer = new M1ConfigGenerator.TablessControl();
-            this.tabDimmerBlank = new System.Windows.Forms.TabPage();
             this.tabDimmer1 = new System.Windows.Forms.TabPage();
             this.ckbTabVisDimmer1 = new System.Windows.Forms.CheckBox();
             this.lblDimmer1Ch00 = new System.Windows.Forms.Label();
@@ -710,6 +715,8 @@ namespace M1ConfigGenerator
             this.btnDimmerCard3 = new System.Windows.Forms.Button();
             this.tabMainHC = new System.Windows.Forms.TabPage();
             this.panelHC = new System.Windows.Forms.Panel();
+            this.btnHCCard8 = new System.Windows.Forms.Button();
+            this.btnHCCard7 = new System.Windows.Forms.Button();
             this.btnHCGenerate = new System.Windows.Forms.Button();
             this.btnHCCard6 = new System.Windows.Forms.Button();
             this.btnHCCard5 = new System.Windows.Forms.Button();
@@ -1057,10 +1064,11 @@ namespace M1ConfigGenerator
             this.label278 = new System.Windows.Forms.Label();
             this.tbxHCGenerated = new System.Windows.Forms.TextBox();
             this.tabMainLC = new System.Windows.Forms.TabPage();
+            this.btnLCCard8 = new System.Windows.Forms.Button();
+            this.btnLCCard7 = new System.Windows.Forms.Button();
             this.btnLCGenerate = new System.Windows.Forms.Button();
             this.btnLCCard6 = new System.Windows.Forms.Button();
             this.tabControlLC = new M1ConfigGenerator.TablessControl();
-            this.tabLCBlank = new System.Windows.Forms.TabPage();
             this.tabLC1 = new System.Windows.Forms.TabPage();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label210 = new System.Windows.Forms.Label();
@@ -1397,117 +1405,118 @@ namespace M1ConfigGenerator
             this.btnLCCard2 = new System.Windows.Forms.Button();
             this.btnLCCard3 = new System.Windows.Forms.Button();
             this.tabMainHR = new System.Windows.Forms.TabPage();
+            this.btnHRCard8 = new System.Windows.Forms.Button();
+            this.btnHRCard7 = new System.Windows.Forms.Button();
             this.tablessControl5 = new M1ConfigGenerator.TablessControl();
-            this.tabPage12 = new System.Windows.Forms.TabPage();
             this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.comboBox87 = new System.Windows.Forms.ComboBox();
-            this.comboBox88 = new System.Windows.Forms.ComboBox();
-            this.comboBox89 = new System.Windows.Forms.ComboBox();
-            this.comboBox90 = new System.Windows.Forms.ComboBox();
-            this.comboBox91 = new System.Windows.Forms.ComboBox();
-            this.comboBox92 = new System.Windows.Forms.ComboBox();
-            this.comboBox93 = new System.Windows.Forms.ComboBox();
-            this.comboBox94 = new System.Windows.Forms.ComboBox();
-            this.comboBox95 = new System.Windows.Forms.ComboBox();
-            this.comboBox96 = new System.Windows.Forms.ComboBox();
-            this.comboBox97 = new System.Windows.Forms.ComboBox();
-            this.comboBox98 = new System.Windows.Forms.ComboBox();
-            this.comboBox99 = new System.Windows.Forms.ComboBox();
-            this.comboBox100 = new System.Windows.Forms.ComboBox();
-            this.comboBox101 = new System.Windows.Forms.ComboBox();
-            this.comboBox102 = new System.Windows.Forms.ComboBox();
-            this.comboBox103 = new System.Windows.Forms.ComboBox();
-            this.comboBox104 = new System.Windows.Forms.ComboBox();
-            this.comboBox105 = new System.Windows.Forms.ComboBox();
-            this.comboBox106 = new System.Windows.Forms.ComboBox();
-            this.comboBox107 = new System.Windows.Forms.ComboBox();
-            this.comboBox108 = new System.Windows.Forms.ComboBox();
-            this.comboBox109 = new System.Windows.Forms.ComboBox();
-            this.comboBox110 = new System.Windows.Forms.ComboBox();
-            this.checkBox39 = new System.Windows.Forms.CheckBox();
-            this.checkBox44 = new System.Windows.Forms.CheckBox();
-            this.checkBox45 = new System.Windows.Forms.CheckBox();
-            this.checkBox46 = new System.Windows.Forms.CheckBox();
-            this.checkBox47 = new System.Windows.Forms.CheckBox();
-            this.checkBox48 = new System.Windows.Forms.CheckBox();
-            this.checkBox49 = new System.Windows.Forms.CheckBox();
-            this.checkBox50 = new System.Windows.Forms.CheckBox();
-            this.checkBox51 = new System.Windows.Forms.CheckBox();
-            this.checkBox52 = new System.Windows.Forms.CheckBox();
-            this.checkBox53 = new System.Windows.Forms.CheckBox();
-            this.checkBox54 = new System.Windows.Forms.CheckBox();
-            this.checkBox55 = new System.Windows.Forms.CheckBox();
-            this.checkBox56 = new System.Windows.Forms.CheckBox();
-            this.checkBox57 = new System.Windows.Forms.CheckBox();
-            this.checkBox58 = new System.Windows.Forms.CheckBox();
-            this.checkBox59 = new System.Windows.Forms.CheckBox();
-            this.checkBox60 = new System.Windows.Forms.CheckBox();
-            this.checkBox61 = new System.Windows.Forms.CheckBox();
-            this.checkBox62 = new System.Windows.Forms.CheckBox();
-            this.checkBox63 = new System.Windows.Forms.CheckBox();
-            this.checkBox64 = new System.Windows.Forms.CheckBox();
-            this.checkBox65 = new System.Windows.Forms.CheckBox();
-            this.checkBox66 = new System.Windows.Forms.CheckBox();
-            this.checkBox67 = new System.Windows.Forms.CheckBox();
-            this.checkBox68 = new System.Windows.Forms.CheckBox();
-            this.checkBox69 = new System.Windows.Forms.CheckBox();
-            this.checkBox70 = new System.Windows.Forms.CheckBox();
-            this.checkBox71 = new System.Windows.Forms.CheckBox();
-            this.checkBox72 = new System.Windows.Forms.CheckBox();
-            this.checkBox73 = new System.Windows.Forms.CheckBox();
-            this.checkBox74 = new System.Windows.Forms.CheckBox();
-            this.checkBox75 = new System.Windows.Forms.CheckBox();
-            this.checkBox76 = new System.Windows.Forms.CheckBox();
-            this.checkBox77 = new System.Windows.Forms.CheckBox();
-            this.checkBox78 = new System.Windows.Forms.CheckBox();
-            this.checkBox79 = new System.Windows.Forms.CheckBox();
-            this.checkBox80 = new System.Windows.Forms.CheckBox();
-            this.checkBox81 = new System.Windows.Forms.CheckBox();
-            this.checkBox82 = new System.Windows.Forms.CheckBox();
-            this.checkBox83 = new System.Windows.Forms.CheckBox();
-            this.checkBox84 = new System.Windows.Forms.CheckBox();
-            this.checkBox85 = new System.Windows.Forms.CheckBox();
-            this.checkBox86 = new System.Windows.Forms.CheckBox();
-            this.checkBox87 = new System.Windows.Forms.CheckBox();
-            this.checkBox88 = new System.Windows.Forms.CheckBox();
-            this.checkBox89 = new System.Windows.Forms.CheckBox();
-            this.checkBox90 = new System.Windows.Forms.CheckBox();
-            this.label701 = new System.Windows.Forms.Label();
-            this.label702 = new System.Windows.Forms.Label();
-            this.label703 = new System.Windows.Forms.Label();
-            this.label704 = new System.Windows.Forms.Label();
-            this.label705 = new System.Windows.Forms.Label();
-            this.label706 = new System.Windows.Forms.Label();
-            this.label707 = new System.Windows.Forms.Label();
-            this.label708 = new System.Windows.Forms.Label();
-            this.label709 = new System.Windows.Forms.Label();
-            this.label710 = new System.Windows.Forms.Label();
-            this.label711 = new System.Windows.Forms.Label();
-            this.label712 = new System.Windows.Forms.Label();
-            this.comboBox63 = new System.Windows.Forms.ComboBox();
-            this.comboBox64 = new System.Windows.Forms.ComboBox();
-            this.comboBox65 = new System.Windows.Forms.ComboBox();
-            this.comboBox66 = new System.Windows.Forms.ComboBox();
-            this.comboBox67 = new System.Windows.Forms.ComboBox();
-            this.comboBox68 = new System.Windows.Forms.ComboBox();
-            this.comboBox69 = new System.Windows.Forms.ComboBox();
-            this.comboBox70 = new System.Windows.Forms.ComboBox();
-            this.comboBox71 = new System.Windows.Forms.ComboBox();
-            this.comboBox72 = new System.Windows.Forms.ComboBox();
-            this.comboBox73 = new System.Windows.Forms.ComboBox();
-            this.comboBox74 = new System.Windows.Forms.ComboBox();
-            this.comboBox75 = new System.Windows.Forms.ComboBox();
-            this.comboBox76 = new System.Windows.Forms.ComboBox();
-            this.comboBox77 = new System.Windows.Forms.ComboBox();
-            this.comboBox78 = new System.Windows.Forms.ComboBox();
-            this.comboBox79 = new System.Windows.Forms.ComboBox();
-            this.comboBox80 = new System.Windows.Forms.ComboBox();
-            this.comboBox81 = new System.Windows.Forms.ComboBox();
-            this.comboBox82 = new System.Windows.Forms.ComboBox();
-            this.comboBox83 = new System.Windows.Forms.ComboBox();
-            this.comboBox84 = new System.Windows.Forms.ComboBox();
-            this.comboBox85 = new System.Windows.Forms.ComboBox();
-            this.comboBox86 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh00 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh00 = new System.Windows.Forms.ComboBox();
+            this.chkHRMG3Ch07 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG4Ch07 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG2Ch07 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG1Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG1Ch07 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG2Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG4Ch06 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG3Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG3Ch06 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG4Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG2Ch06 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG1Ch09 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG1Ch06 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG2Ch09 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG4Ch05 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG3Ch09 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG3Ch05 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG4Ch09 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG2Ch05 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG1Ch10 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG1Ch05 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG1Ch00 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG2Ch10 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG2Ch00 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG4Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG3Ch10 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG3Ch00 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG3Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG4Ch10 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG4Ch00 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG2Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG1Ch11 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG1Ch01 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG1Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG2Ch11 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG4Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG2Ch01 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG3Ch11 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG3Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG3Ch01 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG4Ch11 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG2Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG4Ch01 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG1Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG1Ch02 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG4Ch02 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG2Ch02 = new System.Windows.Forms.CheckBox();
+            this.chkHRMG3Ch02 = new System.Windows.Forms.CheckBox();
+            this.lblHRCh00 = new System.Windows.Forms.Label();
+            this.lblHRCh04 = new System.Windows.Forms.Label();
+            this.lblHRCh05 = new System.Windows.Forms.Label();
+            this.lblHRCh06 = new System.Windows.Forms.Label();
+            this.lblHRCh07 = new System.Windows.Forms.Label();
+            this.lblHRCh08 = new System.Windows.Forms.Label();
+            this.lblHRCh09 = new System.Windows.Forms.Label();
+            this.lblHRCh10 = new System.Windows.Forms.Label();
+            this.lblHRCh11 = new System.Windows.Forms.Label();
+            this.lblHRCh03 = new System.Windows.Forms.Label();
+            this.lblHRCh02 = new System.Windows.Forms.Label();
+            this.lblHRCh01 = new System.Windows.Forms.Label();
+            this.cmbHRQuickOCAmpsCh00 = new System.Windows.Forms.ComboBox();
+            this.cmbHROCTimeCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbHROCTimeCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbHROCTimeCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbHROCTimeCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbHROCTimeCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbHROCTimeCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbHROCTimeCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbHROCTimeCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbHROCTimeCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbHROCTimeCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbHROCTimeCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbHROCTimeCh00 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh04 = new System.Windows.Forms.ComboBox();
             this.label692 = new System.Windows.Forms.Label();
             this.label693 = new System.Windows.Forms.Label();
             this.label694 = new System.Windows.Forms.Label();
@@ -1517,230 +1526,216 @@ namespace M1ConfigGenerator
             this.label698 = new System.Windows.Forms.Label();
             this.label699 = new System.Windows.Forms.Label();
             this.label700 = new System.Windows.Forms.Label();
-            this.textBox76 = new System.Windows.Forms.TextBox();
+            this.tbxHRBaseInstance = new System.Windows.Forms.TextBox();
             this.label681 = new System.Windows.Forms.Label();
-            this.textBox73 = new System.Windows.Forms.TextBox();
-            this.checkBox38 = new System.Windows.Forms.CheckBox();
-            this.checkBox40 = new System.Windows.Forms.CheckBox();
-            this.comboBox61 = new System.Windows.Forms.ComboBox();
+            this.tbxHRCardLetter = new System.Windows.Forms.TextBox();
+            this.chkHRTabVis = new System.Windows.Forms.CheckBox();
+            this.chkHRShade = new System.Windows.Forms.CheckBox();
+            this.cmbHRPanelNum = new System.Windows.Forms.ComboBox();
             this.label687 = new System.Windows.Forms.Label();
-            this.comboBox62 = new System.Windows.Forms.ComboBox();
+            this.cmbHRCardNum = new System.Windows.Forms.ComboBox();
             this.label688 = new System.Windows.Forms.Label();
             this.label689 = new System.Windows.Forms.Label();
-            this.textBox74 = new System.Windows.Forms.TextBox();
+            this.tbxHRCfgRev = new System.Windows.Forms.TextBox();
             this.label690 = new System.Windows.Forms.Label();
-            this.textBox75 = new System.Windows.Forms.TextBox();
+            this.tbxHRCfgType = new System.Windows.Forms.TextBox();
             this.label691 = new System.Windows.Forms.Label();
-            this.checkBox41 = new System.Windows.Forms.CheckBox();
-            this.checkBox42 = new System.Windows.Forms.CheckBox();
-            this.checkBox43 = new System.Windows.Forms.CheckBox();
+            this.chkHRDCMotor = new System.Windows.Forms.CheckBox();
+            this.chkHRForce = new System.Windows.Forms.CheckBox();
             this.tablessControl6 = new M1ConfigGenerator.TablessControl();
             this.tabPage15 = new System.Windows.Forms.TabPage();
             this.tabPage16 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxHROCAmpsCh11 = new System.Windows.Forms.TextBox();
             this.label652 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tbxHROCAmpsCh10 = new System.Windows.Forms.TextBox();
+            this.tbxHROCAmpsCh00 = new System.Windows.Forms.TextBox();
+            this.tbxHROCAmpsCh09 = new System.Windows.Forms.TextBox();
+            this.tbxHROCAmpsCh01 = new System.Windows.Forms.TextBox();
+            this.tbxHROCAmpsCh08 = new System.Windows.Forms.TextBox();
+            this.tbxHROCAmpsCh02 = new System.Windows.Forms.TextBox();
+            this.tbxHROCAmpsCh07 = new System.Windows.Forms.TextBox();
+            this.tbxHROCAmpsCh03 = new System.Windows.Forms.TextBox();
+            this.tbxHROCAmpsCh06 = new System.Windows.Forms.TextBox();
+            this.tbxHROCAmpsCh04 = new System.Windows.Forms.TextBox();
+            this.tbxHROCAmpsCh05 = new System.Windows.Forms.TextBox();
             this.label653 = new System.Windows.Forms.Label();
             this.label654 = new System.Windows.Forms.Label();
             this.label655 = new System.Windows.Forms.Label();
             this.label656 = new System.Windows.Forms.Label();
             this.label657 = new System.Windows.Forms.Label();
             this.label658 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbHRModeParamCh11 = new System.Windows.Forms.ComboBox();
             this.label659 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbHRModeParamCh10 = new System.Windows.Forms.ComboBox();
             this.label660 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbHRModeParamCh09 = new System.Windows.Forms.ComboBox();
             this.label661 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cmbHRModeParamCh08 = new System.Windows.Forms.ComboBox();
             this.label662 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cmbHRModeParamCh07 = new System.Windows.Forms.ComboBox();
             this.label663 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.cmbHRModeParamCh06 = new System.Windows.Forms.ComboBox();
             this.label664 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.cmbHRModeParamCh05 = new System.Windows.Forms.ComboBox();
             this.label665 = new System.Windows.Forms.Label();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.cmbHRModeParamCh04 = new System.Windows.Forms.ComboBox();
             this.label666 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.cmbHRModeParamCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbHRModeParamCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbHRModeParamCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbHRModeParamCh00 = new System.Windows.Forms.ComboBox();
             this.label667 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.chkHRLockCh00 = new System.Windows.Forms.CheckBox();
+            this.chkHRLockCh01 = new System.Windows.Forms.CheckBox();
+            this.chkHRLockCh02 = new System.Windows.Forms.CheckBox();
+            this.chkHRLockCh03 = new System.Windows.Forms.CheckBox();
+            this.chkHRLockCh04 = new System.Windows.Forms.CheckBox();
+            this.chkHRLockCh05 = new System.Windows.Forms.CheckBox();
+            this.chkHRLockCh06 = new System.Windows.Forms.CheckBox();
+            this.chkHRLockCh07 = new System.Windows.Forms.CheckBox();
+            this.chkHRLockCh08 = new System.Windows.Forms.CheckBox();
+            this.chkHRLockCh09 = new System.Windows.Forms.CheckBox();
+            this.chkHRLockCh10 = new System.Windows.Forms.CheckBox();
+            this.chkHRLockCh11 = new System.Windows.Forms.CheckBox();
             this.label668 = new System.Windows.Forms.Label();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.cmbHRMeasCurTimeCh11 = new System.Windows.Forms.ComboBox();
             this.label669 = new System.Windows.Forms.Label();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.chkHRTimeoutCh04 = new System.Windows.Forms.CheckBox();
+            this.cmbHRMeasCurTimeCh10 = new System.Windows.Forms.ComboBox();
+            this.chkHRTimeoutCh03 = new System.Windows.Forms.CheckBox();
+            this.tbxHRPWMDutyCh00 = new System.Windows.Forms.TextBox();
+            this.chkHRTimeoutCh05 = new System.Windows.Forms.CheckBox();
             this.label670 = new System.Windows.Forms.Label();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.checkBox23 = new System.Windows.Forms.CheckBox();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.checkBox24 = new System.Windows.Forms.CheckBox();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.checkBox25 = new System.Windows.Forms.CheckBox();
-            this.comboBox23 = new System.Windows.Forms.ComboBox();
-            this.comboBox24 = new System.Windows.Forms.ComboBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.comboBox25 = new System.Windows.Forms.ComboBox();
-            this.comboBox26 = new System.Windows.Forms.ComboBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.comboBox27 = new System.Windows.Forms.ComboBox();
-            this.comboBox28 = new System.Windows.Forms.ComboBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.comboBox29 = new System.Windows.Forms.ComboBox();
-            this.comboBox30 = new System.Windows.Forms.ComboBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.comboBox31 = new System.Windows.Forms.ComboBox();
-            this.comboBox32 = new System.Windows.Forms.ComboBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.comboBox33 = new System.Windows.Forms.ComboBox();
-            this.label671 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.chkHRTimeoutCh02 = new System.Windows.Forms.CheckBox();
+            this.tbxHRPWMDutyCh01 = new System.Windows.Forms.TextBox();
+            this.chkHRTimeoutCh06 = new System.Windows.Forms.CheckBox();
+            this.cmbHRMeasCurTimeCh09 = new System.Windows.Forms.ComboBox();
+            this.chkHRTimeoutCh01 = new System.Windows.Forms.CheckBox();
+            this.tbxHRPWMDutyCh02 = new System.Windows.Forms.TextBox();
+            this.chkHRTimeoutCh07 = new System.Windows.Forms.CheckBox();
+            this.cmbHRMeasCurTimeCh00 = new System.Windows.Forms.ComboBox();
+            this.chkHRTimeoutCh00 = new System.Windows.Forms.CheckBox();
+            this.tbxHRPWMDutyCh04 = new System.Windows.Forms.TextBox();
+            this.chkHRTimeoutCh08 = new System.Windows.Forms.CheckBox();
+            this.cmbHRMeasCurTimeCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbHRPairedCh10 = new System.Windows.Forms.ComboBox();
+            this.tbxHRPWMDutyCh03 = new System.Windows.Forms.TextBox();
+            this.chkHRTimeoutCh09 = new System.Windows.Forms.CheckBox();
+            this.cmbHRMeasCurTimeCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbHRPairedCh11 = new System.Windows.Forms.ComboBox();
+            this.tbxHRPWMDutyCh05 = new System.Windows.Forms.TextBox();
+            this.chkHRTimeoutCh10 = new System.Windows.Forms.CheckBox();
+            this.cmbHRMeasCurTimeCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbHRPairedCh09 = new System.Windows.Forms.ComboBox();
+            this.tbxHRPWMDutyCh06 = new System.Windows.Forms.TextBox();
+            this.chkHRTimeoutCh11 = new System.Windows.Forms.CheckBox();
+            this.cmbHRMeasCurTimeCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbHRPairedCh08 = new System.Windows.Forms.ComboBox();
+            this.tbxHRPWMDutyCh07 = new System.Windows.Forms.TextBox();
+            this.tbxHRTimeoutTimeCh00 = new System.Windows.Forms.TextBox();
+            this.cmbHRMeasCurTimeCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbHRPairedCh07 = new System.Windows.Forms.ComboBox();
+            this.tbxHRPWMDutyCh08 = new System.Windows.Forms.TextBox();
+            this.tbxHRTimeoutTimeCh01 = new System.Windows.Forms.TextBox();
+            this.cmbHRMeasCurTimeCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbHRPairedCh06 = new System.Windows.Forms.ComboBox();
+            this.tbxHRPWMDutyCh09 = new System.Windows.Forms.TextBox();
+            this.tbxHRTimeoutTimeCh02 = new System.Windows.Forms.TextBox();
+            this.cmbHRMeasCurTimeCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbHRPairedCh05 = new System.Windows.Forms.ComboBox();
+            this.tbxHRPWMDutyCh10 = new System.Windows.Forms.TextBox();
+            this.tbxHRTimeoutTimeCh03 = new System.Windows.Forms.TextBox();
+            this.cmbHRMeasCurTimeCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbHRPairedCh04 = new System.Windows.Forms.ComboBox();
+            this.tbxHRPWMDutyCh11 = new System.Windows.Forms.TextBox();
+            this.tbxHRTimeoutTimeCh04 = new System.Windows.Forms.TextBox();
+            this.tbxHRUndAmpsCh11 = new System.Windows.Forms.TextBox();
+            this.cmbHRPairedCh03 = new System.Windows.Forms.ComboBox();
+            this.tbxHRTimeoutTimeCh05 = new System.Windows.Forms.TextBox();
             this.label672 = new System.Windows.Forms.Label();
-            this.comboBox34 = new System.Windows.Forms.ComboBox();
-            this.checkBox26 = new System.Windows.Forms.CheckBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.comboBox35 = new System.Windows.Forms.ComboBox();
-            this.checkBox27 = new System.Windows.Forms.CheckBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.comboBox36 = new System.Windows.Forms.ComboBox();
-            this.checkBox28 = new System.Windows.Forms.CheckBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.comboBox37 = new System.Windows.Forms.ComboBox();
-            this.checkBox29 = new System.Windows.Forms.CheckBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.comboBox38 = new System.Windows.Forms.ComboBox();
-            this.checkBox30 = new System.Windows.Forms.CheckBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.comboBox39 = new System.Windows.Forms.ComboBox();
-            this.checkBox31 = new System.Windows.Forms.CheckBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.comboBox40 = new System.Windows.Forms.ComboBox();
-            this.checkBox32 = new System.Windows.Forms.CheckBox();
+            this.cmbHRPairedCh02 = new System.Windows.Forms.ComboBox();
+            this.tbxHRTimeoutTimeCh07 = new System.Windows.Forms.TextBox();
+            this.tbxHRUndAmpsCh10 = new System.Windows.Forms.TextBox();
+            this.cmbHRPairedCh01 = new System.Windows.Forms.ComboBox();
+            this.tbxHRTimeoutTimeCh06 = new System.Windows.Forms.TextBox();
+            this.tbxHRUndAmpsCh00 = new System.Windows.Forms.TextBox();
+            this.cmbHRPairedCh00 = new System.Windows.Forms.ComboBox();
+            this.tbxHRTimeoutTimeCh08 = new System.Windows.Forms.TextBox();
+            this.tbxHRUndAmpsCh09 = new System.Windows.Forms.TextBox();
+            this.cmbHRDeadTimeCh11 = new System.Windows.Forms.ComboBox();
+            this.tbxHRTimeoutTimeCh09 = new System.Windows.Forms.TextBox();
+            this.tbxHRUndAmpsCh01 = new System.Windows.Forms.TextBox();
+            this.cmbHRDeadTimeCh10 = new System.Windows.Forms.ComboBox();
+            this.tbxHRTimeoutTimeCh10 = new System.Windows.Forms.TextBox();
+            this.tbxHRUndAmpsCh08 = new System.Windows.Forms.TextBox();
+            this.cmbHRDeadTimeCh09 = new System.Windows.Forms.ComboBox();
+            this.tbxHRTimeoutTimeCh11 = new System.Windows.Forms.TextBox();
+            this.tbxHRUndAmpsCh02 = new System.Windows.Forms.TextBox();
+            this.cmbHRDeadTimeCh07 = new System.Windows.Forms.ComboBox();
             this.label673 = new System.Windows.Forms.Label();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.comboBox41 = new System.Windows.Forms.ComboBox();
-            this.checkBox33 = new System.Windows.Forms.CheckBox();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
-            this.comboBox42 = new System.Windows.Forms.ComboBox();
-            this.checkBox34 = new System.Windows.Forms.CheckBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
-            this.textBox48 = new System.Windows.Forms.TextBox();
-            this.comboBox43 = new System.Windows.Forms.ComboBox();
-            this.checkBox35 = new System.Windows.Forms.CheckBox();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
-            this.comboBox44 = new System.Windows.Forms.ComboBox();
-            this.checkBox36 = new System.Windows.Forms.CheckBox();
-            this.textBox51 = new System.Windows.Forms.TextBox();
-            this.textBox52 = new System.Windows.Forms.TextBox();
-            this.comboBox45 = new System.Windows.Forms.ComboBox();
-            this.checkBox37 = new System.Windows.Forms.CheckBox();
-            this.textBox53 = new System.Windows.Forms.TextBox();
-            this.textBox54 = new System.Windows.Forms.TextBox();
-            this.comboBox46 = new System.Windows.Forms.ComboBox();
+            this.tbxHRUndAmpsCh07 = new System.Windows.Forms.TextBox();
+            this.cmbHRDeadTimeCh08 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxOnCh00 = new System.Windows.Forms.TextBox();
+            this.tbxHRUndAmpsCh03 = new System.Windows.Forms.TextBox();
+            this.cmbHRDeadTimeCh06 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxOnCh01 = new System.Windows.Forms.TextBox();
+            this.tbxHRUndAmpsCh06 = new System.Windows.Forms.TextBox();
+            this.cmbHRDeadTimeCh05 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxOnCh02 = new System.Windows.Forms.TextBox();
+            this.tbxHRUndAmpsCh04 = new System.Windows.Forms.TextBox();
+            this.cmbHRDeadTimeCh04 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxOnCh03 = new System.Windows.Forms.TextBox();
+            this.tbxHRUndAmpsCh05 = new System.Windows.Forms.TextBox();
+            this.cmbHRDeadTimeCh03 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxOnCh04 = new System.Windows.Forms.TextBox();
+            this.tbxHRMaxDurRecCh11 = new System.Windows.Forms.TextBox();
+            this.cmbHRDeadTimeCh02 = new System.Windows.Forms.ComboBox();
             this.label674 = new System.Windows.Forms.Label();
-            this.textBox55 = new System.Windows.Forms.TextBox();
+            this.tbxHRMaxOnCh05 = new System.Windows.Forms.TextBox();
             this.label675 = new System.Windows.Forms.Label();
-            this.comboBox47 = new System.Windows.Forms.ComboBox();
-            this.comboBox48 = new System.Windows.Forms.ComboBox();
-            this.textBox56 = new System.Windows.Forms.TextBox();
-            this.textBox57 = new System.Windows.Forms.TextBox();
-            this.comboBox49 = new System.Windows.Forms.ComboBox();
-            this.comboBox50 = new System.Windows.Forms.ComboBox();
-            this.textBox58 = new System.Windows.Forms.TextBox();
-            this.textBox59 = new System.Windows.Forms.TextBox();
+            this.cmbHRDeadTimeCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbHRDirectionCh00 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxOnCh06 = new System.Windows.Forms.TextBox();
+            this.tbxHRMaxDurRecCh10 = new System.Windows.Forms.TextBox();
+            this.cmbHRDeadTimeCh00 = new System.Windows.Forms.ComboBox();
+            this.cmbHRDirectionCh01 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxOnCh07 = new System.Windows.Forms.TextBox();
+            this.tbxHRMaxDurRecCh00 = new System.Windows.Forms.TextBox();
             this.label676 = new System.Windows.Forms.Label();
-            this.comboBox51 = new System.Windows.Forms.ComboBox();
-            this.textBox60 = new System.Windows.Forms.TextBox();
-            this.textBox61 = new System.Windows.Forms.TextBox();
+            this.cmbHRDirectionCh02 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxOnCh08 = new System.Windows.Forms.TextBox();
+            this.tbxHRMaxDurRecCh09 = new System.Windows.Forms.TextBox();
             this.label677 = new System.Windows.Forms.Label();
-            this.comboBox52 = new System.Windows.Forms.ComboBox();
-            this.textBox62 = new System.Windows.Forms.TextBox();
-            this.textBox63 = new System.Windows.Forms.TextBox();
+            this.cmbHRDirectionCh03 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxOnCh09 = new System.Windows.Forms.TextBox();
+            this.tbxHRMaxDurRecCh01 = new System.Windows.Forms.TextBox();
             this.label678 = new System.Windows.Forms.Label();
-            this.comboBox53 = new System.Windows.Forms.ComboBox();
-            this.textBox64 = new System.Windows.Forms.TextBox();
-            this.textBox65 = new System.Windows.Forms.TextBox();
+            this.cmbHRDirectionCh04 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxOnCh10 = new System.Windows.Forms.TextBox();
+            this.tbxHRMaxDurRecCh08 = new System.Windows.Forms.TextBox();
             this.label679 = new System.Windows.Forms.Label();
-            this.comboBox54 = new System.Windows.Forms.ComboBox();
-            this.textBox66 = new System.Windows.Forms.TextBox();
-            this.textBox67 = new System.Windows.Forms.TextBox();
-            this.comboBox55 = new System.Windows.Forms.ComboBox();
-            this.comboBox56 = new System.Windows.Forms.ComboBox();
-            this.textBox68 = new System.Windows.Forms.TextBox();
-            this.textBox69 = new System.Windows.Forms.TextBox();
-            this.comboBox57 = new System.Windows.Forms.ComboBox();
-            this.comboBox58 = new System.Windows.Forms.ComboBox();
-            this.textBox70 = new System.Windows.Forms.TextBox();
-            this.textBox71 = new System.Windows.Forms.TextBox();
-            this.comboBox59 = new System.Windows.Forms.ComboBox();
-            this.comboBox60 = new System.Windows.Forms.ComboBox();
-            this.textBox72 = new System.Windows.Forms.TextBox();
+            this.cmbHRDirectionCh05 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxOnCh11 = new System.Windows.Forms.TextBox();
+            this.tbxHRMaxDurRecCh02 = new System.Windows.Forms.TextBox();
+            this.cmbHRDirectionCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbHRDirectionCh06 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxDurRecCh05 = new System.Windows.Forms.TextBox();
+            this.tbxHRMaxDurRecCh07 = new System.Windows.Forms.TextBox();
+            this.cmbHRDirectionCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbHRDirectionCh08 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxDurRecCh04 = new System.Windows.Forms.TextBox();
+            this.tbxHRMaxDurRecCh03 = new System.Windows.Forms.TextBox();
+            this.cmbHRDirectionCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbHRDirectionCh07 = new System.Windows.Forms.ComboBox();
+            this.tbxHRMaxDurRecCh06 = new System.Windows.Forms.TextBox();
             this.tabPage14 = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnHRCard1 = new System.Windows.Forms.Button();
+            this.btnHRGenerate = new System.Windows.Forms.Button();
+            this.btnHRCard6 = new System.Windows.Forms.Button();
+            this.btnHRCard5 = new System.Windows.Forms.Button();
+            this.btnHRCard4 = new System.Windows.Forms.Button();
+            this.btnHRCard3 = new System.Windows.Forms.Button();
+            this.btnHRCard2 = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
@@ -1790,6 +1785,7 @@ namespace M1ConfigGenerator
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.panelMenu.Controls.Add(this.btnMenuLC);
+            this.panelMenu.Controls.Add(this.btnMenuHR);
             this.panelMenu.Controls.Add(this.btnMenuHC);
             this.panelMenu.Controls.Add(this.btnMenuDimmer);
             this.panelMenu.Controls.Add(this.btnMenuBreaker);
@@ -1810,7 +1806,7 @@ namespace M1ConfigGenerator
             this.btnMenuLC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuLC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuLC.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMenuLC.Location = new System.Drawing.Point(0, 460);
+            this.btnMenuLC.Location = new System.Drawing.Point(0, 552);
             this.btnMenuLC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMenuLC.Name = "btnMenuLC";
             this.btnMenuLC.Size = new System.Drawing.Size(300, 92);
@@ -1921,8 +1917,27 @@ namespace M1ConfigGenerator
             this.panelMain.Location = new System.Drawing.Point(300, 0);
             this.panelMain.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(2082, 2632);
+            this.panelMain.Size = new System.Drawing.Size(2082, 2689);
             this.panelMain.TabIndex = 2;
+            // 
+            // btnMenuHR
+            // 
+            this.btnMenuHR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnMenuHR.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMenuHR.FlatAppearance.BorderSize = 0;
+            this.btnMenuHR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuHR.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuHR.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMenuHR.Location = new System.Drawing.Point(0, 460);
+            this.btnMenuHR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnMenuHR.Name = "btnMenuHR";
+            this.btnMenuHR.Size = new System.Drawing.Size(300, 92);
+            this.btnMenuHR.TabIndex = 7;
+            this.btnMenuHR.Text = "  HC Relay";
+            this.btnMenuHR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenuHR.UseVisualStyleBackColor = false;
+            this.btnMenuHR.Visible = false;
+            this.btnMenuHR.Click += new System.EventHandler(this.btnMenuHR_Click);
             // 
             // tabControlMain
             // 
@@ -1956,6 +1971,7 @@ namespace M1ConfigGenerator
             // tabMainStart
             // 
             this.tabMainStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabMainStart.Controls.Add(this.cmbStartHR);
             this.tabMainStart.Controls.Add(this.label566);
             this.tabMainStart.Controls.Add(this.label564);
             this.tabMainStart.Controls.Add(this.label565);
@@ -1979,6 +1995,27 @@ namespace M1ConfigGenerator
             this.tabMainStart.Size = new System.Drawing.Size(2074, 1538);
             this.tabMainStart.TabIndex = 1;
             this.tabMainStart.Text = "Start";
+            // 
+            // cmbStartHR
+            // 
+            this.cmbStartHR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbStartHR.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbStartHR.FormattingEnabled = true;
+            this.cmbStartHR.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.cmbStartHR.Location = new System.Drawing.Point(564, 402);
+            this.cmbStartHR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbStartHR.Name = "cmbStartHR";
+            this.cmbStartHR.Size = new System.Drawing.Size(78, 40);
+            this.cmbStartHR.TabIndex = 50;
             // 
             // label566
             // 
@@ -2097,7 +2134,9 @@ namespace M1ConfigGenerator
             "3",
             "4",
             "5",
-            "6"});
+            "6",
+            "7",
+            "8"});
             this.cmbStartHC.Location = new System.Drawing.Point(564, 325);
             this.cmbStartHC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbStartHC.Name = "cmbStartHC";
@@ -2223,6 +2262,8 @@ namespace M1ConfigGenerator
             // 
             // panelAux
             // 
+            this.panelAux.Controls.Add(this.btnAuxCard8);
+            this.panelAux.Controls.Add(this.btnAuxCard7);
             this.panelAux.Controls.Add(this.btnAuxGenerate);
             this.panelAux.Controls.Add(this.btnAuxCard6);
             this.panelAux.Controls.Add(this.btnAuxCard5);
@@ -2237,6 +2278,38 @@ namespace M1ConfigGenerator
             this.panelAux.Size = new System.Drawing.Size(2074, 108);
             this.panelAux.TabIndex = 18;
             // 
+            // btnAuxCard8
+            // 
+            this.btnAuxCard8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnAuxCard8.FlatAppearance.BorderSize = 0;
+            this.btnAuxCard8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAuxCard8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAuxCard8.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAuxCard8.Location = new System.Drawing.Point(1132, 22);
+            this.btnAuxCard8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAuxCard8.Name = "btnAuxCard8";
+            this.btnAuxCard8.Size = new System.Drawing.Size(150, 62);
+            this.btnAuxCard8.TabIndex = 114;
+            this.btnAuxCard8.Text = "Card 8";
+            this.btnAuxCard8.UseVisualStyleBackColor = false;
+            this.btnAuxCard8.Visible = false;
+            // 
+            // btnAuxCard7
+            // 
+            this.btnAuxCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnAuxCard7.FlatAppearance.BorderSize = 0;
+            this.btnAuxCard7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAuxCard7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAuxCard7.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAuxCard7.Location = new System.Drawing.Point(974, 22);
+            this.btnAuxCard7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAuxCard7.Name = "btnAuxCard7";
+            this.btnAuxCard7.Size = new System.Drawing.Size(150, 62);
+            this.btnAuxCard7.TabIndex = 113;
+            this.btnAuxCard7.Text = "Card 7";
+            this.btnAuxCard7.UseVisualStyleBackColor = false;
+            this.btnAuxCard7.Visible = false;
+            // 
             // btnAuxGenerate
             // 
             this.btnAuxGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
@@ -2244,7 +2317,7 @@ namespace M1ConfigGenerator
             this.btnAuxGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAuxGenerate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAuxGenerate.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAuxGenerate.Location = new System.Drawing.Point(1050, 20);
+            this.btnAuxGenerate.Location = new System.Drawing.Point(1292, 20);
             this.btnAuxGenerate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAuxGenerate.Name = "btnAuxGenerate";
             this.btnAuxGenerate.Size = new System.Drawing.Size(150, 62);
@@ -2358,7 +2431,6 @@ namespace M1ConfigGenerator
             // 
             // tabControlAux
             // 
-            this.tabControlAux.Controls.Add(this.tabAuxBlank);
             this.tabControlAux.Controls.Add(this.tabAux1);
             this.tabControlAux.Controls.Add(this.tabAuxGenerated);
             this.tabControlAux.Location = new System.Drawing.Point(0, 108);
@@ -2367,17 +2439,6 @@ namespace M1ConfigGenerator
             this.tabControlAux.SelectedIndex = 0;
             this.tabControlAux.Size = new System.Drawing.Size(2076, 1429);
             this.tabControlAux.TabIndex = 0;
-            // 
-            // tabAuxBlank
-            // 
-            this.tabAuxBlank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabAuxBlank.Location = new System.Drawing.Point(4, 29);
-            this.tabAuxBlank.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabAuxBlank.Name = "tabAuxBlank";
-            this.tabAuxBlank.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabAuxBlank.Size = new System.Drawing.Size(2068, 1396);
-            this.tabAuxBlank.TabIndex = 0;
-            this.tabAuxBlank.Text = "Blank";
             // 
             // tabAux1
             // 
@@ -4649,6 +4710,8 @@ namespace M1ConfigGenerator
             // 
             // panelBreaker
             // 
+            this.panelBreaker.Controls.Add(this.btnBreakerCard8);
+            this.panelBreaker.Controls.Add(this.btnBreakerCard7);
             this.panelBreaker.Controls.Add(this.btnBreakerGenerate);
             this.panelBreaker.Controls.Add(this.btnBreakerCard6);
             this.panelBreaker.Controls.Add(this.btnBreakerCard5);
@@ -4663,6 +4726,38 @@ namespace M1ConfigGenerator
             this.panelBreaker.Size = new System.Drawing.Size(2074, 108);
             this.panelBreaker.TabIndex = 19;
             // 
+            // btnBreakerCard8
+            // 
+            this.btnBreakerCard8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnBreakerCard8.FlatAppearance.BorderSize = 0;
+            this.btnBreakerCard8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBreakerCard8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBreakerCard8.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnBreakerCard8.Location = new System.Drawing.Point(1132, 22);
+            this.btnBreakerCard8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBreakerCard8.Name = "btnBreakerCard8";
+            this.btnBreakerCard8.Size = new System.Drawing.Size(150, 62);
+            this.btnBreakerCard8.TabIndex = 115;
+            this.btnBreakerCard8.Text = "Card 8";
+            this.btnBreakerCard8.UseVisualStyleBackColor = false;
+            this.btnBreakerCard8.Visible = false;
+            // 
+            // btnBreakerCard7
+            // 
+            this.btnBreakerCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnBreakerCard7.FlatAppearance.BorderSize = 0;
+            this.btnBreakerCard7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBreakerCard7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBreakerCard7.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnBreakerCard7.Location = new System.Drawing.Point(974, 22);
+            this.btnBreakerCard7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBreakerCard7.Name = "btnBreakerCard7";
+            this.btnBreakerCard7.Size = new System.Drawing.Size(150, 62);
+            this.btnBreakerCard7.TabIndex = 114;
+            this.btnBreakerCard7.Text = "Card 7";
+            this.btnBreakerCard7.UseVisualStyleBackColor = false;
+            this.btnBreakerCard7.Visible = false;
+            // 
             // btnBreakerGenerate
             // 
             this.btnBreakerGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
@@ -4670,7 +4765,7 @@ namespace M1ConfigGenerator
             this.btnBreakerGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBreakerGenerate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBreakerGenerate.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBreakerGenerate.Location = new System.Drawing.Point(1050, 22);
+            this.btnBreakerGenerate.Location = new System.Drawing.Point(1292, 22);
             this.btnBreakerGenerate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBreakerGenerate.Name = "btnBreakerGenerate";
             this.btnBreakerGenerate.Size = new System.Drawing.Size(150, 62);
@@ -4784,7 +4879,6 @@ namespace M1ConfigGenerator
             // 
             // tabControlBreaker
             // 
-            this.tabControlBreaker.Controls.Add(this.tabBreakerBlank);
             this.tabControlBreaker.Controls.Add(this.tabBreaker1);
             this.tabControlBreaker.Controls.Add(this.tabBreakerGenerated);
             this.tabControlBreaker.Location = new System.Drawing.Point(0, 108);
@@ -4793,17 +4887,6 @@ namespace M1ConfigGenerator
             this.tabControlBreaker.SelectedIndex = 0;
             this.tabControlBreaker.Size = new System.Drawing.Size(2076, 1429);
             this.tabControlBreaker.TabIndex = 0;
-            // 
-            // tabBreakerBlank
-            // 
-            this.tabBreakerBlank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabBreakerBlank.Location = new System.Drawing.Point(4, 29);
-            this.tabBreakerBlank.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabBreakerBlank.Name = "tabBreakerBlank";
-            this.tabBreakerBlank.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabBreakerBlank.Size = new System.Drawing.Size(2068, 1396);
-            this.tabBreakerBlank.TabIndex = 0;
-            this.tabBreakerBlank.Text = "Blank";
             // 
             // tabBreaker1
             // 
@@ -7542,6 +7625,8 @@ namespace M1ConfigGenerator
             // tabMainDimmer
             // 
             this.tabMainDimmer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabMainDimmer.Controls.Add(this.btnDimmerCard8);
+            this.tabMainDimmer.Controls.Add(this.btnDimmerCard7);
             this.tabMainDimmer.Controls.Add(this.btnDimmerGenerate);
             this.tabMainDimmer.Controls.Add(this.tabControlDimmer);
             this.tabMainDimmer.Controls.Add(this.btnDimmerCard6);
@@ -7557,6 +7642,38 @@ namespace M1ConfigGenerator
             this.tabMainDimmer.TabIndex = 4;
             this.tabMainDimmer.Text = "Dimmer";
             // 
+            // btnDimmerCard8
+            // 
+            this.btnDimmerCard8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnDimmerCard8.FlatAppearance.BorderSize = 0;
+            this.btnDimmerCard8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDimmerCard8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDimmerCard8.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDimmerCard8.Location = new System.Drawing.Point(1132, 22);
+            this.btnDimmerCard8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDimmerCard8.Name = "btnDimmerCard8";
+            this.btnDimmerCard8.Size = new System.Drawing.Size(150, 62);
+            this.btnDimmerCard8.TabIndex = 113;
+            this.btnDimmerCard8.Text = "Card 8";
+            this.btnDimmerCard8.UseVisualStyleBackColor = false;
+            this.btnDimmerCard8.Visible = false;
+            // 
+            // btnDimmerCard7
+            // 
+            this.btnDimmerCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnDimmerCard7.FlatAppearance.BorderSize = 0;
+            this.btnDimmerCard7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDimmerCard7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDimmerCard7.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDimmerCard7.Location = new System.Drawing.Point(974, 22);
+            this.btnDimmerCard7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDimmerCard7.Name = "btnDimmerCard7";
+            this.btnDimmerCard7.Size = new System.Drawing.Size(150, 62);
+            this.btnDimmerCard7.TabIndex = 112;
+            this.btnDimmerCard7.Text = "Card 7";
+            this.btnDimmerCard7.UseVisualStyleBackColor = false;
+            this.btnDimmerCard7.Visible = false;
+            // 
             // btnDimmerGenerate
             // 
             this.btnDimmerGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
@@ -7564,7 +7681,7 @@ namespace M1ConfigGenerator
             this.btnDimmerGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDimmerGenerate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDimmerGenerate.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDimmerGenerate.Location = new System.Drawing.Point(1050, 20);
+            this.btnDimmerGenerate.Location = new System.Drawing.Point(1292, 20);
             this.btnDimmerGenerate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDimmerGenerate.Name = "btnDimmerGenerate";
             this.btnDimmerGenerate.Size = new System.Drawing.Size(150, 62);
@@ -7576,7 +7693,6 @@ namespace M1ConfigGenerator
             // 
             // tabControlDimmer
             // 
-            this.tabControlDimmer.Controls.Add(this.tabDimmerBlank);
             this.tabControlDimmer.Controls.Add(this.tabDimmer1);
             this.tabControlDimmer.Controls.Add(this.tabDimmerGenerated);
             this.tabControlDimmer.Location = new System.Drawing.Point(0, 108);
@@ -7585,17 +7701,6 @@ namespace M1ConfigGenerator
             this.tabControlDimmer.SelectedIndex = 0;
             this.tabControlDimmer.Size = new System.Drawing.Size(2076, 1425);
             this.tabControlDimmer.TabIndex = 1;
-            // 
-            // tabDimmerBlank
-            // 
-            this.tabDimmerBlank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabDimmerBlank.Location = new System.Drawing.Point(4, 29);
-            this.tabDimmerBlank.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabDimmerBlank.Name = "tabDimmerBlank";
-            this.tabDimmerBlank.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabDimmerBlank.Size = new System.Drawing.Size(2068, 1392);
-            this.tabDimmerBlank.TabIndex = 0;
-            this.tabDimmerBlank.Text = "Blank";
             // 
             // tabDimmer1
             // 
@@ -11215,6 +11320,8 @@ namespace M1ConfigGenerator
             // 
             // panelHC
             // 
+            this.panelHC.Controls.Add(this.btnHCCard8);
+            this.panelHC.Controls.Add(this.btnHCCard7);
             this.panelHC.Controls.Add(this.btnHCGenerate);
             this.panelHC.Controls.Add(this.btnHCCard6);
             this.panelHC.Controls.Add(this.btnHCCard5);
@@ -11229,6 +11336,40 @@ namespace M1ConfigGenerator
             this.panelHC.Size = new System.Drawing.Size(2074, 108);
             this.panelHC.TabIndex = 20;
             // 
+            // btnHCCard8
+            // 
+            this.btnHCCard8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnHCCard8.FlatAppearance.BorderSize = 0;
+            this.btnHCCard8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHCCard8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHCCard8.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnHCCard8.Location = new System.Drawing.Point(1132, 22);
+            this.btnHCCard8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHCCard8.Name = "btnHCCard8";
+            this.btnHCCard8.Size = new System.Drawing.Size(150, 62);
+            this.btnHCCard8.TabIndex = 114;
+            this.btnHCCard8.Text = "Card 8";
+            this.btnHCCard8.UseVisualStyleBackColor = false;
+            this.btnHCCard8.Visible = false;
+            this.btnHCCard8.Click += new System.EventHandler(this.btnHCCard8_Click);
+            // 
+            // btnHCCard7
+            // 
+            this.btnHCCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnHCCard7.FlatAppearance.BorderSize = 0;
+            this.btnHCCard7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHCCard7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHCCard7.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnHCCard7.Location = new System.Drawing.Point(974, 22);
+            this.btnHCCard7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHCCard7.Name = "btnHCCard7";
+            this.btnHCCard7.Size = new System.Drawing.Size(150, 62);
+            this.btnHCCard7.TabIndex = 113;
+            this.btnHCCard7.Text = "Card 7";
+            this.btnHCCard7.UseVisualStyleBackColor = false;
+            this.btnHCCard7.Visible = false;
+            this.btnHCCard7.Click += new System.EventHandler(this.btnHCCard7_Click);
+            // 
             // btnHCGenerate
             // 
             this.btnHCGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
@@ -11236,7 +11377,7 @@ namespace M1ConfigGenerator
             this.btnHCGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHCGenerate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHCGenerate.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnHCGenerate.Location = new System.Drawing.Point(1050, 22);
+            this.btnHCGenerate.Location = new System.Drawing.Point(1292, 22);
             this.btnHCGenerate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnHCGenerate.Name = "btnHCGenerate";
             this.btnHCGenerate.Size = new System.Drawing.Size(150, 62);
@@ -15457,8 +15598,8 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode01.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "RP UP",
-            "RP DN"});
+            "RP Up",
+            "RP Down"});
             this.cmbHC1Mode01.Location = new System.Drawing.Point(460, 506);
             this.cmbHC1Mode01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbHC1Mode01.Name = "cmbHC1Mode01";
@@ -16110,6 +16251,8 @@ namespace M1ConfigGenerator
             // tabMainLC
             // 
             this.tabMainLC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabMainLC.Controls.Add(this.btnLCCard8);
+            this.tabMainLC.Controls.Add(this.btnLCCard7);
             this.tabMainLC.Controls.Add(this.btnLCGenerate);
             this.tabMainLC.Controls.Add(this.btnLCCard6);
             this.tabMainLC.Controls.Add(this.tabControlLC);
@@ -16125,6 +16268,38 @@ namespace M1ConfigGenerator
             this.tabMainLC.TabIndex = 6;
             this.tabMainLC.Text = "LC";
             // 
+            // btnLCCard8
+            // 
+            this.btnLCCard8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnLCCard8.FlatAppearance.BorderSize = 0;
+            this.btnLCCard8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLCCard8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLCCard8.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnLCCard8.Location = new System.Drawing.Point(1132, 22);
+            this.btnLCCard8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLCCard8.Name = "btnLCCard8";
+            this.btnLCCard8.Size = new System.Drawing.Size(150, 62);
+            this.btnLCCard8.TabIndex = 113;
+            this.btnLCCard8.Text = "Card 8";
+            this.btnLCCard8.UseVisualStyleBackColor = false;
+            this.btnLCCard8.Visible = false;
+            // 
+            // btnLCCard7
+            // 
+            this.btnLCCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnLCCard7.FlatAppearance.BorderSize = 0;
+            this.btnLCCard7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLCCard7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLCCard7.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnLCCard7.Location = new System.Drawing.Point(974, 22);
+            this.btnLCCard7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLCCard7.Name = "btnLCCard7";
+            this.btnLCCard7.Size = new System.Drawing.Size(150, 62);
+            this.btnLCCard7.TabIndex = 112;
+            this.btnLCCard7.Text = "Card 7";
+            this.btnLCCard7.UseVisualStyleBackColor = false;
+            this.btnLCCard7.Visible = false;
+            // 
             // btnLCGenerate
             // 
             this.btnLCGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
@@ -16132,7 +16307,7 @@ namespace M1ConfigGenerator
             this.btnLCGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLCGenerate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLCGenerate.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLCGenerate.Location = new System.Drawing.Point(1050, 22);
+            this.btnLCGenerate.Location = new System.Drawing.Point(1292, 22);
             this.btnLCGenerate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLCGenerate.Name = "btnLCGenerate";
             this.btnLCGenerate.Size = new System.Drawing.Size(150, 62);
@@ -16164,7 +16339,6 @@ namespace M1ConfigGenerator
             this.tabControlLC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControlLC.Controls.Add(this.tabLCBlank);
             this.tabControlLC.Controls.Add(this.tabLC1);
             this.tabControlLC.Controls.Add(this.tabLCGenerated);
             this.tabControlLC.Location = new System.Drawing.Point(0, 108);
@@ -16173,17 +16347,6 @@ namespace M1ConfigGenerator
             this.tabControlLC.SelectedIndex = 0;
             this.tabControlLC.Size = new System.Drawing.Size(2076, 1737);
             this.tabControlLC.TabIndex = 2;
-            // 
-            // tabLCBlank
-            // 
-            this.tabLCBlank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabLCBlank.Location = new System.Drawing.Point(4, 29);
-            this.tabLCBlank.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabLCBlank.Name = "tabLCBlank";
-            this.tabLCBlank.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabLCBlank.Size = new System.Drawing.Size(2068, 1704);
-            this.tabLCBlank.TabIndex = 0;
-            this.tabLCBlank.Text = "Blank";
             // 
             // tabLC1
             // 
@@ -20455,24 +20618,59 @@ namespace M1ConfigGenerator
             // tabMainHR
             // 
             this.tabMainHR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabMainHR.Controls.Add(this.btnHRCard8);
+            this.tabMainHR.Controls.Add(this.btnHRCard7);
             this.tabMainHR.Controls.Add(this.tablessControl5);
-            this.tabMainHR.Controls.Add(this.button7);
-            this.tabMainHR.Controls.Add(this.button1);
-            this.tabMainHR.Controls.Add(this.button2);
-            this.tabMainHR.Controls.Add(this.button3);
-            this.tabMainHR.Controls.Add(this.button4);
-            this.tabMainHR.Controls.Add(this.button5);
-            this.tabMainHR.Controls.Add(this.button6);
+            this.tabMainHR.Controls.Add(this.btnHRCard1);
+            this.tabMainHR.Controls.Add(this.btnHRGenerate);
+            this.tabMainHR.Controls.Add(this.btnHRCard6);
+            this.tabMainHR.Controls.Add(this.btnHRCard5);
+            this.tabMainHR.Controls.Add(this.btnHRCard4);
+            this.tabMainHR.Controls.Add(this.btnHRCard3);
+            this.tabMainHR.Controls.Add(this.btnHRCard2);
             this.tabMainHR.Location = new System.Drawing.Point(4, 29);
             this.tabMainHR.Name = "tabMainHR";
-            this.tabMainHR.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabMainHR.Padding = new System.Windows.Forms.Padding(3);
             this.tabMainHR.Size = new System.Drawing.Size(2074, 1538);
             this.tabMainHR.TabIndex = 7;
             this.tabMainHR.Text = "HC Relay";
             // 
+            // btnHRCard8
+            // 
+            this.btnHRCard8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnHRCard8.FlatAppearance.BorderSize = 0;
+            this.btnHRCard8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHRCard8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHRCard8.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnHRCard8.Location = new System.Drawing.Point(1132, 22);
+            this.btnHRCard8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHRCard8.Name = "btnHRCard8";
+            this.btnHRCard8.Size = new System.Drawing.Size(150, 62);
+            this.btnHRCard8.TabIndex = 123;
+            this.btnHRCard8.Text = "Card 8";
+            this.btnHRCard8.UseVisualStyleBackColor = false;
+            this.btnHRCard8.Visible = false;
+            this.btnHRCard8.Click += new System.EventHandler(this.btnHRCard8_Click);
+            // 
+            // btnHRCard7
+            // 
+            this.btnHRCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnHRCard7.FlatAppearance.BorderSize = 0;
+            this.btnHRCard7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHRCard7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHRCard7.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnHRCard7.Location = new System.Drawing.Point(974, 22);
+            this.btnHRCard7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHRCard7.Name = "btnHRCard7";
+            this.btnHRCard7.Size = new System.Drawing.Size(150, 62);
+            this.btnHRCard7.TabIndex = 122;
+            this.btnHRCard7.Text = "Card 7";
+            this.btnHRCard7.UseVisualStyleBackColor = false;
+            this.btnHRCard7.Visible = false;
+            this.btnHRCard7.Click += new System.EventHandler(this.btnHRCard7_Click);
+            // 
             // tablessControl5
             // 
-            this.tablessControl5.Controls.Add(this.tabPage12);
             this.tablessControl5.Controls.Add(this.tabPage13);
             this.tablessControl5.Controls.Add(this.tabPage14);
             this.tablessControl5.Location = new System.Drawing.Point(0, 108);
@@ -20481,127 +20679,117 @@ namespace M1ConfigGenerator
             this.tablessControl5.Size = new System.Drawing.Size(2078, 1342);
             this.tablessControl5.TabIndex = 121;
             // 
-            // tabPage12
-            // 
-            this.tabPage12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabPage12.Location = new System.Drawing.Point(4, 29);
-            this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage12.Size = new System.Drawing.Size(2070, 1309);
-            this.tabPage12.TabIndex = 0;
-            this.tabPage12.Text = "Blank";
-            // 
             // tabPage13
             // 
             this.tabPage13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabPage13.Controls.Add(this.comboBox87);
-            this.tabPage13.Controls.Add(this.comboBox88);
-            this.tabPage13.Controls.Add(this.comboBox89);
-            this.tabPage13.Controls.Add(this.comboBox90);
-            this.tabPage13.Controls.Add(this.comboBox91);
-            this.tabPage13.Controls.Add(this.comboBox92);
-            this.tabPage13.Controls.Add(this.comboBox93);
-            this.tabPage13.Controls.Add(this.comboBox94);
-            this.tabPage13.Controls.Add(this.comboBox95);
-            this.tabPage13.Controls.Add(this.comboBox96);
-            this.tabPage13.Controls.Add(this.comboBox97);
-            this.tabPage13.Controls.Add(this.comboBox98);
-            this.tabPage13.Controls.Add(this.comboBox99);
-            this.tabPage13.Controls.Add(this.comboBox100);
-            this.tabPage13.Controls.Add(this.comboBox101);
-            this.tabPage13.Controls.Add(this.comboBox102);
-            this.tabPage13.Controls.Add(this.comboBox103);
-            this.tabPage13.Controls.Add(this.comboBox104);
-            this.tabPage13.Controls.Add(this.comboBox105);
-            this.tabPage13.Controls.Add(this.comboBox106);
-            this.tabPage13.Controls.Add(this.comboBox107);
-            this.tabPage13.Controls.Add(this.comboBox108);
-            this.tabPage13.Controls.Add(this.comboBox109);
-            this.tabPage13.Controls.Add(this.comboBox110);
-            this.tabPage13.Controls.Add(this.checkBox39);
-            this.tabPage13.Controls.Add(this.checkBox44);
-            this.tabPage13.Controls.Add(this.checkBox45);
-            this.tabPage13.Controls.Add(this.checkBox46);
-            this.tabPage13.Controls.Add(this.checkBox47);
-            this.tabPage13.Controls.Add(this.checkBox48);
-            this.tabPage13.Controls.Add(this.checkBox49);
-            this.tabPage13.Controls.Add(this.checkBox50);
-            this.tabPage13.Controls.Add(this.checkBox51);
-            this.tabPage13.Controls.Add(this.checkBox52);
-            this.tabPage13.Controls.Add(this.checkBox53);
-            this.tabPage13.Controls.Add(this.checkBox54);
-            this.tabPage13.Controls.Add(this.checkBox55);
-            this.tabPage13.Controls.Add(this.checkBox56);
-            this.tabPage13.Controls.Add(this.checkBox57);
-            this.tabPage13.Controls.Add(this.checkBox58);
-            this.tabPage13.Controls.Add(this.checkBox59);
-            this.tabPage13.Controls.Add(this.checkBox60);
-            this.tabPage13.Controls.Add(this.checkBox61);
-            this.tabPage13.Controls.Add(this.checkBox62);
-            this.tabPage13.Controls.Add(this.checkBox63);
-            this.tabPage13.Controls.Add(this.checkBox64);
-            this.tabPage13.Controls.Add(this.checkBox65);
-            this.tabPage13.Controls.Add(this.checkBox66);
-            this.tabPage13.Controls.Add(this.checkBox67);
-            this.tabPage13.Controls.Add(this.checkBox68);
-            this.tabPage13.Controls.Add(this.checkBox69);
-            this.tabPage13.Controls.Add(this.checkBox70);
-            this.tabPage13.Controls.Add(this.checkBox71);
-            this.tabPage13.Controls.Add(this.checkBox72);
-            this.tabPage13.Controls.Add(this.checkBox73);
-            this.tabPage13.Controls.Add(this.checkBox74);
-            this.tabPage13.Controls.Add(this.checkBox75);
-            this.tabPage13.Controls.Add(this.checkBox76);
-            this.tabPage13.Controls.Add(this.checkBox77);
-            this.tabPage13.Controls.Add(this.checkBox78);
-            this.tabPage13.Controls.Add(this.checkBox79);
-            this.tabPage13.Controls.Add(this.checkBox80);
-            this.tabPage13.Controls.Add(this.checkBox81);
-            this.tabPage13.Controls.Add(this.checkBox82);
-            this.tabPage13.Controls.Add(this.checkBox83);
-            this.tabPage13.Controls.Add(this.checkBox84);
-            this.tabPage13.Controls.Add(this.checkBox85);
-            this.tabPage13.Controls.Add(this.checkBox86);
-            this.tabPage13.Controls.Add(this.checkBox87);
-            this.tabPage13.Controls.Add(this.checkBox88);
-            this.tabPage13.Controls.Add(this.checkBox89);
-            this.tabPage13.Controls.Add(this.checkBox90);
-            this.tabPage13.Controls.Add(this.label701);
-            this.tabPage13.Controls.Add(this.label702);
-            this.tabPage13.Controls.Add(this.label703);
-            this.tabPage13.Controls.Add(this.label704);
-            this.tabPage13.Controls.Add(this.label705);
-            this.tabPage13.Controls.Add(this.label706);
-            this.tabPage13.Controls.Add(this.label707);
-            this.tabPage13.Controls.Add(this.label708);
-            this.tabPage13.Controls.Add(this.label709);
-            this.tabPage13.Controls.Add(this.label710);
-            this.tabPage13.Controls.Add(this.label711);
-            this.tabPage13.Controls.Add(this.label712);
-            this.tabPage13.Controls.Add(this.comboBox63);
-            this.tabPage13.Controls.Add(this.comboBox64);
-            this.tabPage13.Controls.Add(this.comboBox65);
-            this.tabPage13.Controls.Add(this.comboBox66);
-            this.tabPage13.Controls.Add(this.comboBox67);
-            this.tabPage13.Controls.Add(this.comboBox68);
-            this.tabPage13.Controls.Add(this.comboBox69);
-            this.tabPage13.Controls.Add(this.comboBox70);
-            this.tabPage13.Controls.Add(this.comboBox71);
-            this.tabPage13.Controls.Add(this.comboBox72);
-            this.tabPage13.Controls.Add(this.comboBox73);
-            this.tabPage13.Controls.Add(this.comboBox74);
-            this.tabPage13.Controls.Add(this.comboBox75);
-            this.tabPage13.Controls.Add(this.comboBox76);
-            this.tabPage13.Controls.Add(this.comboBox77);
-            this.tabPage13.Controls.Add(this.comboBox78);
-            this.tabPage13.Controls.Add(this.comboBox79);
-            this.tabPage13.Controls.Add(this.comboBox80);
-            this.tabPage13.Controls.Add(this.comboBox81);
-            this.tabPage13.Controls.Add(this.comboBox82);
-            this.tabPage13.Controls.Add(this.comboBox83);
-            this.tabPage13.Controls.Add(this.comboBox84);
-            this.tabPage13.Controls.Add(this.comboBox85);
-            this.tabPage13.Controls.Add(this.comboBox86);
+            this.tabPage13.Controls.Add(this.cmbHRQuickStartupCh11);
+            this.tabPage13.Controls.Add(this.cmbHRQuickStartupCh10);
+            this.tabPage13.Controls.Add(this.cmbHRQuickStartupCh09);
+            this.tabPage13.Controls.Add(this.cmbHRQuickStartupCh08);
+            this.tabPage13.Controls.Add(this.cmbHRQuickStartupCh07);
+            this.tabPage13.Controls.Add(this.cmbHRQuickStartupCh06);
+            this.tabPage13.Controls.Add(this.cmbHRQuickStartupCh05);
+            this.tabPage13.Controls.Add(this.cmbHRQuickStartupCh04);
+            this.tabPage13.Controls.Add(this.cmbHRQuickStartupCh03);
+            this.tabPage13.Controls.Add(this.cmbHRQuickStartupCh02);
+            this.tabPage13.Controls.Add(this.cmbHRQuickStartupCh01);
+            this.tabPage13.Controls.Add(this.cmbHRQuickStartupCh00);
+            this.tabPage13.Controls.Add(this.cmbHRQuickModeCh11);
+            this.tabPage13.Controls.Add(this.cmbHRQuickModeCh10);
+            this.tabPage13.Controls.Add(this.cmbHRQuickModeCh09);
+            this.tabPage13.Controls.Add(this.cmbHRQuickModeCh08);
+            this.tabPage13.Controls.Add(this.cmbHRQuickModeCh07);
+            this.tabPage13.Controls.Add(this.cmbHRQuickModeCh06);
+            this.tabPage13.Controls.Add(this.cmbHRQuickModeCh05);
+            this.tabPage13.Controls.Add(this.cmbHRQuickModeCh04);
+            this.tabPage13.Controls.Add(this.cmbHRQuickModeCh03);
+            this.tabPage13.Controls.Add(this.cmbHRQuickModeCh02);
+            this.tabPage13.Controls.Add(this.cmbHRQuickModeCh01);
+            this.tabPage13.Controls.Add(this.cmbHRQuickModeCh00);
+            this.tabPage13.Controls.Add(this.chkHRMG3Ch07);
+            this.tabPage13.Controls.Add(this.chkHRMG4Ch07);
+            this.tabPage13.Controls.Add(this.chkHRMG2Ch07);
+            this.tabPage13.Controls.Add(this.chkHRMG1Ch08);
+            this.tabPage13.Controls.Add(this.chkHRMG1Ch07);
+            this.tabPage13.Controls.Add(this.chkHRMG2Ch08);
+            this.tabPage13.Controls.Add(this.chkHRMG4Ch06);
+            this.tabPage13.Controls.Add(this.chkHRMG3Ch08);
+            this.tabPage13.Controls.Add(this.chkHRMG3Ch06);
+            this.tabPage13.Controls.Add(this.chkHRMG4Ch08);
+            this.tabPage13.Controls.Add(this.chkHRMG2Ch06);
+            this.tabPage13.Controls.Add(this.chkHRMG1Ch09);
+            this.tabPage13.Controls.Add(this.chkHRMG1Ch06);
+            this.tabPage13.Controls.Add(this.chkHRMG2Ch09);
+            this.tabPage13.Controls.Add(this.chkHRMG4Ch05);
+            this.tabPage13.Controls.Add(this.chkHRMG3Ch09);
+            this.tabPage13.Controls.Add(this.chkHRMG3Ch05);
+            this.tabPage13.Controls.Add(this.chkHRMG4Ch09);
+            this.tabPage13.Controls.Add(this.chkHRMG2Ch05);
+            this.tabPage13.Controls.Add(this.chkHRMG1Ch10);
+            this.tabPage13.Controls.Add(this.chkHRMG1Ch05);
+            this.tabPage13.Controls.Add(this.chkHRMG1Ch00);
+            this.tabPage13.Controls.Add(this.chkHRMG2Ch10);
+            this.tabPage13.Controls.Add(this.chkHRMG2Ch00);
+            this.tabPage13.Controls.Add(this.chkHRMG4Ch04);
+            this.tabPage13.Controls.Add(this.chkHRMG3Ch10);
+            this.tabPage13.Controls.Add(this.chkHRMG3Ch00);
+            this.tabPage13.Controls.Add(this.chkHRMG3Ch04);
+            this.tabPage13.Controls.Add(this.chkHRMG4Ch10);
+            this.tabPage13.Controls.Add(this.chkHRMG4Ch00);
+            this.tabPage13.Controls.Add(this.chkHRMG2Ch04);
+            this.tabPage13.Controls.Add(this.chkHRMG1Ch11);
+            this.tabPage13.Controls.Add(this.chkHRMG1Ch01);
+            this.tabPage13.Controls.Add(this.chkHRMG1Ch04);
+            this.tabPage13.Controls.Add(this.chkHRMG2Ch11);
+            this.tabPage13.Controls.Add(this.chkHRMG4Ch03);
+            this.tabPage13.Controls.Add(this.chkHRMG2Ch01);
+            this.tabPage13.Controls.Add(this.chkHRMG3Ch11);
+            this.tabPage13.Controls.Add(this.chkHRMG3Ch03);
+            this.tabPage13.Controls.Add(this.chkHRMG3Ch01);
+            this.tabPage13.Controls.Add(this.chkHRMG4Ch11);
+            this.tabPage13.Controls.Add(this.chkHRMG2Ch03);
+            this.tabPage13.Controls.Add(this.chkHRMG4Ch01);
+            this.tabPage13.Controls.Add(this.chkHRMG1Ch03);
+            this.tabPage13.Controls.Add(this.chkHRMG1Ch02);
+            this.tabPage13.Controls.Add(this.chkHRMG4Ch02);
+            this.tabPage13.Controls.Add(this.chkHRMG2Ch02);
+            this.tabPage13.Controls.Add(this.chkHRMG3Ch02);
+            this.tabPage13.Controls.Add(this.lblHRCh00);
+            this.tabPage13.Controls.Add(this.lblHRCh04);
+            this.tabPage13.Controls.Add(this.lblHRCh05);
+            this.tabPage13.Controls.Add(this.lblHRCh06);
+            this.tabPage13.Controls.Add(this.lblHRCh07);
+            this.tabPage13.Controls.Add(this.lblHRCh08);
+            this.tabPage13.Controls.Add(this.lblHRCh09);
+            this.tabPage13.Controls.Add(this.lblHRCh10);
+            this.tabPage13.Controls.Add(this.lblHRCh11);
+            this.tabPage13.Controls.Add(this.lblHRCh03);
+            this.tabPage13.Controls.Add(this.lblHRCh02);
+            this.tabPage13.Controls.Add(this.lblHRCh01);
+            this.tabPage13.Controls.Add(this.cmbHRQuickOCAmpsCh00);
+            this.tabPage13.Controls.Add(this.cmbHROCTimeCh07);
+            this.tabPage13.Controls.Add(this.cmbHROCTimeCh08);
+            this.tabPage13.Controls.Add(this.cmbHROCTimeCh06);
+            this.tabPage13.Controls.Add(this.cmbHROCTimeCh09);
+            this.tabPage13.Controls.Add(this.cmbHROCTimeCh05);
+            this.tabPage13.Controls.Add(this.cmbHROCTimeCh10);
+            this.tabPage13.Controls.Add(this.cmbHROCTimeCh04);
+            this.tabPage13.Controls.Add(this.cmbHROCTimeCh11);
+            this.tabPage13.Controls.Add(this.cmbHROCTimeCh03);
+            this.tabPage13.Controls.Add(this.cmbHROCTimeCh02);
+            this.tabPage13.Controls.Add(this.cmbHROCTimeCh01);
+            this.tabPage13.Controls.Add(this.cmbHROCTimeCh00);
+            this.tabPage13.Controls.Add(this.cmbHRQuickOCAmpsCh11);
+            this.tabPage13.Controls.Add(this.cmbHRQuickOCAmpsCh10);
+            this.tabPage13.Controls.Add(this.cmbHRQuickOCAmpsCh09);
+            this.tabPage13.Controls.Add(this.cmbHRQuickOCAmpsCh08);
+            this.tabPage13.Controls.Add(this.cmbHRQuickOCAmpsCh07);
+            this.tabPage13.Controls.Add(this.cmbHRQuickOCAmpsCh01);
+            this.tabPage13.Controls.Add(this.cmbHRQuickOCAmpsCh06);
+            this.tabPage13.Controls.Add(this.cmbHRQuickOCAmpsCh02);
+            this.tabPage13.Controls.Add(this.cmbHRQuickOCAmpsCh05);
+            this.tabPage13.Controls.Add(this.cmbHRQuickOCAmpsCh03);
+            this.tabPage13.Controls.Add(this.cmbHRQuickOCAmpsCh04);
             this.tabPage13.Controls.Add(this.label692);
             this.tabPage13.Controls.Add(this.label693);
             this.tabPage13.Controls.Add(this.label694);
@@ -20611,1006 +20799,1029 @@ namespace M1ConfigGenerator
             this.tabPage13.Controls.Add(this.label698);
             this.tabPage13.Controls.Add(this.label699);
             this.tabPage13.Controls.Add(this.label700);
-            this.tabPage13.Controls.Add(this.textBox76);
+            this.tabPage13.Controls.Add(this.tbxHRBaseInstance);
             this.tabPage13.Controls.Add(this.label681);
-            this.tabPage13.Controls.Add(this.textBox73);
-            this.tabPage13.Controls.Add(this.checkBox38);
-            this.tabPage13.Controls.Add(this.checkBox40);
-            this.tabPage13.Controls.Add(this.comboBox61);
+            this.tabPage13.Controls.Add(this.tbxHRCardLetter);
+            this.tabPage13.Controls.Add(this.chkHRTabVis);
+            this.tabPage13.Controls.Add(this.chkHRShade);
+            this.tabPage13.Controls.Add(this.cmbHRPanelNum);
             this.tabPage13.Controls.Add(this.label687);
-            this.tabPage13.Controls.Add(this.comboBox62);
+            this.tabPage13.Controls.Add(this.cmbHRCardNum);
             this.tabPage13.Controls.Add(this.label688);
             this.tabPage13.Controls.Add(this.label689);
-            this.tabPage13.Controls.Add(this.textBox74);
+            this.tabPage13.Controls.Add(this.tbxHRCfgRev);
             this.tabPage13.Controls.Add(this.label690);
-            this.tabPage13.Controls.Add(this.textBox75);
+            this.tabPage13.Controls.Add(this.tbxHRCfgType);
             this.tabPage13.Controls.Add(this.label691);
-            this.tabPage13.Controls.Add(this.checkBox41);
-            this.tabPage13.Controls.Add(this.checkBox42);
-            this.tabPage13.Controls.Add(this.checkBox43);
+            this.tabPage13.Controls.Add(this.chkHRDCMotor);
+            this.tabPage13.Controls.Add(this.chkHRForce);
             this.tabPage13.Controls.Add(this.tablessControl6);
             this.tabPage13.Location = new System.Drawing.Point(4, 29);
             this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage13.Size = new System.Drawing.Size(2070, 1309);
             this.tabPage13.TabIndex = 1;
             this.tabPage13.Text = "HC Relay 1";
             // 
-            // comboBox87
+            // cmbHRQuickStartupCh11
             // 
-            this.comboBox87.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox87.FormattingEnabled = true;
-            this.comboBox87.Items.AddRange(new object[] {
+            this.cmbHRQuickStartupCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh11.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh11.Items.AddRange(new object[] {
             "Off",
             "Latch",
             "Constant"});
-            this.comboBox87.Location = new System.Drawing.Point(1540, 552);
-            this.comboBox87.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox87.Name = "comboBox87";
-            this.comboBox87.Size = new System.Drawing.Size(97, 28);
-            this.comboBox87.TabIndex = 422;
+            this.cmbHRQuickStartupCh11.Location = new System.Drawing.Point(1540, 552);
+            this.cmbHRQuickStartupCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickStartupCh11.Name = "cmbHRQuickStartupCh11";
+            this.cmbHRQuickStartupCh11.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickStartupCh11.TabIndex = 422;
+            this.cmbHRQuickStartupCh11.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh11_SelectedIndexChanged);
             // 
-            // comboBox88
+            // cmbHRQuickStartupCh10
             // 
-            this.comboBox88.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox88.FormattingEnabled = true;
-            this.comboBox88.Items.AddRange(new object[] {
+            this.cmbHRQuickStartupCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh10.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh10.Items.AddRange(new object[] {
             "Off",
             "Latch",
             "Constant"});
-            this.comboBox88.Location = new System.Drawing.Point(1432, 552);
-            this.comboBox88.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox88.Name = "comboBox88";
-            this.comboBox88.Size = new System.Drawing.Size(97, 28);
-            this.comboBox88.TabIndex = 421;
+            this.cmbHRQuickStartupCh10.Location = new System.Drawing.Point(1432, 552);
+            this.cmbHRQuickStartupCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickStartupCh10.Name = "cmbHRQuickStartupCh10";
+            this.cmbHRQuickStartupCh10.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickStartupCh10.TabIndex = 421;
+            this.cmbHRQuickStartupCh10.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh10_SelectedIndexChanged);
             // 
-            // comboBox89
+            // cmbHRQuickStartupCh09
             // 
-            this.comboBox89.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox89.FormattingEnabled = true;
-            this.comboBox89.Items.AddRange(new object[] {
+            this.cmbHRQuickStartupCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh09.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh09.Items.AddRange(new object[] {
             "Off",
             "Latch",
             "Constant"});
-            this.comboBox89.Location = new System.Drawing.Point(1324, 552);
-            this.comboBox89.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox89.Name = "comboBox89";
-            this.comboBox89.Size = new System.Drawing.Size(97, 28);
-            this.comboBox89.TabIndex = 420;
+            this.cmbHRQuickStartupCh09.Location = new System.Drawing.Point(1324, 552);
+            this.cmbHRQuickStartupCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickStartupCh09.Name = "cmbHRQuickStartupCh09";
+            this.cmbHRQuickStartupCh09.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickStartupCh09.TabIndex = 420;
+            this.cmbHRQuickStartupCh09.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh09_SelectedIndexChanged);
             // 
-            // comboBox90
+            // cmbHRQuickStartupCh08
             // 
-            this.comboBox90.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox90.FormattingEnabled = true;
-            this.comboBox90.Items.AddRange(new object[] {
+            this.cmbHRQuickStartupCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh08.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh08.Items.AddRange(new object[] {
             "Off",
             "Latch",
             "Constant"});
-            this.comboBox90.Location = new System.Drawing.Point(1216, 552);
-            this.comboBox90.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox90.Name = "comboBox90";
-            this.comboBox90.Size = new System.Drawing.Size(97, 28);
-            this.comboBox90.TabIndex = 419;
+            this.cmbHRQuickStartupCh08.Location = new System.Drawing.Point(1216, 552);
+            this.cmbHRQuickStartupCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickStartupCh08.Name = "cmbHRQuickStartupCh08";
+            this.cmbHRQuickStartupCh08.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickStartupCh08.TabIndex = 419;
+            this.cmbHRQuickStartupCh08.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh08_SelectedIndexChanged);
             // 
-            // comboBox91
+            // cmbHRQuickStartupCh07
             // 
-            this.comboBox91.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox91.FormattingEnabled = true;
-            this.comboBox91.Items.AddRange(new object[] {
+            this.cmbHRQuickStartupCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh07.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh07.Items.AddRange(new object[] {
             "Off",
             "Latch",
             "Constant"});
-            this.comboBox91.Location = new System.Drawing.Point(1108, 552);
-            this.comboBox91.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox91.Name = "comboBox91";
-            this.comboBox91.Size = new System.Drawing.Size(97, 28);
-            this.comboBox91.TabIndex = 418;
+            this.cmbHRQuickStartupCh07.Location = new System.Drawing.Point(1108, 552);
+            this.cmbHRQuickStartupCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickStartupCh07.Name = "cmbHRQuickStartupCh07";
+            this.cmbHRQuickStartupCh07.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickStartupCh07.TabIndex = 418;
+            this.cmbHRQuickStartupCh07.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh07_SelectedIndexChanged);
             // 
-            // comboBox92
+            // cmbHRQuickStartupCh06
             // 
-            this.comboBox92.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox92.FormattingEnabled = true;
-            this.comboBox92.Items.AddRange(new object[] {
+            this.cmbHRQuickStartupCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh06.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh06.Items.AddRange(new object[] {
             "Off",
             "Latch",
             "Constant"});
-            this.comboBox92.Location = new System.Drawing.Point(1000, 552);
-            this.comboBox92.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox92.Name = "comboBox92";
-            this.comboBox92.Size = new System.Drawing.Size(97, 28);
-            this.comboBox92.TabIndex = 417;
+            this.cmbHRQuickStartupCh06.Location = new System.Drawing.Point(1000, 552);
+            this.cmbHRQuickStartupCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickStartupCh06.Name = "cmbHRQuickStartupCh06";
+            this.cmbHRQuickStartupCh06.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickStartupCh06.TabIndex = 417;
+            this.cmbHRQuickStartupCh06.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh06_SelectedIndexChanged);
             // 
-            // comboBox93
+            // cmbHRQuickStartupCh05
             // 
-            this.comboBox93.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox93.FormattingEnabled = true;
-            this.comboBox93.Items.AddRange(new object[] {
+            this.cmbHRQuickStartupCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh05.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh05.Items.AddRange(new object[] {
             "Off",
             "Latch",
             "Constant"});
-            this.comboBox93.Location = new System.Drawing.Point(892, 552);
-            this.comboBox93.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox93.Name = "comboBox93";
-            this.comboBox93.Size = new System.Drawing.Size(97, 28);
-            this.comboBox93.TabIndex = 416;
+            this.cmbHRQuickStartupCh05.Location = new System.Drawing.Point(892, 552);
+            this.cmbHRQuickStartupCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickStartupCh05.Name = "cmbHRQuickStartupCh05";
+            this.cmbHRQuickStartupCh05.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickStartupCh05.TabIndex = 416;
+            this.cmbHRQuickStartupCh05.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh05_SelectedIndexChanged);
             // 
-            // comboBox94
+            // cmbHRQuickStartupCh04
             // 
-            this.comboBox94.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox94.FormattingEnabled = true;
-            this.comboBox94.Items.AddRange(new object[] {
+            this.cmbHRQuickStartupCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh04.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh04.Items.AddRange(new object[] {
             "Off",
             "Latch",
             "Constant"});
-            this.comboBox94.Location = new System.Drawing.Point(784, 552);
-            this.comboBox94.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox94.Name = "comboBox94";
-            this.comboBox94.Size = new System.Drawing.Size(97, 28);
-            this.comboBox94.TabIndex = 415;
+            this.cmbHRQuickStartupCh04.Location = new System.Drawing.Point(784, 552);
+            this.cmbHRQuickStartupCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickStartupCh04.Name = "cmbHRQuickStartupCh04";
+            this.cmbHRQuickStartupCh04.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickStartupCh04.TabIndex = 415;
+            this.cmbHRQuickStartupCh04.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh04_SelectedIndexChanged);
             // 
-            // comboBox95
+            // cmbHRQuickStartupCh03
             // 
-            this.comboBox95.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox95.FormattingEnabled = true;
-            this.comboBox95.Items.AddRange(new object[] {
+            this.cmbHRQuickStartupCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh03.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh03.Items.AddRange(new object[] {
             "Off",
             "Latch",
             "Constant"});
-            this.comboBox95.Location = new System.Drawing.Point(676, 552);
-            this.comboBox95.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox95.Name = "comboBox95";
-            this.comboBox95.Size = new System.Drawing.Size(97, 28);
-            this.comboBox95.TabIndex = 414;
+            this.cmbHRQuickStartupCh03.Location = new System.Drawing.Point(676, 552);
+            this.cmbHRQuickStartupCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickStartupCh03.Name = "cmbHRQuickStartupCh03";
+            this.cmbHRQuickStartupCh03.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickStartupCh03.TabIndex = 414;
+            this.cmbHRQuickStartupCh03.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh03_SelectedIndexChanged);
             // 
-            // comboBox96
+            // cmbHRQuickStartupCh02
             // 
-            this.comboBox96.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox96.FormattingEnabled = true;
-            this.comboBox96.Items.AddRange(new object[] {
+            this.cmbHRQuickStartupCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh02.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh02.Items.AddRange(new object[] {
             "Off",
             "Latch",
             "Constant"});
-            this.comboBox96.Location = new System.Drawing.Point(568, 552);
-            this.comboBox96.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox96.Name = "comboBox96";
-            this.comboBox96.Size = new System.Drawing.Size(97, 28);
-            this.comboBox96.TabIndex = 413;
+            this.cmbHRQuickStartupCh02.Location = new System.Drawing.Point(568, 552);
+            this.cmbHRQuickStartupCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickStartupCh02.Name = "cmbHRQuickStartupCh02";
+            this.cmbHRQuickStartupCh02.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickStartupCh02.TabIndex = 413;
+            this.cmbHRQuickStartupCh02.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh02_SelectedIndexChanged);
             // 
-            // comboBox97
+            // cmbHRQuickStartupCh01
             // 
-            this.comboBox97.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox97.FormattingEnabled = true;
-            this.comboBox97.Items.AddRange(new object[] {
+            this.cmbHRQuickStartupCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh01.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh01.Items.AddRange(new object[] {
             "Off",
             "Latch",
             "Constant"});
-            this.comboBox97.Location = new System.Drawing.Point(460, 552);
-            this.comboBox97.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox97.Name = "comboBox97";
-            this.comboBox97.Size = new System.Drawing.Size(97, 28);
-            this.comboBox97.TabIndex = 412;
+            this.cmbHRQuickStartupCh01.Location = new System.Drawing.Point(460, 552);
+            this.cmbHRQuickStartupCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickStartupCh01.Name = "cmbHRQuickStartupCh01";
+            this.cmbHRQuickStartupCh01.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickStartupCh01.TabIndex = 412;
+            this.cmbHRQuickStartupCh01.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh01_SelectedIndexChanged);
             // 
-            // comboBox98
+            // cmbHRQuickStartupCh00
             // 
-            this.comboBox98.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox98.FormattingEnabled = true;
-            this.comboBox98.Items.AddRange(new object[] {
+            this.cmbHRQuickStartupCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh00.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh00.Items.AddRange(new object[] {
             "Off",
             "Latch",
             "Constant"});
-            this.comboBox98.Location = new System.Drawing.Point(352, 552);
-            this.comboBox98.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox98.Name = "comboBox98";
-            this.comboBox98.Size = new System.Drawing.Size(97, 28);
-            this.comboBox98.TabIndex = 411;
+            this.cmbHRQuickStartupCh00.Location = new System.Drawing.Point(352, 552);
+            this.cmbHRQuickStartupCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickStartupCh00.Name = "cmbHRQuickStartupCh00";
+            this.cmbHRQuickStartupCh00.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickStartupCh00.TabIndex = 411;
+            this.cmbHRQuickStartupCh00.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh00_SelectedIndexChanged);
             // 
-            // comboBox99
+            // cmbHRQuickModeCh11
             // 
-            this.comboBox99.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox99.FormattingEnabled = true;
-            this.comboBox99.Items.AddRange(new object[] {
+            this.cmbHRQuickModeCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh11.FormattingEnabled = true;
+            this.cmbHRQuickModeCh11.Items.AddRange(new object[] {
             "12V+",
             "Ground",
             "RP DN"});
-            this.comboBox99.Location = new System.Drawing.Point(1540, 506);
-            this.comboBox99.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox99.Name = "comboBox99";
-            this.comboBox99.Size = new System.Drawing.Size(97, 28);
-            this.comboBox99.TabIndex = 410;
+            this.cmbHRQuickModeCh11.Location = new System.Drawing.Point(1540, 506);
+            this.cmbHRQuickModeCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickModeCh11.Name = "cmbHRQuickModeCh11";
+            this.cmbHRQuickModeCh11.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickModeCh11.TabIndex = 410;
+            this.cmbHRQuickModeCh11.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh11_SelectedIndexChanged);
             // 
-            // comboBox100
+            // cmbHRQuickModeCh10
             // 
-            this.comboBox100.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox100.FormattingEnabled = true;
-            this.comboBox100.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.comboBox100.Location = new System.Drawing.Point(1432, 506);
-            this.comboBox100.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox100.Name = "comboBox100";
-            this.comboBox100.Size = new System.Drawing.Size(97, 28);
-            this.comboBox100.TabIndex = 409;
-            // 
-            // comboBox101
-            // 
-            this.comboBox101.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox101.FormattingEnabled = true;
-            this.comboBox101.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.comboBox101.Location = new System.Drawing.Point(1324, 506);
-            this.comboBox101.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox101.Name = "comboBox101";
-            this.comboBox101.Size = new System.Drawing.Size(97, 28);
-            this.comboBox101.TabIndex = 408;
-            // 
-            // comboBox102
-            // 
-            this.comboBox102.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox102.FormattingEnabled = true;
-            this.comboBox102.Items.AddRange(new object[] {
+            this.cmbHRQuickModeCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh10.FormattingEnabled = true;
+            this.cmbHRQuickModeCh10.Items.AddRange(new object[] {
             "12V+",
             "Ground",
             "RP UP",
             "RP DN"});
-            this.comboBox102.Location = new System.Drawing.Point(1216, 506);
-            this.comboBox102.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox102.Name = "comboBox102";
-            this.comboBox102.Size = new System.Drawing.Size(97, 28);
-            this.comboBox102.TabIndex = 407;
+            this.cmbHRQuickModeCh10.Location = new System.Drawing.Point(1432, 506);
+            this.cmbHRQuickModeCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickModeCh10.Name = "cmbHRQuickModeCh10";
+            this.cmbHRQuickModeCh10.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickModeCh10.TabIndex = 409;
+            this.cmbHRQuickModeCh10.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh10_SelectedIndexChanged);
             // 
-            // comboBox103
+            // cmbHRQuickModeCh09
             // 
-            this.comboBox103.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox103.FormattingEnabled = true;
-            this.comboBox103.Items.AddRange(new object[] {
+            this.cmbHRQuickModeCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh09.FormattingEnabled = true;
+            this.cmbHRQuickModeCh09.Items.AddRange(new object[] {
             "12V+",
             "Ground",
             "RP UP",
             "RP DN"});
-            this.comboBox103.Location = new System.Drawing.Point(1108, 506);
-            this.comboBox103.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox103.Name = "comboBox103";
-            this.comboBox103.Size = new System.Drawing.Size(97, 28);
-            this.comboBox103.TabIndex = 406;
+            this.cmbHRQuickModeCh09.Location = new System.Drawing.Point(1324, 506);
+            this.cmbHRQuickModeCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickModeCh09.Name = "cmbHRQuickModeCh09";
+            this.cmbHRQuickModeCh09.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickModeCh09.TabIndex = 408;
+            this.cmbHRQuickModeCh09.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh09_SelectedIndexChanged);
             // 
-            // comboBox104
+            // cmbHRQuickModeCh08
             // 
-            this.comboBox104.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox104.FormattingEnabled = true;
-            this.comboBox104.Items.AddRange(new object[] {
+            this.cmbHRQuickModeCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh08.FormattingEnabled = true;
+            this.cmbHRQuickModeCh08.Items.AddRange(new object[] {
             "12V+",
             "Ground",
             "RP UP",
             "RP DN"});
-            this.comboBox104.Location = new System.Drawing.Point(1000, 506);
-            this.comboBox104.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox104.Name = "comboBox104";
-            this.comboBox104.Size = new System.Drawing.Size(97, 28);
-            this.comboBox104.TabIndex = 405;
+            this.cmbHRQuickModeCh08.Location = new System.Drawing.Point(1216, 506);
+            this.cmbHRQuickModeCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickModeCh08.Name = "cmbHRQuickModeCh08";
+            this.cmbHRQuickModeCh08.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickModeCh08.TabIndex = 407;
+            this.cmbHRQuickModeCh08.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh08_SelectedIndexChanged);
             // 
-            // comboBox105
+            // cmbHRQuickModeCh07
             // 
-            this.comboBox105.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox105.FormattingEnabled = true;
-            this.comboBox105.Items.AddRange(new object[] {
+            this.cmbHRQuickModeCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh07.FormattingEnabled = true;
+            this.cmbHRQuickModeCh07.Items.AddRange(new object[] {
             "12V+",
             "Ground",
             "RP UP",
             "RP DN"});
-            this.comboBox105.Location = new System.Drawing.Point(892, 506);
-            this.comboBox105.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox105.Name = "comboBox105";
-            this.comboBox105.Size = new System.Drawing.Size(97, 28);
-            this.comboBox105.TabIndex = 404;
+            this.cmbHRQuickModeCh07.Location = new System.Drawing.Point(1108, 506);
+            this.cmbHRQuickModeCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickModeCh07.Name = "cmbHRQuickModeCh07";
+            this.cmbHRQuickModeCh07.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickModeCh07.TabIndex = 406;
+            this.cmbHRQuickModeCh07.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh07_SelectedIndexChanged);
             // 
-            // comboBox106
+            // cmbHRQuickModeCh06
             // 
-            this.comboBox106.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox106.FormattingEnabled = true;
-            this.comboBox106.Items.AddRange(new object[] {
+            this.cmbHRQuickModeCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh06.FormattingEnabled = true;
+            this.cmbHRQuickModeCh06.Items.AddRange(new object[] {
             "12V+",
             "Ground",
             "RP UP",
             "RP DN"});
-            this.comboBox106.Location = new System.Drawing.Point(784, 506);
-            this.comboBox106.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox106.Name = "comboBox106";
-            this.comboBox106.Size = new System.Drawing.Size(97, 28);
-            this.comboBox106.TabIndex = 403;
+            this.cmbHRQuickModeCh06.Location = new System.Drawing.Point(1000, 506);
+            this.cmbHRQuickModeCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickModeCh06.Name = "cmbHRQuickModeCh06";
+            this.cmbHRQuickModeCh06.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickModeCh06.TabIndex = 405;
+            this.cmbHRQuickModeCh06.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh06_SelectedIndexChanged);
             // 
-            // comboBox107
+            // cmbHRQuickModeCh05
             // 
-            this.comboBox107.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox107.FormattingEnabled = true;
-            this.comboBox107.Items.AddRange(new object[] {
+            this.cmbHRQuickModeCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh05.FormattingEnabled = true;
+            this.cmbHRQuickModeCh05.Items.AddRange(new object[] {
             "12V+",
             "Ground",
             "RP UP",
             "RP DN"});
-            this.comboBox107.Location = new System.Drawing.Point(676, 506);
-            this.comboBox107.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox107.Name = "comboBox107";
-            this.comboBox107.Size = new System.Drawing.Size(97, 28);
-            this.comboBox107.TabIndex = 402;
+            this.cmbHRQuickModeCh05.Location = new System.Drawing.Point(892, 506);
+            this.cmbHRQuickModeCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickModeCh05.Name = "cmbHRQuickModeCh05";
+            this.cmbHRQuickModeCh05.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickModeCh05.TabIndex = 404;
+            this.cmbHRQuickModeCh05.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh05_SelectedIndexChanged);
             // 
-            // comboBox108
+            // cmbHRQuickModeCh04
             // 
-            this.comboBox108.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox108.FormattingEnabled = true;
-            this.comboBox108.Items.AddRange(new object[] {
+            this.cmbHRQuickModeCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh04.FormattingEnabled = true;
+            this.cmbHRQuickModeCh04.Items.AddRange(new object[] {
             "12V+",
             "Ground",
             "RP UP",
             "RP DN"});
-            this.comboBox108.Location = new System.Drawing.Point(568, 506);
-            this.comboBox108.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox108.Name = "comboBox108";
-            this.comboBox108.Size = new System.Drawing.Size(97, 28);
-            this.comboBox108.TabIndex = 401;
+            this.cmbHRQuickModeCh04.Location = new System.Drawing.Point(784, 506);
+            this.cmbHRQuickModeCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickModeCh04.Name = "cmbHRQuickModeCh04";
+            this.cmbHRQuickModeCh04.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickModeCh04.TabIndex = 403;
+            this.cmbHRQuickModeCh04.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh04_SelectedIndexChanged);
             // 
-            // comboBox109
+            // cmbHRQuickModeCh03
             // 
-            this.comboBox109.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox109.FormattingEnabled = true;
-            this.comboBox109.Items.AddRange(new object[] {
+            this.cmbHRQuickModeCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh03.FormattingEnabled = true;
+            this.cmbHRQuickModeCh03.Items.AddRange(new object[] {
             "12V+",
             "Ground",
             "RP UP",
             "RP DN"});
-            this.comboBox109.Location = new System.Drawing.Point(460, 506);
-            this.comboBox109.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox109.Name = "comboBox109";
-            this.comboBox109.Size = new System.Drawing.Size(97, 28);
-            this.comboBox109.TabIndex = 400;
+            this.cmbHRQuickModeCh03.Location = new System.Drawing.Point(676, 506);
+            this.cmbHRQuickModeCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickModeCh03.Name = "cmbHRQuickModeCh03";
+            this.cmbHRQuickModeCh03.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickModeCh03.TabIndex = 402;
+            this.cmbHRQuickModeCh03.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh03_SelectedIndexChanged);
             // 
-            // comboBox110
+            // cmbHRQuickModeCh02
             // 
-            this.comboBox110.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox110.FormattingEnabled = true;
-            this.comboBox110.Items.AddRange(new object[] {
+            this.cmbHRQuickModeCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh02.FormattingEnabled = true;
+            this.cmbHRQuickModeCh02.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHRQuickModeCh02.Location = new System.Drawing.Point(568, 506);
+            this.cmbHRQuickModeCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickModeCh02.Name = "cmbHRQuickModeCh02";
+            this.cmbHRQuickModeCh02.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickModeCh02.TabIndex = 401;
+            this.cmbHRQuickModeCh02.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh02_SelectedIndexChanged);
+            // 
+            // cmbHRQuickModeCh01
+            // 
+            this.cmbHRQuickModeCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh01.FormattingEnabled = true;
+            this.cmbHRQuickModeCh01.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHRQuickModeCh01.Location = new System.Drawing.Point(460, 506);
+            this.cmbHRQuickModeCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickModeCh01.Name = "cmbHRQuickModeCh01";
+            this.cmbHRQuickModeCh01.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickModeCh01.TabIndex = 400;
+            this.cmbHRQuickModeCh01.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh01_SelectedIndexChanged);
+            // 
+            // cmbHRQuickModeCh00
+            // 
+            this.cmbHRQuickModeCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh00.FormattingEnabled = true;
+            this.cmbHRQuickModeCh00.Items.AddRange(new object[] {
             "12V+",
             "Ground",
             "RP UP"});
-            this.comboBox110.Location = new System.Drawing.Point(352, 506);
-            this.comboBox110.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox110.Name = "comboBox110";
-            this.comboBox110.Size = new System.Drawing.Size(97, 28);
-            this.comboBox110.TabIndex = 399;
-            // 
-            // checkBox39
-            // 
-            this.checkBox39.AutoSize = true;
-            this.checkBox39.Location = new System.Drawing.Point(1148, 420);
-            this.checkBox39.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox39.Name = "checkBox39";
-            this.checkBox39.Size = new System.Drawing.Size(22, 21);
-            this.checkBox39.TabIndex = 382;
-            this.checkBox39.UseVisualStyleBackColor = true;
-            // 
-            // checkBox44
-            // 
-            this.checkBox44.AutoSize = true;
-            this.checkBox44.Location = new System.Drawing.Point(1148, 466);
-            this.checkBox44.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox44.Name = "checkBox44";
-            this.checkBox44.Size = new System.Drawing.Size(22, 21);
-            this.checkBox44.TabIndex = 394;
-            this.checkBox44.UseVisualStyleBackColor = true;
-            // 
-            // checkBox45
-            // 
-            this.checkBox45.AutoSize = true;
-            this.checkBox45.Location = new System.Drawing.Point(1148, 374);
-            this.checkBox45.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox45.Name = "checkBox45";
-            this.checkBox45.Size = new System.Drawing.Size(22, 21);
-            this.checkBox45.TabIndex = 370;
-            this.checkBox45.UseVisualStyleBackColor = true;
-            // 
-            // checkBox46
-            // 
-            this.checkBox46.AutoSize = true;
-            this.checkBox46.Location = new System.Drawing.Point(1256, 328);
-            this.checkBox46.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox46.Name = "checkBox46";
-            this.checkBox46.Size = new System.Drawing.Size(22, 21);
-            this.checkBox46.TabIndex = 359;
-            this.checkBox46.UseVisualStyleBackColor = true;
-            // 
-            // checkBox47
-            // 
-            this.checkBox47.AutoSize = true;
-            this.checkBox47.Location = new System.Drawing.Point(1148, 328);
-            this.checkBox47.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox47.Name = "checkBox47";
-            this.checkBox47.Size = new System.Drawing.Size(22, 21);
-            this.checkBox47.TabIndex = 358;
-            this.checkBox47.UseVisualStyleBackColor = true;
-            // 
-            // checkBox48
-            // 
-            this.checkBox48.AutoSize = true;
-            this.checkBox48.Location = new System.Drawing.Point(1256, 374);
-            this.checkBox48.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox48.Name = "checkBox48";
-            this.checkBox48.Size = new System.Drawing.Size(22, 21);
-            this.checkBox48.TabIndex = 371;
-            this.checkBox48.UseVisualStyleBackColor = true;
-            // 
-            // checkBox49
-            // 
-            this.checkBox49.AutoSize = true;
-            this.checkBox49.Location = new System.Drawing.Point(1040, 466);
-            this.checkBox49.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox49.Name = "checkBox49";
-            this.checkBox49.Size = new System.Drawing.Size(22, 21);
-            this.checkBox49.TabIndex = 393;
-            this.checkBox49.UseVisualStyleBackColor = true;
-            // 
-            // checkBox50
-            // 
-            this.checkBox50.AutoSize = true;
-            this.checkBox50.Location = new System.Drawing.Point(1256, 420);
-            this.checkBox50.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox50.Name = "checkBox50";
-            this.checkBox50.Size = new System.Drawing.Size(22, 21);
-            this.checkBox50.TabIndex = 383;
-            this.checkBox50.UseVisualStyleBackColor = true;
-            // 
-            // checkBox51
-            // 
-            this.checkBox51.AutoSize = true;
-            this.checkBox51.Location = new System.Drawing.Point(1040, 420);
-            this.checkBox51.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox51.Name = "checkBox51";
-            this.checkBox51.Size = new System.Drawing.Size(22, 21);
-            this.checkBox51.TabIndex = 381;
-            this.checkBox51.UseVisualStyleBackColor = true;
-            // 
-            // checkBox52
-            // 
-            this.checkBox52.AutoSize = true;
-            this.checkBox52.Location = new System.Drawing.Point(1256, 466);
-            this.checkBox52.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox52.Name = "checkBox52";
-            this.checkBox52.Size = new System.Drawing.Size(22, 21);
-            this.checkBox52.TabIndex = 395;
-            this.checkBox52.UseVisualStyleBackColor = true;
-            // 
-            // checkBox53
-            // 
-            this.checkBox53.AutoSize = true;
-            this.checkBox53.Location = new System.Drawing.Point(1040, 374);
-            this.checkBox53.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox53.Name = "checkBox53";
-            this.checkBox53.Size = new System.Drawing.Size(22, 21);
-            this.checkBox53.TabIndex = 369;
-            this.checkBox53.UseVisualStyleBackColor = true;
-            // 
-            // checkBox54
-            // 
-            this.checkBox54.AutoSize = true;
-            this.checkBox54.Location = new System.Drawing.Point(1364, 328);
-            this.checkBox54.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox54.Name = "checkBox54";
-            this.checkBox54.Size = new System.Drawing.Size(22, 21);
-            this.checkBox54.TabIndex = 360;
-            this.checkBox54.UseVisualStyleBackColor = true;
-            // 
-            // checkBox55
-            // 
-            this.checkBox55.AutoSize = true;
-            this.checkBox55.Location = new System.Drawing.Point(1040, 328);
-            this.checkBox55.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox55.Name = "checkBox55";
-            this.checkBox55.Size = new System.Drawing.Size(22, 21);
-            this.checkBox55.TabIndex = 357;
-            this.checkBox55.UseVisualStyleBackColor = true;
-            // 
-            // checkBox56
-            // 
-            this.checkBox56.AutoSize = true;
-            this.checkBox56.Location = new System.Drawing.Point(1364, 374);
-            this.checkBox56.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox56.Name = "checkBox56";
-            this.checkBox56.Size = new System.Drawing.Size(22, 21);
-            this.checkBox56.TabIndex = 372;
-            this.checkBox56.UseVisualStyleBackColor = true;
-            // 
-            // checkBox57
-            // 
-            this.checkBox57.AutoSize = true;
-            this.checkBox57.Location = new System.Drawing.Point(932, 466);
-            this.checkBox57.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox57.Name = "checkBox57";
-            this.checkBox57.Size = new System.Drawing.Size(22, 21);
-            this.checkBox57.TabIndex = 392;
-            this.checkBox57.UseVisualStyleBackColor = true;
-            // 
-            // checkBox58
-            // 
-            this.checkBox58.AutoSize = true;
-            this.checkBox58.Location = new System.Drawing.Point(1364, 420);
-            this.checkBox58.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox58.Name = "checkBox58";
-            this.checkBox58.Size = new System.Drawing.Size(22, 21);
-            this.checkBox58.TabIndex = 384;
-            this.checkBox58.UseVisualStyleBackColor = true;
-            // 
-            // checkBox59
-            // 
-            this.checkBox59.AutoSize = true;
-            this.checkBox59.Location = new System.Drawing.Point(932, 420);
-            this.checkBox59.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox59.Name = "checkBox59";
-            this.checkBox59.Size = new System.Drawing.Size(22, 21);
-            this.checkBox59.TabIndex = 380;
-            this.checkBox59.UseVisualStyleBackColor = true;
-            // 
-            // checkBox60
-            // 
-            this.checkBox60.AutoSize = true;
-            this.checkBox60.Location = new System.Drawing.Point(1364, 466);
-            this.checkBox60.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox60.Name = "checkBox60";
-            this.checkBox60.Size = new System.Drawing.Size(22, 21);
-            this.checkBox60.TabIndex = 396;
-            this.checkBox60.UseVisualStyleBackColor = true;
-            // 
-            // checkBox61
-            // 
-            this.checkBox61.AutoSize = true;
-            this.checkBox61.Location = new System.Drawing.Point(932, 374);
-            this.checkBox61.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox61.Name = "checkBox61";
-            this.checkBox61.Size = new System.Drawing.Size(22, 21);
-            this.checkBox61.TabIndex = 368;
-            this.checkBox61.UseVisualStyleBackColor = true;
-            // 
-            // checkBox62
-            // 
-            this.checkBox62.AutoSize = true;
-            this.checkBox62.Location = new System.Drawing.Point(1472, 328);
-            this.checkBox62.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox62.Name = "checkBox62";
-            this.checkBox62.Size = new System.Drawing.Size(22, 21);
-            this.checkBox62.TabIndex = 361;
-            this.checkBox62.UseVisualStyleBackColor = true;
-            // 
-            // checkBox63
-            // 
-            this.checkBox63.AutoSize = true;
-            this.checkBox63.Location = new System.Drawing.Point(932, 328);
-            this.checkBox63.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox63.Name = "checkBox63";
-            this.checkBox63.Size = new System.Drawing.Size(22, 21);
-            this.checkBox63.TabIndex = 356;
-            this.checkBox63.UseVisualStyleBackColor = true;
-            // 
-            // checkBox64
-            // 
-            this.checkBox64.AutoSize = true;
-            this.checkBox64.Location = new System.Drawing.Point(392, 328);
-            this.checkBox64.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox64.Name = "checkBox64";
-            this.checkBox64.Size = new System.Drawing.Size(22, 21);
-            this.checkBox64.TabIndex = 351;
-            this.checkBox64.UseVisualStyleBackColor = true;
-            // 
-            // checkBox65
-            // 
-            this.checkBox65.AutoSize = true;
-            this.checkBox65.Location = new System.Drawing.Point(1472, 374);
-            this.checkBox65.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox65.Name = "checkBox65";
-            this.checkBox65.Size = new System.Drawing.Size(22, 21);
-            this.checkBox65.TabIndex = 373;
-            this.checkBox65.UseVisualStyleBackColor = true;
-            // 
-            // checkBox66
-            // 
-            this.checkBox66.AutoSize = true;
-            this.checkBox66.Location = new System.Drawing.Point(392, 374);
-            this.checkBox66.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox66.Name = "checkBox66";
-            this.checkBox66.Size = new System.Drawing.Size(22, 21);
-            this.checkBox66.TabIndex = 363;
-            this.checkBox66.UseVisualStyleBackColor = true;
-            // 
-            // checkBox67
-            // 
-            this.checkBox67.AutoSize = true;
-            this.checkBox67.Location = new System.Drawing.Point(824, 466);
-            this.checkBox67.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox67.Name = "checkBox67";
-            this.checkBox67.Size = new System.Drawing.Size(22, 21);
-            this.checkBox67.TabIndex = 391;
-            this.checkBox67.UseVisualStyleBackColor = true;
-            // 
-            // checkBox68
-            // 
-            this.checkBox68.AutoSize = true;
-            this.checkBox68.Location = new System.Drawing.Point(1472, 420);
-            this.checkBox68.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox68.Name = "checkBox68";
-            this.checkBox68.Size = new System.Drawing.Size(22, 21);
-            this.checkBox68.TabIndex = 385;
-            this.checkBox68.UseVisualStyleBackColor = true;
-            // 
-            // checkBox69
-            // 
-            this.checkBox69.AutoSize = true;
-            this.checkBox69.Location = new System.Drawing.Point(392, 420);
-            this.checkBox69.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox69.Name = "checkBox69";
-            this.checkBox69.Size = new System.Drawing.Size(22, 21);
-            this.checkBox69.TabIndex = 375;
-            this.checkBox69.UseVisualStyleBackColor = true;
-            // 
-            // checkBox70
-            // 
-            this.checkBox70.AutoSize = true;
-            this.checkBox70.Location = new System.Drawing.Point(824, 420);
-            this.checkBox70.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox70.Name = "checkBox70";
-            this.checkBox70.Size = new System.Drawing.Size(22, 21);
-            this.checkBox70.TabIndex = 379;
-            this.checkBox70.UseVisualStyleBackColor = true;
-            // 
-            // checkBox71
-            // 
-            this.checkBox71.AutoSize = true;
-            this.checkBox71.Location = new System.Drawing.Point(1472, 466);
-            this.checkBox71.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox71.Name = "checkBox71";
-            this.checkBox71.Size = new System.Drawing.Size(22, 21);
-            this.checkBox71.TabIndex = 397;
-            this.checkBox71.UseVisualStyleBackColor = true;
-            // 
-            // checkBox72
-            // 
-            this.checkBox72.AutoSize = true;
-            this.checkBox72.Location = new System.Drawing.Point(392, 466);
-            this.checkBox72.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox72.Name = "checkBox72";
-            this.checkBox72.Size = new System.Drawing.Size(22, 21);
-            this.checkBox72.TabIndex = 387;
-            this.checkBox72.UseVisualStyleBackColor = true;
-            // 
-            // checkBox73
-            // 
-            this.checkBox73.AutoSize = true;
-            this.checkBox73.Location = new System.Drawing.Point(824, 374);
-            this.checkBox73.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox73.Name = "checkBox73";
-            this.checkBox73.Size = new System.Drawing.Size(22, 21);
-            this.checkBox73.TabIndex = 367;
-            this.checkBox73.UseVisualStyleBackColor = true;
-            // 
-            // checkBox74
-            // 
-            this.checkBox74.AutoSize = true;
-            this.checkBox74.Location = new System.Drawing.Point(1580, 328);
-            this.checkBox74.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox74.Name = "checkBox74";
-            this.checkBox74.Size = new System.Drawing.Size(22, 21);
-            this.checkBox74.TabIndex = 362;
-            this.checkBox74.UseVisualStyleBackColor = true;
-            // 
-            // checkBox75
-            // 
-            this.checkBox75.AutoSize = true;
-            this.checkBox75.Location = new System.Drawing.Point(500, 328);
-            this.checkBox75.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox75.Name = "checkBox75";
-            this.checkBox75.Size = new System.Drawing.Size(22, 21);
-            this.checkBox75.TabIndex = 352;
-            this.checkBox75.UseVisualStyleBackColor = true;
-            // 
-            // checkBox76
-            // 
-            this.checkBox76.AutoSize = true;
-            this.checkBox76.Location = new System.Drawing.Point(824, 328);
-            this.checkBox76.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox76.Name = "checkBox76";
-            this.checkBox76.Size = new System.Drawing.Size(22, 21);
-            this.checkBox76.TabIndex = 355;
-            this.checkBox76.UseVisualStyleBackColor = true;
-            // 
-            // checkBox77
-            // 
-            this.checkBox77.AutoSize = true;
-            this.checkBox77.Location = new System.Drawing.Point(1580, 374);
-            this.checkBox77.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox77.Name = "checkBox77";
-            this.checkBox77.Size = new System.Drawing.Size(22, 21);
-            this.checkBox77.TabIndex = 374;
-            this.checkBox77.UseVisualStyleBackColor = true;
-            // 
-            // checkBox78
-            // 
-            this.checkBox78.AutoSize = true;
-            this.checkBox78.Location = new System.Drawing.Point(716, 466);
-            this.checkBox78.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox78.Name = "checkBox78";
-            this.checkBox78.Size = new System.Drawing.Size(22, 21);
-            this.checkBox78.TabIndex = 390;
-            this.checkBox78.UseVisualStyleBackColor = true;
-            // 
-            // checkBox79
-            // 
-            this.checkBox79.AutoSize = true;
-            this.checkBox79.Location = new System.Drawing.Point(500, 374);
-            this.checkBox79.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox79.Name = "checkBox79";
-            this.checkBox79.Size = new System.Drawing.Size(22, 21);
-            this.checkBox79.TabIndex = 364;
-            this.checkBox79.UseVisualStyleBackColor = true;
-            // 
-            // checkBox80
-            // 
-            this.checkBox80.AutoSize = true;
-            this.checkBox80.Location = new System.Drawing.Point(1580, 420);
-            this.checkBox80.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox80.Name = "checkBox80";
-            this.checkBox80.Size = new System.Drawing.Size(22, 21);
-            this.checkBox80.TabIndex = 386;
-            this.checkBox80.UseVisualStyleBackColor = true;
-            // 
-            // checkBox81
-            // 
-            this.checkBox81.AutoSize = true;
-            this.checkBox81.Location = new System.Drawing.Point(716, 420);
-            this.checkBox81.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox81.Name = "checkBox81";
-            this.checkBox81.Size = new System.Drawing.Size(22, 21);
-            this.checkBox81.TabIndex = 378;
-            this.checkBox81.UseVisualStyleBackColor = true;
-            // 
-            // checkBox82
-            // 
-            this.checkBox82.AutoSize = true;
-            this.checkBox82.Location = new System.Drawing.Point(500, 420);
-            this.checkBox82.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox82.Name = "checkBox82";
-            this.checkBox82.Size = new System.Drawing.Size(22, 21);
-            this.checkBox82.TabIndex = 376;
-            this.checkBox82.UseVisualStyleBackColor = true;
-            // 
-            // checkBox83
-            // 
-            this.checkBox83.AutoSize = true;
-            this.checkBox83.Location = new System.Drawing.Point(1580, 466);
-            this.checkBox83.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox83.Name = "checkBox83";
-            this.checkBox83.Size = new System.Drawing.Size(22, 21);
-            this.checkBox83.TabIndex = 398;
-            this.checkBox83.UseVisualStyleBackColor = true;
-            // 
-            // checkBox84
-            // 
-            this.checkBox84.AutoSize = true;
-            this.checkBox84.Location = new System.Drawing.Point(716, 374);
-            this.checkBox84.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox84.Name = "checkBox84";
-            this.checkBox84.Size = new System.Drawing.Size(22, 21);
-            this.checkBox84.TabIndex = 366;
-            this.checkBox84.UseVisualStyleBackColor = true;
-            // 
-            // checkBox85
-            // 
-            this.checkBox85.AutoSize = true;
-            this.checkBox85.Location = new System.Drawing.Point(500, 466);
-            this.checkBox85.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox85.Name = "checkBox85";
-            this.checkBox85.Size = new System.Drawing.Size(22, 21);
-            this.checkBox85.TabIndex = 388;
-            this.checkBox85.UseVisualStyleBackColor = true;
-            // 
-            // checkBox86
-            // 
-            this.checkBox86.AutoSize = true;
-            this.checkBox86.Location = new System.Drawing.Point(716, 328);
-            this.checkBox86.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox86.Name = "checkBox86";
-            this.checkBox86.Size = new System.Drawing.Size(22, 21);
-            this.checkBox86.TabIndex = 354;
-            this.checkBox86.UseVisualStyleBackColor = true;
-            // 
-            // checkBox87
-            // 
-            this.checkBox87.AutoSize = true;
-            this.checkBox87.Location = new System.Drawing.Point(608, 328);
-            this.checkBox87.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox87.Name = "checkBox87";
-            this.checkBox87.Size = new System.Drawing.Size(22, 21);
-            this.checkBox87.TabIndex = 353;
-            this.checkBox87.UseVisualStyleBackColor = true;
-            // 
-            // checkBox88
-            // 
-            this.checkBox88.AutoSize = true;
-            this.checkBox88.Location = new System.Drawing.Point(608, 466);
-            this.checkBox88.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox88.Name = "checkBox88";
-            this.checkBox88.Size = new System.Drawing.Size(22, 21);
-            this.checkBox88.TabIndex = 389;
-            this.checkBox88.UseVisualStyleBackColor = true;
-            // 
-            // checkBox89
-            // 
-            this.checkBox89.AutoSize = true;
-            this.checkBox89.Location = new System.Drawing.Point(608, 374);
-            this.checkBox89.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox89.Name = "checkBox89";
-            this.checkBox89.Size = new System.Drawing.Size(22, 21);
-            this.checkBox89.TabIndex = 365;
-            this.checkBox89.UseVisualStyleBackColor = true;
-            // 
-            // checkBox90
-            // 
-            this.checkBox90.AutoSize = true;
-            this.checkBox90.Location = new System.Drawing.Point(608, 420);
-            this.checkBox90.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox90.Name = "checkBox90";
-            this.checkBox90.Size = new System.Drawing.Size(22, 21);
-            this.checkBox90.TabIndex = 377;
-            this.checkBox90.UseVisualStyleBackColor = true;
-            // 
-            // label701
-            // 
-            this.label701.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label701.ForeColor = System.Drawing.Color.Yellow;
-            this.label701.Location = new System.Drawing.Point(357, 162);
-            this.label701.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label701.Name = "label701";
-            this.label701.Size = new System.Drawing.Size(90, 46);
-            this.label701.TabIndex = 339;
-            this.label701.Text = "0";
-            this.label701.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label702
-            // 
-            this.label702.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label702.ForeColor = System.Drawing.Color.Yellow;
-            this.label702.Location = new System.Drawing.Point(789, 162);
-            this.label702.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label702.Name = "label702";
-            this.label702.Size = new System.Drawing.Size(90, 46);
-            this.label702.TabIndex = 350;
-            this.label702.Text = "4";
-            this.label702.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label703
-            // 
-            this.label703.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label703.ForeColor = System.Drawing.Color.Yellow;
-            this.label703.Location = new System.Drawing.Point(897, 162);
-            this.label703.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label703.Name = "label703";
-            this.label703.Size = new System.Drawing.Size(90, 46);
-            this.label703.TabIndex = 349;
-            this.label703.Text = "5";
-            this.label703.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label704
-            // 
-            this.label704.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label704.ForeColor = System.Drawing.Color.Yellow;
-            this.label704.Location = new System.Drawing.Point(1005, 162);
-            this.label704.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label704.Name = "label704";
-            this.label704.Size = new System.Drawing.Size(90, 46);
-            this.label704.TabIndex = 348;
-            this.label704.Text = "6";
-            this.label704.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label705
-            // 
-            this.label705.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label705.ForeColor = System.Drawing.Color.Yellow;
-            this.label705.Location = new System.Drawing.Point(1113, 162);
-            this.label705.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label705.Name = "label705";
-            this.label705.Size = new System.Drawing.Size(90, 46);
-            this.label705.TabIndex = 347;
-            this.label705.Text = "7";
-            this.label705.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label706
-            // 
-            this.label706.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label706.ForeColor = System.Drawing.Color.Yellow;
-            this.label706.Location = new System.Drawing.Point(1221, 162);
-            this.label706.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label706.Name = "label706";
-            this.label706.Size = new System.Drawing.Size(90, 46);
-            this.label706.TabIndex = 346;
-            this.label706.Text = "8";
-            this.label706.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label707
-            // 
-            this.label707.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label707.ForeColor = System.Drawing.Color.Yellow;
-            this.label707.Location = new System.Drawing.Point(1329, 162);
-            this.label707.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label707.Name = "label707";
-            this.label707.Size = new System.Drawing.Size(90, 46);
-            this.label707.TabIndex = 345;
-            this.label707.Text = "9";
-            this.label707.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label708
-            // 
-            this.label708.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label708.ForeColor = System.Drawing.Color.Yellow;
-            this.label708.Location = new System.Drawing.Point(1437, 162);
-            this.label708.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label708.Name = "label708";
-            this.label708.Size = new System.Drawing.Size(90, 46);
-            this.label708.TabIndex = 344;
-            this.label708.Text = "10";
-            this.label708.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label709
-            // 
-            this.label709.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label709.ForeColor = System.Drawing.Color.Yellow;
-            this.label709.Location = new System.Drawing.Point(1545, 162);
-            this.label709.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label709.Name = "label709";
-            this.label709.Size = new System.Drawing.Size(90, 46);
-            this.label709.TabIndex = 343;
-            this.label709.Text = "11";
-            this.label709.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label710
-            // 
-            this.label710.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label710.ForeColor = System.Drawing.Color.Yellow;
-            this.label710.Location = new System.Drawing.Point(681, 162);
-            this.label710.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label710.Name = "label710";
-            this.label710.Size = new System.Drawing.Size(90, 46);
-            this.label710.TabIndex = 342;
-            this.label710.Text = "3";
-            this.label710.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label711
-            // 
-            this.label711.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label711.ForeColor = System.Drawing.Color.Yellow;
-            this.label711.Location = new System.Drawing.Point(573, 162);
-            this.label711.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label711.Name = "label711";
-            this.label711.Size = new System.Drawing.Size(90, 46);
-            this.label711.TabIndex = 341;
-            this.label711.Text = "2";
-            this.label711.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label712
-            // 
-            this.label712.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label712.ForeColor = System.Drawing.Color.Yellow;
-            this.label712.Location = new System.Drawing.Point(465, 162);
-            this.label712.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label712.Name = "label712";
-            this.label712.Size = new System.Drawing.Size(90, 46);
-            this.label712.TabIndex = 340;
-            this.label712.Text = "1";
-            this.label712.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // comboBox63
-            // 
-            this.comboBox63.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox63.FormattingEnabled = true;
-            this.comboBox63.Items.AddRange(new object[] {
+            this.cmbHRQuickModeCh00.Location = new System.Drawing.Point(352, 506);
+            this.cmbHRQuickModeCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickModeCh00.Name = "cmbHRQuickModeCh00";
+            this.cmbHRQuickModeCh00.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickModeCh00.TabIndex = 399;
+            this.cmbHRQuickModeCh00.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh00_SelectedIndexChanged);
+            // 
+            // chkHRMG3Ch07
+            // 
+            this.chkHRMG3Ch07.AutoSize = true;
+            this.chkHRMG3Ch07.Location = new System.Drawing.Point(1148, 420);
+            this.chkHRMG3Ch07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG3Ch07.Name = "chkHRMG3Ch07";
+            this.chkHRMG3Ch07.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG3Ch07.TabIndex = 382;
+            this.chkHRMG3Ch07.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG4Ch07
+            // 
+            this.chkHRMG4Ch07.AutoSize = true;
+            this.chkHRMG4Ch07.Location = new System.Drawing.Point(1148, 466);
+            this.chkHRMG4Ch07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG4Ch07.Name = "chkHRMG4Ch07";
+            this.chkHRMG4Ch07.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG4Ch07.TabIndex = 394;
+            this.chkHRMG4Ch07.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG2Ch07
+            // 
+            this.chkHRMG2Ch07.AutoSize = true;
+            this.chkHRMG2Ch07.Location = new System.Drawing.Point(1148, 374);
+            this.chkHRMG2Ch07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG2Ch07.Name = "chkHRMG2Ch07";
+            this.chkHRMG2Ch07.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG2Ch07.TabIndex = 370;
+            this.chkHRMG2Ch07.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG1Ch08
+            // 
+            this.chkHRMG1Ch08.AutoSize = true;
+            this.chkHRMG1Ch08.Location = new System.Drawing.Point(1256, 328);
+            this.chkHRMG1Ch08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG1Ch08.Name = "chkHRMG1Ch08";
+            this.chkHRMG1Ch08.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG1Ch08.TabIndex = 359;
+            this.chkHRMG1Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG1Ch07
+            // 
+            this.chkHRMG1Ch07.AutoSize = true;
+            this.chkHRMG1Ch07.Location = new System.Drawing.Point(1148, 328);
+            this.chkHRMG1Ch07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG1Ch07.Name = "chkHRMG1Ch07";
+            this.chkHRMG1Ch07.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG1Ch07.TabIndex = 358;
+            this.chkHRMG1Ch07.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG2Ch08
+            // 
+            this.chkHRMG2Ch08.AutoSize = true;
+            this.chkHRMG2Ch08.Location = new System.Drawing.Point(1256, 374);
+            this.chkHRMG2Ch08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG2Ch08.Name = "chkHRMG2Ch08";
+            this.chkHRMG2Ch08.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG2Ch08.TabIndex = 371;
+            this.chkHRMG2Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG4Ch06
+            // 
+            this.chkHRMG4Ch06.AutoSize = true;
+            this.chkHRMG4Ch06.Location = new System.Drawing.Point(1040, 466);
+            this.chkHRMG4Ch06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG4Ch06.Name = "chkHRMG4Ch06";
+            this.chkHRMG4Ch06.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG4Ch06.TabIndex = 393;
+            this.chkHRMG4Ch06.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG3Ch08
+            // 
+            this.chkHRMG3Ch08.AutoSize = true;
+            this.chkHRMG3Ch08.Location = new System.Drawing.Point(1256, 420);
+            this.chkHRMG3Ch08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG3Ch08.Name = "chkHRMG3Ch08";
+            this.chkHRMG3Ch08.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG3Ch08.TabIndex = 383;
+            this.chkHRMG3Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG3Ch06
+            // 
+            this.chkHRMG3Ch06.AutoSize = true;
+            this.chkHRMG3Ch06.Location = new System.Drawing.Point(1040, 420);
+            this.chkHRMG3Ch06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG3Ch06.Name = "chkHRMG3Ch06";
+            this.chkHRMG3Ch06.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG3Ch06.TabIndex = 381;
+            this.chkHRMG3Ch06.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG4Ch08
+            // 
+            this.chkHRMG4Ch08.AutoSize = true;
+            this.chkHRMG4Ch08.Location = new System.Drawing.Point(1256, 466);
+            this.chkHRMG4Ch08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG4Ch08.Name = "chkHRMG4Ch08";
+            this.chkHRMG4Ch08.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG4Ch08.TabIndex = 395;
+            this.chkHRMG4Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG2Ch06
+            // 
+            this.chkHRMG2Ch06.AutoSize = true;
+            this.chkHRMG2Ch06.Location = new System.Drawing.Point(1040, 374);
+            this.chkHRMG2Ch06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG2Ch06.Name = "chkHRMG2Ch06";
+            this.chkHRMG2Ch06.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG2Ch06.TabIndex = 369;
+            this.chkHRMG2Ch06.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG1Ch09
+            // 
+            this.chkHRMG1Ch09.AutoSize = true;
+            this.chkHRMG1Ch09.Location = new System.Drawing.Point(1364, 328);
+            this.chkHRMG1Ch09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG1Ch09.Name = "chkHRMG1Ch09";
+            this.chkHRMG1Ch09.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG1Ch09.TabIndex = 360;
+            this.chkHRMG1Ch09.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG1Ch06
+            // 
+            this.chkHRMG1Ch06.AutoSize = true;
+            this.chkHRMG1Ch06.Location = new System.Drawing.Point(1040, 328);
+            this.chkHRMG1Ch06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG1Ch06.Name = "chkHRMG1Ch06";
+            this.chkHRMG1Ch06.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG1Ch06.TabIndex = 357;
+            this.chkHRMG1Ch06.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG2Ch09
+            // 
+            this.chkHRMG2Ch09.AutoSize = true;
+            this.chkHRMG2Ch09.Location = new System.Drawing.Point(1364, 374);
+            this.chkHRMG2Ch09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG2Ch09.Name = "chkHRMG2Ch09";
+            this.chkHRMG2Ch09.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG2Ch09.TabIndex = 372;
+            this.chkHRMG2Ch09.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG4Ch05
+            // 
+            this.chkHRMG4Ch05.AutoSize = true;
+            this.chkHRMG4Ch05.Location = new System.Drawing.Point(932, 466);
+            this.chkHRMG4Ch05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG4Ch05.Name = "chkHRMG4Ch05";
+            this.chkHRMG4Ch05.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG4Ch05.TabIndex = 392;
+            this.chkHRMG4Ch05.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG3Ch09
+            // 
+            this.chkHRMG3Ch09.AutoSize = true;
+            this.chkHRMG3Ch09.Location = new System.Drawing.Point(1364, 420);
+            this.chkHRMG3Ch09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG3Ch09.Name = "chkHRMG3Ch09";
+            this.chkHRMG3Ch09.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG3Ch09.TabIndex = 384;
+            this.chkHRMG3Ch09.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG3Ch05
+            // 
+            this.chkHRMG3Ch05.AutoSize = true;
+            this.chkHRMG3Ch05.Location = new System.Drawing.Point(932, 420);
+            this.chkHRMG3Ch05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG3Ch05.Name = "chkHRMG3Ch05";
+            this.chkHRMG3Ch05.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG3Ch05.TabIndex = 380;
+            this.chkHRMG3Ch05.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG4Ch09
+            // 
+            this.chkHRMG4Ch09.AutoSize = true;
+            this.chkHRMG4Ch09.Location = new System.Drawing.Point(1364, 466);
+            this.chkHRMG4Ch09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG4Ch09.Name = "chkHRMG4Ch09";
+            this.chkHRMG4Ch09.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG4Ch09.TabIndex = 396;
+            this.chkHRMG4Ch09.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG2Ch05
+            // 
+            this.chkHRMG2Ch05.AutoSize = true;
+            this.chkHRMG2Ch05.Location = new System.Drawing.Point(932, 374);
+            this.chkHRMG2Ch05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG2Ch05.Name = "chkHRMG2Ch05";
+            this.chkHRMG2Ch05.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG2Ch05.TabIndex = 368;
+            this.chkHRMG2Ch05.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG1Ch10
+            // 
+            this.chkHRMG1Ch10.AutoSize = true;
+            this.chkHRMG1Ch10.Location = new System.Drawing.Point(1472, 328);
+            this.chkHRMG1Ch10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG1Ch10.Name = "chkHRMG1Ch10";
+            this.chkHRMG1Ch10.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG1Ch10.TabIndex = 361;
+            this.chkHRMG1Ch10.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG1Ch05
+            // 
+            this.chkHRMG1Ch05.AutoSize = true;
+            this.chkHRMG1Ch05.Location = new System.Drawing.Point(932, 328);
+            this.chkHRMG1Ch05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG1Ch05.Name = "chkHRMG1Ch05";
+            this.chkHRMG1Ch05.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG1Ch05.TabIndex = 356;
+            this.chkHRMG1Ch05.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG1Ch00
+            // 
+            this.chkHRMG1Ch00.AutoSize = true;
+            this.chkHRMG1Ch00.Location = new System.Drawing.Point(392, 328);
+            this.chkHRMG1Ch00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG1Ch00.Name = "chkHRMG1Ch00";
+            this.chkHRMG1Ch00.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG1Ch00.TabIndex = 351;
+            this.chkHRMG1Ch00.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG2Ch10
+            // 
+            this.chkHRMG2Ch10.AutoSize = true;
+            this.chkHRMG2Ch10.Location = new System.Drawing.Point(1472, 374);
+            this.chkHRMG2Ch10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG2Ch10.Name = "chkHRMG2Ch10";
+            this.chkHRMG2Ch10.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG2Ch10.TabIndex = 373;
+            this.chkHRMG2Ch10.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG2Ch00
+            // 
+            this.chkHRMG2Ch00.AutoSize = true;
+            this.chkHRMG2Ch00.Location = new System.Drawing.Point(392, 374);
+            this.chkHRMG2Ch00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG2Ch00.Name = "chkHRMG2Ch00";
+            this.chkHRMG2Ch00.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG2Ch00.TabIndex = 363;
+            this.chkHRMG2Ch00.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG4Ch04
+            // 
+            this.chkHRMG4Ch04.AutoSize = true;
+            this.chkHRMG4Ch04.Location = new System.Drawing.Point(824, 466);
+            this.chkHRMG4Ch04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG4Ch04.Name = "chkHRMG4Ch04";
+            this.chkHRMG4Ch04.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG4Ch04.TabIndex = 391;
+            this.chkHRMG4Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG3Ch10
+            // 
+            this.chkHRMG3Ch10.AutoSize = true;
+            this.chkHRMG3Ch10.Location = new System.Drawing.Point(1472, 420);
+            this.chkHRMG3Ch10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG3Ch10.Name = "chkHRMG3Ch10";
+            this.chkHRMG3Ch10.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG3Ch10.TabIndex = 385;
+            this.chkHRMG3Ch10.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG3Ch00
+            // 
+            this.chkHRMG3Ch00.AutoSize = true;
+            this.chkHRMG3Ch00.Location = new System.Drawing.Point(392, 420);
+            this.chkHRMG3Ch00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG3Ch00.Name = "chkHRMG3Ch00";
+            this.chkHRMG3Ch00.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG3Ch00.TabIndex = 375;
+            this.chkHRMG3Ch00.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG3Ch04
+            // 
+            this.chkHRMG3Ch04.AutoSize = true;
+            this.chkHRMG3Ch04.Location = new System.Drawing.Point(824, 420);
+            this.chkHRMG3Ch04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG3Ch04.Name = "chkHRMG3Ch04";
+            this.chkHRMG3Ch04.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG3Ch04.TabIndex = 379;
+            this.chkHRMG3Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG4Ch10
+            // 
+            this.chkHRMG4Ch10.AutoSize = true;
+            this.chkHRMG4Ch10.Location = new System.Drawing.Point(1472, 466);
+            this.chkHRMG4Ch10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG4Ch10.Name = "chkHRMG4Ch10";
+            this.chkHRMG4Ch10.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG4Ch10.TabIndex = 397;
+            this.chkHRMG4Ch10.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG4Ch00
+            // 
+            this.chkHRMG4Ch00.AutoSize = true;
+            this.chkHRMG4Ch00.Location = new System.Drawing.Point(392, 466);
+            this.chkHRMG4Ch00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG4Ch00.Name = "chkHRMG4Ch00";
+            this.chkHRMG4Ch00.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG4Ch00.TabIndex = 387;
+            this.chkHRMG4Ch00.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG2Ch04
+            // 
+            this.chkHRMG2Ch04.AutoSize = true;
+            this.chkHRMG2Ch04.Location = new System.Drawing.Point(824, 374);
+            this.chkHRMG2Ch04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG2Ch04.Name = "chkHRMG2Ch04";
+            this.chkHRMG2Ch04.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG2Ch04.TabIndex = 367;
+            this.chkHRMG2Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG1Ch11
+            // 
+            this.chkHRMG1Ch11.AutoSize = true;
+            this.chkHRMG1Ch11.Location = new System.Drawing.Point(1580, 328);
+            this.chkHRMG1Ch11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG1Ch11.Name = "chkHRMG1Ch11";
+            this.chkHRMG1Ch11.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG1Ch11.TabIndex = 362;
+            this.chkHRMG1Ch11.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG1Ch01
+            // 
+            this.chkHRMG1Ch01.AutoSize = true;
+            this.chkHRMG1Ch01.Location = new System.Drawing.Point(500, 328);
+            this.chkHRMG1Ch01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG1Ch01.Name = "chkHRMG1Ch01";
+            this.chkHRMG1Ch01.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG1Ch01.TabIndex = 352;
+            this.chkHRMG1Ch01.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG1Ch04
+            // 
+            this.chkHRMG1Ch04.AutoSize = true;
+            this.chkHRMG1Ch04.Location = new System.Drawing.Point(824, 328);
+            this.chkHRMG1Ch04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG1Ch04.Name = "chkHRMG1Ch04";
+            this.chkHRMG1Ch04.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG1Ch04.TabIndex = 355;
+            this.chkHRMG1Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG2Ch11
+            // 
+            this.chkHRMG2Ch11.AutoSize = true;
+            this.chkHRMG2Ch11.Location = new System.Drawing.Point(1580, 374);
+            this.chkHRMG2Ch11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG2Ch11.Name = "chkHRMG2Ch11";
+            this.chkHRMG2Ch11.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG2Ch11.TabIndex = 374;
+            this.chkHRMG2Ch11.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG4Ch03
+            // 
+            this.chkHRMG4Ch03.AutoSize = true;
+            this.chkHRMG4Ch03.Location = new System.Drawing.Point(716, 466);
+            this.chkHRMG4Ch03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG4Ch03.Name = "chkHRMG4Ch03";
+            this.chkHRMG4Ch03.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG4Ch03.TabIndex = 390;
+            this.chkHRMG4Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG2Ch01
+            // 
+            this.chkHRMG2Ch01.AutoSize = true;
+            this.chkHRMG2Ch01.Location = new System.Drawing.Point(500, 374);
+            this.chkHRMG2Ch01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG2Ch01.Name = "chkHRMG2Ch01";
+            this.chkHRMG2Ch01.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG2Ch01.TabIndex = 364;
+            this.chkHRMG2Ch01.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG3Ch11
+            // 
+            this.chkHRMG3Ch11.AutoSize = true;
+            this.chkHRMG3Ch11.Location = new System.Drawing.Point(1580, 420);
+            this.chkHRMG3Ch11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG3Ch11.Name = "chkHRMG3Ch11";
+            this.chkHRMG3Ch11.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG3Ch11.TabIndex = 386;
+            this.chkHRMG3Ch11.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG3Ch03
+            // 
+            this.chkHRMG3Ch03.AutoSize = true;
+            this.chkHRMG3Ch03.Location = new System.Drawing.Point(716, 420);
+            this.chkHRMG3Ch03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG3Ch03.Name = "chkHRMG3Ch03";
+            this.chkHRMG3Ch03.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG3Ch03.TabIndex = 378;
+            this.chkHRMG3Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG3Ch01
+            // 
+            this.chkHRMG3Ch01.AutoSize = true;
+            this.chkHRMG3Ch01.Location = new System.Drawing.Point(500, 420);
+            this.chkHRMG3Ch01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG3Ch01.Name = "chkHRMG3Ch01";
+            this.chkHRMG3Ch01.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG3Ch01.TabIndex = 376;
+            this.chkHRMG3Ch01.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG4Ch11
+            // 
+            this.chkHRMG4Ch11.AutoSize = true;
+            this.chkHRMG4Ch11.Location = new System.Drawing.Point(1580, 466);
+            this.chkHRMG4Ch11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG4Ch11.Name = "chkHRMG4Ch11";
+            this.chkHRMG4Ch11.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG4Ch11.TabIndex = 398;
+            this.chkHRMG4Ch11.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG2Ch03
+            // 
+            this.chkHRMG2Ch03.AutoSize = true;
+            this.chkHRMG2Ch03.Location = new System.Drawing.Point(716, 374);
+            this.chkHRMG2Ch03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG2Ch03.Name = "chkHRMG2Ch03";
+            this.chkHRMG2Ch03.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG2Ch03.TabIndex = 366;
+            this.chkHRMG2Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG4Ch01
+            // 
+            this.chkHRMG4Ch01.AutoSize = true;
+            this.chkHRMG4Ch01.Location = new System.Drawing.Point(500, 466);
+            this.chkHRMG4Ch01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG4Ch01.Name = "chkHRMG4Ch01";
+            this.chkHRMG4Ch01.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG4Ch01.TabIndex = 388;
+            this.chkHRMG4Ch01.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG1Ch03
+            // 
+            this.chkHRMG1Ch03.AutoSize = true;
+            this.chkHRMG1Ch03.Location = new System.Drawing.Point(716, 328);
+            this.chkHRMG1Ch03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG1Ch03.Name = "chkHRMG1Ch03";
+            this.chkHRMG1Ch03.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG1Ch03.TabIndex = 354;
+            this.chkHRMG1Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG1Ch02
+            // 
+            this.chkHRMG1Ch02.AutoSize = true;
+            this.chkHRMG1Ch02.Location = new System.Drawing.Point(608, 328);
+            this.chkHRMG1Ch02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG1Ch02.Name = "chkHRMG1Ch02";
+            this.chkHRMG1Ch02.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG1Ch02.TabIndex = 353;
+            this.chkHRMG1Ch02.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG4Ch02
+            // 
+            this.chkHRMG4Ch02.AutoSize = true;
+            this.chkHRMG4Ch02.Location = new System.Drawing.Point(608, 466);
+            this.chkHRMG4Ch02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG4Ch02.Name = "chkHRMG4Ch02";
+            this.chkHRMG4Ch02.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG4Ch02.TabIndex = 389;
+            this.chkHRMG4Ch02.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG2Ch02
+            // 
+            this.chkHRMG2Ch02.AutoSize = true;
+            this.chkHRMG2Ch02.Location = new System.Drawing.Point(608, 374);
+            this.chkHRMG2Ch02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG2Ch02.Name = "chkHRMG2Ch02";
+            this.chkHRMG2Ch02.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG2Ch02.TabIndex = 365;
+            this.chkHRMG2Ch02.UseVisualStyleBackColor = true;
+            // 
+            // chkHRMG3Ch02
+            // 
+            this.chkHRMG3Ch02.AutoSize = true;
+            this.chkHRMG3Ch02.Location = new System.Drawing.Point(608, 420);
+            this.chkHRMG3Ch02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRMG3Ch02.Name = "chkHRMG3Ch02";
+            this.chkHRMG3Ch02.Size = new System.Drawing.Size(22, 21);
+            this.chkHRMG3Ch02.TabIndex = 377;
+            this.chkHRMG3Ch02.UseVisualStyleBackColor = true;
+            // 
+            // lblHRCh00
+            // 
+            this.lblHRCh00.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHRCh00.ForeColor = System.Drawing.Color.Yellow;
+            this.lblHRCh00.Location = new System.Drawing.Point(357, 162);
+            this.lblHRCh00.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHRCh00.Name = "lblHRCh00";
+            this.lblHRCh00.Size = new System.Drawing.Size(90, 46);
+            this.lblHRCh00.TabIndex = 339;
+            this.lblHRCh00.Text = "0";
+            this.lblHRCh00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHRCh04
+            // 
+            this.lblHRCh04.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHRCh04.ForeColor = System.Drawing.Color.Yellow;
+            this.lblHRCh04.Location = new System.Drawing.Point(789, 162);
+            this.lblHRCh04.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHRCh04.Name = "lblHRCh04";
+            this.lblHRCh04.Size = new System.Drawing.Size(90, 46);
+            this.lblHRCh04.TabIndex = 350;
+            this.lblHRCh04.Text = "4";
+            this.lblHRCh04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHRCh05
+            // 
+            this.lblHRCh05.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHRCh05.ForeColor = System.Drawing.Color.Yellow;
+            this.lblHRCh05.Location = new System.Drawing.Point(897, 162);
+            this.lblHRCh05.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHRCh05.Name = "lblHRCh05";
+            this.lblHRCh05.Size = new System.Drawing.Size(90, 46);
+            this.lblHRCh05.TabIndex = 349;
+            this.lblHRCh05.Text = "5";
+            this.lblHRCh05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHRCh06
+            // 
+            this.lblHRCh06.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHRCh06.ForeColor = System.Drawing.Color.Yellow;
+            this.lblHRCh06.Location = new System.Drawing.Point(1005, 162);
+            this.lblHRCh06.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHRCh06.Name = "lblHRCh06";
+            this.lblHRCh06.Size = new System.Drawing.Size(90, 46);
+            this.lblHRCh06.TabIndex = 348;
+            this.lblHRCh06.Text = "6";
+            this.lblHRCh06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHRCh07
+            // 
+            this.lblHRCh07.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHRCh07.ForeColor = System.Drawing.Color.Yellow;
+            this.lblHRCh07.Location = new System.Drawing.Point(1113, 162);
+            this.lblHRCh07.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHRCh07.Name = "lblHRCh07";
+            this.lblHRCh07.Size = new System.Drawing.Size(90, 46);
+            this.lblHRCh07.TabIndex = 347;
+            this.lblHRCh07.Text = "7";
+            this.lblHRCh07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHRCh08
+            // 
+            this.lblHRCh08.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHRCh08.ForeColor = System.Drawing.Color.Yellow;
+            this.lblHRCh08.Location = new System.Drawing.Point(1221, 162);
+            this.lblHRCh08.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHRCh08.Name = "lblHRCh08";
+            this.lblHRCh08.Size = new System.Drawing.Size(90, 46);
+            this.lblHRCh08.TabIndex = 346;
+            this.lblHRCh08.Text = "8";
+            this.lblHRCh08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHRCh09
+            // 
+            this.lblHRCh09.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHRCh09.ForeColor = System.Drawing.Color.Yellow;
+            this.lblHRCh09.Location = new System.Drawing.Point(1329, 162);
+            this.lblHRCh09.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHRCh09.Name = "lblHRCh09";
+            this.lblHRCh09.Size = new System.Drawing.Size(90, 46);
+            this.lblHRCh09.TabIndex = 345;
+            this.lblHRCh09.Text = "9";
+            this.lblHRCh09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHRCh10
+            // 
+            this.lblHRCh10.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHRCh10.ForeColor = System.Drawing.Color.Yellow;
+            this.lblHRCh10.Location = new System.Drawing.Point(1437, 162);
+            this.lblHRCh10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHRCh10.Name = "lblHRCh10";
+            this.lblHRCh10.Size = new System.Drawing.Size(90, 46);
+            this.lblHRCh10.TabIndex = 344;
+            this.lblHRCh10.Text = "10";
+            this.lblHRCh10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHRCh11
+            // 
+            this.lblHRCh11.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHRCh11.ForeColor = System.Drawing.Color.Yellow;
+            this.lblHRCh11.Location = new System.Drawing.Point(1545, 162);
+            this.lblHRCh11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHRCh11.Name = "lblHRCh11";
+            this.lblHRCh11.Size = new System.Drawing.Size(90, 46);
+            this.lblHRCh11.TabIndex = 343;
+            this.lblHRCh11.Text = "11";
+            this.lblHRCh11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHRCh03
+            // 
+            this.lblHRCh03.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHRCh03.ForeColor = System.Drawing.Color.Yellow;
+            this.lblHRCh03.Location = new System.Drawing.Point(681, 162);
+            this.lblHRCh03.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHRCh03.Name = "lblHRCh03";
+            this.lblHRCh03.Size = new System.Drawing.Size(90, 46);
+            this.lblHRCh03.TabIndex = 342;
+            this.lblHRCh03.Text = "3";
+            this.lblHRCh03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHRCh02
+            // 
+            this.lblHRCh02.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHRCh02.ForeColor = System.Drawing.Color.Yellow;
+            this.lblHRCh02.Location = new System.Drawing.Point(573, 162);
+            this.lblHRCh02.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHRCh02.Name = "lblHRCh02";
+            this.lblHRCh02.Size = new System.Drawing.Size(90, 46);
+            this.lblHRCh02.TabIndex = 341;
+            this.lblHRCh02.Text = "2";
+            this.lblHRCh02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblHRCh01
+            // 
+            this.lblHRCh01.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHRCh01.ForeColor = System.Drawing.Color.Yellow;
+            this.lblHRCh01.Location = new System.Drawing.Point(465, 162);
+            this.lblHRCh01.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHRCh01.Name = "lblHRCh01";
+            this.lblHRCh01.Size = new System.Drawing.Size(90, 46);
+            this.lblHRCh01.TabIndex = 340;
+            this.lblHRCh01.Text = "1";
+            this.lblHRCh01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbHRQuickOCAmpsCh00
+            // 
+            this.cmbHRQuickOCAmpsCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh00.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh00.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21627,17 +21838,18 @@ namespace M1ConfigGenerator
             "18",
             "19",
             "20"});
-            this.comboBox63.Location = new System.Drawing.Point(352, 229);
-            this.comboBox63.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox63.Name = "comboBox63";
-            this.comboBox63.Size = new System.Drawing.Size(97, 28);
-            this.comboBox63.TabIndex = 315;
+            this.cmbHRQuickOCAmpsCh00.Location = new System.Drawing.Point(352, 229);
+            this.cmbHRQuickOCAmpsCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickOCAmpsCh00.Name = "cmbHRQuickOCAmpsCh00";
+            this.cmbHRQuickOCAmpsCh00.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickOCAmpsCh00.TabIndex = 315;
+            this.cmbHRQuickOCAmpsCh00.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh00_SelectedIndexChanged);
             // 
-            // comboBox64
+            // cmbHROCTimeCh07
             // 
-            this.comboBox64.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox64.FormattingEnabled = true;
-            this.comboBox64.Items.AddRange(new object[] {
+            this.cmbHROCTimeCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHROCTimeCh07.FormattingEnabled = true;
+            this.cmbHROCTimeCh07.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21645,17 +21857,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox64.Location = new System.Drawing.Point(1108, 275);
-            this.comboBox64.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox64.Name = "comboBox64";
-            this.comboBox64.Size = new System.Drawing.Size(97, 28);
-            this.comboBox64.TabIndex = 334;
+            this.cmbHROCTimeCh07.Location = new System.Drawing.Point(1108, 275);
+            this.cmbHROCTimeCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHROCTimeCh07.Name = "cmbHROCTimeCh07";
+            this.cmbHROCTimeCh07.Size = new System.Drawing.Size(97, 28);
+            this.cmbHROCTimeCh07.TabIndex = 334;
             // 
-            // comboBox65
+            // cmbHROCTimeCh08
             // 
-            this.comboBox65.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox65.FormattingEnabled = true;
-            this.comboBox65.Items.AddRange(new object[] {
+            this.cmbHROCTimeCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHROCTimeCh08.FormattingEnabled = true;
+            this.cmbHROCTimeCh08.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21663,17 +21875,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox65.Location = new System.Drawing.Point(1216, 275);
-            this.comboBox65.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox65.Name = "comboBox65";
-            this.comboBox65.Size = new System.Drawing.Size(97, 28);
-            this.comboBox65.TabIndex = 335;
+            this.cmbHROCTimeCh08.Location = new System.Drawing.Point(1216, 275);
+            this.cmbHROCTimeCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHROCTimeCh08.Name = "cmbHROCTimeCh08";
+            this.cmbHROCTimeCh08.Size = new System.Drawing.Size(97, 28);
+            this.cmbHROCTimeCh08.TabIndex = 335;
             // 
-            // comboBox66
+            // cmbHROCTimeCh06
             // 
-            this.comboBox66.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox66.FormattingEnabled = true;
-            this.comboBox66.Items.AddRange(new object[] {
+            this.cmbHROCTimeCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHROCTimeCh06.FormattingEnabled = true;
+            this.cmbHROCTimeCh06.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21681,17 +21893,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox66.Location = new System.Drawing.Point(1000, 275);
-            this.comboBox66.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox66.Name = "comboBox66";
-            this.comboBox66.Size = new System.Drawing.Size(97, 28);
-            this.comboBox66.TabIndex = 333;
+            this.cmbHROCTimeCh06.Location = new System.Drawing.Point(1000, 275);
+            this.cmbHROCTimeCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHROCTimeCh06.Name = "cmbHROCTimeCh06";
+            this.cmbHROCTimeCh06.Size = new System.Drawing.Size(97, 28);
+            this.cmbHROCTimeCh06.TabIndex = 333;
             // 
-            // comboBox67
+            // cmbHROCTimeCh09
             // 
-            this.comboBox67.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox67.FormattingEnabled = true;
-            this.comboBox67.Items.AddRange(new object[] {
+            this.cmbHROCTimeCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHROCTimeCh09.FormattingEnabled = true;
+            this.cmbHROCTimeCh09.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21699,17 +21911,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox67.Location = new System.Drawing.Point(1324, 275);
-            this.comboBox67.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox67.Name = "comboBox67";
-            this.comboBox67.Size = new System.Drawing.Size(97, 28);
-            this.comboBox67.TabIndex = 336;
+            this.cmbHROCTimeCh09.Location = new System.Drawing.Point(1324, 275);
+            this.cmbHROCTimeCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHROCTimeCh09.Name = "cmbHROCTimeCh09";
+            this.cmbHROCTimeCh09.Size = new System.Drawing.Size(97, 28);
+            this.cmbHROCTimeCh09.TabIndex = 336;
             // 
-            // comboBox68
+            // cmbHROCTimeCh05
             // 
-            this.comboBox68.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox68.FormattingEnabled = true;
-            this.comboBox68.Items.AddRange(new object[] {
+            this.cmbHROCTimeCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHROCTimeCh05.FormattingEnabled = true;
+            this.cmbHROCTimeCh05.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21717,17 +21929,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox68.Location = new System.Drawing.Point(892, 275);
-            this.comboBox68.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox68.Name = "comboBox68";
-            this.comboBox68.Size = new System.Drawing.Size(97, 28);
-            this.comboBox68.TabIndex = 332;
+            this.cmbHROCTimeCh05.Location = new System.Drawing.Point(892, 275);
+            this.cmbHROCTimeCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHROCTimeCh05.Name = "cmbHROCTimeCh05";
+            this.cmbHROCTimeCh05.Size = new System.Drawing.Size(97, 28);
+            this.cmbHROCTimeCh05.TabIndex = 332;
             // 
-            // comboBox69
+            // cmbHROCTimeCh10
             // 
-            this.comboBox69.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox69.FormattingEnabled = true;
-            this.comboBox69.Items.AddRange(new object[] {
+            this.cmbHROCTimeCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHROCTimeCh10.FormattingEnabled = true;
+            this.cmbHROCTimeCh10.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21735,17 +21947,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox69.Location = new System.Drawing.Point(1432, 275);
-            this.comboBox69.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox69.Name = "comboBox69";
-            this.comboBox69.Size = new System.Drawing.Size(97, 28);
-            this.comboBox69.TabIndex = 337;
+            this.cmbHROCTimeCh10.Location = new System.Drawing.Point(1432, 275);
+            this.cmbHROCTimeCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHROCTimeCh10.Name = "cmbHROCTimeCh10";
+            this.cmbHROCTimeCh10.Size = new System.Drawing.Size(97, 28);
+            this.cmbHROCTimeCh10.TabIndex = 337;
             // 
-            // comboBox70
+            // cmbHROCTimeCh04
             // 
-            this.comboBox70.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox70.FormattingEnabled = true;
-            this.comboBox70.Items.AddRange(new object[] {
+            this.cmbHROCTimeCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHROCTimeCh04.FormattingEnabled = true;
+            this.cmbHROCTimeCh04.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21753,17 +21965,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox70.Location = new System.Drawing.Point(784, 275);
-            this.comboBox70.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox70.Name = "comboBox70";
-            this.comboBox70.Size = new System.Drawing.Size(97, 28);
-            this.comboBox70.TabIndex = 331;
+            this.cmbHROCTimeCh04.Location = new System.Drawing.Point(784, 275);
+            this.cmbHROCTimeCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHROCTimeCh04.Name = "cmbHROCTimeCh04";
+            this.cmbHROCTimeCh04.Size = new System.Drawing.Size(97, 28);
+            this.cmbHROCTimeCh04.TabIndex = 331;
             // 
-            // comboBox71
+            // cmbHROCTimeCh11
             // 
-            this.comboBox71.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox71.FormattingEnabled = true;
-            this.comboBox71.Items.AddRange(new object[] {
+            this.cmbHROCTimeCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHROCTimeCh11.FormattingEnabled = true;
+            this.cmbHROCTimeCh11.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21771,17 +21983,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox71.Location = new System.Drawing.Point(1540, 275);
-            this.comboBox71.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox71.Name = "comboBox71";
-            this.comboBox71.Size = new System.Drawing.Size(97, 28);
-            this.comboBox71.TabIndex = 338;
+            this.cmbHROCTimeCh11.Location = new System.Drawing.Point(1540, 275);
+            this.cmbHROCTimeCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHROCTimeCh11.Name = "cmbHROCTimeCh11";
+            this.cmbHROCTimeCh11.Size = new System.Drawing.Size(97, 28);
+            this.cmbHROCTimeCh11.TabIndex = 338;
             // 
-            // comboBox72
+            // cmbHROCTimeCh03
             // 
-            this.comboBox72.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox72.FormattingEnabled = true;
-            this.comboBox72.Items.AddRange(new object[] {
+            this.cmbHROCTimeCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHROCTimeCh03.FormattingEnabled = true;
+            this.cmbHROCTimeCh03.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21789,17 +22001,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox72.Location = new System.Drawing.Point(676, 275);
-            this.comboBox72.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox72.Name = "comboBox72";
-            this.comboBox72.Size = new System.Drawing.Size(97, 28);
-            this.comboBox72.TabIndex = 330;
+            this.cmbHROCTimeCh03.Location = new System.Drawing.Point(676, 275);
+            this.cmbHROCTimeCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHROCTimeCh03.Name = "cmbHROCTimeCh03";
+            this.cmbHROCTimeCh03.Size = new System.Drawing.Size(97, 28);
+            this.cmbHROCTimeCh03.TabIndex = 330;
             // 
-            // comboBox73
+            // cmbHROCTimeCh02
             // 
-            this.comboBox73.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox73.FormattingEnabled = true;
-            this.comboBox73.Items.AddRange(new object[] {
+            this.cmbHROCTimeCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHROCTimeCh02.FormattingEnabled = true;
+            this.cmbHROCTimeCh02.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21807,17 +22019,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox73.Location = new System.Drawing.Point(568, 275);
-            this.comboBox73.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox73.Name = "comboBox73";
-            this.comboBox73.Size = new System.Drawing.Size(97, 28);
-            this.comboBox73.TabIndex = 329;
+            this.cmbHROCTimeCh02.Location = new System.Drawing.Point(568, 275);
+            this.cmbHROCTimeCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHROCTimeCh02.Name = "cmbHROCTimeCh02";
+            this.cmbHROCTimeCh02.Size = new System.Drawing.Size(97, 28);
+            this.cmbHROCTimeCh02.TabIndex = 329;
             // 
-            // comboBox74
+            // cmbHROCTimeCh01
             // 
-            this.comboBox74.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox74.FormattingEnabled = true;
-            this.comboBox74.Items.AddRange(new object[] {
+            this.cmbHROCTimeCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHROCTimeCh01.FormattingEnabled = true;
+            this.cmbHROCTimeCh01.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21825,17 +22037,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox74.Location = new System.Drawing.Point(460, 275);
-            this.comboBox74.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox74.Name = "comboBox74";
-            this.comboBox74.Size = new System.Drawing.Size(97, 28);
-            this.comboBox74.TabIndex = 328;
+            this.cmbHROCTimeCh01.Location = new System.Drawing.Point(460, 275);
+            this.cmbHROCTimeCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHROCTimeCh01.Name = "cmbHROCTimeCh01";
+            this.cmbHROCTimeCh01.Size = new System.Drawing.Size(97, 28);
+            this.cmbHROCTimeCh01.TabIndex = 328;
             // 
-            // comboBox75
+            // cmbHROCTimeCh00
             // 
-            this.comboBox75.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox75.FormattingEnabled = true;
-            this.comboBox75.Items.AddRange(new object[] {
+            this.cmbHROCTimeCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHROCTimeCh00.FormattingEnabled = true;
+            this.cmbHROCTimeCh00.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21843,17 +22055,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox75.Location = new System.Drawing.Point(352, 275);
-            this.comboBox75.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox75.Name = "comboBox75";
-            this.comboBox75.Size = new System.Drawing.Size(97, 28);
-            this.comboBox75.TabIndex = 327;
+            this.cmbHROCTimeCh00.Location = new System.Drawing.Point(352, 275);
+            this.cmbHROCTimeCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHROCTimeCh00.Name = "cmbHROCTimeCh00";
+            this.cmbHROCTimeCh00.Size = new System.Drawing.Size(97, 28);
+            this.cmbHROCTimeCh00.TabIndex = 327;
             // 
-            // comboBox76
+            // cmbHRQuickOCAmpsCh11
             // 
-            this.comboBox76.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox76.FormattingEnabled = true;
-            this.comboBox76.Items.AddRange(new object[] {
+            this.cmbHRQuickOCAmpsCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh11.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh11.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21870,17 +22082,18 @@ namespace M1ConfigGenerator
             "18",
             "19",
             "20"});
-            this.comboBox76.Location = new System.Drawing.Point(1540, 229);
-            this.comboBox76.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox76.Name = "comboBox76";
-            this.comboBox76.Size = new System.Drawing.Size(97, 28);
-            this.comboBox76.TabIndex = 326;
+            this.cmbHRQuickOCAmpsCh11.Location = new System.Drawing.Point(1540, 229);
+            this.cmbHRQuickOCAmpsCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickOCAmpsCh11.Name = "cmbHRQuickOCAmpsCh11";
+            this.cmbHRQuickOCAmpsCh11.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickOCAmpsCh11.TabIndex = 326;
+            this.cmbHRQuickOCAmpsCh11.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh11_SelectedIndexChanged);
             // 
-            // comboBox77
+            // cmbHRQuickOCAmpsCh10
             // 
-            this.comboBox77.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox77.FormattingEnabled = true;
-            this.comboBox77.Items.AddRange(new object[] {
+            this.cmbHRQuickOCAmpsCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh10.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh10.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21897,17 +22110,18 @@ namespace M1ConfigGenerator
             "18",
             "19",
             "20"});
-            this.comboBox77.Location = new System.Drawing.Point(1432, 229);
-            this.comboBox77.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox77.Name = "comboBox77";
-            this.comboBox77.Size = new System.Drawing.Size(97, 28);
-            this.comboBox77.TabIndex = 325;
+            this.cmbHRQuickOCAmpsCh10.Location = new System.Drawing.Point(1432, 229);
+            this.cmbHRQuickOCAmpsCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickOCAmpsCh10.Name = "cmbHRQuickOCAmpsCh10";
+            this.cmbHRQuickOCAmpsCh10.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickOCAmpsCh10.TabIndex = 325;
+            this.cmbHRQuickOCAmpsCh10.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh10_SelectedIndexChanged);
             // 
-            // comboBox78
+            // cmbHRQuickOCAmpsCh09
             // 
-            this.comboBox78.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox78.FormattingEnabled = true;
-            this.comboBox78.Items.AddRange(new object[] {
+            this.cmbHRQuickOCAmpsCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh09.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh09.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21924,17 +22138,18 @@ namespace M1ConfigGenerator
             "18",
             "19",
             "20"});
-            this.comboBox78.Location = new System.Drawing.Point(1324, 229);
-            this.comboBox78.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox78.Name = "comboBox78";
-            this.comboBox78.Size = new System.Drawing.Size(97, 28);
-            this.comboBox78.TabIndex = 324;
+            this.cmbHRQuickOCAmpsCh09.Location = new System.Drawing.Point(1324, 229);
+            this.cmbHRQuickOCAmpsCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickOCAmpsCh09.Name = "cmbHRQuickOCAmpsCh09";
+            this.cmbHRQuickOCAmpsCh09.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickOCAmpsCh09.TabIndex = 324;
+            this.cmbHRQuickOCAmpsCh09.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh09_SelectedIndexChanged);
             // 
-            // comboBox79
+            // cmbHRQuickOCAmpsCh08
             // 
-            this.comboBox79.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox79.FormattingEnabled = true;
-            this.comboBox79.Items.AddRange(new object[] {
+            this.cmbHRQuickOCAmpsCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh08.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh08.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21951,17 +22166,18 @@ namespace M1ConfigGenerator
             "18",
             "19",
             "20"});
-            this.comboBox79.Location = new System.Drawing.Point(1216, 229);
-            this.comboBox79.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox79.Name = "comboBox79";
-            this.comboBox79.Size = new System.Drawing.Size(97, 28);
-            this.comboBox79.TabIndex = 323;
+            this.cmbHRQuickOCAmpsCh08.Location = new System.Drawing.Point(1216, 229);
+            this.cmbHRQuickOCAmpsCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickOCAmpsCh08.Name = "cmbHRQuickOCAmpsCh08";
+            this.cmbHRQuickOCAmpsCh08.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickOCAmpsCh08.TabIndex = 323;
+            this.cmbHRQuickOCAmpsCh08.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh08_SelectedIndexChanged);
             // 
-            // comboBox80
+            // cmbHRQuickOCAmpsCh07
             // 
-            this.comboBox80.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox80.FormattingEnabled = true;
-            this.comboBox80.Items.AddRange(new object[] {
+            this.cmbHRQuickOCAmpsCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh07.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh07.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -21978,17 +22194,18 @@ namespace M1ConfigGenerator
             "18",
             "19",
             "20"});
-            this.comboBox80.Location = new System.Drawing.Point(1108, 229);
-            this.comboBox80.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox80.Name = "comboBox80";
-            this.comboBox80.Size = new System.Drawing.Size(97, 28);
-            this.comboBox80.TabIndex = 322;
+            this.cmbHRQuickOCAmpsCh07.Location = new System.Drawing.Point(1108, 229);
+            this.cmbHRQuickOCAmpsCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickOCAmpsCh07.Name = "cmbHRQuickOCAmpsCh07";
+            this.cmbHRQuickOCAmpsCh07.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickOCAmpsCh07.TabIndex = 322;
+            this.cmbHRQuickOCAmpsCh07.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh07_SelectedIndexChanged);
             // 
-            // comboBox81
+            // cmbHRQuickOCAmpsCh01
             // 
-            this.comboBox81.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox81.FormattingEnabled = true;
-            this.comboBox81.Items.AddRange(new object[] {
+            this.cmbHRQuickOCAmpsCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh01.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh01.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -22005,17 +22222,18 @@ namespace M1ConfigGenerator
             "18",
             "19",
             "20"});
-            this.comboBox81.Location = new System.Drawing.Point(460, 229);
-            this.comboBox81.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox81.Name = "comboBox81";
-            this.comboBox81.Size = new System.Drawing.Size(97, 28);
-            this.comboBox81.TabIndex = 316;
+            this.cmbHRQuickOCAmpsCh01.Location = new System.Drawing.Point(460, 229);
+            this.cmbHRQuickOCAmpsCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickOCAmpsCh01.Name = "cmbHRQuickOCAmpsCh01";
+            this.cmbHRQuickOCAmpsCh01.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickOCAmpsCh01.TabIndex = 316;
+            this.cmbHRQuickOCAmpsCh01.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh01_SelectedIndexChanged);
             // 
-            // comboBox82
+            // cmbHRQuickOCAmpsCh06
             // 
-            this.comboBox82.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox82.FormattingEnabled = true;
-            this.comboBox82.Items.AddRange(new object[] {
+            this.cmbHRQuickOCAmpsCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh06.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh06.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -22032,17 +22250,18 @@ namespace M1ConfigGenerator
             "18",
             "19",
             "20"});
-            this.comboBox82.Location = new System.Drawing.Point(1000, 229);
-            this.comboBox82.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox82.Name = "comboBox82";
-            this.comboBox82.Size = new System.Drawing.Size(97, 28);
-            this.comboBox82.TabIndex = 321;
+            this.cmbHRQuickOCAmpsCh06.Location = new System.Drawing.Point(1000, 229);
+            this.cmbHRQuickOCAmpsCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickOCAmpsCh06.Name = "cmbHRQuickOCAmpsCh06";
+            this.cmbHRQuickOCAmpsCh06.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickOCAmpsCh06.TabIndex = 321;
+            this.cmbHRQuickOCAmpsCh06.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh06_SelectedIndexChanged);
             // 
-            // comboBox83
+            // cmbHRQuickOCAmpsCh02
             // 
-            this.comboBox83.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox83.FormattingEnabled = true;
-            this.comboBox83.Items.AddRange(new object[] {
+            this.cmbHRQuickOCAmpsCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh02.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh02.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -22059,17 +22278,18 @@ namespace M1ConfigGenerator
             "18",
             "19",
             "20"});
-            this.comboBox83.Location = new System.Drawing.Point(568, 229);
-            this.comboBox83.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox83.Name = "comboBox83";
-            this.comboBox83.Size = new System.Drawing.Size(97, 28);
-            this.comboBox83.TabIndex = 317;
+            this.cmbHRQuickOCAmpsCh02.Location = new System.Drawing.Point(568, 229);
+            this.cmbHRQuickOCAmpsCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickOCAmpsCh02.Name = "cmbHRQuickOCAmpsCh02";
+            this.cmbHRQuickOCAmpsCh02.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickOCAmpsCh02.TabIndex = 317;
+            this.cmbHRQuickOCAmpsCh02.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh02_SelectedIndexChanged);
             // 
-            // comboBox84
+            // cmbHRQuickOCAmpsCh05
             // 
-            this.comboBox84.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox84.FormattingEnabled = true;
-            this.comboBox84.Items.AddRange(new object[] {
+            this.cmbHRQuickOCAmpsCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh05.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh05.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -22086,17 +22306,18 @@ namespace M1ConfigGenerator
             "18",
             "19",
             "20"});
-            this.comboBox84.Location = new System.Drawing.Point(892, 229);
-            this.comboBox84.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox84.Name = "comboBox84";
-            this.comboBox84.Size = new System.Drawing.Size(97, 28);
-            this.comboBox84.TabIndex = 320;
+            this.cmbHRQuickOCAmpsCh05.Location = new System.Drawing.Point(892, 229);
+            this.cmbHRQuickOCAmpsCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickOCAmpsCh05.Name = "cmbHRQuickOCAmpsCh05";
+            this.cmbHRQuickOCAmpsCh05.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickOCAmpsCh05.TabIndex = 320;
+            this.cmbHRQuickOCAmpsCh05.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh05_SelectedIndexChanged);
             // 
-            // comboBox85
+            // cmbHRQuickOCAmpsCh03
             // 
-            this.comboBox85.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox85.FormattingEnabled = true;
-            this.comboBox85.Items.AddRange(new object[] {
+            this.cmbHRQuickOCAmpsCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh03.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh03.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -22113,17 +22334,18 @@ namespace M1ConfigGenerator
             "18",
             "19",
             "20"});
-            this.comboBox85.Location = new System.Drawing.Point(676, 229);
-            this.comboBox85.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox85.Name = "comboBox85";
-            this.comboBox85.Size = new System.Drawing.Size(97, 28);
-            this.comboBox85.TabIndex = 318;
+            this.cmbHRQuickOCAmpsCh03.Location = new System.Drawing.Point(676, 229);
+            this.cmbHRQuickOCAmpsCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickOCAmpsCh03.Name = "cmbHRQuickOCAmpsCh03";
+            this.cmbHRQuickOCAmpsCh03.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickOCAmpsCh03.TabIndex = 318;
+            this.cmbHRQuickOCAmpsCh03.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh03_SelectedIndexChanged);
             // 
-            // comboBox86
+            // cmbHRQuickOCAmpsCh04
             // 
-            this.comboBox86.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox86.FormattingEnabled = true;
-            this.comboBox86.Items.AddRange(new object[] {
+            this.cmbHRQuickOCAmpsCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh04.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh04.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -22140,11 +22362,12 @@ namespace M1ConfigGenerator
             "18",
             "19",
             "20"});
-            this.comboBox86.Location = new System.Drawing.Point(784, 229);
-            this.comboBox86.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox86.Name = "comboBox86";
-            this.comboBox86.Size = new System.Drawing.Size(97, 28);
-            this.comboBox86.TabIndex = 319;
+            this.cmbHRQuickOCAmpsCh04.Location = new System.Drawing.Point(784, 229);
+            this.cmbHRQuickOCAmpsCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRQuickOCAmpsCh04.Name = "cmbHRQuickOCAmpsCh04";
+            this.cmbHRQuickOCAmpsCh04.Size = new System.Drawing.Size(97, 28);
+            this.cmbHRQuickOCAmpsCh04.TabIndex = 319;
+            this.cmbHRQuickOCAmpsCh04.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh04_SelectedIndexChanged);
             // 
             // label692
             // 
@@ -22254,13 +22477,14 @@ namespace M1ConfigGenerator
             this.label700.TabIndex = 306;
             this.label700.Text = "Base Channel Instance:";
             // 
-            // textBox76
+            // tbxHRBaseInstance
             // 
-            this.textBox76.Location = new System.Drawing.Point(220, 177);
-            this.textBox76.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox76.Name = "textBox76";
-            this.textBox76.Size = new System.Drawing.Size(46, 26);
-            this.textBox76.TabIndex = 305;
+            this.tbxHRBaseInstance.Location = new System.Drawing.Point(220, 177);
+            this.tbxHRBaseInstance.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRBaseInstance.Name = "tbxHRBaseInstance";
+            this.tbxHRBaseInstance.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRBaseInstance.TabIndex = 305;
+            this.tbxHRBaseInstance.TextChanged += new System.EventHandler(this.tbxHRBaseInstance_TextChanged);
             // 
             // label681
             // 
@@ -22275,47 +22499,48 @@ namespace M1ConfigGenerator
             this.label681.TabIndex = 301;
             this.label681.Text = "Card Letter:";
             // 
-            // textBox73
+            // tbxHRCardLetter
             // 
-            this.textBox73.Location = new System.Drawing.Point(840, 38);
-            this.textBox73.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox73.MaxLength = 4;
-            this.textBox73.Name = "textBox73";
-            this.textBox73.Size = new System.Drawing.Size(46, 26);
-            this.textBox73.TabIndex = 300;
-            this.textBox73.Text = "A";
+            this.tbxHRCardLetter.Location = new System.Drawing.Point(840, 38);
+            this.tbxHRCardLetter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRCardLetter.MaxLength = 4;
+            this.tbxHRCardLetter.Name = "tbxHRCardLetter";
+            this.tbxHRCardLetter.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRCardLetter.TabIndex = 300;
+            this.tbxHRCardLetter.Text = "A";
             // 
-            // checkBox38
+            // chkHRTabVis
             // 
-            this.checkBox38.AutoSize = true;
-            this.checkBox38.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox38.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox38.Location = new System.Drawing.Point(1551, 43);
-            this.checkBox38.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox38.Name = "checkBox38";
-            this.checkBox38.Size = new System.Drawing.Size(69, 32);
-            this.checkBox38.TabIndex = 299;
-            this.checkBox38.Text = "Full";
-            this.checkBox38.UseVisualStyleBackColor = true;
+            this.chkHRTabVis.AutoSize = true;
+            this.chkHRTabVis.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHRTabVis.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.chkHRTabVis.Location = new System.Drawing.Point(1551, 43);
+            this.chkHRTabVis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRTabVis.Name = "chkHRTabVis";
+            this.chkHRTabVis.Size = new System.Drawing.Size(69, 32);
+            this.chkHRTabVis.TabIndex = 299;
+            this.chkHRTabVis.Text = "Full";
+            this.chkHRTabVis.UseVisualStyleBackColor = true;
+            this.chkHRTabVis.CheckedChanged += new System.EventHandler(this.chkHRTabVis_CheckedChanged);
             // 
-            // checkBox40
+            // chkHRShade
             // 
-            this.checkBox40.AutoSize = true;
-            this.checkBox40.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox40.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox40.Location = new System.Drawing.Point(699, 108);
-            this.checkBox40.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox40.Name = "checkBox40";
-            this.checkBox40.Size = new System.Drawing.Size(92, 32);
-            this.checkBox40.TabIndex = 293;
-            this.checkBox40.Text = "Shade";
-            this.checkBox40.UseVisualStyleBackColor = true;
+            this.chkHRShade.AutoSize = true;
+            this.chkHRShade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHRShade.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHRShade.Location = new System.Drawing.Point(447, 108);
+            this.chkHRShade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRShade.Name = "chkHRShade";
+            this.chkHRShade.Size = new System.Drawing.Size(92, 32);
+            this.chkHRShade.TabIndex = 293;
+            this.chkHRShade.Text = "Shade";
+            this.chkHRShade.UseVisualStyleBackColor = true;
             // 
-            // comboBox61
+            // cmbHRPanelNum
             // 
-            this.comboBox61.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox61.FormattingEnabled = true;
-            this.comboBox61.Items.AddRange(new object[] {
+            this.cmbHRPanelNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRPanelNum.FormattingEnabled = true;
+            this.cmbHRPanelNum.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -22323,11 +22548,12 @@ namespace M1ConfigGenerator
             "5",
             "6",
             "7"});
-            this.comboBox61.Location = new System.Drawing.Point(390, 38);
-            this.comboBox61.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox61.Name = "comboBox61";
-            this.comboBox61.Size = new System.Drawing.Size(46, 28);
-            this.comboBox61.TabIndex = 289;
+            this.cmbHRPanelNum.Location = new System.Drawing.Point(390, 38);
+            this.cmbHRPanelNum.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRPanelNum.Name = "cmbHRPanelNum";
+            this.cmbHRPanelNum.Size = new System.Drawing.Size(46, 28);
+            this.cmbHRPanelNum.TabIndex = 289;
+            this.cmbHRPanelNum.SelectedIndexChanged += new System.EventHandler(this.cmbHRPanelNum_SelectedIndexChanged);
             // 
             // label687
             // 
@@ -22341,11 +22567,11 @@ namespace M1ConfigGenerator
             this.label687.TabIndex = 294;
             this.label687.Text = "Card # in Panel:";
             // 
-            // comboBox62
+            // cmbHRCardNum
             // 
-            this.comboBox62.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox62.FormattingEnabled = true;
-            this.comboBox62.Items.AddRange(new object[] {
+            this.cmbHRCardNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRCardNum.FormattingEnabled = true;
+            this.cmbHRCardNum.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -22354,11 +22580,12 @@ namespace M1ConfigGenerator
             "6",
             "7",
             "8"});
-            this.comboBox62.Location = new System.Drawing.Point(165, 38);
-            this.comboBox62.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox62.Name = "comboBox62";
-            this.comboBox62.Size = new System.Drawing.Size(46, 28);
-            this.comboBox62.TabIndex = 288;
+            this.cmbHRCardNum.Location = new System.Drawing.Point(165, 38);
+            this.cmbHRCardNum.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRCardNum.Name = "cmbHRCardNum";
+            this.cmbHRCardNum.Size = new System.Drawing.Size(46, 28);
+            this.cmbHRCardNum.TabIndex = 288;
+            this.cmbHRCardNum.SelectedIndexChanged += new System.EventHandler(this.cmbHRCardNum_SelectedIndexChanged);
             // 
             // label688
             // 
@@ -22384,14 +22611,14 @@ namespace M1ConfigGenerator
             this.label689.TabIndex = 296;
             this.label689.Text = "Config Rev:";
             // 
-            // textBox74
+            // tbxHRCfgRev
             // 
-            this.textBox74.Location = new System.Drawing.Point(615, 38);
-            this.textBox74.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox74.Name = "textBox74";
-            this.textBox74.Size = new System.Drawing.Size(46, 26);
-            this.textBox74.TabIndex = 290;
-            this.textBox74.Text = "1";
+            this.tbxHRCfgRev.Location = new System.Drawing.Point(615, 38);
+            this.tbxHRCfgRev.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRCfgRev.Name = "tbxHRCfgRev";
+            this.tbxHRCfgRev.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRCfgRev.TabIndex = 290;
+            this.tbxHRCfgRev.Text = "1";
             // 
             // label690
             // 
@@ -22406,15 +22633,15 @@ namespace M1ConfigGenerator
             this.label690.TabIndex = 297;
             this.label690.Text = "Config Type:  0x";
             // 
-            // textBox75
+            // tbxHRCfgType
             // 
-            this.textBox75.Location = new System.Drawing.Point(1095, 40);
-            this.textBox75.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox75.MaxLength = 4;
-            this.textBox75.Name = "textBox75";
-            this.textBox75.Size = new System.Drawing.Size(46, 26);
-            this.textBox75.TabIndex = 302;
-            this.textBox75.Text = "0";
+            this.tbxHRCfgType.Location = new System.Drawing.Point(1095, 40);
+            this.tbxHRCfgType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRCfgType.MaxLength = 4;
+            this.tbxHRCfgType.Name = "tbxHRCfgType";
+            this.tbxHRCfgType.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRCfgType.TabIndex = 302;
+            this.tbxHRCfgType.Text = "0";
             // 
             // label691
             // 
@@ -22428,44 +22655,31 @@ namespace M1ConfigGenerator
             this.label691.TabIndex = 298;
             this.label691.Text = "Enable Command Types:";
             // 
-            // checkBox41
+            // chkHRDCMotor
             // 
-            this.checkBox41.AutoSize = true;
-            this.checkBox41.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox41.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox41.Location = new System.Drawing.Point(428, 108);
-            this.checkBox41.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox41.Name = "checkBox41";
-            this.checkBox41.Size = new System.Drawing.Size(247, 32);
-            this.checkBox41.TabIndex = 292;
-            this.checkBox41.Text = "DC Dimmer (Any Lights)";
-            this.checkBox41.UseVisualStyleBackColor = true;
+            this.chkHRDCMotor.AutoSize = true;
+            this.chkHRDCMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHRDCMotor.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHRDCMotor.Location = new System.Drawing.Point(240, 108);
+            this.chkHRDCMotor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRDCMotor.Name = "chkHRDCMotor";
+            this.chkHRDCMotor.Size = new System.Drawing.Size(165, 32);
+            this.chkHRDCMotor.TabIndex = 291;
+            this.chkHRDCMotor.Text = "DC Motor (RP)";
+            this.chkHRDCMotor.UseVisualStyleBackColor = true;
             // 
-            // checkBox42
+            // chkHRForce
             // 
-            this.checkBox42.AutoSize = true;
-            this.checkBox42.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox42.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox42.Location = new System.Drawing.Point(240, 108);
-            this.checkBox42.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox42.Name = "checkBox42";
-            this.checkBox42.Size = new System.Drawing.Size(165, 32);
-            this.checkBox42.TabIndex = 291;
-            this.checkBox42.Text = "DC Motor (RP)";
-            this.checkBox42.UseVisualStyleBackColor = true;
-            // 
-            // checkBox43
-            // 
-            this.checkBox43.AutoSize = true;
-            this.checkBox43.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox43.ForeColor = System.Drawing.SystemColors.Control;
-            this.checkBox43.Location = new System.Drawing.Point(1040, 108);
-            this.checkBox43.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox43.Name = "checkBox43";
-            this.checkBox43.Size = new System.Drawing.Size(190, 32);
-            this.checkBox43.TabIndex = 304;
-            this.checkBox43.Text = "Force Commands";
-            this.checkBox43.UseVisualStyleBackColor = true;
+            this.chkHRForce.AutoSize = true;
+            this.chkHRForce.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHRForce.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHRForce.Location = new System.Drawing.Point(585, 108);
+            this.chkHRForce.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRForce.Name = "chkHRForce";
+            this.chkHRForce.Size = new System.Drawing.Size(190, 32);
+            this.chkHRForce.TabIndex = 304;
+            this.chkHRForce.Text = "Force Commands";
+            this.chkHRForce.UseVisualStyleBackColor = true;
             // 
             // tablessControl6
             // 
@@ -22492,202 +22706,189 @@ namespace M1ConfigGenerator
             // tabPage16
             // 
             this.tabPage16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabPage16.Controls.Add(this.textBox1);
+            this.tabPage16.Controls.Add(this.tbxHROCAmpsCh11);
             this.tabPage16.Controls.Add(this.label652);
-            this.tabPage16.Controls.Add(this.textBox2);
-            this.tabPage16.Controls.Add(this.textBox3);
-            this.tabPage16.Controls.Add(this.textBox4);
-            this.tabPage16.Controls.Add(this.textBox5);
-            this.tabPage16.Controls.Add(this.textBox6);
-            this.tabPage16.Controls.Add(this.textBox7);
-            this.tabPage16.Controls.Add(this.textBox8);
-            this.tabPage16.Controls.Add(this.textBox9);
-            this.tabPage16.Controls.Add(this.textBox10);
-            this.tabPage16.Controls.Add(this.textBox11);
-            this.tabPage16.Controls.Add(this.textBox12);
+            this.tabPage16.Controls.Add(this.tbxHROCAmpsCh10);
+            this.tabPage16.Controls.Add(this.tbxHROCAmpsCh00);
+            this.tabPage16.Controls.Add(this.tbxHROCAmpsCh09);
+            this.tabPage16.Controls.Add(this.tbxHROCAmpsCh01);
+            this.tabPage16.Controls.Add(this.tbxHROCAmpsCh08);
+            this.tabPage16.Controls.Add(this.tbxHROCAmpsCh02);
+            this.tabPage16.Controls.Add(this.tbxHROCAmpsCh07);
+            this.tabPage16.Controls.Add(this.tbxHROCAmpsCh03);
+            this.tabPage16.Controls.Add(this.tbxHROCAmpsCh06);
+            this.tabPage16.Controls.Add(this.tbxHROCAmpsCh04);
+            this.tabPage16.Controls.Add(this.tbxHROCAmpsCh05);
             this.tabPage16.Controls.Add(this.label653);
             this.tabPage16.Controls.Add(this.label654);
             this.tabPage16.Controls.Add(this.label655);
             this.tabPage16.Controls.Add(this.label656);
             this.tabPage16.Controls.Add(this.label657);
             this.tabPage16.Controls.Add(this.label658);
-            this.tabPage16.Controls.Add(this.comboBox1);
+            this.tabPage16.Controls.Add(this.cmbHRModeParamCh11);
             this.tabPage16.Controls.Add(this.label659);
-            this.tabPage16.Controls.Add(this.comboBox2);
+            this.tabPage16.Controls.Add(this.cmbHRModeParamCh10);
             this.tabPage16.Controls.Add(this.label660);
-            this.tabPage16.Controls.Add(this.comboBox3);
+            this.tabPage16.Controls.Add(this.cmbHRModeParamCh09);
             this.tabPage16.Controls.Add(this.label661);
-            this.tabPage16.Controls.Add(this.comboBox4);
+            this.tabPage16.Controls.Add(this.cmbHRModeParamCh08);
             this.tabPage16.Controls.Add(this.label662);
-            this.tabPage16.Controls.Add(this.comboBox5);
+            this.tabPage16.Controls.Add(this.cmbHRModeParamCh07);
             this.tabPage16.Controls.Add(this.label663);
-            this.tabPage16.Controls.Add(this.comboBox6);
+            this.tabPage16.Controls.Add(this.cmbHRModeParamCh06);
             this.tabPage16.Controls.Add(this.label664);
-            this.tabPage16.Controls.Add(this.comboBox7);
+            this.tabPage16.Controls.Add(this.cmbHRModeParamCh05);
             this.tabPage16.Controls.Add(this.label665);
-            this.tabPage16.Controls.Add(this.comboBox8);
+            this.tabPage16.Controls.Add(this.cmbHRModeParamCh04);
             this.tabPage16.Controls.Add(this.label666);
-            this.tabPage16.Controls.Add(this.comboBox9);
-            this.tabPage16.Controls.Add(this.comboBox10);
-            this.tabPage16.Controls.Add(this.comboBox11);
-            this.tabPage16.Controls.Add(this.comboBox12);
+            this.tabPage16.Controls.Add(this.cmbHRModeParamCh03);
+            this.tabPage16.Controls.Add(this.cmbHRModeParamCh02);
+            this.tabPage16.Controls.Add(this.cmbHRModeParamCh01);
+            this.tabPage16.Controls.Add(this.cmbHRModeParamCh00);
             this.tabPage16.Controls.Add(this.label667);
-            this.tabPage16.Controls.Add(this.checkBox1);
-            this.tabPage16.Controls.Add(this.checkBox3);
-            this.tabPage16.Controls.Add(this.checkBox4);
-            this.tabPage16.Controls.Add(this.checkBox5);
-            this.tabPage16.Controls.Add(this.checkBox6);
-            this.tabPage16.Controls.Add(this.checkBox7);
-            this.tabPage16.Controls.Add(this.checkBox8);
-            this.tabPage16.Controls.Add(this.checkBox9);
-            this.tabPage16.Controls.Add(this.checkBox10);
-            this.tabPage16.Controls.Add(this.checkBox11);
-            this.tabPage16.Controls.Add(this.checkBox12);
-            this.tabPage16.Controls.Add(this.checkBox13);
+            this.tabPage16.Controls.Add(this.chkHRLockCh00);
+            this.tabPage16.Controls.Add(this.chkHRLockCh01);
+            this.tabPage16.Controls.Add(this.chkHRLockCh02);
+            this.tabPage16.Controls.Add(this.chkHRLockCh03);
+            this.tabPage16.Controls.Add(this.chkHRLockCh04);
+            this.tabPage16.Controls.Add(this.chkHRLockCh05);
+            this.tabPage16.Controls.Add(this.chkHRLockCh06);
+            this.tabPage16.Controls.Add(this.chkHRLockCh07);
+            this.tabPage16.Controls.Add(this.chkHRLockCh08);
+            this.tabPage16.Controls.Add(this.chkHRLockCh09);
+            this.tabPage16.Controls.Add(this.chkHRLockCh10);
+            this.tabPage16.Controls.Add(this.chkHRLockCh11);
             this.tabPage16.Controls.Add(this.label668);
-            this.tabPage16.Controls.Add(this.comboBox13);
+            this.tabPage16.Controls.Add(this.cmbHRMeasCurTimeCh11);
             this.tabPage16.Controls.Add(this.label669);
-            this.tabPage16.Controls.Add(this.checkBox14);
-            this.tabPage16.Controls.Add(this.comboBox14);
-            this.tabPage16.Controls.Add(this.checkBox15);
-            this.tabPage16.Controls.Add(this.textBox13);
-            this.tabPage16.Controls.Add(this.checkBox16);
+            this.tabPage16.Controls.Add(this.chkHRTimeoutCh04);
+            this.tabPage16.Controls.Add(this.cmbHRMeasCurTimeCh10);
+            this.tabPage16.Controls.Add(this.chkHRTimeoutCh03);
+            this.tabPage16.Controls.Add(this.tbxHRPWMDutyCh00);
+            this.tabPage16.Controls.Add(this.chkHRTimeoutCh05);
             this.tabPage16.Controls.Add(this.label670);
-            this.tabPage16.Controls.Add(this.checkBox17);
-            this.tabPage16.Controls.Add(this.textBox14);
-            this.tabPage16.Controls.Add(this.checkBox18);
-            this.tabPage16.Controls.Add(this.comboBox15);
-            this.tabPage16.Controls.Add(this.checkBox19);
-            this.tabPage16.Controls.Add(this.textBox15);
-            this.tabPage16.Controls.Add(this.checkBox20);
-            this.tabPage16.Controls.Add(this.comboBox16);
-            this.tabPage16.Controls.Add(this.checkBox21);
-            this.tabPage16.Controls.Add(this.textBox16);
-            this.tabPage16.Controls.Add(this.checkBox22);
-            this.tabPage16.Controls.Add(this.comboBox17);
-            this.tabPage16.Controls.Add(this.comboBox18);
-            this.tabPage16.Controls.Add(this.textBox17);
-            this.tabPage16.Controls.Add(this.checkBox23);
-            this.tabPage16.Controls.Add(this.comboBox19);
-            this.tabPage16.Controls.Add(this.comboBox20);
-            this.tabPage16.Controls.Add(this.textBox18);
-            this.tabPage16.Controls.Add(this.checkBox24);
-            this.tabPage16.Controls.Add(this.comboBox21);
-            this.tabPage16.Controls.Add(this.comboBox22);
-            this.tabPage16.Controls.Add(this.textBox19);
-            this.tabPage16.Controls.Add(this.checkBox25);
-            this.tabPage16.Controls.Add(this.comboBox23);
-            this.tabPage16.Controls.Add(this.comboBox24);
-            this.tabPage16.Controls.Add(this.textBox20);
-            this.tabPage16.Controls.Add(this.textBox21);
-            this.tabPage16.Controls.Add(this.comboBox25);
-            this.tabPage16.Controls.Add(this.comboBox26);
-            this.tabPage16.Controls.Add(this.textBox22);
-            this.tabPage16.Controls.Add(this.textBox23);
-            this.tabPage16.Controls.Add(this.comboBox27);
-            this.tabPage16.Controls.Add(this.comboBox28);
-            this.tabPage16.Controls.Add(this.textBox24);
-            this.tabPage16.Controls.Add(this.textBox25);
-            this.tabPage16.Controls.Add(this.comboBox29);
-            this.tabPage16.Controls.Add(this.comboBox30);
-            this.tabPage16.Controls.Add(this.textBox26);
-            this.tabPage16.Controls.Add(this.textBox27);
-            this.tabPage16.Controls.Add(this.comboBox31);
-            this.tabPage16.Controls.Add(this.comboBox32);
-            this.tabPage16.Controls.Add(this.textBox28);
-            this.tabPage16.Controls.Add(this.textBox29);
-            this.tabPage16.Controls.Add(this.textBox30);
-            this.tabPage16.Controls.Add(this.comboBox33);
-            this.tabPage16.Controls.Add(this.label671);
-            this.tabPage16.Controls.Add(this.textBox31);
+            this.tabPage16.Controls.Add(this.chkHRTimeoutCh02);
+            this.tabPage16.Controls.Add(this.tbxHRPWMDutyCh01);
+            this.tabPage16.Controls.Add(this.chkHRTimeoutCh06);
+            this.tabPage16.Controls.Add(this.cmbHRMeasCurTimeCh09);
+            this.tabPage16.Controls.Add(this.chkHRTimeoutCh01);
+            this.tabPage16.Controls.Add(this.tbxHRPWMDutyCh02);
+            this.tabPage16.Controls.Add(this.chkHRTimeoutCh07);
+            this.tabPage16.Controls.Add(this.cmbHRMeasCurTimeCh00);
+            this.tabPage16.Controls.Add(this.chkHRTimeoutCh00);
+            this.tabPage16.Controls.Add(this.tbxHRPWMDutyCh04);
+            this.tabPage16.Controls.Add(this.chkHRTimeoutCh08);
+            this.tabPage16.Controls.Add(this.cmbHRMeasCurTimeCh08);
+            this.tabPage16.Controls.Add(this.cmbHRPairedCh10);
+            this.tabPage16.Controls.Add(this.tbxHRPWMDutyCh03);
+            this.tabPage16.Controls.Add(this.chkHRTimeoutCh09);
+            this.tabPage16.Controls.Add(this.cmbHRMeasCurTimeCh01);
+            this.tabPage16.Controls.Add(this.cmbHRPairedCh11);
+            this.tabPage16.Controls.Add(this.tbxHRPWMDutyCh05);
+            this.tabPage16.Controls.Add(this.chkHRTimeoutCh10);
+            this.tabPage16.Controls.Add(this.cmbHRMeasCurTimeCh07);
+            this.tabPage16.Controls.Add(this.cmbHRPairedCh09);
+            this.tabPage16.Controls.Add(this.tbxHRPWMDutyCh06);
+            this.tabPage16.Controls.Add(this.chkHRTimeoutCh11);
+            this.tabPage16.Controls.Add(this.cmbHRMeasCurTimeCh02);
+            this.tabPage16.Controls.Add(this.cmbHRPairedCh08);
+            this.tabPage16.Controls.Add(this.tbxHRPWMDutyCh07);
+            this.tabPage16.Controls.Add(this.tbxHRTimeoutTimeCh00);
+            this.tabPage16.Controls.Add(this.cmbHRMeasCurTimeCh06);
+            this.tabPage16.Controls.Add(this.cmbHRPairedCh07);
+            this.tabPage16.Controls.Add(this.tbxHRPWMDutyCh08);
+            this.tabPage16.Controls.Add(this.tbxHRTimeoutTimeCh01);
+            this.tabPage16.Controls.Add(this.cmbHRMeasCurTimeCh03);
+            this.tabPage16.Controls.Add(this.cmbHRPairedCh06);
+            this.tabPage16.Controls.Add(this.tbxHRPWMDutyCh09);
+            this.tabPage16.Controls.Add(this.tbxHRTimeoutTimeCh02);
+            this.tabPage16.Controls.Add(this.cmbHRMeasCurTimeCh05);
+            this.tabPage16.Controls.Add(this.cmbHRPairedCh05);
+            this.tabPage16.Controls.Add(this.tbxHRPWMDutyCh10);
+            this.tabPage16.Controls.Add(this.tbxHRTimeoutTimeCh03);
+            this.tabPage16.Controls.Add(this.cmbHRMeasCurTimeCh04);
+            this.tabPage16.Controls.Add(this.cmbHRPairedCh04);
+            this.tabPage16.Controls.Add(this.tbxHRPWMDutyCh11);
+            this.tabPage16.Controls.Add(this.tbxHRTimeoutTimeCh04);
+            this.tabPage16.Controls.Add(this.tbxHRUndAmpsCh11);
+            this.tabPage16.Controls.Add(this.cmbHRPairedCh03);
+            this.tabPage16.Controls.Add(this.tbxHRTimeoutTimeCh05);
             this.tabPage16.Controls.Add(this.label672);
-            this.tabPage16.Controls.Add(this.comboBox34);
-            this.tabPage16.Controls.Add(this.checkBox26);
-            this.tabPage16.Controls.Add(this.textBox32);
-            this.tabPage16.Controls.Add(this.textBox33);
-            this.tabPage16.Controls.Add(this.comboBox35);
-            this.tabPage16.Controls.Add(this.checkBox27);
-            this.tabPage16.Controls.Add(this.textBox34);
-            this.tabPage16.Controls.Add(this.textBox35);
-            this.tabPage16.Controls.Add(this.comboBox36);
-            this.tabPage16.Controls.Add(this.checkBox28);
-            this.tabPage16.Controls.Add(this.textBox36);
-            this.tabPage16.Controls.Add(this.textBox37);
-            this.tabPage16.Controls.Add(this.comboBox37);
-            this.tabPage16.Controls.Add(this.checkBox29);
-            this.tabPage16.Controls.Add(this.textBox38);
-            this.tabPage16.Controls.Add(this.textBox39);
-            this.tabPage16.Controls.Add(this.comboBox38);
-            this.tabPage16.Controls.Add(this.checkBox30);
-            this.tabPage16.Controls.Add(this.textBox40);
-            this.tabPage16.Controls.Add(this.textBox41);
-            this.tabPage16.Controls.Add(this.comboBox39);
-            this.tabPage16.Controls.Add(this.checkBox31);
-            this.tabPage16.Controls.Add(this.textBox42);
-            this.tabPage16.Controls.Add(this.textBox43);
-            this.tabPage16.Controls.Add(this.comboBox40);
-            this.tabPage16.Controls.Add(this.checkBox32);
+            this.tabPage16.Controls.Add(this.cmbHRPairedCh02);
+            this.tabPage16.Controls.Add(this.tbxHRTimeoutTimeCh07);
+            this.tabPage16.Controls.Add(this.tbxHRUndAmpsCh10);
+            this.tabPage16.Controls.Add(this.cmbHRPairedCh01);
+            this.tabPage16.Controls.Add(this.tbxHRTimeoutTimeCh06);
+            this.tabPage16.Controls.Add(this.tbxHRUndAmpsCh00);
+            this.tabPage16.Controls.Add(this.cmbHRPairedCh00);
+            this.tabPage16.Controls.Add(this.tbxHRTimeoutTimeCh08);
+            this.tabPage16.Controls.Add(this.tbxHRUndAmpsCh09);
+            this.tabPage16.Controls.Add(this.cmbHRDeadTimeCh11);
+            this.tabPage16.Controls.Add(this.tbxHRTimeoutTimeCh09);
+            this.tabPage16.Controls.Add(this.tbxHRUndAmpsCh01);
+            this.tabPage16.Controls.Add(this.cmbHRDeadTimeCh10);
+            this.tabPage16.Controls.Add(this.tbxHRTimeoutTimeCh10);
+            this.tabPage16.Controls.Add(this.tbxHRUndAmpsCh08);
+            this.tabPage16.Controls.Add(this.cmbHRDeadTimeCh09);
+            this.tabPage16.Controls.Add(this.tbxHRTimeoutTimeCh11);
+            this.tabPage16.Controls.Add(this.tbxHRUndAmpsCh02);
+            this.tabPage16.Controls.Add(this.cmbHRDeadTimeCh07);
             this.tabPage16.Controls.Add(this.label673);
-            this.tabPage16.Controls.Add(this.textBox44);
-            this.tabPage16.Controls.Add(this.comboBox41);
-            this.tabPage16.Controls.Add(this.checkBox33);
-            this.tabPage16.Controls.Add(this.textBox45);
-            this.tabPage16.Controls.Add(this.textBox46);
-            this.tabPage16.Controls.Add(this.comboBox42);
-            this.tabPage16.Controls.Add(this.checkBox34);
-            this.tabPage16.Controls.Add(this.textBox47);
-            this.tabPage16.Controls.Add(this.textBox48);
-            this.tabPage16.Controls.Add(this.comboBox43);
-            this.tabPage16.Controls.Add(this.checkBox35);
-            this.tabPage16.Controls.Add(this.textBox49);
-            this.tabPage16.Controls.Add(this.textBox50);
-            this.tabPage16.Controls.Add(this.comboBox44);
-            this.tabPage16.Controls.Add(this.checkBox36);
-            this.tabPage16.Controls.Add(this.textBox51);
-            this.tabPage16.Controls.Add(this.textBox52);
-            this.tabPage16.Controls.Add(this.comboBox45);
-            this.tabPage16.Controls.Add(this.checkBox37);
-            this.tabPage16.Controls.Add(this.textBox53);
-            this.tabPage16.Controls.Add(this.textBox54);
-            this.tabPage16.Controls.Add(this.comboBox46);
+            this.tabPage16.Controls.Add(this.tbxHRUndAmpsCh07);
+            this.tabPage16.Controls.Add(this.cmbHRDeadTimeCh08);
+            this.tabPage16.Controls.Add(this.tbxHRMaxOnCh00);
+            this.tabPage16.Controls.Add(this.tbxHRUndAmpsCh03);
+            this.tabPage16.Controls.Add(this.cmbHRDeadTimeCh06);
+            this.tabPage16.Controls.Add(this.tbxHRMaxOnCh01);
+            this.tabPage16.Controls.Add(this.tbxHRUndAmpsCh06);
+            this.tabPage16.Controls.Add(this.cmbHRDeadTimeCh05);
+            this.tabPage16.Controls.Add(this.tbxHRMaxOnCh02);
+            this.tabPage16.Controls.Add(this.tbxHRUndAmpsCh04);
+            this.tabPage16.Controls.Add(this.cmbHRDeadTimeCh04);
+            this.tabPage16.Controls.Add(this.tbxHRMaxOnCh03);
+            this.tabPage16.Controls.Add(this.tbxHRUndAmpsCh05);
+            this.tabPage16.Controls.Add(this.cmbHRDeadTimeCh03);
+            this.tabPage16.Controls.Add(this.tbxHRMaxOnCh04);
+            this.tabPage16.Controls.Add(this.tbxHRMaxDurRecCh11);
+            this.tabPage16.Controls.Add(this.cmbHRDeadTimeCh02);
             this.tabPage16.Controls.Add(this.label674);
-            this.tabPage16.Controls.Add(this.textBox55);
+            this.tabPage16.Controls.Add(this.tbxHRMaxOnCh05);
             this.tabPage16.Controls.Add(this.label675);
-            this.tabPage16.Controls.Add(this.comboBox47);
-            this.tabPage16.Controls.Add(this.comboBox48);
-            this.tabPage16.Controls.Add(this.textBox56);
-            this.tabPage16.Controls.Add(this.textBox57);
-            this.tabPage16.Controls.Add(this.comboBox49);
-            this.tabPage16.Controls.Add(this.comboBox50);
-            this.tabPage16.Controls.Add(this.textBox58);
-            this.tabPage16.Controls.Add(this.textBox59);
+            this.tabPage16.Controls.Add(this.cmbHRDeadTimeCh01);
+            this.tabPage16.Controls.Add(this.cmbHRDirectionCh00);
+            this.tabPage16.Controls.Add(this.tbxHRMaxOnCh06);
+            this.tabPage16.Controls.Add(this.tbxHRMaxDurRecCh10);
+            this.tabPage16.Controls.Add(this.cmbHRDeadTimeCh00);
+            this.tabPage16.Controls.Add(this.cmbHRDirectionCh01);
+            this.tabPage16.Controls.Add(this.tbxHRMaxOnCh07);
+            this.tabPage16.Controls.Add(this.tbxHRMaxDurRecCh00);
             this.tabPage16.Controls.Add(this.label676);
-            this.tabPage16.Controls.Add(this.comboBox51);
-            this.tabPage16.Controls.Add(this.textBox60);
-            this.tabPage16.Controls.Add(this.textBox61);
+            this.tabPage16.Controls.Add(this.cmbHRDirectionCh02);
+            this.tabPage16.Controls.Add(this.tbxHRMaxOnCh08);
+            this.tabPage16.Controls.Add(this.tbxHRMaxDurRecCh09);
             this.tabPage16.Controls.Add(this.label677);
-            this.tabPage16.Controls.Add(this.comboBox52);
-            this.tabPage16.Controls.Add(this.textBox62);
-            this.tabPage16.Controls.Add(this.textBox63);
+            this.tabPage16.Controls.Add(this.cmbHRDirectionCh03);
+            this.tabPage16.Controls.Add(this.tbxHRMaxOnCh09);
+            this.tabPage16.Controls.Add(this.tbxHRMaxDurRecCh01);
             this.tabPage16.Controls.Add(this.label678);
-            this.tabPage16.Controls.Add(this.comboBox53);
-            this.tabPage16.Controls.Add(this.textBox64);
-            this.tabPage16.Controls.Add(this.textBox65);
+            this.tabPage16.Controls.Add(this.cmbHRDirectionCh04);
+            this.tabPage16.Controls.Add(this.tbxHRMaxOnCh10);
+            this.tabPage16.Controls.Add(this.tbxHRMaxDurRecCh08);
             this.tabPage16.Controls.Add(this.label679);
-            this.tabPage16.Controls.Add(this.comboBox54);
-            this.tabPage16.Controls.Add(this.textBox66);
-            this.tabPage16.Controls.Add(this.textBox67);
-            this.tabPage16.Controls.Add(this.comboBox55);
-            this.tabPage16.Controls.Add(this.comboBox56);
-            this.tabPage16.Controls.Add(this.textBox68);
-            this.tabPage16.Controls.Add(this.textBox69);
-            this.tabPage16.Controls.Add(this.comboBox57);
-            this.tabPage16.Controls.Add(this.comboBox58);
-            this.tabPage16.Controls.Add(this.textBox70);
-            this.tabPage16.Controls.Add(this.textBox71);
-            this.tabPage16.Controls.Add(this.comboBox59);
-            this.tabPage16.Controls.Add(this.comboBox60);
-            this.tabPage16.Controls.Add(this.textBox72);
+            this.tabPage16.Controls.Add(this.cmbHRDirectionCh05);
+            this.tabPage16.Controls.Add(this.tbxHRMaxOnCh11);
+            this.tabPage16.Controls.Add(this.tbxHRMaxDurRecCh02);
+            this.tabPage16.Controls.Add(this.cmbHRDirectionCh11);
+            this.tabPage16.Controls.Add(this.cmbHRDirectionCh06);
+            this.tabPage16.Controls.Add(this.tbxHRMaxDurRecCh05);
+            this.tabPage16.Controls.Add(this.tbxHRMaxDurRecCh07);
+            this.tabPage16.Controls.Add(this.cmbHRDirectionCh10);
+            this.tabPage16.Controls.Add(this.cmbHRDirectionCh08);
+            this.tabPage16.Controls.Add(this.tbxHRMaxDurRecCh04);
+            this.tabPage16.Controls.Add(this.tbxHRMaxDurRecCh03);
+            this.tabPage16.Controls.Add(this.cmbHRDirectionCh09);
+            this.tabPage16.Controls.Add(this.cmbHRDirectionCh07);
+            this.tabPage16.Controls.Add(this.tbxHRMaxDurRecCh06);
             this.tabPage16.Location = new System.Drawing.Point(4, 29);
             this.tabPage16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage16.Name = "tabPage16";
@@ -22696,125 +22897,125 @@ namespace M1ConfigGenerator
             this.tabPage16.TabIndex = 1;
             this.tabPage16.Text = "HR 1 Full";
             // 
-            // textBox1
+            // tbxHROCAmpsCh11
             // 
-            this.textBox1.Location = new System.Drawing.Point(1568, 558);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(46, 26);
-            this.textBox1.TabIndex = 341;
-            this.textBox1.Text = "10";
+            this.tbxHROCAmpsCh11.Location = new System.Drawing.Point(1568, 512);
+            this.tbxHROCAmpsCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHROCAmpsCh11.Name = "tbxHROCAmpsCh11";
+            this.tbxHROCAmpsCh11.Size = new System.Drawing.Size(46, 26);
+            this.tbxHROCAmpsCh11.TabIndex = 341;
+            this.tbxHROCAmpsCh11.Text = "10";
             // 
             // label652
             // 
             this.label652.AutoSize = true;
             this.label652.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label652.ForeColor = System.Drawing.SystemColors.Control;
-            this.label652.Location = new System.Drawing.Point(4, 558);
+            this.label652.Location = new System.Drawing.Point(4, 512);
             this.label652.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label652.Name = "label652";
             this.label652.Size = new System.Drawing.Size(171, 28);
             this.label652.TabIndex = 329;
             this.label652.Text = "Overcurrent Amps";
             // 
-            // textBox2
+            // tbxHROCAmpsCh10
             // 
-            this.textBox2.Location = new System.Drawing.Point(1460, 558);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(46, 26);
-            this.textBox2.TabIndex = 340;
-            this.textBox2.Text = "10";
+            this.tbxHROCAmpsCh10.Location = new System.Drawing.Point(1460, 512);
+            this.tbxHROCAmpsCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHROCAmpsCh10.Name = "tbxHROCAmpsCh10";
+            this.tbxHROCAmpsCh10.Size = new System.Drawing.Size(46, 26);
+            this.tbxHROCAmpsCh10.TabIndex = 340;
+            this.tbxHROCAmpsCh10.Text = "10";
             // 
-            // textBox3
+            // tbxHROCAmpsCh00
             // 
-            this.textBox3.Location = new System.Drawing.Point(380, 558);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(46, 26);
-            this.textBox3.TabIndex = 330;
-            this.textBox3.Text = "10";
+            this.tbxHROCAmpsCh00.Location = new System.Drawing.Point(380, 512);
+            this.tbxHROCAmpsCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHROCAmpsCh00.Name = "tbxHROCAmpsCh00";
+            this.tbxHROCAmpsCh00.Size = new System.Drawing.Size(46, 26);
+            this.tbxHROCAmpsCh00.TabIndex = 330;
+            this.tbxHROCAmpsCh00.Text = "10";
             // 
-            // textBox4
+            // tbxHROCAmpsCh09
             // 
-            this.textBox4.Location = new System.Drawing.Point(1352, 558);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(46, 26);
-            this.textBox4.TabIndex = 339;
-            this.textBox4.Text = "10";
+            this.tbxHROCAmpsCh09.Location = new System.Drawing.Point(1352, 512);
+            this.tbxHROCAmpsCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHROCAmpsCh09.Name = "tbxHROCAmpsCh09";
+            this.tbxHROCAmpsCh09.Size = new System.Drawing.Size(46, 26);
+            this.tbxHROCAmpsCh09.TabIndex = 339;
+            this.tbxHROCAmpsCh09.Text = "10";
             // 
-            // textBox5
+            // tbxHROCAmpsCh01
             // 
-            this.textBox5.Location = new System.Drawing.Point(488, 558);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(46, 26);
-            this.textBox5.TabIndex = 331;
-            this.textBox5.Text = "10";
+            this.tbxHROCAmpsCh01.Location = new System.Drawing.Point(488, 512);
+            this.tbxHROCAmpsCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHROCAmpsCh01.Name = "tbxHROCAmpsCh01";
+            this.tbxHROCAmpsCh01.Size = new System.Drawing.Size(46, 26);
+            this.tbxHROCAmpsCh01.TabIndex = 331;
+            this.tbxHROCAmpsCh01.Text = "10";
             // 
-            // textBox6
+            // tbxHROCAmpsCh08
             // 
-            this.textBox6.Location = new System.Drawing.Point(1244, 558);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(46, 26);
-            this.textBox6.TabIndex = 338;
-            this.textBox6.Text = "10";
+            this.tbxHROCAmpsCh08.Location = new System.Drawing.Point(1244, 512);
+            this.tbxHROCAmpsCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHROCAmpsCh08.Name = "tbxHROCAmpsCh08";
+            this.tbxHROCAmpsCh08.Size = new System.Drawing.Size(46, 26);
+            this.tbxHROCAmpsCh08.TabIndex = 338;
+            this.tbxHROCAmpsCh08.Text = "10";
             // 
-            // textBox7
+            // tbxHROCAmpsCh02
             // 
-            this.textBox7.Location = new System.Drawing.Point(596, 558);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(46, 26);
-            this.textBox7.TabIndex = 332;
-            this.textBox7.Text = "10";
+            this.tbxHROCAmpsCh02.Location = new System.Drawing.Point(596, 512);
+            this.tbxHROCAmpsCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHROCAmpsCh02.Name = "tbxHROCAmpsCh02";
+            this.tbxHROCAmpsCh02.Size = new System.Drawing.Size(46, 26);
+            this.tbxHROCAmpsCh02.TabIndex = 332;
+            this.tbxHROCAmpsCh02.Text = "10";
             // 
-            // textBox8
+            // tbxHROCAmpsCh07
             // 
-            this.textBox8.Location = new System.Drawing.Point(1136, 558);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(46, 26);
-            this.textBox8.TabIndex = 337;
-            this.textBox8.Text = "10";
+            this.tbxHROCAmpsCh07.Location = new System.Drawing.Point(1136, 512);
+            this.tbxHROCAmpsCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHROCAmpsCh07.Name = "tbxHROCAmpsCh07";
+            this.tbxHROCAmpsCh07.Size = new System.Drawing.Size(46, 26);
+            this.tbxHROCAmpsCh07.TabIndex = 337;
+            this.tbxHROCAmpsCh07.Text = "10";
             // 
-            // textBox9
+            // tbxHROCAmpsCh03
             // 
-            this.textBox9.Location = new System.Drawing.Point(704, 558);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(46, 26);
-            this.textBox9.TabIndex = 333;
-            this.textBox9.Text = "10";
+            this.tbxHROCAmpsCh03.Location = new System.Drawing.Point(704, 512);
+            this.tbxHROCAmpsCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHROCAmpsCh03.Name = "tbxHROCAmpsCh03";
+            this.tbxHROCAmpsCh03.Size = new System.Drawing.Size(46, 26);
+            this.tbxHROCAmpsCh03.TabIndex = 333;
+            this.tbxHROCAmpsCh03.Text = "10";
             // 
-            // textBox10
+            // tbxHROCAmpsCh06
             // 
-            this.textBox10.Location = new System.Drawing.Point(1028, 558);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(46, 26);
-            this.textBox10.TabIndex = 336;
-            this.textBox10.Text = "10";
+            this.tbxHROCAmpsCh06.Location = new System.Drawing.Point(1028, 512);
+            this.tbxHROCAmpsCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHROCAmpsCh06.Name = "tbxHROCAmpsCh06";
+            this.tbxHROCAmpsCh06.Size = new System.Drawing.Size(46, 26);
+            this.tbxHROCAmpsCh06.TabIndex = 336;
+            this.tbxHROCAmpsCh06.Text = "10";
             // 
-            // textBox11
+            // tbxHROCAmpsCh04
             // 
-            this.textBox11.Location = new System.Drawing.Point(812, 558);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(46, 26);
-            this.textBox11.TabIndex = 334;
-            this.textBox11.Text = "10";
+            this.tbxHROCAmpsCh04.Location = new System.Drawing.Point(812, 512);
+            this.tbxHROCAmpsCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHROCAmpsCh04.Name = "tbxHROCAmpsCh04";
+            this.tbxHROCAmpsCh04.Size = new System.Drawing.Size(46, 26);
+            this.tbxHROCAmpsCh04.TabIndex = 334;
+            this.tbxHROCAmpsCh04.Text = "10";
             // 
-            // textBox12
+            // tbxHROCAmpsCh05
             // 
-            this.textBox12.Location = new System.Drawing.Point(920, 558);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(46, 26);
-            this.textBox12.TabIndex = 335;
-            this.textBox12.Text = "10";
+            this.tbxHROCAmpsCh05.Location = new System.Drawing.Point(920, 512);
+            this.tbxHROCAmpsCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHROCAmpsCh05.Name = "tbxHROCAmpsCh05";
+            this.tbxHROCAmpsCh05.Size = new System.Drawing.Size(46, 26);
+            this.tbxHROCAmpsCh05.TabIndex = 335;
+            this.tbxHROCAmpsCh05.Text = "10";
             // 
             // label653
             // 
@@ -22845,7 +23046,7 @@ namespace M1ConfigGenerator
             this.label655.AutoSize = true;
             this.label655.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label655.ForeColor = System.Drawing.SystemColors.Control;
-            this.label655.Location = new System.Drawing.Point(346, 466);
+            this.label655.Location = new System.Drawing.Point(346, 420);
             this.label655.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label655.Name = "label655";
             this.label655.Size = new System.Drawing.Size(32, 28);
@@ -22869,7 +23070,7 @@ namespace M1ConfigGenerator
             this.label657.AutoSize = true;
             this.label657.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label657.ForeColor = System.Drawing.SystemColors.Control;
-            this.label657.Location = new System.Drawing.Point(346, 420);
+            this.label657.Location = new System.Drawing.Point(346, 374);
             this.label657.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label657.Name = "label657";
             this.label657.Size = new System.Drawing.Size(32, 28);
@@ -22888,22 +23089,22 @@ namespace M1ConfigGenerator
             this.label658.Text = "6";
             this.label658.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // cmbHRModeParamCh11
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbHRModeParamCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRModeParamCh11.FormattingEnabled = true;
+            this.cmbHRModeParamCh11.Items.AddRange(new object[] {
             "High",
             "Low",
             "Half Br",
             "H Br",
             "Slave",
             "Unused"});
-            this.comboBox1.Location = new System.Drawing.Point(1545, 234);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(90, 28);
-            this.comboBox1.TabIndex = 326;
+            this.cmbHRModeParamCh11.Location = new System.Drawing.Point(1545, 188);
+            this.cmbHRModeParamCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRModeParamCh11.Name = "cmbHRModeParamCh11";
+            this.cmbHRModeParamCh11.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRModeParamCh11.TabIndex = 326;
             // 
             // label659
             // 
@@ -22917,22 +23118,22 @@ namespace M1ConfigGenerator
             this.label659.Text = "7";
             this.label659.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox2
+            // cmbHRModeParamCh10
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbHRModeParamCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRModeParamCh10.FormattingEnabled = true;
+            this.cmbHRModeParamCh10.Items.AddRange(new object[] {
             "High",
             "Low",
             "Half Br",
             "H Br",
             "Slave",
             "Unused"});
-            this.comboBox2.Location = new System.Drawing.Point(1437, 234);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(90, 28);
-            this.comboBox2.TabIndex = 325;
+            this.cmbHRModeParamCh10.Location = new System.Drawing.Point(1437, 188);
+            this.cmbHRModeParamCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRModeParamCh10.Name = "cmbHRModeParamCh10";
+            this.cmbHRModeParamCh10.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRModeParamCh10.TabIndex = 325;
             // 
             // label660
             // 
@@ -22946,22 +23147,22 @@ namespace M1ConfigGenerator
             this.label660.Text = "8";
             this.label660.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox3
+            // cmbHRModeParamCh09
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cmbHRModeParamCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRModeParamCh09.FormattingEnabled = true;
+            this.cmbHRModeParamCh09.Items.AddRange(new object[] {
             "High",
             "Low",
             "Half Br",
             "H Br",
             "Slave",
             "Unused"});
-            this.comboBox3.Location = new System.Drawing.Point(1329, 234);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(90, 28);
-            this.comboBox3.TabIndex = 324;
+            this.cmbHRModeParamCh09.Location = new System.Drawing.Point(1329, 188);
+            this.cmbHRModeParamCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRModeParamCh09.Name = "cmbHRModeParamCh09";
+            this.cmbHRModeParamCh09.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRModeParamCh09.TabIndex = 324;
             // 
             // label661
             // 
@@ -22975,22 +23176,22 @@ namespace M1ConfigGenerator
             this.label661.Text = "9";
             this.label661.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox4
+            // cmbHRModeParamCh08
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cmbHRModeParamCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRModeParamCh08.FormattingEnabled = true;
+            this.cmbHRModeParamCh08.Items.AddRange(new object[] {
             "High",
             "Low",
             "Half Br",
             "H Br",
             "Slave",
             "Unused"});
-            this.comboBox4.Location = new System.Drawing.Point(1221, 234);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(90, 28);
-            this.comboBox4.TabIndex = 323;
+            this.cmbHRModeParamCh08.Location = new System.Drawing.Point(1221, 188);
+            this.cmbHRModeParamCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRModeParamCh08.Name = "cmbHRModeParamCh08";
+            this.cmbHRModeParamCh08.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRModeParamCh08.TabIndex = 323;
             // 
             // label662
             // 
@@ -23004,22 +23205,22 @@ namespace M1ConfigGenerator
             this.label662.Text = "10";
             this.label662.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox5
+            // cmbHRModeParamCh07
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.cmbHRModeParamCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRModeParamCh07.FormattingEnabled = true;
+            this.cmbHRModeParamCh07.Items.AddRange(new object[] {
             "High",
             "Low",
             "Half Br",
             "H Br",
             "Slave",
             "Unused"});
-            this.comboBox5.Location = new System.Drawing.Point(1113, 234);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(90, 28);
-            this.comboBox5.TabIndex = 322;
+            this.cmbHRModeParamCh07.Location = new System.Drawing.Point(1113, 188);
+            this.cmbHRModeParamCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRModeParamCh07.Name = "cmbHRModeParamCh07";
+            this.cmbHRModeParamCh07.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRModeParamCh07.TabIndex = 322;
             // 
             // label663
             // 
@@ -23033,22 +23234,22 @@ namespace M1ConfigGenerator
             this.label663.Text = "11";
             this.label663.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox6
+            // cmbHRModeParamCh06
             // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.cmbHRModeParamCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRModeParamCh06.FormattingEnabled = true;
+            this.cmbHRModeParamCh06.Items.AddRange(new object[] {
             "High",
             "Low",
             "Half Br",
             "H Br",
             "Slave",
             "Unused"});
-            this.comboBox6.Location = new System.Drawing.Point(1005, 234);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(90, 28);
-            this.comboBox6.TabIndex = 321;
+            this.cmbHRModeParamCh06.Location = new System.Drawing.Point(1005, 188);
+            this.cmbHRModeParamCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRModeParamCh06.Name = "cmbHRModeParamCh06";
+            this.cmbHRModeParamCh06.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRModeParamCh06.TabIndex = 321;
             // 
             // label664
             // 
@@ -23062,22 +23263,22 @@ namespace M1ConfigGenerator
             this.label664.Text = "3";
             this.label664.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox7
+            // cmbHRModeParamCh05
             // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.cmbHRModeParamCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRModeParamCh05.FormattingEnabled = true;
+            this.cmbHRModeParamCh05.Items.AddRange(new object[] {
             "High",
             "Low",
             "Half Br",
             "H Br",
             "Slave",
             "Unused"});
-            this.comboBox7.Location = new System.Drawing.Point(897, 234);
-            this.comboBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(90, 28);
-            this.comboBox7.TabIndex = 320;
+            this.cmbHRModeParamCh05.Location = new System.Drawing.Point(897, 188);
+            this.cmbHRModeParamCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRModeParamCh05.Name = "cmbHRModeParamCh05";
+            this.cmbHRModeParamCh05.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRModeParamCh05.TabIndex = 320;
             // 
             // label665
             // 
@@ -23091,22 +23292,22 @@ namespace M1ConfigGenerator
             this.label665.Text = "2";
             this.label665.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox8
+            // cmbHRModeParamCh04
             // 
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.cmbHRModeParamCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRModeParamCh04.FormattingEnabled = true;
+            this.cmbHRModeParamCh04.Items.AddRange(new object[] {
             "High",
             "Low",
             "Half Br",
             "H Br",
             "Slave",
             "Unused"});
-            this.comboBox8.Location = new System.Drawing.Point(789, 234);
-            this.comboBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(90, 28);
-            this.comboBox8.TabIndex = 319;
+            this.cmbHRModeParamCh04.Location = new System.Drawing.Point(789, 188);
+            this.cmbHRModeParamCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRModeParamCh04.Name = "cmbHRModeParamCh04";
+            this.cmbHRModeParamCh04.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRModeParamCh04.TabIndex = 319;
             // 
             // label666
             // 
@@ -23120,205 +23321,205 @@ namespace M1ConfigGenerator
             this.label666.Text = "1";
             this.label666.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox9
+            // cmbHRModeParamCh03
             // 
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.cmbHRModeParamCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRModeParamCh03.FormattingEnabled = true;
+            this.cmbHRModeParamCh03.Items.AddRange(new object[] {
             "High",
             "Low",
             "Half Br",
             "H Br",
             "Slave",
             "Unused"});
-            this.comboBox9.Location = new System.Drawing.Point(681, 234);
-            this.comboBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(90, 28);
-            this.comboBox9.TabIndex = 318;
+            this.cmbHRModeParamCh03.Location = new System.Drawing.Point(681, 188);
+            this.cmbHRModeParamCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRModeParamCh03.Name = "cmbHRModeParamCh03";
+            this.cmbHRModeParamCh03.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRModeParamCh03.TabIndex = 318;
             // 
-            // comboBox10
+            // cmbHRModeParamCh02
             // 
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.cmbHRModeParamCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRModeParamCh02.FormattingEnabled = true;
+            this.cmbHRModeParamCh02.Items.AddRange(new object[] {
             "High",
             "Low",
             "Half Br",
             "H Br",
             "Slave",
             "Unused"});
-            this.comboBox10.Location = new System.Drawing.Point(573, 234);
-            this.comboBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(90, 28);
-            this.comboBox10.TabIndex = 317;
+            this.cmbHRModeParamCh02.Location = new System.Drawing.Point(573, 188);
+            this.cmbHRModeParamCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRModeParamCh02.Name = "cmbHRModeParamCh02";
+            this.cmbHRModeParamCh02.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRModeParamCh02.TabIndex = 317;
             // 
-            // comboBox11
+            // cmbHRModeParamCh01
             // 
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.cmbHRModeParamCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRModeParamCh01.FormattingEnabled = true;
+            this.cmbHRModeParamCh01.Items.AddRange(new object[] {
             "High",
             "Low",
             "Half Br",
             "H Br",
             "Slave",
             "Unused"});
-            this.comboBox11.Location = new System.Drawing.Point(465, 234);
-            this.comboBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(90, 28);
-            this.comboBox11.TabIndex = 316;
+            this.cmbHRModeParamCh01.Location = new System.Drawing.Point(465, 188);
+            this.cmbHRModeParamCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRModeParamCh01.Name = "cmbHRModeParamCh01";
+            this.cmbHRModeParamCh01.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRModeParamCh01.TabIndex = 316;
             // 
-            // comboBox12
+            // cmbHRModeParamCh00
             // 
-            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
+            this.cmbHRModeParamCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRModeParamCh00.FormattingEnabled = true;
+            this.cmbHRModeParamCh00.Items.AddRange(new object[] {
             "High",
             "Low",
             "Half Br",
             "H Br",
             "Slave",
             "Unused"});
-            this.comboBox12.Location = new System.Drawing.Point(357, 234);
-            this.comboBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(90, 28);
-            this.comboBox12.TabIndex = 284;
+            this.cmbHRModeParamCh00.Location = new System.Drawing.Point(357, 188);
+            this.cmbHRModeParamCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRModeParamCh00.Name = "cmbHRModeParamCh00";
+            this.cmbHRModeParamCh00.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRModeParamCh00.TabIndex = 284;
             // 
             // label667
             // 
             this.label667.AutoSize = true;
             this.label667.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label667.ForeColor = System.Drawing.SystemColors.Control;
-            this.label667.Location = new System.Drawing.Point(4, 235);
+            this.label667.Location = new System.Drawing.Point(4, 189);
             this.label667.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label667.Name = "label667";
             this.label667.Size = new System.Drawing.Size(283, 28);
             this.label667.TabIndex = 315;
             this.label667.Text = "Mode Parameter (Output Type)";
             // 
-            // checkBox1
+            // chkHRLockCh00
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(392, 55);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(22, 21);
-            this.checkBox1.TabIndex = 303;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkHRLockCh00.AutoSize = true;
+            this.chkHRLockCh00.Location = new System.Drawing.Point(392, 55);
+            this.chkHRLockCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRLockCh00.Name = "chkHRLockCh00";
+            this.chkHRLockCh00.Size = new System.Drawing.Size(22, 21);
+            this.chkHRLockCh00.TabIndex = 303;
+            this.chkHRLockCh00.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkHRLockCh01
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(500, 55);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(22, 21);
-            this.checkBox3.TabIndex = 304;
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chkHRLockCh01.AutoSize = true;
+            this.chkHRLockCh01.Location = new System.Drawing.Point(500, 55);
+            this.chkHRLockCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRLockCh01.Name = "chkHRLockCh01";
+            this.chkHRLockCh01.Size = new System.Drawing.Size(22, 21);
+            this.chkHRLockCh01.TabIndex = 304;
+            this.chkHRLockCh01.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // chkHRLockCh02
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(608, 55);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(22, 21);
-            this.checkBox4.TabIndex = 305;
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chkHRLockCh02.AutoSize = true;
+            this.chkHRLockCh02.Location = new System.Drawing.Point(608, 55);
+            this.chkHRLockCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRLockCh02.Name = "chkHRLockCh02";
+            this.chkHRLockCh02.Size = new System.Drawing.Size(22, 21);
+            this.chkHRLockCh02.TabIndex = 305;
+            this.chkHRLockCh02.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // chkHRLockCh03
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(716, 55);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(22, 21);
-            this.checkBox5.TabIndex = 306;
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.chkHRLockCh03.AutoSize = true;
+            this.chkHRLockCh03.Location = new System.Drawing.Point(716, 55);
+            this.chkHRLockCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRLockCh03.Name = "chkHRLockCh03";
+            this.chkHRLockCh03.Size = new System.Drawing.Size(22, 21);
+            this.chkHRLockCh03.TabIndex = 306;
+            this.chkHRLockCh03.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // chkHRLockCh04
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(824, 55);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(22, 21);
-            this.checkBox6.TabIndex = 307;
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.chkHRLockCh04.AutoSize = true;
+            this.chkHRLockCh04.Location = new System.Drawing.Point(824, 55);
+            this.chkHRLockCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRLockCh04.Name = "chkHRLockCh04";
+            this.chkHRLockCh04.Size = new System.Drawing.Size(22, 21);
+            this.chkHRLockCh04.TabIndex = 307;
+            this.chkHRLockCh04.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // chkHRLockCh05
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(932, 55);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(22, 21);
-            this.checkBox7.TabIndex = 308;
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.chkHRLockCh05.AutoSize = true;
+            this.chkHRLockCh05.Location = new System.Drawing.Point(932, 55);
+            this.chkHRLockCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRLockCh05.Name = "chkHRLockCh05";
+            this.chkHRLockCh05.Size = new System.Drawing.Size(22, 21);
+            this.chkHRLockCh05.TabIndex = 308;
+            this.chkHRLockCh05.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // chkHRLockCh06
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(1040, 55);
-            this.checkBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(22, 21);
-            this.checkBox8.TabIndex = 309;
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.chkHRLockCh06.AutoSize = true;
+            this.chkHRLockCh06.Location = new System.Drawing.Point(1040, 55);
+            this.chkHRLockCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRLockCh06.Name = "chkHRLockCh06";
+            this.chkHRLockCh06.Size = new System.Drawing.Size(22, 21);
+            this.chkHRLockCh06.TabIndex = 309;
+            this.chkHRLockCh06.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // chkHRLockCh07
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(1148, 55);
-            this.checkBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(22, 21);
-            this.checkBox9.TabIndex = 310;
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.chkHRLockCh07.AutoSize = true;
+            this.chkHRLockCh07.Location = new System.Drawing.Point(1148, 55);
+            this.chkHRLockCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRLockCh07.Name = "chkHRLockCh07";
+            this.chkHRLockCh07.Size = new System.Drawing.Size(22, 21);
+            this.chkHRLockCh07.TabIndex = 310;
+            this.chkHRLockCh07.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // chkHRLockCh08
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(1256, 55);
-            this.checkBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(22, 21);
-            this.checkBox10.TabIndex = 311;
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.chkHRLockCh08.AutoSize = true;
+            this.chkHRLockCh08.Location = new System.Drawing.Point(1256, 55);
+            this.chkHRLockCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRLockCh08.Name = "chkHRLockCh08";
+            this.chkHRLockCh08.Size = new System.Drawing.Size(22, 21);
+            this.chkHRLockCh08.TabIndex = 311;
+            this.chkHRLockCh08.UseVisualStyleBackColor = true;
             // 
-            // checkBox11
+            // chkHRLockCh09
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(1364, 55);
-            this.checkBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(22, 21);
-            this.checkBox11.TabIndex = 312;
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.chkHRLockCh09.AutoSize = true;
+            this.chkHRLockCh09.Location = new System.Drawing.Point(1364, 55);
+            this.chkHRLockCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRLockCh09.Name = "chkHRLockCh09";
+            this.chkHRLockCh09.Size = new System.Drawing.Size(22, 21);
+            this.chkHRLockCh09.TabIndex = 312;
+            this.chkHRLockCh09.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // chkHRLockCh10
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(1472, 55);
-            this.checkBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(22, 21);
-            this.checkBox12.TabIndex = 313;
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.chkHRLockCh10.AutoSize = true;
+            this.chkHRLockCh10.Location = new System.Drawing.Point(1472, 55);
+            this.chkHRLockCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRLockCh10.Name = "chkHRLockCh10";
+            this.chkHRLockCh10.Size = new System.Drawing.Size(22, 21);
+            this.chkHRLockCh10.TabIndex = 313;
+            this.chkHRLockCh10.UseVisualStyleBackColor = true;
             // 
-            // checkBox13
+            // chkHRLockCh11
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(1580, 55);
-            this.checkBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(22, 21);
-            this.checkBox13.TabIndex = 314;
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.chkHRLockCh11.AutoSize = true;
+            this.chkHRLockCh11.Location = new System.Drawing.Point(1580, 55);
+            this.chkHRLockCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRLockCh11.Name = "chkHRLockCh11";
+            this.chkHRLockCh11.Size = new System.Drawing.Size(22, 21);
+            this.chkHRLockCh11.TabIndex = 314;
+            this.chkHRLockCh11.UseVisualStyleBackColor = true;
             // 
             // label668
             // 
@@ -23332,11 +23533,11 @@ namespace M1ConfigGenerator
             this.label668.TabIndex = 302;
             this.label668.Text = "Lock on Startup";
             // 
-            // comboBox13
+            // cmbHRMeasCurTimeCh11
             // 
-            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
+            this.cmbHRMeasCurTimeCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRMeasCurTimeCh11.FormattingEnabled = true;
+            this.cmbHRMeasCurTimeCh11.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -23344,11 +23545,11 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox13.Location = new System.Drawing.Point(1545, 649);
-            this.comboBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(90, 28);
-            this.comboBox13.TabIndex = 301;
+            this.cmbHRMeasCurTimeCh11.Location = new System.Drawing.Point(1545, 603);
+            this.cmbHRMeasCurTimeCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRMeasCurTimeCh11.Name = "cmbHRMeasCurTimeCh11";
+            this.cmbHRMeasCurTimeCh11.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRMeasCurTimeCh11.TabIndex = 301;
             // 
             // label669
             // 
@@ -23362,21 +23563,21 @@ namespace M1ConfigGenerator
             this.label669.TabIndex = 13;
             this.label669.Text = "Brightness on Startup";
             // 
-            // checkBox14
+            // chkHRTimeoutCh04
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(824, 378);
-            this.checkBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(22, 21);
-            this.checkBox14.TabIndex = 84;
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.chkHRTimeoutCh04.AutoSize = true;
+            this.chkHRTimeoutCh04.Location = new System.Drawing.Point(824, 332);
+            this.chkHRTimeoutCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRTimeoutCh04.Name = "chkHRTimeoutCh04";
+            this.chkHRTimeoutCh04.Size = new System.Drawing.Size(22, 21);
+            this.chkHRTimeoutCh04.TabIndex = 84;
+            this.chkHRTimeoutCh04.UseVisualStyleBackColor = true;
             // 
-            // comboBox14
+            // cmbHRMeasCurTimeCh10
             // 
-            this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
+            this.cmbHRMeasCurTimeCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRMeasCurTimeCh10.FormattingEnabled = true;
+            this.cmbHRMeasCurTimeCh10.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -23384,87 +23585,87 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox14.Location = new System.Drawing.Point(1437, 649);
-            this.comboBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(90, 28);
-            this.comboBox14.TabIndex = 300;
+            this.cmbHRMeasCurTimeCh10.Location = new System.Drawing.Point(1437, 603);
+            this.cmbHRMeasCurTimeCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRMeasCurTimeCh10.Name = "cmbHRMeasCurTimeCh10";
+            this.cmbHRMeasCurTimeCh10.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRMeasCurTimeCh10.TabIndex = 300;
             // 
-            // checkBox15
+            // chkHRTimeoutCh03
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(716, 378);
-            this.checkBox15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(22, 21);
-            this.checkBox15.TabIndex = 83;
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.chkHRTimeoutCh03.AutoSize = true;
+            this.chkHRTimeoutCh03.Location = new System.Drawing.Point(716, 332);
+            this.chkHRTimeoutCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRTimeoutCh03.Name = "chkHRTimeoutCh03";
+            this.chkHRTimeoutCh03.Size = new System.Drawing.Size(22, 21);
+            this.chkHRTimeoutCh03.TabIndex = 83;
+            this.chkHRTimeoutCh03.UseVisualStyleBackColor = true;
             // 
-            // textBox13
+            // tbxHRPWMDutyCh00
             // 
-            this.textBox13.Location = new System.Drawing.Point(380, 97);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(46, 26);
-            this.textBox13.TabIndex = 14;
-            this.textBox13.Text = "0";
+            this.tbxHRPWMDutyCh00.Location = new System.Drawing.Point(380, 97);
+            this.tbxHRPWMDutyCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRPWMDutyCh00.Name = "tbxHRPWMDutyCh00";
+            this.tbxHRPWMDutyCh00.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRPWMDutyCh00.TabIndex = 14;
+            this.tbxHRPWMDutyCh00.Text = "0";
             // 
-            // checkBox16
+            // chkHRTimeoutCh05
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(932, 378);
-            this.checkBox16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(22, 21);
-            this.checkBox16.TabIndex = 85;
-            this.checkBox16.UseVisualStyleBackColor = true;
+            this.chkHRTimeoutCh05.AutoSize = true;
+            this.chkHRTimeoutCh05.Location = new System.Drawing.Point(932, 332);
+            this.chkHRTimeoutCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRTimeoutCh05.Name = "chkHRTimeoutCh05";
+            this.chkHRTimeoutCh05.Size = new System.Drawing.Size(22, 21);
+            this.chkHRTimeoutCh05.TabIndex = 85;
+            this.chkHRTimeoutCh05.UseVisualStyleBackColor = true;
             // 
             // label670
             // 
             this.label670.AutoSize = true;
             this.label670.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label670.ForeColor = System.Drawing.SystemColors.Control;
-            this.label670.Location = new System.Drawing.Point(4, 651);
+            this.label670.Location = new System.Drawing.Point(4, 605);
             this.label670.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label670.Name = "label670";
             this.label670.Size = new System.Drawing.Size(242, 28);
             this.label670.TabIndex = 289;
             this.label670.Text = "Measured Curr Time Const";
             // 
-            // checkBox17
+            // chkHRTimeoutCh02
             // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(608, 378);
-            this.checkBox17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(22, 21);
-            this.checkBox17.TabIndex = 82;
-            this.checkBox17.UseVisualStyleBackColor = true;
+            this.chkHRTimeoutCh02.AutoSize = true;
+            this.chkHRTimeoutCh02.Location = new System.Drawing.Point(608, 332);
+            this.chkHRTimeoutCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRTimeoutCh02.Name = "chkHRTimeoutCh02";
+            this.chkHRTimeoutCh02.Size = new System.Drawing.Size(22, 21);
+            this.chkHRTimeoutCh02.TabIndex = 82;
+            this.chkHRTimeoutCh02.UseVisualStyleBackColor = true;
             // 
-            // textBox14
+            // tbxHRPWMDutyCh01
             // 
-            this.textBox14.Location = new System.Drawing.Point(488, 97);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(46, 26);
-            this.textBox14.TabIndex = 15;
-            this.textBox14.Text = "0";
+            this.tbxHRPWMDutyCh01.Location = new System.Drawing.Point(488, 97);
+            this.tbxHRPWMDutyCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRPWMDutyCh01.Name = "tbxHRPWMDutyCh01";
+            this.tbxHRPWMDutyCh01.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRPWMDutyCh01.TabIndex = 15;
+            this.tbxHRPWMDutyCh01.Text = "0";
             // 
-            // checkBox18
+            // chkHRTimeoutCh06
             // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(1040, 378);
-            this.checkBox18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(22, 21);
-            this.checkBox18.TabIndex = 86;
-            this.checkBox18.UseVisualStyleBackColor = true;
+            this.chkHRTimeoutCh06.AutoSize = true;
+            this.chkHRTimeoutCh06.Location = new System.Drawing.Point(1040, 332);
+            this.chkHRTimeoutCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRTimeoutCh06.Name = "chkHRTimeoutCh06";
+            this.chkHRTimeoutCh06.Size = new System.Drawing.Size(22, 21);
+            this.chkHRTimeoutCh06.TabIndex = 86;
+            this.chkHRTimeoutCh06.UseVisualStyleBackColor = true;
             // 
-            // comboBox15
+            // cmbHRMeasCurTimeCh09
             // 
-            this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Items.AddRange(new object[] {
+            this.cmbHRMeasCurTimeCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRMeasCurTimeCh09.FormattingEnabled = true;
+            this.cmbHRMeasCurTimeCh09.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -23472,46 +23673,46 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox15.Location = new System.Drawing.Point(1329, 649);
-            this.comboBox15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(90, 28);
-            this.comboBox15.TabIndex = 299;
+            this.cmbHRMeasCurTimeCh09.Location = new System.Drawing.Point(1329, 603);
+            this.cmbHRMeasCurTimeCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRMeasCurTimeCh09.Name = "cmbHRMeasCurTimeCh09";
+            this.cmbHRMeasCurTimeCh09.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRMeasCurTimeCh09.TabIndex = 299;
             // 
-            // checkBox19
+            // chkHRTimeoutCh01
             // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(500, 378);
-            this.checkBox19.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(22, 21);
-            this.checkBox19.TabIndex = 81;
-            this.checkBox19.UseVisualStyleBackColor = true;
+            this.chkHRTimeoutCh01.AutoSize = true;
+            this.chkHRTimeoutCh01.Location = new System.Drawing.Point(500, 332);
+            this.chkHRTimeoutCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRTimeoutCh01.Name = "chkHRTimeoutCh01";
+            this.chkHRTimeoutCh01.Size = new System.Drawing.Size(22, 21);
+            this.chkHRTimeoutCh01.TabIndex = 81;
+            this.chkHRTimeoutCh01.UseVisualStyleBackColor = true;
             // 
-            // textBox15
+            // tbxHRPWMDutyCh02
             // 
-            this.textBox15.Location = new System.Drawing.Point(596, 97);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(46, 26);
-            this.textBox15.TabIndex = 16;
-            this.textBox15.Text = "0";
+            this.tbxHRPWMDutyCh02.Location = new System.Drawing.Point(596, 97);
+            this.tbxHRPWMDutyCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRPWMDutyCh02.Name = "tbxHRPWMDutyCh02";
+            this.tbxHRPWMDutyCh02.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRPWMDutyCh02.TabIndex = 16;
+            this.tbxHRPWMDutyCh02.Text = "0";
             // 
-            // checkBox20
+            // chkHRTimeoutCh07
             // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Location = new System.Drawing.Point(1148, 378);
-            this.checkBox20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(22, 21);
-            this.checkBox20.TabIndex = 87;
-            this.checkBox20.UseVisualStyleBackColor = true;
+            this.chkHRTimeoutCh07.AutoSize = true;
+            this.chkHRTimeoutCh07.Location = new System.Drawing.Point(1148, 332);
+            this.chkHRTimeoutCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRTimeoutCh07.Name = "chkHRTimeoutCh07";
+            this.chkHRTimeoutCh07.Size = new System.Drawing.Size(22, 21);
+            this.chkHRTimeoutCh07.TabIndex = 87;
+            this.chkHRTimeoutCh07.UseVisualStyleBackColor = true;
             // 
-            // comboBox16
+            // cmbHRMeasCurTimeCh00
             // 
-            this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Items.AddRange(new object[] {
+            this.cmbHRMeasCurTimeCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRMeasCurTimeCh00.FormattingEnabled = true;
+            this.cmbHRMeasCurTimeCh00.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -23519,46 +23720,46 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox16.Location = new System.Drawing.Point(357, 649);
-            this.comboBox16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(90, 28);
-            this.comboBox16.TabIndex = 290;
+            this.cmbHRMeasCurTimeCh00.Location = new System.Drawing.Point(357, 603);
+            this.cmbHRMeasCurTimeCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRMeasCurTimeCh00.Name = "cmbHRMeasCurTimeCh00";
+            this.cmbHRMeasCurTimeCh00.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRMeasCurTimeCh00.TabIndex = 290;
             // 
-            // checkBox21
+            // chkHRTimeoutCh00
             // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(392, 378);
-            this.checkBox21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(22, 21);
-            this.checkBox21.TabIndex = 80;
-            this.checkBox21.UseVisualStyleBackColor = true;
+            this.chkHRTimeoutCh00.AutoSize = true;
+            this.chkHRTimeoutCh00.Location = new System.Drawing.Point(392, 332);
+            this.chkHRTimeoutCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRTimeoutCh00.Name = "chkHRTimeoutCh00";
+            this.chkHRTimeoutCh00.Size = new System.Drawing.Size(22, 21);
+            this.chkHRTimeoutCh00.TabIndex = 80;
+            this.chkHRTimeoutCh00.UseVisualStyleBackColor = true;
             // 
-            // textBox16
+            // tbxHRPWMDutyCh04
             // 
-            this.textBox16.Location = new System.Drawing.Point(812, 97);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(46, 26);
-            this.textBox16.TabIndex = 17;
-            this.textBox16.Text = "0";
+            this.tbxHRPWMDutyCh04.Location = new System.Drawing.Point(812, 97);
+            this.tbxHRPWMDutyCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRPWMDutyCh04.Name = "tbxHRPWMDutyCh04";
+            this.tbxHRPWMDutyCh04.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRPWMDutyCh04.TabIndex = 17;
+            this.tbxHRPWMDutyCh04.Text = "0";
             // 
-            // checkBox22
+            // chkHRTimeoutCh08
             // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Location = new System.Drawing.Point(1256, 378);
-            this.checkBox22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(22, 21);
-            this.checkBox22.TabIndex = 88;
-            this.checkBox22.UseVisualStyleBackColor = true;
+            this.chkHRTimeoutCh08.AutoSize = true;
+            this.chkHRTimeoutCh08.Location = new System.Drawing.Point(1256, 332);
+            this.chkHRTimeoutCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRTimeoutCh08.Name = "chkHRTimeoutCh08";
+            this.chkHRTimeoutCh08.Size = new System.Drawing.Size(22, 21);
+            this.chkHRTimeoutCh08.TabIndex = 88;
+            this.chkHRTimeoutCh08.UseVisualStyleBackColor = true;
             // 
-            // comboBox17
+            // cmbHRMeasCurTimeCh08
             // 
-            this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Items.AddRange(new object[] {
+            this.cmbHRMeasCurTimeCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRMeasCurTimeCh08.FormattingEnabled = true;
+            this.cmbHRMeasCurTimeCh08.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -23566,17 +23767,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox17.Location = new System.Drawing.Point(1221, 649);
-            this.comboBox17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(90, 28);
-            this.comboBox17.TabIndex = 298;
+            this.cmbHRMeasCurTimeCh08.Location = new System.Drawing.Point(1221, 603);
+            this.cmbHRMeasCurTimeCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRMeasCurTimeCh08.Name = "cmbHRMeasCurTimeCh08";
+            this.cmbHRMeasCurTimeCh08.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRMeasCurTimeCh08.TabIndex = 298;
             // 
-            // comboBox18
+            // cmbHRPairedCh10
             // 
-            this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Items.AddRange(new object[] {
+            this.cmbHRPairedCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRPairedCh10.FormattingEnabled = true;
+            this.cmbHRPairedCh10.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -23589,36 +23790,36 @@ namespace M1ConfigGenerator
             "8",
             "9",
             "11"});
-            this.comboBox18.Location = new System.Drawing.Point(1437, 326);
-            this.comboBox18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(90, 28);
-            this.comboBox18.TabIndex = 79;
+            this.cmbHRPairedCh10.Location = new System.Drawing.Point(1437, 280);
+            this.cmbHRPairedCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRPairedCh10.Name = "cmbHRPairedCh10";
+            this.cmbHRPairedCh10.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRPairedCh10.TabIndex = 79;
             // 
-            // textBox17
+            // tbxHRPWMDutyCh03
             // 
-            this.textBox17.Location = new System.Drawing.Point(704, 97);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(46, 26);
-            this.textBox17.TabIndex = 18;
-            this.textBox17.Text = "0";
+            this.tbxHRPWMDutyCh03.Location = new System.Drawing.Point(704, 97);
+            this.tbxHRPWMDutyCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRPWMDutyCh03.Name = "tbxHRPWMDutyCh03";
+            this.tbxHRPWMDutyCh03.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRPWMDutyCh03.TabIndex = 18;
+            this.tbxHRPWMDutyCh03.Text = "0";
             // 
-            // checkBox23
+            // chkHRTimeoutCh09
             // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Location = new System.Drawing.Point(1364, 378);
-            this.checkBox23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(22, 21);
-            this.checkBox23.TabIndex = 89;
-            this.checkBox23.UseVisualStyleBackColor = true;
+            this.chkHRTimeoutCh09.AutoSize = true;
+            this.chkHRTimeoutCh09.Location = new System.Drawing.Point(1364, 332);
+            this.chkHRTimeoutCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRTimeoutCh09.Name = "chkHRTimeoutCh09";
+            this.chkHRTimeoutCh09.Size = new System.Drawing.Size(22, 21);
+            this.chkHRTimeoutCh09.TabIndex = 89;
+            this.chkHRTimeoutCh09.UseVisualStyleBackColor = true;
             // 
-            // comboBox19
+            // cmbHRMeasCurTimeCh01
             // 
-            this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Items.AddRange(new object[] {
+            this.cmbHRMeasCurTimeCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRMeasCurTimeCh01.FormattingEnabled = true;
+            this.cmbHRMeasCurTimeCh01.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -23626,17 +23827,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox19.Location = new System.Drawing.Point(465, 649);
-            this.comboBox19.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(90, 28);
-            this.comboBox19.TabIndex = 291;
+            this.cmbHRMeasCurTimeCh01.Location = new System.Drawing.Point(465, 603);
+            this.cmbHRMeasCurTimeCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRMeasCurTimeCh01.Name = "cmbHRMeasCurTimeCh01";
+            this.cmbHRMeasCurTimeCh01.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRMeasCurTimeCh01.TabIndex = 291;
             // 
-            // comboBox20
+            // cmbHRPairedCh11
             // 
-            this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Items.AddRange(new object[] {
+            this.cmbHRPairedCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRPairedCh11.FormattingEnabled = true;
+            this.cmbHRPairedCh11.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -23649,36 +23850,36 @@ namespace M1ConfigGenerator
             "8",
             "9",
             "10"});
-            this.comboBox20.Location = new System.Drawing.Point(1545, 326);
-            this.comboBox20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(90, 28);
-            this.comboBox20.TabIndex = 78;
+            this.cmbHRPairedCh11.Location = new System.Drawing.Point(1545, 280);
+            this.cmbHRPairedCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRPairedCh11.Name = "cmbHRPairedCh11";
+            this.cmbHRPairedCh11.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRPairedCh11.TabIndex = 78;
             // 
-            // textBox18
+            // tbxHRPWMDutyCh05
             // 
-            this.textBox18.Location = new System.Drawing.Point(920, 97);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(46, 26);
-            this.textBox18.TabIndex = 19;
-            this.textBox18.Text = "0";
+            this.tbxHRPWMDutyCh05.Location = new System.Drawing.Point(920, 97);
+            this.tbxHRPWMDutyCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRPWMDutyCh05.Name = "tbxHRPWMDutyCh05";
+            this.tbxHRPWMDutyCh05.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRPWMDutyCh05.TabIndex = 19;
+            this.tbxHRPWMDutyCh05.Text = "0";
             // 
-            // checkBox24
+            // chkHRTimeoutCh10
             // 
-            this.checkBox24.AutoSize = true;
-            this.checkBox24.Location = new System.Drawing.Point(1472, 378);
-            this.checkBox24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(22, 21);
-            this.checkBox24.TabIndex = 90;
-            this.checkBox24.UseVisualStyleBackColor = true;
+            this.chkHRTimeoutCh10.AutoSize = true;
+            this.chkHRTimeoutCh10.Location = new System.Drawing.Point(1472, 332);
+            this.chkHRTimeoutCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRTimeoutCh10.Name = "chkHRTimeoutCh10";
+            this.chkHRTimeoutCh10.Size = new System.Drawing.Size(22, 21);
+            this.chkHRTimeoutCh10.TabIndex = 90;
+            this.chkHRTimeoutCh10.UseVisualStyleBackColor = true;
             // 
-            // comboBox21
+            // cmbHRMeasCurTimeCh07
             // 
-            this.comboBox21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Items.AddRange(new object[] {
+            this.cmbHRMeasCurTimeCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRMeasCurTimeCh07.FormattingEnabled = true;
+            this.cmbHRMeasCurTimeCh07.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -23686,17 +23887,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox21.Location = new System.Drawing.Point(1113, 649);
-            this.comboBox21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(90, 28);
-            this.comboBox21.TabIndex = 297;
+            this.cmbHRMeasCurTimeCh07.Location = new System.Drawing.Point(1113, 603);
+            this.cmbHRMeasCurTimeCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRMeasCurTimeCh07.Name = "cmbHRMeasCurTimeCh07";
+            this.cmbHRMeasCurTimeCh07.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRMeasCurTimeCh07.TabIndex = 297;
             // 
-            // comboBox22
+            // cmbHRPairedCh09
             // 
-            this.comboBox22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Items.AddRange(new object[] {
+            this.cmbHRPairedCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRPairedCh09.FormattingEnabled = true;
+            this.cmbHRPairedCh09.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -23709,36 +23910,36 @@ namespace M1ConfigGenerator
             "8",
             "10",
             "11"});
-            this.comboBox22.Location = new System.Drawing.Point(1329, 326);
-            this.comboBox22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(90, 28);
-            this.comboBox22.TabIndex = 77;
+            this.cmbHRPairedCh09.Location = new System.Drawing.Point(1329, 280);
+            this.cmbHRPairedCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRPairedCh09.Name = "cmbHRPairedCh09";
+            this.cmbHRPairedCh09.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRPairedCh09.TabIndex = 77;
             // 
-            // textBox19
+            // tbxHRPWMDutyCh06
             // 
-            this.textBox19.Location = new System.Drawing.Point(1028, 97);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(46, 26);
-            this.textBox19.TabIndex = 20;
-            this.textBox19.Text = "0";
+            this.tbxHRPWMDutyCh06.Location = new System.Drawing.Point(1028, 97);
+            this.tbxHRPWMDutyCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRPWMDutyCh06.Name = "tbxHRPWMDutyCh06";
+            this.tbxHRPWMDutyCh06.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRPWMDutyCh06.TabIndex = 20;
+            this.tbxHRPWMDutyCh06.Text = "0";
             // 
-            // checkBox25
+            // chkHRTimeoutCh11
             // 
-            this.checkBox25.AutoSize = true;
-            this.checkBox25.Location = new System.Drawing.Point(1580, 378);
-            this.checkBox25.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(22, 21);
-            this.checkBox25.TabIndex = 91;
-            this.checkBox25.UseVisualStyleBackColor = true;
+            this.chkHRTimeoutCh11.AutoSize = true;
+            this.chkHRTimeoutCh11.Location = new System.Drawing.Point(1580, 332);
+            this.chkHRTimeoutCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkHRTimeoutCh11.Name = "chkHRTimeoutCh11";
+            this.chkHRTimeoutCh11.Size = new System.Drawing.Size(22, 21);
+            this.chkHRTimeoutCh11.TabIndex = 91;
+            this.chkHRTimeoutCh11.UseVisualStyleBackColor = true;
             // 
-            // comboBox23
+            // cmbHRMeasCurTimeCh02
             // 
-            this.comboBox23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Items.AddRange(new object[] {
+            this.cmbHRMeasCurTimeCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRMeasCurTimeCh02.FormattingEnabled = true;
+            this.cmbHRMeasCurTimeCh02.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -23746,17 +23947,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox23.Location = new System.Drawing.Point(573, 649);
-            this.comboBox23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(90, 28);
-            this.comboBox23.TabIndex = 292;
+            this.cmbHRMeasCurTimeCh02.Location = new System.Drawing.Point(573, 603);
+            this.cmbHRMeasCurTimeCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRMeasCurTimeCh02.Name = "cmbHRMeasCurTimeCh02";
+            this.cmbHRMeasCurTimeCh02.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRMeasCurTimeCh02.TabIndex = 292;
             // 
-            // comboBox24
+            // cmbHRPairedCh08
             // 
-            this.comboBox24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Items.AddRange(new object[] {
+            this.cmbHRPairedCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRPairedCh08.FormattingEnabled = true;
+            this.cmbHRPairedCh08.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -23769,35 +23970,35 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox24.Location = new System.Drawing.Point(1221, 326);
-            this.comboBox24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(90, 28);
-            this.comboBox24.TabIndex = 76;
+            this.cmbHRPairedCh08.Location = new System.Drawing.Point(1221, 280);
+            this.cmbHRPairedCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRPairedCh08.Name = "cmbHRPairedCh08";
+            this.cmbHRPairedCh08.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRPairedCh08.TabIndex = 76;
             // 
-            // textBox20
+            // tbxHRPWMDutyCh07
             // 
-            this.textBox20.Location = new System.Drawing.Point(1136, 97);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(46, 26);
-            this.textBox20.TabIndex = 21;
-            this.textBox20.Text = "0";
+            this.tbxHRPWMDutyCh07.Location = new System.Drawing.Point(1136, 97);
+            this.tbxHRPWMDutyCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRPWMDutyCh07.Name = "tbxHRPWMDutyCh07";
+            this.tbxHRPWMDutyCh07.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRPWMDutyCh07.TabIndex = 21;
+            this.tbxHRPWMDutyCh07.Text = "0";
             // 
-            // textBox21
+            // tbxHRTimeoutTimeCh00
             // 
-            this.textBox21.Location = new System.Drawing.Point(380, 420);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(46, 26);
-            this.textBox21.TabIndex = 92;
-            this.textBox21.Text = "FFFF";
+            this.tbxHRTimeoutTimeCh00.Location = new System.Drawing.Point(380, 374);
+            this.tbxHRTimeoutTimeCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRTimeoutTimeCh00.Name = "tbxHRTimeoutTimeCh00";
+            this.tbxHRTimeoutTimeCh00.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRTimeoutTimeCh00.TabIndex = 92;
+            this.tbxHRTimeoutTimeCh00.Text = "FFFF";
             // 
-            // comboBox25
+            // cmbHRMeasCurTimeCh06
             // 
-            this.comboBox25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox25.FormattingEnabled = true;
-            this.comboBox25.Items.AddRange(new object[] {
+            this.cmbHRMeasCurTimeCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRMeasCurTimeCh06.FormattingEnabled = true;
+            this.cmbHRMeasCurTimeCh06.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -23805,17 +24006,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox25.Location = new System.Drawing.Point(1005, 649);
-            this.comboBox25.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox25.Name = "comboBox25";
-            this.comboBox25.Size = new System.Drawing.Size(90, 28);
-            this.comboBox25.TabIndex = 296;
+            this.cmbHRMeasCurTimeCh06.Location = new System.Drawing.Point(1005, 603);
+            this.cmbHRMeasCurTimeCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRMeasCurTimeCh06.Name = "cmbHRMeasCurTimeCh06";
+            this.cmbHRMeasCurTimeCh06.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRMeasCurTimeCh06.TabIndex = 296;
             // 
-            // comboBox26
+            // cmbHRPairedCh07
             // 
-            this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox26.FormattingEnabled = true;
-            this.comboBox26.Items.AddRange(new object[] {
+            this.cmbHRPairedCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRPairedCh07.FormattingEnabled = true;
+            this.cmbHRPairedCh07.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -23828,35 +24029,35 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox26.Location = new System.Drawing.Point(1113, 326);
-            this.comboBox26.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(90, 28);
-            this.comboBox26.TabIndex = 75;
+            this.cmbHRPairedCh07.Location = new System.Drawing.Point(1113, 280);
+            this.cmbHRPairedCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRPairedCh07.Name = "cmbHRPairedCh07";
+            this.cmbHRPairedCh07.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRPairedCh07.TabIndex = 75;
             // 
-            // textBox22
+            // tbxHRPWMDutyCh08
             // 
-            this.textBox22.Location = new System.Drawing.Point(1244, 97);
-            this.textBox22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(46, 26);
-            this.textBox22.TabIndex = 22;
-            this.textBox22.Text = "0";
+            this.tbxHRPWMDutyCh08.Location = new System.Drawing.Point(1244, 97);
+            this.tbxHRPWMDutyCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRPWMDutyCh08.Name = "tbxHRPWMDutyCh08";
+            this.tbxHRPWMDutyCh08.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRPWMDutyCh08.TabIndex = 22;
+            this.tbxHRPWMDutyCh08.Text = "0";
             // 
-            // textBox23
+            // tbxHRTimeoutTimeCh01
             // 
-            this.textBox23.Location = new System.Drawing.Point(488, 420);
-            this.textBox23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(46, 26);
-            this.textBox23.TabIndex = 93;
-            this.textBox23.Text = "FFFF";
+            this.tbxHRTimeoutTimeCh01.Location = new System.Drawing.Point(488, 374);
+            this.tbxHRTimeoutTimeCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRTimeoutTimeCh01.Name = "tbxHRTimeoutTimeCh01";
+            this.tbxHRTimeoutTimeCh01.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRTimeoutTimeCh01.TabIndex = 93;
+            this.tbxHRTimeoutTimeCh01.Text = "FFFF";
             // 
-            // comboBox27
+            // cmbHRMeasCurTimeCh03
             // 
-            this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Items.AddRange(new object[] {
+            this.cmbHRMeasCurTimeCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRMeasCurTimeCh03.FormattingEnabled = true;
+            this.cmbHRMeasCurTimeCh03.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -23864,17 +24065,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox27.Location = new System.Drawing.Point(681, 649);
-            this.comboBox27.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(90, 28);
-            this.comboBox27.TabIndex = 293;
+            this.cmbHRMeasCurTimeCh03.Location = new System.Drawing.Point(681, 603);
+            this.cmbHRMeasCurTimeCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRMeasCurTimeCh03.Name = "cmbHRMeasCurTimeCh03";
+            this.cmbHRMeasCurTimeCh03.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRMeasCurTimeCh03.TabIndex = 293;
             // 
-            // comboBox28
+            // cmbHRPairedCh06
             // 
-            this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.Items.AddRange(new object[] {
+            this.cmbHRPairedCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRPairedCh06.FormattingEnabled = true;
+            this.cmbHRPairedCh06.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -23887,35 +24088,35 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox28.Location = new System.Drawing.Point(1005, 326);
-            this.comboBox28.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(90, 28);
-            this.comboBox28.TabIndex = 74;
+            this.cmbHRPairedCh06.Location = new System.Drawing.Point(1005, 280);
+            this.cmbHRPairedCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRPairedCh06.Name = "cmbHRPairedCh06";
+            this.cmbHRPairedCh06.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRPairedCh06.TabIndex = 74;
             // 
-            // textBox24
+            // tbxHRPWMDutyCh09
             // 
-            this.textBox24.Location = new System.Drawing.Point(1352, 97);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(46, 26);
-            this.textBox24.TabIndex = 23;
-            this.textBox24.Text = "0";
+            this.tbxHRPWMDutyCh09.Location = new System.Drawing.Point(1352, 97);
+            this.tbxHRPWMDutyCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRPWMDutyCh09.Name = "tbxHRPWMDutyCh09";
+            this.tbxHRPWMDutyCh09.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRPWMDutyCh09.TabIndex = 23;
+            this.tbxHRPWMDutyCh09.Text = "0";
             // 
-            // textBox25
+            // tbxHRTimeoutTimeCh02
             // 
-            this.textBox25.Location = new System.Drawing.Point(596, 420);
-            this.textBox25.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(46, 26);
-            this.textBox25.TabIndex = 94;
-            this.textBox25.Text = "FFFF";
+            this.tbxHRTimeoutTimeCh02.Location = new System.Drawing.Point(596, 374);
+            this.tbxHRTimeoutTimeCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRTimeoutTimeCh02.Name = "tbxHRTimeoutTimeCh02";
+            this.tbxHRTimeoutTimeCh02.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRTimeoutTimeCh02.TabIndex = 94;
+            this.tbxHRTimeoutTimeCh02.Text = "FFFF";
             // 
-            // comboBox29
+            // cmbHRMeasCurTimeCh05
             // 
-            this.comboBox29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Items.AddRange(new object[] {
+            this.cmbHRMeasCurTimeCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRMeasCurTimeCh05.FormattingEnabled = true;
+            this.cmbHRMeasCurTimeCh05.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -23923,17 +24124,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox29.Location = new System.Drawing.Point(897, 649);
-            this.comboBox29.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(90, 28);
-            this.comboBox29.TabIndex = 295;
+            this.cmbHRMeasCurTimeCh05.Location = new System.Drawing.Point(897, 603);
+            this.cmbHRMeasCurTimeCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRMeasCurTimeCh05.Name = "cmbHRMeasCurTimeCh05";
+            this.cmbHRMeasCurTimeCh05.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRMeasCurTimeCh05.TabIndex = 295;
             // 
-            // comboBox30
+            // cmbHRPairedCh05
             // 
-            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.Items.AddRange(new object[] {
+            this.cmbHRPairedCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRPairedCh05.FormattingEnabled = true;
+            this.cmbHRPairedCh05.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -23946,35 +24147,35 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox30.Location = new System.Drawing.Point(897, 326);
-            this.comboBox30.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox30.Name = "comboBox30";
-            this.comboBox30.Size = new System.Drawing.Size(90, 28);
-            this.comboBox30.TabIndex = 73;
+            this.cmbHRPairedCh05.Location = new System.Drawing.Point(897, 280);
+            this.cmbHRPairedCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRPairedCh05.Name = "cmbHRPairedCh05";
+            this.cmbHRPairedCh05.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRPairedCh05.TabIndex = 73;
             // 
-            // textBox26
+            // tbxHRPWMDutyCh10
             // 
-            this.textBox26.Location = new System.Drawing.Point(1460, 97);
-            this.textBox26.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(46, 26);
-            this.textBox26.TabIndex = 24;
-            this.textBox26.Text = "0";
+            this.tbxHRPWMDutyCh10.Location = new System.Drawing.Point(1460, 97);
+            this.tbxHRPWMDutyCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRPWMDutyCh10.Name = "tbxHRPWMDutyCh10";
+            this.tbxHRPWMDutyCh10.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRPWMDutyCh10.TabIndex = 24;
+            this.tbxHRPWMDutyCh10.Text = "0";
             // 
-            // textBox27
+            // tbxHRTimeoutTimeCh03
             // 
-            this.textBox27.Location = new System.Drawing.Point(704, 420);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(46, 26);
-            this.textBox27.TabIndex = 95;
-            this.textBox27.Text = "FFFF";
+            this.tbxHRTimeoutTimeCh03.Location = new System.Drawing.Point(704, 374);
+            this.tbxHRTimeoutTimeCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRTimeoutTimeCh03.Name = "tbxHRTimeoutTimeCh03";
+            this.tbxHRTimeoutTimeCh03.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRTimeoutTimeCh03.TabIndex = 95;
+            this.tbxHRTimeoutTimeCh03.Text = "FFFF";
             // 
-            // comboBox31
+            // cmbHRMeasCurTimeCh04
             // 
-            this.comboBox31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox31.FormattingEnabled = true;
-            this.comboBox31.Items.AddRange(new object[] {
+            this.cmbHRMeasCurTimeCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRMeasCurTimeCh04.FormattingEnabled = true;
+            this.cmbHRMeasCurTimeCh04.Items.AddRange(new object[] {
             "5",
             "6",
             "7",
@@ -23982,17 +24183,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox31.Location = new System.Drawing.Point(789, 649);
-            this.comboBox31.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox31.Name = "comboBox31";
-            this.comboBox31.Size = new System.Drawing.Size(90, 28);
-            this.comboBox31.TabIndex = 294;
+            this.cmbHRMeasCurTimeCh04.Location = new System.Drawing.Point(789, 603);
+            this.cmbHRMeasCurTimeCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRMeasCurTimeCh04.Name = "cmbHRMeasCurTimeCh04";
+            this.cmbHRMeasCurTimeCh04.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRMeasCurTimeCh04.TabIndex = 294;
             // 
-            // comboBox32
+            // cmbHRPairedCh04
             // 
-            this.comboBox32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox32.FormattingEnabled = true;
-            this.comboBox32.Items.AddRange(new object[] {
+            this.cmbHRPairedCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRPairedCh04.FormattingEnabled = true;
+            this.cmbHRPairedCh04.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -24005,44 +24206,44 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox32.Location = new System.Drawing.Point(789, 326);
-            this.comboBox32.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox32.Name = "comboBox32";
-            this.comboBox32.Size = new System.Drawing.Size(90, 28);
-            this.comboBox32.TabIndex = 72;
+            this.cmbHRPairedCh04.Location = new System.Drawing.Point(789, 280);
+            this.cmbHRPairedCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRPairedCh04.Name = "cmbHRPairedCh04";
+            this.cmbHRPairedCh04.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRPairedCh04.TabIndex = 72;
             // 
-            // textBox28
+            // tbxHRPWMDutyCh11
             // 
-            this.textBox28.Location = new System.Drawing.Point(1568, 97);
-            this.textBox28.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(46, 26);
-            this.textBox28.TabIndex = 25;
-            this.textBox28.Text = "0";
+            this.tbxHRPWMDutyCh11.Location = new System.Drawing.Point(1568, 97);
+            this.tbxHRPWMDutyCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRPWMDutyCh11.Name = "tbxHRPWMDutyCh11";
+            this.tbxHRPWMDutyCh11.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRPWMDutyCh11.TabIndex = 25;
+            this.tbxHRPWMDutyCh11.Text = "0";
             // 
-            // textBox29
+            // tbxHRTimeoutTimeCh04
             // 
-            this.textBox29.Location = new System.Drawing.Point(812, 420);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(46, 26);
-            this.textBox29.TabIndex = 96;
-            this.textBox29.Text = "FFFF";
+            this.tbxHRTimeoutTimeCh04.Location = new System.Drawing.Point(812, 374);
+            this.tbxHRTimeoutTimeCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRTimeoutTimeCh04.Name = "tbxHRTimeoutTimeCh04";
+            this.tbxHRTimeoutTimeCh04.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRTimeoutTimeCh04.TabIndex = 96;
+            this.tbxHRTimeoutTimeCh04.Text = "FFFF";
             // 
-            // textBox30
+            // tbxHRUndAmpsCh11
             // 
-            this.textBox30.Location = new System.Drawing.Point(1568, 605);
-            this.textBox30.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(46, 26);
-            this.textBox30.TabIndex = 288;
-            this.textBox30.Text = "0.1";
+            this.tbxHRUndAmpsCh11.Location = new System.Drawing.Point(1568, 558);
+            this.tbxHRUndAmpsCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRUndAmpsCh11.Name = "tbxHRUndAmpsCh11";
+            this.tbxHRUndAmpsCh11.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRUndAmpsCh11.TabIndex = 288;
+            this.tbxHRUndAmpsCh11.Text = "0.1";
             // 
-            // comboBox33
+            // cmbHRPairedCh03
             // 
-            this.comboBox33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox33.FormattingEnabled = true;
-            this.comboBox33.Items.AddRange(new object[] {
+            this.cmbHRPairedCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRPairedCh03.FormattingEnabled = true;
+            this.cmbHRPairedCh03.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -24055,50 +24256,38 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox33.Location = new System.Drawing.Point(681, 326);
-            this.comboBox33.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox33.Name = "comboBox33";
-            this.comboBox33.Size = new System.Drawing.Size(90, 28);
-            this.comboBox33.TabIndex = 71;
+            this.cmbHRPairedCh03.Location = new System.Drawing.Point(681, 280);
+            this.cmbHRPairedCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRPairedCh03.Name = "cmbHRPairedCh03";
+            this.cmbHRPairedCh03.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRPairedCh03.TabIndex = 71;
             // 
-            // label671
+            // tbxHRTimeoutTimeCh05
             // 
-            this.label671.AutoSize = true;
-            this.label671.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.label671.ForeColor = System.Drawing.SystemColors.Control;
-            this.label671.Location = new System.Drawing.Point(4, 143);
-            this.label671.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label671.Name = "label671";
-            this.label671.Size = new System.Drawing.Size(156, 28);
-            this.label671.TabIndex = 26;
-            this.label671.Text = "Enable Dimming";
-            // 
-            // textBox31
-            // 
-            this.textBox31.Location = new System.Drawing.Point(920, 420);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(46, 26);
-            this.textBox31.TabIndex = 97;
-            this.textBox31.Text = "FFFF";
+            this.tbxHRTimeoutTimeCh05.Location = new System.Drawing.Point(920, 374);
+            this.tbxHRTimeoutTimeCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRTimeoutTimeCh05.Name = "tbxHRTimeoutTimeCh05";
+            this.tbxHRTimeoutTimeCh05.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRTimeoutTimeCh05.TabIndex = 97;
+            this.tbxHRTimeoutTimeCh05.Text = "FFFF";
             // 
             // label672
             // 
             this.label672.AutoSize = true;
             this.label672.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label672.ForeColor = System.Drawing.SystemColors.Control;
-            this.label672.Location = new System.Drawing.Point(4, 605);
+            this.label672.Location = new System.Drawing.Point(4, 558);
             this.label672.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label672.Name = "label672";
             this.label672.Size = new System.Drawing.Size(183, 28);
             this.label672.TabIndex = 276;
             this.label672.Text = "Undercurrent Amps";
             // 
-            // comboBox34
+            // cmbHRPairedCh02
             // 
-            this.comboBox34.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox34.FormattingEnabled = true;
-            this.comboBox34.Items.AddRange(new object[] {
+            this.cmbHRPairedCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRPairedCh02.FormattingEnabled = true;
+            this.cmbHRPairedCh02.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -24111,45 +24300,35 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox34.Location = new System.Drawing.Point(573, 326);
-            this.comboBox34.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox34.Name = "comboBox34";
-            this.comboBox34.Size = new System.Drawing.Size(90, 28);
-            this.comboBox34.TabIndex = 70;
+            this.cmbHRPairedCh02.Location = new System.Drawing.Point(573, 280);
+            this.cmbHRPairedCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRPairedCh02.Name = "cmbHRPairedCh02";
+            this.cmbHRPairedCh02.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRPairedCh02.TabIndex = 70;
             // 
-            // checkBox26
+            // tbxHRTimeoutTimeCh07
             // 
-            this.checkBox26.AutoSize = true;
-            this.checkBox26.Location = new System.Drawing.Point(392, 148);
-            this.checkBox26.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(22, 21);
-            this.checkBox26.TabIndex = 27;
-            this.checkBox26.UseVisualStyleBackColor = true;
+            this.tbxHRTimeoutTimeCh07.Location = new System.Drawing.Point(1136, 374);
+            this.tbxHRTimeoutTimeCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRTimeoutTimeCh07.Name = "tbxHRTimeoutTimeCh07";
+            this.tbxHRTimeoutTimeCh07.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRTimeoutTimeCh07.TabIndex = 98;
+            this.tbxHRTimeoutTimeCh07.Text = "FFFF";
             // 
-            // textBox32
+            // tbxHRUndAmpsCh10
             // 
-            this.textBox32.Location = new System.Drawing.Point(1136, 420);
-            this.textBox32.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(46, 26);
-            this.textBox32.TabIndex = 98;
-            this.textBox32.Text = "FFFF";
+            this.tbxHRUndAmpsCh10.Location = new System.Drawing.Point(1460, 558);
+            this.tbxHRUndAmpsCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRUndAmpsCh10.Name = "tbxHRUndAmpsCh10";
+            this.tbxHRUndAmpsCh10.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRUndAmpsCh10.TabIndex = 287;
+            this.tbxHRUndAmpsCh10.Text = "0.1";
             // 
-            // textBox33
+            // cmbHRPairedCh01
             // 
-            this.textBox33.Location = new System.Drawing.Point(1460, 605);
-            this.textBox33.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(46, 26);
-            this.textBox33.TabIndex = 287;
-            this.textBox33.Text = "0.1";
-            // 
-            // comboBox35
-            // 
-            this.comboBox35.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox35.FormattingEnabled = true;
-            this.comboBox35.Items.AddRange(new object[] {
+            this.cmbHRPairedCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRPairedCh01.FormattingEnabled = true;
+            this.cmbHRPairedCh01.Items.AddRange(new object[] {
             "None",
             "0",
             "2",
@@ -24162,45 +24341,35 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox35.Location = new System.Drawing.Point(465, 326);
-            this.comboBox35.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox35.Name = "comboBox35";
-            this.comboBox35.Size = new System.Drawing.Size(90, 28);
-            this.comboBox35.TabIndex = 69;
+            this.cmbHRPairedCh01.Location = new System.Drawing.Point(465, 280);
+            this.cmbHRPairedCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRPairedCh01.Name = "cmbHRPairedCh01";
+            this.cmbHRPairedCh01.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRPairedCh01.TabIndex = 69;
             // 
-            // checkBox27
+            // tbxHRTimeoutTimeCh06
             // 
-            this.checkBox27.AutoSize = true;
-            this.checkBox27.Location = new System.Drawing.Point(500, 148);
-            this.checkBox27.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(22, 21);
-            this.checkBox27.TabIndex = 28;
-            this.checkBox27.UseVisualStyleBackColor = true;
+            this.tbxHRTimeoutTimeCh06.Location = new System.Drawing.Point(1028, 374);
+            this.tbxHRTimeoutTimeCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRTimeoutTimeCh06.Name = "tbxHRTimeoutTimeCh06";
+            this.tbxHRTimeoutTimeCh06.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRTimeoutTimeCh06.TabIndex = 99;
+            this.tbxHRTimeoutTimeCh06.Text = "FFFF";
             // 
-            // textBox34
+            // tbxHRUndAmpsCh00
             // 
-            this.textBox34.Location = new System.Drawing.Point(1028, 420);
-            this.textBox34.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(46, 26);
-            this.textBox34.TabIndex = 99;
-            this.textBox34.Text = "FFFF";
+            this.tbxHRUndAmpsCh00.Location = new System.Drawing.Point(380, 558);
+            this.tbxHRUndAmpsCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRUndAmpsCh00.Name = "tbxHRUndAmpsCh00";
+            this.tbxHRUndAmpsCh00.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRUndAmpsCh00.TabIndex = 277;
+            this.tbxHRUndAmpsCh00.Text = "0.1";
             // 
-            // textBox35
+            // cmbHRPairedCh00
             // 
-            this.textBox35.Location = new System.Drawing.Point(380, 605);
-            this.textBox35.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(46, 26);
-            this.textBox35.TabIndex = 277;
-            this.textBox35.Text = "0.1";
-            // 
-            // comboBox36
-            // 
-            this.comboBox36.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox36.FormattingEnabled = true;
-            this.comboBox36.Items.AddRange(new object[] {
+            this.cmbHRPairedCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRPairedCh00.FormattingEnabled = true;
+            this.cmbHRPairedCh00.Items.AddRange(new object[] {
             "None",
             "1",
             "2",
@@ -24213,476 +24382,376 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.comboBox36.Location = new System.Drawing.Point(357, 326);
-            this.comboBox36.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox36.Name = "comboBox36";
-            this.comboBox36.Size = new System.Drawing.Size(90, 28);
-            this.comboBox36.TabIndex = 68;
+            this.cmbHRPairedCh00.Location = new System.Drawing.Point(357, 280);
+            this.cmbHRPairedCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRPairedCh00.Name = "cmbHRPairedCh00";
+            this.cmbHRPairedCh00.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRPairedCh00.TabIndex = 68;
             // 
-            // checkBox28
+            // tbxHRTimeoutTimeCh08
             // 
-            this.checkBox28.AutoSize = true;
-            this.checkBox28.Location = new System.Drawing.Point(608, 148);
-            this.checkBox28.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(22, 21);
-            this.checkBox28.TabIndex = 29;
-            this.checkBox28.UseVisualStyleBackColor = true;
+            this.tbxHRTimeoutTimeCh08.Location = new System.Drawing.Point(1244, 374);
+            this.tbxHRTimeoutTimeCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRTimeoutTimeCh08.Name = "tbxHRTimeoutTimeCh08";
+            this.tbxHRTimeoutTimeCh08.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRTimeoutTimeCh08.TabIndex = 100;
+            this.tbxHRTimeoutTimeCh08.Text = "FFFF";
             // 
-            // textBox36
+            // tbxHRUndAmpsCh09
             // 
-            this.textBox36.Location = new System.Drawing.Point(1244, 420);
-            this.textBox36.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(46, 26);
-            this.textBox36.TabIndex = 100;
-            this.textBox36.Text = "FFFF";
+            this.tbxHRUndAmpsCh09.Location = new System.Drawing.Point(1352, 558);
+            this.tbxHRUndAmpsCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRUndAmpsCh09.Name = "tbxHRUndAmpsCh09";
+            this.tbxHRUndAmpsCh09.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRUndAmpsCh09.TabIndex = 286;
+            this.tbxHRUndAmpsCh09.Text = "0.1";
             // 
-            // textBox37
+            // cmbHRDeadTimeCh11
             // 
-            this.textBox37.Location = new System.Drawing.Point(1352, 605);
-            this.textBox37.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(46, 26);
-            this.textBox37.TabIndex = 286;
-            this.textBox37.Text = "0.1";
-            // 
-            // comboBox37
-            // 
-            this.comboBox37.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox37.FormattingEnabled = true;
-            this.comboBox37.Items.AddRange(new object[] {
+            this.cmbHRDeadTimeCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDeadTimeCh11.FormattingEnabled = true;
+            this.cmbHRDeadTimeCh11.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.comboBox37.Location = new System.Drawing.Point(1545, 280);
-            this.comboBox37.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox37.Name = "comboBox37";
-            this.comboBox37.Size = new System.Drawing.Size(90, 28);
-            this.comboBox37.TabIndex = 67;
+            this.cmbHRDeadTimeCh11.Location = new System.Drawing.Point(1545, 234);
+            this.cmbHRDeadTimeCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDeadTimeCh11.Name = "cmbHRDeadTimeCh11";
+            this.cmbHRDeadTimeCh11.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDeadTimeCh11.TabIndex = 67;
             // 
-            // checkBox29
+            // tbxHRTimeoutTimeCh09
             // 
-            this.checkBox29.AutoSize = true;
-            this.checkBox29.Location = new System.Drawing.Point(716, 148);
-            this.checkBox29.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(22, 21);
-            this.checkBox29.TabIndex = 30;
-            this.checkBox29.UseVisualStyleBackColor = true;
+            this.tbxHRTimeoutTimeCh09.Location = new System.Drawing.Point(1352, 374);
+            this.tbxHRTimeoutTimeCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRTimeoutTimeCh09.Name = "tbxHRTimeoutTimeCh09";
+            this.tbxHRTimeoutTimeCh09.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRTimeoutTimeCh09.TabIndex = 101;
+            this.tbxHRTimeoutTimeCh09.Text = "FFFF";
             // 
-            // textBox38
+            // tbxHRUndAmpsCh01
             // 
-            this.textBox38.Location = new System.Drawing.Point(1352, 420);
-            this.textBox38.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(46, 26);
-            this.textBox38.TabIndex = 101;
-            this.textBox38.Text = "FFFF";
+            this.tbxHRUndAmpsCh01.Location = new System.Drawing.Point(488, 558);
+            this.tbxHRUndAmpsCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRUndAmpsCh01.Name = "tbxHRUndAmpsCh01";
+            this.tbxHRUndAmpsCh01.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRUndAmpsCh01.TabIndex = 278;
+            this.tbxHRUndAmpsCh01.Text = "0.1";
             // 
-            // textBox39
+            // cmbHRDeadTimeCh10
             // 
-            this.textBox39.Location = new System.Drawing.Point(488, 605);
-            this.textBox39.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(46, 26);
-            this.textBox39.TabIndex = 278;
-            this.textBox39.Text = "0.1";
-            // 
-            // comboBox38
-            // 
-            this.comboBox38.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox38.FormattingEnabled = true;
-            this.comboBox38.Items.AddRange(new object[] {
+            this.cmbHRDeadTimeCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDeadTimeCh10.FormattingEnabled = true;
+            this.cmbHRDeadTimeCh10.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.comboBox38.Location = new System.Drawing.Point(1437, 280);
-            this.comboBox38.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox38.Name = "comboBox38";
-            this.comboBox38.Size = new System.Drawing.Size(90, 28);
-            this.comboBox38.TabIndex = 66;
+            this.cmbHRDeadTimeCh10.Location = new System.Drawing.Point(1437, 234);
+            this.cmbHRDeadTimeCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDeadTimeCh10.Name = "cmbHRDeadTimeCh10";
+            this.cmbHRDeadTimeCh10.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDeadTimeCh10.TabIndex = 66;
             // 
-            // checkBox30
+            // tbxHRTimeoutTimeCh10
             // 
-            this.checkBox30.AutoSize = true;
-            this.checkBox30.Location = new System.Drawing.Point(824, 148);
-            this.checkBox30.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox30.Name = "checkBox30";
-            this.checkBox30.Size = new System.Drawing.Size(22, 21);
-            this.checkBox30.TabIndex = 31;
-            this.checkBox30.UseVisualStyleBackColor = true;
+            this.tbxHRTimeoutTimeCh10.Location = new System.Drawing.Point(1460, 374);
+            this.tbxHRTimeoutTimeCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRTimeoutTimeCh10.Name = "tbxHRTimeoutTimeCh10";
+            this.tbxHRTimeoutTimeCh10.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRTimeoutTimeCh10.TabIndex = 102;
+            this.tbxHRTimeoutTimeCh10.Text = "FFFF";
             // 
-            // textBox40
+            // tbxHRUndAmpsCh08
             // 
-            this.textBox40.Location = new System.Drawing.Point(1460, 420);
-            this.textBox40.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(46, 26);
-            this.textBox40.TabIndex = 102;
-            this.textBox40.Text = "FFFF";
+            this.tbxHRUndAmpsCh08.Location = new System.Drawing.Point(1244, 558);
+            this.tbxHRUndAmpsCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRUndAmpsCh08.Name = "tbxHRUndAmpsCh08";
+            this.tbxHRUndAmpsCh08.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRUndAmpsCh08.TabIndex = 285;
+            this.tbxHRUndAmpsCh08.Text = "0.1";
             // 
-            // textBox41
+            // cmbHRDeadTimeCh09
             // 
-            this.textBox41.Location = new System.Drawing.Point(1244, 605);
-            this.textBox41.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(46, 26);
-            this.textBox41.TabIndex = 285;
-            this.textBox41.Text = "0.1";
-            // 
-            // comboBox39
-            // 
-            this.comboBox39.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox39.FormattingEnabled = true;
-            this.comboBox39.Items.AddRange(new object[] {
+            this.cmbHRDeadTimeCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDeadTimeCh09.FormattingEnabled = true;
+            this.cmbHRDeadTimeCh09.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.comboBox39.Location = new System.Drawing.Point(1329, 280);
-            this.comboBox39.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox39.Name = "comboBox39";
-            this.comboBox39.Size = new System.Drawing.Size(90, 28);
-            this.comboBox39.TabIndex = 65;
+            this.cmbHRDeadTimeCh09.Location = new System.Drawing.Point(1329, 234);
+            this.cmbHRDeadTimeCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDeadTimeCh09.Name = "cmbHRDeadTimeCh09";
+            this.cmbHRDeadTimeCh09.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDeadTimeCh09.TabIndex = 65;
             // 
-            // checkBox31
+            // tbxHRTimeoutTimeCh11
             // 
-            this.checkBox31.AutoSize = true;
-            this.checkBox31.Location = new System.Drawing.Point(932, 148);
-            this.checkBox31.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox31.Name = "checkBox31";
-            this.checkBox31.Size = new System.Drawing.Size(22, 21);
-            this.checkBox31.TabIndex = 32;
-            this.checkBox31.UseVisualStyleBackColor = true;
+            this.tbxHRTimeoutTimeCh11.Location = new System.Drawing.Point(1568, 374);
+            this.tbxHRTimeoutTimeCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRTimeoutTimeCh11.Name = "tbxHRTimeoutTimeCh11";
+            this.tbxHRTimeoutTimeCh11.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRTimeoutTimeCh11.TabIndex = 103;
+            this.tbxHRTimeoutTimeCh11.Text = "FFFF";
             // 
-            // textBox42
+            // tbxHRUndAmpsCh02
             // 
-            this.textBox42.Location = new System.Drawing.Point(1568, 420);
-            this.textBox42.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(46, 26);
-            this.textBox42.TabIndex = 103;
-            this.textBox42.Text = "FFFF";
+            this.tbxHRUndAmpsCh02.Location = new System.Drawing.Point(596, 558);
+            this.tbxHRUndAmpsCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRUndAmpsCh02.Name = "tbxHRUndAmpsCh02";
+            this.tbxHRUndAmpsCh02.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRUndAmpsCh02.TabIndex = 279;
+            this.tbxHRUndAmpsCh02.Text = "0.1";
             // 
-            // textBox43
+            // cmbHRDeadTimeCh07
             // 
-            this.textBox43.Location = new System.Drawing.Point(596, 605);
-            this.textBox43.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(46, 26);
-            this.textBox43.TabIndex = 279;
-            this.textBox43.Text = "0.1";
-            // 
-            // comboBox40
-            // 
-            this.comboBox40.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox40.FormattingEnabled = true;
-            this.comboBox40.Items.AddRange(new object[] {
+            this.cmbHRDeadTimeCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDeadTimeCh07.FormattingEnabled = true;
+            this.cmbHRDeadTimeCh07.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.comboBox40.Location = new System.Drawing.Point(1113, 280);
-            this.comboBox40.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox40.Name = "comboBox40";
-            this.comboBox40.Size = new System.Drawing.Size(90, 28);
-            this.comboBox40.TabIndex = 64;
-            // 
-            // checkBox32
-            // 
-            this.checkBox32.AutoSize = true;
-            this.checkBox32.Location = new System.Drawing.Point(1040, 148);
-            this.checkBox32.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox32.Name = "checkBox32";
-            this.checkBox32.Size = new System.Drawing.Size(22, 21);
-            this.checkBox32.TabIndex = 33;
-            this.checkBox32.UseVisualStyleBackColor = true;
+            this.cmbHRDeadTimeCh07.Location = new System.Drawing.Point(1113, 234);
+            this.cmbHRDeadTimeCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDeadTimeCh07.Name = "cmbHRDeadTimeCh07";
+            this.cmbHRDeadTimeCh07.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDeadTimeCh07.TabIndex = 64;
             // 
             // label673
             // 
             this.label673.AutoSize = true;
             this.label673.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label673.ForeColor = System.Drawing.SystemColors.Control;
-            this.label673.Location = new System.Drawing.Point(4, 466);
+            this.label673.Location = new System.Drawing.Point(4, 420);
             this.label673.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label673.Name = "label673";
             this.label673.Size = new System.Drawing.Size(168, 28);
             this.label673.TabIndex = 104;
             this.label673.Text = "Max on Time (sec)";
             // 
-            // textBox44
+            // tbxHRUndAmpsCh07
             // 
-            this.textBox44.Location = new System.Drawing.Point(1136, 605);
-            this.textBox44.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(46, 26);
-            this.textBox44.TabIndex = 284;
-            this.textBox44.Text = "0.1";
+            this.tbxHRUndAmpsCh07.Location = new System.Drawing.Point(1136, 558);
+            this.tbxHRUndAmpsCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRUndAmpsCh07.Name = "tbxHRUndAmpsCh07";
+            this.tbxHRUndAmpsCh07.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRUndAmpsCh07.TabIndex = 284;
+            this.tbxHRUndAmpsCh07.Text = "0.1";
             // 
-            // comboBox41
+            // cmbHRDeadTimeCh08
             // 
-            this.comboBox41.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox41.FormattingEnabled = true;
-            this.comboBox41.Items.AddRange(new object[] {
+            this.cmbHRDeadTimeCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDeadTimeCh08.FormattingEnabled = true;
+            this.cmbHRDeadTimeCh08.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.comboBox41.Location = new System.Drawing.Point(1221, 280);
-            this.comboBox41.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox41.Name = "comboBox41";
-            this.comboBox41.Size = new System.Drawing.Size(90, 28);
-            this.comboBox41.TabIndex = 63;
+            this.cmbHRDeadTimeCh08.Location = new System.Drawing.Point(1221, 234);
+            this.cmbHRDeadTimeCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDeadTimeCh08.Name = "cmbHRDeadTimeCh08";
+            this.cmbHRDeadTimeCh08.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDeadTimeCh08.TabIndex = 63;
             // 
-            // checkBox33
+            // tbxHRMaxOnCh00
             // 
-            this.checkBox33.AutoSize = true;
-            this.checkBox33.Location = new System.Drawing.Point(1148, 148);
-            this.checkBox33.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox33.Name = "checkBox33";
-            this.checkBox33.Size = new System.Drawing.Size(22, 21);
-            this.checkBox33.TabIndex = 34;
-            this.checkBox33.UseVisualStyleBackColor = true;
+            this.tbxHRMaxOnCh00.Location = new System.Drawing.Point(380, 420);
+            this.tbxHRMaxOnCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxOnCh00.Name = "tbxHRMaxOnCh00";
+            this.tbxHRMaxOnCh00.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxOnCh00.TabIndex = 105;
+            this.tbxHRMaxOnCh00.Text = "FFFF";
             // 
-            // textBox45
+            // tbxHRUndAmpsCh03
             // 
-            this.textBox45.Location = new System.Drawing.Point(380, 466);
-            this.textBox45.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(46, 26);
-            this.textBox45.TabIndex = 105;
-            this.textBox45.Text = "FFFF";
+            this.tbxHRUndAmpsCh03.Location = new System.Drawing.Point(704, 558);
+            this.tbxHRUndAmpsCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRUndAmpsCh03.Name = "tbxHRUndAmpsCh03";
+            this.tbxHRUndAmpsCh03.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRUndAmpsCh03.TabIndex = 280;
+            this.tbxHRUndAmpsCh03.Text = "0.1";
             // 
-            // textBox46
+            // cmbHRDeadTimeCh06
             // 
-            this.textBox46.Location = new System.Drawing.Point(704, 605);
-            this.textBox46.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(46, 26);
-            this.textBox46.TabIndex = 280;
-            this.textBox46.Text = "0.1";
-            // 
-            // comboBox42
-            // 
-            this.comboBox42.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox42.FormattingEnabled = true;
-            this.comboBox42.Items.AddRange(new object[] {
+            this.cmbHRDeadTimeCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDeadTimeCh06.FormattingEnabled = true;
+            this.cmbHRDeadTimeCh06.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.comboBox42.Location = new System.Drawing.Point(1005, 280);
-            this.comboBox42.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox42.Name = "comboBox42";
-            this.comboBox42.Size = new System.Drawing.Size(90, 28);
-            this.comboBox42.TabIndex = 62;
+            this.cmbHRDeadTimeCh06.Location = new System.Drawing.Point(1005, 234);
+            this.cmbHRDeadTimeCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDeadTimeCh06.Name = "cmbHRDeadTimeCh06";
+            this.cmbHRDeadTimeCh06.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDeadTimeCh06.TabIndex = 62;
             // 
-            // checkBox34
+            // tbxHRMaxOnCh01
             // 
-            this.checkBox34.AutoSize = true;
-            this.checkBox34.Location = new System.Drawing.Point(1256, 148);
-            this.checkBox34.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox34.Name = "checkBox34";
-            this.checkBox34.Size = new System.Drawing.Size(22, 21);
-            this.checkBox34.TabIndex = 35;
-            this.checkBox34.UseVisualStyleBackColor = true;
+            this.tbxHRMaxOnCh01.Location = new System.Drawing.Point(488, 420);
+            this.tbxHRMaxOnCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxOnCh01.Name = "tbxHRMaxOnCh01";
+            this.tbxHRMaxOnCh01.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxOnCh01.TabIndex = 106;
+            this.tbxHRMaxOnCh01.Text = "FFFF";
             // 
-            // textBox47
+            // tbxHRUndAmpsCh06
             // 
-            this.textBox47.Location = new System.Drawing.Point(488, 466);
-            this.textBox47.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(46, 26);
-            this.textBox47.TabIndex = 106;
-            this.textBox47.Text = "FFFF";
+            this.tbxHRUndAmpsCh06.Location = new System.Drawing.Point(1028, 558);
+            this.tbxHRUndAmpsCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRUndAmpsCh06.Name = "tbxHRUndAmpsCh06";
+            this.tbxHRUndAmpsCh06.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRUndAmpsCh06.TabIndex = 283;
+            this.tbxHRUndAmpsCh06.Text = "0.1";
             // 
-            // textBox48
+            // cmbHRDeadTimeCh05
             // 
-            this.textBox48.Location = new System.Drawing.Point(1028, 605);
-            this.textBox48.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(46, 26);
-            this.textBox48.TabIndex = 283;
-            this.textBox48.Text = "0.1";
-            // 
-            // comboBox43
-            // 
-            this.comboBox43.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox43.FormattingEnabled = true;
-            this.comboBox43.Items.AddRange(new object[] {
+            this.cmbHRDeadTimeCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDeadTimeCh05.FormattingEnabled = true;
+            this.cmbHRDeadTimeCh05.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.comboBox43.Location = new System.Drawing.Point(897, 280);
-            this.comboBox43.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox43.Name = "comboBox43";
-            this.comboBox43.Size = new System.Drawing.Size(90, 28);
-            this.comboBox43.TabIndex = 61;
+            this.cmbHRDeadTimeCh05.Location = new System.Drawing.Point(897, 234);
+            this.cmbHRDeadTimeCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDeadTimeCh05.Name = "cmbHRDeadTimeCh05";
+            this.cmbHRDeadTimeCh05.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDeadTimeCh05.TabIndex = 61;
             // 
-            // checkBox35
+            // tbxHRMaxOnCh02
             // 
-            this.checkBox35.AutoSize = true;
-            this.checkBox35.Location = new System.Drawing.Point(1364, 148);
-            this.checkBox35.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox35.Name = "checkBox35";
-            this.checkBox35.Size = new System.Drawing.Size(22, 21);
-            this.checkBox35.TabIndex = 36;
-            this.checkBox35.UseVisualStyleBackColor = true;
+            this.tbxHRMaxOnCh02.Location = new System.Drawing.Point(596, 420);
+            this.tbxHRMaxOnCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxOnCh02.Name = "tbxHRMaxOnCh02";
+            this.tbxHRMaxOnCh02.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxOnCh02.TabIndex = 107;
+            this.tbxHRMaxOnCh02.Text = "FFFF";
             // 
-            // textBox49
+            // tbxHRUndAmpsCh04
             // 
-            this.textBox49.Location = new System.Drawing.Point(596, 466);
-            this.textBox49.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(46, 26);
-            this.textBox49.TabIndex = 107;
-            this.textBox49.Text = "FFFF";
+            this.tbxHRUndAmpsCh04.Location = new System.Drawing.Point(812, 558);
+            this.tbxHRUndAmpsCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRUndAmpsCh04.Name = "tbxHRUndAmpsCh04";
+            this.tbxHRUndAmpsCh04.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRUndAmpsCh04.TabIndex = 281;
+            this.tbxHRUndAmpsCh04.Text = "0.1";
             // 
-            // textBox50
+            // cmbHRDeadTimeCh04
             // 
-            this.textBox50.Location = new System.Drawing.Point(812, 605);
-            this.textBox50.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(46, 26);
-            this.textBox50.TabIndex = 281;
-            this.textBox50.Text = "0.1";
-            // 
-            // comboBox44
-            // 
-            this.comboBox44.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox44.FormattingEnabled = true;
-            this.comboBox44.Items.AddRange(new object[] {
+            this.cmbHRDeadTimeCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDeadTimeCh04.FormattingEnabled = true;
+            this.cmbHRDeadTimeCh04.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.comboBox44.Location = new System.Drawing.Point(789, 280);
-            this.comboBox44.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox44.Name = "comboBox44";
-            this.comboBox44.Size = new System.Drawing.Size(90, 28);
-            this.comboBox44.TabIndex = 60;
+            this.cmbHRDeadTimeCh04.Location = new System.Drawing.Point(789, 234);
+            this.cmbHRDeadTimeCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDeadTimeCh04.Name = "cmbHRDeadTimeCh04";
+            this.cmbHRDeadTimeCh04.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDeadTimeCh04.TabIndex = 60;
             // 
-            // checkBox36
+            // tbxHRMaxOnCh03
             // 
-            this.checkBox36.AutoSize = true;
-            this.checkBox36.Location = new System.Drawing.Point(1472, 148);
-            this.checkBox36.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox36.Name = "checkBox36";
-            this.checkBox36.Size = new System.Drawing.Size(22, 21);
-            this.checkBox36.TabIndex = 37;
-            this.checkBox36.UseVisualStyleBackColor = true;
+            this.tbxHRMaxOnCh03.Location = new System.Drawing.Point(704, 420);
+            this.tbxHRMaxOnCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxOnCh03.Name = "tbxHRMaxOnCh03";
+            this.tbxHRMaxOnCh03.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxOnCh03.TabIndex = 108;
+            this.tbxHRMaxOnCh03.Text = "FFFF";
             // 
-            // textBox51
+            // tbxHRUndAmpsCh05
             // 
-            this.textBox51.Location = new System.Drawing.Point(704, 466);
-            this.textBox51.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(46, 26);
-            this.textBox51.TabIndex = 108;
-            this.textBox51.Text = "FFFF";
+            this.tbxHRUndAmpsCh05.Location = new System.Drawing.Point(920, 558);
+            this.tbxHRUndAmpsCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRUndAmpsCh05.Name = "tbxHRUndAmpsCh05";
+            this.tbxHRUndAmpsCh05.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRUndAmpsCh05.TabIndex = 282;
+            this.tbxHRUndAmpsCh05.Text = "0.1";
             // 
-            // textBox52
+            // cmbHRDeadTimeCh03
             // 
-            this.textBox52.Location = new System.Drawing.Point(920, 605);
-            this.textBox52.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(46, 26);
-            this.textBox52.TabIndex = 282;
-            this.textBox52.Text = "0.1";
-            // 
-            // comboBox45
-            // 
-            this.comboBox45.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox45.FormattingEnabled = true;
-            this.comboBox45.Items.AddRange(new object[] {
+            this.cmbHRDeadTimeCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDeadTimeCh03.FormattingEnabled = true;
+            this.cmbHRDeadTimeCh03.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.comboBox45.Location = new System.Drawing.Point(681, 280);
-            this.comboBox45.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox45.Name = "comboBox45";
-            this.comboBox45.Size = new System.Drawing.Size(90, 28);
-            this.comboBox45.TabIndex = 59;
+            this.cmbHRDeadTimeCh03.Location = new System.Drawing.Point(681, 234);
+            this.cmbHRDeadTimeCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDeadTimeCh03.Name = "cmbHRDeadTimeCh03";
+            this.cmbHRDeadTimeCh03.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDeadTimeCh03.TabIndex = 59;
             // 
-            // checkBox37
+            // tbxHRMaxOnCh04
             // 
-            this.checkBox37.AutoSize = true;
-            this.checkBox37.Location = new System.Drawing.Point(1580, 148);
-            this.checkBox37.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox37.Name = "checkBox37";
-            this.checkBox37.Size = new System.Drawing.Size(22, 21);
-            this.checkBox37.TabIndex = 38;
-            this.checkBox37.UseVisualStyleBackColor = true;
+            this.tbxHRMaxOnCh04.Location = new System.Drawing.Point(812, 420);
+            this.tbxHRMaxOnCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxOnCh04.Name = "tbxHRMaxOnCh04";
+            this.tbxHRMaxOnCh04.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxOnCh04.TabIndex = 109;
+            this.tbxHRMaxOnCh04.Text = "FFFF";
             // 
-            // textBox53
+            // tbxHRMaxDurRecCh11
             // 
-            this.textBox53.Location = new System.Drawing.Point(812, 466);
-            this.textBox53.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(46, 26);
-            this.textBox53.TabIndex = 109;
-            this.textBox53.Text = "FFFF";
+            this.tbxHRMaxDurRecCh11.Location = new System.Drawing.Point(1568, 466);
+            this.tbxHRMaxDurRecCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxDurRecCh11.Name = "tbxHRMaxDurRecCh11";
+            this.tbxHRMaxDurRecCh11.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxDurRecCh11.TabIndex = 275;
+            this.tbxHRMaxDurRecCh11.Text = "5";
             // 
-            // textBox54
+            // cmbHRDeadTimeCh02
             // 
-            this.textBox54.Location = new System.Drawing.Point(1568, 512);
-            this.textBox54.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(46, 26);
-            this.textBox54.TabIndex = 275;
-            this.textBox54.Text = "5";
-            // 
-            // comboBox46
-            // 
-            this.comboBox46.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox46.FormattingEnabled = true;
-            this.comboBox46.Items.AddRange(new object[] {
+            this.cmbHRDeadTimeCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDeadTimeCh02.FormattingEnabled = true;
+            this.cmbHRDeadTimeCh02.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.comboBox46.Location = new System.Drawing.Point(573, 280);
-            this.comboBox46.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox46.Name = "comboBox46";
-            this.comboBox46.Size = new System.Drawing.Size(90, 28);
-            this.comboBox46.TabIndex = 58;
+            this.cmbHRDeadTimeCh02.Location = new System.Drawing.Point(573, 234);
+            this.cmbHRDeadTimeCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDeadTimeCh02.Name = "cmbHRDeadTimeCh02";
+            this.cmbHRDeadTimeCh02.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDeadTimeCh02.TabIndex = 58;
             // 
             // label674
             // 
             this.label674.AutoSize = true;
             this.label674.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label674.ForeColor = System.Drawing.SystemColors.Control;
-            this.label674.Location = new System.Drawing.Point(4, 189);
+            this.label674.Location = new System.Drawing.Point(4, 143);
             this.label674.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label674.Name = "label674";
             this.label674.Size = new System.Drawing.Size(325, 28);
             this.label674.TabIndex = 39;
             this.label674.Text = "Channel Direction (State on Startup)";
             // 
-            // textBox55
+            // tbxHRMaxOnCh05
             // 
-            this.textBox55.Location = new System.Drawing.Point(920, 466);
-            this.textBox55.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(46, 26);
-            this.textBox55.TabIndex = 110;
-            this.textBox55.Text = "FFFF";
+            this.tbxHRMaxOnCh05.Location = new System.Drawing.Point(920, 420);
+            this.tbxHRMaxOnCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxOnCh05.Name = "tbxHRMaxOnCh05";
+            this.tbxHRMaxOnCh05.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxOnCh05.TabIndex = 110;
+            this.tbxHRMaxOnCh05.Text = "FFFF";
             // 
             // label675
             // 
             this.label675.AutoSize = true;
             this.label675.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label675.ForeColor = System.Drawing.SystemColors.Control;
-            this.label675.Location = new System.Drawing.Point(4, 512);
+            this.label675.Location = new System.Drawing.Point(4, 466);
             this.label675.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label675.Name = "label675";
             this.label675.Size = new System.Drawing.Size(259, 28);
             this.label675.TabIndex = 263;
             this.label675.Text = "Max Duration Recovery (sec)";
             // 
-            // comboBox47
+            // cmbHRDeadTimeCh01
             // 
-            this.comboBox47.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox47.FormattingEnabled = true;
-            this.comboBox47.Items.AddRange(new object[] {
+            this.cmbHRDeadTimeCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDeadTimeCh01.FormattingEnabled = true;
+            this.cmbHRDeadTimeCh01.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.comboBox47.Location = new System.Drawing.Point(465, 280);
-            this.comboBox47.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox47.Name = "comboBox47";
-            this.comboBox47.Size = new System.Drawing.Size(90, 28);
-            this.comboBox47.TabIndex = 57;
+            this.cmbHRDeadTimeCh01.Location = new System.Drawing.Point(465, 234);
+            this.cmbHRDeadTimeCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDeadTimeCh01.Name = "cmbHRDeadTimeCh01";
+            this.cmbHRDeadTimeCh01.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDeadTimeCh01.TabIndex = 57;
             // 
-            // comboBox48
+            // cmbHRDirectionCh00
             // 
-            this.comboBox48.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox48.FormattingEnabled = true;
-            this.comboBox48.Items.AddRange(new object[] {
+            this.cmbHRDirectionCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDirectionCh00.FormattingEnabled = true;
+            this.cmbHRDirectionCh00.Items.AddRange(new object[] {
             "Off",
             "Low",
             "High",
@@ -24690,48 +24759,48 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.comboBox48.Location = new System.Drawing.Point(357, 188);
-            this.comboBox48.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox48.Name = "comboBox48";
-            this.comboBox48.Size = new System.Drawing.Size(90, 28);
-            this.comboBox48.TabIndex = 40;
+            this.cmbHRDirectionCh00.Location = new System.Drawing.Point(357, 142);
+            this.cmbHRDirectionCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDirectionCh00.Name = "cmbHRDirectionCh00";
+            this.cmbHRDirectionCh00.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDirectionCh00.TabIndex = 40;
             // 
-            // textBox56
+            // tbxHRMaxOnCh06
             // 
-            this.textBox56.Location = new System.Drawing.Point(1028, 466);
-            this.textBox56.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox56.Name = "textBox56";
-            this.textBox56.Size = new System.Drawing.Size(46, 26);
-            this.textBox56.TabIndex = 111;
-            this.textBox56.Text = "FFFF";
+            this.tbxHRMaxOnCh06.Location = new System.Drawing.Point(1028, 420);
+            this.tbxHRMaxOnCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxOnCh06.Name = "tbxHRMaxOnCh06";
+            this.tbxHRMaxOnCh06.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxOnCh06.TabIndex = 111;
+            this.tbxHRMaxOnCh06.Text = "FFFF";
             // 
-            // textBox57
+            // tbxHRMaxDurRecCh10
             // 
-            this.textBox57.Location = new System.Drawing.Point(1460, 512);
-            this.textBox57.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(46, 26);
-            this.textBox57.TabIndex = 274;
-            this.textBox57.Text = "5";
+            this.tbxHRMaxDurRecCh10.Location = new System.Drawing.Point(1460, 466);
+            this.tbxHRMaxDurRecCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxDurRecCh10.Name = "tbxHRMaxDurRecCh10";
+            this.tbxHRMaxDurRecCh10.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxDurRecCh10.TabIndex = 274;
+            this.tbxHRMaxDurRecCh10.Text = "5";
             // 
-            // comboBox49
+            // cmbHRDeadTimeCh00
             // 
-            this.comboBox49.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox49.FormattingEnabled = true;
-            this.comboBox49.Items.AddRange(new object[] {
+            this.cmbHRDeadTimeCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDeadTimeCh00.FormattingEnabled = true;
+            this.cmbHRDeadTimeCh00.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.comboBox49.Location = new System.Drawing.Point(357, 280);
-            this.comboBox49.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox49.Name = "comboBox49";
-            this.comboBox49.Size = new System.Drawing.Size(90, 28);
-            this.comboBox49.TabIndex = 56;
+            this.cmbHRDeadTimeCh00.Location = new System.Drawing.Point(357, 234);
+            this.cmbHRDeadTimeCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDeadTimeCh00.Name = "cmbHRDeadTimeCh00";
+            this.cmbHRDeadTimeCh00.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDeadTimeCh00.TabIndex = 56;
             // 
-            // comboBox50
+            // cmbHRDirectionCh01
             // 
-            this.comboBox50.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox50.FormattingEnabled = true;
-            this.comboBox50.Items.AddRange(new object[] {
+            this.cmbHRDirectionCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDirectionCh01.FormattingEnabled = true;
+            this.cmbHRDirectionCh01.Items.AddRange(new object[] {
             "Off",
             "Low",
             "High",
@@ -24739,47 +24808,47 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.comboBox50.Location = new System.Drawing.Point(465, 188);
-            this.comboBox50.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox50.Name = "comboBox50";
-            this.comboBox50.Size = new System.Drawing.Size(90, 28);
-            this.comboBox50.TabIndex = 41;
+            this.cmbHRDirectionCh01.Location = new System.Drawing.Point(465, 142);
+            this.cmbHRDirectionCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDirectionCh01.Name = "cmbHRDirectionCh01";
+            this.cmbHRDirectionCh01.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDirectionCh01.TabIndex = 41;
             // 
-            // textBox58
+            // tbxHRMaxOnCh07
             // 
-            this.textBox58.Location = new System.Drawing.Point(1136, 466);
-            this.textBox58.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(46, 26);
-            this.textBox58.TabIndex = 112;
-            this.textBox58.Text = "FFFF";
+            this.tbxHRMaxOnCh07.Location = new System.Drawing.Point(1136, 420);
+            this.tbxHRMaxOnCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxOnCh07.Name = "tbxHRMaxOnCh07";
+            this.tbxHRMaxOnCh07.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxOnCh07.TabIndex = 112;
+            this.tbxHRMaxOnCh07.Text = "FFFF";
             // 
-            // textBox59
+            // tbxHRMaxDurRecCh00
             // 
-            this.textBox59.Location = new System.Drawing.Point(380, 512);
-            this.textBox59.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox59.Name = "textBox59";
-            this.textBox59.Size = new System.Drawing.Size(46, 26);
-            this.textBox59.TabIndex = 264;
-            this.textBox59.Text = "5";
+            this.tbxHRMaxDurRecCh00.Location = new System.Drawing.Point(380, 466);
+            this.tbxHRMaxDurRecCh00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxDurRecCh00.Name = "tbxHRMaxDurRecCh00";
+            this.tbxHRMaxDurRecCh00.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxDurRecCh00.TabIndex = 264;
+            this.tbxHRMaxDurRecCh00.Text = "5";
             // 
             // label676
             // 
             this.label676.AutoSize = true;
             this.label676.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label676.ForeColor = System.Drawing.SystemColors.Control;
-            this.label676.Location = new System.Drawing.Point(4, 282);
+            this.label676.Location = new System.Drawing.Point(4, 235);
             this.label676.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label676.Name = "label676";
             this.label676.Size = new System.Drawing.Size(147, 28);
             this.label676.TabIndex = 55;
             this.label676.Text = "Dead Time (ms)";
             // 
-            // comboBox51
+            // cmbHRDirectionCh02
             // 
-            this.comboBox51.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox51.FormattingEnabled = true;
-            this.comboBox51.Items.AddRange(new object[] {
+            this.cmbHRDirectionCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDirectionCh02.FormattingEnabled = true;
+            this.cmbHRDirectionCh02.Items.AddRange(new object[] {
             "Off",
             "Low",
             "High",
@@ -24787,47 +24856,47 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.comboBox51.Location = new System.Drawing.Point(573, 188);
-            this.comboBox51.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox51.Name = "comboBox51";
-            this.comboBox51.Size = new System.Drawing.Size(90, 28);
-            this.comboBox51.TabIndex = 42;
+            this.cmbHRDirectionCh02.Location = new System.Drawing.Point(573, 142);
+            this.cmbHRDirectionCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDirectionCh02.Name = "cmbHRDirectionCh02";
+            this.cmbHRDirectionCh02.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDirectionCh02.TabIndex = 42;
             // 
-            // textBox60
+            // tbxHRMaxOnCh08
             // 
-            this.textBox60.Location = new System.Drawing.Point(1244, 466);
-            this.textBox60.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox60.Name = "textBox60";
-            this.textBox60.Size = new System.Drawing.Size(46, 26);
-            this.textBox60.TabIndex = 113;
-            this.textBox60.Text = "FFFF";
+            this.tbxHRMaxOnCh08.Location = new System.Drawing.Point(1244, 420);
+            this.tbxHRMaxOnCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxOnCh08.Name = "tbxHRMaxOnCh08";
+            this.tbxHRMaxOnCh08.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxOnCh08.TabIndex = 113;
+            this.tbxHRMaxOnCh08.Text = "FFFF";
             // 
-            // textBox61
+            // tbxHRMaxDurRecCh09
             // 
-            this.textBox61.Location = new System.Drawing.Point(1352, 512);
-            this.textBox61.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox61.Name = "textBox61";
-            this.textBox61.Size = new System.Drawing.Size(46, 26);
-            this.textBox61.TabIndex = 273;
-            this.textBox61.Text = "5";
+            this.tbxHRMaxDurRecCh09.Location = new System.Drawing.Point(1352, 466);
+            this.tbxHRMaxDurRecCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxDurRecCh09.Name = "tbxHRMaxDurRecCh09";
+            this.tbxHRMaxDurRecCh09.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxDurRecCh09.TabIndex = 273;
+            this.tbxHRMaxDurRecCh09.Text = "5";
             // 
             // label677
             // 
             this.label677.AutoSize = true;
             this.label677.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label677.ForeColor = System.Drawing.SystemColors.Control;
-            this.label677.Location = new System.Drawing.Point(4, 328);
+            this.label677.Location = new System.Drawing.Point(4, 282);
             this.label677.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label677.Name = "label677";
             this.label677.Size = new System.Drawing.Size(90, 28);
             this.label677.TabIndex = 54;
             this.label677.Text = "Paired to";
             // 
-            // comboBox52
+            // cmbHRDirectionCh03
             // 
-            this.comboBox52.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox52.FormattingEnabled = true;
-            this.comboBox52.Items.AddRange(new object[] {
+            this.cmbHRDirectionCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDirectionCh03.FormattingEnabled = true;
+            this.cmbHRDirectionCh03.Items.AddRange(new object[] {
             "Off",
             "Low",
             "High",
@@ -24835,47 +24904,47 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.comboBox52.Location = new System.Drawing.Point(681, 188);
-            this.comboBox52.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox52.Name = "comboBox52";
-            this.comboBox52.Size = new System.Drawing.Size(90, 28);
-            this.comboBox52.TabIndex = 43;
+            this.cmbHRDirectionCh03.Location = new System.Drawing.Point(681, 142);
+            this.cmbHRDirectionCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDirectionCh03.Name = "cmbHRDirectionCh03";
+            this.cmbHRDirectionCh03.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDirectionCh03.TabIndex = 43;
             // 
-            // textBox62
+            // tbxHRMaxOnCh09
             // 
-            this.textBox62.Location = new System.Drawing.Point(1352, 466);
-            this.textBox62.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox62.Name = "textBox62";
-            this.textBox62.Size = new System.Drawing.Size(46, 26);
-            this.textBox62.TabIndex = 114;
-            this.textBox62.Text = "FFFF";
+            this.tbxHRMaxOnCh09.Location = new System.Drawing.Point(1352, 420);
+            this.tbxHRMaxOnCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxOnCh09.Name = "tbxHRMaxOnCh09";
+            this.tbxHRMaxOnCh09.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxOnCh09.TabIndex = 114;
+            this.tbxHRMaxOnCh09.Text = "FFFF";
             // 
-            // textBox63
+            // tbxHRMaxDurRecCh01
             // 
-            this.textBox63.Location = new System.Drawing.Point(488, 512);
-            this.textBox63.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(46, 26);
-            this.textBox63.TabIndex = 265;
-            this.textBox63.Text = "5";
+            this.tbxHRMaxDurRecCh01.Location = new System.Drawing.Point(488, 466);
+            this.tbxHRMaxDurRecCh01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxDurRecCh01.Name = "tbxHRMaxDurRecCh01";
+            this.tbxHRMaxDurRecCh01.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxDurRecCh01.TabIndex = 265;
+            this.tbxHRMaxDurRecCh01.Text = "5";
             // 
             // label678
             // 
             this.label678.AutoSize = true;
             this.label678.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label678.ForeColor = System.Drawing.SystemColors.Control;
-            this.label678.Location = new System.Drawing.Point(4, 374);
+            this.label678.Location = new System.Drawing.Point(4, 328);
             this.label678.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label678.Name = "label678";
             this.label678.Size = new System.Drawing.Size(234, 28);
             this.label678.TabIndex = 53;
             this.label678.Text = "Allow Command Timeout";
             // 
-            // comboBox53
+            // cmbHRDirectionCh04
             // 
-            this.comboBox53.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox53.FormattingEnabled = true;
-            this.comboBox53.Items.AddRange(new object[] {
+            this.cmbHRDirectionCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDirectionCh04.FormattingEnabled = true;
+            this.cmbHRDirectionCh04.Items.AddRange(new object[] {
             "Off",
             "Low",
             "High",
@@ -24883,47 +24952,47 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.comboBox53.Location = new System.Drawing.Point(789, 188);
-            this.comboBox53.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox53.Name = "comboBox53";
-            this.comboBox53.Size = new System.Drawing.Size(90, 28);
-            this.comboBox53.TabIndex = 44;
+            this.cmbHRDirectionCh04.Location = new System.Drawing.Point(789, 142);
+            this.cmbHRDirectionCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDirectionCh04.Name = "cmbHRDirectionCh04";
+            this.cmbHRDirectionCh04.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDirectionCh04.TabIndex = 44;
             // 
-            // textBox64
+            // tbxHRMaxOnCh10
             // 
-            this.textBox64.Location = new System.Drawing.Point(1460, 466);
-            this.textBox64.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox64.Name = "textBox64";
-            this.textBox64.Size = new System.Drawing.Size(46, 26);
-            this.textBox64.TabIndex = 115;
-            this.textBox64.Text = "FFFF";
+            this.tbxHRMaxOnCh10.Location = new System.Drawing.Point(1460, 420);
+            this.tbxHRMaxOnCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxOnCh10.Name = "tbxHRMaxOnCh10";
+            this.tbxHRMaxOnCh10.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxOnCh10.TabIndex = 115;
+            this.tbxHRMaxOnCh10.Text = "FFFF";
             // 
-            // textBox65
+            // tbxHRMaxDurRecCh08
             // 
-            this.textBox65.Location = new System.Drawing.Point(1244, 512);
-            this.textBox65.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(46, 26);
-            this.textBox65.TabIndex = 272;
-            this.textBox65.Text = "5";
+            this.tbxHRMaxDurRecCh08.Location = new System.Drawing.Point(1244, 466);
+            this.tbxHRMaxDurRecCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxDurRecCh08.Name = "tbxHRMaxDurRecCh08";
+            this.tbxHRMaxDurRecCh08.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxDurRecCh08.TabIndex = 272;
+            this.tbxHRMaxDurRecCh08.Text = "5";
             // 
             // label679
             // 
             this.label679.AutoSize = true;
             this.label679.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label679.ForeColor = System.Drawing.SystemColors.Control;
-            this.label679.Location = new System.Drawing.Point(4, 420);
+            this.label679.Location = new System.Drawing.Point(4, 374);
             this.label679.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label679.Name = "label679";
             this.label679.Size = new System.Drawing.Size(227, 28);
             this.label679.TabIndex = 52;
             this.label679.Text = "Command Timeout (ms) ";
             // 
-            // comboBox54
+            // cmbHRDirectionCh05
             // 
-            this.comboBox54.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox54.FormattingEnabled = true;
-            this.comboBox54.Items.AddRange(new object[] {
+            this.cmbHRDirectionCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDirectionCh05.FormattingEnabled = true;
+            this.cmbHRDirectionCh05.Items.AddRange(new object[] {
             "Off",
             "Low",
             "High",
@@ -24931,35 +25000,35 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.comboBox54.Location = new System.Drawing.Point(897, 188);
-            this.comboBox54.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox54.Name = "comboBox54";
-            this.comboBox54.Size = new System.Drawing.Size(90, 28);
-            this.comboBox54.TabIndex = 45;
+            this.cmbHRDirectionCh05.Location = new System.Drawing.Point(897, 142);
+            this.cmbHRDirectionCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDirectionCh05.Name = "cmbHRDirectionCh05";
+            this.cmbHRDirectionCh05.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDirectionCh05.TabIndex = 45;
             // 
-            // textBox66
+            // tbxHRMaxOnCh11
             // 
-            this.textBox66.Location = new System.Drawing.Point(1568, 466);
-            this.textBox66.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox66.Name = "textBox66";
-            this.textBox66.Size = new System.Drawing.Size(46, 26);
-            this.textBox66.TabIndex = 116;
-            this.textBox66.Text = "FFFF";
+            this.tbxHRMaxOnCh11.Location = new System.Drawing.Point(1568, 420);
+            this.tbxHRMaxOnCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxOnCh11.Name = "tbxHRMaxOnCh11";
+            this.tbxHRMaxOnCh11.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxOnCh11.TabIndex = 116;
+            this.tbxHRMaxOnCh11.Text = "FFFF";
             // 
-            // textBox67
+            // tbxHRMaxDurRecCh02
             // 
-            this.textBox67.Location = new System.Drawing.Point(596, 512);
-            this.textBox67.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox67.Name = "textBox67";
-            this.textBox67.Size = new System.Drawing.Size(46, 26);
-            this.textBox67.TabIndex = 266;
-            this.textBox67.Text = "5";
+            this.tbxHRMaxDurRecCh02.Location = new System.Drawing.Point(596, 466);
+            this.tbxHRMaxDurRecCh02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxDurRecCh02.Name = "tbxHRMaxDurRecCh02";
+            this.tbxHRMaxDurRecCh02.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxDurRecCh02.TabIndex = 266;
+            this.tbxHRMaxDurRecCh02.Text = "5";
             // 
-            // comboBox55
+            // cmbHRDirectionCh11
             // 
-            this.comboBox55.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox55.FormattingEnabled = true;
-            this.comboBox55.Items.AddRange(new object[] {
+            this.cmbHRDirectionCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDirectionCh11.FormattingEnabled = true;
+            this.cmbHRDirectionCh11.Items.AddRange(new object[] {
             "Off",
             "Low",
             "High",
@@ -24967,17 +25036,17 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.comboBox55.Location = new System.Drawing.Point(1545, 188);
-            this.comboBox55.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox55.Name = "comboBox55";
-            this.comboBox55.Size = new System.Drawing.Size(90, 28);
-            this.comboBox55.TabIndex = 51;
+            this.cmbHRDirectionCh11.Location = new System.Drawing.Point(1545, 142);
+            this.cmbHRDirectionCh11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDirectionCh11.Name = "cmbHRDirectionCh11";
+            this.cmbHRDirectionCh11.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDirectionCh11.TabIndex = 51;
             // 
-            // comboBox56
+            // cmbHRDirectionCh06
             // 
-            this.comboBox56.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox56.FormattingEnabled = true;
-            this.comboBox56.Items.AddRange(new object[] {
+            this.cmbHRDirectionCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDirectionCh06.FormattingEnabled = true;
+            this.cmbHRDirectionCh06.Items.AddRange(new object[] {
             "Off",
             "Low",
             "High",
@@ -24985,35 +25054,35 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.comboBox56.Location = new System.Drawing.Point(1005, 188);
-            this.comboBox56.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox56.Name = "comboBox56";
-            this.comboBox56.Size = new System.Drawing.Size(90, 28);
-            this.comboBox56.TabIndex = 46;
+            this.cmbHRDirectionCh06.Location = new System.Drawing.Point(1005, 142);
+            this.cmbHRDirectionCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDirectionCh06.Name = "cmbHRDirectionCh06";
+            this.cmbHRDirectionCh06.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDirectionCh06.TabIndex = 46;
             // 
-            // textBox68
+            // tbxHRMaxDurRecCh05
             // 
-            this.textBox68.Location = new System.Drawing.Point(920, 512);
-            this.textBox68.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox68.Name = "textBox68";
-            this.textBox68.Size = new System.Drawing.Size(46, 26);
-            this.textBox68.TabIndex = 269;
-            this.textBox68.Text = "5";
+            this.tbxHRMaxDurRecCh05.Location = new System.Drawing.Point(920, 466);
+            this.tbxHRMaxDurRecCh05.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxDurRecCh05.Name = "tbxHRMaxDurRecCh05";
+            this.tbxHRMaxDurRecCh05.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxDurRecCh05.TabIndex = 269;
+            this.tbxHRMaxDurRecCh05.Text = "5";
             // 
-            // textBox69
+            // tbxHRMaxDurRecCh07
             // 
-            this.textBox69.Location = new System.Drawing.Point(1136, 512);
-            this.textBox69.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox69.Name = "textBox69";
-            this.textBox69.Size = new System.Drawing.Size(46, 26);
-            this.textBox69.TabIndex = 271;
-            this.textBox69.Text = "5";
+            this.tbxHRMaxDurRecCh07.Location = new System.Drawing.Point(1136, 466);
+            this.tbxHRMaxDurRecCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxDurRecCh07.Name = "tbxHRMaxDurRecCh07";
+            this.tbxHRMaxDurRecCh07.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxDurRecCh07.TabIndex = 271;
+            this.tbxHRMaxDurRecCh07.Text = "5";
             // 
-            // comboBox57
+            // cmbHRDirectionCh10
             // 
-            this.comboBox57.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox57.FormattingEnabled = true;
-            this.comboBox57.Items.AddRange(new object[] {
+            this.cmbHRDirectionCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDirectionCh10.FormattingEnabled = true;
+            this.cmbHRDirectionCh10.Items.AddRange(new object[] {
             "Off",
             "Low",
             "High",
@@ -25021,17 +25090,17 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.comboBox57.Location = new System.Drawing.Point(1437, 188);
-            this.comboBox57.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox57.Name = "comboBox57";
-            this.comboBox57.Size = new System.Drawing.Size(90, 28);
-            this.comboBox57.TabIndex = 50;
+            this.cmbHRDirectionCh10.Location = new System.Drawing.Point(1437, 142);
+            this.cmbHRDirectionCh10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDirectionCh10.Name = "cmbHRDirectionCh10";
+            this.cmbHRDirectionCh10.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDirectionCh10.TabIndex = 50;
             // 
-            // comboBox58
+            // cmbHRDirectionCh08
             // 
-            this.comboBox58.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox58.FormattingEnabled = true;
-            this.comboBox58.Items.AddRange(new object[] {
+            this.cmbHRDirectionCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDirectionCh08.FormattingEnabled = true;
+            this.cmbHRDirectionCh08.Items.AddRange(new object[] {
             "Off",
             "Low",
             "High",
@@ -25039,35 +25108,35 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.comboBox58.Location = new System.Drawing.Point(1221, 188);
-            this.comboBox58.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox58.Name = "comboBox58";
-            this.comboBox58.Size = new System.Drawing.Size(90, 28);
-            this.comboBox58.TabIndex = 47;
+            this.cmbHRDirectionCh08.Location = new System.Drawing.Point(1221, 142);
+            this.cmbHRDirectionCh08.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDirectionCh08.Name = "cmbHRDirectionCh08";
+            this.cmbHRDirectionCh08.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDirectionCh08.TabIndex = 47;
             // 
-            // textBox70
+            // tbxHRMaxDurRecCh04
             // 
-            this.textBox70.Location = new System.Drawing.Point(812, 512);
-            this.textBox70.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox70.Name = "textBox70";
-            this.textBox70.Size = new System.Drawing.Size(46, 26);
-            this.textBox70.TabIndex = 268;
-            this.textBox70.Text = "5";
+            this.tbxHRMaxDurRecCh04.Location = new System.Drawing.Point(812, 466);
+            this.tbxHRMaxDurRecCh04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxDurRecCh04.Name = "tbxHRMaxDurRecCh04";
+            this.tbxHRMaxDurRecCh04.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxDurRecCh04.TabIndex = 268;
+            this.tbxHRMaxDurRecCh04.Text = "5";
             // 
-            // textBox71
+            // tbxHRMaxDurRecCh03
             // 
-            this.textBox71.Location = new System.Drawing.Point(704, 512);
-            this.textBox71.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox71.Name = "textBox71";
-            this.textBox71.Size = new System.Drawing.Size(46, 26);
-            this.textBox71.TabIndex = 267;
-            this.textBox71.Text = "5";
+            this.tbxHRMaxDurRecCh03.Location = new System.Drawing.Point(704, 466);
+            this.tbxHRMaxDurRecCh03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxDurRecCh03.Name = "tbxHRMaxDurRecCh03";
+            this.tbxHRMaxDurRecCh03.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxDurRecCh03.TabIndex = 267;
+            this.tbxHRMaxDurRecCh03.Text = "5";
             // 
-            // comboBox59
+            // cmbHRDirectionCh09
             // 
-            this.comboBox59.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox59.FormattingEnabled = true;
-            this.comboBox59.Items.AddRange(new object[] {
+            this.cmbHRDirectionCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDirectionCh09.FormattingEnabled = true;
+            this.cmbHRDirectionCh09.Items.AddRange(new object[] {
             "Off",
             "Low",
             "High",
@@ -25075,17 +25144,17 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.comboBox59.Location = new System.Drawing.Point(1329, 188);
-            this.comboBox59.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox59.Name = "comboBox59";
-            this.comboBox59.Size = new System.Drawing.Size(90, 28);
-            this.comboBox59.TabIndex = 49;
+            this.cmbHRDirectionCh09.Location = new System.Drawing.Point(1329, 142);
+            this.cmbHRDirectionCh09.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDirectionCh09.Name = "cmbHRDirectionCh09";
+            this.cmbHRDirectionCh09.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDirectionCh09.TabIndex = 49;
             // 
-            // comboBox60
+            // cmbHRDirectionCh07
             // 
-            this.comboBox60.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox60.FormattingEnabled = true;
-            this.comboBox60.Items.AddRange(new object[] {
+            this.cmbHRDirectionCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRDirectionCh07.FormattingEnabled = true;
+            this.cmbHRDirectionCh07.Items.AddRange(new object[] {
             "Off",
             "Low",
             "High",
@@ -25093,142 +25162,149 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.comboBox60.Location = new System.Drawing.Point(1113, 188);
-            this.comboBox60.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox60.Name = "comboBox60";
-            this.comboBox60.Size = new System.Drawing.Size(90, 28);
-            this.comboBox60.TabIndex = 48;
+            this.cmbHRDirectionCh07.Location = new System.Drawing.Point(1113, 142);
+            this.cmbHRDirectionCh07.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbHRDirectionCh07.Name = "cmbHRDirectionCh07";
+            this.cmbHRDirectionCh07.Size = new System.Drawing.Size(90, 28);
+            this.cmbHRDirectionCh07.TabIndex = 48;
             // 
-            // textBox72
+            // tbxHRMaxDurRecCh06
             // 
-            this.textBox72.Location = new System.Drawing.Point(1028, 512);
-            this.textBox72.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox72.Name = "textBox72";
-            this.textBox72.Size = new System.Drawing.Size(46, 26);
-            this.textBox72.TabIndex = 270;
-            this.textBox72.Text = "5";
+            this.tbxHRMaxDurRecCh06.Location = new System.Drawing.Point(1028, 466);
+            this.tbxHRMaxDurRecCh06.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxHRMaxDurRecCh06.Name = "tbxHRMaxDurRecCh06";
+            this.tbxHRMaxDurRecCh06.Size = new System.Drawing.Size(46, 26);
+            this.tbxHRMaxDurRecCh06.TabIndex = 270;
+            this.tbxHRMaxDurRecCh06.Text = "5";
             // 
             // tabPage14
             // 
             this.tabPage14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.tabPage14.Location = new System.Drawing.Point(4, 29);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage14.Size = new System.Drawing.Size(2070, 1309);
             this.tabPage14.TabIndex = 2;
             this.tabPage14.Text = "Generated";
             // 
-            // button7
+            // btnHRCard1
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.Control;
-            this.button7.Location = new System.Drawing.Point(20, 20);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(150, 62);
-            this.button7.TabIndex = 120;
-            this.button7.Text = "Card 1";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Visible = false;
+            this.btnHRCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnHRCard1.FlatAppearance.BorderSize = 0;
+            this.btnHRCard1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHRCard1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHRCard1.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnHRCard1.Location = new System.Drawing.Point(20, 20);
+            this.btnHRCard1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHRCard1.Name = "btnHRCard1";
+            this.btnHRCard1.Size = new System.Drawing.Size(150, 62);
+            this.btnHRCard1.TabIndex = 120;
+            this.btnHRCard1.Text = "Card 1";
+            this.btnHRCard1.UseVisualStyleBackColor = false;
+            this.btnHRCard1.Visible = false;
+            this.btnHRCard1.Click += new System.EventHandler(this.btnHRCard1_Click);
             // 
-            // button1
+            // btnHRGenerate
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(1050, 22);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 62);
-            this.button1.TabIndex = 119;
-            this.button1.Text = "Generate";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Visible = false;
+            this.btnHRGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnHRGenerate.FlatAppearance.BorderSize = 0;
+            this.btnHRGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHRGenerate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHRGenerate.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnHRGenerate.Location = new System.Drawing.Point(1292, 22);
+            this.btnHRGenerate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHRGenerate.Name = "btnHRGenerate";
+            this.btnHRGenerate.Size = new System.Drawing.Size(150, 62);
+            this.btnHRGenerate.TabIndex = 119;
+            this.btnHRGenerate.Text = "Generate";
+            this.btnHRGenerate.UseVisualStyleBackColor = false;
+            this.btnHRGenerate.Visible = false;
+            this.btnHRGenerate.Click += new System.EventHandler(this.btnHRGenerate_Click);
             // 
-            // button2
+            // btnHRCard6
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(814, 22);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 62);
-            this.button2.TabIndex = 118;
-            this.button2.Text = "Card 6";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Visible = false;
+            this.btnHRCard6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnHRCard6.FlatAppearance.BorderSize = 0;
+            this.btnHRCard6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHRCard6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHRCard6.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnHRCard6.Location = new System.Drawing.Point(814, 22);
+            this.btnHRCard6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHRCard6.Name = "btnHRCard6";
+            this.btnHRCard6.Size = new System.Drawing.Size(150, 62);
+            this.btnHRCard6.TabIndex = 118;
+            this.btnHRCard6.Text = "Card 6";
+            this.btnHRCard6.UseVisualStyleBackColor = false;
+            this.btnHRCard6.Visible = false;
+            this.btnHRCard6.Click += new System.EventHandler(this.btnHRCard6_Click);
             // 
-            // button3
+            // btnHRCard5
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(656, 22);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 62);
-            this.button3.TabIndex = 117;
-            this.button3.Text = "Card 5";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Visible = false;
+            this.btnHRCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnHRCard5.FlatAppearance.BorderSize = 0;
+            this.btnHRCard5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHRCard5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHRCard5.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnHRCard5.Location = new System.Drawing.Point(656, 22);
+            this.btnHRCard5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHRCard5.Name = "btnHRCard5";
+            this.btnHRCard5.Size = new System.Drawing.Size(150, 62);
+            this.btnHRCard5.TabIndex = 117;
+            this.btnHRCard5.Text = "Card 5";
+            this.btnHRCard5.UseVisualStyleBackColor = false;
+            this.btnHRCard5.Visible = false;
+            this.btnHRCard5.Click += new System.EventHandler(this.btnHRCard5_Click);
             // 
-            // button4
+            // btnHRCard4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Location = new System.Drawing.Point(496, 22);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 62);
-            this.button4.TabIndex = 116;
-            this.button4.Text = "Card 4";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Visible = false;
+            this.btnHRCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnHRCard4.FlatAppearance.BorderSize = 0;
+            this.btnHRCard4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHRCard4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHRCard4.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnHRCard4.Location = new System.Drawing.Point(496, 22);
+            this.btnHRCard4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHRCard4.Name = "btnHRCard4";
+            this.btnHRCard4.Size = new System.Drawing.Size(150, 62);
+            this.btnHRCard4.TabIndex = 116;
+            this.btnHRCard4.Text = "Card 4";
+            this.btnHRCard4.UseVisualStyleBackColor = false;
+            this.btnHRCard4.Visible = false;
+            this.btnHRCard4.Click += new System.EventHandler(this.btnHRCard4_Click);
             // 
-            // button5
+            // btnHRCard3
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Location = new System.Drawing.Point(338, 20);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(150, 62);
-            this.button5.TabIndex = 115;
-            this.button5.Text = "Card 3";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Visible = false;
+            this.btnHRCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnHRCard3.FlatAppearance.BorderSize = 0;
+            this.btnHRCard3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHRCard3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHRCard3.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnHRCard3.Location = new System.Drawing.Point(338, 20);
+            this.btnHRCard3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHRCard3.Name = "btnHRCard3";
+            this.btnHRCard3.Size = new System.Drawing.Size(150, 62);
+            this.btnHRCard3.TabIndex = 115;
+            this.btnHRCard3.Text = "Card 3";
+            this.btnHRCard3.UseVisualStyleBackColor = false;
+            this.btnHRCard3.Visible = false;
+            this.btnHRCard3.Click += new System.EventHandler(this.btnHRCard3_Click);
             // 
-            // button6
+            // btnHRCard2
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Location = new System.Drawing.Point(178, 20);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(150, 62);
-            this.button6.TabIndex = 114;
-            this.button6.Text = "Card 2";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Visible = false;
+            this.btnHRCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnHRCard2.FlatAppearance.BorderSize = 0;
+            this.btnHRCard2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHRCard2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHRCard2.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnHRCard2.Location = new System.Drawing.Point(178, 20);
+            this.btnHRCard2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHRCard2.Name = "btnHRCard2";
+            this.btnHRCard2.Size = new System.Drawing.Size(150, 62);
+            this.btnHRCard2.TabIndex = 114;
+            this.btnHRCard2.Text = "Card 2";
+            this.btnHRCard2.UseVisualStyleBackColor = false;
+            this.btnHRCard2.Visible = false;
+            this.btnHRCard2.Click += new System.EventHandler(this.btnHRCard2_Click);
             // 
             // Form1
             // 
@@ -25240,7 +25316,7 @@ namespace M1ConfigGenerator
             this.Controls.Add(this.panelMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MinimumSize = new System.Drawing.Size(2368, 1508);
+            this.MinimumSize = new System.Drawing.Size(2365, 1508);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Firefly M1 Config Generator";
@@ -25725,15 +25801,12 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TabPage tabMainStart;
         private System.Windows.Forms.TabPage tabMainAux;
         private TablessControl tabControlAux;
-        private System.Windows.Forms.TabPage tabAuxBlank;
         private System.Windows.Forms.TabPage tabAux1;
         private System.Windows.Forms.TabPage tabMainBreaker;
         private TablessControl tabControlBreaker;
-        private System.Windows.Forms.TabPage tabBreakerBlank;
         private System.Windows.Forms.TabPage tabBreaker1;
         private System.Windows.Forms.TabPage tabMainDimmer;
         private TablessControl tabControlDimmer;
-        private System.Windows.Forms.TabPage tabDimmerBlank;
         private System.Windows.Forms.TabPage tabDimmer1;
         private TablessControl tabControlDimmer1QF;
         private System.Windows.Forms.TabPage tabDimmer1Quick;
@@ -25743,7 +25816,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TabPage tabHC1;
         private System.Windows.Forms.TabPage tabMainLC;
         private TablessControl tabControlLC;
-        private System.Windows.Forms.TabPage tabLCBlank;
         private System.Windows.Forms.TabPage tabLC1;
         private TablessControl tabControlLC1QF;
         private System.Windows.Forms.TabPage tabLC1Quick;
@@ -26680,215 +26752,201 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label565;
         private System.Windows.Forms.TextBox tbxStartCfgType;
         private System.Windows.Forms.TabPage tabMainHR;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnHRCard1;
+        private System.Windows.Forms.Button btnHRGenerate;
+        private System.Windows.Forms.Button btnHRCard6;
+        private System.Windows.Forms.Button btnHRCard5;
+        private System.Windows.Forms.Button btnHRCard4;
+        private System.Windows.Forms.Button btnHRCard3;
+        private System.Windows.Forms.Button btnHRCard2;
         private TablessControl tablessControl5;
-        private System.Windows.Forms.TabPage tabPage12;
         private System.Windows.Forms.TabPage tabPage13;
         private TablessControl tablessControl6;
         private System.Windows.Forms.TabPage tabPage15;
         private System.Windows.Forms.TabPage tabPage16;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxHROCAmpsCh11;
         private System.Windows.Forms.Label label652;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox tbxHROCAmpsCh10;
+        private System.Windows.Forms.TextBox tbxHROCAmpsCh00;
+        private System.Windows.Forms.TextBox tbxHROCAmpsCh09;
+        private System.Windows.Forms.TextBox tbxHROCAmpsCh01;
+        private System.Windows.Forms.TextBox tbxHROCAmpsCh08;
+        private System.Windows.Forms.TextBox tbxHROCAmpsCh02;
+        private System.Windows.Forms.TextBox tbxHROCAmpsCh07;
+        private System.Windows.Forms.TextBox tbxHROCAmpsCh03;
+        private System.Windows.Forms.TextBox tbxHROCAmpsCh06;
+        private System.Windows.Forms.TextBox tbxHROCAmpsCh04;
+        private System.Windows.Forms.TextBox tbxHROCAmpsCh05;
         private System.Windows.Forms.Label label653;
         private System.Windows.Forms.Label label654;
         private System.Windows.Forms.Label label655;
         private System.Windows.Forms.Label label656;
         private System.Windows.Forms.Label label657;
         private System.Windows.Forms.Label label658;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbHRModeParamCh11;
         private System.Windows.Forms.Label label659;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbHRModeParamCh10;
         private System.Windows.Forms.Label label660;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbHRModeParamCh09;
         private System.Windows.Forms.Label label661;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cmbHRModeParamCh08;
         private System.Windows.Forms.Label label662;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cmbHRModeParamCh07;
         private System.Windows.Forms.Label label663;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox cmbHRModeParamCh06;
         private System.Windows.Forms.Label label664;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox cmbHRModeParamCh05;
         private System.Windows.Forms.Label label665;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox cmbHRModeParamCh04;
         private System.Windows.Forms.Label label666;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox cmbHRModeParamCh03;
+        private System.Windows.Forms.ComboBox cmbHRModeParamCh02;
+        private System.Windows.Forms.ComboBox cmbHRModeParamCh01;
+        private System.Windows.Forms.ComboBox cmbHRModeParamCh00;
         private System.Windows.Forms.Label label667;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.CheckBox chkHRLockCh00;
+        private System.Windows.Forms.CheckBox chkHRLockCh01;
+        private System.Windows.Forms.CheckBox chkHRLockCh02;
+        private System.Windows.Forms.CheckBox chkHRLockCh03;
+        private System.Windows.Forms.CheckBox chkHRLockCh04;
+        private System.Windows.Forms.CheckBox chkHRLockCh05;
+        private System.Windows.Forms.CheckBox chkHRLockCh06;
+        private System.Windows.Forms.CheckBox chkHRLockCh07;
+        private System.Windows.Forms.CheckBox chkHRLockCh08;
+        private System.Windows.Forms.CheckBox chkHRLockCh09;
+        private System.Windows.Forms.CheckBox chkHRLockCh10;
+        private System.Windows.Forms.CheckBox chkHRLockCh11;
         private System.Windows.Forms.Label label668;
-        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.ComboBox cmbHRMeasCurTimeCh11;
         private System.Windows.Forms.Label label669;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.CheckBox checkBox16;
+        private System.Windows.Forms.CheckBox chkHRTimeoutCh04;
+        private System.Windows.Forms.ComboBox cmbHRMeasCurTimeCh10;
+        private System.Windows.Forms.CheckBox chkHRTimeoutCh03;
+        private System.Windows.Forms.TextBox tbxHRPWMDutyCh00;
+        private System.Windows.Forms.CheckBox chkHRTimeoutCh05;
         private System.Windows.Forms.Label label670;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.CheckBox checkBox18;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.CheckBox checkBox19;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.CheckBox checkBox20;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.CheckBox checkBox21;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.CheckBox checkBox22;
-        private System.Windows.Forms.ComboBox comboBox17;
-        private System.Windows.Forms.ComboBox comboBox18;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.CheckBox checkBox23;
-        private System.Windows.Forms.ComboBox comboBox19;
-        private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.CheckBox checkBox24;
-        private System.Windows.Forms.ComboBox comboBox21;
-        private System.Windows.Forms.ComboBox comboBox22;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.CheckBox checkBox25;
-        private System.Windows.Forms.ComboBox comboBox23;
-        private System.Windows.Forms.ComboBox comboBox24;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.ComboBox comboBox25;
-        private System.Windows.Forms.ComboBox comboBox26;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.ComboBox comboBox27;
-        private System.Windows.Forms.ComboBox comboBox28;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.ComboBox comboBox29;
-        private System.Windows.Forms.ComboBox comboBox30;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.ComboBox comboBox31;
-        private System.Windows.Forms.ComboBox comboBox32;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.ComboBox comboBox33;
-        private System.Windows.Forms.Label label671;
-        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.CheckBox chkHRTimeoutCh02;
+        private System.Windows.Forms.TextBox tbxHRPWMDutyCh01;
+        private System.Windows.Forms.CheckBox chkHRTimeoutCh06;
+        private System.Windows.Forms.ComboBox cmbHRMeasCurTimeCh09;
+        private System.Windows.Forms.CheckBox chkHRTimeoutCh01;
+        private System.Windows.Forms.TextBox tbxHRPWMDutyCh02;
+        private System.Windows.Forms.CheckBox chkHRTimeoutCh07;
+        private System.Windows.Forms.ComboBox cmbHRMeasCurTimeCh00;
+        private System.Windows.Forms.CheckBox chkHRTimeoutCh00;
+        private System.Windows.Forms.TextBox tbxHRPWMDutyCh04;
+        private System.Windows.Forms.CheckBox chkHRTimeoutCh08;
+        private System.Windows.Forms.ComboBox cmbHRMeasCurTimeCh08;
+        private System.Windows.Forms.ComboBox cmbHRPairedCh10;
+        private System.Windows.Forms.TextBox tbxHRPWMDutyCh03;
+        private System.Windows.Forms.CheckBox chkHRTimeoutCh09;
+        private System.Windows.Forms.ComboBox cmbHRMeasCurTimeCh01;
+        private System.Windows.Forms.ComboBox cmbHRPairedCh11;
+        private System.Windows.Forms.TextBox tbxHRPWMDutyCh05;
+        private System.Windows.Forms.CheckBox chkHRTimeoutCh10;
+        private System.Windows.Forms.ComboBox cmbHRMeasCurTimeCh07;
+        private System.Windows.Forms.ComboBox cmbHRPairedCh09;
+        private System.Windows.Forms.TextBox tbxHRPWMDutyCh06;
+        private System.Windows.Forms.CheckBox chkHRTimeoutCh11;
+        private System.Windows.Forms.ComboBox cmbHRMeasCurTimeCh02;
+        private System.Windows.Forms.ComboBox cmbHRPairedCh08;
+        private System.Windows.Forms.TextBox tbxHRPWMDutyCh07;
+        private System.Windows.Forms.TextBox tbxHRTimeoutTimeCh00;
+        private System.Windows.Forms.ComboBox cmbHRMeasCurTimeCh06;
+        private System.Windows.Forms.ComboBox cmbHRPairedCh07;
+        private System.Windows.Forms.TextBox tbxHRPWMDutyCh08;
+        private System.Windows.Forms.TextBox tbxHRTimeoutTimeCh01;
+        private System.Windows.Forms.ComboBox cmbHRMeasCurTimeCh03;
+        private System.Windows.Forms.ComboBox cmbHRPairedCh06;
+        private System.Windows.Forms.TextBox tbxHRPWMDutyCh09;
+        private System.Windows.Forms.TextBox tbxHRTimeoutTimeCh02;
+        private System.Windows.Forms.ComboBox cmbHRMeasCurTimeCh05;
+        private System.Windows.Forms.ComboBox cmbHRPairedCh05;
+        private System.Windows.Forms.TextBox tbxHRPWMDutyCh10;
+        private System.Windows.Forms.TextBox tbxHRTimeoutTimeCh03;
+        private System.Windows.Forms.ComboBox cmbHRMeasCurTimeCh04;
+        private System.Windows.Forms.ComboBox cmbHRPairedCh04;
+        private System.Windows.Forms.TextBox tbxHRPWMDutyCh11;
+        private System.Windows.Forms.TextBox tbxHRTimeoutTimeCh04;
+        private System.Windows.Forms.TextBox tbxHRUndAmpsCh11;
+        private System.Windows.Forms.ComboBox cmbHRPairedCh03;
+        private System.Windows.Forms.TextBox tbxHRTimeoutTimeCh05;
         private System.Windows.Forms.Label label672;
-        private System.Windows.Forms.ComboBox comboBox34;
-        private System.Windows.Forms.CheckBox checkBox26;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.ComboBox comboBox35;
-        private System.Windows.Forms.CheckBox checkBox27;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.ComboBox comboBox36;
-        private System.Windows.Forms.CheckBox checkBox28;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.ComboBox comboBox37;
-        private System.Windows.Forms.CheckBox checkBox29;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.ComboBox comboBox38;
-        private System.Windows.Forms.CheckBox checkBox30;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.ComboBox comboBox39;
-        private System.Windows.Forms.CheckBox checkBox31;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.ComboBox comboBox40;
-        private System.Windows.Forms.CheckBox checkBox32;
+        private System.Windows.Forms.ComboBox cmbHRPairedCh02;
+        private System.Windows.Forms.TextBox tbxHRTimeoutTimeCh07;
+        private System.Windows.Forms.TextBox tbxHRUndAmpsCh10;
+        private System.Windows.Forms.ComboBox cmbHRPairedCh01;
+        private System.Windows.Forms.TextBox tbxHRTimeoutTimeCh06;
+        private System.Windows.Forms.TextBox tbxHRUndAmpsCh00;
+        private System.Windows.Forms.ComboBox cmbHRPairedCh00;
+        private System.Windows.Forms.TextBox tbxHRTimeoutTimeCh08;
+        private System.Windows.Forms.TextBox tbxHRUndAmpsCh09;
+        private System.Windows.Forms.ComboBox cmbHRDeadTimeCh11;
+        private System.Windows.Forms.TextBox tbxHRTimeoutTimeCh09;
+        private System.Windows.Forms.TextBox tbxHRUndAmpsCh01;
+        private System.Windows.Forms.ComboBox cmbHRDeadTimeCh10;
+        private System.Windows.Forms.TextBox tbxHRTimeoutTimeCh10;
+        private System.Windows.Forms.TextBox tbxHRUndAmpsCh08;
+        private System.Windows.Forms.ComboBox cmbHRDeadTimeCh09;
+        private System.Windows.Forms.TextBox tbxHRTimeoutTimeCh11;
+        private System.Windows.Forms.TextBox tbxHRUndAmpsCh02;
+        private System.Windows.Forms.ComboBox cmbHRDeadTimeCh07;
         private System.Windows.Forms.Label label673;
-        private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.ComboBox comboBox41;
-        private System.Windows.Forms.CheckBox checkBox33;
-        private System.Windows.Forms.TextBox textBox45;
-        private System.Windows.Forms.TextBox textBox46;
-        private System.Windows.Forms.ComboBox comboBox42;
-        private System.Windows.Forms.CheckBox checkBox34;
-        private System.Windows.Forms.TextBox textBox47;
-        private System.Windows.Forms.TextBox textBox48;
-        private System.Windows.Forms.ComboBox comboBox43;
-        private System.Windows.Forms.CheckBox checkBox35;
-        private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.TextBox textBox50;
-        private System.Windows.Forms.ComboBox comboBox44;
-        private System.Windows.Forms.CheckBox checkBox36;
-        private System.Windows.Forms.TextBox textBox51;
-        private System.Windows.Forms.TextBox textBox52;
-        private System.Windows.Forms.ComboBox comboBox45;
-        private System.Windows.Forms.CheckBox checkBox37;
-        private System.Windows.Forms.TextBox textBox53;
-        private System.Windows.Forms.TextBox textBox54;
-        private System.Windows.Forms.ComboBox comboBox46;
+        private System.Windows.Forms.TextBox tbxHRUndAmpsCh07;
+        private System.Windows.Forms.ComboBox cmbHRDeadTimeCh08;
+        private System.Windows.Forms.TextBox tbxHRMaxOnCh00;
+        private System.Windows.Forms.TextBox tbxHRUndAmpsCh03;
+        private System.Windows.Forms.ComboBox cmbHRDeadTimeCh06;
+        private System.Windows.Forms.TextBox tbxHRMaxOnCh01;
+        private System.Windows.Forms.TextBox tbxHRUndAmpsCh06;
+        private System.Windows.Forms.ComboBox cmbHRDeadTimeCh05;
+        private System.Windows.Forms.TextBox tbxHRMaxOnCh02;
+        private System.Windows.Forms.TextBox tbxHRUndAmpsCh04;
+        private System.Windows.Forms.ComboBox cmbHRDeadTimeCh04;
+        private System.Windows.Forms.TextBox tbxHRMaxOnCh03;
+        private System.Windows.Forms.TextBox tbxHRUndAmpsCh05;
+        private System.Windows.Forms.ComboBox cmbHRDeadTimeCh03;
+        private System.Windows.Forms.TextBox tbxHRMaxOnCh04;
+        private System.Windows.Forms.TextBox tbxHRMaxDurRecCh11;
+        private System.Windows.Forms.ComboBox cmbHRDeadTimeCh02;
         private System.Windows.Forms.Label label674;
-        private System.Windows.Forms.TextBox textBox55;
+        private System.Windows.Forms.TextBox tbxHRMaxOnCh05;
         private System.Windows.Forms.Label label675;
-        private System.Windows.Forms.ComboBox comboBox47;
-        private System.Windows.Forms.ComboBox comboBox48;
-        private System.Windows.Forms.TextBox textBox56;
-        private System.Windows.Forms.TextBox textBox57;
-        private System.Windows.Forms.ComboBox comboBox49;
-        private System.Windows.Forms.ComboBox comboBox50;
-        private System.Windows.Forms.TextBox textBox58;
-        private System.Windows.Forms.TextBox textBox59;
+        private System.Windows.Forms.ComboBox cmbHRDeadTimeCh01;
+        private System.Windows.Forms.ComboBox cmbHRDirectionCh00;
+        private System.Windows.Forms.TextBox tbxHRMaxOnCh06;
+        private System.Windows.Forms.TextBox tbxHRMaxDurRecCh10;
+        private System.Windows.Forms.ComboBox cmbHRDeadTimeCh00;
+        private System.Windows.Forms.ComboBox cmbHRDirectionCh01;
+        private System.Windows.Forms.TextBox tbxHRMaxOnCh07;
+        private System.Windows.Forms.TextBox tbxHRMaxDurRecCh00;
         private System.Windows.Forms.Label label676;
-        private System.Windows.Forms.ComboBox comboBox51;
-        private System.Windows.Forms.TextBox textBox60;
-        private System.Windows.Forms.TextBox textBox61;
+        private System.Windows.Forms.ComboBox cmbHRDirectionCh02;
+        private System.Windows.Forms.TextBox tbxHRMaxOnCh08;
+        private System.Windows.Forms.TextBox tbxHRMaxDurRecCh09;
         private System.Windows.Forms.Label label677;
-        private System.Windows.Forms.ComboBox comboBox52;
-        private System.Windows.Forms.TextBox textBox62;
-        private System.Windows.Forms.TextBox textBox63;
+        private System.Windows.Forms.ComboBox cmbHRDirectionCh03;
+        private System.Windows.Forms.TextBox tbxHRMaxOnCh09;
+        private System.Windows.Forms.TextBox tbxHRMaxDurRecCh01;
         private System.Windows.Forms.Label label678;
-        private System.Windows.Forms.ComboBox comboBox53;
-        private System.Windows.Forms.TextBox textBox64;
-        private System.Windows.Forms.TextBox textBox65;
+        private System.Windows.Forms.ComboBox cmbHRDirectionCh04;
+        private System.Windows.Forms.TextBox tbxHRMaxOnCh10;
+        private System.Windows.Forms.TextBox tbxHRMaxDurRecCh08;
         private System.Windows.Forms.Label label679;
-        private System.Windows.Forms.ComboBox comboBox54;
-        private System.Windows.Forms.TextBox textBox66;
-        private System.Windows.Forms.TextBox textBox67;
-        private System.Windows.Forms.ComboBox comboBox55;
-        private System.Windows.Forms.ComboBox comboBox56;
-        private System.Windows.Forms.TextBox textBox68;
-        private System.Windows.Forms.TextBox textBox69;
-        private System.Windows.Forms.ComboBox comboBox57;
-        private System.Windows.Forms.ComboBox comboBox58;
-        private System.Windows.Forms.TextBox textBox70;
-        private System.Windows.Forms.TextBox textBox71;
-        private System.Windows.Forms.ComboBox comboBox59;
-        private System.Windows.Forms.ComboBox comboBox60;
-        private System.Windows.Forms.TextBox textBox72;
+        private System.Windows.Forms.ComboBox cmbHRDirectionCh05;
+        private System.Windows.Forms.TextBox tbxHRMaxOnCh11;
+        private System.Windows.Forms.TextBox tbxHRMaxDurRecCh02;
+        private System.Windows.Forms.ComboBox cmbHRDirectionCh11;
+        private System.Windows.Forms.ComboBox cmbHRDirectionCh06;
+        private System.Windows.Forms.TextBox tbxHRMaxDurRecCh05;
+        private System.Windows.Forms.TextBox tbxHRMaxDurRecCh07;
+        private System.Windows.Forms.ComboBox cmbHRDirectionCh10;
+        private System.Windows.Forms.ComboBox cmbHRDirectionCh08;
+        private System.Windows.Forms.TextBox tbxHRMaxDurRecCh04;
+        private System.Windows.Forms.TextBox tbxHRMaxDurRecCh03;
+        private System.Windows.Forms.ComboBox cmbHRDirectionCh09;
+        private System.Windows.Forms.ComboBox cmbHRDirectionCh07;
+        private System.Windows.Forms.TextBox tbxHRMaxDurRecCh06;
         private System.Windows.Forms.TabPage tabPage14;
         private System.Windows.Forms.Label label680;
         private System.Windows.Forms.TextBox tbxHC1CardLetter;
@@ -26901,131 +26959,144 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label698;
         private System.Windows.Forms.Label label699;
         private System.Windows.Forms.Label label700;
-        private System.Windows.Forms.TextBox textBox76;
+        private System.Windows.Forms.TextBox tbxHRBaseInstance;
         private System.Windows.Forms.Label label681;
-        private System.Windows.Forms.TextBox textBox73;
-        private System.Windows.Forms.CheckBox checkBox38;
-        private System.Windows.Forms.CheckBox checkBox40;
-        private System.Windows.Forms.ComboBox comboBox61;
+        private System.Windows.Forms.TextBox tbxHRCardLetter;
+        private System.Windows.Forms.CheckBox chkHRTabVis;
+        private System.Windows.Forms.CheckBox chkHRShade;
+        private System.Windows.Forms.ComboBox cmbHRPanelNum;
         private System.Windows.Forms.Label label687;
-        private System.Windows.Forms.ComboBox comboBox62;
+        private System.Windows.Forms.ComboBox cmbHRCardNum;
         private System.Windows.Forms.Label label688;
         private System.Windows.Forms.Label label689;
-        private System.Windows.Forms.TextBox textBox74;
+        private System.Windows.Forms.TextBox tbxHRCfgRev;
         private System.Windows.Forms.Label label690;
-        private System.Windows.Forms.TextBox textBox75;
+        private System.Windows.Forms.TextBox tbxHRCfgType;
         private System.Windows.Forms.Label label691;
-        private System.Windows.Forms.CheckBox checkBox41;
-        private System.Windows.Forms.CheckBox checkBox42;
-        private System.Windows.Forms.CheckBox checkBox43;
-        private System.Windows.Forms.Label label701;
-        private System.Windows.Forms.Label label702;
-        private System.Windows.Forms.Label label703;
-        private System.Windows.Forms.Label label704;
-        private System.Windows.Forms.Label label705;
-        private System.Windows.Forms.Label label706;
-        private System.Windows.Forms.Label label707;
-        private System.Windows.Forms.Label label708;
-        private System.Windows.Forms.Label label709;
-        private System.Windows.Forms.Label label710;
-        private System.Windows.Forms.Label label711;
-        private System.Windows.Forms.Label label712;
-        private System.Windows.Forms.ComboBox comboBox63;
-        private System.Windows.Forms.ComboBox comboBox64;
-        private System.Windows.Forms.ComboBox comboBox65;
-        private System.Windows.Forms.ComboBox comboBox66;
-        private System.Windows.Forms.ComboBox comboBox67;
-        private System.Windows.Forms.ComboBox comboBox68;
-        private System.Windows.Forms.ComboBox comboBox69;
-        private System.Windows.Forms.ComboBox comboBox70;
-        private System.Windows.Forms.ComboBox comboBox71;
-        private System.Windows.Forms.ComboBox comboBox72;
-        private System.Windows.Forms.ComboBox comboBox73;
-        private System.Windows.Forms.ComboBox comboBox74;
-        private System.Windows.Forms.ComboBox comboBox75;
-        private System.Windows.Forms.ComboBox comboBox76;
-        private System.Windows.Forms.ComboBox comboBox77;
-        private System.Windows.Forms.ComboBox comboBox78;
-        private System.Windows.Forms.ComboBox comboBox79;
-        private System.Windows.Forms.ComboBox comboBox80;
-        private System.Windows.Forms.ComboBox comboBox81;
-        private System.Windows.Forms.ComboBox comboBox82;
-        private System.Windows.Forms.ComboBox comboBox83;
-        private System.Windows.Forms.ComboBox comboBox84;
-        private System.Windows.Forms.ComboBox comboBox85;
-        private System.Windows.Forms.ComboBox comboBox86;
-        private System.Windows.Forms.CheckBox checkBox39;
-        private System.Windows.Forms.CheckBox checkBox44;
-        private System.Windows.Forms.CheckBox checkBox45;
-        private System.Windows.Forms.CheckBox checkBox46;
-        private System.Windows.Forms.CheckBox checkBox47;
-        private System.Windows.Forms.CheckBox checkBox48;
-        private System.Windows.Forms.CheckBox checkBox49;
-        private System.Windows.Forms.CheckBox checkBox50;
-        private System.Windows.Forms.CheckBox checkBox51;
-        private System.Windows.Forms.CheckBox checkBox52;
-        private System.Windows.Forms.CheckBox checkBox53;
-        private System.Windows.Forms.CheckBox checkBox54;
-        private System.Windows.Forms.CheckBox checkBox55;
-        private System.Windows.Forms.CheckBox checkBox56;
-        private System.Windows.Forms.CheckBox checkBox57;
-        private System.Windows.Forms.CheckBox checkBox58;
-        private System.Windows.Forms.CheckBox checkBox59;
-        private System.Windows.Forms.CheckBox checkBox60;
-        private System.Windows.Forms.CheckBox checkBox61;
-        private System.Windows.Forms.CheckBox checkBox62;
-        private System.Windows.Forms.CheckBox checkBox63;
-        private System.Windows.Forms.CheckBox checkBox64;
-        private System.Windows.Forms.CheckBox checkBox65;
-        private System.Windows.Forms.CheckBox checkBox66;
-        private System.Windows.Forms.CheckBox checkBox67;
-        private System.Windows.Forms.CheckBox checkBox68;
-        private System.Windows.Forms.CheckBox checkBox69;
-        private System.Windows.Forms.CheckBox checkBox70;
-        private System.Windows.Forms.CheckBox checkBox71;
-        private System.Windows.Forms.CheckBox checkBox72;
-        private System.Windows.Forms.CheckBox checkBox73;
-        private System.Windows.Forms.CheckBox checkBox74;
-        private System.Windows.Forms.CheckBox checkBox75;
-        private System.Windows.Forms.CheckBox checkBox76;
-        private System.Windows.Forms.CheckBox checkBox77;
-        private System.Windows.Forms.CheckBox checkBox78;
-        private System.Windows.Forms.CheckBox checkBox79;
-        private System.Windows.Forms.CheckBox checkBox80;
-        private System.Windows.Forms.CheckBox checkBox81;
-        private System.Windows.Forms.CheckBox checkBox82;
-        private System.Windows.Forms.CheckBox checkBox83;
-        private System.Windows.Forms.CheckBox checkBox84;
-        private System.Windows.Forms.CheckBox checkBox85;
-        private System.Windows.Forms.CheckBox checkBox86;
-        private System.Windows.Forms.CheckBox checkBox87;
-        private System.Windows.Forms.CheckBox checkBox88;
-        private System.Windows.Forms.CheckBox checkBox89;
-        private System.Windows.Forms.CheckBox checkBox90;
-        private System.Windows.Forms.ComboBox comboBox87;
-        private System.Windows.Forms.ComboBox comboBox88;
-        private System.Windows.Forms.ComboBox comboBox89;
-        private System.Windows.Forms.ComboBox comboBox90;
-        private System.Windows.Forms.ComboBox comboBox91;
-        private System.Windows.Forms.ComboBox comboBox92;
-        private System.Windows.Forms.ComboBox comboBox93;
-        private System.Windows.Forms.ComboBox comboBox94;
-        private System.Windows.Forms.ComboBox comboBox95;
-        private System.Windows.Forms.ComboBox comboBox96;
-        private System.Windows.Forms.ComboBox comboBox97;
-        private System.Windows.Forms.ComboBox comboBox98;
-        private System.Windows.Forms.ComboBox comboBox99;
-        private System.Windows.Forms.ComboBox comboBox100;
-        private System.Windows.Forms.ComboBox comboBox101;
-        private System.Windows.Forms.ComboBox comboBox102;
-        private System.Windows.Forms.ComboBox comboBox103;
-        private System.Windows.Forms.ComboBox comboBox104;
-        private System.Windows.Forms.ComboBox comboBox105;
-        private System.Windows.Forms.ComboBox comboBox106;
-        private System.Windows.Forms.ComboBox comboBox107;
-        private System.Windows.Forms.ComboBox comboBox108;
-        private System.Windows.Forms.ComboBox comboBox109;
-        private System.Windows.Forms.ComboBox comboBox110;
+        private System.Windows.Forms.CheckBox chkHRDCMotor;
+        private System.Windows.Forms.CheckBox chkHRForce;
+        private System.Windows.Forms.Label lblHRCh00;
+        private System.Windows.Forms.Label lblHRCh04;
+        private System.Windows.Forms.Label lblHRCh05;
+        private System.Windows.Forms.Label lblHRCh06;
+        private System.Windows.Forms.Label lblHRCh07;
+        private System.Windows.Forms.Label lblHRCh08;
+        private System.Windows.Forms.Label lblHRCh09;
+        private System.Windows.Forms.Label lblHRCh10;
+        private System.Windows.Forms.Label lblHRCh11;
+        private System.Windows.Forms.Label lblHRCh03;
+        private System.Windows.Forms.Label lblHRCh02;
+        private System.Windows.Forms.Label lblHRCh01;
+        private System.Windows.Forms.ComboBox cmbHRQuickOCAmpsCh00;
+        private System.Windows.Forms.ComboBox cmbHROCTimeCh07;
+        private System.Windows.Forms.ComboBox cmbHROCTimeCh08;
+        private System.Windows.Forms.ComboBox cmbHROCTimeCh06;
+        private System.Windows.Forms.ComboBox cmbHROCTimeCh09;
+        private System.Windows.Forms.ComboBox cmbHROCTimeCh05;
+        private System.Windows.Forms.ComboBox cmbHROCTimeCh10;
+        private System.Windows.Forms.ComboBox cmbHROCTimeCh04;
+        private System.Windows.Forms.ComboBox cmbHROCTimeCh11;
+        private System.Windows.Forms.ComboBox cmbHROCTimeCh03;
+        private System.Windows.Forms.ComboBox cmbHROCTimeCh02;
+        private System.Windows.Forms.ComboBox cmbHROCTimeCh01;
+        private System.Windows.Forms.ComboBox cmbHROCTimeCh00;
+        private System.Windows.Forms.ComboBox cmbHRQuickOCAmpsCh11;
+        private System.Windows.Forms.ComboBox cmbHRQuickOCAmpsCh10;
+        private System.Windows.Forms.ComboBox cmbHRQuickOCAmpsCh09;
+        private System.Windows.Forms.ComboBox cmbHRQuickOCAmpsCh08;
+        private System.Windows.Forms.ComboBox cmbHRQuickOCAmpsCh07;
+        private System.Windows.Forms.ComboBox cmbHRQuickOCAmpsCh01;
+        private System.Windows.Forms.ComboBox cmbHRQuickOCAmpsCh06;
+        private System.Windows.Forms.ComboBox cmbHRQuickOCAmpsCh02;
+        private System.Windows.Forms.ComboBox cmbHRQuickOCAmpsCh05;
+        private System.Windows.Forms.ComboBox cmbHRQuickOCAmpsCh03;
+        private System.Windows.Forms.ComboBox cmbHRQuickOCAmpsCh04;
+        private System.Windows.Forms.CheckBox chkHRMG3Ch07;
+        private System.Windows.Forms.CheckBox chkHRMG4Ch07;
+        private System.Windows.Forms.CheckBox chkHRMG2Ch07;
+        private System.Windows.Forms.CheckBox chkHRMG1Ch08;
+        private System.Windows.Forms.CheckBox chkHRMG1Ch07;
+        private System.Windows.Forms.CheckBox chkHRMG2Ch08;
+        private System.Windows.Forms.CheckBox chkHRMG4Ch06;
+        private System.Windows.Forms.CheckBox chkHRMG3Ch08;
+        private System.Windows.Forms.CheckBox chkHRMG3Ch06;
+        private System.Windows.Forms.CheckBox chkHRMG4Ch08;
+        private System.Windows.Forms.CheckBox chkHRMG2Ch06;
+        private System.Windows.Forms.CheckBox chkHRMG1Ch09;
+        private System.Windows.Forms.CheckBox chkHRMG1Ch06;
+        private System.Windows.Forms.CheckBox chkHRMG2Ch09;
+        private System.Windows.Forms.CheckBox chkHRMG4Ch05;
+        private System.Windows.Forms.CheckBox chkHRMG3Ch09;
+        private System.Windows.Forms.CheckBox chkHRMG3Ch05;
+        private System.Windows.Forms.CheckBox chkHRMG4Ch09;
+        private System.Windows.Forms.CheckBox chkHRMG2Ch05;
+        private System.Windows.Forms.CheckBox chkHRMG1Ch10;
+        private System.Windows.Forms.CheckBox chkHRMG1Ch05;
+        private System.Windows.Forms.CheckBox chkHRMG1Ch00;
+        private System.Windows.Forms.CheckBox chkHRMG2Ch10;
+        private System.Windows.Forms.CheckBox chkHRMG2Ch00;
+        private System.Windows.Forms.CheckBox chkHRMG4Ch04;
+        private System.Windows.Forms.CheckBox chkHRMG3Ch10;
+        private System.Windows.Forms.CheckBox chkHRMG3Ch00;
+        private System.Windows.Forms.CheckBox chkHRMG3Ch04;
+        private System.Windows.Forms.CheckBox chkHRMG4Ch10;
+        private System.Windows.Forms.CheckBox chkHRMG4Ch00;
+        private System.Windows.Forms.CheckBox chkHRMG2Ch04;
+        private System.Windows.Forms.CheckBox chkHRMG1Ch11;
+        private System.Windows.Forms.CheckBox chkHRMG1Ch01;
+        private System.Windows.Forms.CheckBox chkHRMG1Ch04;
+        private System.Windows.Forms.CheckBox chkHRMG2Ch11;
+        private System.Windows.Forms.CheckBox chkHRMG4Ch03;
+        private System.Windows.Forms.CheckBox chkHRMG2Ch01;
+        private System.Windows.Forms.CheckBox chkHRMG3Ch11;
+        private System.Windows.Forms.CheckBox chkHRMG3Ch03;
+        private System.Windows.Forms.CheckBox chkHRMG3Ch01;
+        private System.Windows.Forms.CheckBox chkHRMG4Ch11;
+        private System.Windows.Forms.CheckBox chkHRMG2Ch03;
+        private System.Windows.Forms.CheckBox chkHRMG4Ch01;
+        private System.Windows.Forms.CheckBox chkHRMG1Ch03;
+        private System.Windows.Forms.CheckBox chkHRMG1Ch02;
+        private System.Windows.Forms.CheckBox chkHRMG4Ch02;
+        private System.Windows.Forms.CheckBox chkHRMG2Ch02;
+        private System.Windows.Forms.CheckBox chkHRMG3Ch02;
+        private System.Windows.Forms.ComboBox cmbHRQuickStartupCh11;
+        private System.Windows.Forms.ComboBox cmbHRQuickStartupCh10;
+        private System.Windows.Forms.ComboBox cmbHRQuickStartupCh09;
+        private System.Windows.Forms.ComboBox cmbHRQuickStartupCh08;
+        private System.Windows.Forms.ComboBox cmbHRQuickStartupCh07;
+        private System.Windows.Forms.ComboBox cmbHRQuickStartupCh06;
+        private System.Windows.Forms.ComboBox cmbHRQuickStartupCh05;
+        private System.Windows.Forms.ComboBox cmbHRQuickStartupCh04;
+        private System.Windows.Forms.ComboBox cmbHRQuickStartupCh03;
+        private System.Windows.Forms.ComboBox cmbHRQuickStartupCh02;
+        private System.Windows.Forms.ComboBox cmbHRQuickStartupCh01;
+        private System.Windows.Forms.ComboBox cmbHRQuickStartupCh00;
+        private System.Windows.Forms.ComboBox cmbHRQuickModeCh11;
+        private System.Windows.Forms.ComboBox cmbHRQuickModeCh10;
+        private System.Windows.Forms.ComboBox cmbHRQuickModeCh09;
+        private System.Windows.Forms.ComboBox cmbHRQuickModeCh08;
+        private System.Windows.Forms.ComboBox cmbHRQuickModeCh07;
+        private System.Windows.Forms.ComboBox cmbHRQuickModeCh06;
+        private System.Windows.Forms.ComboBox cmbHRQuickModeCh05;
+        private System.Windows.Forms.ComboBox cmbHRQuickModeCh04;
+        private System.Windows.Forms.ComboBox cmbHRQuickModeCh03;
+        private System.Windows.Forms.ComboBox cmbHRQuickModeCh02;
+        private System.Windows.Forms.ComboBox cmbHRQuickModeCh01;
+        private System.Windows.Forms.ComboBox cmbHRQuickModeCh00;
+        private System.Windows.Forms.Button btnHCCard8;
+        private System.Windows.Forms.Button btnHCCard7;
+        private System.Windows.Forms.Button btnHRCard8;
+        private System.Windows.Forms.Button btnHRCard7;
+        private System.Windows.Forms.Button btnAuxCard7;
+        private System.Windows.Forms.Button btnAuxCard8;
+        private System.Windows.Forms.Button btnBreakerCard8;
+        private System.Windows.Forms.Button btnBreakerCard7;
+        private System.Windows.Forms.Button btnDimmerCard8;
+        private System.Windows.Forms.Button btnDimmerCard7;
+        private System.Windows.Forms.Button btnLCCard7;
+        private System.Windows.Forms.Button btnLCCard8;
+        private System.Windows.Forms.Button btnMenuHR;
+        private System.Windows.Forms.ComboBox cmbStartHR;
     }
 }
 

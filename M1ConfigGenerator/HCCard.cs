@@ -47,7 +47,7 @@ namespace M1ConfigGenerator
             M1_SetNodeCfg();
         }
 
-        public void CreateHCFile()
+        public void HC_CreateFile()
         {
             using (StreamWriter sw = File.CreateText(@HC_GetConfigPath() + M1_GetConfigName()))
             {
@@ -217,6 +217,8 @@ namespace M1ConfigGenerator
             else { return hcChModeValues[argInt].Substring(10); } // RGB and RGBW can be returned as is, minus DRVR_TYPE_
         }
 
+        // not going to make a GetQuickMode because there are too many combinations that could return false values
+
         public void HC_SetDeadTime(int argInt, string argString)
         {
             hcChDeadtimeValues[argInt] = argString;
@@ -280,6 +282,18 @@ namespace M1ConfigGenerator
             else { return hcChOvercurrentAmpsValues[argInt]; }
         }
 
+        public string HC_GetQuickOCAmps(int argInt)
+        {
+            string strAmps = HC_GetOCAmps(argInt);
+            if (strAmps != "FFFF")
+            {
+                int intAmps = Convert.ToInt16(strAmps);
+                if (intAmps >= 5 && intAmps <= 20) { return strAmps; }
+                else { return ""; }
+            }
+            else { return ""; }
+        }
+
         public void HC_SetMaxDurRec(int argInt, string argString)
         {
             hcChMaxDurRecoveryTimeValues[argInt] = argString;
@@ -319,18 +333,6 @@ namespace M1ConfigGenerator
         public string HC_GetMeasCurTime(int argInt)
         {
             return hcChMeasCurTimeValues[argInt];
-        }
-
-        public string HC_GetQuickOCAmps(int argInt)
-        {
-            string strAmps = HC_GetOCAmps(argInt);
-            if (strAmps != "FFFF") 
-            {
-                int intAmps = Convert.ToInt16(strAmps);
-                if (intAmps >= 5 && intAmps <= 20) { return strAmps; }
-                else { return ""; }           
-            }
-            else { return ""; }
         }
 
         // No setters for forward or reverse override at this time

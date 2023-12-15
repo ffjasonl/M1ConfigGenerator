@@ -14,6 +14,9 @@ namespace M1ConfigGenerator
 {
     public partial class Form1 : Form
     {
+        enum MainTab { Blank, Start, Aux, Breaker, Dimmer, HC, LC, HCRelay }
+        enum CardNum { Card1, Card2, Card3, Card4, Card5, Card6, Card7, Card8, Generate }
+
         // create global arrays
         Button[] auxBtnArray; Button[] brkBtnArray; Button[] dimBtnArray; Button[] hcBtnArray; Button[] hrBtnArray; Button[] lcBtnArray;
 
@@ -88,11 +91,21 @@ namespace M1ConfigGenerator
 
         List<HCCard> hcObjects = new List<HCCard>();
         int HCCardActive;
-        bool[] hc1Group00; bool[] hc1Group01; bool[] hc1Group02; bool[] hc1Group03; bool[] hc1Group04; bool[] hc1Group05; bool[] hc1Group06; bool[] hc1Group07; bool[] hc1Group08; bool[] hc1Group09; bool[] hc1Group10; bool[] hc1Group11;
+        bool[] hc1Group00; bool[] hc1Group01; bool[] hc1Group02; bool[] hc1Group03; bool[] hc1Group04; bool[] hc1Group05; 
+        bool[] hc1Group06; bool[] hc1Group07; bool[] hc1Group08; bool[] hc1Group09; bool[] hc1Group10; bool[] hc1Group11;
         bool[][] hc1Groups;
         ComboBox[] hc1OCAmpsQuick; TextBox[] hcOCAmps; ComboBox[] hcOCTime; ComboBox[] hcModesQuick; ComboBox[] hcStartupQuick; 
         CheckBox[] hcLock; TextBox[] hcPWMDuties; CheckBox[] hcPWMEnables; ComboBox[] hcDirections; ComboBox[] hcModeParam; ComboBox[] hcDeadTimes;
         ComboBox[] hcPaired; CheckBox[] hcTimeouts; TextBox[] hcTimeoutTimes; TextBox[] hcMaxOns; TextBox[] hcMaxDurRec; TextBox[] hcUndAmps; ComboBox[] hcMeasCurTimes;
+
+        List<HCCard> hrObjects = new List<HCCard>();
+        int HRCardActive;
+        bool[] hrGroup00; bool[] hrGroup01; bool[] hrGroup02; bool[] hrGroup03; bool[] hrGroup04; bool[] hrGroup05; 
+        bool[] hrGroup06; bool[] hrGroup07; bool[] hrGroup08; bool[] hrGroup09; bool[] hrGroup10; bool[] hrGroup11;
+        bool[][] hrGroups;
+        ComboBox[] hrOCAmpsQuick; TextBox[] hrOCAmps; ComboBox[] hrOCTime; ComboBox[] hrModesQuick; ComboBox[] hrStartupQuick;
+        CheckBox[] hrLock; TextBox[] hrPWMDuties; CheckBox[] hrPWMEnables; ComboBox[] hrDirections; ComboBox[] hrModeParam; ComboBox[] hrDeadTimes;
+        ComboBox[] hrPaired; CheckBox[] hrTimeouts; TextBox[] hrTimeoutTimes; TextBox[] hrMaxOns; TextBox[] hrMaxDurRec; TextBox[] hrUndAmps; ComboBox[] hrMeasCurTimes;
 
         List<LCCard> lcObjects = new List<LCCard>();
         int LCCardActive;
@@ -130,6 +143,7 @@ namespace M1ConfigGenerator
             btnMenuBreaker.Visible = false;
             btnMenuDimmer.Visible = false;
             btnMenuHC.Visible = false;
+            btnMenuHR.Visible = false;
             btnMenuLC.Visible = false;
         }
 
@@ -144,7 +158,7 @@ namespace M1ConfigGenerator
         private void btnMenuNew_Click(object sender, EventArgs e)
         {
             ResetStartTab();
-            tabControlMain.SelectedIndex = 1;
+            tabControlMain.SelectedIndex = (int) MainTab.Start;
         }
 
         private void btnMenuLoad_Click(object sender, EventArgs e)
@@ -155,45 +169,54 @@ namespace M1ConfigGenerator
         private void btnMenuAux_Click(object sender, EventArgs e)
         {
             SetMenuColors(0);
-            tabControlMain.SelectedIndex = 2;
+            tabControlMain.SelectedIndex = (int) MainTab.Aux;
             //Aux_GetAll(AuxCardActive);
-            AuxCardNavColor(auxBtnArray[AuxCardActive]);
+            AuxCardNavColor(auxBtnArray, auxBtnArray[AuxCardActive]);
             ShowAuxNav(cmbStartAux.SelectedIndex);
         }
 
         private void btnMenuBreaker_Click(object sender, EventArgs e)
         {
             SetMenuColors(1);
-            tabControlMain.SelectedIndex = 3;
+            tabControlMain.SelectedIndex = (int) MainTab.Breaker;
             //Brk_GetAll(BrkCardActive);
-            BreakerCardNavColor(brkBtnArray[BrkCardActive]);
+            BreakerCardNavColor(brkBtnArray, brkBtnArray[BrkCardActive]);
             ShowBreakerNav(cmbStartBreaker.SelectedIndex);
         }
 
         private void btnMenuDimmer_Click(object sender, EventArgs e)
         {
             SetMenuColors(2);
-            tabControlMain.SelectedIndex = 4;
+            tabControlMain.SelectedIndex = (int) MainTab.Dimmer;
             //Dim_GetAll(DimCardActive);
-            DimmerCardNavColor(dimBtnArray[DimCardActive]);
+            DimmerCardNavColor(dimBtnArray, dimBtnArray[DimCardActive]);
             ShowDimmerNav(cmbStartDimmer.SelectedIndex);
         }
 
         private void btnMenuHC_Click(object sender, EventArgs e)
         {
             SetMenuColors(3);
-            tabControlMain.SelectedIndex = 5;
+            tabControlMain.SelectedIndex = (int) MainTab.HC;
             HC_GetAll(HCCardActive);
-            HCCardNavColor(hcBtnArray[HCCardActive]);
+            HCCardNavColor(hcBtnArray, hcBtnArray[HCCardActive]);
             ShowHCNav(cmbStartHC.SelectedIndex);
+        }
+
+        private void btnMenuHR_Click(object sender, EventArgs e)
+        {
+            SetMenuColors(5);
+            tabControlMain.SelectedIndex = (int) MainTab.HCRelay;
+            HC_GetAll(HRCardActive);
+            HCCardNavColor(hrBtnArray, hrBtnArray[HRCardActive]);
+            ShowHRNav(cmbStartHR.SelectedIndex);
         }
 
         private void btnMenuLC_Click(object sender, EventArgs e)
         {
             SetMenuColors(4);
-            tabControlMain.SelectedIndex = 6;
+            tabControlMain.SelectedIndex = (int) MainTab.LC;
             //LC_GetAll(LCCardActive);
-            LCCardNavColor(lcBtnArray[LCCardActive]);
+            LCCardNavColor(lcBtnArray, lcBtnArray[LCCardActive]);
             ShowLCNav(cmbStartLC.SelectedIndex);
         }
 
@@ -205,6 +228,7 @@ namespace M1ConfigGenerator
             btnMenuBreaker.BackColor = Color.FromArgb(255, 20, 20, 20);
             btnMenuDimmer.BackColor = Color.FromArgb(255, 20, 20, 20);
             btnMenuHC.BackColor = Color.FromArgb(255, 20, 20, 20);
+            btnMenuHR.BackColor = Color.FromArgb(255, 20, 20, 20);
             btnMenuLC.BackColor = Color.FromArgb(255, 20, 20, 20);
 ;
             switch (ButtonNum)
@@ -227,6 +251,10 @@ namespace M1ConfigGenerator
 
                 case 4:
                     btnMenuLC.BackColor = Color.FromArgb(255, 208, 110, 152);
+                    break;
+
+                case 5:
+                    btnMenuHR.BackColor = Color.FromArgb(255, 24, 80, 135);
                     break;
             }
         }
@@ -252,6 +280,7 @@ namespace M1ConfigGenerator
             HideNavButtons();
             // for some reason, had to put these in opposite order so they appear correctly in nav bar
             ShowNavButton(btnMenuLC, cmbStartLC.SelectedIndex);
+            ShowNavButton(btnMenuHR, cmbStartHR.SelectedIndex);
             ShowNavButton(btnMenuHC, cmbStartHC.SelectedIndex);
             ShowNavButton(btnMenuDimmer, cmbStartDimmer.SelectedIndex);
             ShowNavButton(btnMenuBreaker, cmbStartBreaker.SelectedIndex);
@@ -278,6 +307,11 @@ namespace M1ConfigGenerator
                 hcObjects.Add(new HCCard(i + 1));
             }
 
+            for (int i = 0; i < cmbStartHR.SelectedIndex; i++)
+            {
+                hrObjects.Add(new HCCard(i + 1));
+            }
+
             for (int i = 0; i < cmbStartLC.SelectedIndex; i++)
             {
                 lcObjects.Add(new LCCard(i + 1));
@@ -300,6 +334,7 @@ namespace M1ConfigGenerator
             cmbStartBreaker.SelectedIndex = 0;
             cmbStartDimmer.SelectedIndex = 0;
             cmbStartHC.SelectedIndex = 0;
+            cmbStartHR.SelectedIndex = 0;
             cmbStartLC.SelectedIndex = 0;
         }
 
@@ -352,6 +387,14 @@ namespace M1ConfigGenerator
             }
 
             return ((characters == 4 && total >= 192 && total < 280) ? true : false); // must be 4 digit hex number, but 0xFFFF is not valid
+        }
+
+        private void ClearCardButtonColor(Button[] argBtnArray)
+        {
+            foreach (Button btn in argBtnArray)
+            {
+                btn.BackColor = Color.FromArgb(255, 20, 20, 20);
+            }
         }
 
 
@@ -414,8 +457,8 @@ namespace M1ConfigGenerator
 
             auxObjects.ForEach(auxObjects => auxObjects.CreateAuxFile());
             CreateAuxReferenceFile();
-            AuxCardNavColor(btnAuxGenerate);
-            tabControlAux.SelectedIndex = 3;
+            AuxCardNavColor(auxBtnArray, btnAuxGenerate);
+            tabControlAux.SelectedIndex = 2;
             string[] auxFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_AuxCard\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
             tbxAuxGenerated.Lines = auxFiles;
         }
@@ -465,36 +508,36 @@ namespace M1ConfigGenerator
 
         private void btnAuxCard1_Click(object sender, EventArgs e)
         {
-            AuxCardNavColor(btnAuxCard1);
-            tabControlAux.SelectedIndex = 1;
+            AuxCardNavColor(auxBtnArray, btnAuxCard1);
+            tabControlAux.SelectedIndex = 0;
             tabControlAux1QF.SelectedIndex = 0;
         }
 
         private void btnAuxCard2_Click(object sender, EventArgs e)
         {
-            AuxCardNavColor(btnAuxCard2);
-            tabControlAux.SelectedIndex = 2;
+            AuxCardNavColor(auxBtnArray, btnAuxCard2);
+            tabControlAux.SelectedIndex = 0;
             tabControlAux1QF.SelectedIndex = 0;
         }
 
         private void btnAuxCard3_Click(object sender, EventArgs e)
         {
-            AuxCardNavColor(btnAuxCard3);
+            AuxCardNavColor(auxBtnArray, btnAuxCard3);
         }
 
         private void btnAuxCard4_Click(object sender, EventArgs e)
         {
-            AuxCardNavColor(btnAuxCard4);
+            AuxCardNavColor(auxBtnArray, btnAuxCard4);
         }
 
         private void btnAuxCard5_Click(object sender, EventArgs e)
         {
-            AuxCardNavColor(btnAuxCard5);
+            AuxCardNavColor(auxBtnArray, btnAuxCard5);
         }
 
         private void btnAuxCard6_Click(object sender, EventArgs e)
         {
-            AuxCardNavColor(btnAuxCard6);
+            AuxCardNavColor(auxBtnArray, btnAuxCard6);
         }
 
         private void ShowAuxNav(int argInt)
@@ -505,14 +548,9 @@ namespace M1ConfigGenerator
             }
         }
 
-        private void AuxCardNavColor(Button argButton)
+        private void AuxCardNavColor(Button[] argBtnArray, Button argButton)
         {
-            btnAuxCard1.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnAuxCard2.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnAuxCard3.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnAuxCard4.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnAuxCard5.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnAuxCard6.BackColor = Color.FromArgb(255, 20, 20, 20);
+            ClearCardButtonColor(argBtnArray);
             argButton.BackColor = Color.FromArgb(255, 83, 52, 129);
         }
 
@@ -586,7 +624,7 @@ namespace M1ConfigGenerator
 
             breakerObjects.ForEach(breakerObjects => breakerObjects.CreateBreakerFile());
             CreateBreakerReferenceFile();
-            BreakerCardNavColor(btnBreakerGenerate);
+            BreakerCardNavColor(brkBtnArray, btnBreakerGenerate);
             tabControlBreaker.SelectedIndex = 5;
             string[] breakerFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_Breaker\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
             tbxBreakerGenerated.Lines = breakerFiles;
@@ -645,37 +683,37 @@ namespace M1ConfigGenerator
 
         private void btnBreakerCard1_Click(object sender, EventArgs e)
         {
-            BreakerCardNavColor(btnBreakerCard1);
+            BreakerCardNavColor(brkBtnArray, btnBreakerCard1);
             tabControlBreaker.SelectedIndex = 1;/*
             tabControlBreaker1QF.SelectedIndex = 0;*/
         }
 
         private void btnBreakerCard2_Click(object sender, EventArgs e)
         {
-            BreakerCardNavColor(btnBreakerCard2);
+            BreakerCardNavColor(brkBtnArray, btnBreakerCard2);
             tabControlBreaker.SelectedIndex = 2;
         }
 
         private void btnBreakerCard3_Click(object sender, EventArgs e)
         {
-            BreakerCardNavColor(btnBreakerCard3);
+            BreakerCardNavColor(brkBtnArray, btnBreakerCard3);
             tabControlBreaker.SelectedIndex = 3;
         }
 
         private void btnBreakerCard4_Click(object sender, EventArgs e)
         {
-            BreakerCardNavColor(btnBreakerCard4);
+            BreakerCardNavColor(brkBtnArray, btnBreakerCard4);
             tabControlBreaker.SelectedIndex = 4;
         }
 
         private void btnBreakerCard5_Click(object sender, EventArgs e)
         {
-            BreakerCardNavColor(btnBreakerCard5);
+            BreakerCardNavColor(brkBtnArray, btnBreakerCard5);
         }
 
         private void btnBreakerCard6_Click(object sender, EventArgs e)
         {
-            BreakerCardNavColor(btnBreakerCard6);
+            BreakerCardNavColor(brkBtnArray, btnBreakerCard6);
         }
 
         private void ShowBreakerNav(int argInt)
@@ -686,14 +724,9 @@ namespace M1ConfigGenerator
             }
         }
 
-        private void BreakerCardNavColor(Button argButton)
+        private void BreakerCardNavColor(Button[] argBtnArray, Button argButton)
         {
-            btnBreakerCard1.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnBreakerCard2.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnBreakerCard3.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnBreakerCard4.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnBreakerCard5.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnBreakerCard6.BackColor = Color.FromArgb(255, 20, 20, 20);
+            ClearCardButtonColor(argBtnArray);
             argButton.BackColor = Color.FromArgb(255, 217, 58, 78);
         }
 
@@ -707,35 +740,6 @@ namespace M1ConfigGenerator
             CheckBreakerGenerate();
         }
 
-        private void cmbBreaker2CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckBreakerGenerate();
-        }
-
-        private void cmbBreaker2PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckBreakerGenerate();
-        }
-
-        private void cmbBreaker3CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckBreakerGenerate();
-        }
-
-        private void cmbBreaker3PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckBreakerGenerate();
-        }
-
-        private void cmbBreaker4CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckBreakerGenerate();
-        }
-
-        private void cmbBreaker4PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckBreakerGenerate();
-        }
         private void tbxBreaker1BaseIndex_TextChanged(object sender, EventArgs e)
         {
             lblBreaker1Ch00.Text = ChangeChannelLabel(tbxBreaker1BaseIndex.Text, 0);
@@ -814,7 +818,7 @@ namespace M1ConfigGenerator
 
             dimmerObjects.ForEach(dimmerObjects => dimmerObjects.CreateDimmerFile());
             CreateDimmerReferenceFile();
-            DimmerCardNavColor(btnDimmerGenerate);
+            DimmerCardNavColor(dimBtnArray, btnDimmerGenerate);
             tabControlDimmer.SelectedIndex = 7;
             string[] dimmerFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_Dimmer\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
             tbxDimmerGenerated.Lines = dimmerFiles;
@@ -865,7 +869,7 @@ namespace M1ConfigGenerator
 
         private void btnDimmerCard1_Click(object sender, EventArgs e)
         {
-            DimmerCardNavColor(btnDimmerCard1);
+            DimmerCardNavColor(dimBtnArray, btnDimmerCard1);
             tabControlDimmer.SelectedIndex = 1;
             if (cmbStartDimmer.Text == "Full") tabControlDimmer1QF.SelectedIndex = 1;
             else tabControlDimmer1QF.SelectedIndex = 0;
@@ -874,31 +878,31 @@ namespace M1ConfigGenerator
 
         private void btnDimmerCard2_Click(object sender, EventArgs e)
         {
-            DimmerCardNavColor(btnDimmerCard2);
+            DimmerCardNavColor(dimBtnArray, btnDimmerCard2);
             tabControlDimmer.SelectedIndex = 2;
         }
 
         private void btnDimmerCard3_Click(object sender, EventArgs e)
         {
-            DimmerCardNavColor(btnDimmerCard3);
+            DimmerCardNavColor(dimBtnArray, btnDimmerCard3);
             tabControlDimmer.SelectedIndex = 3;
         }
 
         private void btnDimmerCard4_Click(object sender, EventArgs e)
         {
-            DimmerCardNavColor(btnDimmerCard4);
+            DimmerCardNavColor(dimBtnArray, btnDimmerCard4);
             tabControlDimmer.SelectedIndex = 4;
         }
 
         private void btnDimmerCard5_Click(object sender, EventArgs e)
         {
-            DimmerCardNavColor(btnDimmerCard5);
+            DimmerCardNavColor(dimBtnArray, btnDimmerCard5);
             tabControlDimmer.SelectedIndex = 5;
         }
 
         private void btnDimmerCard6_Click(object sender, EventArgs e)
         {
-            DimmerCardNavColor(btnDimmerCard6);
+            DimmerCardNavColor(dimBtnArray, btnDimmerCard6);
             tabControlDimmer.SelectedIndex = 6;
         }
 
@@ -910,14 +914,9 @@ namespace M1ConfigGenerator
             }
         }
 
-        private void DimmerCardNavColor(Button argButton)
+        private void DimmerCardNavColor(Button[] argBtnArray, Button argButton)
         {
-            btnDimmerCard1.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnDimmerCard2.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnDimmerCard3.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnDimmerCard4.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnDimmerCard5.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnDimmerCard6.BackColor = Color.FromArgb(255, 20, 20, 20);
+            ClearCardButtonColor(argBtnArray);
             argButton.BackColor = Color.FromArgb(255, 27, 161, 119);
         }
 
@@ -927,56 +926,6 @@ namespace M1ConfigGenerator
         }
 
         private void cmbDimmer1PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckDimGenerate();
-        }
-
-        private void cmbDimmer2CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckDimGenerate();
-        }
-
-        private void cmbDimmer2PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckDimGenerate();
-        }
-
-        private void cmbDimmer3CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckDimGenerate();
-        }
-
-        private void cmbDimmer3PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckDimGenerate();
-        }
-
-        private void cmbDimmer4CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckDimGenerate();
-        }
-
-        private void cmbDimmer4PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckDimGenerate();
-        }
-
-        private void cmbDimmer5CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckDimGenerate();
-        }
-
-        private void cmbDimmer5PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckDimGenerate();
-        }
-
-        private void cmbDimmer6CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckDimGenerate();
-        }
-
-        private void cmbDimmer6PanelNum_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckDimGenerate();
         }
@@ -1119,11 +1068,10 @@ namespace M1ConfigGenerator
         private void btnHCGenerate_Click(object sender, EventArgs e)
         {
             // HC cards
-
-            hcObjects.ForEach(hcObjects => hcObjects.CreateHCFile());
+            hcObjects.ForEach(hcObjects => hcObjects.HC_CreateFile());
             //CreateHCReferenceFile(hcCardLetter);
-            HCCardNavColor(btnHCGenerate);
-            tabControlHC.SelectedIndex = 7;
+            HCCardNavColor(hcBtnArray, btnHCGenerate);
+            tabControlHC.SelectedIndex = 1;
             string[] hcFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_HC_Bridge\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
             tbxHCGenerated.Lines = hcFiles;
         }
@@ -1164,56 +1112,74 @@ namespace M1ConfigGenerator
 
         private void btnHCCard1_Click(object sender, EventArgs e)
         {
-            HCCardNavColor(btnHCCard1);
+            HCCardNavColor(hcBtnArray, btnHCCard1);
             tabControlHC.SelectedIndex = 0;
             tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
-            HCCardActive = 0;
+            HCCardActive = (int) CardNum.Card1;
             HC_GetAll(HCCardActive);
         }
 
         private void btnHCCard2_Click(object sender, EventArgs e)
         {
-            HCCardNavColor(btnHCCard2);
+            HCCardNavColor(hcBtnArray, btnHCCard2);
             tabControlHC.SelectedIndex = 0;
             HC_SetAll(HCCardActive);
-            HCCardActive = 1;
+            HCCardActive = (int)CardNum.Card2;
             HC_GetAll(HCCardActive);
         }
 
         private void btnHCCard3_Click(object sender, EventArgs e)
         {
-            HCCardNavColor(btnHCCard3);
+            HCCardNavColor(hcBtnArray, btnHCCard3);
             tabControlHC.SelectedIndex = 0;
             HC_SetAll(HCCardActive);
-            HCCardActive = 2;
+            HCCardActive = (int)CardNum.Card3;
             HC_GetAll(HCCardActive);
         }
 
         private void btnHCCard4_Click(object sender, EventArgs e)
         {
-            HCCardNavColor(btnHCCard4);
+            HCCardNavColor(hcBtnArray, btnHCCard4);
             tabControlHC.SelectedIndex = 0;
             HC_SetAll(HCCardActive);
-            HCCardActive = 3;
+            HCCardActive = (int)CardNum.Card4;
             HC_GetAll(HCCardActive);
         }
 
         private void btnHCCard5_Click(object sender, EventArgs e)
         {
-            HCCardNavColor(btnHCCard5);
+            HCCardNavColor(hcBtnArray, btnHCCard5);
             tabControlHC.SelectedIndex = 0;
             HC_SetAll(HCCardActive);
-            HCCardActive = 4;
+            HCCardActive = (int)CardNum.Card5;
             HC_GetAll(HCCardActive);
         }
 
         private void btnHCCard6_Click(object sender, EventArgs e)
         {
-            HCCardNavColor(btnHCCard6);
+            HCCardNavColor(hcBtnArray, btnHCCard6);
             tabControlHC.SelectedIndex = 0;
             HC_SetAll(HCCardActive);
-            HCCardActive = 5;
+            HCCardActive = (int)CardNum.Card6;
+            HC_GetAll(HCCardActive);
+        }
+
+        private void btnHCCard7_Click(object sender, EventArgs e)
+        {
+            HCCardNavColor(hcBtnArray, btnHCCard7);
+            tabControlHC.SelectedIndex = 0;
+            HC_SetAll(HCCardActive);
+            HCCardActive = (int)CardNum.Card7;
+            HC_GetAll(HCCardActive);
+        }
+
+        private void btnHCCard8_Click(object sender, EventArgs e)
+        {
+            HCCardNavColor(hcBtnArray, btnHCCard8);
+            tabControlHC.SelectedIndex = 0;
+            HC_SetAll(HCCardActive);
+            HCCardActive = (int)CardNum.Card8;
             HC_GetAll(HCCardActive);
         }
 
@@ -1225,14 +1191,9 @@ namespace M1ConfigGenerator
             }
         }
 
-        private void HCCardNavColor(Button argButton)
+        private void HCCardNavColor(Button[] argBtnArray, Button argButton)
         {
-            btnHCCard1.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnHCCard2.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnHCCard3.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnHCCard4.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnHCCard5.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnHCCard6.BackColor = Color.FromArgb(255, 20, 20, 20);
+            ClearCardButtonColor(argBtnArray);
             argButton.BackColor = Color.FromArgb(255, 24, 80, 135);
         }
 
@@ -1245,6 +1206,24 @@ namespace M1ConfigGenerator
         private void cmbHC1PanelNum_SelectedIndexChanged(object sender, EventArgs e)
         {
             hcObjects[HCCardActive].M1_SetPanelNumber(cmbHC1PanelNum.Text);
+            CheckHCGenerate();
+        }
+
+        private void tbxHC1BaseIndex_TextChanged(object sender, EventArgs e)
+        {
+            hcObjects[HCCardActive].M1_SetBaseIndex(tbxHC1BaseIndex.Text);
+            lblHC1Ch00.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 0);
+            lblHC1Ch01.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 1);
+            lblHC1Ch02.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 2);
+            lblHC1Ch03.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 3);
+            lblHC1Ch04.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 4);
+            lblHC1Ch05.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 5);
+            lblHC1Ch06.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 6);
+            lblHC1Ch07.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 7);
+            lblHC1Ch08.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 8);
+            lblHC1Ch09.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 9);
+            lblHC1Ch10.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 10);
+            lblHC1Ch11.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 11);
             CheckHCGenerate();
         }
 
@@ -1280,24 +1259,6 @@ namespace M1ConfigGenerator
                 chkHC1PWMEnableCh10.Checked = false;
                 chkHC1PWMEnableCh11.Checked = false;
             }
-        }
-
-        private void tbxHC1BaseIndex_TextChanged(object sender, EventArgs e)
-        {
-            hcObjects[HCCardActive].M1_SetBaseIndex(tbxHC1BaseIndex.Text);
-            lblHC1Ch00.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 0);
-            lblHC1Ch01.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 1);
-            lblHC1Ch02.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 2);
-            lblHC1Ch03.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 3);
-            lblHC1Ch04.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 4);
-            lblHC1Ch05.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 5);
-            lblHC1Ch06.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 6);
-            lblHC1Ch07.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 7);
-            lblHC1Ch08.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 8);
-            lblHC1Ch09.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 9);
-            lblHC1Ch10.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 10);
-            lblHC1Ch11.Text = ChangeChannelLabel(tbxHC1BaseIndex.Text, 11);
-            CheckHCGenerate();
         }
 
         private void ckbTabVisHC1_CheckedChanged(object sender, EventArgs e)
@@ -2097,7 +2058,271 @@ namespace M1ConfigGenerator
 
 
 
+        /*      ##     ##  ######     ########  ######## ##          ###    ##    ## 
+                ##     ## ##    ##    ##     ## ##       ##         ## ##    ##  ##  
+                ##     ## ##          ##     ## ##       ##        ##   ##    ####   
+                ######### ##          ########  ######   ##       ##     ##    ##    
+                ##     ## ##          ##   ##   ##       ##       #########    ##    
+                ##     ## ##    ##    ##    ##  ##       ##       ##     ##    ##    
+                ##     ##  ######     ##     ## ######## ######## ##     ##    ##    @HR */
 
+
+
+        private void btnHRCard1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHRCard2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHRCard3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHRCard4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHRCard5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHRCard6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHRCard7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHRCard8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHRGenerate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShowHRNav(int argInt)
+        {
+            for (int i = 0; i < argInt; i++)
+            {
+                hrBtnArray[i].Visible = true;
+            }
+        }
+
+        private void cmbHRCardNum_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRPanelNum_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkHRTabVis_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxHRBaseInstance_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickOCAmpsCh00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickOCAmpsCh01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickOCAmpsCh02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickOCAmpsCh03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickOCAmpsCh04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickOCAmpsCh05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickOCAmpsCh06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickOCAmpsCh07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickOCAmpsCh08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickOCAmpsCh09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickOCAmpsCh10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickOCAmpsCh11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickModeCh00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickModeCh01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickModeCh02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickModeCh03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickModeCh04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickModeCh05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickModeCh06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickModeCh07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickModeCh08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickModeCh09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickModeCh10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickModeCh11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickStartupCh00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickStartupCh01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickStartupCh02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickStartupCh03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickStartupCh04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickStartupCh05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickStartupCh06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickStartupCh07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickStartupCh08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickStartupCh09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickStartupCh10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHRQuickStartupCh11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        
+        
+        
         //##        ######  
         //##       ##    ## 
         //##       ##       
@@ -2167,7 +2392,7 @@ namespace M1ConfigGenerator
 
             lcObjects.ForEach(lcObjects => lcObjects.CreateLCFile());
             CreateLCReferenceFile();
-            LCCardNavColor(btnLCGenerate);
+            LCCardNavColor(lcBtnArray, btnLCGenerate);
             tabControlLC.SelectedIndex = 7;
             string[] lcFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_LC_Bridge\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
             tbxLCGenerated.Lines = lcFiles;
@@ -2218,7 +2443,7 @@ namespace M1ConfigGenerator
 
        private void btnLCCard1_Click(object sender, EventArgs e)
         {
-            LCCardNavColor(btnLCCard1);
+            LCCardNavColor(lcBtnArray, btnLCCard1);
             tabControlLC.SelectedIndex = 1;
             tabControlLC1QF.SelectedIndex = 0;
 
@@ -2226,31 +2451,31 @@ namespace M1ConfigGenerator
 
         private void btnLCCard2_Click(object sender, EventArgs e)
         {
-            LCCardNavColor(btnLCCard2);
+            LCCardNavColor(lcBtnArray, btnLCCard2);
             tabControlLC.SelectedIndex = 2;
         }
 
         private void btnLCCard3_Click(object sender, EventArgs e)
         {
-            LCCardNavColor(btnLCCard3);
+            LCCardNavColor(lcBtnArray, btnLCCard3);
             tabControlLC.SelectedIndex = 3;
         }
 
         private void btnLCCard4_Click(object sender, EventArgs e)
         {
-            LCCardNavColor(btnLCCard4);
+            LCCardNavColor(lcBtnArray, btnLCCard4);
             tabControlLC.SelectedIndex = 4;
         }
 
         private void btnLCCard5_Click(object sender, EventArgs e)
         {
-            LCCardNavColor(btnLCCard5);
+            LCCardNavColor(lcBtnArray, btnLCCard5);
             tabControlLC.SelectedIndex = 5;
         }
 
         private void btnLCCard6_Click(object sender, EventArgs e)
         {
-            LCCardNavColor(btnLCCard6);
+            LCCardNavColor(lcBtnArray, btnLCCard6);
             tabControlLC.SelectedIndex = 6;
         }
 
@@ -2262,14 +2487,9 @@ namespace M1ConfigGenerator
             }
         }
 
-        private void LCCardNavColor(Button argButton)
+        private void LCCardNavColor(Button[] argBtnArray, Button argButton)
         {
-            btnLCCard1.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnLCCard2.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnLCCard3.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnLCCard4.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnLCCard5.BackColor = Color.FromArgb(255, 20, 20, 20);
-            btnLCCard6.BackColor = Color.FromArgb(255, 20, 20, 20);
+            ClearCardButtonColor(argBtnArray);
             argButton.BackColor = Color.FromArgb(255, 208, 110, 152);
         }
 
@@ -2399,11 +2619,11 @@ namespace M1ConfigGenerator
 
         private void PopulateArrays()
         {
-            auxBtnArray = new Button[] { btnAuxCard1, btnAuxCard2, btnAuxCard3, btnAuxCard4, btnAuxCard5, btnAuxCard6 };
-            brkBtnArray = new Button[] { btnBreakerCard1, btnBreakerCard2, btnBreakerCard3, btnBreakerCard4, btnBreakerCard5, btnBreakerCard6 };
-            dimBtnArray = new Button[] { btnDimmerCard1, btnDimmerCard2, btnDimmerCard3, btnDimmerCard4, btnDimmerCard5, btnDimmerCard6 };
-            hcBtnArray = new Button[] { btnHCCard1, btnHCCard2, btnHCCard3, btnHCCard4, btnHCCard5, btnHCCard6 };
-            //hrBtnArray = new Button[] { btnHRCard1, btnHRCard2, btnHCRard3, btnHRCard4, btnHRCard5, btnHRCard6 };
+            auxBtnArray = new Button[] { btnAuxCard1, btnAuxCard2, btnAuxCard3, btnAuxCard4, btnAuxCard5, btnAuxCard6, btnAuxCard7, btnAuxCard8 };
+            brkBtnArray = new Button[] { btnBreakerCard1, btnBreakerCard2, btnBreakerCard3, btnBreakerCard4, btnBreakerCard5, btnBreakerCard6, btnBreakerCard7, btnBreakerCard8 };
+            dimBtnArray = new Button[] { btnDimmerCard1, btnDimmerCard2, btnDimmerCard3, btnDimmerCard4, btnDimmerCard5, btnDimmerCard6, btnDimmerCard7, btnDimmerCard8 };
+            hcBtnArray = new Button[] { btnHCCard1, btnHCCard2, btnHCCard3, btnHCCard4, btnHCCard5, btnHCCard6, btnHCCard7, btnHCCard8 };
+            hrBtnArray = new Button[] { btnHRCard1, btnHRCard2, btnHRCard3, btnHRCard4, btnHRCard5, btnHRCard6, btnHRCard7, btnHRCard8 };
             lcBtnArray = new Button[] { btnLCCard1, btnLCCard2, btnLCCard3, btnLCCard4, btnLCCard5, btnLCCard6 };
 
             auxCardNum = new ComboBox[] { cmbAux1CardNum };
@@ -2483,6 +2703,24 @@ namespace M1ConfigGenerator
             hcMaxDurRec = new TextBox[] { txtbHC1MaxDurRecCh00, txtbHC1MaxDurRecCh01, txtbHC1MaxDurRecCh02, txtbHC1MaxDurRecCh03, txtbHC1MaxDurRecCh04, txtbHC1MaxDurRecCh05, txtbHC1MaxDurRecCh06, txtbHC1MaxDurRecCh07, txtbHC1MaxDurRecCh08, txtbHC1MaxDurRecCh09, txtbHC1MaxDurRecCh10, txtbHC1MaxDurRecCh11 };
             hcUndAmps = new TextBox[] { txtbHC1UndAmpCh00, txtbHC1UndAmpCh01, txtbHC1UndAmpCh02, txtbHC1UndAmpCh03, txtbHC1UndAmpCh04, txtbHC1UndAmpCh05, txtbHC1UndAmpCh06, txtbHC1UndAmpCh07, txtbHC1UndAmpCh08, txtbHC1UndAmpCh09, txtbHC1UndAmpCh10, txtbHC1UndAmpCh11 };
             hcMeasCurTimes = new ComboBox[] { cmbHC1MeasCurTimeCh00, cmbHC1MeasCurTimeCh01, cmbHC1MeasCurTimeCh02, cmbHC1MeasCurTimeCh03, cmbHC1MeasCurTimeCh04, cmbHC1MeasCurTimeCh05, cmbHC1MeasCurTimeCh06, cmbHC1MeasCurTimeCh07, cmbHC1MeasCurTimeCh08, cmbHC1MeasCurTimeCh09, cmbHC1MeasCurTimeCh10, cmbHC1MeasCurTimeCh11 };
+
+            hrOCAmpsQuick = new ComboBox[] { cmbHRQuickOCAmpsCh00, cmbHRQuickOCAmpsCh01, cmbHRQuickOCAmpsCh02, cmbHRQuickOCAmpsCh03, cmbHRQuickOCAmpsCh04, cmbHRQuickOCAmpsCh05, cmbHRQuickOCAmpsCh06, cmbHRQuickOCAmpsCh07, cmbHRQuickOCAmpsCh08, cmbHRQuickOCAmpsCh09, cmbHRQuickOCAmpsCh10, cmbHRQuickOCAmpsCh11 };
+            hrOCAmps = new TextBox[] { tbxHROCAmpsCh00, tbxHROCAmpsCh01, tbxHROCAmpsCh02, tbxHROCAmpsCh03, tbxHROCAmpsCh04, tbxHROCAmpsCh05, tbxHROCAmpsCh06, tbxHROCAmpsCh07, tbxHROCAmpsCh08, tbxHROCAmpsCh09, tbxHROCAmpsCh10, tbxHROCAmpsCh11 };
+            hrOCTime = new ComboBox[] { cmbHROCTimeCh00, cmbHROCTimeCh01, cmbHROCTimeCh02, cmbHROCTimeCh03, cmbHROCTimeCh04, cmbHROCTimeCh05, cmbHROCTimeCh06, cmbHROCTimeCh07, cmbHROCTimeCh08, cmbHROCTimeCh09, cmbHROCTimeCh10, cmbHROCTimeCh11 };
+            hrModesQuick = new ComboBox[] { cmbHRQuickModeCh00, cmbHRQuickModeCh01, cmbHRQuickModeCh02, cmbHRQuickModeCh03, cmbHRQuickModeCh04, cmbHRQuickModeCh05, cmbHRQuickModeCh06, cmbHRQuickModeCh07, cmbHRQuickModeCh08, cmbHRQuickModeCh09, cmbHRQuickModeCh10, cmbHRQuickModeCh11 };
+            hrStartupQuick = new ComboBox[] { cmbHRQuickStartupCh00, cmbHRQuickStartupCh01, cmbHRQuickStartupCh02, cmbHRQuickStartupCh03, cmbHRQuickStartupCh04, cmbHRQuickStartupCh05, cmbHRQuickStartupCh06, cmbHRQuickStartupCh07, cmbHRQuickStartupCh08, cmbHRQuickStartupCh09, cmbHRQuickStartupCh10, cmbHRQuickStartupCh11 };
+            hrLock = new CheckBox[] { chkHRLockCh00, chkHRLockCh01, chkHRLockCh02, chkHRLockCh03, chkHRLockCh04, chkHRLockCh05, chkHRLockCh06, chkHRLockCh07, chkHRLockCh08, chkHRLockCh09, chkHRLockCh10, chkHRLockCh11 };
+            hrPWMDuties = new TextBox[] { tbxHRPWMDutyCh00, tbxHRPWMDutyCh01, tbxHRPWMDutyCh02, tbxHRPWMDutyCh03, tbxHRPWMDutyCh04, tbxHRPWMDutyCh05, tbxHRPWMDutyCh06, tbxHRPWMDutyCh07, tbxHRPWMDutyCh08, tbxHRPWMDutyCh09, tbxHRPWMDutyCh10, tbxHRPWMDutyCh11 };
+            hrDirections = new ComboBox[] { cmbHRDirectionCh00, cmbHRDirectionCh01, cmbHRDirectionCh02, cmbHRDirectionCh03, cmbHRDirectionCh04, cmbHRDirectionCh05, cmbHRDirectionCh06, cmbHRDirectionCh07, cmbHRDirectionCh08, cmbHRDirectionCh09, cmbHRDirectionCh10, cmbHRDirectionCh11 };
+            hrModeParam = new ComboBox[] { cmbHRModeParamCh00, cmbHRModeParamCh01, cmbHRModeParamCh02, cmbHRModeParamCh03, cmbHRModeParamCh04, cmbHRModeParamCh05, cmbHRModeParamCh06, cmbHRModeParamCh07, cmbHRModeParamCh08, cmbHRModeParamCh09, cmbHRModeParamCh10, cmbHRModeParamCh11 };
+            hrDeadTimes = new ComboBox[] { cmbHRDeadTimeCh00, cmbHRDeadTimeCh01, cmbHRDeadTimeCh02, cmbHRDeadTimeCh03, cmbHRDeadTimeCh04, cmbHRDeadTimeCh05, cmbHRDeadTimeCh06, cmbHRDeadTimeCh07, cmbHRDeadTimeCh08, cmbHRDeadTimeCh09, cmbHRDeadTimeCh10, cmbHRDeadTimeCh11 };
+            hrPaired = new ComboBox[] { cmbHRPairedCh00, cmbHRPairedCh01, cmbHRPairedCh02, cmbHRPairedCh03, cmbHRPairedCh04, cmbHRPairedCh05, cmbHRPairedCh06, cmbHRPairedCh07, cmbHRPairedCh08, cmbHRPairedCh09, cmbHRPairedCh10, cmbHRPairedCh11 };
+            hrTimeouts = new CheckBox[] { chkHRTimeoutCh00, chkHRTimeoutCh01, chkHRTimeoutCh02, chkHRTimeoutCh03, chkHRTimeoutCh04, chkHRTimeoutCh05, chkHRTimeoutCh06, chkHRTimeoutCh07, chkHRTimeoutCh08, chkHRTimeoutCh09, chkHRTimeoutCh10, chkHRTimeoutCh11 };
+            hrTimeoutTimes = new TextBox[] { tbxHRTimeoutTimeCh00, tbxHRTimeoutTimeCh01, tbxHRTimeoutTimeCh02, tbxHRTimeoutTimeCh03, tbxHRTimeoutTimeCh04, tbxHRTimeoutTimeCh05, tbxHRTimeoutTimeCh06, tbxHRTimeoutTimeCh07, tbxHRTimeoutTimeCh08, tbxHRTimeoutTimeCh09, tbxHRTimeoutTimeCh10, tbxHRTimeoutTimeCh11 };
+            hrMaxOns = new TextBox[] { tbxHRMaxOnCh00, tbxHRMaxOnCh01, tbxHRMaxOnCh02, tbxHRMaxOnCh03, tbxHRMaxOnCh04, tbxHRMaxOnCh05, tbxHRMaxOnCh06, tbxHRMaxOnCh07, tbxHRMaxOnCh08, tbxHRMaxOnCh09, tbxHRMaxOnCh10, tbxHRMaxOnCh11 };
+            hrMaxDurRec = new TextBox[] { tbxHRMaxDurRecCh00, tbxHRMaxDurRecCh01, tbxHRMaxDurRecCh02, tbxHRMaxDurRecCh03, tbxHRMaxDurRecCh04, tbxHRMaxDurRecCh05, tbxHRMaxDurRecCh06, tbxHRMaxDurRecCh07, tbxHRMaxDurRecCh08, tbxHRMaxDurRecCh09, tbxHRMaxDurRecCh10, tbxHRMaxDurRecCh11 };
+            hrUndAmps = new TextBox[] { tbxHRUndAmpsCh00, tbxHRUndAmpsCh01, tbxHRUndAmpsCh02, tbxHRUndAmpsCh03, tbxHRUndAmpsCh04, tbxHRUndAmpsCh05, tbxHRUndAmpsCh06, tbxHRUndAmpsCh07, tbxHRUndAmpsCh08, tbxHRUndAmpsCh09, tbxHRUndAmpsCh10, tbxHRUndAmpsCh11 };
+            hrMeasCurTimes = new ComboBox[] { cmbHRMeasCurTimeCh00, cmbHRMeasCurTimeCh01, cmbHRMeasCurTimeCh02, cmbHRMeasCurTimeCh03, cmbHRMeasCurTimeCh04, cmbHRMeasCurTimeCh05, cmbHRMeasCurTimeCh06, cmbHRMeasCurTimeCh07, cmbHRMeasCurTimeCh08, cmbHRMeasCurTimeCh09, cmbHRMeasCurTimeCh10, cmbHRMeasCurTimeCh11 };
 
             lcOCAmps = new ComboBox[] { cmbLC1OCAmps00, cmbLC1OCAmps01, cmbLC1OCAmps02, cmbLC1OCAmps03, cmbLC1OCAmps04, cmbLC1OCAmps05, cmbLC1OCAmps06, cmbLC1OCAmps07, cmbLC1OCAmps08, cmbLC1OCAmps09, cmbLC1OCAmps10, cmbLC1OCAmps11, cmbLC1OCAmps12, cmbLC1OCAmps13, cmbLC1OCAmps14, cmbLC1OCAmps15 };
             lcOCTime = new ComboBox[] { cmbLC1OCTime00, cmbLC1OCTime01, cmbLC1OCTime02, cmbLC1OCTime03, cmbLC1OCTime04, cmbLC1OCTime05, cmbLC1OCTime06, cmbLC1OCTime07, cmbLC1OCTime08, cmbLC1OCTime09, cmbLC1OCTime10, cmbLC1OCTime11, cmbLC1OCTime12, cmbLC1OCTime13, cmbLC1OCTime14, cmbLC1OCTime15 };

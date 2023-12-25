@@ -75,7 +75,7 @@ namespace M1ConfigGenerator
         bool[] dim1Group00; bool[] dim1Group01; bool[] dim1Group02; bool[] dim1Group03; bool[] dim1Group04; bool[] dim1Group05;
         bool[] dim1Group06; bool[] dim1Group07; bool[] dim1Group08; bool[] dim1Group09; bool[] dim1Group10; bool[] dim1Group11;
         bool[][] dim1Groups;
-        CheckBox[] dimmerLocks;
+        CheckBox[] dimmerLocks; 
         ComboBox[] dimmerPWMFreq;
         TextBox[] dimmerPWMDuties;
         CheckBox[] dimmerPWMEnables;
@@ -91,9 +91,9 @@ namespace M1ConfigGenerator
 
         List<HCCard> hcObjects = new List<HCCard>();
         int HCCardActive;
-        bool[] hc1Group00; bool[] hc1Group01; bool[] hc1Group02; bool[] hc1Group03; bool[] hc1Group04; bool[] hc1Group05; 
-        bool[] hc1Group06; bool[] hc1Group07; bool[] hc1Group08; bool[] hc1Group09; bool[] hc1Group10; bool[] hc1Group11;
-        bool[][] hc1Groups;
+        bool[] hcGroup00; bool[] hcGroup01; bool[] hcGroup02; bool[] hcGroup03; bool[] hcGroup04; bool[] hcGroup05; 
+        bool[] hcGroup06; bool[] hcGroup07; bool[] hcGroup08; bool[] hcGroup09; bool[] hcGroup10; bool[] hcGroup11;
+        bool[][] hcGroups;
         ComboBox[] hc1OCAmpsQuick; TextBox[] hcOCAmps; ComboBox[] hcOCTime; ComboBox[] hcModesQuick; ComboBox[] hcStartupQuick; 
         CheckBox[] hcLock; TextBox[] hcPWMDuties; CheckBox[] hcPWMEnables; ComboBox[] hcDirections; ComboBox[] hcModeParam; ComboBox[] hcDeadTimes;
         ComboBox[] hcPaired; CheckBox[] hcTimeouts; TextBox[] hcTimeoutTimes; TextBox[] hcMaxOns; TextBox[] hcMaxDurRec; TextBox[] hcUndAmps; ComboBox[] hcMeasCurTimes;
@@ -102,9 +102,10 @@ namespace M1ConfigGenerator
         int HRCardActive;
         bool[] hrGroup00; bool[] hrGroup01; bool[] hrGroup02; bool[] hrGroup03; bool[] hrGroup04; bool[] hrGroup05; 
         bool[] hrGroup06; bool[] hrGroup07; bool[] hrGroup08; bool[] hrGroup09; bool[] hrGroup10; bool[] hrGroup11;
-        bool[][] hrGroups;
+        bool[][] hrMasterGroups;
+        Label[] hrChannelLabels;
         ComboBox[] hrOCAmpsQuick; TextBox[] hrOCAmps; ComboBox[] hrOCTime; ComboBox[] hrModesQuick; ComboBox[] hrStartupQuick;
-        CheckBox[] hrLock; TextBox[] hrPWMDuties; CheckBox[] hrPWMEnables; ComboBox[] hrDirections; ComboBox[] hrModeParam; ComboBox[] hrDeadTimes;
+        CheckBox[] hrLock; TextBox[] hrPWMDuties; ComboBox[] hrDirections; ComboBox[] hrModeParam; ComboBox[] hrDeadTimes;
         ComboBox[] hrPaired; CheckBox[] hrTimeouts; TextBox[] hrTimeoutTimes; TextBox[] hrMaxOns; TextBox[] hrMaxDurRec; TextBox[] hrUndAmps; ComboBox[] hrMeasCurTimes;
 
         List<LCCard> lcObjects = new List<LCCard>();
@@ -206,7 +207,7 @@ namespace M1ConfigGenerator
         {
             SetMenuColors(5);
             tabControlMain.SelectedIndex = (int) MainTab.HCRelay;
-            HC_GetAll(HRCardActive);
+            HR_GetAll(HRCardActive);
             HCCardNavColor(hrBtnArray, hrBtnArray[HRCardActive]);
             ShowHRNav(cmbStartHR.SelectedIndex);
         }
@@ -278,7 +279,7 @@ namespace M1ConfigGenerator
         {
             tabControlMain.SelectedIndex = 0;
             HideNavButtons();
-            // for some reason, had to put these in opposite order so they appear correctly in nav bar
+            // had to put these in opposite order so they appear correctly in nav bar, I think because of top anchor
             ShowNavButton(btnMenuLC, cmbStartLC.SelectedIndex);
             ShowNavButton(btnMenuHR, cmbStartHR.SelectedIndex);
             ShowNavButton(btnMenuHC, cmbStartHC.SelectedIndex);
@@ -325,6 +326,8 @@ namespace M1ConfigGenerator
 
             tbxHC1CfgType.Text = tbxStartCfgType.Text;
 
+            tbxHRCfgType.Text = tbxStartCfgType.Text;
+
             //foreach (TextBox t in lcConfigType) { t.Text = tbxStartCfgType.Text; }
         }
 
@@ -350,6 +353,16 @@ namespace M1ConfigGenerator
                 result = Convert.ToString(Convert.ToInt16(argString) + argInt);
             }
             return result;
+        }
+
+        private void ChangeChannelLabels(Label[] argLblArray, string baseIndexText)
+        {
+            int i = 0;
+            foreach (Label label in argLblArray)
+            {
+                label.Text = ChangeChannelLabel(baseIndexText, i);
+                i++;
+            }
         }
 
         private void HideComboBox(ComboBox[] argComboBox)
@@ -410,6 +423,7 @@ namespace M1ConfigGenerator
 
         private void btnAuxGenerate_Click(object sender, EventArgs e)
         {
+            // need to set by channel but get by group
             aux1Group00 = new bool[] { chkAux1MG1Ch00.Checked, chkAux1MG2Ch00.Checked, chkAux1MG3Ch00.Checked, chkAux1MG4Ch00.Checked };
             aux1Group01 = new bool[] { chkAux1MG1Ch01.Checked, chkAux1MG2Ch01.Checked, chkAux1MG3Ch01.Checked, chkAux1MG4Ch01.Checked };
             aux1Group02 = new bool[] { chkAux1MG1Ch02.Checked, chkAux1MG2Ch02.Checked, chkAux1MG3Ch02.Checked, chkAux1MG4Ch02.Checked };
@@ -591,6 +605,18 @@ namespace M1ConfigGenerator
             CheckAuxGenerate();
         }
 
+        private void chkTabVisAux1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkTabVisAux1.Checked == true)
+            {
+                this.tabControlAux1QF.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tabControlAux1QF.SelectedIndex = 0;
+            }
+        }
+
 
         //########  ########  ########    ###    ##    ## ######## ########  
         //##     ## ##     ## ##         ## ##   ##   ##  ##       ##     ## 
@@ -757,6 +783,18 @@ namespace M1ConfigGenerator
             CheckBreakerGenerate();
         }
 
+        private void chkTabVisBreaker1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkTabVisBreaker1.Checked == true)
+            {
+                this.tablessControl3.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tablessControl3.SelectedIndex = 0;
+            }
+        }
+
 
 
         //########  #### ##     ## ##     ## ######## ########  
@@ -770,6 +808,7 @@ namespace M1ConfigGenerator
 
         private void btnDimmerGenerate_Click(object sender, EventArgs e)
         {
+            // need to set by channel but get by group
             dim1Group00 = new bool[] { chkDimmer1MG1Ch00.Checked, chkDimmer1MG2Ch00.Checked, chkDimmer1MG3Ch00.Checked, chkDimmer1MG4Ch00.Checked };
             dim1Group01 = new bool[] { chkDimmer1MG1Ch01.Checked, chkDimmer1MG2Ch01.Checked, chkDimmer1MG3Ch01.Checked, chkDimmer1MG4Ch01.Checked };
             dim1Group02 = new bool[] { chkDimmer1MG1Ch02.Checked, chkDimmer1MG2Ch02.Checked, chkDimmer1MG3Ch02.Checked, chkDimmer1MG4Ch02.Checked };
@@ -948,42 +987,47 @@ namespace M1ConfigGenerator
             CheckDimGenerate();
         }
 
-        // ##     ##  ######  
-        // ##     ## ##    ## 
-        // ##     ## ##       
-        // ######### ##       
-        // ##     ## ##       
-        // ##     ## ##    ## 
-        // ##     ##  ######  
-        //@HC
+        private void chkTabVisDimmer1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkTabVisDimmer1.Checked == true)
+            {
+                this.tabControlDimmer1QF.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tabControlDimmer1QF.SelectedIndex = 0;
+            }
+        }
+
+
+
+        /*      ##     ##  ######  
+                ##     ## ##    ## 
+                ##     ## ##       
+                ######### ##       
+                ##     ## ##       
+                ##     ## ##    ## 
+                ##     ##  ######     @HC */
+
 
 
         public void HC_SetAll(int card)
         {
             // When generate is clicked, load necessary checkbox states into arrays to be used to set parameters on each card
-            hc1Group00 = new bool[] { chkHC1MG1Ch00.Checked, chkHC1MG2Ch00.Checked, chkHC1MG3Ch00.Checked, chkHC1MG4Ch00.Checked };
-            hc1Group01 = new bool[] { chkHC1MG1Ch01.Checked, chkHC1MG2Ch01.Checked, chkHC1MG3Ch01.Checked, chkHC1MG4Ch01.Checked };
-            hc1Group02 = new bool[] { chkHC1MG1Ch02.Checked, chkHC1MG2Ch02.Checked, chkHC1MG3Ch02.Checked, chkHC1MG4Ch02.Checked };
-            hc1Group03 = new bool[] { chkHC1MG1Ch03.Checked, chkHC1MG2Ch03.Checked, chkHC1MG3Ch03.Checked, chkHC1MG4Ch03.Checked };
-            hc1Group04 = new bool[] { chkHC1MG1Ch04.Checked, chkHC1MG2Ch04.Checked, chkHC1MG3Ch04.Checked, chkHC1MG4Ch04.Checked };
-            hc1Group05 = new bool[] { chkHC1MG1Ch05.Checked, chkHC1MG2Ch05.Checked, chkHC1MG3Ch05.Checked, chkHC1MG4Ch05.Checked };
-            hc1Group06 = new bool[] { chkHC1MG1Ch06.Checked, chkHC1MG2Ch06.Checked, chkHC1MG3Ch06.Checked, chkHC1MG4Ch06.Checked };
-            hc1Group07 = new bool[] { chkHC1MG1Ch07.Checked, chkHC1MG2Ch07.Checked, chkHC1MG3Ch07.Checked, chkHC1MG4Ch07.Checked };
-            hc1Group08 = new bool[] { chkHC1MG1Ch08.Checked, chkHC1MG2Ch08.Checked, chkHC1MG3Ch08.Checked, chkHC1MG4Ch08.Checked };
-            hc1Group09 = new bool[] { chkHC1MG1Ch09.Checked, chkHC1MG2Ch09.Checked, chkHC1MG3Ch09.Checked, chkHC1MG4Ch09.Checked };
-            hc1Group10 = new bool[] { chkHC1MG1Ch10.Checked, chkHC1MG2Ch10.Checked, chkHC1MG3Ch10.Checked, chkHC1MG4Ch10.Checked };
-            hc1Group11 = new bool[] { chkHC1MG1Ch11.Checked, chkHC1MG2Ch11.Checked, chkHC1MG3Ch11.Checked, chkHC1MG4Ch11.Checked };
-            hc1Groups = new bool[][] { hc1Group00, hc1Group01, hc1Group02, hc1Group03, hc1Group04, hc1Group05, hc1Group06, hc1Group07, hc1Group08, hc1Group09, hc1Group10, hc1Group11 };
-
-            // needed to make a list of multidimensional arrays to pass to the group allocation function
-            List<bool[][]> hcGroups = new List<bool[][]>();
-            hcGroups.Add(hc1Groups);
-            //hcGroups.Add(hc2Groups);
-            //hcGroups.Add(hc3Groups);
-            //hcGroups.Add(hc4Groups);
-            //hcGroups.Add(hc5Groups);
-            //hcGroups.Add(hc6Groups);
-
+            hcGroup00 = new bool[] { chkHC1MG1Ch00.Checked, chkHC1MG2Ch00.Checked, chkHC1MG3Ch00.Checked, chkHC1MG4Ch00.Checked };
+            hcGroup01 = new bool[] { chkHC1MG1Ch01.Checked, chkHC1MG2Ch01.Checked, chkHC1MG3Ch01.Checked, chkHC1MG4Ch01.Checked };
+            hcGroup02 = new bool[] { chkHC1MG1Ch02.Checked, chkHC1MG2Ch02.Checked, chkHC1MG3Ch02.Checked, chkHC1MG4Ch02.Checked };
+            hcGroup03 = new bool[] { chkHC1MG1Ch03.Checked, chkHC1MG2Ch03.Checked, chkHC1MG3Ch03.Checked, chkHC1MG4Ch03.Checked };
+            hcGroup04 = new bool[] { chkHC1MG1Ch04.Checked, chkHC1MG2Ch04.Checked, chkHC1MG3Ch04.Checked, chkHC1MG4Ch04.Checked };
+            hcGroup05 = new bool[] { chkHC1MG1Ch05.Checked, chkHC1MG2Ch05.Checked, chkHC1MG3Ch05.Checked, chkHC1MG4Ch05.Checked };
+            hcGroup06 = new bool[] { chkHC1MG1Ch06.Checked, chkHC1MG2Ch06.Checked, chkHC1MG3Ch06.Checked, chkHC1MG4Ch06.Checked };
+            hcGroup07 = new bool[] { chkHC1MG1Ch07.Checked, chkHC1MG2Ch07.Checked, chkHC1MG3Ch07.Checked, chkHC1MG4Ch07.Checked };
+            hcGroup08 = new bool[] { chkHC1MG1Ch08.Checked, chkHC1MG2Ch08.Checked, chkHC1MG3Ch08.Checked, chkHC1MG4Ch08.Checked };
+            hcGroup09 = new bool[] { chkHC1MG1Ch09.Checked, chkHC1MG2Ch09.Checked, chkHC1MG3Ch09.Checked, chkHC1MG4Ch09.Checked };
+            hcGroup10 = new bool[] { chkHC1MG1Ch10.Checked, chkHC1MG2Ch10.Checked, chkHC1MG3Ch10.Checked, chkHC1MG4Ch10.Checked };
+            hcGroup11 = new bool[] { chkHC1MG1Ch11.Checked, chkHC1MG2Ch11.Checked, chkHC1MG3Ch11.Checked, chkHC1MG4Ch11.Checked };
+            hcGroups = new bool[][] { hcGroup00, hcGroup01, hcGroup02, hcGroup03, hcGroup04, hcGroup05, hcGroup06, hcGroup07, hcGroup08, hcGroup09, hcGroup10, hcGroup11 };
+            hcObjects[card].M1_SetFullSetup(chkTabVisHC1.Checked);
             hcObjects[card].M1_SetCardNumber(cmbHC1CardNum.Text);
             hcObjects[card].M1_SetPanelNumber(cmbHC1PanelNum.Text);
             hcObjects[card].M1_SetDevAddr();
@@ -1011,7 +1055,7 @@ namespace M1ConfigGenerator
                 hcObjects[card].HC_SetTimeoutTime(channel, hcTimeoutTimes[channel].Text);
                 hcObjects[card].HC_SetMaxOn(channel, hcMaxOns[channel].Text);
                 hcObjects[card].HC_SetMaxDurRec(channel, hcMaxDurRec[channel].Text);
-                //hcObjects[card].M1_SetGroup0(hcGroups[card][channel], channel); // takes care of all 4 groups
+                hcObjects[card].M1_SetGroup0(hcGroups[channel], channel); // takes care of all 4 groups
                 hcObjects[card].HC_SetOCAmps(channel, hcOCAmps[channel].Text);
                 hcObjects[card].HC_SetUndAmp(channel, hcUndAmps[channel].Text);
                 hcObjects[card].HC_SetOCTime(channel, hcOCTime[channel].Text);
@@ -1021,6 +1065,7 @@ namespace M1ConfigGenerator
 
         public void HC_GetAll(int card)
         {
+            chkTabVisHC1.Checked = hcObjects[card].M1_GetFullSetup();
             if (hcObjects[card].M1_GetCardNumber() == "") 
             { 
                 // sets combobox to blank
@@ -1057,32 +1102,36 @@ namespace M1ConfigGenerator
                 hcTimeoutTimes[channel].Text = hcObjects[card].HC_GetTimeoutTime(channel);
                 hcMaxOns[channel].Text = hcObjects[card].HC_GetMaxOn(channel);
                 hcMaxDurRec[channel].Text = hcObjects[card].HC_GetMaxDurRec(channel);
-                // groups
                 hcOCAmps[channel].Text = hcObjects[card].HC_GetOCAmps(channel);
                 hcUndAmps[channel].Text = hcObjects[card].HC_GetUndAmp(channel);
                 hcOCTime[channel].Text = hcObjects[card].HC_GetOCTime(channel);
                 hcMeasCurTimes[channel].Text = hcObjects[card].HC_GetMeasCurTime(channel);
+                //hcGroups[channel][0] = hcObjects[card].M1_GetGroup0(channel);
+                //hcGroups[channel][1] = hcObjects[card].M1_GetGroup1(channel);
+                //hcGroups[channel][2] = hcObjects[card].M1_GetGroup2(channel);
+                //hcGroups[channel][3] = hcObjects[card].M1_GetGroup3(channel);
             }
         }
 
         private void btnHCGenerate_Click(object sender, EventArgs e)
         {
             // HC cards
+            HC_SetAll(HCCardActive);
             hcObjects.ForEach(hcObjects => hcObjects.HC_CreateFile());
-            //CreateHCReferenceFile(hcCardLetter);
+            CreateHCReferenceFile();
             HCCardNavColor(hcBtnArray, btnHCGenerate);
             tabControlHC.SelectedIndex = 1;
             string[] hcFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_HC_Bridge\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
             tbxHCGenerated.Lines = hcFiles;
         }
 
-        private void CreateHCReferenceFile(TextBox[] argTextBox)
+        private void CreateHCReferenceFile()
         {
             using (StreamWriter sw = File.AppendText(@"M1_DcDriver_Config\Src\M1_HC_Bridge\DeviceConfigs\DevAddrConfigs.h"))
             {
-                for (int i = 0; i < Convert.ToInt16(cmbStartHC.Text); i++)
+                foreach (HCCard card in hcObjects)
                 {
-                    sw.WriteLine("#include \"DevAddr" + argTextBox[i].Text + ".h\"");
+                    sw.WriteLine("#include \"DevAddr" + card.M1_GetCardLetter() + ".h\"");
                 }
             }
         }
@@ -2066,51 +2115,223 @@ namespace M1ConfigGenerator
                 ##     ## ##    ##    ##    ##  ##       ##       ##     ##    ##    
                 ##     ##  ######     ##     ## ######## ######## ##     ##    ##    @HR */
 
+        public void HR_SetAll(int card)
+        {
+            // When generate is clicked, load necessary checkbox states into arrays to be used to set parameters on each cardc1G
+            hrGroup00 = new bool[] { chkHRMG1Ch00.Checked, chkHRMG2Ch00.Checked, chkHRMG3Ch00.Checked, chkHRMG4Ch00.Checked };
+            hrGroup01 = new bool[] { chkHRMG1Ch01.Checked, chkHRMG2Ch01.Checked, chkHRMG3Ch01.Checked, chkHRMG4Ch01.Checked };
+            hrGroup02 = new bool[] { chkHRMG1Ch02.Checked, chkHRMG2Ch02.Checked, chkHRMG3Ch02.Checked, chkHRMG4Ch02.Checked };
+            hrGroup03 = new bool[] { chkHRMG1Ch03.Checked, chkHRMG2Ch03.Checked, chkHRMG3Ch03.Checked, chkHRMG4Ch03.Checked };
+            hrGroup04 = new bool[] { chkHRMG1Ch04.Checked, chkHRMG2Ch04.Checked, chkHRMG3Ch04.Checked, chkHRMG4Ch04.Checked };
+            hrGroup05 = new bool[] { chkHRMG1Ch05.Checked, chkHRMG2Ch05.Checked, chkHRMG3Ch05.Checked, chkHRMG4Ch05.Checked };
+            hrGroup06 = new bool[] { chkHRMG1Ch06.Checked, chkHRMG2Ch06.Checked, chkHRMG3Ch06.Checked, chkHRMG4Ch06.Checked };
+            hrGroup07 = new bool[] { chkHRMG1Ch07.Checked, chkHRMG2Ch07.Checked, chkHRMG3Ch07.Checked, chkHRMG4Ch07.Checked };
+            hrGroup08 = new bool[] { chkHRMG1Ch08.Checked, chkHRMG2Ch08.Checked, chkHRMG3Ch08.Checked, chkHRMG4Ch08.Checked };
+            hrGroup09 = new bool[] { chkHRMG1Ch09.Checked, chkHRMG2Ch09.Checked, chkHRMG3Ch09.Checked, chkHRMG4Ch09.Checked };
+            hrGroup10 = new bool[] { chkHRMG1Ch10.Checked, chkHRMG2Ch10.Checked, chkHRMG3Ch10.Checked, chkHRMG4Ch10.Checked };
+            hrGroup11 = new bool[] { chkHRMG1Ch11.Checked, chkHRMG2Ch11.Checked, chkHRMG3Ch11.Checked, chkHRMG4Ch11.Checked };
+            hrMasterGroups = new bool[][] { hrGroup00, hrGroup01, hrGroup02, hrGroup03, hrGroup04, hrGroup05, hrGroup06, hrGroup07, hrGroup08, hrGroup09, hrGroup10, hrGroup11 };
 
+            hrObjects[card].M1_SetFullSetup(chkHRTabVis.Checked);
+            hrObjects[card].M1_SetCardNumber(cmbHRCardNum.Text);
+            hrObjects[card].M1_SetPanelNumber(cmbHRPanelNum.Text);
+            hrObjects[card].M1_SetDevAddr();
+            hrObjects[card].M1_SetCardLetter(tbxHRCardLetter.Text);
+            hrObjects[card].M1_ChangeConfigName();
+            hrObjects[card].HC_ChangeAddress();
+            hrObjects[card].M1_SetCfgRev(tbxHRCfgRev.Text);
+            hrObjects[card].M1_SetCfgType(tbxHRCfgType.Text);
+            hrObjects[card].M1_SetDCMotor(chkHRDCMotor.Checked);
+            hrObjects[card].M1_SetShade(chkHRShade.Checked);
+            hrObjects[card].M1_SetForce(chkHRForce.Checked);
+            hrObjects[card].M1_SetBaseIndex(tbxHRBaseInstance.Text);
+            for (int channel = 0; channel < 12; channel++)
+            {
+                hrObjects[card].HC_SetLock(channel, hrLock[channel].Checked);
+                hrObjects[card].HC_SetPWMDuty(channel, hrPWMDuties[channel].Text);
+                hrObjects[card].HC_SetDirection(channel, hrDirections[channel].Text);
+                hrObjects[card].HC_SetMode(channel, hrModeParam[channel].Text);
+                hrObjects[card].HC_SetDeadTime(channel, hrDeadTimes[channel].Text);
+                hrObjects[card].HC_SetPaired(channel, hrPaired[channel].Text);
+                hrObjects[card].HC_SetTimeout(channel, hrTimeouts[channel].Checked);
+                hrObjects[card].HC_SetTimeoutTime(channel, hrTimeoutTimes[channel].Text);
+                hrObjects[card].HC_SetMaxOn(channel, hrMaxOns[channel].Text);
+                hrObjects[card].HC_SetMaxDurRec(channel, hrMaxDurRec[channel].Text);
+                hrObjects[card].M1_SetGroup0(hrMasterGroups[channel], channel); // takes care of all 4 groups
+                hrObjects[card].HC_SetOCAmps(channel, hrOCAmps[channel].Text);
+                hrObjects[card].HC_SetUndAmp(channel, hrUndAmps[channel].Text);
+                hrObjects[card].HC_SetOCTime(channel, hrOCTime[channel].Text);
+                hrObjects[card].HC_SetMeasCurTime(channel, hrMeasCurTimes[channel].Text);
+            }
+        }
+
+        public void HR_GetAll(int card)
+        {
+            chkHRTabVis.Checked = hrObjects[card].M1_GetFullSetup();
+            if (hrObjects[card].M1_GetCardNumber() == "")
+            {
+                // sets combobox to blank
+                cmbHRCardNum.ResetText();
+                cmbHRCardNum.SelectedIndex = -1;
+            }
+            else { cmbHRCardNum.Text = hrObjects[card].M1_GetCardNumber(); }
+            if (hrObjects[card].M1_GetPanelNumber() == "")
+            {
+                // sets combobox to blank
+                cmbHRPanelNum.ResetText();
+                cmbHRPanelNum.SelectedIndex = -1;
+            }
+            else { cmbHRPanelNum.Text = hrObjects[card].M1_GetPanelNumber(); }
+            tbxHRCfgRev.Text = hrObjects[card].M1_GetCfgRev();
+            tbxHRCardLetter.Text = hrObjects[card].M1_GetCardLetter();
+            chkHRDCMotor.Checked = hrObjects[card].M1_GetDCMotor();
+            chkHRShade.Checked = hrObjects[card].M1_GetShade();
+            chkHRForce.Checked = hrObjects[card].M1_GetForce();
+            tbxHRBaseInstance.Text = hrObjects[card].M1_GetBaseIndex();
+            for (int channel = 0; channel < 12; channel++)
+            {
+                hrOCAmpsQuick[channel].Text = hrObjects[card].HC_GetQuickOCAmps(channel);
+                hrLock[channel].Checked = hrObjects[card].HC_GetLock(channel);
+                hrPWMDuties[channel].Text = hrObjects[card].HC_GetPWMDuty(channel);
+                hrDirections[channel].Text = hrObjects[card].HC_GetDirection(channel);
+                hrModeParam[channel].Text = hrObjects[card].HC_GetMode(channel);
+                hrDeadTimes[channel].Text = hrObjects[card].HC_GetDeadTime(channel);
+                hrPaired[channel].Text = hrObjects[card].HC_GetPaired(channel);
+                hrTimeouts[channel].Checked = hrObjects[card].HC_GetTimeout(channel);
+                hrTimeoutTimes[channel].Text = hrObjects[card].HC_GetTimeoutTime(channel);
+                hrMaxOns[channel].Text = hrObjects[card].HC_GetMaxOn(channel);
+                hrMaxDurRec[channel].Text = hrObjects[card].HC_GetMaxDurRec(channel);
+                // groups
+                hrOCAmps[channel].Text = hrObjects[card].HC_GetOCAmps(channel);
+                hrUndAmps[channel].Text = hrObjects[card].HC_GetUndAmp(channel);
+                hrOCTime[channel].Text = hrObjects[card].HC_GetOCTime(channel);
+                hrMeasCurTimes[channel].Text = hrObjects[card].HC_GetMeasCurTime(channel);
+            }
+        }
+
+        private void CreateHRReferenceFile()
+        {
+            using (StreamWriter sw = File.AppendText(@"M1_DcDriver_Config\Src\M1_HC_Relay\DeviceConfigs\DevAddrConfigs.h"))
+            {
+                foreach (HCCard card in hrObjects)
+                {
+                    sw.WriteLine("#include \"DevAddr" + card.M1_GetCardLetter() + ".h\"");
+                }
+            }
+        }
+
+        private void CheckHRGenerate()
+        {
+            int checkCounter = 0;
+            int numHRCards = Convert.ToInt16(cmbStartHR.Text);
+
+            for (int i = 0; i < numHRCards; i++)
+            {
+                if (hrObjects[i].M1_GetCardNumber() != "" && hrObjects[i].M1_GetPanelNumber() != "" && hrObjects[i].M1_GetBaseIndex() != "")
+                {
+                    checkCounter++;
+                }
+            }
+
+            if (checkCounter == numHRCards)
+            {
+                btnHRGenerate.Visible = true;
+            }
+            else
+            {
+                btnHRGenerate.Visible = false;
+            }
+        }
 
         private void btnHRCard1_Click(object sender, EventArgs e)
         {
-
+            HCCardNavColor(hrBtnArray, btnHRCard1);
+            tabControlHR.SelectedIndex = 0;
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
+            HR_SetAll(HRCardActive);
+            HRCardActive = (int)CardNum.Card1;
+            HR_GetAll(HRCardActive);
         }
 
         private void btnHRCard2_Click(object sender, EventArgs e)
         {
-
+            HCCardNavColor(hrBtnArray, btnHRCard2);
+            tabControlHR.SelectedIndex = 0;
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
+            HR_SetAll(HRCardActive);
+            HRCardActive = (int)CardNum.Card2;
+            HR_GetAll(HRCardActive);
         }
 
         private void btnHRCard3_Click(object sender, EventArgs e)
         {
-
+            HCCardNavColor(hrBtnArray, btnHRCard3);
+            tabControlHR.SelectedIndex = 0;
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
+            HR_SetAll(HRCardActive);
+            HRCardActive = (int)CardNum.Card3;
+            HR_GetAll(HRCardActive);
         }
 
         private void btnHRCard4_Click(object sender, EventArgs e)
         {
-
+            HCCardNavColor(hrBtnArray, btnHRCard4);
+            tabControlHR.SelectedIndex = 0;
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
+            HR_SetAll(HRCardActive);
+            HRCardActive = (int)CardNum.Card4;
+            HR_GetAll(HRCardActive);
         }
 
         private void btnHRCard5_Click(object sender, EventArgs e)
         {
-
+            HCCardNavColor(hrBtnArray, btnHRCard5);
+            tabControlHR.SelectedIndex = 0;
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
+            HR_SetAll(HRCardActive);
+            HRCardActive = (int)CardNum.Card5;
+            HR_GetAll(HRCardActive);
         }
 
         private void btnHRCard6_Click(object sender, EventArgs e)
         {
-
+            HCCardNavColor(hrBtnArray, btnHRCard6);
+            tabControlHR.SelectedIndex = 0;
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
+            HR_SetAll(HRCardActive);
+            HRCardActive = (int)CardNum.Card6;
+            HR_GetAll(HRCardActive);
         }
 
         private void btnHRCard7_Click(object sender, EventArgs e)
         {
-
+            HCCardNavColor(hrBtnArray, btnHRCard7);
+            tabControlHR.SelectedIndex = 0;
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
+            HR_SetAll(HRCardActive);
+            HRCardActive = (int)CardNum.Card7;
+            HR_GetAll(HRCardActive);
         }
 
         private void btnHRCard8_Click(object sender, EventArgs e)
         {
-
+            HCCardNavColor(hrBtnArray, btnHRCard8);
+            tabControlHR.SelectedIndex = 0;
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
+            HR_SetAll(HRCardActive);
+            HRCardActive = (int)CardNum.Card8;
+            HR_GetAll(HRCardActive);
         }
 
         private void btnHRGenerate_Click(object sender, EventArgs e)
         {
-
+            HR_SetAll(HRCardActive);
+            hrObjects.ForEach(hrObjects => hrObjects.HC_CreateFile());
+            CreateHRReferenceFile();
+            HCCardNavColor(hrBtnArray, btnHRGenerate);
+            tabControlHR.SelectedIndex = 1;
+            string[] hrFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_HC_Relay\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
+            tbxHRGenerated.Lines = hrFiles;
         }
 
         private void ShowHRNav(int argInt)
@@ -2123,217 +2344,673 @@ namespace M1ConfigGenerator
 
         private void cmbHRCardNum_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            hrObjects[HRCardActive].M1_SetCardNumber(cmbHRCardNum.Text);
+            CheckHRGenerate();
         }
 
         private void cmbHRPanelNum_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void chkHRTabVis_CheckedChanged(object sender, EventArgs e)
-        {
-
+            hrObjects[HRCardActive].M1_SetPanelNumber(cmbHRCardNum.Text);
+            CheckHRGenerate();
         }
 
         private void tbxHRBaseInstance_TextChanged(object sender, EventArgs e)
         {
+            hrObjects[HRCardActive].M1_SetBaseIndex(tbxHRBaseInstance.Text);
+            ChangeChannelLabels(hrChannelLabels, tbxHRBaseInstance.Text);
+            CheckHRGenerate();
+        }
 
+        private void chkHRTabVis_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHRTabVis.Checked == true)
+            {
+                this.tabControlHRQF.SelectedIndex = 1;
+            }
+            else
+            {
+                this.tabControlHRQF.SelectedIndex = 0;
+            }
         }
 
         private void cmbHRQuickOCAmpsCh00_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            tbxHROCAmpsCh00.Text = cmbHRQuickOCAmpsCh00.Text;
         }
 
         private void cmbHRQuickOCAmpsCh01_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            tbxHROCAmpsCh01.Text = cmbHRQuickOCAmpsCh01.Text;
         }
 
         private void cmbHRQuickOCAmpsCh02_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            tbxHROCAmpsCh02.Text = cmbHRQuickOCAmpsCh02.Text;
         }
 
         private void cmbHRQuickOCAmpsCh03_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            tbxHROCAmpsCh03.Text = cmbHRQuickOCAmpsCh03.Text;
         }
 
         private void cmbHRQuickOCAmpsCh04_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            tbxHROCAmpsCh04.Text = cmbHRQuickOCAmpsCh04.Text;
         }
 
         private void cmbHRQuickOCAmpsCh05_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            tbxHROCAmpsCh05.Text = cmbHRQuickOCAmpsCh05.Text;
         }
 
         private void cmbHRQuickOCAmpsCh06_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            tbxHROCAmpsCh06.Text = cmbHRQuickOCAmpsCh06.Text;
         }
 
         private void cmbHRQuickOCAmpsCh07_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            tbxHROCAmpsCh07.Text = cmbHRQuickOCAmpsCh07.Text;
         }
 
         private void cmbHRQuickOCAmpsCh08_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            tbxHROCAmpsCh08.Text = cmbHRQuickOCAmpsCh08.Text;
         }
 
         private void cmbHRQuickOCAmpsCh09_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            tbxHROCAmpsCh09.Text = cmbHRQuickOCAmpsCh09.Text;
         }
 
         private void cmbHRQuickOCAmpsCh10_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            tbxHROCAmpsCh10.Text = cmbHRQuickOCAmpsCh10.Text;
         }
 
         private void cmbHRQuickOCAmpsCh11_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            tbxHROCAmpsCh11.Text = cmbHRQuickOCAmpsCh11.Text;
         }
 
         private void cmbHRQuickModeCh00_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbHRQuickModeCh00.Text == "12V+")
+            {
+                cmbHRModeParamCh00.Text = "High";
+                cmbHRDeadTimeCh00.Text = "0";
+                cmbHRPairedCh00.Text = "None";
+            }
+            else if (cmbHRQuickModeCh00.Text == "Ground")
+            {
+                cmbHRModeParamCh00.Text = "Low";
+                cmbHRDeadTimeCh00.Text = "0";
+                cmbHRPairedCh00.Text = "None";
+            }
+            else if (cmbHRQuickModeCh00.Text == "RP UP")
+            {
+                cmbHRModeParamCh00.Text = "H Br";
+                cmbHRDeadTimeCh00.Text = "500";
+                cmbHRPairedCh00.Text = "1";
+            }
 
+            if (cmbHRQuickStartupCh00.Text == "High" || cmbHRQuickStartupCh00.Text == "Low") { cmbHRDirectionCh00.Text = cmbHRModeParamCh00.Text; }
+            if (cmbHRDirectionCh00.Text != "Off" && (cmbHRModeParamCh00.Text == "High" || cmbHRModeParamCh00.Text == "Low")) { cmbHRDirectionCh00.Text = cmbHRModeParamCh00.Text; }
         }
 
         private void cmbHRQuickModeCh01_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbHRQuickModeCh01.Text == "12V+")
+            {
+                cmbHRModeParamCh01.Text = "High";
+                cmbHRDeadTimeCh01.Text = "0";
+                cmbHRPairedCh01.Text = "None";
+            }
+            else if (cmbHRQuickModeCh01.Text == "Ground")
+            {
+                cmbHRModeParamCh01.Text = "Low";
+                cmbHRDeadTimeCh01.Text = "0";
+                cmbHRPairedCh01.Text = "None";
+            }
+            else if (cmbHRQuickModeCh01.Text == "RP UP")
+            {
+                cmbHRModeParamCh01.Text = "H Br";
+                cmbHRDeadTimeCh01.Text = "500";
+                cmbHRPairedCh01.Text = "1";
+            }
 
+            if (cmbHRQuickStartupCh01.Text == "High" || cmbHRQuickStartupCh01.Text == "Low") { cmbHRDirectionCh01.Text = cmbHRModeParamCh01.Text; }
+            if (cmbHRDirectionCh01.Text != "Off" && (cmbHRModeParamCh01.Text == "High" || cmbHRModeParamCh01.Text == "Low")) { cmbHRDirectionCh01.Text = cmbHRModeParamCh01.Text; }
         }
 
         private void cmbHRQuickModeCh02_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbHRQuickModeCh02.Text == "12V+")
+            {
+                cmbHRModeParamCh02.Text = "High";
+                cmbHRDeadTimeCh02.Text = "0";
+                cmbHRPairedCh02.Text = "None";
+            }
+            else if (cmbHRQuickModeCh02.Text == "Ground")
+            {
+                cmbHRModeParamCh02.Text = "Low";
+                cmbHRDeadTimeCh02.Text = "0";
+                cmbHRPairedCh02.Text = "None";
+            }
+            else if (cmbHRQuickModeCh02.Text == "RP UP")
+            {
+                cmbHRModeParamCh02.Text = "H Br";
+                cmbHRDeadTimeCh02.Text = "500";
+                cmbHRPairedCh02.Text = "1";
+            }
 
+            if (cmbHRQuickStartupCh02.Text == "High" || cmbHRQuickStartupCh02.Text == "Low") { cmbHRDirectionCh02.Text = cmbHRModeParamCh02.Text; }
+            if (cmbHRDirectionCh02.Text != "Off" && (cmbHRModeParamCh02.Text == "High" || cmbHRModeParamCh02.Text == "Low")) { cmbHRDirectionCh02.Text = cmbHRModeParamCh02.Text; }
         }
 
         private void cmbHRQuickModeCh03_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbHRQuickModeCh03.Text == "12V+")
+            {
+                cmbHRModeParamCh03.Text = "High";
+                cmbHRDeadTimeCh03.Text = "0";
+                cmbHRPairedCh03.Text = "None";
+            }
+            else if (cmbHRQuickModeCh03.Text == "Ground")
+            {
+                cmbHRModeParamCh03.Text = "Low";
+                cmbHRDeadTimeCh03.Text = "0";
+                cmbHRPairedCh03.Text = "None";
+            }
+            else if (cmbHRQuickModeCh03.Text == "RP UP")
+            {
+                cmbHRModeParamCh03.Text = "H Br";
+                cmbHRDeadTimeCh03.Text = "500";
+                cmbHRPairedCh03.Text = "1";
+            }
 
+            if (cmbHRQuickStartupCh03.Text == "High" || cmbHRQuickStartupCh03.Text == "Low") { cmbHRDirectionCh03.Text = cmbHRModeParamCh03.Text; }
+            if (cmbHRDirectionCh03.Text != "Off" && (cmbHRModeParamCh03.Text == "High" || cmbHRModeParamCh03.Text == "Low")) { cmbHRDirectionCh03.Text = cmbHRModeParamCh03.Text; }
         }
 
         private void cmbHRQuickModeCh04_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbHRQuickModeCh04.Text == "12V+")
+            {
+                cmbHRModeParamCh04.Text = "High";
+                cmbHRDeadTimeCh04.Text = "0";
+                cmbHRPairedCh04.Text = "None";
+            }
+            else if (cmbHRQuickModeCh04.Text == "Ground")
+            {
+                cmbHRModeParamCh04.Text = "Low";
+                cmbHRDeadTimeCh04.Text = "0";
+                cmbHRPairedCh04.Text = "None";
+            }
+            else if (cmbHRQuickModeCh04.Text == "RP UP")
+            {
+                cmbHRModeParamCh04.Text = "H Br";
+                cmbHRDeadTimeCh04.Text = "500";
+                cmbHRPairedCh04.Text = "1";
+            }
 
+            if (cmbHRQuickStartupCh04.Text == "High" || cmbHRQuickStartupCh04.Text == "Low") { cmbHRDirectionCh04.Text = cmbHRModeParamCh04.Text; }
+            if (cmbHRDirectionCh04.Text != "Off" && (cmbHRModeParamCh04.Text == "High" || cmbHRModeParamCh04.Text == "Low")) { cmbHRDirectionCh04.Text = cmbHRModeParamCh04.Text; }
         }
 
         private void cmbHRQuickModeCh05_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbHRQuickModeCh05.Text == "12V+")
+            {
+                cmbHRModeParamCh05.Text = "High";
+                cmbHRDeadTimeCh05.Text = "0";
+                cmbHRPairedCh05.Text = "None";
+            }
+            else if (cmbHRQuickModeCh05.Text == "Ground")
+            {
+                cmbHRModeParamCh05.Text = "Low";
+                cmbHRDeadTimeCh05.Text = "0";
+                cmbHRPairedCh05.Text = "None";
+            }
+            else if (cmbHRQuickModeCh05.Text == "RP UP")
+            {
+                cmbHRModeParamCh05.Text = "H Br";
+                cmbHRDeadTimeCh05.Text = "500";
+                cmbHRPairedCh05.Text = "1";
+            }
 
+            if (cmbHRQuickStartupCh05.Text == "High" || cmbHRQuickStartupCh05.Text == "Low") { cmbHRDirectionCh05.Text = cmbHRModeParamCh05.Text; }
+            if (cmbHRDirectionCh05.Text != "Off" && (cmbHRModeParamCh05.Text == "High" || cmbHRModeParamCh05.Text == "Low")) { cmbHRDirectionCh05.Text = cmbHRModeParamCh05.Text; }
         }
 
         private void cmbHRQuickModeCh06_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbHRQuickModeCh06.Text == "12V+")
+            {
+                cmbHRModeParamCh06.Text = "High";
+                cmbHRDeadTimeCh06.Text = "0";
+                cmbHRPairedCh06.Text = "None";
+            }
+            else if (cmbHRQuickModeCh06.Text == "Ground")
+            {
+                cmbHRModeParamCh06.Text = "Low";
+                cmbHRDeadTimeCh06.Text = "0";
+                cmbHRPairedCh06.Text = "None";
+            }
+            else if (cmbHRQuickModeCh06.Text == "RP UP")
+            {
+                cmbHRModeParamCh06.Text = "H Br";
+                cmbHRDeadTimeCh06.Text = "500";
+                cmbHRPairedCh06.Text = "1";
+            }
 
+            if (cmbHRQuickStartupCh06.Text == "High" || cmbHRQuickStartupCh06.Text == "Low") { cmbHRDirectionCh06.Text = cmbHRModeParamCh06.Text; }
+            if (cmbHRDirectionCh06.Text != "Off" && (cmbHRModeParamCh06.Text == "High" || cmbHRModeParamCh06.Text == "Low")) { cmbHRDirectionCh06.Text = cmbHRModeParamCh06.Text; }
         }
 
         private void cmbHRQuickModeCh07_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbHRQuickModeCh07.Text == "12V+")
+            {
+                cmbHRModeParamCh07.Text = "High";
+                cmbHRDeadTimeCh07.Text = "0";
+                cmbHRPairedCh07.Text = "None";
+            }
+            else if (cmbHRQuickModeCh07.Text == "Ground")
+            {
+                cmbHRModeParamCh07.Text = "Low";
+                cmbHRDeadTimeCh07.Text = "0";
+                cmbHRPairedCh07.Text = "None";
+            }
+            else if (cmbHRQuickModeCh07.Text == "RP UP")
+            {
+                cmbHRModeParamCh07.Text = "H Br";
+                cmbHRDeadTimeCh07.Text = "500";
+                cmbHRPairedCh07.Text = "1";
+            }
 
+            if (cmbHRQuickStartupCh07.Text == "High" || cmbHRQuickStartupCh07.Text == "Low") { cmbHRDirectionCh07.Text = cmbHRModeParamCh07.Text; }
+            if (cmbHRDirectionCh07.Text != "Off" && (cmbHRModeParamCh07.Text == "High" || cmbHRModeParamCh07.Text == "Low")) { cmbHRDirectionCh07.Text = cmbHRModeParamCh07.Text; }
         }
 
         private void cmbHRQuickModeCh08_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbHRQuickModeCh08.Text == "12V+")
+            {
+                cmbHRModeParamCh08.Text = "High";
+                cmbHRDeadTimeCh08.Text = "0";
+                cmbHRPairedCh08.Text = "None";
+            }
+            else if (cmbHRQuickModeCh08.Text == "Ground")
+            {
+                cmbHRModeParamCh08.Text = "Low";
+                cmbHRDeadTimeCh08.Text = "0";
+                cmbHRPairedCh08.Text = "None";
+            }
+            else if (cmbHRQuickModeCh08.Text == "RP UP")
+            {
+                cmbHRModeParamCh08.Text = "H Br";
+                cmbHRDeadTimeCh08.Text = "500";
+                cmbHRPairedCh08.Text = "1";
+            }
 
+            if (cmbHRQuickStartupCh08.Text == "High" || cmbHRQuickStartupCh08.Text == "Low") { cmbHRDirectionCh08.Text = cmbHRModeParamCh08.Text; }
+            if (cmbHRDirectionCh08.Text != "Off" && (cmbHRModeParamCh08.Text == "High" || cmbHRModeParamCh08.Text == "Low")) { cmbHRDirectionCh08.Text = cmbHRModeParamCh08.Text; }
         }
 
         private void cmbHRQuickModeCh09_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbHRQuickModeCh09.Text == "12V+")
+            {
+                cmbHRModeParamCh09.Text = "High";
+                cmbHRDeadTimeCh09.Text = "0";
+                cmbHRPairedCh09.Text = "None";
+            }
+            else if (cmbHRQuickModeCh09.Text == "Ground")
+            {
+                cmbHRModeParamCh09.Text = "Low";
+                cmbHRDeadTimeCh09.Text = "0";
+                cmbHRPairedCh09.Text = "None";
+            }
+            else if (cmbHRQuickModeCh09.Text == "RP UP")
+            {
+                cmbHRModeParamCh09.Text = "H Br";
+                cmbHRDeadTimeCh09.Text = "500";
+                cmbHRPairedCh09.Text = "1";
+            }
 
+            if (cmbHRQuickStartupCh09.Text == "High" || cmbHRQuickStartupCh09.Text == "Low") { cmbHRDirectionCh09.Text = cmbHRModeParamCh09.Text; }
+            if (cmbHRDirectionCh09.Text != "Off" && (cmbHRModeParamCh09.Text == "High" || cmbHRModeParamCh09.Text == "Low")) { cmbHRDirectionCh09.Text = cmbHRModeParamCh09.Text; }
         }
 
         private void cmbHRQuickModeCh10_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbHRQuickModeCh10.Text == "12V+")
+            {
+                cmbHRModeParamCh10.Text = "High";
+                cmbHRDeadTimeCh10.Text = "0";
+                cmbHRPairedCh10.Text = "None";
+            }
+            else if (cmbHRQuickModeCh10.Text == "Ground")
+            {
+                cmbHRModeParamCh10.Text = "Low";
+                cmbHRDeadTimeCh10.Text = "0";
+                cmbHRPairedCh10.Text = "None";
+            }
+            else if (cmbHRQuickModeCh10.Text == "RP UP")
+            {
+                cmbHRModeParamCh10.Text = "H Br";
+                cmbHRDeadTimeCh10.Text = "500";
+                cmbHRPairedCh10.Text = "1";
+            }
 
+            if (cmbHRQuickStartupCh10.Text == "High" || cmbHRQuickStartupCh10.Text == "Low") { cmbHRDirectionCh10.Text = cmbHRModeParamCh10.Text; }
+            if (cmbHRDirectionCh10.Text != "Off" && (cmbHRModeParamCh10.Text == "High" || cmbHRModeParamCh10.Text == "Low")) { cmbHRDirectionCh10.Text = cmbHRModeParamCh10.Text; }
         }
 
         private void cmbHRQuickModeCh11_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbHRQuickModeCh11.Text == "12V+")
+            {
+                cmbHRModeParamCh11.Text = "High";
+                cmbHRDeadTimeCh11.Text = "0";
+                cmbHRPairedCh11.Text = "None";
+            }
+            else if (cmbHRQuickModeCh11.Text == "Ground")
+            {
+                cmbHRModeParamCh11.Text = "Low";
+                cmbHRDeadTimeCh11.Text = "0";
+                cmbHRPairedCh11.Text = "None";
+            }
+            else if (cmbHRQuickModeCh11.Text == "RP UP")
+            {
+                cmbHRModeParamCh11.Text = "H Br";
+                cmbHRDeadTimeCh11.Text = "500";
+                cmbHRPairedCh11.Text = "1";
+            }
 
+            if (cmbHRQuickStartupCh11.Text == "High" || cmbHRQuickStartupCh11.Text == "Low") { cmbHRDirectionCh11.Text = cmbHRModeParamCh11.Text; }
+            if (cmbHRDirectionCh11.Text != "Off" && (cmbHRModeParamCh11.Text == "High" || cmbHRModeParamCh11.Text == "Low")) { cmbHRDirectionCh11.Text = cmbHRModeParamCh11.Text; }
         }
 
         private void cmbHRQuickStartupCh00_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbHRQuickStartupCh00.Text == "Latch")
+            {
+                chkHRLockCh00.Checked = false;
+                tbxHRPWMDutyCh00.Text = "200";
+                cmbHRDirectionCh00.Text = (cmbHRModeParamCh00.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHRQuickStartupCh00.Text == "Constant")
+            {
+                chkHRLockCh00.Checked = true;
+                tbxHRPWMDutyCh00.Text = "200";
+                cmbHRDirectionCh00.Text = (cmbHRModeParamCh00.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHRLockCh00.Checked = false;
+                tbxHRPWMDutyCh00.Text = "0";
+                cmbHRDirectionCh00.Text = "Off";
+            }
         }
 
         private void cmbHRQuickStartupCh01_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbHRQuickStartupCh01.Text == "Latch")
+            {
+                chkHRLockCh01.Checked = false;
+                tbxHRPWMDutyCh01.Text = "200";
+                cmbHRDirectionCh01.Text = (cmbHRModeParamCh01.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHRQuickStartupCh01.Text == "Constant")
+            {
+                chkHRLockCh01.Checked = true;
+                tbxHRPWMDutyCh01.Text = "200";
+                cmbHRDirectionCh01.Text = (cmbHRModeParamCh01.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHRLockCh01.Checked = false;
+                tbxHRPWMDutyCh01.Text = "0";
+                cmbHRDirectionCh01.Text = "Off";
+            }
         }
 
         private void cmbHRQuickStartupCh02_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbHRQuickStartupCh02.Text == "Latch")
+            {
+                chkHRLockCh02.Checked = false;
+                tbxHRPWMDutyCh02.Text = "200";
+                cmbHRDirectionCh02.Text = (cmbHRModeParamCh02.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHRQuickStartupCh02.Text == "Constant")
+            {
+                chkHRLockCh02.Checked = true;
+                tbxHRPWMDutyCh02.Text = "200";
+                cmbHRDirectionCh02.Text = (cmbHRModeParamCh02.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHRLockCh02.Checked = false;
+                tbxHRPWMDutyCh02.Text = "0";
+                cmbHRDirectionCh02.Text = "Off";
+            }
         }
 
         private void cmbHRQuickStartupCh03_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbHRQuickStartupCh03.Text == "Latch")
+            {
+                chkHRLockCh03.Checked = false;
+                tbxHRPWMDutyCh03.Text = "200";
+                cmbHRDirectionCh03.Text = (cmbHRModeParamCh03.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHRQuickStartupCh03.Text == "Constant")
+            {
+                chkHRLockCh03.Checked = true;
+                tbxHRPWMDutyCh03.Text = "200";
+                cmbHRDirectionCh03.Text = (cmbHRModeParamCh03.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHRLockCh03.Checked = false;
+                tbxHRPWMDutyCh03.Text = "0";
+                cmbHRDirectionCh03.Text = "Off";
+            }
         }
 
         private void cmbHRQuickStartupCh04_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbHRQuickStartupCh04.Text == "Latch")
+            {
+                chkHRLockCh04.Checked = false;
+                tbxHRPWMDutyCh04.Text = "200";
+                cmbHRDirectionCh04.Text = (cmbHRModeParamCh04.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHRQuickStartupCh04.Text == "Constant")
+            {
+                chkHRLockCh04.Checked = true;
+                tbxHRPWMDutyCh04.Text = "200";
+                cmbHRDirectionCh04.Text = (cmbHRModeParamCh04.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHRLockCh04.Checked = false;
+                tbxHRPWMDutyCh04.Text = "0";
+                cmbHRDirectionCh04.Text = "Off";
+            }
         }
 
         private void cmbHRQuickStartupCh05_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbHRQuickStartupCh05.Text == "Latch")
+            {
+                chkHRLockCh05.Checked = false;
+                tbxHRPWMDutyCh05.Text = "200";
+                cmbHRDirectionCh05.Text = (cmbHRModeParamCh05.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHRQuickStartupCh05.Text == "Constant")
+            {
+                chkHRLockCh05.Checked = true;
+                tbxHRPWMDutyCh05.Text = "200";
+                cmbHRDirectionCh05.Text = (cmbHRModeParamCh05.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHRLockCh05.Checked = false;
+                tbxHRPWMDutyCh05.Text = "0";
+                cmbHRDirectionCh05.Text = "Off";
+            }
         }
 
         private void cmbHRQuickStartupCh06_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbHRQuickStartupCh06.Text == "Latch")
+            {
+                chkHRLockCh06.Checked = false;
+                tbxHRPWMDutyCh06.Text = "200";
+                cmbHRDirectionCh06.Text = (cmbHRModeParamCh06.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHRQuickStartupCh06.Text == "Constant")
+            {
+                chkHRLockCh06.Checked = true;
+                tbxHRPWMDutyCh06.Text = "200";
+                cmbHRDirectionCh06.Text = (cmbHRModeParamCh06.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHRLockCh06.Checked = false;
+                tbxHRPWMDutyCh06.Text = "0";
+                cmbHRDirectionCh06.Text = "Off";
+            }
         }
 
         private void cmbHRQuickStartupCh07_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbHRQuickStartupCh07.Text == "Latch")
+            {
+                chkHRLockCh07.Checked = false;
+                tbxHRPWMDutyCh07.Text = "200";
+                cmbHRDirectionCh07.Text = (cmbHRModeParamCh07.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHRQuickStartupCh07.Text == "Constant")
+            {
+                chkHRLockCh07.Checked = true;
+                tbxHRPWMDutyCh07.Text = "200";
+                cmbHRDirectionCh07.Text = (cmbHRModeParamCh07.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHRLockCh07.Checked = false;
+                tbxHRPWMDutyCh07.Text = "0";
+                cmbHRDirectionCh07.Text = "Off";
+            }
         }
 
         private void cmbHRQuickStartupCh08_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbHRQuickStartupCh08.Text == "Latch")
+            {
+                chkHRLockCh08.Checked = false;
+                tbxHRPWMDutyCh08.Text = "200";
+                cmbHRDirectionCh08.Text = (cmbHRModeParamCh08.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHRQuickStartupCh08.Text == "Constant")
+            {
+                chkHRLockCh08.Checked = true;
+                tbxHRPWMDutyCh08.Text = "200";
+                cmbHRDirectionCh08.Text = (cmbHRModeParamCh08.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHRLockCh08.Checked = false;
+                tbxHRPWMDutyCh08.Text = "0";
+                cmbHRDirectionCh08.Text = "Off";
+            }
         }
 
         private void cmbHRQuickStartupCh09_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbHRQuickStartupCh09.Text == "Latch")
+            {
+                chkHRLockCh09.Checked = false;
+                tbxHRPWMDutyCh09.Text = "200";
+                cmbHRDirectionCh09.Text = (cmbHRModeParamCh09.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHRQuickStartupCh09.Text == "Constant")
+            {
+                chkHRLockCh09.Checked = true;
+                tbxHRPWMDutyCh09.Text = "200";
+                cmbHRDirectionCh09.Text = (cmbHRModeParamCh09.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHRLockCh09.Checked = false;
+                tbxHRPWMDutyCh09.Text = "0";
+                cmbHRDirectionCh09.Text = "Off";
+            }
         }
 
         private void cmbHRQuickStartupCh10_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbHRQuickStartupCh10.Text == "Latch")
+            {
+                chkHRLockCh10.Checked = false;
+                tbxHRPWMDutyCh10.Text = "200";
+                cmbHRDirectionCh10.Text = (cmbHRModeParamCh10.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHRQuickStartupCh10.Text == "Constant")
+            {
+                chkHRLockCh10.Checked = true;
+                tbxHRPWMDutyCh10.Text = "200";
+                cmbHRDirectionCh10.Text = (cmbHRModeParamCh10.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHRLockCh10.Checked = false;
+                tbxHRPWMDutyCh10.Text = "0";
+                cmbHRDirectionCh10.Text = "Off";
+            }
         }
 
         private void cmbHRQuickStartupCh11_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbHRQuickStartupCh11.Text == "Latch")
+            {
+                chkHRLockCh11.Checked = false;
+                tbxHRPWMDutyCh11.Text = "200";
+                cmbHRDirectionCh11.Text = (cmbHRModeParamCh11.Text == "Low" ? "Low" : "High");
+            }
+            else if (cmbHRQuickStartupCh11.Text == "Constant")
+            {
+                chkHRLockCh11.Checked = true;
+                tbxHRPWMDutyCh11.Text = "200";
+                cmbHRDirectionCh11.Text = (cmbHRModeParamCh11.Text == "Low" ? "Low" : "High");
+            }
+            else // off
+            {
+                chkHRLockCh11.Checked = false;
+                tbxHRPWMDutyCh11.Text = "0";
+                cmbHRDirectionCh11.Text = "Off";
+            }
         }
+
+
+
+        /*      ##        ######  
+                ##       ##    ## 
+                ##       ##       
+                ##       ##       
+                ##       ##       
+                ##       ##    ## 
+                ########  ######         @LC */
         
-        
-        
-        //##        ######  
-        //##       ##    ## 
-        //##       ##       
-        //##       ##       
-        //##       ##       
-        //##       ##    ## 
-        //########  ######  
-        //@LC 
 
         private void btnLCGenerate_Click(object sender, EventArgs e)
         {
+            // need to set by channel but get by group
             lc1Group00 = new bool[] { chkLC1MG1Ch00.Checked, chkLC1MG2Ch00.Checked, chkLC1MG3Ch00.Checked, chkLC1MG4Ch00.Checked };
             lc1Group01 = new bool[] { chkLC1MG1Ch01.Checked, chkLC1MG2Ch01.Checked, chkLC1MG3Ch01.Checked, chkLC1MG4Ch01.Checked };
             lc1Group02 = new bool[] { chkLC1MG1Ch02.Checked, chkLC1MG2Ch02.Checked, chkLC1MG3Ch02.Checked, chkLC1MG4Ch02.Checked };
@@ -2591,16 +3268,15 @@ namespace M1ConfigGenerator
 
 
 
-        // ######  ##       #### ########  ######## 
-        //##    ## ##        ##  ##     ## ##       
-        //##       ##        ##  ##     ## ##       
-        // ######  ##        ##  ##     ## ######   
-        //      ## ##        ##  ##     ## ##       
-        //##    ## ##        ##  ##     ## ##       
-        // ######  ######## #### ########  ######## 
-        //@Slide
-
+    /*       ######  ##       #### ########  ######## 
+            ##    ## ##        ##  ##     ## ##       
+            ##       ##        ##  ##     ## ##       
+             ######  ##        ##  ##     ## ######   
+                  ## ##        ##  ##     ## ##       
+            ##    ## ##        ##  ##     ## ##       
+             ######  ######## #### ########  ########      @Slide*/
         
+
 
         //@Load -----------------------------------------------------------------------Load
         private void SetSelectedIndex(ComboBox[] argComboBox, int argIndex)
@@ -2704,6 +3380,7 @@ namespace M1ConfigGenerator
             hcUndAmps = new TextBox[] { txtbHC1UndAmpCh00, txtbHC1UndAmpCh01, txtbHC1UndAmpCh02, txtbHC1UndAmpCh03, txtbHC1UndAmpCh04, txtbHC1UndAmpCh05, txtbHC1UndAmpCh06, txtbHC1UndAmpCh07, txtbHC1UndAmpCh08, txtbHC1UndAmpCh09, txtbHC1UndAmpCh10, txtbHC1UndAmpCh11 };
             hcMeasCurTimes = new ComboBox[] { cmbHC1MeasCurTimeCh00, cmbHC1MeasCurTimeCh01, cmbHC1MeasCurTimeCh02, cmbHC1MeasCurTimeCh03, cmbHC1MeasCurTimeCh04, cmbHC1MeasCurTimeCh05, cmbHC1MeasCurTimeCh06, cmbHC1MeasCurTimeCh07, cmbHC1MeasCurTimeCh08, cmbHC1MeasCurTimeCh09, cmbHC1MeasCurTimeCh10, cmbHC1MeasCurTimeCh11 };
 
+            hrChannelLabels = new Label[] { lblHRCh00, lblHRCh01, lblHRCh02, lblHRCh03, lblHRCh04, lblHRCh05, lblHRCh06, lblHRCh07, lblHRCh08, lblHRCh09, lblHRCh10, lblHRCh11 };
             hrOCAmpsQuick = new ComboBox[] { cmbHRQuickOCAmpsCh00, cmbHRQuickOCAmpsCh01, cmbHRQuickOCAmpsCh02, cmbHRQuickOCAmpsCh03, cmbHRQuickOCAmpsCh04, cmbHRQuickOCAmpsCh05, cmbHRQuickOCAmpsCh06, cmbHRQuickOCAmpsCh07, cmbHRQuickOCAmpsCh08, cmbHRQuickOCAmpsCh09, cmbHRQuickOCAmpsCh10, cmbHRQuickOCAmpsCh11 };
             hrOCAmps = new TextBox[] { tbxHROCAmpsCh00, tbxHROCAmpsCh01, tbxHROCAmpsCh02, tbxHROCAmpsCh03, tbxHROCAmpsCh04, tbxHROCAmpsCh05, tbxHROCAmpsCh06, tbxHROCAmpsCh07, tbxHROCAmpsCh08, tbxHROCAmpsCh09, tbxHROCAmpsCh10, tbxHROCAmpsCh11 };
             hrOCTime = new ComboBox[] { cmbHROCTimeCh00, cmbHROCTimeCh01, cmbHROCTimeCh02, cmbHROCTimeCh03, cmbHROCTimeCh04, cmbHROCTimeCh05, cmbHROCTimeCh06, cmbHROCTimeCh07, cmbHROCTimeCh08, cmbHROCTimeCh09, cmbHROCTimeCh10, cmbHROCTimeCh11 };
@@ -2732,74 +3409,6 @@ namespace M1ConfigGenerator
             lcMaxDurRecoveries = new TextBox[] { txtbLC1MaxDurRecoveryCh00, txtbLC1MaxDurRecoveryCh01, txtbLC1MaxDurRecoveryCh02, txtbLC1MaxDurRecoveryCh03, txtbLC1MaxDurRecoveryCh04, txtbLC1MaxDurRecoveryCh05, txtbLC1MaxDurRecoveryCh06, txtbLC1MaxDurRecoveryCh07, txtbLC1MaxDurRecoveryCh08, txtbLC1MaxDurRecoveryCh09, txtbLC1MaxDurRecoveryCh10, txtbLC1MaxDurRecoveryCh11, txtbLC1MaxDurRecoveryCh12, txtbLC1MaxDurRecoveryCh13, txtbLC1MaxDurRecoveryCh14, txtbLC1MaxDurRecoveryCh15 };
             lcUCAmps = new TextBox[] { txtbLC1UndercurrentAmpsCh00, txtbLC1UndercurrentAmpsCh01, txtbLC1UndercurrentAmpsCh02, txtbLC1UndercurrentAmpsCh03, txtbLC1UndercurrentAmpsCh04, txtbLC1UndercurrentAmpsCh05, txtbLC1UndercurrentAmpsCh06, txtbLC1UndercurrentAmpsCh07, txtbLC1UndercurrentAmpsCh08, txtbLC1UndercurrentAmpsCh09, txtbLC1UndercurrentAmpsCh10, txtbLC1UndercurrentAmpsCh11, txtbLC1UndercurrentAmpsCh12, txtbLC1UndercurrentAmpsCh13, txtbLC1UndercurrentAmpsCh14, txtbLC1UndercurrentAmpsCh15 };
             lcMeasCurTimes = new ComboBox[] { cmbLC1MeasCurTimeCh00, cmbLC1MeasCurTimeCh01, cmbLC1MeasCurTimeCh02, cmbLC1MeasCurTimeCh03, cmbLC1MeasCurTimeCh04, cmbLC1MeasCurTimeCh05, cmbLC1MeasCurTimeCh06, cmbLC1MeasCurTimeCh07, cmbLC1MeasCurTimeCh08, cmbLC1MeasCurTimeCh09, cmbLC1MeasCurTimeCh10, cmbLC1MeasCurTimeCh11, cmbLC1MeasCurTimeCh12, cmbLC1MeasCurTimeCh13, cmbLC1MeasCurTimeCh14, cmbLC1MeasCurTimeCh15 };
-
-        }
-
-        private void ckbTabVisAux1_CheckedChanged(object sender, EventArgs e)
-        {
-            if(ckbTabVisAux1.Checked == true)
-            {
-                this.tabControlAux1QF.SelectedIndex = 1;
-            } 
-            else
-            {
-                this.tabControlAux1QF.SelectedIndex = 0;
-            }
-        }
-
-        private void ckbTabVisBreaker1_CheckedChanged(object sender, EventArgs e)
-        {
-            if(ckbTabVisBreaker1.Checked == true)
-            {
-                this.tablessControl3.SelectedIndex = 1;
-            } 
-            else
-            {
-                this.tablessControl3.SelectedIndex = 0;
-            }
-        }
-
-        private void ckbTabVisDimmer1_CheckedChanged(object sender, EventArgs e)
-        {
-            if(ckbTabVisDimmer1.Checked == true)
-            {
-                this.tabControlDimmer1QF.SelectedIndex = 1;
-            } 
-            else
-            {
-                this.tabControlDimmer1QF.SelectedIndex = 0;
-            }
-        }
-
-        private void checkBox2_CheckedChanged_1(object sender, EventArgs e)
-        {
-            if(checkBox2.Checked == true)
-            {
-                this.tabControlLC1QF.SelectedIndex = 1;
-            } 
-            else
-            {
-                this.tabControlLC1QF.SelectedIndex = 0;
-            }
-        }
-
-        private void checkBox10_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox6_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabLC3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox522_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
     }

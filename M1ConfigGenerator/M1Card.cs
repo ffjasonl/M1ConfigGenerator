@@ -37,6 +37,8 @@ namespace M1ConfigGenerator
         ##        ##     ## ##     ## ##     ## ##     ## ########    ##    ######## ##     ##  ######  
         */
 
+        private bool fullSetupSelected = false;
+
         private char cardLetter = 'Z';
 
         private string configName = "DevAddrZ.h";
@@ -97,6 +99,16 @@ namespace M1ConfigGenerator
                                               "GROUP_INDEX3_CHNL_Z8 ", "GROUP_INDEX3_CHNL_Z9 ", "GROUP_INDEX3_CHNL_Z10", "GROUP_INDEX3_CHNL_Z11", "GROUP_INDEX3_CHNL_Z12", "GROUP_INDEX3_CHNL_Z13", "GROUP_INDEX3_CHNL_Z14", "GROUP_INDEX3_CHNL_Z15" };
         public string[] cardChGroup3Values = { "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP", "DISABLE_GROUP" };
 
+        public void M1_SetFullSetup(bool argBool)
+        {
+            fullSetupSelected = argBool;
+        }
+
+        public bool M1_GetFullSetup()
+        {
+            return fullSetupSelected;
+        }
+
         public void M1_ChangeConfigName()
         {
             configName = configName.Replace('Z', cardLetter);
@@ -122,7 +134,8 @@ namespace M1ConfigGenerator
 
         public void M1_SetCardLetter(string argString)
         {
-            cardLetter = argString[0];
+            string upperCase = argString.ToUpper();
+            cardLetter = upperCase[0];
         }
 
         public string M1_GetCardLetter()
@@ -356,22 +369,38 @@ namespace M1ConfigGenerator
 
         public bool M1_GetGroup0(int argInt)
         {
-            return (cardChGroup0Values[argInt] == "DISABLE_GROUP" ? false : true);
+            if (cardChGroup0Values[argInt] == "MASTER_GROUP_1")
+            { 
+                return true;
+            }
+            else { return false; }
         }
 
         public bool M1_GetGroup1(int argInt)
         {
-            return (cardChGroup1Values[argInt] == "DISABLE_GROUP" ? false : true);
+            if (cardChGroup0Values[argInt] == "MASTER_GROUP_2" || cardChGroup1Values[argInt] == "MASTER_GROUP_2")
+            {
+                return true;
+            }
+            else { return false; }
         }
 
         public bool M1_GetGroup2(int argInt)
         {
-            return (cardChGroup2Values[argInt] == "DISABLE_GROUP" ? false : true);
+            if (cardChGroup0Values[argInt] == "MASTER_GROUP_3" || cardChGroup1Values[argInt] == "MASTER_GROUP_3" || cardChGroup2Values[argInt] == "MASTER_GROUP_3")
+            {
+                return true;
+            }
+            else { return false; }
         }
 
         public bool M1_GetGroup3(int argInt)
         {
-            return (cardChGroup3Values[argInt] == "DISABLE_GROUP" ? false : true);
+            if (cardChGroup0Values[argInt] == "MASTER_GROUP_4" || cardChGroup1Values[argInt] == "MASTER_GROUP_4" || cardChGroup2Values[argInt] == "MASTER_GROUP_4" || cardChGroup3Values[argInt] == "MASTER_GROUP_4")
+            {
+                return true;
+            }
+            else { return false; }
         }
     }
 }

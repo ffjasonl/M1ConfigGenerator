@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -367,39 +368,40 @@ namespace M1ConfigGenerator
             }
         }
 
-        public bool M1_GetGroup0(int argInt)
+        private int M1_GetGroupChannelTotal(int channel)
         {
-            if (cardChGroup0Values[argInt] == "MASTER_GROUP_1")
-            { 
-                return true;
-            }
+            int grpTotal = 0;
+
+            if (cardChGroup0Values[channel] == "MASTER_GROUP_1") { grpTotal +=1; }
+            if (cardChGroup0Values[channel] == "MASTER_GROUP_2" || cardChGroup1Values[channel] == "MASTER_GROUP_2") { grpTotal += 2; }
+            if (cardChGroup0Values[channel] == "MASTER_GROUP_3" || cardChGroup1Values[channel] == "MASTER_GROUP_3" || cardChGroup2Values[channel] == "MASTER_GROUP_3") { grpTotal += 4; }
+            if (cardChGroup0Values[channel] == "MASTER_GROUP_4" || cardChGroup1Values[channel] == "MASTER_GROUP_4" || 
+                cardChGroup2Values[channel] == "MASTER_GROUP_4"  || cardChGroup3Values[channel] == "MASTER_GROUP_4") { grpTotal += 8; }
+
+            return grpTotal;
+        }
+
+        public bool M1_GetGroup0(int channel)
+        {
+            if ((M1_GetGroupChannelTotal(channel) & 1) == 1) { return true; }
             else { return false; }
         }
 
-        public bool M1_GetGroup1(int argInt)
+        public bool M1_GetGroup1(int channel)
         {
-            if (cardChGroup0Values[argInt] == "MASTER_GROUP_2" || cardChGroup1Values[argInt] == "MASTER_GROUP_2")
-            {
-                return true;
-            }
+            if (((M1_GetGroupChannelTotal(channel) >> 1) & 1) == 1) { return true; }
             else { return false; }
         }
 
-        public bool M1_GetGroup2(int argInt)
+        public bool M1_GetGroup2(int channel)
         {
-            if (cardChGroup0Values[argInt] == "MASTER_GROUP_3" || cardChGroup1Values[argInt] == "MASTER_GROUP_3" || cardChGroup2Values[argInt] == "MASTER_GROUP_3")
-            {
-                return true;
-            }
+            if (((M1_GetGroupChannelTotal(channel) >> 2) & 1) == 1) { return true; }
             else { return false; }
         }
 
-        public bool M1_GetGroup3(int argInt)
+        public bool M1_GetGroup3(int channel)
         {
-            if (cardChGroup0Values[argInt] == "MASTER_GROUP_4" || cardChGroup1Values[argInt] == "MASTER_GROUP_4" || cardChGroup2Values[argInt] == "MASTER_GROUP_4" || cardChGroup3Values[argInt] == "MASTER_GROUP_4")
-            {
-                return true;
-            }
+            if (((M1_GetGroupChannelTotal(channel) >> 3) & 1) == 1) { return true; }
             else { return false; }
         }
     }

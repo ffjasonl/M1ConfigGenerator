@@ -309,11 +309,13 @@ namespace M1ConfigGenerator
             for (int i = 0; i < cmbStartHC.SelectedIndex; i++)
             {
                 hcObjects.Add(new HCCard(i + 1));
+                hcObjects[i].M1_SetCfgRev(tbxStartHCCfgRev.Text);
             }
 
             for (int i = 0; i < cmbStartHR.SelectedIndex; i++)
             {
                 hrObjects.Add(new HCCard(i + 1));
+                hrObjects[i].M1_SetCfgRev(tbxStartHRCfgRev.Text);
             }
 
             for (int i = 0; i < cmbStartLC.SelectedIndex; i++)
@@ -321,17 +323,14 @@ namespace M1ConfigGenerator
                 lcObjects.Add(new LCCard(i + 1));
             }
 
-            //foreach (TextBox t in auxConfigType) { t.Text = tbxStartCfgType.Text; }
-
-            //foreach (TextBox t in breakerConfigType) { t.Text = tbxStartCfgType.Text; }
-
-            //foreach (TextBox t in dimConfigType) { t.Text = tbxStartCfgType.Text; }
-
+            // set Config Type here, don't need to mess with Get that adds 0x
+            //tbxAux1CfgType.Text = tbxStartCfgType.Text;
+            //tbxBreaker1CfgType.Text = tbxStartCfgType.Text;
+            //tbxDimmer1CfgType.Text = tbxStartCfgType.Text;
             tbxHC1CfgType.Text = tbxStartCfgType.Text;
-
             tbxHRCfgType.Text = tbxStartCfgType.Text;
-
-            //foreach (TextBox t in lcConfigType) { t.Text = tbxStartCfgType.Text; }
+            //tbxLC1CfgType.Text = tbxStartCfgType.Text;
+            
         }
 
         private void ResetStartTab()
@@ -386,8 +385,62 @@ namespace M1ConfigGenerator
 
         private void tbxStartCfgType_TextChanged(object sender, EventArgs e)
         {
-            if (ValidateConfigType(tbxStartCfgType.Text)) { btnStartCreate.Visible = true; }
+            CheckStartCreate();
+        }
+
+        private void cmbStartHC_TextChanged(object sender, EventArgs e)
+        {
+            CheckStartCreate();
+        }
+
+        private void tbxStartHCCfgRev_TextChanged(object sender, EventArgs e)
+        {
+            CheckStartCreate();
+        }
+
+        private void cmbStartHR_TextChanged(object sender, EventArgs e)
+        {
+            CheckStartCreate();
+        }
+
+        private void tbxStartHRCfgRev_TextChanged(object sender, EventArgs e)
+        {
+            CheckStartCreate();
+        }
+
+        private void CheckStartCreate()
+        {
+            int checkCount = 0;
+            int numCards = 0; 
+
+            // Aux
+
+            // Breaker
+
+            // Dimmer
+
+            // HC
+            if (cmbStartHC.Text != "0") { numCards++; }
+            if (ValidateConfigRev(tbxStartHCCfgRev.Text)) { checkCount++; }
+
+            // HR
+            if (cmbStartHR.Text != "0") { numCards++; }
+            if (ValidateConfigRev(tbxStartHRCfgRev.Text)) { checkCount++; }
+
+            if (ValidateConfigType(tbxStartCfgType.Text) && checkCount == numCards && numCards != 0) { btnStartCreate.Visible = true; }
             else { btnStartCreate.Visible = false; }
+        }
+
+        private bool ValidateConfigRev(string argString)
+        {
+            byte[] asciiValue = Encoding.ASCII.GetBytes(argString);
+
+            if (asciiValue[0] >= 49 && asciiValue[0] <= 58) // validates card number from 1-8
+            {
+                return true;
+            }
+            else {  return false; }
+
         }
 
         private bool ValidateConfigType(string argString)
@@ -414,15 +467,13 @@ namespace M1ConfigGenerator
         }
 
 
-        //   ###    ##     ## ##     ## 
-        //  ## ##   ##     ##  ##   ##  
-        // ##   ##  ##     ##   ## ##   
-        //##     ## ##     ##    ###    
-        //######### ##     ##   ## ##   
-        //##     ## ##     ##  ##   ##  
-        //##     ##  #######  ##     ## 
-        //@Aux
-
+        /*         ###    ##     ## ##     ## 
+                  ## ##   ##     ##  ##   ##  
+                 ##   ##  ##     ##   ## ##   
+                ##     ## ##     ##    ###    
+                ######### ##     ##   ## ##   
+                ##     ## ##     ##  ##   ##  
+                ##     ##  #######  ##     ##          @Aux*/     
 
         private void btnAuxGenerate_Click(object sender, EventArgs e)
         {
@@ -1112,6 +1163,7 @@ namespace M1ConfigGenerator
                 hcGetGroups[channel][0].Checked = hcObjects[card].M1_GetGroup0(channel);
                 hcGetGroups[channel][1].Checked = hcObjects[card].M1_GetGroup1(channel);
                 hcGetGroups[channel][2].Checked = hcObjects[card].M1_GetGroup2(channel);
+                hcGetGroups[channel][3].Checked = hcObjects[card].M1_GetGroup3(channel);
                 hcGetGroups[channel][3].Checked = hcObjects[card].M1_GetGroup3(channel);
             }
         }

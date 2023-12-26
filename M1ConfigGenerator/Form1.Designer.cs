@@ -42,6 +42,10 @@ namespace M1ConfigGenerator
             this.tabControlMain = new M1ConfigGenerator.TablessControl();
             this.tabMainBlank = new System.Windows.Forms.TabPage();
             this.tabMainStart = new System.Windows.Forms.TabPage();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.tbxStartHRCfgRev = new System.Windows.Forms.TextBox();
+            this.tbxStartHCCfgRev = new System.Windows.Forms.TextBox();
             this.cmbStartHR = new System.Windows.Forms.ComboBox();
             this.label566 = new System.Windows.Forms.Label();
             this.label564 = new System.Windows.Forms.Label();
@@ -1963,6 +1967,10 @@ namespace M1ConfigGenerator
             // tabMainStart
             // 
             this.tabMainStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabMainStart.Controls.Add(this.label21);
+            this.tabMainStart.Controls.Add(this.label20);
+            this.tabMainStart.Controls.Add(this.tbxStartHRCfgRev);
+            this.tabMainStart.Controls.Add(this.tbxStartHCCfgRev);
             this.tabMainStart.Controls.Add(this.cmbStartHR);
             this.tabMainStart.Controls.Add(this.label566);
             this.tabMainStart.Controls.Add(this.label564);
@@ -1987,6 +1995,48 @@ namespace M1ConfigGenerator
             this.tabMainStart.TabIndex = 1;
             this.tabMainStart.Text = "Start";
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.ForeColor = System.Drawing.SystemColors.Control;
+            this.label21.Location = new System.Drawing.Point(373, 38);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(56, 13);
+            this.label21.TabIndex = 54;
+            this.label21.Text = "# of Cards";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.SystemColors.Control;
+            this.label20.Location = new System.Drawing.Point(464, 38);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(60, 13);
+            this.label20.TabIndex = 53;
+            this.label20.Text = "Config Rev";
+            // 
+            // tbxStartHRCfgRev
+            // 
+            this.tbxStartHRCfgRev.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxStartHRCfgRev.Location = new System.Drawing.Point(467, 261);
+            this.tbxStartHRCfgRev.MaxLength = 4;
+            this.tbxStartHRCfgRev.Name = "tbxStartHRCfgRev";
+            this.tbxStartHRCfgRev.Size = new System.Drawing.Size(53, 29);
+            this.tbxStartHRCfgRev.TabIndex = 52;
+            this.tbxStartHRCfgRev.Text = "0";
+            this.tbxStartHRCfgRev.TextChanged += new System.EventHandler(this.tbxStartHRCfgRev_TextChanged);
+            // 
+            // tbxStartHCCfgRev
+            // 
+            this.tbxStartHCCfgRev.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxStartHCCfgRev.Location = new System.Drawing.Point(467, 211);
+            this.tbxStartHCCfgRev.MaxLength = 4;
+            this.tbxStartHCCfgRev.Name = "tbxStartHCCfgRev";
+            this.tbxStartHCCfgRev.Size = new System.Drawing.Size(53, 29);
+            this.tbxStartHCCfgRev.TabIndex = 51;
+            this.tbxStartHCCfgRev.Text = "0";
+            this.tbxStartHCCfgRev.TextChanged += new System.EventHandler(this.tbxStartHCCfgRev_TextChanged);
+            // 
             // cmbStartHR
             // 
             this.cmbStartHR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -2006,6 +2056,7 @@ namespace M1ConfigGenerator
             this.cmbStartHR.Name = "cmbStartHR";
             this.cmbStartHR.Size = new System.Drawing.Size(53, 29);
             this.cmbStartHR.TabIndex = 50;
+            this.cmbStartHR.TextChanged += new System.EventHandler(this.cmbStartHR_TextChanged);
             // 
             // label566
             // 
@@ -2123,6 +2174,7 @@ namespace M1ConfigGenerator
             this.cmbStartHC.Name = "cmbStartHC";
             this.cmbStartHC.Size = new System.Drawing.Size(53, 29);
             this.cmbStartHC.TabIndex = 14;
+            this.cmbStartHC.TextChanged += new System.EventHandler(this.cmbStartHC_TextChanged);
             // 
             // label3
             // 
@@ -13920,7 +13972,7 @@ namespace M1ConfigGenerator
             // 
             this.label108.AutoSize = true;
             this.label108.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label108.ForeColor = System.Drawing.SystemColors.Control;
+            this.label108.ForeColor = System.Drawing.Color.Red;
             this.label108.Location = new System.Drawing.Point(330, 27);
             this.label108.Name = "label108";
             this.label108.Size = new System.Drawing.Size(74, 17);
@@ -21105,7 +21157,7 @@ namespace M1ConfigGenerator
             // 
             this.label689.AutoSize = true;
             this.label689.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label689.ForeColor = System.Drawing.SystemColors.Control;
+            this.label689.ForeColor = System.Drawing.Color.Red;
             this.label689.Location = new System.Drawing.Point(330, 27);
             this.label689.Name = "label689";
             this.label689.Size = new System.Drawing.Size(74, 17);
@@ -25429,6 +25481,10 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.ComboBox cmbStartHR;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbxHRGenerated;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox tbxStartHRCfgRev;
+        private System.Windows.Forms.TextBox tbxStartHCCfgRev;
     }
 }
 

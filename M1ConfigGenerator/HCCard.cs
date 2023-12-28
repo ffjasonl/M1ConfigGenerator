@@ -136,9 +136,108 @@ namespace M1ConfigGenerator
             }
         }
 
+        public void HR_CreateFile()
+        {
+            using (StreamWriter sw = File.CreateText(@HC_GetHRConfigPath() + M1_GetConfigName()))
+            {
+                DateTime currentDateTime = DateTime.Now;
+                sw.WriteLine(commentBox);
+                sw.WriteLine(commentBox);
+                sw.WriteLine(commentBox);
+                sw.WriteLine("//");
+                sw.WriteLine("//  DEVICE ADDRESS " + M1_GetCardLetter() + " CONFIG");
+                sw.WriteLine("//");
+                sw.WriteLine("//  This file was auto-generated using the Firefly M1 Config Generator version " + M1_GetVerRev() + " on " + currentDateTime);
+                sw.WriteLine("//");
+                sw.WriteLine(commentBox);
+                sw.WriteLine(commentBox);
+                sw.WriteLine(commentBox);
+                sw.WriteLine("");
+                sw.WriteLine("");
+
+                // inherited M1 parameters              
+                for (int i = 0; i <= BASE_DRIVER_INDEX; i++)
+                {
+                    sw.WriteLine("#define " + m1ParameterNames[i] + tabs[2] + m1ParameterValues[i]);
+
+                    if (i == DEVICE_HEADER_CONFIGURATION_VERSION)
+                    {
+                        sw.WriteLine("");
+                        sw.WriteLine("// ### DC DRIVER PARAMETERS ###");
+                    }
+                    else if (i == DEV_ADDR || i == DEV_ADDR_CFG_TYPE || i == ENABLE_FORCE_CMDS || i == DSA_ADDR || i == BASE_DRIVER_INDEX)
+                    {
+                        sw.WriteLine("");
+                    }
+                    else if (i == ENABLE_DC_DIMMER_CMD)
+                    {
+                        sw.WriteLine("#define " + hcRGBName[0] + tabs[3] + hcRGBValue[0]);
+                    }
+                }
+
+                // card specific
+                for (int i = 0; i < 3; i++)
+                {
+                    if (i == 2)
+                    {
+                        sw.WriteLine("");
+                        sw.WriteLine("// ### TIMER PWM MODULE ###");
+                        sw.WriteLine("#define " + hcParameterNames[i] + tabs[4] + hcParameterValues[i]);
+                    }
+                    else
+                    {
+                        sw.WriteLine("#define " + hcParameterNames[i] + tabs[4] + hcParameterValues[i]);
+                    }
+                }
+                sw.WriteLine("");
+
+                // card channels
+                for (int i = 0; i < 12; i++)
+                {
+                    sw.WriteLine("// ### CHANNEL " + Convert.ToString(i) + " ###");
+                    sw.WriteLine("#define " + hcChLockNames[i] + tabs[7] + hcChLockValues[i]);
+                    sw.WriteLine("#define " + hcChPwmDutyNames[i] + tabs[6] + hcChPwmDutyValues[i]);
+                    sw.WriteLine("#define " + hcChPwmEnableNames[i] + tabs[6] + hcChPwmEnableValues[i]);
+                    sw.WriteLine("#define " + hcChDirectionNames[i] + tabs[6] + hcChDirectionValues[i]);
+                    sw.WriteLine("#define " + hcChModeNames[i] + tabs[7] + hcChModeValues[i]);
+                    sw.WriteLine("#define " + hcChDeadtimeNames[i] + tabs[6] + hcChDeadtimeValues[i]);
+                    sw.WriteLine("#define " + hcChPairedNames[i] + tabs[5] + hcChPairedValues[i]);
+                    sw.WriteLine("");
+                    sw.WriteLine("#define " + hcChTimeoutNames[i] + tabs[5] + hcChTimeoutValues[i]);
+                    sw.WriteLine("#define " + hcChTimeoutTimeNames[i] + tabs[5] + hcChTimeoutTimeValues[i]);
+                    sw.WriteLine("#define " + hcChMaxOnNames[i] + tabs[6] + hcChMaxOnValues[i]);
+                    sw.WriteLine("#define " + hcChMaxDurRecoveryTimeNames[i] + tabs[4] + hcChMaxDurRecoveryTimeValues[i]);
+                    sw.WriteLine("");
+                    sw.WriteLine("#define " + cardChGroup0Names[i] + tabs[5] + cardChGroup0Values[i]);
+                    sw.WriteLine("#define " + cardChGroup1Names[i] + tabs[5] + cardChGroup1Values[i]);
+                    sw.WriteLine("#define " + cardChGroup2Names[i] + tabs[5] + cardChGroup2Values[i]);
+                    sw.WriteLine("#define " + cardChGroup3Names[i] + tabs[5] + cardChGroup3Values[i]);
+                    sw.WriteLine("");
+                    sw.WriteLine("#define " + hcChOvercurrentAmpsNames[i] + tabs[5] + "HC_CONVERT_AMPS_TO_ADC(" + hcChOvercurrentAmpsValues[i] + ")");
+                    sw.WriteLine("#define " + hcChUndercurrentAmpsNames[i] + tabs[5] + "HC_CONVERT_AMPS_TO_ADC(" + hcChUndercurrentAmpsValues[i] + ")");
+                    sw.WriteLine("#define " + hcChOvercurrentTimeNames[i] + tabs[3] + hcChOvercurrentTimeValues[i]);
+                    sw.WriteLine("#define " + hcChMeasCurTimeNames[i] + tabs[3] + hcChMeasCurTimeValues[i]);
+                    sw.WriteLine("");
+                    sw.WriteLine("#define " + hcChOverrideReverseNames[i] + tabs[3] + hcChOverrideReverseValues[i]);
+                    sw.WriteLine("#define " + hcChOverrideForwardNames[i] + tabs[3] + hcChOverrideForwardValues[i]);
+                    sw.WriteLine("");
+                }
+            }
+        }
+
         public string HC_GetConfigPath()
         {
             return configPath;
+        }
+
+        public string HC_GetHRConfigPath()
+        {
+            return configPathHR;
+        }
+
+        public void HC_SetAsHR()
+        {
+            isHCRelay = true;
         }
 
         public void HC_SetRGB(bool enabled)
@@ -337,7 +436,11 @@ namespace M1ConfigGenerator
 
         // No setters for forward or reverse override at this time
 
+        private bool isHCRelay = false;
+
         private string configPath = @"M1_DcDriver_Config\Src\M1_HC_Bridge\DeviceConfigs\";
+
+        private string configPathHR = @"M1_DcDriver_Config\Src\M1_HC_Relay\DeviceConfigs\";
 
         public string[] hcRGBName = { "ENABLE_DC_DIMMER_RGB_CMD_ADDR_Z" };
 

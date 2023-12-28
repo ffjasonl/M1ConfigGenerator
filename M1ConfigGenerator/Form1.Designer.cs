@@ -40,7 +40,6 @@ namespace M1ConfigGenerator
             this.btnMenuNew = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
             this.tabControlMain = new M1ConfigGenerator.TablessControl();
-            this.tabMainBlank = new System.Windows.Forms.TabPage();
             this.tabMainStart = new System.Windows.Forms.TabPage();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -51,7 +50,6 @@ namespace M1ConfigGenerator
             this.label564 = new System.Windows.Forms.Label();
             this.label565 = new System.Windows.Forms.Label();
             this.tbxStartCfgType = new System.Windows.Forms.TextBox();
-            this.btnStartClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbStartLC = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -1742,6 +1740,7 @@ namespace M1ConfigGenerator
             this.btnHRCard4 = new System.Windows.Forms.Button();
             this.btnHRCard3 = new System.Windows.Forms.Button();
             this.btnHRCard2 = new System.Windows.Forms.Button();
+            this.tabMainBlank = new System.Windows.Forms.TabPage();
             this.panelMenu.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
@@ -1914,14 +1913,13 @@ namespace M1ConfigGenerator
             this.btnMenuNew.FlatAppearance.BorderSize = 0;
             this.btnMenuNew.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.btnMenuNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuNew.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuNew.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuNew.ForeColor = System.Drawing.SystemColors.Control;
             this.btnMenuNew.Location = new System.Drawing.Point(0, 0);
             this.btnMenuNew.Name = "btnMenuNew";
             this.btnMenuNew.Size = new System.Drawing.Size(200, 60);
             this.btnMenuNew.TabIndex = 0;
-            this.btnMenuNew.Text = "  New Project";
-            this.btnMenuNew.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenuNew.Text = "1.0.1";
             this.btnMenuNew.UseVisualStyleBackColor = false;
             this.btnMenuNew.Click += new System.EventHandler(this.btnMenuNew_Click);
             // 
@@ -1939,8 +1937,8 @@ namespace M1ConfigGenerator
             // 
             // tabControlMain
             // 
-            this.tabControlMain.Controls.Add(this.tabMainBlank);
             this.tabControlMain.Controls.Add(this.tabMainStart);
+            this.tabControlMain.Controls.Add(this.tabMainBlank);
             this.tabControlMain.Controls.Add(this.tabMainAux);
             this.tabControlMain.Controls.Add(this.tabMainBreaker);
             this.tabControlMain.Controls.Add(this.tabMainDimmer);
@@ -1954,16 +1952,6 @@ namespace M1ConfigGenerator
             this.tabControlMain.Size = new System.Drawing.Size(1388, 1021);
             this.tabControlMain.TabIndex = 1;
             // 
-            // tabMainBlank
-            // 
-            this.tabMainBlank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabMainBlank.Location = new System.Drawing.Point(4, 22);
-            this.tabMainBlank.Name = "tabMainBlank";
-            this.tabMainBlank.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMainBlank.Size = new System.Drawing.Size(1380, 995);
-            this.tabMainBlank.TabIndex = 0;
-            this.tabMainBlank.Text = "Blank";
-            // 
             // tabMainStart
             // 
             this.tabMainStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -1976,7 +1964,6 @@ namespace M1ConfigGenerator
             this.tabMainStart.Controls.Add(this.label564);
             this.tabMainStart.Controls.Add(this.label565);
             this.tabMainStart.Controls.Add(this.tbxStartCfgType);
-            this.tabMainStart.Controls.Add(this.btnStartClose);
             this.tabMainStart.Controls.Add(this.label1);
             this.tabMainStart.Controls.Add(this.cmbStartLC);
             this.tabMainStart.Controls.Add(this.label2);
@@ -2102,19 +2089,6 @@ namespace M1ConfigGenerator
             this.tbxStartCfgType.Text = "0";
             this.tbxStartCfgType.TextChanged += new System.EventHandler(this.tbxStartCfgType_TextChanged);
             // 
-            // btnStartClose
-            // 
-            this.btnStartClose.FlatAppearance.BorderSize = 0;
-            this.btnStartClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btnStartClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStartClose.Image = ((System.Drawing.Image)(resources.GetObject("btnStartClose.Image")));
-            this.btnStartClose.Location = new System.Drawing.Point(6, 6);
-            this.btnStartClose.Name = "btnStartClose";
-            this.btnStartClose.Size = new System.Drawing.Size(50, 50);
-            this.btnStartClose.TabIndex = 0;
-            this.btnStartClose.UseVisualStyleBackColor = true;
-            this.btnStartClose.Click += new System.EventHandler(this.btnStartClose_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -2143,6 +2117,7 @@ namespace M1ConfigGenerator
             this.cmbStartLC.Name = "cmbStartLC";
             this.cmbStartLC.Size = new System.Drawing.Size(53, 29);
             this.cmbStartLC.TabIndex = 15;
+            this.cmbStartLC.Visible = false;
             // 
             // label2
             // 
@@ -2204,6 +2179,7 @@ namespace M1ConfigGenerator
             this.cmbStartDimmer.Name = "cmbStartDimmer";
             this.cmbStartDimmer.Size = new System.Drawing.Size(53, 29);
             this.cmbStartDimmer.TabIndex = 13;
+            this.cmbStartDimmer.Visible = false;
             // 
             // label4
             // 
@@ -2231,6 +2207,7 @@ namespace M1ConfigGenerator
             this.cmbStartBreaker.Name = "cmbStartBreaker";
             this.cmbStartBreaker.Size = new System.Drawing.Size(53, 29);
             this.cmbStartBreaker.TabIndex = 12;
+            this.cmbStartBreaker.Visible = false;
             // 
             // label5
             // 
@@ -2256,6 +2233,7 @@ namespace M1ConfigGenerator
             this.cmbStartAux.Name = "cmbStartAux";
             this.cmbStartAux.Size = new System.Drawing.Size(53, 29);
             this.cmbStartAux.TabIndex = 11;
+            this.cmbStartAux.Visible = false;
             // 
             // btnStartCreate
             // 
@@ -11756,109 +11734,109 @@ namespace M1ConfigGenerator
             // 
             // chkHC1Lock00
             // 
-            this.chkHC1Lock00.AutoSize = true;
-            this.chkHC1Lock00.Location = new System.Drawing.Point(261, 36);
+            this.chkHC1Lock00.Location = new System.Drawing.Point(251, 31);
             this.chkHC1Lock00.Name = "chkHC1Lock00";
-            this.chkHC1Lock00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Lock00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1Lock00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock00.TabIndex = 303;
             this.chkHC1Lock00.UseVisualStyleBackColor = true;
             // 
             // chkHC1Lock01
             // 
-            this.chkHC1Lock01.AutoSize = true;
-            this.chkHC1Lock01.Location = new System.Drawing.Point(333, 36);
+            this.chkHC1Lock01.Location = new System.Drawing.Point(323, 31);
             this.chkHC1Lock01.Name = "chkHC1Lock01";
-            this.chkHC1Lock01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Lock01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1Lock01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock01.TabIndex = 304;
             this.chkHC1Lock01.UseVisualStyleBackColor = true;
             // 
             // chkHC1Lock02
             // 
-            this.chkHC1Lock02.AutoSize = true;
-            this.chkHC1Lock02.Location = new System.Drawing.Point(405, 36);
+            this.chkHC1Lock02.Location = new System.Drawing.Point(395, 31);
             this.chkHC1Lock02.Name = "chkHC1Lock02";
-            this.chkHC1Lock02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Lock02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1Lock02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock02.TabIndex = 305;
             this.chkHC1Lock02.UseVisualStyleBackColor = true;
             // 
             // chkHC1Lock03
             // 
-            this.chkHC1Lock03.AutoSize = true;
-            this.chkHC1Lock03.Location = new System.Drawing.Point(477, 36);
+            this.chkHC1Lock03.Location = new System.Drawing.Point(467, 31);
             this.chkHC1Lock03.Name = "chkHC1Lock03";
-            this.chkHC1Lock03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Lock03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1Lock03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock03.TabIndex = 306;
             this.chkHC1Lock03.UseVisualStyleBackColor = true;
             // 
             // chkHC1Lock04
             // 
-            this.chkHC1Lock04.AutoSize = true;
-            this.chkHC1Lock04.Location = new System.Drawing.Point(549, 36);
+            this.chkHC1Lock04.Location = new System.Drawing.Point(539, 31);
             this.chkHC1Lock04.Name = "chkHC1Lock04";
-            this.chkHC1Lock04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Lock04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1Lock04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock04.TabIndex = 307;
             this.chkHC1Lock04.UseVisualStyleBackColor = true;
             // 
             // chkHC1Lock05
             // 
-            this.chkHC1Lock05.AutoSize = true;
-            this.chkHC1Lock05.Location = new System.Drawing.Point(621, 36);
+            this.chkHC1Lock05.Location = new System.Drawing.Point(611, 31);
             this.chkHC1Lock05.Name = "chkHC1Lock05";
-            this.chkHC1Lock05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Lock05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1Lock05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock05.TabIndex = 308;
             this.chkHC1Lock05.UseVisualStyleBackColor = true;
             // 
             // chkHC1Lock06
             // 
-            this.chkHC1Lock06.AutoSize = true;
-            this.chkHC1Lock06.Location = new System.Drawing.Point(693, 36);
+            this.chkHC1Lock06.Location = new System.Drawing.Point(683, 31);
             this.chkHC1Lock06.Name = "chkHC1Lock06";
-            this.chkHC1Lock06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Lock06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1Lock06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock06.TabIndex = 309;
             this.chkHC1Lock06.UseVisualStyleBackColor = true;
             // 
             // chkHC1Lock07
             // 
-            this.chkHC1Lock07.AutoSize = true;
-            this.chkHC1Lock07.Location = new System.Drawing.Point(765, 36);
+            this.chkHC1Lock07.Location = new System.Drawing.Point(755, 31);
             this.chkHC1Lock07.Name = "chkHC1Lock07";
-            this.chkHC1Lock07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Lock07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1Lock07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock07.TabIndex = 310;
             this.chkHC1Lock07.UseVisualStyleBackColor = true;
             // 
             // chkHC1Lock08
             // 
-            this.chkHC1Lock08.AutoSize = true;
-            this.chkHC1Lock08.Location = new System.Drawing.Point(837, 36);
+            this.chkHC1Lock08.Location = new System.Drawing.Point(827, 31);
             this.chkHC1Lock08.Name = "chkHC1Lock08";
-            this.chkHC1Lock08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Lock08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1Lock08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock08.TabIndex = 311;
             this.chkHC1Lock08.UseVisualStyleBackColor = true;
             // 
             // chkHC1Lock09
             // 
-            this.chkHC1Lock09.AutoSize = true;
-            this.chkHC1Lock09.Location = new System.Drawing.Point(909, 36);
+            this.chkHC1Lock09.Location = new System.Drawing.Point(899, 31);
             this.chkHC1Lock09.Name = "chkHC1Lock09";
-            this.chkHC1Lock09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Lock09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1Lock09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock09.TabIndex = 312;
             this.chkHC1Lock09.UseVisualStyleBackColor = true;
             // 
             // chkHC1Lock10
             // 
-            this.chkHC1Lock10.AutoSize = true;
-            this.chkHC1Lock10.Location = new System.Drawing.Point(981, 36);
+            this.chkHC1Lock10.Location = new System.Drawing.Point(971, 31);
             this.chkHC1Lock10.Name = "chkHC1Lock10";
-            this.chkHC1Lock10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Lock10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1Lock10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock10.TabIndex = 313;
             this.chkHC1Lock10.UseVisualStyleBackColor = true;
             // 
             // chkHC1Lock11
             // 
-            this.chkHC1Lock11.AutoSize = true;
-            this.chkHC1Lock11.Location = new System.Drawing.Point(1053, 36);
+            this.chkHC1Lock11.Location = new System.Drawing.Point(1043, 31);
             this.chkHC1Lock11.Name = "chkHC1Lock11";
-            this.chkHC1Lock11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1Lock11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1Lock11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock11.TabIndex = 314;
             this.chkHC1Lock11.UseVisualStyleBackColor = true;
             // 
@@ -11903,10 +11881,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1TimeoutCh04
             // 
-            this.chkHC1TimeoutCh04.AutoSize = true;
-            this.chkHC1TimeoutCh04.Location = new System.Drawing.Point(549, 246);
+            this.chkHC1TimeoutCh04.Location = new System.Drawing.Point(539, 241);
             this.chkHC1TimeoutCh04.Name = "chkHC1TimeoutCh04";
-            this.chkHC1TimeoutCh04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1TimeoutCh04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1TimeoutCh04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh04.TabIndex = 84;
             this.chkHC1TimeoutCh04.UseVisualStyleBackColor = true;
             // 
@@ -11929,10 +11907,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1TimeoutCh03
             // 
-            this.chkHC1TimeoutCh03.AutoSize = true;
-            this.chkHC1TimeoutCh03.Location = new System.Drawing.Point(477, 246);
+            this.chkHC1TimeoutCh03.Location = new System.Drawing.Point(467, 241);
             this.chkHC1TimeoutCh03.Name = "chkHC1TimeoutCh03";
-            this.chkHC1TimeoutCh03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1TimeoutCh03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1TimeoutCh03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh03.TabIndex = 83;
             this.chkHC1TimeoutCh03.UseVisualStyleBackColor = true;
             // 
@@ -11946,10 +11924,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1TimeoutCh05
             // 
-            this.chkHC1TimeoutCh05.AutoSize = true;
-            this.chkHC1TimeoutCh05.Location = new System.Drawing.Point(621, 246);
+            this.chkHC1TimeoutCh05.Location = new System.Drawing.Point(611, 241);
             this.chkHC1TimeoutCh05.Name = "chkHC1TimeoutCh05";
-            this.chkHC1TimeoutCh05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1TimeoutCh05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1TimeoutCh05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh05.TabIndex = 85;
             this.chkHC1TimeoutCh05.UseVisualStyleBackColor = true;
             // 
@@ -11966,10 +11944,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1TimeoutCh02
             // 
-            this.chkHC1TimeoutCh02.AutoSize = true;
-            this.chkHC1TimeoutCh02.Location = new System.Drawing.Point(405, 246);
+            this.chkHC1TimeoutCh02.Location = new System.Drawing.Point(395, 241);
             this.chkHC1TimeoutCh02.Name = "chkHC1TimeoutCh02";
-            this.chkHC1TimeoutCh02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1TimeoutCh02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1TimeoutCh02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh02.TabIndex = 82;
             this.chkHC1TimeoutCh02.UseVisualStyleBackColor = true;
             // 
@@ -11983,10 +11961,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1TimeoutCh06
             // 
-            this.chkHC1TimeoutCh06.AutoSize = true;
-            this.chkHC1TimeoutCh06.Location = new System.Drawing.Point(693, 246);
+            this.chkHC1TimeoutCh06.Location = new System.Drawing.Point(683, 241);
             this.chkHC1TimeoutCh06.Name = "chkHC1TimeoutCh06";
-            this.chkHC1TimeoutCh06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1TimeoutCh06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1TimeoutCh06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh06.TabIndex = 86;
             this.chkHC1TimeoutCh06.UseVisualStyleBackColor = true;
             // 
@@ -12009,10 +11987,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1TimeoutCh01
             // 
-            this.chkHC1TimeoutCh01.AutoSize = true;
-            this.chkHC1TimeoutCh01.Location = new System.Drawing.Point(333, 246);
+            this.chkHC1TimeoutCh01.Location = new System.Drawing.Point(323, 241);
             this.chkHC1TimeoutCh01.Name = "chkHC1TimeoutCh01";
-            this.chkHC1TimeoutCh01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1TimeoutCh01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1TimeoutCh01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh01.TabIndex = 81;
             this.chkHC1TimeoutCh01.UseVisualStyleBackColor = true;
             // 
@@ -12026,10 +12004,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1TimeoutCh07
             // 
-            this.chkHC1TimeoutCh07.AutoSize = true;
-            this.chkHC1TimeoutCh07.Location = new System.Drawing.Point(765, 246);
+            this.chkHC1TimeoutCh07.Location = new System.Drawing.Point(755, 241);
             this.chkHC1TimeoutCh07.Name = "chkHC1TimeoutCh07";
-            this.chkHC1TimeoutCh07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1TimeoutCh07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1TimeoutCh07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh07.TabIndex = 87;
             this.chkHC1TimeoutCh07.UseVisualStyleBackColor = true;
             // 
@@ -12052,10 +12030,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1TimeoutCh00
             // 
-            this.chkHC1TimeoutCh00.AutoSize = true;
-            this.chkHC1TimeoutCh00.Location = new System.Drawing.Point(261, 246);
+            this.chkHC1TimeoutCh00.Location = new System.Drawing.Point(251, 241);
             this.chkHC1TimeoutCh00.Name = "chkHC1TimeoutCh00";
-            this.chkHC1TimeoutCh00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1TimeoutCh00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1TimeoutCh00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh00.TabIndex = 80;
             this.chkHC1TimeoutCh00.UseVisualStyleBackColor = true;
             // 
@@ -12069,10 +12047,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1TimeoutCh08
             // 
-            this.chkHC1TimeoutCh08.AutoSize = true;
-            this.chkHC1TimeoutCh08.Location = new System.Drawing.Point(837, 246);
+            this.chkHC1TimeoutCh08.Location = new System.Drawing.Point(827, 241);
             this.chkHC1TimeoutCh08.Name = "chkHC1TimeoutCh08";
-            this.chkHC1TimeoutCh08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1TimeoutCh08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1TimeoutCh08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh08.TabIndex = 88;
             this.chkHC1TimeoutCh08.UseVisualStyleBackColor = true;
             // 
@@ -12125,10 +12103,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1TimeoutCh09
             // 
-            this.chkHC1TimeoutCh09.AutoSize = true;
-            this.chkHC1TimeoutCh09.Location = new System.Drawing.Point(909, 246);
+            this.chkHC1TimeoutCh09.Location = new System.Drawing.Point(899, 241);
             this.chkHC1TimeoutCh09.Name = "chkHC1TimeoutCh09";
-            this.chkHC1TimeoutCh09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1TimeoutCh09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1TimeoutCh09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh09.TabIndex = 89;
             this.chkHC1TimeoutCh09.UseVisualStyleBackColor = true;
             // 
@@ -12181,10 +12159,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1TimeoutCh10
             // 
-            this.chkHC1TimeoutCh10.AutoSize = true;
-            this.chkHC1TimeoutCh10.Location = new System.Drawing.Point(981, 246);
+            this.chkHC1TimeoutCh10.Location = new System.Drawing.Point(971, 241);
             this.chkHC1TimeoutCh10.Name = "chkHC1TimeoutCh10";
-            this.chkHC1TimeoutCh10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1TimeoutCh10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1TimeoutCh10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh10.TabIndex = 90;
             this.chkHC1TimeoutCh10.UseVisualStyleBackColor = true;
             // 
@@ -12237,10 +12215,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1TimeoutCh11
             // 
-            this.chkHC1TimeoutCh11.AutoSize = true;
-            this.chkHC1TimeoutCh11.Location = new System.Drawing.Point(1053, 246);
+            this.chkHC1TimeoutCh11.Location = new System.Drawing.Point(1043, 241);
             this.chkHC1TimeoutCh11.Name = "chkHC1TimeoutCh11";
-            this.chkHC1TimeoutCh11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1TimeoutCh11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1TimeoutCh11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh11.TabIndex = 91;
             this.chkHC1TimeoutCh11.UseVisualStyleBackColor = true;
             // 
@@ -12603,10 +12581,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1PWMEnableCh00
             // 
-            this.chkHC1PWMEnableCh00.AutoSize = true;
-            this.chkHC1PWMEnableCh00.Location = new System.Drawing.Point(261, 96);
+            this.chkHC1PWMEnableCh00.Location = new System.Drawing.Point(251, 91);
             this.chkHC1PWMEnableCh00.Name = "chkHC1PWMEnableCh00";
-            this.chkHC1PWMEnableCh00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1PWMEnableCh00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1PWMEnableCh00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh00.TabIndex = 27;
             this.chkHC1PWMEnableCh00.UseVisualStyleBackColor = true;
             // 
@@ -12650,10 +12628,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1PWMEnableCh01
             // 
-            this.chkHC1PWMEnableCh01.AutoSize = true;
-            this.chkHC1PWMEnableCh01.Location = new System.Drawing.Point(333, 96);
+            this.chkHC1PWMEnableCh01.Location = new System.Drawing.Point(323, 91);
             this.chkHC1PWMEnableCh01.Name = "chkHC1PWMEnableCh01";
-            this.chkHC1PWMEnableCh01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1PWMEnableCh01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1PWMEnableCh01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh01.TabIndex = 28;
             this.chkHC1PWMEnableCh01.UseVisualStyleBackColor = true;
             // 
@@ -12697,10 +12675,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1PWMEnableCh02
             // 
-            this.chkHC1PWMEnableCh02.AutoSize = true;
-            this.chkHC1PWMEnableCh02.Location = new System.Drawing.Point(405, 96);
+            this.chkHC1PWMEnableCh02.Location = new System.Drawing.Point(395, 91);
             this.chkHC1PWMEnableCh02.Name = "chkHC1PWMEnableCh02";
-            this.chkHC1PWMEnableCh02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1PWMEnableCh02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1PWMEnableCh02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh02.TabIndex = 29;
             this.chkHC1PWMEnableCh02.UseVisualStyleBackColor = true;
             // 
@@ -12734,10 +12712,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1PWMEnableCh03
             // 
-            this.chkHC1PWMEnableCh03.AutoSize = true;
-            this.chkHC1PWMEnableCh03.Location = new System.Drawing.Point(477, 96);
+            this.chkHC1PWMEnableCh03.Location = new System.Drawing.Point(467, 91);
             this.chkHC1PWMEnableCh03.Name = "chkHC1PWMEnableCh03";
-            this.chkHC1PWMEnableCh03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1PWMEnableCh03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1PWMEnableCh03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh03.TabIndex = 30;
             this.chkHC1PWMEnableCh03.UseVisualStyleBackColor = true;
             // 
@@ -12771,10 +12749,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1PWMEnableCh04
             // 
-            this.chkHC1PWMEnableCh04.AutoSize = true;
-            this.chkHC1PWMEnableCh04.Location = new System.Drawing.Point(549, 96);
+            this.chkHC1PWMEnableCh04.Location = new System.Drawing.Point(539, 91);
             this.chkHC1PWMEnableCh04.Name = "chkHC1PWMEnableCh04";
-            this.chkHC1PWMEnableCh04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1PWMEnableCh04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1PWMEnableCh04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh04.TabIndex = 31;
             this.chkHC1PWMEnableCh04.UseVisualStyleBackColor = true;
             // 
@@ -12808,10 +12786,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1PWMEnableCh05
             // 
-            this.chkHC1PWMEnableCh05.AutoSize = true;
-            this.chkHC1PWMEnableCh05.Location = new System.Drawing.Point(621, 96);
+            this.chkHC1PWMEnableCh05.Location = new System.Drawing.Point(611, 91);
             this.chkHC1PWMEnableCh05.Name = "chkHC1PWMEnableCh05";
-            this.chkHC1PWMEnableCh05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1PWMEnableCh05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1PWMEnableCh05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh05.TabIndex = 32;
             this.chkHC1PWMEnableCh05.UseVisualStyleBackColor = true;
             // 
@@ -12845,10 +12823,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1PWMEnableCh06
             // 
-            this.chkHC1PWMEnableCh06.AutoSize = true;
-            this.chkHC1PWMEnableCh06.Location = new System.Drawing.Point(693, 96);
+            this.chkHC1PWMEnableCh06.Location = new System.Drawing.Point(683, 91);
             this.chkHC1PWMEnableCh06.Name = "chkHC1PWMEnableCh06";
-            this.chkHC1PWMEnableCh06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1PWMEnableCh06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1PWMEnableCh06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh06.TabIndex = 33;
             this.chkHC1PWMEnableCh06.UseVisualStyleBackColor = true;
             // 
@@ -12885,10 +12863,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1PWMEnableCh07
             // 
-            this.chkHC1PWMEnableCh07.AutoSize = true;
-            this.chkHC1PWMEnableCh07.Location = new System.Drawing.Point(765, 96);
+            this.chkHC1PWMEnableCh07.Location = new System.Drawing.Point(755, 91);
             this.chkHC1PWMEnableCh07.Name = "chkHC1PWMEnableCh07";
-            this.chkHC1PWMEnableCh07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1PWMEnableCh07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1PWMEnableCh07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh07.TabIndex = 34;
             this.chkHC1PWMEnableCh07.UseVisualStyleBackColor = true;
             // 
@@ -12922,10 +12900,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1PWMEnableCh08
             // 
-            this.chkHC1PWMEnableCh08.AutoSize = true;
-            this.chkHC1PWMEnableCh08.Location = new System.Drawing.Point(837, 96);
+            this.chkHC1PWMEnableCh08.Location = new System.Drawing.Point(827, 91);
             this.chkHC1PWMEnableCh08.Name = "chkHC1PWMEnableCh08";
-            this.chkHC1PWMEnableCh08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1PWMEnableCh08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1PWMEnableCh08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh08.TabIndex = 35;
             this.chkHC1PWMEnableCh08.UseVisualStyleBackColor = true;
             // 
@@ -12959,10 +12937,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1PWMEnableCh09
             // 
-            this.chkHC1PWMEnableCh09.AutoSize = true;
-            this.chkHC1PWMEnableCh09.Location = new System.Drawing.Point(909, 96);
+            this.chkHC1PWMEnableCh09.Location = new System.Drawing.Point(899, 91);
             this.chkHC1PWMEnableCh09.Name = "chkHC1PWMEnableCh09";
-            this.chkHC1PWMEnableCh09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1PWMEnableCh09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1PWMEnableCh09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh09.TabIndex = 36;
             this.chkHC1PWMEnableCh09.UseVisualStyleBackColor = true;
             // 
@@ -12996,10 +12974,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1PWMEnableCh10
             // 
-            this.chkHC1PWMEnableCh10.AutoSize = true;
-            this.chkHC1PWMEnableCh10.Location = new System.Drawing.Point(981, 96);
+            this.chkHC1PWMEnableCh10.Location = new System.Drawing.Point(971, 91);
             this.chkHC1PWMEnableCh10.Name = "chkHC1PWMEnableCh10";
-            this.chkHC1PWMEnableCh10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1PWMEnableCh10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1PWMEnableCh10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh10.TabIndex = 37;
             this.chkHC1PWMEnableCh10.UseVisualStyleBackColor = true;
             // 
@@ -13033,10 +13011,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1PWMEnableCh11
             // 
-            this.chkHC1PWMEnableCh11.AutoSize = true;
-            this.chkHC1PWMEnableCh11.Location = new System.Drawing.Point(1053, 96);
+            this.chkHC1PWMEnableCh11.Location = new System.Drawing.Point(1043, 91);
             this.chkHC1PWMEnableCh11.Name = "chkHC1PWMEnableCh11";
-            this.chkHC1PWMEnableCh11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1PWMEnableCh11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1PWMEnableCh11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh11.TabIndex = 38;
             this.chkHC1PWMEnableCh11.UseVisualStyleBackColor = true;
             // 
@@ -13985,7 +13963,6 @@ namespace M1ConfigGenerator
             this.tbxHC1CfgRev.Name = "tbxHC1CfgRev";
             this.tbxHC1CfgRev.Size = new System.Drawing.Size(32, 20);
             this.tbxHC1CfgRev.TabIndex = 3;
-            this.tbxHC1CfgRev.Text = "1";
             // 
             // lblHC1Ch02
             // 
@@ -14174,10 +14151,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG3Ch07
             // 
-            this.chkHC1MG3Ch07.AutoSize = true;
-            this.chkHC1MG3Ch07.Location = new System.Drawing.Point(765, 273);
+            this.chkHC1MG3Ch07.Location = new System.Drawing.Point(755, 268);
             this.chkHC1MG3Ch07.Name = "chkHC1MG3Ch07";
-            this.chkHC1MG3Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG3Ch07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG3Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch07.TabIndex = 63;
             this.chkHC1MG3Ch07.UseVisualStyleBackColor = true;
             // 
@@ -14200,10 +14177,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG4Ch07
             // 
-            this.chkHC1MG4Ch07.AutoSize = true;
-            this.chkHC1MG4Ch07.Location = new System.Drawing.Point(765, 303);
+            this.chkHC1MG4Ch07.Location = new System.Drawing.Point(755, 298);
             this.chkHC1MG4Ch07.Name = "chkHC1MG4Ch07";
-            this.chkHC1MG4Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG4Ch07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG4Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch07.TabIndex = 75;
             this.chkHC1MG4Ch07.UseVisualStyleBackColor = true;
             // 
@@ -14224,10 +14201,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG2Ch07
             // 
-            this.chkHC1MG2Ch07.AutoSize = true;
-            this.chkHC1MG2Ch07.Location = new System.Drawing.Point(765, 243);
+            this.chkHC1MG2Ch07.Location = new System.Drawing.Point(755, 238);
             this.chkHC1MG2Ch07.Name = "chkHC1MG2Ch07";
-            this.chkHC1MG2Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG2Ch07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG2Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch07.TabIndex = 51;
             this.chkHC1MG2Ch07.UseVisualStyleBackColor = true;
             // 
@@ -14250,10 +14227,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG1Ch08
             // 
-            this.chkHC1MG1Ch08.AutoSize = true;
-            this.chkHC1MG1Ch08.Location = new System.Drawing.Point(837, 213);
+            this.chkHC1MG1Ch08.Location = new System.Drawing.Point(827, 208);
             this.chkHC1MG1Ch08.Name = "chkHC1MG1Ch08";
-            this.chkHC1MG1Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG1Ch08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG1Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch08.TabIndex = 40;
             this.chkHC1MG1Ch08.UseVisualStyleBackColor = true;
             // 
@@ -14274,10 +14251,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG1Ch07
             // 
-            this.chkHC1MG1Ch07.AutoSize = true;
-            this.chkHC1MG1Ch07.Location = new System.Drawing.Point(765, 213);
+            this.chkHC1MG1Ch07.Location = new System.Drawing.Point(755, 208);
             this.chkHC1MG1Ch07.Name = "chkHC1MG1Ch07";
-            this.chkHC1MG1Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG1Ch07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG1Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch07.TabIndex = 39;
             this.chkHC1MG1Ch07.UseVisualStyleBackColor = true;
             // 
@@ -14300,10 +14277,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG2Ch08
             // 
-            this.chkHC1MG2Ch08.AutoSize = true;
-            this.chkHC1MG2Ch08.Location = new System.Drawing.Point(837, 243);
+            this.chkHC1MG2Ch08.Location = new System.Drawing.Point(827, 238);
             this.chkHC1MG2Ch08.Name = "chkHC1MG2Ch08";
-            this.chkHC1MG2Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG2Ch08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG2Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch08.TabIndex = 52;
             this.chkHC1MG2Ch08.UseVisualStyleBackColor = true;
             // 
@@ -14324,10 +14301,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG4Ch06
             // 
-            this.chkHC1MG4Ch06.AutoSize = true;
-            this.chkHC1MG4Ch06.Location = new System.Drawing.Point(693, 303);
+            this.chkHC1MG4Ch06.Location = new System.Drawing.Point(683, 298);
             this.chkHC1MG4Ch06.Name = "chkHC1MG4Ch06";
-            this.chkHC1MG4Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG4Ch06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG4Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch06.TabIndex = 74;
             this.chkHC1MG4Ch06.UseVisualStyleBackColor = true;
             // 
@@ -14350,10 +14327,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG3Ch08
             // 
-            this.chkHC1MG3Ch08.AutoSize = true;
-            this.chkHC1MG3Ch08.Location = new System.Drawing.Point(837, 273);
+            this.chkHC1MG3Ch08.Location = new System.Drawing.Point(827, 268);
             this.chkHC1MG3Ch08.Name = "chkHC1MG3Ch08";
-            this.chkHC1MG3Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG3Ch08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG3Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch08.TabIndex = 64;
             this.chkHC1MG3Ch08.UseVisualStyleBackColor = true;
             // 
@@ -14374,10 +14351,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG3Ch06
             // 
-            this.chkHC1MG3Ch06.AutoSize = true;
-            this.chkHC1MG3Ch06.Location = new System.Drawing.Point(693, 273);
+            this.chkHC1MG3Ch06.Location = new System.Drawing.Point(683, 268);
             this.chkHC1MG3Ch06.Name = "chkHC1MG3Ch06";
-            this.chkHC1MG3Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG3Ch06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG3Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch06.TabIndex = 62;
             this.chkHC1MG3Ch06.UseVisualStyleBackColor = true;
             // 
@@ -14400,10 +14377,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG4Ch08
             // 
-            this.chkHC1MG4Ch08.AutoSize = true;
-            this.chkHC1MG4Ch08.Location = new System.Drawing.Point(837, 303);
+            this.chkHC1MG4Ch08.Location = new System.Drawing.Point(827, 298);
             this.chkHC1MG4Ch08.Name = "chkHC1MG4Ch08";
-            this.chkHC1MG4Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG4Ch08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG4Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch08.TabIndex = 76;
             this.chkHC1MG4Ch08.UseVisualStyleBackColor = true;
             // 
@@ -14424,10 +14401,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG2Ch06
             // 
-            this.chkHC1MG2Ch06.AutoSize = true;
-            this.chkHC1MG2Ch06.Location = new System.Drawing.Point(693, 243);
+            this.chkHC1MG2Ch06.Location = new System.Drawing.Point(683, 238);
             this.chkHC1MG2Ch06.Name = "chkHC1MG2Ch06";
-            this.chkHC1MG2Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG2Ch06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG2Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch06.TabIndex = 50;
             this.chkHC1MG2Ch06.UseVisualStyleBackColor = true;
             // 
@@ -14450,10 +14427,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG1Ch09
             // 
-            this.chkHC1MG1Ch09.AutoSize = true;
-            this.chkHC1MG1Ch09.Location = new System.Drawing.Point(909, 213);
+            this.chkHC1MG1Ch09.Location = new System.Drawing.Point(899, 208);
             this.chkHC1MG1Ch09.Name = "chkHC1MG1Ch09";
-            this.chkHC1MG1Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG1Ch09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG1Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch09.TabIndex = 41;
             this.chkHC1MG1Ch09.UseVisualStyleBackColor = true;
             // 
@@ -14474,10 +14451,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG1Ch06
             // 
-            this.chkHC1MG1Ch06.AutoSize = true;
-            this.chkHC1MG1Ch06.Location = new System.Drawing.Point(693, 213);
+            this.chkHC1MG1Ch06.Location = new System.Drawing.Point(683, 208);
             this.chkHC1MG1Ch06.Name = "chkHC1MG1Ch06";
-            this.chkHC1MG1Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG1Ch06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG1Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch06.TabIndex = 38;
             this.chkHC1MG1Ch06.UseVisualStyleBackColor = true;
             // 
@@ -14500,10 +14477,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG2Ch09
             // 
-            this.chkHC1MG2Ch09.AutoSize = true;
-            this.chkHC1MG2Ch09.Location = new System.Drawing.Point(909, 243);
+            this.chkHC1MG2Ch09.Location = new System.Drawing.Point(899, 238);
             this.chkHC1MG2Ch09.Name = "chkHC1MG2Ch09";
-            this.chkHC1MG2Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG2Ch09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG2Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch09.TabIndex = 53;
             this.chkHC1MG2Ch09.UseVisualStyleBackColor = true;
             // 
@@ -14524,10 +14501,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG4Ch05
             // 
-            this.chkHC1MG4Ch05.AutoSize = true;
-            this.chkHC1MG4Ch05.Location = new System.Drawing.Point(621, 303);
+            this.chkHC1MG4Ch05.Location = new System.Drawing.Point(611, 298);
             this.chkHC1MG4Ch05.Name = "chkHC1MG4Ch05";
-            this.chkHC1MG4Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG4Ch05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG4Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch05.TabIndex = 73;
             this.chkHC1MG4Ch05.UseVisualStyleBackColor = true;
             // 
@@ -14550,10 +14527,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG3Ch09
             // 
-            this.chkHC1MG3Ch09.AutoSize = true;
-            this.chkHC1MG3Ch09.Location = new System.Drawing.Point(909, 273);
+            this.chkHC1MG3Ch09.Location = new System.Drawing.Point(899, 268);
             this.chkHC1MG3Ch09.Name = "chkHC1MG3Ch09";
-            this.chkHC1MG3Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG3Ch09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG3Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch09.TabIndex = 65;
             this.chkHC1MG3Ch09.UseVisualStyleBackColor = true;
             // 
@@ -14574,10 +14551,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG3Ch05
             // 
-            this.chkHC1MG3Ch05.AutoSize = true;
-            this.chkHC1MG3Ch05.Location = new System.Drawing.Point(621, 273);
+            this.chkHC1MG3Ch05.Location = new System.Drawing.Point(611, 268);
             this.chkHC1MG3Ch05.Name = "chkHC1MG3Ch05";
-            this.chkHC1MG3Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG3Ch05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG3Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch05.TabIndex = 61;
             this.chkHC1MG3Ch05.UseVisualStyleBackColor = true;
             // 
@@ -14600,10 +14577,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG4Ch09
             // 
-            this.chkHC1MG4Ch09.AutoSize = true;
-            this.chkHC1MG4Ch09.Location = new System.Drawing.Point(909, 303);
+            this.chkHC1MG4Ch09.Location = new System.Drawing.Point(899, 298);
             this.chkHC1MG4Ch09.Name = "chkHC1MG4Ch09";
-            this.chkHC1MG4Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG4Ch09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG4Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch09.TabIndex = 77;
             this.chkHC1MG4Ch09.UseVisualStyleBackColor = true;
             // 
@@ -14624,10 +14601,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG2Ch05
             // 
-            this.chkHC1MG2Ch05.AutoSize = true;
-            this.chkHC1MG2Ch05.Location = new System.Drawing.Point(621, 243);
+            this.chkHC1MG2Ch05.Location = new System.Drawing.Point(611, 238);
             this.chkHC1MG2Ch05.Name = "chkHC1MG2Ch05";
-            this.chkHC1MG2Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG2Ch05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG2Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch05.TabIndex = 49;
             this.chkHC1MG2Ch05.UseVisualStyleBackColor = true;
             // 
@@ -14650,10 +14627,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG1Ch10
             // 
-            this.chkHC1MG1Ch10.AutoSize = true;
-            this.chkHC1MG1Ch10.Location = new System.Drawing.Point(981, 213);
+            this.chkHC1MG1Ch10.Location = new System.Drawing.Point(971, 208);
             this.chkHC1MG1Ch10.Name = "chkHC1MG1Ch10";
-            this.chkHC1MG1Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG1Ch10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG1Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch10.TabIndex = 42;
             this.chkHC1MG1Ch10.UseVisualStyleBackColor = true;
             // 
@@ -14674,46 +14651,48 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG1Ch05
             // 
-            this.chkHC1MG1Ch05.AutoSize = true;
-            this.chkHC1MG1Ch05.Location = new System.Drawing.Point(621, 213);
+            this.chkHC1MG1Ch05.Location = new System.Drawing.Point(611, 208);
             this.chkHC1MG1Ch05.Name = "chkHC1MG1Ch05";
-            this.chkHC1MG1Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG1Ch05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG1Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch05.TabIndex = 37;
             this.chkHC1MG1Ch05.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG1Ch00
             // 
-            this.chkHC1MG1Ch00.AutoSize = true;
-            this.chkHC1MG1Ch00.Location = new System.Drawing.Point(261, 213);
+            this.chkHC1MG1Ch00.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.chkHC1MG1Ch00.Location = new System.Drawing.Point(251, 208);
+            this.chkHC1MG1Ch00.Margin = new System.Windows.Forms.Padding(0);
             this.chkHC1MG1Ch00.Name = "chkHC1MG1Ch00";
-            this.chkHC1MG1Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG1Ch00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG1Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch00.TabIndex = 32;
-            this.chkHC1MG1Ch00.UseVisualStyleBackColor = true;
+            this.chkHC1MG1Ch00.UseVisualStyleBackColor = false;
             // 
             // chkHC1MG2Ch10
             // 
-            this.chkHC1MG2Ch10.AutoSize = true;
-            this.chkHC1MG2Ch10.Location = new System.Drawing.Point(981, 243);
+            this.chkHC1MG2Ch10.Location = new System.Drawing.Point(971, 238);
             this.chkHC1MG2Ch10.Name = "chkHC1MG2Ch10";
-            this.chkHC1MG2Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG2Ch10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG2Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch10.TabIndex = 54;
             this.chkHC1MG2Ch10.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG2Ch00
             // 
-            this.chkHC1MG2Ch00.AutoSize = true;
-            this.chkHC1MG2Ch00.Location = new System.Drawing.Point(261, 243);
+            this.chkHC1MG2Ch00.Location = new System.Drawing.Point(251, 238);
             this.chkHC1MG2Ch00.Name = "chkHC1MG2Ch00";
-            this.chkHC1MG2Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG2Ch00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG2Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch00.TabIndex = 44;
             this.chkHC1MG2Ch00.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG4Ch04
             // 
-            this.chkHC1MG4Ch04.AutoSize = true;
-            this.chkHC1MG4Ch04.Location = new System.Drawing.Point(549, 303);
+            this.chkHC1MG4Ch04.Location = new System.Drawing.Point(539, 298);
             this.chkHC1MG4Ch04.Name = "chkHC1MG4Ch04";
-            this.chkHC1MG4Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG4Ch04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG4Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch04.TabIndex = 72;
             this.chkHC1MG4Ch04.UseVisualStyleBackColor = true;
             // 
@@ -14733,28 +14712,28 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG3Ch10
             // 
-            this.chkHC1MG3Ch10.AutoSize = true;
-            this.chkHC1MG3Ch10.Location = new System.Drawing.Point(981, 273);
+            this.chkHC1MG3Ch10.Location = new System.Drawing.Point(971, 268);
             this.chkHC1MG3Ch10.Name = "chkHC1MG3Ch10";
-            this.chkHC1MG3Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG3Ch10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG3Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch10.TabIndex = 66;
             this.chkHC1MG3Ch10.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG3Ch00
             // 
-            this.chkHC1MG3Ch00.AutoSize = true;
-            this.chkHC1MG3Ch00.Location = new System.Drawing.Point(261, 273);
+            this.chkHC1MG3Ch00.Location = new System.Drawing.Point(251, 268);
             this.chkHC1MG3Ch00.Name = "chkHC1MG3Ch00";
-            this.chkHC1MG3Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG3Ch00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG3Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch00.TabIndex = 56;
             this.chkHC1MG3Ch00.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG3Ch04
             // 
-            this.chkHC1MG3Ch04.AutoSize = true;
-            this.chkHC1MG3Ch04.Location = new System.Drawing.Point(549, 273);
+            this.chkHC1MG3Ch04.Location = new System.Drawing.Point(539, 268);
             this.chkHC1MG3Ch04.Name = "chkHC1MG3Ch04";
-            this.chkHC1MG3Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG3Ch04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG3Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch04.TabIndex = 60;
             this.chkHC1MG3Ch04.UseVisualStyleBackColor = true;
             // 
@@ -14787,28 +14766,28 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG4Ch10
             // 
-            this.chkHC1MG4Ch10.AutoSize = true;
-            this.chkHC1MG4Ch10.Location = new System.Drawing.Point(981, 303);
+            this.chkHC1MG4Ch10.Location = new System.Drawing.Point(971, 298);
             this.chkHC1MG4Ch10.Name = "chkHC1MG4Ch10";
-            this.chkHC1MG4Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG4Ch10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG4Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch10.TabIndex = 78;
             this.chkHC1MG4Ch10.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG4Ch00
             // 
-            this.chkHC1MG4Ch00.AutoSize = true;
-            this.chkHC1MG4Ch00.Location = new System.Drawing.Point(261, 303);
+            this.chkHC1MG4Ch00.Location = new System.Drawing.Point(251, 298);
             this.chkHC1MG4Ch00.Name = "chkHC1MG4Ch00";
-            this.chkHC1MG4Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG4Ch00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG4Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch00.TabIndex = 68;
             this.chkHC1MG4Ch00.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG2Ch04
             // 
-            this.chkHC1MG2Ch04.AutoSize = true;
-            this.chkHC1MG2Ch04.Location = new System.Drawing.Point(549, 243);
+            this.chkHC1MG2Ch04.Location = new System.Drawing.Point(539, 238);
             this.chkHC1MG2Ch04.Name = "chkHC1MG2Ch04";
-            this.chkHC1MG2Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG2Ch04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG2Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch04.TabIndex = 48;
             this.chkHC1MG2Ch04.UseVisualStyleBackColor = true;
             // 
@@ -14841,37 +14820,37 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG1Ch11
             // 
-            this.chkHC1MG1Ch11.AutoSize = true;
-            this.chkHC1MG1Ch11.Location = new System.Drawing.Point(1053, 213);
+            this.chkHC1MG1Ch11.Location = new System.Drawing.Point(1043, 208);
             this.chkHC1MG1Ch11.Name = "chkHC1MG1Ch11";
-            this.chkHC1MG1Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG1Ch11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG1Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch11.TabIndex = 43;
             this.chkHC1MG1Ch11.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG1Ch01
             // 
-            this.chkHC1MG1Ch01.AutoSize = true;
-            this.chkHC1MG1Ch01.Location = new System.Drawing.Point(333, 213);
+            this.chkHC1MG1Ch01.Location = new System.Drawing.Point(323, 208);
             this.chkHC1MG1Ch01.Name = "chkHC1MG1Ch01";
-            this.chkHC1MG1Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG1Ch01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG1Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch01.TabIndex = 33;
             this.chkHC1MG1Ch01.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG1Ch04
             // 
-            this.chkHC1MG1Ch04.AutoSize = true;
-            this.chkHC1MG1Ch04.Location = new System.Drawing.Point(549, 213);
+            this.chkHC1MG1Ch04.Location = new System.Drawing.Point(539, 208);
             this.chkHC1MG1Ch04.Name = "chkHC1MG1Ch04";
-            this.chkHC1MG1Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG1Ch04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG1Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch04.TabIndex = 36;
             this.chkHC1MG1Ch04.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG2Ch11
             // 
-            this.chkHC1MG2Ch11.AutoSize = true;
-            this.chkHC1MG2Ch11.Location = new System.Drawing.Point(1053, 243);
+            this.chkHC1MG2Ch11.Location = new System.Drawing.Point(1043, 238);
             this.chkHC1MG2Ch11.Name = "chkHC1MG2Ch11";
-            this.chkHC1MG2Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG2Ch11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG2Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch11.TabIndex = 55;
             this.chkHC1MG2Ch11.UseVisualStyleBackColor = true;
             // 
@@ -14904,28 +14883,28 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG4Ch03
             // 
-            this.chkHC1MG4Ch03.AutoSize = true;
-            this.chkHC1MG4Ch03.Location = new System.Drawing.Point(477, 303);
+            this.chkHC1MG4Ch03.Location = new System.Drawing.Point(467, 298);
             this.chkHC1MG4Ch03.Name = "chkHC1MG4Ch03";
-            this.chkHC1MG4Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG4Ch03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG4Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch03.TabIndex = 71;
             this.chkHC1MG4Ch03.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG2Ch01
             // 
-            this.chkHC1MG2Ch01.AutoSize = true;
-            this.chkHC1MG2Ch01.Location = new System.Drawing.Point(333, 243);
+            this.chkHC1MG2Ch01.Location = new System.Drawing.Point(323, 238);
             this.chkHC1MG2Ch01.Name = "chkHC1MG2Ch01";
-            this.chkHC1MG2Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG2Ch01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG2Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch01.TabIndex = 45;
             this.chkHC1MG2Ch01.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG3Ch11
             // 
-            this.chkHC1MG3Ch11.AutoSize = true;
-            this.chkHC1MG3Ch11.Location = new System.Drawing.Point(1053, 273);
+            this.chkHC1MG3Ch11.Location = new System.Drawing.Point(1043, 268);
             this.chkHC1MG3Ch11.Name = "chkHC1MG3Ch11";
-            this.chkHC1MG3Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG3Ch11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG3Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch11.TabIndex = 67;
             this.chkHC1MG3Ch11.UseVisualStyleBackColor = true;
             // 
@@ -14958,28 +14937,28 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG3Ch03
             // 
-            this.chkHC1MG3Ch03.AutoSize = true;
-            this.chkHC1MG3Ch03.Location = new System.Drawing.Point(477, 273);
+            this.chkHC1MG3Ch03.Location = new System.Drawing.Point(467, 268);
             this.chkHC1MG3Ch03.Name = "chkHC1MG3Ch03";
-            this.chkHC1MG3Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG3Ch03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG3Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch03.TabIndex = 59;
             this.chkHC1MG3Ch03.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG3Ch01
             // 
-            this.chkHC1MG3Ch01.AutoSize = true;
-            this.chkHC1MG3Ch01.Location = new System.Drawing.Point(333, 273);
+            this.chkHC1MG3Ch01.Location = new System.Drawing.Point(323, 268);
             this.chkHC1MG3Ch01.Name = "chkHC1MG3Ch01";
-            this.chkHC1MG3Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG3Ch01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG3Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch01.TabIndex = 57;
             this.chkHC1MG3Ch01.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG4Ch11
             // 
-            this.chkHC1MG4Ch11.AutoSize = true;
-            this.chkHC1MG4Ch11.Location = new System.Drawing.Point(1053, 303);
+            this.chkHC1MG4Ch11.Location = new System.Drawing.Point(1043, 298);
             this.chkHC1MG4Ch11.Name = "chkHC1MG4Ch11";
-            this.chkHC1MG4Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG4Ch11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG4Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch11.TabIndex = 79;
             this.chkHC1MG4Ch11.UseVisualStyleBackColor = true;
             // 
@@ -15012,19 +14991,19 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG2Ch03
             // 
-            this.chkHC1MG2Ch03.AutoSize = true;
-            this.chkHC1MG2Ch03.Location = new System.Drawing.Point(477, 243);
+            this.chkHC1MG2Ch03.Location = new System.Drawing.Point(467, 238);
             this.chkHC1MG2Ch03.Name = "chkHC1MG2Ch03";
-            this.chkHC1MG2Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG2Ch03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG2Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch03.TabIndex = 47;
             this.chkHC1MG2Ch03.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG4Ch01
             // 
-            this.chkHC1MG4Ch01.AutoSize = true;
-            this.chkHC1MG4Ch01.Location = new System.Drawing.Point(333, 303);
+            this.chkHC1MG4Ch01.Location = new System.Drawing.Point(323, 298);
             this.chkHC1MG4Ch01.Name = "chkHC1MG4Ch01";
-            this.chkHC1MG4Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG4Ch01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG4Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch01.TabIndex = 69;
             this.chkHC1MG4Ch01.UseVisualStyleBackColor = true;
             // 
@@ -15084,19 +15063,19 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG1Ch03
             // 
-            this.chkHC1MG1Ch03.AutoSize = true;
-            this.chkHC1MG1Ch03.Location = new System.Drawing.Point(477, 213);
+            this.chkHC1MG1Ch03.Location = new System.Drawing.Point(467, 208);
             this.chkHC1MG1Ch03.Name = "chkHC1MG1Ch03";
-            this.chkHC1MG1Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG1Ch03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG1Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch03.TabIndex = 35;
             this.chkHC1MG1Ch03.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG1Ch02
             // 
-            this.chkHC1MG1Ch02.AutoSize = true;
-            this.chkHC1MG1Ch02.Location = new System.Drawing.Point(405, 213);
+            this.chkHC1MG1Ch02.Location = new System.Drawing.Point(395, 208);
             this.chkHC1MG1Ch02.Name = "chkHC1MG1Ch02";
-            this.chkHC1MG1Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG1Ch02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG1Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch02.TabIndex = 34;
             this.chkHC1MG1Ch02.UseVisualStyleBackColor = true;
             // 
@@ -15156,19 +15135,19 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG4Ch02
             // 
-            this.chkHC1MG4Ch02.AutoSize = true;
-            this.chkHC1MG4Ch02.Location = new System.Drawing.Point(405, 303);
+            this.chkHC1MG4Ch02.Location = new System.Drawing.Point(395, 298);
             this.chkHC1MG4Ch02.Name = "chkHC1MG4Ch02";
-            this.chkHC1MG4Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG4Ch02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG4Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch02.TabIndex = 70;
             this.chkHC1MG4Ch02.UseVisualStyleBackColor = true;
             // 
             // chkHC1MG2Ch02
             // 
-            this.chkHC1MG2Ch02.AutoSize = true;
-            this.chkHC1MG2Ch02.Location = new System.Drawing.Point(405, 243);
+            this.chkHC1MG2Ch02.Location = new System.Drawing.Point(395, 238);
             this.chkHC1MG2Ch02.Name = "chkHC1MG2Ch02";
-            this.chkHC1MG2Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG2Ch02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG2Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch02.TabIndex = 46;
             this.chkHC1MG2Ch02.UseVisualStyleBackColor = true;
             // 
@@ -15228,10 +15207,10 @@ namespace M1ConfigGenerator
             // 
             // chkHC1MG3Ch02
             // 
-            this.chkHC1MG3Ch02.AutoSize = true;
-            this.chkHC1MG3Ch02.Location = new System.Drawing.Point(405, 273);
+            this.chkHC1MG3Ch02.Location = new System.Drawing.Point(395, 268);
             this.chkHC1MG3Ch02.Name = "chkHC1MG3Ch02";
-            this.chkHC1MG3Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHC1MG3Ch02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHC1MG3Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch02.TabIndex = 58;
             this.chkHC1MG3Ch02.UseVisualStyleBackColor = true;
             // 
@@ -19851,433 +19830,433 @@ namespace M1ConfigGenerator
             // 
             // chkHRMG3Ch07
             // 
-            this.chkHRMG3Ch07.AutoSize = true;
-            this.chkHRMG3Ch07.Location = new System.Drawing.Point(765, 273);
+            this.chkHRMG3Ch07.Location = new System.Drawing.Point(755, 268);
             this.chkHRMG3Ch07.Name = "chkHRMG3Ch07";
-            this.chkHRMG3Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG3Ch07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG3Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch07.TabIndex = 382;
             this.chkHRMG3Ch07.UseVisualStyleBackColor = true;
             // 
             // chkHRMG4Ch07
             // 
-            this.chkHRMG4Ch07.AutoSize = true;
-            this.chkHRMG4Ch07.Location = new System.Drawing.Point(765, 303);
+            this.chkHRMG4Ch07.Location = new System.Drawing.Point(755, 298);
             this.chkHRMG4Ch07.Name = "chkHRMG4Ch07";
-            this.chkHRMG4Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG4Ch07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG4Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch07.TabIndex = 394;
             this.chkHRMG4Ch07.UseVisualStyleBackColor = true;
             // 
             // chkHRMG2Ch07
             // 
-            this.chkHRMG2Ch07.AutoSize = true;
-            this.chkHRMG2Ch07.Location = new System.Drawing.Point(765, 243);
+            this.chkHRMG2Ch07.Location = new System.Drawing.Point(755, 238);
             this.chkHRMG2Ch07.Name = "chkHRMG2Ch07";
-            this.chkHRMG2Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG2Ch07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG2Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch07.TabIndex = 370;
             this.chkHRMG2Ch07.UseVisualStyleBackColor = true;
             // 
             // chkHRMG1Ch08
             // 
-            this.chkHRMG1Ch08.AutoSize = true;
-            this.chkHRMG1Ch08.Location = new System.Drawing.Point(837, 213);
+            this.chkHRMG1Ch08.Location = new System.Drawing.Point(827, 208);
             this.chkHRMG1Ch08.Name = "chkHRMG1Ch08";
-            this.chkHRMG1Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG1Ch08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG1Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch08.TabIndex = 359;
             this.chkHRMG1Ch08.UseVisualStyleBackColor = true;
             // 
             // chkHRMG1Ch07
             // 
-            this.chkHRMG1Ch07.AutoSize = true;
-            this.chkHRMG1Ch07.Location = new System.Drawing.Point(765, 213);
+            this.chkHRMG1Ch07.Location = new System.Drawing.Point(755, 208);
             this.chkHRMG1Ch07.Name = "chkHRMG1Ch07";
-            this.chkHRMG1Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG1Ch07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG1Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch07.TabIndex = 358;
             this.chkHRMG1Ch07.UseVisualStyleBackColor = true;
             // 
             // chkHRMG2Ch08
             // 
-            this.chkHRMG2Ch08.AutoSize = true;
-            this.chkHRMG2Ch08.Location = new System.Drawing.Point(837, 243);
+            this.chkHRMG2Ch08.Location = new System.Drawing.Point(827, 238);
             this.chkHRMG2Ch08.Name = "chkHRMG2Ch08";
-            this.chkHRMG2Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG2Ch08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG2Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch08.TabIndex = 371;
             this.chkHRMG2Ch08.UseVisualStyleBackColor = true;
             // 
             // chkHRMG4Ch06
             // 
-            this.chkHRMG4Ch06.AutoSize = true;
-            this.chkHRMG4Ch06.Location = new System.Drawing.Point(693, 303);
+            this.chkHRMG4Ch06.Location = new System.Drawing.Point(683, 298);
             this.chkHRMG4Ch06.Name = "chkHRMG4Ch06";
-            this.chkHRMG4Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG4Ch06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG4Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch06.TabIndex = 393;
             this.chkHRMG4Ch06.UseVisualStyleBackColor = true;
             // 
             // chkHRMG3Ch08
             // 
-            this.chkHRMG3Ch08.AutoSize = true;
-            this.chkHRMG3Ch08.Location = new System.Drawing.Point(837, 273);
+            this.chkHRMG3Ch08.Location = new System.Drawing.Point(827, 268);
             this.chkHRMG3Ch08.Name = "chkHRMG3Ch08";
-            this.chkHRMG3Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG3Ch08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG3Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch08.TabIndex = 383;
             this.chkHRMG3Ch08.UseVisualStyleBackColor = true;
             // 
             // chkHRMG3Ch06
             // 
-            this.chkHRMG3Ch06.AutoSize = true;
-            this.chkHRMG3Ch06.Location = new System.Drawing.Point(693, 273);
+            this.chkHRMG3Ch06.Location = new System.Drawing.Point(683, 268);
             this.chkHRMG3Ch06.Name = "chkHRMG3Ch06";
-            this.chkHRMG3Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG3Ch06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG3Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch06.TabIndex = 381;
             this.chkHRMG3Ch06.UseVisualStyleBackColor = true;
             // 
             // chkHRMG4Ch08
             // 
-            this.chkHRMG4Ch08.AutoSize = true;
-            this.chkHRMG4Ch08.Location = new System.Drawing.Point(837, 303);
+            this.chkHRMG4Ch08.Location = new System.Drawing.Point(827, 298);
             this.chkHRMG4Ch08.Name = "chkHRMG4Ch08";
-            this.chkHRMG4Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG4Ch08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG4Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch08.TabIndex = 395;
             this.chkHRMG4Ch08.UseVisualStyleBackColor = true;
             // 
             // chkHRMG2Ch06
             // 
-            this.chkHRMG2Ch06.AutoSize = true;
-            this.chkHRMG2Ch06.Location = new System.Drawing.Point(693, 243);
+            this.chkHRMG2Ch06.Location = new System.Drawing.Point(683, 238);
             this.chkHRMG2Ch06.Name = "chkHRMG2Ch06";
-            this.chkHRMG2Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG2Ch06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG2Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch06.TabIndex = 369;
             this.chkHRMG2Ch06.UseVisualStyleBackColor = true;
             // 
             // chkHRMG1Ch09
             // 
-            this.chkHRMG1Ch09.AutoSize = true;
-            this.chkHRMG1Ch09.Location = new System.Drawing.Point(909, 213);
+            this.chkHRMG1Ch09.Location = new System.Drawing.Point(899, 208);
             this.chkHRMG1Ch09.Name = "chkHRMG1Ch09";
-            this.chkHRMG1Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG1Ch09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG1Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch09.TabIndex = 360;
             this.chkHRMG1Ch09.UseVisualStyleBackColor = true;
             // 
             // chkHRMG1Ch06
             // 
-            this.chkHRMG1Ch06.AutoSize = true;
-            this.chkHRMG1Ch06.Location = new System.Drawing.Point(693, 213);
+            this.chkHRMG1Ch06.Location = new System.Drawing.Point(683, 208);
             this.chkHRMG1Ch06.Name = "chkHRMG1Ch06";
-            this.chkHRMG1Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG1Ch06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG1Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch06.TabIndex = 357;
             this.chkHRMG1Ch06.UseVisualStyleBackColor = true;
             // 
             // chkHRMG2Ch09
             // 
-            this.chkHRMG2Ch09.AutoSize = true;
-            this.chkHRMG2Ch09.Location = new System.Drawing.Point(909, 243);
+            this.chkHRMG2Ch09.Location = new System.Drawing.Point(899, 238);
             this.chkHRMG2Ch09.Name = "chkHRMG2Ch09";
-            this.chkHRMG2Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG2Ch09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG2Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch09.TabIndex = 372;
             this.chkHRMG2Ch09.UseVisualStyleBackColor = true;
             // 
             // chkHRMG4Ch05
             // 
-            this.chkHRMG4Ch05.AutoSize = true;
-            this.chkHRMG4Ch05.Location = new System.Drawing.Point(621, 303);
+            this.chkHRMG4Ch05.Location = new System.Drawing.Point(611, 298);
             this.chkHRMG4Ch05.Name = "chkHRMG4Ch05";
-            this.chkHRMG4Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG4Ch05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG4Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch05.TabIndex = 392;
             this.chkHRMG4Ch05.UseVisualStyleBackColor = true;
             // 
             // chkHRMG3Ch09
             // 
-            this.chkHRMG3Ch09.AutoSize = true;
-            this.chkHRMG3Ch09.Location = new System.Drawing.Point(909, 273);
+            this.chkHRMG3Ch09.Location = new System.Drawing.Point(899, 268);
             this.chkHRMG3Ch09.Name = "chkHRMG3Ch09";
-            this.chkHRMG3Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG3Ch09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG3Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch09.TabIndex = 384;
             this.chkHRMG3Ch09.UseVisualStyleBackColor = true;
             // 
             // chkHRMG3Ch05
             // 
-            this.chkHRMG3Ch05.AutoSize = true;
-            this.chkHRMG3Ch05.Location = new System.Drawing.Point(621, 273);
+            this.chkHRMG3Ch05.Location = new System.Drawing.Point(611, 268);
             this.chkHRMG3Ch05.Name = "chkHRMG3Ch05";
-            this.chkHRMG3Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG3Ch05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG3Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch05.TabIndex = 380;
             this.chkHRMG3Ch05.UseVisualStyleBackColor = true;
             // 
             // chkHRMG4Ch09
             // 
-            this.chkHRMG4Ch09.AutoSize = true;
-            this.chkHRMG4Ch09.Location = new System.Drawing.Point(909, 303);
+            this.chkHRMG4Ch09.Location = new System.Drawing.Point(899, 298);
             this.chkHRMG4Ch09.Name = "chkHRMG4Ch09";
-            this.chkHRMG4Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG4Ch09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG4Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch09.TabIndex = 396;
             this.chkHRMG4Ch09.UseVisualStyleBackColor = true;
             // 
             // chkHRMG2Ch05
             // 
-            this.chkHRMG2Ch05.AutoSize = true;
-            this.chkHRMG2Ch05.Location = new System.Drawing.Point(621, 243);
+            this.chkHRMG2Ch05.Location = new System.Drawing.Point(611, 238);
             this.chkHRMG2Ch05.Name = "chkHRMG2Ch05";
-            this.chkHRMG2Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG2Ch05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG2Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch05.TabIndex = 368;
             this.chkHRMG2Ch05.UseVisualStyleBackColor = true;
             // 
             // chkHRMG1Ch10
             // 
-            this.chkHRMG1Ch10.AutoSize = true;
-            this.chkHRMG1Ch10.Location = new System.Drawing.Point(981, 213);
+            this.chkHRMG1Ch10.Location = new System.Drawing.Point(971, 208);
             this.chkHRMG1Ch10.Name = "chkHRMG1Ch10";
-            this.chkHRMG1Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG1Ch10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG1Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch10.TabIndex = 361;
             this.chkHRMG1Ch10.UseVisualStyleBackColor = true;
             // 
             // chkHRMG1Ch05
             // 
-            this.chkHRMG1Ch05.AutoSize = true;
-            this.chkHRMG1Ch05.Location = new System.Drawing.Point(621, 213);
+            this.chkHRMG1Ch05.Location = new System.Drawing.Point(611, 208);
             this.chkHRMG1Ch05.Name = "chkHRMG1Ch05";
-            this.chkHRMG1Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG1Ch05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG1Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch05.TabIndex = 356;
             this.chkHRMG1Ch05.UseVisualStyleBackColor = true;
             // 
             // chkHRMG1Ch00
             // 
-            this.chkHRMG1Ch00.AutoSize = true;
-            this.chkHRMG1Ch00.Location = new System.Drawing.Point(261, 213);
+            this.chkHRMG1Ch00.Location = new System.Drawing.Point(251, 208);
             this.chkHRMG1Ch00.Name = "chkHRMG1Ch00";
-            this.chkHRMG1Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG1Ch00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG1Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch00.TabIndex = 351;
             this.chkHRMG1Ch00.UseVisualStyleBackColor = true;
             // 
             // chkHRMG2Ch10
             // 
-            this.chkHRMG2Ch10.AutoSize = true;
-            this.chkHRMG2Ch10.Location = new System.Drawing.Point(981, 243);
+            this.chkHRMG2Ch10.Location = new System.Drawing.Point(971, 238);
             this.chkHRMG2Ch10.Name = "chkHRMG2Ch10";
-            this.chkHRMG2Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG2Ch10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG2Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch10.TabIndex = 373;
             this.chkHRMG2Ch10.UseVisualStyleBackColor = true;
             // 
             // chkHRMG2Ch00
             // 
-            this.chkHRMG2Ch00.AutoSize = true;
-            this.chkHRMG2Ch00.Location = new System.Drawing.Point(261, 243);
+            this.chkHRMG2Ch00.Location = new System.Drawing.Point(251, 238);
             this.chkHRMG2Ch00.Name = "chkHRMG2Ch00";
-            this.chkHRMG2Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG2Ch00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG2Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch00.TabIndex = 363;
             this.chkHRMG2Ch00.UseVisualStyleBackColor = true;
             // 
             // chkHRMG4Ch04
             // 
-            this.chkHRMG4Ch04.AutoSize = true;
-            this.chkHRMG4Ch04.Location = new System.Drawing.Point(549, 303);
+            this.chkHRMG4Ch04.Location = new System.Drawing.Point(539, 298);
             this.chkHRMG4Ch04.Name = "chkHRMG4Ch04";
-            this.chkHRMG4Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG4Ch04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG4Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch04.TabIndex = 391;
             this.chkHRMG4Ch04.UseVisualStyleBackColor = true;
             // 
             // chkHRMG3Ch10
             // 
-            this.chkHRMG3Ch10.AutoSize = true;
-            this.chkHRMG3Ch10.Location = new System.Drawing.Point(981, 273);
+            this.chkHRMG3Ch10.Location = new System.Drawing.Point(971, 268);
             this.chkHRMG3Ch10.Name = "chkHRMG3Ch10";
-            this.chkHRMG3Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG3Ch10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG3Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch10.TabIndex = 385;
             this.chkHRMG3Ch10.UseVisualStyleBackColor = true;
             // 
             // chkHRMG3Ch00
             // 
-            this.chkHRMG3Ch00.AutoSize = true;
-            this.chkHRMG3Ch00.Location = new System.Drawing.Point(261, 273);
+            this.chkHRMG3Ch00.Location = new System.Drawing.Point(251, 268);
             this.chkHRMG3Ch00.Name = "chkHRMG3Ch00";
-            this.chkHRMG3Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG3Ch00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG3Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch00.TabIndex = 375;
             this.chkHRMG3Ch00.UseVisualStyleBackColor = true;
             // 
             // chkHRMG3Ch04
             // 
-            this.chkHRMG3Ch04.AutoSize = true;
-            this.chkHRMG3Ch04.Location = new System.Drawing.Point(549, 273);
+            this.chkHRMG3Ch04.Location = new System.Drawing.Point(539, 268);
             this.chkHRMG3Ch04.Name = "chkHRMG3Ch04";
-            this.chkHRMG3Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG3Ch04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG3Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch04.TabIndex = 379;
             this.chkHRMG3Ch04.UseVisualStyleBackColor = true;
             // 
             // chkHRMG4Ch10
             // 
-            this.chkHRMG4Ch10.AutoSize = true;
-            this.chkHRMG4Ch10.Location = new System.Drawing.Point(981, 303);
+            this.chkHRMG4Ch10.Location = new System.Drawing.Point(971, 298);
             this.chkHRMG4Ch10.Name = "chkHRMG4Ch10";
-            this.chkHRMG4Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG4Ch10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG4Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch10.TabIndex = 397;
             this.chkHRMG4Ch10.UseVisualStyleBackColor = true;
             // 
             // chkHRMG4Ch00
             // 
-            this.chkHRMG4Ch00.AutoSize = true;
-            this.chkHRMG4Ch00.Location = new System.Drawing.Point(261, 303);
+            this.chkHRMG4Ch00.Location = new System.Drawing.Point(251, 298);
             this.chkHRMG4Ch00.Name = "chkHRMG4Ch00";
-            this.chkHRMG4Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG4Ch00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG4Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch00.TabIndex = 387;
             this.chkHRMG4Ch00.UseVisualStyleBackColor = true;
             // 
             // chkHRMG2Ch04
             // 
-            this.chkHRMG2Ch04.AutoSize = true;
-            this.chkHRMG2Ch04.Location = new System.Drawing.Point(549, 243);
+            this.chkHRMG2Ch04.Location = new System.Drawing.Point(539, 238);
             this.chkHRMG2Ch04.Name = "chkHRMG2Ch04";
-            this.chkHRMG2Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG2Ch04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG2Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch04.TabIndex = 367;
             this.chkHRMG2Ch04.UseVisualStyleBackColor = true;
             // 
             // chkHRMG1Ch11
             // 
-            this.chkHRMG1Ch11.AutoSize = true;
-            this.chkHRMG1Ch11.Location = new System.Drawing.Point(1053, 213);
+            this.chkHRMG1Ch11.Location = new System.Drawing.Point(1043, 208);
             this.chkHRMG1Ch11.Name = "chkHRMG1Ch11";
-            this.chkHRMG1Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG1Ch11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG1Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch11.TabIndex = 362;
             this.chkHRMG1Ch11.UseVisualStyleBackColor = true;
             // 
             // chkHRMG1Ch01
             // 
-            this.chkHRMG1Ch01.AutoSize = true;
-            this.chkHRMG1Ch01.Location = new System.Drawing.Point(333, 213);
+            this.chkHRMG1Ch01.Location = new System.Drawing.Point(323, 208);
             this.chkHRMG1Ch01.Name = "chkHRMG1Ch01";
-            this.chkHRMG1Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG1Ch01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG1Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch01.TabIndex = 352;
             this.chkHRMG1Ch01.UseVisualStyleBackColor = true;
             // 
             // chkHRMG1Ch04
             // 
-            this.chkHRMG1Ch04.AutoSize = true;
-            this.chkHRMG1Ch04.Location = new System.Drawing.Point(549, 213);
+            this.chkHRMG1Ch04.Location = new System.Drawing.Point(539, 208);
             this.chkHRMG1Ch04.Name = "chkHRMG1Ch04";
-            this.chkHRMG1Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG1Ch04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG1Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch04.TabIndex = 355;
             this.chkHRMG1Ch04.UseVisualStyleBackColor = true;
             // 
             // chkHRMG2Ch11
             // 
-            this.chkHRMG2Ch11.AutoSize = true;
-            this.chkHRMG2Ch11.Location = new System.Drawing.Point(1053, 243);
+            this.chkHRMG2Ch11.Location = new System.Drawing.Point(1043, 238);
             this.chkHRMG2Ch11.Name = "chkHRMG2Ch11";
-            this.chkHRMG2Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG2Ch11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG2Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch11.TabIndex = 374;
             this.chkHRMG2Ch11.UseVisualStyleBackColor = true;
             // 
             // chkHRMG4Ch03
             // 
-            this.chkHRMG4Ch03.AutoSize = true;
-            this.chkHRMG4Ch03.Location = new System.Drawing.Point(477, 303);
+            this.chkHRMG4Ch03.Location = new System.Drawing.Point(467, 298);
             this.chkHRMG4Ch03.Name = "chkHRMG4Ch03";
-            this.chkHRMG4Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG4Ch03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG4Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch03.TabIndex = 390;
             this.chkHRMG4Ch03.UseVisualStyleBackColor = true;
             // 
             // chkHRMG2Ch01
             // 
-            this.chkHRMG2Ch01.AutoSize = true;
-            this.chkHRMG2Ch01.Location = new System.Drawing.Point(333, 243);
+            this.chkHRMG2Ch01.Location = new System.Drawing.Point(323, 238);
             this.chkHRMG2Ch01.Name = "chkHRMG2Ch01";
-            this.chkHRMG2Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG2Ch01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG2Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch01.TabIndex = 364;
             this.chkHRMG2Ch01.UseVisualStyleBackColor = true;
             // 
             // chkHRMG3Ch11
             // 
-            this.chkHRMG3Ch11.AutoSize = true;
-            this.chkHRMG3Ch11.Location = new System.Drawing.Point(1053, 273);
+            this.chkHRMG3Ch11.Location = new System.Drawing.Point(1043, 268);
             this.chkHRMG3Ch11.Name = "chkHRMG3Ch11";
-            this.chkHRMG3Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG3Ch11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG3Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch11.TabIndex = 386;
             this.chkHRMG3Ch11.UseVisualStyleBackColor = true;
             // 
             // chkHRMG3Ch03
             // 
-            this.chkHRMG3Ch03.AutoSize = true;
-            this.chkHRMG3Ch03.Location = new System.Drawing.Point(477, 273);
+            this.chkHRMG3Ch03.Location = new System.Drawing.Point(467, 268);
             this.chkHRMG3Ch03.Name = "chkHRMG3Ch03";
-            this.chkHRMG3Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG3Ch03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG3Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch03.TabIndex = 378;
             this.chkHRMG3Ch03.UseVisualStyleBackColor = true;
             // 
             // chkHRMG3Ch01
             // 
-            this.chkHRMG3Ch01.AutoSize = true;
-            this.chkHRMG3Ch01.Location = new System.Drawing.Point(333, 273);
+            this.chkHRMG3Ch01.Location = new System.Drawing.Point(323, 268);
             this.chkHRMG3Ch01.Name = "chkHRMG3Ch01";
-            this.chkHRMG3Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG3Ch01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG3Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch01.TabIndex = 376;
             this.chkHRMG3Ch01.UseVisualStyleBackColor = true;
             // 
             // chkHRMG4Ch11
             // 
-            this.chkHRMG4Ch11.AutoSize = true;
-            this.chkHRMG4Ch11.Location = new System.Drawing.Point(1053, 303);
+            this.chkHRMG4Ch11.Location = new System.Drawing.Point(1043, 298);
             this.chkHRMG4Ch11.Name = "chkHRMG4Ch11";
-            this.chkHRMG4Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG4Ch11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG4Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch11.TabIndex = 398;
             this.chkHRMG4Ch11.UseVisualStyleBackColor = true;
             // 
             // chkHRMG2Ch03
             // 
-            this.chkHRMG2Ch03.AutoSize = true;
-            this.chkHRMG2Ch03.Location = new System.Drawing.Point(477, 243);
+            this.chkHRMG2Ch03.Location = new System.Drawing.Point(467, 238);
             this.chkHRMG2Ch03.Name = "chkHRMG2Ch03";
-            this.chkHRMG2Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG2Ch03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG2Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch03.TabIndex = 366;
             this.chkHRMG2Ch03.UseVisualStyleBackColor = true;
             // 
             // chkHRMG4Ch01
             // 
-            this.chkHRMG4Ch01.AutoSize = true;
-            this.chkHRMG4Ch01.Location = new System.Drawing.Point(333, 303);
+            this.chkHRMG4Ch01.Location = new System.Drawing.Point(323, 298);
             this.chkHRMG4Ch01.Name = "chkHRMG4Ch01";
-            this.chkHRMG4Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG4Ch01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG4Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch01.TabIndex = 388;
             this.chkHRMG4Ch01.UseVisualStyleBackColor = true;
             // 
             // chkHRMG1Ch03
             // 
-            this.chkHRMG1Ch03.AutoSize = true;
-            this.chkHRMG1Ch03.Location = new System.Drawing.Point(477, 213);
+            this.chkHRMG1Ch03.Location = new System.Drawing.Point(467, 208);
             this.chkHRMG1Ch03.Name = "chkHRMG1Ch03";
-            this.chkHRMG1Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG1Ch03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG1Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch03.TabIndex = 354;
             this.chkHRMG1Ch03.UseVisualStyleBackColor = true;
             // 
             // chkHRMG1Ch02
             // 
-            this.chkHRMG1Ch02.AutoSize = true;
-            this.chkHRMG1Ch02.Location = new System.Drawing.Point(405, 213);
+            this.chkHRMG1Ch02.Location = new System.Drawing.Point(395, 208);
             this.chkHRMG1Ch02.Name = "chkHRMG1Ch02";
-            this.chkHRMG1Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG1Ch02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG1Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch02.TabIndex = 353;
             this.chkHRMG1Ch02.UseVisualStyleBackColor = true;
             // 
             // chkHRMG4Ch02
             // 
-            this.chkHRMG4Ch02.AutoSize = true;
-            this.chkHRMG4Ch02.Location = new System.Drawing.Point(405, 303);
+            this.chkHRMG4Ch02.Location = new System.Drawing.Point(395, 298);
             this.chkHRMG4Ch02.Name = "chkHRMG4Ch02";
-            this.chkHRMG4Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG4Ch02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG4Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch02.TabIndex = 389;
             this.chkHRMG4Ch02.UseVisualStyleBackColor = true;
             // 
             // chkHRMG2Ch02
             // 
-            this.chkHRMG2Ch02.AutoSize = true;
-            this.chkHRMG2Ch02.Location = new System.Drawing.Point(405, 243);
+            this.chkHRMG2Ch02.Location = new System.Drawing.Point(395, 238);
             this.chkHRMG2Ch02.Name = "chkHRMG2Ch02";
-            this.chkHRMG2Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG2Ch02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG2Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch02.TabIndex = 365;
             this.chkHRMG2Ch02.UseVisualStyleBackColor = true;
             // 
             // chkHRMG3Ch02
             // 
-            this.chkHRMG3Ch02.AutoSize = true;
-            this.chkHRMG3Ch02.Location = new System.Drawing.Point(405, 273);
+            this.chkHRMG3Ch02.Location = new System.Drawing.Point(395, 268);
             this.chkHRMG3Ch02.Name = "chkHRMG3Ch02";
-            this.chkHRMG3Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkHRMG3Ch02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRMG3Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch02.TabIndex = 377;
             this.chkHRMG3Ch02.UseVisualStyleBackColor = true;
             // 
@@ -21170,7 +21149,6 @@ namespace M1ConfigGenerator
             this.tbxHRCfgRev.Name = "tbxHRCfgRev";
             this.tbxHRCfgRev.Size = new System.Drawing.Size(32, 20);
             this.tbxHRCfgRev.TabIndex = 290;
-            this.tbxHRCfgRev.Text = "1";
             // 
             // label690
             // 
@@ -21907,109 +21885,109 @@ namespace M1ConfigGenerator
             // 
             // chkHRLockCh00
             // 
-            this.chkHRLockCh00.AutoSize = true;
-            this.chkHRLockCh00.Location = new System.Drawing.Point(261, 36);
+            this.chkHRLockCh00.Location = new System.Drawing.Point(251, 31);
             this.chkHRLockCh00.Name = "chkHRLockCh00";
-            this.chkHRLockCh00.Size = new System.Drawing.Size(15, 14);
+            this.chkHRLockCh00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRLockCh00.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh00.TabIndex = 303;
             this.chkHRLockCh00.UseVisualStyleBackColor = true;
             // 
             // chkHRLockCh01
             // 
-            this.chkHRLockCh01.AutoSize = true;
-            this.chkHRLockCh01.Location = new System.Drawing.Point(333, 36);
+            this.chkHRLockCh01.Location = new System.Drawing.Point(323, 31);
             this.chkHRLockCh01.Name = "chkHRLockCh01";
-            this.chkHRLockCh01.Size = new System.Drawing.Size(15, 14);
+            this.chkHRLockCh01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRLockCh01.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh01.TabIndex = 304;
             this.chkHRLockCh01.UseVisualStyleBackColor = true;
             // 
             // chkHRLockCh02
             // 
-            this.chkHRLockCh02.AutoSize = true;
-            this.chkHRLockCh02.Location = new System.Drawing.Point(405, 36);
+            this.chkHRLockCh02.Location = new System.Drawing.Point(395, 31);
             this.chkHRLockCh02.Name = "chkHRLockCh02";
-            this.chkHRLockCh02.Size = new System.Drawing.Size(15, 14);
+            this.chkHRLockCh02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRLockCh02.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh02.TabIndex = 305;
             this.chkHRLockCh02.UseVisualStyleBackColor = true;
             // 
             // chkHRLockCh03
             // 
-            this.chkHRLockCh03.AutoSize = true;
-            this.chkHRLockCh03.Location = new System.Drawing.Point(477, 36);
+            this.chkHRLockCh03.Location = new System.Drawing.Point(467, 31);
             this.chkHRLockCh03.Name = "chkHRLockCh03";
-            this.chkHRLockCh03.Size = new System.Drawing.Size(15, 14);
+            this.chkHRLockCh03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRLockCh03.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh03.TabIndex = 306;
             this.chkHRLockCh03.UseVisualStyleBackColor = true;
             // 
             // chkHRLockCh04
             // 
-            this.chkHRLockCh04.AutoSize = true;
-            this.chkHRLockCh04.Location = new System.Drawing.Point(549, 36);
+            this.chkHRLockCh04.Location = new System.Drawing.Point(539, 31);
             this.chkHRLockCh04.Name = "chkHRLockCh04";
-            this.chkHRLockCh04.Size = new System.Drawing.Size(15, 14);
+            this.chkHRLockCh04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRLockCh04.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh04.TabIndex = 307;
             this.chkHRLockCh04.UseVisualStyleBackColor = true;
             // 
             // chkHRLockCh05
             // 
-            this.chkHRLockCh05.AutoSize = true;
-            this.chkHRLockCh05.Location = new System.Drawing.Point(621, 36);
+            this.chkHRLockCh05.Location = new System.Drawing.Point(611, 31);
             this.chkHRLockCh05.Name = "chkHRLockCh05";
-            this.chkHRLockCh05.Size = new System.Drawing.Size(15, 14);
+            this.chkHRLockCh05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRLockCh05.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh05.TabIndex = 308;
             this.chkHRLockCh05.UseVisualStyleBackColor = true;
             // 
             // chkHRLockCh06
             // 
-            this.chkHRLockCh06.AutoSize = true;
-            this.chkHRLockCh06.Location = new System.Drawing.Point(693, 36);
+            this.chkHRLockCh06.Location = new System.Drawing.Point(683, 31);
             this.chkHRLockCh06.Name = "chkHRLockCh06";
-            this.chkHRLockCh06.Size = new System.Drawing.Size(15, 14);
+            this.chkHRLockCh06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRLockCh06.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh06.TabIndex = 309;
             this.chkHRLockCh06.UseVisualStyleBackColor = true;
             // 
             // chkHRLockCh07
             // 
-            this.chkHRLockCh07.AutoSize = true;
-            this.chkHRLockCh07.Location = new System.Drawing.Point(765, 36);
+            this.chkHRLockCh07.Location = new System.Drawing.Point(755, 31);
             this.chkHRLockCh07.Name = "chkHRLockCh07";
-            this.chkHRLockCh07.Size = new System.Drawing.Size(15, 14);
+            this.chkHRLockCh07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRLockCh07.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh07.TabIndex = 310;
             this.chkHRLockCh07.UseVisualStyleBackColor = true;
             // 
             // chkHRLockCh08
             // 
-            this.chkHRLockCh08.AutoSize = true;
-            this.chkHRLockCh08.Location = new System.Drawing.Point(837, 36);
+            this.chkHRLockCh08.Location = new System.Drawing.Point(827, 31);
             this.chkHRLockCh08.Name = "chkHRLockCh08";
-            this.chkHRLockCh08.Size = new System.Drawing.Size(15, 14);
+            this.chkHRLockCh08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRLockCh08.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh08.TabIndex = 311;
             this.chkHRLockCh08.UseVisualStyleBackColor = true;
             // 
             // chkHRLockCh09
             // 
-            this.chkHRLockCh09.AutoSize = true;
-            this.chkHRLockCh09.Location = new System.Drawing.Point(909, 36);
+            this.chkHRLockCh09.Location = new System.Drawing.Point(899, 31);
             this.chkHRLockCh09.Name = "chkHRLockCh09";
-            this.chkHRLockCh09.Size = new System.Drawing.Size(15, 14);
+            this.chkHRLockCh09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRLockCh09.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh09.TabIndex = 312;
             this.chkHRLockCh09.UseVisualStyleBackColor = true;
             // 
             // chkHRLockCh10
             // 
-            this.chkHRLockCh10.AutoSize = true;
-            this.chkHRLockCh10.Location = new System.Drawing.Point(981, 36);
+            this.chkHRLockCh10.Location = new System.Drawing.Point(971, 31);
             this.chkHRLockCh10.Name = "chkHRLockCh10";
-            this.chkHRLockCh10.Size = new System.Drawing.Size(15, 14);
+            this.chkHRLockCh10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRLockCh10.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh10.TabIndex = 313;
             this.chkHRLockCh10.UseVisualStyleBackColor = true;
             // 
             // chkHRLockCh11
             // 
-            this.chkHRLockCh11.AutoSize = true;
-            this.chkHRLockCh11.Location = new System.Drawing.Point(1053, 36);
+            this.chkHRLockCh11.Location = new System.Drawing.Point(1043, 31);
             this.chkHRLockCh11.Name = "chkHRLockCh11";
-            this.chkHRLockCh11.Size = new System.Drawing.Size(15, 14);
+            this.chkHRLockCh11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRLockCh11.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh11.TabIndex = 314;
             this.chkHRLockCh11.UseVisualStyleBackColor = true;
             // 
@@ -22054,10 +22032,10 @@ namespace M1ConfigGenerator
             // 
             // chkHRTimeoutCh04
             // 
-            this.chkHRTimeoutCh04.AutoSize = true;
-            this.chkHRTimeoutCh04.Location = new System.Drawing.Point(549, 216);
+            this.chkHRTimeoutCh04.Location = new System.Drawing.Point(539, 211);
             this.chkHRTimeoutCh04.Name = "chkHRTimeoutCh04";
-            this.chkHRTimeoutCh04.Size = new System.Drawing.Size(15, 14);
+            this.chkHRTimeoutCh04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRTimeoutCh04.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh04.TabIndex = 84;
             this.chkHRTimeoutCh04.UseVisualStyleBackColor = true;
             // 
@@ -22080,10 +22058,10 @@ namespace M1ConfigGenerator
             // 
             // chkHRTimeoutCh03
             // 
-            this.chkHRTimeoutCh03.AutoSize = true;
-            this.chkHRTimeoutCh03.Location = new System.Drawing.Point(477, 216);
+            this.chkHRTimeoutCh03.Location = new System.Drawing.Point(467, 211);
             this.chkHRTimeoutCh03.Name = "chkHRTimeoutCh03";
-            this.chkHRTimeoutCh03.Size = new System.Drawing.Size(15, 14);
+            this.chkHRTimeoutCh03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRTimeoutCh03.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh03.TabIndex = 83;
             this.chkHRTimeoutCh03.UseVisualStyleBackColor = true;
             // 
@@ -22097,10 +22075,10 @@ namespace M1ConfigGenerator
             // 
             // chkHRTimeoutCh05
             // 
-            this.chkHRTimeoutCh05.AutoSize = true;
-            this.chkHRTimeoutCh05.Location = new System.Drawing.Point(621, 216);
+            this.chkHRTimeoutCh05.Location = new System.Drawing.Point(611, 211);
             this.chkHRTimeoutCh05.Name = "chkHRTimeoutCh05";
-            this.chkHRTimeoutCh05.Size = new System.Drawing.Size(15, 14);
+            this.chkHRTimeoutCh05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRTimeoutCh05.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh05.TabIndex = 85;
             this.chkHRTimeoutCh05.UseVisualStyleBackColor = true;
             // 
@@ -22117,10 +22095,10 @@ namespace M1ConfigGenerator
             // 
             // chkHRTimeoutCh02
             // 
-            this.chkHRTimeoutCh02.AutoSize = true;
-            this.chkHRTimeoutCh02.Location = new System.Drawing.Point(405, 216);
+            this.chkHRTimeoutCh02.Location = new System.Drawing.Point(395, 211);
             this.chkHRTimeoutCh02.Name = "chkHRTimeoutCh02";
-            this.chkHRTimeoutCh02.Size = new System.Drawing.Size(15, 14);
+            this.chkHRTimeoutCh02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRTimeoutCh02.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh02.TabIndex = 82;
             this.chkHRTimeoutCh02.UseVisualStyleBackColor = true;
             // 
@@ -22134,10 +22112,10 @@ namespace M1ConfigGenerator
             // 
             // chkHRTimeoutCh06
             // 
-            this.chkHRTimeoutCh06.AutoSize = true;
-            this.chkHRTimeoutCh06.Location = new System.Drawing.Point(693, 216);
+            this.chkHRTimeoutCh06.Location = new System.Drawing.Point(683, 211);
             this.chkHRTimeoutCh06.Name = "chkHRTimeoutCh06";
-            this.chkHRTimeoutCh06.Size = new System.Drawing.Size(15, 14);
+            this.chkHRTimeoutCh06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRTimeoutCh06.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh06.TabIndex = 86;
             this.chkHRTimeoutCh06.UseVisualStyleBackColor = true;
             // 
@@ -22160,10 +22138,10 @@ namespace M1ConfigGenerator
             // 
             // chkHRTimeoutCh01
             // 
-            this.chkHRTimeoutCh01.AutoSize = true;
-            this.chkHRTimeoutCh01.Location = new System.Drawing.Point(333, 216);
+            this.chkHRTimeoutCh01.Location = new System.Drawing.Point(323, 211);
             this.chkHRTimeoutCh01.Name = "chkHRTimeoutCh01";
-            this.chkHRTimeoutCh01.Size = new System.Drawing.Size(15, 14);
+            this.chkHRTimeoutCh01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRTimeoutCh01.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh01.TabIndex = 81;
             this.chkHRTimeoutCh01.UseVisualStyleBackColor = true;
             // 
@@ -22177,10 +22155,10 @@ namespace M1ConfigGenerator
             // 
             // chkHRTimeoutCh07
             // 
-            this.chkHRTimeoutCh07.AutoSize = true;
-            this.chkHRTimeoutCh07.Location = new System.Drawing.Point(765, 216);
+            this.chkHRTimeoutCh07.Location = new System.Drawing.Point(755, 211);
             this.chkHRTimeoutCh07.Name = "chkHRTimeoutCh07";
-            this.chkHRTimeoutCh07.Size = new System.Drawing.Size(15, 14);
+            this.chkHRTimeoutCh07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRTimeoutCh07.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh07.TabIndex = 87;
             this.chkHRTimeoutCh07.UseVisualStyleBackColor = true;
             // 
@@ -22203,10 +22181,10 @@ namespace M1ConfigGenerator
             // 
             // chkHRTimeoutCh00
             // 
-            this.chkHRTimeoutCh00.AutoSize = true;
-            this.chkHRTimeoutCh00.Location = new System.Drawing.Point(261, 216);
+            this.chkHRTimeoutCh00.Location = new System.Drawing.Point(251, 211);
             this.chkHRTimeoutCh00.Name = "chkHRTimeoutCh00";
-            this.chkHRTimeoutCh00.Size = new System.Drawing.Size(15, 14);
+            this.chkHRTimeoutCh00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRTimeoutCh00.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh00.TabIndex = 80;
             this.chkHRTimeoutCh00.UseVisualStyleBackColor = true;
             // 
@@ -22220,10 +22198,10 @@ namespace M1ConfigGenerator
             // 
             // chkHRTimeoutCh08
             // 
-            this.chkHRTimeoutCh08.AutoSize = true;
-            this.chkHRTimeoutCh08.Location = new System.Drawing.Point(837, 216);
+            this.chkHRTimeoutCh08.Location = new System.Drawing.Point(827, 211);
             this.chkHRTimeoutCh08.Name = "chkHRTimeoutCh08";
-            this.chkHRTimeoutCh08.Size = new System.Drawing.Size(15, 14);
+            this.chkHRTimeoutCh08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRTimeoutCh08.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh08.TabIndex = 88;
             this.chkHRTimeoutCh08.UseVisualStyleBackColor = true;
             // 
@@ -22276,10 +22254,10 @@ namespace M1ConfigGenerator
             // 
             // chkHRTimeoutCh09
             // 
-            this.chkHRTimeoutCh09.AutoSize = true;
-            this.chkHRTimeoutCh09.Location = new System.Drawing.Point(909, 216);
+            this.chkHRTimeoutCh09.Location = new System.Drawing.Point(899, 211);
             this.chkHRTimeoutCh09.Name = "chkHRTimeoutCh09";
-            this.chkHRTimeoutCh09.Size = new System.Drawing.Size(15, 14);
+            this.chkHRTimeoutCh09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRTimeoutCh09.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh09.TabIndex = 89;
             this.chkHRTimeoutCh09.UseVisualStyleBackColor = true;
             // 
@@ -22332,10 +22310,10 @@ namespace M1ConfigGenerator
             // 
             // chkHRTimeoutCh10
             // 
-            this.chkHRTimeoutCh10.AutoSize = true;
-            this.chkHRTimeoutCh10.Location = new System.Drawing.Point(981, 216);
+            this.chkHRTimeoutCh10.Location = new System.Drawing.Point(971, 211);
             this.chkHRTimeoutCh10.Name = "chkHRTimeoutCh10";
-            this.chkHRTimeoutCh10.Size = new System.Drawing.Size(15, 14);
+            this.chkHRTimeoutCh10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRTimeoutCh10.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh10.TabIndex = 90;
             this.chkHRTimeoutCh10.UseVisualStyleBackColor = true;
             // 
@@ -22388,10 +22366,10 @@ namespace M1ConfigGenerator
             // 
             // chkHRTimeoutCh11
             // 
-            this.chkHRTimeoutCh11.AutoSize = true;
-            this.chkHRTimeoutCh11.Location = new System.Drawing.Point(1053, 216);
+            this.chkHRTimeoutCh11.Location = new System.Drawing.Point(1043, 211);
             this.chkHRTimeoutCh11.Name = "chkHRTimeoutCh11";
-            this.chkHRTimeoutCh11.Size = new System.Drawing.Size(15, 14);
+            this.chkHRTimeoutCh11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkHRTimeoutCh11.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh11.TabIndex = 91;
             this.chkHRTimeoutCh11.UseVisualStyleBackColor = true;
             // 
@@ -23687,6 +23665,15 @@ namespace M1ConfigGenerator
             this.btnHRCard2.Visible = false;
             this.btnHRCard2.Click += new System.EventHandler(this.btnHRCard2_Click);
             // 
+            // tabMainBlank
+            // 
+            this.tabMainBlank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabMainBlank.Location = new System.Drawing.Point(4, 22);
+            this.tabMainBlank.Name = "tabMainBlank";
+            this.tabMainBlank.Size = new System.Drawing.Size(1380, 995);
+            this.tabMainBlank.TabIndex = 8;
+            this.tabMainBlank.Text = "Blank";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -23789,7 +23776,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnStartClose;
         private System.Windows.Forms.Panel panelHC;
         private System.Windows.Forms.Button btnHCCard6;
         private System.Windows.Forms.Button btnHCCard5;
@@ -24179,7 +24165,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox chkLC1DCDimmer;
         private System.Windows.Forms.Panel panelMain;
         private TablessControl tabControlMain;
-        private System.Windows.Forms.TabPage tabMainBlank;
         private System.Windows.Forms.TabPage tabMainStart;
         private System.Windows.Forms.TabPage tabMainAux;
         private TablessControl tabControlAux;
@@ -25485,6 +25470,7 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox tbxStartHRCfgRev;
         private System.Windows.Forms.TextBox tbxStartHCCfgRev;
+        private System.Windows.Forms.TabPage tabMainBlank;
     }
 }
 

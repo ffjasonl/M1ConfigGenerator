@@ -43,7 +43,7 @@ namespace M1ConfigGenerator
         private char cardLetter = 'Z';
 
         private string configName = "DevAddrZ.h";
-        private string progVerRev = "1.0.0";
+        private string progVerRev = "0.0.0";
 
         private string cardNumber = "";
         private string panelNumber = "";
@@ -120,7 +120,11 @@ namespace M1ConfigGenerator
             return configName;
         }
 
-        // no set program version, it is hard-coded
+        public void M1_SetVerRev(string argString)
+        {
+            progVerRev = argString;
+        }
+
         public string M1_GetVerRev()
         {
             return progVerRev;
@@ -152,8 +156,9 @@ namespace M1ConfigGenerator
             }
         }
 
-        public void M1_SetCardNumber(string argString)
+        public void M1_SetCardNumber(int argInt)
         {
+            string argString = argInt.ToString();
             cardNumber = argString;
         }
 
@@ -162,8 +167,9 @@ namespace M1ConfigGenerator
             return cardNumber;
         }
 
-        public void M1_SetPanelNumber(string argString)
+        public void M1_SetPanelNumber(int argInt)
         {
+            string argString = argInt.ToString();
             panelNumber = argString;
         }
 

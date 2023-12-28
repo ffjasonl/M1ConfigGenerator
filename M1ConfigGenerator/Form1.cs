@@ -14,7 +14,7 @@ namespace M1ConfigGenerator
 {
     public partial class Form1 : Form
     {
-        enum MainTab { Blank, Start, Aux, Breaker, Dimmer, HC, LC, HCRelay }
+        enum MainTab { Start, Blank, Aux, Breaker, Dimmer, HC, LC, HCRelay }
         enum CardNum { Card1, Card2, Card3, Card4, Card5, Card6, Card7, Card8, Generate }
 
         // create global arrays
@@ -161,8 +161,9 @@ namespace M1ConfigGenerator
 
         private void btnMenuNew_Click(object sender, EventArgs e)
         {
-            ResetStartTab();
-            tabControlMain.SelectedIndex = (int) MainTab.Start;
+            // currently just the program version number
+            //ResetStartTab();
+            //tabControlMain.SelectedIndex = (int) MainTab.Start;
         }
 
         private void btnMenuLoad_Click(object sender, EventArgs e)
@@ -224,8 +225,6 @@ namespace M1ConfigGenerator
             ShowLCNav(cmbStartLC.SelectedIndex);
         }
 
-
-
         private void SetMenuColors(int ButtonNum)
         {
             btnMenuAux.BackColor = Color.FromArgb(255, 20, 20, 20);
@@ -280,7 +279,7 @@ namespace M1ConfigGenerator
 
         private void btnStartCreate_Click(object sender, EventArgs e)
         {
-            tabControlMain.SelectedIndex = 0;
+            tabControlMain.SelectedIndex = (int) MainTab.Blank;
             HideNavButtons();
             // had to put these in opposite order so they appear correctly in nav bar, I think because of top anchor
             ShowNavButton(btnMenuLC, cmbStartLC.SelectedIndex);
@@ -323,7 +322,7 @@ namespace M1ConfigGenerator
                 lcObjects.Add(new LCCard(i + 1));
             }
 
-            // set Config Type here, don't need to mess with Get that adds 0x
+            // set Config Type here, don't need to mess with Get that adds "0x"
             //tbxAux1CfgType.Text = tbxStartCfgType.Text;
             //tbxBreaker1CfgType.Text = tbxStartCfgType.Text;
             //tbxDimmer1CfgType.Text = tbxStartCfgType.Text;
@@ -420,11 +419,11 @@ namespace M1ConfigGenerator
             // Dimmer
 
             // HC
-            if (cmbStartHC.Text != "0") { numCards++; }
+            if (cmbStartHC.Text != "0" && cmbStartHC.Text != "") { numCards++; }
             if (ValidateConfigRev(tbxStartHCCfgRev.Text)) { checkCount++; }
 
             // HR
-            if (cmbStartHR.Text != "0") { numCards++; }
+            if (cmbStartHR.Text != "0" && cmbStartHR.Text != "") { numCards++; }
             if (ValidateConfigRev(tbxStartHRCfgRev.Text)) { checkCount++; }
 
             if (ValidateConfigType(tbxStartCfgType.Text) && checkCount == numCards && numCards != 0) { btnStartCreate.Visible = true; }
@@ -1081,9 +1080,10 @@ namespace M1ConfigGenerator
             hcGroup10 = new bool[] { chkHC1MG1Ch10.Checked, chkHC1MG2Ch10.Checked, chkHC1MG3Ch10.Checked, chkHC1MG4Ch10.Checked };
             hcGroup11 = new bool[] { chkHC1MG1Ch11.Checked, chkHC1MG2Ch11.Checked, chkHC1MG3Ch11.Checked, chkHC1MG4Ch11.Checked };
             hcGroups = new bool[][] { hcGroup00, hcGroup01, hcGroup02, hcGroup03, hcGroup04, hcGroup05, hcGroup06, hcGroup07, hcGroup08, hcGroup09, hcGroup10, hcGroup11 };
+            hcObjects[card].M1_SetVerRev(btnMenuNew.Text);
             hcObjects[card].M1_SetFullSetup(chkTabVisHC1.Checked);
-            hcObjects[card].M1_SetCardNumber(cmbHC1CardNum.Text);
-            hcObjects[card].M1_SetPanelNumber(cmbHC1PanelNum.Text);
+            hcObjects[card].M1_SetCardNumber(cmbHC1CardNum.SelectedIndex);
+            hcObjects[card].M1_SetPanelNumber(cmbHC1PanelNum.SelectedIndex);
             hcObjects[card].M1_SetDevAddr();
             hcObjects[card].M1_SetCardLetter(tbxHC1CardLetter.Text);
             hcObjects[card].M1_ChangeConfigName();
@@ -1303,13 +1303,13 @@ namespace M1ConfigGenerator
 
         private void cmbHC1CardNum_SelectedIndexChanged(object sender, EventArgs e)
         {
-            hcObjects[HCCardActive].M1_SetCardNumber(cmbHC1CardNum.Text);
+            hcObjects[HCCardActive].M1_SetCardNumber(cmbHC1CardNum.SelectedIndex);
             CheckHCGenerate();
         }
 
         private void cmbHC1PanelNum_SelectedIndexChanged(object sender, EventArgs e)
         {
-            hcObjects[HCCardActive].M1_SetPanelNumber(cmbHC1PanelNum.Text);
+            hcObjects[HCCardActive].M1_SetPanelNumber(cmbHC1PanelNum.SelectedIndex);
             CheckHCGenerate();
         }
 
@@ -2186,10 +2186,10 @@ namespace M1ConfigGenerator
             hrGroup10 = new bool[] { chkHRMG1Ch10.Checked, chkHRMG2Ch10.Checked, chkHRMG3Ch10.Checked, chkHRMG4Ch10.Checked };
             hrGroup11 = new bool[] { chkHRMG1Ch11.Checked, chkHRMG2Ch11.Checked, chkHRMG3Ch11.Checked, chkHRMG4Ch11.Checked };
             hrMasterGroups = new bool[][] { hrGroup00, hrGroup01, hrGroup02, hrGroup03, hrGroup04, hrGroup05, hrGroup06, hrGroup07, hrGroup08, hrGroup09, hrGroup10, hrGroup11 };
-
+            hrObjects[card].M1_SetVerRev(btnMenuNew.Text);
             hrObjects[card].M1_SetFullSetup(chkHRTabVis.Checked);
-            hrObjects[card].M1_SetCardNumber(cmbHRCardNum.Text);
-            hrObjects[card].M1_SetPanelNumber(cmbHRPanelNum.Text);
+            hrObjects[card].M1_SetCardNumber(cmbHRCardNum.SelectedIndex);
+            hrObjects[card].M1_SetPanelNumber(cmbHRPanelNum.SelectedIndex);
             hrObjects[card].M1_SetDevAddr();
             hrObjects[card].M1_SetCardLetter(tbxHRCardLetter.Text);
             hrObjects[card].M1_ChangeConfigName();
@@ -2381,7 +2381,7 @@ namespace M1ConfigGenerator
         private void btnHRGenerate_Click(object sender, EventArgs e)
         {
             HR_SetAll(HRCardActive);
-            hrObjects.ForEach(hrObjects => hrObjects.HC_CreateFile());
+            hrObjects.ForEach(hrObjects => hrObjects.HR_CreateFile());
             CreateHRReferenceFile();
             HCCardNavColor(hrBtnArray, btnHRGenerate);
             tabControlHR.SelectedIndex = 1;
@@ -2399,13 +2399,13 @@ namespace M1ConfigGenerator
 
         private void cmbHRCardNum_SelectedIndexChanged(object sender, EventArgs e)
         {
-            hrObjects[HRCardActive].M1_SetCardNumber(cmbHRCardNum.Text);
+            hrObjects[HRCardActive].M1_SetCardNumber(cmbHRCardNum.SelectedIndex);
             CheckHRGenerate();
         }
 
         private void cmbHRPanelNum_SelectedIndexChanged(object sender, EventArgs e)
         {
-            hrObjects[HRCardActive].M1_SetPanelNumber(cmbHRCardNum.Text);
+            hrObjects[HRCardActive].M1_SetPanelNumber(cmbHRCardNum.SelectedIndex);
             CheckHRGenerate();
         }
 

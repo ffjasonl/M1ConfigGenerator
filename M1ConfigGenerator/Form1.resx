@@ -117,35 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="tabControlLC1QF.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnStartClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAA9lJREFUWEfFVz1PVEEU3QUkAZUofhAkMI99i0Rip9HERhNJtLCwNPoHrIyNtsTE
-        H2KWWNiaQMEuBLaw2s6YWGghCg1aYIyKqOs5d+9bZ+fN7L4g4EnuZubOuXfOu3fmPchNT1/pylnAvAfW
-        rVMBObADsLy6BHvFFQQC8r6AAHdPhfy3ivToVBAKUO6uCuGYvlDAvrWGY1iDKz8WMN+tirgXIzNX0CFg
-        LypCXwtXYC02A0oXzue/RNH1H8aU6sY8ro+N9dIPTiYhv405uW3M/S1jZjG+oe5kr5RoAZze5F+NufPT
-        mG0IqauVPxYKJ3xczFvKDW4fYhcgpg4hSfwlrml8qo1BIZj3INFTTSL2C4anfHn34rlOFTkCIVVHCMez
-        upe3jRyEnrIbwfdsIVbyan10tN/mSiCA9WEIee4RUv8eRY9sLoF5Q4hOgk+JM9KHRCsUgnPjJi+/LRaH
-        mEwCAfI9rRFD/OK7OB5QqoD7wFLFEMDZ8pTEm4niQSSqucm5ITaubZkxqRDW2ZoVX0UQ/2I1jgcloQL7
-        /K2IC5+QJACHth+JFxwhyYZVVCQOtQZCKmtxoaMQzBvVwSAoJCEh+VEkX3aEiGG+4ROCw15ZLxSOS0KF
-        m5fgmL5MQhJUzk4dZitsIc7BtoUseVojZ0SnAu4Bowa52pmEYC6isZkc6nZC0Jpy1tZo3p1/DrDpKQjZ
-        DAjZ+BxFk0oVMNbNy7H6di4EGwZvDX16nmq85uQneSVYwT00bzYhHMNcIcPY8JlPCEWwbYkPVn09UTzE
-        vBou0LypisicP7rYvjWNF9p8oCKbWpGm6YtyES2T9xDBPXQv7znl4J9aw+u7USiMYL5sC7G4NX46uIfm
-        dSvC89T4K5MkGQAcc4EEdfGwDkJI6IU2l9wa+HjLlgM3rLo0dWYAeX1CWtrYREpIFPWGWoOKzH1wXmjr
-        cXwM/rLLZTzyVJJDTVBYOyGpXiLJTEBI5X3ghfYtiprvoUSIdbAfWFz3H4C8/HCBBPULMO/CpiVXCFoz
-        /2l8fERpAnI1h7Qc3D5w5e8Z54Y94T6wlnPKMX0ceIVwEYmuJYm0IvNrcZzpW/Nq8vQQWlO2hGxvRdEt
-        cpUmIFfjO38OkOQ2hDxB+WdWi97WpMpNH6wLZ6QX8Q9hJQq5efVypneOgE5Ys9wEx+pLvaTUnyo319Ql
-        wDzYGlhQiC8g2Eauq8tO7nJFiE4Fyk09oIBOBpCkrk7Jg61Rl6ANl3lTXP6khBCYh1rj43qTu1yO1ecX
-        rYtZKrJv1RNoQCh5pr634TJvNiEEFzwBrAj9WVvTwuUYlkFILvcHXUaTx2XQxn8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <metadata name="tabControlLC1QF.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="tabControlLC1QF.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA

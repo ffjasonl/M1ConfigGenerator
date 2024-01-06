@@ -106,6 +106,9 @@ namespace M1ConfigGenerator
         bool[] hrGroup00; bool[] hrGroup01; bool[] hrGroup02; bool[] hrGroup03; bool[] hrGroup04; bool[] hrGroup05; 
         bool[] hrGroup06; bool[] hrGroup07; bool[] hrGroup08; bool[] hrGroup09; bool[] hrGroup10; bool[] hrGroup11;
         bool[][] hrMasterGroups;
+        CheckBox[] hrGetGroup00; CheckBox[] hrGetGroup01; CheckBox[] hrGetGroup02; CheckBox[] hrGetGroup03; CheckBox[] hrGetGroup04; CheckBox[] hrGetGroup05;
+        CheckBox[] hrGetGroup06; CheckBox[] hrGetGroup07; CheckBox[] hrGetGroup08; CheckBox[] hrGetGroup09; CheckBox[] hrGetGroup10; CheckBox[] hrGetGroup11;
+        CheckBox[][] hrGetGroups;
         Label[] hrChannelLabels;
         ComboBox[] hrOCAmpsQuick; TextBox[] hrOCAmps; ComboBox[] hrOCTime; ComboBox[] hrModesQuick; ComboBox[] hrStartupQuick;
         CheckBox[] hrLock; TextBox[] hrPWMDuties; ComboBox[] hrDirections; ComboBox[] hrModeParam; ComboBox[] hrDeadTimes;
@@ -1174,7 +1177,6 @@ namespace M1ConfigGenerator
                 hcGetGroups[channel][1].Checked = hcObjects[card].M1_GetGroup1(channel);
                 hcGetGroups[channel][2].Checked = hcObjects[card].M1_GetGroup2(channel);
                 hcGetGroups[channel][3].Checked = hcObjects[card].M1_GetGroup3(channel);
-                hcGetGroups[channel][3].Checked = hcObjects[card].M1_GetGroup3(channel);
             }
         }
 
@@ -2222,7 +2224,7 @@ namespace M1ConfigGenerator
                 hrObjects[card].HC_SetTimeoutTime(channel, hrTimeoutTimes[channel].Text);
                 hrObjects[card].HC_SetMaxOn(channel, hrMaxOns[channel].Text);
                 hrObjects[card].HC_SetMaxDurRec(channel, hrMaxDurRec[channel].Text);
-                //hrObjects[card].M1_SetGroup0(hrMasterGroups[channel], channel); // takes care of all 4 groups
+                hrObjects[card].M1_SetGroup0(hrMasterGroups[channel], channel); // takes care of all 4 groups
                 hrObjects[card].HC_SetOCAmps(channel, hrOCAmps[channel].Text);
                 hrObjects[card].HC_SetUndAmp(channel, hrUndAmps[channel].Text);
                 hrObjects[card].HC_SetOCTime(channel, hrOCTime[channel].Text);
@@ -2266,11 +2268,14 @@ namespace M1ConfigGenerator
                 hrTimeoutTimes[channel].Text = hrObjects[card].HC_GetTimeoutTime(channel);
                 hrMaxOns[channel].Text = hrObjects[card].HC_GetMaxOn(channel);
                 hrMaxDurRec[channel].Text = hrObjects[card].HC_GetMaxDurRec(channel);
-                // groups
                 hrOCAmps[channel].Text = hrObjects[card].HC_GetOCAmps(channel);
                 hrUndAmps[channel].Text = hrObjects[card].HC_GetUndAmp(channel);
                 hrOCTime[channel].Text = hrObjects[card].HC_GetOCTime(channel);
                 hrMeasCurTimes[channel].Text = hrObjects[card].HC_GetMeasCurTime(channel);
+                hrGetGroups[channel][0].Checked = hrObjects[card].M1_GetGroup0(channel);
+                hrGetGroups[channel][1].Checked = hrObjects[card].M1_GetGroup1(channel);
+                hrGetGroups[channel][2].Checked = hrObjects[card].M1_GetGroup2(channel);
+                hrGetGroups[channel][3].Checked = hrObjects[card].M1_GetGroup3(channel);
             }
         }
 
@@ -3458,6 +3463,19 @@ namespace M1ConfigGenerator
             hcUndAmps = new TextBox[] { txtbHC1UndAmpCh00, txtbHC1UndAmpCh01, txtbHC1UndAmpCh02, txtbHC1UndAmpCh03, txtbHC1UndAmpCh04, txtbHC1UndAmpCh05, txtbHC1UndAmpCh06, txtbHC1UndAmpCh07, txtbHC1UndAmpCh08, txtbHC1UndAmpCh09, txtbHC1UndAmpCh10, txtbHC1UndAmpCh11 };
             hcMeasCurTimes = new ComboBox[] { cmbHC1MeasCurTimeCh00, cmbHC1MeasCurTimeCh01, cmbHC1MeasCurTimeCh02, cmbHC1MeasCurTimeCh03, cmbHC1MeasCurTimeCh04, cmbHC1MeasCurTimeCh05, cmbHC1MeasCurTimeCh06, cmbHC1MeasCurTimeCh07, cmbHC1MeasCurTimeCh08, cmbHC1MeasCurTimeCh09, cmbHC1MeasCurTimeCh10, cmbHC1MeasCurTimeCh11 };
 
+            hrGetGroup00 = new CheckBox[] { chkHRMG1Ch00, chkHRMG2Ch00, chkHRMG3Ch00, chkHRMG4Ch00 };
+            hrGetGroup01 = new CheckBox[] { chkHRMG1Ch01, chkHRMG2Ch01, chkHRMG3Ch01, chkHRMG4Ch01 };
+            hrGetGroup02 = new CheckBox[] { chkHRMG1Ch02, chkHRMG2Ch02, chkHRMG3Ch02, chkHRMG4Ch02 };
+            hrGetGroup03 = new CheckBox[] { chkHRMG1Ch03, chkHRMG2Ch03, chkHRMG3Ch03, chkHRMG4Ch03 };
+            hrGetGroup04 = new CheckBox[] { chkHRMG1Ch04, chkHRMG2Ch04, chkHRMG3Ch04, chkHRMG4Ch04 };
+            hrGetGroup05 = new CheckBox[] { chkHRMG1Ch05, chkHRMG2Ch05, chkHRMG3Ch05, chkHRMG4Ch05 };
+            hrGetGroup06 = new CheckBox[] { chkHRMG1Ch06, chkHRMG2Ch06, chkHRMG3Ch06, chkHRMG4Ch06 };
+            hrGetGroup07 = new CheckBox[] { chkHRMG1Ch07, chkHRMG2Ch07, chkHRMG3Ch07, chkHRMG4Ch07 };
+            hrGetGroup08 = new CheckBox[] { chkHRMG1Ch08, chkHRMG2Ch08, chkHRMG3Ch08, chkHRMG4Ch08 };
+            hrGetGroup09 = new CheckBox[] { chkHRMG1Ch09, chkHRMG2Ch09, chkHRMG3Ch09, chkHRMG4Ch09 };
+            hrGetGroup10 = new CheckBox[] { chkHRMG1Ch10, chkHRMG2Ch10, chkHRMG3Ch10, chkHRMG4Ch10 };
+            hrGetGroup11 = new CheckBox[] { chkHRMG1Ch11, chkHRMG2Ch11, chkHRMG3Ch11, chkHRMG4Ch11 };
+            hrGetGroups = new CheckBox[][] { hrGetGroup00, hrGetGroup01, hrGetGroup02, hrGetGroup03, hrGetGroup04, hrGetGroup05, hrGetGroup06, hrGetGroup07, hrGetGroup08, hrGetGroup09, hrGetGroup10, hrGetGroup11 };
             hrChannelLabels = new Label[] { lblHRCh00, lblHRCh01, lblHRCh02, lblHRCh03, lblHRCh04, lblHRCh05, lblHRCh06, lblHRCh07, lblHRCh08, lblHRCh09, lblHRCh10, lblHRCh11 };
             hrOCAmpsQuick = new ComboBox[] { cmbHRQuickOCAmpsCh00, cmbHRQuickOCAmpsCh01, cmbHRQuickOCAmpsCh02, cmbHRQuickOCAmpsCh03, cmbHRQuickOCAmpsCh04, cmbHRQuickOCAmpsCh05, cmbHRQuickOCAmpsCh06, cmbHRQuickOCAmpsCh07, cmbHRQuickOCAmpsCh08, cmbHRQuickOCAmpsCh09, cmbHRQuickOCAmpsCh10, cmbHRQuickOCAmpsCh11 };
             hrOCAmps = new TextBox[] { tbxHROCAmpsCh00, tbxHROCAmpsCh01, tbxHROCAmpsCh02, tbxHROCAmpsCh03, tbxHROCAmpsCh04, tbxHROCAmpsCh05, tbxHROCAmpsCh06, tbxHROCAmpsCh07, tbxHROCAmpsCh08, tbxHROCAmpsCh09, tbxHROCAmpsCh10, tbxHROCAmpsCh11 };

@@ -1158,6 +1158,16 @@ namespace M1ConfigGenerator
                     BlankComboBox(hc1OCAmpsQuick[channel]);
                 }
                 else { hc1OCAmpsQuick[channel].Text = hcObjects[card].HC_GetQuickOCAmps(channel); }
+                if (hcObjects[card].HC_GetQuickMode(channel) == "")
+                {
+                    BlankComboBox(hcModesQuick[channel]);
+                }
+                else { hcModesQuick[channel].Text = hcObjects[card].HC_GetQuickMode(channel); }
+                if (hcObjects[card].HC_GetQuickStartup(channel) == "")
+                {
+                    BlankComboBox(hcStartupQuick[channel]);
+                }
+                else { hcStartupQuick[channel].Text = hcObjects[card].HC_GetQuickStartup(channel); }
                 hcLock[channel].Checked = hcObjects[card].HC_GetLock(channel);
                 hcPWMDuties[channel].Text = hcObjects[card].HC_GetPWMDuty(channel);
                 hcPWMEnables[channel].Checked = hcObjects[card].HC_GetPWMEnable(channel);
@@ -2214,6 +2224,8 @@ namespace M1ConfigGenerator
             hrObjects[card].M1_SetBaseIndex(tbxHRBaseInstance.Text);
             for (int channel = 0; channel < 12; channel++)
             {
+                hrObjects[card].HC_SetQuickMode(channel, hrModesQuick[channel].Text);
+                hrObjects[card].HC_SetQuickStartup(channel, hrStartupQuick[channel].Text);
                 hrObjects[card].HC_SetLock(channel, hrLock[channel].Checked);
                 hrObjects[card].HC_SetPWMDuty(channel, hrPWMDuties[channel].Text);
                 hrObjects[card].HC_SetDirection(channel, hrDirections[channel].Text);
@@ -2258,6 +2270,16 @@ namespace M1ConfigGenerator
                     BlankComboBox(hrOCAmpsQuick[channel]);
                 }
                 else { hrOCAmpsQuick[channel].Text = hrObjects[card].HC_GetQuickOCAmps(channel); }
+                if (hrObjects[card].HC_GetQuickMode(channel) == "")
+                {
+                    BlankComboBox(hrModesQuick[channel]);
+                }
+                else { hrModesQuick[channel].Text = hrObjects[card].HC_GetQuickMode(channel); }
+                if (hrObjects[card].HC_GetQuickStartup(channel) == "")
+                {
+                    BlankComboBox(hrStartupQuick[channel]);
+                }
+                else { hrStartupQuick[channel].Text = hrObjects[card].HC_GetQuickStartup(channel); }
                 hrLock[channel].Checked = hrObjects[card].HC_GetLock(channel);
                 hrPWMDuties[channel].Text = hrObjects[card].HC_GetPWMDuty(channel);
                 hrDirections[channel].Text = hrObjects[card].HC_GetDirection(channel);

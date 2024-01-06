@@ -336,7 +336,7 @@ namespace M1ConfigGenerator
 
         public string HC_GetPaired(int argInt)
         {
-            return (hcChPairedValues[argInt] == "NO_SLAVE" ? "None" : hcChPairedValues[argInt].Substring(15));
+            return (hcChPairedValues[argInt] == "NO_SLAVE" ? "None" : hcChPairedValues[argInt].Substring(14)); // returns number from PAIRED_TO_CHNL#
         }
 
         public void HC_SetTimeout(int argInt, bool argBool)

@@ -331,7 +331,7 @@ namespace M1ConfigGenerator
         public void HC_SetPaired(int argInt, string argString)
         {
             if (argString == "None") { hcChPairedValues[argInt] = "NO_SLAVE"; }
-            else { hcChPairedValues[argInt] = "PAIRED_TO_CHNL_" + argString; }
+            else { hcChPairedValues[argInt] = "PAIRED_TO_CHNL" + argString; }
         } 
 
         public string HC_GetPaired(int argInt)

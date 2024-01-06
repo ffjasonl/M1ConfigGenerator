@@ -434,6 +434,36 @@ namespace M1ConfigGenerator
             return hcChMeasCurTimeValues[argInt];
         }
 
+        public void HC_SetQuickMode(int argInt, string argString)
+        {
+            hcQuickModeValue[argInt] = argString;
+        }
+
+        public string HC_GetQuickMode(int argInt)
+        {
+            return hcQuickModeValue[argInt];
+        }
+
+        //public void HC_SetQuickAmps(int argInt, string argString)
+        //{
+        //    hcQuickAmpsValue[argInt] = argString;
+        //}
+
+        //public string HC_GetQuickAmps(int argInt)
+        //{
+        //    return hcQuickAmpsValue[argInt];
+        //}
+
+        public void HC_SetQuickStartup(int argInt, string argString)
+        {
+            hcQuickStartupValue[argInt] = argString;
+        }
+
+        public string HC_GetQuickStartup(int argInt)
+        {
+            return hcQuickStartupValue[argInt];
+        }
+
         // No setters for forward or reverse override at this time
 
         private bool isHCRelay = false;
@@ -510,5 +540,9 @@ namespace M1ConfigGenerator
         //
         public string[] hcChOverrideForwardNames = { "OVERRIDE_FORWARD_INPUT_CHNL_Z0 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z1 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z2 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z3 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z4 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z5 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z6 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z7 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z8 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z9 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z10", "OVERRIDE_FORWARD_INPUT_CHNL_Z11", "OVERRIDE_FORWARD_INPUT_CHNL_Z12 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z13 ", "OVERRIDE_FORWARD_INPUT_CHNL_Z14", "OVERRIDE_FORWARD_INPUT_CHNL_Z15" };
         public string[] hcChOverrideForwardValues = { "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE", "DISABLE_OVERRIDE" };
+        //
+        public string[] hcQuickModeValue = { "", "", "", "", "", "", "", "", "", "", "", "" };
+        public string[] hcQuickAmpsValue = { "", "", "", "", "", "", "", "", "", "", "", "" };
+        public string[] hcQuickStartupValue = { "", "", "", "", "", "", "", "", "", "", "", "" };
     }
 }

@@ -140,6 +140,14 @@ namespace M1ConfigGenerator
             PopulateArrays();
         }
 
+        // @Utility ------------------------------------------------------ Utility
+
+        private void BlankComboBox(ComboBox argComboBox)
+        {
+            argComboBox.ResetText();
+            argComboBox.SelectedIndex = -1;
+        }
+
         // @Menu --------------------------------------------------------- Menu
         private void HideNavButtons()
         {
@@ -1098,6 +1106,8 @@ namespace M1ConfigGenerator
             hcObjects[card].M1_SetBaseIndex(tbxHC1BaseIndex.Text);
             for (int channel = 0; channel < 12; channel++)
             {
+                hcObjects[card].HC_SetQuickMode(channel, hcModesQuick[channel].Text);
+                hcObjects[card].HC_SetQuickStartup(channel, hcStartupQuick[channel].Text);
                 hcObjects[card].HC_SetLock(channel, hcLock[channel].Checked);
                 hcObjects[card].HC_SetPWMDuty(channel, hcPWMDuties[channel].Text);
                 hcObjects[card].HC_SetPWMEnable(channel, hcPWMEnables[channel].Checked);
@@ -1121,17 +1131,13 @@ namespace M1ConfigGenerator
         {
             chkTabVisHC1.Checked = hcObjects[card].M1_GetFullSetup();
             if (hcObjects[card].M1_GetCardNumber() == "") 
-            { 
-                // sets combobox to blank
-                cmbHC1CardNum.ResetText();
-                cmbHC1CardNum.SelectedIndex = -1;
+            {
+                BlankComboBox(cmbHC1CardNum);
             } 
             else { cmbHC1CardNum.Text = hcObjects[card].M1_GetCardNumber(); }
             if (hcObjects[card].M1_GetPanelNumber() == "") 
-            { 
-                // sets combobox to blank
-                cmbHC1PanelNum.ResetText();
-                cmbHC1PanelNum.SelectedIndex = -1;
+            {
+                BlankComboBox(cmbHC1PanelNum);
             } 
             else { cmbHC1PanelNum.Text = hcObjects[card].M1_GetPanelNumber(); }
             tbxHC1CfgRev.Text = hcObjects[card].M1_GetCfgRev();
@@ -1144,7 +1150,11 @@ namespace M1ConfigGenerator
             tbxHC1BaseIndex.Text = hcObjects[card].M1_GetBaseIndex();
             for (int channel = 0; channel < 12; channel++)
             {
-                hc1OCAmpsQuick[channel].Text = hcObjects[card].HC_GetQuickOCAmps(channel);
+                if (hcObjects[card].HC_GetQuickOCAmps(channel) == "")
+                {
+                    BlankComboBox(hc1OCAmpsQuick[channel]);
+                }
+                else { hc1OCAmpsQuick[channel].Text = hcObjects[card].HC_GetQuickOCAmps(channel); }
                 hcLock[channel].Checked = hcObjects[card].HC_GetLock(channel);
                 hcPWMDuties[channel].Text = hcObjects[card].HC_GetPWMDuty(channel);
                 hcPWMEnables[channel].Checked = hcObjects[card].HC_GetPWMEnable(channel);
@@ -2225,16 +2235,12 @@ namespace M1ConfigGenerator
             chkHRTabVis.Checked = hrObjects[card].M1_GetFullSetup();
             if (hrObjects[card].M1_GetCardNumber() == "")
             {
-                // sets combobox to blank
-                cmbHRCardNum.ResetText();
-                cmbHRCardNum.SelectedIndex = -1;
+                BlankComboBox(cmbHRCardNum);
             }
             else { cmbHRCardNum.Text = hrObjects[card].M1_GetCardNumber(); }
             if (hrObjects[card].M1_GetPanelNumber() == "")
             {
-                // sets combobox to blank
-                cmbHRPanelNum.ResetText();
-                cmbHRPanelNum.SelectedIndex = -1;
+                BlankComboBox(cmbHRPanelNum);
             }
             else { cmbHRPanelNum.Text = hrObjects[card].M1_GetPanelNumber(); }
             tbxHRCfgRev.Text = hrObjects[card].M1_GetCfgRev();
@@ -2245,7 +2251,11 @@ namespace M1ConfigGenerator
             tbxHRBaseInstance.Text = hrObjects[card].M1_GetBaseIndex();
             for (int channel = 0; channel < 12; channel++)
             {
-                hrOCAmpsQuick[channel].Text = hrObjects[card].HC_GetQuickOCAmps(channel);
+                if (hrObjects[card].HC_GetQuickOCAmps(channel) == "")
+                {
+                    BlankComboBox(hrOCAmpsQuick[channel]);
+                }
+                else { hrOCAmpsQuick[channel].Text = hrObjects[card].HC_GetQuickOCAmps(channel); }
                 hrLock[channel].Checked = hrObjects[card].HC_GetLock(channel);
                 hrPWMDuties[channel].Text = hrObjects[card].HC_GetPWMDuty(channel);
                 hrDirections[channel].Text = hrObjects[card].HC_GetDirection(channel);

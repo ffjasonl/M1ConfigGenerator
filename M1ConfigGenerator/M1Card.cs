@@ -156,9 +156,8 @@ namespace M1ConfigGenerator
             }
         }
 
-        public void M1_SetCardNumber(int argInt)
+        public void M1_SetCardNumber(string argString)
         {
-            string argString = argInt.ToString();
             cardNumber = argString;
         }
 
@@ -167,9 +166,8 @@ namespace M1ConfigGenerator
             return cardNumber;
         }
 
-        public void M1_SetPanelNumber(int argInt)
+        public void M1_SetPanelNumber(string argString)
         {
-            string argString = argInt.ToString();
             panelNumber = argString;
         }
 

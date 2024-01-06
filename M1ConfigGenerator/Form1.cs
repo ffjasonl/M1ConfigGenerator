@@ -1082,8 +1082,8 @@ namespace M1ConfigGenerator
             hcGroups = new bool[][] { hcGroup00, hcGroup01, hcGroup02, hcGroup03, hcGroup04, hcGroup05, hcGroup06, hcGroup07, hcGroup08, hcGroup09, hcGroup10, hcGroup11 };
             hcObjects[card].M1_SetVerRev(btnMenuNew.Text);
             hcObjects[card].M1_SetFullSetup(chkTabVisHC1.Checked);
-            hcObjects[card].M1_SetCardNumber(cmbHC1CardNum.SelectedIndex);
-            hcObjects[card].M1_SetPanelNumber(cmbHC1PanelNum.SelectedIndex);
+            hcObjects[card].M1_SetCardNumber(cmbHC1CardNum.Text);
+            hcObjects[card].M1_SetPanelNumber(cmbHC1PanelNum.Text);
             hcObjects[card].M1_SetDevAddr();
             hcObjects[card].M1_SetCardLetter(tbxHC1CardLetter.Text);
             hcObjects[card].M1_ChangeConfigName();
@@ -1229,7 +1229,7 @@ namespace M1ConfigGenerator
             HCCardNavColor(hcBtnArray, btnHCCard2);
             tabControlHC.SelectedIndex = 0;
             HC_SetAll(HCCardActive);
-            HCCardActive = (int)CardNum.Card2;
+            HCCardActive = (int) CardNum.Card2;
             HC_GetAll(HCCardActive);
         }
 
@@ -1238,7 +1238,7 @@ namespace M1ConfigGenerator
             HCCardNavColor(hcBtnArray, btnHCCard3);
             tabControlHC.SelectedIndex = 0;
             HC_SetAll(HCCardActive);
-            HCCardActive = (int)CardNum.Card3;
+            HCCardActive = (int) CardNum.Card3;
             HC_GetAll(HCCardActive);
         }
 
@@ -1247,7 +1247,7 @@ namespace M1ConfigGenerator
             HCCardNavColor(hcBtnArray, btnHCCard4);
             tabControlHC.SelectedIndex = 0;
             HC_SetAll(HCCardActive);
-            HCCardActive = (int)CardNum.Card4;
+            HCCardActive = (int) CardNum.Card4;
             HC_GetAll(HCCardActive);
         }
 
@@ -1256,7 +1256,7 @@ namespace M1ConfigGenerator
             HCCardNavColor(hcBtnArray, btnHCCard5);
             tabControlHC.SelectedIndex = 0;
             HC_SetAll(HCCardActive);
-            HCCardActive = (int)CardNum.Card5;
+            HCCardActive = (int) CardNum.Card5;
             HC_GetAll(HCCardActive);
         }
 
@@ -1265,7 +1265,7 @@ namespace M1ConfigGenerator
             HCCardNavColor(hcBtnArray, btnHCCard6);
             tabControlHC.SelectedIndex = 0;
             HC_SetAll(HCCardActive);
-            HCCardActive = (int)CardNum.Card6;
+            HCCardActive = (int) CardNum.Card6;
             HC_GetAll(HCCardActive);
         }
 
@@ -1274,7 +1274,7 @@ namespace M1ConfigGenerator
             HCCardNavColor(hcBtnArray, btnHCCard7);
             tabControlHC.SelectedIndex = 0;
             HC_SetAll(HCCardActive);
-            HCCardActive = (int)CardNum.Card7;
+            HCCardActive = (int) CardNum.Card7;
             HC_GetAll(HCCardActive);
         }
 
@@ -1283,7 +1283,7 @@ namespace M1ConfigGenerator
             HCCardNavColor(hcBtnArray, btnHCCard8);
             tabControlHC.SelectedIndex = 0;
             HC_SetAll(HCCardActive);
-            HCCardActive = (int)CardNum.Card8;
+            HCCardActive = (int) CardNum.Card8;
             HC_GetAll(HCCardActive);
         }
 
@@ -1303,13 +1303,13 @@ namespace M1ConfigGenerator
 
         private void cmbHC1CardNum_SelectedIndexChanged(object sender, EventArgs e)
         {
-            hcObjects[HCCardActive].M1_SetCardNumber(cmbHC1CardNum.SelectedIndex);
+            hcObjects[HCCardActive].M1_SetCardNumber(cmbHC1CardNum.Text);
             CheckHCGenerate();
         }
 
         private void cmbHC1PanelNum_SelectedIndexChanged(object sender, EventArgs e)
         {
-            hcObjects[HCCardActive].M1_SetPanelNumber(cmbHC1PanelNum.SelectedIndex);
+            hcObjects[HCCardActive].M1_SetPanelNumber(cmbHC1PanelNum.Text);
             CheckHCGenerate();
         }
 
@@ -2188,8 +2188,8 @@ namespace M1ConfigGenerator
             hrMasterGroups = new bool[][] { hrGroup00, hrGroup01, hrGroup02, hrGroup03, hrGroup04, hrGroup05, hrGroup06, hrGroup07, hrGroup08, hrGroup09, hrGroup10, hrGroup11 };
             hrObjects[card].M1_SetVerRev(btnMenuNew.Text);
             hrObjects[card].M1_SetFullSetup(chkHRTabVis.Checked);
-            hrObjects[card].M1_SetCardNumber(cmbHRCardNum.SelectedIndex);
-            hrObjects[card].M1_SetPanelNumber(cmbHRPanelNum.SelectedIndex);
+            hrObjects[card].M1_SetCardNumber(cmbHRCardNum.Text);
+            hrObjects[card].M1_SetPanelNumber(cmbHRPanelNum.Text);
             hrObjects[card].M1_SetDevAddr();
             hrObjects[card].M1_SetCardLetter(tbxHRCardLetter.Text);
             hrObjects[card].M1_ChangeConfigName();
@@ -2399,13 +2399,13 @@ namespace M1ConfigGenerator
 
         private void cmbHRCardNum_SelectedIndexChanged(object sender, EventArgs e)
         {
-            hrObjects[HRCardActive].M1_SetCardNumber(cmbHRCardNum.SelectedIndex);
+            hrObjects[HRCardActive].M1_SetCardNumber(cmbHRCardNum.Text);
             CheckHRGenerate();
         }
 
         private void cmbHRPanelNum_SelectedIndexChanged(object sender, EventArgs e)
         {
-            hrObjects[HRCardActive].M1_SetPanelNumber(cmbHRCardNum.SelectedIndex);
+            hrObjects[HRCardActive].M1_SetPanelNumber(cmbHRCardNum.Text);
             CheckHRGenerate();
         }
 

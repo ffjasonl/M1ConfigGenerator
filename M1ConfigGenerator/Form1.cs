@@ -1489,7 +1489,7 @@ namespace M1ConfigGenerator
             else if (cmbHC1Mode01.Text == "RP DN")
             {
                 cmbHC1ModeParamCh01.Text = "Slave";
-                cmbHC1DeadTimeCh01.Text = "500"; // probably not needed, just in case
+                cmbHC1DeadTimeCh01.Text = "500"; 
                 cmbHC1PairedCh01.Text = "0";
                 chkHC1PWMEnableCh01.Checked = false;
             }
@@ -1522,7 +1522,7 @@ namespace M1ConfigGenerator
             else if (cmbHC1Mode02.Text == "RP DN")
             {
                 cmbHC1ModeParamCh02.Text = "Slave";
-                cmbHC1DeadTimeCh02.Text = "500"; // probably not needed, just in case
+                cmbHC1DeadTimeCh02.Text = "500"; 
                 cmbHC1PairedCh02.Text = "1";
                 chkHC1PWMEnableCh02.Checked = false;
             }
@@ -1555,7 +1555,7 @@ namespace M1ConfigGenerator
             else if (cmbHC1Mode03.Text == "RP DN")
             {
                 cmbHC1ModeParamCh03.Text = "Slave";
-                cmbHC1DeadTimeCh03.Text = "500"; // probably not needed, just in case
+                cmbHC1DeadTimeCh03.Text = "500"; 
                 cmbHC1PairedCh03.Text = "2";
                 chkHC1PWMEnableCh03.Checked = false;
             }
@@ -1588,7 +1588,7 @@ namespace M1ConfigGenerator
             else if (cmbHC1Mode04.Text == "RP DN")
             {
                 cmbHC1ModeParamCh04.Text = "Slave";
-                cmbHC1DeadTimeCh04.Text = "500"; // probably not needed, just in case
+                cmbHC1DeadTimeCh04.Text = "500"; 
                 cmbHC1PairedCh04.Text = "3";
                 chkHC1PWMEnableCh04.Checked = false;
             }
@@ -1621,7 +1621,7 @@ namespace M1ConfigGenerator
             else if (cmbHC1Mode05.Text == "RP DN")
             {
                 cmbHC1ModeParamCh05.Text = "Slave";
-                cmbHC1DeadTimeCh05.Text = "500"; // probably not needed, just in case
+                cmbHC1DeadTimeCh05.Text = "500"; 
                 cmbHC1PairedCh05.Text = "4";
                 chkHC1PWMEnableCh05.Checked = false;
             }
@@ -1654,7 +1654,7 @@ namespace M1ConfigGenerator
             else if (cmbHC1Mode06.Text == "RP DN")
             {
                 cmbHC1ModeParamCh06.Text = "Slave";
-                cmbHC1DeadTimeCh06.Text = "500"; // probably not needed, just in case
+                cmbHC1DeadTimeCh06.Text = "500"; 
                 cmbHC1PairedCh06.Text = "5";
                 chkHC1PWMEnableCh06.Checked = false;
             }
@@ -1687,7 +1687,7 @@ namespace M1ConfigGenerator
             else if (cmbHC1Mode07.Text == "RP DN")
             {
                 cmbHC1ModeParamCh07.Text = "Slave";
-                cmbHC1DeadTimeCh07.Text = "500"; // probably not needed, just in case
+                cmbHC1DeadTimeCh07.Text = "500"; 
                 cmbHC1PairedCh07.Text = "6";
                 chkHC1PWMEnableCh07.Checked = false;
             }
@@ -1720,7 +1720,7 @@ namespace M1ConfigGenerator
             else if (cmbHC1Mode08.Text == "RP DN")
             {
                 cmbHC1ModeParamCh08.Text = "Slave";
-                cmbHC1DeadTimeCh08.Text = "500"; // probably not needed, just in case
+                cmbHC1DeadTimeCh08.Text = "500"; 
                 cmbHC1PairedCh08.Text = "7";
                 chkHC1PWMEnableCh08.Checked = false;
             }
@@ -1753,7 +1753,7 @@ namespace M1ConfigGenerator
             else if (cmbHC1Mode09.Text == "RP DN")
             {
                 cmbHC1ModeParamCh09.Text = "Slave";
-                cmbHC1DeadTimeCh09.Text = "500"; // probably not needed, just in case
+                cmbHC1DeadTimeCh09.Text = "500"; 
                 cmbHC1PairedCh09.Text = "8";
                 chkHC1PWMEnableCh09.Checked = false;
             }
@@ -1786,7 +1786,7 @@ namespace M1ConfigGenerator
             else if (cmbHC1Mode10.Text == "RP DN")
             {
                 cmbHC1ModeParamCh10.Text = "Slave";
-                cmbHC1DeadTimeCh10.Text = "500"; // probably not needed, just in case
+                cmbHC1DeadTimeCh10.Text = "500"; 
                 cmbHC1PairedCh10.Text = "9";
                 chkHC1PWMEnableCh10.Checked = false;
             }
@@ -1812,7 +1812,7 @@ namespace M1ConfigGenerator
             else if (cmbHC1Mode11.Text == "RP DN")
             {
                 cmbHC1ModeParamCh11.Text = "Slave";
-                cmbHC1DeadTimeCh11.Text = "500"; // probably not needed, just in case
+                cmbHC1DeadTimeCh11.Text = "500"; 
                 cmbHC1PairedCh11.Text = "10";
                 chkHC1PWMEnableCh11.Checked = false;
             }

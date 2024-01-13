@@ -2219,6 +2219,7 @@ namespace M1ConfigGenerator
             hrObjects[card].M1_SetCfgRev(tbxHRCfgRev.Text);
             hrObjects[card].M1_SetCfgType(tbxHRCfgType.Text);
             hrObjects[card].M1_SetDCMotor(chkHRDCMotor.Checked);
+            hrObjects[card].M1_SetDCDimmer(chkHRDCDimmer.Checked);
             hrObjects[card].M1_SetShade(chkHRShade.Checked);
             hrObjects[card].M1_SetForce(chkHRForce.Checked);
             hrObjects[card].M1_SetBaseIndex(tbxHRBaseInstance.Text);
@@ -2260,6 +2261,7 @@ namespace M1ConfigGenerator
             tbxHRCfgRev.Text = hrObjects[card].M1_GetCfgRev();
             tbxHRCardLetter.Text = hrObjects[card].M1_GetCardLetter();
             chkHRDCMotor.Checked = hrObjects[card].M1_GetDCMotor();
+            chkHRDCDimmer.Checked = hrObjects[card].M1_GetDCDimmer();
             chkHRShade.Checked = hrObjects[card].M1_GetShade();
             chkHRForce.Checked = hrObjects[card].M1_GetForce();
             tbxHRBaseInstance.Text = hrObjects[card].M1_GetBaseIndex();

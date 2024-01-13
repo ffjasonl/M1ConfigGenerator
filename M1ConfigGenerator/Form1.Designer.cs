@@ -733,6 +733,45 @@ namespace M1ConfigGenerator
             this.tbxHC1CardLetter = new System.Windows.Forms.TextBox();
             this.tabControlHC1QF = new M1ConfigGenerator.TablessControl();
             this.tabPageHC1Quick = new System.Windows.Forms.TabPage();
+            this.label112 = new System.Windows.Forms.Label();
+            this.cmbHC1OCAmps04 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1OCAmps03 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Startup11 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1OCAmps05 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Startup10 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1OCAmps02 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Startup09 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1OCAmps06 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Startup08 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1OCAmps01 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Startup07 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1OCAmps07 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Startup06 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1OCAmps08 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Startup05 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1OCAmps09 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Startup04 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1OCAmps10 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Startup03 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1OCAmps11 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Startup02 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1OCAmps00 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Startup01 = new System.Windows.Forms.ComboBox();
+            this.label148 = new System.Windows.Forms.Label();
+            this.cmbHC1Startup00 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Mode00 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Mode01 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Mode02 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Mode03 = new System.Windows.Forms.ComboBox();
+            this.label301 = new System.Windows.Forms.Label();
+            this.cmbHC1Mode04 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Mode05 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Mode06 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Mode07 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Mode08 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Mode09 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Mode10 = new System.Windows.Forms.ComboBox();
+            this.cmbHC1Mode11 = new System.Windows.Forms.ComboBox();
             this.tabPageHC1Full = new System.Windows.Forms.TabPage();
             this.tbxHC1OCAmpsParamCh11 = new System.Windows.Forms.TextBox();
             this.label563 = new System.Windows.Forms.Label();
@@ -930,24 +969,10 @@ namespace M1ConfigGenerator
             this.cmbHC1DirectionCh09 = new System.Windows.Forms.ComboBox();
             this.cmbHC1DirectionCh07 = new System.Windows.Forms.ComboBox();
             this.txtbHC1MaxDurRecCh06 = new System.Windows.Forms.TextBox();
-            this.cmbHC1Startup11 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1Startup10 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1Startup09 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1Startup08 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1Startup07 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1Startup06 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1Startup05 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1Startup04 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1Startup03 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1Startup02 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1Startup01 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1Startup00 = new System.Windows.Forms.ComboBox();
             this.lblHC1Ch00 = new System.Windows.Forms.Label();
             this.chkTabVisHC1 = new System.Windows.Forms.CheckBox();
             this.lblHC1Ch04 = new System.Windows.Forms.Label();
-            this.label301 = new System.Windows.Forms.Label();
             this.lblHC1Ch05 = new System.Windows.Forms.Label();
-            this.label148 = new System.Windows.Forms.Label();
             this.label138 = new System.Windows.Forms.Label();
             this.lblHC1Ch06 = new System.Windows.Forms.Label();
             this.label139 = new System.Windows.Forms.Label();
@@ -956,7 +981,6 @@ namespace M1ConfigGenerator
             this.label141 = new System.Windows.Forms.Label();
             this.label113 = new System.Windows.Forms.Label();
             this.lblHC1Ch08 = new System.Windows.Forms.Label();
-            this.label112 = new System.Windows.Forms.Label();
             this.chkHC1RGB = new System.Windows.Forms.CheckBox();
             this.lblHC1Ch09 = new System.Windows.Forms.Label();
             this.chkHC1Shade = new System.Windows.Forms.CheckBox();
@@ -975,93 +999,69 @@ namespace M1ConfigGenerator
             this.lblHC1Ch01 = new System.Windows.Forms.Label();
             this.label110 = new System.Windows.Forms.Label();
             this.chkHC1DCDimmer = new System.Windows.Forms.CheckBox();
-            this.cmbHC1OCAmps00 = new System.Windows.Forms.ComboBox();
             this.chkHC1DCMotor = new System.Windows.Forms.CheckBox();
             this.cmbHC1OCTime07 = new System.Windows.Forms.ComboBox();
             this.chkHC1Force = new System.Windows.Forms.CheckBox();
             this.label111 = new System.Windows.Forms.Label();
             this.cmbHC1OCTime08 = new System.Windows.Forms.ComboBox();
             this.tbxHC1BaseIndex = new System.Windows.Forms.TextBox();
-            this.cmbHC1Mode11 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG3Ch07 = new System.Windows.Forms.CheckBox();
             this.cmbHC1OCTime06 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG4Ch07 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1Mode10 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG2Ch07 = new System.Windows.Forms.CheckBox();
             this.cmbHC1OCTime09 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG1Ch08 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1Mode09 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG1Ch07 = new System.Windows.Forms.CheckBox();
             this.cmbHC1OCTime05 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG2Ch08 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1Mode08 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG4Ch06 = new System.Windows.Forms.CheckBox();
             this.cmbHC1OCTime10 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG3Ch08 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1Mode07 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG3Ch06 = new System.Windows.Forms.CheckBox();
             this.cmbHC1OCTime04 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG4Ch08 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1Mode06 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG2Ch06 = new System.Windows.Forms.CheckBox();
             this.cmbHC1OCTime11 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG1Ch09 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1Mode05 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG1Ch06 = new System.Windows.Forms.CheckBox();
             this.cmbHC1OCTime03 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG2Ch09 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1Mode04 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG4Ch05 = new System.Windows.Forms.CheckBox();
             this.cmbHC1OCTime02 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG3Ch09 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1Mode03 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG3Ch05 = new System.Windows.Forms.CheckBox();
             this.cmbHC1OCTime01 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG4Ch09 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1Mode02 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG2Ch05 = new System.Windows.Forms.CheckBox();
             this.cmbHC1OCTime00 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG1Ch10 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1Mode01 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG1Ch05 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG1Ch00 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG2Ch10 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG2Ch00 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG4Ch04 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1Mode00 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG3Ch10 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG3Ch00 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG3Ch04 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1OCAmps11 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG4Ch10 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG4Ch00 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG2Ch04 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1OCAmps10 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG1Ch11 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG1Ch01 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG1Ch04 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG2Ch11 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1OCAmps09 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG4Ch03 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG2Ch01 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG3Ch11 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1OCAmps08 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG3Ch03 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG3Ch01 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG4Ch11 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1OCAmps07 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG2Ch03 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG4Ch01 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1OCAmps01 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1OCAmps06 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG1Ch03 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG1Ch02 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1OCAmps02 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1OCAmps05 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG4Ch02 = new System.Windows.Forms.CheckBox();
             this.chkHC1MG2Ch02 = new System.Windows.Forms.CheckBox();
-            this.cmbHC1OCAmps03 = new System.Windows.Forms.ComboBox();
-            this.cmbHC1OCAmps04 = new System.Windows.Forms.ComboBox();
             this.chkHC1MG3Ch02 = new System.Windows.Forms.CheckBox();
             this.tabHCGenerated = new System.Windows.Forms.TabPage();
             this.label278 = new System.Windows.Forms.Label();
@@ -1412,30 +1412,6 @@ namespace M1ConfigGenerator
             this.btnHRCard7 = new System.Windows.Forms.Button();
             this.tabControlHR = new M1ConfigGenerator.TablessControl();
             this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.cmbHRQuickStartupCh11 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickStartupCh10 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickStartupCh09 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickStartupCh08 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickStartupCh07 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickStartupCh06 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickStartupCh05 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickStartupCh04 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickStartupCh03 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickStartupCh02 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickStartupCh01 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickStartupCh00 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickModeCh11 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickModeCh10 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickModeCh09 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickModeCh08 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickModeCh07 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickModeCh06 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickModeCh05 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickModeCh04 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickModeCh03 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickModeCh02 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickModeCh01 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickModeCh00 = new System.Windows.Forms.ComboBox();
             this.chkHRMG3Ch07 = new System.Windows.Forms.CheckBox();
             this.chkHRMG4Ch07 = new System.Windows.Forms.CheckBox();
             this.chkHRMG2Ch07 = new System.Windows.Forms.CheckBox();
@@ -1496,7 +1472,6 @@ namespace M1ConfigGenerator
             this.lblHRCh03 = new System.Windows.Forms.Label();
             this.lblHRCh02 = new System.Windows.Forms.Label();
             this.lblHRCh01 = new System.Windows.Forms.Label();
-            this.cmbHRQuickOCAmpsCh00 = new System.Windows.Forms.ComboBox();
             this.cmbHROCTimeCh07 = new System.Windows.Forms.ComboBox();
             this.cmbHROCTimeCh08 = new System.Windows.Forms.ComboBox();
             this.cmbHROCTimeCh06 = new System.Windows.Forms.ComboBox();
@@ -1509,25 +1484,11 @@ namespace M1ConfigGenerator
             this.cmbHROCTimeCh02 = new System.Windows.Forms.ComboBox();
             this.cmbHROCTimeCh01 = new System.Windows.Forms.ComboBox();
             this.cmbHROCTimeCh00 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickOCAmpsCh11 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickOCAmpsCh10 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickOCAmpsCh09 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickOCAmpsCh08 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickOCAmpsCh07 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickOCAmpsCh01 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickOCAmpsCh06 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickOCAmpsCh02 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickOCAmpsCh05 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickOCAmpsCh03 = new System.Windows.Forms.ComboBox();
-            this.cmbHRQuickOCAmpsCh04 = new System.Windows.Forms.ComboBox();
-            this.label692 = new System.Windows.Forms.Label();
-            this.label693 = new System.Windows.Forms.Label();
             this.label694 = new System.Windows.Forms.Label();
             this.label695 = new System.Windows.Forms.Label();
             this.label696 = new System.Windows.Forms.Label();
             this.label697 = new System.Windows.Forms.Label();
             this.label698 = new System.Windows.Forms.Label();
-            this.label699 = new System.Windows.Forms.Label();
             this.label700 = new System.Windows.Forms.Label();
             this.tbxHRBaseInstance = new System.Windows.Forms.TextBox();
             this.label681 = new System.Windows.Forms.Label();
@@ -1547,6 +1508,45 @@ namespace M1ConfigGenerator
             this.chkHRForce = new System.Windows.Forms.CheckBox();
             this.tabControlHRQF = new M1ConfigGenerator.TablessControl();
             this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.cmbHRQuickStartupCh11 = new System.Windows.Forms.ComboBox();
+            this.label699 = new System.Windows.Forms.Label();
+            this.cmbHRQuickStartupCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickStartupCh00 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickOCAmpsCh00 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh10 = new System.Windows.Forms.ComboBox();
+            this.label693 = new System.Windows.Forms.Label();
+            this.cmbHRQuickModeCh09 = new System.Windows.Forms.ComboBox();
+            this.label692 = new System.Windows.Forms.Label();
+            this.cmbHRQuickModeCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh00 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbHRQuickModeCh04 = new System.Windows.Forms.ComboBox();
             this.tabPage16 = new System.Windows.Forms.TabPage();
             this.tbxHROCAmpsCh11 = new System.Windows.Forms.TextBox();
             this.label652 = new System.Windows.Forms.Label();
@@ -1741,6 +1741,7 @@ namespace M1ConfigGenerator
             this.btnHRCard4 = new System.Windows.Forms.Button();
             this.btnHRCard3 = new System.Windows.Forms.Button();
             this.btnHRCard2 = new System.Windows.Forms.Button();
+            this.chkHRDCDimmer = new System.Windows.Forms.CheckBox();
             this.panelMenu.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
@@ -1979,7 +1980,7 @@ namespace M1ConfigGenerator
             this.tabMainStart.Controls.Add(this.btnStartCreate);
             this.tabMainStart.Location = new System.Drawing.Point(4, 22);
             this.tabMainStart.Name = "tabMainStart";
-            this.tabMainStart.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabMainStart.Padding = new System.Windows.Forms.Padding(3);
             this.tabMainStart.Size = new System.Drawing.Size(1380, 995);
             this.tabMainStart.TabIndex = 1;
             this.tabMainStart.Text = "Start";
@@ -2536,7 +2537,7 @@ namespace M1ConfigGenerator
             this.tabAux1.Controls.Add(this.chkAux1MG2Ch08);
             this.tabAux1.Location = new System.Drawing.Point(4, 22);
             this.tabAux1.Name = "tabAux1";
-            this.tabAux1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabAux1.Padding = new System.Windows.Forms.Padding(3);
             this.tabAux1.Size = new System.Drawing.Size(1376, 903);
             this.tabAux1.TabIndex = 1;
             this.tabAux1.Text = "Aux 1";
@@ -2624,7 +2625,7 @@ namespace M1ConfigGenerator
             this.tabAux1Quick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.tabAux1Quick.Location = new System.Drawing.Point(4, 22);
             this.tabAux1Quick.Name = "tabAux1Quick";
-            this.tabAux1Quick.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabAux1Quick.Padding = new System.Windows.Forms.Padding(3);
             this.tabAux1Quick.Size = new System.Drawing.Size(1376, 581);
             this.tabAux1Quick.TabIndex = 0;
             this.tabAux1Quick.Text = "Aux 1 Quick";
@@ -2725,7 +2726,7 @@ namespace M1ConfigGenerator
             this.tabAux1Full.Controls.Add(this.label397);
             this.tabAux1Full.Location = new System.Drawing.Point(4, 22);
             this.tabAux1Full.Name = "tabAux1Full";
-            this.tabAux1Full.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabAux1Full.Padding = new System.Windows.Forms.Padding(3);
             this.tabAux1Full.Size = new System.Drawing.Size(1376, 581);
             this.tabAux1Full.TabIndex = 1;
             this.tabAux1Full.Text = "Aux 1 Full";
@@ -4767,7 +4768,7 @@ namespace M1ConfigGenerator
             this.tabBreaker1.Controls.Add(this.tbxBreaker1CfgType);
             this.tabBreaker1.Location = new System.Drawing.Point(4, 22);
             this.tabBreaker1.Name = "tabBreaker1";
-            this.tabBreaker1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabBreaker1.Padding = new System.Windows.Forms.Padding(3);
             this.tabBreaker1.Size = new System.Drawing.Size(1376, 903);
             this.tabBreaker1.TabIndex = 1;
             this.tabBreaker1.Text = "Breaker 1";
@@ -4799,7 +4800,7 @@ namespace M1ConfigGenerator
             this.tabBreak1Quick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.tabBreak1Quick.Location = new System.Drawing.Point(4, 22);
             this.tabBreak1Quick.Name = "tabBreak1Quick";
-            this.tabBreak1Quick.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabBreak1Quick.Padding = new System.Windows.Forms.Padding(3);
             this.tabBreak1Quick.Size = new System.Drawing.Size(1376, 661);
             this.tabBreak1Quick.TabIndex = 0;
             this.tabBreak1Quick.Text = "Breaker 1 Quick";
@@ -4901,7 +4902,7 @@ namespace M1ConfigGenerator
             this.tabBreak1Full.Controls.Add(this.label549);
             this.tabBreak1Full.Location = new System.Drawing.Point(4, 22);
             this.tabBreak1Full.Name = "tabBreak1Full";
-            this.tabBreak1Full.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabBreak1Full.Padding = new System.Windows.Forms.Padding(3);
             this.tabBreak1Full.Size = new System.Drawing.Size(1376, 661);
             this.tabBreak1Full.TabIndex = 1;
             this.tabBreak1Full.Text = "Breaker 1 Full";
@@ -7448,7 +7449,7 @@ namespace M1ConfigGenerator
             this.tabDimmer1.Controls.Add(this.cmbDimmer1OCTime09);
             this.tabDimmer1.Location = new System.Drawing.Point(4, 22);
             this.tabDimmer1.Name = "tabDimmer1";
-            this.tabDimmer1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabDimmer1.Padding = new System.Windows.Forms.Padding(3);
             this.tabDimmer1.Size = new System.Drawing.Size(1376, 900);
             this.tabDimmer1.TabIndex = 1;
             this.tabDimmer1.Text = "Dimmer 1";
@@ -7570,7 +7571,7 @@ namespace M1ConfigGenerator
             this.tabDimmer1Quick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.tabDimmer1Quick.Location = new System.Drawing.Point(4, 22);
             this.tabDimmer1Quick.Name = "tabDimmer1Quick";
-            this.tabDimmer1Quick.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabDimmer1Quick.Padding = new System.Windows.Forms.Padding(3);
             this.tabDimmer1Quick.Size = new System.Drawing.Size(1378, 512);
             this.tabDimmer1Quick.TabIndex = 0;
             this.tabDimmer1Quick.Text = "Dim 1 Quick";
@@ -7736,7 +7737,7 @@ namespace M1ConfigGenerator
             this.tabDimmer1Full.Controls.Add(this.chkDimmer1Lock05);
             this.tabDimmer1Full.Location = new System.Drawing.Point(4, 22);
             this.tabDimmer1Full.Name = "tabDimmer1Full";
-            this.tabDimmer1Full.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabDimmer1Full.Padding = new System.Windows.Forms.Padding(3);
             this.tabDimmer1Full.Size = new System.Drawing.Size(1378, 512);
             this.tabDimmer1Full.TabIndex = 1;
             this.tabDimmer1Full.Text = "Dim 1 Full";
@@ -10952,7 +10953,7 @@ namespace M1ConfigGenerator
             this.tabHC1.Controls.Add(this.chkHC1MG3Ch02);
             this.tabHC1.Location = new System.Drawing.Point(4, 22);
             this.tabHC1.Name = "tabHC1";
-            this.tabHC1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabHC1.Padding = new System.Windows.Forms.Padding(3);
             this.tabHC1.Size = new System.Drawing.Size(1376, 854);
             this.tabHC1.TabIndex = 1;
             this.tabHC1.Text = "HC 1";
@@ -11032,10 +11033,713 @@ namespace M1ConfigGenerator
             this.tabPageHC1Quick.Controls.Add(this.cmbHC1Mode11);
             this.tabPageHC1Quick.Location = new System.Drawing.Point(4, 22);
             this.tabPageHC1Quick.Name = "tabPageHC1Quick";
-            this.tabPageHC1Quick.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPageHC1Quick.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageHC1Quick.Size = new System.Drawing.Size(1378, 529);
             this.tabPageHC1Quick.TabIndex = 0;
             this.tabPageHC1Quick.Text = "HC 1 Quick";
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label112.ForeColor = System.Drawing.Color.Yellow;
+            this.label112.Location = new System.Drawing.Point(3, 3);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(172, 17);
+            this.label112.TabIndex = 60;
+            this.label112.Text = "Overcurrent Amps Quick Set";
+            // 
+            // cmbHC1OCAmps04
+            // 
+            this.cmbHC1OCAmps04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1OCAmps04.FormattingEnabled = true;
+            this.cmbHC1OCAmps04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC1OCAmps04.Location = new System.Drawing.Point(523, 2);
+            this.cmbHC1OCAmps04.Name = "cmbHC1OCAmps04";
+            this.cmbHC1OCAmps04.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1OCAmps04.TabIndex = 12;
+            this.cmbHC1OCAmps04.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps04_SelectedIndexChanged);
+            // 
+            // cmbHC1OCAmps03
+            // 
+            this.cmbHC1OCAmps03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1OCAmps03.FormattingEnabled = true;
+            this.cmbHC1OCAmps03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC1OCAmps03.Location = new System.Drawing.Point(451, 2);
+            this.cmbHC1OCAmps03.Name = "cmbHC1OCAmps03";
+            this.cmbHC1OCAmps03.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1OCAmps03.TabIndex = 11;
+            this.cmbHC1OCAmps03.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps03_SelectedIndexChanged);
+            // 
+            // cmbHC1Startup11
+            // 
+            this.cmbHC1Startup11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Startup11.FormattingEnabled = true;
+            this.cmbHC1Startup11.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHC1Startup11.Location = new System.Drawing.Point(1027, 62);
+            this.cmbHC1Startup11.Name = "cmbHC1Startup11";
+            this.cmbHC1Startup11.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Startup11.TabIndex = 103;
+            this.cmbHC1Startup11.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup11_SelectedIndexChanged);
+            // 
+            // cmbHC1OCAmps05
+            // 
+            this.cmbHC1OCAmps05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1OCAmps05.FormattingEnabled = true;
+            this.cmbHC1OCAmps05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC1OCAmps05.Location = new System.Drawing.Point(595, 2);
+            this.cmbHC1OCAmps05.Name = "cmbHC1OCAmps05";
+            this.cmbHC1OCAmps05.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1OCAmps05.TabIndex = 13;
+            this.cmbHC1OCAmps05.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps05_SelectedIndexChanged);
+            // 
+            // cmbHC1Startup10
+            // 
+            this.cmbHC1Startup10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Startup10.FormattingEnabled = true;
+            this.cmbHC1Startup10.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHC1Startup10.Location = new System.Drawing.Point(955, 62);
+            this.cmbHC1Startup10.Name = "cmbHC1Startup10";
+            this.cmbHC1Startup10.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Startup10.TabIndex = 102;
+            this.cmbHC1Startup10.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup10_SelectedIndexChanged);
+            // 
+            // cmbHC1OCAmps02
+            // 
+            this.cmbHC1OCAmps02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1OCAmps02.FormattingEnabled = true;
+            this.cmbHC1OCAmps02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC1OCAmps02.Location = new System.Drawing.Point(379, 2);
+            this.cmbHC1OCAmps02.Name = "cmbHC1OCAmps02";
+            this.cmbHC1OCAmps02.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1OCAmps02.TabIndex = 10;
+            this.cmbHC1OCAmps02.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps02_SelectedIndexChanged);
+            // 
+            // cmbHC1Startup09
+            // 
+            this.cmbHC1Startup09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Startup09.FormattingEnabled = true;
+            this.cmbHC1Startup09.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHC1Startup09.Location = new System.Drawing.Point(883, 62);
+            this.cmbHC1Startup09.Name = "cmbHC1Startup09";
+            this.cmbHC1Startup09.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Startup09.TabIndex = 101;
+            this.cmbHC1Startup09.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup09_SelectedIndexChanged);
+            // 
+            // cmbHC1OCAmps06
+            // 
+            this.cmbHC1OCAmps06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1OCAmps06.FormattingEnabled = true;
+            this.cmbHC1OCAmps06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC1OCAmps06.Location = new System.Drawing.Point(667, 2);
+            this.cmbHC1OCAmps06.Name = "cmbHC1OCAmps06";
+            this.cmbHC1OCAmps06.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1OCAmps06.TabIndex = 14;
+            this.cmbHC1OCAmps06.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps06_SelectedIndexChanged);
+            // 
+            // cmbHC1Startup08
+            // 
+            this.cmbHC1Startup08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Startup08.FormattingEnabled = true;
+            this.cmbHC1Startup08.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHC1Startup08.Location = new System.Drawing.Point(811, 62);
+            this.cmbHC1Startup08.Name = "cmbHC1Startup08";
+            this.cmbHC1Startup08.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Startup08.TabIndex = 100;
+            this.cmbHC1Startup08.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup08_SelectedIndexChanged);
+            // 
+            // cmbHC1OCAmps01
+            // 
+            this.cmbHC1OCAmps01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1OCAmps01.FormattingEnabled = true;
+            this.cmbHC1OCAmps01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC1OCAmps01.Location = new System.Drawing.Point(307, 2);
+            this.cmbHC1OCAmps01.Name = "cmbHC1OCAmps01";
+            this.cmbHC1OCAmps01.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1OCAmps01.TabIndex = 9;
+            this.cmbHC1OCAmps01.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps01_SelectedIndexChanged);
+            // 
+            // cmbHC1Startup07
+            // 
+            this.cmbHC1Startup07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Startup07.FormattingEnabled = true;
+            this.cmbHC1Startup07.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHC1Startup07.Location = new System.Drawing.Point(739, 62);
+            this.cmbHC1Startup07.Name = "cmbHC1Startup07";
+            this.cmbHC1Startup07.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Startup07.TabIndex = 99;
+            this.cmbHC1Startup07.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup07_SelectedIndexChanged);
+            // 
+            // cmbHC1OCAmps07
+            // 
+            this.cmbHC1OCAmps07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1OCAmps07.FormattingEnabled = true;
+            this.cmbHC1OCAmps07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC1OCAmps07.Location = new System.Drawing.Point(739, 2);
+            this.cmbHC1OCAmps07.Name = "cmbHC1OCAmps07";
+            this.cmbHC1OCAmps07.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1OCAmps07.TabIndex = 15;
+            this.cmbHC1OCAmps07.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps07_SelectedIndexChanged);
+            // 
+            // cmbHC1Startup06
+            // 
+            this.cmbHC1Startup06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Startup06.FormattingEnabled = true;
+            this.cmbHC1Startup06.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHC1Startup06.Location = new System.Drawing.Point(667, 62);
+            this.cmbHC1Startup06.Name = "cmbHC1Startup06";
+            this.cmbHC1Startup06.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Startup06.TabIndex = 98;
+            this.cmbHC1Startup06.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup06_SelectedIndexChanged);
+            // 
+            // cmbHC1OCAmps08
+            // 
+            this.cmbHC1OCAmps08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1OCAmps08.FormattingEnabled = true;
+            this.cmbHC1OCAmps08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC1OCAmps08.Location = new System.Drawing.Point(811, 2);
+            this.cmbHC1OCAmps08.Name = "cmbHC1OCAmps08";
+            this.cmbHC1OCAmps08.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1OCAmps08.TabIndex = 16;
+            this.cmbHC1OCAmps08.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps08_SelectedIndexChanged);
+            // 
+            // cmbHC1Startup05
+            // 
+            this.cmbHC1Startup05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Startup05.FormattingEnabled = true;
+            this.cmbHC1Startup05.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHC1Startup05.Location = new System.Drawing.Point(595, 62);
+            this.cmbHC1Startup05.Name = "cmbHC1Startup05";
+            this.cmbHC1Startup05.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Startup05.TabIndex = 97;
+            this.cmbHC1Startup05.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup05_SelectedIndexChanged);
+            // 
+            // cmbHC1OCAmps09
+            // 
+            this.cmbHC1OCAmps09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1OCAmps09.FormattingEnabled = true;
+            this.cmbHC1OCAmps09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC1OCAmps09.Location = new System.Drawing.Point(883, 2);
+            this.cmbHC1OCAmps09.Name = "cmbHC1OCAmps09";
+            this.cmbHC1OCAmps09.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1OCAmps09.TabIndex = 17;
+            this.cmbHC1OCAmps09.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps09_SelectedIndexChanged);
+            // 
+            // cmbHC1Startup04
+            // 
+            this.cmbHC1Startup04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Startup04.FormattingEnabled = true;
+            this.cmbHC1Startup04.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHC1Startup04.Location = new System.Drawing.Point(523, 62);
+            this.cmbHC1Startup04.Name = "cmbHC1Startup04";
+            this.cmbHC1Startup04.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Startup04.TabIndex = 96;
+            this.cmbHC1Startup04.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup04_SelectedIndexChanged);
+            // 
+            // cmbHC1OCAmps10
+            // 
+            this.cmbHC1OCAmps10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1OCAmps10.FormattingEnabled = true;
+            this.cmbHC1OCAmps10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC1OCAmps10.Location = new System.Drawing.Point(955, 2);
+            this.cmbHC1OCAmps10.Name = "cmbHC1OCAmps10";
+            this.cmbHC1OCAmps10.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1OCAmps10.TabIndex = 18;
+            this.cmbHC1OCAmps10.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps10_SelectedIndexChanged);
+            // 
+            // cmbHC1Startup03
+            // 
+            this.cmbHC1Startup03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Startup03.FormattingEnabled = true;
+            this.cmbHC1Startup03.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHC1Startup03.Location = new System.Drawing.Point(451, 62);
+            this.cmbHC1Startup03.Name = "cmbHC1Startup03";
+            this.cmbHC1Startup03.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Startup03.TabIndex = 95;
+            this.cmbHC1Startup03.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup03_SelectedIndexChanged);
+            // 
+            // cmbHC1OCAmps11
+            // 
+            this.cmbHC1OCAmps11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1OCAmps11.FormattingEnabled = true;
+            this.cmbHC1OCAmps11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC1OCAmps11.Location = new System.Drawing.Point(1027, 2);
+            this.cmbHC1OCAmps11.Name = "cmbHC1OCAmps11";
+            this.cmbHC1OCAmps11.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1OCAmps11.TabIndex = 19;
+            this.cmbHC1OCAmps11.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps11_SelectedIndexChanged);
+            // 
+            // cmbHC1Startup02
+            // 
+            this.cmbHC1Startup02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Startup02.FormattingEnabled = true;
+            this.cmbHC1Startup02.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHC1Startup02.Location = new System.Drawing.Point(379, 62);
+            this.cmbHC1Startup02.Name = "cmbHC1Startup02";
+            this.cmbHC1Startup02.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Startup02.TabIndex = 94;
+            this.cmbHC1Startup02.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup02_SelectedIndexChanged);
+            // 
+            // cmbHC1OCAmps00
+            // 
+            this.cmbHC1OCAmps00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1OCAmps00.FormattingEnabled = true;
+            this.cmbHC1OCAmps00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHC1OCAmps00.Location = new System.Drawing.Point(235, 2);
+            this.cmbHC1OCAmps00.Name = "cmbHC1OCAmps00";
+            this.cmbHC1OCAmps00.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1OCAmps00.TabIndex = 8;
+            this.cmbHC1OCAmps00.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps00_SelectedIndexChanged);
+            // 
+            // cmbHC1Startup01
+            // 
+            this.cmbHC1Startup01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Startup01.FormattingEnabled = true;
+            this.cmbHC1Startup01.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHC1Startup01.Location = new System.Drawing.Point(307, 62);
+            this.cmbHC1Startup01.Name = "cmbHC1Startup01";
+            this.cmbHC1Startup01.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Startup01.TabIndex = 93;
+            this.cmbHC1Startup01.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup01_SelectedIndexChanged);
+            // 
+            // label148
+            // 
+            this.label148.AutoSize = true;
+            this.label148.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label148.ForeColor = System.Drawing.Color.Yellow;
+            this.label148.Location = new System.Drawing.Point(3, 33);
+            this.label148.Name = "label148";
+            this.label148.Size = new System.Drawing.Size(184, 17);
+            this.label148.TabIndex = 167;
+            this.label148.Text = "Mode Quick Set (Output Type)";
+            // 
+            // cmbHC1Startup00
+            // 
+            this.cmbHC1Startup00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Startup00.FormattingEnabled = true;
+            this.cmbHC1Startup00.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHC1Startup00.Location = new System.Drawing.Point(235, 62);
+            this.cmbHC1Startup00.Name = "cmbHC1Startup00";
+            this.cmbHC1Startup00.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Startup00.TabIndex = 92;
+            this.cmbHC1Startup00.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup00_SelectedIndexChanged);
+            // 
+            // cmbHC1Mode00
+            // 
+            this.cmbHC1Mode00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Mode00.FormattingEnabled = true;
+            this.cmbHC1Mode00.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP"});
+            this.cmbHC1Mode00.Location = new System.Drawing.Point(235, 32);
+            this.cmbHC1Mode00.Name = "cmbHC1Mode00";
+            this.cmbHC1Mode00.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Mode00.TabIndex = 80;
+            this.cmbHC1Mode00.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode00_SelectedIndexChanged);
+            // 
+            // cmbHC1Mode01
+            // 
+            this.cmbHC1Mode01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Mode01.FormattingEnabled = true;
+            this.cmbHC1Mode01.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHC1Mode01.Location = new System.Drawing.Point(307, 32);
+            this.cmbHC1Mode01.Name = "cmbHC1Mode01";
+            this.cmbHC1Mode01.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Mode01.TabIndex = 81;
+            this.cmbHC1Mode01.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode01_SelectedIndexChanged);
+            // 
+            // cmbHC1Mode02
+            // 
+            this.cmbHC1Mode02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Mode02.FormattingEnabled = true;
+            this.cmbHC1Mode02.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHC1Mode02.Location = new System.Drawing.Point(379, 32);
+            this.cmbHC1Mode02.Name = "cmbHC1Mode02";
+            this.cmbHC1Mode02.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Mode02.TabIndex = 82;
+            this.cmbHC1Mode02.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode02_SelectedIndexChanged);
+            // 
+            // cmbHC1Mode03
+            // 
+            this.cmbHC1Mode03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Mode03.FormattingEnabled = true;
+            this.cmbHC1Mode03.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHC1Mode03.Location = new System.Drawing.Point(451, 32);
+            this.cmbHC1Mode03.Name = "cmbHC1Mode03";
+            this.cmbHC1Mode03.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Mode03.TabIndex = 83;
+            this.cmbHC1Mode03.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode03_SelectedIndexChanged);
+            // 
+            // label301
+            // 
+            this.label301.AutoSize = true;
+            this.label301.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label301.ForeColor = System.Drawing.Color.Yellow;
+            this.label301.Location = new System.Drawing.Point(3, 63);
+            this.label301.Name = "label301";
+            this.label301.Size = new System.Drawing.Size(119, 17);
+            this.label301.TabIndex = 180;
+            this.label301.Text = "Behavior at Startup";
+            // 
+            // cmbHC1Mode04
+            // 
+            this.cmbHC1Mode04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Mode04.FormattingEnabled = true;
+            this.cmbHC1Mode04.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHC1Mode04.Location = new System.Drawing.Point(523, 32);
+            this.cmbHC1Mode04.Name = "cmbHC1Mode04";
+            this.cmbHC1Mode04.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Mode04.TabIndex = 84;
+            this.cmbHC1Mode04.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode04_SelectedIndexChanged);
+            // 
+            // cmbHC1Mode05
+            // 
+            this.cmbHC1Mode05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Mode05.FormattingEnabled = true;
+            this.cmbHC1Mode05.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHC1Mode05.Location = new System.Drawing.Point(595, 32);
+            this.cmbHC1Mode05.Name = "cmbHC1Mode05";
+            this.cmbHC1Mode05.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Mode05.TabIndex = 85;
+            this.cmbHC1Mode05.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode05_SelectedIndexChanged);
+            // 
+            // cmbHC1Mode06
+            // 
+            this.cmbHC1Mode06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Mode06.FormattingEnabled = true;
+            this.cmbHC1Mode06.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHC1Mode06.Location = new System.Drawing.Point(667, 32);
+            this.cmbHC1Mode06.Name = "cmbHC1Mode06";
+            this.cmbHC1Mode06.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Mode06.TabIndex = 86;
+            this.cmbHC1Mode06.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode06_SelectedIndexChanged);
+            // 
+            // cmbHC1Mode07
+            // 
+            this.cmbHC1Mode07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Mode07.FormattingEnabled = true;
+            this.cmbHC1Mode07.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHC1Mode07.Location = new System.Drawing.Point(739, 32);
+            this.cmbHC1Mode07.Name = "cmbHC1Mode07";
+            this.cmbHC1Mode07.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Mode07.TabIndex = 87;
+            this.cmbHC1Mode07.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode07_SelectedIndexChanged);
+            // 
+            // cmbHC1Mode08
+            // 
+            this.cmbHC1Mode08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Mode08.FormattingEnabled = true;
+            this.cmbHC1Mode08.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHC1Mode08.Location = new System.Drawing.Point(811, 32);
+            this.cmbHC1Mode08.Name = "cmbHC1Mode08";
+            this.cmbHC1Mode08.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Mode08.TabIndex = 88;
+            this.cmbHC1Mode08.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode08_SelectedIndexChanged);
+            // 
+            // cmbHC1Mode09
+            // 
+            this.cmbHC1Mode09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Mode09.FormattingEnabled = true;
+            this.cmbHC1Mode09.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHC1Mode09.Location = new System.Drawing.Point(883, 32);
+            this.cmbHC1Mode09.Name = "cmbHC1Mode09";
+            this.cmbHC1Mode09.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Mode09.TabIndex = 89;
+            this.cmbHC1Mode09.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode09_SelectedIndexChanged);
+            // 
+            // cmbHC1Mode10
+            // 
+            this.cmbHC1Mode10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Mode10.FormattingEnabled = true;
+            this.cmbHC1Mode10.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHC1Mode10.Location = new System.Drawing.Point(955, 32);
+            this.cmbHC1Mode10.Name = "cmbHC1Mode10";
+            this.cmbHC1Mode10.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Mode10.TabIndex = 90;
+            this.cmbHC1Mode10.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode10_SelectedIndexChanged);
+            // 
+            // cmbHC1Mode11
+            // 
+            this.cmbHC1Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHC1Mode11.FormattingEnabled = true;
+            this.cmbHC1Mode11.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP DN"});
+            this.cmbHC1Mode11.Location = new System.Drawing.Point(1027, 32);
+            this.cmbHC1Mode11.Name = "cmbHC1Mode11";
+            this.cmbHC1Mode11.Size = new System.Drawing.Size(66, 21);
+            this.cmbHC1Mode11.TabIndex = 91;
+            this.cmbHC1Mode11.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode11_SelectedIndexChanged);
             // 
             // tabPageHC1Full
             // 
@@ -11238,7 +11942,7 @@ namespace M1ConfigGenerator
             this.tabPageHC1Full.Controls.Add(this.txtbHC1MaxDurRecCh06);
             this.tabPageHC1Full.Location = new System.Drawing.Point(4, 22);
             this.tabPageHC1Full.Name = "tabPageHC1Full";
-            this.tabPageHC1Full.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPageHC1Full.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageHC1Full.Size = new System.Drawing.Size(1378, 529);
             this.tabPageHC1Full.TabIndex = 1;
             this.tabPageHC1Full.Text = "HC 1 Full";
@@ -11747,7 +12451,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1Lock00.Location = new System.Drawing.Point(251, 31);
             this.chkHC1Lock00.Name = "chkHC1Lock00";
-            this.chkHC1Lock00.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1Lock00.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1Lock00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock00.TabIndex = 303;
             this.chkHC1Lock00.UseVisualStyleBackColor = true;
@@ -11756,7 +12460,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1Lock01.Location = new System.Drawing.Point(323, 31);
             this.chkHC1Lock01.Name = "chkHC1Lock01";
-            this.chkHC1Lock01.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1Lock01.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1Lock01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock01.TabIndex = 304;
             this.chkHC1Lock01.UseVisualStyleBackColor = true;
@@ -11765,7 +12469,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1Lock02.Location = new System.Drawing.Point(395, 31);
             this.chkHC1Lock02.Name = "chkHC1Lock02";
-            this.chkHC1Lock02.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1Lock02.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1Lock02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock02.TabIndex = 305;
             this.chkHC1Lock02.UseVisualStyleBackColor = true;
@@ -11774,7 +12478,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1Lock03.Location = new System.Drawing.Point(467, 31);
             this.chkHC1Lock03.Name = "chkHC1Lock03";
-            this.chkHC1Lock03.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1Lock03.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1Lock03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock03.TabIndex = 306;
             this.chkHC1Lock03.UseVisualStyleBackColor = true;
@@ -11783,7 +12487,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1Lock04.Location = new System.Drawing.Point(539, 31);
             this.chkHC1Lock04.Name = "chkHC1Lock04";
-            this.chkHC1Lock04.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1Lock04.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1Lock04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock04.TabIndex = 307;
             this.chkHC1Lock04.UseVisualStyleBackColor = true;
@@ -11792,7 +12496,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1Lock05.Location = new System.Drawing.Point(611, 31);
             this.chkHC1Lock05.Name = "chkHC1Lock05";
-            this.chkHC1Lock05.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1Lock05.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1Lock05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock05.TabIndex = 308;
             this.chkHC1Lock05.UseVisualStyleBackColor = true;
@@ -11801,7 +12505,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1Lock06.Location = new System.Drawing.Point(683, 31);
             this.chkHC1Lock06.Name = "chkHC1Lock06";
-            this.chkHC1Lock06.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1Lock06.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1Lock06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock06.TabIndex = 309;
             this.chkHC1Lock06.UseVisualStyleBackColor = true;
@@ -11810,7 +12514,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1Lock07.Location = new System.Drawing.Point(755, 31);
             this.chkHC1Lock07.Name = "chkHC1Lock07";
-            this.chkHC1Lock07.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1Lock07.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1Lock07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock07.TabIndex = 310;
             this.chkHC1Lock07.UseVisualStyleBackColor = true;
@@ -11819,7 +12523,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1Lock08.Location = new System.Drawing.Point(827, 31);
             this.chkHC1Lock08.Name = "chkHC1Lock08";
-            this.chkHC1Lock08.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1Lock08.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1Lock08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock08.TabIndex = 311;
             this.chkHC1Lock08.UseVisualStyleBackColor = true;
@@ -11828,7 +12532,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1Lock09.Location = new System.Drawing.Point(899, 31);
             this.chkHC1Lock09.Name = "chkHC1Lock09";
-            this.chkHC1Lock09.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1Lock09.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1Lock09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock09.TabIndex = 312;
             this.chkHC1Lock09.UseVisualStyleBackColor = true;
@@ -11837,7 +12541,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1Lock10.Location = new System.Drawing.Point(971, 31);
             this.chkHC1Lock10.Name = "chkHC1Lock10";
-            this.chkHC1Lock10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1Lock10.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1Lock10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock10.TabIndex = 313;
             this.chkHC1Lock10.UseVisualStyleBackColor = true;
@@ -11846,7 +12550,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1Lock11.Location = new System.Drawing.Point(1043, 31);
             this.chkHC1Lock11.Name = "chkHC1Lock11";
-            this.chkHC1Lock11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1Lock11.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1Lock11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1Lock11.TabIndex = 314;
             this.chkHC1Lock11.UseVisualStyleBackColor = true;
@@ -11894,7 +12598,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1TimeoutCh04.Location = new System.Drawing.Point(539, 241);
             this.chkHC1TimeoutCh04.Name = "chkHC1TimeoutCh04";
-            this.chkHC1TimeoutCh04.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1TimeoutCh04.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1TimeoutCh04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh04.TabIndex = 84;
             this.chkHC1TimeoutCh04.UseVisualStyleBackColor = true;
@@ -11920,7 +12624,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1TimeoutCh03.Location = new System.Drawing.Point(467, 241);
             this.chkHC1TimeoutCh03.Name = "chkHC1TimeoutCh03";
-            this.chkHC1TimeoutCh03.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1TimeoutCh03.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1TimeoutCh03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh03.TabIndex = 83;
             this.chkHC1TimeoutCh03.UseVisualStyleBackColor = true;
@@ -11937,7 +12641,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1TimeoutCh05.Location = new System.Drawing.Point(611, 241);
             this.chkHC1TimeoutCh05.Name = "chkHC1TimeoutCh05";
-            this.chkHC1TimeoutCh05.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1TimeoutCh05.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1TimeoutCh05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh05.TabIndex = 85;
             this.chkHC1TimeoutCh05.UseVisualStyleBackColor = true;
@@ -11957,7 +12661,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1TimeoutCh02.Location = new System.Drawing.Point(395, 241);
             this.chkHC1TimeoutCh02.Name = "chkHC1TimeoutCh02";
-            this.chkHC1TimeoutCh02.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1TimeoutCh02.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1TimeoutCh02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh02.TabIndex = 82;
             this.chkHC1TimeoutCh02.UseVisualStyleBackColor = true;
@@ -11974,7 +12678,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1TimeoutCh06.Location = new System.Drawing.Point(683, 241);
             this.chkHC1TimeoutCh06.Name = "chkHC1TimeoutCh06";
-            this.chkHC1TimeoutCh06.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1TimeoutCh06.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1TimeoutCh06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh06.TabIndex = 86;
             this.chkHC1TimeoutCh06.UseVisualStyleBackColor = true;
@@ -12000,7 +12704,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1TimeoutCh01.Location = new System.Drawing.Point(323, 241);
             this.chkHC1TimeoutCh01.Name = "chkHC1TimeoutCh01";
-            this.chkHC1TimeoutCh01.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1TimeoutCh01.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1TimeoutCh01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh01.TabIndex = 81;
             this.chkHC1TimeoutCh01.UseVisualStyleBackColor = true;
@@ -12017,7 +12721,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1TimeoutCh07.Location = new System.Drawing.Point(755, 241);
             this.chkHC1TimeoutCh07.Name = "chkHC1TimeoutCh07";
-            this.chkHC1TimeoutCh07.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1TimeoutCh07.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1TimeoutCh07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh07.TabIndex = 87;
             this.chkHC1TimeoutCh07.UseVisualStyleBackColor = true;
@@ -12043,7 +12747,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1TimeoutCh00.Location = new System.Drawing.Point(251, 241);
             this.chkHC1TimeoutCh00.Name = "chkHC1TimeoutCh00";
-            this.chkHC1TimeoutCh00.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1TimeoutCh00.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1TimeoutCh00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh00.TabIndex = 80;
             this.chkHC1TimeoutCh00.UseVisualStyleBackColor = true;
@@ -12060,7 +12764,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1TimeoutCh08.Location = new System.Drawing.Point(827, 241);
             this.chkHC1TimeoutCh08.Name = "chkHC1TimeoutCh08";
-            this.chkHC1TimeoutCh08.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1TimeoutCh08.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1TimeoutCh08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh08.TabIndex = 88;
             this.chkHC1TimeoutCh08.UseVisualStyleBackColor = true;
@@ -12116,7 +12820,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1TimeoutCh09.Location = new System.Drawing.Point(899, 241);
             this.chkHC1TimeoutCh09.Name = "chkHC1TimeoutCh09";
-            this.chkHC1TimeoutCh09.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1TimeoutCh09.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1TimeoutCh09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh09.TabIndex = 89;
             this.chkHC1TimeoutCh09.UseVisualStyleBackColor = true;
@@ -12172,7 +12876,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1TimeoutCh10.Location = new System.Drawing.Point(971, 241);
             this.chkHC1TimeoutCh10.Name = "chkHC1TimeoutCh10";
-            this.chkHC1TimeoutCh10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1TimeoutCh10.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1TimeoutCh10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh10.TabIndex = 90;
             this.chkHC1TimeoutCh10.UseVisualStyleBackColor = true;
@@ -12228,7 +12932,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1TimeoutCh11.Location = new System.Drawing.Point(1043, 241);
             this.chkHC1TimeoutCh11.Name = "chkHC1TimeoutCh11";
-            this.chkHC1TimeoutCh11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1TimeoutCh11.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1TimeoutCh11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1TimeoutCh11.TabIndex = 91;
             this.chkHC1TimeoutCh11.UseVisualStyleBackColor = true;
@@ -12594,7 +13298,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1PWMEnableCh00.Location = new System.Drawing.Point(251, 91);
             this.chkHC1PWMEnableCh00.Name = "chkHC1PWMEnableCh00";
-            this.chkHC1PWMEnableCh00.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1PWMEnableCh00.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1PWMEnableCh00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh00.TabIndex = 27;
             this.chkHC1PWMEnableCh00.UseVisualStyleBackColor = true;
@@ -12641,7 +13345,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1PWMEnableCh01.Location = new System.Drawing.Point(323, 91);
             this.chkHC1PWMEnableCh01.Name = "chkHC1PWMEnableCh01";
-            this.chkHC1PWMEnableCh01.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1PWMEnableCh01.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1PWMEnableCh01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh01.TabIndex = 28;
             this.chkHC1PWMEnableCh01.UseVisualStyleBackColor = true;
@@ -12688,7 +13392,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1PWMEnableCh02.Location = new System.Drawing.Point(395, 91);
             this.chkHC1PWMEnableCh02.Name = "chkHC1PWMEnableCh02";
-            this.chkHC1PWMEnableCh02.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1PWMEnableCh02.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1PWMEnableCh02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh02.TabIndex = 29;
             this.chkHC1PWMEnableCh02.UseVisualStyleBackColor = true;
@@ -12725,7 +13429,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1PWMEnableCh03.Location = new System.Drawing.Point(467, 91);
             this.chkHC1PWMEnableCh03.Name = "chkHC1PWMEnableCh03";
-            this.chkHC1PWMEnableCh03.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1PWMEnableCh03.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1PWMEnableCh03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh03.TabIndex = 30;
             this.chkHC1PWMEnableCh03.UseVisualStyleBackColor = true;
@@ -12762,7 +13466,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1PWMEnableCh04.Location = new System.Drawing.Point(539, 91);
             this.chkHC1PWMEnableCh04.Name = "chkHC1PWMEnableCh04";
-            this.chkHC1PWMEnableCh04.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1PWMEnableCh04.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1PWMEnableCh04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh04.TabIndex = 31;
             this.chkHC1PWMEnableCh04.UseVisualStyleBackColor = true;
@@ -12799,7 +13503,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1PWMEnableCh05.Location = new System.Drawing.Point(611, 91);
             this.chkHC1PWMEnableCh05.Name = "chkHC1PWMEnableCh05";
-            this.chkHC1PWMEnableCh05.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1PWMEnableCh05.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1PWMEnableCh05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh05.TabIndex = 32;
             this.chkHC1PWMEnableCh05.UseVisualStyleBackColor = true;
@@ -12836,7 +13540,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1PWMEnableCh06.Location = new System.Drawing.Point(683, 91);
             this.chkHC1PWMEnableCh06.Name = "chkHC1PWMEnableCh06";
-            this.chkHC1PWMEnableCh06.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1PWMEnableCh06.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1PWMEnableCh06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh06.TabIndex = 33;
             this.chkHC1PWMEnableCh06.UseVisualStyleBackColor = true;
@@ -12876,7 +13580,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1PWMEnableCh07.Location = new System.Drawing.Point(755, 91);
             this.chkHC1PWMEnableCh07.Name = "chkHC1PWMEnableCh07";
-            this.chkHC1PWMEnableCh07.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1PWMEnableCh07.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1PWMEnableCh07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh07.TabIndex = 34;
             this.chkHC1PWMEnableCh07.UseVisualStyleBackColor = true;
@@ -12913,7 +13617,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1PWMEnableCh08.Location = new System.Drawing.Point(827, 91);
             this.chkHC1PWMEnableCh08.Name = "chkHC1PWMEnableCh08";
-            this.chkHC1PWMEnableCh08.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1PWMEnableCh08.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1PWMEnableCh08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh08.TabIndex = 35;
             this.chkHC1PWMEnableCh08.UseVisualStyleBackColor = true;
@@ -12950,7 +13654,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1PWMEnableCh09.Location = new System.Drawing.Point(899, 91);
             this.chkHC1PWMEnableCh09.Name = "chkHC1PWMEnableCh09";
-            this.chkHC1PWMEnableCh09.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1PWMEnableCh09.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1PWMEnableCh09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh09.TabIndex = 36;
             this.chkHC1PWMEnableCh09.UseVisualStyleBackColor = true;
@@ -12987,7 +13691,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1PWMEnableCh10.Location = new System.Drawing.Point(971, 91);
             this.chkHC1PWMEnableCh10.Name = "chkHC1PWMEnableCh10";
-            this.chkHC1PWMEnableCh10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1PWMEnableCh10.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1PWMEnableCh10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh10.TabIndex = 37;
             this.chkHC1PWMEnableCh10.UseVisualStyleBackColor = true;
@@ -13024,7 +13728,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1PWMEnableCh11.Location = new System.Drawing.Point(1043, 91);
             this.chkHC1PWMEnableCh11.Name = "chkHC1PWMEnableCh11";
-            this.chkHC1PWMEnableCh11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1PWMEnableCh11.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1PWMEnableCh11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1PWMEnableCh11.TabIndex = 38;
             this.chkHC1PWMEnableCh11.UseVisualStyleBackColor = true;
@@ -13495,174 +14199,6 @@ namespace M1ConfigGenerator
             this.txtbHC1MaxDurRecCh06.TabIndex = 270;
             this.txtbHC1MaxDurRecCh06.Text = "5";
             // 
-            // cmbHC1Startup11
-            // 
-            this.cmbHC1Startup11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Startup11.FormattingEnabled = true;
-            this.cmbHC1Startup11.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHC1Startup11.Location = new System.Drawing.Point(1027, 62);
-            this.cmbHC1Startup11.Name = "cmbHC1Startup11";
-            this.cmbHC1Startup11.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Startup11.TabIndex = 103;
-            this.cmbHC1Startup11.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup11_SelectedIndexChanged);
-            // 
-            // cmbHC1Startup10
-            // 
-            this.cmbHC1Startup10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Startup10.FormattingEnabled = true;
-            this.cmbHC1Startup10.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHC1Startup10.Location = new System.Drawing.Point(955, 62);
-            this.cmbHC1Startup10.Name = "cmbHC1Startup10";
-            this.cmbHC1Startup10.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Startup10.TabIndex = 102;
-            this.cmbHC1Startup10.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup10_SelectedIndexChanged);
-            // 
-            // cmbHC1Startup09
-            // 
-            this.cmbHC1Startup09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Startup09.FormattingEnabled = true;
-            this.cmbHC1Startup09.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHC1Startup09.Location = new System.Drawing.Point(883, 62);
-            this.cmbHC1Startup09.Name = "cmbHC1Startup09";
-            this.cmbHC1Startup09.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Startup09.TabIndex = 101;
-            this.cmbHC1Startup09.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup09_SelectedIndexChanged);
-            // 
-            // cmbHC1Startup08
-            // 
-            this.cmbHC1Startup08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Startup08.FormattingEnabled = true;
-            this.cmbHC1Startup08.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHC1Startup08.Location = new System.Drawing.Point(811, 62);
-            this.cmbHC1Startup08.Name = "cmbHC1Startup08";
-            this.cmbHC1Startup08.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Startup08.TabIndex = 100;
-            this.cmbHC1Startup08.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup08_SelectedIndexChanged);
-            // 
-            // cmbHC1Startup07
-            // 
-            this.cmbHC1Startup07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Startup07.FormattingEnabled = true;
-            this.cmbHC1Startup07.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHC1Startup07.Location = new System.Drawing.Point(739, 62);
-            this.cmbHC1Startup07.Name = "cmbHC1Startup07";
-            this.cmbHC1Startup07.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Startup07.TabIndex = 99;
-            this.cmbHC1Startup07.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup07_SelectedIndexChanged);
-            // 
-            // cmbHC1Startup06
-            // 
-            this.cmbHC1Startup06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Startup06.FormattingEnabled = true;
-            this.cmbHC1Startup06.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHC1Startup06.Location = new System.Drawing.Point(667, 62);
-            this.cmbHC1Startup06.Name = "cmbHC1Startup06";
-            this.cmbHC1Startup06.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Startup06.TabIndex = 98;
-            this.cmbHC1Startup06.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup06_SelectedIndexChanged);
-            // 
-            // cmbHC1Startup05
-            // 
-            this.cmbHC1Startup05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Startup05.FormattingEnabled = true;
-            this.cmbHC1Startup05.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHC1Startup05.Location = new System.Drawing.Point(595, 62);
-            this.cmbHC1Startup05.Name = "cmbHC1Startup05";
-            this.cmbHC1Startup05.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Startup05.TabIndex = 97;
-            this.cmbHC1Startup05.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup05_SelectedIndexChanged);
-            // 
-            // cmbHC1Startup04
-            // 
-            this.cmbHC1Startup04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Startup04.FormattingEnabled = true;
-            this.cmbHC1Startup04.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHC1Startup04.Location = new System.Drawing.Point(523, 62);
-            this.cmbHC1Startup04.Name = "cmbHC1Startup04";
-            this.cmbHC1Startup04.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Startup04.TabIndex = 96;
-            this.cmbHC1Startup04.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup04_SelectedIndexChanged);
-            // 
-            // cmbHC1Startup03
-            // 
-            this.cmbHC1Startup03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Startup03.FormattingEnabled = true;
-            this.cmbHC1Startup03.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHC1Startup03.Location = new System.Drawing.Point(451, 62);
-            this.cmbHC1Startup03.Name = "cmbHC1Startup03";
-            this.cmbHC1Startup03.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Startup03.TabIndex = 95;
-            this.cmbHC1Startup03.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup03_SelectedIndexChanged);
-            // 
-            // cmbHC1Startup02
-            // 
-            this.cmbHC1Startup02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Startup02.FormattingEnabled = true;
-            this.cmbHC1Startup02.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHC1Startup02.Location = new System.Drawing.Point(379, 62);
-            this.cmbHC1Startup02.Name = "cmbHC1Startup02";
-            this.cmbHC1Startup02.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Startup02.TabIndex = 94;
-            this.cmbHC1Startup02.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup02_SelectedIndexChanged);
-            // 
-            // cmbHC1Startup01
-            // 
-            this.cmbHC1Startup01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Startup01.FormattingEnabled = true;
-            this.cmbHC1Startup01.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHC1Startup01.Location = new System.Drawing.Point(307, 62);
-            this.cmbHC1Startup01.Name = "cmbHC1Startup01";
-            this.cmbHC1Startup01.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Startup01.TabIndex = 93;
-            this.cmbHC1Startup01.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup01_SelectedIndexChanged);
-            // 
-            // cmbHC1Startup00
-            // 
-            this.cmbHC1Startup00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Startup00.FormattingEnabled = true;
-            this.cmbHC1Startup00.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHC1Startup00.Location = new System.Drawing.Point(235, 62);
-            this.cmbHC1Startup00.Name = "cmbHC1Startup00";
-            this.cmbHC1Startup00.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Startup00.TabIndex = 92;
-            this.cmbHC1Startup00.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Startup00_SelectedIndexChanged);
-            // 
             // lblHC1Ch00
             // 
             this.lblHC1Ch00.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -13698,17 +14234,6 @@ namespace M1ConfigGenerator
             this.lblHC1Ch04.Text = "4";
             this.lblHC1Ch04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label301
-            // 
-            this.label301.AutoSize = true;
-            this.label301.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label301.ForeColor = System.Drawing.Color.Yellow;
-            this.label301.Location = new System.Drawing.Point(3, 63);
-            this.label301.Name = "label301";
-            this.label301.Size = new System.Drawing.Size(119, 17);
-            this.label301.TabIndex = 180;
-            this.label301.Text = "Behavior at Startup";
-            // 
             // lblHC1Ch05
             // 
             this.lblHC1Ch05.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -13719,17 +14244,6 @@ namespace M1ConfigGenerator
             this.lblHC1Ch05.TabIndex = 57;
             this.lblHC1Ch05.Text = "5";
             this.lblHC1Ch05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label148
-            // 
-            this.label148.AutoSize = true;
-            this.label148.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label148.ForeColor = System.Drawing.Color.Yellow;
-            this.label148.Location = new System.Drawing.Point(3, 33);
-            this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(184, 17);
-            this.label148.TabIndex = 167;
-            this.label148.Text = "Mode Quick Set (Output Type)";
             // 
             // label138
             // 
@@ -13818,17 +14332,6 @@ namespace M1ConfigGenerator
             this.lblHC1Ch08.TabIndex = 54;
             this.lblHC1Ch08.Text = "8";
             this.lblHC1Ch08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label112
-            // 
-            this.label112.AutoSize = true;
-            this.label112.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label112.ForeColor = System.Drawing.Color.Yellow;
-            this.label112.Location = new System.Drawing.Point(3, 3);
-            this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(172, 17);
-            this.label112.TabIndex = 60;
-            this.label112.Text = "Overcurrent Amps Quick Set";
             // 
             // chkHC1RGB
             // 
@@ -14042,33 +14545,6 @@ namespace M1ConfigGenerator
             this.chkHC1DCDimmer.UseVisualStyleBackColor = true;
             this.chkHC1DCDimmer.CheckedChanged += new System.EventHandler(this.chkHC1DCDimmer_CheckedChanged);
             // 
-            // cmbHC1OCAmps00
-            // 
-            this.cmbHC1OCAmps00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1OCAmps00.FormattingEnabled = true;
-            this.cmbHC1OCAmps00.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHC1OCAmps00.Location = new System.Drawing.Point(235, 2);
-            this.cmbHC1OCAmps00.Name = "cmbHC1OCAmps00";
-            this.cmbHC1OCAmps00.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1OCAmps00.TabIndex = 8;
-            this.cmbHC1OCAmps00.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps00_SelectedIndexChanged);
-            // 
             // chkHC1DCMotor
             // 
             this.chkHC1DCMotor.AutoSize = true;
@@ -14146,25 +14622,11 @@ namespace M1ConfigGenerator
             this.tbxHC1BaseIndex.TabIndex = 7;
             this.tbxHC1BaseIndex.TextChanged += new System.EventHandler(this.tbxHC1BaseIndex_TextChanged);
             // 
-            // cmbHC1Mode11
-            // 
-            this.cmbHC1Mode11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Mode11.FormattingEnabled = true;
-            this.cmbHC1Mode11.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP DN"});
-            this.cmbHC1Mode11.Location = new System.Drawing.Point(1027, 32);
-            this.cmbHC1Mode11.Name = "cmbHC1Mode11";
-            this.cmbHC1Mode11.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Mode11.TabIndex = 91;
-            this.cmbHC1Mode11.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode11_SelectedIndexChanged);
-            // 
             // chkHC1MG3Ch07
             // 
             this.chkHC1MG3Ch07.Location = new System.Drawing.Point(755, 208);
             this.chkHC1MG3Ch07.Name = "chkHC1MG3Ch07";
-            this.chkHC1MG3Ch07.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG3Ch07.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG3Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch07.TabIndex = 63;
             this.chkHC1MG3Ch07.UseVisualStyleBackColor = true;
@@ -14190,31 +14652,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG4Ch07.Location = new System.Drawing.Point(755, 238);
             this.chkHC1MG4Ch07.Name = "chkHC1MG4Ch07";
-            this.chkHC1MG4Ch07.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG4Ch07.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG4Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch07.TabIndex = 75;
             this.chkHC1MG4Ch07.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1Mode10
-            // 
-            this.cmbHC1Mode10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Mode10.FormattingEnabled = true;
-            this.cmbHC1Mode10.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHC1Mode10.Location = new System.Drawing.Point(955, 32);
-            this.cmbHC1Mode10.Name = "cmbHC1Mode10";
-            this.cmbHC1Mode10.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Mode10.TabIndex = 90;
-            this.cmbHC1Mode10.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode10_SelectedIndexChanged);
             // 
             // chkHC1MG2Ch07
             // 
             this.chkHC1MG2Ch07.Location = new System.Drawing.Point(755, 178);
             this.chkHC1MG2Ch07.Name = "chkHC1MG2Ch07";
-            this.chkHC1MG2Ch07.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG2Ch07.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG2Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch07.TabIndex = 51;
             this.chkHC1MG2Ch07.UseVisualStyleBackColor = true;
@@ -14240,31 +14687,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG1Ch08.Location = new System.Drawing.Point(827, 148);
             this.chkHC1MG1Ch08.Name = "chkHC1MG1Ch08";
-            this.chkHC1MG1Ch08.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG1Ch08.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG1Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch08.TabIndex = 40;
             this.chkHC1MG1Ch08.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1Mode09
-            // 
-            this.cmbHC1Mode09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Mode09.FormattingEnabled = true;
-            this.cmbHC1Mode09.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHC1Mode09.Location = new System.Drawing.Point(883, 32);
-            this.cmbHC1Mode09.Name = "cmbHC1Mode09";
-            this.cmbHC1Mode09.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Mode09.TabIndex = 89;
-            this.cmbHC1Mode09.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode09_SelectedIndexChanged);
             // 
             // chkHC1MG1Ch07
             // 
             this.chkHC1MG1Ch07.Location = new System.Drawing.Point(755, 148);
             this.chkHC1MG1Ch07.Name = "chkHC1MG1Ch07";
-            this.chkHC1MG1Ch07.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG1Ch07.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG1Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch07.TabIndex = 39;
             this.chkHC1MG1Ch07.UseVisualStyleBackColor = true;
@@ -14290,31 +14722,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG2Ch08.Location = new System.Drawing.Point(827, 178);
             this.chkHC1MG2Ch08.Name = "chkHC1MG2Ch08";
-            this.chkHC1MG2Ch08.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG2Ch08.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG2Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch08.TabIndex = 52;
             this.chkHC1MG2Ch08.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1Mode08
-            // 
-            this.cmbHC1Mode08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Mode08.FormattingEnabled = true;
-            this.cmbHC1Mode08.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHC1Mode08.Location = new System.Drawing.Point(811, 32);
-            this.cmbHC1Mode08.Name = "cmbHC1Mode08";
-            this.cmbHC1Mode08.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Mode08.TabIndex = 88;
-            this.cmbHC1Mode08.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode08_SelectedIndexChanged);
             // 
             // chkHC1MG4Ch06
             // 
             this.chkHC1MG4Ch06.Location = new System.Drawing.Point(683, 238);
             this.chkHC1MG4Ch06.Name = "chkHC1MG4Ch06";
-            this.chkHC1MG4Ch06.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG4Ch06.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG4Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch06.TabIndex = 74;
             this.chkHC1MG4Ch06.UseVisualStyleBackColor = true;
@@ -14340,31 +14757,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG3Ch08.Location = new System.Drawing.Point(827, 208);
             this.chkHC1MG3Ch08.Name = "chkHC1MG3Ch08";
-            this.chkHC1MG3Ch08.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG3Ch08.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG3Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch08.TabIndex = 64;
             this.chkHC1MG3Ch08.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1Mode07
-            // 
-            this.cmbHC1Mode07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Mode07.FormattingEnabled = true;
-            this.cmbHC1Mode07.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHC1Mode07.Location = new System.Drawing.Point(739, 32);
-            this.cmbHC1Mode07.Name = "cmbHC1Mode07";
-            this.cmbHC1Mode07.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Mode07.TabIndex = 87;
-            this.cmbHC1Mode07.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode07_SelectedIndexChanged);
             // 
             // chkHC1MG3Ch06
             // 
             this.chkHC1MG3Ch06.Location = new System.Drawing.Point(683, 208);
             this.chkHC1MG3Ch06.Name = "chkHC1MG3Ch06";
-            this.chkHC1MG3Ch06.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG3Ch06.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG3Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch06.TabIndex = 62;
             this.chkHC1MG3Ch06.UseVisualStyleBackColor = true;
@@ -14390,31 +14792,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG4Ch08.Location = new System.Drawing.Point(827, 238);
             this.chkHC1MG4Ch08.Name = "chkHC1MG4Ch08";
-            this.chkHC1MG4Ch08.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG4Ch08.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG4Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch08.TabIndex = 76;
             this.chkHC1MG4Ch08.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1Mode06
-            // 
-            this.cmbHC1Mode06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Mode06.FormattingEnabled = true;
-            this.cmbHC1Mode06.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHC1Mode06.Location = new System.Drawing.Point(667, 32);
-            this.cmbHC1Mode06.Name = "cmbHC1Mode06";
-            this.cmbHC1Mode06.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Mode06.TabIndex = 86;
-            this.cmbHC1Mode06.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode06_SelectedIndexChanged);
             // 
             // chkHC1MG2Ch06
             // 
             this.chkHC1MG2Ch06.Location = new System.Drawing.Point(683, 178);
             this.chkHC1MG2Ch06.Name = "chkHC1MG2Ch06";
-            this.chkHC1MG2Ch06.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG2Ch06.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG2Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch06.TabIndex = 50;
             this.chkHC1MG2Ch06.UseVisualStyleBackColor = true;
@@ -14440,31 +14827,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG1Ch09.Location = new System.Drawing.Point(899, 148);
             this.chkHC1MG1Ch09.Name = "chkHC1MG1Ch09";
-            this.chkHC1MG1Ch09.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG1Ch09.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG1Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch09.TabIndex = 41;
             this.chkHC1MG1Ch09.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1Mode05
-            // 
-            this.cmbHC1Mode05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Mode05.FormattingEnabled = true;
-            this.cmbHC1Mode05.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHC1Mode05.Location = new System.Drawing.Point(595, 32);
-            this.cmbHC1Mode05.Name = "cmbHC1Mode05";
-            this.cmbHC1Mode05.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Mode05.TabIndex = 85;
-            this.cmbHC1Mode05.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode05_SelectedIndexChanged);
             // 
             // chkHC1MG1Ch06
             // 
             this.chkHC1MG1Ch06.Location = new System.Drawing.Point(683, 148);
             this.chkHC1MG1Ch06.Name = "chkHC1MG1Ch06";
-            this.chkHC1MG1Ch06.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG1Ch06.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG1Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch06.TabIndex = 38;
             this.chkHC1MG1Ch06.UseVisualStyleBackColor = true;
@@ -14490,31 +14862,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG2Ch09.Location = new System.Drawing.Point(899, 178);
             this.chkHC1MG2Ch09.Name = "chkHC1MG2Ch09";
-            this.chkHC1MG2Ch09.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG2Ch09.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG2Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch09.TabIndex = 53;
             this.chkHC1MG2Ch09.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1Mode04
-            // 
-            this.cmbHC1Mode04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Mode04.FormattingEnabled = true;
-            this.cmbHC1Mode04.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHC1Mode04.Location = new System.Drawing.Point(523, 32);
-            this.cmbHC1Mode04.Name = "cmbHC1Mode04";
-            this.cmbHC1Mode04.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Mode04.TabIndex = 84;
-            this.cmbHC1Mode04.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode04_SelectedIndexChanged);
             // 
             // chkHC1MG4Ch05
             // 
             this.chkHC1MG4Ch05.Location = new System.Drawing.Point(611, 238);
             this.chkHC1MG4Ch05.Name = "chkHC1MG4Ch05";
-            this.chkHC1MG4Ch05.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG4Ch05.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG4Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch05.TabIndex = 73;
             this.chkHC1MG4Ch05.UseVisualStyleBackColor = true;
@@ -14540,31 +14897,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG3Ch09.Location = new System.Drawing.Point(899, 208);
             this.chkHC1MG3Ch09.Name = "chkHC1MG3Ch09";
-            this.chkHC1MG3Ch09.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG3Ch09.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG3Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch09.TabIndex = 65;
             this.chkHC1MG3Ch09.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1Mode03
-            // 
-            this.cmbHC1Mode03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Mode03.FormattingEnabled = true;
-            this.cmbHC1Mode03.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHC1Mode03.Location = new System.Drawing.Point(451, 32);
-            this.cmbHC1Mode03.Name = "cmbHC1Mode03";
-            this.cmbHC1Mode03.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Mode03.TabIndex = 83;
-            this.cmbHC1Mode03.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode03_SelectedIndexChanged);
             // 
             // chkHC1MG3Ch05
             // 
             this.chkHC1MG3Ch05.Location = new System.Drawing.Point(611, 208);
             this.chkHC1MG3Ch05.Name = "chkHC1MG3Ch05";
-            this.chkHC1MG3Ch05.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG3Ch05.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG3Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch05.TabIndex = 61;
             this.chkHC1MG3Ch05.UseVisualStyleBackColor = true;
@@ -14590,31 +14932,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG4Ch09.Location = new System.Drawing.Point(899, 238);
             this.chkHC1MG4Ch09.Name = "chkHC1MG4Ch09";
-            this.chkHC1MG4Ch09.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG4Ch09.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG4Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch09.TabIndex = 77;
             this.chkHC1MG4Ch09.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1Mode02
-            // 
-            this.cmbHC1Mode02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Mode02.FormattingEnabled = true;
-            this.cmbHC1Mode02.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHC1Mode02.Location = new System.Drawing.Point(379, 32);
-            this.cmbHC1Mode02.Name = "cmbHC1Mode02";
-            this.cmbHC1Mode02.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Mode02.TabIndex = 82;
-            this.cmbHC1Mode02.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode02_SelectedIndexChanged);
             // 
             // chkHC1MG2Ch05
             // 
             this.chkHC1MG2Ch05.Location = new System.Drawing.Point(611, 178);
             this.chkHC1MG2Ch05.Name = "chkHC1MG2Ch05";
-            this.chkHC1MG2Ch05.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG2Ch05.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG2Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch05.TabIndex = 49;
             this.chkHC1MG2Ch05.UseVisualStyleBackColor = true;
@@ -14640,31 +14967,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG1Ch10.Location = new System.Drawing.Point(971, 148);
             this.chkHC1MG1Ch10.Name = "chkHC1MG1Ch10";
-            this.chkHC1MG1Ch10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG1Ch10.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG1Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch10.TabIndex = 42;
             this.chkHC1MG1Ch10.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1Mode01
-            // 
-            this.cmbHC1Mode01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Mode01.FormattingEnabled = true;
-            this.cmbHC1Mode01.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHC1Mode01.Location = new System.Drawing.Point(307, 32);
-            this.cmbHC1Mode01.Name = "cmbHC1Mode01";
-            this.cmbHC1Mode01.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Mode01.TabIndex = 81;
-            this.cmbHC1Mode01.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode01_SelectedIndexChanged);
             // 
             // chkHC1MG1Ch05
             // 
             this.chkHC1MG1Ch05.Location = new System.Drawing.Point(611, 148);
             this.chkHC1MG1Ch05.Name = "chkHC1MG1Ch05";
-            this.chkHC1MG1Ch05.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG1Ch05.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG1Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch05.TabIndex = 37;
             this.chkHC1MG1Ch05.UseVisualStyleBackColor = true;
@@ -14675,7 +14987,7 @@ namespace M1ConfigGenerator
             this.chkHC1MG1Ch00.Location = new System.Drawing.Point(251, 148);
             this.chkHC1MG1Ch00.Margin = new System.Windows.Forms.Padding(0);
             this.chkHC1MG1Ch00.Name = "chkHC1MG1Ch00";
-            this.chkHC1MG1Ch00.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG1Ch00.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG1Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch00.TabIndex = 32;
             this.chkHC1MG1Ch00.UseVisualStyleBackColor = false;
@@ -14684,7 +14996,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG2Ch10.Location = new System.Drawing.Point(971, 178);
             this.chkHC1MG2Ch10.Name = "chkHC1MG2Ch10";
-            this.chkHC1MG2Ch10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG2Ch10.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG2Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch10.TabIndex = 54;
             this.chkHC1MG2Ch10.UseVisualStyleBackColor = true;
@@ -14693,7 +15005,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG2Ch00.Location = new System.Drawing.Point(251, 178);
             this.chkHC1MG2Ch00.Name = "chkHC1MG2Ch00";
-            this.chkHC1MG2Ch00.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG2Ch00.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG2Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch00.TabIndex = 44;
             this.chkHC1MG2Ch00.UseVisualStyleBackColor = true;
@@ -14702,30 +15014,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG4Ch04.Location = new System.Drawing.Point(539, 238);
             this.chkHC1MG4Ch04.Name = "chkHC1MG4Ch04";
-            this.chkHC1MG4Ch04.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG4Ch04.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG4Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch04.TabIndex = 72;
             this.chkHC1MG4Ch04.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1Mode00
-            // 
-            this.cmbHC1Mode00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1Mode00.FormattingEnabled = true;
-            this.cmbHC1Mode00.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP"});
-            this.cmbHC1Mode00.Location = new System.Drawing.Point(235, 32);
-            this.cmbHC1Mode00.Name = "cmbHC1Mode00";
-            this.cmbHC1Mode00.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1Mode00.TabIndex = 80;
-            this.cmbHC1Mode00.SelectedIndexChanged += new System.EventHandler(this.cmbHC1Mode00_SelectedIndexChanged);
             // 
             // chkHC1MG3Ch10
             // 
             this.chkHC1MG3Ch10.Location = new System.Drawing.Point(971, 208);
             this.chkHC1MG3Ch10.Name = "chkHC1MG3Ch10";
-            this.chkHC1MG3Ch10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG3Ch10.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG3Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch10.TabIndex = 66;
             this.chkHC1MG3Ch10.UseVisualStyleBackColor = true;
@@ -14734,7 +15032,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG3Ch00.Location = new System.Drawing.Point(251, 208);
             this.chkHC1MG3Ch00.Name = "chkHC1MG3Ch00";
-            this.chkHC1MG3Ch00.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG3Ch00.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG3Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch00.TabIndex = 56;
             this.chkHC1MG3Ch00.UseVisualStyleBackColor = true;
@@ -14743,43 +15041,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG3Ch04.Location = new System.Drawing.Point(539, 208);
             this.chkHC1MG3Ch04.Name = "chkHC1MG3Ch04";
-            this.chkHC1MG3Ch04.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG3Ch04.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG3Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch04.TabIndex = 60;
             this.chkHC1MG3Ch04.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1OCAmps11
-            // 
-            this.cmbHC1OCAmps11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1OCAmps11.FormattingEnabled = true;
-            this.cmbHC1OCAmps11.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHC1OCAmps11.Location = new System.Drawing.Point(1027, 2);
-            this.cmbHC1OCAmps11.Name = "cmbHC1OCAmps11";
-            this.cmbHC1OCAmps11.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1OCAmps11.TabIndex = 19;
-            this.cmbHC1OCAmps11.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps11_SelectedIndexChanged);
             // 
             // chkHC1MG4Ch10
             // 
             this.chkHC1MG4Ch10.Location = new System.Drawing.Point(971, 238);
             this.chkHC1MG4Ch10.Name = "chkHC1MG4Ch10";
-            this.chkHC1MG4Ch10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG4Ch10.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG4Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch10.TabIndex = 78;
             this.chkHC1MG4Ch10.UseVisualStyleBackColor = true;
@@ -14788,7 +15059,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG4Ch00.Location = new System.Drawing.Point(251, 238);
             this.chkHC1MG4Ch00.Name = "chkHC1MG4Ch00";
-            this.chkHC1MG4Ch00.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG4Ch00.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG4Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch00.TabIndex = 68;
             this.chkHC1MG4Ch00.UseVisualStyleBackColor = true;
@@ -14797,43 +15068,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG2Ch04.Location = new System.Drawing.Point(539, 178);
             this.chkHC1MG2Ch04.Name = "chkHC1MG2Ch04";
-            this.chkHC1MG2Ch04.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG2Ch04.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG2Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch04.TabIndex = 48;
             this.chkHC1MG2Ch04.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1OCAmps10
-            // 
-            this.cmbHC1OCAmps10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1OCAmps10.FormattingEnabled = true;
-            this.cmbHC1OCAmps10.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHC1OCAmps10.Location = new System.Drawing.Point(955, 2);
-            this.cmbHC1OCAmps10.Name = "cmbHC1OCAmps10";
-            this.cmbHC1OCAmps10.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1OCAmps10.TabIndex = 18;
-            this.cmbHC1OCAmps10.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps10_SelectedIndexChanged);
             // 
             // chkHC1MG1Ch11
             // 
             this.chkHC1MG1Ch11.Location = new System.Drawing.Point(1043, 148);
             this.chkHC1MG1Ch11.Name = "chkHC1MG1Ch11";
-            this.chkHC1MG1Ch11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG1Ch11.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG1Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch11.TabIndex = 43;
             this.chkHC1MG1Ch11.UseVisualStyleBackColor = true;
@@ -14842,7 +15086,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG1Ch01.Location = new System.Drawing.Point(323, 148);
             this.chkHC1MG1Ch01.Name = "chkHC1MG1Ch01";
-            this.chkHC1MG1Ch01.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG1Ch01.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG1Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch01.TabIndex = 33;
             this.chkHC1MG1Ch01.UseVisualStyleBackColor = true;
@@ -14851,7 +15095,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG1Ch04.Location = new System.Drawing.Point(539, 148);
             this.chkHC1MG1Ch04.Name = "chkHC1MG1Ch04";
-            this.chkHC1MG1Ch04.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG1Ch04.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG1Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch04.TabIndex = 36;
             this.chkHC1MG1Ch04.UseVisualStyleBackColor = true;
@@ -14860,43 +15104,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG2Ch11.Location = new System.Drawing.Point(1043, 178);
             this.chkHC1MG2Ch11.Name = "chkHC1MG2Ch11";
-            this.chkHC1MG2Ch11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG2Ch11.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG2Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch11.TabIndex = 55;
             this.chkHC1MG2Ch11.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1OCAmps09
-            // 
-            this.cmbHC1OCAmps09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1OCAmps09.FormattingEnabled = true;
-            this.cmbHC1OCAmps09.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHC1OCAmps09.Location = new System.Drawing.Point(883, 2);
-            this.cmbHC1OCAmps09.Name = "cmbHC1OCAmps09";
-            this.cmbHC1OCAmps09.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1OCAmps09.TabIndex = 17;
-            this.cmbHC1OCAmps09.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps09_SelectedIndexChanged);
             // 
             // chkHC1MG4Ch03
             // 
             this.chkHC1MG4Ch03.Location = new System.Drawing.Point(467, 238);
             this.chkHC1MG4Ch03.Name = "chkHC1MG4Ch03";
-            this.chkHC1MG4Ch03.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG4Ch03.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG4Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch03.TabIndex = 71;
             this.chkHC1MG4Ch03.UseVisualStyleBackColor = true;
@@ -14905,7 +15122,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG2Ch01.Location = new System.Drawing.Point(323, 178);
             this.chkHC1MG2Ch01.Name = "chkHC1MG2Ch01";
-            this.chkHC1MG2Ch01.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG2Ch01.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG2Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch01.TabIndex = 45;
             this.chkHC1MG2Ch01.UseVisualStyleBackColor = true;
@@ -14914,43 +15131,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG3Ch11.Location = new System.Drawing.Point(1043, 208);
             this.chkHC1MG3Ch11.Name = "chkHC1MG3Ch11";
-            this.chkHC1MG3Ch11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG3Ch11.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG3Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch11.TabIndex = 67;
             this.chkHC1MG3Ch11.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1OCAmps08
-            // 
-            this.cmbHC1OCAmps08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1OCAmps08.FormattingEnabled = true;
-            this.cmbHC1OCAmps08.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHC1OCAmps08.Location = new System.Drawing.Point(811, 2);
-            this.cmbHC1OCAmps08.Name = "cmbHC1OCAmps08";
-            this.cmbHC1OCAmps08.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1OCAmps08.TabIndex = 16;
-            this.cmbHC1OCAmps08.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps08_SelectedIndexChanged);
             // 
             // chkHC1MG3Ch03
             // 
             this.chkHC1MG3Ch03.Location = new System.Drawing.Point(467, 208);
             this.chkHC1MG3Ch03.Name = "chkHC1MG3Ch03";
-            this.chkHC1MG3Ch03.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG3Ch03.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG3Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch03.TabIndex = 59;
             this.chkHC1MG3Ch03.UseVisualStyleBackColor = true;
@@ -14959,7 +15149,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG3Ch01.Location = new System.Drawing.Point(323, 208);
             this.chkHC1MG3Ch01.Name = "chkHC1MG3Ch01";
-            this.chkHC1MG3Ch01.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG3Ch01.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG3Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch01.TabIndex = 57;
             this.chkHC1MG3Ch01.UseVisualStyleBackColor = true;
@@ -14968,43 +15158,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG4Ch11.Location = new System.Drawing.Point(1043, 238);
             this.chkHC1MG4Ch11.Name = "chkHC1MG4Ch11";
-            this.chkHC1MG4Ch11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG4Ch11.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG4Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch11.TabIndex = 79;
             this.chkHC1MG4Ch11.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1OCAmps07
-            // 
-            this.cmbHC1OCAmps07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1OCAmps07.FormattingEnabled = true;
-            this.cmbHC1OCAmps07.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHC1OCAmps07.Location = new System.Drawing.Point(739, 2);
-            this.cmbHC1OCAmps07.Name = "cmbHC1OCAmps07";
-            this.cmbHC1OCAmps07.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1OCAmps07.TabIndex = 15;
-            this.cmbHC1OCAmps07.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps07_SelectedIndexChanged);
             // 
             // chkHC1MG2Ch03
             // 
             this.chkHC1MG2Ch03.Location = new System.Drawing.Point(467, 178);
             this.chkHC1MG2Ch03.Name = "chkHC1MG2Ch03";
-            this.chkHC1MG2Ch03.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG2Ch03.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG2Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch03.TabIndex = 47;
             this.chkHC1MG2Ch03.UseVisualStyleBackColor = true;
@@ -15013,70 +15176,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG4Ch01.Location = new System.Drawing.Point(323, 238);
             this.chkHC1MG4Ch01.Name = "chkHC1MG4Ch01";
-            this.chkHC1MG4Ch01.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG4Ch01.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG4Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch01.TabIndex = 69;
             this.chkHC1MG4Ch01.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1OCAmps01
-            // 
-            this.cmbHC1OCAmps01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1OCAmps01.FormattingEnabled = true;
-            this.cmbHC1OCAmps01.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHC1OCAmps01.Location = new System.Drawing.Point(307, 2);
-            this.cmbHC1OCAmps01.Name = "cmbHC1OCAmps01";
-            this.cmbHC1OCAmps01.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1OCAmps01.TabIndex = 9;
-            this.cmbHC1OCAmps01.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps01_SelectedIndexChanged);
-            // 
-            // cmbHC1OCAmps06
-            // 
-            this.cmbHC1OCAmps06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1OCAmps06.FormattingEnabled = true;
-            this.cmbHC1OCAmps06.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHC1OCAmps06.Location = new System.Drawing.Point(667, 2);
-            this.cmbHC1OCAmps06.Name = "cmbHC1OCAmps06";
-            this.cmbHC1OCAmps06.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1OCAmps06.TabIndex = 14;
-            this.cmbHC1OCAmps06.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps06_SelectedIndexChanged);
             // 
             // chkHC1MG1Ch03
             // 
             this.chkHC1MG1Ch03.Location = new System.Drawing.Point(467, 148);
             this.chkHC1MG1Ch03.Name = "chkHC1MG1Ch03";
-            this.chkHC1MG1Ch03.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG1Ch03.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG1Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch03.TabIndex = 35;
             this.chkHC1MG1Ch03.UseVisualStyleBackColor = true;
@@ -15085,70 +15194,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG1Ch02.Location = new System.Drawing.Point(395, 148);
             this.chkHC1MG1Ch02.Name = "chkHC1MG1Ch02";
-            this.chkHC1MG1Ch02.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG1Ch02.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG1Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG1Ch02.TabIndex = 34;
             this.chkHC1MG1Ch02.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1OCAmps02
-            // 
-            this.cmbHC1OCAmps02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1OCAmps02.FormattingEnabled = true;
-            this.cmbHC1OCAmps02.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHC1OCAmps02.Location = new System.Drawing.Point(379, 2);
-            this.cmbHC1OCAmps02.Name = "cmbHC1OCAmps02";
-            this.cmbHC1OCAmps02.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1OCAmps02.TabIndex = 10;
-            this.cmbHC1OCAmps02.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps02_SelectedIndexChanged);
-            // 
-            // cmbHC1OCAmps05
-            // 
-            this.cmbHC1OCAmps05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1OCAmps05.FormattingEnabled = true;
-            this.cmbHC1OCAmps05.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHC1OCAmps05.Location = new System.Drawing.Point(595, 2);
-            this.cmbHC1OCAmps05.Name = "cmbHC1OCAmps05";
-            this.cmbHC1OCAmps05.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1OCAmps05.TabIndex = 13;
-            this.cmbHC1OCAmps05.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps05_SelectedIndexChanged);
             // 
             // chkHC1MG4Ch02
             // 
             this.chkHC1MG4Ch02.Location = new System.Drawing.Point(395, 238);
             this.chkHC1MG4Ch02.Name = "chkHC1MG4Ch02";
-            this.chkHC1MG4Ch02.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG4Ch02.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG4Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG4Ch02.TabIndex = 70;
             this.chkHC1MG4Ch02.UseVisualStyleBackColor = true;
@@ -15157,70 +15212,16 @@ namespace M1ConfigGenerator
             // 
             this.chkHC1MG2Ch02.Location = new System.Drawing.Point(395, 178);
             this.chkHC1MG2Ch02.Name = "chkHC1MG2Ch02";
-            this.chkHC1MG2Ch02.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG2Ch02.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG2Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG2Ch02.TabIndex = 46;
             this.chkHC1MG2Ch02.UseVisualStyleBackColor = true;
-            // 
-            // cmbHC1OCAmps03
-            // 
-            this.cmbHC1OCAmps03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1OCAmps03.FormattingEnabled = true;
-            this.cmbHC1OCAmps03.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHC1OCAmps03.Location = new System.Drawing.Point(451, 2);
-            this.cmbHC1OCAmps03.Name = "cmbHC1OCAmps03";
-            this.cmbHC1OCAmps03.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1OCAmps03.TabIndex = 11;
-            this.cmbHC1OCAmps03.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps03_SelectedIndexChanged);
-            // 
-            // cmbHC1OCAmps04
-            // 
-            this.cmbHC1OCAmps04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHC1OCAmps04.FormattingEnabled = true;
-            this.cmbHC1OCAmps04.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHC1OCAmps04.Location = new System.Drawing.Point(523, 2);
-            this.cmbHC1OCAmps04.Name = "cmbHC1OCAmps04";
-            this.cmbHC1OCAmps04.Size = new System.Drawing.Size(66, 21);
-            this.cmbHC1OCAmps04.TabIndex = 12;
-            this.cmbHC1OCAmps04.SelectedIndexChanged += new System.EventHandler(this.cmbHC1OCAmps04_SelectedIndexChanged);
             // 
             // chkHC1MG3Ch02
             // 
             this.chkHC1MG3Ch02.Location = new System.Drawing.Point(395, 208);
             this.chkHC1MG3Ch02.Name = "chkHC1MG3Ch02";
-            this.chkHC1MG3Ch02.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHC1MG3Ch02.Padding = new System.Windows.Forms.Padding(10);
             this.chkHC1MG3Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHC1MG3Ch02.TabIndex = 58;
             this.chkHC1MG3Ch02.UseVisualStyleBackColor = true;
@@ -15401,7 +15402,7 @@ namespace M1ConfigGenerator
             this.tabLC1.Controls.Add(this.label222);
             this.tabLC1.Location = new System.Drawing.Point(4, 22);
             this.tabLC1.Name = "tabLC1";
-            this.tabLC1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabLC1.Padding = new System.Windows.Forms.Padding(3);
             this.tabLC1.Size = new System.Drawing.Size(1376, 1103);
             this.tabLC1.TabIndex = 1;
             this.tabLC1.Text = "LC 1";
@@ -16887,7 +16888,7 @@ namespace M1ConfigGenerator
             this.tabLC1Quick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.tabLC1Quick.Location = new System.Drawing.Point(4, 22);
             this.tabLC1Quick.Name = "tabLC1Quick";
-            this.tabLC1Quick.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabLC1Quick.Padding = new System.Windows.Forms.Padding(3);
             this.tabLC1Quick.Size = new System.Drawing.Size(1372, 434);
             this.tabLC1Quick.TabIndex = 0;
             this.tabLC1Quick.Text = "LC 1 Quick";
@@ -17067,7 +17068,7 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.txtbLC1PWMDutyCh05);
             this.tabLC1Full.Location = new System.Drawing.Point(4, 22);
             this.tabLC1Full.Name = "tabLC1Full";
-            this.tabLC1Full.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabLC1Full.Padding = new System.Windows.Forms.Padding(3);
             this.tabLC1Full.Size = new System.Drawing.Size(1372, 434);
             this.tabLC1Full.TabIndex = 1;
             this.tabLC1Full.Text = "LC 1 Full";
@@ -19298,9 +19299,9 @@ namespace M1ConfigGenerator
             this.tabMainHR.Controls.Add(this.btnHRCard3);
             this.tabMainHR.Controls.Add(this.btnHRCard2);
             this.tabMainHR.Location = new System.Drawing.Point(4, 22);
-            this.tabMainHR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabMainHR.Margin = new System.Windows.Forms.Padding(2);
             this.tabMainHR.Name = "tabMainHR";
-            this.tabMainHR.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabMainHR.Padding = new System.Windows.Forms.Padding(2);
             this.tabMainHR.Size = new System.Drawing.Size(1380, 995);
             this.tabMainHR.TabIndex = 7;
             this.tabMainHR.Text = "HC Relay";
@@ -19342,7 +19343,7 @@ namespace M1ConfigGenerator
             this.tabControlHR.Controls.Add(this.tabPage13);
             this.tabControlHR.Controls.Add(this.tabPage14);
             this.tabControlHR.Location = new System.Drawing.Point(0, 70);
-            this.tabControlHR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControlHR.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlHR.Name = "tabControlHR";
             this.tabControlHR.SelectedIndex = 0;
             this.tabControlHR.Size = new System.Drawing.Size(1385, 872);
@@ -19351,6 +19352,7 @@ namespace M1ConfigGenerator
             // tabPage13
             // 
             this.tabPage13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabPage13.Controls.Add(this.chkHRDCDimmer);
             this.tabPage13.Controls.Add(this.chkHRMG3Ch07);
             this.tabPage13.Controls.Add(this.chkHRMG4Ch07);
             this.tabPage13.Controls.Add(this.chkHRMG2Ch07);
@@ -19447,364 +19449,18 @@ namespace M1ConfigGenerator
             this.tabPage13.Controls.Add(this.chkHRForce);
             this.tabPage13.Controls.Add(this.tabControlHRQF);
             this.tabPage13.Location = new System.Drawing.Point(4, 22);
-            this.tabPage13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage13.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage13.Size = new System.Drawing.Size(1377, 846);
             this.tabPage13.TabIndex = 1;
             this.tabPage13.Text = "HC Relay 1";
-            // 
-            // cmbHRQuickStartupCh11
-            // 
-            this.cmbHRQuickStartupCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickStartupCh11.FormattingEnabled = true;
-            this.cmbHRQuickStartupCh11.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHRQuickStartupCh11.Location = new System.Drawing.Point(1027, 62);
-            this.cmbHRQuickStartupCh11.Name = "cmbHRQuickStartupCh11";
-            this.cmbHRQuickStartupCh11.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickStartupCh11.TabIndex = 422;
-            this.cmbHRQuickStartupCh11.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh11_SelectedIndexChanged);
-            // 
-            // cmbHRQuickStartupCh10
-            // 
-            this.cmbHRQuickStartupCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickStartupCh10.FormattingEnabled = true;
-            this.cmbHRQuickStartupCh10.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHRQuickStartupCh10.Location = new System.Drawing.Point(955, 62);
-            this.cmbHRQuickStartupCh10.Name = "cmbHRQuickStartupCh10";
-            this.cmbHRQuickStartupCh10.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickStartupCh10.TabIndex = 421;
-            this.cmbHRQuickStartupCh10.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh10_SelectedIndexChanged);
-            // 
-            // cmbHRQuickStartupCh09
-            // 
-            this.cmbHRQuickStartupCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickStartupCh09.FormattingEnabled = true;
-            this.cmbHRQuickStartupCh09.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHRQuickStartupCh09.Location = new System.Drawing.Point(883, 62);
-            this.cmbHRQuickStartupCh09.Name = "cmbHRQuickStartupCh09";
-            this.cmbHRQuickStartupCh09.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickStartupCh09.TabIndex = 420;
-            this.cmbHRQuickStartupCh09.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh09_SelectedIndexChanged);
-            // 
-            // cmbHRQuickStartupCh08
-            // 
-            this.cmbHRQuickStartupCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickStartupCh08.FormattingEnabled = true;
-            this.cmbHRQuickStartupCh08.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHRQuickStartupCh08.Location = new System.Drawing.Point(811, 62);
-            this.cmbHRQuickStartupCh08.Name = "cmbHRQuickStartupCh08";
-            this.cmbHRQuickStartupCh08.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickStartupCh08.TabIndex = 419;
-            this.cmbHRQuickStartupCh08.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh08_SelectedIndexChanged);
-            // 
-            // cmbHRQuickStartupCh07
-            // 
-            this.cmbHRQuickStartupCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickStartupCh07.FormattingEnabled = true;
-            this.cmbHRQuickStartupCh07.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHRQuickStartupCh07.Location = new System.Drawing.Point(739, 62);
-            this.cmbHRQuickStartupCh07.Name = "cmbHRQuickStartupCh07";
-            this.cmbHRQuickStartupCh07.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickStartupCh07.TabIndex = 418;
-            this.cmbHRQuickStartupCh07.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh07_SelectedIndexChanged);
-            // 
-            // cmbHRQuickStartupCh06
-            // 
-            this.cmbHRQuickStartupCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickStartupCh06.FormattingEnabled = true;
-            this.cmbHRQuickStartupCh06.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHRQuickStartupCh06.Location = new System.Drawing.Point(667, 62);
-            this.cmbHRQuickStartupCh06.Name = "cmbHRQuickStartupCh06";
-            this.cmbHRQuickStartupCh06.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickStartupCh06.TabIndex = 417;
-            this.cmbHRQuickStartupCh06.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh06_SelectedIndexChanged);
-            // 
-            // cmbHRQuickStartupCh05
-            // 
-            this.cmbHRQuickStartupCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickStartupCh05.FormattingEnabled = true;
-            this.cmbHRQuickStartupCh05.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHRQuickStartupCh05.Location = new System.Drawing.Point(595, 62);
-            this.cmbHRQuickStartupCh05.Name = "cmbHRQuickStartupCh05";
-            this.cmbHRQuickStartupCh05.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickStartupCh05.TabIndex = 416;
-            this.cmbHRQuickStartupCh05.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh05_SelectedIndexChanged);
-            // 
-            // cmbHRQuickStartupCh04
-            // 
-            this.cmbHRQuickStartupCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickStartupCh04.FormattingEnabled = true;
-            this.cmbHRQuickStartupCh04.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHRQuickStartupCh04.Location = new System.Drawing.Point(523, 62);
-            this.cmbHRQuickStartupCh04.Name = "cmbHRQuickStartupCh04";
-            this.cmbHRQuickStartupCh04.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickStartupCh04.TabIndex = 415;
-            this.cmbHRQuickStartupCh04.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh04_SelectedIndexChanged);
-            // 
-            // cmbHRQuickStartupCh03
-            // 
-            this.cmbHRQuickStartupCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickStartupCh03.FormattingEnabled = true;
-            this.cmbHRQuickStartupCh03.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHRQuickStartupCh03.Location = new System.Drawing.Point(451, 62);
-            this.cmbHRQuickStartupCh03.Name = "cmbHRQuickStartupCh03";
-            this.cmbHRQuickStartupCh03.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickStartupCh03.TabIndex = 414;
-            this.cmbHRQuickStartupCh03.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh03_SelectedIndexChanged);
-            // 
-            // cmbHRQuickStartupCh02
-            // 
-            this.cmbHRQuickStartupCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickStartupCh02.FormattingEnabled = true;
-            this.cmbHRQuickStartupCh02.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHRQuickStartupCh02.Location = new System.Drawing.Point(379, 62);
-            this.cmbHRQuickStartupCh02.Name = "cmbHRQuickStartupCh02";
-            this.cmbHRQuickStartupCh02.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickStartupCh02.TabIndex = 413;
-            this.cmbHRQuickStartupCh02.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh02_SelectedIndexChanged);
-            // 
-            // cmbHRQuickStartupCh01
-            // 
-            this.cmbHRQuickStartupCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickStartupCh01.FormattingEnabled = true;
-            this.cmbHRQuickStartupCh01.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHRQuickStartupCh01.Location = new System.Drawing.Point(307, 62);
-            this.cmbHRQuickStartupCh01.Name = "cmbHRQuickStartupCh01";
-            this.cmbHRQuickStartupCh01.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickStartupCh01.TabIndex = 412;
-            this.cmbHRQuickStartupCh01.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh01_SelectedIndexChanged);
-            // 
-            // cmbHRQuickStartupCh00
-            // 
-            this.cmbHRQuickStartupCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickStartupCh00.FormattingEnabled = true;
-            this.cmbHRQuickStartupCh00.Items.AddRange(new object[] {
-            "Off",
-            "Latch",
-            "Constant"});
-            this.cmbHRQuickStartupCh00.Location = new System.Drawing.Point(235, 62);
-            this.cmbHRQuickStartupCh00.Name = "cmbHRQuickStartupCh00";
-            this.cmbHRQuickStartupCh00.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickStartupCh00.TabIndex = 411;
-            this.cmbHRQuickStartupCh00.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh00_SelectedIndexChanged);
-            // 
-            // cmbHRQuickModeCh11
-            // 
-            this.cmbHRQuickModeCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickModeCh11.FormattingEnabled = true;
-            this.cmbHRQuickModeCh11.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP DN"});
-            this.cmbHRQuickModeCh11.Location = new System.Drawing.Point(1027, 32);
-            this.cmbHRQuickModeCh11.Name = "cmbHRQuickModeCh11";
-            this.cmbHRQuickModeCh11.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickModeCh11.TabIndex = 410;
-            this.cmbHRQuickModeCh11.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh11_SelectedIndexChanged);
-            // 
-            // cmbHRQuickModeCh10
-            // 
-            this.cmbHRQuickModeCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickModeCh10.FormattingEnabled = true;
-            this.cmbHRQuickModeCh10.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHRQuickModeCh10.Location = new System.Drawing.Point(955, 32);
-            this.cmbHRQuickModeCh10.Name = "cmbHRQuickModeCh10";
-            this.cmbHRQuickModeCh10.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickModeCh10.TabIndex = 409;
-            this.cmbHRQuickModeCh10.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh10_SelectedIndexChanged);
-            // 
-            // cmbHRQuickModeCh09
-            // 
-            this.cmbHRQuickModeCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickModeCh09.FormattingEnabled = true;
-            this.cmbHRQuickModeCh09.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHRQuickModeCh09.Location = new System.Drawing.Point(883, 32);
-            this.cmbHRQuickModeCh09.Name = "cmbHRQuickModeCh09";
-            this.cmbHRQuickModeCh09.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickModeCh09.TabIndex = 408;
-            this.cmbHRQuickModeCh09.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh09_SelectedIndexChanged);
-            // 
-            // cmbHRQuickModeCh08
-            // 
-            this.cmbHRQuickModeCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickModeCh08.FormattingEnabled = true;
-            this.cmbHRQuickModeCh08.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHRQuickModeCh08.Location = new System.Drawing.Point(811, 32);
-            this.cmbHRQuickModeCh08.Name = "cmbHRQuickModeCh08";
-            this.cmbHRQuickModeCh08.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickModeCh08.TabIndex = 407;
-            this.cmbHRQuickModeCh08.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh08_SelectedIndexChanged);
-            // 
-            // cmbHRQuickModeCh07
-            // 
-            this.cmbHRQuickModeCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickModeCh07.FormattingEnabled = true;
-            this.cmbHRQuickModeCh07.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHRQuickModeCh07.Location = new System.Drawing.Point(739, 32);
-            this.cmbHRQuickModeCh07.Name = "cmbHRQuickModeCh07";
-            this.cmbHRQuickModeCh07.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickModeCh07.TabIndex = 406;
-            this.cmbHRQuickModeCh07.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh07_SelectedIndexChanged);
-            // 
-            // cmbHRQuickModeCh06
-            // 
-            this.cmbHRQuickModeCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickModeCh06.FormattingEnabled = true;
-            this.cmbHRQuickModeCh06.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHRQuickModeCh06.Location = new System.Drawing.Point(667, 32);
-            this.cmbHRQuickModeCh06.Name = "cmbHRQuickModeCh06";
-            this.cmbHRQuickModeCh06.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickModeCh06.TabIndex = 405;
-            this.cmbHRQuickModeCh06.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh06_SelectedIndexChanged);
-            // 
-            // cmbHRQuickModeCh05
-            // 
-            this.cmbHRQuickModeCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickModeCh05.FormattingEnabled = true;
-            this.cmbHRQuickModeCh05.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHRQuickModeCh05.Location = new System.Drawing.Point(595, 32);
-            this.cmbHRQuickModeCh05.Name = "cmbHRQuickModeCh05";
-            this.cmbHRQuickModeCh05.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickModeCh05.TabIndex = 404;
-            this.cmbHRQuickModeCh05.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh05_SelectedIndexChanged);
-            // 
-            // cmbHRQuickModeCh04
-            // 
-            this.cmbHRQuickModeCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickModeCh04.FormattingEnabled = true;
-            this.cmbHRQuickModeCh04.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHRQuickModeCh04.Location = new System.Drawing.Point(523, 32);
-            this.cmbHRQuickModeCh04.Name = "cmbHRQuickModeCh04";
-            this.cmbHRQuickModeCh04.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickModeCh04.TabIndex = 403;
-            this.cmbHRQuickModeCh04.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh04_SelectedIndexChanged);
-            // 
-            // cmbHRQuickModeCh03
-            // 
-            this.cmbHRQuickModeCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickModeCh03.FormattingEnabled = true;
-            this.cmbHRQuickModeCh03.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHRQuickModeCh03.Location = new System.Drawing.Point(451, 32);
-            this.cmbHRQuickModeCh03.Name = "cmbHRQuickModeCh03";
-            this.cmbHRQuickModeCh03.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickModeCh03.TabIndex = 402;
-            this.cmbHRQuickModeCh03.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh03_SelectedIndexChanged);
-            // 
-            // cmbHRQuickModeCh02
-            // 
-            this.cmbHRQuickModeCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickModeCh02.FormattingEnabled = true;
-            this.cmbHRQuickModeCh02.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHRQuickModeCh02.Location = new System.Drawing.Point(379, 32);
-            this.cmbHRQuickModeCh02.Name = "cmbHRQuickModeCh02";
-            this.cmbHRQuickModeCh02.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickModeCh02.TabIndex = 401;
-            this.cmbHRQuickModeCh02.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh02_SelectedIndexChanged);
-            // 
-            // cmbHRQuickModeCh01
-            // 
-            this.cmbHRQuickModeCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickModeCh01.FormattingEnabled = true;
-            this.cmbHRQuickModeCh01.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP",
-            "RP DN"});
-            this.cmbHRQuickModeCh01.Location = new System.Drawing.Point(307, 32);
-            this.cmbHRQuickModeCh01.Name = "cmbHRQuickModeCh01";
-            this.cmbHRQuickModeCh01.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickModeCh01.TabIndex = 400;
-            this.cmbHRQuickModeCh01.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh01_SelectedIndexChanged);
-            // 
-            // cmbHRQuickModeCh00
-            // 
-            this.cmbHRQuickModeCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickModeCh00.FormattingEnabled = true;
-            this.cmbHRQuickModeCh00.Items.AddRange(new object[] {
-            "12V+",
-            "Ground",
-            "RP UP"});
-            this.cmbHRQuickModeCh00.Location = new System.Drawing.Point(235, 32);
-            this.cmbHRQuickModeCh00.Name = "cmbHRQuickModeCh00";
-            this.cmbHRQuickModeCh00.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickModeCh00.TabIndex = 399;
-            this.cmbHRQuickModeCh00.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh00_SelectedIndexChanged);
             // 
             // chkHRMG3Ch07
             // 
             this.chkHRMG3Ch07.Location = new System.Drawing.Point(755, 208);
             this.chkHRMG3Ch07.Name = "chkHRMG3Ch07";
-            this.chkHRMG3Ch07.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG3Ch07.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG3Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch07.TabIndex = 382;
             this.chkHRMG3Ch07.UseVisualStyleBackColor = true;
@@ -19813,7 +19469,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG4Ch07.Location = new System.Drawing.Point(755, 238);
             this.chkHRMG4Ch07.Name = "chkHRMG4Ch07";
-            this.chkHRMG4Ch07.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG4Ch07.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG4Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch07.TabIndex = 394;
             this.chkHRMG4Ch07.UseVisualStyleBackColor = true;
@@ -19822,7 +19478,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG2Ch07.Location = new System.Drawing.Point(755, 178);
             this.chkHRMG2Ch07.Name = "chkHRMG2Ch07";
-            this.chkHRMG2Ch07.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG2Ch07.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG2Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch07.TabIndex = 370;
             this.chkHRMG2Ch07.UseVisualStyleBackColor = true;
@@ -19831,7 +19487,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG1Ch08.Location = new System.Drawing.Point(827, 148);
             this.chkHRMG1Ch08.Name = "chkHRMG1Ch08";
-            this.chkHRMG1Ch08.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG1Ch08.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG1Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch08.TabIndex = 359;
             this.chkHRMG1Ch08.UseVisualStyleBackColor = true;
@@ -19840,7 +19496,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG1Ch07.Location = new System.Drawing.Point(755, 148);
             this.chkHRMG1Ch07.Name = "chkHRMG1Ch07";
-            this.chkHRMG1Ch07.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG1Ch07.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG1Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch07.TabIndex = 358;
             this.chkHRMG1Ch07.UseVisualStyleBackColor = true;
@@ -19849,7 +19505,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG2Ch08.Location = new System.Drawing.Point(827, 178);
             this.chkHRMG2Ch08.Name = "chkHRMG2Ch08";
-            this.chkHRMG2Ch08.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG2Ch08.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG2Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch08.TabIndex = 371;
             this.chkHRMG2Ch08.UseVisualStyleBackColor = true;
@@ -19858,7 +19514,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG4Ch06.Location = new System.Drawing.Point(683, 238);
             this.chkHRMG4Ch06.Name = "chkHRMG4Ch06";
-            this.chkHRMG4Ch06.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG4Ch06.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG4Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch06.TabIndex = 393;
             this.chkHRMG4Ch06.UseVisualStyleBackColor = true;
@@ -19867,7 +19523,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG3Ch08.Location = new System.Drawing.Point(827, 208);
             this.chkHRMG3Ch08.Name = "chkHRMG3Ch08";
-            this.chkHRMG3Ch08.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG3Ch08.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG3Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch08.TabIndex = 383;
             this.chkHRMG3Ch08.UseVisualStyleBackColor = true;
@@ -19876,7 +19532,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG3Ch06.Location = new System.Drawing.Point(683, 208);
             this.chkHRMG3Ch06.Name = "chkHRMG3Ch06";
-            this.chkHRMG3Ch06.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG3Ch06.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG3Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch06.TabIndex = 381;
             this.chkHRMG3Ch06.UseVisualStyleBackColor = true;
@@ -19885,7 +19541,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG4Ch08.Location = new System.Drawing.Point(827, 238);
             this.chkHRMG4Ch08.Name = "chkHRMG4Ch08";
-            this.chkHRMG4Ch08.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG4Ch08.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG4Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch08.TabIndex = 395;
             this.chkHRMG4Ch08.UseVisualStyleBackColor = true;
@@ -19894,7 +19550,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG2Ch06.Location = new System.Drawing.Point(683, 178);
             this.chkHRMG2Ch06.Name = "chkHRMG2Ch06";
-            this.chkHRMG2Ch06.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG2Ch06.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG2Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch06.TabIndex = 369;
             this.chkHRMG2Ch06.UseVisualStyleBackColor = true;
@@ -19903,7 +19559,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG1Ch09.Location = new System.Drawing.Point(899, 148);
             this.chkHRMG1Ch09.Name = "chkHRMG1Ch09";
-            this.chkHRMG1Ch09.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG1Ch09.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG1Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch09.TabIndex = 360;
             this.chkHRMG1Ch09.UseVisualStyleBackColor = true;
@@ -19912,7 +19568,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG1Ch06.Location = new System.Drawing.Point(683, 148);
             this.chkHRMG1Ch06.Name = "chkHRMG1Ch06";
-            this.chkHRMG1Ch06.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG1Ch06.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG1Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch06.TabIndex = 357;
             this.chkHRMG1Ch06.UseVisualStyleBackColor = true;
@@ -19921,7 +19577,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG2Ch09.Location = new System.Drawing.Point(899, 178);
             this.chkHRMG2Ch09.Name = "chkHRMG2Ch09";
-            this.chkHRMG2Ch09.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG2Ch09.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG2Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch09.TabIndex = 372;
             this.chkHRMG2Ch09.UseVisualStyleBackColor = true;
@@ -19930,7 +19586,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG4Ch05.Location = new System.Drawing.Point(611, 238);
             this.chkHRMG4Ch05.Name = "chkHRMG4Ch05";
-            this.chkHRMG4Ch05.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG4Ch05.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG4Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch05.TabIndex = 392;
             this.chkHRMG4Ch05.UseVisualStyleBackColor = true;
@@ -19939,7 +19595,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG3Ch09.Location = new System.Drawing.Point(899, 208);
             this.chkHRMG3Ch09.Name = "chkHRMG3Ch09";
-            this.chkHRMG3Ch09.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG3Ch09.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG3Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch09.TabIndex = 384;
             this.chkHRMG3Ch09.UseVisualStyleBackColor = true;
@@ -19948,7 +19604,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG3Ch05.Location = new System.Drawing.Point(611, 208);
             this.chkHRMG3Ch05.Name = "chkHRMG3Ch05";
-            this.chkHRMG3Ch05.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG3Ch05.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG3Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch05.TabIndex = 380;
             this.chkHRMG3Ch05.UseVisualStyleBackColor = true;
@@ -19957,7 +19613,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG4Ch09.Location = new System.Drawing.Point(899, 238);
             this.chkHRMG4Ch09.Name = "chkHRMG4Ch09";
-            this.chkHRMG4Ch09.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG4Ch09.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG4Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch09.TabIndex = 396;
             this.chkHRMG4Ch09.UseVisualStyleBackColor = true;
@@ -19966,7 +19622,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG2Ch05.Location = new System.Drawing.Point(611, 178);
             this.chkHRMG2Ch05.Name = "chkHRMG2Ch05";
-            this.chkHRMG2Ch05.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG2Ch05.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG2Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch05.TabIndex = 368;
             this.chkHRMG2Ch05.UseVisualStyleBackColor = true;
@@ -19975,7 +19631,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG1Ch10.Location = new System.Drawing.Point(971, 148);
             this.chkHRMG1Ch10.Name = "chkHRMG1Ch10";
-            this.chkHRMG1Ch10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG1Ch10.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG1Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch10.TabIndex = 361;
             this.chkHRMG1Ch10.UseVisualStyleBackColor = true;
@@ -19984,7 +19640,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG1Ch05.Location = new System.Drawing.Point(611, 148);
             this.chkHRMG1Ch05.Name = "chkHRMG1Ch05";
-            this.chkHRMG1Ch05.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG1Ch05.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG1Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch05.TabIndex = 356;
             this.chkHRMG1Ch05.UseVisualStyleBackColor = true;
@@ -19993,7 +19649,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG1Ch00.Location = new System.Drawing.Point(251, 148);
             this.chkHRMG1Ch00.Name = "chkHRMG1Ch00";
-            this.chkHRMG1Ch00.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG1Ch00.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG1Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch00.TabIndex = 351;
             this.chkHRMG1Ch00.UseVisualStyleBackColor = true;
@@ -20002,7 +19658,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG2Ch10.Location = new System.Drawing.Point(971, 178);
             this.chkHRMG2Ch10.Name = "chkHRMG2Ch10";
-            this.chkHRMG2Ch10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG2Ch10.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG2Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch10.TabIndex = 373;
             this.chkHRMG2Ch10.UseVisualStyleBackColor = true;
@@ -20011,7 +19667,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG2Ch00.Location = new System.Drawing.Point(251, 178);
             this.chkHRMG2Ch00.Name = "chkHRMG2Ch00";
-            this.chkHRMG2Ch00.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG2Ch00.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG2Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch00.TabIndex = 363;
             this.chkHRMG2Ch00.UseVisualStyleBackColor = true;
@@ -20020,7 +19676,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG4Ch04.Location = new System.Drawing.Point(539, 238);
             this.chkHRMG4Ch04.Name = "chkHRMG4Ch04";
-            this.chkHRMG4Ch04.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG4Ch04.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG4Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch04.TabIndex = 391;
             this.chkHRMG4Ch04.UseVisualStyleBackColor = true;
@@ -20029,7 +19685,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG3Ch10.Location = new System.Drawing.Point(971, 208);
             this.chkHRMG3Ch10.Name = "chkHRMG3Ch10";
-            this.chkHRMG3Ch10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG3Ch10.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG3Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch10.TabIndex = 385;
             this.chkHRMG3Ch10.UseVisualStyleBackColor = true;
@@ -20038,7 +19694,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG3Ch00.Location = new System.Drawing.Point(251, 208);
             this.chkHRMG3Ch00.Name = "chkHRMG3Ch00";
-            this.chkHRMG3Ch00.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG3Ch00.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG3Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch00.TabIndex = 375;
             this.chkHRMG3Ch00.UseVisualStyleBackColor = true;
@@ -20047,7 +19703,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG3Ch04.Location = new System.Drawing.Point(539, 208);
             this.chkHRMG3Ch04.Name = "chkHRMG3Ch04";
-            this.chkHRMG3Ch04.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG3Ch04.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG3Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch04.TabIndex = 379;
             this.chkHRMG3Ch04.UseVisualStyleBackColor = true;
@@ -20056,7 +19712,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG4Ch10.Location = new System.Drawing.Point(971, 238);
             this.chkHRMG4Ch10.Name = "chkHRMG4Ch10";
-            this.chkHRMG4Ch10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG4Ch10.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG4Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch10.TabIndex = 397;
             this.chkHRMG4Ch10.UseVisualStyleBackColor = true;
@@ -20065,7 +19721,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG4Ch00.Location = new System.Drawing.Point(251, 238);
             this.chkHRMG4Ch00.Name = "chkHRMG4Ch00";
-            this.chkHRMG4Ch00.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG4Ch00.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG4Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch00.TabIndex = 387;
             this.chkHRMG4Ch00.UseVisualStyleBackColor = true;
@@ -20074,7 +19730,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG2Ch04.Location = new System.Drawing.Point(539, 178);
             this.chkHRMG2Ch04.Name = "chkHRMG2Ch04";
-            this.chkHRMG2Ch04.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG2Ch04.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG2Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch04.TabIndex = 367;
             this.chkHRMG2Ch04.UseVisualStyleBackColor = true;
@@ -20083,7 +19739,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG1Ch11.Location = new System.Drawing.Point(1043, 148);
             this.chkHRMG1Ch11.Name = "chkHRMG1Ch11";
-            this.chkHRMG1Ch11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG1Ch11.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG1Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch11.TabIndex = 362;
             this.chkHRMG1Ch11.UseVisualStyleBackColor = true;
@@ -20092,7 +19748,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG1Ch01.Location = new System.Drawing.Point(323, 148);
             this.chkHRMG1Ch01.Name = "chkHRMG1Ch01";
-            this.chkHRMG1Ch01.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG1Ch01.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG1Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch01.TabIndex = 352;
             this.chkHRMG1Ch01.UseVisualStyleBackColor = true;
@@ -20101,7 +19757,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG1Ch04.Location = new System.Drawing.Point(539, 148);
             this.chkHRMG1Ch04.Name = "chkHRMG1Ch04";
-            this.chkHRMG1Ch04.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG1Ch04.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG1Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch04.TabIndex = 355;
             this.chkHRMG1Ch04.UseVisualStyleBackColor = true;
@@ -20110,7 +19766,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG2Ch11.Location = new System.Drawing.Point(1043, 178);
             this.chkHRMG2Ch11.Name = "chkHRMG2Ch11";
-            this.chkHRMG2Ch11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG2Ch11.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG2Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch11.TabIndex = 374;
             this.chkHRMG2Ch11.UseVisualStyleBackColor = true;
@@ -20119,7 +19775,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG4Ch03.Location = new System.Drawing.Point(467, 238);
             this.chkHRMG4Ch03.Name = "chkHRMG4Ch03";
-            this.chkHRMG4Ch03.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG4Ch03.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG4Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch03.TabIndex = 390;
             this.chkHRMG4Ch03.UseVisualStyleBackColor = true;
@@ -20128,7 +19784,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG2Ch01.Location = new System.Drawing.Point(323, 178);
             this.chkHRMG2Ch01.Name = "chkHRMG2Ch01";
-            this.chkHRMG2Ch01.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG2Ch01.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG2Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch01.TabIndex = 364;
             this.chkHRMG2Ch01.UseVisualStyleBackColor = true;
@@ -20137,7 +19793,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG3Ch11.Location = new System.Drawing.Point(1043, 208);
             this.chkHRMG3Ch11.Name = "chkHRMG3Ch11";
-            this.chkHRMG3Ch11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG3Ch11.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG3Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch11.TabIndex = 386;
             this.chkHRMG3Ch11.UseVisualStyleBackColor = true;
@@ -20146,7 +19802,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG3Ch03.Location = new System.Drawing.Point(467, 208);
             this.chkHRMG3Ch03.Name = "chkHRMG3Ch03";
-            this.chkHRMG3Ch03.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG3Ch03.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG3Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch03.TabIndex = 378;
             this.chkHRMG3Ch03.UseVisualStyleBackColor = true;
@@ -20155,7 +19811,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG3Ch01.Location = new System.Drawing.Point(323, 208);
             this.chkHRMG3Ch01.Name = "chkHRMG3Ch01";
-            this.chkHRMG3Ch01.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG3Ch01.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG3Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch01.TabIndex = 376;
             this.chkHRMG3Ch01.UseVisualStyleBackColor = true;
@@ -20164,7 +19820,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG4Ch11.Location = new System.Drawing.Point(1043, 238);
             this.chkHRMG4Ch11.Name = "chkHRMG4Ch11";
-            this.chkHRMG4Ch11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG4Ch11.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG4Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch11.TabIndex = 398;
             this.chkHRMG4Ch11.UseVisualStyleBackColor = true;
@@ -20173,7 +19829,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG2Ch03.Location = new System.Drawing.Point(467, 178);
             this.chkHRMG2Ch03.Name = "chkHRMG2Ch03";
-            this.chkHRMG2Ch03.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG2Ch03.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG2Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch03.TabIndex = 366;
             this.chkHRMG2Ch03.UseVisualStyleBackColor = true;
@@ -20182,7 +19838,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG4Ch01.Location = new System.Drawing.Point(323, 238);
             this.chkHRMG4Ch01.Name = "chkHRMG4Ch01";
-            this.chkHRMG4Ch01.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG4Ch01.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG4Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch01.TabIndex = 388;
             this.chkHRMG4Ch01.UseVisualStyleBackColor = true;
@@ -20191,7 +19847,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG1Ch03.Location = new System.Drawing.Point(467, 148);
             this.chkHRMG1Ch03.Name = "chkHRMG1Ch03";
-            this.chkHRMG1Ch03.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG1Ch03.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG1Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch03.TabIndex = 354;
             this.chkHRMG1Ch03.UseVisualStyleBackColor = true;
@@ -20200,7 +19856,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG1Ch02.Location = new System.Drawing.Point(395, 148);
             this.chkHRMG1Ch02.Name = "chkHRMG1Ch02";
-            this.chkHRMG1Ch02.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG1Ch02.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG1Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG1Ch02.TabIndex = 353;
             this.chkHRMG1Ch02.UseVisualStyleBackColor = true;
@@ -20209,7 +19865,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG4Ch02.Location = new System.Drawing.Point(395, 238);
             this.chkHRMG4Ch02.Name = "chkHRMG4Ch02";
-            this.chkHRMG4Ch02.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG4Ch02.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG4Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG4Ch02.TabIndex = 389;
             this.chkHRMG4Ch02.UseVisualStyleBackColor = true;
@@ -20218,7 +19874,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG2Ch02.Location = new System.Drawing.Point(395, 178);
             this.chkHRMG2Ch02.Name = "chkHRMG2Ch02";
-            this.chkHRMG2Ch02.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG2Ch02.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG2Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG2Ch02.TabIndex = 365;
             this.chkHRMG2Ch02.UseVisualStyleBackColor = true;
@@ -20227,7 +19883,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRMG3Ch02.Location = new System.Drawing.Point(395, 208);
             this.chkHRMG3Ch02.Name = "chkHRMG3Ch02";
-            this.chkHRMG3Ch02.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRMG3Ch02.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRMG3Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkHRMG3Ch02.TabIndex = 377;
             this.chkHRMG3Ch02.UseVisualStyleBackColor = true;
@@ -20363,33 +20019,6 @@ namespace M1ConfigGenerator
             this.lblHRCh01.TabIndex = 340;
             this.lblHRCh01.Text = "1";
             this.lblHRCh01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cmbHRQuickOCAmpsCh00
-            // 
-            this.cmbHRQuickOCAmpsCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickOCAmpsCh00.FormattingEnabled = true;
-            this.cmbHRQuickOCAmpsCh00.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHRQuickOCAmpsCh00.Location = new System.Drawing.Point(235, 2);
-            this.cmbHRQuickOCAmpsCh00.Name = "cmbHRQuickOCAmpsCh00";
-            this.cmbHRQuickOCAmpsCh00.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickOCAmpsCh00.TabIndex = 315;
-            this.cmbHRQuickOCAmpsCh00.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh00_SelectedIndexChanged);
             // 
             // cmbHROCTimeCh07
             // 
@@ -20595,325 +20224,6 @@ namespace M1ConfigGenerator
             this.cmbHROCTimeCh00.Size = new System.Drawing.Size(66, 21);
             this.cmbHROCTimeCh00.TabIndex = 327;
             // 
-            // cmbHRQuickOCAmpsCh11
-            // 
-            this.cmbHRQuickOCAmpsCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickOCAmpsCh11.FormattingEnabled = true;
-            this.cmbHRQuickOCAmpsCh11.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHRQuickOCAmpsCh11.Location = new System.Drawing.Point(1027, 2);
-            this.cmbHRQuickOCAmpsCh11.Name = "cmbHRQuickOCAmpsCh11";
-            this.cmbHRQuickOCAmpsCh11.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickOCAmpsCh11.TabIndex = 326;
-            this.cmbHRQuickOCAmpsCh11.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh11_SelectedIndexChanged);
-            // 
-            // cmbHRQuickOCAmpsCh10
-            // 
-            this.cmbHRQuickOCAmpsCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickOCAmpsCh10.FormattingEnabled = true;
-            this.cmbHRQuickOCAmpsCh10.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHRQuickOCAmpsCh10.Location = new System.Drawing.Point(955, 2);
-            this.cmbHRQuickOCAmpsCh10.Name = "cmbHRQuickOCAmpsCh10";
-            this.cmbHRQuickOCAmpsCh10.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickOCAmpsCh10.TabIndex = 325;
-            this.cmbHRQuickOCAmpsCh10.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh10_SelectedIndexChanged);
-            // 
-            // cmbHRQuickOCAmpsCh09
-            // 
-            this.cmbHRQuickOCAmpsCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickOCAmpsCh09.FormattingEnabled = true;
-            this.cmbHRQuickOCAmpsCh09.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHRQuickOCAmpsCh09.Location = new System.Drawing.Point(883, 2);
-            this.cmbHRQuickOCAmpsCh09.Name = "cmbHRQuickOCAmpsCh09";
-            this.cmbHRQuickOCAmpsCh09.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickOCAmpsCh09.TabIndex = 324;
-            this.cmbHRQuickOCAmpsCh09.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh09_SelectedIndexChanged);
-            // 
-            // cmbHRQuickOCAmpsCh08
-            // 
-            this.cmbHRQuickOCAmpsCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickOCAmpsCh08.FormattingEnabled = true;
-            this.cmbHRQuickOCAmpsCh08.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHRQuickOCAmpsCh08.Location = new System.Drawing.Point(811, 2);
-            this.cmbHRQuickOCAmpsCh08.Name = "cmbHRQuickOCAmpsCh08";
-            this.cmbHRQuickOCAmpsCh08.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickOCAmpsCh08.TabIndex = 323;
-            this.cmbHRQuickOCAmpsCh08.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh08_SelectedIndexChanged);
-            // 
-            // cmbHRQuickOCAmpsCh07
-            // 
-            this.cmbHRQuickOCAmpsCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickOCAmpsCh07.FormattingEnabled = true;
-            this.cmbHRQuickOCAmpsCh07.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHRQuickOCAmpsCh07.Location = new System.Drawing.Point(739, 2);
-            this.cmbHRQuickOCAmpsCh07.Name = "cmbHRQuickOCAmpsCh07";
-            this.cmbHRQuickOCAmpsCh07.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickOCAmpsCh07.TabIndex = 322;
-            this.cmbHRQuickOCAmpsCh07.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh07_SelectedIndexChanged);
-            // 
-            // cmbHRQuickOCAmpsCh01
-            // 
-            this.cmbHRQuickOCAmpsCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickOCAmpsCh01.FormattingEnabled = true;
-            this.cmbHRQuickOCAmpsCh01.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHRQuickOCAmpsCh01.Location = new System.Drawing.Point(307, 2);
-            this.cmbHRQuickOCAmpsCh01.Name = "cmbHRQuickOCAmpsCh01";
-            this.cmbHRQuickOCAmpsCh01.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickOCAmpsCh01.TabIndex = 316;
-            this.cmbHRQuickOCAmpsCh01.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh01_SelectedIndexChanged);
-            // 
-            // cmbHRQuickOCAmpsCh06
-            // 
-            this.cmbHRQuickOCAmpsCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickOCAmpsCh06.FormattingEnabled = true;
-            this.cmbHRQuickOCAmpsCh06.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHRQuickOCAmpsCh06.Location = new System.Drawing.Point(667, 2);
-            this.cmbHRQuickOCAmpsCh06.Name = "cmbHRQuickOCAmpsCh06";
-            this.cmbHRQuickOCAmpsCh06.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickOCAmpsCh06.TabIndex = 321;
-            this.cmbHRQuickOCAmpsCh06.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh06_SelectedIndexChanged);
-            // 
-            // cmbHRQuickOCAmpsCh02
-            // 
-            this.cmbHRQuickOCAmpsCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickOCAmpsCh02.FormattingEnabled = true;
-            this.cmbHRQuickOCAmpsCh02.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHRQuickOCAmpsCh02.Location = new System.Drawing.Point(379, 2);
-            this.cmbHRQuickOCAmpsCh02.Name = "cmbHRQuickOCAmpsCh02";
-            this.cmbHRQuickOCAmpsCh02.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickOCAmpsCh02.TabIndex = 317;
-            this.cmbHRQuickOCAmpsCh02.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh02_SelectedIndexChanged);
-            // 
-            // cmbHRQuickOCAmpsCh05
-            // 
-            this.cmbHRQuickOCAmpsCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickOCAmpsCh05.FormattingEnabled = true;
-            this.cmbHRQuickOCAmpsCh05.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHRQuickOCAmpsCh05.Location = new System.Drawing.Point(595, 2);
-            this.cmbHRQuickOCAmpsCh05.Name = "cmbHRQuickOCAmpsCh05";
-            this.cmbHRQuickOCAmpsCh05.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickOCAmpsCh05.TabIndex = 320;
-            this.cmbHRQuickOCAmpsCh05.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh05_SelectedIndexChanged);
-            // 
-            // cmbHRQuickOCAmpsCh03
-            // 
-            this.cmbHRQuickOCAmpsCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickOCAmpsCh03.FormattingEnabled = true;
-            this.cmbHRQuickOCAmpsCh03.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHRQuickOCAmpsCh03.Location = new System.Drawing.Point(451, 2);
-            this.cmbHRQuickOCAmpsCh03.Name = "cmbHRQuickOCAmpsCh03";
-            this.cmbHRQuickOCAmpsCh03.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickOCAmpsCh03.TabIndex = 318;
-            this.cmbHRQuickOCAmpsCh03.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh03_SelectedIndexChanged);
-            // 
-            // cmbHRQuickOCAmpsCh04
-            // 
-            this.cmbHRQuickOCAmpsCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHRQuickOCAmpsCh04.FormattingEnabled = true;
-            this.cmbHRQuickOCAmpsCh04.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.cmbHRQuickOCAmpsCh04.Location = new System.Drawing.Point(523, 2);
-            this.cmbHRQuickOCAmpsCh04.Name = "cmbHRQuickOCAmpsCh04";
-            this.cmbHRQuickOCAmpsCh04.Size = new System.Drawing.Size(66, 21);
-            this.cmbHRQuickOCAmpsCh04.TabIndex = 319;
-            this.cmbHRQuickOCAmpsCh04.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh04_SelectedIndexChanged);
-            // 
-            // label692
-            // 
-            this.label692.AutoSize = true;
-            this.label692.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label692.ForeColor = System.Drawing.Color.Yellow;
-            this.label692.Location = new System.Drawing.Point(3, 63);
-            this.label692.Name = "label692";
-            this.label692.Size = new System.Drawing.Size(119, 17);
-            this.label692.TabIndex = 314;
-            this.label692.Text = "Behavior at Startup";
-            // 
-            // label693
-            // 
-            this.label693.AutoSize = true;
-            this.label693.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label693.ForeColor = System.Drawing.Color.Yellow;
-            this.label693.Location = new System.Drawing.Point(3, 33);
-            this.label693.Name = "label693";
-            this.label693.Size = new System.Drawing.Size(184, 17);
-            this.label693.TabIndex = 313;
-            this.label693.Text = "Mode Quick Set (Output Type)";
-            // 
             // label694
             // 
             this.label694.AutoSize = true;
@@ -20968,17 +20278,6 @@ namespace M1ConfigGenerator
             this.label698.Size = new System.Drawing.Size(164, 17);
             this.label698.TabIndex = 308;
             this.label698.Text = "Overcurrent Time Constant";
-            // 
-            // label699
-            // 
-            this.label699.AutoSize = true;
-            this.label699.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label699.ForeColor = System.Drawing.Color.Yellow;
-            this.label699.Location = new System.Drawing.Point(3, 3);
-            this.label699.Name = "label699";
-            this.label699.Size = new System.Drawing.Size(172, 17);
-            this.label699.TabIndex = 307;
-            this.label699.Text = "Overcurrent Amps Quick Set";
             // 
             // label700
             // 
@@ -21038,7 +20337,7 @@ namespace M1ConfigGenerator
             this.chkHRShade.AutoSize = true;
             this.chkHRShade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkHRShade.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHRShade.Location = new System.Drawing.Point(298, 70);
+            this.chkHRShade.Location = new System.Drawing.Point(466, 70);
             this.chkHRShade.Name = "chkHRShade";
             this.chkHRShade.Size = new System.Drawing.Size(63, 21);
             this.chkHRShade.TabIndex = 293;
@@ -21171,7 +20470,7 @@ namespace M1ConfigGenerator
             this.chkHRForce.AutoSize = true;
             this.chkHRForce.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkHRForce.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHRForce.Location = new System.Drawing.Point(390, 70);
+            this.chkHRForce.Location = new System.Drawing.Point(558, 70);
             this.chkHRForce.Name = "chkHRForce";
             this.chkHRForce.Size = new System.Drawing.Size(129, 21);
             this.chkHRForce.TabIndex = 304;
@@ -21232,10 +20531,713 @@ namespace M1ConfigGenerator
             this.tabPage15.Controls.Add(this.cmbHRQuickModeCh04);
             this.tabPage15.Location = new System.Drawing.Point(4, 22);
             this.tabPage15.Name = "tabPage15";
-            this.tabPage15.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage15.Size = new System.Drawing.Size(1378, 528);
             this.tabPage15.TabIndex = 0;
             this.tabPage15.Text = "HR 1 Quick";
+            // 
+            // cmbHRQuickStartupCh11
+            // 
+            this.cmbHRQuickStartupCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh11.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh11.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHRQuickStartupCh11.Location = new System.Drawing.Point(1027, 62);
+            this.cmbHRQuickStartupCh11.Name = "cmbHRQuickStartupCh11";
+            this.cmbHRQuickStartupCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickStartupCh11.TabIndex = 422;
+            this.cmbHRQuickStartupCh11.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh11_SelectedIndexChanged);
+            // 
+            // label699
+            // 
+            this.label699.AutoSize = true;
+            this.label699.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label699.ForeColor = System.Drawing.Color.Yellow;
+            this.label699.Location = new System.Drawing.Point(3, 3);
+            this.label699.Name = "label699";
+            this.label699.Size = new System.Drawing.Size(172, 17);
+            this.label699.TabIndex = 307;
+            this.label699.Text = "Overcurrent Amps Quick Set";
+            // 
+            // cmbHRQuickStartupCh10
+            // 
+            this.cmbHRQuickStartupCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh10.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh10.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHRQuickStartupCh10.Location = new System.Drawing.Point(955, 62);
+            this.cmbHRQuickStartupCh10.Name = "cmbHRQuickStartupCh10";
+            this.cmbHRQuickStartupCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickStartupCh10.TabIndex = 421;
+            this.cmbHRQuickStartupCh10.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh10_SelectedIndexChanged);
+            // 
+            // cmbHRQuickOCAmpsCh04
+            // 
+            this.cmbHRQuickOCAmpsCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh04.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHRQuickOCAmpsCh04.Location = new System.Drawing.Point(523, 2);
+            this.cmbHRQuickOCAmpsCh04.Name = "cmbHRQuickOCAmpsCh04";
+            this.cmbHRQuickOCAmpsCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickOCAmpsCh04.TabIndex = 319;
+            this.cmbHRQuickOCAmpsCh04.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh04_SelectedIndexChanged);
+            // 
+            // cmbHRQuickStartupCh09
+            // 
+            this.cmbHRQuickStartupCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh09.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh09.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHRQuickStartupCh09.Location = new System.Drawing.Point(883, 62);
+            this.cmbHRQuickStartupCh09.Name = "cmbHRQuickStartupCh09";
+            this.cmbHRQuickStartupCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickStartupCh09.TabIndex = 420;
+            this.cmbHRQuickStartupCh09.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh09_SelectedIndexChanged);
+            // 
+            // cmbHRQuickOCAmpsCh03
+            // 
+            this.cmbHRQuickOCAmpsCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh03.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHRQuickOCAmpsCh03.Location = new System.Drawing.Point(451, 2);
+            this.cmbHRQuickOCAmpsCh03.Name = "cmbHRQuickOCAmpsCh03";
+            this.cmbHRQuickOCAmpsCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickOCAmpsCh03.TabIndex = 318;
+            this.cmbHRQuickOCAmpsCh03.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh03_SelectedIndexChanged);
+            // 
+            // cmbHRQuickStartupCh08
+            // 
+            this.cmbHRQuickStartupCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh08.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh08.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHRQuickStartupCh08.Location = new System.Drawing.Point(811, 62);
+            this.cmbHRQuickStartupCh08.Name = "cmbHRQuickStartupCh08";
+            this.cmbHRQuickStartupCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickStartupCh08.TabIndex = 419;
+            this.cmbHRQuickStartupCh08.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh08_SelectedIndexChanged);
+            // 
+            // cmbHRQuickOCAmpsCh05
+            // 
+            this.cmbHRQuickOCAmpsCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh05.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHRQuickOCAmpsCh05.Location = new System.Drawing.Point(595, 2);
+            this.cmbHRQuickOCAmpsCh05.Name = "cmbHRQuickOCAmpsCh05";
+            this.cmbHRQuickOCAmpsCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickOCAmpsCh05.TabIndex = 320;
+            this.cmbHRQuickOCAmpsCh05.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh05_SelectedIndexChanged);
+            // 
+            // cmbHRQuickStartupCh07
+            // 
+            this.cmbHRQuickStartupCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh07.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh07.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHRQuickStartupCh07.Location = new System.Drawing.Point(739, 62);
+            this.cmbHRQuickStartupCh07.Name = "cmbHRQuickStartupCh07";
+            this.cmbHRQuickStartupCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickStartupCh07.TabIndex = 418;
+            this.cmbHRQuickStartupCh07.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh07_SelectedIndexChanged);
+            // 
+            // cmbHRQuickOCAmpsCh02
+            // 
+            this.cmbHRQuickOCAmpsCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh02.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHRQuickOCAmpsCh02.Location = new System.Drawing.Point(379, 2);
+            this.cmbHRQuickOCAmpsCh02.Name = "cmbHRQuickOCAmpsCh02";
+            this.cmbHRQuickOCAmpsCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickOCAmpsCh02.TabIndex = 317;
+            this.cmbHRQuickOCAmpsCh02.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh02_SelectedIndexChanged);
+            // 
+            // cmbHRQuickStartupCh06
+            // 
+            this.cmbHRQuickStartupCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh06.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh06.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHRQuickStartupCh06.Location = new System.Drawing.Point(667, 62);
+            this.cmbHRQuickStartupCh06.Name = "cmbHRQuickStartupCh06";
+            this.cmbHRQuickStartupCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickStartupCh06.TabIndex = 417;
+            this.cmbHRQuickStartupCh06.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh06_SelectedIndexChanged);
+            // 
+            // cmbHRQuickOCAmpsCh06
+            // 
+            this.cmbHRQuickOCAmpsCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh06.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHRQuickOCAmpsCh06.Location = new System.Drawing.Point(667, 2);
+            this.cmbHRQuickOCAmpsCh06.Name = "cmbHRQuickOCAmpsCh06";
+            this.cmbHRQuickOCAmpsCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickOCAmpsCh06.TabIndex = 321;
+            this.cmbHRQuickOCAmpsCh06.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh06_SelectedIndexChanged);
+            // 
+            // cmbHRQuickStartupCh05
+            // 
+            this.cmbHRQuickStartupCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh05.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh05.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHRQuickStartupCh05.Location = new System.Drawing.Point(595, 62);
+            this.cmbHRQuickStartupCh05.Name = "cmbHRQuickStartupCh05";
+            this.cmbHRQuickStartupCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickStartupCh05.TabIndex = 416;
+            this.cmbHRQuickStartupCh05.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh05_SelectedIndexChanged);
+            // 
+            // cmbHRQuickOCAmpsCh01
+            // 
+            this.cmbHRQuickOCAmpsCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh01.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHRQuickOCAmpsCh01.Location = new System.Drawing.Point(307, 2);
+            this.cmbHRQuickOCAmpsCh01.Name = "cmbHRQuickOCAmpsCh01";
+            this.cmbHRQuickOCAmpsCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickOCAmpsCh01.TabIndex = 316;
+            this.cmbHRQuickOCAmpsCh01.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh01_SelectedIndexChanged);
+            // 
+            // cmbHRQuickStartupCh04
+            // 
+            this.cmbHRQuickStartupCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh04.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh04.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHRQuickStartupCh04.Location = new System.Drawing.Point(523, 62);
+            this.cmbHRQuickStartupCh04.Name = "cmbHRQuickStartupCh04";
+            this.cmbHRQuickStartupCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickStartupCh04.TabIndex = 415;
+            this.cmbHRQuickStartupCh04.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh04_SelectedIndexChanged);
+            // 
+            // cmbHRQuickOCAmpsCh07
+            // 
+            this.cmbHRQuickOCAmpsCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh07.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHRQuickOCAmpsCh07.Location = new System.Drawing.Point(739, 2);
+            this.cmbHRQuickOCAmpsCh07.Name = "cmbHRQuickOCAmpsCh07";
+            this.cmbHRQuickOCAmpsCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickOCAmpsCh07.TabIndex = 322;
+            this.cmbHRQuickOCAmpsCh07.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh07_SelectedIndexChanged);
+            // 
+            // cmbHRQuickStartupCh03
+            // 
+            this.cmbHRQuickStartupCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh03.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh03.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHRQuickStartupCh03.Location = new System.Drawing.Point(451, 62);
+            this.cmbHRQuickStartupCh03.Name = "cmbHRQuickStartupCh03";
+            this.cmbHRQuickStartupCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickStartupCh03.TabIndex = 414;
+            this.cmbHRQuickStartupCh03.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh03_SelectedIndexChanged);
+            // 
+            // cmbHRQuickOCAmpsCh08
+            // 
+            this.cmbHRQuickOCAmpsCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh08.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHRQuickOCAmpsCh08.Location = new System.Drawing.Point(811, 2);
+            this.cmbHRQuickOCAmpsCh08.Name = "cmbHRQuickOCAmpsCh08";
+            this.cmbHRQuickOCAmpsCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickOCAmpsCh08.TabIndex = 323;
+            this.cmbHRQuickOCAmpsCh08.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh08_SelectedIndexChanged);
+            // 
+            // cmbHRQuickStartupCh02
+            // 
+            this.cmbHRQuickStartupCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh02.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh02.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHRQuickStartupCh02.Location = new System.Drawing.Point(379, 62);
+            this.cmbHRQuickStartupCh02.Name = "cmbHRQuickStartupCh02";
+            this.cmbHRQuickStartupCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickStartupCh02.TabIndex = 413;
+            this.cmbHRQuickStartupCh02.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh02_SelectedIndexChanged);
+            // 
+            // cmbHRQuickOCAmpsCh09
+            // 
+            this.cmbHRQuickOCAmpsCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh09.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHRQuickOCAmpsCh09.Location = new System.Drawing.Point(883, 2);
+            this.cmbHRQuickOCAmpsCh09.Name = "cmbHRQuickOCAmpsCh09";
+            this.cmbHRQuickOCAmpsCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickOCAmpsCh09.TabIndex = 324;
+            this.cmbHRQuickOCAmpsCh09.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh09_SelectedIndexChanged);
+            // 
+            // cmbHRQuickStartupCh01
+            // 
+            this.cmbHRQuickStartupCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh01.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh01.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHRQuickStartupCh01.Location = new System.Drawing.Point(307, 62);
+            this.cmbHRQuickStartupCh01.Name = "cmbHRQuickStartupCh01";
+            this.cmbHRQuickStartupCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickStartupCh01.TabIndex = 412;
+            this.cmbHRQuickStartupCh01.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh01_SelectedIndexChanged);
+            // 
+            // cmbHRQuickOCAmpsCh10
+            // 
+            this.cmbHRQuickOCAmpsCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh10.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHRQuickOCAmpsCh10.Location = new System.Drawing.Point(955, 2);
+            this.cmbHRQuickOCAmpsCh10.Name = "cmbHRQuickOCAmpsCh10";
+            this.cmbHRQuickOCAmpsCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickOCAmpsCh10.TabIndex = 325;
+            this.cmbHRQuickOCAmpsCh10.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh10_SelectedIndexChanged);
+            // 
+            // cmbHRQuickStartupCh00
+            // 
+            this.cmbHRQuickStartupCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickStartupCh00.FormattingEnabled = true;
+            this.cmbHRQuickStartupCh00.Items.AddRange(new object[] {
+            "Off",
+            "Latch",
+            "Constant"});
+            this.cmbHRQuickStartupCh00.Location = new System.Drawing.Point(235, 62);
+            this.cmbHRQuickStartupCh00.Name = "cmbHRQuickStartupCh00";
+            this.cmbHRQuickStartupCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickStartupCh00.TabIndex = 411;
+            this.cmbHRQuickStartupCh00.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickStartupCh00_SelectedIndexChanged);
+            // 
+            // cmbHRQuickOCAmpsCh11
+            // 
+            this.cmbHRQuickOCAmpsCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh11.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHRQuickOCAmpsCh11.Location = new System.Drawing.Point(1027, 2);
+            this.cmbHRQuickOCAmpsCh11.Name = "cmbHRQuickOCAmpsCh11";
+            this.cmbHRQuickOCAmpsCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickOCAmpsCh11.TabIndex = 326;
+            this.cmbHRQuickOCAmpsCh11.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh11_SelectedIndexChanged);
+            // 
+            // cmbHRQuickModeCh11
+            // 
+            this.cmbHRQuickModeCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh11.FormattingEnabled = true;
+            this.cmbHRQuickModeCh11.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP DN"});
+            this.cmbHRQuickModeCh11.Location = new System.Drawing.Point(1027, 32);
+            this.cmbHRQuickModeCh11.Name = "cmbHRQuickModeCh11";
+            this.cmbHRQuickModeCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickModeCh11.TabIndex = 410;
+            this.cmbHRQuickModeCh11.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh11_SelectedIndexChanged);
+            // 
+            // cmbHRQuickOCAmpsCh00
+            // 
+            this.cmbHRQuickOCAmpsCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickOCAmpsCh00.FormattingEnabled = true;
+            this.cmbHRQuickOCAmpsCh00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cmbHRQuickOCAmpsCh00.Location = new System.Drawing.Point(235, 2);
+            this.cmbHRQuickOCAmpsCh00.Name = "cmbHRQuickOCAmpsCh00";
+            this.cmbHRQuickOCAmpsCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickOCAmpsCh00.TabIndex = 315;
+            this.cmbHRQuickOCAmpsCh00.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickOCAmpsCh00_SelectedIndexChanged);
+            // 
+            // cmbHRQuickModeCh10
+            // 
+            this.cmbHRQuickModeCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh10.FormattingEnabled = true;
+            this.cmbHRQuickModeCh10.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHRQuickModeCh10.Location = new System.Drawing.Point(955, 32);
+            this.cmbHRQuickModeCh10.Name = "cmbHRQuickModeCh10";
+            this.cmbHRQuickModeCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickModeCh10.TabIndex = 409;
+            this.cmbHRQuickModeCh10.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh10_SelectedIndexChanged);
+            // 
+            // label693
+            // 
+            this.label693.AutoSize = true;
+            this.label693.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label693.ForeColor = System.Drawing.Color.Yellow;
+            this.label693.Location = new System.Drawing.Point(3, 33);
+            this.label693.Name = "label693";
+            this.label693.Size = new System.Drawing.Size(184, 17);
+            this.label693.TabIndex = 313;
+            this.label693.Text = "Mode Quick Set (Output Type)";
+            // 
+            // cmbHRQuickModeCh09
+            // 
+            this.cmbHRQuickModeCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh09.FormattingEnabled = true;
+            this.cmbHRQuickModeCh09.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHRQuickModeCh09.Location = new System.Drawing.Point(883, 32);
+            this.cmbHRQuickModeCh09.Name = "cmbHRQuickModeCh09";
+            this.cmbHRQuickModeCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickModeCh09.TabIndex = 408;
+            this.cmbHRQuickModeCh09.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh09_SelectedIndexChanged);
+            // 
+            // label692
+            // 
+            this.label692.AutoSize = true;
+            this.label692.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label692.ForeColor = System.Drawing.Color.Yellow;
+            this.label692.Location = new System.Drawing.Point(3, 63);
+            this.label692.Name = "label692";
+            this.label692.Size = new System.Drawing.Size(119, 17);
+            this.label692.TabIndex = 314;
+            this.label692.Text = "Behavior at Startup";
+            // 
+            // cmbHRQuickModeCh08
+            // 
+            this.cmbHRQuickModeCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh08.FormattingEnabled = true;
+            this.cmbHRQuickModeCh08.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHRQuickModeCh08.Location = new System.Drawing.Point(811, 32);
+            this.cmbHRQuickModeCh08.Name = "cmbHRQuickModeCh08";
+            this.cmbHRQuickModeCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickModeCh08.TabIndex = 407;
+            this.cmbHRQuickModeCh08.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh08_SelectedIndexChanged);
+            // 
+            // cmbHRQuickModeCh00
+            // 
+            this.cmbHRQuickModeCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh00.FormattingEnabled = true;
+            this.cmbHRQuickModeCh00.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP"});
+            this.cmbHRQuickModeCh00.Location = new System.Drawing.Point(235, 32);
+            this.cmbHRQuickModeCh00.Name = "cmbHRQuickModeCh00";
+            this.cmbHRQuickModeCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickModeCh00.TabIndex = 399;
+            this.cmbHRQuickModeCh00.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh00_SelectedIndexChanged);
+            // 
+            // cmbHRQuickModeCh07
+            // 
+            this.cmbHRQuickModeCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh07.FormattingEnabled = true;
+            this.cmbHRQuickModeCh07.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHRQuickModeCh07.Location = new System.Drawing.Point(739, 32);
+            this.cmbHRQuickModeCh07.Name = "cmbHRQuickModeCh07";
+            this.cmbHRQuickModeCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickModeCh07.TabIndex = 406;
+            this.cmbHRQuickModeCh07.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh07_SelectedIndexChanged);
+            // 
+            // cmbHRQuickModeCh01
+            // 
+            this.cmbHRQuickModeCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh01.FormattingEnabled = true;
+            this.cmbHRQuickModeCh01.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHRQuickModeCh01.Location = new System.Drawing.Point(307, 32);
+            this.cmbHRQuickModeCh01.Name = "cmbHRQuickModeCh01";
+            this.cmbHRQuickModeCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickModeCh01.TabIndex = 400;
+            this.cmbHRQuickModeCh01.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh01_SelectedIndexChanged);
+            // 
+            // cmbHRQuickModeCh06
+            // 
+            this.cmbHRQuickModeCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh06.FormattingEnabled = true;
+            this.cmbHRQuickModeCh06.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHRQuickModeCh06.Location = new System.Drawing.Point(667, 32);
+            this.cmbHRQuickModeCh06.Name = "cmbHRQuickModeCh06";
+            this.cmbHRQuickModeCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickModeCh06.TabIndex = 405;
+            this.cmbHRQuickModeCh06.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh06_SelectedIndexChanged);
+            // 
+            // cmbHRQuickModeCh02
+            // 
+            this.cmbHRQuickModeCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh02.FormattingEnabled = true;
+            this.cmbHRQuickModeCh02.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHRQuickModeCh02.Location = new System.Drawing.Point(379, 32);
+            this.cmbHRQuickModeCh02.Name = "cmbHRQuickModeCh02";
+            this.cmbHRQuickModeCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickModeCh02.TabIndex = 401;
+            this.cmbHRQuickModeCh02.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh02_SelectedIndexChanged);
+            // 
+            // cmbHRQuickModeCh05
+            // 
+            this.cmbHRQuickModeCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh05.FormattingEnabled = true;
+            this.cmbHRQuickModeCh05.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHRQuickModeCh05.Location = new System.Drawing.Point(595, 32);
+            this.cmbHRQuickModeCh05.Name = "cmbHRQuickModeCh05";
+            this.cmbHRQuickModeCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickModeCh05.TabIndex = 404;
+            this.cmbHRQuickModeCh05.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh05_SelectedIndexChanged);
+            // 
+            // cmbHRQuickModeCh03
+            // 
+            this.cmbHRQuickModeCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh03.FormattingEnabled = true;
+            this.cmbHRQuickModeCh03.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHRQuickModeCh03.Location = new System.Drawing.Point(451, 32);
+            this.cmbHRQuickModeCh03.Name = "cmbHRQuickModeCh03";
+            this.cmbHRQuickModeCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickModeCh03.TabIndex = 402;
+            this.cmbHRQuickModeCh03.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh03_SelectedIndexChanged);
+            // 
+            // cmbHRQuickModeCh04
+            // 
+            this.cmbHRQuickModeCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRQuickModeCh04.FormattingEnabled = true;
+            this.cmbHRQuickModeCh04.Items.AddRange(new object[] {
+            "12V+",
+            "Ground",
+            "RP UP",
+            "RP DN"});
+            this.cmbHRQuickModeCh04.Location = new System.Drawing.Point(523, 32);
+            this.cmbHRQuickModeCh04.Name = "cmbHRQuickModeCh04";
+            this.cmbHRQuickModeCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRQuickModeCh04.TabIndex = 403;
+            this.cmbHRQuickModeCh04.SelectedIndexChanged += new System.EventHandler(this.cmbHRQuickModeCh04_SelectedIndexChanged);
             // 
             // tabPage16
             // 
@@ -21425,8 +21427,8 @@ namespace M1ConfigGenerator
             this.tabPage16.Controls.Add(this.tbxHRMaxDurRecCh06);
             this.tabPage16.Location = new System.Drawing.Point(4, 22);
             this.tabPage16.Name = "tabPage16";
-            this.tabPage16.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage16.Size = new System.Drawing.Size(1378, 443);
+            this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage16.Size = new System.Drawing.Size(1378, 528);
             this.tabPage16.TabIndex = 1;
             this.tabPage16.Text = "HR 1 Full";
             // 
@@ -21898,7 +21900,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRLockCh00.Location = new System.Drawing.Point(251, 31);
             this.chkHRLockCh00.Name = "chkHRLockCh00";
-            this.chkHRLockCh00.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRLockCh00.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRLockCh00.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh00.TabIndex = 303;
             this.chkHRLockCh00.UseVisualStyleBackColor = true;
@@ -21907,7 +21909,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRLockCh01.Location = new System.Drawing.Point(323, 31);
             this.chkHRLockCh01.Name = "chkHRLockCh01";
-            this.chkHRLockCh01.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRLockCh01.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRLockCh01.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh01.TabIndex = 304;
             this.chkHRLockCh01.UseVisualStyleBackColor = true;
@@ -21916,7 +21918,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRLockCh02.Location = new System.Drawing.Point(395, 31);
             this.chkHRLockCh02.Name = "chkHRLockCh02";
-            this.chkHRLockCh02.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRLockCh02.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRLockCh02.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh02.TabIndex = 305;
             this.chkHRLockCh02.UseVisualStyleBackColor = true;
@@ -21925,7 +21927,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRLockCh03.Location = new System.Drawing.Point(467, 31);
             this.chkHRLockCh03.Name = "chkHRLockCh03";
-            this.chkHRLockCh03.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRLockCh03.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRLockCh03.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh03.TabIndex = 306;
             this.chkHRLockCh03.UseVisualStyleBackColor = true;
@@ -21934,7 +21936,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRLockCh04.Location = new System.Drawing.Point(539, 31);
             this.chkHRLockCh04.Name = "chkHRLockCh04";
-            this.chkHRLockCh04.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRLockCh04.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRLockCh04.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh04.TabIndex = 307;
             this.chkHRLockCh04.UseVisualStyleBackColor = true;
@@ -21943,7 +21945,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRLockCh05.Location = new System.Drawing.Point(611, 31);
             this.chkHRLockCh05.Name = "chkHRLockCh05";
-            this.chkHRLockCh05.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRLockCh05.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRLockCh05.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh05.TabIndex = 308;
             this.chkHRLockCh05.UseVisualStyleBackColor = true;
@@ -21952,7 +21954,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRLockCh06.Location = new System.Drawing.Point(683, 31);
             this.chkHRLockCh06.Name = "chkHRLockCh06";
-            this.chkHRLockCh06.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRLockCh06.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRLockCh06.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh06.TabIndex = 309;
             this.chkHRLockCh06.UseVisualStyleBackColor = true;
@@ -21961,7 +21963,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRLockCh07.Location = new System.Drawing.Point(755, 31);
             this.chkHRLockCh07.Name = "chkHRLockCh07";
-            this.chkHRLockCh07.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRLockCh07.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRLockCh07.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh07.TabIndex = 310;
             this.chkHRLockCh07.UseVisualStyleBackColor = true;
@@ -21970,7 +21972,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRLockCh08.Location = new System.Drawing.Point(827, 31);
             this.chkHRLockCh08.Name = "chkHRLockCh08";
-            this.chkHRLockCh08.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRLockCh08.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRLockCh08.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh08.TabIndex = 311;
             this.chkHRLockCh08.UseVisualStyleBackColor = true;
@@ -21979,7 +21981,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRLockCh09.Location = new System.Drawing.Point(899, 31);
             this.chkHRLockCh09.Name = "chkHRLockCh09";
-            this.chkHRLockCh09.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRLockCh09.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRLockCh09.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh09.TabIndex = 312;
             this.chkHRLockCh09.UseVisualStyleBackColor = true;
@@ -21988,7 +21990,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRLockCh10.Location = new System.Drawing.Point(971, 31);
             this.chkHRLockCh10.Name = "chkHRLockCh10";
-            this.chkHRLockCh10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRLockCh10.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRLockCh10.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh10.TabIndex = 313;
             this.chkHRLockCh10.UseVisualStyleBackColor = true;
@@ -21997,7 +21999,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRLockCh11.Location = new System.Drawing.Point(1043, 31);
             this.chkHRLockCh11.Name = "chkHRLockCh11";
-            this.chkHRLockCh11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRLockCh11.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRLockCh11.Size = new System.Drawing.Size(35, 24);
             this.chkHRLockCh11.TabIndex = 314;
             this.chkHRLockCh11.UseVisualStyleBackColor = true;
@@ -22045,7 +22047,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRTimeoutCh04.Location = new System.Drawing.Point(539, 211);
             this.chkHRTimeoutCh04.Name = "chkHRTimeoutCh04";
-            this.chkHRTimeoutCh04.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRTimeoutCh04.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRTimeoutCh04.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh04.TabIndex = 84;
             this.chkHRTimeoutCh04.UseVisualStyleBackColor = true;
@@ -22071,7 +22073,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRTimeoutCh03.Location = new System.Drawing.Point(467, 211);
             this.chkHRTimeoutCh03.Name = "chkHRTimeoutCh03";
-            this.chkHRTimeoutCh03.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRTimeoutCh03.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRTimeoutCh03.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh03.TabIndex = 83;
             this.chkHRTimeoutCh03.UseVisualStyleBackColor = true;
@@ -22088,7 +22090,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRTimeoutCh05.Location = new System.Drawing.Point(611, 211);
             this.chkHRTimeoutCh05.Name = "chkHRTimeoutCh05";
-            this.chkHRTimeoutCh05.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRTimeoutCh05.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRTimeoutCh05.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh05.TabIndex = 85;
             this.chkHRTimeoutCh05.UseVisualStyleBackColor = true;
@@ -22108,7 +22110,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRTimeoutCh02.Location = new System.Drawing.Point(395, 211);
             this.chkHRTimeoutCh02.Name = "chkHRTimeoutCh02";
-            this.chkHRTimeoutCh02.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRTimeoutCh02.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRTimeoutCh02.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh02.TabIndex = 82;
             this.chkHRTimeoutCh02.UseVisualStyleBackColor = true;
@@ -22125,7 +22127,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRTimeoutCh06.Location = new System.Drawing.Point(683, 211);
             this.chkHRTimeoutCh06.Name = "chkHRTimeoutCh06";
-            this.chkHRTimeoutCh06.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRTimeoutCh06.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRTimeoutCh06.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh06.TabIndex = 86;
             this.chkHRTimeoutCh06.UseVisualStyleBackColor = true;
@@ -22151,7 +22153,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRTimeoutCh01.Location = new System.Drawing.Point(323, 211);
             this.chkHRTimeoutCh01.Name = "chkHRTimeoutCh01";
-            this.chkHRTimeoutCh01.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRTimeoutCh01.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRTimeoutCh01.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh01.TabIndex = 81;
             this.chkHRTimeoutCh01.UseVisualStyleBackColor = true;
@@ -22168,7 +22170,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRTimeoutCh07.Location = new System.Drawing.Point(755, 211);
             this.chkHRTimeoutCh07.Name = "chkHRTimeoutCh07";
-            this.chkHRTimeoutCh07.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRTimeoutCh07.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRTimeoutCh07.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh07.TabIndex = 87;
             this.chkHRTimeoutCh07.UseVisualStyleBackColor = true;
@@ -22194,7 +22196,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRTimeoutCh00.Location = new System.Drawing.Point(251, 211);
             this.chkHRTimeoutCh00.Name = "chkHRTimeoutCh00";
-            this.chkHRTimeoutCh00.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRTimeoutCh00.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRTimeoutCh00.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh00.TabIndex = 80;
             this.chkHRTimeoutCh00.UseVisualStyleBackColor = true;
@@ -22211,7 +22213,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRTimeoutCh08.Location = new System.Drawing.Point(827, 211);
             this.chkHRTimeoutCh08.Name = "chkHRTimeoutCh08";
-            this.chkHRTimeoutCh08.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRTimeoutCh08.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRTimeoutCh08.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh08.TabIndex = 88;
             this.chkHRTimeoutCh08.UseVisualStyleBackColor = true;
@@ -22267,7 +22269,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRTimeoutCh09.Location = new System.Drawing.Point(899, 211);
             this.chkHRTimeoutCh09.Name = "chkHRTimeoutCh09";
-            this.chkHRTimeoutCh09.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRTimeoutCh09.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRTimeoutCh09.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh09.TabIndex = 89;
             this.chkHRTimeoutCh09.UseVisualStyleBackColor = true;
@@ -22323,7 +22325,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRTimeoutCh10.Location = new System.Drawing.Point(971, 211);
             this.chkHRTimeoutCh10.Name = "chkHRTimeoutCh10";
-            this.chkHRTimeoutCh10.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRTimeoutCh10.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRTimeoutCh10.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh10.TabIndex = 90;
             this.chkHRTimeoutCh10.UseVisualStyleBackColor = true;
@@ -22379,7 +22381,7 @@ namespace M1ConfigGenerator
             // 
             this.chkHRTimeoutCh11.Location = new System.Drawing.Point(1043, 211);
             this.chkHRTimeoutCh11.Name = "chkHRTimeoutCh11";
-            this.chkHRTimeoutCh11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.chkHRTimeoutCh11.Padding = new System.Windows.Forms.Padding(10);
             this.chkHRTimeoutCh11.Size = new System.Drawing.Size(35, 24);
             this.chkHRTimeoutCh11.TabIndex = 91;
             this.chkHRTimeoutCh11.UseVisualStyleBackColor = true;
@@ -23533,9 +23535,9 @@ namespace M1ConfigGenerator
             this.tabPage14.Controls.Add(this.tbxHRGenerated);
             this.tabPage14.Controls.Add(this.label6);
             this.tabPage14.Location = new System.Drawing.Point(4, 22);
-            this.tabPage14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage14.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage14.Size = new System.Drawing.Size(1377, 846);
             this.tabPage14.TabIndex = 2;
             this.tabPage14.Text = "Generated";
@@ -23675,6 +23677,18 @@ namespace M1ConfigGenerator
             this.btnHRCard2.UseVisualStyleBackColor = false;
             this.btnHRCard2.Visible = false;
             this.btnHRCard2.Click += new System.EventHandler(this.btnHRCard2_Click);
+            // 
+            // chkHRDCDimmer
+            // 
+            this.chkHRDCDimmer.AutoSize = true;
+            this.chkHRDCDimmer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHRDCDimmer.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHRDCDimmer.Location = new System.Drawing.Point(285, 70);
+            this.chkHRDCDimmer.Name = "chkHRDCDimmer";
+            this.chkHRDCDimmer.Size = new System.Drawing.Size(165, 21);
+            this.chkHRDCDimmer.TabIndex = 399;
+            this.chkHRDCDimmer.Text = "DC Dimmer (Any Lights)";
+            this.chkHRDCDimmer.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -25477,6 +25491,7 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxStartHRCfgRev;
         private System.Windows.Forms.TextBox tbxStartHCCfgRev;
         private System.Windows.Forms.TabPage tabMainBlank;
+        private System.Windows.Forms.CheckBox chkHRDCDimmer;
     }
 }
 

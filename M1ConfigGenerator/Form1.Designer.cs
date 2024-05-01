@@ -1412,6 +1412,7 @@ namespace M1ConfigGenerator
             this.btnHRCard7 = new System.Windows.Forms.Button();
             this.tabControlHR = new M1ConfigGenerator.TablessControl();
             this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.chkHRDCDimmer = new System.Windows.Forms.CheckBox();
             this.chkHRMG3Ch07 = new System.Windows.Forms.CheckBox();
             this.chkHRMG4Ch07 = new System.Windows.Forms.CheckBox();
             this.chkHRMG2Ch07 = new System.Windows.Forms.CheckBox();
@@ -1741,7 +1742,6 @@ namespace M1ConfigGenerator
             this.btnHRCard4 = new System.Windows.Forms.Button();
             this.btnHRCard3 = new System.Windows.Forms.Button();
             this.btnHRCard2 = new System.Windows.Forms.Button();
-            this.chkHRDCDimmer = new System.Windows.Forms.CheckBox();
             this.panelMenu.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
@@ -1922,7 +1922,7 @@ namespace M1ConfigGenerator
             this.btnMenuNew.Name = "btnMenuNew";
             this.btnMenuNew.Size = new System.Drawing.Size(200, 60);
             this.btnMenuNew.TabIndex = 0;
-            this.btnMenuNew.Text = "1.0.2";
+            this.btnMenuNew.Text = "1.0.3";
             this.btnMenuNew.UseVisualStyleBackColor = false;
             this.btnMenuNew.Click += new System.EventHandler(this.btnMenuNew_Click);
             // 
@@ -19456,6 +19456,18 @@ namespace M1ConfigGenerator
             this.tabPage13.TabIndex = 1;
             this.tabPage13.Text = "HC Relay 1";
             // 
+            // chkHRDCDimmer
+            // 
+            this.chkHRDCDimmer.AutoSize = true;
+            this.chkHRDCDimmer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHRDCDimmer.ForeColor = System.Drawing.SystemColors.Control;
+            this.chkHRDCDimmer.Location = new System.Drawing.Point(285, 70);
+            this.chkHRDCDimmer.Name = "chkHRDCDimmer";
+            this.chkHRDCDimmer.Size = new System.Drawing.Size(165, 21);
+            this.chkHRDCDimmer.TabIndex = 399;
+            this.chkHRDCDimmer.Text = "DC Dimmer (Any Lights)";
+            this.chkHRDCDimmer.UseVisualStyleBackColor = true;
+            // 
             // chkHRMG3Ch07
             // 
             this.chkHRMG3Ch07.Location = new System.Drawing.Point(755, 208);
@@ -23677,18 +23689,6 @@ namespace M1ConfigGenerator
             this.btnHRCard2.UseVisualStyleBackColor = false;
             this.btnHRCard2.Visible = false;
             this.btnHRCard2.Click += new System.EventHandler(this.btnHRCard2_Click);
-            // 
-            // chkHRDCDimmer
-            // 
-            this.chkHRDCDimmer.AutoSize = true;
-            this.chkHRDCDimmer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkHRDCDimmer.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHRDCDimmer.Location = new System.Drawing.Point(285, 70);
-            this.chkHRDCDimmer.Name = "chkHRDCDimmer";
-            this.chkHRDCDimmer.Size = new System.Drawing.Size(165, 21);
-            this.chkHRDCDimmer.TabIndex = 399;
-            this.chkHRDCDimmer.Text = "DC Dimmer (Any Lights)";
-            this.chkHRDCDimmer.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

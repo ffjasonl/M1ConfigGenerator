@@ -156,24 +156,52 @@ namespace M1ConfigGenerator
             }
         }
 
-        public void M1_SetCardNumber(int argInt)
+        public void M1_SetCardNumber(string argString)
         {
-            cardNumber = argInt.ToString();
+            if (String.Equals(argString, "")) { cardNumber = argString; }
+            else
+            {
+                int intCard = Convert.ToInt32(argString);
+                --intCard;
+                string strBase0Card = intCard.ToString();
+                cardNumber = strBase0Card;
+            }
         }
 
         public string M1_GetCardNumber()
         {
-            return cardNumber;
+            if (String.Equals(cardNumber, "")) { return ""; }
+            else
+            {
+                int intCard = Convert.ToInt32(cardNumber);
+                ++intCard;
+                string strBase1Card = intCard.ToString();
+                return strBase1Card;
+            }
         }
 
-        public void M1_SetPanelNumber(int argInt)
+        public void M1_SetPanelNumber(string argString)
         {
-            panelNumber = argInt.ToString();
+            if (String.Equals(argString, "")) { panelNumber = argString; }
+            else
+            {
+                int intPanel = Convert.ToInt32(argString);
+                --intPanel;
+                string strBase0Panel = intPanel.ToString();
+                panelNumber = strBase0Panel;
+            }
         }
 
         public string M1_GetPanelNumber()
         {
-            return panelNumber;
+            if (String.Equals(panelNumber, "")) { return ""; }
+            else
+            {
+                int intPanel = Convert.ToInt32(panelNumber);
+                ++intPanel;
+                string strBase1Panel = intPanel.ToString();
+                return strBase1Panel;
+            }
         }
 
         public void M1_SetDevAddr()

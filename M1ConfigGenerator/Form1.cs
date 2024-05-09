@@ -2570,7 +2570,13 @@ namespace M1ConfigGenerator
             {
                 cmbHRModeParamCh01.Text = "H Br";
                 cmbHRDeadTimeCh01.Text = "500";
-                cmbHRPairedCh01.Text = "1";
+                cmbHRPairedCh01.Text = "2";
+            }
+            else if (cmbHRQuickModeCh01.Text == "RP DN")
+            {
+                cmbHRModeParamCh01.Text = "Slave";
+                cmbHRDeadTimeCh01.Text = "500";
+                cmbHRPairedCh01.Text = "0";
             }
 
             if (cmbHRQuickStartupCh01.Text == "High" || cmbHRQuickStartupCh01.Text == "Low") { cmbHRDirectionCh01.Text = cmbHRModeParamCh01.Text; }
@@ -2594,6 +2600,12 @@ namespace M1ConfigGenerator
             else if (cmbHRQuickModeCh02.Text == "RP UP")
             {
                 cmbHRModeParamCh02.Text = "H Br";
+                cmbHRDeadTimeCh02.Text = "500";
+                cmbHRPairedCh02.Text = "3";
+            }
+            else if (cmbHRQuickModeCh02.Text == "RP DN")
+            {
+                cmbHRModeParamCh02.Text = "Slave";
                 cmbHRDeadTimeCh02.Text = "500";
                 cmbHRPairedCh02.Text = "1";
             }
@@ -2620,7 +2632,13 @@ namespace M1ConfigGenerator
             {
                 cmbHRModeParamCh03.Text = "H Br";
                 cmbHRDeadTimeCh03.Text = "500";
-                cmbHRPairedCh03.Text = "1";
+                cmbHRPairedCh03.Text = "4";
+            }
+            else if (cmbHRQuickModeCh03.Text == "RP DN")
+            {
+                cmbHRModeParamCh03.Text = "Slave";
+                cmbHRDeadTimeCh03.Text = "500";
+                cmbHRPairedCh03.Text = "2";
             }
 
             if (cmbHRQuickStartupCh03.Text == "High" || cmbHRQuickStartupCh03.Text == "Low") { cmbHRDirectionCh03.Text = cmbHRModeParamCh03.Text; }
@@ -2645,7 +2663,13 @@ namespace M1ConfigGenerator
             {
                 cmbHRModeParamCh04.Text = "H Br";
                 cmbHRDeadTimeCh04.Text = "500";
-                cmbHRPairedCh04.Text = "1";
+                cmbHRPairedCh04.Text = "5";
+            }
+            else if (cmbHRQuickModeCh01.Text == "RP DN")
+            {
+                cmbHRModeParamCh04.Text = "Slave";
+                cmbHRDeadTimeCh04.Text = "500";
+                cmbHRPairedCh04.Text = "3";
             }
 
             if (cmbHRQuickStartupCh04.Text == "High" || cmbHRQuickStartupCh04.Text == "Low") { cmbHRDirectionCh04.Text = cmbHRModeParamCh04.Text; }
@@ -2670,7 +2694,13 @@ namespace M1ConfigGenerator
             {
                 cmbHRModeParamCh05.Text = "H Br";
                 cmbHRDeadTimeCh05.Text = "500";
-                cmbHRPairedCh05.Text = "1";
+                cmbHRPairedCh05.Text = "6";
+            }
+            else if (cmbHRQuickModeCh05.Text == "RP DN")
+            {
+                cmbHRModeParamCh05.Text = "Slave";
+                cmbHRDeadTimeCh05.Text = "500";
+                cmbHRPairedCh05.Text = "4";
             }
 
             if (cmbHRQuickStartupCh05.Text == "High" || cmbHRQuickStartupCh05.Text == "Low") { cmbHRDirectionCh05.Text = cmbHRModeParamCh05.Text; }
@@ -2695,7 +2725,13 @@ namespace M1ConfigGenerator
             {
                 cmbHRModeParamCh06.Text = "H Br";
                 cmbHRDeadTimeCh06.Text = "500";
-                cmbHRPairedCh06.Text = "1";
+                cmbHRPairedCh06.Text = "7";
+            }
+            else if (cmbHRQuickModeCh06.Text == "RP DN")
+            {
+                cmbHRModeParamCh06.Text = "Slave";
+                cmbHRDeadTimeCh06.Text = "500";
+                cmbHRPairedCh06.Text = "5";
             }
 
             if (cmbHRQuickStartupCh06.Text == "High" || cmbHRQuickStartupCh06.Text == "Low") { cmbHRDirectionCh06.Text = cmbHRModeParamCh06.Text; }
@@ -2720,7 +2756,13 @@ namespace M1ConfigGenerator
             {
                 cmbHRModeParamCh07.Text = "H Br";
                 cmbHRDeadTimeCh07.Text = "500";
-                cmbHRPairedCh07.Text = "1";
+                cmbHRPairedCh07.Text = "8";
+            }
+            else if (cmbHRQuickModeCh07.Text == "RP DN")
+            {
+                cmbHRModeParamCh07.Text = "Slave";
+                cmbHRDeadTimeCh07.Text = "500";
+                cmbHRPairedCh07.Text = "6";
             }
 
             if (cmbHRQuickStartupCh07.Text == "High" || cmbHRQuickStartupCh07.Text == "Low") { cmbHRDirectionCh07.Text = cmbHRModeParamCh07.Text; }
@@ -2745,7 +2787,13 @@ namespace M1ConfigGenerator
             {
                 cmbHRModeParamCh08.Text = "H Br";
                 cmbHRDeadTimeCh08.Text = "500";
-                cmbHRPairedCh08.Text = "1";
+                cmbHRPairedCh08.Text = "9";
+            }
+            else if (cmbHRQuickModeCh08.Text == "RP DN")
+            {
+                cmbHRModeParamCh08.Text = "Slave";
+                cmbHRDeadTimeCh08.Text = "500";
+                cmbHRPairedCh08.Text = "7";
             }
 
             if (cmbHRQuickStartupCh08.Text == "High" || cmbHRQuickStartupCh08.Text == "Low") { cmbHRDirectionCh08.Text = cmbHRModeParamCh08.Text; }
@@ -2770,7 +2818,13 @@ namespace M1ConfigGenerator
             {
                 cmbHRModeParamCh09.Text = "H Br";
                 cmbHRDeadTimeCh09.Text = "500";
-                cmbHRPairedCh09.Text = "1";
+                cmbHRPairedCh09.Text = "10";
+            }
+            else if (cmbHRQuickModeCh09.Text == "RP DN")
+            {
+                cmbHRModeParamCh09.Text = "Slave";
+                cmbHRDeadTimeCh09.Text = "500";
+                cmbHRPairedCh09.Text = "8";
             }
 
             if (cmbHRQuickStartupCh09.Text == "High" || cmbHRQuickStartupCh09.Text == "Low") { cmbHRDirectionCh09.Text = cmbHRModeParamCh09.Text; }
@@ -2795,7 +2849,13 @@ namespace M1ConfigGenerator
             {
                 cmbHRModeParamCh10.Text = "H Br";
                 cmbHRDeadTimeCh10.Text = "500";
-                cmbHRPairedCh10.Text = "1";
+                cmbHRPairedCh10.Text = "11";
+            }
+            else if (cmbHRQuickModeCh10.Text == "RP DN")
+            {
+                cmbHRModeParamCh10.Text = "Slave";
+                cmbHRDeadTimeCh10.Text = "500";
+                cmbHRPairedCh10.Text = "9";
             }
 
             if (cmbHRQuickStartupCh10.Text == "High" || cmbHRQuickStartupCh10.Text == "Low") { cmbHRDirectionCh10.Text = cmbHRModeParamCh10.Text; }
@@ -2816,11 +2876,11 @@ namespace M1ConfigGenerator
                 cmbHRDeadTimeCh11.Text = "0";
                 cmbHRPairedCh11.Text = "None";
             }
-            else if (cmbHRQuickModeCh11.Text == "RP UP")
+            else if (cmbHRQuickModeCh11.Text == "RP DN")
             {
-                cmbHRModeParamCh11.Text = "H Br";
+                cmbHRModeParamCh11.Text = "Slave";
                 cmbHRDeadTimeCh11.Text = "500";
-                cmbHRPairedCh11.Text = "1";
+                cmbHRPairedCh11.Text = "10";
             }
 
             if (cmbHRQuickStartupCh11.Text == "High" || cmbHRQuickStartupCh11.Text == "Low") { cmbHRDirectionCh11.Text = cmbHRModeParamCh11.Text; }
@@ -3091,6 +3151,78 @@ namespace M1ConfigGenerator
             }
         }
 
+        // Mode Parameter events
+        private void cmbHRModeParamCh00_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHRModeParamCh00.Text == "Slave") { lblHRCh00.Visible = false; }
+            else { lblHRCh00.Visible = true; }
+        }
+
+        private void cmbHRModeParamCh01_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHRModeParamCh01.Text == "Slave") { lblHRCh01.Visible = false; }
+            else { lblHRCh01.Visible = true; }
+        }
+
+        private void cmbHRModeParamCh02_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHRModeParamCh02.Text == "Slave") { lblHRCh02.Visible = false; }
+            else { lblHRCh02.Visible = true; }
+        }
+
+        private void cmbHRModeParamCh03_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHRModeParamCh03.Text == "Slave") { lblHRCh03.Visible = false; }
+            else { lblHRCh03.Visible = true; }
+        }
+
+        private void cmbHRModeParamCh04_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHRModeParamCh04.Text == "Slave") { lblHRCh04.Visible = false; }
+            else { lblHRCh04.Visible = true; }
+        }
+
+        private void cmbHRModeParamCh05_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHRModeParamCh05.Text == "Slave") { lblHRCh05.Visible = false; }
+            else { lblHRCh05.Visible = true; }
+        }
+
+        private void cmbHRModeParamCh06_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHRModeParamCh06.Text == "Slave") { lblHRCh06.Visible = false; }
+            else { lblHRCh06.Visible = true; }
+        }
+
+        private void cmbHRModeParamCh07_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHRModeParamCh07.Text == "Slave") { lblHRCh07.Visible = false; }
+            else { lblHRCh07.Visible = true; }
+        }
+
+        private void cmbHRModeParamCh08_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHRModeParamCh08.Text == "Slave") { lblHRCh08.Visible = false; }
+            else { lblHRCh08.Visible = true; }
+        }
+
+        private void cmbHRModeParamCh09_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHRModeParamCh09.Text == "Slave") { lblHRCh09.Visible = false; }
+            else { lblHRCh09.Visible = true; }
+        }
+
+        private void cmbHRModeParamCh10_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHRModeParamCh10.Text == "Slave") { lblHRCh10.Visible = false; }
+            else { lblHRCh10.Visible = true; }
+        }
+
+        private void cmbHRModeParamCh11_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbHRModeParamCh11.Text == "Slave") { lblHRCh11.Visible = false; }
+            else { lblHRCh11.Visible = true; }
+        }
 
 
         /*      ##        ######  
@@ -3100,7 +3232,7 @@ namespace M1ConfigGenerator
                 ##       ##       
                 ##       ##    ## 
                 ########  ######         @LC */
-        
+
 
         private void btnLCGenerate_Click(object sender, EventArgs e)
         {

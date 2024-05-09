@@ -1922,7 +1922,7 @@ namespace M1ConfigGenerator
             this.btnMenuNew.Name = "btnMenuNew";
             this.btnMenuNew.Size = new System.Drawing.Size(200, 60);
             this.btnMenuNew.TabIndex = 0;
-            this.btnMenuNew.Text = "1.0.3";
+            this.btnMenuNew.Text = "1.0.4";
             this.btnMenuNew.UseVisualStyleBackColor = false;
             this.btnMenuNew.Click += new System.EventHandler(this.btnMenuNew_Click);
             // 
@@ -21632,6 +21632,7 @@ namespace M1ConfigGenerator
             this.cmbHRModeParamCh11.Name = "cmbHRModeParamCh11";
             this.cmbHRModeParamCh11.Size = new System.Drawing.Size(61, 21);
             this.cmbHRModeParamCh11.TabIndex = 326;
+            this.cmbHRModeParamCh11.TextChanged += new System.EventHandler(this.cmbHRModeParamCh11_TextChanged);
             // 
             // label659
             // 
@@ -21659,6 +21660,7 @@ namespace M1ConfigGenerator
             this.cmbHRModeParamCh10.Name = "cmbHRModeParamCh10";
             this.cmbHRModeParamCh10.Size = new System.Drawing.Size(61, 21);
             this.cmbHRModeParamCh10.TabIndex = 325;
+            this.cmbHRModeParamCh10.TextChanged += new System.EventHandler(this.cmbHRModeParamCh10_TextChanged);
             // 
             // label660
             // 
@@ -21686,6 +21688,7 @@ namespace M1ConfigGenerator
             this.cmbHRModeParamCh09.Name = "cmbHRModeParamCh09";
             this.cmbHRModeParamCh09.Size = new System.Drawing.Size(61, 21);
             this.cmbHRModeParamCh09.TabIndex = 324;
+            this.cmbHRModeParamCh09.TextChanged += new System.EventHandler(this.cmbHRModeParamCh09_TextChanged);
             // 
             // label661
             // 
@@ -21713,6 +21716,7 @@ namespace M1ConfigGenerator
             this.cmbHRModeParamCh08.Name = "cmbHRModeParamCh08";
             this.cmbHRModeParamCh08.Size = new System.Drawing.Size(61, 21);
             this.cmbHRModeParamCh08.TabIndex = 323;
+            this.cmbHRModeParamCh08.TextChanged += new System.EventHandler(this.cmbHRModeParamCh08_TextChanged);
             // 
             // label662
             // 
@@ -21740,6 +21744,7 @@ namespace M1ConfigGenerator
             this.cmbHRModeParamCh07.Name = "cmbHRModeParamCh07";
             this.cmbHRModeParamCh07.Size = new System.Drawing.Size(61, 21);
             this.cmbHRModeParamCh07.TabIndex = 322;
+            this.cmbHRModeParamCh07.TextChanged += new System.EventHandler(this.cmbHRModeParamCh07_TextChanged);
             // 
             // label663
             // 
@@ -21767,6 +21772,7 @@ namespace M1ConfigGenerator
             this.cmbHRModeParamCh06.Name = "cmbHRModeParamCh06";
             this.cmbHRModeParamCh06.Size = new System.Drawing.Size(61, 21);
             this.cmbHRModeParamCh06.TabIndex = 321;
+            this.cmbHRModeParamCh06.TextChanged += new System.EventHandler(this.cmbHRModeParamCh06_TextChanged);
             // 
             // label664
             // 
@@ -21794,6 +21800,7 @@ namespace M1ConfigGenerator
             this.cmbHRModeParamCh05.Name = "cmbHRModeParamCh05";
             this.cmbHRModeParamCh05.Size = new System.Drawing.Size(61, 21);
             this.cmbHRModeParamCh05.TabIndex = 320;
+            this.cmbHRModeParamCh05.TextChanged += new System.EventHandler(this.cmbHRModeParamCh05_TextChanged);
             // 
             // label665
             // 
@@ -21821,6 +21828,7 @@ namespace M1ConfigGenerator
             this.cmbHRModeParamCh04.Name = "cmbHRModeParamCh04";
             this.cmbHRModeParamCh04.Size = new System.Drawing.Size(61, 21);
             this.cmbHRModeParamCh04.TabIndex = 319;
+            this.cmbHRModeParamCh04.TextChanged += new System.EventHandler(this.cmbHRModeParamCh04_TextChanged);
             // 
             // label666
             // 
@@ -21848,6 +21856,7 @@ namespace M1ConfigGenerator
             this.cmbHRModeParamCh03.Name = "cmbHRModeParamCh03";
             this.cmbHRModeParamCh03.Size = new System.Drawing.Size(61, 21);
             this.cmbHRModeParamCh03.TabIndex = 318;
+            this.cmbHRModeParamCh03.TextChanged += new System.EventHandler(this.cmbHRModeParamCh03_TextChanged);
             // 
             // cmbHRModeParamCh02
             // 
@@ -21864,6 +21873,7 @@ namespace M1ConfigGenerator
             this.cmbHRModeParamCh02.Name = "cmbHRModeParamCh02";
             this.cmbHRModeParamCh02.Size = new System.Drawing.Size(61, 21);
             this.cmbHRModeParamCh02.TabIndex = 317;
+            this.cmbHRModeParamCh02.TextChanged += new System.EventHandler(this.cmbHRModeParamCh02_TextChanged);
             // 
             // cmbHRModeParamCh01
             // 
@@ -21880,6 +21890,7 @@ namespace M1ConfigGenerator
             this.cmbHRModeParamCh01.Name = "cmbHRModeParamCh01";
             this.cmbHRModeParamCh01.Size = new System.Drawing.Size(61, 21);
             this.cmbHRModeParamCh01.TabIndex = 316;
+            this.cmbHRModeParamCh01.TextChanged += new System.EventHandler(this.cmbHRModeParamCh01_TextChanged);
             // 
             // cmbHRModeParamCh00
             // 
@@ -21896,6 +21907,7 @@ namespace M1ConfigGenerator
             this.cmbHRModeParamCh00.Name = "cmbHRModeParamCh00";
             this.cmbHRModeParamCh00.Size = new System.Drawing.Size(61, 21);
             this.cmbHRModeParamCh00.TabIndex = 284;
+            this.cmbHRModeParamCh00.TextChanged += new System.EventHandler(this.cmbHRModeParamCh00_TextChanged);
             // 
             // label667
             // 

@@ -72,9 +72,12 @@ namespace M1ConfigGenerator
         TextBox[] dimBaseInstance;
         ComboBox[] dimmerOCAmps;
         ComboBox[] dimmerOCTime;
-        bool[] dim1Group00; bool[] dim1Group01; bool[] dim1Group02; bool[] dim1Group03; bool[] dim1Group04; bool[] dim1Group05;
-        bool[] dim1Group06; bool[] dim1Group07; bool[] dim1Group08; bool[] dim1Group09; bool[] dim1Group10; bool[] dim1Group11;
-        bool[][] dim1Groups;
+        bool[] dimGroup00; bool[] dimGroup01; bool[] dimGroup02; bool[] dimGroup03; bool[] dimGroup04; bool[] dimGroup05;
+        bool[] dimGroup06; bool[] dimGroup07; bool[] dimGroup08; bool[] dimGroup09; bool[] dimGroup10; bool[] dimGroup11;
+        bool[][] dimGroups;
+        CheckBox[] dimGetGroup00; CheckBox[] dimGetGroup01; CheckBox[] dimGetGroup02; CheckBox[] dimGetGroup03; CheckBox[] dimGetGroup04; CheckBox[] dimGetGroup05;
+        CheckBox[] dimGetGroup06; CheckBox[] dimGetGroup07; CheckBox[] dimGetGroup08; CheckBox[] dimGetGroup09; CheckBox[] dimGetGroup10; CheckBox[] dimGetGroup11;
+        CheckBox[][] dimGetGroups;
         CheckBox[] dimmerLocks; 
         ComboBox[] dimmerPWMFreq;
         TextBox[] dimmerPWMDuties;
@@ -861,65 +864,96 @@ namespace M1ConfigGenerator
 
 
 
-        //########  #### ##     ## ##     ## ######## ########  
-        //##     ##  ##  ###   ### ###   ### ##       ##     ## 
-        //##     ##  ##  #### #### #### #### ##       ##     ## 
-        //##     ##  ##  ## ### ## ## ### ## ######   ########  
-        //##     ##  ##  ##     ## ##     ## ##       ##   ##   
-        //##     ##  ##  ##     ## ##     ## ##       ##    ##  
-        //########  #### ##     ## ##     ## ######## ##     ## 
-        //@Dimmer 
+        /*      ########  #### ##     ## ##     ## ######## ########  
+                ##     ##  ##  ###   ### ###   ### ##       ##     ## 
+                ##     ##  ##  #### #### #### #### ##       ##     ## 
+                ##     ##  ##  ## ### ## ## ### ## ######   ########  
+                ##     ##  ##  ##     ## ##     ## ##       ##   ##   
+                ##     ##  ##  ##     ## ##     ## ##       ##    ##  
+                ########  #### ##     ## ##     ## ######## ##     ##       @Dimmer  */
+
+
+        public void Dim_SetAll(int card)
+        {
+            // need to set by channel but get by group
+            dimGroup00 = new bool[] { chkDimmer1MG1Ch00.Checked, chkDimmer1MG2Ch00.Checked, chkDimmer1MG3Ch00.Checked, chkDimmer1MG4Ch00.Checked };
+            dimGroup01 = new bool[] { chkDimmer1MG1Ch01.Checked, chkDimmer1MG2Ch01.Checked, chkDimmer1MG3Ch01.Checked, chkDimmer1MG4Ch01.Checked };
+            dimGroup02 = new bool[] { chkDimmer1MG1Ch02.Checked, chkDimmer1MG2Ch02.Checked, chkDimmer1MG3Ch02.Checked, chkDimmer1MG4Ch02.Checked };
+            dimGroup03 = new bool[] { chkDimmer1MG1Ch03.Checked, chkDimmer1MG2Ch03.Checked, chkDimmer1MG3Ch03.Checked, chkDimmer1MG4Ch03.Checked };
+            dimGroup04 = new bool[] { chkDimmer1MG1Ch04.Checked, chkDimmer1MG2Ch04.Checked, chkDimmer1MG3Ch04.Checked, chkDimmer1MG4Ch04.Checked };
+            dimGroup05 = new bool[] { chkDimmer1MG1Ch05.Checked, chkDimmer1MG2Ch05.Checked, chkDimmer1MG3Ch05.Checked, chkDimmer1MG4Ch05.Checked };
+            dimGroup06 = new bool[] { chkDimmer1MG1Ch06.Checked, chkDimmer1MG2Ch06.Checked, chkDimmer1MG3Ch06.Checked, chkDimmer1MG4Ch06.Checked };
+            dimGroup07 = new bool[] { chkDimmer1MG1Ch07.Checked, chkDimmer1MG2Ch07.Checked, chkDimmer1MG3Ch07.Checked, chkDimmer1MG4Ch07.Checked };
+            dimGroup08 = new bool[] { chkDimmer1MG1Ch08.Checked, chkDimmer1MG2Ch08.Checked, chkDimmer1MG3Ch08.Checked, chkDimmer1MG4Ch08.Checked };
+            dimGroup09 = new bool[] { chkDimmer1MG1Ch09.Checked, chkDimmer1MG2Ch09.Checked, chkDimmer1MG3Ch09.Checked, chkDimmer1MG4Ch09.Checked };
+            dimGroup10 = new bool[] { chkDimmer1MG1Ch10.Checked, chkDimmer1MG2Ch10.Checked, chkDimmer1MG3Ch10.Checked, chkDimmer1MG4Ch10.Checked };
+            dimGroup11 = new bool[] { chkDimmer1MG1Ch11.Checked, chkDimmer1MG2Ch11.Checked, chkDimmer1MG3Ch11.Checked, chkDimmer1MG4Ch11.Checked };
+            dimGroups = new bool[][] { dimGroup00, dimGroup01, dimGroup02, dimGroup03, dimGroup04, dimGroup05, dimGroup06, dimGroup07, dimGroup08, dimGroup09, dimGroup10, dimGroup11 };
+
+            dimmerObjects[card].M1_SetVerRev(btnMenuNew.Text);
+            dimmerObjects[card].M1_SetFullSetup(chkTabVisDimmer1.Checked);
+            dimmerObjects[card].M1_SetCardNumber(cmbDimmer1CardNum.Text);
+            dimmerObjects[card].M1_SetPanelNumber(cmbDimmer1PanelNum.Text);
+            dimmerObjects[card].M1_SetDevAddr();
+            dimmerObjects[card].M1_SetCardLetter(tbxDimmer1CardLetter.Text);
+            dimmerObjects[card].M1_ChangeConfigName();
+            dimmerObjects[card].Dimmer_ChangeAddress();
+            dimmerObjects[card].M1_SetCfgRev(dimConfigRev[card].Text);
+            dimmerObjects[card].M1_SetCfgType(dimConfigType[card].Text);
+            dimmerObjects[card].M1_SetDCDimmer(true); // hard coding for dimmer card
+            dimmerObjects[card].M1_SetDCMotor(dimDCMotor[card].Checked);
+            dimmerObjects[card].M1_SetShade(dimShade[card].Checked);
+            dimmerObjects[card].M1_SetForce(dimForce[card].Checked);
+            dimmerObjects[card].M1_SetBaseIndex(dimBaseInstance[card].Text);
+            for (int channel = 0; channel < 12; channel++)
+            {
+                dimmerObjects[card].SetOCAmps(channel, dimmerOCAmps[channel].Text);
+                dimmerObjects[card].SetOCTime(channel, dimmerOCTime[channel].Text);
+                dimmerObjects[card].M1_SetGroup0(dimGroups[channel], channel); // takes care of all 4 groups
+                dimmerObjects[card].SetLock(channel, dimmerLocks[channel].Checked);
+                dimmerObjects[card].SetPWMFreq(channel, dimmerPWMFreq[channel].Text);
+                dimmerObjects[card].SetPWMDuty(channel, dimmerPWMDuties[channel].Text);
+                dimmerObjects[card].SetPWMEnable(channel, dimmerPWMEnables[channel].Checked);
+                dimmerObjects[card].SetOverride(channel, dimmerOverrides[channel].Checked);
+                dimmerObjects[card].SetTimeout(channel, dimmerTimeouts[channel].Checked);
+                dimmerObjects[card].SetDirection(channel, dimmerDirections[channel].Text);
+                dimmerObjects[card].SetTimeoutTime(channel, dimmerTimeoutTimes[channel].Text);
+                dimmerObjects[card].SetMaxOn(channel, dimmerMaxOns[channel].Text);
+                dimmerObjects[card].SetMaxDurRec(channel, dimmerMaxDurRecs[channel].Text);
+            }
+        }
+
+        public void Dim_GetAll(int card)
+        {
+            chkTabVisDimmer1.Checked = dimmerObjects[card].M1_GetFullSetup();
+            if (dimmerObjects[card].M1_GetCardNumber() == "") { BlankComboBox(cmbDimmer1CardNum); }
+            else { cmbDimmer1CardNum.Text = dimmerObjects[card].M1_GetCardNumber(); }
+            if (dimmerObjects[card].M1_GetPanelNumber() == "") { BlankComboBox(cmbDimmer1PanelNum); }
+            else { cmbDimmer1PanelNum.Text = dimmerObjects[card].M1_GetPanelNumber(); }
+            tbxDimmer1CfgRev.Text = dimmerObjects[card].M1_GetCfgRev();
+            tbxDimmer1CardLetter.Text = dimmerObjects[card].M1_GetCardLetter();
+            chkDimmer1DCMotor.Checked = dimmerObjects[card].M1_GetDCMotor();
+            chkDimmer1Shade.Checked = dimmerObjects[card].M1_GetShade();
+            chkDimmer1Force.Checked = dimmerObjects[card].M1_GetForce();
+            tbxDimmer1BaseIndex.Text = dimmerObjects[card].M1_GetBaseIndex();
+            for (int channel = 0; channel < 12; channel++)
+            {
+                dimmerOCAmps[channel].Text = dimmerObjects[card].Dimmer_GetOCAmps(channel);
+                dimmerOCTime[channel].Text = dimmerObjects[card].Dimmer_GetOCTime(channel);
+                dimGetGroups[channel][0].Checked = dimmerObjects[card].M1_GetGroup0(channel);
+                dimGetGroups[channel][1].Checked = dimmerObjects[card].M1_GetGroup1(channel);
+                dimGetGroups[channel][2].Checked = dimmerObjects[card].M1_GetGroup2(channel);
+                dimGetGroups[channel][3].Checked = dimmerObjects[card].M1_GetGroup3(channel);
+                dimmerLocks[channel].Checked = dimmerObjects[card].Dimmer_GetLock(channel);
+                dimmerPWMFreq[channel].Text = dimmerObjects[card].Dimmer_GetPWMFreq(channel);
+                dimmerPWMDuties[channel].Text = dimmerObjects[card].Dimmer_GetPWMDuty(channel);
+            }
+        }
 
         private void btnDimmerGenerate_Click(object sender, EventArgs e)
         {
-            // need to set by channel but get by group
-            dim1Group00 = new bool[] { chkDimmer1MG1Ch00.Checked, chkDimmer1MG2Ch00.Checked, chkDimmer1MG3Ch00.Checked, chkDimmer1MG4Ch00.Checked };
-            dim1Group01 = new bool[] { chkDimmer1MG1Ch01.Checked, chkDimmer1MG2Ch01.Checked, chkDimmer1MG3Ch01.Checked, chkDimmer1MG4Ch01.Checked };
-            dim1Group02 = new bool[] { chkDimmer1MG1Ch02.Checked, chkDimmer1MG2Ch02.Checked, chkDimmer1MG3Ch02.Checked, chkDimmer1MG4Ch02.Checked };
-            dim1Group03 = new bool[] { chkDimmer1MG1Ch03.Checked, chkDimmer1MG2Ch03.Checked, chkDimmer1MG3Ch03.Checked, chkDimmer1MG4Ch03.Checked };
-            dim1Group04 = new bool[] { chkDimmer1MG1Ch04.Checked, chkDimmer1MG2Ch04.Checked, chkDimmer1MG3Ch04.Checked, chkDimmer1MG4Ch04.Checked };
-            dim1Group05 = new bool[] { chkDimmer1MG1Ch05.Checked, chkDimmer1MG2Ch05.Checked, chkDimmer1MG3Ch05.Checked, chkDimmer1MG4Ch05.Checked };
-            dim1Group06 = new bool[] { chkDimmer1MG1Ch06.Checked, chkDimmer1MG2Ch06.Checked, chkDimmer1MG3Ch06.Checked, chkDimmer1MG4Ch06.Checked };
-            dim1Group07 = new bool[] { chkDimmer1MG1Ch07.Checked, chkDimmer1MG2Ch07.Checked, chkDimmer1MG3Ch07.Checked, chkDimmer1MG4Ch07.Checked };
-            dim1Group08 = new bool[] { chkDimmer1MG1Ch08.Checked, chkDimmer1MG2Ch08.Checked, chkDimmer1MG3Ch08.Checked, chkDimmer1MG4Ch08.Checked };
-            dim1Group09 = new bool[] { chkDimmer1MG1Ch09.Checked, chkDimmer1MG2Ch09.Checked, chkDimmer1MG3Ch09.Checked, chkDimmer1MG4Ch09.Checked };
-            dim1Group10 = new bool[] { chkDimmer1MG1Ch10.Checked, chkDimmer1MG2Ch10.Checked, chkDimmer1MG3Ch10.Checked, chkDimmer1MG4Ch10.Checked };
-            dim1Group11 = new bool[] { chkDimmer1MG1Ch11.Checked, chkDimmer1MG2Ch11.Checked, chkDimmer1MG3Ch11.Checked, chkDimmer1MG4Ch11.Checked };
-            dim1Groups = new bool[][] { dim1Group00, dim1Group01, dim1Group02, dim1Group03, dim1Group04, dim1Group05, dim1Group06, dim1Group07, dim1Group08, dim1Group09, dim1Group10, dim1Group11 };
-
-            List<bool[][]> dimGroups = new List<bool[][]>();
-            dimGroups.Add(dim1Groups);
-
-            // Dimmer cards
-            for (int card = 0; card < Convert.ToInt16(cmbStartDimmer.Text); card++)
-            {
-                //dimmerObjects[card].M1_SetDevAddr(dimCardNum[card].SelectedIndex, dimPanelNum[card].SelectedIndex);
-                dimmerObjects[card].M1_SetCfgRev(dimConfigRev[card].Text);
-                dimmerObjects[card].M1_SetCfgType(dimConfigType[card].Text);
-                dimmerObjects[card].M1_SetDCDimmer(true); // hard coding for dimmer card
-                dimmerObjects[card].M1_SetDCMotor(dimDCMotor[card].Checked);
-                dimmerObjects[card].M1_SetShade(dimShade[card].Checked);
-                dimmerObjects[card].M1_SetForce(dimForce[card].Checked);
-                dimmerObjects[card].M1_SetBaseIndex(dimBaseInstance[card].Text);
-                for (int channel = 0; channel < 12; channel++)
-                {
-                    dimmerObjects[card].SetOCAmps(channel, dimmerOCAmps[channel].Text);
-                    dimmerObjects[card].SetOCTime(channel, dimmerOCTime[channel].Text);
-                    //dimmerObjects[card].M1_SetGroup0(dimGroups[card][channel], channel); // takes care of all 4 groups
-                    dimmerObjects[card].SetLock(channel, dimmerLocks[channel].Checked);
-                    dimmerObjects[card].SetPWMFreq(channel, dimmerPWMFreq[channel].Text);
-                    dimmerObjects[card].SetPWMDuty(channel, dimmerPWMDuties[channel].Text);
-                    dimmerObjects[card].SetPWMEnable(channel, dimmerPWMEnables[channel].Checked);
-                    dimmerObjects[card].SetOverride(channel, dimmerOverrides[channel].Checked);
-                    dimmerObjects[card].SetTimeout(channel, dimmerTimeouts[channel].Checked);
-                    dimmerObjects[card].SetDirection(channel, dimmerDirections[channel].Text);
-                    dimmerObjects[card].SetTimeoutTime(channel, dimmerTimeoutTimes[channel].Text);
-                    dimmerObjects[card].SetMaxOn(channel, dimmerMaxOns[channel].Text);
-                    dimmerObjects[card].SetMaxDurRec(channel, dimmerMaxDurRecs[channel].Text);
-                }
-            }
-
-            dimmerObjects.ForEach(dimmerObjects => dimmerObjects.CreateDimmerFile());
+            Dim_SetAll(DimCardActive);
+            dimmerObjects.ForEach(dimmerObjects => dimmerObjects.Dimmer_CreateFile());
             CreateDimmerReferenceFile();
             DimmerCardNavColor(dimBtnArray, btnDimmerGenerate);
             tabControlDimmer.SelectedIndex = 7;
@@ -3564,14 +3598,19 @@ namespace M1ConfigGenerator
             breakerIGNs = new ComboBox[] { cmbBreak1IGNCh00, cmbBreak1IGNCh01, cmbBreak1IGNCh02, cmbBreak1IGNCh03, cmbBreak1IGNCh04, cmbBreak1IGNCh05, cmbBreak1IGNCh06, cmbBreak1IGNCh07, cmbBreak1IGNCh08, cmbBreak1IGNCh09, cmbBreak1IGNCh10, cmbBreak1IGNCh11 };
             breakerParks = new ComboBox[] { cmbBreak1ParkCh00, cmbBreak1ParkCh01,  cmbBreak1ParkCh02, cmbBreak1ParkCh03, cmbBreak1ParkCh04, cmbBreak1ParkCh05, cmbBreak1ParkCh06, cmbBreak1ParkCh07, cmbBreak1ParkCh08, cmbBreak1ParkCh09, cmbBreak1ParkCh10, cmbBreak1ParkCh11 };
 
-            dimCardNum = new ComboBox[] { cmbDimmer1CardNum };
-            dimPanelNum = new ComboBox[] { cmbDimmer1PanelNum };
-            dimConfigRev = new TextBox[] { tbxDimmer1CfgRev };
-            dimConfigType = new TextBox[] { tbxDimmer1CfgType };
-            dimDCMotor = new CheckBox[] { chkDimmer1DCMotor };
-            dimShade = new CheckBox[] { chkDimmer1Shade };
-            dimForce = new CheckBox[] { chkDimmer1Force };
-            dimBaseInstance = new TextBox[] { tbxDimmer1BaseIndex };
+            dimGetGroup00 = new CheckBox[] { chkDimmer1MG1Ch00, chkDimmer1MG2Ch00, chkDimmer1MG3Ch00, chkDimmer1MG4Ch00 };
+            dimGetGroup01 = new CheckBox[] { chkDimmer1MG1Ch01, chkDimmer1MG2Ch01, chkDimmer1MG3Ch01, chkDimmer1MG4Ch01 };
+            dimGetGroup02 = new CheckBox[] { chkDimmer1MG1Ch02, chkDimmer1MG2Ch02, chkDimmer1MG3Ch02, chkDimmer1MG4Ch02 };
+            dimGetGroup03 = new CheckBox[] { chkDimmer1MG1Ch03, chkDimmer1MG2Ch03, chkDimmer1MG3Ch03, chkDimmer1MG4Ch03 };
+            dimGetGroup04 = new CheckBox[] { chkDimmer1MG1Ch04, chkDimmer1MG2Ch04, chkDimmer1MG3Ch04, chkDimmer1MG4Ch04 };
+            dimGetGroup05 = new CheckBox[] { chkDimmer1MG1Ch05, chkDimmer1MG2Ch05, chkDimmer1MG3Ch05, chkDimmer1MG4Ch05 };
+            dimGetGroup06 = new CheckBox[] { chkDimmer1MG1Ch06, chkDimmer1MG2Ch06, chkDimmer1MG3Ch06, chkDimmer1MG4Ch06 };
+            dimGetGroup07 = new CheckBox[] { chkDimmer1MG1Ch07, chkDimmer1MG2Ch07, chkDimmer1MG3Ch07, chkDimmer1MG4Ch07 };
+            dimGetGroup08 = new CheckBox[] { chkDimmer1MG1Ch08, chkDimmer1MG2Ch08, chkDimmer1MG3Ch08, chkDimmer1MG4Ch08 };
+            dimGetGroup09 = new CheckBox[] { chkDimmer1MG1Ch09, chkDimmer1MG2Ch09, chkDimmer1MG3Ch09, chkDimmer1MG4Ch09 };
+            dimGetGroup10 = new CheckBox[] { chkDimmer1MG1Ch10, chkDimmer1MG2Ch10, chkDimmer1MG3Ch10, chkDimmer1MG4Ch10 };
+            dimGetGroup11 = new CheckBox[] { chkDimmer1MG1Ch11, chkDimmer1MG2Ch11, chkDimmer1MG3Ch11, chkDimmer1MG4Ch11 };
+            dimGetGroups = new CheckBox[][] { dimGetGroup00, dimGetGroup01, dimGetGroup02, dimGetGroup03, dimGetGroup04, dimGetGroup05, dimGetGroup06, dimGetGroup07, dimGetGroup08, dimGetGroup09, dimGetGroup10, dimGetGroup11 };
             dimmerOCAmps = new ComboBox[] { cmbDimmer1OCAmps00, cmbDimmer1OCAmps01, cmbDimmer1OCAmps02, cmbDimmer1OCAmps03, cmbDimmer1OCAmps04, cmbDimmer1OCAmps05, cmbDimmer1OCAmps06, cmbDimmer1OCAmps07, cmbDimmer1OCAmps08, cmbDimmer1OCAmps09, cmbDimmer1OCAmps10, cmbDimmer1OCAmps11 };
             dimmerOCTime = new ComboBox[] { cmbDimmer1OCTime00, cmbDimmer1OCTime01, cmbDimmer1OCTime02, cmbDimmer1OCTime03, cmbDimmer1OCTime04, cmbDimmer1OCTime05, cmbDimmer1OCTime06, cmbDimmer1OCTime07, cmbDimmer1OCTime08, cmbDimmer1OCTime09, cmbDimmer1OCTime10, cmbDimmer1OCTime11 };
             dimmerLocks = new CheckBox[] { chkDimmer1Lock00, chkDimmer1Lock01, chkDimmer1Lock02, chkDimmer1Lock03, chkDimmer1Lock04, chkDimmer1Lock05, chkDimmer1Lock06, chkDimmer1Lock07, chkDimmer1Lock08, chkDimmer1Lock09, chkDimmer1Lock10, chkDimmer1Lock11};

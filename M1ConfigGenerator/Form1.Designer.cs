@@ -443,6 +443,8 @@ namespace M1ConfigGenerator
             this.btnDimmerGenerate = new System.Windows.Forms.Button();
             this.tabControlDimmer = new M1ConfigGenerator.TablessControl();
             this.tabDimmer1 = new System.Windows.Forms.TabPage();
+            this.label24 = new System.Windows.Forms.Label();
+            this.tbxDimmer1CardLetter = new System.Windows.Forms.TextBox();
             this.chkTabVisDimmer1 = new System.Windows.Forms.CheckBox();
             this.lblDimmer1Ch00 = new System.Windows.Forms.Label();
             this.chkDimmer1MG2Ch05 = new System.Windows.Forms.CheckBox();
@@ -454,6 +456,20 @@ namespace M1ConfigGenerator
             this.tabControlDimmer1QF = new M1ConfigGenerator.TablessControl();
             this.tabDimmer1Quick = new System.Windows.Forms.TabPage();
             this.tabDimmer1Full = new System.Windows.Forms.TabPage();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
             this.cmbDimmer1MeasCurTimeCh11 = new System.Windows.Forms.ComboBox();
             this.cmbDimmer1MeasCurTimeCh10 = new System.Windows.Forms.ComboBox();
             this.label389 = new System.Windows.Forms.Label();
@@ -1742,22 +1758,6 @@ namespace M1ConfigGenerator
             this.btnHRCard4 = new System.Windows.Forms.Button();
             this.btnHRCard3 = new System.Windows.Forms.Button();
             this.btnHRCard2 = new System.Windows.Forms.Button();
-            this.label24 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
@@ -7358,7 +7358,7 @@ namespace M1ConfigGenerator
             // 
             this.tabDimmer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.tabDimmer1.Controls.Add(this.label24);
-            this.tabDimmer1.Controls.Add(this.textBox1);
+            this.tabDimmer1.Controls.Add(this.tbxDimmer1CardLetter);
             this.tabDimmer1.Controls.Add(this.chkTabVisDimmer1);
             this.tabDimmer1.Controls.Add(this.lblDimmer1Ch00);
             this.tabDimmer1.Controls.Add(this.chkDimmer1MG2Ch05);
@@ -7472,6 +7472,27 @@ namespace M1ConfigGenerator
             this.tabDimmer1.TabIndex = 1;
             this.tabDimmer1.Text = "Dimmer 1";
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label24.Location = new System.Drawing.Point(481, 27);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(76, 17);
+            this.label24.TabIndex = 287;
+            this.label24.Text = "Card Letter:";
+            // 
+            // tbxDimmer1CardLetter
+            // 
+            this.tbxDimmer1CardLetter.Location = new System.Drawing.Point(560, 25);
+            this.tbxDimmer1CardLetter.MaxLength = 4;
+            this.tbxDimmer1CardLetter.Name = "tbxDimmer1CardLetter";
+            this.tbxDimmer1CardLetter.Size = new System.Drawing.Size(32, 20);
+            this.tbxDimmer1CardLetter.TabIndex = 286;
+            this.tbxDimmer1CardLetter.Text = "A";
+            // 
             // chkTabVisDimmer1
             // 
             this.chkTabVisDimmer1.AutoSize = true;
@@ -7498,19 +7519,19 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG2Ch05
             // 
-            this.chkDimmer1MG2Ch05.AutoSize = true;
-            this.chkDimmer1MG2Ch05.Location = new System.Drawing.Point(618, 243);
+            this.chkDimmer1MG2Ch05.Location = new System.Drawing.Point(611, 238);
             this.chkDimmer1MG2Ch05.Name = "chkDimmer1MG2Ch05";
-            this.chkDimmer1MG2Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG2Ch05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG2Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG2Ch05.TabIndex = 80;
             this.chkDimmer1MG2Ch05.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG2Ch00
             // 
-            this.chkDimmer1MG2Ch00.AutoSize = true;
-            this.chkDimmer1MG2Ch00.Location = new System.Drawing.Point(258, 243);
+            this.chkDimmer1MG2Ch00.Location = new System.Drawing.Point(251, 238);
             this.chkDimmer1MG2Ch00.Name = "chkDimmer1MG2Ch00";
-            this.chkDimmer1MG2Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG2Ch00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG2Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG2Ch00.TabIndex = 60;
             this.chkDimmer1MG2Ch00.UseVisualStyleBackColor = true;
             // 
@@ -7534,10 +7555,10 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG4Ch01
             // 
-            this.chkDimmer1MG4Ch01.AutoSize = true;
-            this.chkDimmer1MG4Ch01.Location = new System.Drawing.Point(330, 303);
+            this.chkDimmer1MG4Ch01.Location = new System.Drawing.Point(323, 298);
             this.chkDimmer1MG4Ch01.Name = "chkDimmer1MG4Ch01";
-            this.chkDimmer1MG4Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG4Ch01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG4Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG4Ch01.TabIndex = 66;
             this.chkDimmer1MG4Ch01.UseVisualStyleBackColor = true;
             // 
@@ -7569,9 +7590,9 @@ namespace M1ConfigGenerator
             "10",
             "11",
             "12"});
-            this.cmbDimmer1OCAmps01.Location = new System.Drawing.Point(318, 146);
+            this.cmbDimmer1OCAmps01.Location = new System.Drawing.Point(307, 146);
             this.cmbDimmer1OCAmps01.Name = "cmbDimmer1OCAmps01";
-            this.cmbDimmer1OCAmps01.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCAmps01.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCAmps01.TabIndex = 36;
             // 
             // tabControlDimmer1QF
@@ -7773,6 +7794,160 @@ namespace M1ConfigGenerator
             this.tabDimmer1Full.Size = new System.Drawing.Size(1378, 512);
             this.tabDimmer1Full.TabIndex = 1;
             this.tabDimmer1Full.Text = "Dim 1 Full";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label51.ForeColor = System.Drawing.SystemColors.Control;
+            this.label51.Location = new System.Drawing.Point(232, 273);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(21, 17);
+            this.label51.TabIndex = 452;
+            this.label51.Text = "0x";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label50.ForeColor = System.Drawing.SystemColors.Control;
+            this.label50.Location = new System.Drawing.Point(232, 243);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(21, 17);
+            this.label50.TabIndex = 451;
+            this.label50.Text = "0x";
+            // 
+            // label26
+            // 
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.SystemColors.Control;
+            this.label26.Location = new System.Drawing.Point(249, 3);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(40, 20);
+            this.label26.TabIndex = 439;
+            this.label26.Text = "0";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.SystemColors.Control;
+            this.label27.Location = new System.Drawing.Point(537, 3);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(40, 20);
+            this.label27.TabIndex = 450;
+            this.label27.Text = "4";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label40
+            // 
+            this.label40.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.SystemColors.Control;
+            this.label40.Location = new System.Drawing.Point(609, 3);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(40, 20);
+            this.label40.TabIndex = 449;
+            this.label40.Text = "5";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label41
+            // 
+            this.label41.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.SystemColors.Control;
+            this.label41.Location = new System.Drawing.Point(681, 3);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(40, 20);
+            this.label41.TabIndex = 448;
+            this.label41.Text = "6";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label42
+            // 
+            this.label42.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.SystemColors.Control;
+            this.label42.Location = new System.Drawing.Point(753, 3);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(40, 20);
+            this.label42.TabIndex = 447;
+            this.label42.Text = "7";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label43
+            // 
+            this.label43.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.SystemColors.Control;
+            this.label43.Location = new System.Drawing.Point(825, 3);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(40, 20);
+            this.label43.TabIndex = 446;
+            this.label43.Text = "8";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label44
+            // 
+            this.label44.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.SystemColors.Control;
+            this.label44.Location = new System.Drawing.Point(897, 3);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(40, 20);
+            this.label44.TabIndex = 445;
+            this.label44.Text = "9";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label45
+            // 
+            this.label45.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.SystemColors.Control;
+            this.label45.Location = new System.Drawing.Point(969, 3);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(40, 20);
+            this.label45.TabIndex = 444;
+            this.label45.Text = "10";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label46
+            // 
+            this.label46.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.SystemColors.Control;
+            this.label46.Location = new System.Drawing.Point(1041, 3);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(40, 20);
+            this.label46.TabIndex = 443;
+            this.label46.Text = "11";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label47
+            // 
+            this.label47.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.SystemColors.Control;
+            this.label47.Location = new System.Drawing.Point(465, 2);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(40, 20);
+            this.label47.TabIndex = 442;
+            this.label47.Text = "3";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label48
+            // 
+            this.label48.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.SystemColors.Control;
+            this.label48.Location = new System.Drawing.Point(393, 3);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(40, 20);
+            this.label48.TabIndex = 441;
+            this.label48.Text = "2";
+            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label49
+            // 
+            this.label49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.SystemColors.Control;
+            this.label49.Location = new System.Drawing.Point(321, 3);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(40, 20);
+            this.label49.TabIndex = 440;
+            this.label49.Text = "1";
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cmbDimmer1MeasCurTimeCh11
             // 
@@ -9426,10 +9601,10 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG4Ch03
             // 
-            this.chkDimmer1MG4Ch03.AutoSize = true;
-            this.chkDimmer1MG4Ch03.Location = new System.Drawing.Point(474, 303);
+            this.chkDimmer1MG4Ch03.Location = new System.Drawing.Point(467, 298);
             this.chkDimmer1MG4Ch03.Name = "chkDimmer1MG4Ch03";
-            this.chkDimmer1MG4Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG4Ch03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG4Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG4Ch03.TabIndex = 74;
             this.chkDimmer1MG4Ch03.UseVisualStyleBackColor = true;
             // 
@@ -9446,10 +9621,10 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG4Ch08
             // 
-            this.chkDimmer1MG4Ch08.AutoSize = true;
-            this.chkDimmer1MG4Ch08.Location = new System.Drawing.Point(834, 303);
+            this.chkDimmer1MG4Ch08.Location = new System.Drawing.Point(827, 298);
             this.chkDimmer1MG4Ch08.Name = "chkDimmer1MG4Ch08";
-            this.chkDimmer1MG4Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG4Ch08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG4Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG4Ch08.TabIndex = 94;
             this.chkDimmer1MG4Ch08.UseVisualStyleBackColor = true;
             // 
@@ -9466,10 +9641,10 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG2Ch10
             // 
-            this.chkDimmer1MG2Ch10.AutoSize = true;
-            this.chkDimmer1MG2Ch10.Location = new System.Drawing.Point(978, 243);
+            this.chkDimmer1MG2Ch10.Location = new System.Drawing.Point(971, 238);
             this.chkDimmer1MG2Ch10.Name = "chkDimmer1MG2Ch10";
-            this.chkDimmer1MG2Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG2Ch10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG2Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG2Ch10.TabIndex = 100;
             this.chkDimmer1MG2Ch10.UseVisualStyleBackColor = true;
             // 
@@ -9483,10 +9658,10 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG4Ch11
             // 
-            this.chkDimmer1MG4Ch11.AutoSize = true;
-            this.chkDimmer1MG4Ch11.Location = new System.Drawing.Point(1050, 303);
+            this.chkDimmer1MG4Ch11.Location = new System.Drawing.Point(1043, 298);
             this.chkDimmer1MG4Ch11.Name = "chkDimmer1MG4Ch11";
-            this.chkDimmer1MG4Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG4Ch11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG4Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG4Ch11.TabIndex = 106;
             this.chkDimmer1MG4Ch11.UseVisualStyleBackColor = true;
             // 
@@ -9504,10 +9679,10 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG4Ch06
             // 
-            this.chkDimmer1MG4Ch06.AutoSize = true;
-            this.chkDimmer1MG4Ch06.Location = new System.Drawing.Point(690, 303);
+            this.chkDimmer1MG4Ch06.Location = new System.Drawing.Point(683, 298);
             this.chkDimmer1MG4Ch06.Name = "chkDimmer1MG4Ch06";
-            this.chkDimmer1MG4Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG4Ch06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG4Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG4Ch06.TabIndex = 86;
             this.chkDimmer1MG4Ch06.UseVisualStyleBackColor = true;
             // 
@@ -9537,9 +9712,9 @@ namespace M1ConfigGenerator
             "10",
             "11",
             "12"});
-            this.cmbDimmer1OCAmps08.Location = new System.Drawing.Point(822, 146);
+            this.cmbDimmer1OCAmps08.Location = new System.Drawing.Point(811, 146);
             this.cmbDimmer1OCAmps08.Name = "cmbDimmer1OCAmps08";
-            this.cmbDimmer1OCAmps08.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCAmps08.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCAmps08.TabIndex = 43;
             // 
             // label11
@@ -9555,10 +9730,10 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG1Ch07
             // 
-            this.chkDimmer1MG1Ch07.AutoSize = true;
-            this.chkDimmer1MG1Ch07.Location = new System.Drawing.Point(762, 213);
+            this.chkDimmer1MG1Ch07.Location = new System.Drawing.Point(755, 208);
             this.chkDimmer1MG1Ch07.Name = "chkDimmer1MG1Ch07";
-            this.chkDimmer1MG1Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG1Ch07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG1Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG1Ch07.TabIndex = 87;
             this.chkDimmer1MG1Ch07.UseVisualStyleBackColor = true;
             // 
@@ -9609,9 +9784,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbDimmer1OCTime03.Location = new System.Drawing.Point(462, 176);
+            this.cmbDimmer1OCTime03.Location = new System.Drawing.Point(451, 176);
             this.cmbDimmer1OCTime03.Name = "cmbDimmer1OCTime03";
-            this.cmbDimmer1OCTime03.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCTime03.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCTime03.TabIndex = 50;
             // 
             // chkDimmer1Force
@@ -9643,9 +9818,9 @@ namespace M1ConfigGenerator
             "10",
             "11",
             "12"});
-            this.cmbDimmer1OCAmps09.Location = new System.Drawing.Point(894, 146);
+            this.cmbDimmer1OCAmps09.Location = new System.Drawing.Point(883, 146);
             this.cmbDimmer1OCAmps09.Name = "cmbDimmer1OCAmps09";
-            this.cmbDimmer1OCAmps09.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCAmps09.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCAmps09.TabIndex = 44;
             // 
             // label12
@@ -9671,9 +9846,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbDimmer1OCTime02.Location = new System.Drawing.Point(390, 176);
+            this.cmbDimmer1OCTime02.Location = new System.Drawing.Point(379, 176);
             this.cmbDimmer1OCTime02.Name = "cmbDimmer1OCTime02";
-            this.cmbDimmer1OCTime02.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCTime02.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCTime02.TabIndex = 49;
             // 
             // tbxDimmer1BaseIndex
@@ -9686,10 +9861,10 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG3Ch05
             // 
-            this.chkDimmer1MG3Ch05.AutoSize = true;
-            this.chkDimmer1MG3Ch05.Location = new System.Drawing.Point(618, 273);
+            this.chkDimmer1MG3Ch05.Location = new System.Drawing.Point(611, 268);
             this.chkDimmer1MG3Ch05.Name = "chkDimmer1MG3Ch05";
-            this.chkDimmer1MG3Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG3Ch05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG3Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG3Ch05.TabIndex = 81;
             this.chkDimmer1MG3Ch05.UseVisualStyleBackColor = true;
             // 
@@ -9722,9 +9897,9 @@ namespace M1ConfigGenerator
             "10",
             "11",
             "12"});
-            this.cmbDimmer1OCAmps00.Location = new System.Drawing.Point(246, 146);
+            this.cmbDimmer1OCAmps00.Location = new System.Drawing.Point(235, 146);
             this.cmbDimmer1OCAmps00.Name = "cmbDimmer1OCAmps00";
-            this.cmbDimmer1OCAmps00.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCAmps00.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCAmps00.TabIndex = 35;
             // 
             // label14
@@ -9740,10 +9915,10 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG1Ch02
             // 
-            this.chkDimmer1MG1Ch02.AutoSize = true;
-            this.chkDimmer1MG1Ch02.Location = new System.Drawing.Point(402, 213);
+            this.chkDimmer1MG1Ch02.Location = new System.Drawing.Point(395, 208);
             this.chkDimmer1MG1Ch02.Name = "chkDimmer1MG1Ch02";
-            this.chkDimmer1MG1Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG1Ch02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG1Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG1Ch02.TabIndex = 67;
             this.chkDimmer1MG1Ch02.UseVisualStyleBackColor = true;
             // 
@@ -9760,10 +9935,10 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG3Ch03
             // 
-            this.chkDimmer1MG3Ch03.AutoSize = true;
-            this.chkDimmer1MG3Ch03.Location = new System.Drawing.Point(474, 273);
+            this.chkDimmer1MG3Ch03.Location = new System.Drawing.Point(467, 268);
             this.chkDimmer1MG3Ch03.Name = "chkDimmer1MG3Ch03";
-            this.chkDimmer1MG3Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG3Ch03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG3Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG3Ch03.TabIndex = 73;
             this.chkDimmer1MG3Ch03.UseVisualStyleBackColor = true;
             // 
@@ -9780,10 +9955,10 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG1Ch05
             // 
-            this.chkDimmer1MG1Ch05.AutoSize = true;
-            this.chkDimmer1MG1Ch05.Location = new System.Drawing.Point(618, 213);
+            this.chkDimmer1MG1Ch05.Location = new System.Drawing.Point(611, 208);
             this.chkDimmer1MG1Ch05.Name = "chkDimmer1MG1Ch05";
-            this.chkDimmer1MG1Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG1Ch05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG1Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG1Ch05.TabIndex = 79;
             this.chkDimmer1MG1Ch05.UseVisualStyleBackColor = true;
             // 
@@ -9800,10 +9975,10 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG3Ch10
             // 
-            this.chkDimmer1MG3Ch10.AutoSize = true;
-            this.chkDimmer1MG3Ch10.Location = new System.Drawing.Point(978, 273);
+            this.chkDimmer1MG3Ch10.Location = new System.Drawing.Point(971, 268);
             this.chkDimmer1MG3Ch10.Name = "chkDimmer1MG3Ch10";
-            this.chkDimmer1MG3Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG3Ch10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG3Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG3Ch10.TabIndex = 101;
             this.chkDimmer1MG3Ch10.UseVisualStyleBackColor = true;
             // 
@@ -9820,19 +9995,19 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG1Ch09
             // 
-            this.chkDimmer1MG1Ch09.AutoSize = true;
-            this.chkDimmer1MG1Ch09.Location = new System.Drawing.Point(906, 213);
+            this.chkDimmer1MG1Ch09.Location = new System.Drawing.Point(899, 208);
             this.chkDimmer1MG1Ch09.Name = "chkDimmer1MG1Ch09";
-            this.chkDimmer1MG1Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG1Ch09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG1Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG1Ch09.TabIndex = 95;
             this.chkDimmer1MG1Ch09.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG4Ch02
             // 
-            this.chkDimmer1MG4Ch02.AutoSize = true;
-            this.chkDimmer1MG4Ch02.Location = new System.Drawing.Point(402, 303);
+            this.chkDimmer1MG4Ch02.Location = new System.Drawing.Point(395, 298);
             this.chkDimmer1MG4Ch02.Name = "chkDimmer1MG4Ch02";
-            this.chkDimmer1MG4Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG4Ch02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG4Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG4Ch02.TabIndex = 70;
             this.chkDimmer1MG4Ch02.UseVisualStyleBackColor = true;
             // 
@@ -9853,9 +10028,9 @@ namespace M1ConfigGenerator
             "10",
             "11",
             "12"});
-            this.cmbDimmer1OCAmps02.Location = new System.Drawing.Point(390, 146);
+            this.cmbDimmer1OCAmps02.Location = new System.Drawing.Point(379, 146);
             this.cmbDimmer1OCAmps02.Name = "cmbDimmer1OCAmps02";
-            this.cmbDimmer1OCAmps02.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCAmps02.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCAmps02.TabIndex = 37;
             // 
             // lblDimmer1Ch03
@@ -9881,9 +10056,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbDimmer1OCTime08.Location = new System.Drawing.Point(822, 176);
+            this.cmbDimmer1OCTime08.Location = new System.Drawing.Point(811, 176);
             this.cmbDimmer1OCTime08.Name = "cmbDimmer1OCTime08";
-            this.cmbDimmer1OCTime08.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCTime08.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCTime08.TabIndex = 55;
             // 
             // cmbDimmer1OCTime10
@@ -9898,9 +10073,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbDimmer1OCTime10.Location = new System.Drawing.Point(966, 176);
+            this.cmbDimmer1OCTime10.Location = new System.Drawing.Point(955, 176);
             this.cmbDimmer1OCTime10.Name = "cmbDimmer1OCTime10";
-            this.cmbDimmer1OCTime10.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCTime10.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCTime10.TabIndex = 57;
             // 
             // lblDimmer1Ch01
@@ -9916,46 +10091,46 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG1Ch01
             // 
-            this.chkDimmer1MG1Ch01.AutoSize = true;
-            this.chkDimmer1MG1Ch01.Location = new System.Drawing.Point(330, 213);
+            this.chkDimmer1MG1Ch01.Location = new System.Drawing.Point(323, 208);
             this.chkDimmer1MG1Ch01.Name = "chkDimmer1MG1Ch01";
-            this.chkDimmer1MG1Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG1Ch01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG1Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG1Ch01.TabIndex = 63;
             this.chkDimmer1MG1Ch01.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG3Ch08
             // 
-            this.chkDimmer1MG3Ch08.AutoSize = true;
-            this.chkDimmer1MG3Ch08.Location = new System.Drawing.Point(834, 273);
+            this.chkDimmer1MG3Ch08.Location = new System.Drawing.Point(827, 268);
             this.chkDimmer1MG3Ch08.Name = "chkDimmer1MG3Ch08";
-            this.chkDimmer1MG3Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG3Ch08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG3Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG3Ch08.TabIndex = 93;
             this.chkDimmer1MG3Ch08.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG3Ch09
             // 
-            this.chkDimmer1MG3Ch09.AutoSize = true;
-            this.chkDimmer1MG3Ch09.Location = new System.Drawing.Point(906, 273);
+            this.chkDimmer1MG3Ch09.Location = new System.Drawing.Point(899, 268);
             this.chkDimmer1MG3Ch09.Name = "chkDimmer1MG3Ch09";
-            this.chkDimmer1MG3Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG3Ch09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG3Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG3Ch09.TabIndex = 97;
             this.chkDimmer1MG3Ch09.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG3Ch00
             // 
-            this.chkDimmer1MG3Ch00.AutoSize = true;
-            this.chkDimmer1MG3Ch00.Location = new System.Drawing.Point(258, 273);
+            this.chkDimmer1MG3Ch00.Location = new System.Drawing.Point(251, 268);
             this.chkDimmer1MG3Ch00.Name = "chkDimmer1MG3Ch00";
-            this.chkDimmer1MG3Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG3Ch00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG3Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG3Ch00.TabIndex = 61;
             this.chkDimmer1MG3Ch00.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG1Ch11
             // 
-            this.chkDimmer1MG1Ch11.AutoSize = true;
-            this.chkDimmer1MG1Ch11.Location = new System.Drawing.Point(1050, 213);
+            this.chkDimmer1MG1Ch11.Location = new System.Drawing.Point(1043, 208);
             this.chkDimmer1MG1Ch11.Name = "chkDimmer1MG1Ch11";
-            this.chkDimmer1MG1Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG1Ch11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG1Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG1Ch11.TabIndex = 103;
             this.chkDimmer1MG1Ch11.UseVisualStyleBackColor = true;
             // 
@@ -9972,37 +10147,37 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG3Ch04
             // 
-            this.chkDimmer1MG3Ch04.AutoSize = true;
-            this.chkDimmer1MG3Ch04.Location = new System.Drawing.Point(546, 273);
+            this.chkDimmer1MG3Ch04.Location = new System.Drawing.Point(539, 268);
             this.chkDimmer1MG3Ch04.Name = "chkDimmer1MG3Ch04";
-            this.chkDimmer1MG3Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG3Ch04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG3Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG3Ch04.TabIndex = 77;
             this.chkDimmer1MG3Ch04.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG1Ch00
             // 
-            this.chkDimmer1MG1Ch00.AutoSize = true;
-            this.chkDimmer1MG1Ch00.Location = new System.Drawing.Point(258, 213);
+            this.chkDimmer1MG1Ch00.Location = new System.Drawing.Point(251, 208);
             this.chkDimmer1MG1Ch00.Name = "chkDimmer1MG1Ch00";
-            this.chkDimmer1MG1Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG1Ch00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG1Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG1Ch00.TabIndex = 59;
             this.chkDimmer1MG1Ch00.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG4Ch07
             // 
-            this.chkDimmer1MG4Ch07.AutoSize = true;
-            this.chkDimmer1MG4Ch07.Location = new System.Drawing.Point(762, 303);
+            this.chkDimmer1MG4Ch07.Location = new System.Drawing.Point(755, 298);
             this.chkDimmer1MG4Ch07.Name = "chkDimmer1MG4Ch07";
-            this.chkDimmer1MG4Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG4Ch07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG4Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG4Ch07.TabIndex = 90;
             this.chkDimmer1MG4Ch07.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG3Ch01
             // 
-            this.chkDimmer1MG3Ch01.AutoSize = true;
-            this.chkDimmer1MG3Ch01.Location = new System.Drawing.Point(330, 273);
+            this.chkDimmer1MG3Ch01.Location = new System.Drawing.Point(323, 268);
             this.chkDimmer1MG3Ch01.Name = "chkDimmer1MG3Ch01";
-            this.chkDimmer1MG3Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG3Ch01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG3Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG3Ch01.TabIndex = 65;
             this.chkDimmer1MG3Ch01.UseVisualStyleBackColor = true;
             // 
@@ -10023,17 +10198,17 @@ namespace M1ConfigGenerator
             "10",
             "11",
             "12"});
-            this.cmbDimmer1OCAmps05.Location = new System.Drawing.Point(606, 146);
+            this.cmbDimmer1OCAmps05.Location = new System.Drawing.Point(595, 146);
             this.cmbDimmer1OCAmps05.Name = "cmbDimmer1OCAmps05";
-            this.cmbDimmer1OCAmps05.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCAmps05.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCAmps05.TabIndex = 40;
             // 
             // chkDimmer1MG2Ch07
             // 
-            this.chkDimmer1MG2Ch07.AutoSize = true;
-            this.chkDimmer1MG2Ch07.Location = new System.Drawing.Point(762, 243);
+            this.chkDimmer1MG2Ch07.Location = new System.Drawing.Point(755, 238);
             this.chkDimmer1MG2Ch07.Name = "chkDimmer1MG2Ch07";
-            this.chkDimmer1MG2Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG2Ch07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG2Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG2Ch07.TabIndex = 88;
             this.chkDimmer1MG2Ch07.UseVisualStyleBackColor = true;
             // 
@@ -10050,28 +10225,28 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG3Ch11
             // 
-            this.chkDimmer1MG3Ch11.AutoSize = true;
-            this.chkDimmer1MG3Ch11.Location = new System.Drawing.Point(1050, 273);
+            this.chkDimmer1MG3Ch11.Location = new System.Drawing.Point(1043, 268);
             this.chkDimmer1MG3Ch11.Name = "chkDimmer1MG3Ch11";
-            this.chkDimmer1MG3Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG3Ch11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG3Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG3Ch11.TabIndex = 105;
             this.chkDimmer1MG3Ch11.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG1Ch06
             // 
-            this.chkDimmer1MG1Ch06.AutoSize = true;
-            this.chkDimmer1MG1Ch06.Location = new System.Drawing.Point(690, 213);
+            this.chkDimmer1MG1Ch06.Location = new System.Drawing.Point(683, 208);
             this.chkDimmer1MG1Ch06.Name = "chkDimmer1MG1Ch06";
-            this.chkDimmer1MG1Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG1Ch06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG1Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG1Ch06.TabIndex = 83;
             this.chkDimmer1MG1Ch06.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG1Ch04
             // 
-            this.chkDimmer1MG1Ch04.AutoSize = true;
-            this.chkDimmer1MG1Ch04.Location = new System.Drawing.Point(546, 213);
+            this.chkDimmer1MG1Ch04.Location = new System.Drawing.Point(539, 208);
             this.chkDimmer1MG1Ch04.Name = "chkDimmer1MG1Ch04";
-            this.chkDimmer1MG1Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG1Ch04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG1Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG1Ch04.TabIndex = 75;
             this.chkDimmer1MG1Ch04.UseVisualStyleBackColor = true;
             // 
@@ -10092,9 +10267,9 @@ namespace M1ConfigGenerator
             "10",
             "11",
             "12"});
-            this.cmbDimmer1OCAmps04.Location = new System.Drawing.Point(534, 146);
+            this.cmbDimmer1OCAmps04.Location = new System.Drawing.Point(523, 146);
             this.cmbDimmer1OCAmps04.Name = "cmbDimmer1OCAmps04";
-            this.cmbDimmer1OCAmps04.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCAmps04.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCAmps04.TabIndex = 39;
             // 
             // cmbDimmer1OCAmps07
@@ -10114,9 +10289,9 @@ namespace M1ConfigGenerator
             "10",
             "11",
             "12"});
-            this.cmbDimmer1OCAmps07.Location = new System.Drawing.Point(750, 146);
+            this.cmbDimmer1OCAmps07.Location = new System.Drawing.Point(739, 146);
             this.cmbDimmer1OCAmps07.Name = "cmbDimmer1OCAmps07";
-            this.cmbDimmer1OCAmps07.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCAmps07.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCAmps07.TabIndex = 42;
             // 
             // cmbDimmer1OCAmps11
@@ -10136,17 +10311,17 @@ namespace M1ConfigGenerator
             "10",
             "11",
             "12"});
-            this.cmbDimmer1OCAmps11.Location = new System.Drawing.Point(1038, 146);
+            this.cmbDimmer1OCAmps11.Location = new System.Drawing.Point(1027, 146);
             this.cmbDimmer1OCAmps11.Name = "cmbDimmer1OCAmps11";
-            this.cmbDimmer1OCAmps11.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCAmps11.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCAmps11.TabIndex = 46;
             // 
             // chkDimmer1MG1Ch10
             // 
-            this.chkDimmer1MG1Ch10.AutoSize = true;
-            this.chkDimmer1MG1Ch10.Location = new System.Drawing.Point(978, 213);
+            this.chkDimmer1MG1Ch10.Location = new System.Drawing.Point(971, 208);
             this.chkDimmer1MG1Ch10.Name = "chkDimmer1MG1Ch10";
-            this.chkDimmer1MG1Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG1Ch10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG1Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG1Ch10.TabIndex = 99;
             this.chkDimmer1MG1Ch10.UseVisualStyleBackColor = true;
             // 
@@ -10162,9 +10337,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbDimmer1OCTime05.Location = new System.Drawing.Point(606, 176);
+            this.cmbDimmer1OCTime05.Location = new System.Drawing.Point(595, 176);
             this.cmbDimmer1OCTime05.Name = "cmbDimmer1OCTime05";
-            this.cmbDimmer1OCTime05.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCTime05.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCTime05.TabIndex = 52;
             // 
             // lblDimmer1Ch07
@@ -10190,17 +10365,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbDimmer1OCTime06.Location = new System.Drawing.Point(678, 176);
+            this.cmbDimmer1OCTime06.Location = new System.Drawing.Point(667, 176);
             this.cmbDimmer1OCTime06.Name = "cmbDimmer1OCTime06";
-            this.cmbDimmer1OCTime06.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCTime06.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCTime06.TabIndex = 53;
             // 
             // chkDimmer1MG3Ch06
             // 
-            this.chkDimmer1MG3Ch06.AutoSize = true;
-            this.chkDimmer1MG3Ch06.Location = new System.Drawing.Point(690, 273);
+            this.chkDimmer1MG3Ch06.Location = new System.Drawing.Point(683, 268);
             this.chkDimmer1MG3Ch06.Name = "chkDimmer1MG3Ch06";
-            this.chkDimmer1MG3Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG3Ch06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG3Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG3Ch06.TabIndex = 85;
             this.chkDimmer1MG3Ch06.UseVisualStyleBackColor = true;
             // 
@@ -10216,44 +10391,44 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbDimmer1OCTime00.Location = new System.Drawing.Point(246, 176);
+            this.cmbDimmer1OCTime00.Location = new System.Drawing.Point(235, 176);
             this.cmbDimmer1OCTime00.Name = "cmbDimmer1OCTime00";
-            this.cmbDimmer1OCTime00.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCTime00.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCTime00.TabIndex = 47;
             // 
             // chkDimmer1MG2Ch02
             // 
-            this.chkDimmer1MG2Ch02.AutoSize = true;
-            this.chkDimmer1MG2Ch02.Location = new System.Drawing.Point(402, 243);
+            this.chkDimmer1MG2Ch02.Location = new System.Drawing.Point(395, 238);
             this.chkDimmer1MG2Ch02.Name = "chkDimmer1MG2Ch02";
-            this.chkDimmer1MG2Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG2Ch02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG2Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG2Ch02.TabIndex = 68;
             this.chkDimmer1MG2Ch02.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG1Ch08
             // 
-            this.chkDimmer1MG1Ch08.AutoSize = true;
-            this.chkDimmer1MG1Ch08.Location = new System.Drawing.Point(834, 213);
+            this.chkDimmer1MG1Ch08.Location = new System.Drawing.Point(827, 208);
             this.chkDimmer1MG1Ch08.Name = "chkDimmer1MG1Ch08";
-            this.chkDimmer1MG1Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG1Ch08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG1Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG1Ch08.TabIndex = 91;
             this.chkDimmer1MG1Ch08.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG2Ch03
             // 
-            this.chkDimmer1MG2Ch03.AutoSize = true;
-            this.chkDimmer1MG2Ch03.Location = new System.Drawing.Point(474, 243);
+            this.chkDimmer1MG2Ch03.Location = new System.Drawing.Point(467, 238);
             this.chkDimmer1MG2Ch03.Name = "chkDimmer1MG2Ch03";
-            this.chkDimmer1MG2Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG2Ch03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG2Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG2Ch03.TabIndex = 72;
             this.chkDimmer1MG2Ch03.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG2Ch06
             // 
-            this.chkDimmer1MG2Ch06.AutoSize = true;
-            this.chkDimmer1MG2Ch06.Location = new System.Drawing.Point(690, 243);
+            this.chkDimmer1MG2Ch06.Location = new System.Drawing.Point(683, 238);
             this.chkDimmer1MG2Ch06.Name = "chkDimmer1MG2Ch06";
-            this.chkDimmer1MG2Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG2Ch06.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG2Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG2Ch06.TabIndex = 84;
             this.chkDimmer1MG2Ch06.UseVisualStyleBackColor = true;
             // 
@@ -10269,9 +10444,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbDimmer1OCTime07.Location = new System.Drawing.Point(750, 176);
+            this.cmbDimmer1OCTime07.Location = new System.Drawing.Point(739, 176);
             this.cmbDimmer1OCTime07.Name = "cmbDimmer1OCTime07";
-            this.cmbDimmer1OCTime07.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCTime07.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCTime07.TabIndex = 54;
             // 
             // lblDimmer1Ch06
@@ -10297,17 +10472,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbDimmer1OCTime04.Location = new System.Drawing.Point(534, 176);
+            this.cmbDimmer1OCTime04.Location = new System.Drawing.Point(523, 176);
             this.cmbDimmer1OCTime04.Name = "cmbDimmer1OCTime04";
-            this.cmbDimmer1OCTime04.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCTime04.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCTime04.TabIndex = 51;
             // 
             // chkDimmer1MG1Ch03
             // 
-            this.chkDimmer1MG1Ch03.AutoSize = true;
-            this.chkDimmer1MG1Ch03.Location = new System.Drawing.Point(474, 213);
+            this.chkDimmer1MG1Ch03.Location = new System.Drawing.Point(467, 208);
             this.chkDimmer1MG1Ch03.Name = "chkDimmer1MG1Ch03";
-            this.chkDimmer1MG1Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG1Ch03.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG1Ch03.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG1Ch03.TabIndex = 71;
             this.chkDimmer1MG1Ch03.UseVisualStyleBackColor = true;
             // 
@@ -10328,17 +10503,17 @@ namespace M1ConfigGenerator
             "10",
             "11",
             "12"});
-            this.cmbDimmer1OCAmps10.Location = new System.Drawing.Point(966, 146);
+            this.cmbDimmer1OCAmps10.Location = new System.Drawing.Point(955, 146);
             this.cmbDimmer1OCAmps10.Name = "cmbDimmer1OCAmps10";
-            this.cmbDimmer1OCAmps10.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCAmps10.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCAmps10.TabIndex = 45;
             // 
             // chkDimmer1MG3Ch02
             // 
-            this.chkDimmer1MG3Ch02.AutoSize = true;
-            this.chkDimmer1MG3Ch02.Location = new System.Drawing.Point(402, 273);
+            this.chkDimmer1MG3Ch02.Location = new System.Drawing.Point(395, 268);
             this.chkDimmer1MG3Ch02.Name = "chkDimmer1MG3Ch02";
-            this.chkDimmer1MG3Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG3Ch02.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG3Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG3Ch02.TabIndex = 69;
             this.chkDimmer1MG3Ch02.UseVisualStyleBackColor = true;
             // 
@@ -10354,35 +10529,35 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbDimmer1OCTime01.Location = new System.Drawing.Point(318, 176);
+            this.cmbDimmer1OCTime01.Location = new System.Drawing.Point(307, 176);
             this.cmbDimmer1OCTime01.Name = "cmbDimmer1OCTime01";
-            this.cmbDimmer1OCTime01.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCTime01.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCTime01.TabIndex = 48;
             // 
             // chkDimmer1MG2Ch04
             // 
-            this.chkDimmer1MG2Ch04.AutoSize = true;
-            this.chkDimmer1MG2Ch04.Location = new System.Drawing.Point(546, 243);
+            this.chkDimmer1MG2Ch04.Location = new System.Drawing.Point(539, 238);
             this.chkDimmer1MG2Ch04.Name = "chkDimmer1MG2Ch04";
-            this.chkDimmer1MG2Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG2Ch04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG2Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG2Ch04.TabIndex = 76;
             this.chkDimmer1MG2Ch04.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG4Ch05
             // 
-            this.chkDimmer1MG4Ch05.AutoSize = true;
-            this.chkDimmer1MG4Ch05.Location = new System.Drawing.Point(618, 303);
+            this.chkDimmer1MG4Ch05.Location = new System.Drawing.Point(611, 298);
             this.chkDimmer1MG4Ch05.Name = "chkDimmer1MG4Ch05";
-            this.chkDimmer1MG4Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG4Ch05.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG4Ch05.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG4Ch05.TabIndex = 82;
             this.chkDimmer1MG4Ch05.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG2Ch11
             // 
-            this.chkDimmer1MG2Ch11.AutoSize = true;
-            this.chkDimmer1MG2Ch11.Location = new System.Drawing.Point(1050, 243);
+            this.chkDimmer1MG2Ch11.Location = new System.Drawing.Point(1043, 238);
             this.chkDimmer1MG2Ch11.Name = "chkDimmer1MG2Ch11";
-            this.chkDimmer1MG2Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG2Ch11.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG2Ch11.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG2Ch11.TabIndex = 104;
             this.chkDimmer1MG2Ch11.UseVisualStyleBackColor = true;
             // 
@@ -10399,28 +10574,28 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG4Ch09
             // 
-            this.chkDimmer1MG4Ch09.AutoSize = true;
-            this.chkDimmer1MG4Ch09.Location = new System.Drawing.Point(906, 303);
+            this.chkDimmer1MG4Ch09.Location = new System.Drawing.Point(899, 298);
             this.chkDimmer1MG4Ch09.Name = "chkDimmer1MG4Ch09";
-            this.chkDimmer1MG4Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG4Ch09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG4Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG4Ch09.TabIndex = 98;
             this.chkDimmer1MG4Ch09.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG2Ch08
             // 
-            this.chkDimmer1MG2Ch08.AutoSize = true;
-            this.chkDimmer1MG2Ch08.Location = new System.Drawing.Point(834, 243);
+            this.chkDimmer1MG2Ch08.Location = new System.Drawing.Point(827, 238);
             this.chkDimmer1MG2Ch08.Name = "chkDimmer1MG2Ch08";
-            this.chkDimmer1MG2Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG2Ch08.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG2Ch08.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG2Ch08.TabIndex = 92;
             this.chkDimmer1MG2Ch08.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG2Ch01
             // 
-            this.chkDimmer1MG2Ch01.AutoSize = true;
-            this.chkDimmer1MG2Ch01.Location = new System.Drawing.Point(330, 243);
+            this.chkDimmer1MG2Ch01.Location = new System.Drawing.Point(323, 238);
             this.chkDimmer1MG2Ch01.Name = "chkDimmer1MG2Ch01";
-            this.chkDimmer1MG2Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG2Ch01.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG2Ch01.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG2Ch01.TabIndex = 64;
             this.chkDimmer1MG2Ch01.UseVisualStyleBackColor = true;
             // 
@@ -10441,9 +10616,9 @@ namespace M1ConfigGenerator
             "10",
             "11",
             "12"});
-            this.cmbDimmer1OCAmps03.Location = new System.Drawing.Point(462, 146);
+            this.cmbDimmer1OCAmps03.Location = new System.Drawing.Point(451, 146);
             this.cmbDimmer1OCAmps03.Name = "cmbDimmer1OCAmps03";
-            this.cmbDimmer1OCAmps03.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCAmps03.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCAmps03.TabIndex = 38;
             // 
             // cmbDimmer1OCTime11
@@ -10458,17 +10633,17 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbDimmer1OCTime11.Location = new System.Drawing.Point(1038, 176);
+            this.cmbDimmer1OCTime11.Location = new System.Drawing.Point(1027, 176);
             this.cmbDimmer1OCTime11.Name = "cmbDimmer1OCTime11";
-            this.cmbDimmer1OCTime11.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCTime11.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCTime11.TabIndex = 58;
             // 
             // chkDimmer1MG4Ch04
             // 
-            this.chkDimmer1MG4Ch04.AutoSize = true;
-            this.chkDimmer1MG4Ch04.Location = new System.Drawing.Point(546, 303);
+            this.chkDimmer1MG4Ch04.Location = new System.Drawing.Point(539, 298);
             this.chkDimmer1MG4Ch04.Name = "chkDimmer1MG4Ch04";
-            this.chkDimmer1MG4Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG4Ch04.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG4Ch04.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG4Ch04.TabIndex = 78;
             this.chkDimmer1MG4Ch04.UseVisualStyleBackColor = true;
             // 
@@ -10485,28 +10660,28 @@ namespace M1ConfigGenerator
             // 
             // chkDimmer1MG4Ch10
             // 
-            this.chkDimmer1MG4Ch10.AutoSize = true;
-            this.chkDimmer1MG4Ch10.Location = new System.Drawing.Point(978, 303);
+            this.chkDimmer1MG4Ch10.Location = new System.Drawing.Point(971, 298);
             this.chkDimmer1MG4Ch10.Name = "chkDimmer1MG4Ch10";
-            this.chkDimmer1MG4Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG4Ch10.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG4Ch10.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG4Ch10.TabIndex = 102;
             this.chkDimmer1MG4Ch10.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG3Ch07
             // 
-            this.chkDimmer1MG3Ch07.AutoSize = true;
-            this.chkDimmer1MG3Ch07.Location = new System.Drawing.Point(762, 273);
+            this.chkDimmer1MG3Ch07.Location = new System.Drawing.Point(755, 268);
             this.chkDimmer1MG3Ch07.Name = "chkDimmer1MG3Ch07";
-            this.chkDimmer1MG3Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG3Ch07.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG3Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG3Ch07.TabIndex = 89;
             this.chkDimmer1MG3Ch07.UseVisualStyleBackColor = true;
             // 
             // chkDimmer1MG2Ch09
             // 
-            this.chkDimmer1MG2Ch09.AutoSize = true;
-            this.chkDimmer1MG2Ch09.Location = new System.Drawing.Point(906, 243);
+            this.chkDimmer1MG2Ch09.Location = new System.Drawing.Point(899, 238);
             this.chkDimmer1MG2Ch09.Name = "chkDimmer1MG2Ch09";
-            this.chkDimmer1MG2Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG2Ch09.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG2Ch09.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG2Ch09.TabIndex = 96;
             this.chkDimmer1MG2Ch09.UseVisualStyleBackColor = true;
             // 
@@ -10527,17 +10702,17 @@ namespace M1ConfigGenerator
             "10",
             "11",
             "12"});
-            this.cmbDimmer1OCAmps06.Location = new System.Drawing.Point(678, 146);
+            this.cmbDimmer1OCAmps06.Location = new System.Drawing.Point(667, 146);
             this.cmbDimmer1OCAmps06.Name = "cmbDimmer1OCAmps06";
-            this.cmbDimmer1OCAmps06.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCAmps06.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCAmps06.TabIndex = 41;
             // 
             // chkDimmer1MG4Ch00
             // 
-            this.chkDimmer1MG4Ch00.AutoSize = true;
-            this.chkDimmer1MG4Ch00.Location = new System.Drawing.Point(258, 303);
+            this.chkDimmer1MG4Ch00.Location = new System.Drawing.Point(251, 298);
             this.chkDimmer1MG4Ch00.Name = "chkDimmer1MG4Ch00";
-            this.chkDimmer1MG4Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkDimmer1MG4Ch00.Padding = new System.Windows.Forms.Padding(10);
+            this.chkDimmer1MG4Ch00.Size = new System.Drawing.Size(35, 24);
             this.chkDimmer1MG4Ch00.TabIndex = 62;
             this.chkDimmer1MG4Ch00.UseVisualStyleBackColor = true;
             // 
@@ -10564,9 +10739,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbDimmer1OCTime09.Location = new System.Drawing.Point(894, 176);
+            this.cmbDimmer1OCTime09.Location = new System.Drawing.Point(883, 176);
             this.cmbDimmer1OCTime09.Name = "cmbDimmer1OCTime09";
-            this.cmbDimmer1OCTime09.Size = new System.Drawing.Size(40, 21);
+            this.cmbDimmer1OCTime09.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCTime09.TabIndex = 56;
             // 
             // tabDimmerGenerated
@@ -23734,181 +23909,6 @@ namespace M1ConfigGenerator
             this.btnHRCard2.Visible = false;
             this.btnHRCard2.Click += new System.EventHandler(this.btnHRCard2_Click);
             // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label24.Location = new System.Drawing.Point(481, 27);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(76, 17);
-            this.label24.TabIndex = 287;
-            this.label24.Text = "Card Letter:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(560, 25);
-            this.textBox1.MaxLength = 4;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(32, 20);
-            this.textBox1.TabIndex = 286;
-            this.textBox1.Text = "A";
-            // 
-            // label26
-            // 
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.SystemColors.Control;
-            this.label26.Location = new System.Drawing.Point(249, 3);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(40, 20);
-            this.label26.TabIndex = 439;
-            this.label26.Text = "0";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label27
-            // 
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.SystemColors.Control;
-            this.label27.Location = new System.Drawing.Point(537, 3);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(40, 20);
-            this.label27.TabIndex = 450;
-            this.label27.Text = "4";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label40
-            // 
-            this.label40.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.SystemColors.Control;
-            this.label40.Location = new System.Drawing.Point(609, 3);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(40, 20);
-            this.label40.TabIndex = 449;
-            this.label40.Text = "5";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label41
-            // 
-            this.label41.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.SystemColors.Control;
-            this.label41.Location = new System.Drawing.Point(681, 3);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(40, 20);
-            this.label41.TabIndex = 448;
-            this.label41.Text = "6";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label42
-            // 
-            this.label42.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.SystemColors.Control;
-            this.label42.Location = new System.Drawing.Point(753, 3);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(40, 20);
-            this.label42.TabIndex = 447;
-            this.label42.Text = "7";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label43
-            // 
-            this.label43.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.SystemColors.Control;
-            this.label43.Location = new System.Drawing.Point(825, 3);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(40, 20);
-            this.label43.TabIndex = 446;
-            this.label43.Text = "8";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label44
-            // 
-            this.label44.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.SystemColors.Control;
-            this.label44.Location = new System.Drawing.Point(897, 3);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(40, 20);
-            this.label44.TabIndex = 445;
-            this.label44.Text = "9";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label45
-            // 
-            this.label45.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.SystemColors.Control;
-            this.label45.Location = new System.Drawing.Point(969, 3);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(40, 20);
-            this.label45.TabIndex = 444;
-            this.label45.Text = "10";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label46
-            // 
-            this.label46.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.SystemColors.Control;
-            this.label46.Location = new System.Drawing.Point(1041, 3);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(40, 20);
-            this.label46.TabIndex = 443;
-            this.label46.Text = "11";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label47
-            // 
-            this.label47.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.SystemColors.Control;
-            this.label47.Location = new System.Drawing.Point(465, 2);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(40, 20);
-            this.label47.TabIndex = 442;
-            this.label47.Text = "3";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label48
-            // 
-            this.label48.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.SystemColors.Control;
-            this.label48.Location = new System.Drawing.Point(393, 3);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(40, 20);
-            this.label48.TabIndex = 441;
-            this.label48.Text = "2";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label49
-            // 
-            this.label49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.SystemColors.Control;
-            this.label49.Location = new System.Drawing.Point(321, 3);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(40, 20);
-            this.label49.TabIndex = 440;
-            this.label49.Text = "1";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.label50.ForeColor = System.Drawing.SystemColors.Control;
-            this.label50.Location = new System.Drawing.Point(232, 243);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(21, 17);
-            this.label50.TabIndex = 451;
-            this.label50.Text = "0x";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.label51.ForeColor = System.Drawing.SystemColors.Control;
-            this.label51.Location = new System.Drawing.Point(232, 273);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(21, 17);
-            this.label51.TabIndex = 452;
-            this.label51.Text = "0x";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -25712,7 +25712,7 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TabPage tabMainBlank;
         private System.Windows.Forms.CheckBox chkHRDCDimmer;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxDimmer1CardLetter;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label40;

@@ -12,10 +12,12 @@ namespace M1ConfigGenerator
         // constructors
         public DimmerCard(int argInt)
         {
-            //SetTestString(argInt);
-
-            M1_SetCardLetter(Convert.ToString(argInt));
+            M1_SetCardLetterOnCreation(Convert.ToString(argInt));
             M1_ChangeConfigName();
+        }
+
+        public void Dimmer_ChangeAddress()
+        {
             // general
             M1_ChangeAddress(m1ParameterNames);
             // card-specific
@@ -44,7 +46,7 @@ namespace M1ConfigGenerator
 
         // DimmerCard MyDimmerCard { get; set; } // ??
 
-        public void CreateDimmerFile()
+        public void Dimmer_CreateFile()
         {
             using (StreamWriter sw = File.CreateText(@GetConfigPath() + M1_GetConfigName()))
             {
@@ -119,9 +121,16 @@ namespace M1ConfigGenerator
         {
             return configPath;
         }
+
         public void SetOCAmps(int argInt, string argString)
         {
             dimmerChOvercurrentAmpsValues[argInt] = argString;
+        }
+
+        public string Dimmer_GetOCAmps(int argInt)
+        {
+            if (dimmerChOvercurrentAmpsValues[argInt] == "0xFFFF") { return "FFFF"; }
+            else { return dimmerChOvercurrentAmpsValues[argInt]; }
         }
 
         public void SetOCTime(int argInt, string argString)
@@ -129,9 +138,19 @@ namespace M1ConfigGenerator
             dimmerChOvercurrentTimeValues[argInt] = argString;
         }
 
-        public  void SetLock(int argInt, bool argBool)
+        public string Dimmer_GetOCTime(int argInt)
+        {
+            return dimmerChOvercurrentTimeValues[argInt];
+        }
+
+        public void SetLock(int argInt, bool argBool)
         {
             dimmerChLockValues[argInt] = argBool ? "True" : "False";
+        }
+
+        public bool Dimmer_GetLock(int argInt)
+        {
+            return dimmerChLockValues[argInt] == "TRUE";
         }
 
         public void SetPWMFreq(int argInt, string argString)
@@ -139,9 +158,19 @@ namespace M1ConfigGenerator
             dimmerChPwmDutyValues[argInt] = argString;
         }
 
+        public string Dimmer_GetPWMFreq(int argInt)
+        {
+            return dimmerChPwmFreqValues[argInt];
+        }
+
         public void SetPWMDuty(int argInt, string argString)
         {
             dimmerChPwmDutyValues[argInt] = argString;
+        }
+
+        public string Dimmer_GetPWMDuty(int argInt)
+        {
+            return dimmerChPwmDutyValues[argInt];
         }
 
         public void SetPWMEnable(int argInt, bool argBool)

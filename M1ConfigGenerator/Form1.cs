@@ -947,6 +947,13 @@ namespace M1ConfigGenerator
                 dimmerLocks[channel].Checked = dimmerObjects[card].Dimmer_GetLock(channel);
                 dimmerPWMFreq[channel].Text = dimmerObjects[card].Dimmer_GetPWMFreq(channel);
                 dimmerPWMDuties[channel].Text = dimmerObjects[card].Dimmer_GetPWMDuty(channel);
+                dimmerPWMEnables[channel].Checked = dimmerObjects[card].GetPWMEnable(channel);
+                dimmerOverrides[channel].Checked = dimmerObjects[card].GetOverride(channel);
+                dimmerTimeouts[channel].Checked = dimmerObjects[card].GetTimeout(channel);
+                dimmerDirections[channel].Text = dimmerObjects[card].GetDirection(channel);
+                dimmerTimeoutTimes[channel].Text = dimmerObjects[card].GetTimeoutTime(channel);
+                dimmerMaxOns[channel].Text = dimmerObjects[card].GetMaxOn(channel);
+                dimmerMaxDurRecs[channel].Text = dimmerObjects[card].GetMaxDurRec(channel);
             }
         }
 
@@ -956,7 +963,7 @@ namespace M1ConfigGenerator
             dimmerObjects.ForEach(dimmerObjects => dimmerObjects.Dimmer_CreateFile());
             CreateDimmerReferenceFile();
             DimmerCardNavColor(dimBtnArray, btnDimmerGenerate);
-            tabControlDimmer.SelectedIndex = 7;
+            tabControlDimmer.SelectedIndex = 1;
             string[] dimmerFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_Dimmer\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
             tbxDimmerGenerated.Lines = dimmerFiles;
         }
@@ -975,7 +982,7 @@ namespace M1ConfigGenerator
         }
 
         private void CheckDimGenerate()
-        {   //cmbStartDimmer.Text
+        {   
             int checkCounter = 0;
             int numDimCards = Convert.ToInt16(cmbStartDimmer.Text);
 
@@ -983,7 +990,7 @@ namespace M1ConfigGenerator
 
             for (int i = 0; i < numDimCards; i++)
             {
-                if (checkDimmer[i] == true)
+                if (dimmerObjects[i].M1_GetCardNumber() != "" && dimmerObjects[i].M1_GetPanelNumber() != "" && dimmerObjects[i].M1_GetBaseIndex() != "")
                 {
                     checkCounter++;
                 }
@@ -1007,40 +1014,81 @@ namespace M1ConfigGenerator
         private void btnDimmerCard1_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard1);
-            tabControlDimmer.SelectedIndex = 1;
-            if (cmbStartDimmer.Text == "Full") tabControlDimmer1QF.SelectedIndex = 1;
-            else tabControlDimmer1QF.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = 0;
+            tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1: 0);
+            Dim_SetAll(DimCardActive);
+            DimCardActive = (int) CardNum.Card1;
+            Dim_GetAll(DimCardActive);
         }
 
         private void btnDimmerCard2_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard2);
-            tabControlDimmer.SelectedIndex = 2;
+            tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
+            Dim_SetAll(DimCardActive);
+            DimCardActive = (int)CardNum.Card2;
+            Dim_GetAll(DimCardActive);
         }
 
         private void btnDimmerCard3_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard3);
-            tabControlDimmer.SelectedIndex = 3;
+            tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
+            Dim_SetAll(DimCardActive);
+            DimCardActive = (int)CardNum.Card3;
+            Dim_GetAll(DimCardActive);
         }
 
         private void btnDimmerCard4_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard4);
-            tabControlDimmer.SelectedIndex = 4;
+            tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
+            Dim_SetAll(DimCardActive);
+            DimCardActive = (int)CardNum.Card4;
+            Dim_GetAll(DimCardActive);
         }
 
         private void btnDimmerCard5_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard5);
-            tabControlDimmer.SelectedIndex = 5;
+            tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
+            Dim_SetAll(DimCardActive);
+            DimCardActive = (int)CardNum.Card5;
+            Dim_GetAll(DimCardActive);
         }
 
         private void btnDimmerCard6_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard6);
-            tabControlDimmer.SelectedIndex = 6;
+            tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
+            Dim_SetAll(DimCardActive);
+            DimCardActive = (int)CardNum.Card6;
+            Dim_GetAll(DimCardActive);
+        }
+
+        private void btnDimmerCard7_Click(object sender, EventArgs e)
+        {
+            DimmerCardNavColor(dimBtnArray, btnDimmerCard6);
+            tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
+            Dim_SetAll(DimCardActive);
+            DimCardActive = (int)CardNum.Card7;
+            Dim_GetAll(DimCardActive);
+        }
+
+        private void btnDimmerCard8_Click(object sender, EventArgs e)
+        {
+            DimmerCardNavColor(dimBtnArray, btnDimmerCard6);
+            tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
+            Dim_SetAll(DimCardActive);
+            DimCardActive = (int)CardNum.Card8;
+            Dim_GetAll(DimCardActive);
         }
 
         private void ShowDimmerNav(int argInt)

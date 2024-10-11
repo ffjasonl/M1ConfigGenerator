@@ -145,7 +145,7 @@ namespace M1ConfigGenerator
 
         public void SetLock(int argInt, bool argBool)
         {
-            dimmerChLockValues[argInt] = argBool ? "True" : "False";
+            dimmerChLockValues[argInt] = argBool ? "TRUE" : "FALSE";
         }
 
         public bool Dimmer_GetLock(int argInt)
@@ -175,12 +175,22 @@ namespace M1ConfigGenerator
 
         public void SetPWMEnable(int argInt, bool argBool)
         {
-            dimmerChPwmEnableValues[argInt] = argBool ? "True" : "False";
+            dimmerChPwmEnableValues[argInt] = argBool ? "TRUE" : "FALSE";
+        }
+
+        public bool GetPWMEnable(int argInt)
+        {
+            return dimmerChPwmEnableValues[argInt] == "TRUE";
         }
 
         public void SetOverride(int argInt, bool argBool)
         {
-            dimmerChOverrideValues[argInt] = argBool ? "True" : "False";
+            dimmerChOverrideValues[argInt] = argBool ? "TRUE" : "FALSE";
+        }
+
+        public bool GetOverride(int argInt)
+        {
+            return dimmerChOverrideValues[argInt] == "TRUE";
         }
 
         public void SetDirection(int argInt, string argString)
@@ -188,9 +198,19 @@ namespace M1ConfigGenerator
             dimmerChDirectionValues[argInt] = argString;
         }
 
+        public string GetDirection(int argInt)
+        {
+            return dimmerChDirectionValues[argInt];
+        }
+
         public void SetTimeout(int argInt, bool argBool)
         {
-            dimmerChTimeoutValues[argInt] = argBool ? "True" : "False";
+            dimmerChTimeoutValues[argInt] = argBool ? "DRVR_TIMEOUT_ENABLED" : "DRVR_TIMEOUT_DISABLED";
+        }
+
+        public bool GetTimeout(int argInt)
+        {
+            return dimmerChTimeoutValues[argInt] == "DRVR_TIMEOUT_ENABLED";
         }
 
         public void SetTimeoutTime(int argInt, string argString)
@@ -198,14 +218,29 @@ namespace M1ConfigGenerator
             dimmerChTimeoutTimeValues[argInt] = argString;
         }
 
+        public string GetTimeoutTime(int argInt)
+        {
+            return dimmerChTimeoutTimeValues[argInt];
+        }
+
         public void SetMaxOn(int argInt, string argString)
         {
             dimmerChMaxOnValues[argInt] = argString;
         }
 
+        public string GetMaxOn(int argInt)
+        {
+            return dimmerChMaxOnValues[argInt];
+        }
+
         public void SetMaxDurRec(int argInt, string argString)
         {
             dimmerChMaxDurRecoveryTimeValues[argInt] = argString;
+        }
+
+        public string GetMaxDurRec(int argInt)
+        {
+            return dimmerChMaxDurRecoveryTimeValues[argInt];
         }
 
         private string configPath = @"M1_DcDriver_Config\Src\M1_Dimmer\DeviceConfigs\";

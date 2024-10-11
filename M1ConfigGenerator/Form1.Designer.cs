@@ -1758,6 +1758,7 @@ namespace M1ConfigGenerator
             this.btnHRCard4 = new System.Windows.Forms.Button();
             this.btnHRCard3 = new System.Windows.Forms.Button();
             this.btnHRCard2 = new System.Windows.Forms.Button();
+            this.tbxStartDimCfgRev = new System.Windows.Forms.TextBox();
             this.panelMenu.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
@@ -1974,6 +1975,7 @@ namespace M1ConfigGenerator
             // tabMainStart
             // 
             this.tabMainStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabMainStart.Controls.Add(this.tbxStartDimCfgRev);
             this.tabMainStart.Controls.Add(this.label21);
             this.tabMainStart.Controls.Add(this.label20);
             this.tabMainStart.Controls.Add(this.tbxStartHRCfgRev);
@@ -23909,6 +23911,16 @@ namespace M1ConfigGenerator
             this.btnHRCard2.Visible = false;
             this.btnHRCard2.Click += new System.EventHandler(this.btnHRCard2_Click);
             // 
+            // tbxStartDimCfgRev
+            // 
+            this.tbxStartDimCfgRev.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxStartDimCfgRev.Location = new System.Drawing.Point(467, 163);
+            this.tbxStartDimCfgRev.MaxLength = 4;
+            this.tbxStartDimCfgRev.Name = "tbxStartDimCfgRev";
+            this.tbxStartDimCfgRev.Size = new System.Drawing.Size(53, 29);
+            this.tbxStartDimCfgRev.TabIndex = 55;
+            this.tbxStartDimCfgRev.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -25727,6 +25739,7 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.TextBox tbxStartDimCfgRev;
     }
 }
 

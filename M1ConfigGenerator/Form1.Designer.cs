@@ -41,6 +41,7 @@ namespace M1ConfigGenerator
             this.panelMain = new System.Windows.Forms.Panel();
             this.tabControlMain = new M1ConfigGenerator.TablessControl();
             this.tabMainStart = new System.Windows.Forms.TabPage();
+            this.tbxStartDimCfgRev = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.tbxStartHRCfgRev = new System.Windows.Forms.TextBox();
@@ -1758,7 +1759,6 @@ namespace M1ConfigGenerator
             this.btnHRCard4 = new System.Windows.Forms.Button();
             this.btnHRCard3 = new System.Windows.Forms.Button();
             this.btnHRCard2 = new System.Windows.Forms.Button();
-            this.tbxStartDimCfgRev = new System.Windows.Forms.TextBox();
             this.panelMenu.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
@@ -2003,6 +2003,16 @@ namespace M1ConfigGenerator
             this.tabMainStart.TabIndex = 1;
             this.tabMainStart.Text = "Start";
             // 
+            // tbxStartDimCfgRev
+            // 
+            this.tbxStartDimCfgRev.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxStartDimCfgRev.Location = new System.Drawing.Point(467, 163);
+            this.tbxStartDimCfgRev.MaxLength = 4;
+            this.tbxStartDimCfgRev.Name = "tbxStartDimCfgRev";
+            this.tbxStartDimCfgRev.Size = new System.Drawing.Size(53, 29);
+            this.tbxStartDimCfgRev.TabIndex = 55;
+            this.tbxStartDimCfgRev.Text = "0";
+            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -2200,7 +2210,6 @@ namespace M1ConfigGenerator
             this.cmbStartDimmer.Name = "cmbStartDimmer";
             this.cmbStartDimmer.Size = new System.Drawing.Size(53, 29);
             this.cmbStartDimmer.TabIndex = 13;
-            this.cmbStartDimmer.Visible = false;
             // 
             // label4
             // 
@@ -23910,16 +23919,6 @@ namespace M1ConfigGenerator
             this.btnHRCard2.UseVisualStyleBackColor = false;
             this.btnHRCard2.Visible = false;
             this.btnHRCard2.Click += new System.EventHandler(this.btnHRCard2_Click);
-            // 
-            // tbxStartDimCfgRev
-            // 
-            this.tbxStartDimCfgRev.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxStartDimCfgRev.Location = new System.Drawing.Point(467, 163);
-            this.tbxStartDimCfgRev.MaxLength = 4;
-            this.tbxStartDimCfgRev.Name = "tbxStartDimCfgRev";
-            this.tbxStartDimCfgRev.Size = new System.Drawing.Size(53, 29);
-            this.tbxStartDimCfgRev.TabIndex = 55;
-            this.tbxStartDimCfgRev.Text = "0";
             // 
             // Form1
             // 

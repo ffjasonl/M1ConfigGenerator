@@ -317,6 +317,7 @@ namespace M1ConfigGenerator
             for (int i = 0; i < cmbStartDimmer.SelectedIndex; i++)
             {
                 dimmerObjects.Add(new DimmerCard(i + 1));
+                dimmerObjects[i].M1_SetCfgRev(tbxStartDimCfgRev.Text);
             }
 
             for (int i = 0; i < cmbStartHC.SelectedIndex; i++)
@@ -339,7 +340,7 @@ namespace M1ConfigGenerator
             // set Config Type here, don't need to mess with Get that adds "0x"
             //tbxAux1CfgType.Text = tbxStartCfgType.Text;
             //tbxBreaker1CfgType.Text = tbxStartCfgType.Text;
-            //tbxDimmer1CfgType.Text = tbxStartCfgType.Text;
+            tbxDimmer1CfgType.Text = tbxStartCfgType.Text;
             tbxHC1CfgType.Text = tbxStartCfgType.Text;
             tbxHRCfgType.Text = tbxStartCfgType.Text;
             //tbxLC1CfgType.Text = tbxStartCfgType.Text;
@@ -424,13 +425,15 @@ namespace M1ConfigGenerator
         private void CheckStartCreate()
         {
             int checkCount = 0;
-            int numCards = 0; 
+            int numCards = 0;
 
             // Aux
 
             // Breaker
 
             // Dimmer
+            if (cmbStartDimmer.Text != "0" && cmbStartDimmer.Text != "") { numCards++; }
+            if (ValidateConfigRev(tbxStartDimCfgRev.Text)) { checkCount++; }
 
             // HC
             if (cmbStartHC.Text != "0" && cmbStartHC.Text != "") { numCards++; }
@@ -685,14 +688,14 @@ namespace M1ConfigGenerator
         }
 
 
-        //########  ########  ########    ###    ##    ## ######## ########  
-        //##     ## ##     ## ##         ## ##   ##   ##  ##       ##     ## 
-        //##     ## ##     ## ##        ##   ##  ##  ##   ##       ##     ## 
-        //########  ########  ######   ##     ## #####    ######   ########  
-        //##     ## ##   ##   ##       ######### ##  ##   ##       ##   ##   
-        //##     ## ##    ##  ##       ##     ## ##   ##  ##       ##    ##  
-        //########  ##     ## ######## ##     ## ##    ## ######## ##     ## 
-        //@Breaker
+        // ########  ########  ########    ###    ##    ## ######## ########  
+        // ##     ## ##     ## ##         ## ##   ##   ##  ##       ##     ## 
+        // ##     ## ##     ## ##        ##   ##  ##  ##   ##       ##     ## 
+        // ########  ########  ######   ##     ## #####    ######   ########  
+        // ##     ## ##   ##   ##       ######### ##  ##   ##       ##   ##   
+        // ##     ## ##    ##  ##       ##     ## ##   ##  ##       ##    ##  
+        // ########  ##     ## ######## ##     ## ##    ## ######## ##     ## 
+        // @Breaker
 
         private void btnBreakerGenerate_Click(object sender, EventArgs e)
         {
@@ -1025,7 +1028,6 @@ namespace M1ConfigGenerator
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard2);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int)CardNum.Card2;
             Dim_GetAll(DimCardActive);
@@ -1035,7 +1037,6 @@ namespace M1ConfigGenerator
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard3);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int)CardNum.Card3;
             Dim_GetAll(DimCardActive);
@@ -1045,7 +1046,6 @@ namespace M1ConfigGenerator
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard4);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int)CardNum.Card4;
             Dim_GetAll(DimCardActive);
@@ -1055,7 +1055,6 @@ namespace M1ConfigGenerator
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard5);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int)CardNum.Card5;
             Dim_GetAll(DimCardActive);
@@ -1065,7 +1064,6 @@ namespace M1ConfigGenerator
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard6);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int)CardNum.Card6;
             Dim_GetAll(DimCardActive);
@@ -1075,7 +1073,6 @@ namespace M1ConfigGenerator
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard6);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int)CardNum.Card7;
             Dim_GetAll(DimCardActive);
@@ -1085,7 +1082,6 @@ namespace M1ConfigGenerator
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard6);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int)CardNum.Card8;
             Dim_GetAll(DimCardActive);

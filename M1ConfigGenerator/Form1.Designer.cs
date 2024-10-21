@@ -1939,7 +1939,7 @@ namespace M1ConfigGenerator
             this.btnMenuNew.Name = "btnMenuNew";
             this.btnMenuNew.Size = new System.Drawing.Size(200, 60);
             this.btnMenuNew.TabIndex = 0;
-            this.btnMenuNew.Text = "1.0.4";
+            this.btnMenuNew.Text = "1.0.5";
             this.btnMenuNew.UseVisualStyleBackColor = false;
             this.btnMenuNew.Click += new System.EventHandler(this.btnMenuNew_Click);
             // 
@@ -2205,7 +2205,9 @@ namespace M1ConfigGenerator
             "3",
             "4",
             "5",
-            "6"});
+            "6",
+            "7",
+            "8"});
             this.cmbStartDimmer.Location = new System.Drawing.Point(376, 161);
             this.cmbStartDimmer.Name = "cmbStartDimmer";
             this.cmbStartDimmer.Size = new System.Drawing.Size(53, 29);
@@ -7323,6 +7325,7 @@ namespace M1ConfigGenerator
             this.btnDimmerCard8.Text = "Card 8";
             this.btnDimmerCard8.UseVisualStyleBackColor = false;
             this.btnDimmerCard8.Visible = false;
+            this.btnDimmerCard8.Click += new System.EventHandler(this.btnDimmerCard8_Click);
             // 
             // btnDimmerCard7
             // 
@@ -7338,6 +7341,7 @@ namespace M1ConfigGenerator
             this.btnDimmerCard7.Text = "Card 7";
             this.btnDimmerCard7.UseVisualStyleBackColor = false;
             this.btnDimmerCard7.Visible = false;
+            this.btnDimmerCard7.Click += new System.EventHandler(this.btnDimmerCard7_Click);
             // 
             // btnDimmerGenerate
             // 
@@ -8784,7 +8788,7 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbDimmer1DirectionCh07.Location = new System.Drawing.Point(743, 182);
+            this.cmbDimmer1DirectionCh07.Location = new System.Drawing.Point(739, 182);
             this.cmbDimmer1DirectionCh07.Name = "cmbDimmer1DirectionCh07";
             this.cmbDimmer1DirectionCh07.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh07.TabIndex = 292;
@@ -8869,7 +8873,7 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbDimmer1DirectionCh03.Location = new System.Drawing.Point(455, 182);
+            this.cmbDimmer1DirectionCh03.Location = new System.Drawing.Point(451, 182);
             this.cmbDimmer1DirectionCh03.Name = "cmbDimmer1DirectionCh03";
             this.cmbDimmer1DirectionCh03.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh03.TabIndex = 287;
@@ -8886,7 +8890,7 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbDimmer1DirectionCh02.Location = new System.Drawing.Point(383, 182);
+            this.cmbDimmer1DirectionCh02.Location = new System.Drawing.Point(379, 182);
             this.cmbDimmer1DirectionCh02.Name = "cmbDimmer1DirectionCh02";
             this.cmbDimmer1DirectionCh02.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh02.TabIndex = 286;
@@ -8903,7 +8907,7 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbDimmer1DirectionCh01.Location = new System.Drawing.Point(311, 182);
+            this.cmbDimmer1DirectionCh01.Location = new System.Drawing.Point(307, 182);
             this.cmbDimmer1DirectionCh01.Name = "cmbDimmer1DirectionCh01";
             this.cmbDimmer1DirectionCh01.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh01.TabIndex = 285;

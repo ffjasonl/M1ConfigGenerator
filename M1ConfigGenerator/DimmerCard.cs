@@ -93,7 +93,7 @@ namespace M1ConfigGenerator
                 {
                     sw.WriteLine("// ### CHANNEL " + Convert.ToString(i) + " ###");
                     sw.WriteLine("#define " + dimmerChLockNames[i] + tabs[7] + dimmerChLockValues[i]);
-                    sw.WriteLine("#define " + dimmerChPwmFreqNames[i] + tabs[6] + dimmerChPwmFreqValues[i]);
+                    sw.WriteLine("#define " + dimmerChPwmFreqNames[i] + tabs[6] + "PWM_" + dimmerChPwmFreqValues[i] + "HZ");
                     sw.WriteLine("#define " + dimmerChPwmDutyNames[i] + tabs[6] + dimmerChPwmDutyValues[i]);
                     sw.WriteLine("#define " + dimmerChPwmEnableNames[i] + tabs[6] + dimmerChPwmEnableValues[i]);
                     sw.WriteLine("#define " + dimmerChOverrideNames[i] + tabs[4] + dimmerChOverrideValues[i]);
@@ -122,7 +122,7 @@ namespace M1ConfigGenerator
             return configPath;
         }
 
-        public void SetOCAmps(int argInt, string argString)
+        public void Dimmer_SetOCAmps(int argInt, string argString)
         {
             dimmerChOvercurrentAmpsValues[argInt] = argString;
         }
@@ -133,7 +133,7 @@ namespace M1ConfigGenerator
             else { return dimmerChOvercurrentAmpsValues[argInt]; }
         }
 
-        public void SetOCTime(int argInt, string argString)
+        public void Dimmer_SetOCTime(int argInt, string argString)
         {
             dimmerChOvercurrentTimeValues[argInt] = argString;
         }
@@ -143,7 +143,7 @@ namespace M1ConfigGenerator
             return dimmerChOvercurrentTimeValues[argInt];
         }
 
-        public void SetLock(int argInt, bool argBool)
+        public void Dimmer_SetLock(int argInt, bool argBool)
         {
             dimmerChLockValues[argInt] = argBool ? "TRUE" : "FALSE";
         }
@@ -153,9 +153,9 @@ namespace M1ConfigGenerator
             return dimmerChLockValues[argInt] == "TRUE";
         }
 
-        public void SetPWMFreq(int argInt, string argString)
+        public void Dimmer_SetPWMFreq(int argInt, string argString)
         {
-            dimmerChPwmDutyValues[argInt] = argString;
+            dimmerChPwmFreqValues[argInt] = argString;
         }
 
         public string Dimmer_GetPWMFreq(int argInt)
@@ -163,7 +163,7 @@ namespace M1ConfigGenerator
             return dimmerChPwmFreqValues[argInt];
         }
 
-        public void SetPWMDuty(int argInt, string argString)
+        public void Dimmer_SetPWMDuty(int argInt, string argString)
         {
             dimmerChPwmDutyValues[argInt] = argString;
         }
@@ -173,72 +173,78 @@ namespace M1ConfigGenerator
             return dimmerChPwmDutyValues[argInt];
         }
 
-        public void SetPWMEnable(int argInt, bool argBool)
+        public void Dimmer_SetPWMEnable(int argInt, bool argBool)
         {
             dimmerChPwmEnableValues[argInt] = argBool ? "TRUE" : "FALSE";
         }
 
-        public bool GetPWMEnable(int argInt)
+        public bool Dimmer_GetPWMEnable(int argInt)
         {
             return dimmerChPwmEnableValues[argInt] == "TRUE";
         }
 
-        public void SetOverride(int argInt, bool argBool)
+        public void Dimmer_SetOverride(int argInt, bool argBool)
         {
             dimmerChOverrideValues[argInt] = argBool ? "TRUE" : "FALSE";
         }
 
-        public bool GetOverride(int argInt)
+        public bool Dimmer_GetOverride(int argInt)
         {
             return dimmerChOverrideValues[argInt] == "TRUE";
         }
 
-        public void SetDirection(int argInt, string argString)
+        public void Dimmer_SetDirection(int argInt, string argString)
         {
-            dimmerChDirectionValues[argInt] = argString;
+            dimmerChDirectionValues[argInt] = "DRVR_STATE_" + argString.ToUpper();
         }
 
-        public string GetDirection(int argInt)
+        public string Dimmer_GetDirection(int argInt)
         {
-            return dimmerChDirectionValues[argInt];
+            if (dimmerChDirectionValues[argInt] == "DRVR_STATE_HIGH")           { return "High"; }
+            else if (dimmerChDirectionValues[argInt] == "DRVR_STATE_LOW")       { return "Low"; }
+            else if (dimmerChDirectionValues[argInt] == "DRVR_STATE_REVERSE")   { return "Reverse"; }
+            else if (dimmerChDirectionValues[argInt] == "DRVR_STATE_FORWARD")   { return "Forward"; }
+            else if (dimmerChDirectionValues[argInt] == "DRVR_STATE_UP")        { return "Up"; }
+            else if (dimmerChDirectionValues[argInt] == "DRVR_STATE_DOWN")      { return "Down"; }
+            else                                                                { return "Off"; }
         }
 
-        public void SetTimeout(int argInt, bool argBool)
+        public void Dimmer_SetTimeout(int argInt, bool argBool)
         {
             dimmerChTimeoutValues[argInt] = argBool ? "DRVR_TIMEOUT_ENABLED" : "DRVR_TIMEOUT_DISABLED";
         }
 
-        public bool GetTimeout(int argInt)
+        public bool Dimmer_GetTimeout(int argInt)
         {
             return dimmerChTimeoutValues[argInt] == "DRVR_TIMEOUT_ENABLED";
         }
 
-        public void SetTimeoutTime(int argInt, string argString)
+        public void Dimmer_SetTimeoutTime(int argInt, string argString)
         {
-            dimmerChTimeoutTimeValues[argInt] = argString;
+            dimmerChTimeoutTimeValues[argInt] = "0x" + argString;
         }
 
-        public string GetTimeoutTime(int argInt)
+        public string Dimmer_GetTimeoutTime(int argInt)
         {
-            return dimmerChTimeoutTimeValues[argInt];
+            return dimmerChTimeoutTimeValues[argInt].Substring(2); // cut off "0x"
         }
 
-        public void SetMaxOn(int argInt, string argString)
+        public void Dimmer_SetMaxOn(int argInt, string argString)
         {
-            dimmerChMaxOnValues[argInt] = argString;
+            dimmerChMaxOnValues[argInt] = "0x" + argString;
         }
 
-        public string GetMaxOn(int argInt)
+        public string Dimmer_GetMaxOn(int argInt)
         {
-            return dimmerChMaxOnValues[argInt];
+            return dimmerChMaxOnValues[argInt].Substring(2); // cut off "0x" }
         }
 
-        public void SetMaxDurRec(int argInt, string argString)
+        public void Dimmer_SetMaxDurRec(int argInt, string argString)
         {
             dimmerChMaxDurRecoveryTimeValues[argInt] = argString;
         }
 
-        public string GetMaxDurRec(int argInt)
+        public string Dimmer_GetMaxDurRec(int argInt)
         {
             return dimmerChMaxDurRecoveryTimeValues[argInt];
         }
@@ -263,7 +269,7 @@ namespace M1ConfigGenerator
         //
         public string[] dimmerChPwmFreqNames = { "PWM_FREQ_CHNL_Z0 ", "PWM_FREQ_CHNL_Z1 ", "PWM_FREQ_CHNL_Z2 ", "PWM_FREQ_CHNL_Z3 ", "PWM_FREQ_CHNL_Z4 ", "PWM_FREQ_CHNL_Z5 ",
                                                 "PWM_FREQ_CHNL_Z6 ", "PWM_FREQ_CHNL_Z7 ", "PWM_FREQ_CHNL_Z8 ", "PWM_FREQ_CHNL_Z9 ", "PWM_FREQ_CHNL_Z10", "PWM_FREQ_CHNL_Z11" };
-        public string[] dimmerChPwmFreqValues = { "PWM_400HZ", "PWM_400HZ", "PWM_400HZ", "PWM_400HZ", "PWM_400HZ", "PWM_400HZ", "PWM_400HZ", "PWM_400HZ", "PWM_400HZ", "PWM_400HZ", "PWM_400HZ", "PWM_400HZ" };
+        public string[] dimmerChPwmFreqValues = { "400", "400", "400", "400", "400", "400", "400", "400", "400", "400", "400", "400" }; // formatting added in print
         //
         public string[] dimmerChPwmDutyNames = { "PWM_DUTY_CHNL_Z0 ", "PWM_DUTY_CHNL_Z1 ", "PWM_DUTY_CHNL_Z2 ", "PWM_DUTY_CHNL_Z3 ", "PWM_DUTY_CHNL_Z4 ", "PWM_DUTY_CHNL_Z5 ",
                                                 "PWM_DUTY_CHNL_Z6 ", "PWM_DUTY_CHNL_Z7 ", "PWM_DUTY_CHNL_Z8 ", "PWM_DUTY_CHNL_Z9 ", "PWM_DUTY_CHNL_Z10", "PWM_DUTY_CHNL_Z11" };

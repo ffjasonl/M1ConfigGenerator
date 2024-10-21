@@ -267,7 +267,7 @@ namespace M1ConfigGenerator
 
         public bool M1_GetDCMotor()
         {
-            return (m1ParameterValues[ENABLE_DC_MOTOR_CMD] == "TRUE" ? true : false);
+            return m1ParameterValues[ENABLE_DC_MOTOR_CMD] == "TRUE";
         }
 
         public void M1_SetShade(bool enabled)
@@ -277,7 +277,7 @@ namespace M1ConfigGenerator
 
         public bool M1_GetShade()
         {
-            return (m1ParameterValues[ENABLE_WINDOW_SHADE_CMD] == "TRUE" ? true : false);
+            return m1ParameterValues[ENABLE_WINDOW_SHADE_CMD] == "TRUE";
         }
         
         public void M1_SetForce(bool enabled)
@@ -287,7 +287,7 @@ namespace M1ConfigGenerator
 
         public bool M1_GetForce()
         {
-            return (m1ParameterValues[ENABLE_FORCE_CMDS] == "TRUE" ? true : false);
+            return m1ParameterValues[ENABLE_FORCE_CMDS] == "TRUE";
         }
 
         public void M1_SetBaseIndex(string index)

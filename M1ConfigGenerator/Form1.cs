@@ -15,7 +15,7 @@ namespace M1ConfigGenerator
     public partial class Form1 : Form
     {
         enum MainTab { Start, Blank, Aux, Breaker, Dimmer, HC, LC, HCRelay }
-        enum CardNum { Card1, Card2, Card3, Card4, Card5, Card6, Card7, Card8, Generate }
+        enum CardNum { Card1, Card2, Card3, Card4, Card5, Card6, Card7, Card8 }
 
         // create global arrays
         Button[] auxBtnArray; Button[] brkBtnArray; Button[] dimBtnArray; Button[] hcBtnArray; Button[] hrBtnArray; Button[] lcBtnArray;
@@ -64,12 +64,6 @@ namespace M1ConfigGenerator
 
         List<DimmerCard> dimmerObjects = new List<DimmerCard>();
         int DimCardActive;
-        ComboBox[] dimCardNum;
-        ComboBox[] dimPanelNum;
-        TextBox[] dimConfigRev;
-        TextBox[] dimConfigType;
-        CheckBox[] dimDCMotor; CheckBox[] dimShade; CheckBox[] dimForce;
-        TextBox[] dimBaseInstance;
         ComboBox[] dimmerOCAmps;
         ComboBox[] dimmerOCTime;
         bool[] dimGroup00; bool[] dimGroup01; bool[] dimGroup02; bool[] dimGroup03; bool[] dimGroup04; bool[] dimGroup05;
@@ -122,11 +116,6 @@ namespace M1ConfigGenerator
         bool[] lc1Group00; bool[] lc1Group01; bool[] lc1Group02; bool[] lc1Group03; bool[] lc1Group04; bool[] lc1Group05; bool[] lc1Group06; bool[] lc1Group07;
         bool[] lc1Group08; bool[] lc1Group09; bool[] lc1Group10; bool[] lc1Group11; bool[] lc1Group12; bool[] lc1Group13; bool[] lc1Group14; bool[] lc1Group15;
         bool[][] lc1Groups;
-        ComboBox[] lcCardNum;
-        ComboBox[] lcPanelNum;
-        TextBox[] lcConfigRev;
-        TextBox[] lcConfigType;
-        CheckBox[] lcStandalone; CheckBox[] lcDCDimmer; CheckBox[] lcDCMotor; CheckBox[] lcShade; CheckBox[] lcForce; TextBox[] lcBaseInstance;
         ComboBox[] lcOCAmps; ComboBox[] lcOCTime; ComboBox[] lcModes; CheckBox[] lcLocks; ComboBox[] lcDirections; 
         TextBox[] lcTimeoutTimes; TextBox[] lcMaxOns; TextBox[] lcMaxDurRecoveries; TextBox[] lcUCAmps; ComboBox[] lcMeasCurTimes;
 
@@ -142,7 +131,12 @@ namespace M1ConfigGenerator
             int[] DimmerColor = { 27, 161, 119 };
             int[] HCColor = { 24, 80, 135 };
             int[] LCColor = { 208, 110, 152 };
+            AuxCardActive = 0;
+            BrkCardActive = 0;
+            DimCardActive = 0;
             HCCardActive = 0;
+            HRCardActive = 0;
+            LCCardActive = 0;
             PopulateArrays();
         }
 
@@ -207,7 +201,7 @@ namespace M1ConfigGenerator
         {
             SetMenuColors(2);
             tabControlMain.SelectedIndex = (int) MainTab.Dimmer;
-            //Dim_GetAll(DimCardActive);
+            Dim_GetAll(DimCardActive);
             DimmerCardNavColor(dimBtnArray, dimBtnArray[DimCardActive]);
             ShowDimmerNav(cmbStartDimmer.SelectedIndex);
         }
@@ -451,12 +445,7 @@ namespace M1ConfigGenerator
         {
             byte[] asciiValue = Encoding.ASCII.GetBytes(argString);
 
-            if (asciiValue[0] >= 49 && asciiValue[0] <= 58) // validates card number from 1-8
-            {
-                return true;
-            }
-            else {  return false; }
-
+            return asciiValue[0] >= 49 && asciiValue[0] < 58; // validates config rev first digit
         }
 
         private bool ValidateConfigType(string argString)
@@ -471,7 +460,7 @@ namespace M1ConfigGenerator
                 characters++;
             }
 
-            return ((characters == 4 && total >= 192 && total < 280) ? true : false); // must be 4 digit hex number, but 0xFFFF is not valid
+            return characters == 4 && total >= 192 && total < 280; // must be 4 digit hex number, but 0xFFFF is not valid
         }
 
         private void ClearCardButtonColor(Button[] argBtnArray)
@@ -549,13 +538,11 @@ namespace M1ConfigGenerator
 
         private void CreateAuxReferenceFile() // card-specific because of the path, which is stored in each card object but isn't related to the Start tab combo box for that card type
         {
-            string[] configNamesReference = { "DevAddrA.h", "DevAddrB.h", "DevAddrC.h", "DevAddrD.h", "DevAddrE.h", "DevAddrF.h" };
-
             using (StreamWriter sw = File.CreateText(@"M1_DcDriver_Config\Src\M1_AuxCard\DeviceConfigs\DevAddrConfigs.h"))
             {
-                for (int i = 0; i < Convert.ToInt16(cmbStartAux.Text); i++)
+                foreach (AuxCard card in auxObjects)
                 {
-                    sw.WriteLine("#include \"" + configNamesReference[i] + "\"");
+                    sw.WriteLine("#include \"DevAddr" + card.M1_GetCardLetter() + ".h\"");
                 }
             }
         }
@@ -728,13 +715,11 @@ namespace M1ConfigGenerator
 
         private void CreateBreakerReferenceFile() // card-specific because of the path, which is stored in each card object but isn't related to the Start tab combo box for that card type
         {
-            string[] configNamesReference = { "DevAddrA.h", "DevAddrB.h", "DevAddrC.h", "DevAddrD.h" };
-
             using (StreamWriter sw = File.CreateText(@"M1_DcDriver_Config\Src\M1_Breaker\DeviceConfigs\DevAddrConfigs.h"))
             {
-                for (int i = 0; i < Convert.ToInt16(cmbStartBreaker.Text); i++)
+                foreach (BreakerCard card in breakerObjects)
                 {
-                    sw.WriteLine("#include \"" + configNamesReference[i] + "\"");
+                    sw.WriteLine("#include \"DevAddr" + card.M1_GetCardLetter() + ".h\"");
                 }
             }
         }
@@ -901,28 +886,28 @@ namespace M1ConfigGenerator
             dimmerObjects[card].M1_SetCardLetter(tbxDimmer1CardLetter.Text);
             dimmerObjects[card].M1_ChangeConfigName();
             dimmerObjects[card].Dimmer_ChangeAddress();
-            dimmerObjects[card].M1_SetCfgRev(dimConfigRev[card].Text);
-            dimmerObjects[card].M1_SetCfgType(dimConfigType[card].Text);
+            dimmerObjects[card].M1_SetCfgRev(tbxDimmer1CfgRev.Text);
+            dimmerObjects[card].M1_SetCfgType(tbxDimmer1CfgType.Text);
             dimmerObjects[card].M1_SetDCDimmer(true); // hard coding for dimmer card
-            dimmerObjects[card].M1_SetDCMotor(dimDCMotor[card].Checked);
-            dimmerObjects[card].M1_SetShade(dimShade[card].Checked);
-            dimmerObjects[card].M1_SetForce(dimForce[card].Checked);
-            dimmerObjects[card].M1_SetBaseIndex(dimBaseInstance[card].Text);
+            dimmerObjects[card].M1_SetDCMotor(chkDimmer1DCMotor.Checked);
+            dimmerObjects[card].M1_SetShade(chkDimmer1Shade.Checked);
+            dimmerObjects[card].M1_SetForce(chkDimmer1Force.Checked);
+            dimmerObjects[card].M1_SetBaseIndex(tbxDimmer1BaseIndex.Text);
             for (int channel = 0; channel < 12; channel++)
             {
-                dimmerObjects[card].SetOCAmps(channel, dimmerOCAmps[channel].Text);
-                dimmerObjects[card].SetOCTime(channel, dimmerOCTime[channel].Text);
+                dimmerObjects[card].Dimmer_SetOCAmps(channel, dimmerOCAmps[channel].Text);
+                dimmerObjects[card].Dimmer_SetOCTime(channel, dimmerOCTime[channel].Text);
                 dimmerObjects[card].M1_SetGroup0(dimGroups[channel], channel); // takes care of all 4 groups
-                dimmerObjects[card].SetLock(channel, dimmerLocks[channel].Checked);
-                dimmerObjects[card].SetPWMFreq(channel, dimmerPWMFreq[channel].Text);
-                dimmerObjects[card].SetPWMDuty(channel, dimmerPWMDuties[channel].Text);
-                dimmerObjects[card].SetPWMEnable(channel, dimmerPWMEnables[channel].Checked);
-                dimmerObjects[card].SetOverride(channel, dimmerOverrides[channel].Checked);
-                dimmerObjects[card].SetTimeout(channel, dimmerTimeouts[channel].Checked);
-                dimmerObjects[card].SetDirection(channel, dimmerDirections[channel].Text);
-                dimmerObjects[card].SetTimeoutTime(channel, dimmerTimeoutTimes[channel].Text);
-                dimmerObjects[card].SetMaxOn(channel, dimmerMaxOns[channel].Text);
-                dimmerObjects[card].SetMaxDurRec(channel, dimmerMaxDurRecs[channel].Text);
+                dimmerObjects[card].Dimmer_SetLock(channel, dimmerLocks[channel].Checked);
+                dimmerObjects[card].Dimmer_SetPWMFreq(channel, dimmerPWMFreq[channel].Text);
+                dimmerObjects[card].Dimmer_SetPWMDuty(channel, dimmerPWMDuties[channel].Text);
+                dimmerObjects[card].Dimmer_SetPWMEnable(channel, dimmerPWMEnables[channel].Checked);
+                dimmerObjects[card].Dimmer_SetOverride(channel, dimmerOverrides[channel].Checked);
+                dimmerObjects[card].Dimmer_SetTimeout(channel, dimmerTimeouts[channel].Checked);
+                dimmerObjects[card].Dimmer_SetDirection(channel, dimmerDirections[channel].Text);
+                dimmerObjects[card].Dimmer_SetTimeoutTime(channel, dimmerTimeoutTimes[channel].Text);
+                dimmerObjects[card].Dimmer_SetMaxOn(channel, dimmerMaxOns[channel].Text);
+                dimmerObjects[card].Dimmer_SetMaxDurRec(channel, dimmerMaxDurRecs[channel].Text);
             }
         }
 
@@ -950,13 +935,13 @@ namespace M1ConfigGenerator
                 dimmerLocks[channel].Checked = dimmerObjects[card].Dimmer_GetLock(channel);
                 dimmerPWMFreq[channel].Text = dimmerObjects[card].Dimmer_GetPWMFreq(channel);
                 dimmerPWMDuties[channel].Text = dimmerObjects[card].Dimmer_GetPWMDuty(channel);
-                dimmerPWMEnables[channel].Checked = dimmerObjects[card].GetPWMEnable(channel);
-                dimmerOverrides[channel].Checked = dimmerObjects[card].GetOverride(channel);
-                dimmerTimeouts[channel].Checked = dimmerObjects[card].GetTimeout(channel);
-                dimmerDirections[channel].Text = dimmerObjects[card].GetDirection(channel);
-                dimmerTimeoutTimes[channel].Text = dimmerObjects[card].GetTimeoutTime(channel);
-                dimmerMaxOns[channel].Text = dimmerObjects[card].GetMaxOn(channel);
-                dimmerMaxDurRecs[channel].Text = dimmerObjects[card].GetMaxDurRec(channel);
+                dimmerPWMEnables[channel].Checked = dimmerObjects[card].Dimmer_GetPWMEnable(channel);
+                dimmerOverrides[channel].Checked = dimmerObjects[card].Dimmer_GetOverride(channel);
+                dimmerTimeouts[channel].Checked = dimmerObjects[card].Dimmer_GetTimeout(channel);
+                dimmerDirections[channel].Text = dimmerObjects[card].Dimmer_GetDirection(channel);
+                dimmerTimeoutTimes[channel].Text = dimmerObjects[card].Dimmer_GetTimeoutTime(channel);
+                dimmerMaxOns[channel].Text = dimmerObjects[card].Dimmer_GetMaxOn(channel);
+                dimmerMaxDurRecs[channel].Text = dimmerObjects[card].Dimmer_GetMaxDurRec(channel);
             }
         }
 
@@ -973,13 +958,11 @@ namespace M1ConfigGenerator
 
         private void CreateDimmerReferenceFile() // card-specific because of the path, which is stored in each card object but isn't related to the Start tab combo box for that card type
         {
-            string[] configNamesReference = { "DevAddrA.h", "DevAddrB.h", "DevAddrC.h", "DevAddrD.h", "DevAddrE.h", "DevAddrF.h" };
-
             using (StreamWriter sw = File.CreateText(@"M1_DcDriver_Config\Src\M1_Dimmer\DeviceConfigs\DevAddrConfigs.h"))
             {
-                for (int i = 0; i < Convert.ToInt16(cmbStartDimmer.Text); i++)
+                foreach (DimmerCard card in dimmerObjects)
                 {
-                    sw.WriteLine("#include \"" + configNamesReference[i] + "\"");
+                    sw.WriteLine("#include \"DevAddr" + card.M1_GetCardLetter() + ".h\"");
                 }
             }
         }
@@ -989,11 +972,9 @@ namespace M1ConfigGenerator
             int checkCounter = 0;
             int numDimCards = Convert.ToInt16(cmbStartDimmer.Text);
 
-            bool[] checkDimmer = new bool[] { CheckDimmer1() };
-
             for (int i = 0; i < numDimCards; i++)
             {
-                if (dimmerObjects[i].M1_GetCardNumber() != "" && dimmerObjects[i].M1_GetPanelNumber() != "" && dimmerObjects[i].M1_GetBaseIndex() != "")
+                if (dimmerObjects[i].M1_GetCardNumber() != "" && dimmerObjects[i].M1_GetPanelNumber() != "" && dimmerObjects[i].M1_GetBaseIndex() != "") 
                 {
                     checkCounter++;
                 }
@@ -1007,11 +988,6 @@ namespace M1ConfigGenerator
             {
                 btnDimmerGenerate.Visible = false;
             }
-        }
-
-        private bool CheckDimmer1()
-        {
-            return ((cmbDimmer1CardNum.Text != "") && (cmbDimmer1PanelNum.Text != "") && (tbxDimmer1BaseIndex.Text != ""));
         }
 
         private void btnDimmerCard1_Click(object sender, EventArgs e)
@@ -1028,8 +1004,9 @@ namespace M1ConfigGenerator
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard2);
             tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
-            DimCardActive = (int)CardNum.Card2;
+            DimCardActive = (int) CardNum.Card2;
             Dim_GetAll(DimCardActive);
         }
 
@@ -1037,8 +1014,9 @@ namespace M1ConfigGenerator
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard3);
             tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
-            DimCardActive = (int)CardNum.Card3;
+            DimCardActive = (int) CardNum.Card3;
             Dim_GetAll(DimCardActive);
         }
 
@@ -1046,8 +1024,9 @@ namespace M1ConfigGenerator
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard4);
             tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
-            DimCardActive = (int)CardNum.Card4;
+            DimCardActive = (int) CardNum.Card4;
             Dim_GetAll(DimCardActive);
         }
 
@@ -1055,8 +1034,9 @@ namespace M1ConfigGenerator
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard5);
             tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
-            DimCardActive = (int)CardNum.Card5;
+            DimCardActive = (int) CardNum.Card5;
             Dim_GetAll(DimCardActive);
         }
 
@@ -1064,26 +1044,29 @@ namespace M1ConfigGenerator
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard6);
             tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
-            DimCardActive = (int)CardNum.Card6;
+            DimCardActive = (int) CardNum.Card6;
             Dim_GetAll(DimCardActive);
         }
 
         private void btnDimmerCard7_Click(object sender, EventArgs e)
         {
-            DimmerCardNavColor(dimBtnArray, btnDimmerCard6);
+            DimmerCardNavColor(dimBtnArray, btnDimmerCard7);
             tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
-            DimCardActive = (int)CardNum.Card7;
+            DimCardActive = (int) CardNum.Card7;
             Dim_GetAll(DimCardActive);
         }
 
         private void btnDimmerCard8_Click(object sender, EventArgs e)
         {
-            DimmerCardNavColor(dimBtnArray, btnDimmerCard6);
+            DimmerCardNavColor(dimBtnArray, btnDimmerCard8);
             tabControlDimmer.SelectedIndex = 0;
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
-            DimCardActive = (int)CardNum.Card8;
+            DimCardActive = (int) CardNum.Card8;
             Dim_GetAll(DimCardActive);
         }
 
@@ -1103,17 +1086,20 @@ namespace M1ConfigGenerator
 
         private void cmbDimmer1CardNum_SelectedIndexChanged(object sender, EventArgs e)
         {
+            dimmerObjects[DimCardActive].M1_SetCardNumber(cmbDimmer1CardNum.Text);
             CheckDimGenerate();
         }
 
         private void cmbDimmer1PanelNum_SelectedIndexChanged(object sender, EventArgs e)
         {
+            dimmerObjects[DimCardActive].M1_SetPanelNumber(cmbDimmer1PanelNum.Text);
             CheckDimGenerate();
         }
 
 
         private void tbxDimmer1BaseIndex_TextChanged(object sender, EventArgs e)
         {
+            dimmerObjects[DimCardActive].M1_SetBaseIndex(tbxDimmer1BaseIndex.Text);
             lblDimmer1Ch00.Text = ChangeChannelLabel(tbxDimmer1BaseIndex.Text, 0);
             lblDimmer1Ch01.Text = ChangeChannelLabel(tbxDimmer1BaseIndex.Text, 1);
             lblDimmer1Ch02.Text = ChangeChannelLabel(tbxDimmer1BaseIndex.Text, 2);
@@ -1328,6 +1314,7 @@ namespace M1ConfigGenerator
         {
             HCCardNavColor(hcBtnArray, btnHCCard2);
             tabControlHC.SelectedIndex = 0;
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card2;
             HC_GetAll(HCCardActive);
@@ -1337,6 +1324,7 @@ namespace M1ConfigGenerator
         {
             HCCardNavColor(hcBtnArray, btnHCCard3);
             tabControlHC.SelectedIndex = 0;
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card3;
             HC_GetAll(HCCardActive);
@@ -1346,6 +1334,7 @@ namespace M1ConfigGenerator
         {
             HCCardNavColor(hcBtnArray, btnHCCard4);
             tabControlHC.SelectedIndex = 0;
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card4;
             HC_GetAll(HCCardActive);
@@ -1355,6 +1344,7 @@ namespace M1ConfigGenerator
         {
             HCCardNavColor(hcBtnArray, btnHCCard5);
             tabControlHC.SelectedIndex = 0;
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card5;
             HC_GetAll(HCCardActive);
@@ -1364,6 +1354,7 @@ namespace M1ConfigGenerator
         {
             HCCardNavColor(hcBtnArray, btnHCCard6);
             tabControlHC.SelectedIndex = 0;
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card6;
             HC_GetAll(HCCardActive);
@@ -1373,6 +1364,7 @@ namespace M1ConfigGenerator
         {
             HCCardNavColor(hcBtnArray, btnHCCard7);
             tabControlHC.SelectedIndex = 0;
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card7;
             HC_GetAll(HCCardActive);
@@ -1382,6 +1374,7 @@ namespace M1ConfigGenerator
         {
             HCCardNavColor(hcBtnArray, btnHCCard8);
             tabControlHC.SelectedIndex = 0;
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card8;
             HC_GetAll(HCCardActive);
@@ -3346,29 +3339,29 @@ namespace M1ConfigGenerator
             for (int card = 0; card < Convert.ToInt16(cmbStartLC.Text); card++)
             {
                 //lcObjects[card].M1_SetDevAddr(lcCardNum[card].SelectedIndex, lcPanelNum[card].SelectedIndex);
-                lcObjects[card].M1_SetCfgRev(lcConfigRev[card].Text);
-                lcObjects[card].M1_SetCfgType(lcConfigType[card].Text);
-                lcObjects[card].M1_SetDCDimmer(lcDCDimmer[card].Checked);
-                lcObjects[card].M1_SetDCMotor(lcDCMotor[card].Checked);
-                lcObjects[card].M1_SetShade(lcShade[card].Checked);
-                lcObjects[card].M1_SetForce(lcForce[card].Checked);
-                lcObjects[card].M1_SetBaseIndex(lcBaseInstance[card].Text);
-                for (int channel = 0; channel < 16; channel++)
-                {
-                    if (lcStandalone[card].Checked == false) // only set overcurrent parameters if it's not a standalone card
-                    {
-                        lcObjects[card].SetOCAmps(channel, lcOCAmps[channel].Text);
-                        lcObjects[card].SetOCTime(channel, lcOCTime[channel].Text);
-                    }
-                    //lcObjects[card].M1_SetGroup0(lcGroups[card][channel], channel); // takes care of all 4 groups
-                    lcObjects[card].SetLock(lcLocks[channel].Checked, channel);
-                    lcObjects[card].SetDirection(lcDirections[channel].Text, channel);
-                    lcObjects[card].SetTimeoutTimes(lcTimeoutTimes[channel].Text, channel);
-                    lcObjects[card].SetMaxOn(lcMaxOns[channel].Text, channel);
-                    lcObjects[card].SetMaxDurRecovery(lcMaxDurRecoveries[channel].Text, channel);
-                    lcObjects[card].SetUCAmp(lcUCAmps[channel].Text, channel);
-                    lcObjects[card].SetMeasCurTime(lcMeasCurTimes[channel].Text, channel);
-                }
+                //lcObjects[card].M1_SetCfgRev(lcConfigRev[card].Text);
+                //lcObjects[card].M1_SetCfgType(lcConfigType[card].Text);
+                //lcObjects[card].M1_SetDCDimmer(lcDCDimmer[card].Checked);
+                //lcObjects[card].M1_SetDCMotor(lcDCMotor[card].Checked);
+                //lcObjects[card].M1_SetShade(lcShade[card].Checked);
+                //lcObjects[card].M1_SetForce(lcForce[card].Checked);
+                //lcObjects[card].M1_SetBaseIndex(lcBaseInstance[card].Text);
+                //for (int channel = 0; channel < 16; channel++)
+                //{
+                //    if (lcStandalone[card].Checked == false) // only set overcurrent parameters if it's not a standalone card
+                //    {
+                //        lcObjects[card].SetOCAmps(channel, lcOCAmps[channel].Text);
+                //        lcObjects[card].SetOCTime(channel, lcOCTime[channel].Text);
+                //    }
+                //    //lcObjects[card].M1_SetGroup0(lcGroups[card][channel], channel); // takes care of all 4 groups
+                //    lcObjects[card].SetLock(lcLocks[channel].Checked, channel);
+                //    lcObjects[card].SetDirection(lcDirections[channel].Text, channel);
+                //    lcObjects[card].SetTimeoutTimes(lcTimeoutTimes[channel].Text, channel);
+                //    lcObjects[card].SetMaxOn(lcMaxOns[channel].Text, channel);
+                //    lcObjects[card].SetMaxDurRecovery(lcMaxDurRecoveries[channel].Text, channel);
+                //    lcObjects[card].SetUCAmp(lcUCAmps[channel].Text, channel);
+                //    lcObjects[card].SetMeasCurTime(lcMeasCurTimes[channel].Text, channel);
+                //}
             }
 
             lcObjects.ForEach(lcObjects => lcObjects.CreateLCFile());
@@ -3381,13 +3374,11 @@ namespace M1ConfigGenerator
 
         private void CreateLCReferenceFile()
         {
-            string[] configNamesReference = { "DevAddrA.h", "DevAddrB.h", "DevAddrC.h", "DevAddrD.h", "DevAddrE.h", "DevAddrF.h" };
-
             using (StreamWriter sw = File.CreateText(@"M1_DcDriver_Config\Src\M1_LC_Bridge\DeviceConfigs\DevAddrConfigs.h"))
             {
-                for (int i = 0; i < Convert.ToInt16(cmbStartLC.Text); i++)
+                foreach (LCCard card in lcObjects)
                 {
-                    sw.WriteLine("#include \"" + configNamesReference[i] + "\"");
+                    sw.WriteLine("#include \"DevAddr" + card.M1_GetCardLetter() + ".h\"");
                 }
             }
         }
@@ -3422,42 +3413,47 @@ namespace M1ConfigGenerator
             return ((cmbLC1CardNum.Text != "") && (cmbLC1PanelNum.Text != "") && (tbxLC1BaseIndex.Text != ""));
         }
 
-       private void btnLCCard1_Click(object sender, EventArgs e)
+        private void btnLCCard1_Click(object sender, EventArgs e)
         {
             LCCardNavColor(lcBtnArray, btnLCCard1);
-            tabControlLC.SelectedIndex = 1;
+            tabControlLC.SelectedIndex = 0;
             tabControlLC1QF.SelectedIndex = 0;
-
+            LCCardActive = (int)CardNum.Card1;
         }
 
         private void btnLCCard2_Click(object sender, EventArgs e)
         {
             LCCardNavColor(lcBtnArray, btnLCCard2);
-            tabControlLC.SelectedIndex = 2;
+            tabControlLC.SelectedIndex = 0;
+            LCCardActive = (int)CardNum.Card1;
         }
 
         private void btnLCCard3_Click(object sender, EventArgs e)
         {
             LCCardNavColor(lcBtnArray, btnLCCard3);
-            tabControlLC.SelectedIndex = 3;
+            tabControlLC.SelectedIndex = 0;
+            LCCardActive = (int)CardNum.Card1;
         }
 
         private void btnLCCard4_Click(object sender, EventArgs e)
         {
             LCCardNavColor(lcBtnArray, btnLCCard4);
-            tabControlLC.SelectedIndex = 4;
+            tabControlLC.SelectedIndex = 0;
+            LCCardActive = (int)CardNum.Card1;
         }
 
         private void btnLCCard5_Click(object sender, EventArgs e)
         {
             LCCardNavColor(lcBtnArray, btnLCCard5);
-            tabControlLC.SelectedIndex = 5;
+            tabControlLC.SelectedIndex = 0;
+            LCCardActive = (int)CardNum.Card1;
         }
 
         private void btnLCCard6_Click(object sender, EventArgs e)
         {
             LCCardNavColor(lcBtnArray, btnLCCard6);
-            tabControlLC.SelectedIndex = 6;
+            tabControlLC.SelectedIndex = 0;
+            LCCardActive = (int)CardNum.Card1;
         }
 
         private void ShowLCNav(int argInt)

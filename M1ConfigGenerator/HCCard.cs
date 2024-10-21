@@ -247,7 +247,7 @@ namespace M1ConfigGenerator
 
         public bool HC_GetRGB()
         {
-            return (hcRGBValue[0] == "TRUE" ? true : false);
+            return hcRGBValue[0] == "TRUE";
         }
 
         public void HC_SetLock(int argInt, bool argBool)
@@ -257,7 +257,7 @@ namespace M1ConfigGenerator
 
         public bool HC_GetLock(int argInt)
         {
-            return (hcChLockValues[argInt] == "TRUE" ? true : false);
+            return hcChLockValues[argInt] == "TRUE";
         }
 
         public void HC_SetPWMDuty(int argInt, string argString)
@@ -277,7 +277,7 @@ namespace M1ConfigGenerator
 
         public bool HC_GetPWMEnable(int argInt)
         {
-            return (hcChPwmEnableValues[argInt] == "TRUE" ? true : false);
+            return hcChPwmEnableValues[argInt] == "TRUE";
         }
 
 
@@ -288,21 +288,21 @@ namespace M1ConfigGenerator
 
         public string HC_GetDirection(int argInt)
         {
-            if (hcChDirectionValues[argInt] == "DRVR_STATE_HIGH") { return "High"; }
-            else if (hcChDirectionValues[argInt] == "DRVR_STATE_LOW") { return "Low"; }
-            else if (hcChDirectionValues[argInt] == "DRVR_STATE_REVERSE") { return "Reverse"; }
-            else if (hcChDirectionValues[argInt] == "DRVR_STATE_FORWARD") { return "Forward"; }
-            else if (hcChDirectionValues[argInt] == "DRVR_STATE_UP") { return "Up"; }
-            else if (hcChDirectionValues[argInt] == "DRVR_STATE_DOWN") { return "Down"; }
-            else { return "Off"; }
+            if (hcChDirectionValues[argInt] == "DRVR_STATE_HIGH")           { return "High"; }
+            else if (hcChDirectionValues[argInt] == "DRVR_STATE_LOW")       { return "Low"; }
+            else if (hcChDirectionValues[argInt] == "DRVR_STATE_REVERSE")   { return "Reverse"; }
+            else if (hcChDirectionValues[argInt] == "DRVR_STATE_FORWARD")   { return "Forward"; }
+            else if (hcChDirectionValues[argInt] == "DRVR_STATE_UP")        { return "Up"; }
+            else if (hcChDirectionValues[argInt] == "DRVR_STATE_DOWN")      { return "Down"; }
+            else                                                            { return "Off"; }
         }
 
         public void HC_SetMode(int argInt, string argString)
         {
-            if (argString == "High" || argString == "Low") { hcChModeValues[argInt] = "DRVR_TYPE_" + argString.ToUpper() + "_SIDE"; }
-            else if (argString == "Half Br") { hcChModeValues[argInt] = "DRVR_TYPE_HALF_BRIDGE"; }
-            else if (argString == "H Br") { hcChModeValues[argInt] = "DRVR_TYPE_H_BRIDGE"; }
-            else { hcChModeValues[argInt] = "DRVR_TYPE_" + argString.ToUpper(); }
+            if (argString == "High" || argString == "Low")  { hcChModeValues[argInt] = "DRVR_TYPE_" + argString.ToUpper() + "_SIDE"; }
+            else if (argString == "Half Br")                { hcChModeValues[argInt] = "DRVR_TYPE_HALF_BRIDGE"; }
+            else if (argString == "H Br")                   { hcChModeValues[argInt] = "DRVR_TYPE_H_BRIDGE"; }
+            else                                            { hcChModeValues[argInt] = "DRVR_TYPE_" + argString.ToUpper(); }
         }
 
         public string HC_GetMode(int argInt)

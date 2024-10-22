@@ -908,40 +908,44 @@ namespace M1ConfigGenerator
                 dimmerObjects[card].Dimmer_SetTimeoutTime(channel, dimmerTimeoutTimes[channel].Text);
                 dimmerObjects[card].Dimmer_SetMaxOn(channel, dimmerMaxOns[channel].Text);
                 dimmerObjects[card].Dimmer_SetMaxDurRec(channel, dimmerMaxDurRecs[channel].Text);
+                dimmerObjects[card].Dimmer_SetMeasuredCurrTimeConst(channel, dimmerMeasCurTimes[channel].Text);
+                dimmerObjects[card].Dimmer_SetUCAmps(channel, dimmerUCAmps[channel].Text);
             }
         }
 
         public void Dim_GetAll(int card)
         {
-            chkTabVisDimmer1.Checked = dimmerObjects[card].M1_GetFullSetup();
+            chkTabVisDimmer1.Checked    = dimmerObjects[card].M1_GetFullSetup();
             if (dimmerObjects[card].M1_GetCardNumber() == "") { BlankComboBox(cmbDimmer1CardNum); }
             else { cmbDimmer1CardNum.Text = dimmerObjects[card].M1_GetCardNumber(); }
             if (dimmerObjects[card].M1_GetPanelNumber() == "") { BlankComboBox(cmbDimmer1PanelNum); }
             else { cmbDimmer1PanelNum.Text = dimmerObjects[card].M1_GetPanelNumber(); }
-            tbxDimmer1CfgRev.Text = dimmerObjects[card].M1_GetCfgRev();
-            tbxDimmer1CardLetter.Text = dimmerObjects[card].M1_GetCardLetter();
-            chkDimmer1DCMotor.Checked = dimmerObjects[card].M1_GetDCMotor();
-            chkDimmer1Shade.Checked = dimmerObjects[card].M1_GetShade();
-            chkDimmer1Force.Checked = dimmerObjects[card].M1_GetForce();
-            tbxDimmer1BaseIndex.Text = dimmerObjects[card].M1_GetBaseIndex();
+            tbxDimmer1CfgRev.Text       = dimmerObjects[card].M1_GetCfgRev();
+            tbxDimmer1CardLetter.Text   = dimmerObjects[card].M1_GetCardLetter();
+            chkDimmer1DCMotor.Checked   = dimmerObjects[card].M1_GetDCMotor();
+            chkDimmer1Shade.Checked     = dimmerObjects[card].M1_GetShade();
+            chkDimmer1Force.Checked     = dimmerObjects[card].M1_GetForce();
+            tbxDimmer1BaseIndex.Text    = dimmerObjects[card].M1_GetBaseIndex();
             for (int channel = 0; channel < 12; channel++)
             {
-                dimmerOCAmps[channel].Text = dimmerObjects[card].Dimmer_GetOCAmps(channel);
-                dimmerOCTime[channel].Text = dimmerObjects[card].Dimmer_GetOCTime(channel);
-                dimGetGroups[channel][0].Checked = dimmerObjects[card].M1_GetGroup0(channel);
-                dimGetGroups[channel][1].Checked = dimmerObjects[card].M1_GetGroup1(channel);
-                dimGetGroups[channel][2].Checked = dimmerObjects[card].M1_GetGroup2(channel);
-                dimGetGroups[channel][3].Checked = dimmerObjects[card].M1_GetGroup3(channel);
-                dimmerLocks[channel].Checked = dimmerObjects[card].Dimmer_GetLock(channel);
-                dimmerPWMFreq[channel].Text = dimmerObjects[card].Dimmer_GetPWMFreq(channel);
-                dimmerPWMDuties[channel].Text = dimmerObjects[card].Dimmer_GetPWMDuty(channel);
-                dimmerPWMEnables[channel].Checked = dimmerObjects[card].Dimmer_GetPWMEnable(channel);
-                dimmerOverrides[channel].Checked = dimmerObjects[card].Dimmer_GetOverride(channel);
-                dimmerTimeouts[channel].Checked = dimmerObjects[card].Dimmer_GetTimeout(channel);
-                dimmerDirections[channel].Text = dimmerObjects[card].Dimmer_GetDirection(channel);
-                dimmerTimeoutTimes[channel].Text = dimmerObjects[card].Dimmer_GetTimeoutTime(channel);
-                dimmerMaxOns[channel].Text = dimmerObjects[card].Dimmer_GetMaxOn(channel);
-                dimmerMaxDurRecs[channel].Text = dimmerObjects[card].Dimmer_GetMaxDurRec(channel);
+                dimmerOCAmps[channel].Text          = dimmerObjects[card].Dimmer_GetOCAmps(channel);
+                dimmerOCTime[channel].Text          = dimmerObjects[card].Dimmer_GetOCTime(channel);
+                dimGetGroups[channel][0].Checked    = dimmerObjects[card].M1_GetGroup0(channel);
+                dimGetGroups[channel][1].Checked    = dimmerObjects[card].M1_GetGroup1(channel);
+                dimGetGroups[channel][2].Checked    = dimmerObjects[card].M1_GetGroup2(channel);
+                dimGetGroups[channel][3].Checked    = dimmerObjects[card].M1_GetGroup3(channel);
+                dimmerLocks[channel].Checked        = dimmerObjects[card].Dimmer_GetLock(channel);
+                dimmerPWMFreq[channel].Text         = dimmerObjects[card].Dimmer_GetPWMFreq(channel);
+                dimmerPWMDuties[channel].Text       = dimmerObjects[card].Dimmer_GetPWMDuty(channel);
+                dimmerPWMEnables[channel].Checked   = dimmerObjects[card].Dimmer_GetPWMEnable(channel);
+                dimmerOverrides[channel].Checked    = dimmerObjects[card].Dimmer_GetOverride(channel);
+                dimmerTimeouts[channel].Checked     = dimmerObjects[card].Dimmer_GetTimeout(channel);
+                dimmerDirections[channel].Text      = dimmerObjects[card].Dimmer_GetDirection(channel);
+                dimmerTimeoutTimes[channel].Text    = dimmerObjects[card].Dimmer_GetTimeoutTime(channel);
+                dimmerMaxOns[channel].Text          = dimmerObjects[card].Dimmer_GetMaxOn(channel);
+                dimmerMaxDurRecs[channel].Text      = dimmerObjects[card].Dimmer_GetMaxDurRec(channel);
+                dimmerMeasCurTimes[channel].Text    = dimmerObjects[card].Dimmer_GetMeasuredCurrTimeConst(channel);
+                dimmerUCAmps[channel].Text          = dimmerObjects[card].Dimmer_GetUCAmps(channel);
             }
         }
 
@@ -3654,7 +3658,7 @@ namespace M1ConfigGenerator
             dimmerOCAmps = new ComboBox[] { cmbDimmer1OCAmps00, cmbDimmer1OCAmps01, cmbDimmer1OCAmps02, cmbDimmer1OCAmps03, cmbDimmer1OCAmps04, cmbDimmer1OCAmps05, cmbDimmer1OCAmps06, cmbDimmer1OCAmps07, cmbDimmer1OCAmps08, cmbDimmer1OCAmps09, cmbDimmer1OCAmps10, cmbDimmer1OCAmps11 };
             dimmerOCTime = new ComboBox[] { cmbDimmer1OCTime00, cmbDimmer1OCTime01, cmbDimmer1OCTime02, cmbDimmer1OCTime03, cmbDimmer1OCTime04, cmbDimmer1OCTime05, cmbDimmer1OCTime06, cmbDimmer1OCTime07, cmbDimmer1OCTime08, cmbDimmer1OCTime09, cmbDimmer1OCTime10, cmbDimmer1OCTime11 };
             dimmerLocks = new CheckBox[] { chkDimmer1Lock00, chkDimmer1Lock01, chkDimmer1Lock02, chkDimmer1Lock03, chkDimmer1Lock04, chkDimmer1Lock05, chkDimmer1Lock06, chkDimmer1Lock07, chkDimmer1Lock08, chkDimmer1Lock09, chkDimmer1Lock10, chkDimmer1Lock11};
-            dimmerPWMFreq = new ComboBox[] { cmbDimmer1PWMFreqCh00, cmbDimmer1PWMFreqCh01, cmbDimmer1PWMFreqCh02, cmbDimmer1PWMFreqCh03, cmbDimmer1PWMFreqCh04, cmbDimmer1PWMFreqCh04, cmbDimmer1PWMFreqCh05, cmbDimmer1PWMFreqCh06, cmbDimmer1PWMFreqCh07, cmbDimmer1PWMFreqCh08, cmbDimmer1PWMFreqCh09, cmbDimmer1PWMFreqCh10, cmbDimmer1PWMFreqCh11 };
+            dimmerPWMFreq = new ComboBox[] { cmbDimmer1PWMFreqCh00, cmbDimmer1PWMFreqCh01, cmbDimmer1PWMFreqCh02, cmbDimmer1PWMFreqCh03, cmbDimmer1PWMFreqCh04, cmbDimmer1PWMFreqCh05, cmbDimmer1PWMFreqCh06, cmbDimmer1PWMFreqCh07, cmbDimmer1PWMFreqCh08, cmbDimmer1PWMFreqCh09, cmbDimmer1PWMFreqCh10, cmbDimmer1PWMFreqCh11 };
             dimmerPWMDuties = new TextBox[] { txtbDimmer1PWMDutyCh00, txtbDimmer1PWMDutyCh01, txtbDimmer1PWMDutyCh02, txtbDimmer1PWMDutyCh03, txtbDimmer1PWMDutyCh04, txtbDimmer1PWMDutyCh05, txtbDimmer1PWMDutyCh06, txtbDimmer1PWMDutyCh07, txtbDimmer1PWMDutyCh08, txtbDimmer1PWMDutyCh09, txtbDimmer1PWMDutyCh10, txtbDimmer1PWMDutyCh11 };
             dimmerPWMEnables = new CheckBox[] { chkDimmer1PWMEnableCh00, chkDimmer1PWMEnableCh01, chkDimmer1PWMEnableCh02, chkDimmer1PWMEnableCh03, chkDimmer1PWMEnableCh04, chkDimmer1PWMEnableCh05, chkDimmer1PWMEnableCh06, chkDimmer1PWMEnableCh07, chkDimmer1PWMEnableCh08, chkDimmer1PWMEnableCh09, chkDimmer1PWMEnableCh10, chkDimmer1PWMEnableCh11 };
             dimmerOverrides = new CheckBox[] { chkDimmer1OverrideCh00, chkDimmer1OverrideCh01, chkDimmer1OverrideCh02, chkDimmer1OverrideCh03, chkDimmer1OverrideCh04, chkDimmer1OverrideCh05, chkDimmer1OverrideCh06, chkDimmer1OverrideCh07, chkDimmer1OverrideCh08, chkDimmer1OverrideCh09, chkDimmer1OverrideCh10, chkDimmer1OverrideCh11 };

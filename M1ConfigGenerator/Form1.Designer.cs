@@ -1090,129 +1090,30 @@ namespace M1ConfigGenerator
             this.btnLCCard6 = new System.Windows.Forms.Button();
             this.tabControlLC = new M1ConfigGenerator.TablessControl();
             this.tabLC1 = new System.Windows.Forms.TabPage();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.label210 = new System.Windows.Forms.Label();
-            this.cmbLC1Mode15 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1Mode14 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1Mode13 = new System.Windows.Forms.ComboBox();
-            this.grbGroupBox15 = new System.Windows.Forms.GroupBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblLC1Ch00 = new System.Windows.Forms.Label();
             this.chkLC1MG4Ch15 = new System.Windows.Forms.CheckBox();
-            this.lblLC1Ch02 = new System.Windows.Forms.Label();
-            this.chkLC1MG1Ch06 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG3Ch15 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG2Ch06 = new System.Windows.Forms.CheckBox();
-            this.lblLC1Ch03 = new System.Windows.Forms.Label();
-            this.chkLC1MG2Ch15 = new System.Windows.Forms.CheckBox();
-            this.lblLC1Ch01 = new System.Windows.Forms.Label();
-            this.chkLC1MG4Ch05 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG1Ch15 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG3Ch06 = new System.Windows.Forms.CheckBox();
-            this.lblLC1Ch11 = new System.Windows.Forms.Label();
-            this.chkLC1MG4Ch14 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG3Ch05 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG4Ch06 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG3Ch14 = new System.Windows.Forms.CheckBox();
-            this.lblLC1Ch10 = new System.Windows.Forms.Label();
-            this.chkLC1MG2Ch05 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG2Ch14 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG1Ch07 = new System.Windows.Forms.CheckBox();
-            this.lblLC1Ch09 = new System.Windows.Forms.Label();
-            this.chkLC1MG1Ch14 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG1Ch05 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG2Ch07 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG4Ch13 = new System.Windows.Forms.CheckBox();
-            this.lblLC1Ch08 = new System.Windows.Forms.Label();
-            this.chkLC1MG4Ch04 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG3Ch13 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG3Ch07 = new System.Windows.Forms.CheckBox();
-            this.lblLC1Ch07 = new System.Windows.Forms.Label();
-            this.chkLC1MG2Ch13 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG3Ch04 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG4Ch07 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG1Ch13 = new System.Windows.Forms.CheckBox();
-            this.lblLC1Ch06 = new System.Windows.Forms.Label();
-            this.chkLC1MG2Ch04 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG4Ch12 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG1Ch08 = new System.Windows.Forms.CheckBox();
-            this.lblLC1Ch05 = new System.Windows.Forms.Label();
-            this.chkLC1MG3Ch12 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG1Ch04 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG2Ch08 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG2Ch12 = new System.Windows.Forms.CheckBox();
-            this.lblLC1Ch04 = new System.Windows.Forms.Label();
-            this.chkLC1MG4Ch03 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG1Ch12 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG3Ch08 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCAmps00 = new System.Windows.Forms.ComboBox();
-            this.lblLC1Ch15 = new System.Windows.Forms.Label();
-            this.chkLC1MG3Ch03 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG4Ch08 = new System.Windows.Forms.CheckBox();
-            this.lblLC1Ch14 = new System.Windows.Forms.Label();
-            this.cmbLC1OCAmps01 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1OCTime07 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG2Ch03 = new System.Windows.Forms.CheckBox();
-            this.lblLC1Ch13 = new System.Windows.Forms.Label();
-            this.chkLC1MG1Ch09 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCTime08 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1OCAmps02 = new System.Windows.Forms.ComboBox();
-            this.lblLC1Ch12 = new System.Windows.Forms.Label();
-            this.chkLC1MG1Ch03 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCTime06 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG2Ch09 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCAmps12 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1OCAmps03 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1OCTime09 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG4Ch02 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCAmps13 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG3Ch09 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCTime05 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1OCAmps04 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1OCAmps14 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG4Ch09 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCTime10 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG3Ch02 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCAmps15 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1OCAmps05 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1OCTime04 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG1Ch10 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCTime15 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG2Ch02 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCTime11 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1OCAmps06 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1OCTime14 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG2Ch10 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCTime03 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG1Ch02 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCTime13 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1OCAmps07 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG1Ch00 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG3Ch10 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCTime12 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG4Ch01 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCTime02 = new System.Windows.Forms.ComboBox();
-            this.cmbLC1OCAmps08 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG2Ch00 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG4Ch10 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCTime01 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG3Ch01 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG3Ch00 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCAmps09 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG4Ch11 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG1Ch11 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCTime00 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG2Ch01 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG4Ch00 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCAmps10 = new System.Windows.Forms.ComboBox();
-            this.chkLC1MG3Ch11 = new System.Windows.Forms.CheckBox();
-            this.chkLC1MG2Ch11 = new System.Windows.Forms.CheckBox();
-            this.cmbLC1OCAmps11 = new System.Windows.Forms.ComboBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.chkLC1MG1Ch01 = new System.Windows.Forms.CheckBox();
+            this.label210 = new System.Windows.Forms.Label();
+            this.lblLC1Ch02 = new System.Windows.Forms.Label();
+            this.cmbLC1Mode15 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1OCAmps11 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1Mode14 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG1Ch06 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1Mode13 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG2Ch11 = new System.Windows.Forms.CheckBox();
             this.cmbLC1Mode12 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG3Ch15 = new System.Windows.Forms.CheckBox();
             this.chkLC1Standalone = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG3Ch11 = new System.Windows.Forms.CheckBox();
             this.cmbLC1Mode11 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG2Ch06 = new System.Windows.Forms.CheckBox();
             this.chkLC1DCDimmer = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCAmps10 = new System.Windows.Forms.ComboBox();
             this.cmbLC1Mode10 = new System.Windows.Forms.ComboBox();
+            this.lblLC1Ch03 = new System.Windows.Forms.Label();
             this.tabControlLC1QF = new M1ConfigGenerator.TablessControl();
             this.tabLC1Quick = new System.Windows.Forms.TabPage();
             this.tabLC1Full = new System.Windows.Forms.TabPage();
@@ -1386,36 +1287,136 @@ namespace M1ConfigGenerator
             this.txtbLC1MaxDurRecoveryCh05 = new System.Windows.Forms.TextBox();
             this.cmbLC1DirectionCh05 = new System.Windows.Forms.ComboBox();
             this.txtbLC1PWMDutyCh05 = new System.Windows.Forms.TextBox();
+            this.chkLC1MG4Ch00 = new System.Windows.Forms.CheckBox();
             this.cmbLC1Mode09 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG2Ch15 = new System.Windows.Forms.CheckBox();
             this.cmbLC1PanelNum = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG2Ch01 = new System.Windows.Forms.CheckBox();
             this.cmbLC1Mode08 = new System.Windows.Forms.ComboBox();
+            this.lblLC1Ch01 = new System.Windows.Forms.Label();
             this.label233 = new System.Windows.Forms.Label();
+            this.cmbLC1OCTime00 = new System.Windows.Forms.ComboBox();
             this.cmbLC1Mode07 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG4Ch05 = new System.Windows.Forms.CheckBox();
             this.cmbLC1CardNum = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG1Ch11 = new System.Windows.Forms.CheckBox();
             this.cmbLC1Mode06 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG1Ch15 = new System.Windows.Forms.CheckBox();
             this.label232 = new System.Windows.Forms.Label();
+            this.chkLC1MG4Ch11 = new System.Windows.Forms.CheckBox();
             this.cmbLC1Mode05 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG3Ch06 = new System.Windows.Forms.CheckBox();
             this.label231 = new System.Windows.Forms.Label();
+            this.cmbLC1OCAmps09 = new System.Windows.Forms.ComboBox();
             this.cmbLC1Mode04 = new System.Windows.Forms.ComboBox();
+            this.lblLC1Ch11 = new System.Windows.Forms.Label();
             this.tbxLC1CfgRev = new System.Windows.Forms.TextBox();
+            this.chkLC1MG3Ch00 = new System.Windows.Forms.CheckBox();
             this.cmbLC1Mode03 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG4Ch14 = new System.Windows.Forms.CheckBox();
             this.label230 = new System.Windows.Forms.Label();
+            this.chkLC1MG3Ch01 = new System.Windows.Forms.CheckBox();
             this.cmbLC1Mode02 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG3Ch05 = new System.Windows.Forms.CheckBox();
             this.tbxLC1CfgType = new System.Windows.Forms.TextBox();
+            this.cmbLC1OCTime01 = new System.Windows.Forms.ComboBox();
             this.cmbLC1Mode01 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG4Ch06 = new System.Windows.Forms.CheckBox();
             this.label229 = new System.Windows.Forms.Label();
+            this.chkLC1MG4Ch10 = new System.Windows.Forms.CheckBox();
             this.cmbLC1Mode00 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG3Ch14 = new System.Windows.Forms.CheckBox();
             this.chkLC1DCMotor = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG2Ch00 = new System.Windows.Forms.CheckBox();
             this.chkLC1Shade = new System.Windows.Forms.CheckBox();
+            this.lblLC1Ch10 = new System.Windows.Forms.Label();
             this.chkLC1Force = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCAmps08 = new System.Windows.Forms.ComboBox();
             this.label228 = new System.Windows.Forms.Label();
+            this.chkLC1MG2Ch05 = new System.Windows.Forms.CheckBox();
             this.tbxLC1BaseIndex = new System.Windows.Forms.TextBox();
+            this.cmbLC1OCTime02 = new System.Windows.Forms.ComboBox();
             this.label227 = new System.Windows.Forms.Label();
+            this.chkLC1MG2Ch14 = new System.Windows.Forms.CheckBox();
             this.label226 = new System.Windows.Forms.Label();
+            this.chkLC1MG4Ch01 = new System.Windows.Forms.CheckBox();
             this.label225 = new System.Windows.Forms.Label();
+            this.chkLC1MG1Ch07 = new System.Windows.Forms.CheckBox();
             this.label224 = new System.Windows.Forms.Label();
+            this.cmbLC1OCTime12 = new System.Windows.Forms.ComboBox();
             this.label223 = new System.Windows.Forms.Label();
+            this.lblLC1Ch09 = new System.Windows.Forms.Label();
             this.label222 = new System.Windows.Forms.Label();
+            this.chkLC1MG3Ch10 = new System.Windows.Forms.CheckBox();
+            this.lblLC1Ch13 = new System.Windows.Forms.Label();
+            this.chkLC1MG1Ch14 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG1Ch09 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG1Ch00 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG2Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG1Ch05 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCTime08 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1OCAmps07 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1OCTime07 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG2Ch07 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCAmps02 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1OCTime13 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1OCAmps01 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG4Ch13 = new System.Windows.Forms.CheckBox();
+            this.lblLC1Ch12 = new System.Windows.Forms.Label();
+            this.chkLC1MG1Ch02 = new System.Windows.Forms.CheckBox();
+            this.lblLC1Ch14 = new System.Windows.Forms.Label();
+            this.lblLC1Ch08 = new System.Windows.Forms.Label();
+            this.chkLC1MG1Ch03 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCTime03 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG4Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG4Ch04 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCTime06 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG2Ch10 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG3Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG3Ch13 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG2Ch09 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCTime14 = new System.Windows.Forms.ComboBox();
+            this.lblLC1Ch15 = new System.Windows.Forms.Label();
+            this.chkLC1MG3Ch07 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCAmps12 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1OCAmps06 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1OCAmps00 = new System.Windows.Forms.ComboBox();
+            this.lblLC1Ch07 = new System.Windows.Forms.Label();
+            this.cmbLC1OCAmps03 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1OCTime11 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG3Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG2Ch13 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCTime09 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG2Ch02 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG1Ch12 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG3Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG4Ch02 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCTime15 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG4Ch03 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG4Ch07 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCAmps13 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG1Ch10 = new System.Windows.Forms.CheckBox();
+            this.lblLC1Ch04 = new System.Windows.Forms.Label();
+            this.chkLC1MG1Ch13 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG3Ch09 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCTime04 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG2Ch12 = new System.Windows.Forms.CheckBox();
+            this.lblLC1Ch06 = new System.Windows.Forms.Label();
+            this.cmbLC1OCTime05 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1OCAmps05 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG2Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG2Ch04 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCAmps04 = new System.Windows.Forms.ComboBox();
+            this.cmbLC1OCAmps15 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG1Ch04 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG4Ch12 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCAmps14 = new System.Windows.Forms.ComboBox();
+            this.chkLC1MG3Ch02 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG3Ch12 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG1Ch08 = new System.Windows.Forms.CheckBox();
+            this.chkLC1MG4Ch09 = new System.Windows.Forms.CheckBox();
+            this.cmbLC1OCTime10 = new System.Windows.Forms.ComboBox();
+            this.lblLC1Ch05 = new System.Windows.Forms.Label();
             this.tabLCGenerated = new System.Windows.Forms.TabPage();
             this.label279 = new System.Windows.Forms.Label();
             this.tbxLCGenerated = new System.Windows.Forms.TextBox();
@@ -1794,7 +1795,6 @@ namespace M1ConfigGenerator
             this.tabMainLC.SuspendLayout();
             this.tabControlLC.SuspendLayout();
             this.tabLC1.SuspendLayout();
-            this.grbGroupBox15.SuspendLayout();
             this.tabControlLC1QF.SuspendLayout();
             this.tabLC1Full.SuspendLayout();
             this.tabLCGenerated.SuspendLayout();
@@ -7966,6 +7966,7 @@ namespace M1ConfigGenerator
             // 
             // cmbDimmer1MeasCurTimeCh11
             // 
+            this.cmbDimmer1MeasCurTimeCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1MeasCurTimeCh11.FormattingEnabled = true;
             this.cmbDimmer1MeasCurTimeCh11.Items.AddRange(new object[] {
             "5",
@@ -7979,10 +7980,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1MeasCurTimeCh11.Name = "cmbDimmer1MeasCurTimeCh11";
             this.cmbDimmer1MeasCurTimeCh11.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1MeasCurTimeCh11.TabIndex = 438;
-            this.cmbDimmer1MeasCurTimeCh11.Text = "8";
             // 
             // cmbDimmer1MeasCurTimeCh10
             // 
+            this.cmbDimmer1MeasCurTimeCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1MeasCurTimeCh10.FormattingEnabled = true;
             this.cmbDimmer1MeasCurTimeCh10.Items.AddRange(new object[] {
             "5",
@@ -7996,7 +7997,6 @@ namespace M1ConfigGenerator
             this.cmbDimmer1MeasCurTimeCh10.Name = "cmbDimmer1MeasCurTimeCh10";
             this.cmbDimmer1MeasCurTimeCh10.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1MeasCurTimeCh10.TabIndex = 437;
-            this.cmbDimmer1MeasCurTimeCh10.Text = "8";
             // 
             // label389
             // 
@@ -8011,6 +8011,7 @@ namespace M1ConfigGenerator
             // 
             // cmbDimmer1MeasCurTimeCh09
             // 
+            this.cmbDimmer1MeasCurTimeCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1MeasCurTimeCh09.FormattingEnabled = true;
             this.cmbDimmer1MeasCurTimeCh09.Items.AddRange(new object[] {
             "5",
@@ -8024,10 +8025,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1MeasCurTimeCh09.Name = "cmbDimmer1MeasCurTimeCh09";
             this.cmbDimmer1MeasCurTimeCh09.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1MeasCurTimeCh09.TabIndex = 436;
-            this.cmbDimmer1MeasCurTimeCh09.Text = "8";
             // 
             // cmbDimmer1MeasCurTimeCh00
             // 
+            this.cmbDimmer1MeasCurTimeCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1MeasCurTimeCh00.FormattingEnabled = true;
             this.cmbDimmer1MeasCurTimeCh00.Items.AddRange(new object[] {
             "5",
@@ -8041,10 +8042,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1MeasCurTimeCh00.Name = "cmbDimmer1MeasCurTimeCh00";
             this.cmbDimmer1MeasCurTimeCh00.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1MeasCurTimeCh00.TabIndex = 427;
-            this.cmbDimmer1MeasCurTimeCh00.Text = "8";
             // 
             // cmbDimmer1MeasCurTimeCh08
             // 
+            this.cmbDimmer1MeasCurTimeCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1MeasCurTimeCh08.FormattingEnabled = true;
             this.cmbDimmer1MeasCurTimeCh08.Items.AddRange(new object[] {
             "5",
@@ -8058,10 +8059,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1MeasCurTimeCh08.Name = "cmbDimmer1MeasCurTimeCh08";
             this.cmbDimmer1MeasCurTimeCh08.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1MeasCurTimeCh08.TabIndex = 435;
-            this.cmbDimmer1MeasCurTimeCh08.Text = "8";
             // 
             // cmbDimmer1MeasCurTimeCh01
             // 
+            this.cmbDimmer1MeasCurTimeCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1MeasCurTimeCh01.FormattingEnabled = true;
             this.cmbDimmer1MeasCurTimeCh01.Items.AddRange(new object[] {
             "5",
@@ -8075,10 +8076,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1MeasCurTimeCh01.Name = "cmbDimmer1MeasCurTimeCh01";
             this.cmbDimmer1MeasCurTimeCh01.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1MeasCurTimeCh01.TabIndex = 428;
-            this.cmbDimmer1MeasCurTimeCh01.Text = "8";
             // 
             // cmbDimmer1MeasCurTimeCh07
             // 
+            this.cmbDimmer1MeasCurTimeCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1MeasCurTimeCh07.FormattingEnabled = true;
             this.cmbDimmer1MeasCurTimeCh07.Items.AddRange(new object[] {
             "5",
@@ -8092,10 +8093,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1MeasCurTimeCh07.Name = "cmbDimmer1MeasCurTimeCh07";
             this.cmbDimmer1MeasCurTimeCh07.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1MeasCurTimeCh07.TabIndex = 434;
-            this.cmbDimmer1MeasCurTimeCh07.Text = "8";
             // 
             // cmbDimmer1MeasCurTimeCh02
             // 
+            this.cmbDimmer1MeasCurTimeCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1MeasCurTimeCh02.FormattingEnabled = true;
             this.cmbDimmer1MeasCurTimeCh02.Items.AddRange(new object[] {
             "5",
@@ -8109,10 +8110,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1MeasCurTimeCh02.Name = "cmbDimmer1MeasCurTimeCh02";
             this.cmbDimmer1MeasCurTimeCh02.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1MeasCurTimeCh02.TabIndex = 429;
-            this.cmbDimmer1MeasCurTimeCh02.Text = "8";
             // 
             // cmbDimmer1MeasCurTimeCh06
             // 
+            this.cmbDimmer1MeasCurTimeCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1MeasCurTimeCh06.FormattingEnabled = true;
             this.cmbDimmer1MeasCurTimeCh06.Items.AddRange(new object[] {
             "5",
@@ -8126,10 +8127,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1MeasCurTimeCh06.Name = "cmbDimmer1MeasCurTimeCh06";
             this.cmbDimmer1MeasCurTimeCh06.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1MeasCurTimeCh06.TabIndex = 433;
-            this.cmbDimmer1MeasCurTimeCh06.Text = "8";
             // 
             // cmbDimmer1MeasCurTimeCh03
             // 
+            this.cmbDimmer1MeasCurTimeCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1MeasCurTimeCh03.FormattingEnabled = true;
             this.cmbDimmer1MeasCurTimeCh03.Items.AddRange(new object[] {
             "5",
@@ -8143,10 +8144,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1MeasCurTimeCh03.Name = "cmbDimmer1MeasCurTimeCh03";
             this.cmbDimmer1MeasCurTimeCh03.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1MeasCurTimeCh03.TabIndex = 430;
-            this.cmbDimmer1MeasCurTimeCh03.Text = "8";
             // 
             // cmbDimmer1MeasCurTimeCh05
             // 
+            this.cmbDimmer1MeasCurTimeCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1MeasCurTimeCh05.FormattingEnabled = true;
             this.cmbDimmer1MeasCurTimeCh05.Items.AddRange(new object[] {
             "5",
@@ -8160,10 +8161,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1MeasCurTimeCh05.Name = "cmbDimmer1MeasCurTimeCh05";
             this.cmbDimmer1MeasCurTimeCh05.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1MeasCurTimeCh05.TabIndex = 432;
-            this.cmbDimmer1MeasCurTimeCh05.Text = "8";
             // 
             // cmbDimmer1MeasCurTimeCh04
             // 
+            this.cmbDimmer1MeasCurTimeCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1MeasCurTimeCh04.FormattingEnabled = true;
             this.cmbDimmer1MeasCurTimeCh04.Items.AddRange(new object[] {
             "5",
@@ -8177,7 +8178,6 @@ namespace M1ConfigGenerator
             this.cmbDimmer1MeasCurTimeCh04.Name = "cmbDimmer1MeasCurTimeCh04";
             this.cmbDimmer1MeasCurTimeCh04.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1MeasCurTimeCh04.TabIndex = 431;
-            this.cmbDimmer1MeasCurTimeCh04.Text = "8";
             // 
             // txtbDimmer1UCAmpsCh11
             // 
@@ -8728,6 +8728,7 @@ namespace M1ConfigGenerator
             // 
             // cmbDimmer1DirectionCh11
             // 
+            this.cmbDimmer1DirectionCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1DirectionCh11.FormattingEnabled = true;
             this.cmbDimmer1DirectionCh11.Items.AddRange(new object[] {
             "Off",
@@ -8741,10 +8742,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1DirectionCh11.Name = "cmbDimmer1DirectionCh11";
             this.cmbDimmer1DirectionCh11.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh11.TabIndex = 295;
-            this.cmbDimmer1DirectionCh11.Text = "Off";
             // 
             // cmbDimmer1DirectionCh10
             // 
+            this.cmbDimmer1DirectionCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1DirectionCh10.FormattingEnabled = true;
             this.cmbDimmer1DirectionCh10.Items.AddRange(new object[] {
             "Off",
@@ -8758,10 +8759,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1DirectionCh10.Name = "cmbDimmer1DirectionCh10";
             this.cmbDimmer1DirectionCh10.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh10.TabIndex = 294;
-            this.cmbDimmer1DirectionCh10.Text = "Off";
             // 
             // cmbDimmer1DirectionCh09
             // 
+            this.cmbDimmer1DirectionCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1DirectionCh09.FormattingEnabled = true;
             this.cmbDimmer1DirectionCh09.Items.AddRange(new object[] {
             "Off",
@@ -8775,10 +8776,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1DirectionCh09.Name = "cmbDimmer1DirectionCh09";
             this.cmbDimmer1DirectionCh09.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh09.TabIndex = 293;
-            this.cmbDimmer1DirectionCh09.Text = "Off";
             // 
             // cmbDimmer1DirectionCh07
             // 
+            this.cmbDimmer1DirectionCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1DirectionCh07.FormattingEnabled = true;
             this.cmbDimmer1DirectionCh07.Items.AddRange(new object[] {
             "Off",
@@ -8792,10 +8793,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1DirectionCh07.Name = "cmbDimmer1DirectionCh07";
             this.cmbDimmer1DirectionCh07.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh07.TabIndex = 292;
-            this.cmbDimmer1DirectionCh07.Text = "Off";
             // 
             // cmbDimmer1DirectionCh08
             // 
+            this.cmbDimmer1DirectionCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1DirectionCh08.FormattingEnabled = true;
             this.cmbDimmer1DirectionCh08.Items.AddRange(new object[] {
             "Off",
@@ -8809,10 +8810,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1DirectionCh08.Name = "cmbDimmer1DirectionCh08";
             this.cmbDimmer1DirectionCh08.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh08.TabIndex = 291;
-            this.cmbDimmer1DirectionCh08.Text = "Off";
             // 
             // cmbDimmer1DirectionCh06
             // 
+            this.cmbDimmer1DirectionCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1DirectionCh06.FormattingEnabled = true;
             this.cmbDimmer1DirectionCh06.Items.AddRange(new object[] {
             "Off",
@@ -8826,10 +8827,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1DirectionCh06.Name = "cmbDimmer1DirectionCh06";
             this.cmbDimmer1DirectionCh06.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh06.TabIndex = 290;
-            this.cmbDimmer1DirectionCh06.Text = "Off";
             // 
             // cmbDimmer1DirectionCh05
             // 
+            this.cmbDimmer1DirectionCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1DirectionCh05.FormattingEnabled = true;
             this.cmbDimmer1DirectionCh05.Items.AddRange(new object[] {
             "Off",
@@ -8843,10 +8844,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1DirectionCh05.Name = "cmbDimmer1DirectionCh05";
             this.cmbDimmer1DirectionCh05.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh05.TabIndex = 289;
-            this.cmbDimmer1DirectionCh05.Text = "Off";
             // 
             // cmbDimmer1DirectionCh04
             // 
+            this.cmbDimmer1DirectionCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1DirectionCh04.FormattingEnabled = true;
             this.cmbDimmer1DirectionCh04.Items.AddRange(new object[] {
             "Off",
@@ -8860,10 +8861,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1DirectionCh04.Name = "cmbDimmer1DirectionCh04";
             this.cmbDimmer1DirectionCh04.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh04.TabIndex = 288;
-            this.cmbDimmer1DirectionCh04.Text = "Off";
             // 
             // cmbDimmer1DirectionCh03
             // 
+            this.cmbDimmer1DirectionCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1DirectionCh03.FormattingEnabled = true;
             this.cmbDimmer1DirectionCh03.Items.AddRange(new object[] {
             "Off",
@@ -8877,10 +8878,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1DirectionCh03.Name = "cmbDimmer1DirectionCh03";
             this.cmbDimmer1DirectionCh03.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh03.TabIndex = 287;
-            this.cmbDimmer1DirectionCh03.Text = "Off";
             // 
             // cmbDimmer1DirectionCh02
             // 
+            this.cmbDimmer1DirectionCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1DirectionCh02.FormattingEnabled = true;
             this.cmbDimmer1DirectionCh02.Items.AddRange(new object[] {
             "Off",
@@ -8894,10 +8895,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1DirectionCh02.Name = "cmbDimmer1DirectionCh02";
             this.cmbDimmer1DirectionCh02.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh02.TabIndex = 286;
-            this.cmbDimmer1DirectionCh02.Text = "Off";
             // 
             // cmbDimmer1DirectionCh01
             // 
+            this.cmbDimmer1DirectionCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1DirectionCh01.FormattingEnabled = true;
             this.cmbDimmer1DirectionCh01.Items.AddRange(new object[] {
             "Off",
@@ -8911,10 +8912,10 @@ namespace M1ConfigGenerator
             this.cmbDimmer1DirectionCh01.Name = "cmbDimmer1DirectionCh01";
             this.cmbDimmer1DirectionCh01.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh01.TabIndex = 285;
-            this.cmbDimmer1DirectionCh01.Text = "Off";
             // 
             // cmbDimmer1DirectionCh00
             // 
+            this.cmbDimmer1DirectionCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDimmer1DirectionCh00.FormattingEnabled = true;
             this.cmbDimmer1DirectionCh00.Items.AddRange(new object[] {
             "Off",
@@ -8928,7 +8929,6 @@ namespace M1ConfigGenerator
             this.cmbDimmer1DirectionCh00.Name = "cmbDimmer1DirectionCh00";
             this.cmbDimmer1DirectionCh00.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1DirectionCh00.TabIndex = 284;
-            this.cmbDimmer1DirectionCh00.Text = "Off";
             // 
             // label377
             // 
@@ -15580,54 +15580,208 @@ namespace M1ConfigGenerator
             // tabLC1
             // 
             this.tabLC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabLC1.Controls.Add(this.label52);
+            this.tabLC1.Controls.Add(this.textBox1);
+            this.tabLC1.Controls.Add(this.lblLC1Ch00);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch15);
             this.tabLC1.Controls.Add(this.checkBox2);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch01);
             this.tabLC1.Controls.Add(this.label210);
+            this.tabLC1.Controls.Add(this.lblLC1Ch02);
             this.tabLC1.Controls.Add(this.cmbLC1Mode15);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps11);
             this.tabLC1.Controls.Add(this.cmbLC1Mode14);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch06);
             this.tabLC1.Controls.Add(this.cmbLC1Mode13);
-            this.tabLC1.Controls.Add(this.grbGroupBox15);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch11);
             this.tabLC1.Controls.Add(this.cmbLC1Mode12);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch15);
             this.tabLC1.Controls.Add(this.chkLC1Standalone);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch11);
             this.tabLC1.Controls.Add(this.cmbLC1Mode11);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch06);
             this.tabLC1.Controls.Add(this.chkLC1DCDimmer);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps10);
             this.tabLC1.Controls.Add(this.cmbLC1Mode10);
+            this.tabLC1.Controls.Add(this.lblLC1Ch03);
             this.tabLC1.Controls.Add(this.tabControlLC1QF);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch00);
             this.tabLC1.Controls.Add(this.cmbLC1Mode09);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch15);
             this.tabLC1.Controls.Add(this.cmbLC1PanelNum);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch01);
             this.tabLC1.Controls.Add(this.cmbLC1Mode08);
+            this.tabLC1.Controls.Add(this.lblLC1Ch01);
             this.tabLC1.Controls.Add(this.label233);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime00);
             this.tabLC1.Controls.Add(this.cmbLC1Mode07);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch05);
             this.tabLC1.Controls.Add(this.cmbLC1CardNum);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch11);
             this.tabLC1.Controls.Add(this.cmbLC1Mode06);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch15);
             this.tabLC1.Controls.Add(this.label232);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch11);
             this.tabLC1.Controls.Add(this.cmbLC1Mode05);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch06);
             this.tabLC1.Controls.Add(this.label231);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps09);
             this.tabLC1.Controls.Add(this.cmbLC1Mode04);
+            this.tabLC1.Controls.Add(this.lblLC1Ch11);
             this.tabLC1.Controls.Add(this.tbxLC1CfgRev);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch00);
             this.tabLC1.Controls.Add(this.cmbLC1Mode03);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch14);
             this.tabLC1.Controls.Add(this.label230);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch01);
             this.tabLC1.Controls.Add(this.cmbLC1Mode02);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch05);
             this.tabLC1.Controls.Add(this.tbxLC1CfgType);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime01);
             this.tabLC1.Controls.Add(this.cmbLC1Mode01);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch06);
             this.tabLC1.Controls.Add(this.label229);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch10);
             this.tabLC1.Controls.Add(this.cmbLC1Mode00);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch14);
             this.tabLC1.Controls.Add(this.chkLC1DCMotor);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch00);
             this.tabLC1.Controls.Add(this.chkLC1Shade);
+            this.tabLC1.Controls.Add(this.lblLC1Ch10);
             this.tabLC1.Controls.Add(this.chkLC1Force);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps08);
             this.tabLC1.Controls.Add(this.label228);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch05);
             this.tabLC1.Controls.Add(this.tbxLC1BaseIndex);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime02);
             this.tabLC1.Controls.Add(this.label227);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch14);
             this.tabLC1.Controls.Add(this.label226);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch01);
             this.tabLC1.Controls.Add(this.label225);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch07);
             this.tabLC1.Controls.Add(this.label224);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime12);
             this.tabLC1.Controls.Add(this.label223);
+            this.tabLC1.Controls.Add(this.lblLC1Ch09);
             this.tabLC1.Controls.Add(this.label222);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch10);
+            this.tabLC1.Controls.Add(this.lblLC1Ch13);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch14);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch09);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch00);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch03);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch05);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime08);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps07);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime07);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch07);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps02);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime13);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps01);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch13);
+            this.tabLC1.Controls.Add(this.lblLC1Ch12);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch02);
+            this.tabLC1.Controls.Add(this.lblLC1Ch14);
+            this.tabLC1.Controls.Add(this.lblLC1Ch08);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch03);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime03);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch08);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch04);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime06);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch10);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch03);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch13);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch09);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime14);
+            this.tabLC1.Controls.Add(this.lblLC1Ch15);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch07);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps12);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps06);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps00);
+            this.tabLC1.Controls.Add(this.lblLC1Ch07);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps03);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime11);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch08);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch13);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime09);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch02);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch12);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch04);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch02);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime15);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch03);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch07);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps13);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch10);
+            this.tabLC1.Controls.Add(this.lblLC1Ch04);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch13);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch09);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime04);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch12);
+            this.tabLC1.Controls.Add(this.lblLC1Ch06);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime05);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps05);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch08);
+            this.tabLC1.Controls.Add(this.chkLC1MG2Ch04);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps04);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps15);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch04);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch12);
+            this.tabLC1.Controls.Add(this.cmbLC1OCAmps14);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch02);
+            this.tabLC1.Controls.Add(this.chkLC1MG3Ch12);
+            this.tabLC1.Controls.Add(this.chkLC1MG1Ch08);
+            this.tabLC1.Controls.Add(this.chkLC1MG4Ch09);
+            this.tabLC1.Controls.Add(this.cmbLC1OCTime10);
+            this.tabLC1.Controls.Add(this.lblLC1Ch05);
             this.tabLC1.Location = new System.Drawing.Point(4, 22);
             this.tabLC1.Name = "tabLC1";
             this.tabLC1.Padding = new System.Windows.Forms.Padding(3);
             this.tabLC1.Size = new System.Drawing.Size(1376, 1103);
             this.tabLC1.TabIndex = 1;
             this.tabLC1.Text = "LC 1";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.BackColor = System.Drawing.Color.Transparent;
+            this.label52.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label52.Location = new System.Drawing.Point(495, 27);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(76, 17);
+            this.label52.TabIndex = 287;
+            this.label52.Text = "Card Letter:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(574, 25);
+            this.textBox1.MaxLength = 4;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(32, 20);
+            this.textBox1.TabIndex = 286;
+            this.textBox1.Text = "A";
+            // 
+            // lblLC1Ch00
+            // 
+            this.lblLC1Ch00.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch00.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch00.Location = new System.Drawing.Point(199, 105);
+            this.lblLC1Ch00.Name = "lblLC1Ch00";
+            this.lblLC1Ch00.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch00.TabIndex = 22;
+            this.lblLC1Ch00.Text = "0";
+            this.lblLC1Ch00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // chkLC1MG4Ch15
+            // 
+            this.chkLC1MG4Ch15.AutoSize = true;
+            this.chkLC1MG4Ch15.Location = new System.Drawing.Point(1291, 309);
+            this.chkLC1MG4Ch15.Name = "chkLC1MG4Ch15";
+            this.chkLC1MG4Ch15.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch15.TabIndex = 106;
+            this.chkLC1MG4Ch15.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
@@ -15640,16 +15794,36 @@ namespace M1ConfigGenerator
             this.checkBox2.Text = "Full";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
+            // chkLC1MG1Ch01
+            // 
+            this.chkLC1MG1Ch01.AutoSize = true;
+            this.chkLC1MG1Ch01.Location = new System.Drawing.Point(283, 219);
+            this.chkLC1MG1Ch01.Name = "chkLC1MG1Ch01";
+            this.chkLC1MG1Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch01.TabIndex = 44;
+            this.chkLC1MG1Ch01.UseVisualStyleBackColor = true;
+            // 
             // label210
             // 
             this.label210.AutoSize = true;
             this.label210.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label210.ForeColor = System.Drawing.SystemColors.Control;
+            this.label210.ForeColor = System.Drawing.Color.Yellow;
             this.label210.Location = new System.Drawing.Point(1, 336);
             this.label210.Name = "label210";
             this.label210.Size = new System.Drawing.Size(126, 17);
             this.label210.TabIndex = 135;
             this.label210.Text = "Mode (Output Type)";
+            // 
+            // lblLC1Ch02
+            // 
+            this.lblLC1Ch02.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch02.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch02.Location = new System.Drawing.Point(343, 105);
+            this.lblLC1Ch02.Name = "lblLC1Ch02";
+            this.lblLC1Ch02.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch02.TabIndex = 24;
+            this.lblLC1Ch02.Text = "2";
+            this.lblLC1Ch02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cmbLC1Mode15
             // 
@@ -15661,8 +15835,20 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode15.Location = new System.Drawing.Point(1267, 336);
             this.cmbLC1Mode15.Name = "cmbLC1Mode15";
-            this.cmbLC1Mode15.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode15.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode15.TabIndex = 151;
+            // 
+            // cmbLC1OCAmps11
+            // 
+            this.cmbLC1OCAmps11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps11.FormattingEnabled = true;
+            this.cmbLC1OCAmps11.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps11.Location = new System.Drawing.Point(991, 154);
+            this.cmbLC1OCAmps11.Name = "cmbLC1OCAmps11";
+            this.cmbLC1OCAmps11.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps11.TabIndex = 22;
             // 
             // cmbLC1Mode14
             // 
@@ -15675,8 +15861,17 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode14.Location = new System.Drawing.Point(1195, 336);
             this.cmbLC1Mode14.Name = "cmbLC1Mode14";
-            this.cmbLC1Mode14.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode14.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode14.TabIndex = 150;
+            // 
+            // chkLC1MG1Ch06
+            // 
+            this.chkLC1MG1Ch06.AutoSize = true;
+            this.chkLC1MG1Ch06.Location = new System.Drawing.Point(643, 219);
+            this.chkLC1MG1Ch06.Name = "chkLC1MG1Ch06";
+            this.chkLC1MG1Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch06.TabIndex = 49;
+            this.chkLC1MG1Ch06.UseVisualStyleBackColor = true;
             // 
             // cmbLC1Mode13
             // 
@@ -15689,1344 +15884,17 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode13.Location = new System.Drawing.Point(1123, 336);
             this.cmbLC1Mode13.Name = "cmbLC1Mode13";
-            this.cmbLC1Mode13.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode13.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode13.TabIndex = 149;
-            // 
-            // grbGroupBox15
-            // 
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch00);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch15);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch02);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch06);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch15);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch06);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch03);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch15);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch01);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch05);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch15);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch06);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch11);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch14);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch05);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch06);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch14);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch10);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch05);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch14);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch07);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch09);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch14);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch05);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch07);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch13);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch08);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch04);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch13);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch07);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch07);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch13);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch04);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch07);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch13);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch06);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch04);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch12);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch08);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch05);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch12);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch04);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch08);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch12);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch04);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch03);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch12);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch08);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps00);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch15);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch03);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch08);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch14);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps01);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime07);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch03);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch13);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch09);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime08);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps02);
-            this.grbGroupBox15.Controls.Add(this.lblLC1Ch12);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch03);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime06);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch09);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps12);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps03);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime09);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch02);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps13);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch09);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime05);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps04);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps14);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch09);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime10);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch02);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps15);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps05);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime04);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch10);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime15);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch02);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime11);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps06);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime14);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch10);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime03);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch02);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime13);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps07);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch00);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch10);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime12);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch01);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime02);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps08);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch00);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch10);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime01);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch01);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch00);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps09);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch11);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch11);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCTime00);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch01);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG4Ch00);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps10);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG3Ch11);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG2Ch11);
-            this.grbGroupBox15.Controls.Add(this.cmbLC1OCAmps11);
-            this.grbGroupBox15.Controls.Add(this.chkLC1MG1Ch01);
-            this.grbGroupBox15.Location = new System.Drawing.Point(187, 116);
-            this.grbGroupBox15.Name = "grbGroupBox15";
-            this.grbGroupBox15.Size = new System.Drawing.Size(1163, 214);
-            this.grbGroupBox15.TabIndex = 153;
-            this.grbGroupBox15.TabStop = false;
-            // 
-            // lblLC1Ch00
-            // 
-            this.lblLC1Ch00.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch00.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch00.Location = new System.Drawing.Point(20, 16);
-            this.lblLC1Ch00.Name = "lblLC1Ch00";
-            this.lblLC1Ch00.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch00.TabIndex = 22;
-            this.lblLC1Ch00.Text = "0";
-            this.lblLC1Ch00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG4Ch15
-            // 
-            this.chkLC1MG4Ch15.AutoSize = true;
-            this.chkLC1MG4Ch15.Location = new System.Drawing.Point(1112, 199);
-            this.chkLC1MG4Ch15.Name = "chkLC1MG4Ch15";
-            this.chkLC1MG4Ch15.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch15.TabIndex = 106;
-            this.chkLC1MG4Ch15.UseVisualStyleBackColor = true;
-            // 
-            // lblLC1Ch02
-            // 
-            this.lblLC1Ch02.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch02.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch02.Location = new System.Drawing.Point(164, 16);
-            this.lblLC1Ch02.Name = "lblLC1Ch02";
-            this.lblLC1Ch02.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch02.TabIndex = 24;
-            this.lblLC1Ch02.Text = "2";
-            this.lblLC1Ch02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG1Ch06
-            // 
-            this.chkLC1MG1Ch06.AutoSize = true;
-            this.chkLC1MG1Ch06.Location = new System.Drawing.Point(464, 109);
-            this.chkLC1MG1Ch06.Name = "chkLC1MG1Ch06";
-            this.chkLC1MG1Ch06.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch06.TabIndex = 49;
-            this.chkLC1MG1Ch06.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG3Ch15
-            // 
-            this.chkLC1MG3Ch15.AutoSize = true;
-            this.chkLC1MG3Ch15.Location = new System.Drawing.Point(1112, 169);
-            this.chkLC1MG3Ch15.Name = "chkLC1MG3Ch15";
-            this.chkLC1MG3Ch15.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch15.TabIndex = 90;
-            this.chkLC1MG3Ch15.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG2Ch06
-            // 
-            this.chkLC1MG2Ch06.AutoSize = true;
-            this.chkLC1MG2Ch06.Location = new System.Drawing.Point(464, 139);
-            this.chkLC1MG2Ch06.Name = "chkLC1MG2Ch06";
-            this.chkLC1MG2Ch06.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch06.TabIndex = 65;
-            this.chkLC1MG2Ch06.UseVisualStyleBackColor = true;
-            // 
-            // lblLC1Ch03
-            // 
-            this.lblLC1Ch03.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch03.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch03.Location = new System.Drawing.Point(236, 15);
-            this.lblLC1Ch03.Name = "lblLC1Ch03";
-            this.lblLC1Ch03.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch03.TabIndex = 25;
-            this.lblLC1Ch03.Text = "3";
-            this.lblLC1Ch03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG2Ch15
-            // 
-            this.chkLC1MG2Ch15.AutoSize = true;
-            this.chkLC1MG2Ch15.Location = new System.Drawing.Point(1112, 139);
-            this.chkLC1MG2Ch15.Name = "chkLC1MG2Ch15";
-            this.chkLC1MG2Ch15.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch15.TabIndex = 74;
-            this.chkLC1MG2Ch15.UseVisualStyleBackColor = true;
-            // 
-            // lblLC1Ch01
-            // 
-            this.lblLC1Ch01.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch01.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch01.Location = new System.Drawing.Point(92, 16);
-            this.lblLC1Ch01.Name = "lblLC1Ch01";
-            this.lblLC1Ch01.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch01.TabIndex = 23;
-            this.lblLC1Ch01.Text = "1";
-            this.lblLC1Ch01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG4Ch05
-            // 
-            this.chkLC1MG4Ch05.AutoSize = true;
-            this.chkLC1MG4Ch05.Location = new System.Drawing.Point(392, 199);
-            this.chkLC1MG4Ch05.Name = "chkLC1MG4Ch05";
-            this.chkLC1MG4Ch05.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch05.TabIndex = 96;
-            this.chkLC1MG4Ch05.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG1Ch15
-            // 
-            this.chkLC1MG1Ch15.AutoSize = true;
-            this.chkLC1MG1Ch15.Location = new System.Drawing.Point(1112, 109);
-            this.chkLC1MG1Ch15.Name = "chkLC1MG1Ch15";
-            this.chkLC1MG1Ch15.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch15.TabIndex = 58;
-            this.chkLC1MG1Ch15.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG3Ch06
-            // 
-            this.chkLC1MG3Ch06.AutoSize = true;
-            this.chkLC1MG3Ch06.Location = new System.Drawing.Point(464, 169);
-            this.chkLC1MG3Ch06.Name = "chkLC1MG3Ch06";
-            this.chkLC1MG3Ch06.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch06.TabIndex = 81;
-            this.chkLC1MG3Ch06.UseVisualStyleBackColor = true;
-            // 
-            // lblLC1Ch11
-            // 
-            this.lblLC1Ch11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch11.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch11.Location = new System.Drawing.Point(812, 16);
-            this.lblLC1Ch11.Name = "lblLC1Ch11";
-            this.lblLC1Ch11.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch11.TabIndex = 26;
-            this.lblLC1Ch11.Text = "11";
-            this.lblLC1Ch11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG4Ch14
-            // 
-            this.chkLC1MG4Ch14.AutoSize = true;
-            this.chkLC1MG4Ch14.Location = new System.Drawing.Point(1040, 199);
-            this.chkLC1MG4Ch14.Name = "chkLC1MG4Ch14";
-            this.chkLC1MG4Ch14.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch14.TabIndex = 105;
-            this.chkLC1MG4Ch14.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG3Ch05
-            // 
-            this.chkLC1MG3Ch05.AutoSize = true;
-            this.chkLC1MG3Ch05.Location = new System.Drawing.Point(392, 169);
-            this.chkLC1MG3Ch05.Name = "chkLC1MG3Ch05";
-            this.chkLC1MG3Ch05.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch05.TabIndex = 80;
-            this.chkLC1MG3Ch05.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG4Ch06
-            // 
-            this.chkLC1MG4Ch06.AutoSize = true;
-            this.chkLC1MG4Ch06.Location = new System.Drawing.Point(464, 199);
-            this.chkLC1MG4Ch06.Name = "chkLC1MG4Ch06";
-            this.chkLC1MG4Ch06.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch06.TabIndex = 97;
-            this.chkLC1MG4Ch06.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG3Ch14
-            // 
-            this.chkLC1MG3Ch14.AutoSize = true;
-            this.chkLC1MG3Ch14.Location = new System.Drawing.Point(1040, 169);
-            this.chkLC1MG3Ch14.Name = "chkLC1MG3Ch14";
-            this.chkLC1MG3Ch14.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch14.TabIndex = 89;
-            this.chkLC1MG3Ch14.UseVisualStyleBackColor = true;
-            // 
-            // lblLC1Ch10
-            // 
-            this.lblLC1Ch10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch10.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch10.Location = new System.Drawing.Point(740, 16);
-            this.lblLC1Ch10.Name = "lblLC1Ch10";
-            this.lblLC1Ch10.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch10.TabIndex = 27;
-            this.lblLC1Ch10.Text = "10";
-            this.lblLC1Ch10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG2Ch05
-            // 
-            this.chkLC1MG2Ch05.AutoSize = true;
-            this.chkLC1MG2Ch05.Location = new System.Drawing.Point(392, 139);
-            this.chkLC1MG2Ch05.Name = "chkLC1MG2Ch05";
-            this.chkLC1MG2Ch05.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch05.TabIndex = 64;
-            this.chkLC1MG2Ch05.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG2Ch14
-            // 
-            this.chkLC1MG2Ch14.AutoSize = true;
-            this.chkLC1MG2Ch14.Location = new System.Drawing.Point(1040, 139);
-            this.chkLC1MG2Ch14.Name = "chkLC1MG2Ch14";
-            this.chkLC1MG2Ch14.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch14.TabIndex = 73;
-            this.chkLC1MG2Ch14.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG1Ch07
-            // 
-            this.chkLC1MG1Ch07.AutoSize = true;
-            this.chkLC1MG1Ch07.Location = new System.Drawing.Point(536, 109);
-            this.chkLC1MG1Ch07.Name = "chkLC1MG1Ch07";
-            this.chkLC1MG1Ch07.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch07.TabIndex = 50;
-            this.chkLC1MG1Ch07.UseVisualStyleBackColor = true;
-            // 
-            // lblLC1Ch09
-            // 
-            this.lblLC1Ch09.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch09.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch09.Location = new System.Drawing.Point(668, 16);
-            this.lblLC1Ch09.Name = "lblLC1Ch09";
-            this.lblLC1Ch09.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch09.TabIndex = 29;
-            this.lblLC1Ch09.Text = "9";
-            this.lblLC1Ch09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG1Ch14
-            // 
-            this.chkLC1MG1Ch14.AutoSize = true;
-            this.chkLC1MG1Ch14.Location = new System.Drawing.Point(1040, 109);
-            this.chkLC1MG1Ch14.Name = "chkLC1MG1Ch14";
-            this.chkLC1MG1Ch14.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch14.TabIndex = 57;
-            this.chkLC1MG1Ch14.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG1Ch05
-            // 
-            this.chkLC1MG1Ch05.AutoSize = true;
-            this.chkLC1MG1Ch05.Location = new System.Drawing.Point(392, 109);
-            this.chkLC1MG1Ch05.Name = "chkLC1MG1Ch05";
-            this.chkLC1MG1Ch05.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch05.TabIndex = 48;
-            this.chkLC1MG1Ch05.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG2Ch07
-            // 
-            this.chkLC1MG2Ch07.AutoSize = true;
-            this.chkLC1MG2Ch07.Location = new System.Drawing.Point(536, 139);
-            this.chkLC1MG2Ch07.Name = "chkLC1MG2Ch07";
-            this.chkLC1MG2Ch07.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch07.TabIndex = 66;
-            this.chkLC1MG2Ch07.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG4Ch13
-            // 
-            this.chkLC1MG4Ch13.AutoSize = true;
-            this.chkLC1MG4Ch13.Location = new System.Drawing.Point(968, 199);
-            this.chkLC1MG4Ch13.Name = "chkLC1MG4Ch13";
-            this.chkLC1MG4Ch13.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch13.TabIndex = 104;
-            this.chkLC1MG4Ch13.UseVisualStyleBackColor = true;
-            // 
-            // lblLC1Ch08
-            // 
-            this.lblLC1Ch08.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch08.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch08.Location = new System.Drawing.Point(596, 16);
-            this.lblLC1Ch08.Name = "lblLC1Ch08";
-            this.lblLC1Ch08.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch08.TabIndex = 30;
-            this.lblLC1Ch08.Text = "8";
-            this.lblLC1Ch08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG4Ch04
-            // 
-            this.chkLC1MG4Ch04.AutoSize = true;
-            this.chkLC1MG4Ch04.Location = new System.Drawing.Point(320, 199);
-            this.chkLC1MG4Ch04.Name = "chkLC1MG4Ch04";
-            this.chkLC1MG4Ch04.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch04.TabIndex = 95;
-            this.chkLC1MG4Ch04.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG3Ch13
-            // 
-            this.chkLC1MG3Ch13.AutoSize = true;
-            this.chkLC1MG3Ch13.Location = new System.Drawing.Point(968, 169);
-            this.chkLC1MG3Ch13.Name = "chkLC1MG3Ch13";
-            this.chkLC1MG3Ch13.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch13.TabIndex = 88;
-            this.chkLC1MG3Ch13.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG3Ch07
-            // 
-            this.chkLC1MG3Ch07.AutoSize = true;
-            this.chkLC1MG3Ch07.Location = new System.Drawing.Point(536, 169);
-            this.chkLC1MG3Ch07.Name = "chkLC1MG3Ch07";
-            this.chkLC1MG3Ch07.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch07.TabIndex = 82;
-            this.chkLC1MG3Ch07.UseVisualStyleBackColor = true;
-            // 
-            // lblLC1Ch07
-            // 
-            this.lblLC1Ch07.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch07.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch07.Location = new System.Drawing.Point(524, 16);
-            this.lblLC1Ch07.Name = "lblLC1Ch07";
-            this.lblLC1Ch07.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch07.TabIndex = 31;
-            this.lblLC1Ch07.Text = "7";
-            this.lblLC1Ch07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG2Ch13
-            // 
-            this.chkLC1MG2Ch13.AutoSize = true;
-            this.chkLC1MG2Ch13.Location = new System.Drawing.Point(968, 139);
-            this.chkLC1MG2Ch13.Name = "chkLC1MG2Ch13";
-            this.chkLC1MG2Ch13.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch13.TabIndex = 72;
-            this.chkLC1MG2Ch13.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG3Ch04
-            // 
-            this.chkLC1MG3Ch04.AutoSize = true;
-            this.chkLC1MG3Ch04.Location = new System.Drawing.Point(320, 169);
-            this.chkLC1MG3Ch04.Name = "chkLC1MG3Ch04";
-            this.chkLC1MG3Ch04.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch04.TabIndex = 79;
-            this.chkLC1MG3Ch04.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG4Ch07
-            // 
-            this.chkLC1MG4Ch07.AutoSize = true;
-            this.chkLC1MG4Ch07.Location = new System.Drawing.Point(536, 199);
-            this.chkLC1MG4Ch07.Name = "chkLC1MG4Ch07";
-            this.chkLC1MG4Ch07.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch07.TabIndex = 98;
-            this.chkLC1MG4Ch07.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG1Ch13
-            // 
-            this.chkLC1MG1Ch13.AutoSize = true;
-            this.chkLC1MG1Ch13.Location = new System.Drawing.Point(968, 109);
-            this.chkLC1MG1Ch13.Name = "chkLC1MG1Ch13";
-            this.chkLC1MG1Ch13.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch13.TabIndex = 56;
-            this.chkLC1MG1Ch13.UseVisualStyleBackColor = true;
-            // 
-            // lblLC1Ch06
-            // 
-            this.lblLC1Ch06.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch06.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch06.Location = new System.Drawing.Point(452, 16);
-            this.lblLC1Ch06.Name = "lblLC1Ch06";
-            this.lblLC1Ch06.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch06.TabIndex = 32;
-            this.lblLC1Ch06.Text = "6";
-            this.lblLC1Ch06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG2Ch04
-            // 
-            this.chkLC1MG2Ch04.AutoSize = true;
-            this.chkLC1MG2Ch04.Location = new System.Drawing.Point(320, 139);
-            this.chkLC1MG2Ch04.Name = "chkLC1MG2Ch04";
-            this.chkLC1MG2Ch04.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch04.TabIndex = 63;
-            this.chkLC1MG2Ch04.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG4Ch12
-            // 
-            this.chkLC1MG4Ch12.AutoSize = true;
-            this.chkLC1MG4Ch12.Location = new System.Drawing.Point(896, 199);
-            this.chkLC1MG4Ch12.Name = "chkLC1MG4Ch12";
-            this.chkLC1MG4Ch12.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch12.TabIndex = 103;
-            this.chkLC1MG4Ch12.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG1Ch08
-            // 
-            this.chkLC1MG1Ch08.AutoSize = true;
-            this.chkLC1MG1Ch08.Location = new System.Drawing.Point(608, 109);
-            this.chkLC1MG1Ch08.Name = "chkLC1MG1Ch08";
-            this.chkLC1MG1Ch08.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch08.TabIndex = 51;
-            this.chkLC1MG1Ch08.UseVisualStyleBackColor = true;
-            // 
-            // lblLC1Ch05
-            // 
-            this.lblLC1Ch05.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch05.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch05.Location = new System.Drawing.Point(380, 16);
-            this.lblLC1Ch05.Name = "lblLC1Ch05";
-            this.lblLC1Ch05.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch05.TabIndex = 33;
-            this.lblLC1Ch05.Text = "5";
-            this.lblLC1Ch05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG3Ch12
-            // 
-            this.chkLC1MG3Ch12.AutoSize = true;
-            this.chkLC1MG3Ch12.Location = new System.Drawing.Point(896, 169);
-            this.chkLC1MG3Ch12.Name = "chkLC1MG3Ch12";
-            this.chkLC1MG3Ch12.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch12.TabIndex = 87;
-            this.chkLC1MG3Ch12.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG1Ch04
-            // 
-            this.chkLC1MG1Ch04.AutoSize = true;
-            this.chkLC1MG1Ch04.Location = new System.Drawing.Point(320, 109);
-            this.chkLC1MG1Ch04.Name = "chkLC1MG1Ch04";
-            this.chkLC1MG1Ch04.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch04.TabIndex = 47;
-            this.chkLC1MG1Ch04.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG2Ch08
-            // 
-            this.chkLC1MG2Ch08.AutoSize = true;
-            this.chkLC1MG2Ch08.Location = new System.Drawing.Point(608, 139);
-            this.chkLC1MG2Ch08.Name = "chkLC1MG2Ch08";
-            this.chkLC1MG2Ch08.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch08.TabIndex = 67;
-            this.chkLC1MG2Ch08.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG2Ch12
-            // 
-            this.chkLC1MG2Ch12.AutoSize = true;
-            this.chkLC1MG2Ch12.Location = new System.Drawing.Point(896, 139);
-            this.chkLC1MG2Ch12.Name = "chkLC1MG2Ch12";
-            this.chkLC1MG2Ch12.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch12.TabIndex = 71;
-            this.chkLC1MG2Ch12.UseVisualStyleBackColor = true;
-            // 
-            // lblLC1Ch04
-            // 
-            this.lblLC1Ch04.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch04.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch04.Location = new System.Drawing.Point(308, 16);
-            this.lblLC1Ch04.Name = "lblLC1Ch04";
-            this.lblLC1Ch04.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch04.TabIndex = 34;
-            this.lblLC1Ch04.Text = "4";
-            this.lblLC1Ch04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG4Ch03
-            // 
-            this.chkLC1MG4Ch03.AutoSize = true;
-            this.chkLC1MG4Ch03.Location = new System.Drawing.Point(248, 199);
-            this.chkLC1MG4Ch03.Name = "chkLC1MG4Ch03";
-            this.chkLC1MG4Ch03.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch03.TabIndex = 94;
-            this.chkLC1MG4Ch03.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG1Ch12
-            // 
-            this.chkLC1MG1Ch12.AutoSize = true;
-            this.chkLC1MG1Ch12.Location = new System.Drawing.Point(896, 109);
-            this.chkLC1MG1Ch12.Name = "chkLC1MG1Ch12";
-            this.chkLC1MG1Ch12.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch12.TabIndex = 55;
-            this.chkLC1MG1Ch12.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG3Ch08
-            // 
-            this.chkLC1MG3Ch08.AutoSize = true;
-            this.chkLC1MG3Ch08.Location = new System.Drawing.Point(608, 169);
-            this.chkLC1MG3Ch08.Name = "chkLC1MG3Ch08";
-            this.chkLC1MG3Ch08.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch08.TabIndex = 83;
-            this.chkLC1MG3Ch08.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCAmps00
-            // 
-            this.cmbLC1OCAmps00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps00.FormattingEnabled = true;
-            this.cmbLC1OCAmps00.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps00.Location = new System.Drawing.Point(20, 44);
-            this.cmbLC1OCAmps00.Name = "cmbLC1OCAmps00";
-            this.cmbLC1OCAmps00.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps00.TabIndex = 11;
-            // 
-            // lblLC1Ch15
-            // 
-            this.lblLC1Ch15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch15.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch15.Location = new System.Drawing.Point(1100, 16);
-            this.lblLC1Ch15.Name = "lblLC1Ch15";
-            this.lblLC1Ch15.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch15.TabIndex = 107;
-            this.lblLC1Ch15.Text = "15";
-            this.lblLC1Ch15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG3Ch03
-            // 
-            this.chkLC1MG3Ch03.AutoSize = true;
-            this.chkLC1MG3Ch03.Location = new System.Drawing.Point(248, 169);
-            this.chkLC1MG3Ch03.Name = "chkLC1MG3Ch03";
-            this.chkLC1MG3Ch03.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch03.TabIndex = 78;
-            this.chkLC1MG3Ch03.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG4Ch08
-            // 
-            this.chkLC1MG4Ch08.AutoSize = true;
-            this.chkLC1MG4Ch08.Location = new System.Drawing.Point(608, 199);
-            this.chkLC1MG4Ch08.Name = "chkLC1MG4Ch08";
-            this.chkLC1MG4Ch08.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch08.TabIndex = 99;
-            this.chkLC1MG4Ch08.UseVisualStyleBackColor = true;
-            // 
-            // lblLC1Ch14
-            // 
-            this.lblLC1Ch14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch14.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch14.Location = new System.Drawing.Point(1028, 16);
-            this.lblLC1Ch14.Name = "lblLC1Ch14";
-            this.lblLC1Ch14.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch14.TabIndex = 108;
-            this.lblLC1Ch14.Text = "14";
-            this.lblLC1Ch14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cmbLC1OCAmps01
-            // 
-            this.cmbLC1OCAmps01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps01.FormattingEnabled = true;
-            this.cmbLC1OCAmps01.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps01.Location = new System.Drawing.Point(92, 44);
-            this.cmbLC1OCAmps01.Name = "cmbLC1OCAmps01";
-            this.cmbLC1OCAmps01.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps01.TabIndex = 12;
-            // 
-            // cmbLC1OCTime07
-            // 
-            this.cmbLC1OCTime07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime07.FormattingEnabled = true;
-            this.cmbLC1OCTime07.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime07.Location = new System.Drawing.Point(524, 74);
-            this.cmbLC1OCTime07.Name = "cmbLC1OCTime07";
-            this.cmbLC1OCTime07.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime07.TabIndex = 34;
-            // 
-            // chkLC1MG2Ch03
-            // 
-            this.chkLC1MG2Ch03.AutoSize = true;
-            this.chkLC1MG2Ch03.Location = new System.Drawing.Point(248, 139);
-            this.chkLC1MG2Ch03.Name = "chkLC1MG2Ch03";
-            this.chkLC1MG2Ch03.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch03.TabIndex = 62;
-            this.chkLC1MG2Ch03.UseVisualStyleBackColor = true;
-            // 
-            // lblLC1Ch13
-            // 
-            this.lblLC1Ch13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch13.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch13.Location = new System.Drawing.Point(956, 16);
-            this.lblLC1Ch13.Name = "lblLC1Ch13";
-            this.lblLC1Ch13.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch13.TabIndex = 109;
-            this.lblLC1Ch13.Text = "13";
-            this.lblLC1Ch13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG1Ch09
-            // 
-            this.chkLC1MG1Ch09.AutoSize = true;
-            this.chkLC1MG1Ch09.Location = new System.Drawing.Point(680, 109);
-            this.chkLC1MG1Ch09.Name = "chkLC1MG1Ch09";
-            this.chkLC1MG1Ch09.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch09.TabIndex = 52;
-            this.chkLC1MG1Ch09.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCTime08
-            // 
-            this.cmbLC1OCTime08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime08.FormattingEnabled = true;
-            this.cmbLC1OCTime08.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime08.Location = new System.Drawing.Point(596, 74);
-            this.cmbLC1OCTime08.Name = "cmbLC1OCTime08";
-            this.cmbLC1OCTime08.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime08.TabIndex = 35;
-            // 
-            // cmbLC1OCAmps02
-            // 
-            this.cmbLC1OCAmps02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps02.FormattingEnabled = true;
-            this.cmbLC1OCAmps02.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps02.Location = new System.Drawing.Point(164, 44);
-            this.cmbLC1OCAmps02.Name = "cmbLC1OCAmps02";
-            this.cmbLC1OCAmps02.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps02.TabIndex = 13;
-            // 
-            // lblLC1Ch12
-            // 
-            this.lblLC1Ch12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLC1Ch12.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblLC1Ch12.Location = new System.Drawing.Point(884, 16);
-            this.lblLC1Ch12.Name = "lblLC1Ch12";
-            this.lblLC1Ch12.Size = new System.Drawing.Size(40, 20);
-            this.lblLC1Ch12.TabIndex = 110;
-            this.lblLC1Ch12.Text = "12";
-            this.lblLC1Ch12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chkLC1MG1Ch03
-            // 
-            this.chkLC1MG1Ch03.AutoSize = true;
-            this.chkLC1MG1Ch03.Location = new System.Drawing.Point(248, 109);
-            this.chkLC1MG1Ch03.Name = "chkLC1MG1Ch03";
-            this.chkLC1MG1Ch03.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch03.TabIndex = 46;
-            this.chkLC1MG1Ch03.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCTime06
-            // 
-            this.cmbLC1OCTime06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime06.FormattingEnabled = true;
-            this.cmbLC1OCTime06.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime06.Location = new System.Drawing.Point(452, 74);
-            this.cmbLC1OCTime06.Name = "cmbLC1OCTime06";
-            this.cmbLC1OCTime06.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime06.TabIndex = 33;
-            // 
-            // chkLC1MG2Ch09
-            // 
-            this.chkLC1MG2Ch09.AutoSize = true;
-            this.chkLC1MG2Ch09.Location = new System.Drawing.Point(680, 139);
-            this.chkLC1MG2Ch09.Name = "chkLC1MG2Ch09";
-            this.chkLC1MG2Ch09.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch09.TabIndex = 68;
-            this.chkLC1MG2Ch09.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCAmps12
-            // 
-            this.cmbLC1OCAmps12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps12.FormattingEnabled = true;
-            this.cmbLC1OCAmps12.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps12.Location = new System.Drawing.Point(884, 44);
-            this.cmbLC1OCAmps12.Name = "cmbLC1OCAmps12";
-            this.cmbLC1OCAmps12.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps12.TabIndex = 23;
-            // 
-            // cmbLC1OCAmps03
-            // 
-            this.cmbLC1OCAmps03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps03.FormattingEnabled = true;
-            this.cmbLC1OCAmps03.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps03.Location = new System.Drawing.Point(236, 44);
-            this.cmbLC1OCAmps03.Name = "cmbLC1OCAmps03";
-            this.cmbLC1OCAmps03.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps03.TabIndex = 14;
-            // 
-            // cmbLC1OCTime09
-            // 
-            this.cmbLC1OCTime09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime09.FormattingEnabled = true;
-            this.cmbLC1OCTime09.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime09.Location = new System.Drawing.Point(668, 74);
-            this.cmbLC1OCTime09.Name = "cmbLC1OCTime09";
-            this.cmbLC1OCTime09.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime09.TabIndex = 36;
-            // 
-            // chkLC1MG4Ch02
-            // 
-            this.chkLC1MG4Ch02.AutoSize = true;
-            this.chkLC1MG4Ch02.Location = new System.Drawing.Point(176, 199);
-            this.chkLC1MG4Ch02.Name = "chkLC1MG4Ch02";
-            this.chkLC1MG4Ch02.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch02.TabIndex = 93;
-            this.chkLC1MG4Ch02.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCAmps13
-            // 
-            this.cmbLC1OCAmps13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps13.FormattingEnabled = true;
-            this.cmbLC1OCAmps13.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps13.Location = new System.Drawing.Point(956, 44);
-            this.cmbLC1OCAmps13.Name = "cmbLC1OCAmps13";
-            this.cmbLC1OCAmps13.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps13.TabIndex = 24;
-            // 
-            // chkLC1MG3Ch09
-            // 
-            this.chkLC1MG3Ch09.AutoSize = true;
-            this.chkLC1MG3Ch09.Location = new System.Drawing.Point(680, 169);
-            this.chkLC1MG3Ch09.Name = "chkLC1MG3Ch09";
-            this.chkLC1MG3Ch09.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch09.TabIndex = 84;
-            this.chkLC1MG3Ch09.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCTime05
-            // 
-            this.cmbLC1OCTime05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime05.FormattingEnabled = true;
-            this.cmbLC1OCTime05.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime05.Location = new System.Drawing.Point(380, 74);
-            this.cmbLC1OCTime05.Name = "cmbLC1OCTime05";
-            this.cmbLC1OCTime05.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime05.TabIndex = 32;
-            // 
-            // cmbLC1OCAmps04
-            // 
-            this.cmbLC1OCAmps04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps04.FormattingEnabled = true;
-            this.cmbLC1OCAmps04.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps04.Location = new System.Drawing.Point(308, 44);
-            this.cmbLC1OCAmps04.Name = "cmbLC1OCAmps04";
-            this.cmbLC1OCAmps04.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps04.TabIndex = 15;
-            // 
-            // cmbLC1OCAmps14
-            // 
-            this.cmbLC1OCAmps14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps14.FormattingEnabled = true;
-            this.cmbLC1OCAmps14.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps14.Location = new System.Drawing.Point(1028, 44);
-            this.cmbLC1OCAmps14.Name = "cmbLC1OCAmps14";
-            this.cmbLC1OCAmps14.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps14.TabIndex = 25;
-            // 
-            // chkLC1MG4Ch09
-            // 
-            this.chkLC1MG4Ch09.AutoSize = true;
-            this.chkLC1MG4Ch09.Location = new System.Drawing.Point(680, 199);
-            this.chkLC1MG4Ch09.Name = "chkLC1MG4Ch09";
-            this.chkLC1MG4Ch09.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch09.TabIndex = 100;
-            this.chkLC1MG4Ch09.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCTime10
-            // 
-            this.cmbLC1OCTime10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime10.FormattingEnabled = true;
-            this.cmbLC1OCTime10.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime10.Location = new System.Drawing.Point(740, 74);
-            this.cmbLC1OCTime10.Name = "cmbLC1OCTime10";
-            this.cmbLC1OCTime10.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime10.TabIndex = 37;
-            // 
-            // chkLC1MG3Ch02
-            // 
-            this.chkLC1MG3Ch02.AutoSize = true;
-            this.chkLC1MG3Ch02.Location = new System.Drawing.Point(176, 169);
-            this.chkLC1MG3Ch02.Name = "chkLC1MG3Ch02";
-            this.chkLC1MG3Ch02.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch02.TabIndex = 77;
-            this.chkLC1MG3Ch02.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCAmps15
-            // 
-            this.cmbLC1OCAmps15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps15.FormattingEnabled = true;
-            this.cmbLC1OCAmps15.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps15.Location = new System.Drawing.Point(1100, 44);
-            this.cmbLC1OCAmps15.Name = "cmbLC1OCAmps15";
-            this.cmbLC1OCAmps15.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps15.TabIndex = 26;
-            // 
-            // cmbLC1OCAmps05
-            // 
-            this.cmbLC1OCAmps05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps05.FormattingEnabled = true;
-            this.cmbLC1OCAmps05.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps05.Location = new System.Drawing.Point(380, 44);
-            this.cmbLC1OCAmps05.Name = "cmbLC1OCAmps05";
-            this.cmbLC1OCAmps05.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps05.TabIndex = 16;
-            // 
-            // cmbLC1OCTime04
-            // 
-            this.cmbLC1OCTime04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime04.FormattingEnabled = true;
-            this.cmbLC1OCTime04.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime04.Location = new System.Drawing.Point(308, 74);
-            this.cmbLC1OCTime04.Name = "cmbLC1OCTime04";
-            this.cmbLC1OCTime04.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime04.TabIndex = 31;
-            // 
-            // chkLC1MG1Ch10
-            // 
-            this.chkLC1MG1Ch10.AutoSize = true;
-            this.chkLC1MG1Ch10.Location = new System.Drawing.Point(752, 109);
-            this.chkLC1MG1Ch10.Name = "chkLC1MG1Ch10";
-            this.chkLC1MG1Ch10.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch10.TabIndex = 53;
-            this.chkLC1MG1Ch10.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCTime15
-            // 
-            this.cmbLC1OCTime15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime15.FormattingEnabled = true;
-            this.cmbLC1OCTime15.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime15.Location = new System.Drawing.Point(1100, 74);
-            this.cmbLC1OCTime15.Name = "cmbLC1OCTime15";
-            this.cmbLC1OCTime15.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime15.TabIndex = 42;
-            // 
-            // chkLC1MG2Ch02
-            // 
-            this.chkLC1MG2Ch02.AutoSize = true;
-            this.chkLC1MG2Ch02.Location = new System.Drawing.Point(176, 139);
-            this.chkLC1MG2Ch02.Name = "chkLC1MG2Ch02";
-            this.chkLC1MG2Ch02.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch02.TabIndex = 61;
-            this.chkLC1MG2Ch02.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCTime11
-            // 
-            this.cmbLC1OCTime11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime11.FormattingEnabled = true;
-            this.cmbLC1OCTime11.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime11.Location = new System.Drawing.Point(812, 74);
-            this.cmbLC1OCTime11.Name = "cmbLC1OCTime11";
-            this.cmbLC1OCTime11.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime11.TabIndex = 38;
-            // 
-            // cmbLC1OCAmps06
-            // 
-            this.cmbLC1OCAmps06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps06.FormattingEnabled = true;
-            this.cmbLC1OCAmps06.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps06.Location = new System.Drawing.Point(452, 44);
-            this.cmbLC1OCAmps06.Name = "cmbLC1OCAmps06";
-            this.cmbLC1OCAmps06.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps06.TabIndex = 17;
-            // 
-            // cmbLC1OCTime14
-            // 
-            this.cmbLC1OCTime14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime14.FormattingEnabled = true;
-            this.cmbLC1OCTime14.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime14.Location = new System.Drawing.Point(1028, 74);
-            this.cmbLC1OCTime14.Name = "cmbLC1OCTime14";
-            this.cmbLC1OCTime14.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime14.TabIndex = 41;
-            // 
-            // chkLC1MG2Ch10
-            // 
-            this.chkLC1MG2Ch10.AutoSize = true;
-            this.chkLC1MG2Ch10.Location = new System.Drawing.Point(752, 139);
-            this.chkLC1MG2Ch10.Name = "chkLC1MG2Ch10";
-            this.chkLC1MG2Ch10.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch10.TabIndex = 69;
-            this.chkLC1MG2Ch10.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCTime03
-            // 
-            this.cmbLC1OCTime03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime03.FormattingEnabled = true;
-            this.cmbLC1OCTime03.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime03.Location = new System.Drawing.Point(236, 74);
-            this.cmbLC1OCTime03.Name = "cmbLC1OCTime03";
-            this.cmbLC1OCTime03.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime03.TabIndex = 30;
-            // 
-            // chkLC1MG1Ch02
-            // 
-            this.chkLC1MG1Ch02.AutoSize = true;
-            this.chkLC1MG1Ch02.Location = new System.Drawing.Point(176, 109);
-            this.chkLC1MG1Ch02.Name = "chkLC1MG1Ch02";
-            this.chkLC1MG1Ch02.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch02.TabIndex = 45;
-            this.chkLC1MG1Ch02.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCTime13
-            // 
-            this.cmbLC1OCTime13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime13.FormattingEnabled = true;
-            this.cmbLC1OCTime13.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime13.Location = new System.Drawing.Point(956, 74);
-            this.cmbLC1OCTime13.Name = "cmbLC1OCTime13";
-            this.cmbLC1OCTime13.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime13.TabIndex = 40;
-            // 
-            // cmbLC1OCAmps07
-            // 
-            this.cmbLC1OCAmps07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps07.FormattingEnabled = true;
-            this.cmbLC1OCAmps07.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps07.Location = new System.Drawing.Point(524, 44);
-            this.cmbLC1OCAmps07.Name = "cmbLC1OCAmps07";
-            this.cmbLC1OCAmps07.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps07.TabIndex = 18;
-            // 
-            // chkLC1MG1Ch00
-            // 
-            this.chkLC1MG1Ch00.AutoSize = true;
-            this.chkLC1MG1Ch00.Location = new System.Drawing.Point(32, 109);
-            this.chkLC1MG1Ch00.Name = "chkLC1MG1Ch00";
-            this.chkLC1MG1Ch00.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch00.TabIndex = 43;
-            this.chkLC1MG1Ch00.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG3Ch10
-            // 
-            this.chkLC1MG3Ch10.AutoSize = true;
-            this.chkLC1MG3Ch10.Location = new System.Drawing.Point(752, 169);
-            this.chkLC1MG3Ch10.Name = "chkLC1MG3Ch10";
-            this.chkLC1MG3Ch10.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch10.TabIndex = 85;
-            this.chkLC1MG3Ch10.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCTime12
-            // 
-            this.cmbLC1OCTime12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime12.FormattingEnabled = true;
-            this.cmbLC1OCTime12.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime12.Location = new System.Drawing.Point(884, 74);
-            this.cmbLC1OCTime12.Name = "cmbLC1OCTime12";
-            this.cmbLC1OCTime12.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime12.TabIndex = 39;
-            // 
-            // chkLC1MG4Ch01
-            // 
-            this.chkLC1MG4Ch01.AutoSize = true;
-            this.chkLC1MG4Ch01.Location = new System.Drawing.Point(104, 199);
-            this.chkLC1MG4Ch01.Name = "chkLC1MG4Ch01";
-            this.chkLC1MG4Ch01.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch01.TabIndex = 92;
-            this.chkLC1MG4Ch01.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCTime02
-            // 
-            this.cmbLC1OCTime02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime02.FormattingEnabled = true;
-            this.cmbLC1OCTime02.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime02.Location = new System.Drawing.Point(164, 74);
-            this.cmbLC1OCTime02.Name = "cmbLC1OCTime02";
-            this.cmbLC1OCTime02.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime02.TabIndex = 29;
-            // 
-            // cmbLC1OCAmps08
-            // 
-            this.cmbLC1OCAmps08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps08.FormattingEnabled = true;
-            this.cmbLC1OCAmps08.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps08.Location = new System.Drawing.Point(596, 44);
-            this.cmbLC1OCAmps08.Name = "cmbLC1OCAmps08";
-            this.cmbLC1OCAmps08.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps08.TabIndex = 19;
-            // 
-            // chkLC1MG2Ch00
-            // 
-            this.chkLC1MG2Ch00.AutoSize = true;
-            this.chkLC1MG2Ch00.Location = new System.Drawing.Point(32, 139);
-            this.chkLC1MG2Ch00.Name = "chkLC1MG2Ch00";
-            this.chkLC1MG2Ch00.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch00.TabIndex = 59;
-            this.chkLC1MG2Ch00.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG4Ch10
-            // 
-            this.chkLC1MG4Ch10.AutoSize = true;
-            this.chkLC1MG4Ch10.Location = new System.Drawing.Point(752, 199);
-            this.chkLC1MG4Ch10.Name = "chkLC1MG4Ch10";
-            this.chkLC1MG4Ch10.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch10.TabIndex = 101;
-            this.chkLC1MG4Ch10.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCTime01
-            // 
-            this.cmbLC1OCTime01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime01.FormattingEnabled = true;
-            this.cmbLC1OCTime01.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime01.Location = new System.Drawing.Point(92, 74);
-            this.cmbLC1OCTime01.Name = "cmbLC1OCTime01";
-            this.cmbLC1OCTime01.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime01.TabIndex = 28;
-            // 
-            // chkLC1MG3Ch01
-            // 
-            this.chkLC1MG3Ch01.AutoSize = true;
-            this.chkLC1MG3Ch01.Location = new System.Drawing.Point(104, 169);
-            this.chkLC1MG3Ch01.Name = "chkLC1MG3Ch01";
-            this.chkLC1MG3Ch01.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch01.TabIndex = 76;
-            this.chkLC1MG3Ch01.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG3Ch00
-            // 
-            this.chkLC1MG3Ch00.AutoSize = true;
-            this.chkLC1MG3Ch00.Location = new System.Drawing.Point(32, 169);
-            this.chkLC1MG3Ch00.Name = "chkLC1MG3Ch00";
-            this.chkLC1MG3Ch00.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch00.TabIndex = 75;
-            this.chkLC1MG3Ch00.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCAmps09
-            // 
-            this.cmbLC1OCAmps09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps09.FormattingEnabled = true;
-            this.cmbLC1OCAmps09.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps09.Location = new System.Drawing.Point(668, 44);
-            this.cmbLC1OCAmps09.Name = "cmbLC1OCAmps09";
-            this.cmbLC1OCAmps09.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps09.TabIndex = 20;
-            // 
-            // chkLC1MG4Ch11
-            // 
-            this.chkLC1MG4Ch11.AutoSize = true;
-            this.chkLC1MG4Ch11.Location = new System.Drawing.Point(824, 199);
-            this.chkLC1MG4Ch11.Name = "chkLC1MG4Ch11";
-            this.chkLC1MG4Ch11.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch11.TabIndex = 102;
-            this.chkLC1MG4Ch11.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG1Ch11
-            // 
-            this.chkLC1MG1Ch11.AutoSize = true;
-            this.chkLC1MG1Ch11.Location = new System.Drawing.Point(824, 109);
-            this.chkLC1MG1Ch11.Name = "chkLC1MG1Ch11";
-            this.chkLC1MG1Ch11.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch11.TabIndex = 54;
-            this.chkLC1MG1Ch11.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCTime00
-            // 
-            this.cmbLC1OCTime00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCTime00.FormattingEnabled = true;
-            this.cmbLC1OCTime00.Items.AddRange(new object[] {
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
-            this.cmbLC1OCTime00.Location = new System.Drawing.Point(20, 74);
-            this.cmbLC1OCTime00.Name = "cmbLC1OCTime00";
-            this.cmbLC1OCTime00.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCTime00.TabIndex = 27;
-            // 
-            // chkLC1MG2Ch01
-            // 
-            this.chkLC1MG2Ch01.AutoSize = true;
-            this.chkLC1MG2Ch01.Location = new System.Drawing.Point(104, 139);
-            this.chkLC1MG2Ch01.Name = "chkLC1MG2Ch01";
-            this.chkLC1MG2Ch01.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG2Ch01.TabIndex = 60;
-            this.chkLC1MG2Ch01.UseVisualStyleBackColor = true;
-            // 
-            // chkLC1MG4Ch00
-            // 
-            this.chkLC1MG4Ch00.AutoSize = true;
-            this.chkLC1MG4Ch00.Location = new System.Drawing.Point(32, 199);
-            this.chkLC1MG4Ch00.Name = "chkLC1MG4Ch00";
-            this.chkLC1MG4Ch00.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG4Ch00.TabIndex = 91;
-            this.chkLC1MG4Ch00.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCAmps10
-            // 
-            this.cmbLC1OCAmps10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps10.FormattingEnabled = true;
-            this.cmbLC1OCAmps10.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps10.Location = new System.Drawing.Point(740, 44);
-            this.cmbLC1OCAmps10.Name = "cmbLC1OCAmps10";
-            this.cmbLC1OCAmps10.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps10.TabIndex = 21;
-            // 
-            // chkLC1MG3Ch11
-            // 
-            this.chkLC1MG3Ch11.AutoSize = true;
-            this.chkLC1MG3Ch11.Location = new System.Drawing.Point(824, 169);
-            this.chkLC1MG3Ch11.Name = "chkLC1MG3Ch11";
-            this.chkLC1MG3Ch11.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG3Ch11.TabIndex = 86;
-            this.chkLC1MG3Ch11.UseVisualStyleBackColor = true;
             // 
             // chkLC1MG2Ch11
             // 
             this.chkLC1MG2Ch11.AutoSize = true;
-            this.chkLC1MG2Ch11.Location = new System.Drawing.Point(824, 139);
+            this.chkLC1MG2Ch11.Location = new System.Drawing.Point(1003, 249);
             this.chkLC1MG2Ch11.Name = "chkLC1MG2Ch11";
             this.chkLC1MG2Ch11.Size = new System.Drawing.Size(15, 14);
             this.chkLC1MG2Ch11.TabIndex = 70;
             this.chkLC1MG2Ch11.UseVisualStyleBackColor = true;
-            // 
-            // cmbLC1OCAmps11
-            // 
-            this.cmbLC1OCAmps11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLC1OCAmps11.FormattingEnabled = true;
-            this.cmbLC1OCAmps11.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbLC1OCAmps11.Location = new System.Drawing.Point(812, 44);
-            this.cmbLC1OCAmps11.Name = "cmbLC1OCAmps11";
-            this.cmbLC1OCAmps11.Size = new System.Drawing.Size(40, 21);
-            this.cmbLC1OCAmps11.TabIndex = 22;
-            // 
-            // chkLC1MG1Ch01
-            // 
-            this.chkLC1MG1Ch01.AutoSize = true;
-            this.chkLC1MG1Ch01.Location = new System.Drawing.Point(104, 109);
-            this.chkLC1MG1Ch01.Name = "chkLC1MG1Ch01";
-            this.chkLC1MG1Ch01.Size = new System.Drawing.Size(15, 14);
-            this.chkLC1MG1Ch01.TabIndex = 44;
-            this.chkLC1MG1Ch01.UseVisualStyleBackColor = true;
             // 
             // cmbLC1Mode12
             // 
@@ -17039,21 +15907,39 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode12.Location = new System.Drawing.Point(1051, 336);
             this.cmbLC1Mode12.Name = "cmbLC1Mode12";
-            this.cmbLC1Mode12.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode12.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode12.TabIndex = 148;
+            // 
+            // chkLC1MG3Ch15
+            // 
+            this.chkLC1MG3Ch15.AutoSize = true;
+            this.chkLC1MG3Ch15.Location = new System.Drawing.Point(1291, 279);
+            this.chkLC1MG3Ch15.Name = "chkLC1MG3Ch15";
+            this.chkLC1MG3Ch15.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch15.TabIndex = 90;
+            this.chkLC1MG3Ch15.UseVisualStyleBackColor = true;
             // 
             // chkLC1Standalone
             // 
             this.chkLC1Standalone.AutoSize = true;
             this.chkLC1Standalone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkLC1Standalone.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC1Standalone.Location = new System.Drawing.Point(746, 26);
+            this.chkLC1Standalone.Location = new System.Drawing.Point(881, 26);
             this.chkLC1Standalone.Name = "chkLC1Standalone";
             this.chkLC1Standalone.Size = new System.Drawing.Size(164, 21);
             this.chkLC1Standalone.TabIndex = 111;
             this.chkLC1Standalone.Text = "Standalone Shade Card";
             this.chkLC1Standalone.UseVisualStyleBackColor = true;
             this.chkLC1Standalone.CheckedChanged += new System.EventHandler(this.chkLC1Standalone_CheckedChanged);
+            // 
+            // chkLC1MG3Ch11
+            // 
+            this.chkLC1MG3Ch11.AutoSize = true;
+            this.chkLC1MG3Ch11.Location = new System.Drawing.Point(1003, 279);
+            this.chkLC1MG3Ch11.Name = "chkLC1MG3Ch11";
+            this.chkLC1MG3Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch11.TabIndex = 86;
+            this.chkLC1MG3Ch11.UseVisualStyleBackColor = true;
             // 
             // cmbLC1Mode11
             // 
@@ -17066,8 +15952,17 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode11.Location = new System.Drawing.Point(979, 336);
             this.cmbLC1Mode11.Name = "cmbLC1Mode11";
-            this.cmbLC1Mode11.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode11.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode11.TabIndex = 147;
+            // 
+            // chkLC1MG2Ch06
+            // 
+            this.chkLC1MG2Ch06.AutoSize = true;
+            this.chkLC1MG2Ch06.Location = new System.Drawing.Point(643, 249);
+            this.chkLC1MG2Ch06.Name = "chkLC1MG2Ch06";
+            this.chkLC1MG2Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch06.TabIndex = 65;
+            this.chkLC1MG2Ch06.UseVisualStyleBackColor = true;
             // 
             // chkLC1DCDimmer
             // 
@@ -17081,6 +15976,18 @@ namespace M1ConfigGenerator
             this.chkLC1DCDimmer.Text = "DC Dimmer";
             this.chkLC1DCDimmer.UseVisualStyleBackColor = true;
             // 
+            // cmbLC1OCAmps10
+            // 
+            this.cmbLC1OCAmps10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps10.FormattingEnabled = true;
+            this.cmbLC1OCAmps10.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps10.Location = new System.Drawing.Point(919, 154);
+            this.cmbLC1OCAmps10.Name = "cmbLC1OCAmps10";
+            this.cmbLC1OCAmps10.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps10.TabIndex = 21;
+            // 
             // cmbLC1Mode10
             // 
             this.cmbLC1Mode10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -17092,8 +15999,19 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode10.Location = new System.Drawing.Point(907, 336);
             this.cmbLC1Mode10.Name = "cmbLC1Mode10";
-            this.cmbLC1Mode10.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode10.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode10.TabIndex = 146;
+            // 
+            // lblLC1Ch03
+            // 
+            this.lblLC1Ch03.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch03.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch03.Location = new System.Drawing.Point(415, 104);
+            this.lblLC1Ch03.Name = "lblLC1Ch03";
+            this.lblLC1Ch03.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch03.TabIndex = 25;
+            this.lblLC1Ch03.Text = "3";
+            this.lblLC1Ch03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabControlLC1QF
             // 
@@ -17297,6 +16215,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1MeasCurTimeCh15
             // 
+            this.cmbLC1MeasCurTimeCh15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh15.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh15.Items.AddRange(new object[] {
             "5",
@@ -17308,9 +16227,8 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh15.Location = new System.Drawing.Point(1270, 273);
             this.cmbLC1MeasCurTimeCh15.Name = "cmbLC1MeasCurTimeCh15";
-            this.cmbLC1MeasCurTimeCh15.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh15.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh15.TabIndex = 266;
-            this.cmbLC1MeasCurTimeCh15.Text = "8";
             // 
             // txtbLC1UndercurrentAmpsCh15
             // 
@@ -17354,6 +16272,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh15
             // 
+            this.cmbLC1DirectionCh15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh15.FormattingEnabled = true;
             this.cmbLC1DirectionCh15.Items.AddRange(new object[] {
             "Off",
@@ -17365,9 +16284,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh15.Location = new System.Drawing.Point(1259, 91);
             this.cmbLC1DirectionCh15.Name = "cmbLC1DirectionCh15";
-            this.cmbLC1DirectionCh15.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh15.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh15.TabIndex = 260;
-            this.cmbLC1DirectionCh15.Text = "Off";
             // 
             // chkLC1AllowComTimeCh15
             // 
@@ -17398,6 +16316,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1MeasCurTimeCh14
             // 
+            this.cmbLC1MeasCurTimeCh14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh14.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh14.Items.AddRange(new object[] {
             "5",
@@ -17409,9 +16328,8 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh14.Location = new System.Drawing.Point(1198, 273);
             this.cmbLC1MeasCurTimeCh14.Name = "cmbLC1MeasCurTimeCh14";
-            this.cmbLC1MeasCurTimeCh14.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh14.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh14.TabIndex = 256;
-            this.cmbLC1MeasCurTimeCh14.Text = "8";
             // 
             // txtbLC1UndercurrentAmpsCh14
             // 
@@ -17455,6 +16373,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh14
             // 
+            this.cmbLC1DirectionCh14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh14.FormattingEnabled = true;
             this.cmbLC1DirectionCh14.Items.AddRange(new object[] {
             "Off",
@@ -17466,9 +16385,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh14.Location = new System.Drawing.Point(1187, 91);
             this.cmbLC1DirectionCh14.Name = "cmbLC1DirectionCh14";
-            this.cmbLC1DirectionCh14.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh14.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh14.TabIndex = 250;
-            this.cmbLC1DirectionCh14.Text = "Off";
             // 
             // chkLC1AllowComTimeCh14
             // 
@@ -17499,6 +16417,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1MeasCurTimeCh13
             // 
+            this.cmbLC1MeasCurTimeCh13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh13.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh13.Items.AddRange(new object[] {
             "5",
@@ -17510,9 +16429,8 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh13.Location = new System.Drawing.Point(1126, 273);
             this.cmbLC1MeasCurTimeCh13.Name = "cmbLC1MeasCurTimeCh13";
-            this.cmbLC1MeasCurTimeCh13.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh13.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh13.TabIndex = 246;
-            this.cmbLC1MeasCurTimeCh13.Text = "8";
             // 
             // txtbLC1UndercurrentAmpsCh13
             // 
@@ -17556,6 +16474,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh13
             // 
+            this.cmbLC1DirectionCh13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh13.FormattingEnabled = true;
             this.cmbLC1DirectionCh13.Items.AddRange(new object[] {
             "Off",
@@ -17567,9 +16486,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh13.Location = new System.Drawing.Point(1115, 91);
             this.cmbLC1DirectionCh13.Name = "cmbLC1DirectionCh13";
-            this.cmbLC1DirectionCh13.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh13.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh13.TabIndex = 240;
-            this.cmbLC1DirectionCh13.Text = "Off";
             // 
             // chkLC1AllowComTimeCh13
             // 
@@ -17600,6 +16518,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1MeasCurTimeCh12
             // 
+            this.cmbLC1MeasCurTimeCh12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh12.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh12.Items.AddRange(new object[] {
             "5",
@@ -17611,9 +16530,8 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh12.Location = new System.Drawing.Point(1054, 273);
             this.cmbLC1MeasCurTimeCh12.Name = "cmbLC1MeasCurTimeCh12";
-            this.cmbLC1MeasCurTimeCh12.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh12.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh12.TabIndex = 236;
-            this.cmbLC1MeasCurTimeCh12.Text = "8";
             // 
             // txtbLC1UndercurrentAmpsCh12
             // 
@@ -17657,6 +16575,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh12
             // 
+            this.cmbLC1DirectionCh12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh12.FormattingEnabled = true;
             this.cmbLC1DirectionCh12.Items.AddRange(new object[] {
             "Off",
@@ -17668,9 +16587,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh12.Location = new System.Drawing.Point(1043, 91);
             this.cmbLC1DirectionCh12.Name = "cmbLC1DirectionCh12";
-            this.cmbLC1DirectionCh12.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh12.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh12.TabIndex = 230;
-            this.cmbLC1DirectionCh12.Text = "Off";
             // 
             // chkLC1AllowComTimeCh12
             // 
@@ -17701,6 +16619,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1MeasCurTimeCh11
             // 
+            this.cmbLC1MeasCurTimeCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh11.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh11.Items.AddRange(new object[] {
             "5",
@@ -17712,9 +16631,8 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh11.Location = new System.Drawing.Point(986, 273);
             this.cmbLC1MeasCurTimeCh11.Name = "cmbLC1MeasCurTimeCh11";
-            this.cmbLC1MeasCurTimeCh11.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh11.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh11.TabIndex = 226;
-            this.cmbLC1MeasCurTimeCh11.Text = "8";
             // 
             // txtbLC1UndercurrentAmpsCh11
             // 
@@ -17813,6 +16731,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh11
             // 
+            this.cmbLC1DirectionCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh11.FormattingEnabled = true;
             this.cmbLC1DirectionCh11.Items.AddRange(new object[] {
             "Off",
@@ -17824,9 +16743,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh11.Location = new System.Drawing.Point(975, 91);
             this.cmbLC1DirectionCh11.Name = "cmbLC1DirectionCh11";
-            this.cmbLC1DirectionCh11.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh11.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh11.TabIndex = 220;
-            this.cmbLC1DirectionCh11.Text = "Off";
             // 
             // label238
             // 
@@ -17901,6 +16819,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1MeasCurTimeCh10
             // 
+            this.cmbLC1MeasCurTimeCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh10.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh10.Items.AddRange(new object[] {
             "5",
@@ -17912,9 +16831,8 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh10.Location = new System.Drawing.Point(914, 273);
             this.cmbLC1MeasCurTimeCh10.Name = "cmbLC1MeasCurTimeCh10";
-            this.cmbLC1MeasCurTimeCh10.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh10.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh10.TabIndex = 216;
-            this.cmbLC1MeasCurTimeCh10.Text = "8";
             // 
             // label234
             // 
@@ -17988,6 +16906,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh00
             // 
+            this.cmbLC1DirectionCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh00.FormattingEnabled = true;
             this.cmbLC1DirectionCh00.Items.AddRange(new object[] {
             "Off",
@@ -17999,9 +16918,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh00.Location = new System.Drawing.Point(183, 91);
             this.cmbLC1DirectionCh00.Name = "cmbLC1DirectionCh00";
-            this.cmbLC1DirectionCh00.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh00.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh00.TabIndex = 110;
-            this.cmbLC1DirectionCh00.Text = "Off";
             // 
             // txtbLC1PWMDutyCh10
             // 
@@ -18021,6 +16939,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh10
             // 
+            this.cmbLC1DirectionCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh10.FormattingEnabled = true;
             this.cmbLC1DirectionCh10.Items.AddRange(new object[] {
             "Off",
@@ -18032,9 +16951,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh10.Location = new System.Drawing.Point(903, 91);
             this.cmbLC1DirectionCh10.Name = "cmbLC1DirectionCh10";
-            this.cmbLC1DirectionCh10.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh10.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh10.TabIndex = 210;
-            this.cmbLC1DirectionCh10.Text = "Off";
             // 
             // txtbLC1MaxDurRecoveryCh00
             // 
@@ -18097,6 +17015,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1MeasCurTimeCh09
             // 
+            this.cmbLC1MeasCurTimeCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh09.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh09.Items.AddRange(new object[] {
             "5",
@@ -18108,12 +17027,12 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh09.Location = new System.Drawing.Point(842, 273);
             this.cmbLC1MeasCurTimeCh09.Name = "cmbLC1MeasCurTimeCh09";
-            this.cmbLC1MeasCurTimeCh09.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh09.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh09.TabIndex = 206;
-            this.cmbLC1MeasCurTimeCh09.Text = "8";
             // 
             // cmbLC1MeasCurTimeCh00
             // 
+            this.cmbLC1MeasCurTimeCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh00.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh00.Items.AddRange(new object[] {
             "5",
@@ -18125,9 +17044,8 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh00.Location = new System.Drawing.Point(194, 273);
             this.cmbLC1MeasCurTimeCh00.Name = "cmbLC1MeasCurTimeCh00";
-            this.cmbLC1MeasCurTimeCh00.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh00.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh00.TabIndex = 116;
-            this.cmbLC1MeasCurTimeCh00.Text = "8";
             // 
             // txtbLC1UndercurrentAmpsCh09
             // 
@@ -18190,6 +17108,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh01
             // 
+            this.cmbLC1DirectionCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh01.FormattingEnabled = true;
             this.cmbLC1DirectionCh01.Items.AddRange(new object[] {
             "Off",
@@ -18201,9 +17120,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh01.Location = new System.Drawing.Point(255, 91);
             this.cmbLC1DirectionCh01.Name = "cmbLC1DirectionCh01";
-            this.cmbLC1DirectionCh01.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh01.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh01.TabIndex = 120;
-            this.cmbLC1DirectionCh01.Text = "Off";
             // 
             // txtbLC1PWMDutyCh09
             // 
@@ -18223,6 +17141,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh09
             // 
+            this.cmbLC1DirectionCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh09.FormattingEnabled = true;
             this.cmbLC1DirectionCh09.Items.AddRange(new object[] {
             "Off",
@@ -18234,9 +17153,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh09.Location = new System.Drawing.Point(831, 91);
             this.cmbLC1DirectionCh09.Name = "cmbLC1DirectionCh09";
-            this.cmbLC1DirectionCh09.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh09.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh09.TabIndex = 200;
-            this.cmbLC1DirectionCh09.Text = "Off";
             // 
             // txtbLC1MaxDurRecoveryCh01
             // 
@@ -18299,6 +17217,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1MeasCurTimeCh08
             // 
+            this.cmbLC1MeasCurTimeCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh08.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh08.Items.AddRange(new object[] {
             "5",
@@ -18310,12 +17229,12 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh08.Location = new System.Drawing.Point(770, 273);
             this.cmbLC1MeasCurTimeCh08.Name = "cmbLC1MeasCurTimeCh08";
-            this.cmbLC1MeasCurTimeCh08.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh08.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh08.TabIndex = 196;
-            this.cmbLC1MeasCurTimeCh08.Text = "8";
             // 
             // cmbLC1MeasCurTimeCh01
             // 
+            this.cmbLC1MeasCurTimeCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh01.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh01.Items.AddRange(new object[] {
             "5",
@@ -18327,9 +17246,8 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh01.Location = new System.Drawing.Point(266, 273);
             this.cmbLC1MeasCurTimeCh01.Name = "cmbLC1MeasCurTimeCh01";
-            this.cmbLC1MeasCurTimeCh01.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh01.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh01.TabIndex = 126;
-            this.cmbLC1MeasCurTimeCh01.Text = "8";
             // 
             // txtbLC1UndercurrentAmpsCh08
             // 
@@ -18392,6 +17310,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh02
             // 
+            this.cmbLC1DirectionCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh02.FormattingEnabled = true;
             this.cmbLC1DirectionCh02.Items.AddRange(new object[] {
             "Off",
@@ -18403,9 +17322,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh02.Location = new System.Drawing.Point(327, 91);
             this.cmbLC1DirectionCh02.Name = "cmbLC1DirectionCh02";
-            this.cmbLC1DirectionCh02.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh02.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh02.TabIndex = 130;
-            this.cmbLC1DirectionCh02.Text = "Off";
             // 
             // txtb1LC1PWMDutyCh08
             // 
@@ -18425,6 +17343,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh08
             // 
+            this.cmbLC1DirectionCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh08.FormattingEnabled = true;
             this.cmbLC1DirectionCh08.Items.AddRange(new object[] {
             "Off",
@@ -18436,9 +17355,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh08.Location = new System.Drawing.Point(759, 91);
             this.cmbLC1DirectionCh08.Name = "cmbLC1DirectionCh08";
-            this.cmbLC1DirectionCh08.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh08.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh08.TabIndex = 190;
-            this.cmbLC1DirectionCh08.Text = "Off";
             // 
             // txtbLC1MaxDurRecoveryCh02
             // 
@@ -18501,6 +17419,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1MeasCurTimeCh07
             // 
+            this.cmbLC1MeasCurTimeCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh07.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh07.Items.AddRange(new object[] {
             "5",
@@ -18512,12 +17431,12 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh07.Location = new System.Drawing.Point(698, 273);
             this.cmbLC1MeasCurTimeCh07.Name = "cmbLC1MeasCurTimeCh07";
-            this.cmbLC1MeasCurTimeCh07.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh07.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh07.TabIndex = 186;
-            this.cmbLC1MeasCurTimeCh07.Text = "8";
             // 
             // cmbLC1MeasCurTimeCh02
             // 
+            this.cmbLC1MeasCurTimeCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh02.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh02.Items.AddRange(new object[] {
             "5",
@@ -18529,9 +17448,8 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh02.Location = new System.Drawing.Point(338, 273);
             this.cmbLC1MeasCurTimeCh02.Name = "cmbLC1MeasCurTimeCh02";
-            this.cmbLC1MeasCurTimeCh02.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh02.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh02.TabIndex = 136;
-            this.cmbLC1MeasCurTimeCh02.Text = "8";
             // 
             // txtbLC1UndercurrentAmpsCh07
             // 
@@ -18594,6 +17512,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh03
             // 
+            this.cmbLC1DirectionCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh03.FormattingEnabled = true;
             this.cmbLC1DirectionCh03.Items.AddRange(new object[] {
             "Off",
@@ -18605,9 +17524,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh03.Location = new System.Drawing.Point(399, 91);
             this.cmbLC1DirectionCh03.Name = "cmbLC1DirectionCh03";
-            this.cmbLC1DirectionCh03.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh03.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh03.TabIndex = 140;
-            this.cmbLC1DirectionCh03.Text = "Off";
             // 
             // txtbLC1PWMDutyCh07
             // 
@@ -18627,6 +17545,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh07
             // 
+            this.cmbLC1DirectionCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh07.FormattingEnabled = true;
             this.cmbLC1DirectionCh07.Items.AddRange(new object[] {
             "Off",
@@ -18638,9 +17557,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh07.Location = new System.Drawing.Point(687, 91);
             this.cmbLC1DirectionCh07.Name = "cmbLC1DirectionCh07";
-            this.cmbLC1DirectionCh07.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh07.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh07.TabIndex = 180;
-            this.cmbLC1DirectionCh07.Text = "Off";
             // 
             // txtbLC1MaxDurRecoveryCh03
             // 
@@ -18703,6 +17621,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1MeasCurTimeCh06
             // 
+            this.cmbLC1MeasCurTimeCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh06.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh06.Items.AddRange(new object[] {
             "5",
@@ -18714,12 +17633,12 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh06.Location = new System.Drawing.Point(626, 273);
             this.cmbLC1MeasCurTimeCh06.Name = "cmbLC1MeasCurTimeCh06";
-            this.cmbLC1MeasCurTimeCh06.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh06.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh06.TabIndex = 176;
-            this.cmbLC1MeasCurTimeCh06.Text = "8";
             // 
             // cmbLC1MeasCurTimeCh03
             // 
+            this.cmbLC1MeasCurTimeCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh03.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh03.Items.AddRange(new object[] {
             "5",
@@ -18731,9 +17650,8 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh03.Location = new System.Drawing.Point(410, 273);
             this.cmbLC1MeasCurTimeCh03.Name = "cmbLC1MeasCurTimeCh03";
-            this.cmbLC1MeasCurTimeCh03.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh03.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh03.TabIndex = 146;
-            this.cmbLC1MeasCurTimeCh03.Text = "8";
             // 
             // txtbLC1UndercurrentAmpsCh06
             // 
@@ -18796,6 +17714,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh04
             // 
+            this.cmbLC1DirectionCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh04.FormattingEnabled = true;
             this.cmbLC1DirectionCh04.Items.AddRange(new object[] {
             "Off",
@@ -18807,9 +17726,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh04.Location = new System.Drawing.Point(471, 91);
             this.cmbLC1DirectionCh04.Name = "cmbLC1DirectionCh04";
-            this.cmbLC1DirectionCh04.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh04.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh04.TabIndex = 150;
-            this.cmbLC1DirectionCh04.Text = "Off";
             // 
             // txtbLC1PWMDutyCh06
             // 
@@ -18829,6 +17747,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh06
             // 
+            this.cmbLC1DirectionCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh06.FormattingEnabled = true;
             this.cmbLC1DirectionCh06.Items.AddRange(new object[] {
             "Off",
@@ -18840,9 +17759,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh06.Location = new System.Drawing.Point(615, 91);
             this.cmbLC1DirectionCh06.Name = "cmbLC1DirectionCh06";
-            this.cmbLC1DirectionCh06.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh06.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh06.TabIndex = 170;
-            this.cmbLC1DirectionCh06.Text = "Off";
             // 
             // txtbLC1MaxDurRecoveryCh04
             // 
@@ -18905,6 +17823,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1MeasCurTimeCh05
             // 
+            this.cmbLC1MeasCurTimeCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh05.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh05.Items.AddRange(new object[] {
             "5",
@@ -18916,12 +17835,12 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh05.Location = new System.Drawing.Point(554, 273);
             this.cmbLC1MeasCurTimeCh05.Name = "cmbLC1MeasCurTimeCh05";
-            this.cmbLC1MeasCurTimeCh05.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh05.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh05.TabIndex = 166;
-            this.cmbLC1MeasCurTimeCh05.Text = "8";
             // 
             // cmbLC1MeasCurTimeCh04
             // 
+            this.cmbLC1MeasCurTimeCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1MeasCurTimeCh04.FormattingEnabled = true;
             this.cmbLC1MeasCurTimeCh04.Items.AddRange(new object[] {
             "5",
@@ -18933,9 +17852,8 @@ namespace M1ConfigGenerator
             "11"});
             this.cmbLC1MeasCurTimeCh04.Location = new System.Drawing.Point(482, 273);
             this.cmbLC1MeasCurTimeCh04.Name = "cmbLC1MeasCurTimeCh04";
-            this.cmbLC1MeasCurTimeCh04.Size = new System.Drawing.Size(40, 21);
+            this.cmbLC1MeasCurTimeCh04.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh04.TabIndex = 156;
-            this.cmbLC1MeasCurTimeCh04.Text = "8";
             // 
             // txtbLC1UndercurrentAmpsCh05
             // 
@@ -18998,6 +17916,7 @@ namespace M1ConfigGenerator
             // 
             // cmbLC1DirectionCh05
             // 
+            this.cmbLC1DirectionCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLC1DirectionCh05.FormattingEnabled = true;
             this.cmbLC1DirectionCh05.Items.AddRange(new object[] {
             "Off",
@@ -19009,9 +17928,8 @@ namespace M1ConfigGenerator
             "Up"});
             this.cmbLC1DirectionCh05.Location = new System.Drawing.Point(543, 91);
             this.cmbLC1DirectionCh05.Name = "cmbLC1DirectionCh05";
-            this.cmbLC1DirectionCh05.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1DirectionCh05.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh05.TabIndex = 160;
-            this.cmbLC1DirectionCh05.Text = "Off";
             // 
             // txtbLC1PWMDutyCh05
             // 
@@ -19020,6 +17938,15 @@ namespace M1ConfigGenerator
             this.txtbLC1PWMDutyCh05.Size = new System.Drawing.Size(32, 20);
             this.txtbLC1PWMDutyCh05.TabIndex = 161;
             this.txtbLC1PWMDutyCh05.Text = "0";
+            // 
+            // chkLC1MG4Ch00
+            // 
+            this.chkLC1MG4Ch00.AutoSize = true;
+            this.chkLC1MG4Ch00.Location = new System.Drawing.Point(211, 309);
+            this.chkLC1MG4Ch00.Name = "chkLC1MG4Ch00";
+            this.chkLC1MG4Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch00.TabIndex = 91;
+            this.chkLC1MG4Ch00.UseVisualStyleBackColor = true;
             // 
             // cmbLC1Mode09
             // 
@@ -19032,8 +17959,17 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode09.Location = new System.Drawing.Point(835, 336);
             this.cmbLC1Mode09.Name = "cmbLC1Mode09";
-            this.cmbLC1Mode09.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode09.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode09.TabIndex = 145;
+            // 
+            // chkLC1MG2Ch15
+            // 
+            this.chkLC1MG2Ch15.AutoSize = true;
+            this.chkLC1MG2Ch15.Location = new System.Drawing.Point(1291, 249);
+            this.chkLC1MG2Ch15.Name = "chkLC1MG2Ch15";
+            this.chkLC1MG2Ch15.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch15.TabIndex = 74;
+            this.chkLC1MG2Ch15.UseVisualStyleBackColor = true;
             // 
             // cmbLC1PanelNum
             // 
@@ -19054,6 +17990,15 @@ namespace M1ConfigGenerator
             this.cmbLC1PanelNum.TabIndex = 2;
             this.cmbLC1PanelNum.SelectedIndexChanged += new System.EventHandler(this.cmbLC1PanelNum_SelectedIndexChanged);
             // 
+            // chkLC1MG2Ch01
+            // 
+            this.chkLC1MG2Ch01.AutoSize = true;
+            this.chkLC1MG2Ch01.Location = new System.Drawing.Point(283, 249);
+            this.chkLC1MG2Ch01.Name = "chkLC1MG2Ch01";
+            this.chkLC1MG2Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch01.TabIndex = 60;
+            this.chkLC1MG2Ch01.UseVisualStyleBackColor = true;
+            // 
             // cmbLC1Mode08
             // 
             this.cmbLC1Mode08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -19065,8 +18010,19 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode08.Location = new System.Drawing.Point(763, 336);
             this.cmbLC1Mode08.Name = "cmbLC1Mode08";
-            this.cmbLC1Mode08.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode08.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode08.TabIndex = 144;
+            // 
+            // lblLC1Ch01
+            // 
+            this.lblLC1Ch01.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch01.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch01.Location = new System.Drawing.Point(271, 105);
+            this.lblLC1Ch01.Name = "lblLC1Ch01";
+            this.lblLC1Ch01.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch01.TabIndex = 23;
+            this.lblLC1Ch01.Text = "1";
+            this.lblLC1Ch01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label233
             // 
@@ -19079,6 +18035,23 @@ namespace M1ConfigGenerator
             this.label233.TabIndex = 0;
             this.label233.Text = "Card # in Panel:";
             // 
+            // cmbLC1OCTime00
+            // 
+            this.cmbLC1OCTime00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime00.FormattingEnabled = true;
+            this.cmbLC1OCTime00.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime00.Location = new System.Drawing.Point(199, 184);
+            this.cmbLC1OCTime00.Name = "cmbLC1OCTime00";
+            this.cmbLC1OCTime00.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime00.TabIndex = 27;
+            // 
             // cmbLC1Mode07
             // 
             this.cmbLC1Mode07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -19090,8 +18063,17 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode07.Location = new System.Drawing.Point(691, 336);
             this.cmbLC1Mode07.Name = "cmbLC1Mode07";
-            this.cmbLC1Mode07.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode07.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode07.TabIndex = 143;
+            // 
+            // chkLC1MG4Ch05
+            // 
+            this.chkLC1MG4Ch05.AutoSize = true;
+            this.chkLC1MG4Ch05.Location = new System.Drawing.Point(571, 309);
+            this.chkLC1MG4Ch05.Name = "chkLC1MG4Ch05";
+            this.chkLC1MG4Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch05.TabIndex = 96;
+            this.chkLC1MG4Ch05.UseVisualStyleBackColor = true;
             // 
             // cmbLC1CardNum
             // 
@@ -19112,6 +18094,15 @@ namespace M1ConfigGenerator
             this.cmbLC1CardNum.TabIndex = 1;
             this.cmbLC1CardNum.SelectedIndexChanged += new System.EventHandler(this.cmbLC1CardNum_SelectedIndexChanged);
             // 
+            // chkLC1MG1Ch11
+            // 
+            this.chkLC1MG1Ch11.AutoSize = true;
+            this.chkLC1MG1Ch11.Location = new System.Drawing.Point(1003, 219);
+            this.chkLC1MG1Ch11.Name = "chkLC1MG1Ch11";
+            this.chkLC1MG1Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch11.TabIndex = 54;
+            this.chkLC1MG1Ch11.UseVisualStyleBackColor = true;
+            // 
             // cmbLC1Mode06
             // 
             this.cmbLC1Mode06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -19123,8 +18114,17 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode06.Location = new System.Drawing.Point(619, 336);
             this.cmbLC1Mode06.Name = "cmbLC1Mode06";
-            this.cmbLC1Mode06.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode06.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode06.TabIndex = 142;
+            // 
+            // chkLC1MG1Ch15
+            // 
+            this.chkLC1MG1Ch15.AutoSize = true;
+            this.chkLC1MG1Ch15.Location = new System.Drawing.Point(1291, 219);
+            this.chkLC1MG1Ch15.Name = "chkLC1MG1Ch15";
+            this.chkLC1MG1Ch15.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch15.TabIndex = 58;
+            this.chkLC1MG1Ch15.UseVisualStyleBackColor = true;
             // 
             // label232
             // 
@@ -19137,6 +18137,15 @@ namespace M1ConfigGenerator
             this.label232.TabIndex = 2;
             this.label232.Text = "Panel #:";
             // 
+            // chkLC1MG4Ch11
+            // 
+            this.chkLC1MG4Ch11.AutoSize = true;
+            this.chkLC1MG4Ch11.Location = new System.Drawing.Point(1003, 309);
+            this.chkLC1MG4Ch11.Name = "chkLC1MG4Ch11";
+            this.chkLC1MG4Ch11.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch11.TabIndex = 102;
+            this.chkLC1MG4Ch11.UseVisualStyleBackColor = true;
+            // 
             // cmbLC1Mode05
             // 
             this.cmbLC1Mode05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -19148,19 +18157,40 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode05.Location = new System.Drawing.Point(547, 336);
             this.cmbLC1Mode05.Name = "cmbLC1Mode05";
-            this.cmbLC1Mode05.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode05.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode05.TabIndex = 141;
+            // 
+            // chkLC1MG3Ch06
+            // 
+            this.chkLC1MG3Ch06.AutoSize = true;
+            this.chkLC1MG3Ch06.Location = new System.Drawing.Point(643, 279);
+            this.chkLC1MG3Ch06.Name = "chkLC1MG3Ch06";
+            this.chkLC1MG3Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch06.TabIndex = 81;
+            this.chkLC1MG3Ch06.UseVisualStyleBackColor = true;
             // 
             // label231
             // 
             this.label231.AutoSize = true;
             this.label231.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label231.ForeColor = System.Drawing.SystemColors.Control;
+            this.label231.ForeColor = System.Drawing.Color.Red;
             this.label231.Location = new System.Drawing.Point(339, 27);
             this.label231.Name = "label231";
             this.label231.Size = new System.Drawing.Size(74, 17);
             this.label231.TabIndex = 4;
             this.label231.Text = "Config Rev:";
+            // 
+            // cmbLC1OCAmps09
+            // 
+            this.cmbLC1OCAmps09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps09.FormattingEnabled = true;
+            this.cmbLC1OCAmps09.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps09.Location = new System.Drawing.Point(847, 154);
+            this.cmbLC1OCAmps09.Name = "cmbLC1OCAmps09";
+            this.cmbLC1OCAmps09.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps09.TabIndex = 20;
             // 
             // cmbLC1Mode04
             // 
@@ -19173,8 +18203,19 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode04.Location = new System.Drawing.Point(475, 336);
             this.cmbLC1Mode04.Name = "cmbLC1Mode04";
-            this.cmbLC1Mode04.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode04.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode04.TabIndex = 140;
+            // 
+            // lblLC1Ch11
+            // 
+            this.lblLC1Ch11.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch11.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch11.Location = new System.Drawing.Point(991, 105);
+            this.lblLC1Ch11.Name = "lblLC1Ch11";
+            this.lblLC1Ch11.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch11.TabIndex = 26;
+            this.lblLC1Ch11.Text = "11";
+            this.lblLC1Ch11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tbxLC1CfgRev
             // 
@@ -19183,6 +18224,15 @@ namespace M1ConfigGenerator
             this.tbxLC1CfgRev.Size = new System.Drawing.Size(32, 20);
             this.tbxLC1CfgRev.TabIndex = 3;
             this.tbxLC1CfgRev.Text = "1";
+            // 
+            // chkLC1MG3Ch00
+            // 
+            this.chkLC1MG3Ch00.AutoSize = true;
+            this.chkLC1MG3Ch00.Location = new System.Drawing.Point(211, 279);
+            this.chkLC1MG3Ch00.Name = "chkLC1MG3Ch00";
+            this.chkLC1MG3Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch00.TabIndex = 75;
+            this.chkLC1MG3Ch00.UseVisualStyleBackColor = true;
             // 
             // cmbLC1Mode03
             // 
@@ -19195,20 +18245,38 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode03.Location = new System.Drawing.Point(403, 336);
             this.cmbLC1Mode03.Name = "cmbLC1Mode03";
-            this.cmbLC1Mode03.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode03.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode03.TabIndex = 139;
+            // 
+            // chkLC1MG4Ch14
+            // 
+            this.chkLC1MG4Ch14.AutoSize = true;
+            this.chkLC1MG4Ch14.Location = new System.Drawing.Point(1219, 309);
+            this.chkLC1MG4Ch14.Name = "chkLC1MG4Ch14";
+            this.chkLC1MG4Ch14.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch14.TabIndex = 105;
+            this.chkLC1MG4Ch14.UseVisualStyleBackColor = true;
             // 
             // label230
             // 
             this.label230.AutoSize = true;
             this.label230.BackColor = System.Drawing.Color.Transparent;
             this.label230.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label230.ForeColor = System.Drawing.SystemColors.Control;
-            this.label230.Location = new System.Drawing.Point(509, 27);
+            this.label230.ForeColor = System.Drawing.Color.Red;
+            this.label230.Location = new System.Drawing.Point(644, 27);
             this.label230.Name = "label230";
             this.label230.Size = new System.Drawing.Size(101, 17);
             this.label230.TabIndex = 6;
             this.label230.Text = "Config Type:  0x";
+            // 
+            // chkLC1MG3Ch01
+            // 
+            this.chkLC1MG3Ch01.AutoSize = true;
+            this.chkLC1MG3Ch01.Location = new System.Drawing.Point(283, 279);
+            this.chkLC1MG3Ch01.Name = "chkLC1MG3Ch01";
+            this.chkLC1MG3Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch01.TabIndex = 76;
+            this.chkLC1MG3Ch01.UseVisualStyleBackColor = true;
             // 
             // cmbLC1Mode02
             // 
@@ -19221,17 +18289,43 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode02.Location = new System.Drawing.Point(331, 336);
             this.cmbLC1Mode02.Name = "cmbLC1Mode02";
-            this.cmbLC1Mode02.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode02.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode02.TabIndex = 138;
+            // 
+            // chkLC1MG3Ch05
+            // 
+            this.chkLC1MG3Ch05.AutoSize = true;
+            this.chkLC1MG3Ch05.Location = new System.Drawing.Point(571, 279);
+            this.chkLC1MG3Ch05.Name = "chkLC1MG3Ch05";
+            this.chkLC1MG3Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch05.TabIndex = 80;
+            this.chkLC1MG3Ch05.UseVisualStyleBackColor = true;
             // 
             // tbxLC1CfgType
             // 
-            this.tbxLC1CfgType.Location = new System.Drawing.Point(616, 25);
+            this.tbxLC1CfgType.Location = new System.Drawing.Point(751, 25);
             this.tbxLC1CfgType.MaxLength = 4;
             this.tbxLC1CfgType.Name = "tbxLC1CfgType";
             this.tbxLC1CfgType.Size = new System.Drawing.Size(48, 20);
             this.tbxLC1CfgType.TabIndex = 4;
             this.tbxLC1CfgType.Text = "0";
+            // 
+            // cmbLC1OCTime01
+            // 
+            this.cmbLC1OCTime01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime01.FormattingEnabled = true;
+            this.cmbLC1OCTime01.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime01.Location = new System.Drawing.Point(271, 184);
+            this.cmbLC1OCTime01.Name = "cmbLC1OCTime01";
+            this.cmbLC1OCTime01.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime01.TabIndex = 28;
             // 
             // cmbLC1Mode01
             // 
@@ -19244,8 +18338,17 @@ namespace M1ConfigGenerator
             "RP DN"});
             this.cmbLC1Mode01.Location = new System.Drawing.Point(261, 336);
             this.cmbLC1Mode01.Name = "cmbLC1Mode01";
-            this.cmbLC1Mode01.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode01.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode01.TabIndex = 137;
+            // 
+            // chkLC1MG4Ch06
+            // 
+            this.chkLC1MG4Ch06.AutoSize = true;
+            this.chkLC1MG4Ch06.Location = new System.Drawing.Point(643, 309);
+            this.chkLC1MG4Ch06.Name = "chkLC1MG4Ch06";
+            this.chkLC1MG4Ch06.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch06.TabIndex = 97;
+            this.chkLC1MG4Ch06.UseVisualStyleBackColor = true;
             // 
             // label229
             // 
@@ -19258,6 +18361,15 @@ namespace M1ConfigGenerator
             this.label229.TabIndex = 8;
             this.label229.Text = "Enable Command Types:";
             // 
+            // chkLC1MG4Ch10
+            // 
+            this.chkLC1MG4Ch10.AutoSize = true;
+            this.chkLC1MG4Ch10.Location = new System.Drawing.Point(931, 309);
+            this.chkLC1MG4Ch10.Name = "chkLC1MG4Ch10";
+            this.chkLC1MG4Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch10.TabIndex = 101;
+            this.chkLC1MG4Ch10.UseVisualStyleBackColor = true;
+            // 
             // cmbLC1Mode00
             // 
             this.cmbLC1Mode00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -19268,8 +18380,17 @@ namespace M1ConfigGenerator
             "RP UP"});
             this.cmbLC1Mode00.Location = new System.Drawing.Point(187, 336);
             this.cmbLC1Mode00.Name = "cmbLC1Mode00";
-            this.cmbLC1Mode00.Size = new System.Drawing.Size(60, 21);
+            this.cmbLC1Mode00.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1Mode00.TabIndex = 136;
+            // 
+            // chkLC1MG3Ch14
+            // 
+            this.chkLC1MG3Ch14.AutoSize = true;
+            this.chkLC1MG3Ch14.Location = new System.Drawing.Point(1219, 279);
+            this.chkLC1MG3Ch14.Name = "chkLC1MG3Ch14";
+            this.chkLC1MG3Ch14.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch14.TabIndex = 89;
+            this.chkLC1MG3Ch14.UseVisualStyleBackColor = true;
             // 
             // chkLC1DCMotor
             // 
@@ -19283,6 +18404,15 @@ namespace M1ConfigGenerator
             this.chkLC1DCMotor.Text = "DC Motor";
             this.chkLC1DCMotor.UseVisualStyleBackColor = true;
             // 
+            // chkLC1MG2Ch00
+            // 
+            this.chkLC1MG2Ch00.AutoSize = true;
+            this.chkLC1MG2Ch00.Location = new System.Drawing.Point(211, 249);
+            this.chkLC1MG2Ch00.Name = "chkLC1MG2Ch00";
+            this.chkLC1MG2Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch00.TabIndex = 59;
+            this.chkLC1MG2Ch00.UseVisualStyleBackColor = true;
+            // 
             // chkLC1Shade
             // 
             this.chkLC1Shade.AutoSize = true;
@@ -19294,6 +18424,17 @@ namespace M1ConfigGenerator
             this.chkLC1Shade.TabIndex = 5;
             this.chkLC1Shade.Text = "Shade";
             this.chkLC1Shade.UseVisualStyleBackColor = true;
+            // 
+            // lblLC1Ch10
+            // 
+            this.lblLC1Ch10.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch10.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch10.Location = new System.Drawing.Point(919, 105);
+            this.lblLC1Ch10.Name = "lblLC1Ch10";
+            this.lblLC1Ch10.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch10.TabIndex = 27;
+            this.lblLC1Ch10.Text = "10";
+            this.lblLC1Ch10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chkLC1Force
             // 
@@ -19307,6 +18448,18 @@ namespace M1ConfigGenerator
             this.chkLC1Force.Text = "Force Commands";
             this.chkLC1Force.UseVisualStyleBackColor = true;
             // 
+            // cmbLC1OCAmps08
+            // 
+            this.cmbLC1OCAmps08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps08.FormattingEnabled = true;
+            this.cmbLC1OCAmps08.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps08.Location = new System.Drawing.Point(775, 154);
+            this.cmbLC1OCAmps08.Name = "cmbLC1OCAmps08";
+            this.cmbLC1OCAmps08.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps08.TabIndex = 19;
+            // 
             // label228
             // 
             this.label228.AutoSize = true;
@@ -19318,6 +18471,15 @@ namespace M1ConfigGenerator
             this.label228.TabIndex = 14;
             this.label228.Text = "Base Channel Instance:";
             // 
+            // chkLC1MG2Ch05
+            // 
+            this.chkLC1MG2Ch05.AutoSize = true;
+            this.chkLC1MG2Ch05.Location = new System.Drawing.Point(571, 249);
+            this.chkLC1MG2Ch05.Name = "chkLC1MG2Ch05";
+            this.chkLC1MG2Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch05.TabIndex = 64;
+            this.chkLC1MG2Ch05.UseVisualStyleBackColor = true;
+            // 
             // tbxLC1BaseIndex
             // 
             this.tbxLC1BaseIndex.Location = new System.Drawing.Point(148, 112);
@@ -19325,6 +18487,23 @@ namespace M1ConfigGenerator
             this.tbxLC1BaseIndex.Size = new System.Drawing.Size(32, 20);
             this.tbxLC1BaseIndex.TabIndex = 10;
             this.tbxLC1BaseIndex.TextChanged += new System.EventHandler(this.tbxLC1BaseIndex_TextChanged);
+            // 
+            // cmbLC1OCTime02
+            // 
+            this.cmbLC1OCTime02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime02.FormattingEnabled = true;
+            this.cmbLC1OCTime02.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime02.Location = new System.Drawing.Point(343, 184);
+            this.cmbLC1OCTime02.Name = "cmbLC1OCTime02";
+            this.cmbLC1OCTime02.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime02.TabIndex = 29;
             // 
             // label227
             // 
@@ -19337,6 +18516,15 @@ namespace M1ConfigGenerator
             this.label227.TabIndex = 16;
             this.label227.Text = "Overcurrent Amps";
             // 
+            // chkLC1MG2Ch14
+            // 
+            this.chkLC1MG2Ch14.AutoSize = true;
+            this.chkLC1MG2Ch14.Location = new System.Drawing.Point(1219, 249);
+            this.chkLC1MG2Ch14.Name = "chkLC1MG2Ch14";
+            this.chkLC1MG2Ch14.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch14.TabIndex = 73;
+            this.chkLC1MG2Ch14.UseVisualStyleBackColor = true;
+            // 
             // label226
             // 
             this.label226.AutoSize = true;
@@ -19347,6 +18535,15 @@ namespace M1ConfigGenerator
             this.label226.Size = new System.Drawing.Size(164, 17);
             this.label226.TabIndex = 17;
             this.label226.Text = "Overcurrent Time Constant";
+            // 
+            // chkLC1MG4Ch01
+            // 
+            this.chkLC1MG4Ch01.AutoSize = true;
+            this.chkLC1MG4Ch01.Location = new System.Drawing.Point(283, 309);
+            this.chkLC1MG4Ch01.Name = "chkLC1MG4Ch01";
+            this.chkLC1MG4Ch01.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch01.TabIndex = 92;
+            this.chkLC1MG4Ch01.UseVisualStyleBackColor = true;
             // 
             // label225
             // 
@@ -19359,6 +18556,15 @@ namespace M1ConfigGenerator
             this.label225.TabIndex = 18;
             this.label225.Text = "Include with Group 7E";
             // 
+            // chkLC1MG1Ch07
+            // 
+            this.chkLC1MG1Ch07.AutoSize = true;
+            this.chkLC1MG1Ch07.Location = new System.Drawing.Point(715, 219);
+            this.chkLC1MG1Ch07.Name = "chkLC1MG1Ch07";
+            this.chkLC1MG1Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch07.TabIndex = 50;
+            this.chkLC1MG1Ch07.UseVisualStyleBackColor = true;
+            // 
             // label224
             // 
             this.label224.AutoSize = true;
@@ -19369,6 +18575,23 @@ namespace M1ConfigGenerator
             this.label224.Size = new System.Drawing.Size(137, 17);
             this.label224.TabIndex = 19;
             this.label224.Text = "Include with Group 7D";
+            // 
+            // cmbLC1OCTime12
+            // 
+            this.cmbLC1OCTime12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime12.FormattingEnabled = true;
+            this.cmbLC1OCTime12.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime12.Location = new System.Drawing.Point(1063, 184);
+            this.cmbLC1OCTime12.Name = "cmbLC1OCTime12";
+            this.cmbLC1OCTime12.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime12.TabIndex = 39;
             // 
             // label223
             // 
@@ -19381,6 +18604,17 @@ namespace M1ConfigGenerator
             this.label223.TabIndex = 20;
             this.label223.Text = "Include with Group 7B";
             // 
+            // lblLC1Ch09
+            // 
+            this.lblLC1Ch09.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch09.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch09.Location = new System.Drawing.Point(847, 105);
+            this.lblLC1Ch09.Name = "lblLC1Ch09";
+            this.lblLC1Ch09.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch09.TabIndex = 29;
+            this.lblLC1Ch09.Text = "9";
+            this.lblLC1Ch09.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label222
             // 
             this.label222.AutoSize = true;
@@ -19391,6 +18625,786 @@ namespace M1ConfigGenerator
             this.label222.Size = new System.Drawing.Size(135, 17);
             this.label222.TabIndex = 21;
             this.label222.Text = "Include with Group 77";
+            // 
+            // chkLC1MG3Ch10
+            // 
+            this.chkLC1MG3Ch10.AutoSize = true;
+            this.chkLC1MG3Ch10.Location = new System.Drawing.Point(931, 279);
+            this.chkLC1MG3Ch10.Name = "chkLC1MG3Ch10";
+            this.chkLC1MG3Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch10.TabIndex = 85;
+            this.chkLC1MG3Ch10.UseVisualStyleBackColor = true;
+            // 
+            // lblLC1Ch13
+            // 
+            this.lblLC1Ch13.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch13.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch13.Location = new System.Drawing.Point(1135, 105);
+            this.lblLC1Ch13.Name = "lblLC1Ch13";
+            this.lblLC1Ch13.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch13.TabIndex = 109;
+            this.lblLC1Ch13.Text = "13";
+            this.lblLC1Ch13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // chkLC1MG1Ch14
+            // 
+            this.chkLC1MG1Ch14.AutoSize = true;
+            this.chkLC1MG1Ch14.Location = new System.Drawing.Point(1219, 219);
+            this.chkLC1MG1Ch14.Name = "chkLC1MG1Ch14";
+            this.chkLC1MG1Ch14.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch14.TabIndex = 57;
+            this.chkLC1MG1Ch14.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG1Ch09
+            // 
+            this.chkLC1MG1Ch09.AutoSize = true;
+            this.chkLC1MG1Ch09.Location = new System.Drawing.Point(859, 219);
+            this.chkLC1MG1Ch09.Name = "chkLC1MG1Ch09";
+            this.chkLC1MG1Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch09.TabIndex = 52;
+            this.chkLC1MG1Ch09.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG1Ch00
+            // 
+            this.chkLC1MG1Ch00.AutoSize = true;
+            this.chkLC1MG1Ch00.Location = new System.Drawing.Point(211, 219);
+            this.chkLC1MG1Ch00.Name = "chkLC1MG1Ch00";
+            this.chkLC1MG1Ch00.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch00.TabIndex = 43;
+            this.chkLC1MG1Ch00.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG2Ch03
+            // 
+            this.chkLC1MG2Ch03.AutoSize = true;
+            this.chkLC1MG2Ch03.Location = new System.Drawing.Point(427, 249);
+            this.chkLC1MG2Ch03.Name = "chkLC1MG2Ch03";
+            this.chkLC1MG2Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch03.TabIndex = 62;
+            this.chkLC1MG2Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG1Ch05
+            // 
+            this.chkLC1MG1Ch05.AutoSize = true;
+            this.chkLC1MG1Ch05.Location = new System.Drawing.Point(571, 219);
+            this.chkLC1MG1Ch05.Name = "chkLC1MG1Ch05";
+            this.chkLC1MG1Ch05.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch05.TabIndex = 48;
+            this.chkLC1MG1Ch05.UseVisualStyleBackColor = true;
+            // 
+            // cmbLC1OCTime08
+            // 
+            this.cmbLC1OCTime08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime08.FormattingEnabled = true;
+            this.cmbLC1OCTime08.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime08.Location = new System.Drawing.Point(775, 184);
+            this.cmbLC1OCTime08.Name = "cmbLC1OCTime08";
+            this.cmbLC1OCTime08.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime08.TabIndex = 35;
+            // 
+            // cmbLC1OCAmps07
+            // 
+            this.cmbLC1OCAmps07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps07.FormattingEnabled = true;
+            this.cmbLC1OCAmps07.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps07.Location = new System.Drawing.Point(703, 154);
+            this.cmbLC1OCAmps07.Name = "cmbLC1OCAmps07";
+            this.cmbLC1OCAmps07.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps07.TabIndex = 18;
+            // 
+            // cmbLC1OCTime07
+            // 
+            this.cmbLC1OCTime07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime07.FormattingEnabled = true;
+            this.cmbLC1OCTime07.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime07.Location = new System.Drawing.Point(703, 184);
+            this.cmbLC1OCTime07.Name = "cmbLC1OCTime07";
+            this.cmbLC1OCTime07.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime07.TabIndex = 34;
+            // 
+            // chkLC1MG2Ch07
+            // 
+            this.chkLC1MG2Ch07.AutoSize = true;
+            this.chkLC1MG2Ch07.Location = new System.Drawing.Point(715, 249);
+            this.chkLC1MG2Ch07.Name = "chkLC1MG2Ch07";
+            this.chkLC1MG2Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch07.TabIndex = 66;
+            this.chkLC1MG2Ch07.UseVisualStyleBackColor = true;
+            // 
+            // cmbLC1OCAmps02
+            // 
+            this.cmbLC1OCAmps02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps02.FormattingEnabled = true;
+            this.cmbLC1OCAmps02.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps02.Location = new System.Drawing.Point(343, 154);
+            this.cmbLC1OCAmps02.Name = "cmbLC1OCAmps02";
+            this.cmbLC1OCAmps02.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps02.TabIndex = 13;
+            // 
+            // cmbLC1OCTime13
+            // 
+            this.cmbLC1OCTime13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime13.FormattingEnabled = true;
+            this.cmbLC1OCTime13.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime13.Location = new System.Drawing.Point(1135, 184);
+            this.cmbLC1OCTime13.Name = "cmbLC1OCTime13";
+            this.cmbLC1OCTime13.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime13.TabIndex = 40;
+            // 
+            // cmbLC1OCAmps01
+            // 
+            this.cmbLC1OCAmps01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps01.FormattingEnabled = true;
+            this.cmbLC1OCAmps01.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps01.Location = new System.Drawing.Point(271, 154);
+            this.cmbLC1OCAmps01.Name = "cmbLC1OCAmps01";
+            this.cmbLC1OCAmps01.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps01.TabIndex = 12;
+            // 
+            // chkLC1MG4Ch13
+            // 
+            this.chkLC1MG4Ch13.AutoSize = true;
+            this.chkLC1MG4Ch13.Location = new System.Drawing.Point(1147, 309);
+            this.chkLC1MG4Ch13.Name = "chkLC1MG4Ch13";
+            this.chkLC1MG4Ch13.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch13.TabIndex = 104;
+            this.chkLC1MG4Ch13.UseVisualStyleBackColor = true;
+            // 
+            // lblLC1Ch12
+            // 
+            this.lblLC1Ch12.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch12.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch12.Location = new System.Drawing.Point(1063, 105);
+            this.lblLC1Ch12.Name = "lblLC1Ch12";
+            this.lblLC1Ch12.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch12.TabIndex = 110;
+            this.lblLC1Ch12.Text = "12";
+            this.lblLC1Ch12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // chkLC1MG1Ch02
+            // 
+            this.chkLC1MG1Ch02.AutoSize = true;
+            this.chkLC1MG1Ch02.Location = new System.Drawing.Point(355, 219);
+            this.chkLC1MG1Ch02.Name = "chkLC1MG1Ch02";
+            this.chkLC1MG1Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch02.TabIndex = 45;
+            this.chkLC1MG1Ch02.UseVisualStyleBackColor = true;
+            // 
+            // lblLC1Ch14
+            // 
+            this.lblLC1Ch14.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch14.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch14.Location = new System.Drawing.Point(1207, 105);
+            this.lblLC1Ch14.Name = "lblLC1Ch14";
+            this.lblLC1Ch14.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch14.TabIndex = 108;
+            this.lblLC1Ch14.Text = "14";
+            this.lblLC1Ch14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLC1Ch08
+            // 
+            this.lblLC1Ch08.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch08.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch08.Location = new System.Drawing.Point(775, 105);
+            this.lblLC1Ch08.Name = "lblLC1Ch08";
+            this.lblLC1Ch08.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch08.TabIndex = 30;
+            this.lblLC1Ch08.Text = "8";
+            this.lblLC1Ch08.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // chkLC1MG1Ch03
+            // 
+            this.chkLC1MG1Ch03.AutoSize = true;
+            this.chkLC1MG1Ch03.Location = new System.Drawing.Point(427, 219);
+            this.chkLC1MG1Ch03.Name = "chkLC1MG1Ch03";
+            this.chkLC1MG1Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch03.TabIndex = 46;
+            this.chkLC1MG1Ch03.UseVisualStyleBackColor = true;
+            // 
+            // cmbLC1OCTime03
+            // 
+            this.cmbLC1OCTime03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime03.FormattingEnabled = true;
+            this.cmbLC1OCTime03.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime03.Location = new System.Drawing.Point(415, 184);
+            this.cmbLC1OCTime03.Name = "cmbLC1OCTime03";
+            this.cmbLC1OCTime03.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime03.TabIndex = 30;
+            // 
+            // chkLC1MG4Ch08
+            // 
+            this.chkLC1MG4Ch08.AutoSize = true;
+            this.chkLC1MG4Ch08.Location = new System.Drawing.Point(787, 309);
+            this.chkLC1MG4Ch08.Name = "chkLC1MG4Ch08";
+            this.chkLC1MG4Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch08.TabIndex = 99;
+            this.chkLC1MG4Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG4Ch04
+            // 
+            this.chkLC1MG4Ch04.AutoSize = true;
+            this.chkLC1MG4Ch04.Location = new System.Drawing.Point(499, 309);
+            this.chkLC1MG4Ch04.Name = "chkLC1MG4Ch04";
+            this.chkLC1MG4Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch04.TabIndex = 95;
+            this.chkLC1MG4Ch04.UseVisualStyleBackColor = true;
+            // 
+            // cmbLC1OCTime06
+            // 
+            this.cmbLC1OCTime06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime06.FormattingEnabled = true;
+            this.cmbLC1OCTime06.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime06.Location = new System.Drawing.Point(631, 184);
+            this.cmbLC1OCTime06.Name = "cmbLC1OCTime06";
+            this.cmbLC1OCTime06.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime06.TabIndex = 33;
+            // 
+            // chkLC1MG2Ch10
+            // 
+            this.chkLC1MG2Ch10.AutoSize = true;
+            this.chkLC1MG2Ch10.Location = new System.Drawing.Point(931, 249);
+            this.chkLC1MG2Ch10.Name = "chkLC1MG2Ch10";
+            this.chkLC1MG2Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch10.TabIndex = 69;
+            this.chkLC1MG2Ch10.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG3Ch03
+            // 
+            this.chkLC1MG3Ch03.AutoSize = true;
+            this.chkLC1MG3Ch03.Location = new System.Drawing.Point(427, 279);
+            this.chkLC1MG3Ch03.Name = "chkLC1MG3Ch03";
+            this.chkLC1MG3Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch03.TabIndex = 78;
+            this.chkLC1MG3Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG3Ch13
+            // 
+            this.chkLC1MG3Ch13.AutoSize = true;
+            this.chkLC1MG3Ch13.Location = new System.Drawing.Point(1147, 279);
+            this.chkLC1MG3Ch13.Name = "chkLC1MG3Ch13";
+            this.chkLC1MG3Ch13.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch13.TabIndex = 88;
+            this.chkLC1MG3Ch13.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG2Ch09
+            // 
+            this.chkLC1MG2Ch09.AutoSize = true;
+            this.chkLC1MG2Ch09.Location = new System.Drawing.Point(859, 249);
+            this.chkLC1MG2Ch09.Name = "chkLC1MG2Ch09";
+            this.chkLC1MG2Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch09.TabIndex = 68;
+            this.chkLC1MG2Ch09.UseVisualStyleBackColor = true;
+            // 
+            // cmbLC1OCTime14
+            // 
+            this.cmbLC1OCTime14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime14.FormattingEnabled = true;
+            this.cmbLC1OCTime14.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime14.Location = new System.Drawing.Point(1207, 184);
+            this.cmbLC1OCTime14.Name = "cmbLC1OCTime14";
+            this.cmbLC1OCTime14.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime14.TabIndex = 41;
+            // 
+            // lblLC1Ch15
+            // 
+            this.lblLC1Ch15.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch15.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch15.Location = new System.Drawing.Point(1279, 105);
+            this.lblLC1Ch15.Name = "lblLC1Ch15";
+            this.lblLC1Ch15.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch15.TabIndex = 107;
+            this.lblLC1Ch15.Text = "15";
+            this.lblLC1Ch15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // chkLC1MG3Ch07
+            // 
+            this.chkLC1MG3Ch07.AutoSize = true;
+            this.chkLC1MG3Ch07.Location = new System.Drawing.Point(715, 279);
+            this.chkLC1MG3Ch07.Name = "chkLC1MG3Ch07";
+            this.chkLC1MG3Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch07.TabIndex = 82;
+            this.chkLC1MG3Ch07.UseVisualStyleBackColor = true;
+            // 
+            // cmbLC1OCAmps12
+            // 
+            this.cmbLC1OCAmps12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps12.FormattingEnabled = true;
+            this.cmbLC1OCAmps12.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps12.Location = new System.Drawing.Point(1063, 154);
+            this.cmbLC1OCAmps12.Name = "cmbLC1OCAmps12";
+            this.cmbLC1OCAmps12.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps12.TabIndex = 23;
+            // 
+            // cmbLC1OCAmps06
+            // 
+            this.cmbLC1OCAmps06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps06.FormattingEnabled = true;
+            this.cmbLC1OCAmps06.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps06.Location = new System.Drawing.Point(631, 154);
+            this.cmbLC1OCAmps06.Name = "cmbLC1OCAmps06";
+            this.cmbLC1OCAmps06.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps06.TabIndex = 17;
+            // 
+            // cmbLC1OCAmps00
+            // 
+            this.cmbLC1OCAmps00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps00.FormattingEnabled = true;
+            this.cmbLC1OCAmps00.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps00.Location = new System.Drawing.Point(199, 154);
+            this.cmbLC1OCAmps00.Name = "cmbLC1OCAmps00";
+            this.cmbLC1OCAmps00.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps00.TabIndex = 11;
+            // 
+            // lblLC1Ch07
+            // 
+            this.lblLC1Ch07.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch07.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch07.Location = new System.Drawing.Point(703, 105);
+            this.lblLC1Ch07.Name = "lblLC1Ch07";
+            this.lblLC1Ch07.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch07.TabIndex = 31;
+            this.lblLC1Ch07.Text = "7";
+            this.lblLC1Ch07.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbLC1OCAmps03
+            // 
+            this.cmbLC1OCAmps03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps03.FormattingEnabled = true;
+            this.cmbLC1OCAmps03.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps03.Location = new System.Drawing.Point(415, 154);
+            this.cmbLC1OCAmps03.Name = "cmbLC1OCAmps03";
+            this.cmbLC1OCAmps03.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps03.TabIndex = 14;
+            // 
+            // cmbLC1OCTime11
+            // 
+            this.cmbLC1OCTime11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime11.FormattingEnabled = true;
+            this.cmbLC1OCTime11.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime11.Location = new System.Drawing.Point(991, 184);
+            this.cmbLC1OCTime11.Name = "cmbLC1OCTime11";
+            this.cmbLC1OCTime11.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime11.TabIndex = 38;
+            // 
+            // chkLC1MG3Ch08
+            // 
+            this.chkLC1MG3Ch08.AutoSize = true;
+            this.chkLC1MG3Ch08.Location = new System.Drawing.Point(787, 279);
+            this.chkLC1MG3Ch08.Name = "chkLC1MG3Ch08";
+            this.chkLC1MG3Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch08.TabIndex = 83;
+            this.chkLC1MG3Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG2Ch13
+            // 
+            this.chkLC1MG2Ch13.AutoSize = true;
+            this.chkLC1MG2Ch13.Location = new System.Drawing.Point(1147, 249);
+            this.chkLC1MG2Ch13.Name = "chkLC1MG2Ch13";
+            this.chkLC1MG2Ch13.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch13.TabIndex = 72;
+            this.chkLC1MG2Ch13.UseVisualStyleBackColor = true;
+            // 
+            // cmbLC1OCTime09
+            // 
+            this.cmbLC1OCTime09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime09.FormattingEnabled = true;
+            this.cmbLC1OCTime09.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime09.Location = new System.Drawing.Point(847, 184);
+            this.cmbLC1OCTime09.Name = "cmbLC1OCTime09";
+            this.cmbLC1OCTime09.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime09.TabIndex = 36;
+            // 
+            // chkLC1MG2Ch02
+            // 
+            this.chkLC1MG2Ch02.AutoSize = true;
+            this.chkLC1MG2Ch02.Location = new System.Drawing.Point(355, 249);
+            this.chkLC1MG2Ch02.Name = "chkLC1MG2Ch02";
+            this.chkLC1MG2Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch02.TabIndex = 61;
+            this.chkLC1MG2Ch02.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG1Ch12
+            // 
+            this.chkLC1MG1Ch12.AutoSize = true;
+            this.chkLC1MG1Ch12.Location = new System.Drawing.Point(1075, 219);
+            this.chkLC1MG1Ch12.Name = "chkLC1MG1Ch12";
+            this.chkLC1MG1Ch12.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch12.TabIndex = 55;
+            this.chkLC1MG1Ch12.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG3Ch04
+            // 
+            this.chkLC1MG3Ch04.AutoSize = true;
+            this.chkLC1MG3Ch04.Location = new System.Drawing.Point(499, 279);
+            this.chkLC1MG3Ch04.Name = "chkLC1MG3Ch04";
+            this.chkLC1MG3Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch04.TabIndex = 79;
+            this.chkLC1MG3Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG4Ch02
+            // 
+            this.chkLC1MG4Ch02.AutoSize = true;
+            this.chkLC1MG4Ch02.Location = new System.Drawing.Point(355, 309);
+            this.chkLC1MG4Ch02.Name = "chkLC1MG4Ch02";
+            this.chkLC1MG4Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch02.TabIndex = 93;
+            this.chkLC1MG4Ch02.UseVisualStyleBackColor = true;
+            // 
+            // cmbLC1OCTime15
+            // 
+            this.cmbLC1OCTime15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime15.FormattingEnabled = true;
+            this.cmbLC1OCTime15.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime15.Location = new System.Drawing.Point(1279, 184);
+            this.cmbLC1OCTime15.Name = "cmbLC1OCTime15";
+            this.cmbLC1OCTime15.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime15.TabIndex = 42;
+            // 
+            // chkLC1MG4Ch03
+            // 
+            this.chkLC1MG4Ch03.AutoSize = true;
+            this.chkLC1MG4Ch03.Location = new System.Drawing.Point(427, 309);
+            this.chkLC1MG4Ch03.Name = "chkLC1MG4Ch03";
+            this.chkLC1MG4Ch03.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch03.TabIndex = 94;
+            this.chkLC1MG4Ch03.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG4Ch07
+            // 
+            this.chkLC1MG4Ch07.AutoSize = true;
+            this.chkLC1MG4Ch07.Location = new System.Drawing.Point(715, 309);
+            this.chkLC1MG4Ch07.Name = "chkLC1MG4Ch07";
+            this.chkLC1MG4Ch07.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch07.TabIndex = 98;
+            this.chkLC1MG4Ch07.UseVisualStyleBackColor = true;
+            // 
+            // cmbLC1OCAmps13
+            // 
+            this.cmbLC1OCAmps13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps13.FormattingEnabled = true;
+            this.cmbLC1OCAmps13.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps13.Location = new System.Drawing.Point(1135, 154);
+            this.cmbLC1OCAmps13.Name = "cmbLC1OCAmps13";
+            this.cmbLC1OCAmps13.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps13.TabIndex = 24;
+            // 
+            // chkLC1MG1Ch10
+            // 
+            this.chkLC1MG1Ch10.AutoSize = true;
+            this.chkLC1MG1Ch10.Location = new System.Drawing.Point(931, 219);
+            this.chkLC1MG1Ch10.Name = "chkLC1MG1Ch10";
+            this.chkLC1MG1Ch10.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch10.TabIndex = 53;
+            this.chkLC1MG1Ch10.UseVisualStyleBackColor = true;
+            // 
+            // lblLC1Ch04
+            // 
+            this.lblLC1Ch04.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch04.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch04.Location = new System.Drawing.Point(487, 105);
+            this.lblLC1Ch04.Name = "lblLC1Ch04";
+            this.lblLC1Ch04.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch04.TabIndex = 34;
+            this.lblLC1Ch04.Text = "4";
+            this.lblLC1Ch04.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // chkLC1MG1Ch13
+            // 
+            this.chkLC1MG1Ch13.AutoSize = true;
+            this.chkLC1MG1Ch13.Location = new System.Drawing.Point(1147, 219);
+            this.chkLC1MG1Ch13.Name = "chkLC1MG1Ch13";
+            this.chkLC1MG1Ch13.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch13.TabIndex = 56;
+            this.chkLC1MG1Ch13.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG3Ch09
+            // 
+            this.chkLC1MG3Ch09.AutoSize = true;
+            this.chkLC1MG3Ch09.Location = new System.Drawing.Point(859, 279);
+            this.chkLC1MG3Ch09.Name = "chkLC1MG3Ch09";
+            this.chkLC1MG3Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch09.TabIndex = 84;
+            this.chkLC1MG3Ch09.UseVisualStyleBackColor = true;
+            // 
+            // cmbLC1OCTime04
+            // 
+            this.cmbLC1OCTime04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime04.FormattingEnabled = true;
+            this.cmbLC1OCTime04.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime04.Location = new System.Drawing.Point(487, 184);
+            this.cmbLC1OCTime04.Name = "cmbLC1OCTime04";
+            this.cmbLC1OCTime04.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime04.TabIndex = 31;
+            // 
+            // chkLC1MG2Ch12
+            // 
+            this.chkLC1MG2Ch12.AutoSize = true;
+            this.chkLC1MG2Ch12.Location = new System.Drawing.Point(1075, 249);
+            this.chkLC1MG2Ch12.Name = "chkLC1MG2Ch12";
+            this.chkLC1MG2Ch12.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch12.TabIndex = 71;
+            this.chkLC1MG2Ch12.UseVisualStyleBackColor = true;
+            // 
+            // lblLC1Ch06
+            // 
+            this.lblLC1Ch06.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch06.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch06.Location = new System.Drawing.Point(631, 105);
+            this.lblLC1Ch06.Name = "lblLC1Ch06";
+            this.lblLC1Ch06.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch06.TabIndex = 32;
+            this.lblLC1Ch06.Text = "6";
+            this.lblLC1Ch06.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbLC1OCTime05
+            // 
+            this.cmbLC1OCTime05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime05.FormattingEnabled = true;
+            this.cmbLC1OCTime05.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime05.Location = new System.Drawing.Point(559, 184);
+            this.cmbLC1OCTime05.Name = "cmbLC1OCTime05";
+            this.cmbLC1OCTime05.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime05.TabIndex = 32;
+            // 
+            // cmbLC1OCAmps05
+            // 
+            this.cmbLC1OCAmps05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps05.FormattingEnabled = true;
+            this.cmbLC1OCAmps05.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps05.Location = new System.Drawing.Point(559, 154);
+            this.cmbLC1OCAmps05.Name = "cmbLC1OCAmps05";
+            this.cmbLC1OCAmps05.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps05.TabIndex = 16;
+            // 
+            // chkLC1MG2Ch08
+            // 
+            this.chkLC1MG2Ch08.AutoSize = true;
+            this.chkLC1MG2Ch08.Location = new System.Drawing.Point(787, 249);
+            this.chkLC1MG2Ch08.Name = "chkLC1MG2Ch08";
+            this.chkLC1MG2Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch08.TabIndex = 67;
+            this.chkLC1MG2Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG2Ch04
+            // 
+            this.chkLC1MG2Ch04.AutoSize = true;
+            this.chkLC1MG2Ch04.Location = new System.Drawing.Point(499, 249);
+            this.chkLC1MG2Ch04.Name = "chkLC1MG2Ch04";
+            this.chkLC1MG2Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG2Ch04.TabIndex = 63;
+            this.chkLC1MG2Ch04.UseVisualStyleBackColor = true;
+            // 
+            // cmbLC1OCAmps04
+            // 
+            this.cmbLC1OCAmps04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps04.FormattingEnabled = true;
+            this.cmbLC1OCAmps04.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps04.Location = new System.Drawing.Point(487, 154);
+            this.cmbLC1OCAmps04.Name = "cmbLC1OCAmps04";
+            this.cmbLC1OCAmps04.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps04.TabIndex = 15;
+            // 
+            // cmbLC1OCAmps15
+            // 
+            this.cmbLC1OCAmps15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps15.FormattingEnabled = true;
+            this.cmbLC1OCAmps15.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps15.Location = new System.Drawing.Point(1279, 154);
+            this.cmbLC1OCAmps15.Name = "cmbLC1OCAmps15";
+            this.cmbLC1OCAmps15.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps15.TabIndex = 26;
+            // 
+            // chkLC1MG1Ch04
+            // 
+            this.chkLC1MG1Ch04.AutoSize = true;
+            this.chkLC1MG1Ch04.Location = new System.Drawing.Point(499, 219);
+            this.chkLC1MG1Ch04.Name = "chkLC1MG1Ch04";
+            this.chkLC1MG1Ch04.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch04.TabIndex = 47;
+            this.chkLC1MG1Ch04.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG4Ch12
+            // 
+            this.chkLC1MG4Ch12.AutoSize = true;
+            this.chkLC1MG4Ch12.Location = new System.Drawing.Point(1075, 309);
+            this.chkLC1MG4Ch12.Name = "chkLC1MG4Ch12";
+            this.chkLC1MG4Ch12.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch12.TabIndex = 103;
+            this.chkLC1MG4Ch12.UseVisualStyleBackColor = true;
+            // 
+            // cmbLC1OCAmps14
+            // 
+            this.cmbLC1OCAmps14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCAmps14.FormattingEnabled = true;
+            this.cmbLC1OCAmps14.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbLC1OCAmps14.Location = new System.Drawing.Point(1207, 154);
+            this.cmbLC1OCAmps14.Name = "cmbLC1OCAmps14";
+            this.cmbLC1OCAmps14.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCAmps14.TabIndex = 25;
+            // 
+            // chkLC1MG3Ch02
+            // 
+            this.chkLC1MG3Ch02.AutoSize = true;
+            this.chkLC1MG3Ch02.Location = new System.Drawing.Point(355, 279);
+            this.chkLC1MG3Ch02.Name = "chkLC1MG3Ch02";
+            this.chkLC1MG3Ch02.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch02.TabIndex = 77;
+            this.chkLC1MG3Ch02.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG3Ch12
+            // 
+            this.chkLC1MG3Ch12.AutoSize = true;
+            this.chkLC1MG3Ch12.Location = new System.Drawing.Point(1075, 279);
+            this.chkLC1MG3Ch12.Name = "chkLC1MG3Ch12";
+            this.chkLC1MG3Ch12.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG3Ch12.TabIndex = 87;
+            this.chkLC1MG3Ch12.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG1Ch08
+            // 
+            this.chkLC1MG1Ch08.AutoSize = true;
+            this.chkLC1MG1Ch08.Location = new System.Drawing.Point(787, 219);
+            this.chkLC1MG1Ch08.Name = "chkLC1MG1Ch08";
+            this.chkLC1MG1Ch08.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG1Ch08.TabIndex = 51;
+            this.chkLC1MG1Ch08.UseVisualStyleBackColor = true;
+            // 
+            // chkLC1MG4Ch09
+            // 
+            this.chkLC1MG4Ch09.AutoSize = true;
+            this.chkLC1MG4Ch09.Location = new System.Drawing.Point(859, 309);
+            this.chkLC1MG4Ch09.Name = "chkLC1MG4Ch09";
+            this.chkLC1MG4Ch09.Size = new System.Drawing.Size(15, 14);
+            this.chkLC1MG4Ch09.TabIndex = 100;
+            this.chkLC1MG4Ch09.UseVisualStyleBackColor = true;
+            // 
+            // cmbLC1OCTime10
+            // 
+            this.cmbLC1OCTime10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLC1OCTime10.FormattingEnabled = true;
+            this.cmbLC1OCTime10.Items.AddRange(new object[] {
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.cmbLC1OCTime10.Location = new System.Drawing.Point(919, 184);
+            this.cmbLC1OCTime10.Name = "cmbLC1OCTime10";
+            this.cmbLC1OCTime10.Size = new System.Drawing.Size(66, 21);
+            this.cmbLC1OCTime10.TabIndex = 37;
+            // 
+            // lblLC1Ch05
+            // 
+            this.lblLC1Ch05.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLC1Ch05.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLC1Ch05.Location = new System.Drawing.Point(559, 105);
+            this.lblLC1Ch05.Name = "lblLC1Ch05";
+            this.lblLC1Ch05.Size = new System.Drawing.Size(60, 30);
+            this.lblLC1Ch05.TabIndex = 33;
+            this.lblLC1Ch05.Text = "5";
+            this.lblLC1Ch05.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabLCGenerated
             // 
@@ -23988,8 +24002,6 @@ namespace M1ConfigGenerator
             this.tabControlLC.ResumeLayout(false);
             this.tabLC1.ResumeLayout(false);
             this.tabLC1.PerformLayout();
-            this.grbGroupBox15.ResumeLayout(false);
-            this.grbGroupBox15.PerformLayout();
             this.tabControlLC1QF.ResumeLayout(false);
             this.tabLC1Full.ResumeLayout(false);
             this.tabLC1Full.PerformLayout();
@@ -24717,7 +24729,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.ComboBox cmbLC1Mode02;
         private System.Windows.Forms.ComboBox cmbLC1Mode14;
         private System.Windows.Forms.ComboBox cmbLC1Mode15;
-        private System.Windows.Forms.GroupBox grbGroupBox15;
         private System.Windows.Forms.TextBox txtbHC1PWMDutyCh00;
         private System.Windows.Forms.Label label342;
         private System.Windows.Forms.TextBox txtbHC1PWMDutyCh01;
@@ -25743,6 +25754,8 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.TextBox tbxStartDimCfgRev;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

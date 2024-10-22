@@ -249,6 +249,26 @@ namespace M1ConfigGenerator
             return dimmerChMaxDurRecoveryTimeValues[argInt];
         }
 
+        public void Dimmer_SetMeasuredCurrTimeConst(int argInt, string argString)
+        {
+            dimmerChMeasCurTimeValues[argInt] = argString;
+        }
+
+        public string Dimmer_GetMeasuredCurrTimeConst(int argInt)
+        {
+            return dimmerChMeasCurTimeValues[argInt];
+        }
+
+        public void Dimmer_SetUCAmps(int argInt, string argString)
+        {
+            dimmerChUndercurrentAmpsValues[argInt] = argString;
+        }
+
+        public string Dimmer_GetUCAmps(int argInt)
+        {
+            return dimmerChUndercurrentAmpsValues[argInt];
+        }
+
         private string configPath = @"M1_DcDriver_Config\Src\M1_Dimmer\DeviceConfigs\";
 
         public string[] dimmerParameterNames =

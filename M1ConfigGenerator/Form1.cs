@@ -3569,17 +3569,97 @@ namespace M1ConfigGenerator
             //}
         }
 
+        private void cmbLC1Mode00_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode03_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode04_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode05_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode06_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode07_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode08_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode09_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode12_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode13_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode14_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLC1Mode15_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
 
 
 
-    /*       ######  ##       #### ########  ######## 
-            ##    ## ##        ##  ##     ## ##       
-            ##       ##        ##  ##     ## ##       
-             ######  ##        ##  ##     ## ######   
-                  ## ##        ##  ##     ## ##       
-            ##    ## ##        ##  ##     ## ##       
-             ######  ######## #### ########  ########      @Slide*/
-        
+
+        /*       ######  ##       #### ########  ######## 
+                ##    ## ##        ##  ##     ## ##       
+                ##       ##        ##  ##     ## ##       
+                 ######  ##        ##  ##     ## ######   
+                      ## ##        ##  ##     ## ##       
+                ##    ## ##        ##  ##     ## ##       
+                 ######  ######## #### ########  ########      @Slide*/
+
 
 
         //@Load -----------------------------------------------------------------------Load
@@ -3739,10 +3819,10 @@ namespace M1ConfigGenerator
             lcModes = new ComboBox[] { cmbLC1Mode00, cmbLC1Mode01, cmbLC1Mode02, cmbLC1Mode03, cmbLC1Mode04, cmbLC1Mode05, cmbLC1Mode06, cmbLC1Mode07, cmbLC1Mode08, cmbLC1Mode09, cmbLC1Mode10, cmbLC1Mode11, cmbLC1Mode12, cmbLC1Mode13, cmbLC1Mode14, cmbLC1Mode15 };
             lcLocks = new CheckBox[] { chkLC1LockCh00, chkLC1LockCh01, chkLC1LockCh02, chkLC1LockCh03, chkLC1LockCh04, chkLC1LockCh05, chkLC1LockCh06, chkLC1LockCh07, chkLC1LockCh08, chkLC1LockCh09, chkLC1LockCh10, chkLC1LockCh11, chkLC1LockCh12, chkLC1LockCh13, chkLC1LockCh14, chkLC1LockCh15 };
             lcDirections = new ComboBox[] { cmbLC1DirectionCh00, cmbLC1DirectionCh01, cmbLC1DirectionCh02, cmbLC1DirectionCh03, cmbLC1DirectionCh04, cmbLC1DirectionCh05, cmbLC1DirectionCh06, cmbLC1DirectionCh07, cmbLC1DirectionCh08, cmbLC1DirectionCh09, cmbLC1DirectionCh10, cmbLC1DirectionCh11, cmbLC1DirectionCh12, cmbLC1DirectionCh13, cmbLC1DirectionCh14, cmbLC1DirectionCh15 };
-            lcTimeoutTimes = new TextBox[] { txtLC1TimoutTimeCh00, txtLC1TimoutTimeCh01, txtLC1TimoutTimeCh02, txtLC1TimoutTimeCh03, txtLC1TimoutTimeCh04, txtLC1TimoutTimeCh05, txtLC1TimoutTimeCh06, txtLC1TimoutTimeCh07, txtLC1TimoutTimeCh08, txtLC1TimoutTimeCh09, txtLC1TimoutTimeCh10, txtLC1TimoutTimeCh11, txtLC1TimoutTimeCh12, txtLC1TimoutTimeCh13, txtLC1TimoutTimeCh14, txtLC1TimoutTimeCh15 };
-            lcMaxOns = new TextBox[] { txtbLC1MaxOnCh00, txtbLC1MaxOnCh01, txtbLC1MaxOnCh02, txtbLC1MaxOnCh03, txtbLC1MaxOnCh04, txtbLC1MaxOnCh05, txtbLC1MaxOnCh06, txtbLC1MaxOnCh07, txtbLC1MaxOnCh08, txtbLC1MaxOnCh09, txtbLC1MaxOnCh10, txtbLC1MaxOnCh11, txtbLC1MaxOnCh12, txtbLC1MaxOnCh13, txtbLC1MaxOnCh14, txtbLC1MaxOnCh15 };
-            lcMaxDurRecoveries = new TextBox[] { txtbLC1MaxDurRecoveryCh00, txtbLC1MaxDurRecoveryCh01, txtbLC1MaxDurRecoveryCh02, txtbLC1MaxDurRecoveryCh03, txtbLC1MaxDurRecoveryCh04, txtbLC1MaxDurRecoveryCh05, txtbLC1MaxDurRecoveryCh06, txtbLC1MaxDurRecoveryCh07, txtbLC1MaxDurRecoveryCh08, txtbLC1MaxDurRecoveryCh09, txtbLC1MaxDurRecoveryCh10, txtbLC1MaxDurRecoveryCh11, txtbLC1MaxDurRecoveryCh12, txtbLC1MaxDurRecoveryCh13, txtbLC1MaxDurRecoveryCh14, txtbLC1MaxDurRecoveryCh15 };
-            lcUCAmps = new TextBox[] { txtbLC1UndercurrentAmpsCh00, txtbLC1UndercurrentAmpsCh01, txtbLC1UndercurrentAmpsCh02, txtbLC1UndercurrentAmpsCh03, txtbLC1UndercurrentAmpsCh04, txtbLC1UndercurrentAmpsCh05, txtbLC1UndercurrentAmpsCh06, txtbLC1UndercurrentAmpsCh07, txtbLC1UndercurrentAmpsCh08, txtbLC1UndercurrentAmpsCh09, txtbLC1UndercurrentAmpsCh10, txtbLC1UndercurrentAmpsCh11, txtbLC1UndercurrentAmpsCh12, txtbLC1UndercurrentAmpsCh13, txtbLC1UndercurrentAmpsCh14, txtbLC1UndercurrentAmpsCh15 };
+            lcTimeoutTimes = new TextBox[] { tbxLCTimeoutTimeCh00, tbxLCTimeoutTimeCh01, tbxLCTimeoutTimeCh02, tbxLCTimeoutTimeCh03, tbxLCTimeoutTimeCh04, tbxLCTimeoutTimeCh05, tbxLCTimeoutTimeCh06, tbxLCTimeoutTimeCh07, tbxLCTimeoutTimeCh08, tbxLCTimeoutTimeCh09, tbxLCTimeoutTimeCh10, tbxLCTimeoutTimeCh11, tbxLCTimeoutTimeCh12, tbxLCTimeoutTimeCh13, tbxLCTimeoutTimeCh14, tbxLCTimeoutTimeCh15 };
+            lcMaxOns = new TextBox[] { tbxLCMaxOnCh00, tbxLCMaxOnCh01, tbxLCMaxOnCh02, tbxLCMaxOnCh03, tbxLCMaxOnCh04, tbxLCMaxOnCh05, tbxLCMaxOnCh06, tbxLCMaxOnCh07, tbxLCMaxOnCh08, tbxLCMaxOnCh09, tbxLCMaxOnCh10, tbxLCMaxOnCh11, tbxLCMaxOnCh12, tbxLCMaxOnCh13, tbxLCMaxOnCh14, tbxLCMaxOnCh15 };
+            lcMaxDurRecoveries = new TextBox[] { tbxLCMaxDurRecoveryCh00, tbxLCMaxDurRecoveryCh01, tbxLCMaxDurRecoveryCh02, tbxLCMaxDurRecoveryCh03, tbxLCMaxDurRecoveryCh04, tbxLCMaxDurRecoveryCh05, tbxLCMaxDurRecoveryCh06, tbxLCMaxDurRecoveryCh07, tbxLCMaxDurRecoveryCh08, tbxLCMaxDurRecoveryCh09, tbxLCMaxDurRecoveryCh10, tbxLCMaxDurRecoveryCh11, tbxLCMaxDurRecoveryCh12, tbxLCMaxDurRecoveryCh13, tbxLCMaxDurRecoveryCh14, tbxLCMaxDurRecoveryCh15 };
+            lcUCAmps = new TextBox[] { tbxLCUCAmpsCh00, tbxLCUCAmpsCh01, tbxLCUCAmpsCh02, tbxLCUCAmpsCh03, tbxLCUCAmpsCh04, tbxLCUCAmpsCh05, tbxLCUCAmpsCh06, tbxLCUCAmpsCh07, tbxLCUCAmpsCh08, tbxLCUCAmpsCh09, tbxLCUCAmpsCh10, tbxLCUCAmpsCh11, tbxLCUCAmpsCh12, tbxLCUCAmpsCh13, tbxLCUCAmpsCh14, tbxLCUCAmpsCh15 };
             lcMeasCurTimes = new ComboBox[] { cmbLC1MeasCurTimeCh00, cmbLC1MeasCurTimeCh01, cmbLC1MeasCurTimeCh02, cmbLC1MeasCurTimeCh03, cmbLC1MeasCurTimeCh04, cmbLC1MeasCurTimeCh05, cmbLC1MeasCurTimeCh06, cmbLC1MeasCurTimeCh07, cmbLC1MeasCurTimeCh08, cmbLC1MeasCurTimeCh09, cmbLC1MeasCurTimeCh10, cmbLC1MeasCurTimeCh11, cmbLC1MeasCurTimeCh12, cmbLC1MeasCurTimeCh13, cmbLC1MeasCurTimeCh14, cmbLC1MeasCurTimeCh15 };
 
         }

@@ -2171,6 +2171,7 @@ namespace M1ConfigGenerator
             this.tbxStartDimCfgRev.Size = new System.Drawing.Size(53, 29);
             this.tbxStartDimCfgRev.TabIndex = 55;
             this.tbxStartDimCfgRev.Text = "0";
+            this.tbxStartDimCfgRev.TextChanged += new System.EventHandler(this.tbxStartDimCfgRev_TextChanged);
             // 
             // label21
             // 
@@ -2370,6 +2371,7 @@ namespace M1ConfigGenerator
             this.cmbStartDimmer.Name = "cmbStartDimmer";
             this.cmbStartDimmer.Size = new System.Drawing.Size(53, 29);
             this.cmbStartDimmer.TabIndex = 13;
+            this.cmbStartDimmer.TextChanged += new System.EventHandler(this.cmbStartDimmer_TextChanged);
             // 
             // label4
             // 

@@ -176,7 +176,7 @@ namespace M1ConfigGenerator
 
         private void btnMenuLoad_Click(object sender, EventArgs e)
         {
-
+            // probably never going to get to the point where it can load files
         }
 
         private void btnMenuAux_Click(object sender, EventArgs e)
@@ -397,6 +397,16 @@ namespace M1ConfigGenerator
             CheckStartCreate();
         }
 
+        private void cmbStartDimmer_TextChanged(object sender, EventArgs e)
+        {
+            CheckStartCreate();
+        }
+
+        private void tbxStartDimCfgRev_TextChanged(object sender, EventArgs e)
+        {
+            CheckStartCreate();
+        }
+
         private void cmbStartHC_TextChanged(object sender, EventArgs e)
         {
             CheckStartCreate();
@@ -444,8 +454,8 @@ namespace M1ConfigGenerator
             if (ValidateConfigRev(tbxStartHRCfgRev.Text)) { checkCount++; }
 
             // LC
-            if (cmbStartLC.Text != "0" && cmbStartHR.Text != "") { numCards++; }
-            if (ValidateConfigRev(tbxStartHRCfgRev.Text)) { checkCount++; }
+            if (cmbStartLC.Text != "0" && cmbStartLC.Text != "") { numCards++; }
+            if (ValidateConfigRev(tbxStartLCCfgRev.Text)) { checkCount++; }
 
             if (ValidateConfigType(tbxStartCfgType.Text) && checkCount == numCards && numCards != 0) { btnStartCreate.Visible = true; }
             else { btnStartCreate.Visible = false; }

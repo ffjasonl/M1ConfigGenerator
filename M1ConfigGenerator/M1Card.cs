@@ -148,6 +148,9 @@ namespace M1ConfigGenerator
             return cardLetter.ToString();
         }
 
+        /// <summary>
+        /// changes 'Z' to appropiate letter for card value, should be called for each parameter group by a ChangeAddress function in each card class
+        /// </summary>
         public void M1_ChangeAddress(string[] argStringArray)
         {
             for (int i = 0; i < argStringArray.Length; i++)

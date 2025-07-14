@@ -11,11 +11,14 @@ namespace M1ConfigGenerator
     {
         public LCCard(int argInt)
         {
+            M1_SetCardLetterOnCreation(Convert.ToString(argInt));
+        }
 
-            //SetTestString(argInt);
-
-            M1_SetCardLetter(Convert.ToString(argInt));
-            M1_ChangeConfigName();
+        /// <summary>
+        /// changes 'Z' to appropiate letter for the specific LC card
+        /// </summary>
+        public void LC_ChangeAddress()
+        {
             // general
             M1_ChangeAddress(m1ParameterNames);
             // card-specific
@@ -47,7 +50,7 @@ namespace M1ConfigGenerator
             M1_SetNodeCfg();
         }
 
-        public void CreateLCFile()
+        public void LC_CreateFile()
         {
             using (StreamWriter sw = File.CreateText(@GetConfigPath() + M1_GetConfigName()))
             {
@@ -172,26 +175,63 @@ namespace M1ConfigGenerator
             }
         }
 
+        public void SetIGNSafety(string argString, int argInt)
+        {
+            if (argString == "Active")
+            { 
+                lcChIGNValues[argInt] = "DRVR_ENABLED_SAFETY_ACTIVE"; 
+            }
+            else if (argString == "Inactive")   
+            { 
+                lcChIGNValues[argInt] = "DRVR_ENABLED_SAFETY_INACTIVE"; 
+            }
+            else                                
+            { 
+                lcChIGNValues[argInt] = "DRVR_SAFETY_DISABLED"; 
+            }
+        }
+
+        public void SetParkSafety(string argString, int argInt)
+        {
+            if (argString == "Active")
+            {
+                lcChParkValues[argInt] = "DRVR_ENABLED_SAFETY_ACTIVE";
+            }
+            else if (argString == "Inactive")
+            {
+                lcChParkValues[argInt] = "DRVR_ENABLED_SAFETY_INACTIVE";
+            }
+            else
+            {
+                lcChParkValues[argInt] = "DRVR_SAFETY_DISABLED";
+            }
+        }
+
         public void SetLock(bool argBool, int argInt)
         {
             lcChLockValues[argInt] = argBool ? "TRUE" : "FALSE";
         }
+
         public void SetAllowOver(bool argBool, int argInt)
         {
             lcChLockValues[argInt] = argBool ? "TRUE" : "FALSE";
         }
+
         public void SetDirection(string argString, int argInt)
         {
             lcChDirectionValues[argInt] = argString;
         }
+
         public void SetTimeoutTimes(string argString, int argInt)
         {
             lcChTimeoutTimeValues[argInt] = argString;
         }
+
         public void SetMaxOn(string argString, int argInt)
         {
             lcChMaxOnValues[argInt] = argString;
         }
+
         public void SetMaxDurRecovery(string argString, int argInt)
         {
             lcChMaxDurRecoveryTimeValues[argInt] = argString;

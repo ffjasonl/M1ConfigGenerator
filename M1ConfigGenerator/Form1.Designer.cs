@@ -41,6 +41,7 @@ namespace M1ConfigGenerator
             this.panelMain = new System.Windows.Forms.Panel();
             this.tabControlMain = new M1ConfigGenerator.TablessControl();
             this.tabMainStart = new System.Windows.Forms.TabPage();
+            this.tbxStartLCCfgRev = new System.Windows.Forms.TextBox();
             this.tbxStartDimCfgRev = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -286,7 +287,7 @@ namespace M1ConfigGenerator
             this.tabControlBreaker = new M1ConfigGenerator.TablessControl();
             this.tabBreaker1 = new System.Windows.Forms.TabPage();
             this.chkTabVisBreaker1 = new System.Windows.Forms.CheckBox();
-            this.tablessControl3 = new M1ConfigGenerator.TablessControl();
+            this.tabControlBreaker1QF = new M1ConfigGenerator.TablessControl();
             this.tabBreak1Quick = new System.Windows.Forms.TabPage();
             this.tabBreak1Full = new System.Windows.Forms.TabPage();
             this.label77 = new System.Windows.Forms.Label();
@@ -1115,10 +1116,10 @@ namespace M1ConfigGenerator
             this.tabControlLC = new M1ConfigGenerator.TablessControl();
             this.tabLC1 = new System.Windows.Forms.TabPage();
             this.label52 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxLC1CardLetter = new System.Windows.Forms.TextBox();
             this.lblLC1Ch00 = new System.Windows.Forms.Label();
             this.chkLC1MG4Ch15 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chkTabVisLC1 = new System.Windows.Forms.CheckBox();
             this.chkLC1MG1Ch01 = new System.Windows.Forms.CheckBox();
             this.lblLC1Ch02 = new System.Windows.Forms.Label();
             this.cmbLC1OCAmps11 = new System.Windows.Forms.ComboBox();
@@ -1920,7 +1921,7 @@ namespace M1ConfigGenerator
             this.panelBreaker.SuspendLayout();
             this.tabControlBreaker.SuspendLayout();
             this.tabBreaker1.SuspendLayout();
-            this.tablessControl3.SuspendLayout();
+            this.tabControlBreaker1QF.SuspendLayout();
             this.tabBreak1Full.SuspendLayout();
             this.tabBreakerGenerated.SuspendLayout();
             this.tabMainDimmer.SuspendLayout();
@@ -2121,6 +2122,7 @@ namespace M1ConfigGenerator
             // tabMainStart
             // 
             this.tabMainStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabMainStart.Controls.Add(this.tbxStartLCCfgRev);
             this.tabMainStart.Controls.Add(this.tbxStartDimCfgRev);
             this.tabMainStart.Controls.Add(this.label21);
             this.tabMainStart.Controls.Add(this.label20);
@@ -2148,6 +2150,17 @@ namespace M1ConfigGenerator
             this.tabMainStart.Size = new System.Drawing.Size(1380, 995);
             this.tabMainStart.TabIndex = 1;
             this.tabMainStart.Text = "Start";
+            // 
+            // tbxStartLCCfgRev
+            // 
+            this.tbxStartLCCfgRev.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxStartLCCfgRev.Location = new System.Drawing.Point(467, 311);
+            this.tbxStartLCCfgRev.MaxLength = 4;
+            this.tbxStartLCCfgRev.Name = "tbxStartLCCfgRev";
+            this.tbxStartLCCfgRev.Size = new System.Drawing.Size(53, 29);
+            this.tbxStartLCCfgRev.TabIndex = 56;
+            this.tbxStartLCCfgRev.Text = "0";
+            this.tbxStartLCCfgRev.TextChanged += new System.EventHandler(this.tbxStartLCCfgRev_TextChanged);
             // 
             // tbxStartDimCfgRev
             // 
@@ -2294,7 +2307,6 @@ namespace M1ConfigGenerator
             this.cmbStartLC.Name = "cmbStartLC";
             this.cmbStartLC.Size = new System.Drawing.Size(53, 29);
             this.cmbStartLC.TabIndex = 15;
-            this.cmbStartLC.Visible = false;
             // 
             // label2
             // 
@@ -5030,7 +5042,7 @@ namespace M1ConfigGenerator
             // 
             this.tabBreaker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.tabBreaker1.Controls.Add(this.chkTabVisBreaker1);
-            this.tabBreaker1.Controls.Add(this.tablessControl3);
+            this.tabBreaker1.Controls.Add(this.tabControlBreaker1QF);
             this.tabBreaker1.Controls.Add(this.chkBreaker1MatchVIN);
             this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt11);
             this.tabBreaker1.Controls.Add(this.cmbBreaker1Interrupt10);
@@ -5116,15 +5128,15 @@ namespace M1ConfigGenerator
             this.chkTabVisBreaker1.UseVisualStyleBackColor = true;
             this.chkTabVisBreaker1.CheckedChanged += new System.EventHandler(this.chkTabVisBreaker1_CheckedChanged);
             // 
-            // tablessControl3
+            // tabControlBreaker1QF
             // 
-            this.tablessControl3.Controls.Add(this.tabBreak1Quick);
-            this.tablessControl3.Controls.Add(this.tabBreak1Full);
-            this.tablessControl3.Location = new System.Drawing.Point(0, 209);
-            this.tablessControl3.Name = "tablessControl3";
-            this.tablessControl3.SelectedIndex = 0;
-            this.tablessControl3.Size = new System.Drawing.Size(1384, 687);
-            this.tablessControl3.TabIndex = 269;
+            this.tabControlBreaker1QF.Controls.Add(this.tabBreak1Quick);
+            this.tabControlBreaker1QF.Controls.Add(this.tabBreak1Full);
+            this.tabControlBreaker1QF.Location = new System.Drawing.Point(0, 209);
+            this.tabControlBreaker1QF.Name = "tabControlBreaker1QF";
+            this.tabControlBreaker1QF.SelectedIndex = 0;
+            this.tabControlBreaker1QF.Size = new System.Drawing.Size(1384, 687);
+            this.tabControlBreaker1QF.TabIndex = 269;
             // 
             // tabBreak1Quick
             // 
@@ -16127,10 +16139,10 @@ namespace M1ConfigGenerator
             // 
             this.tabLC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.tabLC1.Controls.Add(this.label52);
-            this.tabLC1.Controls.Add(this.textBox1);
+            this.tabLC1.Controls.Add(this.tbxLC1CardLetter);
             this.tabLC1.Controls.Add(this.lblLC1Ch00);
             this.tabLC1.Controls.Add(this.chkLC1MG4Ch15);
-            this.tabLC1.Controls.Add(this.checkBox2);
+            this.tabLC1.Controls.Add(this.chkTabVisLC1);
             this.tabLC1.Controls.Add(this.chkLC1MG1Ch01);
             this.tabLC1.Controls.Add(this.lblLC1Ch02);
             this.tabLC1.Controls.Add(this.cmbLC1OCAmps11);
@@ -16283,14 +16295,14 @@ namespace M1ConfigGenerator
             this.label52.TabIndex = 287;
             this.label52.Text = "Card Letter:";
             // 
-            // textBox1
+            // tbxLC1CardLetter
             // 
-            this.textBox1.Location = new System.Drawing.Point(560, 25);
-            this.textBox1.MaxLength = 4;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(32, 20);
-            this.textBox1.TabIndex = 286;
-            this.textBox1.Text = "A";
+            this.tbxLC1CardLetter.Location = new System.Drawing.Point(560, 25);
+            this.tbxLC1CardLetter.MaxLength = 4;
+            this.tbxLC1CardLetter.Name = "tbxLC1CardLetter";
+            this.tbxLC1CardLetter.Size = new System.Drawing.Size(32, 20);
+            this.tbxLC1CardLetter.TabIndex = 286;
+            this.tbxLC1CardLetter.Text = "A";
             // 
             // lblLC1Ch00
             // 
@@ -16313,17 +16325,17 @@ namespace M1ConfigGenerator
             this.chkLC1MG4Ch15.TabIndex = 106;
             this.chkLC1MG4Ch15.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkTabVisLC1
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox2.Location = new System.Drawing.Point(1034, 28);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(46, 21);
-            this.checkBox2.TabIndex = 270;
-            this.checkBox2.Text = "Full";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkTabVisLC1.AutoSize = true;
+            this.chkTabVisLC1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTabVisLC1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.chkTabVisLC1.Location = new System.Drawing.Point(1034, 28);
+            this.chkTabVisLC1.Name = "chkTabVisLC1";
+            this.chkTabVisLC1.Size = new System.Drawing.Size(46, 21);
+            this.chkTabVisLC1.TabIndex = 270;
+            this.chkTabVisLC1.Text = "Full";
+            this.chkTabVisLC1.UseVisualStyleBackColor = true;
             // 
             // chkLC1MG1Ch01
             // 
@@ -17459,12 +17471,22 @@ namespace M1ConfigGenerator
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14"});
             this.comboBox5.Location = new System.Drawing.Point(1279, 121);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(66, 21);
@@ -17475,12 +17497,22 @@ namespace M1ConfigGenerator
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "15"});
             this.comboBox6.Location = new System.Drawing.Point(1207, 121);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(66, 21);
@@ -17491,12 +17523,22 @@ namespace M1ConfigGenerator
             this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "14",
+            "15"});
             this.comboBox7.Location = new System.Drawing.Point(1135, 121);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(66, 21);
@@ -17507,12 +17549,22 @@ namespace M1ConfigGenerator
             this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "13",
+            "14",
+            "15"});
             this.comboBox8.Location = new System.Drawing.Point(1063, 121);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(66, 21);
@@ -17523,12 +17575,22 @@ namespace M1ConfigGenerator
             this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "12",
+            "13",
+            "14",
+            "15"});
             this.comboBox9.Location = new System.Drawing.Point(991, 121);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(66, 21);
@@ -17539,12 +17601,22 @@ namespace M1ConfigGenerator
             this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
             this.comboBox10.Location = new System.Drawing.Point(919, 121);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(66, 21);
@@ -17555,12 +17627,22 @@ namespace M1ConfigGenerator
             this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
             this.comboBox11.Location = new System.Drawing.Point(847, 121);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(66, 21);
@@ -17571,12 +17653,22 @@ namespace M1ConfigGenerator
             this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox12.FormattingEnabled = true;
             this.comboBox12.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
             this.comboBox12.Location = new System.Drawing.Point(775, 121);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(66, 21);
@@ -17587,12 +17679,22 @@ namespace M1ConfigGenerator
             this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox13.FormattingEnabled = true;
             this.comboBox13.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
             this.comboBox13.Location = new System.Drawing.Point(703, 121);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(66, 21);
@@ -17603,12 +17705,22 @@ namespace M1ConfigGenerator
             this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox14.FormattingEnabled = true;
             this.comboBox14.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
             this.comboBox14.Location = new System.Drawing.Point(631, 121);
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(66, 21);
@@ -17619,12 +17731,22 @@ namespace M1ConfigGenerator
             this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox15.FormattingEnabled = true;
             this.comboBox15.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
             this.comboBox15.Location = new System.Drawing.Point(559, 121);
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(66, 21);
@@ -17635,12 +17757,22 @@ namespace M1ConfigGenerator
             this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox16.FormattingEnabled = true;
             this.comboBox16.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
             this.comboBox16.Location = new System.Drawing.Point(487, 121);
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(66, 21);
@@ -17651,12 +17783,22 @@ namespace M1ConfigGenerator
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
             this.comboBox1.Location = new System.Drawing.Point(415, 121);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(66, 21);
@@ -17667,12 +17809,22 @@ namespace M1ConfigGenerator
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "1",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
             this.comboBox2.Location = new System.Drawing.Point(343, 121);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(66, 21);
@@ -17683,12 +17835,22 @@ namespace M1ConfigGenerator
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "0",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
             this.comboBox3.Location = new System.Drawing.Point(271, 121);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(66, 21);
@@ -17710,12 +17872,22 @@ namespace M1ConfigGenerator
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
-            "High",
-            "Low",
-            "Half Br",
-            "H Br",
-            "Slave",
-            "Unused"});
+            "None",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
             this.comboBox4.Location = new System.Drawing.Point(199, 121);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(66, 21);
@@ -26393,7 +26565,7 @@ namespace M1ConfigGenerator
             this.tabControlBreaker.ResumeLayout(false);
             this.tabBreaker1.ResumeLayout(false);
             this.tabBreaker1.PerformLayout();
-            this.tablessControl3.ResumeLayout(false);
+            this.tabControlBreaker1QF.ResumeLayout(false);
             this.tabBreak1Full.ResumeLayout(false);
             this.tabBreak1Full.PerformLayout();
             this.tabBreakerGenerated.ResumeLayout(false);
@@ -27520,7 +27692,7 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox chkAux1QuickPair0203;
         private System.Windows.Forms.Label label542;
         private System.Windows.Forms.CheckBox chkAux1QuickPair0001;
-        private TablessControl tablessControl3;
+        private TablessControl tabControlBreaker1QF;
         private System.Windows.Forms.TabPage tabBreak1Quick;
         private System.Windows.Forms.TabPage tabBreak1Full;
         private System.Windows.Forms.Label label545;
@@ -27618,7 +27790,7 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox chkTabVisBreaker1;
         private System.Windows.Forms.CheckBox chkTabVisDimmer1;
         private System.Windows.Forms.CheckBox chkTabVisHC1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox chkTabVisLC1;
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage21;
         private System.Windows.Forms.Label label523;
@@ -28162,7 +28334,7 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.TextBox tbxStartDimCfgRev;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxLC1CardLetter;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
@@ -28323,6 +28495,7 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label98;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.TextBox tbxStartLCCfgRev;
     }
 }
 

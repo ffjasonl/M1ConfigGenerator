@@ -39,6 +39,7 @@ namespace M1ConfigGenerator
         */
 
         private bool fullSetupSelected = false;
+        private bool standalone = false;
 
         private char cardLetter = 'Z';
 
@@ -108,6 +109,16 @@ namespace M1ConfigGenerator
         public bool M1_GetFullSetup()
         {
             return fullSetupSelected;
+        }
+
+        public void M1_SetStandalone(bool argBool)
+        {
+            standalone = argBool;
+        }
+
+        public bool M1_GetStandalone()
+        {
+            return standalone;
         }
 
         public void M1_ChangeConfigName()

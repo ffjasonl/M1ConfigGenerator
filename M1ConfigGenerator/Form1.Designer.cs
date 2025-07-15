@@ -1188,23 +1188,23 @@ namespace M1ConfigGenerator
             this.cmbLCPWMFreqCh05 = new System.Windows.Forms.ComboBox();
             this.label74 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh15 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh14 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh13 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh12 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh01 = new System.Windows.Forms.ComboBox();
             this.label72 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cmbLCPairedToCh00 = new System.Windows.Forms.ComboBox();
             this.cmbLCDeadTimeCh15 = new System.Windows.Forms.ComboBox();
             this.cmbLCDeadTimeCh14 = new System.Windows.Forms.ComboBox();
             this.cmbLCDeadTimeCh13 = new System.Windows.Forms.ComboBox();
@@ -1481,7 +1481,7 @@ namespace M1ConfigGenerator
             this.chkLC1MG2Ch05 = new System.Windows.Forms.CheckBox();
             this.tbxLC1BaseIndex = new System.Windows.Forms.TextBox();
             this.cmbLC1OCTime02 = new System.Windows.Forms.ComboBox();
-            this.label227 = new System.Windows.Forms.Label();
+            this.lblLCOCAmps = new System.Windows.Forms.Label();
             this.chkLC1MG2Ch14 = new System.Windows.Forms.CheckBox();
             this.label226 = new System.Windows.Forms.Label();
             this.chkLC1MG4Ch01 = new System.Windows.Forms.CheckBox();
@@ -2303,11 +2303,14 @@ namespace M1ConfigGenerator
             "3",
             "4",
             "5",
-            "6"});
+            "6",
+            "7",
+            "8"});
             this.cmbStartLC.Location = new System.Drawing.Point(376, 311);
             this.cmbStartLC.Name = "cmbStartLC";
             this.cmbStartLC.Size = new System.Drawing.Size(53, 29);
             this.cmbStartLC.TabIndex = 15;
+            this.cmbStartLC.TextChanged += new System.EventHandler(this.cmbStartLC_TextChanged);
             // 
             // label2
             // 
@@ -2394,7 +2397,11 @@ namespace M1ConfigGenerator
             "1",
             "2",
             "3",
-            "4"});
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
             this.cmbStartBreaker.Location = new System.Drawing.Point(376, 111);
             this.cmbStartBreaker.Name = "cmbStartBreaker";
             this.cmbStartBreaker.Size = new System.Drawing.Size(53, 29);
@@ -2420,7 +2427,13 @@ namespace M1ConfigGenerator
             this.cmbStartAux.Items.AddRange(new object[] {
             "0",
             "1",
-            "2"});
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
             this.cmbStartAux.Location = new System.Drawing.Point(376, 61);
             this.cmbStartAux.Name = "cmbStartAux";
             this.cmbStartAux.Size = new System.Drawing.Size(53, 29);
@@ -16076,6 +16089,7 @@ namespace M1ConfigGenerator
             this.btnLCCard8.Text = "Card 8";
             this.btnLCCard8.UseVisualStyleBackColor = false;
             this.btnLCCard8.Visible = false;
+            this.btnLCCard8.Click += new System.EventHandler(this.btnLCCard8_Click);
             // 
             // btnLCCard7
             // 
@@ -16091,6 +16105,7 @@ namespace M1ConfigGenerator
             this.btnLCCard7.Text = "Card 7";
             this.btnLCCard7.UseVisualStyleBackColor = false;
             this.btnLCCard7.Visible = false;
+            this.btnLCCard7.Click += new System.EventHandler(this.btnLCCard7_Click);
             // 
             // btnLCGenerate
             // 
@@ -16197,7 +16212,7 @@ namespace M1ConfigGenerator
             this.tabLC1.Controls.Add(this.chkLC1MG2Ch05);
             this.tabLC1.Controls.Add(this.tbxLC1BaseIndex);
             this.tabLC1.Controls.Add(this.cmbLC1OCTime02);
-            this.tabLC1.Controls.Add(this.label227);
+            this.tabLC1.Controls.Add(this.lblLCOCAmps);
             this.tabLC1.Controls.Add(this.chkLC1MG2Ch14);
             this.tabLC1.Controls.Add(this.label226);
             this.tabLC1.Controls.Add(this.chkLC1MG4Ch01);
@@ -16795,23 +16810,23 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.cmbLCPWMFreqCh05);
             this.tabLC1Full.Controls.Add(this.label74);
             this.tabLC1Full.Controls.Add(this.label73);
-            this.tabLC1Full.Controls.Add(this.comboBox5);
-            this.tabLC1Full.Controls.Add(this.comboBox6);
-            this.tabLC1Full.Controls.Add(this.comboBox7);
-            this.tabLC1Full.Controls.Add(this.comboBox8);
-            this.tabLC1Full.Controls.Add(this.comboBox9);
-            this.tabLC1Full.Controls.Add(this.comboBox10);
-            this.tabLC1Full.Controls.Add(this.comboBox11);
-            this.tabLC1Full.Controls.Add(this.comboBox12);
-            this.tabLC1Full.Controls.Add(this.comboBox13);
-            this.tabLC1Full.Controls.Add(this.comboBox14);
-            this.tabLC1Full.Controls.Add(this.comboBox15);
-            this.tabLC1Full.Controls.Add(this.comboBox16);
-            this.tabLC1Full.Controls.Add(this.comboBox1);
-            this.tabLC1Full.Controls.Add(this.comboBox2);
-            this.tabLC1Full.Controls.Add(this.comboBox3);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh15);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh14);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh13);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh12);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh11);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh10);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh09);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh08);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh07);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh06);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh05);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh04);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh03);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh02);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh01);
             this.tabLC1Full.Controls.Add(this.label72);
-            this.tabLC1Full.Controls.Add(this.comboBox4);
+            this.tabLC1Full.Controls.Add(this.cmbLCPairedToCh00);
             this.tabLC1Full.Controls.Add(this.cmbLCDeadTimeCh15);
             this.tabLC1Full.Controls.Add(this.cmbLCDeadTimeCh14);
             this.tabLC1Full.Controls.Add(this.cmbLCDeadTimeCh13);
@@ -17468,11 +17483,11 @@ namespace M1ConfigGenerator
             this.label73.TabIndex = 396;
             this.label73.Text = "0x";
             // 
-            // comboBox5
+            // cmbLCPairedToCh15
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh15.FormattingEnabled = true;
+            this.cmbLCPairedToCh15.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17489,16 +17504,16 @@ namespace M1ConfigGenerator
             "12",
             "13",
             "14"});
-            this.comboBox5.Location = new System.Drawing.Point(1279, 121);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(66, 21);
-            this.comboBox5.TabIndex = 395;
+            this.cmbLCPairedToCh15.Location = new System.Drawing.Point(1279, 121);
+            this.cmbLCPairedToCh15.Name = "cmbLCPairedToCh15";
+            this.cmbLCPairedToCh15.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh15.TabIndex = 395;
             // 
-            // comboBox6
+            // cmbLCPairedToCh14
             // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh14.FormattingEnabled = true;
+            this.cmbLCPairedToCh14.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17515,16 +17530,16 @@ namespace M1ConfigGenerator
             "12",
             "13",
             "15"});
-            this.comboBox6.Location = new System.Drawing.Point(1207, 121);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(66, 21);
-            this.comboBox6.TabIndex = 394;
+            this.cmbLCPairedToCh14.Location = new System.Drawing.Point(1207, 121);
+            this.cmbLCPairedToCh14.Name = "cmbLCPairedToCh14";
+            this.cmbLCPairedToCh14.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh14.TabIndex = 394;
             // 
-            // comboBox7
+            // cmbLCPairedToCh13
             // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh13.FormattingEnabled = true;
+            this.cmbLCPairedToCh13.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17541,16 +17556,16 @@ namespace M1ConfigGenerator
             "12",
             "14",
             "15"});
-            this.comboBox7.Location = new System.Drawing.Point(1135, 121);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(66, 21);
-            this.comboBox7.TabIndex = 393;
+            this.cmbLCPairedToCh13.Location = new System.Drawing.Point(1135, 121);
+            this.cmbLCPairedToCh13.Name = "cmbLCPairedToCh13";
+            this.cmbLCPairedToCh13.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh13.TabIndex = 393;
             // 
-            // comboBox8
+            // cmbLCPairedToCh12
             // 
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh12.FormattingEnabled = true;
+            this.cmbLCPairedToCh12.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17567,16 +17582,16 @@ namespace M1ConfigGenerator
             "13",
             "14",
             "15"});
-            this.comboBox8.Location = new System.Drawing.Point(1063, 121);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(66, 21);
-            this.comboBox8.TabIndex = 392;
+            this.cmbLCPairedToCh12.Location = new System.Drawing.Point(1063, 121);
+            this.cmbLCPairedToCh12.Name = "cmbLCPairedToCh12";
+            this.cmbLCPairedToCh12.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh12.TabIndex = 392;
             // 
-            // comboBox9
+            // cmbLCPairedToCh11
             // 
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh11.FormattingEnabled = true;
+            this.cmbLCPairedToCh11.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17593,16 +17608,16 @@ namespace M1ConfigGenerator
             "13",
             "14",
             "15"});
-            this.comboBox9.Location = new System.Drawing.Point(991, 121);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(66, 21);
-            this.comboBox9.TabIndex = 391;
+            this.cmbLCPairedToCh11.Location = new System.Drawing.Point(991, 121);
+            this.cmbLCPairedToCh11.Name = "cmbLCPairedToCh11";
+            this.cmbLCPairedToCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh11.TabIndex = 391;
             // 
-            // comboBox10
+            // cmbLCPairedToCh10
             // 
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh10.FormattingEnabled = true;
+            this.cmbLCPairedToCh10.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17619,16 +17634,16 @@ namespace M1ConfigGenerator
             "13",
             "14",
             "15"});
-            this.comboBox10.Location = new System.Drawing.Point(919, 121);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(66, 21);
-            this.comboBox10.TabIndex = 390;
+            this.cmbLCPairedToCh10.Location = new System.Drawing.Point(919, 121);
+            this.cmbLCPairedToCh10.Name = "cmbLCPairedToCh10";
+            this.cmbLCPairedToCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh10.TabIndex = 390;
             // 
-            // comboBox11
+            // cmbLCPairedToCh09
             // 
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh09.FormattingEnabled = true;
+            this.cmbLCPairedToCh09.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17645,16 +17660,16 @@ namespace M1ConfigGenerator
             "13",
             "14",
             "15"});
-            this.comboBox11.Location = new System.Drawing.Point(847, 121);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(66, 21);
-            this.comboBox11.TabIndex = 389;
+            this.cmbLCPairedToCh09.Location = new System.Drawing.Point(847, 121);
+            this.cmbLCPairedToCh09.Name = "cmbLCPairedToCh09";
+            this.cmbLCPairedToCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh09.TabIndex = 389;
             // 
-            // comboBox12
+            // cmbLCPairedToCh08
             // 
-            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh08.FormattingEnabled = true;
+            this.cmbLCPairedToCh08.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17671,16 +17686,16 @@ namespace M1ConfigGenerator
             "13",
             "14",
             "15"});
-            this.comboBox12.Location = new System.Drawing.Point(775, 121);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(66, 21);
-            this.comboBox12.TabIndex = 388;
+            this.cmbLCPairedToCh08.Location = new System.Drawing.Point(775, 121);
+            this.cmbLCPairedToCh08.Name = "cmbLCPairedToCh08";
+            this.cmbLCPairedToCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh08.TabIndex = 388;
             // 
-            // comboBox13
+            // cmbLCPairedToCh07
             // 
-            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh07.FormattingEnabled = true;
+            this.cmbLCPairedToCh07.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17697,16 +17712,16 @@ namespace M1ConfigGenerator
             "13",
             "14",
             "15"});
-            this.comboBox13.Location = new System.Drawing.Point(703, 121);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(66, 21);
-            this.comboBox13.TabIndex = 387;
+            this.cmbLCPairedToCh07.Location = new System.Drawing.Point(703, 121);
+            this.cmbLCPairedToCh07.Name = "cmbLCPairedToCh07";
+            this.cmbLCPairedToCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh07.TabIndex = 387;
             // 
-            // comboBox14
+            // cmbLCPairedToCh06
             // 
-            this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh06.FormattingEnabled = true;
+            this.cmbLCPairedToCh06.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17723,16 +17738,16 @@ namespace M1ConfigGenerator
             "13",
             "14",
             "15"});
-            this.comboBox14.Location = new System.Drawing.Point(631, 121);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(66, 21);
-            this.comboBox14.TabIndex = 386;
+            this.cmbLCPairedToCh06.Location = new System.Drawing.Point(631, 121);
+            this.cmbLCPairedToCh06.Name = "cmbLCPairedToCh06";
+            this.cmbLCPairedToCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh06.TabIndex = 386;
             // 
-            // comboBox15
+            // cmbLCPairedToCh05
             // 
-            this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh05.FormattingEnabled = true;
+            this.cmbLCPairedToCh05.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17749,16 +17764,16 @@ namespace M1ConfigGenerator
             "13",
             "14",
             "15"});
-            this.comboBox15.Location = new System.Drawing.Point(559, 121);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(66, 21);
-            this.comboBox15.TabIndex = 385;
+            this.cmbLCPairedToCh05.Location = new System.Drawing.Point(559, 121);
+            this.cmbLCPairedToCh05.Name = "cmbLCPairedToCh05";
+            this.cmbLCPairedToCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh05.TabIndex = 385;
             // 
-            // comboBox16
+            // cmbLCPairedToCh04
             // 
-            this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh04.FormattingEnabled = true;
+            this.cmbLCPairedToCh04.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17775,16 +17790,16 @@ namespace M1ConfigGenerator
             "13",
             "14",
             "15"});
-            this.comboBox16.Location = new System.Drawing.Point(487, 121);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(66, 21);
-            this.comboBox16.TabIndex = 384;
+            this.cmbLCPairedToCh04.Location = new System.Drawing.Point(487, 121);
+            this.cmbLCPairedToCh04.Name = "cmbLCPairedToCh04";
+            this.cmbLCPairedToCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh04.TabIndex = 384;
             // 
-            // comboBox1
+            // cmbLCPairedToCh03
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh03.FormattingEnabled = true;
+            this.cmbLCPairedToCh03.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17801,16 +17816,16 @@ namespace M1ConfigGenerator
             "13",
             "14",
             "15"});
-            this.comboBox1.Location = new System.Drawing.Point(415, 121);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(66, 21);
-            this.comboBox1.TabIndex = 383;
+            this.cmbLCPairedToCh03.Location = new System.Drawing.Point(415, 121);
+            this.cmbLCPairedToCh03.Name = "cmbLCPairedToCh03";
+            this.cmbLCPairedToCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh03.TabIndex = 383;
             // 
-            // comboBox2
+            // cmbLCPairedToCh02
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh02.FormattingEnabled = true;
+            this.cmbLCPairedToCh02.Items.AddRange(new object[] {
             "None",
             "0",
             "1",
@@ -17827,16 +17842,16 @@ namespace M1ConfigGenerator
             "13",
             "14",
             "15"});
-            this.comboBox2.Location = new System.Drawing.Point(343, 121);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(66, 21);
-            this.comboBox2.TabIndex = 382;
+            this.cmbLCPairedToCh02.Location = new System.Drawing.Point(343, 121);
+            this.cmbLCPairedToCh02.Name = "cmbLCPairedToCh02";
+            this.cmbLCPairedToCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh02.TabIndex = 382;
             // 
-            // comboBox3
+            // cmbLCPairedToCh01
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh01.FormattingEnabled = true;
+            this.cmbLCPairedToCh01.Items.AddRange(new object[] {
             "None",
             "0",
             "2",
@@ -17853,10 +17868,10 @@ namespace M1ConfigGenerator
             "13",
             "14",
             "15"});
-            this.comboBox3.Location = new System.Drawing.Point(271, 121);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(66, 21);
-            this.comboBox3.TabIndex = 381;
+            this.cmbLCPairedToCh01.Location = new System.Drawing.Point(271, 121);
+            this.cmbLCPairedToCh01.Name = "cmbLCPairedToCh01";
+            this.cmbLCPairedToCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh01.TabIndex = 381;
             // 
             // label72
             // 
@@ -17869,11 +17884,11 @@ namespace M1ConfigGenerator
             this.label72.TabIndex = 379;
             this.label72.Text = "Paired To";
             // 
-            // comboBox4
+            // cmbLCPairedToCh00
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cmbLCPairedToCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCPairedToCh00.FormattingEnabled = true;
+            this.cmbLCPairedToCh00.Items.AddRange(new object[] {
             "None",
             "1",
             "2",
@@ -17890,10 +17905,10 @@ namespace M1ConfigGenerator
             "13",
             "14",
             "15"});
-            this.comboBox4.Location = new System.Drawing.Point(199, 121);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(66, 21);
-            this.comboBox4.TabIndex = 380;
+            this.cmbLCPairedToCh00.Location = new System.Drawing.Point(199, 121);
+            this.cmbLCPairedToCh00.Name = "cmbLCPairedToCh00";
+            this.cmbLCPairedToCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCPairedToCh00.TabIndex = 380;
             // 
             // cmbLCDeadTimeCh15
             // 
@@ -21058,16 +21073,16 @@ namespace M1ConfigGenerator
             this.cmbLC1OCTime02.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1OCTime02.TabIndex = 29;
             // 
-            // label227
+            // lblLCOCAmps
             // 
-            this.label227.AutoSize = true;
-            this.label227.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label227.ForeColor = System.Drawing.SystemColors.Control;
-            this.label227.Location = new System.Drawing.Point(3, 150);
-            this.label227.Name = "label227";
-            this.label227.Size = new System.Drawing.Size(114, 17);
-            this.label227.TabIndex = 16;
-            this.label227.Text = "Overcurrent Amps";
+            this.lblLCOCAmps.AutoSize = true;
+            this.lblLCOCAmps.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLCOCAmps.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblLCOCAmps.Location = new System.Drawing.Point(3, 150);
+            this.lblLCOCAmps.Name = "lblLCOCAmps";
+            this.lblLCOCAmps.Size = new System.Drawing.Size(114, 17);
+            this.lblLCOCAmps.TabIndex = 16;
+            this.lblLCOCAmps.Text = "Overcurrent Amps";
             // 
             // chkLC1MG2Ch14
             // 
@@ -26875,7 +26890,7 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label224;
         private System.Windows.Forms.Label label225;
         private System.Windows.Forms.Label label226;
-        private System.Windows.Forms.Label label227;
+        private System.Windows.Forms.Label lblLCOCAmps;
         private System.Windows.Forms.TextBox tbxLC1BaseIndex;
         private System.Windows.Forms.Label label228;
         private System.Windows.Forms.CheckBox chkLC1Force;
@@ -28420,23 +28435,23 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.ComboBox cmbLCDeadTimeCh06;
         private System.Windows.Forms.ComboBox cmbLCDeadTimeCh05;
         private System.Windows.Forms.ComboBox cmbLCDeadTimeCh04;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh15;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh14;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh13;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh12;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh11;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh10;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh09;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh08;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh07;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh06;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh05;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh04;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh03;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh02;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh01;
         private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cmbLCPairedToCh00;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.ComboBox cmbLCPWMFreqCh15;

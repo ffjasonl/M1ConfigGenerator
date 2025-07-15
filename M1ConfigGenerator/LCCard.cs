@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -52,7 +53,7 @@ namespace M1ConfigGenerator
 
         public void LC_CreateFile()
         {
-            using (StreamWriter sw = File.CreateText(@GetConfigPath() + M1_GetConfigName()))
+            using (StreamWriter sw = File.CreateText(@LC_GetConfigPath() + M1_GetConfigName()))
             {
                 DateTime currentDateTime = DateTime.Now;
                 sw.WriteLine(commentBox);
@@ -130,132 +131,177 @@ namespace M1ConfigGenerator
             }
         }
 
-        public string GetConfigPath()
+        public string LC_GetConfigPath()
         {
             return configPath;
         }
 
-        public void SetOCAmps(int argInt, string argString)
+        public void LC_SetOCAmps(int argInt, string argString)
         {
             lcChOvercurrentAmpsValues[argInt] = argString;
         }
 
-        public void SetOCTime(int argInt, string argString)
+        public string LC_GetOCAmps(int argInt)
+        {
+            if (lcChOvercurrentAmpsValues[argInt] == "0xFFFF") { return "Disabled"; }
+            else { return lcChOvercurrentAmpsValues[argInt]; }
+        }
+
+        public void LC_SetOCTime(int argInt, string argString)
         {
             lcChOvercurrentTimeValues[argInt] = argString;
         }
 
-        public void SetModeAndPairingLC(int argIndex, string argMode, bool argStartup)
+        public string LC_GetOCTime(int argInt)
         {
-            if (argMode == "Ground")
-            {
-                lcChModeValues[argIndex] = "DRVR_TYPE_LOW_SIDE";
-
-                if (argStartup == true)
-                {
-                    lcChDirectionValues[argIndex] = "DRVR_STATE_LOW";
-                }
-            }
-            else if (argMode == "RP UP")
-            {
-                lcChModeValues[argIndex] = "DRVR_TYPE_H_BRIDGE";
-                lcChPairedValues[argIndex] = "PAIRED_TO_CHNL" + Convert.ToString(argIndex + 1);
-            }
-            else if (argMode == "RP DN")
-            {
-                lcChModeValues[argIndex] = "DRVR_TYPE_SLAVE";
-                lcChPairedValues[argIndex] = "PAIRED_TO_CHNL" + Convert.ToString(argIndex - 1);
-            }
-            else // 12V+
-            {
-                if (argStartup == true)
-                {
-                    lcChDirectionValues[argIndex] = "DRVR_STATE_HIGH";
-                }
-            }
+            return lcChOvercurrentTimeValues[argInt];
         }
 
-        public void SetIGNSafety(string argString, int argInt)
+        public void LC_SetIGNSafety(string argString, int argInt)
         {
-            if (argString == "Active")
-            { 
-                lcChIGNValues[argInt] = "DRVR_ENABLED_SAFETY_ACTIVE"; 
-            }
-            else if (argString == "Inactive")   
-            { 
-                lcChIGNValues[argInt] = "DRVR_ENABLED_SAFETY_INACTIVE"; 
-            }
-            else                                
-            { 
-                lcChIGNValues[argInt] = "DRVR_SAFETY_DISABLED"; 
-            }
+            if      (argString == "Active")     { lcChIGNValues[argInt] = "DRVR_ENABLED_SAFETY_ACTIVE"; }
+            else if (argString == "Inactive")   { lcChIGNValues[argInt] = "DRVR_ENABLED_SAFETY_INACTIVE"; }
+            else                                { lcChIGNValues[argInt] = "DRVR_SAFETY_DISABLED"; }
         }
 
-        public void SetParkSafety(string argString, int argInt)
+        public string LC_GetIGNSafety(int argInt)
         {
-            if (argString == "Active")
+            if      (lcChIGNValues[argInt] == "DRVR_ENABLED_SAFETY_ACTIVE")     { return "Active"; }
+            else if (lcChIGNValues[argInt] == "DRVR_ENABLED_SAFETY_INACTIVE")   { return "Inactive"; }
+            else                                                                { return "Always"; }
+        }
+
+        public void LC_SetParkSafety(string argString, int argInt)
+        {
+            if      (argString == "Active")     { lcChParkValues[argInt] = "DRVR_ENABLED_SAFETY_ACTIVE"; }
+            else if (argString == "Inactive")   { lcChParkValues[argInt] = "DRVR_ENABLED_SAFETY_INACTIVE"; }
+            else                                { lcChParkValues[argInt] = "DRVR_SAFETY_DISABLED"; }
+        }
+
+        public string LC_GetParkSafety(int argInt)
+        {
+            if      (lcChParkValues[argInt] == "DRVR_ENABLED_SAFETY_ACTIVE")    { return "Active"; }
+            else if (lcChParkValues[argInt] == "DRVR_ENABLED_SAFETY_INACTIVE")  { return "Inactive"; }
+            else                                                                { return "Always"; }
+        }
+
+        public void LC_SetModeParameter(string argString, int argInt)
+        {
+            if (argString == "Half Br")
             {
-                lcChParkValues[argInt] = "DRVR_ENABLED_SAFETY_ACTIVE";
+                lcChModeValues[argInt] = "DRVR_TYPE_HALF_BRIDGE";
             }
-            else if (argString == "Inactive")
+            else if (argString == "H Br")
             {
-                lcChParkValues[argInt] = "DRVR_ENABLED_SAFETY_INACTIVE";
+                lcChModeValues[argInt] = "DRVR_TYPE_H_BRIDGE";
+            }
+            else if (argString == "Low")
+            {
+                lcChModeValues[argInt] = "DRVR_TYPE_LOW_SIDE";
+            }
+            else if (argString == "Unused")
+            {
+                lcChModeValues[argInt] = "DRVR_TYPE_UNUSED";
+            }
+            else if (argString == "Slave")
+            {
+                lcChModeValues[argInt] = "DRVR_TYPE_SLAVE";
             }
             else
             {
-                lcChParkValues[argInt] = "DRVR_SAFETY_DISABLED";
+                lcChModeValues[argInt] = "DRVR_TYPE_HIGH_SIDE";
             }
         }
 
-        public void SetLock(bool argBool, int argInt)
+        public void LC_SetPairedTo(string argString, int argInt)
+        {
+            if (argString == "None") { lcChPairedValues[argInt] = "NO_SLAVE"; }
+            else { lcChPairedValues[argInt] = argString; }
+        }
+
+        public void LC_SetDeadTime(string argString, int argInt)
+        {
+            lcChDeadtimeValues[argInt] = argString;
+        }
+
+        public void LC_SetAllowOverride(bool argBool, int argInt)
         {
             lcChLockValues[argInt] = argBool ? "TRUE" : "FALSE";
         }
 
-        public void SetAllowOver(bool argBool, int argInt)
+        public void LC_SetLock(bool argBool, int argInt)
         {
             lcChLockValues[argInt] = argBool ? "TRUE" : "FALSE";
         }
 
-        public void SetDirection(string argString, int argInt)
+        public void LC_SetDirection(string argString, int argInt)
         {
             lcChDirectionValues[argInt] = argString;
         }
 
-        public void SetTimeoutTimes(string argString, int argInt)
+        public void LC_SetAllowTImeout(bool argBool, int argInt)
+        {
+            lcChTimeoutValues[argInt] = argBool ? "DRVR_TIMEOUT_ENABLED" : "DRVR_TIMEOUT_DISABLED";
+        }
+
+        public void LC_SetTimeoutTimes(string argString, int argInt)
         {
             lcChTimeoutTimeValues[argInt] = argString;
         }
 
-        public void SetMaxOn(string argString, int argInt)
+        public void LC_SetMaxOn(string argString, int argInt)
         {
             lcChMaxOnValues[argInt] = argString;
         }
 
-        public void SetMaxDurRecovery(string argString, int argInt)
+        public void LC_SetMaxDurRecovery(string argString, int argInt)
         {
             lcChMaxDurRecoveryTimeValues[argInt] = argString;
         }
-        public void SetUCAmp(string argString, int argInt)
+
+        public void LC_SetUCAmp(string argString, int argInt)
         {
             lcChUndercurrentAmpsValues[argInt] = argString;
         }
-        public void SetMeasCurTime(string argString, int argInt)
+
+        public void LC_SetMeasCurTime(string argString, int argInt)
         {
             lcChMeasCurTimeValues[argInt] = argString;
         }
-        public void SetQuickPair(bool argBool, int argInt)
+
+        public void LC_SetPWMEnable(bool argBool, int argInt)
         {
-            if (argBool == true)
+            lcChPwmEnableValues[argInt] = argBool ? "TRUE" : "FALSE";
+        }
+
+        public void LC_SetPWMFrequency(string argString, int argInt)
+        {
+            if (argString == "80")
             {
-                lcChModeValues[argInt * 2] = "DRVR_TYPE_H_BRIDGE";
-                lcChModeValues[(argInt * 2) + 1] = "DRVR_TYPE_SLAVE";
-                string result1 = "PAIRED_TO_CHNL" + Convert.ToString((argInt * 2) + 1);
-                lcChPairedValues[argInt * 2] = result1;
-                string result2 = "PAIRED_TO_CHNL" + Convert.ToString(argInt * 2);
-                lcChPairedValues[(argInt * 2) + 1] = result2;
+                lcChPwmFreqValues[argInt] = "TLE_FREQ_80HZ";
+            }
+            else if (argString == "100")
+            {
+                lcChPwmFreqValues[argInt] = "TLE_FREQ_100HZ";
+            }
+            else
+            {
+                lcChPwmFreqValues[argInt] = "TLE_FREQ_200HZ";
             }
         }
+
+        //public void SetQuickPair(bool argBool, int argInt)
+        //{
+        //    if (argBool == true)
+        //    {
+        //        lcChModeValues[argInt * 2] = "DRVR_TYPE_H_BRIDGE";
+        //        lcChModeValues[(argInt * 2) + 1] = "DRVR_TYPE_SLAVE";
+        //        string result1 = "PAIRED_TO_CHNL" + Convert.ToString((argInt * 2) + 1);
+        //        lcChPairedValues[argInt * 2] = result1;
+        //        string result2 = "PAIRED_TO_CHNL" + Convert.ToString(argInt * 2);
+        //        lcChPairedValues[(argInt * 2) + 1] = result2;
+        //    }
+        //}
 
         private string configPath = @"M1_DcDriver_Config\Src\M1_LC_Bridge\DeviceConfigs\";
 
@@ -317,7 +363,7 @@ namespace M1ConfigGenerator
         //
         public string[] lcChOvercurrentAmpsNames = { "OC_ADC_THRESH_CHNL_Z0 ", "OC_ADC_THRESH_CHNL_Z1 ", "OC_ADC_THRESH_CHNL_Z2 ", "OC_ADC_THRESH_CHNL_Z3 ", "OC_ADC_THRESH_CHNL_Z4 ", "OC_ADC_THRESH_CHNL_Z5 ", "OC_ADC_THRESH_CHNL_Z6 ", "OC_ADC_THRESH_CHNL_Z7 ", 
                                                      "OC_ADC_THRESH_CHNL_Z8 ", "OC_ADC_THRESH_CHNL_Z9 ", "OC_ADC_THRESH_CHNL_Z10", "OC_ADC_THRESH_CHNL_Z11", "OC_ADC_THRESH_CHNL_Z12", "OC_ADC_THRESH_CHNL_Z13", "OC_ADC_THRESH_CHNL_Z14", "OC_ADC_THRESH_CHNL_Z15" };
-        public string[] lcChOvercurrentAmpsValues = { "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF", "0xFFFF" };
+        public string[] lcChOvercurrentAmpsValues = { "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2" };
         //
         public string[] lcChUndercurrentAmpsNames = { "UC_ADC_THRESH_CHNL_Z0 ", "UC_ADC_THRESH_CHNL_Z1 ", "UC_ADC_THRESH_CHNL_Z2 ", "UC_ADC_THRESH_CHNL_Z3 ", "UC_ADC_THRESH_CHNL_Z4 ", "UC_ADC_THRESH_CHNL_Z5 ", "UC_ADC_THRESH_CHNL_Z6 ", "UC_ADC_THRESH_CHNL_Z7 ", 
                                                       "UC_ADC_THRESH_CHNL_Z8 ", "UC_ADC_THRESH_CHNL_Z9 ", "UC_ADC_THRESH_CHNL_Z10", "UC_ADC_THRESH_CHNL_Z11", "UC_ADC_THRESH_CHNL_Z12", "UC_ADC_THRESH_CHNL_Z13", "UC_ADC_THRESH_CHNL_Z14", "UC_ADC_THRESH_CHNL_Z15" };
@@ -341,7 +387,7 @@ namespace M1ConfigGenerator
         //
         public string[] lcChIGNNames = { "IGN_SAFETY_EN_CHNL_Z0 ", "IGN_SAFETY_EN_CHNL_Z1 ", "IGN_SAFETY_EN_CHNL_Z2 ", "IGN_SAFETY_EN_CHNL_Z3 ", "IGN_SAFETY_EN_CHNL_Z4 ", "IGN_SAFETY_EN_CHNL_Z5 ", "IGN_SAFETY_EN_CHNL_Z6 ", "IGN_SAFETY_EN_CHNL_Z7 ",
                                          "IGN_SAFETY_EN_CHNL_Z8 ", "IGN_SAFETY_EN_CHNL_Z9 ", "IGN_SAFETY_EN_CHNL_Z10", "IGN_SAFETY_EN_CHNL_Z11", "IGN_SAFETY_EN_CHNL_Z12", "IGN_SAFETY_EN_CHNL_Z13", "IGN_SAFETY_EN_CHNL_Z14", "IGN_SAFETY_EN_CHNL_Z15" };
-        public string[] lcChIGNValues = { "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED" };
+        public string[] lcChIGNValues = { "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE", "DRVR_ENABLED_SAFETY_INACTIVE" };
         //
         public string[] lcChParkNames = { "PARK_SAFETY_EN_CHNL_Z0 ", "PARK_SAFETY_EN_CHNL_Z1 ", "PARK_SAFETY_EN_CHNL_Z2 ", "PARK_SAFETY_EN_CHNL_Z3 ", "PARK_SAFETY_EN_CHNL_Z4 ", "PARK_SAFETY_EN_CHNL_Z5 ", "PARK_SAFETY_EN_CHNL_Z6 ", "PARK_SAFETY_EN_CHNL_Z7 ",
                                               "PARK_SAFETY_EN_CHNL_Z8 ", "PARK_SAFETY_EN_CHNL_Z9 ", "PARK_SAFETY_EN_CHNL_Z10", "PARK_SAFETY_EN_CHNL_Z11", "PARK_SAFETY_EN_CHNL_Z12", "PARK_SAFETY_EN_CHNL_Z13", "PARK_SAFETY_EN_CHNL_Z14", "PARK_SAFETY_EN_CHNL_Z15" };

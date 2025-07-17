@@ -3434,6 +3434,20 @@ namespace M1ConfigGenerator
                 lcGetGroups[channel][3].Checked = lcObjects[card].M1_GetGroup3(channel);
                 lcIGNSafety[channel].Text = lcObjects[card].LC_GetIGNSafety(channel);
                 lcParkSafety[channel].Text = lcObjects[card].LC_GetParkSafety(channel);
+                lcModeParam[channel].Text = lcObjects[card].LC_GetModeParameter(channel);
+                lcPairedTo[channel].Text = lcObjects[card].LC_GetPairedTo(channel);
+                lcDeadTime[channel].Text = lcObjects[card].LC_GetDeadTime(channel);
+                // skip allow override for now
+                // lock
+                // direction
+                // allow timeout
+                // Timeout time
+                // max on time
+                // max duration recovery
+                // undercurrent amps
+                // measured time constant
+                // pwm enable
+                // pwm frequency
             }
         }
 

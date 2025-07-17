@@ -213,10 +213,44 @@ namespace M1ConfigGenerator
             }
         }
 
+        public string LC_GetModeParameter(int argInt)
+        {
+            if (lcChModeValues[argInt] == "DRVR_TYPE_HALF_BRIDGE")
+            {
+                return "Half Br";
+            }
+            else if (lcChModeValues[argInt] == "DRVR_TYPE_H_BRIDGE")
+            {
+                return "H Br";
+            }
+            else if (lcChModeValues[argInt] == "DRVR_TYPE_LOW_SIDE")
+            {
+                return "Low";
+            }
+            else if (lcChModeValues[argInt] == "DRVR_TYPE_UNUSED")
+            {
+                return "Unused";
+            }
+            else if (lcChModeValues[argInt] == "DRVR_TYPE_SLAVE")
+            {
+                return "Slave";
+            }
+            else
+            {
+                return "High";
+            }
+        }
+
         public void LC_SetPairedTo(string argString, int argInt)
         {
             if (argString == "None") { lcChPairedValues[argInt] = "NO_SLAVE"; }
             else { lcChPairedValues[argInt] = argString; }
+        }
+
+        public string LC_GetPairedTo(int argInt)
+        {
+            if (lcChPairedValues[argInt] == "NO_SLAVE") { return "None"; }
+            else { return lcChPairedValues[argInt]; }
         }
 
         public void LC_SetDeadTime(string argString, int argInt)
@@ -224,10 +258,20 @@ namespace M1ConfigGenerator
             lcChDeadtimeValues[argInt] = argString;
         }
 
+        public string LC_GetDeadTime(int argInt)
+        {
+            return lcChDeadtimeValues[argInt];
+        }
+
         public void LC_SetAllowOverride(bool argBool, int argInt)
         {
-            lcChLockValues[argInt] = argBool ? "TRUE" : "FALSE";
+            
         }
+
+        //public bool LC_GetAllowOverride(int argInt)
+        //{
+        //    return (lcChOver
+        //}
 
         public void LC_SetLock(bool argBool, int argInt)
         {

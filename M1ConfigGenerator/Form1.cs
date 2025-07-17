@@ -1030,80 +1030,80 @@ namespace M1ConfigGenerator
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard1);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1: 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int) CardNum.Card1;
             Dim_GetAll(DimCardActive);
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1: 0);
         }
 
         private void btnDimmerCard2_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard2);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int) CardNum.Card2;
             Dim_GetAll(DimCardActive);
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
         }
 
         private void btnDimmerCard3_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard3);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int) CardNum.Card3;
             Dim_GetAll(DimCardActive);
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
         }
 
         private void btnDimmerCard4_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard4);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int) CardNum.Card4;
             Dim_GetAll(DimCardActive);
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
         }
 
         private void btnDimmerCard5_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard5);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int) CardNum.Card5;
             Dim_GetAll(DimCardActive);
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
         }
 
         private void btnDimmerCard6_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard6);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int) CardNum.Card6;
             Dim_GetAll(DimCardActive);
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
         }
 
         private void btnDimmerCard7_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard7);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int) CardNum.Card7;
             Dim_GetAll(DimCardActive);
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
         }
 
         private void btnDimmerCard8_Click(object sender, EventArgs e)
         {
             DimmerCardNavColor(dimBtnArray, btnDimmerCard8);
             tabControlDimmer.SelectedIndex = 0;
-            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
             Dim_SetAll(DimCardActive);
             DimCardActive = (int) CardNum.Card8;
             Dim_GetAll(DimCardActive);
+            tabControlDimmer1QF.SelectedIndex = (chkTabVisDimmer1.Checked == true ? 1 : 0);
         }
 
         private void ShowDimmerNav(int argInt)
@@ -1341,20 +1341,20 @@ namespace M1ConfigGenerator
         {
             HCCardNavColor(hcBtnArray, btnHCCard1);
             tabControlHC.SelectedIndex = 0;
-            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card1;
             HC_GetAll(HCCardActive);
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
         }
 
         private void btnHCCard2_Click(object sender, EventArgs e)
         {
             HCCardNavColor(hcBtnArray, btnHCCard2);
             tabControlHC.SelectedIndex = 0;
-            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card2;
             HC_GetAll(HCCardActive);
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
         }
 
         private void btnHCCard3_Click(object sender, EventArgs e)
@@ -1371,50 +1371,50 @@ namespace M1ConfigGenerator
         {
             HCCardNavColor(hcBtnArray, btnHCCard4);
             tabControlHC.SelectedIndex = 0;
-            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card4;
             HC_GetAll(HCCardActive);
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
         }
 
         private void btnHCCard5_Click(object sender, EventArgs e)
         {
             HCCardNavColor(hcBtnArray, btnHCCard5);
             tabControlHC.SelectedIndex = 0;
-            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card5;
             HC_GetAll(HCCardActive);
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
         }
 
         private void btnHCCard6_Click(object sender, EventArgs e)
         {
             HCCardNavColor(hcBtnArray, btnHCCard6);
             tabControlHC.SelectedIndex = 0;
-            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card6;
             HC_GetAll(HCCardActive);
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
         }
 
         private void btnHCCard7_Click(object sender, EventArgs e)
         {
             HCCardNavColor(hcBtnArray, btnHCCard7);
             tabControlHC.SelectedIndex = 0;
-            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card7;
             HC_GetAll(HCCardActive);
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
         }
 
         private void btnHCCard8_Click(object sender, EventArgs e)
         {
             HCCardNavColor(hcBtnArray, btnHCCard8);
             tabControlHC.SelectedIndex = 0;
-            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
             HC_SetAll(HCCardActive);
             HCCardActive = (int) CardNum.Card8;
             HC_GetAll(HCCardActive);
+            tabControlHC1QF.SelectedIndex = (chkTabVisHC1.Checked == true ? 1 : 0);
         }
 
         private void ShowHCNav(int argInt)
@@ -2449,80 +2449,80 @@ namespace M1ConfigGenerator
         {
             HCCardNavColor(hrBtnArray, btnHRCard1);
             tabControlHR.SelectedIndex = 0;
-            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
             HR_SetAll(HRCardActive);
             HRCardActive = (int)CardNum.Card1;
             HR_GetAll(HRCardActive);
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
         }
 
         private void btnHRCard2_Click(object sender, EventArgs e)
         {
             HCCardNavColor(hrBtnArray, btnHRCard2);
             tabControlHR.SelectedIndex = 0;
-            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
             HR_SetAll(HRCardActive);
             HRCardActive = (int)CardNum.Card2;
             HR_GetAll(HRCardActive);
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
         }
 
         private void btnHRCard3_Click(object sender, EventArgs e)
         {
             HCCardNavColor(hrBtnArray, btnHRCard3);
             tabControlHR.SelectedIndex = 0;
-            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
             HR_SetAll(HRCardActive);
             HRCardActive = (int)CardNum.Card3;
             HR_GetAll(HRCardActive);
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
         }
 
         private void btnHRCard4_Click(object sender, EventArgs e)
         {
             HCCardNavColor(hrBtnArray, btnHRCard4);
             tabControlHR.SelectedIndex = 0;
-            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
             HR_SetAll(HRCardActive);
             HRCardActive = (int)CardNum.Card4;
             HR_GetAll(HRCardActive);
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
         }
 
         private void btnHRCard5_Click(object sender, EventArgs e)
         {
             HCCardNavColor(hrBtnArray, btnHRCard5);
             tabControlHR.SelectedIndex = 0;
-            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
             HR_SetAll(HRCardActive);
             HRCardActive = (int)CardNum.Card5;
             HR_GetAll(HRCardActive);
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
         }
 
         private void btnHRCard6_Click(object sender, EventArgs e)
         {
             HCCardNavColor(hrBtnArray, btnHRCard6);
             tabControlHR.SelectedIndex = 0;
-            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
             HR_SetAll(HRCardActive);
             HRCardActive = (int)CardNum.Card6;
             HR_GetAll(HRCardActive);
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
         }
 
         private void btnHRCard7_Click(object sender, EventArgs e)
         {
             HCCardNavColor(hrBtnArray, btnHRCard7);
             tabControlHR.SelectedIndex = 0;
-            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
             HR_SetAll(HRCardActive);
             HRCardActive = (int)CardNum.Card7;
             HR_GetAll(HRCardActive);
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
         }
 
         private void btnHRCard8_Click(object sender, EventArgs e)
         {
             HCCardNavColor(hrBtnArray, btnHRCard8);
             tabControlHR.SelectedIndex = 0;
-            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
             HR_SetAll(HRCardActive);
             HRCardActive = (int)CardNum.Card8;
             HR_GetAll(HRCardActive);
+            tabControlHRQF.SelectedIndex = (chkHRTabVis.Checked == true ? 1 : 0);
         }
 
         private void btnHRGenerate_Click(object sender, EventArgs e)
@@ -3484,80 +3484,80 @@ namespace M1ConfigGenerator
         {
             LCCardNavColor(lcBtnArray, btnLCCard1);
             tabControlLC.SelectedIndex = 0;
-            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1: 0);
             LC_SetAll(LCCardActive);
             LCCardActive = (int)CardNum.Card1;
             LC_GetAll(LCCardActive);
+            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1: 0);
         }
 
         private void btnLCCard2_Click(object sender, EventArgs e)
         {
             LCCardNavColor(lcBtnArray, btnLCCard2);
             tabControlLC.SelectedIndex = 0;
-            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
             LC_SetAll(LCCardActive);
             LCCardActive = (int)CardNum.Card2;
             LC_GetAll(LCCardActive);
+            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
         }
 
         private void btnLCCard3_Click(object sender, EventArgs e)
         {
             LCCardNavColor(lcBtnArray, btnLCCard3);
             tabControlLC.SelectedIndex = 0;
-            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
             LC_SetAll(LCCardActive);
             LCCardActive = (int)CardNum.Card3;
             LC_GetAll(LCCardActive);
+            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
         }
 
         private void btnLCCard4_Click(object sender, EventArgs e)
         {
             LCCardNavColor(lcBtnArray, btnLCCard4);
             tabControlLC.SelectedIndex = 0;
-            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
             LC_SetAll(LCCardActive);
             LCCardActive = (int)CardNum.Card4;
             LC_GetAll(LCCardActive);
+            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
         }
 
         private void btnLCCard5_Click(object sender, EventArgs e)
         {
             LCCardNavColor(lcBtnArray, btnLCCard5);
             tabControlLC.SelectedIndex = 0;
-            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
             LC_SetAll(LCCardActive);
             LCCardActive = (int)CardNum.Card5;
             LC_GetAll(LCCardActive);
+            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
         }
 
         private void btnLCCard6_Click(object sender, EventArgs e)
         {
             LCCardNavColor(lcBtnArray, btnLCCard6);
             tabControlLC.SelectedIndex = 0;
-            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
             LC_SetAll(LCCardActive);
             LCCardActive = (int)CardNum.Card6;
             LC_GetAll(LCCardActive);
+            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
         }
 
         private void btnLCCard7_Click(object sender, EventArgs e)
         {
             LCCardNavColor(lcBtnArray, btnLCCard7);
             tabControlLC.SelectedIndex = 0;
-            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
             LC_SetAll(LCCardActive);
             LCCardActive = (int)CardNum.Card7;
             LC_GetAll(LCCardActive);
+            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
         }
 
         private void btnLCCard8_Click(object sender, EventArgs e)
         {
             LCCardNavColor(lcBtnArray, btnLCCard8);
             tabControlLC.SelectedIndex = 0;
-            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
             LC_SetAll(LCCardActive);
             LCCardActive = (int)CardNum.Card8;
             LC_GetAll(LCCardActive);
+            tabControlLC1QF.SelectedIndex = (chkTabVisLC1.Checked == true ? 1 : 0);
         }
 
         private void ShowLCNav(int argInt)
@@ -3618,6 +3618,12 @@ namespace M1ConfigGenerator
                 ShowComboBox(lcOCTime);
                 lblLCOCAmps.Text = "Overcurrent Amps";
             }
+        }
+
+        private void chkTabVisLC1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkTabVisLC1.Checked == true)   { this.tabControlLC1QF.SelectedIndex = 1; } // full visible
+            else                                { this.tabControlLC1QF.SelectedIndex = 0; } // full hidden
         }
 
         private void cmbLC1Mode00_SelectedIndexChanged(object sender, EventArgs e)

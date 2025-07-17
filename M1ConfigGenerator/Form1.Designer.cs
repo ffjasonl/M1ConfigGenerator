@@ -16353,6 +16353,7 @@ namespace M1ConfigGenerator
             this.chkTabVisLC1.TabIndex = 270;
             this.chkTabVisLC1.Text = "Full";
             this.chkTabVisLC1.UseVisualStyleBackColor = true;
+            this.chkTabVisLC1.CheckedChanged += new System.EventHandler(this.chkTabVisLC1_CheckedChanged);
             // 
             // chkLC1MG1Ch01
             // 

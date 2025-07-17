@@ -3588,57 +3588,6 @@ namespace M1ConfigGenerator
         {
             CheckLCGenerate();
         }
-
-        private void cmbLC2CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckLCGenerate();
-        }
-
-        private void cmbLC2PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckLCGenerate();
-        }
-
-        private void cmbLC3CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckLCGenerate();
-        }
-
-        private void cmbLC3PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckLCGenerate();
-        }
-
-        private void cmbLC4CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckLCGenerate();
-        }
-
-        private void cmbLC4PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckLCGenerate();
-        }
-
-        private void cmbLC5CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckLCGenerate();
-        }
-
-        private void cmbLC5PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckLCGenerate();
-        }
-
-        private void cmbLC6CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckLCGenerate();
-        }
-
-        private void cmbLC6PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckLCGenerate();
-        }
-
         private void tbxLC1BaseIndex_TextChanged(object sender, EventArgs e)
         {
             lblLC1Ch00.Text = ChangeChannelLabel(tbxLC1BaseIndex.Text, 0);

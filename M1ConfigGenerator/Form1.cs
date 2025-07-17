@@ -3342,6 +3342,9 @@ namespace M1ConfigGenerator
                 ##       ##    ## 
                 ########  ######         @LC */
 
+        enum LC_QuickMode { Positive, Ground, ShadeUp, ShadeDown }
+
+        enum LC_ModeParam { High, Low, HalfBridge, HBridge, Slave, Unused }
 
         public void LC_SetAll(int card)
         {
@@ -3611,12 +3614,14 @@ namespace M1ConfigGenerator
                 HideComboBox(lcOCAmps);
                 HideComboBox(lcOCTime);
                 lblLCOCAmps.Text = "Overcurrent Amps (Disabled)";
+                chkLC1Shade.Checked = true;
             }
             else
             {
                 ShowComboBox(lcOCAmps);
                 ShowComboBox(lcOCTime);
                 lblLCOCAmps.Text = "Overcurrent Amps";
+                chkLC1Shade.Checked = false;
             }
         }
 
@@ -3628,12 +3633,59 @@ namespace M1ConfigGenerator
 
         private void cmbLC1Mode00_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode00.Text == "12V+") 
+            {
+                cmbLCModeParamCh00.SelectedIndex = (int) LC_ModeParam.High;
+            }
+            else if (cmbLC1Mode00.Text == "Ground")
+            {
+                cmbLCModeParamCh00.SelectedIndex = (int) LC_ModeParam.Low;
+            }
+            else if (cmbLC1Mode00.Text == "Shade UP")
+            {
+                cmbLCModeParamCh00.SelectedIndex = (int) LC_ModeParam.HBridge;
+                cmbLCPairedToCh00.SelectedIndex = 1;
+                cmbLCDeadTimeCh00.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode01.SelectedIndex = (int) LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh01.SelectedIndex = (int) LC_ModeParam.Slave;
+                cmbLCPairedToCh01.SelectedIndex = 1;
+                cmbLCDeadTimeCh01.SelectedIndex = 1; // 500 ms
+            }
         }
 
         private void cmbLC1Mode01_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode01.Text == "12V+")
+            {
+                cmbLCModeParamCh01.SelectedIndex = (int)LC_ModeParam.High;
+            }
+            else if (cmbLC1Mode01.Text == "Ground")
+            {
+                cmbLCModeParamCh01.SelectedIndex = (int)LC_ModeParam.Low;
+            }
+            else if (cmbLC1Mode01.Text == "Shade UP")
+            {
+                cmbLCModeParamCh01.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh01.SelectedIndex = 2;
+                cmbLCDeadTimeCh01.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode02.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh02.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh02.SelectedIndex = 2;
+                cmbLCDeadTimeCh02.SelectedIndex = 1; // 500 ms
+            }
+            else if (cmbLC1Mode01.Text == "Shade DN")
+            {
+                cmbLC1Mode00.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh00.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh00.SelectedIndex = 1;
+                cmbLCDeadTimeCh00.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh01.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh01.SelectedIndex = 1;
+                cmbLCDeadTimeCh01.SelectedIndex = 1; // 500 ms
+            }
         }
 
         private void cmbLC1Mode02_SelectedIndexChanged(object sender, EventArgs e)

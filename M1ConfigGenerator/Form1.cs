@@ -3460,11 +3460,9 @@ namespace M1ConfigGenerator
             int checkCounter = 0;
             int numLCCards = Convert.ToInt16(cmbStartLC.Text);
 
-            bool[] checkLC = new bool[] { CheckLC1() };
-
             for (int i = 0; i < numLCCards; i++)
             {
-                if (checkLC[i] == true)
+                if (lcObjects[i].M1_GetCardNumber() != "" && lcObjects[i].M1_GetPanelNumber() != "" && lcObjects[i].M1_GetBaseIndex() != "")
                 {
                     checkCounter++;
                 }
@@ -3478,11 +3476,6 @@ namespace M1ConfigGenerator
             {
                 btnLCGenerate.Visible = false;
             }
-        }
-
-        private bool CheckLC1()
-        {
-            return ((cmbLC1CardNum.Text != "") && (cmbLC1PanelNum.Text != "") && (tbxLC1BaseIndex.Text != ""));
         }
 
         private void btnLCCard1_Click(object sender, EventArgs e)

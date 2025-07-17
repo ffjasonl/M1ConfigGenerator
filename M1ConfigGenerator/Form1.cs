@@ -3366,6 +3366,8 @@ namespace M1ConfigGenerator
             lcObjects[card].M1_SetVerRev(btnMenuNew.Text);
             lcObjects[card].M1_SetFullSetup(chkTabVisLC1.Checked);
             lcObjects[card].M1_SetStandalone(chkLC1Standalone.Checked);
+            lcObjects[card].M1_SetCardNumber(cmbLC1CardNum.Text);
+            lcObjects[card].M1_SetPanelNumber(cmbLC1PanelNum.Text);
             lcObjects[card].M1_SetDevAddr();
             lcObjects[card].M1_SetCardLetter(tbxLC1CardLetter.Text);
             lcObjects[card].M1_ChangeConfigName();

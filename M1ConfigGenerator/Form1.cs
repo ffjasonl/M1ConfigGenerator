@@ -3438,16 +3438,16 @@ namespace M1ConfigGenerator
                 lcPairedTo[channel].Text = lcObjects[card].LC_GetPairedTo(channel);
                 lcDeadTime[channel].Text = lcObjects[card].LC_GetDeadTime(channel);
                 // skip allow override for now
-                // lock
-                // direction
-                // allow timeout
-                // Timeout time
-                // max on time
-                // max duration recovery
-                // undercurrent amps
-                // measured time constant
-                // pwm enable
-                // pwm frequency
+                lcLocks[channel].Checked = lcObjects[card].LC_GetLock(channel);
+                lcDirections[channel].Text = lcObjects[card].LC_GetDirection(channel);
+                lcAllowTimeout[channel].Checked = lcObjects[card].LC_GetAllowTimeout(channel);
+                lcTimeoutTimes[channel].Text = lcObjects[card].LC_GetTimeoutTime(channel);
+                lcMaxOns[channel].Text = lcObjects[card].LC_GetMaxOn(channel);
+                lcMaxDurRecoveries[channel].Text = lcObjects[card].LC_GetMaxDurRecovery(channel);
+                lcUCAmps[channel].Text = lcObjects[card].LC_GetUCAmp(channel);
+                lcMeasCurTimes[channel].Text = lcObjects[card].LC_GetMeasCurTime(channel);
+                lcPWMEnable[channel].Checked = lcObjects[card].LC_GetPWMEnable(channel);
+                lcPWMFrequency[channel].Text = lcObjects[card].LC_GetPWMFrequency(channel);
             }
         }
 

@@ -278,9 +278,25 @@ namespace M1ConfigGenerator
             lcChLockValues[argInt] = argBool ? "TRUE" : "FALSE";
         }
 
+        public bool LC_GetLock(int argInt)
+        {
+            return (lcChLockValues[argInt] == "TRUE");
+        }
+
         public void LC_SetDirection(string argString, int argInt)
         {
-            lcChDirectionValues[argInt] = argString;
+            lcChDirectionValues[argInt] = "DRVR_STATE_" + argString.ToUpper();
+        }
+
+        public string LC_GetDirection(int argInt)
+        {
+            if      (lcChDirectionValues[argInt] == "DRVR_STATE_HIGH")      { return "High"; }
+            else if (lcChDirectionValues[argInt] == "DRVR_STATE_LOW")       { return "Low"; }
+            else if (lcChDirectionValues[argInt] == "DRVR_STATE_REVERSE")   { return "Reverse"; }
+            else if (lcChDirectionValues[argInt] == "DRVR_STATE_FORWARD")   { return "Forward"; }
+            else if (lcChDirectionValues[argInt] == "DRVR_STATE_UP")        { return "Up"; }
+            else if (lcChDirectionValues[argInt] == "DRVR_STATE_DOWN")      { return "Down"; }
+            else                                                            { return "Off"; }
         }
 
         public void LC_SetAllowTImeout(bool argBool, int argInt)
@@ -288,14 +304,29 @@ namespace M1ConfigGenerator
             lcChTimeoutValues[argInt] = argBool ? "DRVR_TIMEOUT_ENABLED" : "DRVR_TIMEOUT_DISABLED";
         }
 
+        public bool LC_GetAllowTimeout(int argInt)
+        {
+            return (lcChTimeoutValues[argInt] == "DRVR_TIMEOUT_ENABLED");
+        }
+
         public void LC_SetTimeoutTimes(string argString, int argInt)
         {
-            lcChTimeoutTimeValues[argInt] = argString;
+            lcChTimeoutTimeValues[argInt] = "0x" + argString;
+        }
+
+        public string LC_GetTimeoutTime(int argInt)
+        {
+            return lcChTimeoutTimeValues[argInt].Substring(2); // cut off "0x"
         }
 
         public void LC_SetMaxOn(string argString, int argInt)
         {
-            lcChMaxOnValues[argInt] = argString;
+            lcChMaxOnValues[argInt] = "0x" + argString;
+        }
+
+        public string LC_GetMaxOn(int argInt)
+        {
+            return lcChMaxOnValues[argInt].Substring(2); // cut off "0x"
         }
 
         public void LC_SetMaxDurRecovery(string argString, int argInt)
@@ -303,9 +334,19 @@ namespace M1ConfigGenerator
             lcChMaxDurRecoveryTimeValues[argInt] = argString;
         }
 
+        public string LC_GetMaxDurRecovery(int argInt)
+        {
+            return lcChMaxDurRecoveryTimeValues[argInt];
+        }
+
         public void LC_SetUCAmp(string argString, int argInt)
         {
             lcChUndercurrentAmpsValues[argInt] = argString;
+        }
+
+        public string LC_GetUCAmp(int argInt)
+        {
+            return lcChUndercurrentAmpsValues[argInt];
         }
 
         public void LC_SetMeasCurTime(string argString, int argInt)
@@ -313,9 +354,19 @@ namespace M1ConfigGenerator
             lcChMeasCurTimeValues[argInt] = argString;
         }
 
+        public string LC_GetMeasCurTime(int argInt)
+        {
+            return lcChMeasCurTimeValues[argInt];
+        }
+
         public void LC_SetPWMEnable(bool argBool, int argInt)
         {
             lcChPwmEnableValues[argInt] = argBool ? "TRUE" : "FALSE";
+        }
+
+        public bool LC_GetPWMEnable(int argInt)
+        {
+            return (lcChPwmEnableValues[argInt] == "TRUE");
         }
 
         public void LC_SetPWMFrequency(string argString, int argInt)
@@ -331,6 +382,22 @@ namespace M1ConfigGenerator
             else
             {
                 lcChPwmFreqValues[argInt] = "TLE_FREQ_200HZ";
+            }
+        }
+
+        public string LC_GetPWMFrequency(int argInt)
+        {
+            if (lcChPwmFreqValues[argInt] == "TLE_FREQ_80HZ")
+            {
+                return "80";
+            }
+            else if (lcChPwmFreqValues[argInt] == "TLE_FREQ_100HZ")
+            {
+                return "100";
+            }
+            else
+            {
+                return "200";
             }
         }
 
@@ -411,7 +478,7 @@ namespace M1ConfigGenerator
         //
         public string[] lcChUndercurrentAmpsNames = { "UC_ADC_THRESH_CHNL_Z0 ", "UC_ADC_THRESH_CHNL_Z1 ", "UC_ADC_THRESH_CHNL_Z2 ", "UC_ADC_THRESH_CHNL_Z3 ", "UC_ADC_THRESH_CHNL_Z4 ", "UC_ADC_THRESH_CHNL_Z5 ", "UC_ADC_THRESH_CHNL_Z6 ", "UC_ADC_THRESH_CHNL_Z7 ", 
                                                       "UC_ADC_THRESH_CHNL_Z8 ", "UC_ADC_THRESH_CHNL_Z9 ", "UC_ADC_THRESH_CHNL_Z10", "UC_ADC_THRESH_CHNL_Z11", "UC_ADC_THRESH_CHNL_Z12", "UC_ADC_THRESH_CHNL_Z13", "UC_ADC_THRESH_CHNL_Z14", "UC_ADC_THRESH_CHNL_Z15" };
-        public string[] lcChUndercurrentAmpsValues = { "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" };
+        public string[] lcChUndercurrentAmpsValues = { "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1", "0.1" };
         //
         public string[] lcChOvercurrentTimeNames = { "FAULT_CUR_TIME_CONST_CHNL_Z0 ", "FAULT_CUR_TIME_CONST_CHNL_Z1 ", "FAULT_CUR_TIME_CONST_CHNL_Z2 ", "FAULT_CUR_TIME_CONST_CHNL_Z3 ", "FAULT_CUR_TIME_CONST_CHNL_Z4 ", "FAULT_CUR_TIME_CONST_CHNL_Z5 ", "FAULT_CUR_TIME_CONST_CHNL_Z6 ", "FAULT_CUR_TIME_CONST_CHNL_Z7 ",
                                                      "FAULT_CUR_TIME_CONST_CHNL_Z8 ", "FAULT_CUR_TIME_CONST_CHNL_Z9 ", "FAULT_CUR_TIME_CONST_CHNL_Z10", "FAULT_CUR_TIME_CONST_CHNL_Z11", "FAULT_CUR_TIME_CONST_CHNL_Z12", "FAULT_CUR_TIME_CONST_CHNL_Z13", "FAULT_CUR_TIME_CONST_CHNL_Z14", "FAULT_CUR_TIME_CONST_CHNL_Z15" };

@@ -263,15 +263,29 @@ namespace M1ConfigGenerator
             return lcChDeadtimeValues[argInt];
         }
 
-        public void LC_SetAllowOverride(bool argBool, int argInt)
+        public void LC_SetOverrideReverse(string argString, int argInt)
         {
-            
+            if (argString == "Disable") { lcChOverrideReverseValues[argInt] = "DISABLE_OVERRIDE"; }
+            else                        { lcChOverrideReverseValues[argInt] = argString; }
         }
 
-        //public bool LC_GetAllowOverride(int argInt)
-        //{
-        //    return (lcChOver
-        //}
+        public string LC_GetOverrideReverse(int argInt)
+        {
+            if (lcChOverrideReverseValues[argInt] == "DISABLE_OVERRIDE")    { return "Disable"; }
+            else                                                            { return lcChOverrideReverseValues[argInt]; }
+        }
+
+        public void LC_SetOverrideForward(string argString, int argInt)
+        {
+            if (argString == "Disable") { lcChOverrideForwardValues[argInt] = "DISABLE_OVERRIDE"; }
+            else { lcChOverrideForwardValues[argInt] = argString; }
+        }
+
+        public string LC_GetOverrideForward(int argInt)
+        {
+            if (lcChOverrideForwardValues[argInt] == "DISABLE_OVERRIDE") { return "Disable"; }
+            else { return lcChOverrideForwardValues[argInt]; }
+        }
 
         public void LC_SetLock(bool argBool, int argInt)
         {

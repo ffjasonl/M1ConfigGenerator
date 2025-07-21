@@ -120,7 +120,7 @@ namespace M1ConfigGenerator
         CheckBox[] lcGetGroup08; CheckBox[] lcGetGroup09; CheckBox[] lcGetGroup10; CheckBox[] lcGetGroup11; CheckBox[] lcGetGroup12; CheckBox[] lcGetGroup13; CheckBox[] lcGetGroup14; CheckBox[] lcGetGroup15;
         CheckBox[][] lcGetGroups;
         ComboBox[] lcOCAmps; ComboBox[] lcOCTime; ComboBox[] lcModesQuick; ComboBox[] lcIGNSafety; ComboBox[] lcParkSafety; ComboBox[] lcModeParam;
-        ComboBox[] lcPairedTo; ComboBox[] lcDeadTime; CheckBox[] lcAllowOverride; CheckBox[] lcLocks; ComboBox[] lcDirections; CheckBox[] lcAllowTimeout;
+        ComboBox[] lcPairedTo; ComboBox[] lcDeadTime; ComboBox[] lcOverrideReverse; ComboBox[] lcOverrideForward; CheckBox[] lcLocks; ComboBox[] lcDirections; CheckBox[] lcAllowTimeout;
         TextBox[] lcTimeoutTimes; TextBox[] lcMaxOns; TextBox[] lcMaxDurRecoveries; TextBox[] lcUCAmps; ComboBox[] lcMeasCurTimes; CheckBox[] lcPWMEnable; ComboBox[] lcPWMFrequency;
 
 
@@ -342,7 +342,7 @@ namespace M1ConfigGenerator
             tbxDimmer1CfgType.Text = tbxStartCfgType.Text;
             tbxHC1CfgType.Text = tbxStartCfgType.Text;
             tbxHRCfgType.Text = tbxStartCfgType.Text;
-            //tbxLC1CfgType.Text = tbxStartCfgType.Text;
+            tbxLC1CfgType.Text = tbxStartCfgType.Text;
             
         }
 
@@ -2302,7 +2302,7 @@ namespace M1ConfigGenerator
 
         public void HR_SetAll(int card)
         {
-            // When generate is clicked, load necessary checkbox states into arrays to be used to set parameters on each cardc1G
+            // When generate is clicked, load necessary checkbox states into arrays to be used to set parameters on each card
             hrGroup00 = new bool[] { chkHRMG1Ch00.Checked, chkHRMG2Ch00.Checked, chkHRMG3Ch00.Checked, chkHRMG4Ch00.Checked };
             hrGroup01 = new bool[] { chkHRMG1Ch01.Checked, chkHRMG2Ch01.Checked, chkHRMG3Ch01.Checked, chkHRMG4Ch01.Checked };
             hrGroup02 = new bool[] { chkHRMG1Ch02.Checked, chkHRMG2Ch02.Checked, chkHRMG3Ch02.Checked, chkHRMG4Ch02.Checked };
@@ -3395,7 +3395,8 @@ namespace M1ConfigGenerator
                 lcObjects[card].LC_SetModeParameter(lcModeParam[channel].Text, channel);
                 lcObjects[card].LC_SetPairedTo(lcPairedTo[channel].Text, channel);
                 lcObjects[card].LC_SetDeadTime(lcDeadTime[channel].Text, channel);
-                lcObjects[card].LC_SetAllowOverride(lcAllowOverride[channel].Checked, channel);
+                lcObjects[card].LC_SetOverrideReverse(lcOverrideReverse[channel].Text, channel);
+                lcObjects[card].LC_SetOverrideForward(lcOverrideForward[channel].Text, channel);
                 lcObjects[card].LC_SetLock(lcLocks[channel].Checked, channel);
                 lcObjects[card].LC_SetDirection(lcDirections[channel].Text, channel);
                 lcObjects[card].LC_SetAllowTImeout(lcAllowTimeout[channel].Checked, channel);
@@ -3437,7 +3438,8 @@ namespace M1ConfigGenerator
                 lcModeParam[channel].Text = lcObjects[card].LC_GetModeParameter(channel);
                 lcPairedTo[channel].Text = lcObjects[card].LC_GetPairedTo(channel);
                 lcDeadTime[channel].Text = lcObjects[card].LC_GetDeadTime(channel);
-                // skip allow override for now
+                lcOverrideReverse[channel].Text = lcObjects[card].LC_GetOverrideReverse(channel);
+                lcOverrideForward[channel].Text = lcObjects[card].LC_GetOverrideForward(channel);
                 lcLocks[channel].Checked = lcObjects[card].LC_GetLock(channel);
                 lcDirections[channel].Text = lcObjects[card].LC_GetDirection(channel);
                 lcAllowTimeout[channel].Checked = lcObjects[card].LC_GetAllowTimeout(channel);
@@ -3593,15 +3595,18 @@ namespace M1ConfigGenerator
 
         private void cmbLC1CardNum_SelectedIndexChanged(object sender, EventArgs e)
         {
+            lcObjects[LCCardActive].M1_SetCardNumber(cmbLC1CardNum.Text);
             CheckLCGenerate();
         }
 
         private void cmbLC1PanelNum_SelectedIndexChanged(object sender, EventArgs e)
         {
+            lcObjects[LCCardActive].M1_SetPanelNumber(cmbLC1PanelNum.Text);
             CheckLCGenerate();
         }
         private void tbxLC1BaseIndex_TextChanged(object sender, EventArgs e)
         {
+            lcObjects[LCCardActive].M1_SetBaseIndex(tbxLC1BaseIndex.Text);
             lblLC1Ch00.Text = ChangeChannelLabel(tbxLC1BaseIndex.Text, 0);
             lblLC1Ch01.Text = ChangeChannelLabel(tbxLC1BaseIndex.Text, 1);
             lblLC1Ch02.Text = ChangeChannelLabel(tbxLC1BaseIndex.Text, 2);
@@ -3629,6 +3634,7 @@ namespace M1ConfigGenerator
                 HideComboBox(lcOCTime);
                 lblLCOCAmps.Text = "Overcurrent Amps (Disabled)";
                 chkLC1Shade.Checked = true;
+                cmbLC1PanelNum.SelectedIndex = 7; // set panel 8
             }
             else
             {
@@ -3807,7 +3813,7 @@ namespace M1ConfigGenerator
             dimBtnArray = new Button[] { btnDimmerCard1, btnDimmerCard2, btnDimmerCard3, btnDimmerCard4, btnDimmerCard5, btnDimmerCard6, btnDimmerCard7, btnDimmerCard8 };
             hcBtnArray = new Button[] { btnHCCard1, btnHCCard2, btnHCCard3, btnHCCard4, btnHCCard5, btnHCCard6, btnHCCard7, btnHCCard8 };
             hrBtnArray = new Button[] { btnHRCard1, btnHRCard2, btnHRCard3, btnHRCard4, btnHRCard5, btnHRCard6, btnHRCard7, btnHRCard8 };
-            lcBtnArray = new Button[] { btnLCCard1, btnLCCard2, btnLCCard3, btnLCCard4, btnLCCard5, btnLCCard6 };
+            lcBtnArray = new Button[] { btnLCCard1, btnLCCard2, btnLCCard3, btnLCCard4, btnLCCard5, btnLCCard6, btnLCCard7, btnLCCard8 };
 
             auxCardNum = new ComboBox[] { cmbAux1CardNum };
             auxPanelNum = new ComboBox[] { cmbAux1PanelNum };
@@ -3962,10 +3968,11 @@ namespace M1ConfigGenerator
             lcModeParam = new ComboBox[] { cmbLCModeParamCh00, cmbLCModeParamCh01, cmbLCModeParamCh02, cmbLCModeParamCh03, cmbLCModeParamCh04, cmbLCModeParamCh05, cmbLCModeParamCh06, cmbLCModeParamCh07, cmbLCModeParamCh08, cmbLCModeParamCh09, cmbLCModeParamCh10, cmbLCModeParamCh11, cmbLCModeParamCh12, cmbLCModeParamCh13, cmbLCModeParamCh14, cmbLCModeParamCh15 };
             lcPairedTo = new ComboBox[] { cmbLCPairedToCh00, cmbLCPairedToCh01, cmbLCPairedToCh02, cmbLCPairedToCh03, cmbLCPairedToCh04, cmbLCPairedToCh05, cmbLCPairedToCh06, cmbLCPairedToCh07, cmbLCPairedToCh08, cmbLCPairedToCh09, cmbLCPairedToCh10, cmbLCPairedToCh11, cmbLCPairedToCh12, cmbLCPairedToCh13, cmbLCPairedToCh14, cmbLCPairedToCh15 };
             lcDeadTime = new ComboBox[] { cmbLCDeadTimeCh00, cmbLCDeadTimeCh01, cmbLCDeadTimeCh02, cmbLCDeadTimeCh03, cmbLCDeadTimeCh04, cmbLCDeadTimeCh05, cmbLCDeadTimeCh06, cmbLCDeadTimeCh07, cmbLCDeadTimeCh08, cmbLCDeadTimeCh09, cmbLCDeadTimeCh10, cmbLCDeadTimeCh11, cmbLCDeadTimeCh12, cmbLCDeadTimeCh13, cmbLCDeadTimeCh14, cmbLCDeadTimeCh15 };
-            lcAllowOverride = new CheckBox[] { chkLC1AllowOverCh00, chkLC1AllowOverCh01, chkLC1AllowOverCh02, chkLC1AllowOverCh03, chkLC1AllowOverCh04, chkLC1AllowOverCh05, chkLC1AllowOverCh06, chkLC1AllowOverCh07, chkLC1AllowOverCh08, chkLC1AllowOverCh09, chkLC1AllowOverCh10, chkLC1AllowOverCh11, chkLC1AllowOverCh12, chkLC1AllowOverCh13, chkLC1AllowOverCh14, chkLC1AllowOverCh15 };
+            lcOverrideReverse = new ComboBox[] { cmbLCOverrideInputReverseCh00, cmbLCOverrideInputReverseCh01, cmbLCOverrideInputReverseCh02, cmbLCOverrideInputReverseCh03, cmbLCOverrideInputReverseCh04, cmbLCOverrideInputReverseCh05, cmbLCOverrideInputReverseCh06, cmbLCOverrideInputReverseCh07, cmbLCOverrideInputReverseCh08, cmbLCOverrideInputReverseCh09, cmbLCOverrideInputReverseCh10, cmbLCOverrideInputReverseCh11, cmbLCOverrideInputReverseCh12, cmbLCOverrideInputReverseCh13, cmbLCOverrideInputReverseCh14, cmbLCOverrideInputReverseCh15 };
+            lcOverrideForward = new ComboBox[] { cmbLCOverrideInputForwardCh00, cmbLCOverrideInputForwardCh01, cmbLCOverrideInputForwardCh02, cmbLCOverrideInputForwardCh03, cmbLCOverrideInputForwardCh04, cmbLCOverrideInputForwardCh05, cmbLCOverrideInputForwardCh06, cmbLCOverrideInputForwardCh07, cmbLCOverrideInputForwardCh08, cmbLCOverrideInputForwardCh09, cmbLCOverrideInputForwardCh10, cmbLCOverrideInputForwardCh11, cmbLCOverrideInputForwardCh12, cmbLCOverrideInputForwardCh13, cmbLCOverrideInputForwardCh14, cmbLCOverrideInputForwardCh15 };
             lcLocks = new CheckBox[] { chkLC1LockCh00, chkLC1LockCh01, chkLC1LockCh02, chkLC1LockCh03, chkLC1LockCh04, chkLC1LockCh05, chkLC1LockCh06, chkLC1LockCh07, chkLC1LockCh08, chkLC1LockCh09, chkLC1LockCh10, chkLC1LockCh11, chkLC1LockCh12, chkLC1LockCh13, chkLC1LockCh14, chkLC1LockCh15 };
             lcDirections = new ComboBox[] { cmbLC1DirectionCh00, cmbLC1DirectionCh01, cmbLC1DirectionCh02, cmbLC1DirectionCh03, cmbLC1DirectionCh04, cmbLC1DirectionCh05, cmbLC1DirectionCh06, cmbLC1DirectionCh07, cmbLC1DirectionCh08, cmbLC1DirectionCh09, cmbLC1DirectionCh10, cmbLC1DirectionCh11, cmbLC1DirectionCh12, cmbLC1DirectionCh13, cmbLC1DirectionCh14, cmbLC1DirectionCh15 };
-            lcAllowTimeout = new CheckBox[] { chkLC1AllowOverCh00, chkLC1AllowOverCh01, chkLC1AllowOverCh02, chkLC1AllowOverCh03, chkLC1AllowOverCh04, chkLC1AllowOverCh05, chkLC1AllowOverCh06, chkLC1AllowOverCh07, chkLC1AllowOverCh08, chkLC1AllowOverCh09, chkLC1AllowOverCh10, chkLC1AllowOverCh11, chkLC1AllowOverCh12, chkLC1AllowOverCh13, chkLC1AllowOverCh14, chkLC1AllowOverCh15 };
+            lcAllowTimeout = new CheckBox[] { chkLC1AllowComTimeCh00, chkLC1AllowComTimeCh01, chkLC1AllowComTimeCh02, chkLC1AllowComTimeCh03, chkLC1AllowComTimeCh04, chkLC1AllowComTimeCh05, chkLC1AllowComTimeCh06, chkLC1AllowComTimeCh07, chkLC1AllowComTimeCh08, chkLC1AllowComTimeCh09, chkLC1AllowComTimeCh10, chkLC1AllowComTimeCh11, chkLC1AllowComTimeCh12, chkLC1AllowComTimeCh13, chkLC1AllowComTimeCh14, chkLC1AllowComTimeCh15 };
             lcTimeoutTimes = new TextBox[] { tbxLCTimeoutTimeCh00, tbxLCTimeoutTimeCh01, tbxLCTimeoutTimeCh02, tbxLCTimeoutTimeCh03, tbxLCTimeoutTimeCh04, tbxLCTimeoutTimeCh05, tbxLCTimeoutTimeCh06, tbxLCTimeoutTimeCh07, tbxLCTimeoutTimeCh08, tbxLCTimeoutTimeCh09, tbxLCTimeoutTimeCh10, tbxLCTimeoutTimeCh11, tbxLCTimeoutTimeCh12, tbxLCTimeoutTimeCh13, tbxLCTimeoutTimeCh14, tbxLCTimeoutTimeCh15 };
             lcMaxOns = new TextBox[] { tbxLCMaxOnCh00, tbxLCMaxOnCh01, tbxLCMaxOnCh02, tbxLCMaxOnCh03, tbxLCMaxOnCh04, tbxLCMaxOnCh05, tbxLCMaxOnCh06, tbxLCMaxOnCh07, tbxLCMaxOnCh08, tbxLCMaxOnCh09, tbxLCMaxOnCh10, tbxLCMaxOnCh11, tbxLCMaxOnCh12, tbxLCMaxOnCh13, tbxLCMaxOnCh14, tbxLCMaxOnCh15 };
             lcMaxDurRecoveries = new TextBox[] { tbxLCMaxDurRecoveryCh00, tbxLCMaxDurRecoveryCh01, tbxLCMaxDurRecoveryCh02, tbxLCMaxDurRecoveryCh03, tbxLCMaxDurRecoveryCh04, tbxLCMaxDurRecoveryCh05, tbxLCMaxDurRecoveryCh06, tbxLCMaxDurRecoveryCh07, tbxLCMaxDurRecoveryCh08, tbxLCMaxDurRecoveryCh09, tbxLCMaxDurRecoveryCh10, tbxLCMaxDurRecoveryCh11, tbxLCMaxDurRecoveryCh12, tbxLCMaxDurRecoveryCh13, tbxLCMaxDurRecoveryCh14, tbxLCMaxDurRecoveryCh15 };

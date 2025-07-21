@@ -1295,7 +1295,6 @@ namespace M1ConfigGenerator
             this.tbxLCMaxDurRecoveryCh15 = new System.Windows.Forms.TextBox();
             this.cmbLC1DirectionCh15 = new System.Windows.Forms.ComboBox();
             this.chkLC1AllowComTimeCh15 = new System.Windows.Forms.CheckBox();
-            this.chkLC1AllowOverCh15 = new System.Windows.Forms.CheckBox();
             this.chkLC1LockCh15 = new System.Windows.Forms.CheckBox();
             this.cmbLC1MeasCurTimeCh14 = new System.Windows.Forms.ComboBox();
             this.tbxLCUCAmpsCh14 = new System.Windows.Forms.TextBox();
@@ -1304,7 +1303,6 @@ namespace M1ConfigGenerator
             this.tbxLCMaxDurRecoveryCh14 = new System.Windows.Forms.TextBox();
             this.cmbLC1DirectionCh14 = new System.Windows.Forms.ComboBox();
             this.chkLC1AllowComTimeCh14 = new System.Windows.Forms.CheckBox();
-            this.chkLC1AllowOverCh14 = new System.Windows.Forms.CheckBox();
             this.chkLC1LockCh14 = new System.Windows.Forms.CheckBox();
             this.cmbLC1MeasCurTimeCh13 = new System.Windows.Forms.ComboBox();
             this.tbxLCUCAmpsCh13 = new System.Windows.Forms.TextBox();
@@ -1313,7 +1311,6 @@ namespace M1ConfigGenerator
             this.tbxLCMaxDurRecoveryCh13 = new System.Windows.Forms.TextBox();
             this.cmbLC1DirectionCh13 = new System.Windows.Forms.ComboBox();
             this.chkLC1AllowComTimeCh13 = new System.Windows.Forms.CheckBox();
-            this.chkLC1AllowOverCh13 = new System.Windows.Forms.CheckBox();
             this.chkLC1LockCh13 = new System.Windows.Forms.CheckBox();
             this.cmbLC1MeasCurTimeCh12 = new System.Windows.Forms.ComboBox();
             this.tbxLCUCAmpsCh12 = new System.Windows.Forms.TextBox();
@@ -1322,7 +1319,6 @@ namespace M1ConfigGenerator
             this.tbxLCMaxDurRecoveryCh12 = new System.Windows.Forms.TextBox();
             this.cmbLC1DirectionCh12 = new System.Windows.Forms.ComboBox();
             this.chkLC1AllowComTimeCh12 = new System.Windows.Forms.CheckBox();
-            this.chkLC1AllowOverCh12 = new System.Windows.Forms.CheckBox();
             this.chkLC1LockCh12 = new System.Windows.Forms.CheckBox();
             this.cmbLC1MeasCurTimeCh11 = new System.Windows.Forms.ComboBox();
             this.tbxLCUCAmpsCh11 = new System.Windows.Forms.TextBox();
@@ -1338,7 +1334,6 @@ namespace M1ConfigGenerator
             this.label238 = new System.Windows.Forms.Label();
             this.chkLC1AllowComTimeCh11 = new System.Windows.Forms.CheckBox();
             this.label237 = new System.Windows.Forms.Label();
-            this.chkLC1AllowOverCh11 = new System.Windows.Forms.CheckBox();
             this.label236 = new System.Windows.Forms.Label();
             this.chkLC1LockCh11 = new System.Windows.Forms.CheckBox();
             this.label235 = new System.Windows.Forms.Label();
@@ -1347,7 +1342,6 @@ namespace M1ConfigGenerator
             this.tbxLCUCAmpsCh10 = new System.Windows.Forms.TextBox();
             this.chkLC1LockCh00 = new System.Windows.Forms.CheckBox();
             this.tbxLCTimeoutTimeCh10 = new System.Windows.Forms.TextBox();
-            this.chkLC1AllowOverCh00 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxOnCh10 = new System.Windows.Forms.TextBox();
             this.chkLC1AllowComTimeCh00 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxDurRecoveryCh10 = new System.Windows.Forms.TextBox();
@@ -1356,7 +1350,6 @@ namespace M1ConfigGenerator
             this.tbxLCMaxDurRecoveryCh00 = new System.Windows.Forms.TextBox();
             this.chkLC1AllowComTimeCh10 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxOnCh00 = new System.Windows.Forms.TextBox();
-            this.chkLC1AllowOverCh10 = new System.Windows.Forms.CheckBox();
             this.tbxLCTimeoutTimeCh00 = new System.Windows.Forms.TextBox();
             this.chkLC1LockCh10 = new System.Windows.Forms.CheckBox();
             this.tbxLCUCAmpsCh00 = new System.Windows.Forms.TextBox();
@@ -1365,7 +1358,6 @@ namespace M1ConfigGenerator
             this.tbxLCUCAmpsCh09 = new System.Windows.Forms.TextBox();
             this.chkLC1LockCh01 = new System.Windows.Forms.CheckBox();
             this.tbxLCTimeoutTimeCh09 = new System.Windows.Forms.TextBox();
-            this.chkLC1AllowOverCh01 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxOnCh09 = new System.Windows.Forms.TextBox();
             this.chkLC1AllowComTimeCh01 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxDurRecoveryCh09 = new System.Windows.Forms.TextBox();
@@ -1374,7 +1366,6 @@ namespace M1ConfigGenerator
             this.tbxLCMaxDurRecoveryCh01 = new System.Windows.Forms.TextBox();
             this.chkLC1AllowComTimeCh09 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxOnCh01 = new System.Windows.Forms.TextBox();
-            this.chkLC1AllowOverCh09 = new System.Windows.Forms.CheckBox();
             this.tbxLCTimeoutTimeCh01 = new System.Windows.Forms.TextBox();
             this.chkLC1LockCh09 = new System.Windows.Forms.CheckBox();
             this.tbxLCUCAmpsCh01 = new System.Windows.Forms.TextBox();
@@ -1383,7 +1374,6 @@ namespace M1ConfigGenerator
             this.tbxLCUCAmpsCh08 = new System.Windows.Forms.TextBox();
             this.chkLC1LockCh02 = new System.Windows.Forms.CheckBox();
             this.tbxLCTimeoutTimeCh08 = new System.Windows.Forms.TextBox();
-            this.chkLC1AllowOverCh02 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxOnCh08 = new System.Windows.Forms.TextBox();
             this.chkLC1AllowComTimeCh02 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxDurRecoveryCh08 = new System.Windows.Forms.TextBox();
@@ -1392,7 +1382,6 @@ namespace M1ConfigGenerator
             this.tbxLCMaxDurRecoveryCh02 = new System.Windows.Forms.TextBox();
             this.chkLC1AllowComTimeCh08 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxOnCh02 = new System.Windows.Forms.TextBox();
-            this.chkLC1AllowOverCh08 = new System.Windows.Forms.CheckBox();
             this.tbxLCTimeoutTimeCh02 = new System.Windows.Forms.TextBox();
             this.chkLC1LockCh08 = new System.Windows.Forms.CheckBox();
             this.tbxLCUCAmpsCh02 = new System.Windows.Forms.TextBox();
@@ -1401,7 +1390,6 @@ namespace M1ConfigGenerator
             this.tbxLCUCAmpsCh07 = new System.Windows.Forms.TextBox();
             this.chkLC1LockCh03 = new System.Windows.Forms.CheckBox();
             this.tbxLCTimeoutTimeCh07 = new System.Windows.Forms.TextBox();
-            this.chkLC1AllowOverCh03 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxOnCh07 = new System.Windows.Forms.TextBox();
             this.chkLC1AllowComTimeCh03 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxDurRecoveryCh07 = new System.Windows.Forms.TextBox();
@@ -1410,7 +1398,6 @@ namespace M1ConfigGenerator
             this.tbxLCMaxDurRecoveryCh03 = new System.Windows.Forms.TextBox();
             this.chkLC1AllowComTimeCh07 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxOnCh03 = new System.Windows.Forms.TextBox();
-            this.chkLC1AllowOverCh07 = new System.Windows.Forms.CheckBox();
             this.tbxLCTimeoutTimeCh03 = new System.Windows.Forms.TextBox();
             this.chkLC1LockCh07 = new System.Windows.Forms.CheckBox();
             this.tbxLCUCAmpsCh03 = new System.Windows.Forms.TextBox();
@@ -1419,7 +1406,6 @@ namespace M1ConfigGenerator
             this.tbxLCUCAmpsCh06 = new System.Windows.Forms.TextBox();
             this.chkLC1LockCh04 = new System.Windows.Forms.CheckBox();
             this.tbxLCTimeoutTimeCh06 = new System.Windows.Forms.TextBox();
-            this.chkLC1AllowOverCh04 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxOnCh06 = new System.Windows.Forms.TextBox();
             this.chkLC1AllowComTimeCh04 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxDurRecoveryCh06 = new System.Windows.Forms.TextBox();
@@ -1428,7 +1414,6 @@ namespace M1ConfigGenerator
             this.tbxLCMaxDurRecoveryCh04 = new System.Windows.Forms.TextBox();
             this.chkLC1AllowComTimeCh06 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxOnCh04 = new System.Windows.Forms.TextBox();
-            this.chkLC1AllowOverCh06 = new System.Windows.Forms.CheckBox();
             this.tbxLCTimeoutTimeCh04 = new System.Windows.Forms.TextBox();
             this.chkLC1LockCh06 = new System.Windows.Forms.CheckBox();
             this.tbxLCUCAmpsCh04 = new System.Windows.Forms.TextBox();
@@ -1437,7 +1422,6 @@ namespace M1ConfigGenerator
             this.tbxLCUCAmpsCh05 = new System.Windows.Forms.TextBox();
             this.chkLC1LockCh05 = new System.Windows.Forms.CheckBox();
             this.tbxLCTimeoutTimeCh05 = new System.Windows.Forms.TextBox();
-            this.chkLC1AllowOverCh05 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxOnCh05 = new System.Windows.Forms.TextBox();
             this.chkLC1AllowComTimeCh05 = new System.Windows.Forms.CheckBox();
             this.tbxLCMaxDurRecoveryCh05 = new System.Windows.Forms.TextBox();
@@ -1905,6 +1889,39 @@ namespace M1ConfigGenerator
             this.btnHRCard4 = new System.Windows.Forms.Button();
             this.btnHRCard3 = new System.Windows.Forms.Button();
             this.btnHRCard2 = new System.Windows.Forms.Button();
+            this.cmbLCOverrideInputReverseCh15 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh14 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh13 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh12 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh00 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh15 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh14 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh13 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh12 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh00 = new System.Windows.Forms.ComboBox();
+            this.label101 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
@@ -1967,7 +1984,7 @@ namespace M1ConfigGenerator
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 961);
+            this.panelMenu.Size = new System.Drawing.Size(200, 991);
             this.panelMenu.TabIndex = 0;
             // 
             // btnMenuLC
@@ -2099,7 +2116,7 @@ namespace M1ConfigGenerator
             this.panelMain.Controls.Add(this.tabControlMain);
             this.panelMain.Location = new System.Drawing.Point(200, 0);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1388, 1822);
+            this.panelMain.Size = new System.Drawing.Size(1388, 1852);
             this.panelMain.TabIndex = 2;
             // 
             // tabControlMain
@@ -16493,7 +16510,7 @@ namespace M1ConfigGenerator
             this.tabControlLC1QF.Location = new System.Drawing.Point(0, 326);
             this.tabControlLC1QF.Name = "tabControlLC1QF";
             this.tabControlLC1QF.SelectedIndex = 0;
-            this.tabControlLC1QF.Size = new System.Drawing.Size(1380, 525);
+            this.tabControlLC1QF.Size = new System.Drawing.Size(1380, 625);
             this.tabControlLC1QF.TabIndex = 7;
             // 
             // tabLC1Quick
@@ -16775,6 +16792,39 @@ namespace M1ConfigGenerator
             // tabLC1Full
             // 
             this.tabLC1Full.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh15);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh14);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh13);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh12);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh11);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh10);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh09);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh08);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh07);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh06);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh05);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh04);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh03);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh02);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh01);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputForwardCh00);
+            this.tabLC1Full.Controls.Add(this.label101);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh15);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh14);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh13);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh12);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh11);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh10);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh09);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh08);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh07);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh06);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh05);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh04);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh03);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh02);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh01);
+            this.tabLC1Full.Controls.Add(this.cmbLCOverrideInputReverseCh00);
             this.tabLC1Full.Controls.Add(this.cmbLCPWMFreqCh15);
             this.tabLC1Full.Controls.Add(this.chkLCPWMEnableCh15);
             this.tabLC1Full.Controls.Add(this.cmbLCPWMFreqCh14);
@@ -16918,7 +16968,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh15);
             this.tabLC1Full.Controls.Add(this.cmbLC1DirectionCh15);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh15);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh15);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh15);
             this.tabLC1Full.Controls.Add(this.cmbLC1MeasCurTimeCh14);
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh14);
@@ -16927,7 +16976,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh14);
             this.tabLC1Full.Controls.Add(this.cmbLC1DirectionCh14);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh14);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh14);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh14);
             this.tabLC1Full.Controls.Add(this.cmbLC1MeasCurTimeCh13);
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh13);
@@ -16936,7 +16984,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh13);
             this.tabLC1Full.Controls.Add(this.cmbLC1DirectionCh13);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh13);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh13);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh13);
             this.tabLC1Full.Controls.Add(this.cmbLC1MeasCurTimeCh12);
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh12);
@@ -16945,7 +16992,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh12);
             this.tabLC1Full.Controls.Add(this.cmbLC1DirectionCh12);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh12);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh12);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh12);
             this.tabLC1Full.Controls.Add(this.cmbLC1MeasCurTimeCh11);
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh11);
@@ -16961,7 +17007,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.label238);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh11);
             this.tabLC1Full.Controls.Add(this.label237);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh11);
             this.tabLC1Full.Controls.Add(this.label236);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh11);
             this.tabLC1Full.Controls.Add(this.label235);
@@ -16970,7 +17015,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh10);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh00);
             this.tabLC1Full.Controls.Add(this.tbxLCTimeoutTimeCh10);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh00);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxOnCh10);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh00);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh10);
@@ -16979,7 +17023,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh00);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh10);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxOnCh00);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh10);
             this.tabLC1Full.Controls.Add(this.tbxLCTimeoutTimeCh00);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh10);
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh00);
@@ -16988,7 +17031,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh09);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh01);
             this.tabLC1Full.Controls.Add(this.tbxLCTimeoutTimeCh09);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh01);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxOnCh09);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh01);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh09);
@@ -16997,7 +17039,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh01);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh09);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxOnCh01);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh09);
             this.tabLC1Full.Controls.Add(this.tbxLCTimeoutTimeCh01);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh09);
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh01);
@@ -17006,7 +17047,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh08);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh02);
             this.tabLC1Full.Controls.Add(this.tbxLCTimeoutTimeCh08);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh02);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxOnCh08);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh02);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh08);
@@ -17015,7 +17055,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh02);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh08);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxOnCh02);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh08);
             this.tabLC1Full.Controls.Add(this.tbxLCTimeoutTimeCh02);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh08);
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh02);
@@ -17024,7 +17063,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh07);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh03);
             this.tabLC1Full.Controls.Add(this.tbxLCTimeoutTimeCh07);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh03);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxOnCh07);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh03);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh07);
@@ -17033,7 +17071,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh03);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh07);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxOnCh03);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh07);
             this.tabLC1Full.Controls.Add(this.tbxLCTimeoutTimeCh03);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh07);
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh03);
@@ -17042,7 +17079,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh06);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh04);
             this.tabLC1Full.Controls.Add(this.tbxLCTimeoutTimeCh06);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh04);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxOnCh06);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh04);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh06);
@@ -17051,7 +17087,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh04);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh06);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxOnCh04);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh06);
             this.tabLC1Full.Controls.Add(this.tbxLCTimeoutTimeCh04);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh06);
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh04);
@@ -17060,7 +17095,6 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Controls.Add(this.tbxLCUCAmpsCh05);
             this.tabLC1Full.Controls.Add(this.chkLC1LockCh05);
             this.tabLC1Full.Controls.Add(this.tbxLCTimeoutTimeCh05);
-            this.tabLC1Full.Controls.Add(this.chkLC1AllowOverCh05);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxOnCh05);
             this.tabLC1Full.Controls.Add(this.chkLC1AllowComTimeCh05);
             this.tabLC1Full.Controls.Add(this.tbxLCMaxDurRecoveryCh05);
@@ -17068,7 +17102,7 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Location = new System.Drawing.Point(4, 22);
             this.tabLC1Full.Name = "tabLC1Full";
             this.tabLC1Full.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLC1Full.Size = new System.Drawing.Size(1372, 499);
+            this.tabLC1Full.Size = new System.Drawing.Size(1372, 599);
             this.tabLC1Full.TabIndex = 1;
             this.tabLC1Full.Text = "LC 1 Full";
             // 
@@ -17080,14 +17114,14 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh15.Location = new System.Drawing.Point(1279, 481);
+            this.cmbLCPWMFreqCh15.Location = new System.Drawing.Point(1279, 511);
             this.cmbLCPWMFreqCh15.Name = "cmbLCPWMFreqCh15";
             this.cmbLCPWMFreqCh15.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh15.TabIndex = 431;
             // 
             // chkLCPWMEnableCh15
             // 
-            this.chkLCPWMEnableCh15.Location = new System.Drawing.Point(1291, 451);
+            this.chkLCPWMEnableCh15.Location = new System.Drawing.Point(1291, 481);
             this.chkLCPWMEnableCh15.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh15.Name = "chkLCPWMEnableCh15";
             this.chkLCPWMEnableCh15.Padding = new System.Windows.Forms.Padding(10);
@@ -17103,14 +17137,14 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh14.Location = new System.Drawing.Point(1207, 481);
+            this.cmbLCPWMFreqCh14.Location = new System.Drawing.Point(1207, 511);
             this.cmbLCPWMFreqCh14.Name = "cmbLCPWMFreqCh14";
             this.cmbLCPWMFreqCh14.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh14.TabIndex = 429;
             // 
             // chkLCPWMEnableCh14
             // 
-            this.chkLCPWMEnableCh14.Location = new System.Drawing.Point(1219, 451);
+            this.chkLCPWMEnableCh14.Location = new System.Drawing.Point(1219, 481);
             this.chkLCPWMEnableCh14.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh14.Name = "chkLCPWMEnableCh14";
             this.chkLCPWMEnableCh14.Padding = new System.Windows.Forms.Padding(10);
@@ -17126,14 +17160,14 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh13.Location = new System.Drawing.Point(1135, 481);
+            this.cmbLCPWMFreqCh13.Location = new System.Drawing.Point(1135, 511);
             this.cmbLCPWMFreqCh13.Name = "cmbLCPWMFreqCh13";
             this.cmbLCPWMFreqCh13.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh13.TabIndex = 427;
             // 
             // chkLCPWMEnableCh13
             // 
-            this.chkLCPWMEnableCh13.Location = new System.Drawing.Point(1147, 451);
+            this.chkLCPWMEnableCh13.Location = new System.Drawing.Point(1147, 481);
             this.chkLCPWMEnableCh13.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh13.Name = "chkLCPWMEnableCh13";
             this.chkLCPWMEnableCh13.Padding = new System.Windows.Forms.Padding(10);
@@ -17149,14 +17183,14 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh12.Location = new System.Drawing.Point(1063, 481);
+            this.cmbLCPWMFreqCh12.Location = new System.Drawing.Point(1063, 511);
             this.cmbLCPWMFreqCh12.Name = "cmbLCPWMFreqCh12";
             this.cmbLCPWMFreqCh12.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh12.TabIndex = 425;
             // 
             // chkLCPWMEnableCh12
             // 
-            this.chkLCPWMEnableCh12.Location = new System.Drawing.Point(1075, 451);
+            this.chkLCPWMEnableCh12.Location = new System.Drawing.Point(1075, 481);
             this.chkLCPWMEnableCh12.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh12.Name = "chkLCPWMEnableCh12";
             this.chkLCPWMEnableCh12.Padding = new System.Windows.Forms.Padding(10);
@@ -17169,7 +17203,7 @@ namespace M1ConfigGenerator
             this.label75.AutoSize = true;
             this.label75.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label75.ForeColor = System.Drawing.SystemColors.Control;
-            this.label75.Location = new System.Drawing.Point(3, 453);
+            this.label75.Location = new System.Drawing.Point(3, 483);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(82, 17);
             this.label75.TabIndex = 398;
@@ -17180,7 +17214,7 @@ namespace M1ConfigGenerator
             this.label76.AutoSize = true;
             this.label76.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label76.ForeColor = System.Drawing.SystemColors.Control;
-            this.label76.Location = new System.Drawing.Point(3, 483);
+            this.label76.Location = new System.Drawing.Point(3, 513);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(102, 17);
             this.label76.TabIndex = 399;
@@ -17194,14 +17228,14 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh11.Location = new System.Drawing.Point(991, 481);
+            this.cmbLCPWMFreqCh11.Location = new System.Drawing.Point(991, 511);
             this.cmbLCPWMFreqCh11.Name = "cmbLCPWMFreqCh11";
             this.cmbLCPWMFreqCh11.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh11.TabIndex = 423;
             // 
             // chkLCPWMEnableCh11
             // 
-            this.chkLCPWMEnableCh11.Location = new System.Drawing.Point(1007, 451);
+            this.chkLCPWMEnableCh11.Location = new System.Drawing.Point(1007, 481);
             this.chkLCPWMEnableCh11.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh11.Name = "chkLCPWMEnableCh11";
             this.chkLCPWMEnableCh11.Padding = new System.Windows.Forms.Padding(10);
@@ -17211,7 +17245,7 @@ namespace M1ConfigGenerator
             // 
             // chkLCPWMEnableCh00
             // 
-            this.chkLCPWMEnableCh00.Location = new System.Drawing.Point(215, 451);
+            this.chkLCPWMEnableCh00.Location = new System.Drawing.Point(215, 481);
             this.chkLCPWMEnableCh00.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh00.Name = "chkLCPWMEnableCh00";
             this.chkLCPWMEnableCh00.Padding = new System.Windows.Forms.Padding(10);
@@ -17227,7 +17261,7 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh00.Location = new System.Drawing.Point(199, 481);
+            this.cmbLCPWMFreqCh00.Location = new System.Drawing.Point(199, 511);
             this.cmbLCPWMFreqCh00.Name = "cmbLCPWMFreqCh00";
             this.cmbLCPWMFreqCh00.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh00.TabIndex = 401;
@@ -17240,14 +17274,14 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh10.Location = new System.Drawing.Point(919, 481);
+            this.cmbLCPWMFreqCh10.Location = new System.Drawing.Point(919, 511);
             this.cmbLCPWMFreqCh10.Name = "cmbLCPWMFreqCh10";
             this.cmbLCPWMFreqCh10.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh10.TabIndex = 421;
             // 
             // chkLCPWMEnableCh10
             // 
-            this.chkLCPWMEnableCh10.Location = new System.Drawing.Point(935, 451);
+            this.chkLCPWMEnableCh10.Location = new System.Drawing.Point(935, 481);
             this.chkLCPWMEnableCh10.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh10.Name = "chkLCPWMEnableCh10";
             this.chkLCPWMEnableCh10.Padding = new System.Windows.Forms.Padding(10);
@@ -17257,7 +17291,7 @@ namespace M1ConfigGenerator
             // 
             // chkLCPWMEnableCh01
             // 
-            this.chkLCPWMEnableCh01.Location = new System.Drawing.Point(287, 451);
+            this.chkLCPWMEnableCh01.Location = new System.Drawing.Point(287, 481);
             this.chkLCPWMEnableCh01.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh01.Name = "chkLCPWMEnableCh01";
             this.chkLCPWMEnableCh01.Padding = new System.Windows.Forms.Padding(10);
@@ -17273,7 +17307,7 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh01.Location = new System.Drawing.Point(271, 481);
+            this.cmbLCPWMFreqCh01.Location = new System.Drawing.Point(271, 511);
             this.cmbLCPWMFreqCh01.Name = "cmbLCPWMFreqCh01";
             this.cmbLCPWMFreqCh01.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh01.TabIndex = 403;
@@ -17286,14 +17320,14 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh09.Location = new System.Drawing.Point(847, 481);
+            this.cmbLCPWMFreqCh09.Location = new System.Drawing.Point(847, 511);
             this.cmbLCPWMFreqCh09.Name = "cmbLCPWMFreqCh09";
             this.cmbLCPWMFreqCh09.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh09.TabIndex = 419;
             // 
             // chkLCPWMEnableCh09
             // 
-            this.chkLCPWMEnableCh09.Location = new System.Drawing.Point(863, 451);
+            this.chkLCPWMEnableCh09.Location = new System.Drawing.Point(863, 481);
             this.chkLCPWMEnableCh09.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh09.Name = "chkLCPWMEnableCh09";
             this.chkLCPWMEnableCh09.Padding = new System.Windows.Forms.Padding(10);
@@ -17303,7 +17337,7 @@ namespace M1ConfigGenerator
             // 
             // chkLCPWMEnableCh02
             // 
-            this.chkLCPWMEnableCh02.Location = new System.Drawing.Point(359, 451);
+            this.chkLCPWMEnableCh02.Location = new System.Drawing.Point(359, 481);
             this.chkLCPWMEnableCh02.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh02.Name = "chkLCPWMEnableCh02";
             this.chkLCPWMEnableCh02.Padding = new System.Windows.Forms.Padding(10);
@@ -17319,7 +17353,7 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh02.Location = new System.Drawing.Point(343, 481);
+            this.cmbLCPWMFreqCh02.Location = new System.Drawing.Point(343, 511);
             this.cmbLCPWMFreqCh02.Name = "cmbLCPWMFreqCh02";
             this.cmbLCPWMFreqCh02.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh02.TabIndex = 405;
@@ -17332,14 +17366,14 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh08.Location = new System.Drawing.Point(775, 481);
+            this.cmbLCPWMFreqCh08.Location = new System.Drawing.Point(775, 511);
             this.cmbLCPWMFreqCh08.Name = "cmbLCPWMFreqCh08";
             this.cmbLCPWMFreqCh08.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh08.TabIndex = 417;
             // 
             // chkLCPWMEnableCh08
             // 
-            this.chkLCPWMEnableCh08.Location = new System.Drawing.Point(791, 451);
+            this.chkLCPWMEnableCh08.Location = new System.Drawing.Point(791, 481);
             this.chkLCPWMEnableCh08.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh08.Name = "chkLCPWMEnableCh08";
             this.chkLCPWMEnableCh08.Padding = new System.Windows.Forms.Padding(10);
@@ -17349,7 +17383,7 @@ namespace M1ConfigGenerator
             // 
             // chkLCPWMEnableCh03
             // 
-            this.chkLCPWMEnableCh03.Location = new System.Drawing.Point(431, 451);
+            this.chkLCPWMEnableCh03.Location = new System.Drawing.Point(431, 481);
             this.chkLCPWMEnableCh03.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh03.Name = "chkLCPWMEnableCh03";
             this.chkLCPWMEnableCh03.Padding = new System.Windows.Forms.Padding(10);
@@ -17365,7 +17399,7 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh03.Location = new System.Drawing.Point(415, 481);
+            this.cmbLCPWMFreqCh03.Location = new System.Drawing.Point(415, 511);
             this.cmbLCPWMFreqCh03.Name = "cmbLCPWMFreqCh03";
             this.cmbLCPWMFreqCh03.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh03.TabIndex = 407;
@@ -17378,14 +17412,14 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh07.Location = new System.Drawing.Point(703, 481);
+            this.cmbLCPWMFreqCh07.Location = new System.Drawing.Point(703, 511);
             this.cmbLCPWMFreqCh07.Name = "cmbLCPWMFreqCh07";
             this.cmbLCPWMFreqCh07.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh07.TabIndex = 415;
             // 
             // chkLCPWMEnableCh07
             // 
-            this.chkLCPWMEnableCh07.Location = new System.Drawing.Point(719, 451);
+            this.chkLCPWMEnableCh07.Location = new System.Drawing.Point(719, 481);
             this.chkLCPWMEnableCh07.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh07.Name = "chkLCPWMEnableCh07";
             this.chkLCPWMEnableCh07.Padding = new System.Windows.Forms.Padding(10);
@@ -17395,7 +17429,7 @@ namespace M1ConfigGenerator
             // 
             // chkLCPWMEnableCh04
             // 
-            this.chkLCPWMEnableCh04.Location = new System.Drawing.Point(503, 451);
+            this.chkLCPWMEnableCh04.Location = new System.Drawing.Point(503, 481);
             this.chkLCPWMEnableCh04.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh04.Name = "chkLCPWMEnableCh04";
             this.chkLCPWMEnableCh04.Padding = new System.Windows.Forms.Padding(10);
@@ -17411,7 +17445,7 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh04.Location = new System.Drawing.Point(487, 481);
+            this.cmbLCPWMFreqCh04.Location = new System.Drawing.Point(487, 511);
             this.cmbLCPWMFreqCh04.Name = "cmbLCPWMFreqCh04";
             this.cmbLCPWMFreqCh04.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh04.TabIndex = 409;
@@ -17424,14 +17458,14 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh06.Location = new System.Drawing.Point(631, 481);
+            this.cmbLCPWMFreqCh06.Location = new System.Drawing.Point(631, 511);
             this.cmbLCPWMFreqCh06.Name = "cmbLCPWMFreqCh06";
             this.cmbLCPWMFreqCh06.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh06.TabIndex = 413;
             // 
             // chkLCPWMEnableCh06
             // 
-            this.chkLCPWMEnableCh06.Location = new System.Drawing.Point(647, 451);
+            this.chkLCPWMEnableCh06.Location = new System.Drawing.Point(647, 481);
             this.chkLCPWMEnableCh06.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh06.Name = "chkLCPWMEnableCh06";
             this.chkLCPWMEnableCh06.Padding = new System.Windows.Forms.Padding(10);
@@ -17441,7 +17475,7 @@ namespace M1ConfigGenerator
             // 
             // chkLCPWMEnableCh05
             // 
-            this.chkLCPWMEnableCh05.Location = new System.Drawing.Point(575, 451);
+            this.chkLCPWMEnableCh05.Location = new System.Drawing.Point(575, 481);
             this.chkLCPWMEnableCh05.Margin = new System.Windows.Forms.Padding(0);
             this.chkLCPWMEnableCh05.Name = "chkLCPWMEnableCh05";
             this.chkLCPWMEnableCh05.Padding = new System.Windows.Forms.Padding(10);
@@ -17457,7 +17491,7 @@ namespace M1ConfigGenerator
             "200",
             "100",
             "80"});
-            this.cmbLCPWMFreqCh05.Location = new System.Drawing.Point(559, 481);
+            this.cmbLCPWMFreqCh05.Location = new System.Drawing.Point(559, 511);
             this.cmbLCPWMFreqCh05.Name = "cmbLCPWMFreqCh05";
             this.cmbLCPWMFreqCh05.Size = new System.Drawing.Size(66, 21);
             this.cmbLCPWMFreqCh05.TabIndex = 411;
@@ -17467,7 +17501,7 @@ namespace M1ConfigGenerator
             this.label74.AutoSize = true;
             this.label74.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label74.ForeColor = System.Drawing.SystemColors.Control;
-            this.label74.Location = new System.Drawing.Point(195, 333);
+            this.label74.Location = new System.Drawing.Point(195, 363);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(21, 17);
             this.label74.TabIndex = 397;
@@ -17478,7 +17512,7 @@ namespace M1ConfigGenerator
             this.label73.AutoSize = true;
             this.label73.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label73.ForeColor = System.Drawing.SystemColors.Control;
-            this.label73.Location = new System.Drawing.Point(195, 303);
+            this.label73.Location = new System.Drawing.Point(195, 333);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(21, 17);
             this.label73.TabIndex = 396;
@@ -18996,14 +19030,14 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh15.Location = new System.Drawing.Point(1279, 423);
+            this.cmbLC1MeasCurTimeCh15.Location = new System.Drawing.Point(1279, 453);
             this.cmbLC1MeasCurTimeCh15.Name = "cmbLC1MeasCurTimeCh15";
             this.cmbLC1MeasCurTimeCh15.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh15.TabIndex = 266;
             // 
             // tbxLCUCAmpsCh15
             // 
-            this.tbxLCUCAmpsCh15.Location = new System.Drawing.Point(1293, 393);
+            this.tbxLCUCAmpsCh15.Location = new System.Drawing.Point(1293, 423);
             this.tbxLCUCAmpsCh15.Name = "tbxLCUCAmpsCh15";
             this.tbxLCUCAmpsCh15.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh15.TabIndex = 265;
@@ -19011,7 +19045,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCTimeoutTimeCh15
             // 
-            this.tbxLCTimeoutTimeCh15.Location = new System.Drawing.Point(1293, 303);
+            this.tbxLCTimeoutTimeCh15.Location = new System.Drawing.Point(1293, 333);
             this.tbxLCTimeoutTimeCh15.Name = "tbxLCTimeoutTimeCh15";
             this.tbxLCTimeoutTimeCh15.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh15.TabIndex = 264;
@@ -19019,7 +19053,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxOnCh15
             // 
-            this.tbxLCMaxOnCh15.Location = new System.Drawing.Point(1293, 333);
+            this.tbxLCMaxOnCh15.Location = new System.Drawing.Point(1293, 363);
             this.tbxLCMaxOnCh15.Name = "tbxLCMaxOnCh15";
             this.tbxLCMaxOnCh15.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh15.TabIndex = 263;
@@ -19027,7 +19061,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxDurRecoveryCh15
             // 
-            this.tbxLCMaxDurRecoveryCh15.Location = new System.Drawing.Point(1293, 363);
+            this.tbxLCMaxDurRecoveryCh15.Location = new System.Drawing.Point(1293, 393);
             this.tbxLCMaxDurRecoveryCh15.Name = "tbxLCMaxDurRecoveryCh15";
             this.tbxLCMaxDurRecoveryCh15.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh15.TabIndex = 262;
@@ -19045,14 +19079,14 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh15.Location = new System.Drawing.Point(1279, 241);
+            this.cmbLC1DirectionCh15.Location = new System.Drawing.Point(1279, 271);
             this.cmbLC1DirectionCh15.Name = "cmbLC1DirectionCh15";
             this.cmbLC1DirectionCh15.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh15.TabIndex = 260;
             // 
             // chkLC1AllowComTimeCh15
             // 
-            this.chkLC1AllowComTimeCh15.Location = new System.Drawing.Point(1291, 270);
+            this.chkLC1AllowComTimeCh15.Location = new System.Drawing.Point(1291, 300);
             this.chkLC1AllowComTimeCh15.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh15.Name = "chkLC1AllowComTimeCh15";
             this.chkLC1AllowComTimeCh15.Padding = new System.Windows.Forms.Padding(10);
@@ -19060,19 +19094,9 @@ namespace M1ConfigGenerator
             this.chkLC1AllowComTimeCh15.TabIndex = 259;
             this.chkLC1AllowComTimeCh15.UseVisualStyleBackColor = true;
             // 
-            // chkLC1AllowOverCh15
-            // 
-            this.chkLC1AllowOverCh15.Location = new System.Drawing.Point(1291, 181);
-            this.chkLC1AllowOverCh15.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh15.Name = "chkLC1AllowOverCh15";
-            this.chkLC1AllowOverCh15.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh15.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh15.TabIndex = 258;
-            this.chkLC1AllowOverCh15.UseVisualStyleBackColor = true;
-            // 
             // chkLC1LockCh15
             // 
-            this.chkLC1LockCh15.Location = new System.Drawing.Point(1291, 211);
+            this.chkLC1LockCh15.Location = new System.Drawing.Point(1291, 241);
             this.chkLC1LockCh15.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh15.Name = "chkLC1LockCh15";
             this.chkLC1LockCh15.Padding = new System.Windows.Forms.Padding(10);
@@ -19092,14 +19116,14 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh14.Location = new System.Drawing.Point(1207, 423);
+            this.cmbLC1MeasCurTimeCh14.Location = new System.Drawing.Point(1207, 453);
             this.cmbLC1MeasCurTimeCh14.Name = "cmbLC1MeasCurTimeCh14";
             this.cmbLC1MeasCurTimeCh14.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh14.TabIndex = 256;
             // 
             // tbxLCUCAmpsCh14
             // 
-            this.tbxLCUCAmpsCh14.Location = new System.Drawing.Point(1221, 393);
+            this.tbxLCUCAmpsCh14.Location = new System.Drawing.Point(1221, 423);
             this.tbxLCUCAmpsCh14.Name = "tbxLCUCAmpsCh14";
             this.tbxLCUCAmpsCh14.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh14.TabIndex = 255;
@@ -19107,7 +19131,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCTimeoutTimeCh14
             // 
-            this.tbxLCTimeoutTimeCh14.Location = new System.Drawing.Point(1221, 303);
+            this.tbxLCTimeoutTimeCh14.Location = new System.Drawing.Point(1221, 333);
             this.tbxLCTimeoutTimeCh14.Name = "tbxLCTimeoutTimeCh14";
             this.tbxLCTimeoutTimeCh14.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh14.TabIndex = 254;
@@ -19115,7 +19139,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxOnCh14
             // 
-            this.tbxLCMaxOnCh14.Location = new System.Drawing.Point(1221, 333);
+            this.tbxLCMaxOnCh14.Location = new System.Drawing.Point(1221, 363);
             this.tbxLCMaxOnCh14.Name = "tbxLCMaxOnCh14";
             this.tbxLCMaxOnCh14.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh14.TabIndex = 253;
@@ -19123,7 +19147,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxDurRecoveryCh14
             // 
-            this.tbxLCMaxDurRecoveryCh14.Location = new System.Drawing.Point(1221, 363);
+            this.tbxLCMaxDurRecoveryCh14.Location = new System.Drawing.Point(1221, 393);
             this.tbxLCMaxDurRecoveryCh14.Name = "tbxLCMaxDurRecoveryCh14";
             this.tbxLCMaxDurRecoveryCh14.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh14.TabIndex = 252;
@@ -19141,14 +19165,14 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh14.Location = new System.Drawing.Point(1207, 241);
+            this.cmbLC1DirectionCh14.Location = new System.Drawing.Point(1207, 271);
             this.cmbLC1DirectionCh14.Name = "cmbLC1DirectionCh14";
             this.cmbLC1DirectionCh14.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh14.TabIndex = 250;
             // 
             // chkLC1AllowComTimeCh14
             // 
-            this.chkLC1AllowComTimeCh14.Location = new System.Drawing.Point(1219, 270);
+            this.chkLC1AllowComTimeCh14.Location = new System.Drawing.Point(1219, 300);
             this.chkLC1AllowComTimeCh14.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh14.Name = "chkLC1AllowComTimeCh14";
             this.chkLC1AllowComTimeCh14.Padding = new System.Windows.Forms.Padding(10);
@@ -19156,19 +19180,9 @@ namespace M1ConfigGenerator
             this.chkLC1AllowComTimeCh14.TabIndex = 249;
             this.chkLC1AllowComTimeCh14.UseVisualStyleBackColor = true;
             // 
-            // chkLC1AllowOverCh14
-            // 
-            this.chkLC1AllowOverCh14.Location = new System.Drawing.Point(1219, 181);
-            this.chkLC1AllowOverCh14.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh14.Name = "chkLC1AllowOverCh14";
-            this.chkLC1AllowOverCh14.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh14.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh14.TabIndex = 248;
-            this.chkLC1AllowOverCh14.UseVisualStyleBackColor = true;
-            // 
             // chkLC1LockCh14
             // 
-            this.chkLC1LockCh14.Location = new System.Drawing.Point(1219, 211);
+            this.chkLC1LockCh14.Location = new System.Drawing.Point(1219, 241);
             this.chkLC1LockCh14.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh14.Name = "chkLC1LockCh14";
             this.chkLC1LockCh14.Padding = new System.Windows.Forms.Padding(10);
@@ -19188,14 +19202,14 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh13.Location = new System.Drawing.Point(1135, 423);
+            this.cmbLC1MeasCurTimeCh13.Location = new System.Drawing.Point(1135, 453);
             this.cmbLC1MeasCurTimeCh13.Name = "cmbLC1MeasCurTimeCh13";
             this.cmbLC1MeasCurTimeCh13.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh13.TabIndex = 246;
             // 
             // tbxLCUCAmpsCh13
             // 
-            this.tbxLCUCAmpsCh13.Location = new System.Drawing.Point(1149, 393);
+            this.tbxLCUCAmpsCh13.Location = new System.Drawing.Point(1149, 423);
             this.tbxLCUCAmpsCh13.Name = "tbxLCUCAmpsCh13";
             this.tbxLCUCAmpsCh13.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh13.TabIndex = 245;
@@ -19203,7 +19217,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCTimeoutTimeCh13
             // 
-            this.tbxLCTimeoutTimeCh13.Location = new System.Drawing.Point(1149, 303);
+            this.tbxLCTimeoutTimeCh13.Location = new System.Drawing.Point(1149, 333);
             this.tbxLCTimeoutTimeCh13.Name = "tbxLCTimeoutTimeCh13";
             this.tbxLCTimeoutTimeCh13.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh13.TabIndex = 244;
@@ -19211,7 +19225,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxOnCh13
             // 
-            this.tbxLCMaxOnCh13.Location = new System.Drawing.Point(1149, 333);
+            this.tbxLCMaxOnCh13.Location = new System.Drawing.Point(1149, 363);
             this.tbxLCMaxOnCh13.Name = "tbxLCMaxOnCh13";
             this.tbxLCMaxOnCh13.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh13.TabIndex = 243;
@@ -19219,7 +19233,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxDurRecoveryCh13
             // 
-            this.tbxLCMaxDurRecoveryCh13.Location = new System.Drawing.Point(1149, 363);
+            this.tbxLCMaxDurRecoveryCh13.Location = new System.Drawing.Point(1149, 393);
             this.tbxLCMaxDurRecoveryCh13.Name = "tbxLCMaxDurRecoveryCh13";
             this.tbxLCMaxDurRecoveryCh13.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh13.TabIndex = 242;
@@ -19237,14 +19251,14 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh13.Location = new System.Drawing.Point(1135, 241);
+            this.cmbLC1DirectionCh13.Location = new System.Drawing.Point(1135, 271);
             this.cmbLC1DirectionCh13.Name = "cmbLC1DirectionCh13";
             this.cmbLC1DirectionCh13.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh13.TabIndex = 240;
             // 
             // chkLC1AllowComTimeCh13
             // 
-            this.chkLC1AllowComTimeCh13.Location = new System.Drawing.Point(1147, 270);
+            this.chkLC1AllowComTimeCh13.Location = new System.Drawing.Point(1147, 300);
             this.chkLC1AllowComTimeCh13.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh13.Name = "chkLC1AllowComTimeCh13";
             this.chkLC1AllowComTimeCh13.Padding = new System.Windows.Forms.Padding(10);
@@ -19252,19 +19266,9 @@ namespace M1ConfigGenerator
             this.chkLC1AllowComTimeCh13.TabIndex = 239;
             this.chkLC1AllowComTimeCh13.UseVisualStyleBackColor = true;
             // 
-            // chkLC1AllowOverCh13
-            // 
-            this.chkLC1AllowOverCh13.Location = new System.Drawing.Point(1147, 181);
-            this.chkLC1AllowOverCh13.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh13.Name = "chkLC1AllowOverCh13";
-            this.chkLC1AllowOverCh13.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh13.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh13.TabIndex = 238;
-            this.chkLC1AllowOverCh13.UseVisualStyleBackColor = true;
-            // 
             // chkLC1LockCh13
             // 
-            this.chkLC1LockCh13.Location = new System.Drawing.Point(1147, 211);
+            this.chkLC1LockCh13.Location = new System.Drawing.Point(1147, 241);
             this.chkLC1LockCh13.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh13.Name = "chkLC1LockCh13";
             this.chkLC1LockCh13.Padding = new System.Windows.Forms.Padding(10);
@@ -19284,14 +19288,14 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh12.Location = new System.Drawing.Point(1063, 423);
+            this.cmbLC1MeasCurTimeCh12.Location = new System.Drawing.Point(1063, 453);
             this.cmbLC1MeasCurTimeCh12.Name = "cmbLC1MeasCurTimeCh12";
             this.cmbLC1MeasCurTimeCh12.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh12.TabIndex = 236;
             // 
             // tbxLCUCAmpsCh12
             // 
-            this.tbxLCUCAmpsCh12.Location = new System.Drawing.Point(1077, 393);
+            this.tbxLCUCAmpsCh12.Location = new System.Drawing.Point(1077, 423);
             this.tbxLCUCAmpsCh12.Name = "tbxLCUCAmpsCh12";
             this.tbxLCUCAmpsCh12.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh12.TabIndex = 235;
@@ -19299,7 +19303,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCTimeoutTimeCh12
             // 
-            this.tbxLCTimeoutTimeCh12.Location = new System.Drawing.Point(1077, 303);
+            this.tbxLCTimeoutTimeCh12.Location = new System.Drawing.Point(1077, 333);
             this.tbxLCTimeoutTimeCh12.Name = "tbxLCTimeoutTimeCh12";
             this.tbxLCTimeoutTimeCh12.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh12.TabIndex = 234;
@@ -19307,7 +19311,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxOnCh12
             // 
-            this.tbxLCMaxOnCh12.Location = new System.Drawing.Point(1077, 333);
+            this.tbxLCMaxOnCh12.Location = new System.Drawing.Point(1077, 363);
             this.tbxLCMaxOnCh12.Name = "tbxLCMaxOnCh12";
             this.tbxLCMaxOnCh12.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh12.TabIndex = 233;
@@ -19315,7 +19319,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxDurRecoveryCh12
             // 
-            this.tbxLCMaxDurRecoveryCh12.Location = new System.Drawing.Point(1077, 363);
+            this.tbxLCMaxDurRecoveryCh12.Location = new System.Drawing.Point(1077, 393);
             this.tbxLCMaxDurRecoveryCh12.Name = "tbxLCMaxDurRecoveryCh12";
             this.tbxLCMaxDurRecoveryCh12.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh12.TabIndex = 232;
@@ -19333,14 +19337,14 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh12.Location = new System.Drawing.Point(1063, 241);
+            this.cmbLC1DirectionCh12.Location = new System.Drawing.Point(1063, 271);
             this.cmbLC1DirectionCh12.Name = "cmbLC1DirectionCh12";
             this.cmbLC1DirectionCh12.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh12.TabIndex = 230;
             // 
             // chkLC1AllowComTimeCh12
             // 
-            this.chkLC1AllowComTimeCh12.Location = new System.Drawing.Point(1075, 270);
+            this.chkLC1AllowComTimeCh12.Location = new System.Drawing.Point(1075, 300);
             this.chkLC1AllowComTimeCh12.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh12.Name = "chkLC1AllowComTimeCh12";
             this.chkLC1AllowComTimeCh12.Padding = new System.Windows.Forms.Padding(10);
@@ -19348,19 +19352,9 @@ namespace M1ConfigGenerator
             this.chkLC1AllowComTimeCh12.TabIndex = 229;
             this.chkLC1AllowComTimeCh12.UseVisualStyleBackColor = true;
             // 
-            // chkLC1AllowOverCh12
-            // 
-            this.chkLC1AllowOverCh12.Location = new System.Drawing.Point(1075, 181);
-            this.chkLC1AllowOverCh12.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh12.Name = "chkLC1AllowOverCh12";
-            this.chkLC1AllowOverCh12.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh12.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh12.TabIndex = 228;
-            this.chkLC1AllowOverCh12.UseVisualStyleBackColor = true;
-            // 
             // chkLC1LockCh12
             // 
-            this.chkLC1LockCh12.Location = new System.Drawing.Point(1075, 211);
+            this.chkLC1LockCh12.Location = new System.Drawing.Point(1075, 241);
             this.chkLC1LockCh12.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh12.Name = "chkLC1LockCh12";
             this.chkLC1LockCh12.Padding = new System.Windows.Forms.Padding(10);
@@ -19380,14 +19374,14 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh11.Location = new System.Drawing.Point(991, 423);
+            this.cmbLC1MeasCurTimeCh11.Location = new System.Drawing.Point(991, 453);
             this.cmbLC1MeasCurTimeCh11.Name = "cmbLC1MeasCurTimeCh11";
             this.cmbLC1MeasCurTimeCh11.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh11.TabIndex = 226;
             // 
             // tbxLCUCAmpsCh11
             // 
-            this.tbxLCUCAmpsCh11.Location = new System.Drawing.Point(1009, 393);
+            this.tbxLCUCAmpsCh11.Location = new System.Drawing.Point(1009, 423);
             this.tbxLCUCAmpsCh11.Name = "tbxLCUCAmpsCh11";
             this.tbxLCUCAmpsCh11.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh11.TabIndex = 225;
@@ -19398,7 +19392,7 @@ namespace M1ConfigGenerator
             this.label243.AutoSize = true;
             this.label243.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label243.ForeColor = System.Drawing.SystemColors.Control;
-            this.label243.Location = new System.Drawing.Point(3, 213);
+            this.label243.Location = new System.Drawing.Point(3, 243);
             this.label243.Name = "label243";
             this.label243.Size = new System.Drawing.Size(99, 17);
             this.label243.TabIndex = 17;
@@ -19406,7 +19400,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCTimeoutTimeCh11
             // 
-            this.tbxLCTimeoutTimeCh11.Location = new System.Drawing.Point(1009, 303);
+            this.tbxLCTimeoutTimeCh11.Location = new System.Drawing.Point(1009, 333);
             this.tbxLCTimeoutTimeCh11.Name = "tbxLCTimeoutTimeCh11";
             this.tbxLCTimeoutTimeCh11.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh11.TabIndex = 224;
@@ -19425,7 +19419,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxOnCh11
             // 
-            this.tbxLCMaxOnCh11.Location = new System.Drawing.Point(1009, 333);
+            this.tbxLCMaxOnCh11.Location = new System.Drawing.Point(1009, 363);
             this.tbxLCMaxOnCh11.Name = "tbxLCMaxOnCh11";
             this.tbxLCMaxOnCh11.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh11.TabIndex = 223;
@@ -19438,13 +19432,13 @@ namespace M1ConfigGenerator
             this.label241.ForeColor = System.Drawing.SystemColors.Control;
             this.label241.Location = new System.Drawing.Point(3, 183);
             this.label241.Name = "label241";
-            this.label241.Size = new System.Drawing.Size(94, 17);
+            this.label241.Size = new System.Drawing.Size(150, 17);
             this.label241.TabIndex = 19;
-            this.label241.Text = "Allow Override";
+            this.label241.Text = "Override Input (Reverse)";
             // 
             // tbxLCMaxDurRecoveryCh11
             // 
-            this.tbxLCMaxDurRecoveryCh11.Location = new System.Drawing.Point(1009, 363);
+            this.tbxLCMaxDurRecoveryCh11.Location = new System.Drawing.Point(1009, 393);
             this.tbxLCMaxDurRecoveryCh11.Name = "tbxLCMaxDurRecoveryCh11";
             this.tbxLCMaxDurRecoveryCh11.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh11.TabIndex = 222;
@@ -19455,7 +19449,7 @@ namespace M1ConfigGenerator
             this.label240.AutoSize = true;
             this.label240.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label240.ForeColor = System.Drawing.SystemColors.Control;
-            this.label240.Location = new System.Drawing.Point(3, 243);
+            this.label240.Location = new System.Drawing.Point(3, 273);
             this.label240.Name = "label240";
             this.label240.Size = new System.Drawing.Size(110, 17);
             this.label240.TabIndex = 20;
@@ -19466,7 +19460,7 @@ namespace M1ConfigGenerator
             this.label239.AutoSize = true;
             this.label239.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label239.ForeColor = System.Drawing.SystemColors.Control;
-            this.label239.Location = new System.Drawing.Point(3, 273);
+            this.label239.Location = new System.Drawing.Point(3, 303);
             this.label239.Name = "label239";
             this.label239.Size = new System.Drawing.Size(154, 17);
             this.label239.TabIndex = 21;
@@ -19484,7 +19478,7 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh11.Location = new System.Drawing.Point(991, 241);
+            this.cmbLC1DirectionCh11.Location = new System.Drawing.Point(991, 271);
             this.cmbLC1DirectionCh11.Name = "cmbLC1DirectionCh11";
             this.cmbLC1DirectionCh11.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh11.TabIndex = 220;
@@ -19494,7 +19488,7 @@ namespace M1ConfigGenerator
             this.label238.AutoSize = true;
             this.label238.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label238.ForeColor = System.Drawing.SystemColors.Control;
-            this.label238.Location = new System.Drawing.Point(3, 303);
+            this.label238.Location = new System.Drawing.Point(3, 333);
             this.label238.Name = "label238";
             this.label238.Size = new System.Drawing.Size(148, 17);
             this.label238.TabIndex = 22;
@@ -19502,7 +19496,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1AllowComTimeCh11
             // 
-            this.chkLC1AllowComTimeCh11.Location = new System.Drawing.Point(1007, 270);
+            this.chkLC1AllowComTimeCh11.Location = new System.Drawing.Point(1007, 300);
             this.chkLC1AllowComTimeCh11.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh11.Name = "chkLC1AllowComTimeCh11";
             this.chkLC1AllowComTimeCh11.Padding = new System.Windows.Forms.Padding(10);
@@ -19515,28 +19509,18 @@ namespace M1ConfigGenerator
             this.label237.AutoSize = true;
             this.label237.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label237.ForeColor = System.Drawing.SystemColors.Control;
-            this.label237.Location = new System.Drawing.Point(3, 333);
+            this.label237.Location = new System.Drawing.Point(3, 363);
             this.label237.Name = "label237";
             this.label237.Size = new System.Drawing.Size(117, 17);
             this.label237.TabIndex = 23;
             this.label237.Text = "Max On Time (sec)";
-            // 
-            // chkLC1AllowOverCh11
-            // 
-            this.chkLC1AllowOverCh11.Location = new System.Drawing.Point(1007, 181);
-            this.chkLC1AllowOverCh11.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh11.Name = "chkLC1AllowOverCh11";
-            this.chkLC1AllowOverCh11.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh11.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh11.TabIndex = 218;
-            this.chkLC1AllowOverCh11.UseVisualStyleBackColor = true;
             // 
             // label236
             // 
             this.label236.AutoSize = true;
             this.label236.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label236.ForeColor = System.Drawing.SystemColors.Control;
-            this.label236.Location = new System.Drawing.Point(3, 363);
+            this.label236.Location = new System.Drawing.Point(3, 393);
             this.label236.Name = "label236";
             this.label236.Size = new System.Drawing.Size(175, 17);
             this.label236.TabIndex = 24;
@@ -19544,7 +19528,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1LockCh11
             // 
-            this.chkLC1LockCh11.Location = new System.Drawing.Point(1007, 211);
+            this.chkLC1LockCh11.Location = new System.Drawing.Point(1007, 241);
             this.chkLC1LockCh11.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh11.Name = "chkLC1LockCh11";
             this.chkLC1LockCh11.Padding = new System.Windows.Forms.Padding(10);
@@ -19557,7 +19541,7 @@ namespace M1ConfigGenerator
             this.label235.AutoSize = true;
             this.label235.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label235.ForeColor = System.Drawing.SystemColors.Control;
-            this.label235.Location = new System.Drawing.Point(3, 393);
+            this.label235.Location = new System.Drawing.Point(3, 423);
             this.label235.Name = "label235";
             this.label235.Size = new System.Drawing.Size(122, 17);
             this.label235.TabIndex = 25;
@@ -19575,7 +19559,7 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh10.Location = new System.Drawing.Point(919, 423);
+            this.cmbLC1MeasCurTimeCh10.Location = new System.Drawing.Point(919, 453);
             this.cmbLC1MeasCurTimeCh10.Name = "cmbLC1MeasCurTimeCh10";
             this.cmbLC1MeasCurTimeCh10.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh10.TabIndex = 216;
@@ -19585,7 +19569,7 @@ namespace M1ConfigGenerator
             this.label234.AutoSize = true;
             this.label234.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label234.ForeColor = System.Drawing.SystemColors.Control;
-            this.label234.Location = new System.Drawing.Point(3, 423);
+            this.label234.Location = new System.Drawing.Point(3, 453);
             this.label234.Name = "label234";
             this.label234.Size = new System.Drawing.Size(165, 17);
             this.label234.TabIndex = 26;
@@ -19593,7 +19577,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCUCAmpsCh10
             // 
-            this.tbxLCUCAmpsCh10.Location = new System.Drawing.Point(937, 393);
+            this.tbxLCUCAmpsCh10.Location = new System.Drawing.Point(937, 423);
             this.tbxLCUCAmpsCh10.Name = "tbxLCUCAmpsCh10";
             this.tbxLCUCAmpsCh10.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh10.TabIndex = 215;
@@ -19601,7 +19585,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1LockCh00
             // 
-            this.chkLC1LockCh00.Location = new System.Drawing.Point(215, 211);
+            this.chkLC1LockCh00.Location = new System.Drawing.Point(215, 241);
             this.chkLC1LockCh00.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh00.Name = "chkLC1LockCh00";
             this.chkLC1LockCh00.Padding = new System.Windows.Forms.Padding(10);
@@ -19611,25 +19595,15 @@ namespace M1ConfigGenerator
             // 
             // tbxLCTimeoutTimeCh10
             // 
-            this.tbxLCTimeoutTimeCh10.Location = new System.Drawing.Point(937, 303);
+            this.tbxLCTimeoutTimeCh10.Location = new System.Drawing.Point(937, 333);
             this.tbxLCTimeoutTimeCh10.Name = "tbxLCTimeoutTimeCh10";
             this.tbxLCTimeoutTimeCh10.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh10.TabIndex = 214;
             this.tbxLCTimeoutTimeCh10.Text = "FFFF";
             // 
-            // chkLC1AllowOverCh00
-            // 
-            this.chkLC1AllowOverCh00.Location = new System.Drawing.Point(215, 181);
-            this.chkLC1AllowOverCh00.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh00.Name = "chkLC1AllowOverCh00";
-            this.chkLC1AllowOverCh00.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh00.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh00.TabIndex = 108;
-            this.chkLC1AllowOverCh00.UseVisualStyleBackColor = true;
-            // 
             // tbxLCMaxOnCh10
             // 
-            this.tbxLCMaxOnCh10.Location = new System.Drawing.Point(937, 333);
+            this.tbxLCMaxOnCh10.Location = new System.Drawing.Point(937, 363);
             this.tbxLCMaxOnCh10.Name = "tbxLCMaxOnCh10";
             this.tbxLCMaxOnCh10.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh10.TabIndex = 213;
@@ -19637,7 +19611,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1AllowComTimeCh00
             // 
-            this.chkLC1AllowComTimeCh00.Location = new System.Drawing.Point(215, 270);
+            this.chkLC1AllowComTimeCh00.Location = new System.Drawing.Point(215, 300);
             this.chkLC1AllowComTimeCh00.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh00.Name = "chkLC1AllowComTimeCh00";
             this.chkLC1AllowComTimeCh00.Padding = new System.Windows.Forms.Padding(10);
@@ -19647,7 +19621,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxDurRecoveryCh10
             // 
-            this.tbxLCMaxDurRecoveryCh10.Location = new System.Drawing.Point(937, 363);
+            this.tbxLCMaxDurRecoveryCh10.Location = new System.Drawing.Point(937, 393);
             this.tbxLCMaxDurRecoveryCh10.Name = "tbxLCMaxDurRecoveryCh10";
             this.tbxLCMaxDurRecoveryCh10.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh10.TabIndex = 212;
@@ -19665,7 +19639,7 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh00.Location = new System.Drawing.Point(199, 241);
+            this.cmbLC1DirectionCh00.Location = new System.Drawing.Point(199, 271);
             this.cmbLC1DirectionCh00.Name = "cmbLC1DirectionCh00";
             this.cmbLC1DirectionCh00.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh00.TabIndex = 110;
@@ -19682,14 +19656,14 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh10.Location = new System.Drawing.Point(919, 241);
+            this.cmbLC1DirectionCh10.Location = new System.Drawing.Point(919, 271);
             this.cmbLC1DirectionCh10.Name = "cmbLC1DirectionCh10";
             this.cmbLC1DirectionCh10.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh10.TabIndex = 210;
             // 
             // tbxLCMaxDurRecoveryCh00
             // 
-            this.tbxLCMaxDurRecoveryCh00.Location = new System.Drawing.Point(217, 363);
+            this.tbxLCMaxDurRecoveryCh00.Location = new System.Drawing.Point(217, 393);
             this.tbxLCMaxDurRecoveryCh00.Name = "tbxLCMaxDurRecoveryCh00";
             this.tbxLCMaxDurRecoveryCh00.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh00.TabIndex = 112;
@@ -19697,7 +19671,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1AllowComTimeCh10
             // 
-            this.chkLC1AllowComTimeCh10.Location = new System.Drawing.Point(935, 270);
+            this.chkLC1AllowComTimeCh10.Location = new System.Drawing.Point(935, 300);
             this.chkLC1AllowComTimeCh10.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh10.Name = "chkLC1AllowComTimeCh10";
             this.chkLC1AllowComTimeCh10.Padding = new System.Windows.Forms.Padding(10);
@@ -19707,25 +19681,15 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxOnCh00
             // 
-            this.tbxLCMaxOnCh00.Location = new System.Drawing.Point(217, 333);
+            this.tbxLCMaxOnCh00.Location = new System.Drawing.Point(217, 363);
             this.tbxLCMaxOnCh00.Name = "tbxLCMaxOnCh00";
             this.tbxLCMaxOnCh00.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh00.TabIndex = 113;
             this.tbxLCMaxOnCh00.Text = "FFFF";
             // 
-            // chkLC1AllowOverCh10
-            // 
-            this.chkLC1AllowOverCh10.Location = new System.Drawing.Point(935, 181);
-            this.chkLC1AllowOverCh10.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh10.Name = "chkLC1AllowOverCh10";
-            this.chkLC1AllowOverCh10.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh10.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh10.TabIndex = 208;
-            this.chkLC1AllowOverCh10.UseVisualStyleBackColor = true;
-            // 
             // tbxLCTimeoutTimeCh00
             // 
-            this.tbxLCTimeoutTimeCh00.Location = new System.Drawing.Point(217, 303);
+            this.tbxLCTimeoutTimeCh00.Location = new System.Drawing.Point(217, 333);
             this.tbxLCTimeoutTimeCh00.Name = "tbxLCTimeoutTimeCh00";
             this.tbxLCTimeoutTimeCh00.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh00.TabIndex = 114;
@@ -19733,7 +19697,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1LockCh10
             // 
-            this.chkLC1LockCh10.Location = new System.Drawing.Point(935, 211);
+            this.chkLC1LockCh10.Location = new System.Drawing.Point(935, 241);
             this.chkLC1LockCh10.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh10.Name = "chkLC1LockCh10";
             this.chkLC1LockCh10.Padding = new System.Windows.Forms.Padding(10);
@@ -19743,7 +19707,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCUCAmpsCh00
             // 
-            this.tbxLCUCAmpsCh00.Location = new System.Drawing.Point(217, 393);
+            this.tbxLCUCAmpsCh00.Location = new System.Drawing.Point(217, 423);
             this.tbxLCUCAmpsCh00.Name = "tbxLCUCAmpsCh00";
             this.tbxLCUCAmpsCh00.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh00.TabIndex = 115;
@@ -19761,7 +19725,7 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh09.Location = new System.Drawing.Point(847, 423);
+            this.cmbLC1MeasCurTimeCh09.Location = new System.Drawing.Point(847, 453);
             this.cmbLC1MeasCurTimeCh09.Name = "cmbLC1MeasCurTimeCh09";
             this.cmbLC1MeasCurTimeCh09.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh09.TabIndex = 206;
@@ -19778,14 +19742,14 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh00.Location = new System.Drawing.Point(199, 423);
+            this.cmbLC1MeasCurTimeCh00.Location = new System.Drawing.Point(199, 453);
             this.cmbLC1MeasCurTimeCh00.Name = "cmbLC1MeasCurTimeCh00";
             this.cmbLC1MeasCurTimeCh00.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh00.TabIndex = 116;
             // 
             // tbxLCUCAmpsCh09
             // 
-            this.tbxLCUCAmpsCh09.Location = new System.Drawing.Point(865, 393);
+            this.tbxLCUCAmpsCh09.Location = new System.Drawing.Point(865, 423);
             this.tbxLCUCAmpsCh09.Name = "tbxLCUCAmpsCh09";
             this.tbxLCUCAmpsCh09.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh09.TabIndex = 205;
@@ -19793,7 +19757,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1LockCh01
             // 
-            this.chkLC1LockCh01.Location = new System.Drawing.Point(287, 211);
+            this.chkLC1LockCh01.Location = new System.Drawing.Point(287, 241);
             this.chkLC1LockCh01.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh01.Name = "chkLC1LockCh01";
             this.chkLC1LockCh01.Padding = new System.Windows.Forms.Padding(10);
@@ -19803,25 +19767,15 @@ namespace M1ConfigGenerator
             // 
             // tbxLCTimeoutTimeCh09
             // 
-            this.tbxLCTimeoutTimeCh09.Location = new System.Drawing.Point(865, 303);
+            this.tbxLCTimeoutTimeCh09.Location = new System.Drawing.Point(865, 333);
             this.tbxLCTimeoutTimeCh09.Name = "tbxLCTimeoutTimeCh09";
             this.tbxLCTimeoutTimeCh09.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh09.TabIndex = 204;
             this.tbxLCTimeoutTimeCh09.Text = "FFFF";
             // 
-            // chkLC1AllowOverCh01
-            // 
-            this.chkLC1AllowOverCh01.Location = new System.Drawing.Point(287, 181);
-            this.chkLC1AllowOverCh01.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh01.Name = "chkLC1AllowOverCh01";
-            this.chkLC1AllowOverCh01.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh01.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh01.TabIndex = 118;
-            this.chkLC1AllowOverCh01.UseVisualStyleBackColor = true;
-            // 
             // tbxLCMaxOnCh09
             // 
-            this.tbxLCMaxOnCh09.Location = new System.Drawing.Point(865, 333);
+            this.tbxLCMaxOnCh09.Location = new System.Drawing.Point(865, 363);
             this.tbxLCMaxOnCh09.Name = "tbxLCMaxOnCh09";
             this.tbxLCMaxOnCh09.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh09.TabIndex = 203;
@@ -19829,7 +19783,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1AllowComTimeCh01
             // 
-            this.chkLC1AllowComTimeCh01.Location = new System.Drawing.Point(287, 270);
+            this.chkLC1AllowComTimeCh01.Location = new System.Drawing.Point(287, 300);
             this.chkLC1AllowComTimeCh01.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh01.Name = "chkLC1AllowComTimeCh01";
             this.chkLC1AllowComTimeCh01.Padding = new System.Windows.Forms.Padding(10);
@@ -19839,7 +19793,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxDurRecoveryCh09
             // 
-            this.tbxLCMaxDurRecoveryCh09.Location = new System.Drawing.Point(865, 363);
+            this.tbxLCMaxDurRecoveryCh09.Location = new System.Drawing.Point(865, 393);
             this.tbxLCMaxDurRecoveryCh09.Name = "tbxLCMaxDurRecoveryCh09";
             this.tbxLCMaxDurRecoveryCh09.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh09.TabIndex = 202;
@@ -19857,7 +19811,7 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh01.Location = new System.Drawing.Point(271, 241);
+            this.cmbLC1DirectionCh01.Location = new System.Drawing.Point(271, 271);
             this.cmbLC1DirectionCh01.Name = "cmbLC1DirectionCh01";
             this.cmbLC1DirectionCh01.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh01.TabIndex = 120;
@@ -19874,14 +19828,14 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh09.Location = new System.Drawing.Point(847, 241);
+            this.cmbLC1DirectionCh09.Location = new System.Drawing.Point(847, 271);
             this.cmbLC1DirectionCh09.Name = "cmbLC1DirectionCh09";
             this.cmbLC1DirectionCh09.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh09.TabIndex = 200;
             // 
             // tbxLCMaxDurRecoveryCh01
             // 
-            this.tbxLCMaxDurRecoveryCh01.Location = new System.Drawing.Point(289, 363);
+            this.tbxLCMaxDurRecoveryCh01.Location = new System.Drawing.Point(289, 393);
             this.tbxLCMaxDurRecoveryCh01.Name = "tbxLCMaxDurRecoveryCh01";
             this.tbxLCMaxDurRecoveryCh01.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh01.TabIndex = 122;
@@ -19889,7 +19843,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1AllowComTimeCh09
             // 
-            this.chkLC1AllowComTimeCh09.Location = new System.Drawing.Point(863, 270);
+            this.chkLC1AllowComTimeCh09.Location = new System.Drawing.Point(863, 300);
             this.chkLC1AllowComTimeCh09.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh09.Name = "chkLC1AllowComTimeCh09";
             this.chkLC1AllowComTimeCh09.Padding = new System.Windows.Forms.Padding(10);
@@ -19899,25 +19853,15 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxOnCh01
             // 
-            this.tbxLCMaxOnCh01.Location = new System.Drawing.Point(289, 333);
+            this.tbxLCMaxOnCh01.Location = new System.Drawing.Point(289, 363);
             this.tbxLCMaxOnCh01.Name = "tbxLCMaxOnCh01";
             this.tbxLCMaxOnCh01.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh01.TabIndex = 123;
             this.tbxLCMaxOnCh01.Text = "FFFF";
             // 
-            // chkLC1AllowOverCh09
-            // 
-            this.chkLC1AllowOverCh09.Location = new System.Drawing.Point(863, 181);
-            this.chkLC1AllowOverCh09.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh09.Name = "chkLC1AllowOverCh09";
-            this.chkLC1AllowOverCh09.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh09.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh09.TabIndex = 198;
-            this.chkLC1AllowOverCh09.UseVisualStyleBackColor = true;
-            // 
             // tbxLCTimeoutTimeCh01
             // 
-            this.tbxLCTimeoutTimeCh01.Location = new System.Drawing.Point(289, 303);
+            this.tbxLCTimeoutTimeCh01.Location = new System.Drawing.Point(289, 333);
             this.tbxLCTimeoutTimeCh01.Name = "tbxLCTimeoutTimeCh01";
             this.tbxLCTimeoutTimeCh01.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh01.TabIndex = 124;
@@ -19925,7 +19869,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1LockCh09
             // 
-            this.chkLC1LockCh09.Location = new System.Drawing.Point(863, 211);
+            this.chkLC1LockCh09.Location = new System.Drawing.Point(863, 241);
             this.chkLC1LockCh09.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh09.Name = "chkLC1LockCh09";
             this.chkLC1LockCh09.Padding = new System.Windows.Forms.Padding(10);
@@ -19935,7 +19879,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCUCAmpsCh01
             // 
-            this.tbxLCUCAmpsCh01.Location = new System.Drawing.Point(289, 393);
+            this.tbxLCUCAmpsCh01.Location = new System.Drawing.Point(289, 423);
             this.tbxLCUCAmpsCh01.Name = "tbxLCUCAmpsCh01";
             this.tbxLCUCAmpsCh01.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh01.TabIndex = 125;
@@ -19953,7 +19897,7 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh08.Location = new System.Drawing.Point(775, 423);
+            this.cmbLC1MeasCurTimeCh08.Location = new System.Drawing.Point(775, 453);
             this.cmbLC1MeasCurTimeCh08.Name = "cmbLC1MeasCurTimeCh08";
             this.cmbLC1MeasCurTimeCh08.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh08.TabIndex = 196;
@@ -19970,14 +19914,14 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh01.Location = new System.Drawing.Point(271, 423);
+            this.cmbLC1MeasCurTimeCh01.Location = new System.Drawing.Point(271, 453);
             this.cmbLC1MeasCurTimeCh01.Name = "cmbLC1MeasCurTimeCh01";
             this.cmbLC1MeasCurTimeCh01.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh01.TabIndex = 126;
             // 
             // tbxLCUCAmpsCh08
             // 
-            this.tbxLCUCAmpsCh08.Location = new System.Drawing.Point(793, 393);
+            this.tbxLCUCAmpsCh08.Location = new System.Drawing.Point(793, 423);
             this.tbxLCUCAmpsCh08.Name = "tbxLCUCAmpsCh08";
             this.tbxLCUCAmpsCh08.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh08.TabIndex = 195;
@@ -19985,7 +19929,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1LockCh02
             // 
-            this.chkLC1LockCh02.Location = new System.Drawing.Point(359, 211);
+            this.chkLC1LockCh02.Location = new System.Drawing.Point(359, 241);
             this.chkLC1LockCh02.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh02.Name = "chkLC1LockCh02";
             this.chkLC1LockCh02.Padding = new System.Windows.Forms.Padding(10);
@@ -19995,25 +19939,15 @@ namespace M1ConfigGenerator
             // 
             // tbxLCTimeoutTimeCh08
             // 
-            this.tbxLCTimeoutTimeCh08.Location = new System.Drawing.Point(793, 303);
+            this.tbxLCTimeoutTimeCh08.Location = new System.Drawing.Point(793, 333);
             this.tbxLCTimeoutTimeCh08.Name = "tbxLCTimeoutTimeCh08";
             this.tbxLCTimeoutTimeCh08.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh08.TabIndex = 194;
             this.tbxLCTimeoutTimeCh08.Text = "FFFF";
             // 
-            // chkLC1AllowOverCh02
-            // 
-            this.chkLC1AllowOverCh02.Location = new System.Drawing.Point(359, 181);
-            this.chkLC1AllowOverCh02.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh02.Name = "chkLC1AllowOverCh02";
-            this.chkLC1AllowOverCh02.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh02.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh02.TabIndex = 128;
-            this.chkLC1AllowOverCh02.UseVisualStyleBackColor = true;
-            // 
             // tbxLCMaxOnCh08
             // 
-            this.tbxLCMaxOnCh08.Location = new System.Drawing.Point(793, 333);
+            this.tbxLCMaxOnCh08.Location = new System.Drawing.Point(793, 363);
             this.tbxLCMaxOnCh08.Name = "tbxLCMaxOnCh08";
             this.tbxLCMaxOnCh08.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh08.TabIndex = 193;
@@ -20021,7 +19955,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1AllowComTimeCh02
             // 
-            this.chkLC1AllowComTimeCh02.Location = new System.Drawing.Point(359, 270);
+            this.chkLC1AllowComTimeCh02.Location = new System.Drawing.Point(359, 300);
             this.chkLC1AllowComTimeCh02.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh02.Name = "chkLC1AllowComTimeCh02";
             this.chkLC1AllowComTimeCh02.Padding = new System.Windows.Forms.Padding(10);
@@ -20031,7 +19965,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxDurRecoveryCh08
             // 
-            this.tbxLCMaxDurRecoveryCh08.Location = new System.Drawing.Point(793, 363);
+            this.tbxLCMaxDurRecoveryCh08.Location = new System.Drawing.Point(793, 393);
             this.tbxLCMaxDurRecoveryCh08.Name = "tbxLCMaxDurRecoveryCh08";
             this.tbxLCMaxDurRecoveryCh08.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh08.TabIndex = 192;
@@ -20049,7 +19983,7 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh02.Location = new System.Drawing.Point(343, 241);
+            this.cmbLC1DirectionCh02.Location = new System.Drawing.Point(343, 271);
             this.cmbLC1DirectionCh02.Name = "cmbLC1DirectionCh02";
             this.cmbLC1DirectionCh02.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh02.TabIndex = 130;
@@ -20066,14 +20000,14 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh08.Location = new System.Drawing.Point(775, 241);
+            this.cmbLC1DirectionCh08.Location = new System.Drawing.Point(775, 271);
             this.cmbLC1DirectionCh08.Name = "cmbLC1DirectionCh08";
             this.cmbLC1DirectionCh08.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh08.TabIndex = 190;
             // 
             // tbxLCMaxDurRecoveryCh02
             // 
-            this.tbxLCMaxDurRecoveryCh02.Location = new System.Drawing.Point(361, 363);
+            this.tbxLCMaxDurRecoveryCh02.Location = new System.Drawing.Point(361, 393);
             this.tbxLCMaxDurRecoveryCh02.Name = "tbxLCMaxDurRecoveryCh02";
             this.tbxLCMaxDurRecoveryCh02.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh02.TabIndex = 132;
@@ -20081,7 +20015,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1AllowComTimeCh08
             // 
-            this.chkLC1AllowComTimeCh08.Location = new System.Drawing.Point(791, 270);
+            this.chkLC1AllowComTimeCh08.Location = new System.Drawing.Point(791, 300);
             this.chkLC1AllowComTimeCh08.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh08.Name = "chkLC1AllowComTimeCh08";
             this.chkLC1AllowComTimeCh08.Padding = new System.Windows.Forms.Padding(10);
@@ -20091,25 +20025,15 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxOnCh02
             // 
-            this.tbxLCMaxOnCh02.Location = new System.Drawing.Point(361, 333);
+            this.tbxLCMaxOnCh02.Location = new System.Drawing.Point(361, 363);
             this.tbxLCMaxOnCh02.Name = "tbxLCMaxOnCh02";
             this.tbxLCMaxOnCh02.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh02.TabIndex = 133;
             this.tbxLCMaxOnCh02.Text = "FFFF";
             // 
-            // chkLC1AllowOverCh08
-            // 
-            this.chkLC1AllowOverCh08.Location = new System.Drawing.Point(791, 181);
-            this.chkLC1AllowOverCh08.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh08.Name = "chkLC1AllowOverCh08";
-            this.chkLC1AllowOverCh08.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh08.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh08.TabIndex = 188;
-            this.chkLC1AllowOverCh08.UseVisualStyleBackColor = true;
-            // 
             // tbxLCTimeoutTimeCh02
             // 
-            this.tbxLCTimeoutTimeCh02.Location = new System.Drawing.Point(361, 303);
+            this.tbxLCTimeoutTimeCh02.Location = new System.Drawing.Point(361, 333);
             this.tbxLCTimeoutTimeCh02.Name = "tbxLCTimeoutTimeCh02";
             this.tbxLCTimeoutTimeCh02.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh02.TabIndex = 134;
@@ -20117,7 +20041,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1LockCh08
             // 
-            this.chkLC1LockCh08.Location = new System.Drawing.Point(791, 211);
+            this.chkLC1LockCh08.Location = new System.Drawing.Point(791, 241);
             this.chkLC1LockCh08.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh08.Name = "chkLC1LockCh08";
             this.chkLC1LockCh08.Padding = new System.Windows.Forms.Padding(10);
@@ -20127,7 +20051,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCUCAmpsCh02
             // 
-            this.tbxLCUCAmpsCh02.Location = new System.Drawing.Point(361, 393);
+            this.tbxLCUCAmpsCh02.Location = new System.Drawing.Point(361, 423);
             this.tbxLCUCAmpsCh02.Name = "tbxLCUCAmpsCh02";
             this.tbxLCUCAmpsCh02.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh02.TabIndex = 135;
@@ -20145,7 +20069,7 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh07.Location = new System.Drawing.Point(703, 423);
+            this.cmbLC1MeasCurTimeCh07.Location = new System.Drawing.Point(703, 453);
             this.cmbLC1MeasCurTimeCh07.Name = "cmbLC1MeasCurTimeCh07";
             this.cmbLC1MeasCurTimeCh07.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh07.TabIndex = 186;
@@ -20162,14 +20086,14 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh02.Location = new System.Drawing.Point(343, 423);
+            this.cmbLC1MeasCurTimeCh02.Location = new System.Drawing.Point(343, 453);
             this.cmbLC1MeasCurTimeCh02.Name = "cmbLC1MeasCurTimeCh02";
             this.cmbLC1MeasCurTimeCh02.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh02.TabIndex = 136;
             // 
             // tbxLCUCAmpsCh07
             // 
-            this.tbxLCUCAmpsCh07.Location = new System.Drawing.Point(721, 393);
+            this.tbxLCUCAmpsCh07.Location = new System.Drawing.Point(721, 423);
             this.tbxLCUCAmpsCh07.Name = "tbxLCUCAmpsCh07";
             this.tbxLCUCAmpsCh07.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh07.TabIndex = 185;
@@ -20177,7 +20101,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1LockCh03
             // 
-            this.chkLC1LockCh03.Location = new System.Drawing.Point(431, 211);
+            this.chkLC1LockCh03.Location = new System.Drawing.Point(431, 241);
             this.chkLC1LockCh03.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh03.Name = "chkLC1LockCh03";
             this.chkLC1LockCh03.Padding = new System.Windows.Forms.Padding(10);
@@ -20187,25 +20111,15 @@ namespace M1ConfigGenerator
             // 
             // tbxLCTimeoutTimeCh07
             // 
-            this.tbxLCTimeoutTimeCh07.Location = new System.Drawing.Point(721, 303);
+            this.tbxLCTimeoutTimeCh07.Location = new System.Drawing.Point(721, 333);
             this.tbxLCTimeoutTimeCh07.Name = "tbxLCTimeoutTimeCh07";
             this.tbxLCTimeoutTimeCh07.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh07.TabIndex = 184;
             this.tbxLCTimeoutTimeCh07.Text = "FFFF";
             // 
-            // chkLC1AllowOverCh03
-            // 
-            this.chkLC1AllowOverCh03.Location = new System.Drawing.Point(431, 181);
-            this.chkLC1AllowOverCh03.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh03.Name = "chkLC1AllowOverCh03";
-            this.chkLC1AllowOverCh03.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh03.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh03.TabIndex = 138;
-            this.chkLC1AllowOverCh03.UseVisualStyleBackColor = true;
-            // 
             // tbxLCMaxOnCh07
             // 
-            this.tbxLCMaxOnCh07.Location = new System.Drawing.Point(721, 333);
+            this.tbxLCMaxOnCh07.Location = new System.Drawing.Point(721, 363);
             this.tbxLCMaxOnCh07.Name = "tbxLCMaxOnCh07";
             this.tbxLCMaxOnCh07.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh07.TabIndex = 183;
@@ -20213,7 +20127,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1AllowComTimeCh03
             // 
-            this.chkLC1AllowComTimeCh03.Location = new System.Drawing.Point(431, 270);
+            this.chkLC1AllowComTimeCh03.Location = new System.Drawing.Point(431, 300);
             this.chkLC1AllowComTimeCh03.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh03.Name = "chkLC1AllowComTimeCh03";
             this.chkLC1AllowComTimeCh03.Padding = new System.Windows.Forms.Padding(10);
@@ -20223,7 +20137,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxDurRecoveryCh07
             // 
-            this.tbxLCMaxDurRecoveryCh07.Location = new System.Drawing.Point(721, 363);
+            this.tbxLCMaxDurRecoveryCh07.Location = new System.Drawing.Point(721, 393);
             this.tbxLCMaxDurRecoveryCh07.Name = "tbxLCMaxDurRecoveryCh07";
             this.tbxLCMaxDurRecoveryCh07.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh07.TabIndex = 182;
@@ -20241,7 +20155,7 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh03.Location = new System.Drawing.Point(415, 241);
+            this.cmbLC1DirectionCh03.Location = new System.Drawing.Point(415, 271);
             this.cmbLC1DirectionCh03.Name = "cmbLC1DirectionCh03";
             this.cmbLC1DirectionCh03.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh03.TabIndex = 140;
@@ -20258,14 +20172,14 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh07.Location = new System.Drawing.Point(703, 241);
+            this.cmbLC1DirectionCh07.Location = new System.Drawing.Point(703, 271);
             this.cmbLC1DirectionCh07.Name = "cmbLC1DirectionCh07";
             this.cmbLC1DirectionCh07.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh07.TabIndex = 180;
             // 
             // tbxLCMaxDurRecoveryCh03
             // 
-            this.tbxLCMaxDurRecoveryCh03.Location = new System.Drawing.Point(433, 363);
+            this.tbxLCMaxDurRecoveryCh03.Location = new System.Drawing.Point(433, 393);
             this.tbxLCMaxDurRecoveryCh03.Name = "tbxLCMaxDurRecoveryCh03";
             this.tbxLCMaxDurRecoveryCh03.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh03.TabIndex = 142;
@@ -20273,7 +20187,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1AllowComTimeCh07
             // 
-            this.chkLC1AllowComTimeCh07.Location = new System.Drawing.Point(719, 270);
+            this.chkLC1AllowComTimeCh07.Location = new System.Drawing.Point(719, 300);
             this.chkLC1AllowComTimeCh07.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh07.Name = "chkLC1AllowComTimeCh07";
             this.chkLC1AllowComTimeCh07.Padding = new System.Windows.Forms.Padding(10);
@@ -20283,25 +20197,15 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxOnCh03
             // 
-            this.tbxLCMaxOnCh03.Location = new System.Drawing.Point(433, 333);
+            this.tbxLCMaxOnCh03.Location = new System.Drawing.Point(433, 363);
             this.tbxLCMaxOnCh03.Name = "tbxLCMaxOnCh03";
             this.tbxLCMaxOnCh03.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh03.TabIndex = 143;
             this.tbxLCMaxOnCh03.Text = "FFFF";
             // 
-            // chkLC1AllowOverCh07
-            // 
-            this.chkLC1AllowOverCh07.Location = new System.Drawing.Point(719, 181);
-            this.chkLC1AllowOverCh07.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh07.Name = "chkLC1AllowOverCh07";
-            this.chkLC1AllowOverCh07.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh07.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh07.TabIndex = 178;
-            this.chkLC1AllowOverCh07.UseVisualStyleBackColor = true;
-            // 
             // tbxLCTimeoutTimeCh03
             // 
-            this.tbxLCTimeoutTimeCh03.Location = new System.Drawing.Point(433, 303);
+            this.tbxLCTimeoutTimeCh03.Location = new System.Drawing.Point(433, 333);
             this.tbxLCTimeoutTimeCh03.Name = "tbxLCTimeoutTimeCh03";
             this.tbxLCTimeoutTimeCh03.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh03.TabIndex = 144;
@@ -20309,7 +20213,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1LockCh07
             // 
-            this.chkLC1LockCh07.Location = new System.Drawing.Point(719, 211);
+            this.chkLC1LockCh07.Location = new System.Drawing.Point(719, 241);
             this.chkLC1LockCh07.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh07.Name = "chkLC1LockCh07";
             this.chkLC1LockCh07.Padding = new System.Windows.Forms.Padding(10);
@@ -20319,7 +20223,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCUCAmpsCh03
             // 
-            this.tbxLCUCAmpsCh03.Location = new System.Drawing.Point(433, 393);
+            this.tbxLCUCAmpsCh03.Location = new System.Drawing.Point(433, 423);
             this.tbxLCUCAmpsCh03.Name = "tbxLCUCAmpsCh03";
             this.tbxLCUCAmpsCh03.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh03.TabIndex = 145;
@@ -20337,7 +20241,7 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh06.Location = new System.Drawing.Point(631, 423);
+            this.cmbLC1MeasCurTimeCh06.Location = new System.Drawing.Point(631, 453);
             this.cmbLC1MeasCurTimeCh06.Name = "cmbLC1MeasCurTimeCh06";
             this.cmbLC1MeasCurTimeCh06.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh06.TabIndex = 176;
@@ -20354,14 +20258,14 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh03.Location = new System.Drawing.Point(415, 423);
+            this.cmbLC1MeasCurTimeCh03.Location = new System.Drawing.Point(415, 453);
             this.cmbLC1MeasCurTimeCh03.Name = "cmbLC1MeasCurTimeCh03";
             this.cmbLC1MeasCurTimeCh03.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh03.TabIndex = 146;
             // 
             // tbxLCUCAmpsCh06
             // 
-            this.tbxLCUCAmpsCh06.Location = new System.Drawing.Point(649, 393);
+            this.tbxLCUCAmpsCh06.Location = new System.Drawing.Point(649, 423);
             this.tbxLCUCAmpsCh06.Name = "tbxLCUCAmpsCh06";
             this.tbxLCUCAmpsCh06.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh06.TabIndex = 175;
@@ -20369,7 +20273,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1LockCh04
             // 
-            this.chkLC1LockCh04.Location = new System.Drawing.Point(503, 211);
+            this.chkLC1LockCh04.Location = new System.Drawing.Point(503, 241);
             this.chkLC1LockCh04.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh04.Name = "chkLC1LockCh04";
             this.chkLC1LockCh04.Padding = new System.Windows.Forms.Padding(10);
@@ -20379,25 +20283,15 @@ namespace M1ConfigGenerator
             // 
             // tbxLCTimeoutTimeCh06
             // 
-            this.tbxLCTimeoutTimeCh06.Location = new System.Drawing.Point(649, 303);
+            this.tbxLCTimeoutTimeCh06.Location = new System.Drawing.Point(649, 333);
             this.tbxLCTimeoutTimeCh06.Name = "tbxLCTimeoutTimeCh06";
             this.tbxLCTimeoutTimeCh06.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh06.TabIndex = 174;
             this.tbxLCTimeoutTimeCh06.Text = "FFFF";
             // 
-            // chkLC1AllowOverCh04
-            // 
-            this.chkLC1AllowOverCh04.Location = new System.Drawing.Point(503, 181);
-            this.chkLC1AllowOverCh04.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh04.Name = "chkLC1AllowOverCh04";
-            this.chkLC1AllowOverCh04.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh04.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh04.TabIndex = 148;
-            this.chkLC1AllowOverCh04.UseVisualStyleBackColor = true;
-            // 
             // tbxLCMaxOnCh06
             // 
-            this.tbxLCMaxOnCh06.Location = new System.Drawing.Point(649, 333);
+            this.tbxLCMaxOnCh06.Location = new System.Drawing.Point(649, 363);
             this.tbxLCMaxOnCh06.Name = "tbxLCMaxOnCh06";
             this.tbxLCMaxOnCh06.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh06.TabIndex = 173;
@@ -20405,7 +20299,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1AllowComTimeCh04
             // 
-            this.chkLC1AllowComTimeCh04.Location = new System.Drawing.Point(503, 270);
+            this.chkLC1AllowComTimeCh04.Location = new System.Drawing.Point(503, 300);
             this.chkLC1AllowComTimeCh04.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh04.Name = "chkLC1AllowComTimeCh04";
             this.chkLC1AllowComTimeCh04.Padding = new System.Windows.Forms.Padding(10);
@@ -20415,7 +20309,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxDurRecoveryCh06
             // 
-            this.tbxLCMaxDurRecoveryCh06.Location = new System.Drawing.Point(649, 363);
+            this.tbxLCMaxDurRecoveryCh06.Location = new System.Drawing.Point(649, 393);
             this.tbxLCMaxDurRecoveryCh06.Name = "tbxLCMaxDurRecoveryCh06";
             this.tbxLCMaxDurRecoveryCh06.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh06.TabIndex = 172;
@@ -20433,7 +20327,7 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh04.Location = new System.Drawing.Point(487, 241);
+            this.cmbLC1DirectionCh04.Location = new System.Drawing.Point(487, 271);
             this.cmbLC1DirectionCh04.Name = "cmbLC1DirectionCh04";
             this.cmbLC1DirectionCh04.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh04.TabIndex = 150;
@@ -20450,14 +20344,14 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh06.Location = new System.Drawing.Point(631, 241);
+            this.cmbLC1DirectionCh06.Location = new System.Drawing.Point(631, 271);
             this.cmbLC1DirectionCh06.Name = "cmbLC1DirectionCh06";
             this.cmbLC1DirectionCh06.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh06.TabIndex = 170;
             // 
             // tbxLCMaxDurRecoveryCh04
             // 
-            this.tbxLCMaxDurRecoveryCh04.Location = new System.Drawing.Point(505, 363);
+            this.tbxLCMaxDurRecoveryCh04.Location = new System.Drawing.Point(505, 393);
             this.tbxLCMaxDurRecoveryCh04.Name = "tbxLCMaxDurRecoveryCh04";
             this.tbxLCMaxDurRecoveryCh04.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh04.TabIndex = 152;
@@ -20465,7 +20359,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1AllowComTimeCh06
             // 
-            this.chkLC1AllowComTimeCh06.Location = new System.Drawing.Point(647, 270);
+            this.chkLC1AllowComTimeCh06.Location = new System.Drawing.Point(647, 300);
             this.chkLC1AllowComTimeCh06.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh06.Name = "chkLC1AllowComTimeCh06";
             this.chkLC1AllowComTimeCh06.Padding = new System.Windows.Forms.Padding(10);
@@ -20475,25 +20369,15 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxOnCh04
             // 
-            this.tbxLCMaxOnCh04.Location = new System.Drawing.Point(505, 333);
+            this.tbxLCMaxOnCh04.Location = new System.Drawing.Point(505, 363);
             this.tbxLCMaxOnCh04.Name = "tbxLCMaxOnCh04";
             this.tbxLCMaxOnCh04.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh04.TabIndex = 153;
             this.tbxLCMaxOnCh04.Text = "FFFF";
             // 
-            // chkLC1AllowOverCh06
-            // 
-            this.chkLC1AllowOverCh06.Location = new System.Drawing.Point(647, 181);
-            this.chkLC1AllowOverCh06.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh06.Name = "chkLC1AllowOverCh06";
-            this.chkLC1AllowOverCh06.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh06.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh06.TabIndex = 168;
-            this.chkLC1AllowOverCh06.UseVisualStyleBackColor = true;
-            // 
             // tbxLCTimeoutTimeCh04
             // 
-            this.tbxLCTimeoutTimeCh04.Location = new System.Drawing.Point(505, 303);
+            this.tbxLCTimeoutTimeCh04.Location = new System.Drawing.Point(505, 333);
             this.tbxLCTimeoutTimeCh04.Name = "tbxLCTimeoutTimeCh04";
             this.tbxLCTimeoutTimeCh04.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh04.TabIndex = 154;
@@ -20501,7 +20385,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1LockCh06
             // 
-            this.chkLC1LockCh06.Location = new System.Drawing.Point(647, 211);
+            this.chkLC1LockCh06.Location = new System.Drawing.Point(647, 241);
             this.chkLC1LockCh06.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh06.Name = "chkLC1LockCh06";
             this.chkLC1LockCh06.Padding = new System.Windows.Forms.Padding(10);
@@ -20511,7 +20395,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCUCAmpsCh04
             // 
-            this.tbxLCUCAmpsCh04.Location = new System.Drawing.Point(505, 393);
+            this.tbxLCUCAmpsCh04.Location = new System.Drawing.Point(505, 423);
             this.tbxLCUCAmpsCh04.Name = "tbxLCUCAmpsCh04";
             this.tbxLCUCAmpsCh04.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh04.TabIndex = 155;
@@ -20529,7 +20413,7 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh05.Location = new System.Drawing.Point(559, 423);
+            this.cmbLC1MeasCurTimeCh05.Location = new System.Drawing.Point(559, 453);
             this.cmbLC1MeasCurTimeCh05.Name = "cmbLC1MeasCurTimeCh05";
             this.cmbLC1MeasCurTimeCh05.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh05.TabIndex = 166;
@@ -20546,14 +20430,14 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbLC1MeasCurTimeCh04.Location = new System.Drawing.Point(487, 423);
+            this.cmbLC1MeasCurTimeCh04.Location = new System.Drawing.Point(487, 453);
             this.cmbLC1MeasCurTimeCh04.Name = "cmbLC1MeasCurTimeCh04";
             this.cmbLC1MeasCurTimeCh04.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1MeasCurTimeCh04.TabIndex = 156;
             // 
             // tbxLCUCAmpsCh05
             // 
-            this.tbxLCUCAmpsCh05.Location = new System.Drawing.Point(577, 393);
+            this.tbxLCUCAmpsCh05.Location = new System.Drawing.Point(577, 423);
             this.tbxLCUCAmpsCh05.Name = "tbxLCUCAmpsCh05";
             this.tbxLCUCAmpsCh05.Size = new System.Drawing.Size(32, 20);
             this.tbxLCUCAmpsCh05.TabIndex = 165;
@@ -20561,7 +20445,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1LockCh05
             // 
-            this.chkLC1LockCh05.Location = new System.Drawing.Point(575, 211);
+            this.chkLC1LockCh05.Location = new System.Drawing.Point(575, 241);
             this.chkLC1LockCh05.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1LockCh05.Name = "chkLC1LockCh05";
             this.chkLC1LockCh05.Padding = new System.Windows.Forms.Padding(10);
@@ -20571,25 +20455,15 @@ namespace M1ConfigGenerator
             // 
             // tbxLCTimeoutTimeCh05
             // 
-            this.tbxLCTimeoutTimeCh05.Location = new System.Drawing.Point(577, 303);
+            this.tbxLCTimeoutTimeCh05.Location = new System.Drawing.Point(577, 333);
             this.tbxLCTimeoutTimeCh05.Name = "tbxLCTimeoutTimeCh05";
             this.tbxLCTimeoutTimeCh05.Size = new System.Drawing.Size(32, 20);
             this.tbxLCTimeoutTimeCh05.TabIndex = 164;
             this.tbxLCTimeoutTimeCh05.Text = "FFFF";
             // 
-            // chkLC1AllowOverCh05
-            // 
-            this.chkLC1AllowOverCh05.Location = new System.Drawing.Point(575, 181);
-            this.chkLC1AllowOverCh05.Margin = new System.Windows.Forms.Padding(0);
-            this.chkLC1AllowOverCh05.Name = "chkLC1AllowOverCh05";
-            this.chkLC1AllowOverCh05.Padding = new System.Windows.Forms.Padding(10);
-            this.chkLC1AllowOverCh05.Size = new System.Drawing.Size(35, 24);
-            this.chkLC1AllowOverCh05.TabIndex = 158;
-            this.chkLC1AllowOverCh05.UseVisualStyleBackColor = true;
-            // 
             // tbxLCMaxOnCh05
             // 
-            this.tbxLCMaxOnCh05.Location = new System.Drawing.Point(577, 333);
+            this.tbxLCMaxOnCh05.Location = new System.Drawing.Point(577, 363);
             this.tbxLCMaxOnCh05.Name = "tbxLCMaxOnCh05";
             this.tbxLCMaxOnCh05.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxOnCh05.TabIndex = 163;
@@ -20597,7 +20471,7 @@ namespace M1ConfigGenerator
             // 
             // chkLC1AllowComTimeCh05
             // 
-            this.chkLC1AllowComTimeCh05.Location = new System.Drawing.Point(575, 270);
+            this.chkLC1AllowComTimeCh05.Location = new System.Drawing.Point(575, 300);
             this.chkLC1AllowComTimeCh05.Margin = new System.Windows.Forms.Padding(0);
             this.chkLC1AllowComTimeCh05.Name = "chkLC1AllowComTimeCh05";
             this.chkLC1AllowComTimeCh05.Padding = new System.Windows.Forms.Padding(10);
@@ -20607,7 +20481,7 @@ namespace M1ConfigGenerator
             // 
             // tbxLCMaxDurRecoveryCh05
             // 
-            this.tbxLCMaxDurRecoveryCh05.Location = new System.Drawing.Point(577, 363);
+            this.tbxLCMaxDurRecoveryCh05.Location = new System.Drawing.Point(577, 393);
             this.tbxLCMaxDurRecoveryCh05.Name = "tbxLCMaxDurRecoveryCh05";
             this.tbxLCMaxDurRecoveryCh05.Size = new System.Drawing.Size(32, 20);
             this.tbxLCMaxDurRecoveryCh05.TabIndex = 162;
@@ -20625,7 +20499,7 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbLC1DirectionCh05.Location = new System.Drawing.Point(559, 241);
+            this.cmbLC1DirectionCh05.Location = new System.Drawing.Point(559, 271);
             this.cmbLC1DirectionCh05.Name = "cmbLC1DirectionCh05";
             this.cmbLC1DirectionCh05.Size = new System.Drawing.Size(66, 21);
             this.cmbLC1DirectionCh05.TabIndex = 160;
@@ -26547,16 +26421,539 @@ namespace M1ConfigGenerator
             this.btnHRCard2.Visible = false;
             this.btnHRCard2.Click += new System.EventHandler(this.btnHRCard2_Click);
             // 
+            // cmbLCOverrideInputReverseCh15
+            // 
+            this.cmbLCOverrideInputReverseCh15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh15.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh15.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh15.Location = new System.Drawing.Point(1279, 181);
+            this.cmbLCOverrideInputReverseCh15.Name = "cmbLCOverrideInputReverseCh15";
+            this.cmbLCOverrideInputReverseCh15.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh15.TabIndex = 447;
+            // 
+            // cmbLCOverrideInputReverseCh14
+            // 
+            this.cmbLCOverrideInputReverseCh14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh14.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh14.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh14.Location = new System.Drawing.Point(1207, 181);
+            this.cmbLCOverrideInputReverseCh14.Name = "cmbLCOverrideInputReverseCh14";
+            this.cmbLCOverrideInputReverseCh14.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh14.TabIndex = 446;
+            // 
+            // cmbLCOverrideInputReverseCh13
+            // 
+            this.cmbLCOverrideInputReverseCh13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh13.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh13.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh13.Location = new System.Drawing.Point(1135, 181);
+            this.cmbLCOverrideInputReverseCh13.Name = "cmbLCOverrideInputReverseCh13";
+            this.cmbLCOverrideInputReverseCh13.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh13.TabIndex = 445;
+            // 
+            // cmbLCOverrideInputReverseCh12
+            // 
+            this.cmbLCOverrideInputReverseCh12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh12.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh12.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh12.Location = new System.Drawing.Point(1063, 181);
+            this.cmbLCOverrideInputReverseCh12.Name = "cmbLCOverrideInputReverseCh12";
+            this.cmbLCOverrideInputReverseCh12.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh12.TabIndex = 444;
+            // 
+            // cmbLCOverrideInputReverseCh11
+            // 
+            this.cmbLCOverrideInputReverseCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh11.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh11.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh11.Location = new System.Drawing.Point(991, 181);
+            this.cmbLCOverrideInputReverseCh11.Name = "cmbLCOverrideInputReverseCh11";
+            this.cmbLCOverrideInputReverseCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh11.TabIndex = 443;
+            // 
+            // cmbLCOverrideInputReverseCh10
+            // 
+            this.cmbLCOverrideInputReverseCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh10.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh10.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh10.Location = new System.Drawing.Point(919, 181);
+            this.cmbLCOverrideInputReverseCh10.Name = "cmbLCOverrideInputReverseCh10";
+            this.cmbLCOverrideInputReverseCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh10.TabIndex = 442;
+            // 
+            // cmbLCOverrideInputReverseCh09
+            // 
+            this.cmbLCOverrideInputReverseCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh09.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh09.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh09.Location = new System.Drawing.Point(847, 181);
+            this.cmbLCOverrideInputReverseCh09.Name = "cmbLCOverrideInputReverseCh09";
+            this.cmbLCOverrideInputReverseCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh09.TabIndex = 441;
+            // 
+            // cmbLCOverrideInputReverseCh08
+            // 
+            this.cmbLCOverrideInputReverseCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh08.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh08.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh08.Location = new System.Drawing.Point(775, 181);
+            this.cmbLCOverrideInputReverseCh08.Name = "cmbLCOverrideInputReverseCh08";
+            this.cmbLCOverrideInputReverseCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh08.TabIndex = 440;
+            // 
+            // cmbLCOverrideInputReverseCh07
+            // 
+            this.cmbLCOverrideInputReverseCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh07.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh07.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh07.Location = new System.Drawing.Point(703, 181);
+            this.cmbLCOverrideInputReverseCh07.Name = "cmbLCOverrideInputReverseCh07";
+            this.cmbLCOverrideInputReverseCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh07.TabIndex = 439;
+            // 
+            // cmbLCOverrideInputReverseCh06
+            // 
+            this.cmbLCOverrideInputReverseCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh06.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh06.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh06.Location = new System.Drawing.Point(631, 181);
+            this.cmbLCOverrideInputReverseCh06.Name = "cmbLCOverrideInputReverseCh06";
+            this.cmbLCOverrideInputReverseCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh06.TabIndex = 438;
+            // 
+            // cmbLCOverrideInputReverseCh05
+            // 
+            this.cmbLCOverrideInputReverseCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh05.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh05.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh05.Location = new System.Drawing.Point(559, 181);
+            this.cmbLCOverrideInputReverseCh05.Name = "cmbLCOverrideInputReverseCh05";
+            this.cmbLCOverrideInputReverseCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh05.TabIndex = 437;
+            // 
+            // cmbLCOverrideInputReverseCh04
+            // 
+            this.cmbLCOverrideInputReverseCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh04.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh04.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh04.Location = new System.Drawing.Point(487, 181);
+            this.cmbLCOverrideInputReverseCh04.Name = "cmbLCOverrideInputReverseCh04";
+            this.cmbLCOverrideInputReverseCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh04.TabIndex = 436;
+            // 
+            // cmbLCOverrideInputReverseCh03
+            // 
+            this.cmbLCOverrideInputReverseCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh03.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh03.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh03.Location = new System.Drawing.Point(415, 181);
+            this.cmbLCOverrideInputReverseCh03.Name = "cmbLCOverrideInputReverseCh03";
+            this.cmbLCOverrideInputReverseCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh03.TabIndex = 435;
+            // 
+            // cmbLCOverrideInputReverseCh02
+            // 
+            this.cmbLCOverrideInputReverseCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh02.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh02.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh02.Location = new System.Drawing.Point(343, 181);
+            this.cmbLCOverrideInputReverseCh02.Name = "cmbLCOverrideInputReverseCh02";
+            this.cmbLCOverrideInputReverseCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh02.TabIndex = 434;
+            // 
+            // cmbLCOverrideInputReverseCh01
+            // 
+            this.cmbLCOverrideInputReverseCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh01.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh01.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh01.Location = new System.Drawing.Point(271, 181);
+            this.cmbLCOverrideInputReverseCh01.Name = "cmbLCOverrideInputReverseCh01";
+            this.cmbLCOverrideInputReverseCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh01.TabIndex = 433;
+            // 
+            // cmbLCOverrideInputReverseCh00
+            // 
+            this.cmbLCOverrideInputReverseCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh00.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh00.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh00.Location = new System.Drawing.Point(199, 181);
+            this.cmbLCOverrideInputReverseCh00.Name = "cmbLCOverrideInputReverseCh00";
+            this.cmbLCOverrideInputReverseCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh00.TabIndex = 432;
+            // 
+            // cmbLCOverrideInputForwardCh15
+            // 
+            this.cmbLCOverrideInputForwardCh15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh15.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh15.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh15.Location = new System.Drawing.Point(1279, 211);
+            this.cmbLCOverrideInputForwardCh15.Name = "cmbLCOverrideInputForwardCh15";
+            this.cmbLCOverrideInputForwardCh15.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh15.TabIndex = 464;
+            // 
+            // cmbLCOverrideInputForwardCh14
+            // 
+            this.cmbLCOverrideInputForwardCh14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh14.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh14.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh14.Location = new System.Drawing.Point(1207, 211);
+            this.cmbLCOverrideInputForwardCh14.Name = "cmbLCOverrideInputForwardCh14";
+            this.cmbLCOverrideInputForwardCh14.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh14.TabIndex = 463;
+            // 
+            // cmbLCOverrideInputForwardCh13
+            // 
+            this.cmbLCOverrideInputForwardCh13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh13.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh13.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh13.Location = new System.Drawing.Point(1135, 211);
+            this.cmbLCOverrideInputForwardCh13.Name = "cmbLCOverrideInputForwardCh13";
+            this.cmbLCOverrideInputForwardCh13.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh13.TabIndex = 462;
+            // 
+            // cmbLCOverrideInputForwardCh12
+            // 
+            this.cmbLCOverrideInputForwardCh12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh12.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh12.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh12.Location = new System.Drawing.Point(1063, 211);
+            this.cmbLCOverrideInputForwardCh12.Name = "cmbLCOverrideInputForwardCh12";
+            this.cmbLCOverrideInputForwardCh12.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh12.TabIndex = 461;
+            // 
+            // cmbLCOverrideInputForwardCh11
+            // 
+            this.cmbLCOverrideInputForwardCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh11.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh11.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh11.Location = new System.Drawing.Point(991, 211);
+            this.cmbLCOverrideInputForwardCh11.Name = "cmbLCOverrideInputForwardCh11";
+            this.cmbLCOverrideInputForwardCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh11.TabIndex = 460;
+            // 
+            // cmbLCOverrideInputForwardCh10
+            // 
+            this.cmbLCOverrideInputForwardCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh10.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh10.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh10.Location = new System.Drawing.Point(919, 211);
+            this.cmbLCOverrideInputForwardCh10.Name = "cmbLCOverrideInputForwardCh10";
+            this.cmbLCOverrideInputForwardCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh10.TabIndex = 459;
+            // 
+            // cmbLCOverrideInputForwardCh09
+            // 
+            this.cmbLCOverrideInputForwardCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh09.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh09.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh09.Location = new System.Drawing.Point(847, 211);
+            this.cmbLCOverrideInputForwardCh09.Name = "cmbLCOverrideInputForwardCh09";
+            this.cmbLCOverrideInputForwardCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh09.TabIndex = 458;
+            // 
+            // cmbLCOverrideInputForwardCh08
+            // 
+            this.cmbLCOverrideInputForwardCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh08.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh08.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh08.Location = new System.Drawing.Point(775, 211);
+            this.cmbLCOverrideInputForwardCh08.Name = "cmbLCOverrideInputForwardCh08";
+            this.cmbLCOverrideInputForwardCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh08.TabIndex = 457;
+            // 
+            // cmbLCOverrideInputForwardCh07
+            // 
+            this.cmbLCOverrideInputForwardCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh07.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh07.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh07.Location = new System.Drawing.Point(703, 211);
+            this.cmbLCOverrideInputForwardCh07.Name = "cmbLCOverrideInputForwardCh07";
+            this.cmbLCOverrideInputForwardCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh07.TabIndex = 456;
+            // 
+            // cmbLCOverrideInputForwardCh06
+            // 
+            this.cmbLCOverrideInputForwardCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh06.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh06.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh06.Location = new System.Drawing.Point(631, 211);
+            this.cmbLCOverrideInputForwardCh06.Name = "cmbLCOverrideInputForwardCh06";
+            this.cmbLCOverrideInputForwardCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh06.TabIndex = 455;
+            // 
+            // cmbLCOverrideInputForwardCh05
+            // 
+            this.cmbLCOverrideInputForwardCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh05.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh05.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh05.Location = new System.Drawing.Point(559, 211);
+            this.cmbLCOverrideInputForwardCh05.Name = "cmbLCOverrideInputForwardCh05";
+            this.cmbLCOverrideInputForwardCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh05.TabIndex = 454;
+            // 
+            // cmbLCOverrideInputForwardCh04
+            // 
+            this.cmbLCOverrideInputForwardCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh04.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh04.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh04.Location = new System.Drawing.Point(487, 211);
+            this.cmbLCOverrideInputForwardCh04.Name = "cmbLCOverrideInputForwardCh04";
+            this.cmbLCOverrideInputForwardCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh04.TabIndex = 453;
+            // 
+            // cmbLCOverrideInputForwardCh03
+            // 
+            this.cmbLCOverrideInputForwardCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh03.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh03.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh03.Location = new System.Drawing.Point(415, 211);
+            this.cmbLCOverrideInputForwardCh03.Name = "cmbLCOverrideInputForwardCh03";
+            this.cmbLCOverrideInputForwardCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh03.TabIndex = 452;
+            // 
+            // cmbLCOverrideInputForwardCh02
+            // 
+            this.cmbLCOverrideInputForwardCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh02.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh02.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh02.Location = new System.Drawing.Point(343, 211);
+            this.cmbLCOverrideInputForwardCh02.Name = "cmbLCOverrideInputForwardCh02";
+            this.cmbLCOverrideInputForwardCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh02.TabIndex = 451;
+            // 
+            // cmbLCOverrideInputForwardCh01
+            // 
+            this.cmbLCOverrideInputForwardCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh01.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh01.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh01.Location = new System.Drawing.Point(271, 211);
+            this.cmbLCOverrideInputForwardCh01.Name = "cmbLCOverrideInputForwardCh01";
+            this.cmbLCOverrideInputForwardCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh01.TabIndex = 450;
+            // 
+            // cmbLCOverrideInputForwardCh00
+            // 
+            this.cmbLCOverrideInputForwardCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh00.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh00.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh00.Location = new System.Drawing.Point(199, 211);
+            this.cmbLCOverrideInputForwardCh00.Name = "cmbLCOverrideInputForwardCh00";
+            this.cmbLCOverrideInputForwardCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh00.TabIndex = 449;
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label101.ForeColor = System.Drawing.SystemColors.Control;
+            this.label101.Location = new System.Drawing.Point(3, 213);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(152, 17);
+            this.label101.TabIndex = 448;
+            this.label101.Text = "Override Input (Forward)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(1584, 961);
+            this.ClientSize = new System.Drawing.Size(1584, 991);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1580, 1000);
+            this.MinimumSize = new System.Drawing.Size(1580, 1030);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Firefly M1 Config Generator";
@@ -26912,7 +27309,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh11;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh11;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh11;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh11;
         private System.Windows.Forms.CheckBox chkLC1LockCh11;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh10;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh10;
@@ -26921,7 +27317,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh10;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh10;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh10;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh10;
         private System.Windows.Forms.CheckBox chkLC1LockCh10;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh09;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh09;
@@ -26930,7 +27325,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh09;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh09;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh09;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh09;
         private System.Windows.Forms.CheckBox chkLC1LockCh09;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh08;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh08;
@@ -26939,7 +27333,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh08;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh08;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh08;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh08;
         private System.Windows.Forms.CheckBox chkLC1LockCh08;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh07;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh07;
@@ -26948,7 +27341,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh07;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh07;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh07;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh07;
         private System.Windows.Forms.CheckBox chkLC1LockCh07;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh06;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh06;
@@ -26957,7 +27349,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh06;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh06;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh06;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh06;
         private System.Windows.Forms.CheckBox chkLC1LockCh06;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh05;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh05;
@@ -26966,7 +27357,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh05;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh05;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh05;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh05;
         private System.Windows.Forms.CheckBox chkLC1LockCh05;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh04;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh04;
@@ -26975,7 +27365,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh04;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh04;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh04;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh04;
         private System.Windows.Forms.CheckBox chkLC1LockCh04;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh03;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh03;
@@ -26984,7 +27373,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh03;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh03;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh03;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh03;
         private System.Windows.Forms.CheckBox chkLC1LockCh03;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh02;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh02;
@@ -26993,7 +27381,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh02;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh02;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh02;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh02;
         private System.Windows.Forms.CheckBox chkLC1LockCh02;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh01;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh01;
@@ -27002,7 +27389,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh01;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh01;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh01;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh01;
         private System.Windows.Forms.CheckBox chkLC1LockCh01;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh00;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh00;
@@ -27011,7 +27397,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh00;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh00;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh00;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh00;
         private System.Windows.Forms.CheckBox chkLC1LockCh00;
         private System.Windows.Forms.Label label234;
         private System.Windows.Forms.Label label235;
@@ -27089,7 +27474,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh15;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh15;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh15;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh15;
         private System.Windows.Forms.CheckBox chkLC1LockCh15;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh14;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh14;
@@ -27098,7 +27482,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh14;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh14;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh14;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh14;
         private System.Windows.Forms.CheckBox chkLC1LockCh14;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh13;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh13;
@@ -27107,7 +27490,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh13;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh13;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh13;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh13;
         private System.Windows.Forms.CheckBox chkLC1LockCh13;
         private System.Windows.Forms.ComboBox cmbLC1MeasCurTimeCh12;
         private System.Windows.Forms.TextBox tbxLCUCAmpsCh12;
@@ -27116,7 +27498,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxLCMaxDurRecoveryCh12;
         private System.Windows.Forms.ComboBox cmbLC1DirectionCh12;
         private System.Windows.Forms.CheckBox chkLC1AllowComTimeCh12;
-        private System.Windows.Forms.CheckBox chkLC1AllowOverCh12;
         private System.Windows.Forms.CheckBox chkLC1LockCh12;
         private System.Windows.Forms.Label label210;
         private System.Windows.Forms.CheckBox chkAux1Shade;
@@ -27809,7 +28190,7 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox chkTabVisDimmer1;
         private System.Windows.Forms.CheckBox chkTabVisHC1;
         private System.Windows.Forms.CheckBox chkTabVisLC1;
-        private System.Windows.Forms.TabControl tabControl4;
+        //private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage21;
         private System.Windows.Forms.Label label523;
         private System.Windows.Forms.Label lblHC1Ch00;
@@ -28514,6 +28895,39 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label100;
         private System.Windows.Forms.TextBox tbxStartLCCfgRev;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh15;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh14;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh13;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh12;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh11;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh10;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh09;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh08;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh07;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh06;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh05;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh04;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh03;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh02;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh01;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputReverseCh00;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh15;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh14;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh13;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh12;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh11;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh10;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh09;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh08;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh07;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh06;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh05;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh04;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh03;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh02;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh01;
+        private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh00;
+        private System.Windows.Forms.Label label101;
     }
 }
 

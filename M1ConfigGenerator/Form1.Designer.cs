@@ -1152,6 +1152,39 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode11 = new System.Windows.Forms.ComboBox();
             this.cmbLC1Mode12 = new System.Windows.Forms.ComboBox();
             this.tabLC1Full = new System.Windows.Forms.TabPage();
+            this.cmbLCOverrideInputForwardCh15 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh14 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh13 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh12 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputForwardCh00 = new System.Windows.Forms.ComboBox();
+            this.label101 = new System.Windows.Forms.Label();
+            this.cmbLCOverrideInputReverseCh15 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh14 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh13 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh12 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbLCOverrideInputReverseCh00 = new System.Windows.Forms.ComboBox();
             this.cmbLCPWMFreqCh15 = new System.Windows.Forms.ComboBox();
             this.chkLCPWMEnableCh15 = new System.Windows.Forms.CheckBox();
             this.cmbLCPWMFreqCh14 = new System.Windows.Forms.ComboBox();
@@ -1889,39 +1922,6 @@ namespace M1ConfigGenerator
             this.btnHRCard4 = new System.Windows.Forms.Button();
             this.btnHRCard3 = new System.Windows.Forms.Button();
             this.btnHRCard2 = new System.Windows.Forms.Button();
-            this.cmbLCOverrideInputReverseCh15 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh14 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh13 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh12 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh11 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh10 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh09 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh08 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh07 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh06 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh05 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh04 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh03 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh02 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh01 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputReverseCh00 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh15 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh14 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh13 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh12 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh11 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh10 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh09 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh08 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh07 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh06 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh05 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh04 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh03 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh02 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh01 = new System.Windows.Forms.ComboBox();
-            this.cmbLCOverrideInputForwardCh00 = new System.Windows.Forms.ComboBox();
-            this.label101 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
@@ -16536,7 +16536,7 @@ namespace M1ConfigGenerator
             this.tabLC1Quick.Location = new System.Drawing.Point(4, 22);
             this.tabLC1Quick.Name = "tabLC1Quick";
             this.tabLC1Quick.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLC1Quick.Size = new System.Drawing.Size(1372, 499);
+            this.tabLC1Quick.Size = new System.Drawing.Size(1372, 599);
             this.tabLC1Quick.TabIndex = 0;
             this.tabLC1Quick.Text = "LC 1 Quick";
             // 
@@ -16558,7 +16558,7 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode00.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP"});
+            "RP UP"});
             this.cmbLC1Mode00.Location = new System.Drawing.Point(199, 3);
             this.cmbLC1Mode00.Name = "cmbLC1Mode00";
             this.cmbLC1Mode00.Size = new System.Drawing.Size(66, 21);
@@ -16572,8 +16572,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode01.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode01.Location = new System.Drawing.Point(271, 3);
             this.cmbLC1Mode01.Name = "cmbLC1Mode01";
             this.cmbLC1Mode01.Size = new System.Drawing.Size(66, 21);
@@ -16587,8 +16587,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode02.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode02.Location = new System.Drawing.Point(343, 3);
             this.cmbLC1Mode02.Name = "cmbLC1Mode02";
             this.cmbLC1Mode02.Size = new System.Drawing.Size(66, 21);
@@ -16602,8 +16602,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode03.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode03.Location = new System.Drawing.Point(415, 3);
             this.cmbLC1Mode03.Name = "cmbLC1Mode03";
             this.cmbLC1Mode03.Size = new System.Drawing.Size(66, 21);
@@ -16617,8 +16617,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode04.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode04.Location = new System.Drawing.Point(487, 3);
             this.cmbLC1Mode04.Name = "cmbLC1Mode04";
             this.cmbLC1Mode04.Size = new System.Drawing.Size(66, 21);
@@ -16632,8 +16632,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode05.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode05.Location = new System.Drawing.Point(559, 3);
             this.cmbLC1Mode05.Name = "cmbLC1Mode05";
             this.cmbLC1Mode05.Size = new System.Drawing.Size(66, 21);
@@ -16647,8 +16647,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode06.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode06.Location = new System.Drawing.Point(631, 3);
             this.cmbLC1Mode06.Name = "cmbLC1Mode06";
             this.cmbLC1Mode06.Size = new System.Drawing.Size(66, 21);
@@ -16662,7 +16662,7 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode15.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade DN"});
+            "RP DN"});
             this.cmbLC1Mode15.Location = new System.Drawing.Point(1279, 3);
             this.cmbLC1Mode15.Name = "cmbLC1Mode15";
             this.cmbLC1Mode15.Size = new System.Drawing.Size(66, 21);
@@ -16676,8 +16676,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode07.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode07.Location = new System.Drawing.Point(703, 3);
             this.cmbLC1Mode07.Name = "cmbLC1Mode07";
             this.cmbLC1Mode07.Size = new System.Drawing.Size(66, 21);
@@ -16691,8 +16691,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode08.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode08.Location = new System.Drawing.Point(775, 3);
             this.cmbLC1Mode08.Name = "cmbLC1Mode08";
             this.cmbLC1Mode08.Size = new System.Drawing.Size(66, 21);
@@ -16706,8 +16706,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode14.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode14.Location = new System.Drawing.Point(1207, 3);
             this.cmbLC1Mode14.Name = "cmbLC1Mode14";
             this.cmbLC1Mode14.Size = new System.Drawing.Size(66, 21);
@@ -16721,8 +16721,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode09.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode09.Location = new System.Drawing.Point(847, 3);
             this.cmbLC1Mode09.Name = "cmbLC1Mode09";
             this.cmbLC1Mode09.Size = new System.Drawing.Size(66, 21);
@@ -16736,8 +16736,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode10.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode10.Location = new System.Drawing.Point(919, 3);
             this.cmbLC1Mode10.Name = "cmbLC1Mode10";
             this.cmbLC1Mode10.Size = new System.Drawing.Size(66, 21);
@@ -16751,8 +16751,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode13.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode13.Location = new System.Drawing.Point(1135, 3);
             this.cmbLC1Mode13.Name = "cmbLC1Mode13";
             this.cmbLC1Mode13.Size = new System.Drawing.Size(66, 21);
@@ -16766,8 +16766,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode11.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode11.Location = new System.Drawing.Point(991, 3);
             this.cmbLC1Mode11.Name = "cmbLC1Mode11";
             this.cmbLC1Mode11.Size = new System.Drawing.Size(66, 21);
@@ -16781,8 +16781,8 @@ namespace M1ConfigGenerator
             this.cmbLC1Mode12.Items.AddRange(new object[] {
             "12V+",
             "Ground",
-            "Shade UP",
-            "Shade DN"});
+            "RP UP",
+            "RP DN"});
             this.cmbLC1Mode12.Location = new System.Drawing.Point(1063, 3);
             this.cmbLC1Mode12.Name = "cmbLC1Mode12";
             this.cmbLC1Mode12.Size = new System.Drawing.Size(66, 21);
@@ -17105,6 +17105,529 @@ namespace M1ConfigGenerator
             this.tabLC1Full.Size = new System.Drawing.Size(1372, 599);
             this.tabLC1Full.TabIndex = 1;
             this.tabLC1Full.Text = "LC 1 Full";
+            // 
+            // cmbLCOverrideInputForwardCh15
+            // 
+            this.cmbLCOverrideInputForwardCh15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh15.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh15.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh15.Location = new System.Drawing.Point(1279, 211);
+            this.cmbLCOverrideInputForwardCh15.Name = "cmbLCOverrideInputForwardCh15";
+            this.cmbLCOverrideInputForwardCh15.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh15.TabIndex = 464;
+            // 
+            // cmbLCOverrideInputForwardCh14
+            // 
+            this.cmbLCOverrideInputForwardCh14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh14.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh14.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh14.Location = new System.Drawing.Point(1207, 211);
+            this.cmbLCOverrideInputForwardCh14.Name = "cmbLCOverrideInputForwardCh14";
+            this.cmbLCOverrideInputForwardCh14.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh14.TabIndex = 463;
+            // 
+            // cmbLCOverrideInputForwardCh13
+            // 
+            this.cmbLCOverrideInputForwardCh13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh13.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh13.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh13.Location = new System.Drawing.Point(1135, 211);
+            this.cmbLCOverrideInputForwardCh13.Name = "cmbLCOverrideInputForwardCh13";
+            this.cmbLCOverrideInputForwardCh13.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh13.TabIndex = 462;
+            // 
+            // cmbLCOverrideInputForwardCh12
+            // 
+            this.cmbLCOverrideInputForwardCh12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh12.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh12.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh12.Location = new System.Drawing.Point(1063, 211);
+            this.cmbLCOverrideInputForwardCh12.Name = "cmbLCOverrideInputForwardCh12";
+            this.cmbLCOverrideInputForwardCh12.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh12.TabIndex = 461;
+            // 
+            // cmbLCOverrideInputForwardCh11
+            // 
+            this.cmbLCOverrideInputForwardCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh11.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh11.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh11.Location = new System.Drawing.Point(991, 211);
+            this.cmbLCOverrideInputForwardCh11.Name = "cmbLCOverrideInputForwardCh11";
+            this.cmbLCOverrideInputForwardCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh11.TabIndex = 460;
+            // 
+            // cmbLCOverrideInputForwardCh10
+            // 
+            this.cmbLCOverrideInputForwardCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh10.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh10.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh10.Location = new System.Drawing.Point(919, 211);
+            this.cmbLCOverrideInputForwardCh10.Name = "cmbLCOverrideInputForwardCh10";
+            this.cmbLCOverrideInputForwardCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh10.TabIndex = 459;
+            // 
+            // cmbLCOverrideInputForwardCh09
+            // 
+            this.cmbLCOverrideInputForwardCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh09.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh09.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh09.Location = new System.Drawing.Point(847, 211);
+            this.cmbLCOverrideInputForwardCh09.Name = "cmbLCOverrideInputForwardCh09";
+            this.cmbLCOverrideInputForwardCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh09.TabIndex = 458;
+            // 
+            // cmbLCOverrideInputForwardCh08
+            // 
+            this.cmbLCOverrideInputForwardCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh08.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh08.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh08.Location = new System.Drawing.Point(775, 211);
+            this.cmbLCOverrideInputForwardCh08.Name = "cmbLCOverrideInputForwardCh08";
+            this.cmbLCOverrideInputForwardCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh08.TabIndex = 457;
+            // 
+            // cmbLCOverrideInputForwardCh07
+            // 
+            this.cmbLCOverrideInputForwardCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh07.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh07.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh07.Location = new System.Drawing.Point(703, 211);
+            this.cmbLCOverrideInputForwardCh07.Name = "cmbLCOverrideInputForwardCh07";
+            this.cmbLCOverrideInputForwardCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh07.TabIndex = 456;
+            // 
+            // cmbLCOverrideInputForwardCh06
+            // 
+            this.cmbLCOverrideInputForwardCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh06.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh06.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh06.Location = new System.Drawing.Point(631, 211);
+            this.cmbLCOverrideInputForwardCh06.Name = "cmbLCOverrideInputForwardCh06";
+            this.cmbLCOverrideInputForwardCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh06.TabIndex = 455;
+            // 
+            // cmbLCOverrideInputForwardCh05
+            // 
+            this.cmbLCOverrideInputForwardCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh05.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh05.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh05.Location = new System.Drawing.Point(559, 211);
+            this.cmbLCOverrideInputForwardCh05.Name = "cmbLCOverrideInputForwardCh05";
+            this.cmbLCOverrideInputForwardCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh05.TabIndex = 454;
+            // 
+            // cmbLCOverrideInputForwardCh04
+            // 
+            this.cmbLCOverrideInputForwardCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh04.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh04.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh04.Location = new System.Drawing.Point(487, 211);
+            this.cmbLCOverrideInputForwardCh04.Name = "cmbLCOverrideInputForwardCh04";
+            this.cmbLCOverrideInputForwardCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh04.TabIndex = 453;
+            // 
+            // cmbLCOverrideInputForwardCh03
+            // 
+            this.cmbLCOverrideInputForwardCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh03.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh03.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh03.Location = new System.Drawing.Point(415, 211);
+            this.cmbLCOverrideInputForwardCh03.Name = "cmbLCOverrideInputForwardCh03";
+            this.cmbLCOverrideInputForwardCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh03.TabIndex = 452;
+            // 
+            // cmbLCOverrideInputForwardCh02
+            // 
+            this.cmbLCOverrideInputForwardCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh02.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh02.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh02.Location = new System.Drawing.Point(343, 211);
+            this.cmbLCOverrideInputForwardCh02.Name = "cmbLCOverrideInputForwardCh02";
+            this.cmbLCOverrideInputForwardCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh02.TabIndex = 451;
+            // 
+            // cmbLCOverrideInputForwardCh01
+            // 
+            this.cmbLCOverrideInputForwardCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh01.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh01.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh01.Location = new System.Drawing.Point(271, 211);
+            this.cmbLCOverrideInputForwardCh01.Name = "cmbLCOverrideInputForwardCh01";
+            this.cmbLCOverrideInputForwardCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh01.TabIndex = 450;
+            // 
+            // cmbLCOverrideInputForwardCh00
+            // 
+            this.cmbLCOverrideInputForwardCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputForwardCh00.FormattingEnabled = true;
+            this.cmbLCOverrideInputForwardCh00.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputForwardCh00.Location = new System.Drawing.Point(199, 211);
+            this.cmbLCOverrideInputForwardCh00.Name = "cmbLCOverrideInputForwardCh00";
+            this.cmbLCOverrideInputForwardCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputForwardCh00.TabIndex = 449;
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label101.ForeColor = System.Drawing.SystemColors.Control;
+            this.label101.Location = new System.Drawing.Point(3, 213);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(152, 17);
+            this.label101.TabIndex = 448;
+            this.label101.Text = "Override Input (Forward)";
+            // 
+            // cmbLCOverrideInputReverseCh15
+            // 
+            this.cmbLCOverrideInputReverseCh15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh15.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh15.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh15.Location = new System.Drawing.Point(1279, 181);
+            this.cmbLCOverrideInputReverseCh15.Name = "cmbLCOverrideInputReverseCh15";
+            this.cmbLCOverrideInputReverseCh15.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh15.TabIndex = 447;
+            // 
+            // cmbLCOverrideInputReverseCh14
+            // 
+            this.cmbLCOverrideInputReverseCh14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh14.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh14.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh14.Location = new System.Drawing.Point(1207, 181);
+            this.cmbLCOverrideInputReverseCh14.Name = "cmbLCOverrideInputReverseCh14";
+            this.cmbLCOverrideInputReverseCh14.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh14.TabIndex = 446;
+            // 
+            // cmbLCOverrideInputReverseCh13
+            // 
+            this.cmbLCOverrideInputReverseCh13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh13.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh13.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh13.Location = new System.Drawing.Point(1135, 181);
+            this.cmbLCOverrideInputReverseCh13.Name = "cmbLCOverrideInputReverseCh13";
+            this.cmbLCOverrideInputReverseCh13.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh13.TabIndex = 445;
+            // 
+            // cmbLCOverrideInputReverseCh12
+            // 
+            this.cmbLCOverrideInputReverseCh12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh12.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh12.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh12.Location = new System.Drawing.Point(1063, 181);
+            this.cmbLCOverrideInputReverseCh12.Name = "cmbLCOverrideInputReverseCh12";
+            this.cmbLCOverrideInputReverseCh12.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh12.TabIndex = 444;
+            // 
+            // cmbLCOverrideInputReverseCh11
+            // 
+            this.cmbLCOverrideInputReverseCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh11.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh11.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh11.Location = new System.Drawing.Point(991, 181);
+            this.cmbLCOverrideInputReverseCh11.Name = "cmbLCOverrideInputReverseCh11";
+            this.cmbLCOverrideInputReverseCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh11.TabIndex = 443;
+            // 
+            // cmbLCOverrideInputReverseCh10
+            // 
+            this.cmbLCOverrideInputReverseCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh10.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh10.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh10.Location = new System.Drawing.Point(919, 181);
+            this.cmbLCOverrideInputReverseCh10.Name = "cmbLCOverrideInputReverseCh10";
+            this.cmbLCOverrideInputReverseCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh10.TabIndex = 442;
+            // 
+            // cmbLCOverrideInputReverseCh09
+            // 
+            this.cmbLCOverrideInputReverseCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh09.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh09.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh09.Location = new System.Drawing.Point(847, 181);
+            this.cmbLCOverrideInputReverseCh09.Name = "cmbLCOverrideInputReverseCh09";
+            this.cmbLCOverrideInputReverseCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh09.TabIndex = 441;
+            // 
+            // cmbLCOverrideInputReverseCh08
+            // 
+            this.cmbLCOverrideInputReverseCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh08.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh08.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh08.Location = new System.Drawing.Point(775, 181);
+            this.cmbLCOverrideInputReverseCh08.Name = "cmbLCOverrideInputReverseCh08";
+            this.cmbLCOverrideInputReverseCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh08.TabIndex = 440;
+            // 
+            // cmbLCOverrideInputReverseCh07
+            // 
+            this.cmbLCOverrideInputReverseCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh07.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh07.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh07.Location = new System.Drawing.Point(703, 181);
+            this.cmbLCOverrideInputReverseCh07.Name = "cmbLCOverrideInputReverseCh07";
+            this.cmbLCOverrideInputReverseCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh07.TabIndex = 439;
+            // 
+            // cmbLCOverrideInputReverseCh06
+            // 
+            this.cmbLCOverrideInputReverseCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh06.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh06.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh06.Location = new System.Drawing.Point(631, 181);
+            this.cmbLCOverrideInputReverseCh06.Name = "cmbLCOverrideInputReverseCh06";
+            this.cmbLCOverrideInputReverseCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh06.TabIndex = 438;
+            // 
+            // cmbLCOverrideInputReverseCh05
+            // 
+            this.cmbLCOverrideInputReverseCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh05.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh05.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh05.Location = new System.Drawing.Point(559, 181);
+            this.cmbLCOverrideInputReverseCh05.Name = "cmbLCOverrideInputReverseCh05";
+            this.cmbLCOverrideInputReverseCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh05.TabIndex = 437;
+            // 
+            // cmbLCOverrideInputReverseCh04
+            // 
+            this.cmbLCOverrideInputReverseCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh04.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh04.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh04.Location = new System.Drawing.Point(487, 181);
+            this.cmbLCOverrideInputReverseCh04.Name = "cmbLCOverrideInputReverseCh04";
+            this.cmbLCOverrideInputReverseCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh04.TabIndex = 436;
+            // 
+            // cmbLCOverrideInputReverseCh03
+            // 
+            this.cmbLCOverrideInputReverseCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh03.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh03.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh03.Location = new System.Drawing.Point(415, 181);
+            this.cmbLCOverrideInputReverseCh03.Name = "cmbLCOverrideInputReverseCh03";
+            this.cmbLCOverrideInputReverseCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh03.TabIndex = 435;
+            // 
+            // cmbLCOverrideInputReverseCh02
+            // 
+            this.cmbLCOverrideInputReverseCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh02.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh02.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh02.Location = new System.Drawing.Point(343, 181);
+            this.cmbLCOverrideInputReverseCh02.Name = "cmbLCOverrideInputReverseCh02";
+            this.cmbLCOverrideInputReverseCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh02.TabIndex = 434;
+            // 
+            // cmbLCOverrideInputReverseCh01
+            // 
+            this.cmbLCOverrideInputReverseCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh01.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh01.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh01.Location = new System.Drawing.Point(271, 181);
+            this.cmbLCOverrideInputReverseCh01.Name = "cmbLCOverrideInputReverseCh01";
+            this.cmbLCOverrideInputReverseCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh01.TabIndex = 433;
+            // 
+            // cmbLCOverrideInputReverseCh00
+            // 
+            this.cmbLCOverrideInputReverseCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLCOverrideInputReverseCh00.FormattingEnabled = true;
+            this.cmbLCOverrideInputReverseCh00.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbLCOverrideInputReverseCh00.Location = new System.Drawing.Point(199, 181);
+            this.cmbLCOverrideInputReverseCh00.Name = "cmbLCOverrideInputReverseCh00";
+            this.cmbLCOverrideInputReverseCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbLCOverrideInputReverseCh00.TabIndex = 432;
             // 
             // cmbLCPWMFreqCh15
             // 
@@ -26420,529 +26943,6 @@ namespace M1ConfigGenerator
             this.btnHRCard2.UseVisualStyleBackColor = false;
             this.btnHRCard2.Visible = false;
             this.btnHRCard2.Click += new System.EventHandler(this.btnHRCard2_Click);
-            // 
-            // cmbLCOverrideInputReverseCh15
-            // 
-            this.cmbLCOverrideInputReverseCh15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh15.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh15.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh15.Location = new System.Drawing.Point(1279, 181);
-            this.cmbLCOverrideInputReverseCh15.Name = "cmbLCOverrideInputReverseCh15";
-            this.cmbLCOverrideInputReverseCh15.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh15.TabIndex = 447;
-            // 
-            // cmbLCOverrideInputReverseCh14
-            // 
-            this.cmbLCOverrideInputReverseCh14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh14.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh14.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh14.Location = new System.Drawing.Point(1207, 181);
-            this.cmbLCOverrideInputReverseCh14.Name = "cmbLCOverrideInputReverseCh14";
-            this.cmbLCOverrideInputReverseCh14.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh14.TabIndex = 446;
-            // 
-            // cmbLCOverrideInputReverseCh13
-            // 
-            this.cmbLCOverrideInputReverseCh13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh13.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh13.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh13.Location = new System.Drawing.Point(1135, 181);
-            this.cmbLCOverrideInputReverseCh13.Name = "cmbLCOverrideInputReverseCh13";
-            this.cmbLCOverrideInputReverseCh13.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh13.TabIndex = 445;
-            // 
-            // cmbLCOverrideInputReverseCh12
-            // 
-            this.cmbLCOverrideInputReverseCh12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh12.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh12.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh12.Location = new System.Drawing.Point(1063, 181);
-            this.cmbLCOverrideInputReverseCh12.Name = "cmbLCOverrideInputReverseCh12";
-            this.cmbLCOverrideInputReverseCh12.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh12.TabIndex = 444;
-            // 
-            // cmbLCOverrideInputReverseCh11
-            // 
-            this.cmbLCOverrideInputReverseCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh11.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh11.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh11.Location = new System.Drawing.Point(991, 181);
-            this.cmbLCOverrideInputReverseCh11.Name = "cmbLCOverrideInputReverseCh11";
-            this.cmbLCOverrideInputReverseCh11.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh11.TabIndex = 443;
-            // 
-            // cmbLCOverrideInputReverseCh10
-            // 
-            this.cmbLCOverrideInputReverseCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh10.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh10.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh10.Location = new System.Drawing.Point(919, 181);
-            this.cmbLCOverrideInputReverseCh10.Name = "cmbLCOverrideInputReverseCh10";
-            this.cmbLCOverrideInputReverseCh10.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh10.TabIndex = 442;
-            // 
-            // cmbLCOverrideInputReverseCh09
-            // 
-            this.cmbLCOverrideInputReverseCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh09.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh09.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh09.Location = new System.Drawing.Point(847, 181);
-            this.cmbLCOverrideInputReverseCh09.Name = "cmbLCOverrideInputReverseCh09";
-            this.cmbLCOverrideInputReverseCh09.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh09.TabIndex = 441;
-            // 
-            // cmbLCOverrideInputReverseCh08
-            // 
-            this.cmbLCOverrideInputReverseCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh08.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh08.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh08.Location = new System.Drawing.Point(775, 181);
-            this.cmbLCOverrideInputReverseCh08.Name = "cmbLCOverrideInputReverseCh08";
-            this.cmbLCOverrideInputReverseCh08.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh08.TabIndex = 440;
-            // 
-            // cmbLCOverrideInputReverseCh07
-            // 
-            this.cmbLCOverrideInputReverseCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh07.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh07.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh07.Location = new System.Drawing.Point(703, 181);
-            this.cmbLCOverrideInputReverseCh07.Name = "cmbLCOverrideInputReverseCh07";
-            this.cmbLCOverrideInputReverseCh07.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh07.TabIndex = 439;
-            // 
-            // cmbLCOverrideInputReverseCh06
-            // 
-            this.cmbLCOverrideInputReverseCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh06.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh06.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh06.Location = new System.Drawing.Point(631, 181);
-            this.cmbLCOverrideInputReverseCh06.Name = "cmbLCOverrideInputReverseCh06";
-            this.cmbLCOverrideInputReverseCh06.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh06.TabIndex = 438;
-            // 
-            // cmbLCOverrideInputReverseCh05
-            // 
-            this.cmbLCOverrideInputReverseCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh05.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh05.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh05.Location = new System.Drawing.Point(559, 181);
-            this.cmbLCOverrideInputReverseCh05.Name = "cmbLCOverrideInputReverseCh05";
-            this.cmbLCOverrideInputReverseCh05.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh05.TabIndex = 437;
-            // 
-            // cmbLCOverrideInputReverseCh04
-            // 
-            this.cmbLCOverrideInputReverseCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh04.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh04.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh04.Location = new System.Drawing.Point(487, 181);
-            this.cmbLCOverrideInputReverseCh04.Name = "cmbLCOverrideInputReverseCh04";
-            this.cmbLCOverrideInputReverseCh04.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh04.TabIndex = 436;
-            // 
-            // cmbLCOverrideInputReverseCh03
-            // 
-            this.cmbLCOverrideInputReverseCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh03.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh03.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh03.Location = new System.Drawing.Point(415, 181);
-            this.cmbLCOverrideInputReverseCh03.Name = "cmbLCOverrideInputReverseCh03";
-            this.cmbLCOverrideInputReverseCh03.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh03.TabIndex = 435;
-            // 
-            // cmbLCOverrideInputReverseCh02
-            // 
-            this.cmbLCOverrideInputReverseCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh02.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh02.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh02.Location = new System.Drawing.Point(343, 181);
-            this.cmbLCOverrideInputReverseCh02.Name = "cmbLCOverrideInputReverseCh02";
-            this.cmbLCOverrideInputReverseCh02.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh02.TabIndex = 434;
-            // 
-            // cmbLCOverrideInputReverseCh01
-            // 
-            this.cmbLCOverrideInputReverseCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh01.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh01.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh01.Location = new System.Drawing.Point(271, 181);
-            this.cmbLCOverrideInputReverseCh01.Name = "cmbLCOverrideInputReverseCh01";
-            this.cmbLCOverrideInputReverseCh01.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh01.TabIndex = 433;
-            // 
-            // cmbLCOverrideInputReverseCh00
-            // 
-            this.cmbLCOverrideInputReverseCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputReverseCh00.FormattingEnabled = true;
-            this.cmbLCOverrideInputReverseCh00.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputReverseCh00.Location = new System.Drawing.Point(199, 181);
-            this.cmbLCOverrideInputReverseCh00.Name = "cmbLCOverrideInputReverseCh00";
-            this.cmbLCOverrideInputReverseCh00.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputReverseCh00.TabIndex = 432;
-            // 
-            // cmbLCOverrideInputForwardCh15
-            // 
-            this.cmbLCOverrideInputForwardCh15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh15.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh15.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh15.Location = new System.Drawing.Point(1279, 211);
-            this.cmbLCOverrideInputForwardCh15.Name = "cmbLCOverrideInputForwardCh15";
-            this.cmbLCOverrideInputForwardCh15.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh15.TabIndex = 464;
-            // 
-            // cmbLCOverrideInputForwardCh14
-            // 
-            this.cmbLCOverrideInputForwardCh14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh14.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh14.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh14.Location = new System.Drawing.Point(1207, 211);
-            this.cmbLCOverrideInputForwardCh14.Name = "cmbLCOverrideInputForwardCh14";
-            this.cmbLCOverrideInputForwardCh14.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh14.TabIndex = 463;
-            // 
-            // cmbLCOverrideInputForwardCh13
-            // 
-            this.cmbLCOverrideInputForwardCh13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh13.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh13.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh13.Location = new System.Drawing.Point(1135, 211);
-            this.cmbLCOverrideInputForwardCh13.Name = "cmbLCOverrideInputForwardCh13";
-            this.cmbLCOverrideInputForwardCh13.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh13.TabIndex = 462;
-            // 
-            // cmbLCOverrideInputForwardCh12
-            // 
-            this.cmbLCOverrideInputForwardCh12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh12.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh12.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh12.Location = new System.Drawing.Point(1063, 211);
-            this.cmbLCOverrideInputForwardCh12.Name = "cmbLCOverrideInputForwardCh12";
-            this.cmbLCOverrideInputForwardCh12.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh12.TabIndex = 461;
-            // 
-            // cmbLCOverrideInputForwardCh11
-            // 
-            this.cmbLCOverrideInputForwardCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh11.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh11.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh11.Location = new System.Drawing.Point(991, 211);
-            this.cmbLCOverrideInputForwardCh11.Name = "cmbLCOverrideInputForwardCh11";
-            this.cmbLCOverrideInputForwardCh11.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh11.TabIndex = 460;
-            // 
-            // cmbLCOverrideInputForwardCh10
-            // 
-            this.cmbLCOverrideInputForwardCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh10.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh10.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh10.Location = new System.Drawing.Point(919, 211);
-            this.cmbLCOverrideInputForwardCh10.Name = "cmbLCOverrideInputForwardCh10";
-            this.cmbLCOverrideInputForwardCh10.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh10.TabIndex = 459;
-            // 
-            // cmbLCOverrideInputForwardCh09
-            // 
-            this.cmbLCOverrideInputForwardCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh09.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh09.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh09.Location = new System.Drawing.Point(847, 211);
-            this.cmbLCOverrideInputForwardCh09.Name = "cmbLCOverrideInputForwardCh09";
-            this.cmbLCOverrideInputForwardCh09.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh09.TabIndex = 458;
-            // 
-            // cmbLCOverrideInputForwardCh08
-            // 
-            this.cmbLCOverrideInputForwardCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh08.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh08.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh08.Location = new System.Drawing.Point(775, 211);
-            this.cmbLCOverrideInputForwardCh08.Name = "cmbLCOverrideInputForwardCh08";
-            this.cmbLCOverrideInputForwardCh08.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh08.TabIndex = 457;
-            // 
-            // cmbLCOverrideInputForwardCh07
-            // 
-            this.cmbLCOverrideInputForwardCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh07.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh07.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh07.Location = new System.Drawing.Point(703, 211);
-            this.cmbLCOverrideInputForwardCh07.Name = "cmbLCOverrideInputForwardCh07";
-            this.cmbLCOverrideInputForwardCh07.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh07.TabIndex = 456;
-            // 
-            // cmbLCOverrideInputForwardCh06
-            // 
-            this.cmbLCOverrideInputForwardCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh06.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh06.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh06.Location = new System.Drawing.Point(631, 211);
-            this.cmbLCOverrideInputForwardCh06.Name = "cmbLCOverrideInputForwardCh06";
-            this.cmbLCOverrideInputForwardCh06.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh06.TabIndex = 455;
-            // 
-            // cmbLCOverrideInputForwardCh05
-            // 
-            this.cmbLCOverrideInputForwardCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh05.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh05.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh05.Location = new System.Drawing.Point(559, 211);
-            this.cmbLCOverrideInputForwardCh05.Name = "cmbLCOverrideInputForwardCh05";
-            this.cmbLCOverrideInputForwardCh05.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh05.TabIndex = 454;
-            // 
-            // cmbLCOverrideInputForwardCh04
-            // 
-            this.cmbLCOverrideInputForwardCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh04.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh04.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh04.Location = new System.Drawing.Point(487, 211);
-            this.cmbLCOverrideInputForwardCh04.Name = "cmbLCOverrideInputForwardCh04";
-            this.cmbLCOverrideInputForwardCh04.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh04.TabIndex = 453;
-            // 
-            // cmbLCOverrideInputForwardCh03
-            // 
-            this.cmbLCOverrideInputForwardCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh03.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh03.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh03.Location = new System.Drawing.Point(415, 211);
-            this.cmbLCOverrideInputForwardCh03.Name = "cmbLCOverrideInputForwardCh03";
-            this.cmbLCOverrideInputForwardCh03.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh03.TabIndex = 452;
-            // 
-            // cmbLCOverrideInputForwardCh02
-            // 
-            this.cmbLCOverrideInputForwardCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh02.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh02.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh02.Location = new System.Drawing.Point(343, 211);
-            this.cmbLCOverrideInputForwardCh02.Name = "cmbLCOverrideInputForwardCh02";
-            this.cmbLCOverrideInputForwardCh02.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh02.TabIndex = 451;
-            // 
-            // cmbLCOverrideInputForwardCh01
-            // 
-            this.cmbLCOverrideInputForwardCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh01.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh01.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh01.Location = new System.Drawing.Point(271, 211);
-            this.cmbLCOverrideInputForwardCh01.Name = "cmbLCOverrideInputForwardCh01";
-            this.cmbLCOverrideInputForwardCh01.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh01.TabIndex = 450;
-            // 
-            // cmbLCOverrideInputForwardCh00
-            // 
-            this.cmbLCOverrideInputForwardCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLCOverrideInputForwardCh00.FormattingEnabled = true;
-            this.cmbLCOverrideInputForwardCh00.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbLCOverrideInputForwardCh00.Location = new System.Drawing.Point(199, 211);
-            this.cmbLCOverrideInputForwardCh00.Name = "cmbLCOverrideInputForwardCh00";
-            this.cmbLCOverrideInputForwardCh00.Size = new System.Drawing.Size(66, 21);
-            this.cmbLCOverrideInputForwardCh00.TabIndex = 449;
-            // 
-            // label101
-            // 
-            this.label101.AutoSize = true;
-            this.label101.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label101.ForeColor = System.Drawing.SystemColors.Control;
-            this.label101.Location = new System.Drawing.Point(3, 213);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(152, 17);
-            this.label101.TabIndex = 448;
-            this.label101.Text = "Override Input (Forward)";
             // 
             // Form1
             // 

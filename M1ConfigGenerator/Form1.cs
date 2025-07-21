@@ -3658,12 +3658,14 @@ namespace M1ConfigGenerator
             if (cmbLC1Mode00.Text == "12V+") 
             {
                 cmbLCModeParamCh00.SelectedIndex = (int) LC_ModeParam.High;
+                lblLC1Ch01.Visible = true;
             }
             else if (cmbLC1Mode00.Text == "Ground")
             {
                 cmbLCModeParamCh00.SelectedIndex = (int) LC_ModeParam.Low;
+                lblLC1Ch01.Visible = true;
             }
-            else if (cmbLC1Mode00.Text == "Shade UP")
+            else if (cmbLC1Mode00.Text == "RP UP")
             {
                 cmbLCModeParamCh00.SelectedIndex = (int) LC_ModeParam.HBridge;
                 cmbLCPairedToCh00.SelectedIndex = 1;
@@ -3673,6 +3675,7 @@ namespace M1ConfigGenerator
                 cmbLCModeParamCh01.SelectedIndex = (int) LC_ModeParam.Slave;
                 cmbLCPairedToCh01.SelectedIndex = 1;
                 cmbLCDeadTimeCh01.SelectedIndex = 1; // 500 ms
+                lblLC1Ch01.Visible = false;
             }
         }
 
@@ -3681,12 +3684,14 @@ namespace M1ConfigGenerator
             if (cmbLC1Mode01.Text == "12V+")
             {
                 cmbLCModeParamCh01.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch01.Visible = true;
             }
             else if (cmbLC1Mode01.Text == "Ground")
             {
                 cmbLCModeParamCh01.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch01.Visible = true;
             }
-            else if (cmbLC1Mode01.Text == "Shade UP")
+            else if (cmbLC1Mode01.Text == "RP UP")
             {
                 cmbLCModeParamCh01.SelectedIndex = (int)LC_ModeParam.HBridge;
                 cmbLCPairedToCh01.SelectedIndex = 2;
@@ -3696,8 +3701,9 @@ namespace M1ConfigGenerator
                 cmbLCModeParamCh02.SelectedIndex = (int)LC_ModeParam.Slave;
                 cmbLCPairedToCh02.SelectedIndex = 2;
                 cmbLCDeadTimeCh02.SelectedIndex = 1; // 500 ms
+                lblLC1Ch02.Visible = false;
             }
-            else if (cmbLC1Mode01.Text == "Shade DN")
+            else if (cmbLC1Mode01.Text == "RP DN")
             {
                 cmbLC1Mode00.SelectedIndex = (int)LC_QuickMode.ShadeUp;
                 cmbLCModeParamCh00.SelectedIndex = (int)LC_ModeParam.HBridge;
@@ -3707,77 +3713,528 @@ namespace M1ConfigGenerator
                 cmbLCModeParamCh01.SelectedIndex = (int)LC_ModeParam.Slave;
                 cmbLCPairedToCh01.SelectedIndex = 1;
                 cmbLCDeadTimeCh01.SelectedIndex = 1; // 500 ms
+                lblLC1Ch01.Visible = false;
             }
         }
 
         private void cmbLC1Mode02_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode02.Text == "12V+")
+            {
+                cmbLCModeParamCh02.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch02.Visible = true;
+            }
+            else if (cmbLC1Mode02.Text == "Ground")
+            {
+                cmbLCModeParamCh02.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch02.Visible = true;
+            }
+            else if (cmbLC1Mode02.Text == "RP UP")
+            {
+                cmbLCModeParamCh02.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh02.SelectedIndex = 2;
+                cmbLCDeadTimeCh02.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode03.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh03.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh03.SelectedIndex = 2;
+                cmbLCDeadTimeCh03.SelectedIndex = 1; // 500 ms
+                lblLC1Ch03.Visible = false;
+            }
+            else if (cmbLC1Mode02.Text == "RP DN")
+            {
+                cmbLC1Mode01.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh01.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh01.SelectedIndex = 1;
+                cmbLCDeadTimeCh01.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh02.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh02.SelectedIndex = 1;
+                cmbLCDeadTimeCh02.SelectedIndex = 1; // 500 ms
+                lblLC1Ch02.Visible = false;
+            }
         }
 
         private void cmbLC1Mode03_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode03.Text == "12V+")
+            {
+                cmbLCModeParamCh03.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch03.Visible = true;
+            }
+            else if (cmbLC1Mode03.Text == "Ground")
+            {
+                cmbLCModeParamCh03.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch03.Visible = true;
+            }
+            else if (cmbLC1Mode03.Text == "RP UP")
+            {
+                cmbLCModeParamCh03.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh03.SelectedIndex = 2;
+                cmbLCDeadTimeCh03.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode04.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh04.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh04.SelectedIndex = 2;
+                cmbLCDeadTimeCh04.SelectedIndex = 1; // 500 ms
+                lblLC1Ch04.Visible = false;
+            }
+            else if (cmbLC1Mode03.Text == "RP DN")
+            {
+                cmbLC1Mode02.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh02.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh02.SelectedIndex = 1;
+                cmbLCDeadTimeCh02.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh03.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh03.SelectedIndex = 1;
+                cmbLCDeadTimeCh03.SelectedIndex = 1; // 500 ms
+                lblLC1Ch03.Visible = false;
+            }
         }
 
         private void cmbLC1Mode04_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode04.Text == "12V+")
+            {
+                cmbLCModeParamCh04.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch04.Visible = true;
+            }
+            else if (cmbLC1Mode04.Text == "Ground")
+            {
+                cmbLCModeParamCh04.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch04.Visible = true;
+            }
+            else if (cmbLC1Mode04.Text == "RP UP")
+            {
+                cmbLCModeParamCh04.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh04.SelectedIndex = 2;
+                cmbLCDeadTimeCh04.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode05.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh05.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh05.SelectedIndex = 2;
+                cmbLCDeadTimeCh05.SelectedIndex = 1; // 500 ms
+                lblLC1Ch05.Visible = false;
+            }
+            else if (cmbLC1Mode04.Text == "RP DN")
+            {
+                cmbLC1Mode03.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh03.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh03.SelectedIndex = 1;
+                cmbLCDeadTimeCh03.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh04.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh04.SelectedIndex = 1;
+                cmbLCDeadTimeCh04.SelectedIndex = 1; // 500 ms
+                lblLC1Ch04.Visible = false;
+            }
         }
 
         private void cmbLC1Mode05_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode05.Text == "12V+")
+            {
+                cmbLCModeParamCh05.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch05.Visible = true;
+            }
+            else if (cmbLC1Mode05.Text == "Ground")
+            {
+                cmbLCModeParamCh05.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch05.Visible = true;
+            }
+            else if (cmbLC1Mode05.Text == "RP UP")
+            {
+                cmbLCModeParamCh05.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh05.SelectedIndex = 2;
+                cmbLCDeadTimeCh05.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode06.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh06.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh06.SelectedIndex = 2;
+                cmbLCDeadTimeCh06.SelectedIndex = 1; // 500 ms
+                lblLC1Ch06.Visible = false;
+            }
+            else if (cmbLC1Mode06.Text == "RP DN")
+            {
+                cmbLC1Mode05.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh05.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh05.SelectedIndex = 1;
+                cmbLCDeadTimeCh05.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh06.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh06.SelectedIndex = 1;
+                cmbLCDeadTimeCh06.SelectedIndex = 1; // 500 ms
+                lblLC1Ch06.Visible = false;
+            }
         }
 
         private void cmbLC1Mode06_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode06.Text == "12V+")
+            {
+                cmbLCModeParamCh06.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch06.Visible = true;
+            }
+            else if (cmbLC1Mode06.Text == "Ground")
+            {
+                cmbLCModeParamCh06.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch06.Visible = true;
+            }
+            else if (cmbLC1Mode06.Text == "RP UP")
+            {
+                cmbLCModeParamCh06.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh06.SelectedIndex = 2;
+                cmbLCDeadTimeCh06.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode02.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh07.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh07.SelectedIndex = 2;
+                cmbLCDeadTimeCh07.SelectedIndex = 1; // 500 ms
+                lblLC1Ch07.Visible = false;
+            }
+            else if (cmbLC1Mode06.Text == "RP DN")
+            {
+                cmbLC1Mode00.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh05.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh05.SelectedIndex = 1;
+                cmbLCDeadTimeCh05.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh06.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh06.SelectedIndex = 1;
+                cmbLCDeadTimeCh06.SelectedIndex = 1; // 500 ms
+                lblLC1Ch06.Visible = false;
+            }
         }
 
         private void cmbLC1Mode07_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode07.Text == "12V+")
+            {
+                cmbLCModeParamCh07.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch07.Visible = true;
+            }
+            else if (cmbLC1Mode07.Text == "Ground")
+            {
+                cmbLCModeParamCh07.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch07.Visible = true;
+            }
+            else if (cmbLC1Mode07.Text == "RP UP")
+            {
+                cmbLCModeParamCh07.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh07.SelectedIndex = 2;
+                cmbLCDeadTimeCh07.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode08.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh08.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh08.SelectedIndex = 2;
+                cmbLCDeadTimeCh08.SelectedIndex = 1; // 500 ms
+                lblLC1Ch08.Visible = false;
+            }
+            else if (cmbLC1Mode07.Text == "RP DN")
+            {
+                cmbLC1Mode06.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh06.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh06.SelectedIndex = 1;
+                cmbLCDeadTimeCh06.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh07.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh07.SelectedIndex = 1;
+                cmbLCDeadTimeCh07.SelectedIndex = 1; // 500 ms
+                lblLC1Ch07.Visible = false;
+            }
         }
 
         private void cmbLC1Mode08_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode08.Text == "12V+")
+            {
+                cmbLCModeParamCh08.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch08.Visible = true;
+            }
+            else if (cmbLC1Mode08.Text == "Ground")
+            {
+                cmbLCModeParamCh08.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch08.Visible = true;
+            }
+            else if (cmbLC1Mode08.Text == "RP UP")
+            {
+                cmbLCModeParamCh08.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh08.SelectedIndex = 2;
+                cmbLCDeadTimeCh08.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode09.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh09.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh09.SelectedIndex = 2;
+                cmbLCDeadTimeCh09.SelectedIndex = 1; // 500 ms
+                lblLC1Ch09.Visible = false;
+            }
+            else if (cmbLC1Mode08.Text == "RP DN")
+            {
+                cmbLC1Mode07.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh07.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh07.SelectedIndex = 1;
+                cmbLCDeadTimeCh07.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh08.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh08.SelectedIndex = 1;
+                cmbLCDeadTimeCh08.SelectedIndex = 1; // 500 ms
+                lblLC1Ch08.Visible = false;
+            }
         }
 
         private void cmbLC1Mode09_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode09.Text == "12V+")
+            {
+                cmbLCModeParamCh09.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch09.Visible = true;
+            }
+            else if (cmbLC1Mode09.Text == "Ground")
+            {
+                cmbLCModeParamCh09.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch09.Visible = true;
+            }
+            else if (cmbLC1Mode09.Text == "RP UP")
+            {
+                cmbLCModeParamCh09.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh09.SelectedIndex = 2;
+                cmbLCDeadTimeCh09.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode10.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh10.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh10.SelectedIndex = 2;
+                cmbLCDeadTimeCh10.SelectedIndex = 1; // 500 ms
+                lblLC1Ch10.Visible = false;
+            }
+            else if (cmbLC1Mode09.Text == "RP DN")
+            {
+                cmbLC1Mode08.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh08.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh08.SelectedIndex = 1;
+                cmbLCDeadTimeCh08.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh09.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh09.SelectedIndex = 1;
+                cmbLCDeadTimeCh09.SelectedIndex = 1; // 500 ms
+                lblLC1Ch09.Visible = false;
+            }
         }
 
         private void cmbLC1Mode10_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode10.Text == "12V+")
+            {
+                cmbLCModeParamCh10.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch10.Visible = true;
+            }
+            else if (cmbLC1Mode10.Text == "Ground")
+            {
+                cmbLCModeParamCh10.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch10.Visible = true;
+            }
+            else if (cmbLC1Mode10.Text == "RP UP")
+            {
+                cmbLCModeParamCh10.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh10.SelectedIndex = 2;
+                cmbLCDeadTimeCh10.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode11.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh11.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh11.SelectedIndex = 2;
+                cmbLCDeadTimeCh11.SelectedIndex = 1; // 500 ms
+                lblLC1Ch11.Visible = false;
+            }
+            else if (cmbLC1Mode10.Text == "RP DN")
+            {
+                cmbLC1Mode09.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh09.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh09.SelectedIndex = 1;
+                cmbLCDeadTimeCh09.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh10.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh10.SelectedIndex = 1;
+                cmbLCDeadTimeCh10.SelectedIndex = 1; // 500 ms
+                lblLC1Ch10.Visible = false;
+            }
         }
 
         private void cmbLC1Mode11_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode11.Text == "12V+")
+            {
+                cmbLCModeParamCh11.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch11.Visible = true;
+            }
+            else if (cmbLC1Mode11.Text == "Ground")
+            {
+                cmbLCModeParamCh11.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch11.Visible = true;
+            }
+            else if (cmbLC1Mode11.Text == "RP UP")
+            {
+                cmbLCModeParamCh11.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh11.SelectedIndex = 2;
+                cmbLCDeadTimeCh11.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode12.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh12.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh12.SelectedIndex = 2;
+                cmbLCDeadTimeCh12.SelectedIndex = 1; // 500 ms
+                lblLC1Ch12.Visible = false;
+            }
+            else if (cmbLC1Mode11.Text == "RP DN")
+            {
+                cmbLC1Mode10.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh10.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh10.SelectedIndex = 1;
+                cmbLCDeadTimeCh10.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh11.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh11.SelectedIndex = 1;
+                cmbLCDeadTimeCh11.SelectedIndex = 1; // 500 ms
+                lblLC1Ch11.Visible = false;
+            }
         }
 
         private void cmbLC1Mode12_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode12.Text == "12V+")
+            {
+                cmbLCModeParamCh12.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch12.Visible = true;
+            }
+            else if (cmbLC1Mode12.Text == "Ground")
+            {
+                cmbLCModeParamCh12.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch12.Visible = true;
+            }
+            else if (cmbLC1Mode12.Text == "RP UP")
+            {
+                cmbLCModeParamCh12.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh12.SelectedIndex = 2;
+                cmbLCDeadTimeCh12.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode13.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh13.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh13.SelectedIndex = 2;
+                cmbLCDeadTimeCh13.SelectedIndex = 1; // 500 ms
+                lblLC1Ch13.Visible = false;
+            }
+            else if (cmbLC1Mode12.Text == "RP DN")
+            {
+                cmbLC1Mode11.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh11.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh11.SelectedIndex = 1;
+                cmbLCDeadTimeCh11.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh12.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh12.SelectedIndex = 1;
+                cmbLCDeadTimeCh12.SelectedIndex = 1; // 500 ms
+                lblLC1Ch12.Visible = false;
+            }
         }
 
         private void cmbLC1Mode13_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode13.Text == "12V+")
+            {
+                cmbLCModeParamCh13.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch13.Visible = true;
+            }
+            else if (cmbLC1Mode13.Text == "Ground")
+            {
+                cmbLCModeParamCh13.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch13.Visible = true;
+            }
+            else if (cmbLC1Mode13.Text == "RP UP")
+            {
+                cmbLCModeParamCh13.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh13.SelectedIndex = 2;
+                cmbLCDeadTimeCh13.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode14.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh14.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh14.SelectedIndex = 2;
+                cmbLCDeadTimeCh14.SelectedIndex = 1; // 500 ms
+                lblLC1Ch14.Visible = false;
+            }
+            else if (cmbLC1Mode13.Text == "RP DN")
+            {
+                cmbLC1Mode12.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh12.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh12.SelectedIndex = 1;
+                cmbLCDeadTimeCh12.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh13.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh13.SelectedIndex = 1;
+                cmbLCDeadTimeCh13.SelectedIndex = 1; // 500 ms
+                lblLC1Ch13.Visible = false;
+            }
         }
 
         private void cmbLC1Mode14_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode14.Text == "12V+")
+            {
+                cmbLCModeParamCh14.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch14.Visible = true;
+            }
+            else if (cmbLC1Mode14.Text == "Ground")
+            {
+                cmbLCModeParamCh14.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch14.Visible = true;
+            }
+            else if (cmbLC1Mode14.Text == "RP UP")
+            {
+                cmbLCModeParamCh14.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh14.SelectedIndex = 2;
+                cmbLCDeadTimeCh14.SelectedIndex = 1; // 500 ms
 
+                cmbLC1Mode15.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLCModeParamCh15.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh15.SelectedIndex = 2;
+                cmbLCDeadTimeCh15.SelectedIndex = 1; // 500 ms
+                lblLC1Ch15.Visible = false;
+            }
+            else if (cmbLC1Mode14.Text == "RP DN")
+            {
+                cmbLC1Mode13.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh13.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh13.SelectedIndex = 1;
+                cmbLCDeadTimeCh13.SelectedIndex = 1; // 500 ms
+
+                cmbLCModeParamCh14.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh14.SelectedIndex = 1;
+                cmbLCDeadTimeCh14.SelectedIndex = 1; // 500 ms
+                lblLC1Ch14.Visible = false;
+            }
         }
 
         private void cmbLC1Mode15_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbLC1Mode15.Text == "12V+")
+            {
+                cmbLCModeParamCh15.SelectedIndex = (int)LC_ModeParam.High;
+                lblLC1Ch15.Visible = true;
+            }
+            else if (cmbLC1Mode15.Text == "Ground")
+            {
+                cmbLCModeParamCh15.SelectedIndex = (int)LC_ModeParam.Low;
+                lblLC1Ch15.Visible = true;
+            }
+            else if (cmbLC1Mode15.Text == "RP DN")
+            {
+                cmbLC1Mode14.SelectedIndex = (int)LC_QuickMode.ShadeUp;
+                cmbLCModeParamCh14.SelectedIndex = (int)LC_ModeParam.HBridge;
+                cmbLCPairedToCh14.SelectedIndex = 1;
+                cmbLCDeadTimeCh14.SelectedIndex = 1; // 500 ms
 
+                cmbLCModeParamCh15.SelectedIndex = (int)LC_ModeParam.Slave;
+                cmbLCPairedToCh15.SelectedIndex = 1;
+                cmbLCDeadTimeCh15.SelectedIndex = 1; // 500 ms
+                lblLC1Ch15.Visible = false;
+            }
         }
 
 

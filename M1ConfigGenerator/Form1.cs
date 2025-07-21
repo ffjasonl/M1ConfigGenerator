@@ -3390,6 +3390,7 @@ namespace M1ConfigGenerator
                     lcObjects[card].LC_SetOCTime(channel, lcOCTime[channel].Text);
                 }
                 lcObjects[card].M1_SetGroup0(lcGroups[channel], channel); // takes care of all 4 groups
+                lcObjects[card].LC_SetQuickmode(lcModesQuick[channel].Text, channel);
                 lcObjects[card].LC_SetIGNSafety(lcIGNSafety[channel].Text, channel);
                 lcObjects[card].LC_SetParkSafety(lcParkSafety[channel].Text, channel);
                 lcObjects[card].LC_SetModeParameter(lcModeParam[channel].Text, channel);
@@ -3433,6 +3434,7 @@ namespace M1ConfigGenerator
                 lcGetGroups[channel][1].Checked = lcObjects[card].M1_GetGroup1(channel);
                 lcGetGroups[channel][2].Checked = lcObjects[card].M1_GetGroup2(channel);
                 lcGetGroups[channel][3].Checked = lcObjects[card].M1_GetGroup3(channel);
+                lcModesQuick[channel].Text = lcObjects[card].LC_GetQuickMode(channel);
                 lcIGNSafety[channel].Text = lcObjects[card].LC_GetIGNSafety(channel);
                 lcParkSafety[channel].Text = lcObjects[card].LC_GetParkSafety(channel);
                 lcModeParam[channel].Text = lcObjects[card].LC_GetModeParameter(channel);

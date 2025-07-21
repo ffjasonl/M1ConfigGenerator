@@ -415,18 +415,15 @@ namespace M1ConfigGenerator
             }
         }
 
-        //public void SetQuickPair(bool argBool, int argInt)
-        //{
-        //    if (argBool == true)
-        //    {
-        //        lcChModeValues[argInt * 2] = "DRVR_TYPE_H_BRIDGE";
-        //        lcChModeValues[(argInt * 2) + 1] = "DRVR_TYPE_SLAVE";
-        //        string result1 = "PAIRED_TO_CHNL" + Convert.ToString((argInt * 2) + 1);
-        //        lcChPairedValues[argInt * 2] = result1;
-        //        string result2 = "PAIRED_TO_CHNL" + Convert.ToString(argInt * 2);
-        //        lcChPairedValues[(argInt * 2) + 1] = result2;
-        //    }
-        //}
+        public void LC_SetQuickmode(string argString, int argInt)
+        {
+            lcQuickModeValue[argInt] = argString;
+        }
+
+        public string LC_GetQuickMode(int argInt)
+        {
+            return lcQuickModeValue[argInt];
+        }
 
         private string configPath = @"M1_DcDriver_Config\Src\M1_LC_Bridge\DeviceConfigs\";
 
@@ -517,7 +514,10 @@ namespace M1ConfigGenerator
         public string[] lcChParkNames = { "PARK_SAFETY_EN_CHNL_Z0 ", "PARK_SAFETY_EN_CHNL_Z1 ", "PARK_SAFETY_EN_CHNL_Z2 ", "PARK_SAFETY_EN_CHNL_Z3 ", "PARK_SAFETY_EN_CHNL_Z4 ", "PARK_SAFETY_EN_CHNL_Z5 ", "PARK_SAFETY_EN_CHNL_Z6 ", "PARK_SAFETY_EN_CHNL_Z7 ",
                                               "PARK_SAFETY_EN_CHNL_Z8 ", "PARK_SAFETY_EN_CHNL_Z9 ", "PARK_SAFETY_EN_CHNL_Z10", "PARK_SAFETY_EN_CHNL_Z11", "PARK_SAFETY_EN_CHNL_Z12", "PARK_SAFETY_EN_CHNL_Z13", "PARK_SAFETY_EN_CHNL_Z14", "PARK_SAFETY_EN_CHNL_Z15" };
         public string[] lcChParkValues = { "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED" };
-        
-    }   
-    
+        //
+        public string[] lcQuickModeValue = { "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+" };
+
+
+    }
+
 }

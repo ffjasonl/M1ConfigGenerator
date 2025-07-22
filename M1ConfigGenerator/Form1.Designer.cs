@@ -41,6 +41,7 @@ namespace M1ConfigGenerator
             this.panelMain = new System.Windows.Forms.Panel();
             this.tabControlMain = new M1ConfigGenerator.TablessControl();
             this.tabMainStart = new System.Windows.Forms.TabPage();
+            this.tbxStartAuxCfgRev = new System.Windows.Forms.TextBox();
             this.tbxStartLCCfgRev = new System.Windows.Forms.TextBox();
             this.tbxStartDimCfgRev = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -77,18 +78,17 @@ namespace M1ConfigGenerator
             this.btnAuxCard1 = new System.Windows.Forms.Button();
             this.tabControlAux = new M1ConfigGenerator.TablessControl();
             this.tabAux1 = new System.Windows.Forms.TabPage();
+            this.label32 = new System.Windows.Forms.Label();
+            this.tbxAux1CardLetter = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.tbxAux1CfgRev = new System.Windows.Forms.TextBox();
+            this.label102 = new System.Windows.Forms.Label();
+            this.tbxAux1CfgType = new System.Windows.Forms.TextBox();
             this.chkTabVisAux1 = new System.Windows.Forms.CheckBox();
             this.lblAux1Ch00 = new System.Windows.Forms.Label();
             this.chkAux1MG3Ch01 = new System.Windows.Forms.CheckBox();
             this.tabControlAux1QF = new M1ConfigGenerator.TablessControl();
             this.tabAux1Quick = new System.Windows.Forms.TabPage();
-            this.label542 = new System.Windows.Forms.Label();
-            this.chkAux1QuickPair1011 = new System.Windows.Forms.CheckBox();
-            this.chkAux1QuickPair0001 = new System.Windows.Forms.CheckBox();
-            this.chkAux1QuickPair0809 = new System.Windows.Forms.CheckBox();
-            this.chkAux1QuickPair0203 = new System.Windows.Forms.CheckBox();
-            this.chkAux1QuickPair0405 = new System.Windows.Forms.CheckBox();
-            this.chkAux1QuickPair0607 = new System.Windows.Forms.CheckBox();
             this.tabAux1Full = new System.Windows.Forms.TabPage();
             this.label89 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
@@ -212,13 +212,9 @@ namespace M1ConfigGenerator
             this.chkAux1MG1Ch01 = new System.Windows.Forms.CheckBox();
             this.label31 = new System.Windows.Forms.Label();
             this.chkAux1MG2Ch02 = new System.Windows.Forms.CheckBox();
-            this.label32 = new System.Windows.Forms.Label();
             this.chkAux1MG2Ch07 = new System.Windows.Forms.CheckBox();
-            this.tbxAux1CfgRev = new System.Windows.Forms.TextBox();
             this.chkAux1MG4Ch00 = new System.Windows.Forms.CheckBox();
-            this.label33 = new System.Windows.Forms.Label();
             this.chkAux1MG3Ch06 = new System.Windows.Forms.CheckBox();
-            this.tbxAux1CfgType = new System.Windows.Forms.TextBox();
             this.chkAux1MG2Ch11 = new System.Windows.Forms.CheckBox();
             this.label34 = new System.Windows.Forms.Label();
             this.lblAux1Ch03 = new System.Windows.Forms.Label();
@@ -226,7 +222,6 @@ namespace M1ConfigGenerator
             this.chkAux1MG3Ch02 = new System.Windows.Forms.CheckBox();
             this.chkAux1DCDimmer = new System.Windows.Forms.CheckBox();
             this.chkAux1MG1Ch02 = new System.Windows.Forms.CheckBox();
-            this.chkAux1Force = new System.Windows.Forms.CheckBox();
             this.chkAux1MG3Ch00 = new System.Windows.Forms.CheckBox();
             this.label35 = new System.Windows.Forms.Label();
             this.lblAux1Ch11 = new System.Windows.Forms.Label();
@@ -1931,7 +1926,6 @@ namespace M1ConfigGenerator
             this.tabControlAux.SuspendLayout();
             this.tabAux1.SuspendLayout();
             this.tabControlAux1QF.SuspendLayout();
-            this.tabAux1Quick.SuspendLayout();
             this.tabAux1Full.SuspendLayout();
             this.tabAuxGenerated.SuspendLayout();
             this.tabMainBreaker.SuspendLayout();
@@ -2139,6 +2133,7 @@ namespace M1ConfigGenerator
             // tabMainStart
             // 
             this.tabMainStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabMainStart.Controls.Add(this.tbxStartAuxCfgRev);
             this.tabMainStart.Controls.Add(this.tbxStartLCCfgRev);
             this.tabMainStart.Controls.Add(this.tbxStartDimCfgRev);
             this.tabMainStart.Controls.Add(this.label21);
@@ -2168,6 +2163,17 @@ namespace M1ConfigGenerator
             this.tabMainStart.TabIndex = 1;
             this.tabMainStart.Text = "Start";
             // 
+            // tbxStartAuxCfgRev
+            // 
+            this.tbxStartAuxCfgRev.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxStartAuxCfgRev.Location = new System.Drawing.Point(467, 61);
+            this.tbxStartAuxCfgRev.MaxLength = 4;
+            this.tbxStartAuxCfgRev.Name = "tbxStartAuxCfgRev";
+            this.tbxStartAuxCfgRev.Size = new System.Drawing.Size(53, 29);
+            this.tbxStartAuxCfgRev.TabIndex = 57;
+            this.tbxStartAuxCfgRev.Text = "0";
+            this.tbxStartAuxCfgRev.TextChanged += new System.EventHandler(this.tbxStartAuxCfgRev_TextChanged);
+            // 
             // tbxStartLCCfgRev
             // 
             this.tbxStartLCCfgRev.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2182,7 +2188,7 @@ namespace M1ConfigGenerator
             // tbxStartDimCfgRev
             // 
             this.tbxStartDimCfgRev.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxStartDimCfgRev.Location = new System.Drawing.Point(467, 163);
+            this.tbxStartDimCfgRev.Location = new System.Drawing.Point(467, 161);
             this.tbxStartDimCfgRev.MaxLength = 4;
             this.tbxStartDimCfgRev.Name = "tbxStartDimCfgRev";
             this.tbxStartDimCfgRev.Size = new System.Drawing.Size(53, 29);
@@ -2455,7 +2461,6 @@ namespace M1ConfigGenerator
             this.cmbStartAux.Name = "cmbStartAux";
             this.cmbStartAux.Size = new System.Drawing.Size(53, 29);
             this.cmbStartAux.TabIndex = 11;
-            this.cmbStartAux.Visible = false;
             // 
             // btnStartCreate
             // 
@@ -2525,6 +2530,7 @@ namespace M1ConfigGenerator
             this.btnAuxCard8.Text = "Card 8";
             this.btnAuxCard8.UseVisualStyleBackColor = false;
             this.btnAuxCard8.Visible = false;
+            this.btnAuxCard8.Click += new System.EventHandler(this.btnAuxCard8_Click);
             // 
             // btnAuxCard7
             // 
@@ -2540,6 +2546,7 @@ namespace M1ConfigGenerator
             this.btnAuxCard7.Text = "Card 7";
             this.btnAuxCard7.UseVisualStyleBackColor = false;
             this.btnAuxCard7.Visible = false;
+            this.btnAuxCard7.Click += new System.EventHandler(this.btnAuxCard7_Click);
             // 
             // btnAuxGenerate
             // 
@@ -2666,6 +2673,12 @@ namespace M1ConfigGenerator
             // tabAux1
             // 
             this.tabAux1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabAux1.Controls.Add(this.label32);
+            this.tabAux1.Controls.Add(this.tbxAux1CardLetter);
+            this.tabAux1.Controls.Add(this.label33);
+            this.tabAux1.Controls.Add(this.tbxAux1CfgRev);
+            this.tabAux1.Controls.Add(this.label102);
+            this.tabAux1.Controls.Add(this.tbxAux1CfgType);
             this.tabAux1.Controls.Add(this.chkTabVisAux1);
             this.tabAux1.Controls.Add(this.lblAux1Ch00);
             this.tabAux1.Controls.Add(this.chkAux1MG3Ch01);
@@ -2689,13 +2702,9 @@ namespace M1ConfigGenerator
             this.tabAux1.Controls.Add(this.chkAux1MG1Ch01);
             this.tabAux1.Controls.Add(this.label31);
             this.tabAux1.Controls.Add(this.chkAux1MG2Ch02);
-            this.tabAux1.Controls.Add(this.label32);
             this.tabAux1.Controls.Add(this.chkAux1MG2Ch07);
-            this.tabAux1.Controls.Add(this.tbxAux1CfgRev);
             this.tabAux1.Controls.Add(this.chkAux1MG4Ch00);
-            this.tabAux1.Controls.Add(this.label33);
             this.tabAux1.Controls.Add(this.chkAux1MG3Ch06);
-            this.tabAux1.Controls.Add(this.tbxAux1CfgType);
             this.tabAux1.Controls.Add(this.chkAux1MG2Ch11);
             this.tabAux1.Controls.Add(this.label34);
             this.tabAux1.Controls.Add(this.lblAux1Ch03);
@@ -2703,7 +2712,6 @@ namespace M1ConfigGenerator
             this.tabAux1.Controls.Add(this.chkAux1MG3Ch02);
             this.tabAux1.Controls.Add(this.chkAux1DCDimmer);
             this.tabAux1.Controls.Add(this.chkAux1MG1Ch02);
-            this.tabAux1.Controls.Add(this.chkAux1Force);
             this.tabAux1.Controls.Add(this.chkAux1MG3Ch00);
             this.tabAux1.Controls.Add(this.label35);
             this.tabAux1.Controls.Add(this.lblAux1Ch11);
@@ -2754,6 +2762,66 @@ namespace M1ConfigGenerator
             this.tabAux1.TabIndex = 1;
             this.tabAux1.Text = "Aux 1";
             // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.Color.Transparent;
+            this.label32.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label32.Location = new System.Drawing.Point(481, 27);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(76, 17);
+            this.label32.TabIndex = 290;
+            this.label32.Text = "Card Letter:";
+            // 
+            // tbxAux1CardLetter
+            // 
+            this.tbxAux1CardLetter.Location = new System.Drawing.Point(560, 25);
+            this.tbxAux1CardLetter.MaxLength = 4;
+            this.tbxAux1CardLetter.Name = "tbxAux1CardLetter";
+            this.tbxAux1CardLetter.Size = new System.Drawing.Size(32, 20);
+            this.tbxAux1CardLetter.TabIndex = 289;
+            this.tbxAux1CardLetter.Text = "A";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.Red;
+            this.label33.Location = new System.Drawing.Point(330, 27);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(74, 17);
+            this.label33.TabIndex = 287;
+            this.label33.Text = "Config Rev:";
+            // 
+            // tbxAux1CfgRev
+            // 
+            this.tbxAux1CfgRev.Location = new System.Drawing.Point(410, 25);
+            this.tbxAux1CfgRev.Name = "tbxAux1CfgRev";
+            this.tbxAux1CfgRev.Size = new System.Drawing.Size(32, 20);
+            this.tbxAux1CfgRev.TabIndex = 286;
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.BackColor = System.Drawing.Color.Transparent;
+            this.label102.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label102.ForeColor = System.Drawing.Color.Red;
+            this.label102.Location = new System.Drawing.Point(627, 27);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(101, 17);
+            this.label102.TabIndex = 288;
+            this.label102.Text = "Config Type:  0x";
+            // 
+            // tbxAux1CfgType
+            // 
+            this.tbxAux1CfgType.Location = new System.Drawing.Point(730, 26);
+            this.tbxAux1CfgType.MaxLength = 4;
+            this.tbxAux1CfgType.Name = "tbxAux1CfgType";
+            this.tbxAux1CfgType.Size = new System.Drawing.Size(32, 20);
+            this.tbxAux1CfgType.TabIndex = 291;
+            this.tbxAux1CfgType.Text = "0";
+            // 
             // chkTabVisAux1
             // 
             this.chkTabVisAux1.AutoSize = true;
@@ -2799,86 +2867,12 @@ namespace M1ConfigGenerator
             // tabAux1Quick
             // 
             this.tabAux1Quick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabAux1Quick.Controls.Add(this.label542);
-            this.tabAux1Quick.Controls.Add(this.chkAux1QuickPair1011);
-            this.tabAux1Quick.Controls.Add(this.chkAux1QuickPair0001);
-            this.tabAux1Quick.Controls.Add(this.chkAux1QuickPair0809);
-            this.tabAux1Quick.Controls.Add(this.chkAux1QuickPair0203);
-            this.tabAux1Quick.Controls.Add(this.chkAux1QuickPair0405);
-            this.tabAux1Quick.Controls.Add(this.chkAux1QuickPair0607);
             this.tabAux1Quick.Location = new System.Drawing.Point(4, 22);
             this.tabAux1Quick.Name = "tabAux1Quick";
             this.tabAux1Quick.Padding = new System.Windows.Forms.Padding(3);
             this.tabAux1Quick.Size = new System.Drawing.Size(1376, 581);
             this.tabAux1Quick.TabIndex = 0;
             this.tabAux1Quick.Text = "Aux 1 Quick";
-            // 
-            // label542
-            // 
-            this.label542.AutoSize = true;
-            this.label542.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label542.ForeColor = System.Drawing.SystemColors.Control;
-            this.label542.Location = new System.Drawing.Point(3, 3);
-            this.label542.Name = "label542";
-            this.label542.Size = new System.Drawing.Size(165, 17);
-            this.label542.TabIndex = 149;
-            this.label542.Text = "Pair with Next Channel (RP)";
-            // 
-            // chkAux1QuickPair1011
-            // 
-            this.chkAux1QuickPair1011.AutoSize = true;
-            this.chkAux1QuickPair1011.Location = new System.Drawing.Point(968, 5);
-            this.chkAux1QuickPair1011.Name = "chkAux1QuickPair1011";
-            this.chkAux1QuickPair1011.Size = new System.Drawing.Size(15, 14);
-            this.chkAux1QuickPair1011.TabIndex = 148;
-            this.chkAux1QuickPair1011.UseVisualStyleBackColor = true;
-            // 
-            // chkAux1QuickPair0001
-            // 
-            this.chkAux1QuickPair0001.AutoSize = true;
-            this.chkAux1QuickPair0001.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAux1QuickPair0001.ForeColor = System.Drawing.Color.Red;
-            this.chkAux1QuickPair0001.Location = new System.Drawing.Point(248, 5);
-            this.chkAux1QuickPair0001.Name = "chkAux1QuickPair0001";
-            this.chkAux1QuickPair0001.Size = new System.Drawing.Size(15, 14);
-            this.chkAux1QuickPair0001.TabIndex = 143;
-            this.chkAux1QuickPair0001.UseVisualStyleBackColor = true;
-            // 
-            // chkAux1QuickPair0809
-            // 
-            this.chkAux1QuickPair0809.AutoSize = true;
-            this.chkAux1QuickPair0809.Location = new System.Drawing.Point(824, 5);
-            this.chkAux1QuickPair0809.Name = "chkAux1QuickPair0809";
-            this.chkAux1QuickPair0809.Size = new System.Drawing.Size(15, 14);
-            this.chkAux1QuickPair0809.TabIndex = 147;
-            this.chkAux1QuickPair0809.UseVisualStyleBackColor = true;
-            // 
-            // chkAux1QuickPair0203
-            // 
-            this.chkAux1QuickPair0203.AutoSize = true;
-            this.chkAux1QuickPair0203.Location = new System.Drawing.Point(392, 5);
-            this.chkAux1QuickPair0203.Name = "chkAux1QuickPair0203";
-            this.chkAux1QuickPair0203.Size = new System.Drawing.Size(15, 14);
-            this.chkAux1QuickPair0203.TabIndex = 144;
-            this.chkAux1QuickPair0203.UseVisualStyleBackColor = true;
-            // 
-            // chkAux1QuickPair0405
-            // 
-            this.chkAux1QuickPair0405.AutoSize = true;
-            this.chkAux1QuickPair0405.Location = new System.Drawing.Point(536, 5);
-            this.chkAux1QuickPair0405.Name = "chkAux1QuickPair0405";
-            this.chkAux1QuickPair0405.Size = new System.Drawing.Size(15, 14);
-            this.chkAux1QuickPair0405.TabIndex = 145;
-            this.chkAux1QuickPair0405.UseVisualStyleBackColor = true;
-            // 
-            // chkAux1QuickPair0607
-            // 
-            this.chkAux1QuickPair0607.AutoSize = true;
-            this.chkAux1QuickPair0607.Location = new System.Drawing.Point(680, 5);
-            this.chkAux1QuickPair0607.Name = "chkAux1QuickPair0607";
-            this.chkAux1QuickPair0607.Size = new System.Drawing.Size(15, 14);
-            this.chkAux1QuickPair0607.TabIndex = 146;
-            this.chkAux1QuickPair0607.UseVisualStyleBackColor = true;
             // 
             // tabAux1Full
             // 
@@ -3548,8 +3542,18 @@ namespace M1ConfigGenerator
             this.cmbAux1PairedCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAux1PairedCh10.FormattingEnabled = true;
             this.cmbAux1PairedCh10.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "11"});
             this.cmbAux1PairedCh10.Location = new System.Drawing.Point(955, 91);
             this.cmbAux1PairedCh10.Name = "cmbAux1PairedCh10";
             this.cmbAux1PairedCh10.Size = new System.Drawing.Size(66, 21);
@@ -3560,8 +3564,18 @@ namespace M1ConfigGenerator
             this.cmbAux1PairedCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAux1PairedCh11.FormattingEnabled = true;
             this.cmbAux1PairedCh11.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cmbAux1PairedCh11.Location = new System.Drawing.Point(1027, 91);
             this.cmbAux1PairedCh11.Name = "cmbAux1PairedCh11";
             this.cmbAux1PairedCh11.Size = new System.Drawing.Size(66, 21);
@@ -3572,8 +3586,18 @@ namespace M1ConfigGenerator
             this.cmbAux1PairedCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAux1PairedCh09.FormattingEnabled = true;
             this.cmbAux1PairedCh09.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "10",
+            "11"});
             this.cmbAux1PairedCh09.Location = new System.Drawing.Point(883, 91);
             this.cmbAux1PairedCh09.Name = "cmbAux1PairedCh09";
             this.cmbAux1PairedCh09.Size = new System.Drawing.Size(66, 21);
@@ -3584,8 +3608,18 @@ namespace M1ConfigGenerator
             this.cmbAux1PairedCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAux1PairedCh08.FormattingEnabled = true;
             this.cmbAux1PairedCh08.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "9",
+            "10",
+            "11"});
             this.cmbAux1PairedCh08.Location = new System.Drawing.Point(811, 91);
             this.cmbAux1PairedCh08.Name = "cmbAux1PairedCh08";
             this.cmbAux1PairedCh08.Size = new System.Drawing.Size(66, 21);
@@ -3596,8 +3630,18 @@ namespace M1ConfigGenerator
             this.cmbAux1PairedCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAux1PairedCh07.FormattingEnabled = true;
             this.cmbAux1PairedCh07.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbAux1PairedCh07.Location = new System.Drawing.Point(739, 91);
             this.cmbAux1PairedCh07.Name = "cmbAux1PairedCh07";
             this.cmbAux1PairedCh07.Size = new System.Drawing.Size(66, 21);
@@ -3608,8 +3652,18 @@ namespace M1ConfigGenerator
             this.cmbAux1PairedCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAux1PairedCh06.FormattingEnabled = true;
             this.cmbAux1PairedCh06.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbAux1PairedCh06.Location = new System.Drawing.Point(667, 91);
             this.cmbAux1PairedCh06.Name = "cmbAux1PairedCh06";
             this.cmbAux1PairedCh06.Size = new System.Drawing.Size(66, 21);
@@ -3620,8 +3674,18 @@ namespace M1ConfigGenerator
             this.cmbAux1PairedCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAux1PairedCh05.FormattingEnabled = true;
             this.cmbAux1PairedCh05.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbAux1PairedCh05.Location = new System.Drawing.Point(595, 91);
             this.cmbAux1PairedCh05.Name = "cmbAux1PairedCh05";
             this.cmbAux1PairedCh05.Size = new System.Drawing.Size(66, 21);
@@ -3632,8 +3696,18 @@ namespace M1ConfigGenerator
             this.cmbAux1PairedCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAux1PairedCh04.FormattingEnabled = true;
             this.cmbAux1PairedCh04.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbAux1PairedCh04.Location = new System.Drawing.Point(523, 91);
             this.cmbAux1PairedCh04.Name = "cmbAux1PairedCh04";
             this.cmbAux1PairedCh04.Size = new System.Drawing.Size(66, 21);
@@ -3644,8 +3718,18 @@ namespace M1ConfigGenerator
             this.cmbAux1PairedCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAux1PairedCh03.FormattingEnabled = true;
             this.cmbAux1PairedCh03.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbAux1PairedCh03.Location = new System.Drawing.Point(451, 91);
             this.cmbAux1PairedCh03.Name = "cmbAux1PairedCh03";
             this.cmbAux1PairedCh03.Size = new System.Drawing.Size(66, 21);
@@ -3656,8 +3740,18 @@ namespace M1ConfigGenerator
             this.cmbAux1PairedCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAux1PairedCh02.FormattingEnabled = true;
             this.cmbAux1PairedCh02.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbAux1PairedCh02.Location = new System.Drawing.Point(379, 91);
             this.cmbAux1PairedCh02.Name = "cmbAux1PairedCh02";
             this.cmbAux1PairedCh02.Size = new System.Drawing.Size(66, 21);
@@ -3668,8 +3762,18 @@ namespace M1ConfigGenerator
             this.cmbAux1PairedCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAux1PairedCh01.FormattingEnabled = true;
             this.cmbAux1PairedCh01.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbAux1PairedCh01.Location = new System.Drawing.Point(307, 91);
             this.cmbAux1PairedCh01.Name = "cmbAux1PairedCh01";
             this.cmbAux1PairedCh01.Size = new System.Drawing.Size(66, 21);
@@ -3680,8 +3784,18 @@ namespace M1ConfigGenerator
             this.cmbAux1PairedCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAux1PairedCh00.FormattingEnabled = true;
             this.cmbAux1PairedCh00.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbAux1PairedCh00.Location = new System.Drawing.Point(235, 91);
             this.cmbAux1PairedCh00.Name = "cmbAux1PairedCh00";
             this.cmbAux1PairedCh00.Size = new System.Drawing.Size(66, 21);
@@ -4216,7 +4330,7 @@ namespace M1ConfigGenerator
             "7"});
             this.cmbAux1PanelNum.Location = new System.Drawing.Point(260, 25);
             this.cmbAux1PanelNum.Name = "cmbAux1PanelNum";
-            this.cmbAux1PanelNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbAux1PanelNum.Size = new System.Drawing.Size(32, 21);
             this.cmbAux1PanelNum.TabIndex = 2;
             this.cmbAux1PanelNum.SelectedIndexChanged += new System.EventHandler(this.cmbAux1PanelNum_SelectedIndexChanged);
             // 
@@ -4266,7 +4380,7 @@ namespace M1ConfigGenerator
             "8"});
             this.cmbAux1CardNum.Location = new System.Drawing.Point(109, 25);
             this.cmbAux1CardNum.Name = "cmbAux1CardNum";
-            this.cmbAux1CardNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbAux1CardNum.Size = new System.Drawing.Size(32, 21);
             this.cmbAux1CardNum.TabIndex = 1;
             this.cmbAux1CardNum.SelectedIndexChanged += new System.EventHandler(this.cmbAux1CardNum_SelectedIndexChanged);
             // 
@@ -4299,17 +4413,6 @@ namespace M1ConfigGenerator
             this.chkAux1MG2Ch02.TabIndex = 25;
             this.chkAux1MG2Ch02.UseVisualStyleBackColor = true;
             // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.SystemColors.Control;
-            this.label32.Location = new System.Drawing.Point(339, 27);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(74, 17);
-            this.label32.TabIndex = 20;
-            this.label32.Text = "Config Rev:";
-            // 
             // chkAux1MG2Ch07
             // 
             this.chkAux1MG2Ch07.Location = new System.Drawing.Point(755, 178);
@@ -4318,14 +4421,6 @@ namespace M1ConfigGenerator
             this.chkAux1MG2Ch07.Size = new System.Drawing.Size(35, 24);
             this.chkAux1MG2Ch07.TabIndex = 30;
             this.chkAux1MG2Ch07.UseVisualStyleBackColor = true;
-            // 
-            // tbxAux1CfgRev
-            // 
-            this.tbxAux1CfgRev.Location = new System.Drawing.Point(419, 25);
-            this.tbxAux1CfgRev.Name = "tbxAux1CfgRev";
-            this.tbxAux1CfgRev.Size = new System.Drawing.Size(32, 20);
-            this.tbxAux1CfgRev.TabIndex = 3;
-            this.tbxAux1CfgRev.Text = "1";
             // 
             // chkAux1MG4Ch00
             // 
@@ -4336,18 +4431,6 @@ namespace M1ConfigGenerator
             this.chkAux1MG4Ch00.TabIndex = 47;
             this.chkAux1MG4Ch00.UseVisualStyleBackColor = true;
             // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.BackColor = System.Drawing.Color.Transparent;
-            this.label33.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.SystemColors.Control;
-            this.label33.Location = new System.Drawing.Point(509, 27);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(101, 17);
-            this.label33.TabIndex = 23;
-            this.label33.Text = "Config Type:  0x";
-            // 
             // chkAux1MG3Ch06
             // 
             this.chkAux1MG3Ch06.Location = new System.Drawing.Point(683, 208);
@@ -4356,15 +4439,6 @@ namespace M1ConfigGenerator
             this.chkAux1MG3Ch06.Size = new System.Drawing.Size(35, 24);
             this.chkAux1MG3Ch06.TabIndex = 41;
             this.chkAux1MG3Ch06.UseVisualStyleBackColor = true;
-            // 
-            // tbxAux1CfgType
-            // 
-            this.tbxAux1CfgType.Location = new System.Drawing.Point(616, 26);
-            this.tbxAux1CfgType.MaxLength = 4;
-            this.tbxAux1CfgType.Name = "tbxAux1CfgType";
-            this.tbxAux1CfgType.Size = new System.Drawing.Size(48, 20);
-            this.tbxAux1CfgType.TabIndex = 4;
-            this.tbxAux1CfgType.Text = "0";
             // 
             // chkAux1MG2Ch11
             // 
@@ -4438,18 +4512,6 @@ namespace M1ConfigGenerator
             this.chkAux1MG1Ch02.Size = new System.Drawing.Size(35, 24);
             this.chkAux1MG1Ch02.TabIndex = 13;
             this.chkAux1MG1Ch02.UseVisualStyleBackColor = true;
-            // 
-            // chkAux1Force
-            // 
-            this.chkAux1Force.AutoSize = true;
-            this.chkAux1Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAux1Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkAux1Force.Location = new System.Drawing.Point(452, 70);
-            this.chkAux1Force.Name = "chkAux1Force";
-            this.chkAux1Force.Size = new System.Drawing.Size(129, 21);
-            this.chkAux1Force.TabIndex = 9;
-            this.chkAux1Force.Text = "Force Commands";
-            this.chkAux1Force.UseVisualStyleBackColor = true;
             // 
             // chkAux1MG3Ch00
             // 
@@ -16547,9 +16609,9 @@ namespace M1ConfigGenerator
             this.label210.ForeColor = System.Drawing.Color.Yellow;
             this.label210.Location = new System.Drawing.Point(3, 3);
             this.label210.Name = "label210";
-            this.label210.Size = new System.Drawing.Size(126, 17);
+            this.label210.Size = new System.Drawing.Size(184, 17);
             this.label210.TabIndex = 135;
-            this.label210.Text = "Mode (Output Type)";
+            this.label210.Text = "Mode Quick Set (Output Type)";
             // 
             // cmbLC1Mode00
             // 
@@ -26969,8 +27031,6 @@ namespace M1ConfigGenerator
             this.tabAux1.ResumeLayout(false);
             this.tabAux1.PerformLayout();
             this.tabControlAux1QF.ResumeLayout(false);
-            this.tabAux1Quick.ResumeLayout(false);
-            this.tabAux1Quick.PerformLayout();
             this.tabAux1Full.ResumeLayout(false);
             this.tabAux1Full.PerformLayout();
             this.tabAuxGenerated.ResumeLayout(false);
@@ -27505,14 +27565,9 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.ComboBox cmbAux1CardNum;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox tbxAux1CfgRev;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox tbxAux1CfgType;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.CheckBox chkAux1DCMotor;
         private System.Windows.Forms.CheckBox chkAux1DCDimmer;
-        private System.Windows.Forms.CheckBox chkAux1Force;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.TextBox tbxAux1BaseIndex;
         private System.Windows.Forms.CheckBox chkAux1MG4Ch11;
@@ -28084,13 +28139,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.ComboBox cmbAux1DirectionCh01;
         private System.Windows.Forms.ComboBox cmbAux1DirectionCh00;
         private System.Windows.Forms.Label label397;
-        private System.Windows.Forms.CheckBox chkAux1QuickPair1011;
-        private System.Windows.Forms.CheckBox chkAux1QuickPair0809;
-        private System.Windows.Forms.CheckBox chkAux1QuickPair0607;
-        private System.Windows.Forms.CheckBox chkAux1QuickPair0405;
-        private System.Windows.Forms.CheckBox chkAux1QuickPair0203;
-        private System.Windows.Forms.Label label542;
-        private System.Windows.Forms.CheckBox chkAux1QuickPair0001;
         private TablessControl tabControlBreaker1QF;
         private System.Windows.Forms.TabPage tabBreak1Quick;
         private System.Windows.Forms.TabPage tabBreak1Full;
@@ -28191,7 +28239,7 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.CheckBox chkTabVisHC1;
         private System.Windows.Forms.CheckBox chkTabVisLC1;
         //private System.Windows.Forms.TabControl tabControl4;
-        private System.Windows.Forms.TabPage tabPage21;
+        //private System.Windows.Forms.TabPage tabPage21;
         private System.Windows.Forms.Label label523;
         private System.Windows.Forms.Label lblHC1Ch00;
         private System.Windows.Forms.Label lblHC1Ch04;
@@ -28928,6 +28976,13 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh01;
         private System.Windows.Forms.ComboBox cmbLCOverrideInputForwardCh00;
         private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox tbxAux1CardLetter;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox tbxAux1CfgRev;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.TextBox tbxAux1CfgType;
+        private System.Windows.Forms.TextBox tbxStartAuxCfgRev;
     }
 }
 

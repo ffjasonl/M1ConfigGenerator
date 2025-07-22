@@ -235,10 +235,10 @@ namespace M1ConfigGenerator
             return configPathHR;
         }
 
-        public void HC_SetAsHR()
-        {
-            isHCRelay = true;
-        }
+        //public void HC_SetAsHR()
+        //{
+        //    isHCRelay = true;
+        //}
 
         public void HC_SetRGB(bool enabled)
         {
@@ -466,7 +466,7 @@ namespace M1ConfigGenerator
 
         // No setters for forward or reverse override at this time
 
-        private bool isHCRelay = false;
+        //private bool isHCRelay = false;
 
         private string configPath = @"M1_DcDriver_Config\Src\M1_HC_Bridge\DeviceConfigs\";
 

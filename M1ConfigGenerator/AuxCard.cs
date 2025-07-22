@@ -35,7 +35,7 @@ namespace M1ConfigGenerator
 
         public void CreateAuxFile()
         {
-            using (StreamWriter sw = File.CreateText(@GetConfigPath() + M1_GetConfigName()))
+            using (StreamWriter sw = File.CreateText(@Aux_GetConfigPath() + M1_GetConfigName()))
             {
                 DateTime currentDateTime = DateTime.Now;
                 sw.WriteLine(commentBox);
@@ -89,46 +89,46 @@ namespace M1ConfigGenerator
                 }
             }
         }
-        public string GetConfigPath()
+        public string Aux_GetConfigPath()
         {
             return configPath;
         }
 
-        public void SetDirection(int argInt, string argString)
+        public void Aux_SetDirection(int argInt, string argString)
         {
             auxChDirectionValues[argInt] = argString;
         }
 
-        public void SetDeadTime(int argInt, string argString)
+        public void Aux_SetDeadTime(int argInt, string argString)
         {
             auxChDeadtimeValues[argInt] = argString;
         }
 
-        public void SetPaired(int argInt, string argString)
+        public void Aux_SetPaired(int argInt, string argString)
         {
             auxChPairedValues[argInt] = argString;
         }
 
-        public void SetTimeout(int argInt, bool argBool)
+        public void Aux_SetTimeout(int argInt, bool argBool)
         {
             auxChTimeoutValues[argInt] = argBool ? "TRUE" : "FALSE";
         }
 
-        public void SetTimeoutTime(int argInt, string argString)
+        public void Aux_SetTimeoutTime(int argInt, string argString)
         {
             auxChTimeoutTimeValues[argInt] = argString;
         }
 
-        public void SetMaxOn(int argInt, string argString)
+        public void Aux_SetMaxOn(int argInt, string argString)
         {
             auxChMaxOnValues[argInt] = argString;
         }
 
-        public void SetMaxDurRec(int argInt, string argString)
+        public void Aux_SetMaxDurRec(int argInt, string argString)
         {
             auxChMaxDurRecoveryTimeValues[argInt] = argString;
         }
-        public void SetQuickPair(bool argBool, int argInt)
+        public void Aux_SetQuickPair(bool argBool, int argInt)
         {
             if (argBool == true)
             {

@@ -22,12 +22,6 @@ namespace M1ConfigGenerator
 
         List<AuxCard> auxObjects = new List<AuxCard>();
         int AuxCardActive;
-        ComboBox[] auxCardNum;
-        ComboBox[] auxPanelNum;
-        TextBox[] auxConfigRev;
-        TextBox[] auxConfigType;
-        CheckBox[] auxDCDimmer; CheckBox[] auxDCMotor; CheckBox[] auxShade; CheckBox[] auxForce;
-        TextBox[] auxBaseInstance;
         bool[] aux1Group00; bool[] aux1Group01; bool[] aux1Group02; bool[] aux1Group03; bool[] aux1Group04; bool[] aux1Group05;
         bool[] aux1Group06; bool[] aux1Group07; bool[] aux1Group08; bool[] aux1Group09; bool[] aux1Group10; bool[] aux1Group11;
         bool[][] aux1Groups;
@@ -187,7 +181,7 @@ namespace M1ConfigGenerator
         {
             SetMenuColors(0);
             tabControlMain.SelectedIndex = (int) MainTab.Aux;
-            //Aux_GetAll(AuxCardActive);
+            Aux_GetAll(AuxCardActive);
             AuxCardNavColor(auxBtnArray, auxBtnArray[AuxCardActive]);
             ShowAuxNav(cmbStartAux.SelectedIndex);
         }
@@ -305,6 +299,7 @@ namespace M1ConfigGenerator
             for (int i = 0; i < cmbStartAux.SelectedIndex; i++)
             {
                 auxObjects.Add(new AuxCard(i + 1));
+                auxObjects[i].M1_SetCfgRev(tbxStartAuxCfgRev.Text);
             }
 
             for (int i = 0; i < cmbStartBreaker.SelectedIndex; i++)
@@ -337,7 +332,7 @@ namespace M1ConfigGenerator
             }
 
             // set Config Type here, don't need to mess with Get that adds "0x"
-            //tbxAux1CfgType.Text = tbxStartCfgType.Text;
+            tbxAux1CfgType.Text = tbxStartCfgType.Text;
             //tbxBreaker1CfgType.Text = tbxStartCfgType.Text;
             tbxDimmer1CfgType.Text = tbxStartCfgType.Text;
             tbxHC1CfgType.Text = tbxStartCfgType.Text;
@@ -401,6 +396,11 @@ namespace M1ConfigGenerator
             CheckStartCreate();
         }
 
+        private void tbxStartAuxCfgRev_TextChanged(object sender, EventArgs e)
+        {
+            CheckStartCreate();
+        }
+
         private void cmbStartDimmer_TextChanged(object sender, EventArgs e)
         {
             CheckStartCreate();
@@ -447,6 +447,8 @@ namespace M1ConfigGenerator
             int numCards = 0;
 
             // Aux
+            if (cmbStartAux.Text != "0" && cmbStartAux.Text != "") { numCards++; }
+            if (ValidateConfigRev(tbxStartAuxCfgRev.Text)) { checkCount++; }
 
             // Breaker
 
@@ -511,6 +513,27 @@ namespace M1ConfigGenerator
 
         private void btnAuxGenerate_Click(object sender, EventArgs e)
         {
+
+
+            List<bool[][]> auxGroups = new List<bool[][]>();
+            auxGroups.Add(aux1Groups);
+
+            // Aux cards
+            for (int card = 0; card < Convert.ToInt16(cmbStartAux.Text); card++)
+            {
+            }
+
+            auxObjects.ForEach(auxObjects => auxObjects.CreateAuxFile());
+            CreateAuxReferenceFile();
+            AuxCardNavColor(auxBtnArray, btnAuxGenerate);
+            tabControlAux.SelectedIndex = 2;
+            // prints the file context of the folder
+            string[] auxFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_AuxCard\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
+            tbxAuxGenerated.Lines = auxFiles;
+        }
+
+        public void Aux_SetAll(int card)
+        {
             // need to set by channel but get by group
             aux1Group00 = new bool[] { chkAux1MG1Ch00.Checked, chkAux1MG2Ch00.Checked, chkAux1MG3Ch00.Checked, chkAux1MG4Ch00.Checked };
             aux1Group01 = new bool[] { chkAux1MG1Ch01.Checked, chkAux1MG2Ch01.Checked, chkAux1MG3Ch01.Checked, chkAux1MG4Ch01.Checked };
@@ -525,45 +548,43 @@ namespace M1ConfigGenerator
             aux1Group10 = new bool[] { chkAux1MG1Ch10.Checked, chkAux1MG2Ch10.Checked, chkAux1MG3Ch10.Checked, chkAux1MG4Ch10.Checked };
             aux1Group11 = new bool[] { chkAux1MG1Ch11.Checked, chkAux1MG2Ch11.Checked, chkAux1MG3Ch11.Checked, chkAux1MG4Ch11.Checked };
             aux1Groups = new bool[][] { aux1Group00, aux1Group01, aux1Group02, aux1Group03, aux1Group04, aux1Group05, aux1Group06, aux1Group07, aux1Group08, aux1Group09, aux1Group10, aux1Group11 };
-
-
-            List<bool[][]> auxGroups = new List<bool[][]>();
-            auxGroups.Add(aux1Groups);
-
-            aux1QuickPair = new bool[] { chkAux1QuickPair0001.Checked, chkAux1QuickPair0203.Checked, chkAux1QuickPair0405.Checked, chkAux1QuickPair0607.Checked, chkAux1QuickPair0809.Checked, chkAux1QuickPair1011.Checked };
-            auxQuickPairGroups = new bool[][] { aux1QuickPair };
-
-            // Aux cards
-            for (int card = 0; card < Convert.ToInt16(cmbStartAux.Text); card++)
+            auxObjects[card].M1_SetVerRev(btnMenuNew.Text);
+            auxObjects[card].M1_SetFullSetup(chkTabVisAux1.Checked);
+            auxObjects[card].M1_SetCardNumber(cmbAux1CardNum.Text);
+            auxObjects[card].M1_SetPanelNumber(cmbAux1PanelNum.Text);
+            auxObjects[card].M1_SetDevAddr();
+            auxObjects[card].M1_SetCardLetter(tbxAux1CardLetter.Text);
+            auxObjects[card].M1_SetCfgRev(tbxAux1CfgRev.Text);
+            auxObjects[card].M1_SetCfgType(tbxAux1CfgType.Text);
+            auxObjects[card].M1_SetDCDimmer(chkAux1DCDimmer.Checked);
+            auxObjects[card].M1_SetDCMotor(chkAux1DCMotor.Checked);
+            auxObjects[card].M1_SetShade(chkAux1Shade.Checked);
+            auxObjects[card].M1_SetBaseIndex(tbxAux1BaseIndex.Text);
+            for (int channel = 0; channel < 12; channel++)
             {
-                //auxObjects[card].M1_SetDevAddr(auxCardNum[card].SelectedIndex, auxPanelNum[card].SelectedIndex);
-                auxObjects[card].M1_SetCfgRev(auxConfigRev[card].Text);
-                auxObjects[card].M1_SetCfgType(auxConfigType[card].Text);
-                auxObjects[card].M1_SetDCDimmer(true); // hard coding for aux card
-                auxObjects[card].M1_SetDCMotor(auxDCMotor[card].Checked);
-                auxObjects[card].M1_SetShade(auxShade[card].Checked);
-                auxObjects[card].M1_SetForce(auxForce[card].Checked);
-                auxObjects[card].M1_SetBaseIndex(auxBaseInstance[card].Text);
-                for (int channel = 0; channel < 12; channel++)
-                {
-                    //auxObjects[card].M1_SetGroup0(auxGroups[card][channel], channel); // takes care of all 4 groups
-                    auxObjects[card].SetDirection(channel, auxDirections[channel].Text);
-                    auxObjects[card].SetDeadTime(channel, auxDeadTimes[channel].Text);
-                    auxObjects[card].SetPaired(channel, auxPairedTimes[channel].Text);
-                    auxObjects[card].SetTimeout(channel, auxTimeouts[channel].Checked);
-                    auxObjects[card].SetTimeoutTime(channel, auxTimeoutTimes[channel].Text);
-                    auxObjects[card].SetMaxOn(channel, auxMaxOns[channel].Text);
-                    auxObjects[card].SetMaxDurRec(channel, auxMaxDurRecs[channel].Text);
-                }
+                auxObjects[card].M1_SetGroup0(aux1Groups[channel], channel); // takes care of all 4 groups
+                auxObjects[card].Aux_SetDirection(channel, auxDirections[channel].Text);
+                auxObjects[card].Aux_SetDeadTime(channel, auxDeadTimes[channel].Text);
+                auxObjects[card].Aux_SetPaired(channel, auxPairedTimes[channel].Text);
+                auxObjects[card].Aux_SetTimeout(channel, auxTimeouts[channel].Checked);
+                auxObjects[card].Aux_SetTimeoutTime(channel, auxTimeoutTimes[channel].Text);
+                auxObjects[card].Aux_SetMaxOn(channel, auxMaxOns[channel].Text);
+                auxObjects[card].Aux_SetMaxDurRec(channel, auxMaxDurRecs[channel].Text);
             }
+        }
 
-            auxObjects.ForEach(auxObjects => auxObjects.CreateAuxFile());
-            CreateAuxReferenceFile();
-            AuxCardNavColor(auxBtnArray, btnAuxGenerate);
-            tabControlAux.SelectedIndex = 2;
-            // prints the file context of the folder
-            string[] auxFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_AuxCard\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
-            tbxAuxGenerated.Lines = auxFiles;
+        public void Aux_GetAll(int card)
+        {
+            chkTabVisAux1.Checked = auxObjects[card].M1_GetFullSetup();
+            cmbAux1CardNum.Text = auxObjects[card].M1_GetCardNumber();
+            cmbAux1PanelNum.Text = auxObjects[card].M1_GetPanelNumber();
+            tbxAux1CardLetter.Text = auxObjects[card].M1_GetCardLetter();
+            tbxAux1CfgRev.Text = auxObjects[card].M1_GetCfgRev();
+            tbxAux1CfgType.Text = auxObjects[card].M1_GetCfgType();
+            chkAux1DCDimmer.Checked = auxObjects[card].M1_GetDCDimmer();
+            chkAux1DCMotor.Checked = auxObjects[card].M1_GetDCMotor();
+            chkAux1Shade.Checked = auxObjects[card].M1_GetShade();
+            tbxAux1BaseIndex.Text = auxObjects[card].M1_GetBaseIndex();
         }
 
         private void CreateAuxReferenceFile() // card-specific because of the path, which is stored in each card object but isn't related to the Start tab combo box for that card type
@@ -582,11 +603,9 @@ namespace M1ConfigGenerator
             int checkCounter = 0;
             int numAuxCards = Convert.ToInt16(cmbStartAux.Text);
 
-            bool[] checkAux = new bool[] { CheckAux1() };
-
             for (int i = 0; i < numAuxCards; i++)
             {
-                if (checkAux[i] == true)
+                if (auxObjects[i].M1_GetCardNumber() != "" && auxObjects[i].M1_GetPanelNumber() != "" && auxObjects[i].M1_GetBaseIndex() != "")
                 {
                     checkCounter++;
                 }
@@ -602,45 +621,85 @@ namespace M1ConfigGenerator
             }
         }
 
-        private bool CheckAux1()
-        {
-            return ((cmbAux1CardNum.Text != "") && (cmbAux1PanelNum.Text != "") && (tbxAux1BaseIndex.Text != ""));
-        }
-
         private void btnAuxCard1_Click(object sender, EventArgs e)
         {
             AuxCardNavColor(auxBtnArray, btnAuxCard1);
             tabControlAux.SelectedIndex = 0;
-            tabControlAux1QF.SelectedIndex = 0;
+            Aux_SetAll(AuxCardActive);
+            AuxCardActive = (int)CardNum.Card1;
+            Aux_GetAll(AuxCardActive);
+            tabControlAux1QF.SelectedIndex = (chkTabVisAux1.Checked ? 1 : 0);
         }
 
         private void btnAuxCard2_Click(object sender, EventArgs e)
         {
             AuxCardNavColor(auxBtnArray, btnAuxCard2);
             tabControlAux.SelectedIndex = 0;
-            tabControlAux1QF.SelectedIndex = 0;
+            Aux_SetAll(AuxCardActive);
+            AuxCardActive = (int)CardNum.Card2;
+            Aux_GetAll(AuxCardActive);
+            tabControlAux1QF.SelectedIndex = (chkTabVisAux1.Checked ? 1 : 0);
         }
 
         private void btnAuxCard3_Click(object sender, EventArgs e)
         {
             AuxCardNavColor(auxBtnArray, btnAuxCard3);
+            tabControlAux.SelectedIndex = 0;
+            Aux_SetAll(AuxCardActive);
+            AuxCardActive = (int)CardNum.Card3;
+            Aux_GetAll(AuxCardActive);
+            tabControlAux1QF.SelectedIndex = (chkTabVisAux1.Checked ? 1 : 0);
         }
 
         private void btnAuxCard4_Click(object sender, EventArgs e)
         {
             AuxCardNavColor(auxBtnArray, btnAuxCard4);
+            tabControlAux.SelectedIndex = 0;
+            Aux_SetAll(AuxCardActive);
+            AuxCardActive = (int)CardNum.Card4;
+            Aux_GetAll(AuxCardActive);
+            tabControlAux1QF.SelectedIndex = (chkTabVisAux1.Checked ? 1 : 0);
         }
 
         private void btnAuxCard5_Click(object sender, EventArgs e)
         {
             AuxCardNavColor(auxBtnArray, btnAuxCard5);
+            tabControlAux.SelectedIndex = 0;
+            Aux_SetAll(AuxCardActive);
+            AuxCardActive = (int)CardNum.Card5;
+            Aux_GetAll(AuxCardActive);
+            tabControlAux1QF.SelectedIndex = (chkTabVisAux1.Checked ? 1 : 0);
         }
 
         private void btnAuxCard6_Click(object sender, EventArgs e)
         {
             AuxCardNavColor(auxBtnArray, btnAuxCard6);
+            tabControlAux.SelectedIndex = 0;
+            Aux_SetAll(AuxCardActive);
+            AuxCardActive = (int)CardNum.Card6;
+            Aux_GetAll(AuxCardActive);
+            tabControlAux1QF.SelectedIndex = (chkTabVisAux1.Checked ? 1 : 0);
         }
 
+        private void btnAuxCard7_Click(object sender, EventArgs e)
+        {
+            AuxCardNavColor(auxBtnArray, btnAuxCard7);
+            tabControlAux.SelectedIndex = 0;
+            Aux_SetAll(AuxCardActive);
+            AuxCardActive = (int)CardNum.Card7;
+            Aux_GetAll(AuxCardActive);
+            tabControlAux1QF.SelectedIndex = (chkTabVisAux1.Checked ? 1 : 0);
+        }
+
+        private void btnAuxCard8_Click(object sender, EventArgs e)
+        {
+            AuxCardNavColor(auxBtnArray, btnAuxCard8);
+            tabControlAux.SelectedIndex = 0;
+            Aux_SetAll(AuxCardActive);
+            AuxCardActive = (int)CardNum.Card8;
+            Aux_GetAll(AuxCardActive);
+            tabControlAux1QF.SelectedIndex = (chkTabVisAux1.Checked ? 1 : 0);
+        }
         private void ShowAuxNav(int argInt)
         {
             for (int i = 0; i < argInt; i++)
@@ -657,26 +716,19 @@ namespace M1ConfigGenerator
 
         private void cmbAux1CardNum_SelectedIndexChanged(object sender, EventArgs e)
         {
+            auxObjects[AuxCardActive].M1_SetCardNumber(cmbAux1CardNum.Text);
             CheckAuxGenerate();
         }
 
         private void cmbAux1PanelNum_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckAuxGenerate();
-        }
-
-        private void cmbAux2CardNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CheckAuxGenerate();
-        }
-
-        private void cmbAux2PanelNum_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            auxObjects[AuxCardActive].M1_SetPanelNumber(cmbAux1PanelNum.Text);
             CheckAuxGenerate();
         }
 
         private void tbxAux1BaseIndex_TextChanged(object sender, EventArgs e)
         {
+            auxObjects[AuxCardActive].M1_SetBaseIndex(tbxAux1BaseIndex.Text);
             lblAux1Ch00.Text = ChangeChannelLabel(tbxAux1BaseIndex.Text, 0);
             lblAux1Ch01.Text = ChangeChannelLabel(tbxAux1BaseIndex.Text, 1);
             lblAux1Ch02.Text = ChangeChannelLabel(tbxAux1BaseIndex.Text, 2);
@@ -4274,15 +4326,6 @@ namespace M1ConfigGenerator
             hrBtnArray = new Button[] { btnHRCard1, btnHRCard2, btnHRCard3, btnHRCard4, btnHRCard5, btnHRCard6, btnHRCard7, btnHRCard8 };
             lcBtnArray = new Button[] { btnLCCard1, btnLCCard2, btnLCCard3, btnLCCard4, btnLCCard5, btnLCCard6, btnLCCard7, btnLCCard8 };
 
-            auxCardNum = new ComboBox[] { cmbAux1CardNum };
-            auxPanelNum = new ComboBox[] { cmbAux1PanelNum };
-            auxConfigRev = new TextBox[] { tbxAux1CfgRev };
-            auxConfigType = new TextBox[] { tbxAux1CfgType };
-            auxDCDimmer = new CheckBox[] { chkAux1DCDimmer };
-            auxDCMotor = new CheckBox[] { chkAux1DCMotor };
-            auxShade = new CheckBox[] { chkAux1Shade };
-            auxForce = new CheckBox[] { chkAux1Force };
-            auxBaseInstance = new TextBox[] { tbxAux1BaseIndex };
             auxDirections = new ComboBox[] { cmbAux1DirectionCh00, cmbAux1DirectionCh01, cmbAux1DirectionCh02, cmbAux1DirectionCh03, cmbAux1DirectionCh04, cmbAux1DirectionCh05, cmbAux1DirectionCh06, cmbAux1DirectionCh07, cmbAux1DirectionCh08, cmbAux1DirectionCh09, cmbAux1DirectionCh10, cmbAux1DirectionCh11 };
             auxDeadTimes = new ComboBox[] { cmbAux1DeadTimeCh00, cmbAux1DeadTimeCh01, cmbAux1DeadTimeCh02, cmbAux1DeadTimeCh03, cmbAux1DeadTimeCh04, cmbAux1DeadTimeCh05, cmbAux1DeadTimeCh06, cmbAux1DeadTimeCh07, cmbAux1DeadTimeCh08, cmbAux1DeadTimeCh09, cmbAux1DeadTimeCh10, cmbAux1DeadTimeCh11 };
             auxPairedTimes = new ComboBox[] { cmbAux1PairedCh00, cmbAux1PairedCh01, cmbAux1PairedCh02, cmbAux1PairedCh03, cmbAux1PairedCh04, cmbAux1PairedCh05, cmbAux1PairedCh06, cmbAux1PairedCh07, cmbAux1PairedCh08, cmbAux1PairedCh09, cmbAux1PairedCh10, cmbAux1PairedCh11 };

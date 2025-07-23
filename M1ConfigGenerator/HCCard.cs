@@ -316,7 +316,7 @@ namespace M1ConfigGenerator
             else { return hcChModeValues[argInt].Substring(10); } // RGB and RGBW can be returned as is, minus DRVR_TYPE_
         }
 
-        // not going to make a GetQuickMode because there are too many combinations that could return false values
+        // not going to make a GetQuickMode that derives the quick mode from the actual mode settings because there are too many combinations that could return false values
 
         public void HC_SetDeadTime(int argInt, string argString)
         {

@@ -21353,10 +21353,10 @@ namespace M1ConfigGenerator
             // 
             // tbxLC1CfgType
             // 
-            this.tbxLC1CfgType.Location = new System.Drawing.Point(730, 25);
+            this.tbxLC1CfgType.Location = new System.Drawing.Point(730, 26);
             this.tbxLC1CfgType.MaxLength = 4;
             this.tbxLC1CfgType.Name = "tbxLC1CfgType";
-            this.tbxLC1CfgType.Size = new System.Drawing.Size(48, 20);
+            this.tbxLC1CfgType.Size = new System.Drawing.Size(32, 20);
             this.tbxLC1CfgType.TabIndex = 4;
             this.tbxLC1CfgType.Text = "0";
             // 

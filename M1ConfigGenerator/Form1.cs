@@ -25,8 +25,6 @@ namespace M1ConfigGenerator
         bool[] aux1Group00; bool[] aux1Group01; bool[] aux1Group02; bool[] aux1Group03; bool[] aux1Group04; bool[] aux1Group05;
         bool[] aux1Group06; bool[] aux1Group07; bool[] aux1Group08; bool[] aux1Group09; bool[] aux1Group10; bool[] aux1Group11;
         bool[][] aux1Groups;
-        bool[] aux1QuickPair; 
-        bool[][] auxQuickPairGroups;
         ComboBox[] auxDirections;
         ComboBox[] auxDeadTimes;
         ComboBox[] auxPairedTimes;
@@ -513,20 +511,11 @@ namespace M1ConfigGenerator
 
         private void btnAuxGenerate_Click(object sender, EventArgs e)
         {
-
-
-            List<bool[][]> auxGroups = new List<bool[][]>();
-            auxGroups.Add(aux1Groups);
-
-            // Aux cards
-            for (int card = 0; card < Convert.ToInt16(cmbStartAux.Text); card++)
-            {
-            }
-
+            Aux_SetAll(AuxCardActive);
             auxObjects.ForEach(auxObjects => auxObjects.CreateAuxFile());
             CreateAuxReferenceFile();
             AuxCardNavColor(auxBtnArray, btnAuxGenerate);
-            tabControlAux.SelectedIndex = 2;
+            tabControlAux.SelectedIndex = 1;
             // prints the file context of the folder
             string[] auxFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_AuxCard\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
             tbxAuxGenerated.Lines = auxFiles;
@@ -554,6 +543,8 @@ namespace M1ConfigGenerator
             auxObjects[card].M1_SetPanelNumber(cmbAux1PanelNum.Text);
             auxObjects[card].M1_SetDevAddr();
             auxObjects[card].M1_SetCardLetter(tbxAux1CardLetter.Text);
+            auxObjects[card].M1_ChangeConfigName();
+            auxObjects[card].Aux_ChangeAddress();
             auxObjects[card].M1_SetCfgRev(tbxAux1CfgRev.Text);
             auxObjects[card].M1_SetCfgType(tbxAux1CfgType.Text);
             auxObjects[card].M1_SetDCDimmer(chkAux1DCDimmer.Checked);
@@ -576,11 +567,12 @@ namespace M1ConfigGenerator
         public void Aux_GetAll(int card)
         {
             chkTabVisAux1.Checked = auxObjects[card].M1_GetFullSetup();
-            cmbAux1CardNum.Text = auxObjects[card].M1_GetCardNumber();
-            cmbAux1PanelNum.Text = auxObjects[card].M1_GetPanelNumber();
+            if (auxObjects[card].M1_GetCardNumber() == "") { BlankComboBox(cmbAux1CardNum); }
+            else { cmbAux1CardNum.Text = auxObjects[card].M1_GetCardNumber(); }
+            if (auxObjects[card].M1_GetPanelNumber() == "") { BlankComboBox(cmbAux1PanelNum); }
+            else { cmbAux1PanelNum.Text = auxObjects[card].M1_GetPanelNumber(); }           
             tbxAux1CardLetter.Text = auxObjects[card].M1_GetCardLetter();
             tbxAux1CfgRev.Text = auxObjects[card].M1_GetCfgRev();
-            tbxAux1CfgType.Text = auxObjects[card].M1_GetCfgType();
             chkAux1DCDimmer.Checked = auxObjects[card].M1_GetDCDimmer();
             chkAux1DCMotor.Checked = auxObjects[card].M1_GetDCMotor();
             chkAux1Shade.Checked = auxObjects[card].M1_GetShade();

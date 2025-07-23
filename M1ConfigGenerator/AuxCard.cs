@@ -11,10 +11,11 @@ namespace M1ConfigGenerator
     {
         public AuxCard(int argInt)
         {
-            //SetTestString(argInt);
+            M1_SetCardLetterOnCreation(Convert.ToString(argInt));
+        }
 
-            M1_SetCardLetter(Convert.ToString(argInt));
-            M1_ChangeConfigName();
+        public void Aux_ChangeAddress()
+        {
             // general
             M1_ChangeAddress(m1ParameterNames);
             // channels

@@ -97,7 +97,18 @@ namespace M1ConfigGenerator
 
         public void Aux_SetDirection(int argInt, string argString)
         {
-            auxChDirectionValues[argInt] = argString;
+            auxChDirectionValues[argInt] = "DRVR_STATE_" + argString.ToUpper();
+        }
+
+        public string Aux_GetDirection(int argInt)
+        {
+            if (auxChDirectionValues[argInt] == "DRVR_STATE_HIGH")          { return "High"; }
+            else if (auxChDirectionValues[argInt] == "DRVR_STATE_LOW")      { return "Low"; }
+            else if (auxChDirectionValues[argInt] == "DRVR_STATE_REVERSE")  { return "Reverse"; }
+            else if (auxChDirectionValues[argInt] == "DRVR_STATE_FORWARD")  { return "Forward"; }
+            else if (auxChDirectionValues[argInt] == "DRVR_STATE_UP")       { return "Up"; }
+            else if (auxChDirectionValues[argInt] == "DRVR_STATE_DOWN")     { return "Down"; }
+            else                                                            { return "Off"; }
         }
 
         public void Aux_SetDeadTime(int argInt, string argString)
@@ -105,14 +116,31 @@ namespace M1ConfigGenerator
             auxChDeadtimeValues[argInt] = argString;
         }
 
+        public string Aux_GetDeadTime(int argInt)
+        {
+            return auxChDeadtimeValues[argInt];
+        }
+
         public void Aux_SetPaired(int argInt, string argString)
         {
-            auxChPairedValues[argInt] = argString;
+            if (argString == "None") { auxChPairedValues[argInt] = "NO_SLAVE"; }
+            else { auxChPairedValues[argInt] = argString; }            
+        }
+
+        public string Aux_GetPaired(int argInt)
+        {
+            if (auxChPairedValues[argInt] == "NO_SLAVE") { return "None"; }
+            else { return auxChPairedValues[argInt]; }
         }
 
         public void Aux_SetTimeout(int argInt, bool argBool)
         {
             auxChTimeoutValues[argInt] = argBool ? "TRUE" : "FALSE";
+        }
+
+        public bool Aux_GetTimeout(int argInt)
+        {
+            return (auxChTimeoutValues[argInt] == "TRUE");
         }
 
         public void Aux_SetTimeoutTime(int argInt, string argString)
@@ -150,7 +178,7 @@ namespace M1ConfigGenerator
         public string[] auxChDirectionValues = { "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF", "DRVR_STATE_OFF" };
         //
         public string[] auxChDeadtimeNames = { "DEADTIME_CHNL_Z0", "DEADTIME_CHNL_Z1", "DEADTIME_CHNL_Z2", "DEADTIME_CHNL_Z3", "DEADTIME_CHNL_Z4", "DEADTIME_CHNL_Z5", "DEADTIME_CHNL_Z6", "DEADTIME_CHNL_Z7", "DEADTIME_CHNL_Z8", "DEADTIME_CHNL_Z9", "DEADTIME_CHNL_Z10", "DEADTIME_CHNL_Z11" };
-        public string[] auxChDeadtimeValues = { "500", "500", "500", "500", "500", "500", "500", "500", "500", "500", "500", "500" };
+        public string[] auxChDeadtimeValues = { "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" };
         //
         public string[] auxChPairedNames = { "PAIRED_INDEX_CHNL_Z0", "PAIRED_INDEX_CHNL_Z1", "PAIRED_INDEX_CHNL_Z2", "PAIRED_INDEX_CHNL_Z3", "PAIRED_INDEX_CHNL_Z4", "PAIRED_INDEX_CHNL_Z5", "PAIRED_INDEX_CHNL_Z6", "PAIRED_INDEX_CHNL_Z7", "PAIRED_INDEX_CHNL_Z8", "PAIRED_INDEX_CHNL_Z9", "PAIRED_INDEX_CHNL_Z10", "PAIRED_INDEX_CHNL_Z11" };
         public string[] auxChPairedValues = { "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE", "NO_SLAVE" };

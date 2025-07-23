@@ -30,7 +30,7 @@ namespace M1ConfigGenerator
         CheckBox[][] auxGetGroups;
         ComboBox[] auxDirections;
         ComboBox[] auxDeadTimes;
-        ComboBox[] auxPairedTimes;
+        ComboBox[] auxPaired;
         CheckBox[] auxTimeouts;
         TextBox[] auxTimeoutTimes;
         TextBox[] auxMaxOns;
@@ -559,7 +559,7 @@ namespace M1ConfigGenerator
                 auxObjects[card].M1_SetGroup0(aux1Groups[channel], channel); // takes care of all 4 groups
                 auxObjects[card].Aux_SetDirection(channel, auxDirections[channel].Text);
                 auxObjects[card].Aux_SetDeadTime(channel, auxDeadTimes[channel].Text);
-                auxObjects[card].Aux_SetPaired(channel, auxPairedTimes[channel].Text);
+                auxObjects[card].Aux_SetPaired(channel, auxPaired[channel].Text);
                 auxObjects[card].Aux_SetTimeout(channel, auxTimeouts[channel].Checked);
                 auxObjects[card].Aux_SetTimeoutTime(channel, auxTimeoutTimes[channel].Text);
                 auxObjects[card].Aux_SetMaxOn(channel, auxMaxOns[channel].Text);
@@ -586,6 +586,10 @@ namespace M1ConfigGenerator
                 auxGetGroups[channel][1].Checked    = auxObjects[card].M1_GetGroup1(channel);
                 auxGetGroups[channel][2].Checked    = auxObjects[card].M1_GetGroup2(channel);
                 auxGetGroups[channel][3].Checked    = auxObjects[card].M1_GetGroup3(channel);
+                auxDirections[channel].Text         = auxObjects[card].Aux_GetDirection(channel);
+                auxDeadTimes[channel].Text          = auxObjects[card].Aux_GetDeadTime(channel);
+                auxPaired[channel].Text             = auxObjects[card].Aux_GetPaired(channel);
+                auxTimeouts[channel].Checked        = auxObjects[card].Aux_GetTimeout(channel);
             }
         }
 
@@ -4343,7 +4347,7 @@ namespace M1ConfigGenerator
             auxGetGroups = new CheckBox[][] { auxGetGroup00,  auxGetGroup01, auxGetGroup02, auxGetGroup03, auxGetGroup04, auxGetGroup05, auxGetGroup06, auxGetGroup07, auxGetGroup08, auxGetGroup09, auxGetGroup10, auxGetGroup11 };
             auxDirections = new ComboBox[] { cmbAux1DirectionCh00, cmbAux1DirectionCh01, cmbAux1DirectionCh02, cmbAux1DirectionCh03, cmbAux1DirectionCh04, cmbAux1DirectionCh05, cmbAux1DirectionCh06, cmbAux1DirectionCh07, cmbAux1DirectionCh08, cmbAux1DirectionCh09, cmbAux1DirectionCh10, cmbAux1DirectionCh11 };
             auxDeadTimes = new ComboBox[] { cmbAux1DeadTimeCh00, cmbAux1DeadTimeCh01, cmbAux1DeadTimeCh02, cmbAux1DeadTimeCh03, cmbAux1DeadTimeCh04, cmbAux1DeadTimeCh05, cmbAux1DeadTimeCh06, cmbAux1DeadTimeCh07, cmbAux1DeadTimeCh08, cmbAux1DeadTimeCh09, cmbAux1DeadTimeCh10, cmbAux1DeadTimeCh11 };
-            auxPairedTimes = new ComboBox[] { cmbAux1PairedCh00, cmbAux1PairedCh01, cmbAux1PairedCh02, cmbAux1PairedCh03, cmbAux1PairedCh04, cmbAux1PairedCh05, cmbAux1PairedCh06, cmbAux1PairedCh07, cmbAux1PairedCh08, cmbAux1PairedCh09, cmbAux1PairedCh10, cmbAux1PairedCh11 };
+            auxPaired = new ComboBox[] { cmbAux1PairedCh00, cmbAux1PairedCh01, cmbAux1PairedCh02, cmbAux1PairedCh03, cmbAux1PairedCh04, cmbAux1PairedCh05, cmbAux1PairedCh06, cmbAux1PairedCh07, cmbAux1PairedCh08, cmbAux1PairedCh09, cmbAux1PairedCh10, cmbAux1PairedCh11 };
             auxTimeouts = new CheckBox[] { chkAux1TimeoutCh00, chkAux1TimeoutCh01, chkAux1TimeoutCh02, chkAux1TimeoutCh03, chkAux1TimeoutCh04, chkAux1TimeoutCh05, chkAux1TimeoutCh06, chkAux1TimeoutCh07, chkAux1TimeoutCh08, chkAux1TimeoutCh09, chkAux1TimeoutCh10, chkAux1TimeoutCh11 };
             auxTimeoutTimes = new TextBox[] { txtbAux1TimeoutTimeCh00, txtbAux1TimeoutTimeCh01, txtbAux1TimeoutTimeCh02, txtbAux1TimeoutTimeCh03, txtbAux1TimeoutTimeCh04, txtbAux1TimeoutTimeCh05, txtbAux1TimeoutTimeCh06, txtbAux1TimeoutTimeCh07, txtbAux1TimeoutTimeCh08, txtbAux1TimeoutTimeCh09, txtbAux1TimeoutTimeCh10, txtbAux1TimeoutTimeCh11 };
             auxMaxOns = new TextBox[] { txtbAux1MaxOnCh00, txtbAux1MaxOnCh01, txtbAux1MaxOnCh02, txtbAux1MaxOnCh03, txtbAux1MaxOnCh04, txtbAux1MaxOnCh05, txtbAux1MaxOnCh06, txtbAux1MaxOnCh07, txtbAux1MaxOnCh08, txtbAux1MaxOnCh09, txtbAux1MaxOnCh10, txtbAux1MaxOnCh11 };

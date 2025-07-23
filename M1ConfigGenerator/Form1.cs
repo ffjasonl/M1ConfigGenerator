@@ -25,6 +25,9 @@ namespace M1ConfigGenerator
         bool[] aux1Group00; bool[] aux1Group01; bool[] aux1Group02; bool[] aux1Group03; bool[] aux1Group04; bool[] aux1Group05;
         bool[] aux1Group06; bool[] aux1Group07; bool[] aux1Group08; bool[] aux1Group09; bool[] aux1Group10; bool[] aux1Group11;
         bool[][] aux1Groups;
+        CheckBox[] auxGetGroup00; CheckBox[] auxGetGroup01; CheckBox[] auxGetGroup02; CheckBox[] auxGetGroup03; CheckBox[] auxGetGroup04; CheckBox[] auxGetGroup05;
+        CheckBox[] auxGetGroup06; CheckBox[] auxGetGroup07; CheckBox[] auxGetGroup08; CheckBox[] auxGetGroup09; CheckBox[] auxGetGroup10; CheckBox[] auxGetGroup11;
+        CheckBox[][] auxGetGroups;
         ComboBox[] auxDirections;
         ComboBox[] auxDeadTimes;
         ComboBox[] auxPairedTimes;
@@ -577,6 +580,13 @@ namespace M1ConfigGenerator
             chkAux1DCMotor.Checked = auxObjects[card].M1_GetDCMotor();
             chkAux1Shade.Checked = auxObjects[card].M1_GetShade();
             tbxAux1BaseIndex.Text = auxObjects[card].M1_GetBaseIndex();
+            for (int channel = 0; channel < 12; channel++)
+            {
+                auxGetGroups[channel][0].Checked    = auxObjects[card].M1_GetGroup0(channel);
+                auxGetGroups[channel][1].Checked    = auxObjects[card].M1_GetGroup1(channel);
+                auxGetGroups[channel][2].Checked    = auxObjects[card].M1_GetGroup2(channel);
+                auxGetGroups[channel][3].Checked    = auxObjects[card].M1_GetGroup3(channel);
+            }
         }
 
         private void CreateAuxReferenceFile() // card-specific because of the path, which is stored in each card object but isn't related to the Start tab combo box for that card type
@@ -4318,6 +4328,19 @@ namespace M1ConfigGenerator
             hrBtnArray = new Button[] { btnHRCard1, btnHRCard2, btnHRCard3, btnHRCard4, btnHRCard5, btnHRCard6, btnHRCard7, btnHRCard8 };
             lcBtnArray = new Button[] { btnLCCard1, btnLCCard2, btnLCCard3, btnLCCard4, btnLCCard5, btnLCCard6, btnLCCard7, btnLCCard8 };
 
+            auxGetGroup00 = new CheckBox[] { chkAux1MG1Ch00, chkAux1MG2Ch00, chkAux1MG3Ch00, chkAux1MG4Ch00 };
+            auxGetGroup01 = new CheckBox[] { chkAux1MG1Ch01, chkAux1MG2Ch01, chkAux1MG3Ch01, chkAux1MG4Ch01 };
+            auxGetGroup02 = new CheckBox[] { chkAux1MG1Ch02, chkAux1MG2Ch02, chkAux1MG3Ch02, chkAux1MG4Ch02 };
+            auxGetGroup03 = new CheckBox[] { chkAux1MG1Ch03, chkAux1MG2Ch03, chkAux1MG3Ch03, chkAux1MG4Ch03 };
+            auxGetGroup04 = new CheckBox[] { chkAux1MG1Ch04, chkAux1MG2Ch04, chkAux1MG3Ch04, chkAux1MG4Ch04 };
+            auxGetGroup05 = new CheckBox[] { chkAux1MG1Ch05, chkAux1MG2Ch05, chkAux1MG3Ch05, chkAux1MG4Ch05 };
+            auxGetGroup06 = new CheckBox[] { chkAux1MG1Ch06, chkAux1MG2Ch06, chkAux1MG3Ch06, chkAux1MG4Ch06 };
+            auxGetGroup07 = new CheckBox[] { chkAux1MG1Ch07, chkAux1MG2Ch07, chkAux1MG3Ch07, chkAux1MG4Ch07 };
+            auxGetGroup08 = new CheckBox[] { chkAux1MG1Ch08, chkAux1MG2Ch08, chkAux1MG3Ch08, chkAux1MG4Ch08 };
+            auxGetGroup09 = new CheckBox[] { chkAux1MG1Ch09, chkAux1MG2Ch09, chkAux1MG3Ch09, chkAux1MG4Ch09 };
+            auxGetGroup10 = new CheckBox[] { chkAux1MG1Ch10, chkAux1MG2Ch10, chkAux1MG3Ch10, chkAux1MG4Ch10 };
+            auxGetGroup11 = new CheckBox[] { chkAux1MG1Ch11, chkAux1MG2Ch11, chkAux1MG3Ch11, chkAux1MG4Ch11 };
+            auxGetGroups = new CheckBox[][] { auxGetGroup00,  auxGetGroup01, auxGetGroup02, auxGetGroup03, auxGetGroup04, auxGetGroup05, auxGetGroup06, auxGetGroup07, auxGetGroup08, auxGetGroup09, auxGetGroup10, auxGetGroup11 };
             auxDirections = new ComboBox[] { cmbAux1DirectionCh00, cmbAux1DirectionCh01, cmbAux1DirectionCh02, cmbAux1DirectionCh03, cmbAux1DirectionCh04, cmbAux1DirectionCh05, cmbAux1DirectionCh06, cmbAux1DirectionCh07, cmbAux1DirectionCh08, cmbAux1DirectionCh09, cmbAux1DirectionCh10, cmbAux1DirectionCh11 };
             auxDeadTimes = new ComboBox[] { cmbAux1DeadTimeCh00, cmbAux1DeadTimeCh01, cmbAux1DeadTimeCh02, cmbAux1DeadTimeCh03, cmbAux1DeadTimeCh04, cmbAux1DeadTimeCh05, cmbAux1DeadTimeCh06, cmbAux1DeadTimeCh07, cmbAux1DeadTimeCh08, cmbAux1DeadTimeCh09, cmbAux1DeadTimeCh10, cmbAux1DeadTimeCh11 };
             auxPairedTimes = new ComboBox[] { cmbAux1PairedCh00, cmbAux1PairedCh01, cmbAux1PairedCh02, cmbAux1PairedCh03, cmbAux1PairedCh04, cmbAux1PairedCh05, cmbAux1PairedCh06, cmbAux1PairedCh07, cmbAux1PairedCh08, cmbAux1PairedCh09, cmbAux1PairedCh10, cmbAux1PairedCh11 };

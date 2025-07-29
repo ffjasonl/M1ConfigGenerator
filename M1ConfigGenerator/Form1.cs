@@ -38,14 +38,6 @@ namespace M1ConfigGenerator
         
         List<BreakerCard> breakerObjects = new List<BreakerCard>();
         int BrkCardActive;
-        ComboBox[] breakerCardNum;
-        ComboBox[] breakerPanelNum;
-        TextBox[] breakerConfigRev;
-        TextBox[] breakerConfigType;
-        TextBox[] breakerBaseInstance;
-        ComboBox[] breakerVINOCAmps;
-        ComboBox[] breakerVINOCTime;
-        ComboBox[] breakerVINInterrupt;
         ComboBox[] breakerOCAmps;
         ComboBox[] breakerOCTime;
         ComboBox[] breakerInterrupts;
@@ -53,7 +45,7 @@ namespace M1ConfigGenerator
         TextBox[] breakerUndercurrents;
         ComboBox[] breakerMeasCurRecs;
         ComboBox[] breakerModes;
-        ComboBox[] breakerPairedTimes;
+        ComboBox[] breakerPaired;
         ComboBox[] breakerIGNs;
         ComboBox[] breakerParks;
 
@@ -191,7 +183,7 @@ namespace M1ConfigGenerator
         {
             SetMenuColors(1);
             tabControlMain.SelectedIndex = (int) MainTab.Breaker;
-            //Brk_GetAll(BrkCardActive);
+            Brk_GetAll(BrkCardActive);
             BreakerCardNavColor(brkBtnArray, brkBtnArray[BrkCardActive]);
             ShowBreakerNav(cmbStartBreaker.SelectedIndex);
         }
@@ -306,6 +298,7 @@ namespace M1ConfigGenerator
             for (int i = 0; i < cmbStartBreaker.SelectedIndex; i++)
             {
                 breakerObjects.Add(new BreakerCard(i + 1));
+                breakerObjects[i].M1_SetCfgRev(tbxStartBrkCfgRev.Text);
             }
 
             for (int i = 0; i < cmbStartDimmer.SelectedIndex; i++)
@@ -334,7 +327,7 @@ namespace M1ConfigGenerator
 
             // set Config Type here, don't need to mess with Get that adds "0x"
             tbxAux1CfgType.Text = tbxStartCfgType.Text;
-            //tbxBreaker1CfgType.Text = tbxStartCfgType.Text;
+            tbxBreaker1CfgType.Text = tbxStartCfgType.Text;
             tbxDimmer1CfgType.Text = tbxStartCfgType.Text;
             tbxHC1CfgType.Text = tbxStartCfgType.Text;
             tbxHRCfgType.Text = tbxStartCfgType.Text;
@@ -397,7 +390,22 @@ namespace M1ConfigGenerator
             CheckStartCreate();
         }
 
+        private void cmbStartAux_TextChanged(object sender, EventArgs e)
+        {
+            CheckStartCreate();
+        }
+
         private void tbxStartAuxCfgRev_TextChanged(object sender, EventArgs e)
+        {
+            CheckStartCreate();
+        }
+
+        private void cmbStartBreaker_TextChanged(object sender, EventArgs e)
+        {
+            CheckStartCreate();
+        }
+
+        private void tbxStartBrkCfgRev_TextChanged(object sender, EventArgs e)
         {
             CheckStartCreate();
         }
@@ -452,6 +460,8 @@ namespace M1ConfigGenerator
             if (ValidateConfigRev(tbxStartAuxCfgRev.Text)) { checkCount++; }
 
             // Breaker
+            if (cmbStartBreaker.Text != "0" && cmbStartBreaker.Text != "") { numCards++; }
+            if (ValidateConfigRev(tbxStartBrkCfgRev.Text)) { checkCount++; }
 
             // Dimmer
             if (cmbStartDimmer.Text != "0" && cmbStartDimmer.Text != "") { numCards++; }
@@ -772,31 +782,75 @@ namespace M1ConfigGenerator
         // ########  ##     ## ######## ##     ## ##    ## ######## ##     ## 
         // @Breaker
 
-        private void btnBreakerGenerate_Click(object sender, EventArgs e)
+        public void Brk_SetAll(int card)
         {
-            for (int card = 0; card < Convert.ToInt16(cmbStartBreaker.Text); card++)
+            breakerObjects[card].M1_SetVerRev(btnMenuNew.Text);
+            breakerObjects[card].M1_SetFullSetup(chkTabVisBreaker1.Checked);
+            breakerObjects[card].M1_SetCardNumber(cmbBreaker1CardNum.Text);
+            breakerObjects[card].M1_SetPanelNumber(cmbBreaker1PanelNum.Text);
+            breakerObjects[card].M1_SetDevAddr();
+            breakerObjects[card].M1_SetCardLetter(tbxBreaker1CardLetter.Text);
+            breakerObjects[card].M1_ChangeConfigName();
+            breakerObjects[card].Brk_ChangeAddress();
+            breakerObjects[card].M1_SetCfgRev(tbxBreaker1CfgRev.Text);
+            breakerObjects[card].M1_SetCfgType(tbxBreaker1CfgType.Text);
+            breakerObjects[card].M1_SetDCDriver(true); // hard-coded because these commands are needed for overcurrent reset
+            breakerObjects[card].M1_SetForce(true); // hard-coded in case we want to use the interrupt commands (I think)
+            breakerObjects[card].M1_SetBaseIndex(tbxBreaker1BaseIndex.Text);
+            breakerObjects[card].Brk_SetVINOCAmps(cmbBreaker1OCAmpsVIN.Text);
+            breakerObjects[card].Brk_SetVINOCTime(cmbBreaker1OCTimeVIN.Text);
+            breakerObjects[card].Brk_SetVINInterrupt(cmbBreaker1InterruptVIN.Text);
+            for (int channel = 0; channel < 12; channel++)
             {
-                //breakerObjects[card].M1_SetDevAddr(breakerCardNum[card].SelectedIndex, breakerPanelNum[card].SelectedIndex);
-                breakerObjects[card].M1_SetCfgRev(breakerConfigRev[card].Text);
-                breakerObjects[card].M1_SetCfgType(breakerConfigType[card].Text);
-                breakerObjects[card].M1_SetDCDriver(true); // hard-coded because these commands are needed for overcurrent reset
-                breakerObjects[card].M1_SetForce(true); // hard-coded in case we want to use the interrupt commands (I think)
-                breakerObjects[card].M1_SetBaseIndex(breakerBaseInstance[card].Text);
-                breakerObjects[card].SetVINOCAmps(breakerVINOCAmps[card].Text);
-                breakerObjects[card].SetVINOCTime(breakerVINOCTime[card].Text);
-                breakerObjects[card].SetVINInterrupt(breakerVINInterrupt[card].Text);
-                for (int channel = 0; channel < 12; channel++)
-                {
-                    breakerObjects[card].SetOCAmps(channel, breakerOCAmps[channel].Text);
-                    breakerObjects[card].SetOCTime(channel, breakerOCTime[channel].Text);
-                    breakerObjects[card].SetInterrupt(channel, breakerInterrupts[channel].Text); 
-                }
+                breakerObjects[card].Brk_SetOCAmps(channel, breakerOCAmps[channel].Text);
+                breakerObjects[card].Brk_SetOCTime(channel, breakerOCTime[channel].Text);
+                breakerObjects[card].Brk_SetInterrupt(channel, breakerInterrupts[channel].Text);
+                breakerObjects[card].Brk_SetDirection(channel, breakerDirections[channel].Text);
+                breakerObjects[card].Brk_SetUndAmp(channel, breakerUndercurrents[channel].Text);
+                breakerObjects[card].Brk_SetMeasCurTime(channel, breakerMeasCurRecs[channel].Text);
+                breakerObjects[card].Brk_SetMode(channel, breakerModes[channel].Text);
+                breakerObjects[card].Brk_SetPaired(channel, breakerPaired[channel].Text);
+                breakerObjects[card].Brk_SetIGNSafety(channel, breakerIGNs[channel].Text);
+                breakerObjects[card].Brk_SetParkSafety(channel, breakerParks[channel].Text);
             }
 
+        }
+
+        public void Brk_GetAll(int card)
+        {
+            chkTabVisBreaker1.Checked = breakerObjects[card].M1_GetFullSetup();
+            if (breakerObjects[card].M1_GetCardNumber() == "") { BlankComboBox(cmbBreaker1CardNum); }
+            else { cmbBreaker1CardNum.Text = breakerObjects[card].M1_GetCardNumber(); }
+            if (breakerObjects[card].M1_GetPanelNumber() == "") { BlankComboBox(cmbBreaker1PanelNum); }
+            else { cmbBreaker1PanelNum.Text = breakerObjects[card].M1_GetPanelNumber(); }
+            tbxBreaker1CfgRev.Text = breakerObjects[card].M1_GetCfgRev();
+            tbxBreaker1CardLetter.Text = breakerObjects[card].M1_GetCardLetter();
+            tbxBreaker1BaseIndex.Text = breakerObjects[card].M1_GetBaseIndex();
+            cmbBreaker1OCAmpsVIN.Text = breakerObjects[card].Brk_GetVINOCAmps();
+            cmbBreaker1OCTimeVIN.Text = breakerObjects[card].Brk_GetVINOCTime();
+            cmbBreaker1InterruptVIN.Text = breakerObjects[card].Brk_GetVINInterrupt();
+            for (int channel = 0; channel < 12; channel++)
+            {
+                breakerOCAmps[channel].Text = breakerObjects[card].Brk_GetOCAmps(channel);
+                breakerOCTime[channel].Text = breakerObjects[card].Brk_GetOCTime(channel);
+                breakerInterrupts[channel].Text = breakerObjects[card].Brk_GetInterrupt(channel);
+                breakerDirections[channel].Text = breakerObjects[card].Brk_GetDirection(channel);
+                breakerUndercurrents[channel].Text = breakerObjects[card].Brk_GetUndAmp(channel);
+                breakerMeasCurRecs[channel].Text = breakerObjects[card].Brk_GetMeasCurTime(channel);
+                breakerModes[channel].Text = breakerObjects[card].Brk_GetMode(channel);
+                breakerPaired[channel].Text = breakerObjects[card].Brk_GetPaired(channel);
+                breakerIGNs[channel].Text = breakerObjects[card].Brk_GetIGNSafety(channel);
+                breakerParks[channel].Text = breakerObjects[card].Brk_GetParkSafety(channel);
+            }
+        }
+
+        private void btnBreakerGenerate_Click(object sender, EventArgs e)
+        {
+            Brk_SetAll(BrkCardActive);
             breakerObjects.ForEach(breakerObjects => breakerObjects.CreateBreakerFile());
             CreateBreakerReferenceFile();
             BreakerCardNavColor(brkBtnArray, btnBreakerGenerate);
-            tabControlBreaker.SelectedIndex = 5;
+            tabControlBreaker.SelectedIndex = 1;
             // prints the file context of the folder
             string[] breakerFiles = Directory.GetFiles(@"M1_DcDriver_Config\Src\M1_Breaker\DeviceConfigs\", "*.*", SearchOption.TopDirectoryOnly);
             tbxBreakerGenerated.Lines = breakerFiles;
@@ -815,10 +869,10 @@ namespace M1ConfigGenerator
 
         private void chkBreaker1MatchVIN_CheckStateChanged(object sender, EventArgs e)
         {
-            //foreach (ComboBox i in breaker1Interrupt)
-            //{
-            //    i.SelectedIndex = cmbBreaker1InterruptVIN.SelectedIndex;
-            //}
+            foreach (ComboBox i in breakerInterrupts)
+            {
+                i.Text = cmbBreaker1InterruptVIN.Text;
+            }
         }
 
         private void CheckBreakerGenerate()
@@ -826,11 +880,9 @@ namespace M1ConfigGenerator
             int checkCounter = 0;
             int numBreakerCards = Convert.ToInt16(cmbStartBreaker.Text);
 
-            bool[] checkBreaker = new bool[] { CheckBreaker1() };
-
             for (int i = 0; i < numBreakerCards; i++)
             {
-                if (checkBreaker[i] == true)
+                if (breakerObjects[i].M1_GetCardNumber() != "" && breakerObjects[i].M1_GetPanelNumber() != "" && breakerObjects[i].M1_GetBaseIndex() != "")
                 {
                     checkCounter++;
                 }
@@ -846,44 +898,84 @@ namespace M1ConfigGenerator
             }
         }
 
-        private bool CheckBreaker1()
-        {
-            return ((cmbBreaker1CardNum.Text != "") && (cmbBreaker1PanelNum.Text != "") && (tbxBreaker1BaseIndex.Text != ""));
-        }
-
         private void btnBreakerCard1_Click(object sender, EventArgs e)
         {
             BreakerCardNavColor(brkBtnArray, btnBreakerCard1);
-            tabControlBreaker.SelectedIndex = 1;/*
-            tabControlBreaker1QF.SelectedIndex = 0;*/
+            tabControlBreaker.SelectedIndex = 0;
+            Brk_SetAll(BrkCardActive);
+            BrkCardActive = (int)CardNum.Card1;
+            Brk_GetAll(BrkCardActive);
+            tabControlBreaker1QF.SelectedIndex = (chkTabVisBreaker1.Checked == true ? 1 : 0);
         }
 
         private void btnBreakerCard2_Click(object sender, EventArgs e)
         {
             BreakerCardNavColor(brkBtnArray, btnBreakerCard2);
-            tabControlBreaker.SelectedIndex = 2;
+            tabControlBreaker.SelectedIndex = 0;
+            Brk_SetAll(BrkCardActive);
+            BrkCardActive = (int)CardNum.Card2;
+            Brk_GetAll(BrkCardActive);
+            tabControlBreaker1QF.SelectedIndex = (chkTabVisBreaker1.Checked == true ? 1 : 0);
         }
 
         private void btnBreakerCard3_Click(object sender, EventArgs e)
         {
             BreakerCardNavColor(brkBtnArray, btnBreakerCard3);
-            tabControlBreaker.SelectedIndex = 3;
+            tabControlBreaker.SelectedIndex = 0;
+            Brk_SetAll(BrkCardActive);
+            BrkCardActive = (int)CardNum.Card3;
+            Brk_GetAll(BrkCardActive);
+            tabControlBreaker1QF.SelectedIndex = (chkTabVisBreaker1.Checked == true ? 1 : 0);
         }
 
         private void btnBreakerCard4_Click(object sender, EventArgs e)
         {
             BreakerCardNavColor(brkBtnArray, btnBreakerCard4);
-            tabControlBreaker.SelectedIndex = 4;
+            tabControlBreaker.SelectedIndex = 0;
+            Brk_SetAll(BrkCardActive);
+            BrkCardActive = (int)CardNum.Card4;
+            Brk_GetAll(BrkCardActive);
+            tabControlBreaker1QF.SelectedIndex = (chkTabVisBreaker1.Checked == true ? 1 : 0);
         }
 
         private void btnBreakerCard5_Click(object sender, EventArgs e)
         {
             BreakerCardNavColor(brkBtnArray, btnBreakerCard5);
+            tabControlBreaker.SelectedIndex = 0;
+            Brk_SetAll(BrkCardActive);
+            BrkCardActive = (int)CardNum.Card5;
+            Brk_GetAll(BrkCardActive);
+            tabControlBreaker1QF.SelectedIndex = (chkTabVisBreaker1.Checked == true ? 1 : 0);
         }
 
         private void btnBreakerCard6_Click(object sender, EventArgs e)
         {
             BreakerCardNavColor(brkBtnArray, btnBreakerCard6);
+            tabControlBreaker.SelectedIndex = 0;
+            Brk_SetAll(BrkCardActive);
+            BrkCardActive = (int)CardNum.Card6;
+            Brk_GetAll(BrkCardActive);
+            tabControlBreaker1QF.SelectedIndex = (chkTabVisBreaker1.Checked == true ? 1 : 0);
+        }
+
+        private void btnBreakerCard7_Click(object sender, EventArgs e)
+        {
+            BreakerCardNavColor(brkBtnArray, btnBreakerCard7);
+            tabControlBreaker.SelectedIndex = 0;
+            Brk_SetAll(BrkCardActive);
+            BrkCardActive = (int)CardNum.Card7;
+            Brk_GetAll(BrkCardActive);
+            tabControlBreaker1QF.SelectedIndex = (chkTabVisBreaker1.Checked == true ? 1 : 0);
+        }
+
+        private void btnBreakerCard8_Click(object sender, EventArgs e)
+        {
+            BreakerCardNavColor(brkBtnArray, btnBreakerCard8);
+            tabControlBreaker.SelectedIndex = 0;
+            Brk_SetAll(BrkCardActive);
+            BrkCardActive = (int)CardNum.Card8;
+            Brk_GetAll(BrkCardActive);
+            tabControlBreaker1QF.SelectedIndex = (chkTabVisBreaker1.Checked == true ? 1 : 0);
         }
 
         private void ShowBreakerNav(int argInt)
@@ -902,16 +994,19 @@ namespace M1ConfigGenerator
 
         private void cmbBreaker1CardNum_SelectedIndexChanged(object sender, EventArgs e)
         {
+            breakerObjects[BrkCardActive].M1_SetCardNumber(cmbBreaker1CardNum.Text);
             CheckBreakerGenerate();
         }
 
         private void cmbBreaker1PanelNum_SelectedIndexChanged(object sender, EventArgs e)
         {
+            breakerObjects[BrkCardActive].M1_SetPanelNumber(cmbBreaker1PanelNum.Text);
             CheckBreakerGenerate();
         }
 
         private void tbxBreaker1BaseIndex_TextChanged(object sender, EventArgs e)
         {
+            breakerObjects[BrkCardActive].M1_SetBaseIndex(tbxBreaker1BaseIndex.Text);
             lblBreaker1Ch00.Text = ChangeChannelLabel(tbxBreaker1BaseIndex.Text, 0);
             lblBreaker1Ch01.Text = ChangeChannelLabel(tbxBreaker1BaseIndex.Text, 1);
             lblBreaker1Ch02.Text = ChangeChannelLabel(tbxBreaker1BaseIndex.Text, 2);
@@ -980,7 +1075,6 @@ namespace M1ConfigGenerator
             dimmerObjects[card].M1_SetDCDimmer(true); // hard coding for dimmer card
             dimmerObjects[card].M1_SetDCMotor(chkDimmer1DCMotor.Checked);
             dimmerObjects[card].M1_SetShade(chkDimmer1Shade.Checked);
-            dimmerObjects[card].M1_SetForce(chkDimmer1Force.Checked);
             dimmerObjects[card].M1_SetBaseIndex(tbxDimmer1BaseIndex.Text);
             for (int channel = 0; channel < 12; channel++)
             {
@@ -1013,7 +1107,6 @@ namespace M1ConfigGenerator
             tbxDimmer1CardLetter.Text   = dimmerObjects[card].M1_GetCardLetter();
             chkDimmer1DCMotor.Checked   = dimmerObjects[card].M1_GetDCMotor();
             chkDimmer1Shade.Checked     = dimmerObjects[card].M1_GetShade();
-            chkDimmer1Force.Checked     = dimmerObjects[card].M1_GetForce();
             tbxDimmer1BaseIndex.Text    = dimmerObjects[card].M1_GetBaseIndex();
             for (int channel = 0; channel < 12; channel++)
             {
@@ -1190,7 +1283,6 @@ namespace M1ConfigGenerator
             CheckDimGenerate();
         }
 
-
         private void tbxDimmer1BaseIndex_TextChanged(object sender, EventArgs e)
         {
             dimmerObjects[DimCardActive].M1_SetBaseIndex(tbxDimmer1BaseIndex.Text);
@@ -1263,7 +1355,6 @@ namespace M1ConfigGenerator
             hcObjects[card].M1_SetDCMotor(chkHC1DCMotor.Checked);
             hcObjects[card].M1_SetShade(chkHC1Shade.Checked);
             hcObjects[card].HC_SetRGB(chkHC1RGB.Checked);
-            hcObjects[card].M1_SetForce(chkHC1Force.Checked);
             hcObjects[card].M1_SetBaseIndex(tbxHC1BaseIndex.Text);
             for (int channel = 0; channel < 12; channel++)
             {
@@ -1307,7 +1398,6 @@ namespace M1ConfigGenerator
             chkHC1DCMotor.Checked = hcObjects[card].M1_GetDCMotor();
             chkHC1Shade.Checked = hcObjects[card].M1_GetShade();
             chkHC1RGB.Checked = hcObjects[card].HC_GetRGB();
-            chkHC1Force.Checked = hcObjects[card].M1_GetForce();
             tbxHC1BaseIndex.Text = hcObjects[card].M1_GetBaseIndex();
             for (int channel = 0; channel < 12; channel++)
             {
@@ -2387,7 +2477,6 @@ namespace M1ConfigGenerator
             hrObjects[card].M1_SetDCMotor(chkHRDCMotor.Checked);
             hrObjects[card].M1_SetDCDimmer(chkHRDCDimmer.Checked);
             hrObjects[card].M1_SetShade(chkHRShade.Checked);
-            hrObjects[card].M1_SetForce(chkHRForce.Checked);
             hrObjects[card].M1_SetBaseIndex(tbxHRBaseInstance.Text);
             for (int channel = 0; channel < 12; channel++)
             {
@@ -2429,7 +2518,6 @@ namespace M1ConfigGenerator
             chkHRDCMotor.Checked = hrObjects[card].M1_GetDCMotor();
             chkHRDCDimmer.Checked = hrObjects[card].M1_GetDCDimmer();
             chkHRShade.Checked = hrObjects[card].M1_GetShade();
-            chkHRForce.Checked = hrObjects[card].M1_GetForce();
             tbxHRBaseInstance.Text = hrObjects[card].M1_GetBaseIndex();
             for (int channel = 0; channel < 12; channel++)
             {
@@ -3438,7 +3526,6 @@ namespace M1ConfigGenerator
             lcObjects[card].M1_SetDCDimmer(chkLC1DCDimmer.Checked);
             lcObjects[card].M1_SetDCMotor(chkLC1DCMotor.Checked);
             lcObjects[card].M1_SetShade(chkLC1Shade.Checked);
-            lcObjects[card].M1_SetForce(chkLC1Force.Checked);
             lcObjects[card].M1_SetBaseIndex(tbxLC1BaseIndex.Text);
             for (int channel = 0; channel < 16; channel++)
             {
@@ -3482,7 +3569,6 @@ namespace M1ConfigGenerator
             tbxLC1CardLetter.Text   = lcObjects[card].M1_GetCardLetter();
             chkLC1DCDimmer.Checked  = lcObjects[card].M1_GetDCDimmer();
             chkLC1DCMotor.Checked   = lcObjects[card].M1_GetDCMotor();
-            chkLC1Force.Checked     = lcObjects[card].M1_GetForce();
             tbxLC1BaseIndex.Text    = lcObjects[card].M1_GetBaseIndex();
             for (int channel = 0; channel < 16; channel++)
             {
@@ -4353,14 +4439,6 @@ namespace M1ConfigGenerator
             auxMaxOns = new TextBox[] { txtbAux1MaxOnCh00, txtbAux1MaxOnCh01, txtbAux1MaxOnCh02, txtbAux1MaxOnCh03, txtbAux1MaxOnCh04, txtbAux1MaxOnCh05, txtbAux1MaxOnCh06, txtbAux1MaxOnCh07, txtbAux1MaxOnCh08, txtbAux1MaxOnCh09, txtbAux1MaxOnCh10, txtbAux1MaxOnCh11 };
             auxMaxDurRecs = new TextBox[] { txtbAux1MaxDurRecCh00, txtbAux1MaxDurRecCh01, txtbAux1MaxDurRecCh02, txtbAux1MaxDurRecCh03, txtbAux1MaxDurRecCh04, txtbAux1MaxDurRecCh05, txtbAux1MaxDurRecCh06, txtbAux1MaxDurRecCh07, txtbAux1MaxDurRecCh08, txtbAux1MaxDurRecCh09, txtbAux1MaxDurRecCh10, txtbAux1MaxDurRecCh11 };
 
-            breakerCardNum = new ComboBox[] { cmbBreaker1CardNum };
-            breakerPanelNum = new ComboBox[] { cmbBreaker1PanelNum };
-            breakerConfigRev = new TextBox[] { tbxBreaker1CfgRev };
-            breakerConfigType = new TextBox[] { tbxBreaker1CfgType };
-            breakerBaseInstance = new TextBox[] { tbxBreaker1BaseIndex };
-            breakerVINOCAmps = new ComboBox[] { cmbBreaker1OCAmpsVIN };
-            breakerVINOCTime = new ComboBox[] { cmbBreaker1OCTimeVIN };
-            breakerVINInterrupt = new ComboBox[] { cmbBreaker1InterruptVIN };
             breakerOCAmps = new ComboBox[] { cmbBreaker1OCAmps00, cmbBreaker1OCAmps01, cmbBreaker1OCAmps02, cmbBreaker1OCAmps03, cmbBreaker1OCAmps04, cmbBreaker1OCAmps05, cmbBreaker1OCAmps06, cmbBreaker1OCAmps07, cmbBreaker1OCAmps08, cmbBreaker1OCAmps09, cmbBreaker1OCAmps10, cmbBreaker1OCAmps11 };
             breakerOCTime = new ComboBox[] { cmbBreaker1OCTime00, cmbBreaker1OCTime01, cmbBreaker1OCTime02, cmbBreaker1OCTime03, cmbBreaker1OCTime04, cmbBreaker1OCTime05, cmbBreaker1OCTime06, cmbBreaker1OCTime07, cmbBreaker1OCTime08, cmbBreaker1OCTime09, cmbBreaker1OCTime10, cmbBreaker1OCTime11 };
             breakerInterrupts = new ComboBox[] { cmbBreaker1Interrupt00, cmbBreaker1Interrupt01, cmbBreaker1Interrupt02, cmbBreaker1Interrupt03, cmbBreaker1Interrupt04, cmbBreaker1Interrupt05, cmbBreaker1Interrupt06, cmbBreaker1Interrupt07, cmbBreaker1Interrupt08, cmbBreaker1Interrupt09, cmbBreaker1Interrupt10, cmbBreaker1Interrupt11 };
@@ -4368,7 +4446,7 @@ namespace M1ConfigGenerator
             breakerUndercurrents = new TextBox[] { txtbBreak1UCAmpsCh00, txtbBreak1UCAmpsCh01, txtbBreak1UCAmpsCh02, txtbBreak1UCAmpsCh03, txtbBreak1UCAmpsCh04, txtbBreak1UCAmpsCh05, txtbBreak1UCAmpsCh06, txtbBreak1UCAmpsCh07, txtbBreak1UCAmpsCh08, txtbBreak1UCAmpsCh09, txtbBreak1UCAmpsCh10, txtbBreak1UCAmpsCh11 };
             breakerMeasCurRecs = new ComboBox[] { cmbBreak1MeasCurRecCh00, cmbBreak1MeasCurRecCh01, cmbBreak1MeasCurRecCh02, cmbBreak1MeasCurRecCh03, cmbBreak1MeasCurRecCh04, cmbBreak1MeasCurRecCh05, cmbBreak1MeasCurRecCh06, cmbBreak1MeasCurRecCh07, cmbBreak1MeasCurRecCh08, cmbBreak1MeasCurRecCh09, cmbBreak1MeasCurRecCh10, cmbBreak1MeasCurRecCh11 };
             breakerModes = new ComboBox[] { cmbBreak1ModeCh00, cmbBreak1ModeCh01, cmbBreak1ModeCh02, cmbBreak1ModeCh03, cmbBreak1ModeCh04, cmbBreak1ModeCh05, cmbBreak1ModeCh06, cmbBreak1ModeCh07, cmbBreak1ModeCh08, cmbBreak1ModeCh09, cmbBreak1ModeCh10, cmbBreak1ModeCh11 };
-            breakerPairedTimes = new ComboBox[] { cmbBreak1PairedCh00, cmbBreak1PairedCh01, cmbBreak1PairedCh02, cmbBreak1PairedCh03, cmbBreak1PairedCh04, cmbBreak1PairedCh05, cmbBreak1PairedCh06, cmbBreak1PairedCh07, cmbBreak1PairedCh08, cmbBreak1PairedCh09, cmbBreak1PairedCh10, cmbBreak1PairedCh11 };
+            breakerPaired = new ComboBox[] { cmbBreak1PairedCh00, cmbBreak1PairedCh01, cmbBreak1PairedCh02, cmbBreak1PairedCh03, cmbBreak1PairedCh04, cmbBreak1PairedCh05, cmbBreak1PairedCh06, cmbBreak1PairedCh07, cmbBreak1PairedCh08, cmbBreak1PairedCh09, cmbBreak1PairedCh10, cmbBreak1PairedCh11 };
             breakerIGNs = new ComboBox[] { cmbBreak1IGNCh00, cmbBreak1IGNCh01, cmbBreak1IGNCh02, cmbBreak1IGNCh03, cmbBreak1IGNCh04, cmbBreak1IGNCh05, cmbBreak1IGNCh06, cmbBreak1IGNCh07, cmbBreak1IGNCh08, cmbBreak1IGNCh09, cmbBreak1IGNCh10, cmbBreak1IGNCh11 };
             breakerParks = new ComboBox[] { cmbBreak1ParkCh00, cmbBreak1ParkCh01,  cmbBreak1ParkCh02, cmbBreak1ParkCh03, cmbBreak1ParkCh04, cmbBreak1ParkCh05, cmbBreak1ParkCh06, cmbBreak1ParkCh07, cmbBreak1ParkCh08, cmbBreak1ParkCh09, cmbBreak1ParkCh10, cmbBreak1ParkCh11 };
 

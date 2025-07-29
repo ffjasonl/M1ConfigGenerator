@@ -41,6 +41,7 @@ namespace M1ConfigGenerator
             this.panelMain = new System.Windows.Forms.Panel();
             this.tabControlMain = new M1ConfigGenerator.TablessControl();
             this.tabMainStart = new System.Windows.Forms.TabPage();
+            this.tbxStartBrkCfgRev = new System.Windows.Forms.TextBox();
             this.tbxStartAuxCfgRev = new System.Windows.Forms.TextBox();
             this.tbxStartLCCfgRev = new System.Windows.Forms.TextBox();
             this.tbxStartDimCfgRev = new System.Windows.Forms.TextBox();
@@ -281,6 +282,12 @@ namespace M1ConfigGenerator
             this.btnBreakerCard1 = new System.Windows.Forms.Button();
             this.tabControlBreaker = new M1ConfigGenerator.TablessControl();
             this.tabBreaker1 = new System.Windows.Forms.TabPage();
+            this.label103 = new System.Windows.Forms.Label();
+            this.tbxBreaker1CardLetter = new System.Windows.Forms.TextBox();
+            this.label104 = new System.Windows.Forms.Label();
+            this.tbxBreaker1CfgRev = new System.Windows.Forms.TextBox();
+            this.label105 = new System.Windows.Forms.Label();
+            this.tbxBreaker1CfgType = new System.Windows.Forms.TextBox();
             this.chkTabVisBreaker1 = new System.Windows.Forms.CheckBox();
             this.tabControlBreaker1QF = new M1ConfigGenerator.TablessControl();
             this.tabBreak1Quick = new System.Windows.Forms.TabPage();
@@ -451,10 +458,6 @@ namespace M1ConfigGenerator
             this.label252 = new System.Windows.Forms.Label();
             this.cmbBreaker1CardNum = new System.Windows.Forms.ComboBox();
             this.label253 = new System.Windows.Forms.Label();
-            this.label254 = new System.Windows.Forms.Label();
-            this.tbxBreaker1CfgRev = new System.Windows.Forms.TextBox();
-            this.label255 = new System.Windows.Forms.Label();
-            this.tbxBreaker1CfgType = new System.Windows.Forms.TextBox();
             this.tabBreakerGenerated = new System.Windows.Forms.TabPage();
             this.label277 = new System.Windows.Forms.Label();
             this.tbxBreakerGenerated = new System.Windows.Forms.TextBox();
@@ -666,7 +669,6 @@ namespace M1ConfigGenerator
             this.lblDimmer1Ch08 = new System.Windows.Forms.Label();
             this.chkDimmer1Shade = new System.Windows.Forms.CheckBox();
             this.cmbDimmer1OCTime03 = new System.Windows.Forms.ComboBox();
-            this.chkDimmer1Force = new System.Windows.Forms.CheckBox();
             this.cmbDimmer1OCAmps09 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.cmbDimmer1OCTime02 = new System.Windows.Forms.ComboBox();
@@ -1038,7 +1040,6 @@ namespace M1ConfigGenerator
             this.chkHC1DCDimmer = new System.Windows.Forms.CheckBox();
             this.chkHC1DCMotor = new System.Windows.Forms.CheckBox();
             this.cmbHC1OCTime07 = new System.Windows.Forms.ComboBox();
-            this.chkHC1Force = new System.Windows.Forms.CheckBox();
             this.label111 = new System.Windows.Forms.Label();
             this.cmbHC1OCTime08 = new System.Windows.Forms.ComboBox();
             this.tbxHC1BaseIndex = new System.Windows.Forms.TextBox();
@@ -1487,7 +1488,6 @@ namespace M1ConfigGenerator
             this.chkLC1MG2Ch00 = new System.Windows.Forms.CheckBox();
             this.chkLC1Shade = new System.Windows.Forms.CheckBox();
             this.lblLC1Ch10 = new System.Windows.Forms.Label();
-            this.chkLC1Force = new System.Windows.Forms.CheckBox();
             this.cmbLC1OCAmps08 = new System.Windows.Forms.ComboBox();
             this.label228 = new System.Windows.Forms.Label();
             this.chkLC1MG2Ch05 = new System.Windows.Forms.CheckBox();
@@ -1681,7 +1681,6 @@ namespace M1ConfigGenerator
             this.tbxHRCfgType = new System.Windows.Forms.TextBox();
             this.label691 = new System.Windows.Forms.Label();
             this.chkHRDCMotor = new System.Windows.Forms.CheckBox();
-            this.chkHRForce = new System.Windows.Forms.CheckBox();
             this.tabControlHRQF = new M1ConfigGenerator.TablessControl();
             this.tabPage15 = new System.Windows.Forms.TabPage();
             this.cmbHRQuickStartupCh11 = new System.Windows.Forms.ComboBox();
@@ -2133,6 +2132,7 @@ namespace M1ConfigGenerator
             // tabMainStart
             // 
             this.tabMainStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabMainStart.Controls.Add(this.tbxStartBrkCfgRev);
             this.tabMainStart.Controls.Add(this.tbxStartAuxCfgRev);
             this.tabMainStart.Controls.Add(this.tbxStartLCCfgRev);
             this.tabMainStart.Controls.Add(this.tbxStartDimCfgRev);
@@ -2162,6 +2162,17 @@ namespace M1ConfigGenerator
             this.tabMainStart.Size = new System.Drawing.Size(1380, 995);
             this.tabMainStart.TabIndex = 1;
             this.tabMainStart.Text = "Start";
+            // 
+            // tbxStartBrkCfgRev
+            // 
+            this.tbxStartBrkCfgRev.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxStartBrkCfgRev.Location = new System.Drawing.Point(467, 111);
+            this.tbxStartBrkCfgRev.MaxLength = 4;
+            this.tbxStartBrkCfgRev.Name = "tbxStartBrkCfgRev";
+            this.tbxStartBrkCfgRev.Size = new System.Drawing.Size(53, 29);
+            this.tbxStartBrkCfgRev.TabIndex = 58;
+            this.tbxStartBrkCfgRev.Text = "0";
+            this.tbxStartBrkCfgRev.TextChanged += new System.EventHandler(this.tbxStartBrkCfgRev_TextChanged);
             // 
             // tbxStartAuxCfgRev
             // 
@@ -2429,7 +2440,7 @@ namespace M1ConfigGenerator
             this.cmbStartBreaker.Name = "cmbStartBreaker";
             this.cmbStartBreaker.Size = new System.Drawing.Size(53, 29);
             this.cmbStartBreaker.TabIndex = 12;
-            this.cmbStartBreaker.Visible = false;
+            this.cmbStartBreaker.TextChanged += new System.EventHandler(this.cmbStartBreaker_TextChanged);
             // 
             // label5
             // 
@@ -2461,6 +2472,7 @@ namespace M1ConfigGenerator
             this.cmbStartAux.Name = "cmbStartAux";
             this.cmbStartAux.Size = new System.Drawing.Size(53, 29);
             this.cmbStartAux.TabIndex = 11;
+            this.cmbStartAux.TextChanged += new System.EventHandler(this.cmbStartAux_TextChanged);
             // 
             // btnStartCreate
             // 
@@ -4994,6 +5006,7 @@ namespace M1ConfigGenerator
             this.btnBreakerCard8.Text = "Card 8";
             this.btnBreakerCard8.UseVisualStyleBackColor = false;
             this.btnBreakerCard8.Visible = false;
+            this.btnBreakerCard8.Click += new System.EventHandler(this.btnBreakerCard8_Click);
             // 
             // btnBreakerCard7
             // 
@@ -5009,6 +5022,7 @@ namespace M1ConfigGenerator
             this.btnBreakerCard7.Text = "Card 7";
             this.btnBreakerCard7.UseVisualStyleBackColor = false;
             this.btnBreakerCard7.Visible = false;
+            this.btnBreakerCard7.Click += new System.EventHandler(this.btnBreakerCard7_Click);
             // 
             // btnBreakerGenerate
             // 
@@ -5135,6 +5149,12 @@ namespace M1ConfigGenerator
             // tabBreaker1
             // 
             this.tabBreaker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabBreaker1.Controls.Add(this.label103);
+            this.tabBreaker1.Controls.Add(this.tbxBreaker1CardLetter);
+            this.tabBreaker1.Controls.Add(this.label104);
+            this.tabBreaker1.Controls.Add(this.tbxBreaker1CfgRev);
+            this.tabBreaker1.Controls.Add(this.label105);
+            this.tabBreaker1.Controls.Add(this.tbxBreaker1CfgType);
             this.tabBreaker1.Controls.Add(this.chkTabVisBreaker1);
             this.tabBreaker1.Controls.Add(this.tabControlBreaker1QF);
             this.tabBreaker1.Controls.Add(this.chkBreaker1MatchVIN);
@@ -5199,16 +5219,72 @@ namespace M1ConfigGenerator
             this.tabBreaker1.Controls.Add(this.label252);
             this.tabBreaker1.Controls.Add(this.cmbBreaker1CardNum);
             this.tabBreaker1.Controls.Add(this.label253);
-            this.tabBreaker1.Controls.Add(this.label254);
-            this.tabBreaker1.Controls.Add(this.tbxBreaker1CfgRev);
-            this.tabBreaker1.Controls.Add(this.label255);
-            this.tabBreaker1.Controls.Add(this.tbxBreaker1CfgType);
             this.tabBreaker1.Location = new System.Drawing.Point(4, 22);
             this.tabBreaker1.Name = "tabBreaker1";
             this.tabBreaker1.Padding = new System.Windows.Forms.Padding(3);
             this.tabBreaker1.Size = new System.Drawing.Size(1376, 903);
             this.tabBreaker1.TabIndex = 1;
             this.tabBreaker1.Text = "Breaker 1";
+            // 
+            // label103
+            // 
+            this.label103.AutoSize = true;
+            this.label103.BackColor = System.Drawing.Color.Transparent;
+            this.label103.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label103.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label103.Location = new System.Drawing.Point(481, 27);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(76, 17);
+            this.label103.TabIndex = 290;
+            this.label103.Text = "Card Letter:";
+            // 
+            // tbxBreaker1CardLetter
+            // 
+            this.tbxBreaker1CardLetter.Location = new System.Drawing.Point(560, 25);
+            this.tbxBreaker1CardLetter.MaxLength = 4;
+            this.tbxBreaker1CardLetter.Name = "tbxBreaker1CardLetter";
+            this.tbxBreaker1CardLetter.Size = new System.Drawing.Size(32, 20);
+            this.tbxBreaker1CardLetter.TabIndex = 289;
+            this.tbxBreaker1CardLetter.Text = "A";
+            // 
+            // label104
+            // 
+            this.label104.AutoSize = true;
+            this.label104.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label104.ForeColor = System.Drawing.Color.Red;
+            this.label104.Location = new System.Drawing.Point(330, 27);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(74, 17);
+            this.label104.TabIndex = 287;
+            this.label104.Text = "Config Rev:";
+            // 
+            // tbxBreaker1CfgRev
+            // 
+            this.tbxBreaker1CfgRev.Location = new System.Drawing.Point(410, 25);
+            this.tbxBreaker1CfgRev.Name = "tbxBreaker1CfgRev";
+            this.tbxBreaker1CfgRev.Size = new System.Drawing.Size(32, 20);
+            this.tbxBreaker1CfgRev.TabIndex = 286;
+            // 
+            // label105
+            // 
+            this.label105.AutoSize = true;
+            this.label105.BackColor = System.Drawing.Color.Transparent;
+            this.label105.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label105.ForeColor = System.Drawing.Color.Red;
+            this.label105.Location = new System.Drawing.Point(627, 27);
+            this.label105.Name = "label105";
+            this.label105.Size = new System.Drawing.Size(101, 17);
+            this.label105.TabIndex = 288;
+            this.label105.Text = "Config Type:  0x";
+            // 
+            // tbxBreaker1CfgType
+            // 
+            this.tbxBreaker1CfgType.Location = new System.Drawing.Point(730, 26);
+            this.tbxBreaker1CfgType.MaxLength = 4;
+            this.tbxBreaker1CfgType.Name = "tbxBreaker1CfgType";
+            this.tbxBreaker1CfgType.Size = new System.Drawing.Size(32, 20);
+            this.tbxBreaker1CfgType.TabIndex = 291;
+            this.tbxBreaker1CfgType.Text = "0";
             // 
             // chkTabVisBreaker1
             // 
@@ -5504,8 +5580,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1ParkCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1ParkCh11.FormattingEnabled = true;
             this.cmbBreak1ParkCh11.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1ParkCh11.Location = new System.Drawing.Point(1187, 212);
             this.cmbBreak1ParkCh11.Name = "cmbBreak1ParkCh11";
             this.cmbBreak1ParkCh11.Size = new System.Drawing.Size(66, 21);
@@ -5516,8 +5593,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1ParkCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1ParkCh10.FormattingEnabled = true;
             this.cmbBreak1ParkCh10.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1ParkCh10.Location = new System.Drawing.Point(1115, 212);
             this.cmbBreak1ParkCh10.Name = "cmbBreak1ParkCh10";
             this.cmbBreak1ParkCh10.Size = new System.Drawing.Size(66, 21);
@@ -5530,17 +5608,18 @@ namespace M1ConfigGenerator
             this.label548.ForeColor = System.Drawing.SystemColors.Control;
             this.label548.Location = new System.Drawing.Point(3, 213);
             this.label548.Name = "label548";
-            this.label548.Size = new System.Drawing.Size(72, 17);
+            this.label548.Size = new System.Drawing.Size(175, 17);
             this.label548.TabIndex = 431;
-            this.label548.Text = "Park Safety";
+            this.label548.Text = "Park Safety (Output Enabled)";
             // 
             // cmbBreak1ParkCh09
             // 
             this.cmbBreak1ParkCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1ParkCh09.FormattingEnabled = true;
             this.cmbBreak1ParkCh09.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1ParkCh09.Location = new System.Drawing.Point(1043, 212);
             this.cmbBreak1ParkCh09.Name = "cmbBreak1ParkCh09";
             this.cmbBreak1ParkCh09.Size = new System.Drawing.Size(66, 21);
@@ -5551,8 +5630,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1ParkCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1ParkCh00.FormattingEnabled = true;
             this.cmbBreak1ParkCh00.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1ParkCh00.Location = new System.Drawing.Point(395, 212);
             this.cmbBreak1ParkCh00.Name = "cmbBreak1ParkCh00";
             this.cmbBreak1ParkCh00.Size = new System.Drawing.Size(66, 21);
@@ -5563,8 +5643,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1ParkCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1ParkCh08.FormattingEnabled = true;
             this.cmbBreak1ParkCh08.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1ParkCh08.Location = new System.Drawing.Point(971, 212);
             this.cmbBreak1ParkCh08.Name = "cmbBreak1ParkCh08";
             this.cmbBreak1ParkCh08.Size = new System.Drawing.Size(66, 21);
@@ -5575,8 +5656,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1ParkCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1ParkCh01.FormattingEnabled = true;
             this.cmbBreak1ParkCh01.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1ParkCh01.Location = new System.Drawing.Point(467, 212);
             this.cmbBreak1ParkCh01.Name = "cmbBreak1ParkCh01";
             this.cmbBreak1ParkCh01.Size = new System.Drawing.Size(66, 21);
@@ -5587,8 +5669,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1ParkCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1ParkCh07.FormattingEnabled = true;
             this.cmbBreak1ParkCh07.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1ParkCh07.Location = new System.Drawing.Point(899, 212);
             this.cmbBreak1ParkCh07.Name = "cmbBreak1ParkCh07";
             this.cmbBreak1ParkCh07.Size = new System.Drawing.Size(66, 21);
@@ -5599,8 +5682,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1ParkCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1ParkCh02.FormattingEnabled = true;
             this.cmbBreak1ParkCh02.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1ParkCh02.Location = new System.Drawing.Point(539, 212);
             this.cmbBreak1ParkCh02.Name = "cmbBreak1ParkCh02";
             this.cmbBreak1ParkCh02.Size = new System.Drawing.Size(66, 21);
@@ -5611,8 +5695,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1ParkCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1ParkCh06.FormattingEnabled = true;
             this.cmbBreak1ParkCh06.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1ParkCh06.Location = new System.Drawing.Point(827, 212);
             this.cmbBreak1ParkCh06.Name = "cmbBreak1ParkCh06";
             this.cmbBreak1ParkCh06.Size = new System.Drawing.Size(66, 21);
@@ -5623,8 +5708,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1ParkCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1ParkCh03.FormattingEnabled = true;
             this.cmbBreak1ParkCh03.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1ParkCh03.Location = new System.Drawing.Point(611, 212);
             this.cmbBreak1ParkCh03.Name = "cmbBreak1ParkCh03";
             this.cmbBreak1ParkCh03.Size = new System.Drawing.Size(66, 21);
@@ -5635,8 +5721,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1ParkCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1ParkCh05.FormattingEnabled = true;
             this.cmbBreak1ParkCh05.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1ParkCh05.Location = new System.Drawing.Point(755, 212);
             this.cmbBreak1ParkCh05.Name = "cmbBreak1ParkCh05";
             this.cmbBreak1ParkCh05.Size = new System.Drawing.Size(66, 21);
@@ -5647,8 +5734,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1ParkCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1ParkCh04.FormattingEnabled = true;
             this.cmbBreak1ParkCh04.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1ParkCh04.Location = new System.Drawing.Point(683, 212);
             this.cmbBreak1ParkCh04.Name = "cmbBreak1ParkCh04";
             this.cmbBreak1ParkCh04.Size = new System.Drawing.Size(66, 21);
@@ -5659,8 +5747,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1IGNCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1IGNCh11.FormattingEnabled = true;
             this.cmbBreak1IGNCh11.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1IGNCh11.Location = new System.Drawing.Point(1187, 182);
             this.cmbBreak1IGNCh11.Name = "cmbBreak1IGNCh11";
             this.cmbBreak1IGNCh11.Size = new System.Drawing.Size(66, 21);
@@ -5671,8 +5760,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1IGNCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1IGNCh10.FormattingEnabled = true;
             this.cmbBreak1IGNCh10.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1IGNCh10.Location = new System.Drawing.Point(1115, 182);
             this.cmbBreak1IGNCh10.Name = "cmbBreak1IGNCh10";
             this.cmbBreak1IGNCh10.Size = new System.Drawing.Size(66, 21);
@@ -5685,17 +5775,18 @@ namespace M1ConfigGenerator
             this.label547.ForeColor = System.Drawing.SystemColors.Control;
             this.label547.Location = new System.Drawing.Point(3, 183);
             this.label547.Name = "label547";
-            this.label547.Size = new System.Drawing.Size(69, 17);
+            this.label547.Size = new System.Drawing.Size(172, 17);
             this.label547.TabIndex = 418;
-            this.label547.Text = "IGN Safety";
+            this.label547.Text = "IGN Safety (Output Enabled)";
             // 
             // cmbBreak1IGNCh09
             // 
             this.cmbBreak1IGNCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1IGNCh09.FormattingEnabled = true;
             this.cmbBreak1IGNCh09.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1IGNCh09.Location = new System.Drawing.Point(1043, 182);
             this.cmbBreak1IGNCh09.Name = "cmbBreak1IGNCh09";
             this.cmbBreak1IGNCh09.Size = new System.Drawing.Size(66, 21);
@@ -5706,8 +5797,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1IGNCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1IGNCh00.FormattingEnabled = true;
             this.cmbBreak1IGNCh00.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1IGNCh00.Location = new System.Drawing.Point(395, 182);
             this.cmbBreak1IGNCh00.Name = "cmbBreak1IGNCh00";
             this.cmbBreak1IGNCh00.Size = new System.Drawing.Size(66, 21);
@@ -5718,8 +5810,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1IGNCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1IGNCh08.FormattingEnabled = true;
             this.cmbBreak1IGNCh08.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1IGNCh08.Location = new System.Drawing.Point(971, 182);
             this.cmbBreak1IGNCh08.Name = "cmbBreak1IGNCh08";
             this.cmbBreak1IGNCh08.Size = new System.Drawing.Size(66, 21);
@@ -5730,8 +5823,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1IGNCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1IGNCh01.FormattingEnabled = true;
             this.cmbBreak1IGNCh01.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1IGNCh01.Location = new System.Drawing.Point(467, 182);
             this.cmbBreak1IGNCh01.Name = "cmbBreak1IGNCh01";
             this.cmbBreak1IGNCh01.Size = new System.Drawing.Size(66, 21);
@@ -5742,8 +5836,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1IGNCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1IGNCh07.FormattingEnabled = true;
             this.cmbBreak1IGNCh07.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1IGNCh07.Location = new System.Drawing.Point(899, 182);
             this.cmbBreak1IGNCh07.Name = "cmbBreak1IGNCh07";
             this.cmbBreak1IGNCh07.Size = new System.Drawing.Size(66, 21);
@@ -5754,8 +5849,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1IGNCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1IGNCh02.FormattingEnabled = true;
             this.cmbBreak1IGNCh02.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1IGNCh02.Location = new System.Drawing.Point(539, 182);
             this.cmbBreak1IGNCh02.Name = "cmbBreak1IGNCh02";
             this.cmbBreak1IGNCh02.Size = new System.Drawing.Size(66, 21);
@@ -5766,8 +5862,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1IGNCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1IGNCh06.FormattingEnabled = true;
             this.cmbBreak1IGNCh06.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1IGNCh06.Location = new System.Drawing.Point(827, 182);
             this.cmbBreak1IGNCh06.Name = "cmbBreak1IGNCh06";
             this.cmbBreak1IGNCh06.Size = new System.Drawing.Size(66, 21);
@@ -5778,8 +5875,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1IGNCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1IGNCh03.FormattingEnabled = true;
             this.cmbBreak1IGNCh03.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1IGNCh03.Location = new System.Drawing.Point(611, 182);
             this.cmbBreak1IGNCh03.Name = "cmbBreak1IGNCh03";
             this.cmbBreak1IGNCh03.Size = new System.Drawing.Size(66, 21);
@@ -5790,8 +5888,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1IGNCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1IGNCh05.FormattingEnabled = true;
             this.cmbBreak1IGNCh05.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1IGNCh05.Location = new System.Drawing.Point(755, 182);
             this.cmbBreak1IGNCh05.Name = "cmbBreak1IGNCh05";
             this.cmbBreak1IGNCh05.Size = new System.Drawing.Size(66, 21);
@@ -5802,8 +5901,9 @@ namespace M1ConfigGenerator
             this.cmbBreak1IGNCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1IGNCh04.FormattingEnabled = true;
             this.cmbBreak1IGNCh04.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
+            "Always",
+            "Active",
+            "Inactive"});
             this.cmbBreak1IGNCh04.Location = new System.Drawing.Point(683, 182);
             this.cmbBreak1IGNCh04.Name = "cmbBreak1IGNCh04";
             this.cmbBreak1IGNCh04.Size = new System.Drawing.Size(66, 21);
@@ -5814,8 +5914,18 @@ namespace M1ConfigGenerator
             this.cmbBreak1PairedCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1PairedCh11.FormattingEnabled = true;
             this.cmbBreak1PairedCh11.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cmbBreak1PairedCh11.Location = new System.Drawing.Point(1187, 152);
             this.cmbBreak1PairedCh11.Name = "cmbBreak1PairedCh11";
             this.cmbBreak1PairedCh11.Size = new System.Drawing.Size(66, 21);
@@ -5826,8 +5936,18 @@ namespace M1ConfigGenerator
             this.cmbBreak1PairedCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1PairedCh10.FormattingEnabled = true;
             this.cmbBreak1PairedCh10.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "11"});
             this.cmbBreak1PairedCh10.Location = new System.Drawing.Point(1115, 152);
             this.cmbBreak1PairedCh10.Name = "cmbBreak1PairedCh10";
             this.cmbBreak1PairedCh10.Size = new System.Drawing.Size(66, 21);
@@ -5849,8 +5969,18 @@ namespace M1ConfigGenerator
             this.cmbBreak1PairedCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1PairedCh09.FormattingEnabled = true;
             this.cmbBreak1PairedCh09.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "10",
+            "11"});
             this.cmbBreak1PairedCh09.Location = new System.Drawing.Point(1043, 152);
             this.cmbBreak1PairedCh09.Name = "cmbBreak1PairedCh09";
             this.cmbBreak1PairedCh09.Size = new System.Drawing.Size(66, 21);
@@ -5861,8 +5991,18 @@ namespace M1ConfigGenerator
             this.cmbBreak1PairedCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1PairedCh00.FormattingEnabled = true;
             this.cmbBreak1PairedCh00.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbBreak1PairedCh00.Location = new System.Drawing.Point(395, 152);
             this.cmbBreak1PairedCh00.Name = "cmbBreak1PairedCh00";
             this.cmbBreak1PairedCh00.Size = new System.Drawing.Size(66, 21);
@@ -5873,8 +6013,18 @@ namespace M1ConfigGenerator
             this.cmbBreak1PairedCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1PairedCh08.FormattingEnabled = true;
             this.cmbBreak1PairedCh08.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "9",
+            "10",
+            "11"});
             this.cmbBreak1PairedCh08.Location = new System.Drawing.Point(971, 152);
             this.cmbBreak1PairedCh08.Name = "cmbBreak1PairedCh08";
             this.cmbBreak1PairedCh08.Size = new System.Drawing.Size(66, 21);
@@ -5885,8 +6035,18 @@ namespace M1ConfigGenerator
             this.cmbBreak1PairedCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1PairedCh01.FormattingEnabled = true;
             this.cmbBreak1PairedCh01.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbBreak1PairedCh01.Location = new System.Drawing.Point(467, 152);
             this.cmbBreak1PairedCh01.Name = "cmbBreak1PairedCh01";
             this.cmbBreak1PairedCh01.Size = new System.Drawing.Size(66, 21);
@@ -5897,8 +6057,18 @@ namespace M1ConfigGenerator
             this.cmbBreak1PairedCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1PairedCh07.FormattingEnabled = true;
             this.cmbBreak1PairedCh07.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbBreak1PairedCh07.Location = new System.Drawing.Point(899, 152);
             this.cmbBreak1PairedCh07.Name = "cmbBreak1PairedCh07";
             this.cmbBreak1PairedCh07.Size = new System.Drawing.Size(66, 21);
@@ -5909,8 +6079,18 @@ namespace M1ConfigGenerator
             this.cmbBreak1PairedCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1PairedCh02.FormattingEnabled = true;
             this.cmbBreak1PairedCh02.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbBreak1PairedCh02.Location = new System.Drawing.Point(539, 152);
             this.cmbBreak1PairedCh02.Name = "cmbBreak1PairedCh02";
             this.cmbBreak1PairedCh02.Size = new System.Drawing.Size(66, 21);
@@ -5921,8 +6101,18 @@ namespace M1ConfigGenerator
             this.cmbBreak1PairedCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1PairedCh06.FormattingEnabled = true;
             this.cmbBreak1PairedCh06.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbBreak1PairedCh06.Location = new System.Drawing.Point(827, 152);
             this.cmbBreak1PairedCh06.Name = "cmbBreak1PairedCh06";
             this.cmbBreak1PairedCh06.Size = new System.Drawing.Size(66, 21);
@@ -5933,8 +6123,18 @@ namespace M1ConfigGenerator
             this.cmbBreak1PairedCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1PairedCh03.FormattingEnabled = true;
             this.cmbBreak1PairedCh03.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbBreak1PairedCh03.Location = new System.Drawing.Point(611, 152);
             this.cmbBreak1PairedCh03.Name = "cmbBreak1PairedCh03";
             this.cmbBreak1PairedCh03.Size = new System.Drawing.Size(66, 21);
@@ -5945,8 +6145,18 @@ namespace M1ConfigGenerator
             this.cmbBreak1PairedCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1PairedCh05.FormattingEnabled = true;
             this.cmbBreak1PairedCh05.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbBreak1PairedCh05.Location = new System.Drawing.Point(755, 152);
             this.cmbBreak1PairedCh05.Name = "cmbBreak1PairedCh05";
             this.cmbBreak1PairedCh05.Size = new System.Drawing.Size(66, 21);
@@ -5957,8 +6167,18 @@ namespace M1ConfigGenerator
             this.cmbBreak1PairedCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBreak1PairedCh04.FormattingEnabled = true;
             this.cmbBreak1PairedCh04.Items.AddRange(new object[] {
-            "Paired to Channel",
-            "No Slave"});
+            "None",
+            "0",
+            "1",
+            "2",
+            "3",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.cmbBreak1PairedCh04.Location = new System.Drawing.Point(683, 152);
             this.cmbBreak1PairedCh04.Name = "cmbBreak1PairedCh04";
             this.cmbBreak1PairedCh04.Size = new System.Drawing.Size(66, 21);
@@ -7772,7 +7992,7 @@ namespace M1ConfigGenerator
             "7"});
             this.cmbBreaker1PanelNum.Location = new System.Drawing.Point(260, 25);
             this.cmbBreaker1PanelNum.Name = "cmbBreaker1PanelNum";
-            this.cmbBreaker1PanelNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1PanelNum.Size = new System.Drawing.Size(32, 21);
             this.cmbBreaker1PanelNum.TabIndex = 2;
             this.cmbBreaker1PanelNum.SelectedIndexChanged += new System.EventHandler(this.cmbBreaker1PanelNum_SelectedIndexChanged);
             // 
@@ -7802,7 +8022,7 @@ namespace M1ConfigGenerator
             "8"});
             this.cmbBreaker1CardNum.Location = new System.Drawing.Point(109, 25);
             this.cmbBreaker1CardNum.Name = "cmbBreaker1CardNum";
-            this.cmbBreaker1CardNum.Size = new System.Drawing.Size(40, 21);
+            this.cmbBreaker1CardNum.Size = new System.Drawing.Size(32, 21);
             this.cmbBreaker1CardNum.TabIndex = 1;
             this.cmbBreaker1CardNum.SelectedIndexChanged += new System.EventHandler(this.cmbBreaker1CardNum_SelectedIndexChanged);
             // 
@@ -7816,46 +8036,6 @@ namespace M1ConfigGenerator
             this.label253.Size = new System.Drawing.Size(54, 17);
             this.label253.TabIndex = 101;
             this.label253.Text = "Panel #:";
-            // 
-            // label254
-            // 
-            this.label254.AutoSize = true;
-            this.label254.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label254.ForeColor = System.Drawing.SystemColors.Control;
-            this.label254.Location = new System.Drawing.Point(339, 27);
-            this.label254.Name = "label254";
-            this.label254.Size = new System.Drawing.Size(74, 17);
-            this.label254.TabIndex = 102;
-            this.label254.Text = "Config Rev:";
-            // 
-            // tbxBreaker1CfgRev
-            // 
-            this.tbxBreaker1CfgRev.Location = new System.Drawing.Point(419, 25);
-            this.tbxBreaker1CfgRev.Name = "tbxBreaker1CfgRev";
-            this.tbxBreaker1CfgRev.Size = new System.Drawing.Size(32, 20);
-            this.tbxBreaker1CfgRev.TabIndex = 3;
-            this.tbxBreaker1CfgRev.Text = "1";
-            // 
-            // label255
-            // 
-            this.label255.AutoSize = true;
-            this.label255.BackColor = System.Drawing.Color.Transparent;
-            this.label255.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label255.ForeColor = System.Drawing.SystemColors.Control;
-            this.label255.Location = new System.Drawing.Point(509, 27);
-            this.label255.Name = "label255";
-            this.label255.Size = new System.Drawing.Size(101, 17);
-            this.label255.TabIndex = 103;
-            this.label255.Text = "Config Type:  0x";
-            // 
-            // tbxBreaker1CfgType
-            // 
-            this.tbxBreaker1CfgType.Location = new System.Drawing.Point(616, 26);
-            this.tbxBreaker1CfgType.MaxLength = 4;
-            this.tbxBreaker1CfgType.Name = "tbxBreaker1CfgType";
-            this.tbxBreaker1CfgType.Size = new System.Drawing.Size(48, 20);
-            this.tbxBreaker1CfgType.TabIndex = 4;
-            this.tbxBreaker1CfgType.Text = "0";
             // 
             // tabBreakerGenerated
             // 
@@ -8002,7 +8182,6 @@ namespace M1ConfigGenerator
             this.tabDimmer1.Controls.Add(this.lblDimmer1Ch08);
             this.tabDimmer1.Controls.Add(this.chkDimmer1Shade);
             this.tabDimmer1.Controls.Add(this.cmbDimmer1OCTime03);
-            this.tabDimmer1.Controls.Add(this.chkDimmer1Force);
             this.tabDimmer1.Controls.Add(this.cmbDimmer1OCAmps09);
             this.tabDimmer1.Controls.Add(this.label12);
             this.tabDimmer1.Controls.Add(this.cmbDimmer1OCTime02);
@@ -10404,18 +10583,6 @@ namespace M1ConfigGenerator
             this.cmbDimmer1OCTime03.Size = new System.Drawing.Size(66, 21);
             this.cmbDimmer1OCTime03.TabIndex = 50;
             // 
-            // chkDimmer1Force
-            // 
-            this.chkDimmer1Force.AutoSize = true;
-            this.chkDimmer1Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDimmer1Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkDimmer1Force.Location = new System.Drawing.Point(392, 70);
-            this.chkDimmer1Force.Name = "chkDimmer1Force";
-            this.chkDimmer1Force.Size = new System.Drawing.Size(129, 21);
-            this.chkDimmer1Force.TabIndex = 13;
-            this.chkDimmer1Force.Text = "Force Commands";
-            this.chkDimmer1Force.UseVisualStyleBackColor = true;
-            // 
             // cmbDimmer1OCAmps09
             // 
             this.cmbDimmer1OCAmps09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -11711,7 +11878,6 @@ namespace M1ConfigGenerator
             this.tabHC1.Controls.Add(this.chkHC1DCDimmer);
             this.tabHC1.Controls.Add(this.chkHC1DCMotor);
             this.tabHC1.Controls.Add(this.cmbHC1OCTime07);
-            this.tabHC1.Controls.Add(this.chkHC1Force);
             this.tabHC1.Controls.Add(this.label111);
             this.tabHC1.Controls.Add(this.cmbHC1OCTime08);
             this.tabHC1.Controls.Add(this.tbxHC1BaseIndex);
@@ -15448,18 +15614,6 @@ namespace M1ConfigGenerator
             this.cmbHC1OCTime07.Size = new System.Drawing.Size(66, 21);
             this.cmbHC1OCTime07.TabIndex = 27;
             // 
-            // chkHC1Force
-            // 
-            this.chkHC1Force.AutoSize = true;
-            this.chkHC1Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkHC1Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHC1Force.Location = new System.Drawing.Point(619, 70);
-            this.chkHC1Force.Name = "chkHC1Force";
-            this.chkHC1Force.Size = new System.Drawing.Size(129, 21);
-            this.chkHC1Force.TabIndex = 287;
-            this.chkHC1Force.Text = "Force Commands";
-            this.chkHC1Force.UseVisualStyleBackColor = true;
-            // 
             // label111
             // 
             this.label111.AutoSize = true;
@@ -16285,7 +16439,6 @@ namespace M1ConfigGenerator
             this.tabLC1.Controls.Add(this.chkLC1MG2Ch00);
             this.tabLC1.Controls.Add(this.chkLC1Shade);
             this.tabLC1.Controls.Add(this.lblLC1Ch10);
-            this.tabLC1.Controls.Add(this.chkLC1Force);
             this.tabLC1.Controls.Add(this.cmbLC1OCAmps08);
             this.tabLC1.Controls.Add(this.label228);
             this.tabLC1.Controls.Add(this.chkLC1MG2Ch05);
@@ -21463,18 +21616,6 @@ namespace M1ConfigGenerator
             this.lblLC1Ch10.Text = "10";
             this.lblLC1Ch10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // chkLC1Force
-            // 
-            this.chkLC1Force.AutoSize = true;
-            this.chkLC1Force.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLC1Force.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkLC1Force.Location = new System.Drawing.Point(479, 70);
-            this.chkLC1Force.Name = "chkLC1Force";
-            this.chkLC1Force.Size = new System.Drawing.Size(129, 21);
-            this.chkLC1Force.TabIndex = 9;
-            this.chkLC1Force.Text = "Force Commands";
-            this.chkLC1Force.UseVisualStyleBackColor = true;
-            // 
             // cmbLC1OCAmps08
             // 
             this.cmbLC1OCAmps08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -22750,7 +22891,6 @@ namespace M1ConfigGenerator
             this.tabPage13.Controls.Add(this.tbxHRCfgType);
             this.tabPage13.Controls.Add(this.label691);
             this.tabPage13.Controls.Add(this.chkHRDCMotor);
-            this.tabPage13.Controls.Add(this.chkHRForce);
             this.tabPage13.Controls.Add(this.tabControlHRQF);
             this.tabPage13.Location = new System.Drawing.Point(4, 22);
             this.tabPage13.Margin = new System.Windows.Forms.Padding(2);
@@ -23780,18 +23920,6 @@ namespace M1ConfigGenerator
             this.chkHRDCMotor.TabIndex = 291;
             this.chkHRDCMotor.Text = "DC Motor (RP)";
             this.chkHRDCMotor.UseVisualStyleBackColor = true;
-            // 
-            // chkHRForce
-            // 
-            this.chkHRForce.AutoSize = true;
-            this.chkHRForce.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkHRForce.ForeColor = System.Drawing.SystemColors.Control;
-            this.chkHRForce.Location = new System.Drawing.Point(558, 70);
-            this.chkHRForce.Name = "chkHRForce";
-            this.chkHRForce.Size = new System.Drawing.Size(129, 21);
-            this.chkHRForce.TabIndex = 304;
-            this.chkHRForce.Text = "Force Commands";
-            this.chkHRForce.UseVisualStyleBackColor = true;
             // 
             // tabControlHRQF
             // 
@@ -27223,7 +27351,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox tbxDimmer1BaseIndex;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.CheckBox chkDimmer1Force;
         private System.Windows.Forms.CheckBox chkDimmer1Shade;
         private System.Windows.Forms.CheckBox chkDimmer1DCMotor;
         private System.Windows.Forms.CheckBox chkDimmer1MG4Ch11;
@@ -27351,7 +27478,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label lblLCOCAmps;
         private System.Windows.Forms.TextBox tbxLC1BaseIndex;
         private System.Windows.Forms.Label label228;
-        private System.Windows.Forms.CheckBox chkLC1Force;
         private System.Windows.Forms.CheckBox chkLC1Shade;
         private System.Windows.Forms.CheckBox chkLC1DCMotor;
         private System.Windows.Forms.Label label229;
@@ -27651,7 +27777,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label110;
         private System.Windows.Forms.CheckBox chkHC1DCDimmer;
         private System.Windows.Forms.CheckBox chkHC1DCMotor;
-        private System.Windows.Forms.CheckBox chkHC1Force;
         private System.Windows.Forms.Label label111;
         private System.Windows.Forms.TextBox tbxHC1BaseIndex;
         private System.Windows.Forms.Label label138;
@@ -27666,10 +27791,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label252;
         private System.Windows.Forms.ComboBox cmbBreaker1CardNum;
         private System.Windows.Forms.Label label253;
-        private System.Windows.Forms.Label label254;
-        private System.Windows.Forms.TextBox tbxBreaker1CfgRev;
-        private System.Windows.Forms.Label label255;
-        private System.Windows.Forms.TextBox tbxBreaker1CfgType;
         private System.Windows.Forms.TabPage tabAuxGenerated;
         private System.Windows.Forms.TabPage tabBreakerGenerated;
         private System.Windows.Forms.TabPage tabDimmerGenerated;
@@ -28632,7 +28753,6 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.TextBox tbxHRCfgType;
         private System.Windows.Forms.Label label691;
         private System.Windows.Forms.CheckBox chkHRDCMotor;
-        private System.Windows.Forms.CheckBox chkHRForce;
         private System.Windows.Forms.Label lblHRCh00;
         private System.Windows.Forms.Label lblHRCh04;
         private System.Windows.Forms.Label lblHRCh05;
@@ -28983,6 +29103,13 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label102;
         private System.Windows.Forms.TextBox tbxAux1CfgType;
         private System.Windows.Forms.TextBox tbxStartAuxCfgRev;
+        private System.Windows.Forms.Label label103;
+        private System.Windows.Forms.TextBox tbxBreaker1CardLetter;
+        private System.Windows.Forms.Label label104;
+        private System.Windows.Forms.TextBox tbxBreaker1CfgRev;
+        private System.Windows.Forms.Label label105;
+        private System.Windows.Forms.TextBox tbxBreaker1CfgType;
+        private System.Windows.Forms.TextBox tbxStartBrkCfgRev;
     }
 }
 

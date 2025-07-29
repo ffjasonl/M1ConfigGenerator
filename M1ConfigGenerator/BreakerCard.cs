@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -11,8 +12,11 @@ namespace M1ConfigGenerator
     {
         public BreakerCard(int argInt)
         {
-            M1_SetCardLetter(Convert.ToString(argInt));
-            M1_ChangeConfigName();
+            M1_SetCardLetterOnCreation(Convert.ToString(argInt));
+        }
+
+        public void Brk_ChangeAddress()
+        {
             // general
             M1_ChangeAddress(m1ParameterNames);
             // card-specific
@@ -36,7 +40,7 @@ namespace M1ConfigGenerator
 
         public void CreateBreakerFile()
         {
-            using (StreamWriter sw = File.CreateText(@GetConfigPath() + M1_GetConfigName()))
+            using (StreamWriter sw = File.CreateText(@Brk_GetConfigPath() + M1_GetConfigName()))
             {
                 DateTime currentDateTime = DateTime.Now;
                 sw.WriteLine(commentBox);
@@ -95,8 +99,8 @@ namespace M1ConfigGenerator
                     sw.WriteLine("// ### CHANNEL " + Convert.ToString(i) + " ###");
                     sw.WriteLine("#define " + breakerChDirectionNames[i] + tabs[6] + breakerChDirectionValues[i]);
                     sw.WriteLine("");
-                    sw.WriteLine("#define " + breakerChOvercurrentAmpsNames[i] + tabs[4] + "BRKR_CONVERT_AMPS_TO_ADC(" + breakerChOvercurrentAmpsValues[i] + ")");
-                    sw.WriteLine("#define " + breakerChUndercurrentAmpsNames[i] + tabs[4] + "BRKR_CONVERT_AMPS_TO_ADC(" + breakerChUndercurrentAmpsValues[i] + ")");
+                    sw.WriteLine("#define " + breakerChOvercurrentAmpsNames[i] + tabs[4] + "BRKR_CONVERT_AMPS_TO_ADC_MARGIN(" + breakerChOvercurrentAmpsValues[i] + ")");
+                    sw.WriteLine("#define " + breakerChUndercurrentAmpsNames[i] + tabs[4] + "BRKR_CONVERT_AMPS_TO_ADC_MARGIN(" + breakerChUndercurrentAmpsValues[i] + ")");
                     sw.WriteLine("#define " + breakerChOvercurrentTimeNames[i] + tabs[3] + breakerChOvercurrentTimeValues[i]);
                     sw.WriteLine("#define " + breakerChMeasCurTimeNames[i] + tabs[3] + breakerChMeasCurTimeValues[i]);
                     sw.WriteLine("#define " + breakerChModeNames[i] + tabs[7] + breakerChModeValues[i]);
@@ -113,40 +117,160 @@ namespace M1ConfigGenerator
             }
         }
 
-        public string GetConfigPath()
+        public string Brk_GetConfigPath()
         {
             return configPath;
         }
 
-        public void SetOCAmps(int argInt, string argString)
+        public void Brk_SetOCAmps(int argInt, string argString)
         {
             breakerChOvercurrentAmpsValues[argInt] = argString;
         }
 
-        public void SetOCTime(int argInt, string argString)
+        public string Brk_GetOCAmps(int argInt)
+        {
+            return breakerChOvercurrentAmpsValues[argInt];
+        }
+
+        public void Brk_SetOCTime(int argInt, string argString)
         {
             breakerChOvercurrentTimeValues[argInt] = argString;
         }
 
-        public void SetInterrupt(int argInt, string argString)
+        public string Brk_GetOCTime(int argInt)
         {
-            cardChGroup0Values[argInt] = argString;
+            return breakerChOvercurrentTimeValues[argInt];
         }
 
-        public void SetVINInterrupt(string argString)
+        public void Brk_SetInterrupt(int argInt, string argString)
+        {
+            if (argString == "None")    { cardChGroup0Values[argInt] = "DISABLE_GROUP"; }
+            else                        { cardChGroup0Values[argInt] = argString; }
+        }
+
+        public string Brk_GetInterrupt(int argInt)
+        {
+            if (cardChGroup0Values[argInt] == "DISABLE_GROUP")  { return "None"; }
+            else                                                { return cardChGroup0Values[argInt]; }
+        }
+
+        public void Brk_SetVINInterrupt(string argString)
         {
             vinParameterValues[4] = argString; // VIN interrupter index
             vinParameterValues[9] = argString; // VIN interrupt group, set to same as index
         }
 
-        public void SetVINOCAmps(string argString)
+        public string Brk_GetVINInterrupt()
+        {
+            return vinParameterValues[4];
+        }
+
+        public void Brk_SetVINOCAmps(string argString)
         {
             vinParameterValues[0] = argString;
         }
 
-        public void SetVINOCTime(string argString)
+        public string Brk_GetVINOCAmps()
+        {
+            return vinParameterValues[0];
+        }
+
+        public void Brk_SetVINOCTime(string argString)
         {
             vinParameterValues[2] = argString; // average time
+        }
+
+        public string Brk_GetVINOCTime()
+        {
+            return vinParameterValues[2];
+        }
+
+        public void Brk_SetDirection(int argInt, string argString)
+        {
+            breakerChDirectionValues[argInt] = "DRVR_STATE_" + argString.ToUpper();
+        }
+
+        public string Brk_GetDirection(int argInt)
+        {
+            if (breakerChDirectionValues[argInt] == "DRVR_STATE_HIGH") { return "High"; }
+            else if (breakerChDirectionValues[argInt] == "DRVR_STATE_LOW") { return "Low"; }
+            else if (breakerChDirectionValues[argInt] == "DRVR_STATE_REVERSE") { return "Reverse"; }
+            else if (breakerChDirectionValues[argInt] == "DRVR_STATE_FORWARD") { return "Forward"; }
+            else if (breakerChDirectionValues[argInt] == "DRVR_STATE_UP") { return "Up"; }
+            else if (breakerChDirectionValues[argInt] == "DRVR_STATE_DOWN") { return "Down"; }
+            else { return "Off"; }
+        }
+
+        public void Brk_SetUndAmp(int argInt, string argString)
+        {
+            // Values array only stores number, HC_CONVERT_AMPS_TO_ADC formatting added in print function
+            breakerChUndercurrentAmpsValues[argInt] = "0x" + argString;
+        }
+
+        public string Brk_GetUndAmp(int argInt)
+        {
+            return breakerChUndercurrentAmpsValues[argInt].Substring(2); // removes "0x"
+        }
+
+        public void Brk_SetMeasCurTime(int argInt, string argString)
+        {
+            breakerChMeasCurTimeValues[argInt] = argString;
+        }
+
+        public string Brk_GetMeasCurTime(int argInt)
+        {
+            return breakerChMeasCurTimeValues[argInt];
+        }
+
+        public void Brk_SetMode(int argInt, string argString)
+        {
+            breakerChModeValues[argInt] = "DRVR_TYPE_" + argString.ToUpper();
+        }
+
+        public string Brk_GetMode(int argInt)
+        {
+            if (breakerChModeValues[argInt] == "DRVR_TYPE_SLAVE") { return "Slave"; }
+            else if (breakerChModeValues[argInt] == "DRVR_TYPE_UNUSED") { return "Unused"; }
+            else { return "Breaker"; }
+        }
+
+        public void Brk_SetPaired(int argInt, string argString)
+        {
+            if (argString == "None") { breakerChPairedValues[argInt] = "NO_SLAVE"; }
+            else { breakerChPairedValues[argInt] = "PAIRED_TO_CHNL" + argString; }
+        }
+
+        public string Brk_GetPaired(int argInt)
+        {
+            return (breakerChPairedValues[argInt] == "NO_SLAVE" ? "None" : breakerChPairedValues[argInt].Substring(14)); // returns number from PAIRED_TO_CHNL#
+        }
+
+        public void Brk_SetIGNSafety(int argInt,string argString )
+        {
+            if (argString == "Active") { breakerChIGNValues[argInt] = "DRVR_ENABLED_SAFETY_ACTIVE"; }
+            else if (argString == "Inactive") { breakerChIGNValues[argInt] = "DRVR_ENABLED_SAFETY_INACTIVE"; }
+            else { breakerChIGNValues[argInt] = "DRVR_SAFETY_DISABLED"; }
+        }
+
+        public string Brk_GetIGNSafety(int argInt)
+        {
+            if (breakerChIGNValues[argInt] == "DRVR_ENABLED_SAFETY_ACTIVE") { return "Active"; }
+            else if (breakerChIGNValues[argInt] == "DRVR_ENABLED_SAFETY_INACTIVE") { return "Inactive"; }
+            else { return "Always"; }
+        }
+
+        public void Brk_SetParkSafety(int argInt, string argString)
+        {
+            if (argString == "Active") { breakerChParkValues[argInt] = "DRVR_ENABLED_SAFETY_ACTIVE"; }
+            else if (argString == "Inactive") { breakerChParkValues[argInt] = "DRVR_ENABLED_SAFETY_INACTIVE"; }
+            else { breakerChParkValues[argInt] = "DRVR_SAFETY_DISABLED"; }
+        }
+
+        public string Brk_GetParkSafety(int argInt)
+        {
+            if (breakerChParkValues[argInt] == "DRVR_ENABLED_SAFETY_ACTIVE") { return "Active"; }
+            else if (breakerChParkValues[argInt] == "DRVR_ENABLED_SAFETY_INACTIVE") { return "Inactive"; }
+            else { return "Always"; }
         }
 
         private string configPath = @"M1_DcDriver_Config\Src\M1_Breaker\DeviceConfigs\";

@@ -1916,6 +1916,21 @@ namespace M1ConfigGenerator
             this.btnHRCard4 = new System.Windows.Forms.Button();
             this.btnHRCard3 = new System.Windows.Forms.Button();
             this.btnHRCard2 = new System.Windows.Forms.Button();
+            this.label114 = new System.Windows.Forms.Label();
+            this.label115 = new System.Windows.Forms.Label();
+            this.cmbAuxShutdownCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh00 = new System.Windows.Forms.ComboBox();
+            this.label116 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
@@ -2889,6 +2904,21 @@ namespace M1ConfigGenerator
             // tabAux1Full
             // 
             this.tabAux1Full.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabAux1Full.Controls.Add(this.cmbAuxShutdownCh10);
+            this.tabAux1Full.Controls.Add(this.cmbAuxShutdownCh11);
+            this.tabAux1Full.Controls.Add(this.cmbAuxShutdownCh09);
+            this.tabAux1Full.Controls.Add(this.cmbAuxShutdownCh08);
+            this.tabAux1Full.Controls.Add(this.cmbAuxShutdownCh07);
+            this.tabAux1Full.Controls.Add(this.cmbAuxShutdownCh06);
+            this.tabAux1Full.Controls.Add(this.cmbAuxShutdownCh05);
+            this.tabAux1Full.Controls.Add(this.cmbAuxShutdownCh04);
+            this.tabAux1Full.Controls.Add(this.cmbAuxShutdownCh03);
+            this.tabAux1Full.Controls.Add(this.cmbAuxShutdownCh02);
+            this.tabAux1Full.Controls.Add(this.cmbAuxShutdownCh01);
+            this.tabAux1Full.Controls.Add(this.cmbAuxShutdownCh00);
+            this.tabAux1Full.Controls.Add(this.label116);
+            this.tabAux1Full.Controls.Add(this.label115);
+            this.tabAux1Full.Controls.Add(this.label114);
             this.tabAux1Full.Controls.Add(this.label89);
             this.tabAux1Full.Controls.Add(this.label90);
             this.tabAux1Full.Controls.Add(this.label91);
@@ -27134,6 +27164,231 @@ namespace M1ConfigGenerator
             this.btnHRCard2.Visible = false;
             this.btnHRCard2.Click += new System.EventHandler(this.btnHRCard2_Click);
             // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label114.ForeColor = System.Drawing.SystemColors.Control;
+            this.label114.Location = new System.Drawing.Point(232, 153);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(21, 17);
+            this.label114.TabIndex = 452;
+            this.label114.Text = "0x";
+            // 
+            // label115
+            // 
+            this.label115.AutoSize = true;
+            this.label115.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label115.ForeColor = System.Drawing.SystemColors.Control;
+            this.label115.Location = new System.Drawing.Point(232, 183);
+            this.label115.Name = "label115";
+            this.label115.Size = new System.Drawing.Size(21, 17);
+            this.label115.TabIndex = 453;
+            this.label115.Text = "0x";
+            // 
+            // cmbAuxShutdownCh10
+            // 
+            this.cmbAuxShutdownCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh10.FormattingEnabled = true;
+            this.cmbAuxShutdownCh10.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh10.Location = new System.Drawing.Point(955, 241);
+            this.cmbAuxShutdownCh10.Name = "cmbAuxShutdownCh10";
+            this.cmbAuxShutdownCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh10.TabIndex = 466;
+            // 
+            // cmbAuxShutdownCh11
+            // 
+            this.cmbAuxShutdownCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh11.FormattingEnabled = true;
+            this.cmbAuxShutdownCh11.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh11.Location = new System.Drawing.Point(1027, 241);
+            this.cmbAuxShutdownCh11.Name = "cmbAuxShutdownCh11";
+            this.cmbAuxShutdownCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh11.TabIndex = 465;
+            // 
+            // cmbAuxShutdownCh09
+            // 
+            this.cmbAuxShutdownCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh09.FormattingEnabled = true;
+            this.cmbAuxShutdownCh09.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh09.Location = new System.Drawing.Point(883, 241);
+            this.cmbAuxShutdownCh09.Name = "cmbAuxShutdownCh09";
+            this.cmbAuxShutdownCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh09.TabIndex = 464;
+            // 
+            // cmbAuxShutdownCh08
+            // 
+            this.cmbAuxShutdownCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh08.FormattingEnabled = true;
+            this.cmbAuxShutdownCh08.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh08.Location = new System.Drawing.Point(811, 241);
+            this.cmbAuxShutdownCh08.Name = "cmbAuxShutdownCh08";
+            this.cmbAuxShutdownCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh08.TabIndex = 463;
+            // 
+            // cmbAuxShutdownCh07
+            // 
+            this.cmbAuxShutdownCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh07.FormattingEnabled = true;
+            this.cmbAuxShutdownCh07.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh07.Location = new System.Drawing.Point(739, 241);
+            this.cmbAuxShutdownCh07.Name = "cmbAuxShutdownCh07";
+            this.cmbAuxShutdownCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh07.TabIndex = 462;
+            // 
+            // cmbAuxShutdownCh06
+            // 
+            this.cmbAuxShutdownCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh06.FormattingEnabled = true;
+            this.cmbAuxShutdownCh06.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh06.Location = new System.Drawing.Point(667, 241);
+            this.cmbAuxShutdownCh06.Name = "cmbAuxShutdownCh06";
+            this.cmbAuxShutdownCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh06.TabIndex = 461;
+            // 
+            // cmbAuxShutdownCh05
+            // 
+            this.cmbAuxShutdownCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh05.FormattingEnabled = true;
+            this.cmbAuxShutdownCh05.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh05.Location = new System.Drawing.Point(595, 241);
+            this.cmbAuxShutdownCh05.Name = "cmbAuxShutdownCh05";
+            this.cmbAuxShutdownCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh05.TabIndex = 460;
+            // 
+            // cmbAuxShutdownCh04
+            // 
+            this.cmbAuxShutdownCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh04.FormattingEnabled = true;
+            this.cmbAuxShutdownCh04.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh04.Location = new System.Drawing.Point(523, 241);
+            this.cmbAuxShutdownCh04.Name = "cmbAuxShutdownCh04";
+            this.cmbAuxShutdownCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh04.TabIndex = 459;
+            // 
+            // cmbAuxShutdownCh03
+            // 
+            this.cmbAuxShutdownCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh03.FormattingEnabled = true;
+            this.cmbAuxShutdownCh03.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh03.Location = new System.Drawing.Point(451, 241);
+            this.cmbAuxShutdownCh03.Name = "cmbAuxShutdownCh03";
+            this.cmbAuxShutdownCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh03.TabIndex = 458;
+            // 
+            // cmbAuxShutdownCh02
+            // 
+            this.cmbAuxShutdownCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh02.FormattingEnabled = true;
+            this.cmbAuxShutdownCh02.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh02.Location = new System.Drawing.Point(379, 241);
+            this.cmbAuxShutdownCh02.Name = "cmbAuxShutdownCh02";
+            this.cmbAuxShutdownCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh02.TabIndex = 457;
+            // 
+            // cmbAuxShutdownCh01
+            // 
+            this.cmbAuxShutdownCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh01.FormattingEnabled = true;
+            this.cmbAuxShutdownCh01.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh01.Location = new System.Drawing.Point(307, 241);
+            this.cmbAuxShutdownCh01.Name = "cmbAuxShutdownCh01";
+            this.cmbAuxShutdownCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh01.TabIndex = 456;
+            // 
+            // cmbAuxShutdownCh00
+            // 
+            this.cmbAuxShutdownCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh00.FormattingEnabled = true;
+            this.cmbAuxShutdownCh00.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh00.Location = new System.Drawing.Point(235, 241);
+            this.cmbAuxShutdownCh00.Name = "cmbAuxShutdownCh00";
+            this.cmbAuxShutdownCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh00.TabIndex = 455;
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label116.ForeColor = System.Drawing.SystemColors.Control;
+            this.label116.Location = new System.Drawing.Point(2, 243);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(122, 17);
+            this.label116.TabIndex = 454;
+            this.label116.Text = "Shutdown Recovery";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -29110,6 +29365,21 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.Label label105;
         private System.Windows.Forms.TextBox tbxBreaker1CfgType;
         private System.Windows.Forms.TextBox tbxStartBrkCfgRev;
+        private System.Windows.Forms.Label label115;
+        private System.Windows.Forms.Label label114;
+        private System.Windows.Forms.ComboBox cmbAuxShutdownCh10;
+        private System.Windows.Forms.ComboBox cmbAuxShutdownCh11;
+        private System.Windows.Forms.ComboBox cmbAuxShutdownCh09;
+        private System.Windows.Forms.ComboBox cmbAuxShutdownCh08;
+        private System.Windows.Forms.ComboBox cmbAuxShutdownCh07;
+        private System.Windows.Forms.ComboBox cmbAuxShutdownCh06;
+        private System.Windows.Forms.ComboBox cmbAuxShutdownCh05;
+        private System.Windows.Forms.ComboBox cmbAuxShutdownCh04;
+        private System.Windows.Forms.ComboBox cmbAuxShutdownCh03;
+        private System.Windows.Forms.ComboBox cmbAuxShutdownCh02;
+        private System.Windows.Forms.ComboBox cmbAuxShutdownCh01;
+        private System.Windows.Forms.ComboBox cmbAuxShutdownCh00;
+        private System.Windows.Forms.Label label116;
     }
 }
 

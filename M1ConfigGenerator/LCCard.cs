@@ -71,16 +71,16 @@ namespace M1ConfigGenerator
                 sw.WriteLine("");
 
                 // inherited M1 parameters              
-                for (int i = 0; i <= BASE_DRIVER_INDEX; i++)
+                for (int i = 0; i <= (int)M1Parameters.BASE_DRIVER_INDEX; i++)
                 {
                     sw.WriteLine("#define " + m1ParameterNames[i] + tabs[2] + m1ParameterValues[i]);
 
-                    if (i == DEVICE_HEADER_CONFIGURATION_VERSION)
+                    if (i == (int)M1Parameters.DEVICE_HEADER_CONFIGURATION_VERSION)
                     {
                         sw.WriteLine("");
                         sw.WriteLine("// ### DC DRIVER PARAMETERS ###");
                     }
-                    else if (i == DEV_ADDR || i == DEV_ADDR_CFG_TYPE || i == ENABLE_FORCE_CMDS || i == DSA_ADDR || i == BASE_DRIVER_INDEX)
+                    else if (i == (int)M1Parameters.DEV_ADDR || i == (int)M1Parameters.DEV_ADDR_CFG_TYPE || i == (int)M1Parameters.ENABLE_FORCE_CMDS || i == (int)M1Parameters.DSA_ADDR || i == (int)M1Parameters.BASE_DRIVER_INDEX)
                     {
                         sw.WriteLine("");
                     }

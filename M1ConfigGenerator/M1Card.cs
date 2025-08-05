@@ -9,20 +9,9 @@ namespace M1ConfigGenerator
 {
     class M1Card
     {
-        public const int DEVICE_HEADER_CONFIGURATION_VERSION = 0;
-        public const int DEV_ADDR = 1;
-        public const int DEV_ADDR_CFG_REV = 2;
-        public const int DEV_ADDR_NODE_CFG = 3;
-        public const int DEV_ADDR_CFG_TYPE = 4;
-        public const int ENABLE_DC_COMP_DRVR_CMD = 5;
-        public const int ENABLE_DC_DIMMER_CMD = 6;
-        public const int ENABLE_DC_LOAD_CMD = 7;
-        public const int ENABLE_DC_MOTOR_CMD = 8;
-        public const int ENABLE_WINDOW_SHADE_CMD = 9;
-        public const int ENABLE_FORCE_CMDS = 10;
-        public const int DSA_ADDR = 11;
-        public const int DRIVER_DEVICE_INSTANCE = 12;
-        public const int BASE_DRIVER_INDEX = 13;
+        public enum M1Parameters {  DEVICE_HEADER_CONFIGURATION_VERSION, DEV_ADDR, DEV_ADDR_CFG_REV, DEV_ADDR_NODE_CFG, DEV_ADDR_CFG_TYPE, ENABLE_DC_COMP_DRVR_CMD,
+                                    ENABLE_DC_DIMMER_CMD, ENABLE_DC_LOAD_CMD, ENABLE_DC_MOTOR_CMD, ENABLE_WINDOW_SHADE_CMD, ENABLE_FORCE_CMDS, DSA_ADDR,
+                                    DRIVER_DEVICE_INSTANCE, BASE_DRIVER_INDEX, ON_STATUS_PERIOD, OFF_STATUS_MULT }
 
         public string[] tabs = { "", "\t", "\t\t", "\t\t\t", "\t\t\t\t", "\t\t\t\t\t", "\t\t\t\t\t\t", "\t\t\t\t\t\t\t", "\t\t\t\t\t\t\t\t", "\t\t\t\t\t\t\t\t\t" };
 
@@ -65,6 +54,8 @@ namespace M1ConfigGenerator
             "DSA_ADDR_Z                         ", // 11
             "DRIVER_DEVICE_INSTANCE_ADDR_Z      ", // 12
             "BASE_DRIVER_INDEX_ADDR_Z           ", // 13
+            "ON_STATUS_PERIOD_ADDR_Z            ", // 14
+            "OFF_STATUS_MULT_ADDR_Z             "  // 15       
         };
 
         public string[] m1ParameterValues =
@@ -83,6 +74,8 @@ namespace M1ConfigGenerator
             "0x92", // set to DC Load DSA; using this status is standard so defaults to 0x92
             "0xFF", // driver device instance
             "", // base driver instance, do not default
+            "20", // on status period
+            "4", // off status multiple
         };
 
         public string[] cardChGroup0Names = { "GROUP_INDEX0_CHNL_Z0 ", "GROUP_INDEX0_CHNL_Z1 ", "GROUP_INDEX0_CHNL_Z2 ", "GROUP_INDEX0_CHNL_Z3 ", "GROUP_INDEX0_CHNL_Z4 ", "GROUP_INDEX0_CHNL_Z5 ", "GROUP_INDEX0_CHNL_Z6 ", "GROUP_INDEX0_CHNL_Z7 ", 
@@ -220,98 +213,118 @@ namespace M1ConfigGenerator
 
         public void M1_SetDevAddr()
         {
-            m1ParameterValues[DEV_ADDR] = "(" + cardNumber + " + (" + panelNumber + " << 3))";
+            m1ParameterValues[(int)M1Parameters.DEV_ADDR] = "(" + cardNumber + " + (" + panelNumber + " << 3))";
         }
         public string M1_GetDevAddr()
         {
-            return m1ParameterNames[DEV_ADDR];
+            return m1ParameterNames[(int)M1Parameters.DEV_ADDR];
         }
 
         public void M1_SetCfgRev(string revision)
         {
-            m1ParameterValues[DEV_ADDR_CFG_REV] = revision;
+            m1ParameterValues[(int)M1Parameters.DEV_ADDR_CFG_REV] = revision;
         }
 
         public string M1_GetCfgRev()
         {
-            return m1ParameterValues[DEV_ADDR_CFG_REV];
+            return m1ParameterValues[(int)M1Parameters.DEV_ADDR_CFG_REV];
         }
 
         public void M1_SetNodeCfg()
         {
-            m1ParameterValues[DEV_ADDR_NODE_CFG] = M1_GetDevAddr();
+            m1ParameterValues[(int)M1Parameters.DEV_ADDR_NODE_CFG] = M1_GetDevAddr();
         }
 
         public string M1_GetNodeCfg()
         {
-            return m1ParameterValues[DEV_ADDR_NODE_CFG];
+            return m1ParameterValues[(int)M1Parameters.DEV_ADDR_NODE_CFG];
         }
 
         public void M1_SetCfgType(string configtype)
         {
-            m1ParameterValues[DEV_ADDR_CFG_TYPE] = "0x" + configtype;
+            m1ParameterValues[(int)M1Parameters.DEV_ADDR_CFG_TYPE] = "0x" + configtype;
         }
 
         public string M1_GetCfgType()
         {
-            return m1ParameterValues[DEV_ADDR_CFG_TYPE];
+            return m1ParameterValues[(int)M1Parameters.DEV_ADDR_CFG_TYPE];
         }
 
         public void M1_SetDCDriver(bool enabled)
         {
-            m1ParameterValues[ENABLE_DC_COMP_DRVR_CMD] = enabled ? "TRUE" : "FALSE";
+            m1ParameterValues[(int)M1Parameters.ENABLE_DC_COMP_DRVR_CMD] = enabled ? "TRUE" : "FALSE";
         }
 
         // no get for DC Driver, all cards hard-coded to true
 
         public void M1_SetDCDimmer(bool enabled)
         {
-            m1ParameterValues[ENABLE_DC_DIMMER_CMD] = enabled ? "TRUE" : "FALSE";
+            m1ParameterValues[(int)M1Parameters.ENABLE_DC_DIMMER_CMD] = enabled ? "TRUE" : "FALSE";
         }
 
         public bool M1_GetDCDimmer()
         {
-            return (m1ParameterValues[ENABLE_DC_DIMMER_CMD] == "TRUE" ? true : false);
+            return (m1ParameterValues[(int)M1Parameters.ENABLE_DC_DIMMER_CMD] == "TRUE" ? true : false);
         }
 
         public void M1_SetDCMotor(bool enabled)
         {
-            m1ParameterValues[ENABLE_DC_MOTOR_CMD] = enabled ? "TRUE" : "FALSE";
+            m1ParameterValues[(int)M1Parameters.ENABLE_DC_MOTOR_CMD] = enabled ? "TRUE" : "FALSE";
         }
 
         public bool M1_GetDCMotor()
         {
-            return m1ParameterValues[ENABLE_DC_MOTOR_CMD] == "TRUE";
+            return m1ParameterValues[(int)M1Parameters.ENABLE_DC_MOTOR_CMD] == "TRUE";
         }
 
         public void M1_SetShade(bool enabled)
         {
-            m1ParameterValues[ENABLE_WINDOW_SHADE_CMD] = enabled ? "TRUE" : "FALSE";
+            m1ParameterValues[(int)M1Parameters.ENABLE_WINDOW_SHADE_CMD] = enabled ? "TRUE" : "FALSE";
         }
 
         public bool M1_GetShade()
         {
-            return m1ParameterValues[ENABLE_WINDOW_SHADE_CMD] == "TRUE";
+            return m1ParameterValues[(int)M1Parameters.ENABLE_WINDOW_SHADE_CMD] == "TRUE";
         }
         
         public void M1_SetForce(bool enabled)
         {
-            m1ParameterValues[ENABLE_FORCE_CMDS] = enabled ? "TRUE" : "FALSE";
+            m1ParameterValues[(int)M1Parameters.ENABLE_FORCE_CMDS] = enabled ? "TRUE" : "FALSE";
         }
 
         public bool M1_GetForce()
         {
-            return m1ParameterValues[ENABLE_FORCE_CMDS] == "TRUE";
+            return m1ParameterValues[(int)M1Parameters.ENABLE_FORCE_CMDS] == "TRUE";
         }
 
         public void M1_SetBaseIndex(string index)
         {
-            m1ParameterValues[BASE_DRIVER_INDEX] = index;
+            m1ParameterValues[(int)M1Parameters.BASE_DRIVER_INDEX] = index;
         }
 
         public string M1_GetBaseIndex()
         {
-            return m1ParameterValues[BASE_DRIVER_INDEX];
+            return m1ParameterValues[(int)M1Parameters.BASE_DRIVER_INDEX];
+        }
+
+        public void M1_SetOnStatusPeriod(string index)
+        {
+            m1ParameterValues[(int)M1Parameters.ON_STATUS_PERIOD] = index;
+        }
+
+        public string M1_GetOnStatusPeriod()
+        {
+            return m1ParameterValues[(int)M1Parameters.ON_STATUS_PERIOD];
+        }
+
+        public void M1_SetOffStatusMultiple(string index)
+        {
+            m1ParameterValues[(int)M1Parameters.OFF_STATUS_MULT] = index;
+        }
+
+        public string M1_GetOffStatusMultiple()
+        {
+            return m1ParameterValues[(int)M1Parameters.OFF_STATUS_MULT];
         }
 
         public void M1_SetGroup0(bool[] argArray, int argInt)

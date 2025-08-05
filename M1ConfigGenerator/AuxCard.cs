@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -54,16 +55,16 @@ namespace M1ConfigGenerator
                 sw.WriteLine("");
 
                 // inherited M1 parameters              
-                for (int i = 0; i <= BASE_DRIVER_INDEX; i++)
+                for (int i = 0; i <= (int)M1Parameters.OFF_STATUS_MULT; i++)
                 {
                     sw.WriteLine("#define " + m1ParameterNames[i] + tabs[2] + m1ParameterValues[i]);
 
-                    if (i == DEVICE_HEADER_CONFIGURATION_VERSION)
+                    if (i == (int)M1Parameters.DEVICE_HEADER_CONFIGURATION_VERSION)
                     {
                         sw.WriteLine("");
                         sw.WriteLine("// ### DC DRIVER PARAMETERS ###");
                     }
-                    else if (i == DEV_ADDR || i == DEV_ADDR_CFG_TYPE || i == ENABLE_FORCE_CMDS || i == DSA_ADDR || i == BASE_DRIVER_INDEX)
+                    else if (i == (int)M1Parameters.DEV_ADDR || i == (int)M1Parameters.DEV_ADDR_CFG_TYPE || i == (int)M1Parameters.ENABLE_FORCE_CMDS || i == (int)M1Parameters.DSA_ADDR || i == (int)M1Parameters.BASE_DRIVER_INDEX || i == (int)M1Parameters.OFF_STATUS_MULT)
                     {
                         sw.WriteLine("");
                     }
@@ -81,6 +82,7 @@ namespace M1ConfigGenerator
                     sw.WriteLine("#define " + auxChTimeoutTimeNames[i] + tabs[5] + auxChTimeoutTimeValues[i]);
                     sw.WriteLine("#define " + auxChMaxOnNames[i] + tabs[6] + auxChMaxOnValues[i]);
                     sw.WriteLine("#define " + auxChMaxDurRecoveryTimeNames[i] + tabs[4] + auxChMaxDurRecoveryTimeValues[i]);
+                    sw.WriteLine("#define " + auxChShutDownRecoveryNames[i] + tabs[4] + auxChShutDownRecoveryValues[i]);
                     sw.WriteLine("");
                     sw.WriteLine("#define " + cardChGroup0Names[i] + tabs[5] + cardChGroup0Values[i]);
                     sw.WriteLine("#define " + cardChGroup1Names[i] + tabs[5] + cardChGroup1Values[i]);
@@ -145,27 +147,44 @@ namespace M1ConfigGenerator
 
         public void Aux_SetTimeoutTime(int argInt, string argString)
         {
-            auxChTimeoutTimeValues[argInt] = argString;
+            auxChTimeoutTimeValues[argInt] = "0x" + argString;
+        }
+
+        public string Aux_GetTimeoutTime(int argInt)
+        {
+            return auxChTimeoutTimeValues[argInt].Substring(2); // cut off 0x
         }
 
         public void Aux_SetMaxOn(int argInt, string argString)
         {
-            auxChMaxOnValues[argInt] = argString;
+            auxChMaxOnValues[argInt] = "0x" + argString;
+        }
+
+        public string Aux_GetMaxOn(int argInt)
+        {
+            return auxChMaxOnValues[argInt].Substring(2); // cut off 0x
         }
 
         public void Aux_SetMaxDurRec(int argInt, string argString)
         {
             auxChMaxDurRecoveryTimeValues[argInt] = argString;
         }
-        public void Aux_SetQuickPair(bool argBool, int argInt)
+
+        public string Aux_GetMaxDurRec(int argInt)
         {
-            if (argBool == true)
-            {
-                string result1 = "PAIRED_TO_CHNL" + Convert.ToString((argInt * 2) + 1);
-                auxChPairedValues[argInt * 2] = result1;
-                string result2 = "PAIRED_TO_CHNL" + Convert.ToString(argInt * 2);
-                auxChPairedValues[(argInt * 2) + 1] = result2;
-            }
+            return auxChMaxDurRecoveryTimeValues[argInt];
+        }
+
+        public void Aux_SetShutdownRecovery(int argInt, string argString)
+        {
+            if (argString == "Disable") { auxChShutDownRecoveryValues[argInt] = "0"; }
+            else                        { auxChShutDownRecoveryValues[argInt] = argString; }
+        }
+
+        public string Aux_GetShutdownRecovery(int argInt)
+        {
+            if (auxChShutDownRecoveryValues[argInt] == "0") { return "Disable"; }
+            else                                            { return auxChShutDownRecoveryValues[argInt]; }
         }
 
         private string configPath = @"M1_DcDriver_Config\Src\M1_AuxCard\DeviceConfigs\";
@@ -194,5 +213,8 @@ namespace M1ConfigGenerator
         //
         public string[] auxChMaxDurRecoveryTimeNames = { "MAX_DUR_RECOVERY_CHNL_Z0 ", "MAX_DUR_RECOVERY_CHNL_Z1 ", "MAX_DUR_RECOVERY_CHNL_Z2 ", "MAX_DUR_RECOVERY_CHNL_Z3 ", "MAX_DUR_RECOVERY_CHNL_Z4 ", "MAX_DUR_RECOVERY_CHNL_Z5 ", "MAX_DUR_RECOVERY_CHNL_Z6 ", "MAX_DUR_RECOVERY_CHNL_Z7 ", "MAX_DUR_RECOVERY_CHNL_Z8 ", "MAX_DUR_RECOVERY_CHNL_Z9 ", "MAX_DUR_RECOVERY_CHNL_Z10", "MAX_DUR_RECOVERY_CHNL_Z11" };
         public string[] auxChMaxDurRecoveryTimeValues = { "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5" };
+        //
+        public string[] auxChShutDownRecoveryNames = { "SHUTDOWN_RECOVERY_CHNL_Z0", "SHUTDOWN_RECOVERY_CHNL_Z1", "SHUTDOWN_RECOVERY_CHNL_Z2", "SHUTDOWN_RECOVERY_CHNL_Z3", "SHUTDOWN_RECOVERY_CHNL_Z4", "SHUTDOWN_RECOVERY_CHNL_Z5", "SHUTDOWN_RECOVERY_CHNL_Z6", "SHUTDOWN_RECOVERY_CHNL_Z7", "SHUTDOWN_RECOVERY_CHNL_Z8", "SHUTDOWN_RECOVERY_CHNL_Z9", "SHUTDOWN_RECOVERY_CHNL_Z10", "SHUTDOWN_RECOVERY_CHNL_Z11" };
+        public string[] auxChShutDownRecoveryValues = { "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2" };
     }
 }

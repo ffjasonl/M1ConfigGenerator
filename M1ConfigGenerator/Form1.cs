@@ -35,6 +35,7 @@ namespace M1ConfigGenerator
         TextBox[] auxTimeoutTimes;
         TextBox[] auxMaxOns;
         TextBox[] auxMaxDurRecs;
+        ComboBox[] auxShutdown;
         
         List<BreakerCard> breakerObjects = new List<BreakerCard>();
         int BrkCardActive;
@@ -574,6 +575,7 @@ namespace M1ConfigGenerator
                 auxObjects[card].Aux_SetTimeoutTime(channel, auxTimeoutTimes[channel].Text);
                 auxObjects[card].Aux_SetMaxOn(channel, auxMaxOns[channel].Text);
                 auxObjects[card].Aux_SetMaxDurRec(channel, auxMaxDurRecs[channel].Text);
+                auxObjects[card].Aux_SetShutdownRecovery(channel, auxShutdown[channel].Text);
             }
         }
 
@@ -600,6 +602,10 @@ namespace M1ConfigGenerator
                 auxDeadTimes[channel].Text          = auxObjects[card].Aux_GetDeadTime(channel);
                 auxPaired[channel].Text             = auxObjects[card].Aux_GetPaired(channel);
                 auxTimeouts[channel].Checked        = auxObjects[card].Aux_GetTimeout(channel);
+                auxTimeoutTimes[channel].Text       = auxObjects[card].Aux_GetTimeoutTime(channel);
+                auxMaxOns[channel].Text             = auxObjects[card].Aux_GetMaxOn(channel);
+                auxMaxDurRecs[channel].Text         = auxObjects[card].Aux_GetMaxDurRec(channel);
+                auxShutdown[channel].Text           = auxObjects[card].Aux_GetShutdownRecovery(channel);
             }
         }
 
@@ -4438,6 +4444,7 @@ namespace M1ConfigGenerator
             auxTimeoutTimes = new TextBox[] { txtbAux1TimeoutTimeCh00, txtbAux1TimeoutTimeCh01, txtbAux1TimeoutTimeCh02, txtbAux1TimeoutTimeCh03, txtbAux1TimeoutTimeCh04, txtbAux1TimeoutTimeCh05, txtbAux1TimeoutTimeCh06, txtbAux1TimeoutTimeCh07, txtbAux1TimeoutTimeCh08, txtbAux1TimeoutTimeCh09, txtbAux1TimeoutTimeCh10, txtbAux1TimeoutTimeCh11 };
             auxMaxOns = new TextBox[] { txtbAux1MaxOnCh00, txtbAux1MaxOnCh01, txtbAux1MaxOnCh02, txtbAux1MaxOnCh03, txtbAux1MaxOnCh04, txtbAux1MaxOnCh05, txtbAux1MaxOnCh06, txtbAux1MaxOnCh07, txtbAux1MaxOnCh08, txtbAux1MaxOnCh09, txtbAux1MaxOnCh10, txtbAux1MaxOnCh11 };
             auxMaxDurRecs = new TextBox[] { txtbAux1MaxDurRecCh00, txtbAux1MaxDurRecCh01, txtbAux1MaxDurRecCh02, txtbAux1MaxDurRecCh03, txtbAux1MaxDurRecCh04, txtbAux1MaxDurRecCh05, txtbAux1MaxDurRecCh06, txtbAux1MaxDurRecCh07, txtbAux1MaxDurRecCh08, txtbAux1MaxDurRecCh09, txtbAux1MaxDurRecCh10, txtbAux1MaxDurRecCh11 };
+            auxShutdown = new ComboBox[] { cmbAuxShutdownCh00, cmbAuxShutdownCh01, cmbAuxShutdownCh02, cmbAuxShutdownCh03, cmbAuxShutdownCh04, cmbAuxShutdownCh05, cmbAuxShutdownCh06, cmbAuxShutdownCh07, cmbAuxShutdownCh08, cmbAuxShutdownCh09, cmbAuxShutdownCh10, cmbAuxShutdownCh11 };
 
             breakerOCAmps = new ComboBox[] { cmbBreaker1OCAmps00, cmbBreaker1OCAmps01, cmbBreaker1OCAmps02, cmbBreaker1OCAmps03, cmbBreaker1OCAmps04, cmbBreaker1OCAmps05, cmbBreaker1OCAmps06, cmbBreaker1OCAmps07, cmbBreaker1OCAmps08, cmbBreaker1OCAmps09, cmbBreaker1OCAmps10, cmbBreaker1OCAmps11 };
             breakerOCTime = new ComboBox[] { cmbBreaker1OCTime00, cmbBreaker1OCTime01, cmbBreaker1OCTime02, cmbBreaker1OCTime03, cmbBreaker1OCTime04, cmbBreaker1OCTime05, cmbBreaker1OCTime06, cmbBreaker1OCTime07, cmbBreaker1OCTime08, cmbBreaker1OCTime09, cmbBreaker1OCTime10, cmbBreaker1OCTime11 };

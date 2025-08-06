@@ -37,6 +37,9 @@ namespace M1ConfigGenerator
             M1_ChangeAddress(dimmerChUndercurrentAmpsNames);
             M1_ChangeAddress(dimmerChOvercurrentTimeNames);
             M1_ChangeAddress(dimmerChMeasCurTimeNames);
+            M1_ChangeAddress(dimmerChShutDownRecoveryNames);
+            M1_ChangeAddress(dimmerChMaxDutyNames);
+            M1_ChangeAddress(dimmerChMinDutyNames);
             M1_ChangeAddress(cardChGroup0Names);
             M1_ChangeAddress(cardChGroup1Names);
             M1_ChangeAddress(cardChGroup2Names);
@@ -66,7 +69,7 @@ namespace M1ConfigGenerator
                 sw.WriteLine("");
 
                 // inherited M1 parameters              
-                for (int i = 0; i <= (int)M1Parameters.BASE_DRIVER_INDEX; i++)
+                for (int i = 0; i <= (int)M1Parameters.OFF_STATUS_MULT; i++)
                 {
                     sw.WriteLine("#define " + m1ParameterNames[i] + tabs[2] + m1ParameterValues[i]);
 
@@ -75,7 +78,7 @@ namespace M1ConfigGenerator
                         sw.WriteLine("");
                         sw.WriteLine("// ### DC DRIVER PARAMETERS ###");
                     }
-                    else if (i == (int)M1Parameters.DEV_ADDR || i == (int)M1Parameters.DEV_ADDR_CFG_TYPE || i == (int)M1Parameters.ENABLE_FORCE_CMDS || i == (int)M1Parameters.DSA_ADDR || i == (int)M1Parameters.BASE_DRIVER_INDEX)
+                    else if (i == (int)M1Parameters.DEV_ADDR || i == (int)M1Parameters.DEV_ADDR_CFG_TYPE || i == (int)M1Parameters.ENABLE_FORCE_CMDS || i == (int)M1Parameters.DSA_ADDR || i == (int)M1Parameters.BASE_DRIVER_INDEX || i == (int)M1Parameters.OFF_STATUS_MULT)
                     {
                         sw.WriteLine("");
                     }
@@ -102,6 +105,9 @@ namespace M1ConfigGenerator
                     sw.WriteLine("#define " + dimmerChTimeoutTimeNames[i] + tabs[5] + dimmerChTimeoutTimeValues[i]);
                     sw.WriteLine("#define " + dimmerChMaxOnNames[i] + tabs[6] + dimmerChMaxOnValues[i]);
                     sw.WriteLine("#define " + dimmerChMaxDurRecoveryTimeNames[i] + tabs[4] + dimmerChMaxDurRecoveryTimeValues[i]);
+                    sw.WriteLine("#define " + dimmerChShutDownRecoveryNames[i] + tabs[4] + dimmerChShutDownRecoveryValues[i]);
+                    sw.WriteLine("#define " + dimmerChMaxDutyNames[i] + tabs[6] + dimmerChMaxDutyValues[i]);
+                    sw.WriteLine("#define " + dimmerChMinDutyNames[i] + tabs[6] + dimmerChMinDutyValues[i]);
                     sw.WriteLine("");
                     sw.WriteLine("#define " + dimmerChOvercurrentAmpsNames[i] + tabs[5] + dimmerChOvercurrentAmpsValues[i]);
                     sw.WriteLine("#define " + dimmerChUndercurrentAmpsNames[i] + tabs[5] + dimmerChUndercurrentAmpsValues[i]);
@@ -269,6 +275,18 @@ namespace M1ConfigGenerator
             return dimmerChUndercurrentAmpsValues[argInt];
         }
 
+        public void Dimmer_SetShutdownRecovery(int argInt, string argString)
+        {
+            if (argString == "Disable") { dimmerChShutDownRecoveryValues[argInt] = "0"; }
+            else { dimmerChShutDownRecoveryValues[argInt] = argString; }
+        }
+
+        public string Dimmer_GetShutdownRecovery(int argInt)
+        {
+            if (dimmerChShutDownRecoveryValues[argInt] == "0") { return "Disable"; }
+            else { return dimmerChShutDownRecoveryValues[argInt]; }
+        }
+
         private string configPath = @"M1_DcDriver_Config\Src\M1_Dimmer\DeviceConfigs\";
 
         public string[] dimmerParameterNames =
@@ -338,5 +356,14 @@ namespace M1ConfigGenerator
         public string[] dimmerChMeasCurTimeNames = { "MEAS_CUR_TCONST_CHNL_Z0 ", "MEAS_CUR_TCONST_CHNL_Z1 ", "MEAS_CUR_TCONST_CHNL_Z2 ", "MEAS_CUR_TCONST_CHNL_Z3 ", "MEAS_CUR_TCONST_CHNL_Z4 ", "MEAS_CUR_TCONST_CHNL_Z5 ",
                                                 "MEAS_CUR_TCONST_CHNL_Z6 ", "MEAS_CUR_TCONST_CHNL_Z7 ", "MEAS_CUR_TCONST_CHNL_Z8 ", "MEAS_CUR_TCONST_CHNL_Z9 ", "MEAS_CUR_TCONST_CHNL_Z10", "MEAS_CUR_TCONST_CHNL_Z11" };
         public string[] dimmerChMeasCurTimeValues = { "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8" };
+        //
+        public string[] dimmerChMaxDutyNames = { "MAX_DUTY_CHNL_Z0", "MAX_DUTY_CHNL_Z1", "MAX_DUTY_CHNL_Z2", "MAX_DUTY_CHNL_Z3", "MAX_DUTY_CHNL_Z4", "MAX_DUTY_CHNL_Z5", "MAX_DUTY_CHNL_Z6", "MAX_DUTY_CHNL_Z7", "MAX_DUTY_CHNL_Z8", "MAX_DUTY_CHNL_Z9", "MAX_DUTY_CHNL_Z10", "MAX_DUTY_CHNL_Z11", };
+        public string[] dimmerChMaxDutyValues = { "255", "255", "255", "255", "255", "255", "255", "255", "255", "255", "255", "255" };
+        //
+        public string[] dimmerChMinDutyNames = { "MIN_DUTY_CHNL_Z0", "MIN_DUTY_CHNL_Z1", "MIN_DUTY_CHNL_Z2", "MIN_DUTY_CHNL_Z3", "MIN_DUTY_CHNL_Z4", "MIN_DUTY_CHNL_Z5", "MIN_DUTY_CHNL_Z6", "MIN_DUTY_CHNL_Z7", "MIN_DUTY_CHNL_Z8", "MIN_DUTY_CHNL_Z9", "MIN_DUTY_CHNL_Z10", "MIN_DUTY_CHNL_Z11", };
+        public string[] dimmerChMinDutyValues = { "255", "255", "255", "255", "255", "255", "255", "255", "255", "255", "255", "255" };
+        //
+        public string[] dimmerChShutDownRecoveryNames = { "SHUTDOWN_RECOVERY_CHNL_Z0", "SHUTDOWN_RECOVERY_CHNL_Z1", "SHUTDOWN_RECOVERY_CHNL_Z2", "SHUTDOWN_RECOVERY_CHNL_Z3", "SHUTDOWN_RECOVERY_CHNL_Z4", "SHUTDOWN_RECOVERY_CHNL_Z5", "SHUTDOWN_RECOVERY_CHNL_Z6", "SHUTDOWN_RECOVERY_CHNL_Z7", "SHUTDOWN_RECOVERY_CHNL_Z8", "SHUTDOWN_RECOVERY_CHNL_Z9", "SHUTDOWN_RECOVERY_CHNL_Z10", "SHUTDOWN_RECOVERY_CHNL_Z11" };
+        public string[] dimmerChShutDownRecoveryValues = { "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2" };
     }
 }

@@ -91,6 +91,21 @@ namespace M1ConfigGenerator
             this.tabControlAux1QF = new M1ConfigGenerator.TablessControl();
             this.tabAux1Quick = new System.Windows.Forms.TabPage();
             this.tabAux1Full = new System.Windows.Forms.TabPage();
+            this.cmbAuxShutdownCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbAuxShutdownCh00 = new System.Windows.Forms.ComboBox();
+            this.label116 = new System.Windows.Forms.Label();
+            this.label115 = new System.Windows.Forms.Label();
+            this.label114 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
@@ -292,6 +307,19 @@ namespace M1ConfigGenerator
             this.tabControlBreaker1QF = new M1ConfigGenerator.TablessControl();
             this.tabBreak1Quick = new System.Windows.Forms.TabPage();
             this.tabBreak1Full = new System.Windows.Forms.TabPage();
+            this.cmbBreakShutdownCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbBreakShutdownCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbBreakShutdownCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbBreakShutdownCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbBreakShutdownCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbBreakShutdownCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbBreakShutdownCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbBreakShutdownCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbBreakShutdownCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbBreakShutdownCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbBreakShutdownCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbBreakShutdownCh00 = new System.Windows.Forms.ComboBox();
+            this.label117 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
@@ -480,6 +508,19 @@ namespace M1ConfigGenerator
             this.tabControlDimmer1QF = new M1ConfigGenerator.TablessControl();
             this.tabDimmer1Quick = new System.Windows.Forms.TabPage();
             this.tabDimmer1Full = new System.Windows.Forms.TabPage();
+            this.cmbDimShutdownCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbDimShutdownCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbDimShutdownCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbDimShutdownCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbDimShutdownCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbDimShutdownCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbDimShutdownCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbDimShutdownCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbDimShutdownCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbDimShutdownCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbDimShutdownCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbDimShutdownCh00 = new System.Windows.Forms.ComboBox();
+            this.label118 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -812,6 +853,19 @@ namespace M1ConfigGenerator
             this.cmbHC1Mode10 = new System.Windows.Forms.ComboBox();
             this.cmbHC1Mode11 = new System.Windows.Forms.ComboBox();
             this.tabPageHC1Full = new System.Windows.Forms.TabPage();
+            this.cmbHCShutdownCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbHCShutdownCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbHCShutdownCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbHCShutdownCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbHCShutdownCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbHCShutdownCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbHCShutdownCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbHCShutdownCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbHCShutdownCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbHCShutdownCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbHCShutdownCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbHCShutdownCh00 = new System.Windows.Forms.ComboBox();
+            this.label119 = new System.Windows.Forms.Label();
             this.tbxHC1OCAmpsParamCh11 = new System.Windows.Forms.TextBox();
             this.label563 = new System.Windows.Forms.Label();
             this.tbxHC1OCAmpsParamCh10 = new System.Windows.Forms.TextBox();
@@ -1723,6 +1777,19 @@ namespace M1ConfigGenerator
             this.cmbHRQuickModeCh03 = new System.Windows.Forms.ComboBox();
             this.cmbHRQuickModeCh04 = new System.Windows.Forms.ComboBox();
             this.tabPage16 = new System.Windows.Forms.TabPage();
+            this.cmbHRShutdownCh10 = new System.Windows.Forms.ComboBox();
+            this.cmbHRShutdownCh11 = new System.Windows.Forms.ComboBox();
+            this.cmbHRShutdownCh09 = new System.Windows.Forms.ComboBox();
+            this.cmbHRShutdownCh08 = new System.Windows.Forms.ComboBox();
+            this.cmbHRShutdownCh07 = new System.Windows.Forms.ComboBox();
+            this.cmbHRShutdownCh06 = new System.Windows.Forms.ComboBox();
+            this.cmbHRShutdownCh05 = new System.Windows.Forms.ComboBox();
+            this.cmbHRShutdownCh04 = new System.Windows.Forms.ComboBox();
+            this.cmbHRShutdownCh03 = new System.Windows.Forms.ComboBox();
+            this.cmbHRShutdownCh02 = new System.Windows.Forms.ComboBox();
+            this.cmbHRShutdownCh01 = new System.Windows.Forms.ComboBox();
+            this.cmbHRShutdownCh00 = new System.Windows.Forms.ComboBox();
+            this.label120 = new System.Windows.Forms.Label();
             this.tbxHROCAmpsCh11 = new System.Windows.Forms.TextBox();
             this.label652 = new System.Windows.Forms.Label();
             this.tbxHROCAmpsCh10 = new System.Windows.Forms.TextBox();
@@ -1916,21 +1983,6 @@ namespace M1ConfigGenerator
             this.btnHRCard4 = new System.Windows.Forms.Button();
             this.btnHRCard3 = new System.Windows.Forms.Button();
             this.btnHRCard2 = new System.Windows.Forms.Button();
-            this.label114 = new System.Windows.Forms.Label();
-            this.label115 = new System.Windows.Forms.Label();
-            this.cmbAuxShutdownCh10 = new System.Windows.Forms.ComboBox();
-            this.cmbAuxShutdownCh11 = new System.Windows.Forms.ComboBox();
-            this.cmbAuxShutdownCh09 = new System.Windows.Forms.ComboBox();
-            this.cmbAuxShutdownCh08 = new System.Windows.Forms.ComboBox();
-            this.cmbAuxShutdownCh07 = new System.Windows.Forms.ComboBox();
-            this.cmbAuxShutdownCh06 = new System.Windows.Forms.ComboBox();
-            this.cmbAuxShutdownCh05 = new System.Windows.Forms.ComboBox();
-            this.cmbAuxShutdownCh04 = new System.Windows.Forms.ComboBox();
-            this.cmbAuxShutdownCh03 = new System.Windows.Forms.ComboBox();
-            this.cmbAuxShutdownCh02 = new System.Windows.Forms.ComboBox();
-            this.cmbAuxShutdownCh01 = new System.Windows.Forms.ComboBox();
-            this.cmbAuxShutdownCh00 = new System.Windows.Forms.ComboBox();
-            this.label116 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
@@ -2111,7 +2163,7 @@ namespace M1ConfigGenerator
             this.btnMenuNew.Name = "btnMenuNew";
             this.btnMenuNew.Size = new System.Drawing.Size(200, 60);
             this.btnMenuNew.TabIndex = 0;
-            this.btnMenuNew.Text = "1.0.6";
+            this.btnMenuNew.Text = "1.3.0";
             this.btnMenuNew.UseVisualStyleBackColor = false;
             this.btnMenuNew.Click += new System.EventHandler(this.btnMenuNew_Click);
             // 
@@ -3028,6 +3080,231 @@ namespace M1ConfigGenerator
             this.tabAux1Full.Size = new System.Drawing.Size(1376, 581);
             this.tabAux1Full.TabIndex = 1;
             this.tabAux1Full.Text = "Aux 1 Full";
+            // 
+            // cmbAuxShutdownCh10
+            // 
+            this.cmbAuxShutdownCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh10.FormattingEnabled = true;
+            this.cmbAuxShutdownCh10.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh10.Location = new System.Drawing.Point(955, 241);
+            this.cmbAuxShutdownCh10.Name = "cmbAuxShutdownCh10";
+            this.cmbAuxShutdownCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh10.TabIndex = 466;
+            // 
+            // cmbAuxShutdownCh11
+            // 
+            this.cmbAuxShutdownCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh11.FormattingEnabled = true;
+            this.cmbAuxShutdownCh11.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh11.Location = new System.Drawing.Point(1027, 241);
+            this.cmbAuxShutdownCh11.Name = "cmbAuxShutdownCh11";
+            this.cmbAuxShutdownCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh11.TabIndex = 465;
+            // 
+            // cmbAuxShutdownCh09
+            // 
+            this.cmbAuxShutdownCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh09.FormattingEnabled = true;
+            this.cmbAuxShutdownCh09.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh09.Location = new System.Drawing.Point(883, 241);
+            this.cmbAuxShutdownCh09.Name = "cmbAuxShutdownCh09";
+            this.cmbAuxShutdownCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh09.TabIndex = 464;
+            // 
+            // cmbAuxShutdownCh08
+            // 
+            this.cmbAuxShutdownCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh08.FormattingEnabled = true;
+            this.cmbAuxShutdownCh08.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh08.Location = new System.Drawing.Point(811, 241);
+            this.cmbAuxShutdownCh08.Name = "cmbAuxShutdownCh08";
+            this.cmbAuxShutdownCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh08.TabIndex = 463;
+            // 
+            // cmbAuxShutdownCh07
+            // 
+            this.cmbAuxShutdownCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh07.FormattingEnabled = true;
+            this.cmbAuxShutdownCh07.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh07.Location = new System.Drawing.Point(739, 241);
+            this.cmbAuxShutdownCh07.Name = "cmbAuxShutdownCh07";
+            this.cmbAuxShutdownCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh07.TabIndex = 462;
+            // 
+            // cmbAuxShutdownCh06
+            // 
+            this.cmbAuxShutdownCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh06.FormattingEnabled = true;
+            this.cmbAuxShutdownCh06.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh06.Location = new System.Drawing.Point(667, 241);
+            this.cmbAuxShutdownCh06.Name = "cmbAuxShutdownCh06";
+            this.cmbAuxShutdownCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh06.TabIndex = 461;
+            // 
+            // cmbAuxShutdownCh05
+            // 
+            this.cmbAuxShutdownCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh05.FormattingEnabled = true;
+            this.cmbAuxShutdownCh05.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh05.Location = new System.Drawing.Point(595, 241);
+            this.cmbAuxShutdownCh05.Name = "cmbAuxShutdownCh05";
+            this.cmbAuxShutdownCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh05.TabIndex = 460;
+            // 
+            // cmbAuxShutdownCh04
+            // 
+            this.cmbAuxShutdownCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh04.FormattingEnabled = true;
+            this.cmbAuxShutdownCh04.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh04.Location = new System.Drawing.Point(523, 241);
+            this.cmbAuxShutdownCh04.Name = "cmbAuxShutdownCh04";
+            this.cmbAuxShutdownCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh04.TabIndex = 459;
+            // 
+            // cmbAuxShutdownCh03
+            // 
+            this.cmbAuxShutdownCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh03.FormattingEnabled = true;
+            this.cmbAuxShutdownCh03.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh03.Location = new System.Drawing.Point(451, 241);
+            this.cmbAuxShutdownCh03.Name = "cmbAuxShutdownCh03";
+            this.cmbAuxShutdownCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh03.TabIndex = 458;
+            // 
+            // cmbAuxShutdownCh02
+            // 
+            this.cmbAuxShutdownCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh02.FormattingEnabled = true;
+            this.cmbAuxShutdownCh02.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh02.Location = new System.Drawing.Point(379, 241);
+            this.cmbAuxShutdownCh02.Name = "cmbAuxShutdownCh02";
+            this.cmbAuxShutdownCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh02.TabIndex = 457;
+            // 
+            // cmbAuxShutdownCh01
+            // 
+            this.cmbAuxShutdownCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh01.FormattingEnabled = true;
+            this.cmbAuxShutdownCh01.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh01.Location = new System.Drawing.Point(307, 241);
+            this.cmbAuxShutdownCh01.Name = "cmbAuxShutdownCh01";
+            this.cmbAuxShutdownCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh01.TabIndex = 456;
+            // 
+            // cmbAuxShutdownCh00
+            // 
+            this.cmbAuxShutdownCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAuxShutdownCh00.FormattingEnabled = true;
+            this.cmbAuxShutdownCh00.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbAuxShutdownCh00.Location = new System.Drawing.Point(235, 241);
+            this.cmbAuxShutdownCh00.Name = "cmbAuxShutdownCh00";
+            this.cmbAuxShutdownCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbAuxShutdownCh00.TabIndex = 455;
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label116.ForeColor = System.Drawing.SystemColors.Control;
+            this.label116.Location = new System.Drawing.Point(2, 243);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(122, 17);
+            this.label116.TabIndex = 454;
+            this.label116.Text = "Shutdown Recovery";
+            // 
+            // label115
+            // 
+            this.label115.AutoSize = true;
+            this.label115.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label115.ForeColor = System.Drawing.SystemColors.Control;
+            this.label115.Location = new System.Drawing.Point(232, 183);
+            this.label115.Name = "label115";
+            this.label115.Size = new System.Drawing.Size(21, 17);
+            this.label115.TabIndex = 453;
+            this.label115.Text = "0x";
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label114.ForeColor = System.Drawing.SystemColors.Control;
+            this.label114.Location = new System.Drawing.Point(232, 153);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(21, 17);
+            this.label114.TabIndex = 452;
+            this.label114.Text = "0x";
             // 
             // label89
             // 
@@ -5351,6 +5628,19 @@ namespace M1ConfigGenerator
             // tabBreak1Full
             // 
             this.tabBreak1Full.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabBreak1Full.Controls.Add(this.cmbBreakShutdownCh10);
+            this.tabBreak1Full.Controls.Add(this.cmbBreakShutdownCh11);
+            this.tabBreak1Full.Controls.Add(this.cmbBreakShutdownCh09);
+            this.tabBreak1Full.Controls.Add(this.cmbBreakShutdownCh08);
+            this.tabBreak1Full.Controls.Add(this.cmbBreakShutdownCh07);
+            this.tabBreak1Full.Controls.Add(this.cmbBreakShutdownCh06);
+            this.tabBreak1Full.Controls.Add(this.cmbBreakShutdownCh05);
+            this.tabBreak1Full.Controls.Add(this.cmbBreakShutdownCh04);
+            this.tabBreak1Full.Controls.Add(this.cmbBreakShutdownCh03);
+            this.tabBreak1Full.Controls.Add(this.cmbBreakShutdownCh02);
+            this.tabBreak1Full.Controls.Add(this.cmbBreakShutdownCh01);
+            this.tabBreak1Full.Controls.Add(this.cmbBreakShutdownCh00);
+            this.tabBreak1Full.Controls.Add(this.label117);
             this.tabBreak1Full.Controls.Add(this.label77);
             this.tabBreak1Full.Controls.Add(this.label78);
             this.tabBreak1Full.Controls.Add(this.label79);
@@ -5461,6 +5751,209 @@ namespace M1ConfigGenerator
             this.tabBreak1Full.Size = new System.Drawing.Size(1376, 661);
             this.tabBreak1Full.TabIndex = 1;
             this.tabBreak1Full.Text = "Breaker 1 Full";
+            // 
+            // cmbBreakShutdownCh10
+            // 
+            this.cmbBreakShutdownCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreakShutdownCh10.FormattingEnabled = true;
+            this.cmbBreakShutdownCh10.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbBreakShutdownCh10.Location = new System.Drawing.Point(1115, 241);
+            this.cmbBreakShutdownCh10.Name = "cmbBreakShutdownCh10";
+            this.cmbBreakShutdownCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbBreakShutdownCh10.TabIndex = 479;
+            // 
+            // cmbBreakShutdownCh11
+            // 
+            this.cmbBreakShutdownCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreakShutdownCh11.FormattingEnabled = true;
+            this.cmbBreakShutdownCh11.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbBreakShutdownCh11.Location = new System.Drawing.Point(1187, 241);
+            this.cmbBreakShutdownCh11.Name = "cmbBreakShutdownCh11";
+            this.cmbBreakShutdownCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbBreakShutdownCh11.TabIndex = 478;
+            // 
+            // cmbBreakShutdownCh09
+            // 
+            this.cmbBreakShutdownCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreakShutdownCh09.FormattingEnabled = true;
+            this.cmbBreakShutdownCh09.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbBreakShutdownCh09.Location = new System.Drawing.Point(1043, 241);
+            this.cmbBreakShutdownCh09.Name = "cmbBreakShutdownCh09";
+            this.cmbBreakShutdownCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbBreakShutdownCh09.TabIndex = 477;
+            // 
+            // cmbBreakShutdownCh08
+            // 
+            this.cmbBreakShutdownCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreakShutdownCh08.FormattingEnabled = true;
+            this.cmbBreakShutdownCh08.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbBreakShutdownCh08.Location = new System.Drawing.Point(971, 241);
+            this.cmbBreakShutdownCh08.Name = "cmbBreakShutdownCh08";
+            this.cmbBreakShutdownCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbBreakShutdownCh08.TabIndex = 476;
+            // 
+            // cmbBreakShutdownCh07
+            // 
+            this.cmbBreakShutdownCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreakShutdownCh07.FormattingEnabled = true;
+            this.cmbBreakShutdownCh07.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbBreakShutdownCh07.Location = new System.Drawing.Point(899, 241);
+            this.cmbBreakShutdownCh07.Name = "cmbBreakShutdownCh07";
+            this.cmbBreakShutdownCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbBreakShutdownCh07.TabIndex = 475;
+            // 
+            // cmbBreakShutdownCh06
+            // 
+            this.cmbBreakShutdownCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreakShutdownCh06.FormattingEnabled = true;
+            this.cmbBreakShutdownCh06.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbBreakShutdownCh06.Location = new System.Drawing.Point(827, 241);
+            this.cmbBreakShutdownCh06.Name = "cmbBreakShutdownCh06";
+            this.cmbBreakShutdownCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbBreakShutdownCh06.TabIndex = 474;
+            // 
+            // cmbBreakShutdownCh05
+            // 
+            this.cmbBreakShutdownCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreakShutdownCh05.FormattingEnabled = true;
+            this.cmbBreakShutdownCh05.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbBreakShutdownCh05.Location = new System.Drawing.Point(755, 241);
+            this.cmbBreakShutdownCh05.Name = "cmbBreakShutdownCh05";
+            this.cmbBreakShutdownCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbBreakShutdownCh05.TabIndex = 473;
+            // 
+            // cmbBreakShutdownCh04
+            // 
+            this.cmbBreakShutdownCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreakShutdownCh04.FormattingEnabled = true;
+            this.cmbBreakShutdownCh04.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbBreakShutdownCh04.Location = new System.Drawing.Point(683, 241);
+            this.cmbBreakShutdownCh04.Name = "cmbBreakShutdownCh04";
+            this.cmbBreakShutdownCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbBreakShutdownCh04.TabIndex = 472;
+            // 
+            // cmbBreakShutdownCh03
+            // 
+            this.cmbBreakShutdownCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreakShutdownCh03.FormattingEnabled = true;
+            this.cmbBreakShutdownCh03.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbBreakShutdownCh03.Location = new System.Drawing.Point(611, 241);
+            this.cmbBreakShutdownCh03.Name = "cmbBreakShutdownCh03";
+            this.cmbBreakShutdownCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbBreakShutdownCh03.TabIndex = 471;
+            // 
+            // cmbBreakShutdownCh02
+            // 
+            this.cmbBreakShutdownCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreakShutdownCh02.FormattingEnabled = true;
+            this.cmbBreakShutdownCh02.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbBreakShutdownCh02.Location = new System.Drawing.Point(539, 241);
+            this.cmbBreakShutdownCh02.Name = "cmbBreakShutdownCh02";
+            this.cmbBreakShutdownCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbBreakShutdownCh02.TabIndex = 470;
+            // 
+            // cmbBreakShutdownCh01
+            // 
+            this.cmbBreakShutdownCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreakShutdownCh01.FormattingEnabled = true;
+            this.cmbBreakShutdownCh01.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbBreakShutdownCh01.Location = new System.Drawing.Point(467, 241);
+            this.cmbBreakShutdownCh01.Name = "cmbBreakShutdownCh01";
+            this.cmbBreakShutdownCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbBreakShutdownCh01.TabIndex = 469;
+            // 
+            // cmbBreakShutdownCh00
+            // 
+            this.cmbBreakShutdownCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBreakShutdownCh00.FormattingEnabled = true;
+            this.cmbBreakShutdownCh00.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbBreakShutdownCh00.Location = new System.Drawing.Point(395, 241);
+            this.cmbBreakShutdownCh00.Name = "cmbBreakShutdownCh00";
+            this.cmbBreakShutdownCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbBreakShutdownCh00.TabIndex = 468;
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label117.ForeColor = System.Drawing.SystemColors.Control;
+            this.label117.Location = new System.Drawing.Point(3, 243);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(122, 17);
+            this.label117.TabIndex = 467;
+            this.label117.Text = "Shutdown Recovery";
             // 
             // label77
             // 
@@ -8442,6 +8935,19 @@ namespace M1ConfigGenerator
             // tabDimmer1Full
             // 
             this.tabDimmer1Full.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabDimmer1Full.Controls.Add(this.cmbDimShutdownCh10);
+            this.tabDimmer1Full.Controls.Add(this.cmbDimShutdownCh11);
+            this.tabDimmer1Full.Controls.Add(this.cmbDimShutdownCh09);
+            this.tabDimmer1Full.Controls.Add(this.cmbDimShutdownCh08);
+            this.tabDimmer1Full.Controls.Add(this.cmbDimShutdownCh07);
+            this.tabDimmer1Full.Controls.Add(this.cmbDimShutdownCh06);
+            this.tabDimmer1Full.Controls.Add(this.cmbDimShutdownCh05);
+            this.tabDimmer1Full.Controls.Add(this.cmbDimShutdownCh04);
+            this.tabDimmer1Full.Controls.Add(this.cmbDimShutdownCh03);
+            this.tabDimmer1Full.Controls.Add(this.cmbDimShutdownCh02);
+            this.tabDimmer1Full.Controls.Add(this.cmbDimShutdownCh01);
+            this.tabDimmer1Full.Controls.Add(this.cmbDimShutdownCh00);
+            this.tabDimmer1Full.Controls.Add(this.label118);
             this.tabDimmer1Full.Controls.Add(this.label51);
             this.tabDimmer1Full.Controls.Add(this.label50);
             this.tabDimmer1Full.Controls.Add(this.label26);
@@ -8618,6 +9124,209 @@ namespace M1ConfigGenerator
             this.tabDimmer1Full.Size = new System.Drawing.Size(1378, 512);
             this.tabDimmer1Full.TabIndex = 1;
             this.tabDimmer1Full.Text = "Dim 1 Full";
+            // 
+            // cmbDimShutdownCh10
+            // 
+            this.cmbDimShutdownCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDimShutdownCh10.FormattingEnabled = true;
+            this.cmbDimShutdownCh10.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbDimShutdownCh10.Location = new System.Drawing.Point(955, 391);
+            this.cmbDimShutdownCh10.Name = "cmbDimShutdownCh10";
+            this.cmbDimShutdownCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbDimShutdownCh10.TabIndex = 479;
+            // 
+            // cmbDimShutdownCh11
+            // 
+            this.cmbDimShutdownCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDimShutdownCh11.FormattingEnabled = true;
+            this.cmbDimShutdownCh11.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbDimShutdownCh11.Location = new System.Drawing.Point(1027, 391);
+            this.cmbDimShutdownCh11.Name = "cmbDimShutdownCh11";
+            this.cmbDimShutdownCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbDimShutdownCh11.TabIndex = 478;
+            // 
+            // cmbDimShutdownCh09
+            // 
+            this.cmbDimShutdownCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDimShutdownCh09.FormattingEnabled = true;
+            this.cmbDimShutdownCh09.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbDimShutdownCh09.Location = new System.Drawing.Point(883, 391);
+            this.cmbDimShutdownCh09.Name = "cmbDimShutdownCh09";
+            this.cmbDimShutdownCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbDimShutdownCh09.TabIndex = 477;
+            // 
+            // cmbDimShutdownCh08
+            // 
+            this.cmbDimShutdownCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDimShutdownCh08.FormattingEnabled = true;
+            this.cmbDimShutdownCh08.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbDimShutdownCh08.Location = new System.Drawing.Point(811, 391);
+            this.cmbDimShutdownCh08.Name = "cmbDimShutdownCh08";
+            this.cmbDimShutdownCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbDimShutdownCh08.TabIndex = 476;
+            // 
+            // cmbDimShutdownCh07
+            // 
+            this.cmbDimShutdownCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDimShutdownCh07.FormattingEnabled = true;
+            this.cmbDimShutdownCh07.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbDimShutdownCh07.Location = new System.Drawing.Point(739, 391);
+            this.cmbDimShutdownCh07.Name = "cmbDimShutdownCh07";
+            this.cmbDimShutdownCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbDimShutdownCh07.TabIndex = 475;
+            // 
+            // cmbDimShutdownCh06
+            // 
+            this.cmbDimShutdownCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDimShutdownCh06.FormattingEnabled = true;
+            this.cmbDimShutdownCh06.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbDimShutdownCh06.Location = new System.Drawing.Point(667, 391);
+            this.cmbDimShutdownCh06.Name = "cmbDimShutdownCh06";
+            this.cmbDimShutdownCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbDimShutdownCh06.TabIndex = 474;
+            // 
+            // cmbDimShutdownCh05
+            // 
+            this.cmbDimShutdownCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDimShutdownCh05.FormattingEnabled = true;
+            this.cmbDimShutdownCh05.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbDimShutdownCh05.Location = new System.Drawing.Point(595, 391);
+            this.cmbDimShutdownCh05.Name = "cmbDimShutdownCh05";
+            this.cmbDimShutdownCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbDimShutdownCh05.TabIndex = 473;
+            // 
+            // cmbDimShutdownCh04
+            // 
+            this.cmbDimShutdownCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDimShutdownCh04.FormattingEnabled = true;
+            this.cmbDimShutdownCh04.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbDimShutdownCh04.Location = new System.Drawing.Point(523, 391);
+            this.cmbDimShutdownCh04.Name = "cmbDimShutdownCh04";
+            this.cmbDimShutdownCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbDimShutdownCh04.TabIndex = 472;
+            // 
+            // cmbDimShutdownCh03
+            // 
+            this.cmbDimShutdownCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDimShutdownCh03.FormattingEnabled = true;
+            this.cmbDimShutdownCh03.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbDimShutdownCh03.Location = new System.Drawing.Point(451, 391);
+            this.cmbDimShutdownCh03.Name = "cmbDimShutdownCh03";
+            this.cmbDimShutdownCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbDimShutdownCh03.TabIndex = 471;
+            // 
+            // cmbDimShutdownCh02
+            // 
+            this.cmbDimShutdownCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDimShutdownCh02.FormattingEnabled = true;
+            this.cmbDimShutdownCh02.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbDimShutdownCh02.Location = new System.Drawing.Point(379, 391);
+            this.cmbDimShutdownCh02.Name = "cmbDimShutdownCh02";
+            this.cmbDimShutdownCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbDimShutdownCh02.TabIndex = 470;
+            // 
+            // cmbDimShutdownCh01
+            // 
+            this.cmbDimShutdownCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDimShutdownCh01.FormattingEnabled = true;
+            this.cmbDimShutdownCh01.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbDimShutdownCh01.Location = new System.Drawing.Point(307, 391);
+            this.cmbDimShutdownCh01.Name = "cmbDimShutdownCh01";
+            this.cmbDimShutdownCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbDimShutdownCh01.TabIndex = 469;
+            // 
+            // cmbDimShutdownCh00
+            // 
+            this.cmbDimShutdownCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDimShutdownCh00.FormattingEnabled = true;
+            this.cmbDimShutdownCh00.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbDimShutdownCh00.Location = new System.Drawing.Point(235, 391);
+            this.cmbDimShutdownCh00.Name = "cmbDimShutdownCh00";
+            this.cmbDimShutdownCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbDimShutdownCh00.TabIndex = 468;
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label118.ForeColor = System.Drawing.SystemColors.Control;
+            this.label118.Location = new System.Drawing.Point(2, 393);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(122, 17);
+            this.label118.TabIndex = 467;
+            this.label118.Text = "Shutdown Recovery";
             // 
             // label51
             // 
@@ -12814,6 +13523,19 @@ namespace M1ConfigGenerator
             // tabPageHC1Full
             // 
             this.tabPageHC1Full.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabPageHC1Full.Controls.Add(this.cmbHCShutdownCh10);
+            this.tabPageHC1Full.Controls.Add(this.cmbHCShutdownCh11);
+            this.tabPageHC1Full.Controls.Add(this.cmbHCShutdownCh09);
+            this.tabPageHC1Full.Controls.Add(this.cmbHCShutdownCh08);
+            this.tabPageHC1Full.Controls.Add(this.cmbHCShutdownCh07);
+            this.tabPageHC1Full.Controls.Add(this.cmbHCShutdownCh06);
+            this.tabPageHC1Full.Controls.Add(this.cmbHCShutdownCh05);
+            this.tabPageHC1Full.Controls.Add(this.cmbHCShutdownCh04);
+            this.tabPageHC1Full.Controls.Add(this.cmbHCShutdownCh03);
+            this.tabPageHC1Full.Controls.Add(this.cmbHCShutdownCh02);
+            this.tabPageHC1Full.Controls.Add(this.cmbHCShutdownCh01);
+            this.tabPageHC1Full.Controls.Add(this.cmbHCShutdownCh00);
+            this.tabPageHC1Full.Controls.Add(this.label119);
             this.tabPageHC1Full.Controls.Add(this.tbxHC1OCAmpsParamCh11);
             this.tabPageHC1Full.Controls.Add(this.label563);
             this.tabPageHC1Full.Controls.Add(this.tbxHC1OCAmpsParamCh10);
@@ -13016,6 +13738,209 @@ namespace M1ConfigGenerator
             this.tabPageHC1Full.Size = new System.Drawing.Size(1378, 529);
             this.tabPageHC1Full.TabIndex = 1;
             this.tabPageHC1Full.Text = "HC 1 Full";
+            // 
+            // cmbHCShutdownCh10
+            // 
+            this.cmbHCShutdownCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHCShutdownCh10.FormattingEnabled = true;
+            this.cmbHCShutdownCh10.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHCShutdownCh10.Location = new System.Drawing.Point(955, 451);
+            this.cmbHCShutdownCh10.Name = "cmbHCShutdownCh10";
+            this.cmbHCShutdownCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbHCShutdownCh10.TabIndex = 479;
+            // 
+            // cmbHCShutdownCh11
+            // 
+            this.cmbHCShutdownCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHCShutdownCh11.FormattingEnabled = true;
+            this.cmbHCShutdownCh11.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHCShutdownCh11.Location = new System.Drawing.Point(1027, 451);
+            this.cmbHCShutdownCh11.Name = "cmbHCShutdownCh11";
+            this.cmbHCShutdownCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbHCShutdownCh11.TabIndex = 478;
+            // 
+            // cmbHCShutdownCh09
+            // 
+            this.cmbHCShutdownCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHCShutdownCh09.FormattingEnabled = true;
+            this.cmbHCShutdownCh09.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHCShutdownCh09.Location = new System.Drawing.Point(883, 451);
+            this.cmbHCShutdownCh09.Name = "cmbHCShutdownCh09";
+            this.cmbHCShutdownCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbHCShutdownCh09.TabIndex = 477;
+            // 
+            // cmbHCShutdownCh08
+            // 
+            this.cmbHCShutdownCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHCShutdownCh08.FormattingEnabled = true;
+            this.cmbHCShutdownCh08.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHCShutdownCh08.Location = new System.Drawing.Point(811, 451);
+            this.cmbHCShutdownCh08.Name = "cmbHCShutdownCh08";
+            this.cmbHCShutdownCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbHCShutdownCh08.TabIndex = 476;
+            // 
+            // cmbHCShutdownCh07
+            // 
+            this.cmbHCShutdownCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHCShutdownCh07.FormattingEnabled = true;
+            this.cmbHCShutdownCh07.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHCShutdownCh07.Location = new System.Drawing.Point(739, 451);
+            this.cmbHCShutdownCh07.Name = "cmbHCShutdownCh07";
+            this.cmbHCShutdownCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbHCShutdownCh07.TabIndex = 475;
+            // 
+            // cmbHCShutdownCh06
+            // 
+            this.cmbHCShutdownCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHCShutdownCh06.FormattingEnabled = true;
+            this.cmbHCShutdownCh06.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHCShutdownCh06.Location = new System.Drawing.Point(667, 451);
+            this.cmbHCShutdownCh06.Name = "cmbHCShutdownCh06";
+            this.cmbHCShutdownCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbHCShutdownCh06.TabIndex = 474;
+            // 
+            // cmbHCShutdownCh05
+            // 
+            this.cmbHCShutdownCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHCShutdownCh05.FormattingEnabled = true;
+            this.cmbHCShutdownCh05.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHCShutdownCh05.Location = new System.Drawing.Point(595, 451);
+            this.cmbHCShutdownCh05.Name = "cmbHCShutdownCh05";
+            this.cmbHCShutdownCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbHCShutdownCh05.TabIndex = 473;
+            // 
+            // cmbHCShutdownCh04
+            // 
+            this.cmbHCShutdownCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHCShutdownCh04.FormattingEnabled = true;
+            this.cmbHCShutdownCh04.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHCShutdownCh04.Location = new System.Drawing.Point(523, 451);
+            this.cmbHCShutdownCh04.Name = "cmbHCShutdownCh04";
+            this.cmbHCShutdownCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbHCShutdownCh04.TabIndex = 472;
+            // 
+            // cmbHCShutdownCh03
+            // 
+            this.cmbHCShutdownCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHCShutdownCh03.FormattingEnabled = true;
+            this.cmbHCShutdownCh03.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHCShutdownCh03.Location = new System.Drawing.Point(451, 451);
+            this.cmbHCShutdownCh03.Name = "cmbHCShutdownCh03";
+            this.cmbHCShutdownCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbHCShutdownCh03.TabIndex = 471;
+            // 
+            // cmbHCShutdownCh02
+            // 
+            this.cmbHCShutdownCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHCShutdownCh02.FormattingEnabled = true;
+            this.cmbHCShutdownCh02.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHCShutdownCh02.Location = new System.Drawing.Point(379, 451);
+            this.cmbHCShutdownCh02.Name = "cmbHCShutdownCh02";
+            this.cmbHCShutdownCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbHCShutdownCh02.TabIndex = 470;
+            // 
+            // cmbHCShutdownCh01
+            // 
+            this.cmbHCShutdownCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHCShutdownCh01.FormattingEnabled = true;
+            this.cmbHCShutdownCh01.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHCShutdownCh01.Location = new System.Drawing.Point(307, 451);
+            this.cmbHCShutdownCh01.Name = "cmbHCShutdownCh01";
+            this.cmbHCShutdownCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbHCShutdownCh01.TabIndex = 469;
+            // 
+            // cmbHCShutdownCh00
+            // 
+            this.cmbHCShutdownCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHCShutdownCh00.FormattingEnabled = true;
+            this.cmbHCShutdownCh00.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHCShutdownCh00.Location = new System.Drawing.Point(235, 451);
+            this.cmbHCShutdownCh00.Name = "cmbHCShutdownCh00";
+            this.cmbHCShutdownCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbHCShutdownCh00.TabIndex = 468;
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label119.ForeColor = System.Drawing.SystemColors.Control;
+            this.label119.Location = new System.Drawing.Point(2, 453);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(122, 17);
+            this.label119.TabIndex = 467;
+            this.label119.Text = "Shutdown Recovery";
             // 
             // tbxHC1OCAmpsParamCh11
             // 
@@ -24716,6 +25641,19 @@ namespace M1ConfigGenerator
             // tabPage16
             // 
             this.tabPage16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.tabPage16.Controls.Add(this.cmbHRShutdownCh10);
+            this.tabPage16.Controls.Add(this.cmbHRShutdownCh11);
+            this.tabPage16.Controls.Add(this.cmbHRShutdownCh09);
+            this.tabPage16.Controls.Add(this.cmbHRShutdownCh08);
+            this.tabPage16.Controls.Add(this.cmbHRShutdownCh07);
+            this.tabPage16.Controls.Add(this.cmbHRShutdownCh06);
+            this.tabPage16.Controls.Add(this.cmbHRShutdownCh05);
+            this.tabPage16.Controls.Add(this.cmbHRShutdownCh04);
+            this.tabPage16.Controls.Add(this.cmbHRShutdownCh03);
+            this.tabPage16.Controls.Add(this.cmbHRShutdownCh02);
+            this.tabPage16.Controls.Add(this.cmbHRShutdownCh01);
+            this.tabPage16.Controls.Add(this.cmbHRShutdownCh00);
+            this.tabPage16.Controls.Add(this.label120);
             this.tabPage16.Controls.Add(this.tbxHROCAmpsCh11);
             this.tabPage16.Controls.Add(this.label652);
             this.tabPage16.Controls.Add(this.tbxHROCAmpsCh10);
@@ -24906,6 +25844,209 @@ namespace M1ConfigGenerator
             this.tabPage16.TabIndex = 1;
             this.tabPage16.Text = "HR 1 Full";
             // 
+            // cmbHRShutdownCh10
+            // 
+            this.cmbHRShutdownCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRShutdownCh10.FormattingEnabled = true;
+            this.cmbHRShutdownCh10.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHRShutdownCh10.Location = new System.Drawing.Point(955, 421);
+            this.cmbHRShutdownCh10.Name = "cmbHRShutdownCh10";
+            this.cmbHRShutdownCh10.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRShutdownCh10.TabIndex = 479;
+            // 
+            // cmbHRShutdownCh11
+            // 
+            this.cmbHRShutdownCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRShutdownCh11.FormattingEnabled = true;
+            this.cmbHRShutdownCh11.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHRShutdownCh11.Location = new System.Drawing.Point(1027, 421);
+            this.cmbHRShutdownCh11.Name = "cmbHRShutdownCh11";
+            this.cmbHRShutdownCh11.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRShutdownCh11.TabIndex = 478;
+            // 
+            // cmbHRShutdownCh09
+            // 
+            this.cmbHRShutdownCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRShutdownCh09.FormattingEnabled = true;
+            this.cmbHRShutdownCh09.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHRShutdownCh09.Location = new System.Drawing.Point(883, 421);
+            this.cmbHRShutdownCh09.Name = "cmbHRShutdownCh09";
+            this.cmbHRShutdownCh09.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRShutdownCh09.TabIndex = 477;
+            // 
+            // cmbHRShutdownCh08
+            // 
+            this.cmbHRShutdownCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRShutdownCh08.FormattingEnabled = true;
+            this.cmbHRShutdownCh08.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHRShutdownCh08.Location = new System.Drawing.Point(811, 421);
+            this.cmbHRShutdownCh08.Name = "cmbHRShutdownCh08";
+            this.cmbHRShutdownCh08.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRShutdownCh08.TabIndex = 476;
+            // 
+            // cmbHRShutdownCh07
+            // 
+            this.cmbHRShutdownCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRShutdownCh07.FormattingEnabled = true;
+            this.cmbHRShutdownCh07.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHRShutdownCh07.Location = new System.Drawing.Point(739, 421);
+            this.cmbHRShutdownCh07.Name = "cmbHRShutdownCh07";
+            this.cmbHRShutdownCh07.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRShutdownCh07.TabIndex = 475;
+            // 
+            // cmbHRShutdownCh06
+            // 
+            this.cmbHRShutdownCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRShutdownCh06.FormattingEnabled = true;
+            this.cmbHRShutdownCh06.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHRShutdownCh06.Location = new System.Drawing.Point(667, 421);
+            this.cmbHRShutdownCh06.Name = "cmbHRShutdownCh06";
+            this.cmbHRShutdownCh06.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRShutdownCh06.TabIndex = 474;
+            // 
+            // cmbHRShutdownCh05
+            // 
+            this.cmbHRShutdownCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRShutdownCh05.FormattingEnabled = true;
+            this.cmbHRShutdownCh05.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHRShutdownCh05.Location = new System.Drawing.Point(595, 421);
+            this.cmbHRShutdownCh05.Name = "cmbHRShutdownCh05";
+            this.cmbHRShutdownCh05.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRShutdownCh05.TabIndex = 473;
+            // 
+            // cmbHRShutdownCh04
+            // 
+            this.cmbHRShutdownCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRShutdownCh04.FormattingEnabled = true;
+            this.cmbHRShutdownCh04.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHRShutdownCh04.Location = new System.Drawing.Point(523, 421);
+            this.cmbHRShutdownCh04.Name = "cmbHRShutdownCh04";
+            this.cmbHRShutdownCh04.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRShutdownCh04.TabIndex = 472;
+            // 
+            // cmbHRShutdownCh03
+            // 
+            this.cmbHRShutdownCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRShutdownCh03.FormattingEnabled = true;
+            this.cmbHRShutdownCh03.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHRShutdownCh03.Location = new System.Drawing.Point(451, 421);
+            this.cmbHRShutdownCh03.Name = "cmbHRShutdownCh03";
+            this.cmbHRShutdownCh03.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRShutdownCh03.TabIndex = 471;
+            // 
+            // cmbHRShutdownCh02
+            // 
+            this.cmbHRShutdownCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRShutdownCh02.FormattingEnabled = true;
+            this.cmbHRShutdownCh02.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHRShutdownCh02.Location = new System.Drawing.Point(379, 421);
+            this.cmbHRShutdownCh02.Name = "cmbHRShutdownCh02";
+            this.cmbHRShutdownCh02.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRShutdownCh02.TabIndex = 470;
+            // 
+            // cmbHRShutdownCh01
+            // 
+            this.cmbHRShutdownCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRShutdownCh01.FormattingEnabled = true;
+            this.cmbHRShutdownCh01.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHRShutdownCh01.Location = new System.Drawing.Point(307, 421);
+            this.cmbHRShutdownCh01.Name = "cmbHRShutdownCh01";
+            this.cmbHRShutdownCh01.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRShutdownCh01.TabIndex = 469;
+            // 
+            // cmbHRShutdownCh00
+            // 
+            this.cmbHRShutdownCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHRShutdownCh00.FormattingEnabled = true;
+            this.cmbHRShutdownCh00.Items.AddRange(new object[] {
+            "Disable",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbHRShutdownCh00.Location = new System.Drawing.Point(235, 421);
+            this.cmbHRShutdownCh00.Name = "cmbHRShutdownCh00";
+            this.cmbHRShutdownCh00.Size = new System.Drawing.Size(66, 21);
+            this.cmbHRShutdownCh00.TabIndex = 468;
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label120.ForeColor = System.Drawing.SystemColors.Control;
+            this.label120.Location = new System.Drawing.Point(2, 423);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(122, 17);
+            this.label120.TabIndex = 467;
+            this.label120.Text = "Shutdown Recovery";
+            // 
             // tbxHROCAmpsCh11
             // 
             this.tbxHROCAmpsCh11.Location = new System.Drawing.Point(1045, 333);
@@ -25090,9 +26231,9 @@ namespace M1ConfigGenerator
             "H Br",
             "Slave",
             "Unused"});
-            this.cmbHRModeParamCh11.Location = new System.Drawing.Point(1030, 122);
+            this.cmbHRModeParamCh11.Location = new System.Drawing.Point(1027, 122);
             this.cmbHRModeParamCh11.Name = "cmbHRModeParamCh11";
-            this.cmbHRModeParamCh11.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRModeParamCh11.Size = new System.Drawing.Size(66, 21);
             this.cmbHRModeParamCh11.TabIndex = 326;
             this.cmbHRModeParamCh11.TextChanged += new System.EventHandler(this.cmbHRModeParamCh11_TextChanged);
             // 
@@ -25118,9 +26259,9 @@ namespace M1ConfigGenerator
             "H Br",
             "Slave",
             "Unused"});
-            this.cmbHRModeParamCh10.Location = new System.Drawing.Point(958, 122);
+            this.cmbHRModeParamCh10.Location = new System.Drawing.Point(955, 122);
             this.cmbHRModeParamCh10.Name = "cmbHRModeParamCh10";
-            this.cmbHRModeParamCh10.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRModeParamCh10.Size = new System.Drawing.Size(66, 21);
             this.cmbHRModeParamCh10.TabIndex = 325;
             this.cmbHRModeParamCh10.TextChanged += new System.EventHandler(this.cmbHRModeParamCh10_TextChanged);
             // 
@@ -25146,9 +26287,9 @@ namespace M1ConfigGenerator
             "H Br",
             "Slave",
             "Unused"});
-            this.cmbHRModeParamCh09.Location = new System.Drawing.Point(886, 122);
+            this.cmbHRModeParamCh09.Location = new System.Drawing.Point(883, 122);
             this.cmbHRModeParamCh09.Name = "cmbHRModeParamCh09";
-            this.cmbHRModeParamCh09.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRModeParamCh09.Size = new System.Drawing.Size(66, 21);
             this.cmbHRModeParamCh09.TabIndex = 324;
             this.cmbHRModeParamCh09.TextChanged += new System.EventHandler(this.cmbHRModeParamCh09_TextChanged);
             // 
@@ -25174,9 +26315,9 @@ namespace M1ConfigGenerator
             "H Br",
             "Slave",
             "Unused"});
-            this.cmbHRModeParamCh08.Location = new System.Drawing.Point(814, 122);
+            this.cmbHRModeParamCh08.Location = new System.Drawing.Point(811, 122);
             this.cmbHRModeParamCh08.Name = "cmbHRModeParamCh08";
-            this.cmbHRModeParamCh08.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRModeParamCh08.Size = new System.Drawing.Size(66, 21);
             this.cmbHRModeParamCh08.TabIndex = 323;
             this.cmbHRModeParamCh08.TextChanged += new System.EventHandler(this.cmbHRModeParamCh08_TextChanged);
             // 
@@ -25202,9 +26343,9 @@ namespace M1ConfigGenerator
             "H Br",
             "Slave",
             "Unused"});
-            this.cmbHRModeParamCh07.Location = new System.Drawing.Point(742, 122);
+            this.cmbHRModeParamCh07.Location = new System.Drawing.Point(739, 122);
             this.cmbHRModeParamCh07.Name = "cmbHRModeParamCh07";
-            this.cmbHRModeParamCh07.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRModeParamCh07.Size = new System.Drawing.Size(66, 21);
             this.cmbHRModeParamCh07.TabIndex = 322;
             this.cmbHRModeParamCh07.TextChanged += new System.EventHandler(this.cmbHRModeParamCh07_TextChanged);
             // 
@@ -25230,9 +26371,9 @@ namespace M1ConfigGenerator
             "H Br",
             "Slave",
             "Unused"});
-            this.cmbHRModeParamCh06.Location = new System.Drawing.Point(670, 122);
+            this.cmbHRModeParamCh06.Location = new System.Drawing.Point(667, 122);
             this.cmbHRModeParamCh06.Name = "cmbHRModeParamCh06";
-            this.cmbHRModeParamCh06.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRModeParamCh06.Size = new System.Drawing.Size(66, 21);
             this.cmbHRModeParamCh06.TabIndex = 321;
             this.cmbHRModeParamCh06.TextChanged += new System.EventHandler(this.cmbHRModeParamCh06_TextChanged);
             // 
@@ -25258,9 +26399,9 @@ namespace M1ConfigGenerator
             "H Br",
             "Slave",
             "Unused"});
-            this.cmbHRModeParamCh05.Location = new System.Drawing.Point(598, 122);
+            this.cmbHRModeParamCh05.Location = new System.Drawing.Point(595, 122);
             this.cmbHRModeParamCh05.Name = "cmbHRModeParamCh05";
-            this.cmbHRModeParamCh05.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRModeParamCh05.Size = new System.Drawing.Size(66, 21);
             this.cmbHRModeParamCh05.TabIndex = 320;
             this.cmbHRModeParamCh05.TextChanged += new System.EventHandler(this.cmbHRModeParamCh05_TextChanged);
             // 
@@ -25286,9 +26427,9 @@ namespace M1ConfigGenerator
             "H Br",
             "Slave",
             "Unused"});
-            this.cmbHRModeParamCh04.Location = new System.Drawing.Point(526, 122);
+            this.cmbHRModeParamCh04.Location = new System.Drawing.Point(523, 122);
             this.cmbHRModeParamCh04.Name = "cmbHRModeParamCh04";
-            this.cmbHRModeParamCh04.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRModeParamCh04.Size = new System.Drawing.Size(66, 21);
             this.cmbHRModeParamCh04.TabIndex = 319;
             this.cmbHRModeParamCh04.TextChanged += new System.EventHandler(this.cmbHRModeParamCh04_TextChanged);
             // 
@@ -25314,9 +26455,9 @@ namespace M1ConfigGenerator
             "H Br",
             "Slave",
             "Unused"});
-            this.cmbHRModeParamCh03.Location = new System.Drawing.Point(454, 122);
+            this.cmbHRModeParamCh03.Location = new System.Drawing.Point(451, 122);
             this.cmbHRModeParamCh03.Name = "cmbHRModeParamCh03";
-            this.cmbHRModeParamCh03.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRModeParamCh03.Size = new System.Drawing.Size(66, 21);
             this.cmbHRModeParamCh03.TabIndex = 318;
             this.cmbHRModeParamCh03.TextChanged += new System.EventHandler(this.cmbHRModeParamCh03_TextChanged);
             // 
@@ -25331,9 +26472,9 @@ namespace M1ConfigGenerator
             "H Br",
             "Slave",
             "Unused"});
-            this.cmbHRModeParamCh02.Location = new System.Drawing.Point(382, 122);
+            this.cmbHRModeParamCh02.Location = new System.Drawing.Point(379, 122);
             this.cmbHRModeParamCh02.Name = "cmbHRModeParamCh02";
-            this.cmbHRModeParamCh02.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRModeParamCh02.Size = new System.Drawing.Size(66, 21);
             this.cmbHRModeParamCh02.TabIndex = 317;
             this.cmbHRModeParamCh02.TextChanged += new System.EventHandler(this.cmbHRModeParamCh02_TextChanged);
             // 
@@ -25348,9 +26489,9 @@ namespace M1ConfigGenerator
             "H Br",
             "Slave",
             "Unused"});
-            this.cmbHRModeParamCh01.Location = new System.Drawing.Point(310, 122);
+            this.cmbHRModeParamCh01.Location = new System.Drawing.Point(307, 122);
             this.cmbHRModeParamCh01.Name = "cmbHRModeParamCh01";
-            this.cmbHRModeParamCh01.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRModeParamCh01.Size = new System.Drawing.Size(66, 21);
             this.cmbHRModeParamCh01.TabIndex = 316;
             this.cmbHRModeParamCh01.TextChanged += new System.EventHandler(this.cmbHRModeParamCh01_TextChanged);
             // 
@@ -25365,9 +26506,9 @@ namespace M1ConfigGenerator
             "H Br",
             "Slave",
             "Unused"});
-            this.cmbHRModeParamCh00.Location = new System.Drawing.Point(238, 122);
+            this.cmbHRModeParamCh00.Location = new System.Drawing.Point(235, 122);
             this.cmbHRModeParamCh00.Name = "cmbHRModeParamCh00";
-            this.cmbHRModeParamCh00.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRModeParamCh00.Size = new System.Drawing.Size(66, 21);
             this.cmbHRModeParamCh00.TabIndex = 284;
             this.cmbHRModeParamCh00.TextChanged += new System.EventHandler(this.cmbHRModeParamCh00_TextChanged);
             // 
@@ -25513,9 +26654,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRMeasCurTimeCh11.Location = new System.Drawing.Point(1030, 392);
+            this.cmbHRMeasCurTimeCh11.Location = new System.Drawing.Point(1027, 392);
             this.cmbHRMeasCurTimeCh11.Name = "cmbHRMeasCurTimeCh11";
-            this.cmbHRMeasCurTimeCh11.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRMeasCurTimeCh11.Size = new System.Drawing.Size(66, 21);
             this.cmbHRMeasCurTimeCh11.TabIndex = 301;
             // 
             // label669
@@ -25550,9 +26691,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRMeasCurTimeCh10.Location = new System.Drawing.Point(958, 392);
+            this.cmbHRMeasCurTimeCh10.Location = new System.Drawing.Point(955, 392);
             this.cmbHRMeasCurTimeCh10.Name = "cmbHRMeasCurTimeCh10";
-            this.cmbHRMeasCurTimeCh10.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRMeasCurTimeCh10.Size = new System.Drawing.Size(66, 21);
             this.cmbHRMeasCurTimeCh10.TabIndex = 300;
             // 
             // chkHRTimeoutCh03
@@ -25630,9 +26771,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRMeasCurTimeCh09.Location = new System.Drawing.Point(886, 392);
+            this.cmbHRMeasCurTimeCh09.Location = new System.Drawing.Point(883, 392);
             this.cmbHRMeasCurTimeCh09.Name = "cmbHRMeasCurTimeCh09";
-            this.cmbHRMeasCurTimeCh09.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRMeasCurTimeCh09.Size = new System.Drawing.Size(66, 21);
             this.cmbHRMeasCurTimeCh09.TabIndex = 299;
             // 
             // chkHRTimeoutCh01
@@ -25673,9 +26814,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRMeasCurTimeCh00.Location = new System.Drawing.Point(238, 392);
+            this.cmbHRMeasCurTimeCh00.Location = new System.Drawing.Point(235, 392);
             this.cmbHRMeasCurTimeCh00.Name = "cmbHRMeasCurTimeCh00";
-            this.cmbHRMeasCurTimeCh00.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRMeasCurTimeCh00.Size = new System.Drawing.Size(66, 21);
             this.cmbHRMeasCurTimeCh00.TabIndex = 290;
             // 
             // chkHRTimeoutCh00
@@ -25716,9 +26857,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRMeasCurTimeCh08.Location = new System.Drawing.Point(814, 392);
+            this.cmbHRMeasCurTimeCh08.Location = new System.Drawing.Point(811, 392);
             this.cmbHRMeasCurTimeCh08.Name = "cmbHRMeasCurTimeCh08";
-            this.cmbHRMeasCurTimeCh08.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRMeasCurTimeCh08.Size = new System.Drawing.Size(66, 21);
             this.cmbHRMeasCurTimeCh08.TabIndex = 298;
             // 
             // cmbHRPairedCh10
@@ -25738,9 +26879,9 @@ namespace M1ConfigGenerator
             "8",
             "9",
             "11"});
-            this.cmbHRPairedCh10.Location = new System.Drawing.Point(958, 182);
+            this.cmbHRPairedCh10.Location = new System.Drawing.Point(955, 182);
             this.cmbHRPairedCh10.Name = "cmbHRPairedCh10";
-            this.cmbHRPairedCh10.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRPairedCh10.Size = new System.Drawing.Size(66, 21);
             this.cmbHRPairedCh10.TabIndex = 79;
             // 
             // tbxHRPWMDutyCh03
@@ -25772,9 +26913,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRMeasCurTimeCh01.Location = new System.Drawing.Point(310, 392);
+            this.cmbHRMeasCurTimeCh01.Location = new System.Drawing.Point(307, 392);
             this.cmbHRMeasCurTimeCh01.Name = "cmbHRMeasCurTimeCh01";
-            this.cmbHRMeasCurTimeCh01.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRMeasCurTimeCh01.Size = new System.Drawing.Size(66, 21);
             this.cmbHRMeasCurTimeCh01.TabIndex = 291;
             // 
             // cmbHRPairedCh11
@@ -25794,9 +26935,9 @@ namespace M1ConfigGenerator
             "8",
             "9",
             "10"});
-            this.cmbHRPairedCh11.Location = new System.Drawing.Point(1030, 182);
+            this.cmbHRPairedCh11.Location = new System.Drawing.Point(1027, 182);
             this.cmbHRPairedCh11.Name = "cmbHRPairedCh11";
-            this.cmbHRPairedCh11.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRPairedCh11.Size = new System.Drawing.Size(66, 21);
             this.cmbHRPairedCh11.TabIndex = 78;
             // 
             // tbxHRPWMDutyCh05
@@ -25828,9 +26969,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRMeasCurTimeCh07.Location = new System.Drawing.Point(742, 392);
+            this.cmbHRMeasCurTimeCh07.Location = new System.Drawing.Point(739, 392);
             this.cmbHRMeasCurTimeCh07.Name = "cmbHRMeasCurTimeCh07";
-            this.cmbHRMeasCurTimeCh07.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRMeasCurTimeCh07.Size = new System.Drawing.Size(66, 21);
             this.cmbHRMeasCurTimeCh07.TabIndex = 297;
             // 
             // cmbHRPairedCh09
@@ -25850,9 +26991,9 @@ namespace M1ConfigGenerator
             "8",
             "10",
             "11"});
-            this.cmbHRPairedCh09.Location = new System.Drawing.Point(886, 182);
+            this.cmbHRPairedCh09.Location = new System.Drawing.Point(883, 182);
             this.cmbHRPairedCh09.Name = "cmbHRPairedCh09";
-            this.cmbHRPairedCh09.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRPairedCh09.Size = new System.Drawing.Size(66, 21);
             this.cmbHRPairedCh09.TabIndex = 77;
             // 
             // tbxHRPWMDutyCh06
@@ -25884,9 +27025,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRMeasCurTimeCh02.Location = new System.Drawing.Point(382, 392);
+            this.cmbHRMeasCurTimeCh02.Location = new System.Drawing.Point(379, 392);
             this.cmbHRMeasCurTimeCh02.Name = "cmbHRMeasCurTimeCh02";
-            this.cmbHRMeasCurTimeCh02.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRMeasCurTimeCh02.Size = new System.Drawing.Size(66, 21);
             this.cmbHRMeasCurTimeCh02.TabIndex = 292;
             // 
             // cmbHRPairedCh08
@@ -25906,9 +27047,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRPairedCh08.Location = new System.Drawing.Point(814, 182);
+            this.cmbHRPairedCh08.Location = new System.Drawing.Point(811, 182);
             this.cmbHRPairedCh08.Name = "cmbHRPairedCh08";
-            this.cmbHRPairedCh08.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRPairedCh08.Size = new System.Drawing.Size(66, 21);
             this.cmbHRPairedCh08.TabIndex = 76;
             // 
             // tbxHRPWMDutyCh07
@@ -25939,9 +27080,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRMeasCurTimeCh06.Location = new System.Drawing.Point(670, 392);
+            this.cmbHRMeasCurTimeCh06.Location = new System.Drawing.Point(667, 392);
             this.cmbHRMeasCurTimeCh06.Name = "cmbHRMeasCurTimeCh06";
-            this.cmbHRMeasCurTimeCh06.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRMeasCurTimeCh06.Size = new System.Drawing.Size(66, 21);
             this.cmbHRMeasCurTimeCh06.TabIndex = 296;
             // 
             // cmbHRPairedCh07
@@ -25961,9 +27102,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRPairedCh07.Location = new System.Drawing.Point(742, 182);
+            this.cmbHRPairedCh07.Location = new System.Drawing.Point(739, 182);
             this.cmbHRPairedCh07.Name = "cmbHRPairedCh07";
-            this.cmbHRPairedCh07.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRPairedCh07.Size = new System.Drawing.Size(66, 21);
             this.cmbHRPairedCh07.TabIndex = 75;
             // 
             // tbxHRPWMDutyCh08
@@ -25994,9 +27135,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRMeasCurTimeCh03.Location = new System.Drawing.Point(454, 392);
+            this.cmbHRMeasCurTimeCh03.Location = new System.Drawing.Point(451, 392);
             this.cmbHRMeasCurTimeCh03.Name = "cmbHRMeasCurTimeCh03";
-            this.cmbHRMeasCurTimeCh03.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRMeasCurTimeCh03.Size = new System.Drawing.Size(66, 21);
             this.cmbHRMeasCurTimeCh03.TabIndex = 293;
             // 
             // cmbHRPairedCh06
@@ -26016,9 +27157,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRPairedCh06.Location = new System.Drawing.Point(670, 182);
+            this.cmbHRPairedCh06.Location = new System.Drawing.Point(667, 182);
             this.cmbHRPairedCh06.Name = "cmbHRPairedCh06";
-            this.cmbHRPairedCh06.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRPairedCh06.Size = new System.Drawing.Size(66, 21);
             this.cmbHRPairedCh06.TabIndex = 74;
             // 
             // tbxHRPWMDutyCh09
@@ -26049,9 +27190,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRMeasCurTimeCh05.Location = new System.Drawing.Point(598, 392);
+            this.cmbHRMeasCurTimeCh05.Location = new System.Drawing.Point(595, 392);
             this.cmbHRMeasCurTimeCh05.Name = "cmbHRMeasCurTimeCh05";
-            this.cmbHRMeasCurTimeCh05.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRMeasCurTimeCh05.Size = new System.Drawing.Size(66, 21);
             this.cmbHRMeasCurTimeCh05.TabIndex = 295;
             // 
             // cmbHRPairedCh05
@@ -26071,9 +27212,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRPairedCh05.Location = new System.Drawing.Point(598, 182);
+            this.cmbHRPairedCh05.Location = new System.Drawing.Point(595, 182);
             this.cmbHRPairedCh05.Name = "cmbHRPairedCh05";
-            this.cmbHRPairedCh05.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRPairedCh05.Size = new System.Drawing.Size(66, 21);
             this.cmbHRPairedCh05.TabIndex = 73;
             // 
             // tbxHRPWMDutyCh10
@@ -26104,9 +27245,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRMeasCurTimeCh04.Location = new System.Drawing.Point(526, 392);
+            this.cmbHRMeasCurTimeCh04.Location = new System.Drawing.Point(523, 392);
             this.cmbHRMeasCurTimeCh04.Name = "cmbHRMeasCurTimeCh04";
-            this.cmbHRMeasCurTimeCh04.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRMeasCurTimeCh04.Size = new System.Drawing.Size(66, 21);
             this.cmbHRMeasCurTimeCh04.TabIndex = 294;
             // 
             // cmbHRPairedCh04
@@ -26126,9 +27267,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRPairedCh04.Location = new System.Drawing.Point(526, 182);
+            this.cmbHRPairedCh04.Location = new System.Drawing.Point(523, 182);
             this.cmbHRPairedCh04.Name = "cmbHRPairedCh04";
-            this.cmbHRPairedCh04.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRPairedCh04.Size = new System.Drawing.Size(66, 21);
             this.cmbHRPairedCh04.TabIndex = 72;
             // 
             // tbxHRPWMDutyCh11
@@ -26172,9 +27313,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRPairedCh03.Location = new System.Drawing.Point(454, 182);
+            this.cmbHRPairedCh03.Location = new System.Drawing.Point(451, 182);
             this.cmbHRPairedCh03.Name = "cmbHRPairedCh03";
-            this.cmbHRPairedCh03.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRPairedCh03.Size = new System.Drawing.Size(66, 21);
             this.cmbHRPairedCh03.TabIndex = 71;
             // 
             // tbxHRTimeoutTimeCh05
@@ -26213,9 +27354,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRPairedCh02.Location = new System.Drawing.Point(382, 182);
+            this.cmbHRPairedCh02.Location = new System.Drawing.Point(379, 182);
             this.cmbHRPairedCh02.Name = "cmbHRPairedCh02";
-            this.cmbHRPairedCh02.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRPairedCh02.Size = new System.Drawing.Size(66, 21);
             this.cmbHRPairedCh02.TabIndex = 70;
             // 
             // tbxHRTimeoutTimeCh07
@@ -26251,9 +27392,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRPairedCh01.Location = new System.Drawing.Point(310, 182);
+            this.cmbHRPairedCh01.Location = new System.Drawing.Point(307, 182);
             this.cmbHRPairedCh01.Name = "cmbHRPairedCh01";
-            this.cmbHRPairedCh01.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRPairedCh01.Size = new System.Drawing.Size(66, 21);
             this.cmbHRPairedCh01.TabIndex = 69;
             // 
             // tbxHRTimeoutTimeCh06
@@ -26289,9 +27430,9 @@ namespace M1ConfigGenerator
             "9",
             "10",
             "11"});
-            this.cmbHRPairedCh00.Location = new System.Drawing.Point(238, 182);
+            this.cmbHRPairedCh00.Location = new System.Drawing.Point(235, 182);
             this.cmbHRPairedCh00.Name = "cmbHRPairedCh00";
-            this.cmbHRPairedCh00.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRPairedCh00.Size = new System.Drawing.Size(66, 21);
             this.cmbHRPairedCh00.TabIndex = 68;
             // 
             // tbxHRTimeoutTimeCh08
@@ -26317,9 +27458,9 @@ namespace M1ConfigGenerator
             this.cmbHRDeadTimeCh11.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.cmbHRDeadTimeCh11.Location = new System.Drawing.Point(1030, 152);
+            this.cmbHRDeadTimeCh11.Location = new System.Drawing.Point(1027, 152);
             this.cmbHRDeadTimeCh11.Name = "cmbHRDeadTimeCh11";
-            this.cmbHRDeadTimeCh11.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDeadTimeCh11.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDeadTimeCh11.TabIndex = 67;
             // 
             // tbxHRTimeoutTimeCh09
@@ -26345,9 +27486,9 @@ namespace M1ConfigGenerator
             this.cmbHRDeadTimeCh10.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.cmbHRDeadTimeCh10.Location = new System.Drawing.Point(958, 152);
+            this.cmbHRDeadTimeCh10.Location = new System.Drawing.Point(955, 152);
             this.cmbHRDeadTimeCh10.Name = "cmbHRDeadTimeCh10";
-            this.cmbHRDeadTimeCh10.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDeadTimeCh10.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDeadTimeCh10.TabIndex = 66;
             // 
             // tbxHRTimeoutTimeCh10
@@ -26373,9 +27514,9 @@ namespace M1ConfigGenerator
             this.cmbHRDeadTimeCh09.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.cmbHRDeadTimeCh09.Location = new System.Drawing.Point(886, 152);
+            this.cmbHRDeadTimeCh09.Location = new System.Drawing.Point(883, 152);
             this.cmbHRDeadTimeCh09.Name = "cmbHRDeadTimeCh09";
-            this.cmbHRDeadTimeCh09.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDeadTimeCh09.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDeadTimeCh09.TabIndex = 65;
             // 
             // tbxHRTimeoutTimeCh11
@@ -26401,9 +27542,9 @@ namespace M1ConfigGenerator
             this.cmbHRDeadTimeCh07.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.cmbHRDeadTimeCh07.Location = new System.Drawing.Point(742, 152);
+            this.cmbHRDeadTimeCh07.Location = new System.Drawing.Point(739, 152);
             this.cmbHRDeadTimeCh07.Name = "cmbHRDeadTimeCh07";
-            this.cmbHRDeadTimeCh07.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDeadTimeCh07.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDeadTimeCh07.TabIndex = 64;
             // 
             // label673
@@ -26432,9 +27573,9 @@ namespace M1ConfigGenerator
             this.cmbHRDeadTimeCh08.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.cmbHRDeadTimeCh08.Location = new System.Drawing.Point(814, 152);
+            this.cmbHRDeadTimeCh08.Location = new System.Drawing.Point(811, 152);
             this.cmbHRDeadTimeCh08.Name = "cmbHRDeadTimeCh08";
-            this.cmbHRDeadTimeCh08.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDeadTimeCh08.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDeadTimeCh08.TabIndex = 63;
             // 
             // tbxHRMaxOnCh00
@@ -26460,9 +27601,9 @@ namespace M1ConfigGenerator
             this.cmbHRDeadTimeCh06.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.cmbHRDeadTimeCh06.Location = new System.Drawing.Point(670, 152);
+            this.cmbHRDeadTimeCh06.Location = new System.Drawing.Point(667, 152);
             this.cmbHRDeadTimeCh06.Name = "cmbHRDeadTimeCh06";
-            this.cmbHRDeadTimeCh06.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDeadTimeCh06.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDeadTimeCh06.TabIndex = 62;
             // 
             // tbxHRMaxOnCh01
@@ -26488,9 +27629,9 @@ namespace M1ConfigGenerator
             this.cmbHRDeadTimeCh05.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.cmbHRDeadTimeCh05.Location = new System.Drawing.Point(598, 152);
+            this.cmbHRDeadTimeCh05.Location = new System.Drawing.Point(595, 152);
             this.cmbHRDeadTimeCh05.Name = "cmbHRDeadTimeCh05";
-            this.cmbHRDeadTimeCh05.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDeadTimeCh05.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDeadTimeCh05.TabIndex = 61;
             // 
             // tbxHRMaxOnCh02
@@ -26516,9 +27657,9 @@ namespace M1ConfigGenerator
             this.cmbHRDeadTimeCh04.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.cmbHRDeadTimeCh04.Location = new System.Drawing.Point(526, 152);
+            this.cmbHRDeadTimeCh04.Location = new System.Drawing.Point(523, 152);
             this.cmbHRDeadTimeCh04.Name = "cmbHRDeadTimeCh04";
-            this.cmbHRDeadTimeCh04.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDeadTimeCh04.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDeadTimeCh04.TabIndex = 60;
             // 
             // tbxHRMaxOnCh03
@@ -26544,9 +27685,9 @@ namespace M1ConfigGenerator
             this.cmbHRDeadTimeCh03.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.cmbHRDeadTimeCh03.Location = new System.Drawing.Point(454, 152);
+            this.cmbHRDeadTimeCh03.Location = new System.Drawing.Point(451, 152);
             this.cmbHRDeadTimeCh03.Name = "cmbHRDeadTimeCh03";
-            this.cmbHRDeadTimeCh03.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDeadTimeCh03.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDeadTimeCh03.TabIndex = 59;
             // 
             // tbxHRMaxOnCh04
@@ -26572,9 +27713,9 @@ namespace M1ConfigGenerator
             this.cmbHRDeadTimeCh02.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.cmbHRDeadTimeCh02.Location = new System.Drawing.Point(382, 152);
+            this.cmbHRDeadTimeCh02.Location = new System.Drawing.Point(379, 152);
             this.cmbHRDeadTimeCh02.Name = "cmbHRDeadTimeCh02";
-            this.cmbHRDeadTimeCh02.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDeadTimeCh02.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDeadTimeCh02.TabIndex = 58;
             // 
             // label674
@@ -26614,9 +27755,9 @@ namespace M1ConfigGenerator
             this.cmbHRDeadTimeCh01.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.cmbHRDeadTimeCh01.Location = new System.Drawing.Point(310, 152);
+            this.cmbHRDeadTimeCh01.Location = new System.Drawing.Point(307, 152);
             this.cmbHRDeadTimeCh01.Name = "cmbHRDeadTimeCh01";
-            this.cmbHRDeadTimeCh01.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDeadTimeCh01.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDeadTimeCh01.TabIndex = 57;
             // 
             // cmbHRDirectionCh00
@@ -26631,9 +27772,9 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbHRDirectionCh00.Location = new System.Drawing.Point(238, 92);
+            this.cmbHRDirectionCh00.Location = new System.Drawing.Point(235, 92);
             this.cmbHRDirectionCh00.Name = "cmbHRDirectionCh00";
-            this.cmbHRDirectionCh00.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDirectionCh00.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDirectionCh00.TabIndex = 40;
             // 
             // tbxHRMaxOnCh06
@@ -26659,9 +27800,9 @@ namespace M1ConfigGenerator
             this.cmbHRDeadTimeCh00.Items.AddRange(new object[] {
             "0",
             "500"});
-            this.cmbHRDeadTimeCh00.Location = new System.Drawing.Point(238, 152);
+            this.cmbHRDeadTimeCh00.Location = new System.Drawing.Point(235, 152);
             this.cmbHRDeadTimeCh00.Name = "cmbHRDeadTimeCh00";
-            this.cmbHRDeadTimeCh00.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDeadTimeCh00.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDeadTimeCh00.TabIndex = 56;
             // 
             // cmbHRDirectionCh01
@@ -26676,9 +27817,9 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbHRDirectionCh01.Location = new System.Drawing.Point(310, 92);
+            this.cmbHRDirectionCh01.Location = new System.Drawing.Point(307, 92);
             this.cmbHRDirectionCh01.Name = "cmbHRDirectionCh01";
-            this.cmbHRDirectionCh01.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDirectionCh01.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDirectionCh01.TabIndex = 41;
             // 
             // tbxHRMaxOnCh07
@@ -26720,9 +27861,9 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbHRDirectionCh02.Location = new System.Drawing.Point(382, 92);
+            this.cmbHRDirectionCh02.Location = new System.Drawing.Point(379, 92);
             this.cmbHRDirectionCh02.Name = "cmbHRDirectionCh02";
-            this.cmbHRDirectionCh02.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDirectionCh02.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDirectionCh02.TabIndex = 42;
             // 
             // tbxHRMaxOnCh08
@@ -26764,9 +27905,9 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbHRDirectionCh03.Location = new System.Drawing.Point(454, 92);
+            this.cmbHRDirectionCh03.Location = new System.Drawing.Point(451, 92);
             this.cmbHRDirectionCh03.Name = "cmbHRDirectionCh03";
-            this.cmbHRDirectionCh03.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDirectionCh03.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDirectionCh03.TabIndex = 43;
             // 
             // tbxHRMaxOnCh09
@@ -26808,9 +27949,9 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbHRDirectionCh04.Location = new System.Drawing.Point(526, 92);
+            this.cmbHRDirectionCh04.Location = new System.Drawing.Point(523, 92);
             this.cmbHRDirectionCh04.Name = "cmbHRDirectionCh04";
-            this.cmbHRDirectionCh04.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDirectionCh04.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDirectionCh04.TabIndex = 44;
             // 
             // tbxHRMaxOnCh10
@@ -26852,9 +27993,9 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbHRDirectionCh05.Location = new System.Drawing.Point(598, 92);
+            this.cmbHRDirectionCh05.Location = new System.Drawing.Point(595, 92);
             this.cmbHRDirectionCh05.Name = "cmbHRDirectionCh05";
-            this.cmbHRDirectionCh05.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDirectionCh05.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDirectionCh05.TabIndex = 45;
             // 
             // tbxHRMaxOnCh11
@@ -26885,9 +28026,9 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbHRDirectionCh11.Location = new System.Drawing.Point(1030, 92);
+            this.cmbHRDirectionCh11.Location = new System.Drawing.Point(1027, 92);
             this.cmbHRDirectionCh11.Name = "cmbHRDirectionCh11";
-            this.cmbHRDirectionCh11.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDirectionCh11.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDirectionCh11.TabIndex = 51;
             // 
             // cmbHRDirectionCh06
@@ -26902,9 +28043,9 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbHRDirectionCh06.Location = new System.Drawing.Point(670, 92);
+            this.cmbHRDirectionCh06.Location = new System.Drawing.Point(667, 92);
             this.cmbHRDirectionCh06.Name = "cmbHRDirectionCh06";
-            this.cmbHRDirectionCh06.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDirectionCh06.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDirectionCh06.TabIndex = 46;
             // 
             // tbxHRMaxDurRecCh05
@@ -26935,9 +28076,9 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbHRDirectionCh10.Location = new System.Drawing.Point(958, 92);
+            this.cmbHRDirectionCh10.Location = new System.Drawing.Point(955, 92);
             this.cmbHRDirectionCh10.Name = "cmbHRDirectionCh10";
-            this.cmbHRDirectionCh10.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDirectionCh10.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDirectionCh10.TabIndex = 50;
             // 
             // cmbHRDirectionCh08
@@ -26952,9 +28093,9 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbHRDirectionCh08.Location = new System.Drawing.Point(814, 92);
+            this.cmbHRDirectionCh08.Location = new System.Drawing.Point(811, 92);
             this.cmbHRDirectionCh08.Name = "cmbHRDirectionCh08";
-            this.cmbHRDirectionCh08.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDirectionCh08.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDirectionCh08.TabIndex = 47;
             // 
             // tbxHRMaxDurRecCh04
@@ -26985,9 +28126,9 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbHRDirectionCh09.Location = new System.Drawing.Point(886, 92);
+            this.cmbHRDirectionCh09.Location = new System.Drawing.Point(883, 92);
             this.cmbHRDirectionCh09.Name = "cmbHRDirectionCh09";
-            this.cmbHRDirectionCh09.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDirectionCh09.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDirectionCh09.TabIndex = 49;
             // 
             // cmbHRDirectionCh07
@@ -27002,9 +28143,9 @@ namespace M1ConfigGenerator
             "Forward",
             "Down",
             "Up"});
-            this.cmbHRDirectionCh07.Location = new System.Drawing.Point(742, 92);
+            this.cmbHRDirectionCh07.Location = new System.Drawing.Point(739, 92);
             this.cmbHRDirectionCh07.Name = "cmbHRDirectionCh07";
-            this.cmbHRDirectionCh07.Size = new System.Drawing.Size(61, 21);
+            this.cmbHRDirectionCh07.Size = new System.Drawing.Size(66, 21);
             this.cmbHRDirectionCh07.TabIndex = 48;
             // 
             // tbxHRMaxDurRecCh06
@@ -27163,231 +28304,6 @@ namespace M1ConfigGenerator
             this.btnHRCard2.UseVisualStyleBackColor = false;
             this.btnHRCard2.Visible = false;
             this.btnHRCard2.Click += new System.EventHandler(this.btnHRCard2_Click);
-            // 
-            // label114
-            // 
-            this.label114.AutoSize = true;
-            this.label114.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.label114.ForeColor = System.Drawing.SystemColors.Control;
-            this.label114.Location = new System.Drawing.Point(232, 153);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(21, 17);
-            this.label114.TabIndex = 452;
-            this.label114.Text = "0x";
-            // 
-            // label115
-            // 
-            this.label115.AutoSize = true;
-            this.label115.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.label115.ForeColor = System.Drawing.SystemColors.Control;
-            this.label115.Location = new System.Drawing.Point(232, 183);
-            this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(21, 17);
-            this.label115.TabIndex = 453;
-            this.label115.Text = "0x";
-            // 
-            // cmbAuxShutdownCh10
-            // 
-            this.cmbAuxShutdownCh10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAuxShutdownCh10.FormattingEnabled = true;
-            this.cmbAuxShutdownCh10.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbAuxShutdownCh10.Location = new System.Drawing.Point(955, 241);
-            this.cmbAuxShutdownCh10.Name = "cmbAuxShutdownCh10";
-            this.cmbAuxShutdownCh10.Size = new System.Drawing.Size(66, 21);
-            this.cmbAuxShutdownCh10.TabIndex = 466;
-            // 
-            // cmbAuxShutdownCh11
-            // 
-            this.cmbAuxShutdownCh11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAuxShutdownCh11.FormattingEnabled = true;
-            this.cmbAuxShutdownCh11.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbAuxShutdownCh11.Location = new System.Drawing.Point(1027, 241);
-            this.cmbAuxShutdownCh11.Name = "cmbAuxShutdownCh11";
-            this.cmbAuxShutdownCh11.Size = new System.Drawing.Size(66, 21);
-            this.cmbAuxShutdownCh11.TabIndex = 465;
-            // 
-            // cmbAuxShutdownCh09
-            // 
-            this.cmbAuxShutdownCh09.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAuxShutdownCh09.FormattingEnabled = true;
-            this.cmbAuxShutdownCh09.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbAuxShutdownCh09.Location = new System.Drawing.Point(883, 241);
-            this.cmbAuxShutdownCh09.Name = "cmbAuxShutdownCh09";
-            this.cmbAuxShutdownCh09.Size = new System.Drawing.Size(66, 21);
-            this.cmbAuxShutdownCh09.TabIndex = 464;
-            // 
-            // cmbAuxShutdownCh08
-            // 
-            this.cmbAuxShutdownCh08.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAuxShutdownCh08.FormattingEnabled = true;
-            this.cmbAuxShutdownCh08.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbAuxShutdownCh08.Location = new System.Drawing.Point(811, 241);
-            this.cmbAuxShutdownCh08.Name = "cmbAuxShutdownCh08";
-            this.cmbAuxShutdownCh08.Size = new System.Drawing.Size(66, 21);
-            this.cmbAuxShutdownCh08.TabIndex = 463;
-            // 
-            // cmbAuxShutdownCh07
-            // 
-            this.cmbAuxShutdownCh07.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAuxShutdownCh07.FormattingEnabled = true;
-            this.cmbAuxShutdownCh07.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbAuxShutdownCh07.Location = new System.Drawing.Point(739, 241);
-            this.cmbAuxShutdownCh07.Name = "cmbAuxShutdownCh07";
-            this.cmbAuxShutdownCh07.Size = new System.Drawing.Size(66, 21);
-            this.cmbAuxShutdownCh07.TabIndex = 462;
-            // 
-            // cmbAuxShutdownCh06
-            // 
-            this.cmbAuxShutdownCh06.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAuxShutdownCh06.FormattingEnabled = true;
-            this.cmbAuxShutdownCh06.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbAuxShutdownCh06.Location = new System.Drawing.Point(667, 241);
-            this.cmbAuxShutdownCh06.Name = "cmbAuxShutdownCh06";
-            this.cmbAuxShutdownCh06.Size = new System.Drawing.Size(66, 21);
-            this.cmbAuxShutdownCh06.TabIndex = 461;
-            // 
-            // cmbAuxShutdownCh05
-            // 
-            this.cmbAuxShutdownCh05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAuxShutdownCh05.FormattingEnabled = true;
-            this.cmbAuxShutdownCh05.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbAuxShutdownCh05.Location = new System.Drawing.Point(595, 241);
-            this.cmbAuxShutdownCh05.Name = "cmbAuxShutdownCh05";
-            this.cmbAuxShutdownCh05.Size = new System.Drawing.Size(66, 21);
-            this.cmbAuxShutdownCh05.TabIndex = 460;
-            // 
-            // cmbAuxShutdownCh04
-            // 
-            this.cmbAuxShutdownCh04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAuxShutdownCh04.FormattingEnabled = true;
-            this.cmbAuxShutdownCh04.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbAuxShutdownCh04.Location = new System.Drawing.Point(523, 241);
-            this.cmbAuxShutdownCh04.Name = "cmbAuxShutdownCh04";
-            this.cmbAuxShutdownCh04.Size = new System.Drawing.Size(66, 21);
-            this.cmbAuxShutdownCh04.TabIndex = 459;
-            // 
-            // cmbAuxShutdownCh03
-            // 
-            this.cmbAuxShutdownCh03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAuxShutdownCh03.FormattingEnabled = true;
-            this.cmbAuxShutdownCh03.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbAuxShutdownCh03.Location = new System.Drawing.Point(451, 241);
-            this.cmbAuxShutdownCh03.Name = "cmbAuxShutdownCh03";
-            this.cmbAuxShutdownCh03.Size = new System.Drawing.Size(66, 21);
-            this.cmbAuxShutdownCh03.TabIndex = 458;
-            // 
-            // cmbAuxShutdownCh02
-            // 
-            this.cmbAuxShutdownCh02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAuxShutdownCh02.FormattingEnabled = true;
-            this.cmbAuxShutdownCh02.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbAuxShutdownCh02.Location = new System.Drawing.Point(379, 241);
-            this.cmbAuxShutdownCh02.Name = "cmbAuxShutdownCh02";
-            this.cmbAuxShutdownCh02.Size = new System.Drawing.Size(66, 21);
-            this.cmbAuxShutdownCh02.TabIndex = 457;
-            // 
-            // cmbAuxShutdownCh01
-            // 
-            this.cmbAuxShutdownCh01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAuxShutdownCh01.FormattingEnabled = true;
-            this.cmbAuxShutdownCh01.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbAuxShutdownCh01.Location = new System.Drawing.Point(307, 241);
-            this.cmbAuxShutdownCh01.Name = "cmbAuxShutdownCh01";
-            this.cmbAuxShutdownCh01.Size = new System.Drawing.Size(66, 21);
-            this.cmbAuxShutdownCh01.TabIndex = 456;
-            // 
-            // cmbAuxShutdownCh00
-            // 
-            this.cmbAuxShutdownCh00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAuxShutdownCh00.FormattingEnabled = true;
-            this.cmbAuxShutdownCh00.Items.AddRange(new object[] {
-            "Disable",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbAuxShutdownCh00.Location = new System.Drawing.Point(235, 241);
-            this.cmbAuxShutdownCh00.Name = "cmbAuxShutdownCh00";
-            this.cmbAuxShutdownCh00.Size = new System.Drawing.Size(66, 21);
-            this.cmbAuxShutdownCh00.TabIndex = 455;
-            // 
-            // label116
-            // 
-            this.label116.AutoSize = true;
-            this.label116.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.label116.ForeColor = System.Drawing.SystemColors.Control;
-            this.label116.Location = new System.Drawing.Point(2, 243);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(122, 17);
-            this.label116.TabIndex = 454;
-            this.label116.Text = "Shutdown Recovery";
             // 
             // Form1
             // 
@@ -29380,6 +30296,58 @@ namespace M1ConfigGenerator
         private System.Windows.Forms.ComboBox cmbAuxShutdownCh01;
         private System.Windows.Forms.ComboBox cmbAuxShutdownCh00;
         private System.Windows.Forms.Label label116;
+        private System.Windows.Forms.ComboBox cmbBreakShutdownCh10;
+        private System.Windows.Forms.ComboBox cmbBreakShutdownCh11;
+        private System.Windows.Forms.ComboBox cmbBreakShutdownCh09;
+        private System.Windows.Forms.ComboBox cmbBreakShutdownCh08;
+        private System.Windows.Forms.ComboBox cmbBreakShutdownCh07;
+        private System.Windows.Forms.ComboBox cmbBreakShutdownCh06;
+        private System.Windows.Forms.ComboBox cmbBreakShutdownCh05;
+        private System.Windows.Forms.ComboBox cmbBreakShutdownCh04;
+        private System.Windows.Forms.ComboBox cmbBreakShutdownCh03;
+        private System.Windows.Forms.ComboBox cmbBreakShutdownCh02;
+        private System.Windows.Forms.ComboBox cmbBreakShutdownCh01;
+        private System.Windows.Forms.ComboBox cmbBreakShutdownCh00;
+        private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.ComboBox cmbDimShutdownCh10;
+        private System.Windows.Forms.ComboBox cmbDimShutdownCh11;
+        private System.Windows.Forms.ComboBox cmbDimShutdownCh09;
+        private System.Windows.Forms.ComboBox cmbDimShutdownCh08;
+        private System.Windows.Forms.ComboBox cmbDimShutdownCh07;
+        private System.Windows.Forms.ComboBox cmbDimShutdownCh06;
+        private System.Windows.Forms.ComboBox cmbDimShutdownCh05;
+        private System.Windows.Forms.ComboBox cmbDimShutdownCh04;
+        private System.Windows.Forms.ComboBox cmbDimShutdownCh03;
+        private System.Windows.Forms.ComboBox cmbDimShutdownCh02;
+        private System.Windows.Forms.ComboBox cmbDimShutdownCh01;
+        private System.Windows.Forms.ComboBox cmbDimShutdownCh00;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.ComboBox cmbHCShutdownCh10;
+        private System.Windows.Forms.ComboBox cmbHCShutdownCh11;
+        private System.Windows.Forms.ComboBox cmbHCShutdownCh09;
+        private System.Windows.Forms.ComboBox cmbHCShutdownCh08;
+        private System.Windows.Forms.ComboBox cmbHCShutdownCh07;
+        private System.Windows.Forms.ComboBox cmbHCShutdownCh06;
+        private System.Windows.Forms.ComboBox cmbHCShutdownCh05;
+        private System.Windows.Forms.ComboBox cmbHCShutdownCh04;
+        private System.Windows.Forms.ComboBox cmbHCShutdownCh03;
+        private System.Windows.Forms.ComboBox cmbHCShutdownCh02;
+        private System.Windows.Forms.ComboBox cmbHCShutdownCh01;
+        private System.Windows.Forms.ComboBox cmbHCShutdownCh00;
+        private System.Windows.Forms.Label label119;
+        private System.Windows.Forms.ComboBox cmbHRShutdownCh10;
+        private System.Windows.Forms.ComboBox cmbHRShutdownCh11;
+        private System.Windows.Forms.ComboBox cmbHRShutdownCh09;
+        private System.Windows.Forms.ComboBox cmbHRShutdownCh08;
+        private System.Windows.Forms.ComboBox cmbHRShutdownCh07;
+        private System.Windows.Forms.ComboBox cmbHRShutdownCh06;
+        private System.Windows.Forms.ComboBox cmbHRShutdownCh05;
+        private System.Windows.Forms.ComboBox cmbHRShutdownCh04;
+        private System.Windows.Forms.ComboBox cmbHRShutdownCh03;
+        private System.Windows.Forms.ComboBox cmbHRShutdownCh02;
+        private System.Windows.Forms.ComboBox cmbHRShutdownCh01;
+        private System.Windows.Forms.ComboBox cmbHRShutdownCh00;
+        private System.Windows.Forms.Label label120;
     }
 }
 

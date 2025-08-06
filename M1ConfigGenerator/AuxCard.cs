@@ -28,6 +28,7 @@ namespace M1ConfigGenerator
             M1_ChangeAddress(auxChTimeoutTimeNames);
             M1_ChangeAddress(auxChMaxOnNames);
             M1_ChangeAddress(auxChMaxDurRecoveryTimeNames);
+            M1_ChangeAddress(auxChShutDownRecoveryNames);
             M1_ChangeAddress(cardChGroup0Names);
             M1_ChangeAddress(cardChGroup1Names);
             M1_ChangeAddress(cardChGroup2Names);

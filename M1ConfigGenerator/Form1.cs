@@ -49,6 +49,7 @@ namespace M1ConfigGenerator
         ComboBox[] breakerPaired;
         ComboBox[] breakerIGNs;
         ComboBox[] breakerParks;
+        ComboBox[] breakerShutdown;
 
         List<DimmerCard> dimmerObjects = new List<DimmerCard>();
         int DimCardActive;
@@ -59,19 +60,8 @@ namespace M1ConfigGenerator
         bool[][] dimGroups;
         CheckBox[] dimGetGroup00; CheckBox[] dimGetGroup01; CheckBox[] dimGetGroup02; CheckBox[] dimGetGroup03; CheckBox[] dimGetGroup04; CheckBox[] dimGetGroup05;
         CheckBox[] dimGetGroup06; CheckBox[] dimGetGroup07; CheckBox[] dimGetGroup08; CheckBox[] dimGetGroup09; CheckBox[] dimGetGroup10; CheckBox[] dimGetGroup11;
-        CheckBox[][] dimGetGroups;
-        CheckBox[] dimmerLocks; 
-        ComboBox[] dimmerPWMFreq;
-        TextBox[] dimmerPWMDuties;
-        CheckBox[] dimmerPWMEnables;
-        CheckBox[] dimmerOverrides;
-        ComboBox[] dimmerDirections;
-        CheckBox[] dimmerTimeouts;
-        TextBox[] dimmerTimeoutTimes;
-        TextBox[] dimmerMaxOns;
-        TextBox[] dimmerMaxDurRecs;
-        TextBox[] dimmerUCAmps;
-        ComboBox[] dimmerMeasCurTimes;
+        CheckBox[][] dimGetGroups; CheckBox[] dimmerLocks; ComboBox[] dimmerPWMFreq; TextBox[] dimmerPWMDuties; CheckBox[] dimmerPWMEnables; CheckBox[] dimmerOverrides; ComboBox[] dimmerDirections;
+        CheckBox[] dimmerTimeouts; TextBox[] dimmerTimeoutTimes; TextBox[] dimmerMaxOns; TextBox[] dimmerMaxDurRecs; TextBox[] dimmerUCAmps; ComboBox[] dimmerMeasCurTimes; ComboBox[] dimmerShutdown;
 
 
         List<HCCard> hcObjects = new List<HCCard>();
@@ -84,7 +74,7 @@ namespace M1ConfigGenerator
         CheckBox[][] hcGetGroups;
         ComboBox[] hc1OCAmpsQuick; TextBox[] hcOCAmps; ComboBox[] hcOCTime; ComboBox[] hcModesQuick; ComboBox[] hcStartupQuick; 
         CheckBox[] hcLock; TextBox[] hcPWMDuties; CheckBox[] hcPWMEnables; ComboBox[] hcDirections; ComboBox[] hcModeParam; ComboBox[] hcDeadTimes;
-        ComboBox[] hcPaired; CheckBox[] hcTimeouts; TextBox[] hcTimeoutTimes; TextBox[] hcMaxOns; TextBox[] hcMaxDurRec; TextBox[] hcUndAmps; ComboBox[] hcMeasCurTimes;
+        ComboBox[] hcPaired; CheckBox[] hcTimeouts; TextBox[] hcTimeoutTimes; TextBox[] hcMaxOns; TextBox[] hcMaxDurRec; TextBox[] hcUndAmps; ComboBox[] hcMeasCurTimes; ComboBox[] hcShutdown;
 
         List<HCCard> hrObjects = new List<HCCard>();
         int HRCardActive;
@@ -97,7 +87,7 @@ namespace M1ConfigGenerator
         Label[] hrChannelLabels;
         ComboBox[] hrOCAmpsQuick; TextBox[] hrOCAmps; ComboBox[] hrOCTime; ComboBox[] hrModesQuick; ComboBox[] hrStartupQuick;
         CheckBox[] hrLock; TextBox[] hrPWMDuties; ComboBox[] hrDirections; ComboBox[] hrModeParam; ComboBox[] hrDeadTimes;
-        ComboBox[] hrPaired; CheckBox[] hrTimeouts; TextBox[] hrTimeoutTimes; TextBox[] hrMaxOns; TextBox[] hrMaxDurRec; TextBox[] hrUndAmps; ComboBox[] hrMeasCurTimes;
+        ComboBox[] hrPaired; CheckBox[] hrTimeouts; TextBox[] hrTimeoutTimes; TextBox[] hrMaxOns; TextBox[] hrMaxDurRec; TextBox[] hrUndAmps; ComboBox[] hrMeasCurTimes; ComboBox[] hrShutdown;
 
         List<LCCard> lcObjects = new List<LCCard>();
         int LCCardActive;
@@ -818,6 +808,7 @@ namespace M1ConfigGenerator
                 breakerObjects[card].Brk_SetPaired(channel, breakerPaired[channel].Text);
                 breakerObjects[card].Brk_SetIGNSafety(channel, breakerIGNs[channel].Text);
                 breakerObjects[card].Brk_SetParkSafety(channel, breakerParks[channel].Text);
+                breakerObjects[card].Brk_SetShutdownRecovery(channel, breakerShutdown[channel].Text);
             }
 
         }
@@ -847,6 +838,7 @@ namespace M1ConfigGenerator
                 breakerPaired[channel].Text = breakerObjects[card].Brk_GetPaired(channel);
                 breakerIGNs[channel].Text = breakerObjects[card].Brk_GetIGNSafety(channel);
                 breakerParks[channel].Text = breakerObjects[card].Brk_GetParkSafety(channel);
+                breakerShutdown[channel].Text = breakerObjects[card].Brk_GetShutdownRecovery(channel);
             }
         }
 
@@ -1099,6 +1091,7 @@ namespace M1ConfigGenerator
                 dimmerObjects[card].Dimmer_SetMaxDurRec(channel, dimmerMaxDurRecs[channel].Text);
                 dimmerObjects[card].Dimmer_SetMeasuredCurrTimeConst(channel, dimmerMeasCurTimes[channel].Text);
                 dimmerObjects[card].Dimmer_SetUCAmps(channel, dimmerUCAmps[channel].Text);
+                dimmerObjects[card].Dimmer_SetShutdownRecovery(channel, dimmerShutdown[channel].Text);
             }
         }
 
@@ -1134,6 +1127,7 @@ namespace M1ConfigGenerator
                 dimmerMaxDurRecs[channel].Text      = dimmerObjects[card].Dimmer_GetMaxDurRec(channel);
                 dimmerMeasCurTimes[channel].Text    = dimmerObjects[card].Dimmer_GetMeasuredCurrTimeConst(channel);
                 dimmerUCAmps[channel].Text          = dimmerObjects[card].Dimmer_GetUCAmps(channel);
+                dimmerShutdown[channel].Text        = dimmerObjects[card].Dimmer_GetShutdownRecovery(channel);
             }
         }
 
@@ -1382,6 +1376,7 @@ namespace M1ConfigGenerator
                 hcObjects[card].HC_SetUndAmp(channel, hcUndAmps[channel].Text);
                 hcObjects[card].HC_SetOCTime(channel, hcOCTime[channel].Text);
                 hcObjects[card].HC_SetMeasCurTime(channel, hcMeasCurTimes[channel].Text);
+                hcObjects[card].HC_SetShutdownRecovery(channel, hcShutdown[channel].Text);
             }
         }
 
@@ -1441,6 +1436,7 @@ namespace M1ConfigGenerator
                 hcGetGroups[channel][1].Checked = hcObjects[card].M1_GetGroup1(channel);
                 hcGetGroups[channel][2].Checked = hcObjects[card].M1_GetGroup2(channel);
                 hcGetGroups[channel][3].Checked = hcObjects[card].M1_GetGroup3(channel);
+                hcShutdown[channel].Text = hcObjects[card].HC_GetShutdownRecovery(channel);
             }
         }
 
@@ -2503,6 +2499,7 @@ namespace M1ConfigGenerator
                 hrObjects[card].HC_SetUndAmp(channel, hrUndAmps[channel].Text);
                 hrObjects[card].HC_SetOCTime(channel, hrOCTime[channel].Text);
                 hrObjects[card].HC_SetMeasCurTime(channel, hrMeasCurTimes[channel].Text);
+                hrObjects[card].HC_SetShutdownRecovery(channel, hrShutdown[channel].Text);
             }
         }
 
@@ -2560,6 +2557,7 @@ namespace M1ConfigGenerator
                 hrGetGroups[channel][1].Checked = hrObjects[card].M1_GetGroup1(channel);
                 hrGetGroups[channel][2].Checked = hrObjects[card].M1_GetGroup2(channel);
                 hrGetGroups[channel][3].Checked = hrObjects[card].M1_GetGroup3(channel);
+                hrShutdown[channel].Text = hrObjects[card].HC_GetShutdownRecovery(channel);
             }
         }
 
@@ -4456,6 +4454,7 @@ namespace M1ConfigGenerator
             breakerPaired = new ComboBox[] { cmbBreak1PairedCh00, cmbBreak1PairedCh01, cmbBreak1PairedCh02, cmbBreak1PairedCh03, cmbBreak1PairedCh04, cmbBreak1PairedCh05, cmbBreak1PairedCh06, cmbBreak1PairedCh07, cmbBreak1PairedCh08, cmbBreak1PairedCh09, cmbBreak1PairedCh10, cmbBreak1PairedCh11 };
             breakerIGNs = new ComboBox[] { cmbBreak1IGNCh00, cmbBreak1IGNCh01, cmbBreak1IGNCh02, cmbBreak1IGNCh03, cmbBreak1IGNCh04, cmbBreak1IGNCh05, cmbBreak1IGNCh06, cmbBreak1IGNCh07, cmbBreak1IGNCh08, cmbBreak1IGNCh09, cmbBreak1IGNCh10, cmbBreak1IGNCh11 };
             breakerParks = new ComboBox[] { cmbBreak1ParkCh00, cmbBreak1ParkCh01,  cmbBreak1ParkCh02, cmbBreak1ParkCh03, cmbBreak1ParkCh04, cmbBreak1ParkCh05, cmbBreak1ParkCh06, cmbBreak1ParkCh07, cmbBreak1ParkCh08, cmbBreak1ParkCh09, cmbBreak1ParkCh10, cmbBreak1ParkCh11 };
+            breakerShutdown = new ComboBox[] { cmbBreakShutdownCh00, cmbBreakShutdownCh01, cmbBreakShutdownCh02, cmbBreakShutdownCh03, cmbBreakShutdownCh04, cmbBreakShutdownCh05, cmbBreakShutdownCh06, cmbBreakShutdownCh07, cmbBreakShutdownCh08, cmbBreakShutdownCh09, cmbBreakShutdownCh10, cmbBreakShutdownCh11 };
 
             dimGetGroup00 = new CheckBox[] { chkDimmer1MG1Ch00, chkDimmer1MG2Ch00, chkDimmer1MG3Ch00, chkDimmer1MG4Ch00 };
             dimGetGroup01 = new CheckBox[] { chkDimmer1MG1Ch01, chkDimmer1MG2Ch01, chkDimmer1MG3Ch01, chkDimmer1MG4Ch01 };
@@ -4484,6 +4483,7 @@ namespace M1ConfigGenerator
             dimmerMaxDurRecs = new TextBox[] { txtbDimmer1MaxDurRecCh00, txtbDimmer1MaxDurRecCh01, txtbDimmer1MaxDurRecCh02, txtbDimmer1MaxDurRecCh03, txtbDimmer1MaxDurRecCh04, txtbDimmer1MaxDurRecCh05, txtbDimmer1MaxDurRecCh06, txtbDimmer1MaxDurRecCh07, txtbDimmer1MaxDurRecCh08, txtbDimmer1MaxDurRecCh09, txtbDimmer1MaxDurRecCh10, txtbDimmer1MaxDurRecCh11 };
             dimmerUCAmps = new TextBox[] { txtbDimmer1UCAmpsCh00, txtbDimmer1UCAmpsCh01, txtbDimmer1UCAmpsCh02, txtbDimmer1UCAmpsCh03, txtbDimmer1UCAmpsCh04, txtbDimmer1UCAmpsCh05, txtbDimmer1UCAmpsCh06, txtbDimmer1UCAmpsCh07, txtbDimmer1UCAmpsCh08, txtbDimmer1UCAmpsCh09, txtbDimmer1UCAmpsCh10, txtbDimmer1UCAmpsCh11 };
             dimmerMeasCurTimes = new ComboBox[] { cmbDimmer1MeasCurTimeCh00, cmbDimmer1MeasCurTimeCh01, cmbDimmer1MeasCurTimeCh02, cmbDimmer1MeasCurTimeCh03, cmbDimmer1MeasCurTimeCh04, cmbDimmer1MeasCurTimeCh05, cmbDimmer1MeasCurTimeCh06, cmbDimmer1MeasCurTimeCh07, cmbDimmer1MeasCurTimeCh08, cmbDimmer1MeasCurTimeCh09, cmbDimmer1MeasCurTimeCh10, cmbDimmer1MeasCurTimeCh11 };
+            dimmerShutdown = new ComboBox[] { cmbDimShutdownCh00, cmbDimShutdownCh01, cmbDimShutdownCh02, cmbDimShutdownCh03, cmbDimShutdownCh04, cmbDimShutdownCh05, cmbDimShutdownCh06, cmbDimShutdownCh07, cmbDimShutdownCh08, cmbDimShutdownCh09, cmbDimShutdownCh10, cmbDimShutdownCh11 };
 
             hcGetGroup00 = new CheckBox[] { chkHC1MG1Ch00, chkHC1MG2Ch00, chkHC1MG3Ch00, chkHC1MG4Ch00 };
             hcGetGroup01 = new CheckBox[] { chkHC1MG1Ch01, chkHC1MG2Ch01, chkHC1MG3Ch01, chkHC1MG4Ch01 };
@@ -4516,6 +4516,7 @@ namespace M1ConfigGenerator
             hcMaxDurRec = new TextBox[] { txtbHC1MaxDurRecCh00, txtbHC1MaxDurRecCh01, txtbHC1MaxDurRecCh02, txtbHC1MaxDurRecCh03, txtbHC1MaxDurRecCh04, txtbHC1MaxDurRecCh05, txtbHC1MaxDurRecCh06, txtbHC1MaxDurRecCh07, txtbHC1MaxDurRecCh08, txtbHC1MaxDurRecCh09, txtbHC1MaxDurRecCh10, txtbHC1MaxDurRecCh11 };
             hcUndAmps = new TextBox[] { txtbHC1UndAmpCh00, txtbHC1UndAmpCh01, txtbHC1UndAmpCh02, txtbHC1UndAmpCh03, txtbHC1UndAmpCh04, txtbHC1UndAmpCh05, txtbHC1UndAmpCh06, txtbHC1UndAmpCh07, txtbHC1UndAmpCh08, txtbHC1UndAmpCh09, txtbHC1UndAmpCh10, txtbHC1UndAmpCh11 };
             hcMeasCurTimes = new ComboBox[] { cmbHC1MeasCurTimeCh00, cmbHC1MeasCurTimeCh01, cmbHC1MeasCurTimeCh02, cmbHC1MeasCurTimeCh03, cmbHC1MeasCurTimeCh04, cmbHC1MeasCurTimeCh05, cmbHC1MeasCurTimeCh06, cmbHC1MeasCurTimeCh07, cmbHC1MeasCurTimeCh08, cmbHC1MeasCurTimeCh09, cmbHC1MeasCurTimeCh10, cmbHC1MeasCurTimeCh11 };
+            hcShutdown = new ComboBox[] { cmbHCShutdownCh00, cmbHCShutdownCh01, cmbHCShutdownCh02, cmbHCShutdownCh03, cmbHCShutdownCh04, cmbHCShutdownCh05, cmbHCShutdownCh06, cmbHCShutdownCh07, cmbHCShutdownCh08, cmbHCShutdownCh09, cmbHCShutdownCh10,  cmbHCShutdownCh11 };
 
             hrGetGroup00 = new CheckBox[] { chkHRMG1Ch00, chkHRMG2Ch00, chkHRMG3Ch00, chkHRMG4Ch00 };
             hrGetGroup01 = new CheckBox[] { chkHRMG1Ch01, chkHRMG2Ch01, chkHRMG3Ch01, chkHRMG4Ch01 };
@@ -4548,6 +4549,7 @@ namespace M1ConfigGenerator
             hrMaxDurRec = new TextBox[] { tbxHRMaxDurRecCh00, tbxHRMaxDurRecCh01, tbxHRMaxDurRecCh02, tbxHRMaxDurRecCh03, tbxHRMaxDurRecCh04, tbxHRMaxDurRecCh05, tbxHRMaxDurRecCh06, tbxHRMaxDurRecCh07, tbxHRMaxDurRecCh08, tbxHRMaxDurRecCh09, tbxHRMaxDurRecCh10, tbxHRMaxDurRecCh11 };
             hrUndAmps = new TextBox[] { tbxHRUndAmpsCh00, tbxHRUndAmpsCh01, tbxHRUndAmpsCh02, tbxHRUndAmpsCh03, tbxHRUndAmpsCh04, tbxHRUndAmpsCh05, tbxHRUndAmpsCh06, tbxHRUndAmpsCh07, tbxHRUndAmpsCh08, tbxHRUndAmpsCh09, tbxHRUndAmpsCh10, tbxHRUndAmpsCh11 };
             hrMeasCurTimes = new ComboBox[] { cmbHRMeasCurTimeCh00, cmbHRMeasCurTimeCh01, cmbHRMeasCurTimeCh02, cmbHRMeasCurTimeCh03, cmbHRMeasCurTimeCh04, cmbHRMeasCurTimeCh05, cmbHRMeasCurTimeCh06, cmbHRMeasCurTimeCh07, cmbHRMeasCurTimeCh08, cmbHRMeasCurTimeCh09, cmbHRMeasCurTimeCh10, cmbHRMeasCurTimeCh11 };
+            hrShutdown = new ComboBox[] { cmbHRShutdownCh00, cmbHRShutdownCh01, cmbHRShutdownCh02, cmbHRShutdownCh03, cmbHRShutdownCh04, cmbHRShutdownCh05, cmbHRShutdownCh06, cmbHRShutdownCh07, cmbHRShutdownCh08, cmbHRShutdownCh09, cmbHRShutdownCh10, cmbHRShutdownCh11 };
 
             lcGetGroup00 = new CheckBox[] { chkLC1MG1Ch00, chkLC1MG2Ch00, chkLC1MG3Ch00, chkLC1MG4Ch00 };
             lcGetGroup01 = new CheckBox[] { chkLC1MG1Ch01, chkLC1MG2Ch01, chkLC1MG3Ch01, chkLC1MG4Ch01 };

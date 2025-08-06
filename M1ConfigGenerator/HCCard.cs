@@ -34,6 +34,9 @@ namespace M1ConfigGenerator
             M1_ChangeAddress(hcChTimeoutTimeNames);
             M1_ChangeAddress(hcChMaxOnNames);
             M1_ChangeAddress(hcChMaxDurRecoveryTimeNames);
+            M1_ChangeAddress(hcChShutDownRecoveryNames);
+            M1_ChangeAddress(hcChMaxDutyNames);
+            M1_ChangeAddress(hcChMinDutyNames);
             M1_ChangeAddress(cardChGroup0Names);
             M1_ChangeAddress(cardChGroup1Names);
             M1_ChangeAddress(cardChGroup2Names);
@@ -67,7 +70,7 @@ namespace M1ConfigGenerator
                 sw.WriteLine("");
 
                 // inherited M1 parameters              
-                for (int i = 0; i <= (int)M1Parameters.BASE_DRIVER_INDEX; i++)
+                for (int i = 0; i <= (int)M1Parameters.OFF_STATUS_MULT; i++)
                 {
                     sw.WriteLine("#define " + m1ParameterNames[i] + tabs[2] + m1ParameterValues[i]);
 
@@ -76,7 +79,7 @@ namespace M1ConfigGenerator
                         sw.WriteLine("");
                         sw.WriteLine("// ### DC DRIVER PARAMETERS ###");
                     }
-                    else if (i == (int)M1Parameters.DEV_ADDR || i == (int)M1Parameters.DEV_ADDR_CFG_TYPE || i == (int)M1Parameters.ENABLE_FORCE_CMDS || i == (int)M1Parameters.DSA_ADDR || i == (int)M1Parameters.BASE_DRIVER_INDEX)
+                    else if (i == (int)M1Parameters.DEV_ADDR || i == (int)M1Parameters.DEV_ADDR_CFG_TYPE || i == (int)M1Parameters.ENABLE_FORCE_CMDS || i == (int)M1Parameters.DSA_ADDR || i == (int)M1Parameters.BASE_DRIVER_INDEX || i == (int)M1Parameters.OFF_STATUS_MULT)
                     {
                         sw.WriteLine("");
                     }
@@ -464,6 +467,18 @@ namespace M1ConfigGenerator
             return hcQuickStartupValue[argInt];
         }
 
+        public void HC_SetShutdownRecovery(int argInt, string argString)
+        {
+            if (argString == "Disable") { hcChShutDownRecoveryValues[argInt] = "0"; }
+            else { hcChShutDownRecoveryValues[argInt] = argString; }
+        }
+
+        public string HC_GetShutdownRecovery(int argInt)
+        {
+            if (hcChShutDownRecoveryValues[argInt] == "0") { return "Disable"; }
+            else { return hcChShutDownRecoveryValues[argInt]; }
+        }
+
         // No setters for forward or reverse override at this time
 
         //private bool isHCRelay = false;
@@ -544,5 +559,14 @@ namespace M1ConfigGenerator
         public string[] hcQuickModeValue = { "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+" };
         public string[] hcQuickAmpsValue = { "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10" };
         public string[] hcQuickStartupValue = { "Off", "Off", "Off", "Off", "Off", "Off", "Off", "Off", "Off", "Off", "Off", "Off" };
+        //
+        public string[] hcChMaxDutyNames = { "MAX_DUTY_CHNL_Z0", "MAX_DUTY_CHNL_Z1", "MAX_DUTY_CHNL_Z2", "MAX_DUTY_CHNL_Z3", "MAX_DUTY_CHNL_Z4", "MAX_DUTY_CHNL_Z5", "MAX_DUTY_CHNL_Z6", "MAX_DUTY_CHNL_Z7", "MAX_DUTY_CHNL_Z8", "MAX_DUTY_CHNL_Z9", "MAX_DUTY_CHNL_Z10", "MAX_DUTY_CHNL_Z11", };
+        public string[] hcChMaxDutyValues = { "255", "255", "255", "255", "255", "255", "255", "255", "255", "255", "255", "255" };
+        //
+        public string[] hcChMinDutyNames = { "MIN_DUTY_CHNL_Z0", "MIN_DUTY_CHNL_Z1", "MIN_DUTY_CHNL_Z2", "MIN_DUTY_CHNL_Z3", "MIN_DUTY_CHNL_Z4", "MIN_DUTY_CHNL_Z5", "MIN_DUTY_CHNL_Z6", "MIN_DUTY_CHNL_Z7", "MIN_DUTY_CHNL_Z8", "MIN_DUTY_CHNL_Z9", "MIN_DUTY_CHNL_Z10", "MIN_DUTY_CHNL_Z11", };
+        public string[] hcChMinDutyValues = { "255", "255", "255", "255", "255", "255", "255", "255", "255", "255", "255", "255" };
+        //
+        public string[] hcChShutDownRecoveryNames = { "SHUTDOWN_RECOVERY_CHNL_Z0", "SHUTDOWN_RECOVERY_CHNL_Z1", "SHUTDOWN_RECOVERY_CHNL_Z2", "SHUTDOWN_RECOVERY_CHNL_Z3", "SHUTDOWN_RECOVERY_CHNL_Z4", "SHUTDOWN_RECOVERY_CHNL_Z5", "SHUTDOWN_RECOVERY_CHNL_Z6", "SHUTDOWN_RECOVERY_CHNL_Z7", "SHUTDOWN_RECOVERY_CHNL_Z8", "SHUTDOWN_RECOVERY_CHNL_Z9", "SHUTDOWN_RECOVERY_CHNL_Z10", "SHUTDOWN_RECOVERY_CHNL_Z11" };
+        public string[] hcChShutDownRecoveryValues = { "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2" };
     }
 }

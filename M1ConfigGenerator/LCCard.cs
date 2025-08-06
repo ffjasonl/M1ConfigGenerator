@@ -36,6 +36,7 @@ namespace M1ConfigGenerator
             M1_ChangeAddress(lcChTimeoutTimeNames);
             M1_ChangeAddress(lcChMaxOnNames);
             M1_ChangeAddress(lcChMaxDurRecoveryTimeNames);
+            M1_ChangeAddress(lcChShutDownRecoveryNames);
             M1_ChangeAddress(cardChGroup0Names);
             M1_ChangeAddress(cardChGroup1Names);
             M1_ChangeAddress(cardChGroup2Names);
@@ -71,7 +72,7 @@ namespace M1ConfigGenerator
                 sw.WriteLine("");
 
                 // inherited M1 parameters              
-                for (int i = 0; i <= (int)M1Parameters.BASE_DRIVER_INDEX; i++)
+                for (int i = 0; i <= (int)M1Parameters.OFF_STATUS_MULT; i++)
                 {
                     sw.WriteLine("#define " + m1ParameterNames[i] + tabs[2] + m1ParameterValues[i]);
 
@@ -80,7 +81,7 @@ namespace M1ConfigGenerator
                         sw.WriteLine("");
                         sw.WriteLine("// ### DC DRIVER PARAMETERS ###");
                     }
-                    else if (i == (int)M1Parameters.DEV_ADDR || i == (int)M1Parameters.DEV_ADDR_CFG_TYPE || i == (int)M1Parameters.ENABLE_FORCE_CMDS || i == (int)M1Parameters.DSA_ADDR || i == (int)M1Parameters.BASE_DRIVER_INDEX)
+                    else if (i == (int)M1Parameters.DEV_ADDR || i == (int)M1Parameters.DEV_ADDR_CFG_TYPE || i == (int)M1Parameters.ENABLE_FORCE_CMDS || i == (int)M1Parameters.DSA_ADDR || i == (int)M1Parameters.BASE_DRIVER_INDEX || i == (int)M1Parameters.OFF_STATUS_MULT)
                     {
                         sw.WriteLine("");
                     }
@@ -516,8 +517,9 @@ namespace M1ConfigGenerator
         public string[] lcChParkValues = { "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED" };
         //
         public string[] lcQuickModeValue = { "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+", "12V+" };
-
-
+        //
+        public string[] lcChShutDownRecoveryNames = { "SHUTDOWN_RECOVERY_CHNL_Z0", "SHUTDOWN_RECOVERY_CHNL_Z1", "SHUTDOWN_RECOVERY_CHNL_Z2", "SHUTDOWN_RECOVERY_CHNL_Z3", "SHUTDOWN_RECOVERY_CHNL_Z4", "SHUTDOWN_RECOVERY_CHNL_Z5", "SHUTDOWN_RECOVERY_CHNL_Z6", "SHUTDOWN_RECOVERY_CHNL_Z7", "SHUTDOWN_RECOVERY_CHNL_Z8", "SHUTDOWN_RECOVERY_CHNL_Z9", "SHUTDOWN_RECOVERY_CHNL_Z10", "SHUTDOWN_RECOVERY_CHNL_Z11" };
+        public string[] lcChShutDownRecoveryValues = { "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2" };
     }
 
 }

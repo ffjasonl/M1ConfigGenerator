@@ -10,6 +10,21 @@ namespace M1ConfigGenerator
 {
     class BreakerCard : M1Card
     {
+        enum VINParameters {    HARD_LIMIT_CURRENT,         // 0
+                                HARD_LIMIT_TIME,            // 1
+                                AVG_TIME,                   // 2
+                                TRIP_MILLIS,                // 3
+                                INTERRUPTER_INDEX,          // 4
+                                LOAD_CONTRIBUTION_FIXED,    // 5
+                                LOAD_CONTRIBUTION_SCALED,   // 6
+                                IGN_SAFETY,                 // 7
+                                PARK_SAFETY,                // 8
+                                SHUTDOWN_RECOVERY,          // 9
+                                GROUP0,                     // 10
+                                GROUP1,                     // 11
+                                GROUP2,                     // 12
+                                GROUP3,                     // 13
+                                MAX }
         public BreakerCard(int argInt)
         {
             M1_SetCardLetterOnCreation(Convert.ToString(argInt));
@@ -23,6 +38,7 @@ namespace M1ConfigGenerator
             M1_ChangeAddress(vinParameterNames);
             // channels
             M1_ChangeAddress(breakerChDirectionNames);
+            M1_ChangeAddress(breakerChShutDownRecoveryNames);
             M1_ChangeAddress(breakerChOvercurrentAmpsNames);
             M1_ChangeAddress(breakerChUndercurrentAmpsNames);
             M1_ChangeAddress(breakerChOvercurrentTimeNames);
@@ -58,7 +74,7 @@ namespace M1ConfigGenerator
                 sw.WriteLine("");
 
                 // inherited M1 parameters              
-                for (int i = 0; i <= (int)M1Parameters.BASE_DRIVER_INDEX; i++)
+                for (int i = 0; i <= (int)M1Parameters.OFF_STATUS_MULT; i++)
                 {
                     sw.WriteLine("#define " + m1ParameterNames[i] + tabs[2] + m1ParameterValues[i]);
 
@@ -67,7 +83,7 @@ namespace M1ConfigGenerator
                         sw.WriteLine("");
                         sw.WriteLine("// ### DC DRIVER PARAMETERS ###");
                     }
-                    else if (i == (int)M1Parameters.DEV_ADDR || i == (int)M1Parameters.DEV_ADDR_CFG_TYPE || i == (int)M1Parameters.ENABLE_FORCE_CMDS || i == (int)M1Parameters.DSA_ADDR || i == (int)M1Parameters.BASE_DRIVER_INDEX)
+                    else if (i == (int)M1Parameters.DEV_ADDR || i == (int)M1Parameters.DEV_ADDR_CFG_TYPE || i == (int)M1Parameters.ENABLE_FORCE_CMDS || i == (int)M1Parameters.DSA_ADDR || i == (int)M1Parameters.BASE_DRIVER_INDEX || i == (int)M1Parameters.OFF_STATUS_MULT)
                     {
                         sw.WriteLine("");
                     }
@@ -75,9 +91,9 @@ namespace M1ConfigGenerator
 
                 // VIN breaker
                 sw.WriteLine("// ### VIN BREAKER SETTINGS ###");
-                for (int i = 0; i < 13; i++)
+                for (int i = 0; i < (int)VINParameters.MAX; i++)
                 {
-                    if (i == 0)
+                    if (i == (int)VINParameters.HARD_LIMIT_CURRENT)
                     {
                         sw.WriteLine("#define " + vinParameterNames[i] + tabs[2] + "VIN_CONVERT_AMPS_TO_ADC(" + vinParameterValues[i] + ")");
                     }
@@ -86,7 +102,7 @@ namespace M1ConfigGenerator
                         sw.WriteLine("#define " + vinParameterNames[i] + tabs[2] + vinParameterValues[i]);
                     }
 
-                    if (i == 6 || i == 8)
+                    if (i == (int)VINParameters.LOAD_CONTRIBUTION_SCALED || i == (int)VINParameters.SHUTDOWN_RECOVERY)
                     {
                         sw.WriteLine("");
                     }
@@ -99,6 +115,7 @@ namespace M1ConfigGenerator
                     sw.WriteLine("// ### CHANNEL " + Convert.ToString(i) + " ###");
                     sw.WriteLine("#define " + breakerChDirectionNames[i] + tabs[6] + breakerChDirectionValues[i]);
                     sw.WriteLine("");
+                    sw.WriteLine("#define " + breakerChShutDownRecoveryNames[i] + tabs[4] + breakerChShutDownRecoveryValues[i]);
                     sw.WriteLine("#define " + breakerChOvercurrentAmpsNames[i] + tabs[4] + "BRKR_CONVERT_AMPS_TO_ADC_MARGIN(" + breakerChOvercurrentAmpsValues[i] + ")");
                     sw.WriteLine("#define " + breakerChUndercurrentAmpsNames[i] + tabs[4] + "BRKR_CONVERT_AMPS_TO_ADC_MARGIN(" + breakerChUndercurrentAmpsValues[i] + ")");
                     sw.WriteLine("#define " + breakerChOvercurrentTimeNames[i] + tabs[3] + breakerChOvercurrentTimeValues[i]);
@@ -156,33 +173,33 @@ namespace M1ConfigGenerator
 
         public void Brk_SetVINInterrupt(string argString)
         {
-            vinParameterValues[4] = argString; // VIN interrupter index
-            vinParameterValues[9] = argString; // VIN interrupt group, set to same as index
+            vinParameterValues[(int)VINParameters.INTERRUPTER_INDEX] = argString; // VIN interrupter index
+            vinParameterValues[(int)VINParameters.GROUP0] = argString; // VIN interrupt group, set to same as index
         }
 
         public string Brk_GetVINInterrupt()
         {
-            return vinParameterValues[4];
+            return vinParameterValues[(int)VINParameters.INTERRUPTER_INDEX];
         }
 
         public void Brk_SetVINOCAmps(string argString)
         {
-            vinParameterValues[0] = argString;
+            vinParameterValues[(int)VINParameters.HARD_LIMIT_CURRENT] = argString;
         }
 
         public string Brk_GetVINOCAmps()
         {
-            return vinParameterValues[0];
+            return vinParameterValues[(int)VINParameters.HARD_LIMIT_CURRENT];
         }
 
         public void Brk_SetVINOCTime(string argString)
         {
-            vinParameterValues[2] = argString; // average time
+            vinParameterValues[(int)VINParameters.AVG_TIME] = argString; // average time
         }
 
         public string Brk_GetVINOCTime()
         {
-            return vinParameterValues[2];
+            return vinParameterValues[(int)VINParameters.AVG_TIME];
         }
 
         public void Brk_SetDirection(int argInt, string argString)
@@ -273,6 +290,18 @@ namespace M1ConfigGenerator
             else { return "Always"; }
         }
 
+        public void Brk_SetShutdownRecovery(int argInt, string argString)
+        {
+            if (argString == "Disable") { breakerChShutDownRecoveryValues[argInt] = "0"; }
+            else { breakerChShutDownRecoveryValues[argInt] = argString; }
+        }
+
+        public string Brk_GetShutdownRecovery(int argInt)
+        {
+            if (breakerChShutDownRecoveryValues[argInt] == "0") { return "Disable"; }
+            else { return breakerChShutDownRecoveryValues[argInt]; }
+        }
+
         private string configPath = @"M1_DcDriver_Config\Src\M1_Breaker\DeviceConfigs\";
 
         public string[] vinParameterNames =
@@ -286,10 +315,11 @@ namespace M1ConfigGenerator
             "LOAD_CONTRIBUTION_SCALED_MARGIN_Z  ", // 6
             "IGN_SAFETY_EN_CHNL_Z12             ", // 7
             "PARK_SAFETY_EN_CHNL_Z12            ", // 8
-            "GROUP_INDEX0_CHNL_Z12              ", // 9
-            "GROUP_INDEX1_CHNL_Z12              ", // 10
-            "GROUP_INDEX2_CHNL_Z12              ", // 11
-            "GROUP_INDEX3_CHNL_Z12              ", // 12
+            "SHUTDOWN_RECOVERY_CHNL_Z12         ", // 9
+            "GROUP_INDEX0_CHNL_Z12              ", // 10
+            "GROUP_INDEX1_CHNL_Z12              ", // 11
+            "GROUP_INDEX2_CHNL_Z12              ", // 12
+            "GROUP_INDEX3_CHNL_Z12              ", // 13
         };
 
         public string[] vinParameterValues =
@@ -303,10 +333,11 @@ namespace M1ConfigGenerator
             "1.15",                             // 6
             "DRVR_SAFETY_DISABLED",             // 7
             "DRVR_SAFETY_DISABLED",             // 8
-            "DISABLE_GROUP",                    // 9
+            "10",                               // 9
             "DISABLE_GROUP",                    // 10
             "DISABLE_GROUP",                    // 11
             "DISABLE_GROUP",                    // 12
+            "DISABLE_GROUP",                    // 13
         };
 
         //
@@ -336,5 +367,8 @@ namespace M1ConfigGenerator
         //
         public string[] breakerChParkNames = { "PARK_SAFETY_EN_CHNL_Z0 ", "PARK_SAFETY_EN_CHNL_Z1 ", "PARK_SAFETY_EN_CHNL_Z2 ", "PARK_SAFETY_EN_CHNL_Z3 ", "PARK_SAFETY_EN_CHNL_Z4 ", "PARK_SAFETY_EN_CHNL_Z5 ", "PARK_SAFETY_EN_CHNL_Z6 ", "PARK_SAFETY_EN_CHNL_Z7 ", "PARK_SAFETY_EN_CHNL_Z8 ", "PARK_SAFETY_EN_CHNL_Z9 ", "PARK_SAFETY_EN_CHNL_Z10", "PARK_SAFETY_EN_CHNL_Z11" };
         public string[] breakerChParkValues = { "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED", "DRVR_SAFETY_DISABLED" };
+        //
+        public string[] breakerChShutDownRecoveryNames = { "SHUTDOWN_RECOVERY_CHNL_Z0", "SHUTDOWN_RECOVERY_CHNL_Z1", "SHUTDOWN_RECOVERY_CHNL_Z2", "SHUTDOWN_RECOVERY_CHNL_Z3", "SHUTDOWN_RECOVERY_CHNL_Z4", "SHUTDOWN_RECOVERY_CHNL_Z5", "SHUTDOWN_RECOVERY_CHNL_Z6", "SHUTDOWN_RECOVERY_CHNL_Z7", "SHUTDOWN_RECOVERY_CHNL_Z8", "SHUTDOWN_RECOVERY_CHNL_Z9", "SHUTDOWN_RECOVERY_CHNL_Z10", "SHUTDOWN_RECOVERY_CHNL_Z11" };
+        public string[] breakerChShutDownRecoveryValues = { "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2" };
     }
 }

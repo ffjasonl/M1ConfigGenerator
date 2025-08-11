@@ -90,7 +90,7 @@ namespace M1ConfigGenerator
                 }
 
                 // card specific
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < 5; i++)
                 {
                     if (i == 2)
                     {
@@ -495,14 +495,18 @@ namespace M1ConfigGenerator
         {
             "DEVICE_CURRENT_LIMIT_Z     ",
             "DEVICE_OVRCUR_SHUTDN_MSEC_Z",
-            "TIMER_PWM_FREQ             "
+            "TIMER_PWM_FREQ             ",
+            "CH1_4_HW_PWM_FREQ          ",
+            "CH5_8_HW_PWM_FREQ          " 
         };
 
         public string[] hcParameterValues =
         {
             "60", // overall current limit
             "2000", // device overcurrent shutdown time
-            "PWM_400HZ"
+            "PWM_400HZ",
+            "12000",
+            "4000"
         };
 
         public string[] hcChLockNames = { "LOCK_CHNL_Z0 ", "LOCK_CHNL_Z1 ", "LOCK_CHNL_Z2 ", "LOCK_CHNL_Z3 ", "LOCK_CHNL_Z4 ", "LOCK_CHNL_Z5 ", "LOCK_CHNL_Z6 ", "LOCK_CHNL_Z7 ", "LOCK_CHNL_Z8 ", "LOCK_CHNL_Z9 ", "LOCK_CHNL_Z10", "LOCK_CHNL_Z11" };

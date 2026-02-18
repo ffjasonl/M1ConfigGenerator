@@ -4035,7 +4035,7 @@ namespace M1ConfigGenerator
                 cmbLCPairedToCh06.SelectedIndex = 2;
                 cmbLCDeadTimeCh06.SelectedIndex = 1; // 500 ms
 
-                cmbLC1Mode02.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLC1Mode07.SelectedIndex = (int)LC_QuickMode.ShadeDown;
                 cmbLCModeParamCh07.SelectedIndex = (int)LC_ModeParam.Slave;
                 cmbLCPairedToCh07.SelectedIndex = 2;
                 cmbLCDeadTimeCh07.SelectedIndex = 1; // 500 ms
@@ -4339,7 +4339,7 @@ namespace M1ConfigGenerator
                 cmbLCPairedToCh14.SelectedIndex = 2;
                 cmbLCDeadTimeCh14.SelectedIndex = 1; // 500 ms
 
-                cmbLC1Mode15.SelectedIndex = (int)LC_QuickMode.ShadeDown;
+                cmbLC1Mode15.SelectedIndex = 2; // can't use enum here because RP UP is removed from the list of the last channel
                 cmbLCModeParamCh15.SelectedIndex = (int)LC_ModeParam.Slave;
                 cmbLCPairedToCh15.SelectedIndex = 2;
                 cmbLCDeadTimeCh15.SelectedIndex = 1; // 500 ms

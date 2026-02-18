@@ -2163,7 +2163,7 @@ namespace M1ConfigGenerator
             this.btnMenuNew.Name = "btnMenuNew";
             this.btnMenuNew.Size = new System.Drawing.Size(200, 60);
             this.btnMenuNew.TabIndex = 0;
-            this.btnMenuNew.Text = "1.3.0";
+            this.btnMenuNew.Text = "1.3.1";
             this.btnMenuNew.UseVisualStyleBackColor = false;
             this.btnMenuNew.Click += new System.EventHandler(this.btnMenuNew_Click);
             // 

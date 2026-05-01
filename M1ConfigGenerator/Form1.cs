@@ -120,6 +120,12 @@ namespace M1ConfigGenerator
             HRCardActive = 0;
             LCCardActive = 0;
             PopulateArrays();
+            cmbStartAux.SelectedIndex = 0;
+            cmbStartBreaker.SelectedIndex = 0;
+            cmbStartDimmer.SelectedIndex = 0;
+            cmbStartHC.SelectedIndex = 0;
+            cmbStartHR.SelectedIndex = 0;
+            cmbStartLC.SelectedIndex = 0;
         }
 
         // @Utility ------------------------------------------------------ Utility
@@ -378,7 +384,10 @@ namespace M1ConfigGenerator
 
         private void tbxStartCfgType_TextChanged(object sender, EventArgs e)
         {
-            CheckStartCreate();
+            if (int.TryParse(tbxStartCfgType.Text, out int value)) // Only runs if the value is a valid integer
+            {
+                CheckStartCreate();
+            }
         }
 
         private void cmbStartAux_TextChanged(object sender, EventArgs e)
@@ -388,7 +397,10 @@ namespace M1ConfigGenerator
 
         private void tbxStartAuxCfgRev_TextChanged(object sender, EventArgs e)
         {
-            CheckStartCreate();
+            if (int.TryParse(tbxStartAuxCfgRev.Text, out int value)) // Only runs if the value is a valid integer
+            {
+                CheckStartCreate();
+            }
         }
 
         private void cmbStartBreaker_TextChanged(object sender, EventArgs e)
@@ -398,7 +410,10 @@ namespace M1ConfigGenerator
 
         private void tbxStartBrkCfgRev_TextChanged(object sender, EventArgs e)
         {
-            CheckStartCreate();
+            if (int.TryParse(tbxStartBrkCfgRev.Text, out int value)) // Only runs if the value is a valid integer
+            {
+                CheckStartCreate();
+            }
         }
 
         private void cmbStartDimmer_TextChanged(object sender, EventArgs e)
@@ -408,7 +423,10 @@ namespace M1ConfigGenerator
 
         private void tbxStartDimCfgRev_TextChanged(object sender, EventArgs e)
         {
-            CheckStartCreate();
+            if (int.TryParse(tbxStartDimCfgRev.Text, out int value)) // Only runs if the value is a valid integer
+            {
+                CheckStartCreate();
+            }
         }
 
         private void cmbStartHC_TextChanged(object sender, EventArgs e)
@@ -418,7 +436,10 @@ namespace M1ConfigGenerator
 
         private void tbxStartHCCfgRev_TextChanged(object sender, EventArgs e)
         {
-            CheckStartCreate();
+            if (int.TryParse(tbxStartHCCfgRev.Text, out int value)) // Only runs if the value is a valid integer
+            {
+                CheckStartCreate();
+            }
         }
 
         private void cmbStartHR_TextChanged(object sender, EventArgs e)
@@ -428,7 +449,10 @@ namespace M1ConfigGenerator
 
         private void tbxStartHRCfgRev_TextChanged(object sender, EventArgs e)
         {
-            CheckStartCreate();
+            if (int.TryParse(tbxStartHRCfgRev.Text, out int value)) // Only runs if the value is a valid integer
+            {
+                CheckStartCreate();
+            }
         }
 
         private void cmbStartLC_TextChanged(object sender, EventArgs e)
@@ -438,7 +462,10 @@ namespace M1ConfigGenerator
 
         private void tbxStartLCCfgRev_TextChanged(object sender, EventArgs e)
         {
-            CheckStartCreate();
+            if (int.TryParse(tbxStartLCCfgRev.Text, out int value)) // Only runs if the value is a valid integer
+            {
+                CheckStartCreate();
+            }
         }
 
         private void CheckStartCreate()
@@ -447,27 +474,28 @@ namespace M1ConfigGenerator
             int numCards = 0;
 
             // Aux
-            if (cmbStartAux.Text != "0" && cmbStartAux.Text != "") { numCards++; }
+            // if (cmbStartAux.Text != "0" && cmbStartAux.Text != "") { numCards++; }
+            if (cmbStartAux.Text != "0") { numCards++; }
             if (ValidateConfigRev(tbxStartAuxCfgRev.Text)) { checkCount++; }
 
             // Breaker
-            if (cmbStartBreaker.Text != "0" && cmbStartBreaker.Text != "") { numCards++; }
+            if (cmbStartBreaker.Text != "0") { numCards++; }
             if (ValidateConfigRev(tbxStartBrkCfgRev.Text)) { checkCount++; }
 
             // Dimmer
-            if (cmbStartDimmer.Text != "0" && cmbStartDimmer.Text != "") { numCards++; }
+            if (cmbStartDimmer.Text != "0") { numCards++; }
             if (ValidateConfigRev(tbxStartDimCfgRev.Text)) { checkCount++; }
 
             // HC
-            if (cmbStartHC.Text != "0" && cmbStartHC.Text != "") { numCards++; }
+            if (cmbStartHC.Text != "0") { numCards++; }
             if (ValidateConfigRev(tbxStartHCCfgRev.Text)) { checkCount++; }
 
             // HR
-            if (cmbStartHR.Text != "0" && cmbStartHR.Text != "") { numCards++; }
+            if (cmbStartHR.Text != "0") { numCards++; }
             if (ValidateConfigRev(tbxStartHRCfgRev.Text)) { checkCount++; }
 
             // LC
-            if (cmbStartLC.Text != "0" && cmbStartLC.Text != "") { numCards++; }
+            if (cmbStartLC.Text != "0") { numCards++; }
             if (ValidateConfigRev(tbxStartLCCfgRev.Text)) { checkCount++; }
 
             if (ValidateConfigType(tbxStartCfgType.Text) && checkCount == numCards && numCards != 0) { btnStartCreate.Visible = true; }
@@ -476,9 +504,16 @@ namespace M1ConfigGenerator
 
         private bool ValidateConfigRev(string argString)
         {
-            byte[] asciiValue = Encoding.ASCII.GetBytes(argString);
+            if (argString != "")
+            {
+                byte[] asciiValue = Encoding.ASCII.GetBytes(argString);
 
-            return asciiValue[0] >= 49 && asciiValue[0] < 58; // validates config rev first digit
+                return asciiValue[0] >= 49 && asciiValue[0] < 58; // validates config rev first digit
+            }
+            else
+            {
+                return false;
+            }
         }
 
         private bool ValidateConfigType(string argString)
